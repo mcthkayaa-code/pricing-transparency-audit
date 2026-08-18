@@ -43,6 +43,10 @@ SURFACES = [
     "limitations-register.md",
     "analysis-first-findings.md",
     "../../../../site/content/research/pricing-transparency-audit.md",
+    # The site states figures in COMPONENT SOURCE too, not only in the markdown. That is how five
+    # of these went stale unnoticed: the sweep read the paper, the paper was clean, and a hardcoded
+    # count in a React component kept serving the old number to every reader of the live page.
+    "../../../../site/components/research/DataAvailability.tsx",
 ]
 
 
