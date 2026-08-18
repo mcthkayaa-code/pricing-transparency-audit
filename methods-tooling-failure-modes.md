@@ -314,6 +314,23 @@ because a non-empty result reads as a working tool.
 not "did it submit?" but "did it submit the thing I just shipped?" — and answering it takes one look at
 the list, which nobody took for three deploys.
 
+**36. A grep that finds nothing has proved nothing.** Correcting a figure that had moved, the sweep
+for stale copies searched `78 deviations` and `Seventy-eight`. It came back empty and the paper was
+declared clean. The prose actually said **"78 dated deviations"** — five times, twice in the paper
+and three times on the site, one of them the summary that renders on the listing page. The pattern
+was one word too narrow and the empty result read as an all-clear.
+
+This is the negative-result trap, and it is worse than a wrong positive: a wrong number is arguing
+with you, while an empty grep is agreeing with you. Nothing about the output distinguishes *no
+occurrences exist* from *my pattern missed them.*
+
+**A search you wrote yourself cannot confirm your own coverage.** The fix is not a better pattern —
+the third attempt would fail the same way. It is to state the concept, enumerate its phrasings in
+one place where they can be reviewed, and **fail loudly when a concept matches nothing at all**,
+since a live document that suddenly mentions a figure zero times has almost certainly been reworded
+rather than emptied. `tools/check_published_figures.py` does exactly this, and the first thing it
+caught was a mistake in its own author's pattern table.
+
 ---
 
 ## What actually caught these

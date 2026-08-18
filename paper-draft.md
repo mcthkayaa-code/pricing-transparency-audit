@@ -71,7 +71,7 @@ position, exit route — are published by almost everybody here. The terms she n
 credit rate, rollover policy, failure-charge rule, the qualifying clause on an advertised allowance — are
 frequently absent.
 
-This paper also carries an unusual amount of material about its own errors: 78 dated deviations, three of
+This paper also carries an unusual amount of material about its own errors: 79 dated deviations, three of
 which retract a claim the study had already made in public, and a methods note documenting 33 tooling
 failure modes that all occurred here. This is ordinary practice for an audit of live web documents, not a
 confession. **A tool that reads less than it claims produces a number nobody can distinguish from a
@@ -934,7 +934,7 @@ of its middle. Instrument consistency under independent double reading is α 0.8
 instrument was applied, never about whether it was applied correctly. The frame is a census, not a sample,
 and carries no confidence intervals, no significance tests, and no claim about AI products at large.
 
-What this study offers besides its result is its record: 78 dated deviations, three of which retract a
+What this study offers besides its result is its record: 79 dated deviations, three of which retract a
 claim it had already made in public; six self-disclosed blindness breaches and three for-cause re-readings
 reported separately with their decomposition; 48 of 337 unknowns on publishing rows charged to our own
 instrument rather than to vendor silence; 482 of 516 citations verified to resolve; and 33 documented ways

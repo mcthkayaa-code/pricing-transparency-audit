@@ -2,7 +2,7 @@
 
 **Generated 2026-08-18 by `tools/freeze_stamp.py`. Every figure below is read from the files it describes, not typed.**
 
-Generated against commit **`e37290f21bcb`** — necessarily the commit *before* this stamp is itself committed. A reader verifying the hashes should check out that commit, or accept that this file is the only difference.
+Generated against commit **`4a9c6ac41f11`** — necessarily the commit *before* this stamp is itself committed. A reader verifying the hashes should check out that commit, or accept that this file is the only difference.
 
 ## What freezing means
 
@@ -83,7 +83,7 @@ SHA-256, so a reader can verify the copy they hold is the copy that was frozen.
 
 | sha256 (first 16) | bytes | file | why it moves |
 |---|---|---|---|
-| `add1a1d1409da8bc` | 24,344 | `methods-tooling-failure-modes.md` | gains a mode whenever this study's own tooling is caught failing |
+| `5b50872d1e7b14e8` | 25,609 | `methods-tooling-failure-modes.md` | gains a mode whenever this study's own tooling is caught failing |
 
 ## What this stamp does NOT cover
 

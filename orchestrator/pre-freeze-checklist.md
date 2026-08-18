@@ -316,11 +316,15 @@ reasoning enter each record's `coder_note`; nothing is edited silently.
       claim's own definition at 32% — the same failure mode it had just found in my work, caught
       because the failure mode had been named. The reliability section reports the audits AND that
       near-miss. An auditor described as clean is less credible than one that says where it slipped.
-- [ ] **Re-derive the deviation count in `paper-draft.md` immediately before publication.** It is a
-      number that moves every time the study learns something — 58, 71, 76, 77, 78 inside one day —
-      and the paper carries it in four places. `grep -cE "^## D-" orchestrator/deviations-log.md`
-      returns it. Added 2026-08-17 after the same figure went stale seven times in six documents;
-      the register's §10 heading solved it by dropping the count entirely, which a paper cannot do.
+- [x] ~~**Re-derive the deviation count in `paper-draft.md` immediately before publication.**~~
+      **AUTOMATED 2026-08-18 — `tools/check_published_figures.py`.** The manual version of this item
+      failed on the day it mattered. Publishing moved the count to 79 and a hand-run grep, phrased
+      too narrowly, reported the paper clean while five statements of "78 dated deviations" survived
+      — two in the paper, three on the site including the summary that renders on the listing page.
+      A promise to remember is not a control. The checker computes each figure from the data, finds
+      every phrasing the study actually uses across paper, site copy, freeze stamp, register,
+      analysis and press kit, and **fails when a concept matches nothing at all**, so a rewording
+      cannot quietly blind it. 39 stated figures across 7 surfaces currently agree with the data.
 - [x] ~~Owner sign-off on the frozen dataset before anything is published.~~ **SIGNED 2026-08-18 by Mucahit Kaya**, founder and editor, the named human in the study's AI-assistance framing. He set the research question before any data existed, approved the protocol, sampling rules and codebook, ratified the frozen frame, intervened on substance during the work — **two of the largest corrections in the study came from those interventions rather than from any automated step** (D-050, D-056/D-057) — and reviewed the frozen dataset, the paper and the open release before signing. Nothing here is published on automated authority.
 
 ## 9 · Then, and only then
