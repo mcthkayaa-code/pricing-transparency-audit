@@ -1,0 +1,128 @@
+SOURCE: https://writehuman.ai/pricing
+ACCESSED: 2026-08-13
+METHOD: rendered browser read (Claude Browser pane), get_page_text + read_page(filter=all) + embedded RSC script payload cross-check
+DEFAULT DISPLAY STATE OBSERVED: "Yearly" billing toggle active on load (purple/filled, "3 months free" badge); prices shown are the annual-equivalent monthly figures ($12/$18/$36), each card also showing the annual total directly ("$144 billed yearly" / "$216 billed yearly" / "$432 billed yearly"). No cookie-consent banner was shown. No currency selector; prices rendered directly in USD ($) to a Turkey-egress session with no locale conversion observed.
+
+=== RENDERED DOM TEXT (get_page_text) ===
+The premium AI humanizer for
+serious writing.
+
+Every plan includes full access to the AI humanizer and AI detector. Upgrade, downgrade, or cancel anytime. No contracts, no surprises.
+
+Monthly
+Yearly3 months free
+Basic
+
+Best for light users
+
+$12
+/mo
+
+$144 billed yearly
+
+Save $72/yr
+80 requests / month
+2 output variations
+Access to enhanced model
+AI detection checks
+Up to 600 words per request
+MCP access
+Priority support
+Start with Basic
+
+Cancel anytime
+
+MOST POPULAR
+Pro
+
+Best for most users
+
+$18
+/mo
+
+$216 billed yearly
+
+Save $108/yr
+200 requests / month
+3 output variations
+Access to enhanced model
+AI detection checks
+Up to 1.200 words per request
+MCP accessNEW
+Priority support
+Go Pro: Best Value
+
+Cancel anytime
+
+Ultra
+
+Best for power users
+
+$36
+/mo
+
+$432 billed yearly
+
+Save $144/yr
+Unlimited requests
+5 output variations
+Access to enhanced model
+AI detection checks
+Up to 3.000 words per request
+MCP access (1,000/mo)NEW
+Priority support
+Go Ultra
+
+Cancel anytime
+
+Secure payment via Stripe
+Cancel anytime, no contracts
+
+Not ready to commit? Try the humanizer for free
+
+[Compare plans table]
+Feature	Free	Basic	ProPopular	Ultra
+PRICING
+Monthly price	Free	$18/mo	$27/mo	$48/mo
+Annual price	Free	$12/mo billed annually	$18/mo billed annually	$36/mo billed annually
+LIMITS & QUOTAS
+Humanizer requests / mo	3	80	200	Unlimited
+Max words per request	250	600	1,200	3,000
+Output variations	1	2	3	5
+Detection checks / mo	10	160	400	Unlimited
+Image scans / mo	10	80	200	Unlimited
+FEATURES
+AI Humanizer: Yes / Yes / Yes / Yes
+AI Detector: Yes / Yes / Yes / Yes
+Image Detector: Yes / Yes / Yes / Yes
+MCP access: (none) / (none) / Yes / 1,000 / mo
+Humanization quality	Basic	Enhanced	Enhanced	Enhanced
+Priority support: No / No / No / Yes
+
+=== FAQ ACCORDION ANSWERS (expanded one at a time, embedded on this same /pricing URL) ===
+
+Q: What happens when I hit my monthly limit?
+A: "Once you reach your monthly request limit, you'll need to wait until the next month for your quota to reset. If you frequently hit your limit, consider upgrading to a plan with more monthly requests."
+
+Q: Is there a free plan?
+A: "You can use the humanizer tool on the homepage for free with limited monthly requests. Paid plans give you significantly higher limits, more words per request, multiple output variations, and enhanced humanization quality."
+
+Q: How does annual billing work?
+A: "With annual billing, you pay once per year at a discounted rate, equivalent to getting at least 2 months free compared to monthly billing. Your plan auto-renews annually unless you cancel."
+
+Q: Do you offer refunds?
+A: "We do not offer refunds as all users have the opportunity to try our service for free before committing to a paid plan."
+
+Q: What payment methods do you accept?
+A: "We accept all major credit and debit cards (Visa, Mastercard, American Express) through Stripe, our secure payment processor. Some regions also support Apple Pay, Google Pay, and more."
+
+Q: How do I cancel my subscription?
+A: "You can cancel your subscription at any time from the My Account page. Your access will continue until the end of your current billing period."
+
+=== EMBEDDED JSON PAYLOAD (self.__next_f RSC script, javascript_tool extraction) ===
+initialTiers array found in page script:
+{"id":"ec3c9785-...","tier":"basic","name":"Basic","stripe_product_id":"prod_ONevLysaYBWkFk","stripe_monthly_price_id":"price_1QxDF6FbLxnloulQwFxFEsdR","stripe_yearly_price_id":"price_1QxDG0FbLxnloulQbJ1jHRFP","monthly_price":18,"yearly_price":144,"humanizer_max_req":80,"humanizer_max_chars":5000,"humanizer_max_words":600,"humanizer_max_variations":2,"detector_max_req":160,"image_detector_max_req":80,"video_detector_max_req":0,"created_at":"2026-03-09T15:33:04.869055+00:00"}
+{"id":"0f7aa756-...","tier":"pro","name":"Pro","stripe_product_id":"prod_ONexXkhjkLcNEr", ... ,"monthly_price":27,"yearly_price":216,"humanizer_max_req":200,"humanizer_max_chars":10000,"humanizer_max_words":1200,"humanizer_max_variations":3,"detector_max_req":400,"image_detector_max_req":200,"video_detector_max_req":0, ...}
+{"id":"19703866-...","tier":"ultra","name":"Ultra", ... "monthly_price":48,"yearly_price":432, ...} [truncated in capture, matches DOM: unlimited requests, 3000 words, 5 variations, 1000/mo MCP]
+
+Cross-check result: embedded JSON monthly_price/yearly_price values (18/144, 27/216, 48/432) match the rendered DOM figures exactly for Basic/Pro/Ultra. No representation mismatch found (no superscript-cents or misread risk).

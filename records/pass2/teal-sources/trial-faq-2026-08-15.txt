@@ -1,0 +1,33 @@
+SOURCE: https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial
+TITLE: "Is There a Teal+ Free Trial? | Teal Knowledge Base"
+ACCESSED: 2026-08-15 (pass-2 collection)
+METHOD: Browser render (static WebFetch returned HTTP 403 Forbidden on this domain)
+ARCHIVE.ORG: two save attempts both stalled/failed (same "Job failed" pattern seen on tealhq.com/terms) — recorded archive_failed; this file is the dated local verbatim capture.
+Page says "Updated over 2 weeks ago"
+
+=== VERBATIM PAGE TEXT ===
+
+Is There a Teal+ Free Trial?
+Learn how you can "trial" Teal+ features before upgrading within the free version of Teal itself!
+
+What features are free for all Teal members?
+"We strongly believe in keeping our basic functionality in Teal free forever! This means that you do not need to upgrade to a Teal+ account to edit and export unlimited resumes in our Resume Builder, bookmark unlimited roles in your Job Tracker, and track unlimited networking details/connections in our Companies and Contacts Trackers."
+
+"Teal+ expands on these features and tools by providing unlimited AI generation support, more advanced suggestions within Analysis Mode, and more keywords surfaced in Job Matching."
+
+"NOTE: We do not offer a standard free trial that requires payment information, such as your credit card. Once you enter your credit card information, you are signing up for a subscription (recurring or non-recurring)."
+
+AI Generation Credits
+"While Teal+ offers unlimited AI generation, the free version of Teal includes a select number of non-renewable AI Generation credits to use on generating Bullets, Professional Summaries, or Cover Letters. This setup enables you to test these features and decide if you'd like to upgrade to unlimited usage."
+
+Bullet Generation: "As a free user, you have 10 credits to use for AI Bullet Generation. You can view how many credits you have remaining with the counter in the bottom-left corner of the edit box."
+
+Professional Summary Generation: "As a free user, you have 2 credits to use for Professional Summary Generation."
+
+Cover Letter Generation: "As a free user, you have 2 credits to use for Cover Letter Generation."
+
+Job Matching: "As a free user in Job Matching, you will see the top five keywords surfaced from the Job Description... Upgrading to Teal+ provides you with the full list of keywords."
+
+Analysis Mode: "As a free user, you have access to basic issues in Analysis Mode. Upgrading to Teal+ provides you with a full view of basic and advanced issues in Analysis Mode."
+
+NOTE: this article states "10 credits" for Bullet Generation, which conflicts with two other official pages (help.tealhq.com "Teal vs. Teal+" comparison article and help.tealhq.com "Using AI: Bullets" article) that each state "5 credits" for the same feature. The main tealhq.com/pricing page agrees with THIS article (10 Credits). See conflict_note in record.

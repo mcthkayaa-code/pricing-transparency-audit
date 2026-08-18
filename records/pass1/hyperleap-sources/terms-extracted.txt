@@ -1,0 +1,340 @@
+Terms of Use | Hyperleap.ai
+Product
+Solutions
+Resources
+Pricing
+Sign In
+Start free trial
+Home
+Terms of Service
+Our Agreement
+Terms
+of Use
+Version 1.0 | Effective date: June 1, 2023
+Back to Home
+1. GENERAL TERMS
+1.1. These terms are drafted in conformity with Information Technology Act, 2000 read with Information Technology (Intermediary Rules), 2011 in order to regulate the terms and conditions of usage of access to the Website (as defined herein) and the Services (as defined herein). No physical or digital signature is necessitated in order to validate this Agreement. Your use and access of the Platform is governed by and subject to the Terms.
+1.2. These Terms create a binding agreement between You and/or the entity that You represent (collectively, &quot;You&quot;, &quot;Your&quot;, &quot;User&quot;, &quot;End-User&quot; and &quot;Customer&quot;) and M/s. Hyperleap Software Technologies Private Limited, a company incorporated under provisions of Companies Act, 2013, and having its registered office at T-Hub, Phase 2, Madhapur, Hyderabad, Telangana 500081 (&quot;Company, &quot;We&quot;, &quot;Us&quot; and &quot;Our&quot;). The Company is a generative Artificial Intelligence (&quot;AI&quot;) platform that bridges the gap between AI's potential and real-world application.
+1.3. These Terms will govern Your use of Our Services which shall be provided by Us on Our website as well as any other media form, media channel, website or mobile application related, linked, or otherwise connected thereto, which are owned by Us including without limitation the following websites: https://hyperleapai.com, https://api.hyperleapai.com, https://studio.hyperleapai.com, https://hyperleap.ai, https://api.hyperleapai.com (&quot;Platform&quot;), which is owned by Us, and subsequently the use of Services as available to You through Our Platform. Based on the subscription model chosen by You, the Platform may be hosted on the Company Hosting Server or the User Hosting Server, as laid down under the Payment Terms.
+2. ACKNOWLEDGEMENT
+2.1. For You to accept these Terms, You shall be of majority age (18 and above) and not already be restricted by Us from using Our Platform and Services. In the case that You do not accept these Terms, You shall not avail Our Services as is provided through Our Platform. You can accept the Agreement by checking the checkbox or clicking on &quot;I AGREE&quot; or any other similar term and/or by availing Our Services, as the case may be.
+2.2. You acknowledge that by clicking on &quot;I AGREE&quot; or any other similar term and/or by availing Our Services, You are entering into a legally binding agreement to use the services provided by the Company and this shall continue to be binding till You continue to access and use the Platform.
+2.3. Please note that these Terms shall be applicable to You, even if You browse or access the Platform as a visitor without creating an Account on the Platform. These Terms applies to every User who uses or accesses the Services. It also applies to any legal entity which may be represented by You under actual or apparent authority.
+2.4. These Terms are subject to modifications, at Our sole and absolute discretion. Further, We may from time to time formulate new policies for availing all or any of the Services. The most current version of these Terms will supersede all previous versions. You understand that Your continued use of the Services after any changes to these Terms or addition of new policies constitutes Your acceptance to be bound by the most recent version of these Terms. If these Terms (including changes and additions thereto) are not acceptable to You, You have the absolute right to terminate Your Account by writing to Us at support@hyperleap.ai.
+2.5. Please note that in the event of a breach of these Terms in the manner stipulated under clause 16.5 of these Terms, the Company reserves the right to (i) suspend Your access to the Platform and the Services provided thereof; (ii) immediately terminate Your Account; and/or (iii) report You to law enforcement authorities or initiate necessary legal actions / appropriate legal proceedings against You in accordance with the applicable laws.
+3. DESCRIPTION OF SERVICES
+3.1. Our Platform is a SaaS application, accessible via web, and AI APIs. We are engaged in providing the following Services, including without limitation (collectively, &quot;Services&quot;):
+Fostering AI literacy across User's entity through features enabling collaboration;
+Empowering User's entity to communicate with AI tools effectively;
+Enabling feedback mechanisms for continuous improvement of AI integrations;
+Detailed auditing and compliance of every AI interaction through the Platform;
+Detailed reporting and analytics of the usage of AI across the User's entity;
+Interactive hub to enable optimization of AI prompts, handling data, among others;
+3.2. The Company shall offer the aforementioned Services in the form of subscription model and as per the Payment Terms available at https://hyperleap.ai/payment-terms.
+3.3. We believe in continuous development in order to meet the industry standards and provide You with better Services, therefore, We reserve the right to modify, add, remove or rename Our Services at Our sole discretion.
+4. SERVICES UPDATES, AVAILABILITY OF SERVICES, AND SLA
+4.1. The Services may, at any time, temporarily be unavailable due to scheduled downtime for upgrades and maintenance, any technical faults or interruptions, User's geographical location, or prohibitions/restrictions under applicable law or policies for which the Company may use commercially reasonable endeavors to notify the User in advance.
+4.2. Notwithstanding anything to the contrary contained elsewhere, the Company shall not be liable for unavailability of the Services caused by circumstances beyond its reasonable control, such as, but not limited to, acts of God, acts of government, acts of terror or civil unrest, or any reason as stipulated in Clause 4.1 of these Terms.
+4.3. Force Majeure. Neither party shall be liable for any failure or delay in performance caused by events beyond its reasonable control, including but not limited to: acts of God; earthquakes; fires; floods; wars; civil or military disturbances; acts of terrorism; sabotage; strikes; epidemics; pandemics; riots; power failures; computer failure or malfunction; Internet service provider failures or delays; damage or loss of communications, transportation, or infrastructure; changes in applicable laws or regulations; or labor disputes. In the event of such a force majeure event, the affected party shall be excused from performance to the extent affected, provided that it:
+promptly notifies the other party;
+uses reasonable efforts to mitigate the effects of force majeure; and
+resumes performance as soon as reasonably practicable after the removal of the force majeure.
+If the force majeure event continues for more than sixty (60) consecutive days, either party may terminate these Terms upon written notice to the other party.
+4.4. Service Level Agreement (SLA). For Users subscribing to the Growth Model or Enterprise Model (as defined in the Payment Terms), the Company may offer a separate Service Level Agreement (SLA) that specifies service availability targets and remedies for failure to meet those targets. If applicable to Your subscription, such SLA terms will be provided separately and are incorporated by reference into these Terms. For Users subscribing to the Startup Model, no SLA is provided, and the Service is offered on an &quot;as available&quot; basis only.
+5. USER ACCOUNTS
+5.1. We believe in providing simple and easy access to our Services. To access any of the Services, You can sign-up by using the online sign-up or subscription process or contact Us at support@hyperleap.ai as provided on the Platform.
+5.2. After You subscribe to Our Services and make necessary payments as facilitated on the Platform, We will collect relevant information and We will register and create an account (&quot;Admin Account&quot;) on the Platform for Your access to the Platform and to use the Services subject to You not being restricted by Us or applicable laws to use the Platform.
+5.3. If the User is a entity, the User shall have access to the Platform through the Admin Account that will be in the official entity name / individual name (who will be the representative of the entity), as the case may be. In such case, the User may invite its employees, agents, and/or representatives (individually, &quot;End-User&quot;) on the Platform and the End-Users shall have the right to create an account (&quot;End-User Account&quot;) on the Platform to access the Services. For the purpose of these Terms, Admin Account and End-User Account is collectively referred to as &quot;Account&quot;.
+5.4. Further, You cannot create an Account if there already exists an Account in Your company's official name or Your individual name, as the case may be (&quot;Duplicate Account&quot;). If such Duplicate Account has been created, We reserve the right to immediately terminate the Duplicate Account and/or any Services availed through that Duplicate Account on Our Platform.
+5.5. We will provide a User ID and upon every attempt to login, a one-time password will be generated and sent to Your mobile number and/or email address registered with Us (&quot;Credentials&quot;) which would enable You to access the Platform and Services thereof.
+5.6. You hereby expressly consent to receive communications and newsletters from the Company by SMS, e-mails, phone calls, in-app notifications or any other means. You can restrict such communications and newsletters only by de-registering Your Account.
+5.7. Any person who is Our competitor and a representative of Our competitors (in any capacity) is not allowed to access or use the Services in any case.
+5.8. You can always choose to disable Your Account by cancelling Your subscription or writing to Us at support@hyperleap.ai. Once You disable Your Account, you shall cease to have any access to our Services through the Platform.
+5.9. You are responsible for maintaining the confidentiality of Your Credentials, and You are fully responsible for all activities that occur under Your Account. In the event that You detect any unauthorised use of Your Account or breach of Your Account, You shall inform Us immediately.
+5.10. In the event that You share Your Credentials with any third party, You shall solely be responsible for any consequence, damage, loss, and/or injury including without limitation loss of data and misuse of Your Account and the Company shall under no circumstances be liable for any such consequence, damage, loss and/or injury incurred by You. You will be held responsible for any losses incurred by the Company or any other User due to unauthorized use of the Account which is a consequence of Your inability to secure Your Account.
+6. CHARGES AND PAYMENT
+For the purposes of availing the Services, You shall make necessary payments to the Company as specified in Our pricing plan available at https://hyperleap.ai/pricing and in accordance with the Payment Terms specified at https://hyperleapai.com/payment-terms. The pricing plan shall be subject to modification which shall be promptly communicated to the User.
+6A. CONTRACTING AND BILLING ENTITY
+Unless otherwise specified in a written agreement or order form, subscriptions and services offered on the Hyperleap platform are billed by
+Hyperleap AI Hub Inc. (USA)
+, which acts as the seller of record and contracting entity for such transactions.
+In certain cases, including enterprise or custom contractual arrangements, billing and contracting may instead be handled by
+Hyperleap Software Technologies Private Limited (India)
+or another authorized Hyperleap entity, as explicitly stated in the applicable agreement.
+6B. INTELLECTUAL PROPERTY
+Regardless of the billing or contracting entity, all intellectual property, platform technology, and core services are owned and operated by
+Hyperleap Software Technologies Private Limited (India)
+.
+7. PLATFORM CONTENT
+7.1. The Platform and its original content, including but not limited to all source code, databases, functionality, software, any information related to the Services, website designs, audio, video, text, photographs, and graphics, excluding any content provided by the User or other Users (&quot;Platform Content&quot;) and the trademarks, service marks, and logos contained therein (&quot;Marks&quot;) are owned or controlled by Us or licensed to Us, and are protected by copyright and trademark laws and various other intellectual property rights, unfair competition laws and other applicable national and international laws and conventions and the same shall remain the exclusive property of the Company and its licensors.
+7.2. The User agrees and acknowledges that the unauthorized use of the Platform Content may violate copyright, trademark, and other applicable laws and shall cause irreplaceable damage to the Company. Therefore, the Company shall have right to initiate any proceedings or any other process under applicable law which is available to it and the same shall be in addition to recovery of damages for such unauthorized use of the Content.
+7.3. The Platform Content shall not be reverse-engineered, disassembled, decompiled, reproduced, transcribed, stored in a retrieval system, translated into any language or computer language, re-transmitted in any form or by any means (electronic, mechanical, photo-reproduction, recordation or otherwise), resold or redistributed for any commercial purpose whatsoever, without Our express prior written permission.
+7.4. The Company cannot and does not guarantee or warrant that files available for downloading through the Platform will be free of infection by software viruses or other harmful computer code, files or programs.
+8. USER CONTENT
+8.1. While using Our Services, You may upload, use, create or develop any information including any data files, written text, graphics, message, audio file, video file (&quot;User Content&quot;) on the Platform.
+8.2. You shall own all intellectual property rights, title and interest in the User Content that You upload, use, create or develop on the Platform unless stated otherwise in the respective Third-Party Terms (based on the specific Third-Party Applications used by You). You are solely responsible for the User Content that is generated, accessed, or stored in or connected to any project / assignment in Your Account and the Company shall not be liable for any damages or losses incurred by You in connection with the User Content.
+9. USER ACKNOWLEDGEMENT, REPRESENTATIONS & CONVENANTS
+The User acknowledges that:
+the Company does not guarantee the sequence, accuracy, completeness, or timeliness of the information contained on the Platform and/or provided through Our Service;
+the provision of certain parts of the Platform and/or the Services is subject to the terms and conditions of other agreements to which the Company is a party;
+none of the information contained on the Platform and/or provided through Our Service constitutes a solicitation, offer, opinion, or recommendation by the Company to buy or sell any security, or to provide legal, tax, accounting, or investment advice or services regarding the profitability or suitability of any security or investment;
+the information provided on the Platform and/or provided through Our Service is not intended for use by, or distribution to, any person or entity in any jurisdiction or country where such use or distribution would be contrary to law or regulation. Accordingly, anything to the contrary herein set forth notwithstanding, the Company, its suppliers, agents, directors, officers, employees, representatives, successors, and assigns shall not, directly or indirectly, be liable, in any way, to the User or any other person for any: (i) inaccuracies or errors in or omissions on the Platform and/or the Services including, but not limited to, quotes and financial data; (ii) delays, errors, or interruptions in the transmission or delivery of Our Service provided through the Platform; or (iii) loss or damage arising there from or occasioned thereby, or by any reason of non-performance; and
+when the User creates an Account, the User must provide information that is accurate, complete, and current at all times. Further, the User shall be obligated to share only such information which it is lawfully authorized to disclose. In the event that the User provides any information which (i) is inaccurate, incomplete, or not updated; and/or (ii) is not authorized to disclose, it shall constitute a breach of these Terms.
+10. RESTRICTIONS ON USE
+10.1. You may not access or use the Platform for any purpose other than that for which We make the Platform available. The Platform may not be used in connection with any commercial endeavours except those that are specifically endorsed or approved by Us.
+10.2. You agree to access the Platform and use the Services solely for Your own benefit, and not for the purpose of resale or other transfer or disposition to, or use by or for the benefit of, any other person or entity.
+10.3. As a User of the Platform, You agree not to:
+Impede and impair the operations and functionality of the Platform in any manner.
+Copy and distribute the Platform Content and information provided on the Platform on other servers without due authorisation from the Company.
+Use the Platform and the Services provided thereof for any illegal purpose or in any manner inconsistent with these Terms.
+Use any technology or any automated system for the purpose of dissemination of any usernames, passwords, email address or any other information or data from the Company or the Platform.
+Send any information on behalf of the Company to any third-party including Users. It is solely the responsibility of the Company to solicit any information and to send through emails, SMS's, multimedia content, advertisements and/or promotional activities to send any information to its Users.
+Pass on any information which contains confidential information about other Users to any third parties or serves without prior consent from the Company or such Users.
+Systematically retrieve data or other content from the Platform to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from Us.
+Trick, defraud, or mislead Us and other Users, especially in any attempt to learn sensitive account information such as User Credentials.
+Make any unauthorized use of the Platform, including collecting Credentials of Users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretences.
+Attempt to impersonate another User or person or use the username of another User.
+License, sublicense, sell, resell, rent, lease, transfer, assign, distribute, time share or otherwise commercially exploit or make the Platform and the Services provided thereof available to any third-party.
+Circumvent, disable, or otherwise interfere with security-related features of the Platform, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Platform and/or the Content contained therein.
+11. LICENSE TO THE PLATFORM
+11.1. Subject to Your compliance with each provision of these Terms, the Company hereby grants You a limited, revocable, personal, non-sub-licensable, non-transferable, non-exclusive, non-commercial right to access and use the Platform to access the Service in accordance with these Terms. You also have the right to access and browse the Platform without procuring the Services and, even under such circumstances, these Terms shall be binding on You.
+11.2. Except the rights and interests that are provided to You under these Terms, unless otherwise specified, You shall have no other right or interest whatsoever in the use of Platform and/ or Services.
+11.3. In the event that You choose to download any Platform Content from the Platform, You must do so in accordance with these Terms and such download is licensed to You by the Company only for Your own use in accordance with these Terms and does not transfer any other rights to You.
+12. PLATFORM MANAGEMENT
+12.1. The Company reserves the right, but shall not be obligated, to: (1) monitor the Platform for violations of these Terms; (2) take appropriate legal action against anyone who, at its sole discretion, violates the applicable law or these Terms, including without limitation, reporting such User to law enforcement authorities; (3) refuse, restrict access to, limit the availability of, or disable the access of the Platform and any Services or any portion thereof without any liability and at its sole discretion; (4) remove from the Platform or otherwise disable all files and content that are excessive in size or are in any way burdensome to the Company's systems without any limitation, notice, or liability and at its sole discretion; and (5) manage the Platform in a manner designed to protect the Company's rights and property and to facilitate the proper functioning of the Platform.
+12.2. The Platform may sometimes contain certain errors, mistakes, inaccuracies, discrepancies or omission or certain information might not be complete or current. The Company reserves the right to rectify errors, mistakes, inaccuracies, discrepancies or omissions and change and update the information so provided without providing any prior notice to You. The Company shall not be liable for any inaccuracies, omissions, discrepancies in the information which may be provide on the Platform.
+13. FEEDBACK
+If You submit suggestions, feedbacks, ideas, comments, questions, or posts any information through the Platform (&quot;Feedback&quot;), You agree to grant the Company a non-exclusive, perpetual, irrevocable, royalty free, transferable, sub-licensable, worldwide right and license to use, reproduce, disclose, sub-license, distribute, modify and exploit such Feedback without restriction.
+14. CONFIDENTIALITY
+14.1. To the extent that You receive or possess any non-public information from the Company that is confidential or, given the nature of the information or circumstances surrounding its disclosure, reasonably should be considered to be confidential, such information is &quot;Confidential Information&quot; and must be handled according to these Terms.
+For the purpose of these Terms, &quot;Confidential Information&quot; includes but is not limited to: (a) non-public information about the technology, customers, business plans, marketing and sales activities, finances, operations and other business information; and (b) the existence and content of any discussions or negotiations regarding the User's Account and/or access of the Platform and the Services provided thereof. 'Confidential Information' does not include any information that: (i) is publicly available or becomes publicly available through no action or fault of the User, (ii) was already in the User's possession or known to the User prior to being disclosed or provided to the User by or on behalf of the other party, provided, that, the source of such information or material was not bound by a contractual, legal or fiduciary obligation of confidentiality to the non-disclosing party or any other party with respect thereto, (iii) was or is obtained by the User from a third party, provided, that, such third party was not bound by a contractual, legal or fiduciary obligation of confidentiality to the non-disclosing party or any other party with respect to such information or material, or (iv) is independently developed by the User without reference to the Confidential Information (in which case the onus of proof shall lie solely with the User).
+14.2. You may not use Confidential Information except in connection with the access to the Platform and the Services provided thereof as permitted under these Terms or as separately authorized in a signed writing by the Company.
+14.3. You agree to not disclose Confidential Information after the cessation of usage of the Services through the Platform and/or after these Terms otherwise no longer apply. You will take all reasonable measures to avoid disclosure or unauthorized use of Confidential Information.
+14.4. If the Company permits You to use its Platform and the Services provided thereof, You agree that information provided relating to the Platform and the Services is Confidential Information, and You specifically agree, in addition to the other requirements set forth in these Terms, to not: (i) access and use the Platform and/or the Service for benchmarking or performance testing or to publicly disseminate performance information or analysis from any source relating to the Platform and/or the Services; (ii) modify or create derivative works of the Platform and/or the Service thereof or remove any product identification, proprietary, copyright or other notices contained in the Platform and/or the Services; or (iii) allow any other individual to access the Platform or use the Service.
+15. THIRD PARTY SERVICE PROVIDERS AND APPLICATIONS
+15.1. For the provision of Services, ease of access of the Platform by You and any other reason that We deem necessary for the business purpose of the Company, We at our sole discretion, reserve a right to use any third-party service providers.
+15.2. You acknowledge that the Company's Services integrate with certain third-party applications (&quot;Third-Party Application(s)&quot;) and that access and use of the Third-Party Applications may require acceptance of terms of service and privacy policies applicable to such Third-Party Applications (&quot;Third-Party Terms&quot;). These Third-Party Terms will also include the mode and structure of payment to the third-party service provider for the provision of their services, including without limitation, the access and use of their Third-Party Application. The Company neither has any control nor determines or advises or in any way involves itself in the offering or acceptance of such commercial / contractual terms between Users and third-party service providers.
+15.3. You are responsible for reading and understanding the Third-Party Terms before accessing or using any Third-Party Application. The User acknowledges and agrees that the Company is not liable for any Third-Party Applications.
+15.4. You acknowledge and agree that You are availing the Services and/or browsing the Platform solely at Your own discretion, risk and cost. The Company does not exercise any ownership, control or supervision over the third-party service provider or their services. The Company makes no representation or provides no warranty and guarantee (express or implied) for the services offered through the third-party service provider, even if the services have been availed or sought to be availed through the Platform. Any claims, actions or inactions relating to the services availed from third party service provider should be settled inter-se between You and the third-party service provider.
+15.5. While the Company will try to provide You with advance notice, whenever reasonably possible, You acknowledge and agree that the Company may, at any time, at its sole discretion and without any notice to You, suspend, restrict or disable access to or remove from Services, any Third-Party Application, without any liability to You, including without limitation for any loss of profits, revenue, data, goodwill or other intangible losses.
+15.6. You agree and acknowledge that You are solely responsible for making timely payments to any third-party service providers for their services that You use in connection with the Platform. The Company shall not be liable for any service disruptions, data loss, or other issues arising from Your failure to make timely payments to such third-party service providers.
+15.7. You understand that certain Third-Party Applications may incorporate open-source software components. Such open-source components are subject to their respective open-source licenses, which may be made available to You upon request. Your use of these open-source components is governed by the applicable open-source licenses and not by these Terms.
+16. PRIVACY POLICY AND DATA PROCESSING
+16.1. By using the Platform, You agree to be bound by Our Privacy Policy, available at https://hyperleap.ai/privacy, which is deemed to be incorporated into these Terms.
+16.2. Please be advised that the Platform is hosted in the nearest location from where You access Our Platform or in such country as specifically opted by You when availing Our Services through the Enterprise Model (as defined in the Payment Terms) (collectively referred to as &quot;Host Nation&quot;). If You access the Platform from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in the Host Nation, then through Your continued use of the Platform, You are transferring Your data to the Host Nation, and You agree to have Your data transferred to and processed in the Host Nation.
+16.3. Data Processing Terms:
+The Company processes User data solely for the purpose of providing the Services and as directed by the User through their use of the Services.
+Personal data, if any, provided by You or collected by Us will be processed in accordance with applicable data protection laws including, but not limited to, the Information Technology Act, 2000 and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011.
+You represent and warrant that You have all necessary rights, consents, and permissions to share any data, including personal data, with the Company and to permit the Company to use such data for the purposes set forth in these Terms.
+The Company implements reasonable security measures to protect User data but cannot guarantee absolute security.
+Upon termination of Your Account, the Company will:
+Delete or return all User Content within thirty (30) days of the effective date of termination, except as otherwise required by applicable law; and
+Delete all personal data processed on Your behalf within ninety (90) days of the effective date of termination, except as otherwise required by applicable law or legitimate business purposes such as accounting, dispute resolution, or enforcement of agreements.
+If You are acting on behalf of an entity that is subject to enterprise-grade data privacy controls or business-grade data security requirements, You must notify the Company, and the Company may require You to enter into a separate data processing agreement.
+17. DISCLAIMER AND LIMITATION OF LIABILITY
+17.1. YOU EXPRESSLY UNDERSTAND AND AGREE THAT THE USE OF THE SERVICES IS AT YOUR SOLE RISK. THE SERVICES ARE PROVIDED ON AN AS-IS-AND-AS-AVAILABLE BASIS. THE COMPANY EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE COMPANY MAKES NO WARRANTY THAT THE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR FREE. USE OF ANY MATERIAL DOWNLOADED OR OBTAINED THROUGH THE USE OF THE SERVICES SHALL BE AT YOUR OWN DISCRETION AND RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM, MOBILE TELEPHONE, WIRELESS DEVICE OR DATA THAT RESULTS FROM THE USE OF THE SERVICES OR THE DOWNLOAD OF ANY SUCH MATERIAL. TO THE EXTENT PERMITTED BY APPLICABLE LAW, WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY, RELIABILITY, TIMELINESS OR COMPLETENESS OF THE SERVICE'S CONTENT, THE CONTENT OF ANY SITE LINKED TO THE SERVICE, CONTRIBUTIONS, INFORMATION OR ANY OTHER ITEMS OR MATERIALS ON THE SERVICE OR LINKED TO BY THE SERVICE. WE ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (A) ERRORS, MISTAKES OR INACCURACIES OF CONTENT AND MATERIALS, (B) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICE, (C) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION STORED THEREIN, (D) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICE, (E) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE, WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICE BY ANY THIRD PARTY, AND/OR (F) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICE.
+17.2. YOU AGREE THAT THE COMPANY SHALL, IN NO EVENT, BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, SPECIAL, PUNITIVE, OR OTHER LOSS OR DAMAGE WHATSOEVER OR FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, COMPUTER FAILURE, LOSS OF BUSINESS INFORMATION, OR OTHER LOSS ARISING OUT OF OR CAUSED BY THE USERS USE OF OR INABILITY TO USE THE SERVICE AND THE SERVICES OF ANY THIRD-PARTY OR SERVICE PROVIDER SO ENGAGED UNDER THESE TERMS OF SERVICE, EVEN IF THE COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. IN NO EVENT SHALL THE COMPANY'S ENTIRE LIABILITY TO YOU IN RESPECT OF ANY SERVICE, WHETHER DIRECT OR INDIRECT, EXCEED THE FEES PAID BY YOU.
+17.3. IN NO EVENT SHALL THE COMPANY'S TOTAL LIABILITY FOR ALL CLAIMS RELATED TO THE PLATFORM AND/OR SERVICES OR THESE TERMS SHALL EXCEED THE AGGREGATE OF ANY AND ALL AMOUNTS PAID TO THE COMPANY BY YOU IN THE THREE (3) MONTHS PRIOR TO THE EVENT GIVING RISE TO THE CLAIM AND SUCH LIABILITY SHALL NOT BE GREATER THAN INR. 10,00,000/- (RUPEES TEN LAKHS ONLY).
+18. INDEMNITY AND USER WARRANTIES
+18.1. You agree to indemnify and hold harmless the Company, its officers, directors, employees, suppliers, and affiliates, from and against any losses, damages, fines and expenses (including attorney's fees and costs) arising out of or relating to any claims that You have used the Platform and/or the Services in violation of another party's rights, in violation of any law, in violations of any provisions of these Terms herein, or any other claim related to Your use of the Platform and/or the Services, except where such use is authorized by the Company.
+18.2. You specifically agree to indemnify and hold the Company harmless from any claim of intellectual property infringement arising from:
+Content, data, or information You upload, transmit, or otherwise make available through the Platform;
+Your combination of the Services with other applications, content, or processes; or
+Your use of the Services in a manner not in compliance with these Terms or the intended use of the Services.
+18.3. User Warranties. You represent and warrant that:
+All information provided to the Company in connection with Your use of the Platform and Services is true, accurate, current, and complete;
+You have the legal right and authority to enter into these Terms;
+Your use of the Platform and Services will comply with all applicable laws, regulations, and third-party rights;
+You will not use the Platform or Services in any manner that infringes, misappropriates, or otherwise violates any intellectual property rights or other rights of any third party;
+You have obtained all necessary rights, releases, and permissions to upload any content to the Platform and to grant the rights granted to the Company under these Terms;
+Your User Content does not violate any applicable laws or regulations, including those relating to data protection, privacy, export control, consumer protection, unfair competition, or false advertising; and
+You are solely responsible for maintaining the confidentiality of Your account information and for all activities that occur under Your account.
+19. TERMINATION
+19.1. The Company may terminate Your Account, without notice to You, and/or suspend Your access to the Platform and the Services provided thereof, at any time, effectively immediately if You violate any provisions of these Terms. If You have subscribed to Our Services under either the Startup Model or the Growth Model, We may terminate Your Account at any time within fifteen (15) days' notice.
+19.2. The Company shall not be liable to You or any third party for the termination or suspension of the Service, or any claims related to the termination or suspension of the Service. Upon termination of these Terms by You or the Company, You must discontinue its use of the Platform and Services and destroy promptly all materials obtained from the Platform and the Services and copies thereof.
+19.3. In the event of termination of Your Account, You will not receive any credit or payment or refund from the Company.
+19.4. In the event of termination, You will have no claim whatsoever against the Company in respect of any such suspension or termination of Your subscription, but You shall immediately settle all dues owed to the Company upon the termination of Your Account.
+19.5. If You have opted for an annual plan and intend to shift to a monthly plan (before the completion of such annual plan), You shall be subject to reversal of all the discounts (which were provided to You with regard to the pricing of the annual plan) for the months in which the discounts were previously provided. In this regard, the Company shall have the right to charge additional amount for the foregoing months in order to successfully complete such reversal of discounts. Please be advised that We will not provide any refund, unless the same is expressly provided for under these present Terms.
+19.6. You shall have the right to cancel Your Account at any time. If You are the authorized legal representative for a deceased or legally incapacitated individual or a legal entity that has been formally dissolved or otherwise ceased to be authorized to act for his, her, or its own account (without opportunity for revival), and You wish to cancel and not avail Our Services for such individual or entity, then You must notify Us (according to the requirements in the Terms of Use), identify Your validity in question and request cancellation of the Service. We will cancel the Service only if You demonstrate to Our satisfaction Your legal authority to act and be legally responsible for such individual or entity and Your ability to validate the details of the payment method used for such Service.
+19.7. We may, at our discretion, cancel any Service that You have purchased if You fail to pay the applicable fees and any applicable taxes in full and in a timely manner according to the Payment Terms. We may, in Our discretion, elect not to cancel the Service immediately for non-payment, in which case You shall continue to be responsible for the fees due for the duration of the applicable subscription. In addition, if You fail to pay for Our Services, We may elect to suspend Your rights to use that Service or We may change the type of privileges You have. We may provide You notice for any failure to make a payment to Us in full and on time, but We are not obligated to do so.
+19.8. Without limiting the Company of other remedies, You must pay the Company for all fees owed to the Company and reimburse the Company for all losses and costs (including any and all the Company associate, officers or representatives time) and reasonable expenses (including but not limited to legal fees) related to investigating such breach and collecting such fees.
+20. MISCELLANEOUS
+20.1. We may modify these Terms upon notice to You at any time through a service announcement or by sending email to Your primary email address. If We make significant changes to the Terms that affect Your rights, You will be provided with a notice of the changes either through the Platform or by email to Your primary email address. You may choose to terminate Your use of the Services or disable Your Account through the Platform if the Terms are modified in a manner that substantially affects Your rights in connection with use of the Services. Your continued use of the Services offered on the Platform following the posting of changes to this Terms will constitute Your specific and explicit consent and acceptance of those changes.
+20.2. Any violation of these Terms or any indecent action towards third party service provider will not be tolerated and shall attract prompt and punitive disciplinary action as per applicable laws enforced in India and including but not limited to termination of usage rights as well as legal action. Without limiting the Company of other remedies, You must pay the Company for all fees owed to Us and reimburse the Company for all losses and costs (including any and all the Company associate, officers or representatives time) and reasonable expenses (including but not limited to legal fees) related to investigating such breach and collecting such fees. In the event of termination, You will have no claim whatsoever against the Company in respect of any such suspension or termination of Your Account but You shall settle all dues owed to the Company upon the termination.
+20.3. You, acknowledges that no joint venture, partnership, employment, or agency or &quot;service provider-consumer&quot; relationship is crated or exists between You and the Company as a result of the Your use of the Platform.
+20.4. The Company's performance under these Terms is subject to existing laws and legal process and nothing contained in this Agreement is in derogation of the Company's right to comply with law enforcement requests or requirements relating to a member's use of the Company or information provided to or gathered by the Company with respect to such use.
+20.5. You shall not assign any rights or obligations arising under these Term, whether by operation of law or otherwise, without the prior written consent of the Company. You agree that the Company may subcontract certain aspects of the Service to third party service providers for the fulfilment of Services as per these Terms.
+20.6. Any claim or controversy that arises out of or relates to these Terms, or the breach of it, the same shall be referred to a person nominated by the Company whose decision shall be final and binding upon the parties hereto. Such references shall be deemed to be a submission to arbitration in accordance with the provisions of the Arbitration and Conciliation Act, 1996. The seat of arbitration shall be Hyderabad and the process shall be in English Language.
+20.7. You acknowledge that irreparable harm will result to the Company if You breach any of these Terms and You acknowledge and agree that such a breach would not be properly compensable by an award of damages. Accordingly, You agree that the Company shall be entitled to, in addition to other available remedies and damages, injunctive relief or other equitable relief enjoining such breach at the earliest possible date.
+20.8. In the event that any provision of these Terms is held to be invalid or unenforceable by a court or regulator of competent jurisdiction, the valid or enforceable portion thereof and the remaining provisions of these Terms will remain in full force and effect. The Company's failure to exercise or enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. Any waiver or failure to enforce any provision of these Terms on one occasion will not be deemed a waiver of any other provision or of such provision on any other occasion. All waivers must be in writing.
+20.9. These Terms shall be governed by the laws of India and in case of any dispute between you and the Company in relation to the Services, the courts of Hyderabad shall have exclusive jurisdiction.
+20.10. Export Control Compliance. The Services, content, and software provided by the Company may be subject to export laws and regulations of India and other countries. You represent and warrant that:
+You are not located in a country that is subject to a trade embargo by India or other applicable governments;
+You are not a prohibited end user under applicable export control and sanctions laws; and
+You will comply with all applicable export control and sanctions laws with respect to the Services, including export, re-export, or transfer restrictions.
+20.11. Entire Agreement. These Terms, together with the Privacy Policy, Payment Terms, and any other agreements expressly incorporated by reference herein, constitute the entire agreement between You and the Company concerning the Services and supersede all prior or contemporaneous communications, whether electronic, oral, or written between You and the Company regarding the Services.
+21. GRIEVANCE REDRESSAL
+In accordance with the Information Technology Act, 2000 read with the rules made there under and in accordance with the applicable laws of the country from which You access and use the Platform, the name and contact details of the Grievance Officer are provided below:
+Email: legal@hyperleap.ai
+If You have any grievance, then You may intimate the same to above e-mail address in the manner explained below:
+Sending a request in writing or through email signed with electronic signature identifying the grievance.
+Your contact information like address, telephone number, email address, etc. where You can be contacted.
+22. CONTACT US
+If You have any questions about these Terms, You can contact Us:
+By visiting this page on Our website: https://hyperleap.ai; or
+By sending Us an email: legal@hyperleap.ai.
+India Office (Headquarters):
+Hyperleap Software Technologies Private Limited
+T-Hub, Phase 2, Madhapur
+Hyderabad, Telangana 500081, India
+United States Office:
+Hyperleap AI Hub, Inc.
+8 The Green
+Dover, DE 19901, United States
+Explore Hyperleap AI
+AI customer service agents that answer FAQs, capture leads, and book appointments across Website, WhatsApp, Instagram, and Facebook Messenger.
+Solutions
+Conversational AI
+Customer Support Chatbot
+AI Receptionist
+Appointment Scheduling
+Multilingual Chatbot
+Knowledge Base Chatbot
+Instagram Chatbot
+Facebook Messenger Chatbot
+RAG Chatbot
+AI Agent vs Chatbot
+AI Agents by Industry
+For Ecommerce
+For Small Business
+Lead Generation
+No-Code Builder
+Integrations
+All Integrations
+Shopify
+WordPress
+Webflow
+Wix
+Squarespace
+Resources
+Learn
+Blog
+Comparisons
+Case Studies
+Templates
+Free Tools
+Glossary
+Help Center
+Feedback
+API Reference
+AI agents by industry
+Healthcare & wellness
+Dental
+Dentistry
+Dermatology
+Healthcare
+Chiropractic
+Physical Therapy
+Optometry
+Mental Health
+Med Spa
+Massage Therapy
+Pharmacy
+Veterinary
+Senior Living
+Home & field services
+Home Services
+HVAC
+Plumbing
+Electrical
+Roofing
+Cleaning
+Landscaping
+Pest Control
+Moving
+Professional services
+Accounting
+Legal
+Financial Advisors
+Insurance
+IT Services
+Staffing
+Property Management
+Beauty & fitness
+Beauty & Salons
+Nail Salons
+Tattoo Studios
+Fitness
+Yoga Studios
+Dance Studios
+Martial Arts
+Hospitality & events
+Hospitality
+Restaurants
+Catering
+Travel Agencies
+Wedding Venues
+Event Planning
+Photography
+Florists
+Retail, auto & local
+Automotive
+Auto Body
+Bakeries
+Real Estate
+Education
+Tutoring
+Daycare
+Pet Services
+AI agents for small businesses — answer customers, capture leads, and connect customer conversations to the modern AI workflows your team already uses.
+Subscribe to updates
+hello@hyperleap.ai
+Hyderabad, Telangana, India
+Products
+AI Agents
+MCP Server
+Why Hyperleap
+AI Suite
+AI Tools
+AI Assistants
+Prompts API
+Personas API
+Workspaces
+Pricing
+Company
+About Us
+Careers
+Contact Sales
+Request Demo
+Partners
+Roadmap
+Security
+Resources
+Help Center
+Tutorials
+Blog
+Comparisons
+Feedback
+256-bit
+AES Encryption
+99.9%
+Uptime
+2000+
+Active Users
+GDPR
+Compliant
+Meta
+Technology Provider & Business Partner
+Terms of Use
+Privacy Policy
+Payment Terms
+Refund Policy
+Cookie Policy
+DPA
+Data Transfers
+Sub-Processors
+Security
+Cookie Settings
+Hey AI, learn about us
+© 2026 Hyperleap® AI. All rights reserved.
+Hyperleap® is a registered trademark of Hyperleap Software Technologies Private Limited. All other trademarks, logos, and brand names are the property of their respective owners.

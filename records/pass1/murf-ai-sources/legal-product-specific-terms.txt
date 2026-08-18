@@ -1,0 +1,258 @@
+SOURCE: https://murf.ai/legal/product-specific-terms
+DATE ACCESSED: 2026-08-09
+METHOD: curl static fetch (server-rendered help/legal page, not a JS app-shell)
+ARCHIVE: https://web.archive.org/web/20260809194321/https://murf.ai/legal/product-specific-terms
+PAGE TITLE: Product Specific Terms (Murf API, Murf Dub, Service Credits)
+NETWORK NOTE: collection environment egresses from Turkey; this page's substantive text
+  (ToS/help-center prose) is not price-bearing in a way current-affected -- D-003 currency
+  check applies to the pricing page specifically (see pricing-rendered.txt).
+=== EXTRACTED TEXT (nav/boilerplate stripped where noted) ===
+Product Specific Terms
+Agents
+Back
+AGENTS
+Build production-ready AI voice agents that scale
+USECASES
+AI Receptionist →
+AI Recruiter ->
+AI Call Center ->
+AI Cold Calling ->
+AI Sales Agent ->
+AI SDR ->
+Consumer Lending ->
+AI Customer Service ->
+INDUSTRIES
+Conversational AI ->
+Banking ->
+Contact Center ->
+Dealerships ->
+Insurance ->
+Customer Support ->
+Get a Demo
+Models
+Back
+TEXT-TO-SPEECH APIS
+Fast & Efficient TTS API purpose built for voice agents
+AI speech model with precise voice controls
+OTHER APIS
+Voice Changer ->
+Dubbing Automation →
+Translation ->
+RESOURCES
+API Docs ->
+Browse API guides and endpoints
+ROI Calculator ->
+Calculate savings with Murf API
+TTS Benchmarks ->
+Compare latency, quality, and cost across TTS APIs.
+Get API Key
+Creators
+Back
+PRODUCTS
+Convert text to speech and create voiceovers 10x faster
+Translate videos & audio in 20+ languages with natural voices
+APPS & INTEGRATIONS
+Canva ->
+Google Slides →
+PowerPoint ->
+Adobe Captivate ->
+Murf TTS Reader ->
+Voices for Windows ->
+Explore Integrations
+RESOURCES
+AI Voice Generator ->
+Create studio-quality voiceovers with 200+ AI voices using our AI Voice Generator
+Voice Changer ->
+Turn recordings into studio-quality voiceovers with 200+ AI voices
+Voice Cloning ->
+Clone your voice to create accurate voiceovers for any project
+Case Studies →
+See how companies use Murf at scale
+Open Studio
+Enterprise
+Resources
+Back
+INITIATIVES
+Community ->
+Join builders and creators on Murf's Discord channel
+Startup Incubator →
+Start building with credits for early-stage startups
+Partnership Program ->
+Partner with Murf and earn from successful referrals
+SUPPORT & SECURITY
+Help Center ->
+Get support for Murf products and plans ‍
+Security Center ->
+See how Murf safeguards your voice data
+Benchmarks ->
+Compare Murf performance against leading APIs.
+Ethical AI ->
+Learn how Murf builds AI voices responsibly
+READING
+Case Studies ->
+Read success stories of our customers ‍
+Blog →
+Read the latest in Voice AI ‍
+Whitepapers →
+Resources published by Murf AI around Voice AI.Read the latest in Voice AI
+Webinars →
+On-demand sessions on voice agents and voice AI
+Pricing
+Book a Demo
+Login
+Sign Up
+SIGN UP
+Build with Murf’s voice APIs
+Open Studio to create voiceovers
+Open Dubbing to localize videos
+Login
+Build with Murf’s voice APIs
+Open Studio to create voiceovers
+Open Dubbing to localize videos
+Book a Demo
+Login
+Sign Up
+SIGN UP
+Open Studio to create voiceovers
+Build with Murf’s voice APIs
+Open Dubbing to localize videos
+LOGIN
+Open Studio to create voiceovers
+Build with Murf’s voice APIs
+Open Dubbing to localize videos
+Login ->
+Signup ->
+Contact Sales ->
+SIGN UP
+Open Studio to create voiceovers
+Build with Murf’s voice APIs
+Open Dubbing to localize videos
+LOGIN
+Open Studio to create voiceovers
+Build with Murf’s voice APIs
+Open Dubbing to localize videos
+Product Specific Terms
+December 3, 2024
+These terms apply to part of our Service offering specific Murf products, being Murf API and Murf Dub currently.
+9.1 Murf API
+9.1.1 Definitions
+(a) “API” means any machine accessible application programming interface made available by Murf which provides access to Murf’s designated text to speech AI models.
+(b) “Application” means any web or software service or application operated by you that utilizes or interacts with the API or the Generated Content.
+(c) “Generated Content” means on-demand content specifically generated for you with your Content using Murf’s text-to-speech AI models and delivered through the API.
+(d) “Use Case” means a consistent set of analyses, displays, or actions performed via the Application and utilizing the API.
+9.1.2 API Licenses
+(a) Subject to these API Terms, Murf grants you a limited, non-exclusive, non-transferable, non-sublicensable, worldwide, revocable license during the term of the User Agreement to use and make calls to the API to generate, access and distribute the Generated Content for the Use Cases that comply with this User Agreement.
+(b) You grant to Murf, a limited, royalty-free, non-transferable, non-sublicensable, worldwide and perpetual license to incorporate into the Services (including the API) any suggestions, enhancement requests, recommendations or other feedback Murf receives from you.
+9.1.3 API responsibilities
+(a) You will comply with all requirements of these API Terms along with the Murf’s Terms of Service and Privacy Policy in all uses of the API, the Generated Content and in providing inputs for generating any Generated Content. You will also comply with the technical and policy-implemented limitations of the API, including any explicit rate limitations on utilizing the API.
+(b) You will obtain API credentials (a “ Token ”) to access the API. You will keep such Token and all login information secure and use the Token as your sole means of accessing the API.
+(c) Failure to comply with these TOS can result in suspension and termination of your API and Generated Content access.
+9.1.4 API Usage
+Murf’s text-to-speech usage is based on the number of characters sent through the API to be synthesized into audio each month, including punctuation. The total number of characters in the input string are counted for billing purposes, including spaces. All Speech Synthesis Markup Language (SSML) tags are also included in the character count, except for <speak> and <voice> tags.
+‍
+9.2 Murf Dub
+9.2.1 Murf Dub is our product that allows You to translate Your data into multiple languages with original background retention and sounding like Consenting Speaker(s) (“Output”). Murf Dub produces Output using AI dubbing and You may opt for our quality control assessment of the Output within the Services (Murf Dub QC). A “Consenting Speaker” is a person whose likeness forms part of Your data. You agree and acknowledge that likeness of Consenting Speakers will be used by Murf to produce the Output in different languages using Murf Dub; Murf agrees that their likeness will not be used for any other purpose.
+9.2.2 You hereby commission Murf to create and make available Outputs by submitting to us Your data. By providing Your data to Murf, You expressly consents, represents and warrants to us as follows:
+(a) You have duly obtained valid and explicit written consent of Consenting Speaker(s) (or in the case of any deceased Consenting Speaker(s), by such person who holds such valid right to consent in accordance with applicable laws) along with other rightsholders to Murf’s use and storage of Your data for the purposes making Outputs available to You for use in accordance with this User Agreement;
+(b) You have duly obtained and/or grants irrevocable consents which Murf may require for the full use of Your data insofar as they allowed for learning by and within Murf’s AI model upon their input and that such consents shall survive termination of this User Agreement for any reason;
+(c) You have duly obtained and/or grants irrevocable waiver of any moral rights and other non-property rights in respect of Your data, also insofar as they allowed for learning by and within Murf’s AI model upon their input and that such consents shall survive termination of this User Agreement for any reason;
+(d) You or Consenting Speaker(s) have no rights, whether explicit or implied, or interest in Murf’s AI model because of and under this User Agreement; and
+(e) For Murf Dub QC, our personnel, service providers, subcontractor and Affiliates will listen to and analyze Your data and Outputs in order to test the quality and accuracy of the Outputs as well as make applicable modifications to the Outputs.
+9.2.3 Similar Outputs
+You acknowledge that Outputs provided to You may be similar or identical to outputs independently provided by Murf to others.
+9.2.4 Special Restrictions
+Without limiting any restrictions on use of the Service, You will not and will not permit anyone else to:
+(a) represent any Outputs as being approved or vetted by Murf,
+(b) represent any Outputs as being an original work or a wholly human-generated work, or
+(c) use the Service or Outputs for automated decision-making that has legal or similarly significant effects on individuals, unless it does so with adequate human review and in compliance with applicable laws.
+‍
+9.3 Service Credits
+You may need to prepay for Service through the purchase of credits (“Service Credits”). In connection with the Service Credits You agree that:
+(a) Murf may offer the option to prepay for certain Service through the purchase of credits (“Prepaid Service Credits”). Prepaid Service Credits represent the amount You have paid in advance for use of the respective Service.
+(b) Murf may also offer Service Credits free of charge as part of a promotional program rather than for purchase (“Promo Service Credits”). Promo Service Credits will not be applied against any sales, use, gross receipts, or similar transaction based taxes that may be applicable to You.
+(c) Service Credits are not legal tender or currency; are not redeemable, refundable, or exchangeable for any sum of money or monetary value; have no equivalent value in fiat currency; do not act as a substitute for fiat currency; and do not constitute or confer upon You any personal property right. Service Credits are non-transferable and may be used only in connection with the applicable Service.
+(d) All sales of Service, including sales of prepaid Service, are final. Service Credits are not refundable and expire one year after the date of purchase or issuance if not used, unless otherwise specified at the time of purchase.
+(e) Your available Service Credit balance may be reviewed within the account. You are solely responsible for verifying that the proper amount of Service Credits have been added to or deducted from Your balance. Your Service Credit balance is not a bank account, digital wallet, stored value account, or other payment device.
+(f) Murf prohibits and does not recognize any purported transfers, sales, gifts, or trades of Service Credits.
+(g) Murf reserves the right to suspend or terminate Your use of the Service in accordance with the Agreement, including suspending or terminating Your Service Credit balance, in compliance with applicable laws.
+‍
+Table of Contents
+Table of Contents
+9.1 Murf API
+9.2 Murf Dub
+9.3 Service Credits
+The Complete AI Voice Platform
+Murf AI helps developers, creators, and enterprises build production-grade voice agents and studio-quality content on proprietary speech models and infrastructure. Trusted by 10M+ users and 300+ Forbes 2000 companies across 190+ countries.
+See Demo
+Contact Sales
+Mail icon
+X icon
+Discord icon
+Instagram icon
+LinkedIn icon
+YouTube icon
+Address
+535 Mission Street, San Francisco, California 94105, USA
+Important Links
+Affiliates Partner Program
+Global Reseller Program
+Voice Actor Partnerships
+Blog
+Help Center
+Startup Incubator Program
+Contact Us
+Impressum
+About Us
+Ethical AI
+Cookie Preferences
+Security
+Legal
+Products
+Text to speech
+AI Voice Generator
+AI Voice Agent
+AI Receptionist
+Murf Falcon
+AI Call Center
+AI Cold Calling
+AI SDR
+AI Sales Agent
+AI Customer Service
+AI Dubbing
+TTS Benchmarks
+Savings Calculator
+Conversational AI
+Text to Speech API
+Transcription
+Voice Cloning
+Voice over Video
+Voice over Google Slides
+Voice over Powerpoint
+Voice Changer
+Accent Generator
+Canva add-on
+Speech to text
+Audio to text converter
+Audio Translator
+Video Translator
+Text Translator
+Voice Styles
+How to create
+E-Learning
+Advertisements
+Explainer Videos
+Presentations
+Audiobooks
+Product Demos
+Youtube Videos
+Podcasts
+Spotify Ads
+IVR Voices
+Video Games
+Animation Videos
+Training Videos
+Documentary
+Social Media Videos
+Learning and Development Videos
+© 2026 Murf AI. All right reserved
+Keeping your data safe

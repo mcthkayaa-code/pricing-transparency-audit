@@ -1,0 +1,76 @@
+SOURCE: https://www.revid.ai/features
+ACCESSED: 2026-08-13
+CAPTURE METHOD: local verbatim capture (full main.textContent via javascript_tool)
+KIND: docs (official product/features page with an embedded FAQ block)
+
+=== KEY QUOTES (verbatim) ===
+
+"Can I cancel my subscription at any time? Yes, you can cancel your subscription at any time.
+You can do so by going to your account settings. And if you need help with anything, our
+(human) support team is here to assist you."
+-> cancellation_self_serve = self_serve_documented (explicit account-settings self-serve route,
+   the only place in any document checked that states the mechanism, not just "you can cancel").
+
+"Do I own the content created? Yes, 100%! You own all the content you create with Revid.ai,
+forever. Every video, script, and asset generated through our platform belongs entirely to you.
+There are no hidden clauses or shared ownership - your creative work is yours to use, modify,
+and monetize as you see fit."
+-> output_ownership_statement = user_owns. Third independent official source stating this,
+   agreeing with the Terms of Service ("Users 100% own the content they create...") and the
+   pricing page's repeated "100% content ownership" tag. Also note "...yours to use, modify,
+   AND MONETIZE as you see fit" -- this line alone is close to a commercial-use statement too,
+   though the cleaner explicit commercial statement is the one quoted next.
+
+"What pricing plans do you offer, and what's included? We offer several flexible subscription
+plans designed to fit businesses of all sizes. Our most popular plan starts at just $39/month
+and includes 2,000 credits, access to all premium features, and priority support. To know more
+about how credits are used, visit our blog post about this topic. ALL PLANS COME WITH our AI
+video generation technology, ready to use tools, and COMMERCIAL USAGE RIGHTS."
+-> commercial_use_lowest_tier = lowest_paid. Explicit, unambiguous, and stated to cover "all
+   plans" (no free plan exists, so "all plans" = every paid tier including the entry tier).
+   This is the only document among those checked (pricing page, ToS, /faq, /docs, /features)
+   that uses the literal phrase "commercial usage rights".
+-> Also a THIRD independent restatement of the $39/2,000-credit "most popular" plan (matches
+   Growth on the live pricing page and the /faq page), still without naming "Hobby".
+
+=== CONFIRMED ABSENT FROM THIS PAGE (checked via regex over full text) ===
+"trial" -> not found. "watermark" -> not found. "hobby" -> not found. "renew"/"refund" -> not
+found. failed-generation language -> not found.
+
+=== FULL PAGE TEXT (whitespace-collapsed) ===
+Showcase Features AI Video Tools Music Video Creation Pricing Sign in Features Free AI Video
+Features revid.ai' diverse features makes video creation effortless. From text and website
+content to social media posts, turn any idea into captivating video content! Create videos now
+Creators publish 30,000+ videos a month with Revid
+01 Set It & Forget It Automate Video Creation From Any Content Source [...]
+02 Edit by Typing AI Video Editing Tools: Edit Smarter, Not Harder [...]
+03 One Dashboard, Every Platform Schedule & Publish Videos to YouTube, TikTok & Instagram [...]
+04 15+ AI Video Tools AI Video Generator: Create Any Video in Minutes [...]
+FAQs
+Frequently Asked Questions
+How can Revid.ai transform my content creation game? [...]
+Can I cancel my subscription at any time? Yes, you can cancel your subscription at any time.
+You can do so by going to your account settings. And if you need help with anything, our
+(human) support team is here to assist you.
+Do I own the content created? Yes, 100%! You own all the content you create with Revid.ai,
+forever. Every video, script, and asset generated through our platform belongs entirely to you.
+There are no hidden clauses or shared ownership - your creative work is yours to use, modify,
+and monetize as you see fit.
+I'm not a video editing pro. Can I still use Revid.ai? [...]
+What kind of content can I create with Revid.ai? [...]
+How much control do I have over the AI-generated content? [...]
+How can Revid.ai help me grow my audience and business? [...]
+What pricing plans do you offer, and what's included? We offer several flexible subscription
+plans designed to fit businesses of all sizes. Our most popular plan starts at just $39/month
+and includes 2,000 credits, access to all premium features, and priority support. To know more
+about how credits are used, visit our blog post about this topic. All plans come with our AI
+video generation technology, ready to use tools, and commercial usage rights.
+How does Revid.ai compare to other video creation tools? [...]
+Is my data safe with Revid.ai? [...]
+How much time and effort can Revid.ai save me? [...]
+How does Revid.ai stay ahead of the curve in video creation? [...]
+What if I need help or have questions? [...] We offer live chat support during business hours.
+What technical requirements do I need to use Revid.ai? [...]
+View Complete Help Center [links to /faq]
+Your Ideas Deserve to Be Seen [...] Create your first video / No credit card required
+[footer links: Terms of Service /terms, Privacy Policy /policy, Sitemap /site-map]

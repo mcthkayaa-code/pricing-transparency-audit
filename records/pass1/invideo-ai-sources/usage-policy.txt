@@ -1,0 +1,47 @@
+SOURCE: https://invideo.io/usage-policy/ (Acceptable Use Policy, "AUP", incorporated by reference
+  into the Terms and Conditions)
+ACCESSED: 2026-08-09
+METHOD: Rendered read via headless browser, document.body.innerText (19964 chars), full-document
+  keyword scan performed against the complete innerText per codebook's "read in full" requirement
+  for unquantified_limit_clause.
+ARCHIVE: https://web.archive.org/web/20260809164325/https://invideo.io/usage-policy/
+
+=== SECTION 7. Monitoring, Enforcement and Reporting (verbatim) ===
+7.1 Invideo may monitor use of the Services (including by automated means) to detect, investigate
+and prevent violations of this AUP or the Terms of Service. Invideo may apply logging, watermarking,
+automated content filters and other reasonable technical and organisational measures for these
+purposes.
+
+7.2 If Invideo reasonably determines that you or anyone accessing the Services through your account
+has violated this AUP, the Terms of Service or applicable laws, or that your use of the Services
+poses a credible risk of harm to Invideo, the Services, other users or third parties, Invideo may
+take one or more of the following actions, without prejudice to any other rights or remedies
+available to Invideo:
+7.2.1 require you to cease or remedy the offending use and, where appropriate, remove, modify or
+disable access to offending content;
+7.2.2 remove, disable or restrict access to specific content or functionalities;
+7.2.3 temporarily suspend or throttle your access to some or all of the Services or your account;
+7.2.4 terminate your account or subscription in accordance with the Terms of Service;
+7.2.5 report suspected unlawful activities or content to relevant authorities and cooperate with...
+
+FINDING: The "suspend or throttle" power in 7.2.3 is gated on a VIOLATION or HARM-RISK trigger
+("has violated this AUP, the Terms of Service or applicable laws, or that your use... poses a
+credible risk of harm") — it is a conduct/content enforcement mechanism, not a volume- or
+intensity-of-use cap. Codebook `unquantified_limit_clause` explicitly excludes this: "A prohibition
+on illegal or abusive content is not a usage limit and does not trigger present. This variable
+covers volume and intensity of use, not conduct."
+
+=== FULL-DOCUMENT KEYWORD SCAN ===
+"fair use"        -> NOT FOUND
+"reasonable use"  -> NOT FOUND
+"excessive"       -> NOT FOUND
+"abuse"           -> found only in content-prohibition context (child sexual abuse material,
+                     "harmful, abusive or unsafe" content categories) — conduct, not volume/rate.
+"throttl"         -> found only in 7.2.3, quoted above (violation-gated, not a volume/fair-use cap).
+"rate limit"      -> NOT FOUND
+"discretion"      -> NOT FOUND
+
+CONCLUSION: No fair-use, reasonable-use, excessive-use, or discretionary volume-throttling clause
+found in either the Terms and Conditions or this Acceptable Use Policy, both read in full via
+complete-text keyword scan. unquantified_limit_clause = absent (documented absence, full points
+per codebook's rule G0 exception).

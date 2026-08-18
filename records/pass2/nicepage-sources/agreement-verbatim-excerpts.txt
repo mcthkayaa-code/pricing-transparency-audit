@@ -1,0 +1,53 @@
+Source: https://nicepage.com/agreement ("End-User License Agreement For Nicepage")
+Accessed: 2026-08-15
+Archive: https://web.archive.org/web/20260815122631/https://nicepage.com/agreement
+Method: rendered read, full-page text extraction (document read to the end).
+
+Full page read. Operative excerpts below, verbatim.
+
+--- Miscellaneous, item 1 (refund) ---
+"The Nicepage.com website is under no obligation to refund your subscription fee under any
+circumstances. In case Nicepage.com determines that you are entitled to a refund of all or part of
+your subscription fee, such refund shall only be made to the credit card account originally used
+by you to purchase your Subscription. If your Subscription was paid by check, your refund would be
+made by check."
+
+--- Miscellaneous, item 2 (use of output / non-transferability) ---
+""Non-transferable" as used herein means that except as specifically provided in this Agreement,
+you may not sell, rent, loan, give, sub-license, or otherwise transfer to anyone the Work or the
+right to use the Work. However, the Work you produce with the Work must be used for yourself, your
+direct employer, client, or customer, who must be the end-user of your Work."
+(Read as: the templates/assets ("Work") you download are non-transferable, but what YOU BUILD with
+them may be used for yourself / employer / client / customer -- i.e. commercial delivery to a
+client is contemplated and not restricted to any specific paid tier. No ownership statement for
+the buyer's own created website/output is made anywhere in this document -- this clause addresses
+USE, not OWNERSHIP.)
+
+--- Miscellaneous, item 3 (seat/device restriction) ---
+"You may use your Subscription on ONE COMPUTER at any one time. If any two users on two separate
+computers use the same username and password, we reserve the right to terminate that subscriber's
+account without a refund or prior notice."
+(A concurrent-device restriction, itself already quantified ("one computer"); not treated as an
+unquantified fair-use/throttling clause.)
+
+--- Bold/caps block near the end (breach termination) ---
+"NICEPAGE.COM SHALL BE UNDER NO OBLIGATION TO REFUND ANY FEES PAID BY YOU IN THE EVENT THAT YOUR
+ACCOUNT IS TERMINATED BY REASON OF A BREACH ANY SUCH BREACH OR BREACHES."
+(Scoped specifically to termination-for-breach, not the general refund case.)
+
+No statement anywhere in this document about: auto-renewal default state, self-serve cancellation
+route, or an explicit ownership statement for the buyer's own generated website.
+
+No "fair use" / "reasonable use" / "excessive use" / "abuse threshold" / discretionary-throttling
+clause tied to usage VOLUME found anywhere in the full document (read to the end). Restrictions
+list (13 items) is entirely about conduct/redistribution/misuse of downloaded template assets, not
+about volume or intensity of product use.
+
+--- Tension with terms-verbatim-excerpts.txt, logged per protocol (both URLs, both quotes) ---
+/terms operates a described refund-request mechanism (14-day window, stated-reason requirement,
+review). /agreement's "no obligation... under any circumstances" is reservation-of-rights language
+that nonetheless goes on to describe HOW an approved refund is paid out (implying approved refunds
+do occur) rather than asserting none are ever given. Coded refund_policy_exists = yes /
+refund_conditions = conditional / refund_window_days = 14 on the reading that these two documents
+describe one coherent discretionary-refund policy rather than two incompatible positions; the
+tension is recorded here and in conflict_note so a reader can judge the call independently.

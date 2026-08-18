@@ -1,0 +1,82 @@
+URL: https://www.recraft.ai/docs/plans-and-billing/credits
+Date accessed: 2026-08-10
+Method: Rendered read (browser render of Mintlify-hosted docs page). Cookie choice: non-essential cookies already declined earlier in session.
+Purpose: authoritative rate table for credit_unit_defined / credit_to_output_rate_published / credit_rate_location / credit_rollover_policy / failed_generation_charge_policy. This page supersedes the 2024 blog post (see conflict note in record) — see recraft-blog-pricing-update-2024-STALE.txt for the superseded source.
+
+--- document.body.innerText ---
+Plans and billing / Credits
+Recraft uses credits to power all image generation and editing operations. Paid plans include a monthly credit allowance, which resets at the start of each billing cycle.
+Credits are consumed based on the type of action performed. The table below summarizes the typical credit costs.
+The price depends on the selected model, and all prices are shown per image. Some operations have a base cost and are multiplied by the model price.
+* Multiplies by the selected model price.
+For external models, please see here.
+
+Action | Credits
+Extract prompt | 1
+Creative upscale | 20
+Crisp upscale | 1
+Erase area | 1
+Generate a mockup | 2
+Modify area / Outpaint | 1* equals the model price (see Recraft Studio)
+Mockupize | 2
+Generate mockup | 2
+Generate image from prompt | 1* equals the model price (see Recraft Studio)
+Generate image set | 1* equals the model price (see Recraft Studio)
+Remove background | 1
+Vectorization | 1
+Remix | 1* equals the model price (see Recraft Studio)
+Replace background | 1* equals the model price (see Recraft Studio)
+Image Editing | 1* equals the model price (see Recraft Studio)
+Generate image variations | 1* equals the model price (see Recraft Studio)
+Exploration | 2
+Generate a video from a prompt | 1* equals the model price (see Recraft Studio)
+Generate a video from frames and a prompt | 1* equals the model price (see Recraft Studio)
+Upscale with external models | 1* equals the model price (see Recraft Studio)
+Prompt enhancer | 0
+
+Credits in AI Chat mode
+In AI Chat mode, each chat message costs credits. The cost grows progressively as the conversation gets longer, because the model processes the full chat context with every new message.
+
+Credit types and expiration
+Subscription credits reset monthly (or daily for Free users) and do not roll over.
+Top-up credits never expire and remain available until used, even if the subscription ends.
+When subscription credits are depleted, top-up credits are used automatically.
+Credits can be earned through the referral program or purchased as needed (top-ups are available to paid users only).
+
+Credit top-ups
+Top-up credits can be purchased at any time, even before subscription credits are fully used. It increments by 200, 400, 800, and 1600 credits. They never expire and are used after your monthly credits, and are only available to users on paid plans.
+Notes:
+Top-up packs are available in fixed increments of 200, 400, 800, and 1600.
+There is no limit to the number of top-ups that can be purchased.
+Top-up credits are preserved across billing periods and subscriptions.
+Some models are provided by external providers and may have different credit costs. See the External Models page for more details.
+
+[No statement anywhere on this page about credits being charged or not charged on a failed/errored generation.]
+
+--- External models rate table (https://www.recraft.ai/docs/recraft-models/external-models), same access date, same method ---
+Credit consumption varies depending on the selected model. The exact number of credits is displayed in the product when you choose a model.
+Provider | Credits
+OpenAI | 2-30 credits
+Google | 5-40 credits
+Black Forest Labs | 1-18 credits
+Alibaba | 1-12 credits
+ByteDance | 7-8 credits
+Ideogram | 4-17 credits
+ImagineArt | 8 credits (fixed)
+HiDream | 6 credits (fixed)
+Grok Imagine | 4 credits
+NVIDIA | 7 credits (fixed)
+Krea | 2-8 credits
+Note: "The exact credit cost for each model is shown in the Recraft interface when you select it and may vary depending on the chosen model."
+
+--- API pricing table (https://www.recraft.ai/docs/api-reference/pricing), same access date, same method — DIFFERENT metering currency (API Units / USD, not Studio "credits") ---
+Raster image generation - Recraft V4.1: $0.035 / 35 units / per image
+Raster image generation - Recraft V4.1 Pro: $0.21 / 210 units / per image
+Vector image generation - Recraft V4.1 Vector: $0.08 / 80 units / per image
+Vector image generation - Recraft V4.1 Pro Vector: $0.30 / 300 units / per image
+Vector image generation - Recraft V2 Vector: $0.044 / 44 units / per image
+Raster image generation - Recraft V2: $0.022 / 22 units / per image
+(vector consistently ~2x-2.3x the raster rate for the same model generation, across every model tier listed)
+Image vectorization: $0.01 / 10 units / per request
+Image background removal: $0.01 / 10 units / per request
+This is the API product's own metering system (1,000 API units = USD $1.00, prepaid non-refundable non-cancellable packages), separate from the Studio subscription "credits" used by the Free/Basic/Pro/Teams plans.

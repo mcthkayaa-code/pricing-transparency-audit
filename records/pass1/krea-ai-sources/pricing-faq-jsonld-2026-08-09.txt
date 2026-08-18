@@ -1,0 +1,39 @@
+SOURCE EVIDENCE FILE (FAQPage JSON-LD, full text)
+URL: https://www.krea.ai/pricing
+Accessed: 2026-08-09
+Method: extracted from the application/ld+json FAQPage schema block embedded in the page's own served HTML (same document as pricing-static-fetch-2026-08-09.html). This is vendor-authored structured data describing the same accordion FAQ visible on the rendered page; content matches what a visitor sees on expanding each accordion item.
+Archive: https://web.archive.org/web/20260809175002/https://www.krea.ai/pricing
+
+Q: What's the difference between plans?
+A: Free plan is for basic use with pay-as-you-go compute units. Basic, Pro, and Max are individual plans with increasing compute units, concurrency, and features like commercial license and priority jobs. Business is for growing teams with unlimited members — all members get full benefits at no extra cost per member including usage analytics, commercial license, and priority email support. Enterprise offers unlimited members with custom compute packages, dedicated support, SAML Single Sign-On (SSO), and advanced analytics.
+
+Q: How do compute units work?
+A: Workspaces share a pool of compute units that can be allocated across all members. Business plans offer flexible packs from 20k to 1.5M units per month at discounted rates. Enterprise plans have custom packages with volume discounts. You can monitor usage per member and set individual limits in Business plans.
+
+Q: How do credit rollovers work?
+A: Basic, Pro, and Max plans allocate compute units monthly and they do not roll over. Business and Enterprise plans allow unused compute credits to roll over to the next billing period with customizable rollover periods. Contact our sales team to learn more.
+
+Q: What is SAML SSO and why do I need it?
+A: SAML Single Sign-On (SSO) allows members to access Krea using their existing company credentials (Google Workspace, Microsoft Azure AD, Okta, etc.). This improves security, simplifies user management, ensures compliance with corporate IT policies, and provides centralized access control. Available in Enterprise plans.
+
+Q: How does billing work?
+A: Plans are billed monthly or yearly with centralized payment management. All members' usage is consolidated into a single invoice, and compute units are shared across the entire workspace. You can choose between different compute packs based on your needs, and unused units expire at the end of each billing cycle.
+
+Q: What support options are available?
+A: Free includes community support via Discord. Business plans include priority email support with faster response times. Enterprise plans include dedicated support, a dedicated account manager, and custom onboarding.
+
+Q: Do plans include a commercial license?
+A: Yes, Basic, Pro, Max, Business, and Enterprise plans include a commercial license that allows you to use all generated content for commercial purposes without restrictions. This includes images, videos, and other AI-generated assets for marketing, advertising, products, and client work.
+
+Q: Can I switch between plans?
+A: Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately and billing is prorated. When upgrading, you'll only pay the difference for the remainder of your billing cycle. When downgrading, credits will be applied to future invoices.
+
+Q: Is Business plan seat-based or team-based?
+A: Business plan is team-based, not seat-based. You pay for the compute pack you choose, not the number of members. Add as many members as you need at no additional cost. Every member automatically receives all Business plan features and entitlements. All members share the workspace's compute units from your chosen pack.
+
+Q: How do I add or remove members?
+A: Workspace administrators can add or remove members through the settings dashboard. New members receive an invitation email and gain immediate access once they accept. Removed members lose access to workspace resources but retain their personal accounts and any personal creations.
+
+Q: What happens if we exceed our compute units?
+A: Free plan includes a daily compute allowance that refills every day — once it's used up, you'll need to wait for the next refill or upgrade to a paid plan. Business plans allow you to purchase additional compute packs or upgrade to a higher tier — adding more members doesn't increase your cost. Enterprise plans have auto top-ups that ensure uninterrupted service with volume discounts on additional usage.
+

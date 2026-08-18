@@ -1,0 +1,79 @@
+HTTP/2 302 
+server: nginx
+date: Thu, 06 Aug 2026 13:21:19 GMT
+content-type: text/html; charset=utf-8
+content-length: 286
+location: https://web.archive.org/web/20260806132059/https://www.aiva.ai/
+x-app-server: wwwb-app223-dc8
+x-ts: 302
+x-tr: 24379
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-save-SERVER=wwwb-app223; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 302 
+server: nginx
+date: Thu, 06 Aug 2026 13:21:20 GMT
+content-type: text/plain; charset=utf-8
+content-length: 0
+x-archive-redirect-reason: found capture at 20260804151751
+location: https://web.archive.org/web/20260804151751/https://www.aiva.ai/
+server-timing: captures_list;dur=0.741327, exclusion.robots;dur=0.054440, exclusion.robots.policy;dur=0.037218, esindex;dur=0.009008, cdx.remote;dur=176.429007, LoadShardBlock;dur=94.385567, PetaboxLoader3.datanode;dur=64.302523, PetaboxLoader3.resolve;dur=11.095017
+x-app-server: wwwb-app244-dc8
+x-ts: 302
+x-tr: 308
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app244; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Thu, 06 Aug 2026 13:21:21 GMT
+content-type: text/html; charset=utf-8
+x-archive-orig-server: nginx/1.14.0 (Ubuntu)
+x-archive-orig-date: Tue, 04 Aug 2026 15:17:51 GMT
+x-archive-orig-content-length: 12167
+x-archive-orig-connection: keep-alive
+x-archive-orig-x-powered-by: Express
+x-archive-orig-etag: W/"2f87-wZSf8tHePLHb0D/EEqSDViv81dU"
+x-archive-orig-strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-archive-orig-x-frame-options: sameorigin
+x-archive-orig-x-content-type-options: nosniff
+x-archive-orig-x-xss-protection: 1; mode=block
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+memento-datetime: Tue, 04 Aug 2026 15:17:51 GMT
+link: <https://www.aiva.ai/>; rel="original", <https://web.archive.org/web/timemap/link/https://www.aiva.ai/>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://www.aiva.ai/>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: archiveteam_archivebot_go_20260804182123_2fa054ab/longzijun.wordpress.com-inf-20260804-141351-1t58g-00000.warc.gz
+server-timing: captures_list;dur=0.444985, exclusion.robots;dur=0.030382, exclusion.robots.policy;dur=0.020952, esindex;dur=0.008091, cdx.remote;dur=12.617749, LoadShardBlock;dur=147.961494, PetaboxLoader3.datanode;dur=88.929879, PetaboxLoader3.resolve;dur=187.124287, load_resource;dur=167.013638
+x-app-server: wwwb-app257-dc8
+x-ts: 200
+x-tr: 631
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app257; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

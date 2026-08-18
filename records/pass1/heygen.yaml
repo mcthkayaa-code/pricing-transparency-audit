@@ -1,0 +1,120 @@
+status: complete
+product_id: heygen
+product_name: HeyGen
+category: AI avatar
+product_status: active
+paid_submission: "no"
+entry_tier_name: Creator
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+recheck_date: not_applicable
+primary_source_url: https://www.heygen.com/pricing
+archive_url: https://web.archive.org/web/20260807082602/https://www.heygen.com/pricing
+archive_status: archived
+source_urls:
+  - https://www.heygen.com/pricing
+  - https://www.heygen.com/terms
+  - https://help.heygen.com/en/articles/8304807-refund-process-and-policy
+  - https://help.heygen.com/en/articles/8304328-how-to-cancel-or-pause-your-heygen-subscription
+  - https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained
+  - https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen
+  - https://help.heygen.com/en/articles/9999710-billing-payments-invoice
+  - https://developers.heygen.com/docs/pricing
+default_display_state: "Pricing page loads with the plan-type toggle on 'Free/Creator/Pro' (individuals) and the billing-period toggle on Monthly (not Yearly); visible headline figures are $0/mo, $29/mo, $49/mo, $149/mo+$20/seat. Confirmed via SSR HTML (monthly figures render before any JS toggle interaction), the toggle's active-state CSS class sitting on 'Monthly' not 'Yearly', and the page's own FAQ text naming $29/month as Creator's primary figure with $24/month parenthetically as the annual alternative. Read after declining non-essential cookies were not prompted (no consent banner encountered)."
+sources:
+  - { url: "https://www.heygen.com/pricing", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807082602/https://www.heygen.com/pricing", note: "Fetched with Accept-Language: en-US,en;q=0.9 (protocol D-003 currency check); page rendered USD figures directly, so no further currency check needed. Page includes an embedded FAQPage JSON-LD block and a Next.js RSC data payload that both restate pricing/credit facts verbatim; treated as part of this same document since both are served inline in the page source." }
+  - { url: "https://www.heygen.com/terms", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807084322/https://www.heygen.com/terms", note: "Read in full for the unquantified-limit-clause check (rule requires full read, not a skim)." }
+  - { url: "https://help.heygen.com/en/articles/8304807-refund-process-and-policy", kind: refund, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807084356/https://help.heygen.com/en/articles/8304807-refund-process-and-policy", note: "Help-center billing article (protocol 6.2 rank 2 for contractual class), not a standalone dedicated policy page at rank 1." }
+  - { url: "https://help.heygen.com/en/articles/8304328-how-to-cancel-or-pause-your-heygen-subscription", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807084449/https://help.heygen.com/en/articles/8304328-how-to-cancel-or-pause-your-heygen-subscription" }
+  - { url: "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807084536/https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained" }
+  - { url: "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807084611/https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen" }
+  - { url: "https://help.heygen.com/en/articles/9999710-billing-payments-invoice", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807084648/https://help.heygen.com/en/articles/9999710-billing-payments-invoice" }
+  - { url: "https://developers.heygen.com/docs/pricing", kind: other, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807090724/https://developers.heygen.com/docs/pricing", note: "API product docs, a separate product line per help article 15125761 ('These are separate from our API plans'). Checked for failed-generation/error billing language; none found. Not cited as evidence for any coded value." }
+variables:
+  headline_price_usd: { value: "29.00", source: "https://www.heygen.com/pricing", evidence: "Creator card reads 'Creator $29 / mo' as the visible figure in the page's default (Monthly) display state; FAQ JSON-LD confirms 'the Creator plan costs $29/month (or $24/month if you pay annually)'." }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://www.heygen.com/pricing", evidence: "Default toggle state is Monthly (not Yearly); Creator's headline '$29 / mo' is the monthly-billed figure, not a 'per month, billed annually' figure. No per-seat qualifier attaches to Creator (single-user plan)." }
+  first_charge_amount_usd: { value: "29.00", source: "https://www.heygen.com/pricing", evidence: "Default display state is Monthly (not annual), so the first charge is the stated monthly figure itself, $29/mo; no annualization applies since the annual-default condition in rule 2 is not met. No mandatory add-on amount to add (see mandatory_addon_present)." }
+  mandatory_addon_present: { value: "no", source: "https://www.heygen.com/pricing", evidence: "Creator's feature list and the credit-plan help article list no required extra charge; the only per-seat add-on charge ($20/seat/month) attaches to the Business plan, not Creator. Help article states 'Creator does not support one-time credit purchases' -- Creator has no overage-purchase mechanism at all, mandatory or optional." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://www.heygen.com/pricing", evidence: "The headline figure ($29/mo) is the Monthly-billed price in the page's default state and does not depend on annual prepayment, so no annual-prepayment condition attaches to it (rule 1)." }
+  annual_default_toggle: { value: monthly_preselected, source: "https://www.heygen.com/pricing", evidence: "Server-rendered HTML shows Monthly-billed figures ($29/mo, $49/mo, $149/mo) before any script interaction; the Monthly button carries the active text-color class ('text-heygen-gray-black') while Yearly carries the inactive class ('text-heygen-gray-slate')." }
+  free_plan_exists: { value: "yes", source: "https://www.heygen.com/pricing", evidence: "'Free $0/mo' plan card, standing alongside paid tiers, no expiry stated. FAQ: 'You can use HeyGen for free and generate up to 3 videos a month, no credit card required.'" }
+  free_plan_cap_documented: { value: some_quantified, source: "https://www.heygen.com/pricing", evidence: "Quantified: '3 videos per month' (rate), 'Videos up to 1 min' (standing), '1 Custom Digital Twin' (standing). Not quantified: FAQ states the Free plan gives 'limited trial access to premium features like Avatar IV, Video Agent, and lip-sync translation' -- 'limited' with no number, per codebook section 5.1's own non-qualifying example." }
+  free_plan_cap_value: { value: "3 videos per month | 1 minute per video | 1 custom digital twin", source: "https://www.heygen.com/pricing", evidence: "Quantified caps only, per free_plan_cap_documented evidence." }
+  free_plan_watermark: { value: "yes", source: "https://www.heygen.com/pricing", evidence: "Plan-comparison grid 'Watermark removal' row: cross icon (aria-label='cross') under Free, check-circle icons under Creator and Pro. Creator's own feature bullet list separately names 'Watermark removal' as an included (i.e., newly granted) feature, confirming it is not present on Free." }
+  free_plan_duration: { value: perpetual, source: "https://www.heygen.com/pricing", evidence: "Free is listed as a standing plan alongside the paid tiers with no expiry stated anywhere in the read documents; FAQ frames it as an ongoing monthly allowance ('generate up to 3 videos a month'), not a time-limited offer." }
+  trial_exists: { value: "no", source: "https://www.heygen.com/pricing", evidence: "No paid-tier trial is offered anywhere on the pricing page or in the terms/help articles read; the only 'trial' language found is the Free plan's own FAQ description ('limited trial access to premium features'), which per decision rule 1 is the free plan, not a time-limited trial of a paid tier. 'terms.clean.txt' has zero occurrences of 'trial'." }
+  trial_card_required: { value: not_applicable, source: "https://www.heygen.com/pricing", evidence: "No trial exists (trial_exists = no)." }
+  trial_length_days: { value: not_applicable, source: "https://www.heygen.com/pricing", evidence: "No trial exists (trial_exists = no)." }
+  trial_auto_converts: { value: not_applicable, source: "https://www.heygen.com/pricing", evidence: "No trial exists (trial_exists = no)." }
+  credit_system_present: { value: "yes", source: "https://www.heygen.com/pricing", evidence: "FAQ: 'Credits are HeyGen's single currency for video and asset creation... Every paid plan includes a monthly credit allocation, which you can use across different HeyGen features.' Intermediate currency converting into multiple output types, not an allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen", evidence: "'Avatar III 1 minute = 3 credits', 'Avatar IV / Avatar V 1 minute = 20 credits', 'Video Translation 1 minute = 5 credits', 'Generate Look 1 look = 1 credit' -- explicit conversions of credits into named output units, also restated on the pricing page FAQ." }
+  credit_to_output_rate_published: { value: partial, source: "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen", evidence: "Rates are published for the principal output (video) but only as a set of discrete per-engine/per-feature rates with no rate designated as the default: Avatar III 3 cr/min, Avatar IV/V 20 cr/min, Custom Expressive Motion 40 cr/min, Video Translation 5 cr/min, Generate Look 1 cr/look. No stated rule for which rate governs 'the' cost of a video, matching the range case in credit_to_output_rate_published rule 3." }
+  credit_rate_location: { value: multiple, source: "https://www.heygen.com/pricing", evidence: "Rates appear in the pricing-page FAQ (JSON-LD) and are restated/expanded in two help-center articles (15125761, 15126059)." }
+  cost_per_output_unit: { value: per_video_minute, source: "https://www.heygen.com/pricing", evidence: "HeyGen sells AI-generated video; plan limits and credit rates are both expressed per video-minute ('Videos up to 30 mins', 'Avatar III 1 minute = 3 credits')." }
+  cost_per_output_computable: { value: partial, source: "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen", evidence: "Every input needed (Creator price $29/mo, 600 credits/mo, per-engine credit rates) is published, but the rates form a range with no default designated (see credit_to_output_rate_published), so the calculation yields a range rather than one figure -- rule 8." }
+  computation_assumptions: { value: "Creator tier, $29/mo billed monthly (default state), 600 credits/mo; price and allowance already same period, no conversion needed. Credit rate varies by mode (1-40 credits/min per docs), no default designated, so cost/min is a range not one figure; full range in coder_note." }
+  credit_rollover_policy: { value: partial_rollover, source: "https://www.heygen.com/pricing", evidence: "FAQ: 'Yes. Monthly subscribers' unused credits roll over for one more month. Annual subscribers' credits accumulate until their annual renewal date. Credits do not carry over after cancellation.' Carryover is capped (one extra month on monthly billing; resets at annual renewal), not unlimited." }
+  failed_generation_charge_policy: { value: unknown, source: "https://www.heygen.com/terms", evidence: "No statement found in the terms, the pricing page, or the four help-center billing/credit articles read about whether a failed, errored, or empty generation consumes credits. Searched all read documents for fail/error/unsuccessful/'credited back' with no relevant hits." }
+  auto_renewal_default: { value: "on", source: "https://www.heygen.com/terms", evidence: "Section 7a: 'your Recurring Subscription will automatically renew until you cancel it'; 'If you do not cancel, your Recurring Subscription will automatically renew at the then-current price at the time of renewal and for the same duration as the initial subscription term.'" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://www.heygen.com/terms", evidence: "Explicit 'automatically renew' language found only in Terms of Service section 7a. The pricing-page FAQ references 'your next billing renewal' when describing cancellation, which presupposes recurring billing but does not itself state that renewal is automatic; not counted as a second affirmative disclosure. Help-center billing article (9999710) does not use renewal language either." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://www.heygen.com/terms", evidence: "Terms and the billing help article were read in full; no commitment to notify before a routine renewal charge was found. The only notice commitment found is for price increases specifically: 'HeyGen may change the prices charged for Recurring Subscriptions at any time... we will provide you with prior written notice of any such changes' -- this covers price changes, not routine renewal notice, per the decision rule's distinction." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://www.heygen.com/terms", evidence: "Section 7d: 'Payments are non-refundable, except where required by law.' Terms of service ranks first for contractual variables; see conflict_note for the help center's lower-ranked, more permissive discretionary-refund practice." }
+  refund_window_days: { value: 0, source: "https://www.heygen.com/terms", evidence: "Governing source (terms) states payments are non-refundable except where required by law, with no stated day-window of its own; coded 0 per refund_window_days' own value list ('0 where no refunds are given'), consistent with refund_policy_exists. See conflict_note for the help center's stated 15-day (web) / 14-day (Apple) discretionary windows." }
+  refund_conditions: { value: not_applicable, source: "https://www.heygen.com/terms", evidence: "No refund is available under the governing (terms) source's stated policy, so no window exists for conditions to attach to. See conflict_note." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.heygen.com/terms", evidence: "Terms 7a: 'You may cancel your Recurring Subscription through your account at any time.' Confirmed and detailed in help article 8304328: cancellation via Settings > Plan & Billing, no contact required for a standard cancellation (contacting support is only needed to remove a standalone add-on while keeping the main plan, or for legacy-plan edge cases)." }
+  refund_policy_location: { value: multiple, source: "https://www.heygen.com/terms", evidence: "A refund position is stated in both the terms (section 7d, governing) and the help center (dedicated article 8304807, restated in the cancellation article 8304328); the two document classes carry materially different levels of detail (see conflict_note), so 'multiple' records that both classes address the topic even though only the higher-ranked one governs the coded refund values." }
+  commercial_use_lowest_tier: { value: lowest_paid, source: "https://www.heygen.com/terms", evidence: "Free plan (section 4): licensed 'solely for personal, non-commercial, and internal evaluation purposes'; 'User Output generated under a Free Plan may not be sold, sublicensed, redistributed, monetized, or used in connection with commercial activities.' Paid plans (section 3): 'does not restrict your ability to use User Output for your own purposes (including for commercial purposes).' Creator is the entry paid tier, so commercial use is granted starting there." }
+  watermark_removal_tier: { value: lowest_paid, source: "https://www.heygen.com/pricing", evidence: "Same evidence as free_plan_watermark: comparison-grid 'Watermark removal' row is a cross under Free and a check under Creator (entry paid tier) and Pro; Creator's own feature-bullet list separately names 'Watermark removal' as an included feature." }
+  output_ownership_statement: { value: conditional, source: "https://www.heygen.com/terms", evidence: "Rights depend on tier: paid plans (section 3) 'you own all rights in your User Input or User Output'; Free plan (section 4) gets only 'a limited, non-exclusive, non-transferable, revocable license to your User Output', not ownership." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.heygen.com/pricing", evidence: "Creator (entry tier)'s stated limits are all quantified: '600 credits' per month (rate), 'Videos up to 30 mins' (standing), '1080p video export' (standing, quantified resolution ceiling per codebook section 5.1's own '720p maximum resolution' example). No unquantified cap found attached to Creator specifically -- the discretionary clause found in the terms (see unquantified_limit_clause) is scoped to Free-plan users only." }
+  unquantified_limit_clause: { value: present, source: "https://www.heygen.com/terms", evidence: "'Additionally, we may impose usage caps, feature restrictions, storage limits, rate limits, or other technical limitations at our sole discretion towards Users in the Free Plan. Certain features, integrations, export capabilities, collaboration tools, or content-generation limits may apply, and we may modify, discontinue or reclassify Free Plan features at any time without notice.' Full terms read to the end per the rule's own requirement. Note: this clause is explicitly scoped to Free Plan users, not to Creator (the entry paid tier) -- no equivalent discretionary/fair-use clause was found attached to any paid tier. Coded present because the variable's definition ('whether official documents condition use on a standard that carries no number') is not itself entry-tier-scoped and the clause exists in the read terms; flagged here so the scope nuance is visible to any reader or adjudicator." }
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): eligible paid candidates were Creator, Pro, and
+  Business (Enterprise excluded, sales-gated / not purchasable without contacting sales; Free
+  excluded, $0 is not a paid tier). Annualizing each candidate's default-state (Monthly) headline
+  price at a single seat: Creator 29.00 x 12 = 348.00 (WINNER, lowest); Pro 49.00 x 12 = 588.00
+  (losing candidate, cheapest of its many credit tiers); Business 149.00 x 12 = 1,788.00, base
+  price covers the first seat per the vendor's own help article ("$149/month for the first seat,
+  with additional seats available for $20 per seat/month") (losing candidate). Enterprise: no
+  published price, contact-sales only, ineligible under sampling-rules 7.2 criterion 2.
+
+  Cost-per-output range (Creator, $29/mo / 600 credits/mo), by generation mode per
+  help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen: Avatar III 3 cr/min ->
+  200 min/mo -> $0.145/min; Avatar IV/V 20 cr/min -> 30 min/mo -> $0.967/min; Video Translation
+  5 cr/min -> 120 min/mo -> $0.242/min; Custom Expressive Motion 40 cr/min -> 15 min/mo ->
+  $1.933/min. Range: roughly $0.15-$1.93 per video-minute depending on engine/feature selected.
+  No single figure is derivable because no document designates a default mode; the derived
+  cost_per_output_value_usd is therefore not_computable, per section 8's instruction for the
+  partial/range case.
+
+  unquantified_limit_clause is coded present on a clause explicitly scoped to Free Plan users
+  only (see the variable's own evidence field for the full quote and the scope caveat); no
+  equivalent discretionary clause was found attached to Creator or any other paid tier.
+
+  blindness: no other record, no review page, no pass-2 material was opened. Only this record's
+  own sources were read: the HeyGen pricing page, HeyGen's terms of service, five official
+  help.heygen.com articles (refund policy, cancellation, two credit/pricing explainers, billing),
+  and the developers.heygen.com API-pricing docs page (checked, not cited; see its source note).
+  aitoolspolice.com, site/content/reviews/, and every file under records/ other than this one
+  (heygen.yaml) were left unopened for the duration of this coding pass.
+conflict_note: >
+  Free-plan video quota: the pricing page (rank 1 for pricing-class variables) states a flat
+  "3 videos per month"; help article 15125761 (rank 2) states "1-3 free videos, depending on
+  your region." Coded from the pricing page per the source hierarchy; free_plan_cap_value does
+  not reflect the region-dependent variant. URLs: https://www.heygen.com/pricing |
+  https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained.
+
+
+  Refund policy: the terms of service (rank 1 for contractual-class variables), section 7d,
+  states "Payments are non-refundable, except where required by law," with no discretionary
+  exception and no stated day-window -- this governs refund_policy_exists (no_refunds_stated),
+  refund_window_days (0), and refund_conditions (not_applicable). Two help-center articles
+  (rank 2) describe an actual discretionary refund practice going beyond that: "reimbursements
+  are granted only under specific circumstances and at our discretion," with "HeyGen and Google
+  Play purchases may be refunded within 15 days, while Apple App Store purchases may be refunded
+  within 14 days," reviewed case-by-case and possibly denied "if a significant amount of credits
+  has already been created." URLs: https://www.heygen.com/terms |
+  https://help.heygen.com/en/articles/8304807-refund-process-and-policy |
+  https://help.heygen.com/en/articles/8304328-how-to-cancel-or-pause-your-heygen-subscription.
+register_events: []

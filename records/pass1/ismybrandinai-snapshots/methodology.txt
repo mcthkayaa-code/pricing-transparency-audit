@@ -1,0 +1,32 @@
+Methodology | Is My Brand in AI
+GuidesToolsContact
+Home · Methodology
+Methodology
+This page explains how we research, test and recommend — so you can judge our guides on their evidence rather than taking them on faith. GEO is a young field full of confident claims; here is exactly where ours come from and where they stop.
+Which AI engines we check
+When we talk about “getting cited in AI answers,” we mean the four surfaces most brands actually need to show up in today:
+ChatGPT — including its browsing and search modes, where answers cite live sources.
+Perplexity — which footnotes the pages behind each answer.
+Gemini — Google's assistant and its grounded responses.
+Google AI Overviews — the AI summaries that now sit above many search results.
+These engines change their behaviour often, and an answer can differ by account, region and phrasing. So we describe patterns we can observe and reproduce — not guarantees.
+What our recommendations rest on
+Every ranking, comparison and “do this” in our guides rests on three things:
+Public pricing and product facts. When we compare tools, we use the vendors' own published prices, plans and feature pages — and we link to them so you can check.
+Public citation research. For claims about how AI engines pick and cite sources, we lean on published third-party studies — from analysts such as Ahrefs and BrightEdge, among others — and we attribute each one. We don't invent statistics, sample sizes or datasets of our own.
+Our own hands-on page tests. The founder applies the moves we write about to real pages — adding structure, an llms.txt file, clearer entities — then watches whether the engines' answers and citations actually change. This is qualitative, first-hand observation, and we present it as exactly that.
+What this is not: there is no paid placement anywhere on this site. No vendor can buy a higher ranking, a kinder review or a spot in a comparison. If we recommend something, it earned the spot.
+How often we update
+AI search moves fast, and advice that was right last quarter can be wrong this one. So our default is to revise guides as the evidence changes — when a cited study is updated or superseded, when a vendor changes pricing, or when our own testing stops matching what a guide says. Where a page carries a published or modified date, that date reflects the last substantive review.
+Affiliate and disclosure
+Today we don't earn commissions from the tools we mention. In the future, some outbound links may become affiliate links — meaning we could earn a commission if you buy through them. If and when that happens, three rules hold:
+It will be disclosed clearly, on the pages where it applies.
+It will never change a recommendation. Rankings stay merit-based; an affiliate relationship is never pay-for-placement.
+We will keep recommending tools we don't earn anything from when they're the right call.
+Found something wrong? Tell us
+If a price is out of date, a study has been superseded, or a claim doesn't hold up, we want to fix it. Send corrections through our contact page and we'll review them — getting it right matters more than being right the first time.
+Is My Brand in AI — independent research on AI search visibility (GEO). Built on the open record; we cite our sources and update as the evidence changes.
+GuidesAI search visibilityGEO vs SEOGet cited by ChatGPTBest GEO toolsAll guides →
+ToolsAI bot checkerAI readiness checkerllms.txt generatorPrompt generatorAll tools →
+CompanyAboutContactMethodology
+© 2026 Is My Brand in AI. All rights reserved.Privacy·Cookies·Terms

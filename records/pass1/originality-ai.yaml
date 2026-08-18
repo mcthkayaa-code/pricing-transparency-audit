@@ -1,0 +1,140 @@
+product_id: originality-ai
+product_name: Originality.ai
+category: AI detector
+product_status: active
+paid_submission: "no"
+entry_tier_name: Pro
+coder_pass: 1
+coder_role: primary
+collection_date: "2026-08-10"
+recheck_date: not_applicable
+primary_source_url: https://originality.ai/pricing
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "USD throughout (page states 'All prices are in USD'; JSON-LD priceCurrency=USD on every offer); Annual billing toggle pre-selected on load (Pro $12.95/mo, Enterprise $136.58/mo); non-essential cookies declined via Reject before reading; no region/country selector observed; network egress is Turkey but the vendor served USD directly on this read (D-003 arm 1 satisfied via the page's own 'All prices are in USD' statement, so no non_usd concern arises)."
+
+sources:
+  - { url: "https://originality.ai/pricing", kind: pricing, accessed: "2026-08-10", archive: local_copy_only, note: "Primary pricing page (nav path /pricing; SPA sometimes reports bare origin as URL, path confirmed via nav href). Local copy: originality-ai-sources/pricing-page.txt. web.archive.org /save/ returned a PRE-EXISTING capture timestamped 20260705 (not same-day); a second attempt via /save/2/ errored (HTTP 523). Two archive attempts made, capped per protocol; local_copy_only stands." }
+  - { url: "https://originality.ai/", kind: pricing, accessed: "2026-08-10", archive: local_copy_only, note: "Homepage, doubles as the AI Checker product page; carries the free-tool/no-trial FAQ. Local copy: originality-ai-sources/homepage-free-tool-faq.txt. web.archive.org /save/ returned a pre-existing capture timestamped 20260809 (not confirmed same-day at read time); local_copy_only stands." }
+  - { url: "https://originality.ai/terms-and-conditions", kind: tos, accessed: "2026-08-10", archive: local_copy_only, note: "Full 27-section ToS, Date of Last Amendment printed as June 17, 2026. Local copy: originality-ai-sources/terms-and-conditions.txt. web.archive.org /save/ returned a pre-existing capture timestamped 20260308 (not same-day); local_copy_only stands." }
+  - { url: "https://originality.ai/refund-policy", kind: refund, accessed: "2026-08-10", archive: local_copy_only, note: "Dedicated refund policy, Date of Last Amendment printed as July 16, 2025. Local copy: originality-ai-sources/refund-policy.txt. web.archive.org /save/ returned a pre-existing capture timestamped 20260617 (not same-day); local_copy_only stands." }
+  - { url: "https://help.originality.ai/en/article/how-many-words-does-a-credit-scan-1uwp6dq/", kind: docs, accessed: "2026-08-10", archive: local_copy_only, note: "Help-center article confirming the credit-to-word rate. Local copy: originality-ai-sources/help-credit-scan-rate.txt. web.archive.org /save/ returned a pre-existing capture timestamped 20260218 (not same-day); local_copy_only stands." }
+  - { url: "https://help.originality.ai/en/article/fact-checker-dqwo21/", kind: docs, accessed: "2026-08-10", archive: archive_failed, note: "Checked for a Fact Checker credit rate; none found (WebFetch text extraction only, no archive attempt made -- supporting/negative-result source, not itself relied on for a coded value)." }
+  - { url: "https://help.originality.ai/en/article/how-can-i-make-sure-that-i-dont-run-out-of-credits-top-up-x8w4cs/", kind: docs, accessed: "2026-08-10", archive: archive_failed, note: "PAYG auto-top-up mechanic; context for coder_note only (PAYG is not the coded entry tier). WebFetch text extraction only, no archive attempt made." }
+  - { url: "https://help.originality.ai/en/article/just-billed-20-heres-what-happened-5zw4a8/", kind: docs, accessed: "2026-08-10", archive: archive_failed, note: "PAYG auto-top-up billing-surprise article; context for coder_note only. WebFetch text extraction only, no archive attempt made." }
+
+variables:
+  headline_price_usd: { value: "12.95", source: "https://originality.ai/pricing", evidence: "Pro card: \"$12.95/month\" (default annual display state); confirmed in a second representation via embedded JSON-LD Offer \"Pro Plan (Annual)\", price \"155.40\" (155.40/12=12.95)." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://originality.ai/pricing", evidence: "Hover tooltip on the Pro card's savings line: \"You will be billed yearly for an amount of: $155.4 ($12.95 x 12 months) instead of $179.4 ($14.95 x 12 months).\"" }
+  first_charge_amount_usd: { value: "155.40", source: "https://originality.ai/pricing", evidence: "Same tooltip: \"You will be billed yearly for an amount of: $155.4 ($12.95 x 12 months)...\" -- figure is vendor-stated directly, not coder-computed. Confirmed in JSON-LD: Offer \"Pro Plan (Annual)\", price \"155.40\"." }
+  mandatory_addon_present: { value: "no", source: "https://originality.ai/pricing", evidence: "Full Pro feature list read; only optional item found is \"Additional team seats: $8.62/month\", an optional add-on for extra seats, not required to use the advertised Pro plan." }
+  annual_condition_disclosure: { value: adjacent, source: "https://originality.ai/pricing", evidence: "Annual-billing total is disclosed in a tooltip attached to the \"You are saving $24\" line inside the Pro price card itself (same visual price block)." }
+  annual_default_toggle: { value: annual_preselected, source: "https://originality.ai/pricing", evidence: "Page loads with the \"Annual (Save up to 23%)\" toggle visually highlighted/selected; \"Monthly\" unselected. Confirmed via screenshot before any interaction." }
+  free_plan_exists: { value: "yes", source: "https://originality.ai/", evidence: "Homepage FAQ: \"We don't offer a free trial of Originality.ai. Instead, we offer a limited free AI detection tool, with 3 free daily scans.\"" }
+  free_plan_cap_documented: { value: all_quantified, source: "https://originality.ai/", evidence: "\"Check up to 2,000 words with the free AI checker, and run up to 3 free AI scans daily.\" -- both a standing per-scan size cap and a daily rate, each numbered." }
+  free_plan_cap_value: { value: "2000 words per scan | 3 scans per day", source: "https://originality.ai/", evidence: "Same FAQ quote as free_plan_cap_documented." }
+  free_plan_watermark: { value: unknown, source: "https://originality.ai/", evidence: "No statement found on whether free-tool scan results/reports carry vendor branding or a watermark." }
+  free_plan_duration: { value: perpetual, source: "https://originality.ai/", evidence: "\"We don't offer a free trial... Instead, we offer a limited free AI detection tool...\" -- positioned as a standing alternative to a trial, no end date or expiry stated." }
+  trial_exists: { value: "no", source: "https://originality.ai/", evidence: "Homepage FAQ, direct denial: \"We don't offer a free trial of Originality.ai.\" (ToS Sec 7.1 carries a generic, contingent \"we may offer trials... at any time\" reservation clause that does not state a currently offered trial and explicitly defers actual terms to \"disclosed at signup\"; see conflict_note.)" }
+  trial_card_required: { value: not_applicable, source: "https://originality.ai/", evidence: "No trial exists (trial_exists = no)." }
+  trial_length_days: { value: not_applicable, source: "https://originality.ai/", evidence: "No trial exists." }
+  trial_auto_converts: { value: not_applicable, source: "https://originality.ai/", evidence: "No trial exists." }
+  credit_system_present: { value: "yes", source: "https://originality.ai/pricing", evidence: "\"1 credit equals 100 words\" -- credits are an intermediate currency converting into scanned-word output, not a plan allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: "https://originality.ai/pricing", evidence: "Pricing-page FAQ: \"1 credit is used for a 100-word scan for AI detection only.\"" }
+  credit_to_output_rate_published: { value: "yes", source: "https://originality.ai/pricing", evidence: "FAQ: \"1 credit is used for a 100-word scan for AI detection only\" (principal output, AI detection, exact non-range rate) and \"2 credits are used for a 100-word scan that checks both AI and plagiarism.\" See coder_note: no separate published rate found for Grammar Checker, Readability Checker, or Fact Checking Aid specifically; coded yes because the principal output's rate is clean and non-range and the codebook's numbered decision rule (Sec 7, domain 5) has no step that downgrades on a secondary-feature gap -- flagged as a close call." }
+  credit_rate_location: { value: multiple, source: "https://originality.ai/pricing", evidence: "Same rate published on the pricing page FAQ and restated at https://help.originality.ai/en/article/how-many-words-does-a-credit-scan-1uwp6dq/ (help center)." }
+  cost_per_output_unit: { value: per_1k_words, source: "https://originality.ai/pricing", evidence: "Principal output is an AI-detection scan of submitted text, metered in words via the credit system; closest enumerated unit is per_1k_words." }
+  cost_per_output_computable: { value: "yes", source: "https://originality.ai/pricing", evidence: "Entry-tier price ($12.95/mo), included allowance (2,000 credits/mo), and credit-to-word rate (1 credit=100 words, AI-only) are all published; no assumption about typical use is needed." }
+  computation_assumptions: { value: "Pro, $12.95/mo (billed annually, default state); 2,000 credits/mo; 1 credit=100 words (AI-only, pricing FAQ); both already monthly, no conversion. 2000x100=200,000 words/mo=200 per-1k-word units. 12.95/200=$0.0648/1k words.", source: "https://originality.ai/pricing", evidence: "Arithmetic from headline_price_usd, the stated monthly credit allowance, and the stated AI-only credit-to-word rate." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://originality.ai/refund-policy", evidence: "\"'Pro' & 'Enterprise' credits are available via a monthly subscription and expire at the end of your monthly billing cycle.\" (Pay-as-you-go credits instead roll forward for up to 2 years -- see coder_note; PAYG is not the coded entry tier.)" }
+  failed_generation_charge_policy: { value: unknown, source: "https://originality.ai/terms-and-conditions", evidence: "No statement found, in the ToS or elsewhere, on whether a failed/errored scan consumes a credit." }
+  auto_renewal_default: { value: "on", source: "https://originality.ai/terms-and-conditions", evidence: "Sec 7: \"Unless stated otherwise, subscriptions renew automatically for the applicable billing period until cancelled.\"" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://originality.ai/terms-and-conditions", evidence: "Stated in the ToS (Sec 7, above) and again on the dedicated Refund Policy page (\"Subscription Terms -- ...you agree to recurring billing at the interval you selected... until you cancel.\")." }
+  renewal_notice_commitment: { value: unknown, source: "https://originality.ai/terms-and-conditions", evidence: "No commitment to notify before a renewal charge found; Sec 24 only covers general consent to receive billing/transactional communications electronically." }
+  refund_policy_exists: { value: "yes", source: "https://originality.ai/refund-policy", evidence: "\"Originality.ai Inc. provides refunds, upon request and at our own discretion, which are applicable to the following pricing options: Pay as you go...; Pro...; Enterprise...\"" }
+  refund_window_days: { value: unknown, source: "https://originality.ai/refund-policy", evidence: "No day-count window for REQUESTING a refund is stated; the page's only \"30 days\" language governs how long an already-approved refund may take to appear (\"If you haven't received the refund within 30 days after our support team has applied it...\"), a different construct." }
+  refund_conditions: { value: conditional, source: "https://originality.ai/refund-policy", evidence: "\"Refunds are reviewed on a case-by-case basis, and a partial or full refund may be granted at our discretion for the following reasons: Service disruptions; Billing errors; Any other reason we see fit.\"" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://originality.ai/terms-and-conditions", evidence: "Sec 7.2: \"You may cancel recurring subscriptions using the available Account controls or by contacting support.\"" }
+  refund_policy_location: { value: multiple, source: "https://originality.ai/refund-policy", evidence: "Substantive terms on the dedicated Refund Policy page; ToS Sec 7.2 explicitly cross-references it (\"...expressly stated in an order form or supplemental refund policy...\")." }
+  commercial_use_lowest_tier: { value: unknown, source: "https://originality.ai/terms-and-conditions", evidence: "No explicit, freestanding statement permitting or restricting commercial use of Outputs found, distinct from the general ownership clause in Sec 11; no \"commercial license\" row on the pricing-page feature grid." }
+  watermark_removal_tier: { value: not_applicable, source: "https://originality.ai/terms-and-conditions", evidence: "Principal output is a detection score/report, not a media artifact a watermark could mark (the codebook's own example for this exact not_applicable case)." }
+  output_ownership_statement: { value: user_owns, source: "https://originality.ai/terms-and-conditions", evidence: "Sec 11: \"As between you and Originality.AI, you retain ownership of Input and User Content...\" and \"...we assign those rights to you, subject to these Terms...\" (carve-outs are the vendor's own retained IP/templates, not a tier- or active-subscription-conditional restriction)." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://originality.ai/pricing", evidence: "\"2,000 credits per month\" (quantified rate) and \"30 days\" scan history retention (quantified standing limit) for the Pro tier; no unquantified qualifier found." }
+  unquantified_limit_clause: { value: absent, source: "https://originality.ai/terms-and-conditions", evidence: "ToS Sec 7, Sec 9 (\"Acceptable Use and Restrictions\"), and Sec 18 read in full; no fair-use, reasonable-use, excessive-use, or discretionary-throttling clause found beyond the already-quantified credit system." }
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules.md Sec 7.2): full reasoning saved to
+  originality-ai-sources/entry-tier-decision-payg-vs-pro.txt. Summary: this vendor sells three
+  paid options -- Pro subscription ($12.95/mo annual-equiv $155.40/yr; $14.95/mo monthly-only,
+  $179.40/yr), Enterprise subscription ($136.58/mo annual-equiv $1,638.96/yr; $179/mo
+  monthly-only), and a one-time Pay-as-you-go credit pack ($30.00 for 3,000 credits, confirmed
+  via pricing-page JSON-LD Offer "Pay-as-you-go (3000 credits)"). Selected Pro as entry_tier_name
+  because sampling-rules 7.2's price-basis rule (annualize a monthly or annual figure) has no
+  defined mechanics for a one-time, non-recurring purchase like PAYG -- multiplying $30 by 12
+  would fabricate a $360/yr figure no document states, and taking $30 "as an annual figure" would
+  mislabel a one-time charge as recurring. Pro is the cheapest candidate for which the rule's
+  actual mechanics resolve to a number ($155.40/yr < Enterprise's $1,638.96/yr). LOSING CANDIDATE:
+  Enterprise, annual-equivalent $1,638.96, excluded on price alone. ALTERNATIVE RECORDED FOR
+  TRANSPARENCY: PAYG's raw one-time price ($30.00) is lower than Pro's annual-equivalent
+  ($155.40) and even lower than one month of Pro ($12.95-$14.95); a buyer needing only occasional
+  scans could spend less via PAYG than via any subscription. Not A-012 (PAYG is a standing
+  one-time purchase, not a cheap time-limited intro period that auto-converts to a higher
+  recurring rate -- no such intro mechanic was found anywhere in the documents).
+
+  PRICE READ TWICE, TWO REPRESENTATIONS (binding rule): headline/first-charge figures confirmed
+  against both the visible price-card text ("$12.95/month", tooltip "$155.4") and the page's
+  embedded JSON-LD structured data (Offer "Pro Plan (Annual)", price "155.40"). No superscript-
+  cents markup was present; plain "$12.95/month" text. Magnitude sanity check passes (entry tier
+  in the low tens of dollars/month, first charge = 12x monthly as stated by the vendor itself for
+  an annual plan, not a reading artifact).
+
+  CURRENCY (D-003, per updated agent instructions): arm 1 satisfied directly -- the pricing page
+  states "All prices are in USD" on its face and JSON-LD carries priceCurrency:"USD" for every
+  offer; this is the vendor's own currency disclosure, read on this session (network egress
+  Turkey). No non-USD figure was ever served; non_usd does not apply and no archive.org
+  cross-check was needed since arm 1 already returned readable, explicit evidence.
+
+  CREDIT DOMAIN (assignment-specific note): credit unit IS defined ("1 credit = 100 words" for
+  AI-detection-only) and the credit-to-output rate for the principal output (AI detection) IS
+  published, on the pricing page itself (credit_rate_location = pricing_page, and also repeated
+  in the help center, hence coded multiple). See help-credit-scan-rate.txt for the close call on
+  credit_to_output_rate_published (yes vs partial) given Grammar/Readability/Fact-Checker lack a
+  separately published per-credit rate.
+
+  ENTRY-TIER LOSING CANDIDATES (sampling-rules 7.2 formal requirement): Enterprise, annual-
+  equivalent $1,638.96, excluded (higher price than Pro on every basis). Pay-as-you-go is not a
+  recurring "plan" the annualization rule can evaluate on the same axis; see entry-tier note
+  above and the saved file for full reasoning -- treated as a documented alternative rather than
+  a losing same-axis candidate.
+
+  CONFLICT/TENSION NOTES (recorded here per codebook Sec 3 even though neither was coded
+  `conflicting`; see conflict_note field for the formal register): (1) ToS Sec 7.1's generic,
+  contingent "we may offer trials... at any time" clause vs. the homepage FAQ's direct "we don't
+  offer a free trial" -- read as reconcilable (general reservation of rights vs. a specific
+  current-state statement), coded from the more specific/direct source. (2) ToS Sec 7.2's "fees
+  are non-refundable once paid" vs. the dedicated Refund Policy page's discretionary case-by-case
+  refunds -- read as reconcilable by the ToS's own express cross-reference to a "supplemental
+  refund policy," not a genuine disagreement.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 slice-3 re-read 2026-08-10 (independent live re-verification, since this record was
+  assigned to the slice despite already carrying its own same-day two-representation check
+  above): re-opened https://originality.ai/pricing fresh and re-confirmed entry_tier_name (Pro),
+  headline_price_usd ($12.95), headline_billing_basis (per_month_billed_annually) and
+  first_charge_amount_usd ($155.40) in three independent representations -- a freshly re-fetched
+  JSON-LD payload, a structural DOM query of the Pro card header block (Pro name and $12.95/month
+  price share one <div class="grid-div is-header">), and the toggle's own tooltip DOM node
+  ("You will be billed yearly for an amount of: $155.4 ($12.95 x 12 months)..."). Confirmed 0
+  <sup>/<sub> elements exist anywhere on the page. Provenance check (coordinator addendum):
+  first_charge_amount_usd is a DIRECT vendor statement (the tooltip prose above), not a coder
+  computation; rule 2's once-for-twelve-months requirement is independently satisfied by that
+  same vendor sentence. Evidence saved to
+  originality-ai-sources/d009-second-representation-2026-08-10.txt. No correction; all four
+  scoped values confirmed as coded.
+
+conflict_note: "ToS Sec 7.1 (\"We may offer trials, promotional pricing, beta access, limited free scans, free word limits, or similar offers... Trials may convert to paid subscriptions unless cancelled before the trial ends, where this is disclosed at signup.\") sits in tension with the homepage FAQ's direct \"We don't offer a free trial of Originality.ai.\" (https://originality.ai/terms-and-conditions vs https://originality.ai/). Not coded `conflicting`: the ToS clause is a generic, contingent reservation of rights that does not itself assert a trial is currently offered and explicitly defers actual terms to signup-time disclosure, so it does not state a value incompatible with the FAQ's specific, direct, current-state denial; trial_exists is coded `no` from the more specific source. Separately, ToS Sec 7.2 (\"fees are non-refundable once paid\") sits alongside the dedicated Refund Policy page's discretionary case-by-case refunds (https://originality.ai/refund-policy); not coded `conflicting` because the ToS clause itself carves out \"[u]nless... expressly stated in an order form or supplemental refund policy,\" which the Refund Policy page satisfies -- a designed cross-reference, not a disagreement."
+
+register_events: []
+
+status: complete

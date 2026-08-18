@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+Allow: /api/pseo/sitemap
+Disallow: /admin/*
+Disallow: /api/*
+
+# Host
+Host: https://faceless.so
+
+# Sitemaps
+Sitemap: https://faceless.so/sitemap.xml
+Sitemap: https://faceless.so/api/pseo/sitemap?type=index

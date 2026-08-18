@@ -1,0 +1,35 @@
+URL 1: https://www.myperfectresume.com/faq
+Accessed: 2026-08-10. Method: rendered read via mcp__Claude_Browser.
+General product-usage FAQ (resume/CV/cover-letter how-tos). No billing, cancellation, refund,
+or trial content on this page at all -- confirms this is NOT the billing FAQ; kept as a source
+of record (kind: docs) because it is an official documentation page, and because its absence of
+billing content is itself informative (no conflicting statements found here).
+
+URL 2: https://www.myperfectresume.com/contact-us
+Accessed: 2026-08-10. Method: rendered read via mcp__Claude_Browser.
+Contains an official support FAQ accordion (native HTML <details>/<summary>, content present in
+DOM without needing to click) with billing-adjacent items. Full verbatim Q&A relevant to this
+study:
+
+Q: "How do I check for transactions on my billing statement?"
+A: "If you made a purchase, MyPerfectResume will appear on your billing statement as one of the
+following: MYPERFECTRESUME.COM, MYPERFECTRESUME, or BLD*MYPERFECTRESUME."
+
+Q: "Why have I received charges when I don't remember subscribing?"
+A: "To have been charged by MyPerfectResume, your bank statement will read MYPERFECTRESUME.COM,
+MYPERFECTRESUME, or BLD*MYPERFECTRESUME. Free to contact us by phone, email, or chat to verify
+and review your account details." -- does not add a self-serve cancellation path beyond ToS
+Section 10; routes to contact channels.
+
+Q: "Why didn't I get a subscription or cancellation confirmation email?"
+A: "If you didn't receive a subscription, cancellation, or refund email, check your email's spam
+or junk folder..." -- confirms subscription/cancellation/refund confirmation emails are the
+normal flow (consistent with ToS Section 10's "Provider will send an email with a cancellation
+number").
+
+No dedicated "how to cancel" walkthrough article, no billing FAQ distinct from ToS Section 10,
+and no mention of the 14-day/$2.95 offer or its renewal terms on this page. Contact channels
+listed: phone 855-213-0348 (US/Canada), 0808 189 0676 (UK), live chat, AI chatbot, secure
+message form. This page's other ~13 FAQ items are product-usage troubleshooting (login,
+password reset, upload formats, printing, browser compatibility) and were read in full but are
+not evidentially relevant to this study's coded variables.

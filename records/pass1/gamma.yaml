@@ -1,0 +1,238 @@
+product_id: gamma
+product_name: Gamma
+category: AI presentation
+product_status: active
+paid_submission: "no"
+entry_tier_name: Plus
+coder_role: primary
+coder_pass: 1
+collection_date: 2026-08-09
+recheck_date: not_applicable
+
+default_display_state: >
+  D-005 RE-COLLECTION. Loading https://gamma.app/pricing from this network (Turkey egress)
+  auto-redirects to https://gamma.app/tr/pricing: Turkish-language UI, prices rendered with a
+  literal "$" (USD) sign and Turkish-style thousands-separator numerals (e.g. "$1.080" =
+  $1,080.00), "Yıllık ödeme" (Pay annually) toggle preselected -- DOM-confirmed
+  aria-pressed="true" on that control and "false" on "Aylık ödeme" (Pay monthly). Non-essential
+  cookies declined (banner dismissed via its close control, ACCEPT not clicked). An ordinary
+  browser page load clears the Cloudflare "Just a moment..." JS interstitial automatically
+  (waited ~5s, no click, no CAPTCHA, no bot-detection defeat attempted) and the page's own
+  script then injects every price/allowance figure. A static fetch of the same URL still
+  returns HTTP 403 today, and the newest public web.archive.org capture (20260804092026,
+  re-tested 2026-08-09) is still a pre-hydration shell with no prices -- both re-confirmed
+  during this pass. An English-locale cross-check (/en/pricing, coder-initiated, not the
+  network default) showed identical figures; see coder_note and register_events for the
+  same-URL two-state observation this produced.
+
+primary_source_url: https://gamma.app/pricing
+archive_url: "local_copy: gamma-sources/pricing-rendered-2026-08-09.txt"
+archive_status: local_copy_only
+
+source_urls: https://gamma.app/pricing | https://gamma.app/en/pricing | https://gamma.app/terms | https://gamma.app/acceptable-use-policy | https://help.gamma.app/en/articles/11048496-what-is-gamma-s-refund-policy-and-how-do-i-request-a-refund | https://help.gamma.app/en/articles/8568920-how-do-i-manage-or-cancel-my-gamma-subscription | https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription | https://help.gamma.app/en/articles/11048258-what-does-per-member-billing-mean-in-gamma | https://developers.gamma.app/get-started/access-and-pricing
+
+sources:
+  - { url: "https://gamma.app/pricing", kind: pricing, accessed: "2026-08-09", archive: "local_copy: gamma-sources/pricing-rendered-2026-08-09.txt", note: "RENDERED via ordinary browser load (D-005): Cloudflare JS challenge auto-resolved with no interaction, then page script injected all prices. web.archive.org/save/ failed twice today (HTTP 520, HTTP 520) -- same Cloudflare block reaching archive.org's own crawler, consistent with the superseded record; local rendered-text copy saved instead per protocol 6.4's local-copy fallback." }
+  - { url: "https://gamma.app/en/pricing", kind: pricing, accessed: "2026-08-09", archive: "local_copy: gamma-sources/pricing-rendered-2026-08-09.txt", note: "Coder-initiated English-locale view of the same pricing page, opened to verify the Turkish default-state text translated accurately. Not the default state; not separately archived. All figures identical to the Turkish default (see coder_note)." }
+  - { url: "https://gamma.app/terms", kind: tos, accessed: "2026-08-09", archive: "local_copy: gamma-sources/gamma-terms-rendered-2026-08-09.txt", note: "RENDERED live (D-005); effective date printed 2025-09-09, text confirmed word-for-word identical to the prior pass's 2026-07-26 archive capture on every clause checked (9.2, 9.3(b), 9.5, 4.3/4.4). web.archive.org/save/ failed twice today (HTTP 520, HTTP 520); local copy saved." }
+  - { url: "https://gamma.app/acceptable-use-policy", kind: refund, accessed: "2026-08-09", archive: "local_copy: gamma-sources/gamma-aup-rendered-2026-08-09.txt", note: "RENDERED live (D-005); effective 7/26/2024, text confirmed matching the prior pass's 2026-07-09 archive capture; read in full for unquantified_limit_clause, no throttling/fair-use/reasonable-use/excessive-use clause found (only conduct-moderation language). web.archive.org/save/ failed twice today (HTTP 520, HTTP 429); local copy saved." }
+  - { url: "https://help.gamma.app/en/articles/11048496-what-is-gamma-s-refund-policy-and-how-do-i-request-a-refund", kind: refund, accessed: "2026-08-09", archive: "http://web.archive.org/web/20260809144705/https://help.gamma.app/en/articles/11048496-what-is-gamma-s-refund-policy-and-how-do-i-request-a-refund", note: "Fresh capture obtained today. Text re-verified word-for-word against the prior pass's 2026-08-07 capture: unchanged (3-day conditional refund policy, same per-plan credit thresholds)." }
+  - { url: "https://help.gamma.app/en/articles/8568920-how-do-i-manage-or-cancel-my-gamma-subscription", kind: docs, accessed: "2026-08-09", archive: "http://web.archive.org/web/20260809144757/https://help.gamma.app/en/articles/8568920-how-do-i-manage-or-cancel-my-gamma-subscription", note: "Fresh capture obtained today; text unchanged from the prior pass." }
+  - { url: "https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription", kind: docs, accessed: "2026-08-09", archive: "http://web.archive.org/web/20260807074731/https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription", note: "Re-opened and re-read live today; web.archive.org/save/ returned the pre-existing 2026-08-07 capture rather than creating a new one (dedup), but live text today matches it word-for-word plus confirms 'Your credits will reset at 400, as per our free plan allowance' -- reconciling the free-plan credit figure with the pricing page (see coder_note)." }
+  - { url: "https://help.gamma.app/en/articles/11048258-what-does-per-member-billing-mean-in-gamma", kind: docs, accessed: "2026-08-09", archive: "http://web.archive.org/web/20260807074519/https://help.gamma.app/en/articles/11048258-what-does-per-member-billing-mean-in-gamma", note: "Re-opened and re-read live today; web.archive.org/save/ returned the pre-existing capture (dedup); live text matches word-for-word." }
+  - { url: "https://developers.gamma.app/get-started/access-and-pricing", kind: docs, accessed: "2026-08-09", archive: "http://web.archive.org/web/20260807074703/https://developers.gamma.app/get-started/access-and-pricing", note: "Re-opened and re-read live today; page itself states 'Last updated 9 days ago' as of this read, i.e. stable since ~2026-07-31; web.archive.org/save/ returned the pre-existing capture (dedup); live text matches word-for-word: 1-3 credits/card, image ranges 2-125 credits by model tier." }
+  - { url: "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-teams-and-business", kind: other, accessed: "not_reopened_this_pass", archive: "http://web.archive.org/web/20260807074456/...", note: "NOT re-opened this pass. Its Team/Business figures ($240/seat 2-seat min, $480/seat 10-seat min) are superseded as evidence by a fresh, higher-ranked source: the live pricing page's own Team tab, rendered and DOM-inspected today, which shows identical figures (see coder_note). Kept in source_urls for continuity; not cited alone for any 2026-08-09 value." }
+
+variables:
+  headline_price_usd: { value: 9.00, source: "https://gamma.app/pricing", evidence: "Plus card, rendered: '$9' large/prominent figure, qualifier '/ seat / month' beneath it, in the default (annual-toggle-preselected) display state. D-005 fix: superseded record coded this unknown because the pre-hydration archive shell it was forced to use never receives the client-injected price; an ordinary rendered browser load shows it plainly." }
+  headline_billing_basis: { value: per_seat_per_month, source: "https://gamma.app/pricing", evidence: "'$9' immediately followed by '/ seat / month' in the same card; codebook rule 2: a per-seat figure and a per-month figure both stated together codes per_seat_per_month." }
+  first_charge_amount_usd: { value: 108.00, source: "https://gamma.app/pricing", evidence: "Same Plus card, directly beneath the headline figure: '$108 per seat, billed annually'. Read directly as published, not computed (it also equals 9 x 12, consistent)." }
+  mandatory_addon_present: { value: "no", source: "https://help.gamma.app/en/articles/11048258-what-does-per-member-billing-mean-in-gamma", evidence: "Re-read live 2026-08-09: 'Per-member billing means you are charged for each active user in your workspace. This applies to all paid plans... If you want to reduce your bill, you can remove users from your workspace at any time.' Describes optional additional workspace seats, removable at will; the Plus tier as advertised (single seat) requires no further mandatory purchase. Developer docs confirm auto-recharge for credits is opt-in, not mandatory." }
+  annual_condition_disclosure: { value: adjacent, source: "https://gamma.app/pricing", evidence: "'$108 per seat, billed annually' sits inside the same visual price card as the '$9 / seat / month' headline figure, directly beneath it and above the 'Get started' button -- codebook: 'the same card, the same line, directly beneath the figure' is adjacent by definition." }
+  annual_default_toggle: { value: annual_preselected, source: "https://gamma.app/pricing", evidence: "DOM-verified: the 'Pay annually' / 'Yıllık ödeme' button carries aria-pressed=\"true\"; 'Pay monthly' / 'Aylık ödeme' carries aria-pressed=\"false\", on first (unmodified) page load. Also visually confirmed: the annual control is filled/highlighted, monthly is not." }
+  free_plan_exists: { value: "yes", source: "https://gamma.app/pricing", evidence: "'Free -- For simple projects and getting to know Gamma -- $0 -- Start for free' is a standing plan card alongside the paid tiers, badge 'No credit card required'." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://gamma.app/pricing", evidence: "'400 credits at signup' (quantified standing), 'Create up to 10 slides per prompt' (quantified standing, per section 5.1's standing-limit test: number+dimension, no period applicable). Help center adds '50k input tokens for initial generation' (quantified standing, same page class). No unquantified free-plan limit found in any document read." }
+  free_plan_cap_value: { value: "400 credits at signup | 10 slides per prompt | 50k input tokens for initial generation", source: "https://gamma.app/pricing", evidence: "Pricing page (rendered, both /tr and /en confirmed identical): '400 credits at signup', 'Create up to 10 slides per prompt'. Help center (https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription, re-read 2026-08-09): '50k input tokens for initial generation'. See coder_note: these are three compatible, non-conflicting limits, not competing figures for one construct." }
+  free_plan_watermark: { value: "yes", source: "https://gamma.app/pricing", evidence: "Plus tier ('For extra AI power and removing Gamma branding') lists 'Remove Gamma branding' under 'Everything in Free, and:' -- documents that Free-plan output carries Gamma branding." }
+  free_plan_duration: { value: perpetual, source: "https://gamma.app/pricing", evidence: "Free is a standing tier card beside the paid tiers; no expiry stated anywhere in the pricing page, help center, or terms." }
+  trial_exists: { value: "no", source: "https://gamma.app/pricing", evidence: "Every plan CTA is direct: 'Start for free' (Free), 'Get started' (Plus/Pro/Ultra/Team/Business), 'Contact sales' (Enterprise-scale); no time-limited-trial-of-a-paid-tier CTA or copy anywhere on the pricing page (Individual or Team tab) or in the help center." }
+  trial_card_required: { value: not_applicable, source: "https://gamma.app/pricing", evidence: "No trial exists (trial_exists = no)." }
+  trial_length_days: { value: not_applicable, source: "https://gamma.app/pricing", evidence: "No trial exists (trial_exists = no)." }
+  trial_auto_converts: { value: not_applicable, source: "https://gamma.app/pricing", evidence: "No trial exists (trial_exists = no)." }
+  credit_system_present: { value: "yes", source: "https://gamma.app/pricing", evidence: "Pricing-page FAQ ('Yapay zeka kredileri nedir?' / 'What are AI credits?') and every plan card denominate allowances in 'credits' ('1,000 monthly credits' etc.), an intermediate currency converting into outputs." }
+  credit_unit_defined: { value: "yes", source: "https://developers.gamma.app/get-started/access-and-pricing", evidence: "Re-read live 2026-08-09: 'Number of cards | numCards | 1-3 credits/card' and image-model credit ranges, both converting credits into named output units." }
+  credit_to_output_rate_published: { value: partial, source: "https://developers.gamma.app/get-started/access-and-pricing", evidence: "Principal-output rate (cards) is published only as a range, '1-3 credits/card (varies by the text generation model Gamma selects internally)', with no rule stating which figure applies to a given generation -- a range with no selection rule is partial." }
+  credit_rate_location: { value: docs_help_center, source: "https://developers.gamma.app/get-started/access-and-pricing", evidence: "The credit-to-output conversion rate appears only on the developers.gamma.app documentation subdomain; the pricing-page FAQ states total monthly credit allowances but defers the conversion rate to a linked doc rather than stating it itself." }
+  cost_per_output_unit: { value: per_presentation, source: "https://gamma.app/pricing", evidence: "Product framed throughout as a presentation/document generator ('Choose the plan that's right for you', Free plan: 'Simple presentations, docs, websites, social, and images'; category tabs on other surfaces cover Presentations/Websites/Social/Documents), and plan limits are stated as slides-per-prompt. Unchanged from the superseded record; not affected by the rendering issue." }
+  cost_per_output_computable: { value: partial, source: "https://gamma.app/pricing", evidence: "D-005 fix: price ($9/seat/mo, $108/yr) and allowance (1,000 credits/mo) are now both published and on the same monthly period, no conversion needed. Principal output (presentation) is NOT computable: the vendor publishes only a MAXIMUM of 75 slides per prompt, no typical/fixed card count, so cost-per-presentation would need an assumption about usage (codebook rule 7). Secondary output (per-card) IS computable, but only as a range because the credit-per-card rate itself is a published range with no selection rule (1-3 credits/card, developers docs) -- rule 5 and rule 8 both independently return partial. See computation_assumptions and coder_note for the figures." }
+  computation_assumptions: { value: "Plus: $9/seat/mo=$108/yr (annual default). 1,000 credits/mo (pricing page). Principal output (presentation) not computable -- cards/prompt unpublished (max 75, no typical). Secondary: per-card cost = $9/1000 x 1-3 credits/card = $0.009-$0.027/card (developers docs, range, no selection rule).", source: "computed", evidence: "Coder's own arithmetic per codebook section 6/cost_per_output_computable rule 9; inputs are the sourced values on headline_price_usd, usage_cap_quantified (Plus 1,000 credits/mo) and credit_to_output_rate_published (1-3 credits/card) above." }
+  credit_rollover_policy: { value: partial_rollover, source: "https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription", evidence: "Re-read live 2026-08-09: 'Unused credits rollover up to double the plan size. For example, if you are on our monthly Plus Plan with 1,000 credits, then you can have up to 2,000 credits at any time.' Text unchanged from the prior pass." }
+  failed_generation_charge_policy: { value: unknown, source: "https://gamma.app/terms", evidence: "No statement describing what happens to credits on a failed/errored/empty generation, after reading the pricing page (both tabs), developers.gamma.app docs, terms of service, and acceptable use policy in full, all re-read live 2026-08-09." }
+  auto_renewal_default: { value: "on", source: "https://gamma.app/terms", evidence: "Section 9.3(b), re-read live 2026-08-09, word-for-word identical to the prior pass: 'your Subscription will automatically commence on the first day following the end of such period... and continue for an additional equivalent period, at Gamma's then-current price... your Subscription is subject to this automatic renewal feature unless you cancel.'" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://gamma.app/terms", evidence: "Stated in Terms section 9.3(b) (quoted above) AND independently in the help center, re-read live 2026-08-09: 'cancel at least 30 days before your plan's renewal date. If you received an auto-renewal notification, you have 30 days from the date of that notice to cancel.' (https://help.gamma.app/en/articles/8568920-how-do-i-manage-or-cancel-my-gamma-subscription) -- two of the four document classes agree." }
+  renewal_notice_commitment: { value: unknown, source: "https://gamma.app/terms", evidence: "Section 9.3(b)(i) references 'the date of Gamma's notice' only conditionally ('in the event that you receive a notice from Gamma'), as an alternate trigger for the 30-day cancellation window, not an unconditional forward commitment to always notify before renewal. The help center cancellation article uses the identical conditional framing. No unconditional advance-notice promise found in either document, both re-read live 2026-08-09." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://gamma.app/terms", evidence: "Section 9.5 'No Refunds', re-read live 2026-08-09, word-for-word identical to the prior pass: 'THERE ARE NO REFUNDS FOR ANY PRODUCTS OR SERVICES PURCHASED ON OR THROUGH THE SERVICES AND WE ARE NOT OBLIGATED TO PROVIDE ANY CREDITS FOR PARTIALLY USED SUBSCRIPTIONS.' Also 9.2: 'all Fees for the Service are non-refundable.' Terms of service ranks first for contractual/refund variables (protocol 6.2); see conflict_note -- the help center states a contradicting active 3-day conditional refund policy, independently re-verified today at its own fresh archive timestamp." }
+  refund_window_days: { value: 0, source: "https://gamma.app/terms", evidence: "Governing source (ToS 9.5) states no refunds are given; codebook maps refund_window_days = 0 to 'no refunds are given'. See conflict_note." }
+  refund_conditions: { value: not_applicable, source: "https://gamma.app/terms", evidence: "Value table: not_applicable = 'No refund available', the governing ToS position. See conflict_note." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://gamma.app/terms", evidence: "Section 9.3(b)(i), re-read live 2026-08-09: cancel 'by logging into and going to the Change/Cancel Membership page of your Account Settings page.' Matches help center, also re-read live 2026-08-09: Settings > Billing > 'Cancel subscription' button, no ticket/email/call required." }
+  refund_policy_location: { value: terms, source: "https://gamma.app/terms", evidence: "The governing refund position (no refunds) is stated in the Terms of Service, sections 9.2 and 9.5. See conflict_note for the contradicting help-center article." }
+  commercial_use_lowest_tier: { value: unknown, source: "https://gamma.app/terms", evidence: "No commercial-use tier gate or 'commercial license' feature-grid row found after a full re-read (2026-08-09) of the terms of service, the acceptable use policy, and the pricing page's Individual and Team tabs in their entirety (targeted keyword search for 'commercial' returned zero hits describing output-use rights in any of the three documents)." }
+  watermark_removal_tier: { value: lowest_paid, source: "https://gamma.app/pricing", evidence: "Plus tier ('For extra AI power and removing Gamma branding') lists 'Remove Gamma branding' under 'Everything in Free, and:' -- Plus is the lowest paid tier and the lowest tier at which branding/watermark removal is granted. Terms of service and acceptable use policy are silent on this point; single source addresses it, re-confirmed live 2026-08-09." }
+  output_ownership_statement: { value: user_owns, source: "https://gamma.app/terms", evidence: "Section 4.3, re-read live 2026-08-09, word-for-word identical to the prior pass: 'Gamma does not claim ownership of Your Content.' Section 4.4 grants Gamma only a license back from the user, not the reverse." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://gamma.app/pricing", evidence: "Plus (entry tier), now read directly on the pricing page itself (stronger source than the prior pass's help-center-only citation): '1,000 monthly credits' (quantified rate, explicitly 'monthly') and 'Create up to 75 slides per prompt' (quantified standing, same test as the free plan's 10-slide cap). No unquantified Plus-tier limit found on the pricing page or in the help center." }
+  unquantified_limit_clause: { value: absent, source: "https://gamma.app/terms", evidence: "Terms of service and acceptable use policy both re-read in full today (2026-08-09), targeted search for fair-use/reasonable-use/typical-usage/throttle/excessive-use/abuse-threshold/discretionary-suspension language: the only 'discretion' hit in the ToS concerns Gamma's right to amend the Agreement itself (not usage volume); the only 'abuse'/'excessive'/'suspend' hits in the AUP concern content moderation and conduct violations (not usage volume or intensity), which the codebook explicitly excludes from this variable. No discretionary usage-volume clause found in either document. Positive, quantified reading of documented absence per codebook section 2.2/rule G0's F2 exception." }
+
+coder_note: |
+  D-005 RE-COLLECTION of a record superseded for coding headline_price_usd = unknown (and, as a
+  consequence, headline_billing_basis / first_charge_amount_usd / annual_condition_disclosure /
+  annual_default_toggle / cost_per_output_computable = unknown too) because gamma.app is
+  Cloudflare-blocked to static fetchers and every tested archive capture is a pre-hydration
+  Next.js shell with no injected price. Per the D-005 rule clarification, an ordinary rendered
+  browser load is documentary reading, not a prohibited action: this pass loaded
+  https://gamma.app/pricing in a real browser, let the page's own Cloudflare JS challenge
+  resolve with zero interaction (~5s, no click, no CAPTCHA), and read the resulting DOM. All six
+  previously-unknown variables are now coded from that render, cross-confirmed via a second
+  English-locale load and a DOM read of each toggle's aria-pressed state. The entry-tier
+  decision is now made on hard, DOM-verified numbers instead of the superseded record's
+  "documented tier ordering alone" placeholder reasoning.
+
+  Currency (D-003): the render itself displayed USD ("$" sign) directly, in both the Turkish
+  default-locale view and an English cross-check -- this was never a non_usd case, so the
+  D-003 fallback (non_usd -> US-locale check) was not triggered. One corroborating
+  web.archive.org check was still run (curl -m 45, https://web.archive.org/web/2026/...) as
+  extra diligence; it resolved to the same 20260804092026 capture already on file and, as
+  before, carries no price data at all (pre-hydration shell) -- consistent with, and not
+  contradicting, the direct USD evidence from the render. Only the UI language and Turkish
+  numeral formatting (period as thousands separator, e.g. "$1.080" = $1,080.00, confirmed by
+  90 x 12) were localized to this network's Turkey egress; the price figures themselves were
+  not.
+
+  Entry-tier selection (sampling-rules 7.2), Individual tab, all figures DOM/render-confirmed
+  2026-08-09: Free $0 (not a paid candidate). Eligible paid candidates: Plus $9/seat/mo =
+  $108/yr annual-equivalent [WINNER, lowest], Pro $18/seat/mo = $216/yr, Ultra $90/seat/mo =
+  $1,080/yr (pricing page prints this as "$1.080", Gamma's own thousands-separator formatting,
+  not a $1.08 typo -- confirmed by 90 x 12). Team $20/seat/mo = $240/seat listed, but the seat
+  selector input DOM-confirmed defaults to value "2" (2-seat minimum block) -> $480/yr minimum
+  purchasable; Business $40/seat/mo = $480/seat, seat selector DOM-confirmed defaults to "10"
+  (10-seat minimum) -> $4,800/yr minimum. Both fail on cost even at their minimum block, and
+  are seat-scaled rather than single-seat individual plans. Enterprise-scale option is "Contact
+  sales" -- sales-gated, ineligible under sampling-rules 7.2 criterion 2. Plus wins by a wide,
+  now-confirmed margin.
+
+  Free-plan credit figures, reconciled rather than conflicting: the pricing page (rendered)
+  states "400 credits at signup" with no "monthly" qualifier (unlike Plus/Pro/Ultra, each
+  explicitly "X monthly credits"), i.e. a one-time grant, not a recurring rate. The help center
+  upgrade article independently confirms the same baseline elsewhere in its text ("Your credits
+  will reset at 400, as per our free plan allowance") and separately states "50k input tokens
+  for initial generation" -- a narrower, compatible technical sub-limit on prompt size, not a
+  competing figure for the same construct. Both are recorded in free_plan_cap_value; this is
+  not logged as a conflict.
+
+  cost_per_output_computable reasoning: with price and allowance now known, the calculation for
+  the PRINCIPAL output (a presentation) still cannot be completed without an unpublished
+  assumption -- the vendor states a maximum of 75 slides per prompt but no typical/fixed card
+  count per presentation (codebook rule 7 forbids assuming typical use). A SECONDARY,
+  well-defined unit -- cost per card/slide -- is directly computable from published figures
+  alone, but only as a range, because the vendor's own credit-per-card rate is itself a
+  published range (1-3 credits/card) with no rule for which figure applies. Both codebook rule
+  5 (secondary-output case) and rule 8 (range case) independently return partial; see
+  computation_assumptions for the arithmetic. cost_per_output_value_usd (derived, not coded
+  here) is therefore not_computable, and the range ($0.009-$0.027 per card) is recorded above
+  rather than as a single figure, per the derived-variable rule for the range case.
+
+  Archival (protocol 6.4): gamma.app apex-domain pages (pricing, terms, acceptable-use-policy)
+  still Cloudflare-block archive.org's own crawler today -- two web.archive.org/save/ attempts
+  each returned HTTP 520/520, 520/520, and 520/429 respectively, matching the superseded
+  record's documented pattern exactly. Per protocol 6.4's two-strikes rule, local rendered-text
+  copies were saved instead (gamma-sources/pricing-rendered-2026-08-09.txt,
+  gamma-terms-rendered-2026-08-09.txt, gamma-aup-rendered-2026-08-09.txt) and archive_status is
+  coded local_copy_only for these three. help.gamma.app is not behind the same block: the
+  refund-policy and cancellation articles both got fresh same-day (2026-08-09) public archive
+  captures; the upgrade, per-member-billing, and developers.gamma.app articles returned
+  archive.org's pre-existing 2026-08-07 captures (a dedup response, not a failure) -- live text
+  for all three was re-read today and matches those captures word-for-word, so no vendor edit
+  occurred on any contractual or documentation page since the superseded pass.
+
+  Register event (protocol 6.8 rule 3, display_variant, logged in register_events below): the
+  SAME canonical URL, https://gamma.app/pricing, produced two different states within this
+  pass. The true, un-interacted first load auto-redirected to /tr/pricing (Turkish UI) based on
+  this network's Turkey egress -- this is the state coded as default_display_state and archived
+  locally. The coder then deliberately visited /en/pricing once, to verify the Turkish text
+  translated accurately (it did, word-for-word on every figure). After that, reloading the bare
+  /pricing URL in the same browser session no longer redirected to /tr/pricing -- it persisted
+  the English locale instead, a client-side locale-preference cookie/localStorage effect from
+  the coder's own prior navigation, not a vendor A/B test or a geography change. Every price,
+  toggle state, and allowance figure was identical across both states; only UI language and
+  numeral formatting differed. Reported here per protocol 6.6/6.8 rather than silently
+  resolved, though it carries no coded-value consequence.
+
+  Non-price variables carried into this pass (free-tier structure, trial absence, credit
+  system, rollover, auto-renewal, refund conflict, cancellation, ownership, watermark removal,
+  unquantified-limit absence) were not blocked by the Cloudflare/rendering issue in the
+  superseded pass -- they were already coded from accessible documents. Per this task's explicit
+  instruction, the refund conflict (ToS 9.5 "no refunds" vs. the help center's active 3-day
+  conditional policy) was independently re-verified from both primary sources today rather than
+  carried over, and matches the superseded record's reading exactly, now with fresh 2026-08-09
+  evidence and (for the ToS side) a fresh render proving the apex-domain Cloudflare block does
+  not, in fact, hide any different content -- it hides the SAME content a static fetcher simply
+  could not reach. Every other previously-successful non-price variable was likewise re-read
+  live today (not merely copied) and found unchanged from the superseded pass; see the sources
+  list above for each one's fresh access date and archive/dedup outcome.
+
+  D-009 re-read 2026-08-10: not arithmetic-flagged (9.00 x 12 = 108.00, exact). Re-confirmed
+  entry_tier_name/headline_price_usd/headline_billing_basis/first_charge_amount_usd in two fresh
+  representations. A cookie-consent banner ("About our cookies") covered the plan cards on this
+  session's first load and had to be dismissed via its close (X) control (declining, not
+  accepting, matching this record's own default_display_state note) before the cards' text became
+  reachable -- same mechanism the original coder already recorded, reproduced independently today.
+  Representation 1 (live innerText, javascript_tool, origin confirmed https://gamma.app, still
+  redirecting Turkey egress to /tr/pricing): "Plus ... $9 / koltuk / ay $108 koltuk basina, yillik
+  faturalandirilir" ("$9/seat/month", "$108 per seat, billed annually"). Representation 2 (raw
+  HTML around the number, today): `<div class="chakra-stack css-1igwmid"><p class="chakra-text
+  css-w75py4">$9</p><p class="chakra-text css-1nyfskl">/ koltuk / ay</p></div>` -- a single
+  unified text node for "$9", no adjacent superscript/cents span. Toggle state confirmed from the
+  DOM's own attribute, not extractor order: `[aria-pressed]` on "Yillik odeme" (Pay annually) =
+  "true", on "Aylik odeme" (Pay monthly) = "false" -- matches the coded annual default. PROVENANCE
+  of first_charge_amount_usd (per orchestrator request): $108 is READ directly off the card
+  ("$108 per seat, billed annually" is its own printed line, not a coder computation), exactly as
+  this record's own headline_price_usd/first_charge_amount_usd evidence already states ("Read
+  directly as published, not computed (it also equals 9 x 12, consistent)") -- confirmed correct,
+  computation_assumptions above is unaffected since no first-charge arithmetic was performed. Both
+  representations agree with each other and with the coded values; today's figures match the
+  2026-08-09 collection exactly (same $9/$108 Plus, $18/$216 Pro visible in the same pass) -- no
+  final-day change. NO CORRECTION. All four target variables CONFIRMED, values unchanged.
+
+  blindness: no other product's record, no aitoolspolice.com page, no site/content/reviews
+  file, and no pass-2 material was opened. Only Data/seo/research/pricing-transparency/
+  codebook-v1.md, protocol-v1.md (sections 6.1-6.8), sampling-rules.md (section 7),
+  record-template.yaml, this product's own superseded records/pass1/gamma.yaml (permitted,
+  being replaced), and this product's own records/pass1/gamma-sources/ directory were read
+  from the study materials, plus gamma.app's and help.gamma.app's and developers.gamma.app's
+  own live pages and archive captures.
+computation_assumptions: "Plus: $9/seat/mo=$108/yr (annual default). 1,000 credits/mo (pricing page). Principal output (presentation) not computable -- cards/prompt unpublished (max 75, no typical). Secondary: per-card cost = $9/1000 x 1-3 credits/card = $0.009-$0.027/card (developers docs, range, no selection rule)."
+conflict_note: >
+  refund_policy_exists / refund_window_days / refund_conditions / refund_policy_location:
+  Terms of Service section 9.5 ("No Refunds"), https://gamma.app/terms (rendered live
+  2026-08-09; web.archive.org/save/ failed twice today, HTTP 520/520, local copy at
+  gamma-sources/gamma-terms-rendered-2026-08-09.txt) states "THERE ARE NO REFUNDS FOR ANY
+  PRODUCTS OR SERVICES PURCHASED ON OR THROUGH THE SERVICES", and section 9.2 states "all Fees
+  for the Service are non-refundable." This directly contradicts the help center article "What
+  is Gamma's refund policy and how do I request a refund?",
+  https://help.gamma.app/en/articles/11048496-what-is-gamma-s-refund-policy-and-how-do-i-request-a-refund
+  (rendered live 2026-08-09, fresh archive
+  http://web.archive.org/web/20260809144705/...), which documents an active refund policy: a
+  3-day window from subscribing, available on both monthly and annual billing, subject to
+  per-plan credit-usage thresholds (Plus <200, Pro <600, Team <900, Business <1,000, Ultra
+  <2,000 credits used), requested by contacting Customer Support -- effective "Beginning
+  December 1, 2025" per the article's own text. Both sources independently re-verified today,
+  word-for-word identical to the superseded record's citations; the conflict is unchanged, not
+  newly discovered. Per protocol 6.2, the Terms of Service ranks first for contractual/refund
+  variables and the help center ranks second; the four affected variables are coded from the
+  Terms (the higher-ranked, contradicting source) per codebook section 2.1 step 3, and this
+  disagreement is recorded here rather than silently resolved. No other cross-document
+  disagreement was found in this record (auto-renewal and cancellation-route statements agree
+  between the Terms and the help center; the free-plan credit figures across the pricing page
+  and help center are compatible, not conflicting -- see coder_note).
+register_events:
+  - { type: display_variant, detail: "https://gamma.app/pricing's true first load this pass auto-redirected to /tr/pricing (Turkish UI, network geography). After the coder separately visited /en/pricing once to verify translation accuracy, later loads of the bare /pricing URL in the same browser session persisted English instead of re-redirecting to Turkish -- a client-side locale-preference effect from the coder's own navigation, not a vendor A/B test. All price, toggle-default, and allowance figures were identical in both states; only UI language and numeral formatting (period vs. comma thousands separator) differed. default_display_state and the local archive copy reflect the true, un-interacted first state (Turkish).", urls: ["https://gamma.app/pricing", "https://gamma.app/tr/pricing", "https://gamma.app/en/pricing"] }
+status: complete

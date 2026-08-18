@@ -1,0 +1,42 @@
+URL: https://www.jobscan.co/cancellation-policy
+Accessed: 2026-08-15
+Method: Rendered browser read (get_page_text), cross-checked against an independent WebFetch fetch of the same URL on the same date -- both returned matching content, confirming this is a statically-available (non-locale-gated) English page.
+
+=== FULL TEXT ===
+JOBSCAN PREMIUM – TRIAL PERIOD POLICY
+
+You can test Jobscan (and hopefully land a job!) and your credit card will only be charged after your free trial period.
+This only applies to members signed up for the Premium 3 Month Plan with Trial should you choose to forgo your trial period to unlock all Premium features, your card will be charged immediately, rather than after the trial period.
+
+There is a pre-authorization charge upon initial sign up to ensure the credit card is valid. This amount will be refunded.
+
+JOBSCAN PREMIUM – CANCELLATION POLICY
+
+If you choose a Premium Membership with a trial period: to cancel your Jobscan Premium Membership within your trial period and avoid being charged the membership fee, follow the Cancel Membership instructions within your Account page. You may cancel at any point within your trial for any reason, and incur no cost.
+
+To cancel your non-trial period Membership: follow the Cancel Membership instructions within your Account page.
+
+Upon cancellation, your account will be downgraded to a Free Membership after your current billing period ends.
+
+Free Membership excludes all Premium features listed here, but you can still enjoy free scans every month.
+
+Cancellation does not issue refunds automatically.
+
+JOBSCAN PREMIUM – REFUND POLICY
+
+Here at Jobscan, we know you're busy job searching! If you meant to cancel your premium status prior to billing, we're here to help.
+
+Refunds will only be granted to Jobscan Premium members who refute their charges within 2 calendar days of the billing period start and have not used the service within the said billing period. A fee of 3.5% of the original payment made will be charged. You can check the status of your billing period on your account page.
+
+To process a refund within 2 calendar days of your billing period, please email support@jobscan.co subject line: "Refund Request" with the following:
+– Reason
+– Your Jobscan email
+We will grant/deny refund requests on a case by case basis.
+
+BILLING PROCESS
+When you sign up for any of our Premium plans, you will be billed every calendar month (Monthly Plan) or quarterly (every 3 months Plan) from the date of subscription.
+Until you cancel, billing will continue according to the cycle stated at the time of subscription.
+Jobscan is not responsible for continued subscriptions should a user forget to cancel their account. It is the customer's responsibility to confirm the cancellation.
+
+Questions? Email us at support@jobscan.co
+For more information see Jobscan Terms of Service Agreement

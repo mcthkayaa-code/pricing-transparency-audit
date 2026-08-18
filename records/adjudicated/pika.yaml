@@ -1,0 +1,215 @@
+product_id: pika
+product_name: Pika
+category: AI video generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Standard"
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-16
+recheck_date: not_applicable
+primary_source_url: https://pika.art/pricing
+archive_url: https://web.archive.org/web/20260816123040/https://pika.art/pricing
+archive_status: archived
+
+default_display_state: |
+  USD ($ figures); no currency/country selector on any read. Yearly billing toggle preselected
+  on load (selected/highlighted style on "Yearly", unselected on "Monthly"/"Weekly") on every
+  independent read: pass 1 (2026-08-10, static SSR HTML, byte-offset DOM parse), pass 2
+  (2026-08-15, rendered browser, DOM class inspection), and this adjudicator's own fresh capture
+  and direct live fetch (2026-08-16). All three agree on the state and on the Standard-tier
+  figures used below ($8/mo billed yearly, 700 credits/mo). No cookie-consent banner encountered
+  on any read. No coder reloaded to hunt for a preferred state.
+
+sources:
+  - { url: "https://pika.art/pricing", kind: pricing, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260816123040/https://pika.art/pricing", note: "ADJUDICATOR FRESH CAPTURE, verified genuine (memento-datetime Sun, 16 Aug 2026 12:30:40 GMT, HTTP 200, no redirect). Confirms pass 1's 2026-08-10 capture (also independently verified genuine: HTTP 200, memento-datetime matches cited timestamp exactly, no x-archive-redirect-reason header) byte-for-byte on every figure used in this record: Standard $8/mo billed yearly, 700 credits/mo, and the Text-to-Video/Image-to-Video Model 2.5 table (480p 5s=12cr/10s=24cr; 720p 5s=20cr/10s=40cr; 1080p 5s=40cr/10s=80cr). Pass 2's OWN cited archive URL for this page (web.archive.org/web/20260815122726/...) does NOT resolve to a distinct capture -- see coder_note, ARCHIVE VERIFICATION -- but pass 2's local rendered-text capture transcribes the identical figures, so the underlying read is corroborated even though its archive citation is not." }
+  - { url: "https://pika.art/terms-of-service", kind: tos, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122915/https://pika.art/terms-of-service", note: "Pass 2's capture, verified genuine (memento-datetime Sat, 15 Aug 2026 12:29:15 GMT, HTTP 200, no redirect, CDX digest distinct from pass 1's capture -- a real second read, not a phantom). Re-read in full by this adjudicator for the unquantified_limit_clause dispute. Corroborated by pass 1's own capture (web.archive.org/web/20260810104925, also verified genuine): both dates carry the identical 'General Practices Regarding Use and Storage' clause verbatim, so this is not a vendor edit between passes." }
+  - { url: "https://pika.art/faq", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122847/https://pika.art/faq", note: "Pass 2's capture, verified genuine (memento-datetime matches cited timestamp, HTTP 200, no redirect). Sources credit_rollover_policy, failed_generation_charge_policy, and both conflict_note entries; not itself the source of either disputed variable." }
+  - { url: "https://pika.art/acceptable-use-policy", kind: other, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122944/https://pika.art/acceptable-use-policy", note: "Pass 2's capture, verified genuine (HTTP 200, no redirect). Read in full by both passes and re-checked by this adjudicator; carries only content/conduct moderation language (illegal, abusive, harmful content categories), no separate volume/intensity-of-use clause distinct from the ToS's General Practices clause." }
+
+variables:
+  headline_price_usd: { value: 8.00, source: "https://pika.art/pricing", evidence: "AGREED. Standard card: \"$8 / month\" with \"billed yearly\" beneath, under the page's default (Yearly-preselected) toggle state. Re-verified in this adjudicator's fresh 2026-08-16 capture and live fetch, unchanged." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://pika.art/pricing", evidence: "AGREED. \"$8 / month\" price with \"billed yearly\" qualifier directly beneath it, in the default (Yearly) toggle state." }
+  first_charge_amount_usd: { value: 96.00, source: "https://pika.art/pricing", evidence: "AGREED. Computed: $8/mo x 12. No document states a literal \"$96/year\" lump sum, but the ToS names \"annually\" as its own billing cycle and the FAQ's upgrade-flow answer (crediting back \"remaining months\") is only coherent if a yearly plan is prepaid as one annual charge. Consistent with headline x basis-periods per tools/check_price_arithmetic.py." }
+  mandatory_addon_present: { value: "no", source: "https://pika.art/pricing", evidence: "AGREED. No required charge beyond the plan price on the pricing page, FAQ billing section, or ToS; optional credit top-up packs are framed as optional (\"Feel like that's not enough?\"), not mandatory to use the plan as advertised." }
+  annual_condition_disclosure: { value: adjacent, source: "https://pika.art/pricing", evidence: "AGREED. \"billed yearly\" is printed inside the same price block as \"$8 / month\", directly beneath the figure, within the Standard card." }
+  annual_default_toggle: { value: annual_preselected, source: "https://pika.art/pricing", evidence: "AGREED. Toggle markup/DOM class confirms \"Yearly\" carries the selected style at first position; \"Monthly\"/\"Weekly\" carry the unselected style. Confirmed on three independent reads (pass 1 byte-offset parse, pass 2 DOM class inspection, this adjudicator's 2026-08-16 capture)." }
+  free_plan_exists: { value: "yes", source: "https://pika.art/pricing", evidence: "AGREED. Basic card: \"$0\" / \"Free\", standing alongside the three paid cards; page subtitle states \"Pika has four plans\"." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://pika.art/pricing", evidence: "AGREED. \"80 monthly video credits\" (quantified rate) and \"Access to Pika 2.5 (480p only)\" (quantified standing resolution limit) are the only limits documented for the Basic/free tier." }
+  free_plan_cap_value: { value: "80 video credits per month | 480p max resolution", source: "https://pika.art/pricing", evidence: "AGREED. Basic card feature list. See conflict_note: the FAQ states a different free-tier figure (150/month); pricing page ranks higher for free-tier limits per protocol 6.2 (pricing-class variable) and governs this value." }
+  free_plan_watermark: { value: "yes", source: "https://pika.art/pricing", evidence: "AGREED. DOM/icon inspection: \"Download videos with no watermark\" row is unchecked (cross icon) on Basic, checked from Pro upward. Corroborated by FAQ: \"If you share a video directly from Pika, videos have a watermark for users of all tiers.\"" }
+  free_plan_duration: { value: perpetual, source: "https://pika.art/pricing", evidence: "AGREED. Basic is a standing card alongside the paid tiers, structurally identical, with a recurring monthly allowance; no expiry stated anywhere in the pricing page, FAQ, or ToS." }
+  trial_exists: { value: "no", source: "https://pika.art/pricing", evidence: "AGREED. Zero occurrences of \"trial\" on the pricing page or in the FAQ's Subscriptions & Billing section. The ToS carries a generic, discretionary \"Free and Trial Plans\" clause (\"We may offer free or trial Plans at our discretion...\") not tied to any concrete, currently-offered trial on the page's four standing plans; ToS ranks below the pricing page/docs for this pricing-class variable. Coded from the higher-ranked sources' silence." }
+  trial_card_required: { value: not_applicable, source: "https://pika.art/pricing", evidence: "AGREED. No trial exists (trial_exists = no)." }
+  trial_length_days: { value: not_applicable, source: "https://pika.art/pricing", evidence: "AGREED. No trial exists (trial_exists = no)." }
+  trial_auto_converts: { value: not_applicable, source: "https://pika.art/pricing", evidence: "AGREED. No trial exists (trial_exists = no)." }
+  credit_system_present: { value: "yes", source: "https://pika.art/faq", evidence: "AGREED. \"Credits are our way of tracking your video generations across your subscription plan\" -- an intermediate currency converting into video outputs." }
+  credit_unit_defined: { value: "yes", source: "https://pika.art/pricing", evidence: "AGREED. Pricing page's Text-to-Video & Image-to-Video rate table ties credits to an exact output, e.g. \"12 credits\" = 480p/5s Text-to-Video/Image-to-Video, Model 2.5." }
+  credit_to_output_rate_published: { value: "yes", source: "https://pika.art/pricing", evidence: "AGREED. Exact credit figures published for the principal output (Text-to-Video & Image-to-Video, Model 2.5) across all quality (480p/720p/1080p) x duration (5s/10s) combinations, plus every other generation type. Not a hedged range -- every cell in the table is an exact number (this is what distinguishes this variable, which asks only whether a rate is published, from cost_per_output_computable below, which asks whether that published rate collapses to one figure)." }
+  credit_rate_location: { value: pricing_page, source: "https://pika.art/pricing", evidence: "AGREED. Full Model 2.5 rate table lives on the pricing page. The FAQ also publishes a credit-cost table, but for older, differently-named models (Turbo, Pro Mode, 1.0/1.5, 2.1, 2.2) with different figures for overlapping specs -- see conflict_note; pricing page governs per protocol 6.2." }
+  cost_per_output_unit: { value: per_video_minute, source: "https://pika.art/pricing", evidence: "AGREED. Principal output is generated video (Text-to-Video/Image-to-Video), Pika's core feature; category is AI video generator." }
+  cost_per_output_computable: { value: partial, source: "https://pika.art/pricing", evidence: "ADJUDICATED 2026-08-16 under domain-6 rule 8 (\"If it yields a range because the vendor publishes a range, code partial\") and the partial value's own definition (\"only across a published range that yields a range rather than a figure\"). All three resolution rates for the principal output (480p/720p/1080p) are published and exact -- independently re-verified against pass 1's archived capture, pass 2's local capture, and this adjudicator's own fresh 2026-08-16 archive + live re-read, all identical -- so no required figure is missing (rule 6 does not apply). But no document names a default or principal resolution for Model 2.5: the FAQ's only 'resolution' entry describes Pika 2.2/2.1, not the Model 2.5 table this record uses, and the three columns are presented as equal peers in one table. Collapsing three vendor-equal, exact rates to a single figure therefore requires an assumption about which resolution a buyer generates at -- exactly what the yes value's own bar excludes (\"needs no assumption about typical use\") and rule 7 treats as disqualifying. Pass 2's yes selected 480p as \"base/lowest tier\" by the coder's own stated reasoning, not a vendor designation; that is the assumption rule 7 rules out, not an application of rule 1 (rule 1 fixes which TIER's price to use, not which resolution's rate to use, and its own principle -- \"two coders computing the same product must start from the same number\" -- is better served by reporting the range than by silently picking the cheapest column). Prior values: pass1=partial (correct, resolved by this rule); pass2=yes (required an unstated assumption)." }
+  computation_assumptions: { value: "Standard (entry tier), $8/mo billed yearly per default display state, 700 credits/mo included, same period so no conversion needed. Model 2.5 rate is resolution-dependent (480p/720p/1080p), each exact, none vendor-designated as principal. Range in coder_note.", source: "https://pika.art/pricing", evidence: "ADJUDICATED 2026-08-16, per the domain-8 derived-variable rule: where cost_per_output_computable=partial for the RANGE reason (as opposed to the secondary-output reason), 'the range goes in coder_note' and cost_per_output_value_usd (derived) = not_computable, so this field states only the calculation basis, not the range itself -- see coder_note for the worked range. Both coders' underlying arithmetic is correct and mutually consistent (verified by re-derivation): 480p 12cr/5s=144cr/min, 700/144=4.86 min/mo, 8/4.86=$1.65/min; 720p 20cr/5s=240cr/min, 700/240=2.92 min/mo, 8/2.92=$2.74/min; 1080p 40cr/5s=480cr/min, 700/480=1.46 min/mo, 8/1.46=$5.49/min." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://pika.art/faq", evidence: "AGREED. \"Video credits don't carry over from month to month. However, on the Standard, Pro, and Fancy plans, you can purchase additional video credits, and those WILL carry over.\" The plan's included monthly allowance does not roll over; only separately-purchased top-up credits do (a different credit pool)." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://pika.art/faq", evidence: "AGREED -- VENDOR SILENCE. No document (pricing page, FAQ including its empty Tech Issues section, ToS, AUP) states what happens to credits when a generation fails, errors, or produces nothing usable. Both passes read the same set of documents to completion; this is silence confirmed by a completed read, not a location failure." }
+  auto_renewal_default: { value: "on", source: "https://pika.art/terms-of-service", evidence: "AGREED. \"Unless stated otherwise, subscriptions automatically renew at the end of each billing cycle (e.g., monthly or annually).\" Corroborated by FAQ: \"Your subscription will renew automatically...\"" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://pika.art/terms-of-service", evidence: "AGREED. Stated in both the ToS (\"Automatic Renewal and Recurring Charges\" clause) and the FAQ (\"Will my subscription renew automatically?\")." }
+  renewal_notice_commitment: { value: advance_notice_stated, source: "https://pika.art/terms-of-service", evidence: "AGREED. \"We will provide advance notice of any auto-renewal where required by applicable law.\" Conditional on legal requirement, no period stated -- quoted in full so the hedge is not lost." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://pika.art/terms-of-service", evidence: "AGREED. \"Except as expressly provided in these terms of service or required by law, all subscription payments are non-refundable, and there are no refunds or credits for partially used periods.\" No other clause expressly provides a refund." }
+  refund_window_days: { value: 0, source: "https://pika.art/terms-of service", evidence: "AGREED. No refunds are given; see refund_policy_exists." }
+  refund_conditions: { value: not_applicable, source: "https://pika.art/terms-of-service", evidence: "AGREED. No general refund is available for conditions to attach to." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://pika.art/terms-of-service", evidence: "AGREED. \"You may cancel your subscription at any time through your account settings...\" Corroborated by FAQ: \"...hit the 'Cancel subscription' button on your profile page.\"" }
+  refund_policy_location: { value: multiple, source: "https://pika.art/terms-of-service", evidence: "AGREED. No-refunds position stated in the ToS (\"No Refunds\" clause) and twice in the FAQ (account deletion answer; cancellation answer)." }
+  commercial_use_lowest_tier: { value: mid_tier, source: "https://pika.art/pricing", evidence: "AGREED. \"Commercial use\" row: cross icon on Basic and Standard, check icon on Pro and Fancy. FAQ: \"If you have a Pro or Fancy subscription, whatever you create using Pika can be used commercially... If you have a Basic or Standard subscription, you can't.\" Granted above entry tier (Standard), below the highest tier (Fancy) = mid_tier." }
+  watermark_removal_tier: { value: mid_tier, source: "https://pika.art/pricing", evidence: "AGREED. \"Download videos with no watermark\" row: cross icon on Basic and Standard, check icon on Pro and Fancy. FAQ corroborates: \"If you upgrade to a Pro or Fancy plan, your videos can be downloaded watermark-free.\"" }
+  output_ownership_statement: { value: user_owns, source: "https://pika.art/terms-of-service", evidence: "AGREED. \"Pika does not claim ownership of any Inputs you submit or Outputs generated through your use of the Service. As between you and Pika, you retain all interest in those Outputs. To the extent Pika acquires any interest in the Outputs, we hereby assign all interest to you.\" Unconditional, not tied to tier or active subscription." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://pika.art/pricing", evidence: "AGREED. The only limit documented for the Standard (entry paid) tier is \"700 monthly video credits\" -- a fully quantified rate (number + dimension + period)." }
+  unquantified_limit_clause: { value: present, source: "https://pika.art/terms-of-service", evidence: "ADJUDICATED 2026-08-16 under the codebook's present row (\"A clause limits use by an unquantified standard: fair use, reasonable use, excessive use, abuse thresholds, throttling at the vendor's discretion\") and its worked example (\"We may limit or suspend accounts whose usage substantially exceeds typical usage. No figure defines typical. present.\"). ToS section \"General Practices Regarding Use and Storage\": \"Pika may establish general practices and limits concerning use of the Service, including limits on storage capacity, data retention periods, and account inactivity. These practices may vary by subscription Plan and may be modified on one or more occasions at Pika's sole discretion.\" No figures attach to any of the three named limits; the lead clause reserves a general, open-ended right to limit \"use of the Service\" at sole discretion, which is materially closer to the worked example than to rule 3's content/conduct carve-out (a DIFFERENT ToS clause, \"Account Suspension and Termination\", covers illegal/abusive/fraudulent conduct). VERIFIED: this exact sentence appears verbatim in pass 1's OWN rendered ToS capture (tos-rendered.txt lines 244-246) -- pass 1's source material contained the clause its evidence field says was never found. Also verbatim in pass 2's local capture. Independently re-confirmed against both passes' archived ToS snapshots, both verified genuine and undoctored (pass 1: memento-datetime 2026-08-10 10:49:25 GMT; pass 2: memento-datetime 2026-08-15 12:29:15 GMT; distinct CDX digests, i.e. two real reads, not one capture cited twice) -- the clause is present, word for word, on both dates, so this is not a vendor edit between passes (no date_explained), just a clause pass 1's evidence trail did not register despite having read the document containing it. Prior values: pass1=absent (search/read gap -- see coder_note); pass2=present (correct)." }
+
+coder_note: |
+  ADJUDICATION SUMMARY (2026-08-16). tools/disagreements.py pika reports 2 substantive
+  disagreements (cost_per_output_computable, unquantified_limit_clause) plus 1 non-substantive
+  prose mismatch (computation_assumptions, an effect of the first disagreement rather than an
+  independent one). Independently re-diffed all 37 coded variables directly against both YAML
+  records (not just the tool's report) to confirm completeness: the other 35 are byte-identical
+  after numeric canonicalisation, and no variable was silently skipped for a missing/None value.
+  Both disagreements RESOLVED BY RULE. 0 became unknown. 0 date_explained and 0 variant_explained:
+  both pass1.yaml and pass2.yaml carry `register_events: []`, so no vendor_edit entry exists to
+  found a date_explained classification (7.4.1 requires one regardless of what the dates show),
+  and no second snapshot showing a DIFFERENT default display state was found for either page, so
+  variant_explained (7.4.2) is equally unavailable. Both disagreements are ordinary disagreements,
+  decided on the documents.
+
+  COST PER OUTPUT -- A GENUINE RANGE, NOT A SINGLE FIGURE (cost_per_output_computable: partial,
+  reversing nothing -- pass 1 was correct; pass 2's yes is the one corrected). Both coders agree
+  on every input figure: Standard $8/mo billed yearly, 700 credits/mo, and an exact Model-2.5
+  credit rate at each of three resolutions (480p/720p/1080p). The dispute is purely whether that
+  is ONE computable figure or a RANGE. It is a range: nothing on the pricing page or in the FAQ
+  designates a "default" or "principal" resolution for Model 2.5 -- re-checked specifically, since
+  this is exactly the kind of vendor-stated anchor that would flip the answer. The FAQ's only
+  "What is the resolution of the videos?" entry describes the Pika 2.2 and 2.1 models, not the
+  Model 2.5 table this record uses, and says nothing about a default. The three resolution columns
+  sit as equal peers in one table. Pass 2's own computation_assumptions is explicit that 480p was
+  "chosen as base/lowest tier" by the coder, not read off a vendor statement -- which is precisely
+  the "assumption about how a typical buyer uses the product" that the codebook's own decision
+  rule 7 disqualifies, and precisely what the yes value's own definition excludes ("needs no
+  assumption about typical use"). Rule 1's discipline against picking "the cheapest plan on the
+  page" governs which TIER's price to use, not which resolution's rate to use, but its underlying
+  principle -- two coders must start from the same number -- argues the same way here: reporting
+  the full range is the non-arbitrary answer; picking the cheapest resolution is not. The range
+  itself, both coders' arithmetic re-derived and confirmed identical: 480p $1.65/min, 720p
+  $2.74/min, 1080p $5.49/min -- more than a 3x spread depending on a choice the vendor leaves
+  entirely to the buyer at generation time. Per the domain-8 derived-variable rule, this range
+  belongs in coder_note (here) rather than in computation_assumptions, and cost_per_output_value_usd
+  (derived) = not_computable.
+
+  ARCHIVE VERIFICATION -- pass 2's pricing-page citation is a phantom capture, discovered while
+  re-verifying the figures above. Pass 2's top-level archive_url and its sources[] entry for
+  https://pika.art/pricing both cite
+  https://web.archive.org/web/20260815122726/https://pika.art/pricing. Requesting that exact URL
+  returns HTTP 302 with header `x-archive-redirect-reason: found capture at 20260810104835` --
+  it silently resolves to PASS 1's own 2026-08-10 capture, not a distinct 2026-08-15 one. The
+  Wayback CDX index for pika.art/pricing (`cdx/search/cdx?url=pika.art/pricing&from=20260801&to=
+  20260817`) lists captures only at 20260802100334, 20260804172134, 20260809100456, and
+  20260810104835 -- nothing between 2026-08-10 and this adjudicator's own submission on
+  2026-08-16 (20260816123040, verified genuine: HTTP 200, memento-datetime matches exactly, no
+  redirect). So pass 2's `archive_status: archived` for the pricing page overstates what actually
+  happened -- the archive submission for that specific read did not produce a retrievable distinct
+  snapshot, and protocol 6.4 would have wanted `local_copy_only` (pass 2 does have a local capture,
+  pricing-page-2026-08-15.txt) or a retry. This is the SAME failure class as D-023
+  (orchestrator/deviations-log.md, found the same day on anomaly-ai): a citation pointing at a
+  capture that does not exist. It is NOT the same outcome, though, and that difference matters:
+  D-023's quoted figure appeared nowhere on any date. Here, pass 2's local capture transcribes
+  figures that DO independently verify -- against pass 1's own genuinely-archived 2026-08-10 HTML
+  (byte-level extraction performed by this adjudicator), and against a direct live fetch and fresh
+  archive submission by this adjudicator on 2026-08-16 -- all three agree exactly on every figure
+  used above (Standard $8/700 credits, and the full 480p/720p/1080p x 5s/10s credit table). So the
+  citation is unsupported, but the underlying reading was not fabricated, unlike D-023. Flagged
+  for the study's pre-freeze archive-existence sweep (D-023's own recommendation) as a second
+  occurrence of the same defect class, on a different product. This did not change the archive_url
+  or sources[] entries pass 2 itself would carry (this record is not pass 2's to edit), but it does
+  govern which capture this adjudicated record cites: pass 1's verified-genuine 2026-08-10 capture,
+  corroborated by this adjudicator's own fresh 2026-08-16 capture, per protocol 7.4 step 3
+  ("prefer the window-dated captures... a page may have changed: say so if it has" -- it had not;
+  the CDX digest for 2026-08-09 and 2026-08-10 is identical, and this adjudicator's live 2026-08-16
+  read is identical in substance to both).
+
+  UNQUANTIFIED LIMIT CLAUSE -- PRESENT, AND THE CLAUSE WAS ALREADY IN PASS 1'S OWN SOURCE FILE
+  (unquantified_limit_clause: present, pass 2 correct). This is the failure mode this assignment
+  specifically asked to be checked for: a coder's account of "read in full, nothing found" resting
+  on a search that missed a real clause. Pass 1's evidence states "ToS and Acceptable Use Policy
+  read in full; all discretion/abuse/excessive language found governs content and conduct
+  moderation... No fair-use, reasonable-use, or throttling clause was found." That is not what
+  pass 1's own capture contains. tos-rendered.txt (pass 1's own local file, lines 244-246, under
+  the ToS's own header "General Practices Regarding Use and Storage") reads: "Pika may establish
+  general practices and limits concerning use of the Service, including limits on storage
+  capacity, data retention periods, and account inactivity. These practices may vary by
+  subscription Plan and may be modified on one or more occasions at Pika's sole discretion." This
+  is an unquantified, discretionary, use-limiting clause -- structurally the codebook's own present
+  example almost exactly ("we may limit... usage... at our discretion... no figure"). It is not
+  conduct/content moderation (rule 3's carve-out): the ToS's actual conduct-moderation clause sits
+  under a different header entirely ("Account Suspension and Termination" -- illegal, abusive,
+  fraudulent activity). Verified against both archived captures directly (not just the local text
+  files): pass 1's (2026-08-10) and pass 2's (2026-08-15) ToS archive URLs are both genuine (HTTP
+  200, matching memento-datetime, no redirect) and carry DIFFERENT CDX digests -- confirming two
+  real, independent reads of the document, not one capture cited twice -- and the clause is
+  present verbatim on both dates. That rules out date_explained (nothing changed between the
+  reads) as well as ruling out a citation-integrity problem of the kind found above: this citation
+  checks out completely: the words are exactly where pass 2 said they were.
+
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2; AGREED identically by both passes, re-verified
+  here): Standard $8/mo billed yearly = $96.00/yr annual-equivalent -- SELECTED. Losing candidates:
+  Pro $28/mo billed yearly = $336.00/yr; Fancy $76/mo billed yearly = $912.00/yr. Basic ($0) is the
+  free plan, not a paid-tier candidate.
+
+  CONFLICT_NOTE MERGE. Not an adjudicated disagreement (neither variable's coded value differs
+  between passes), but the two records' conflict_note fields differ in completeness and are
+  merged below rather than picking one. Both flag the free-tier credit conflict (pricing page "80
+  monthly video credits" vs. FAQ "150 credits per month"), independently re-verified in pass 2's
+  own local FAQ capture, line 15. Pass 2 additionally logs the FAQ's separate, older-model credit
+  table (Turbo/Pro Mode/1.0/1.5/2.1/2.2) as a second conflict against the pricing page's Model-2.5
+  table; pass 1 discusses the same table in coder_note but declined to log it as a conflict,
+  reasoning the two tables name different model versions rather than restating one claim two ways.
+  Both readings are defensible and neither changes a coded value (credit_to_output_rate_published
+  and credit_rate_location are agreed yes/pricing_page either way); protocol 6.2's instruction that
+  "every such divergence stays in conflict_note... even where the hierarchy settles the coded value
+  cleanly" favors completeness, so pass 2's fuller two-conflict version is kept, re-verified
+  accurate against pass 2's own local capture (faq-2026-08-15.txt lines 20-25) before inclusion.
+
+  SOURCES RE-READ FOR THIS ADJUDICATION: both full records (pass1/pika.yaml, pass2/pika.yaml) and
+  both -sources/ directories in full, including pass 1's raw HTML (pricing-raw.html, tos-raw.html,
+  faq-raw.html, aup-raw.html) and rendered captures, and pass 2's local text captures; the Wayback
+  CDX index for pika.art/pricing and pika.art/terms-of-service; direct HEAD requests against every
+  archive URL cited by either pass (pricing, ToS, FAQ, AUP -- all four document classes, both
+  passes, 8 URLs total) to check for `x-archive-redirect-reason` and memento-datetime agreement;
+  a direct live fetch of https://pika.art/pricing (2026-08-16); a fresh archive.org submission of
+  the same page (2026-08-16, 20260816123040), re-verified genuine after submission.
+
+  ALSO READ: research-adjudicator.md (role definition) in full; protocol-v1.md sections 6.1-6.8,
+  7.1-7.6 in full; codebook-v1.md domains 1, 3, 4, 5, 6 (cost_per_output_unit,
+  cost_per_output_computable, computation_assumptions in full, including both worked examples),
+  and 12 (unquantified_limit_clause in full), plus sections 1-5, 8, 9; sampling-rules.md section
+  7.2 (price basis); record-template.yaml; orchestrator/deviations-log.md in full (D-023 in
+  particular -- the same phantom-capture failure mode, found the same day on a different product,
+  anomaly-ai); records/adjudicated/anomaly-ai.yaml, read as a style/precedent reference for how a
+  prior adjudication documented an archive-verification finding of the same class.
+  tools/disagreements.py, tools/validate_records.py, tools/check_price_arithmetic.py, and
+  tools/verify_archives.py source read directly (not just run) to confirm exactly what the
+  mechanical checks do and do not catch -- verify_archives.py implements the same
+  redirect/CDX-timestamp check performed by hand above and would have caught the pricing-page
+  citation, but orchestrator/archive-verification.csv shows it has only ever been run against one
+  other product (lovo-ai testing data), never against pika; this is worth running study-wide
+  before freeze, per D-023's own recommendation.
+
+  NOT READ: orchestrator/interim-signals.md; any other product's pass1/pass2/-sources material;
+  aitoolspolice.com; site/content/reviews/.
+
+  blindness/scope attestation: no other product's pass1 or pass2 record was opened beyond pika's
+  own; records/adjudicated/anomaly-ai.yaml was read only for its own published, resolved reasoning
+  on a directly analogous archive-verification question, which protocol makes available to an
+  adjudicator by virtue of being an already-published adjudicated record, not pass-2 material. No
+  repository history command (git log/show/diff/blame) was run; only `git add` and `git commit --`
+  were used, per this agent's git rule.
+conflict_note: "CONFLICT 1 (free-tier credit allowance): https://pika.art/pricing states Basic (free) grants \"80 monthly video credits\"; https://pika.art/faq (\"How does monthly video pricing work?\") states \"On the Basic (free) plan you get 150 credits per month.\" Coded free_plan_cap_value/free_plan_cap_documented from the pricing page per protocol 6.2 (pricing page ranks first for free-tier limits); FAQ figure recorded here, not coded. CONFLICT 2 (credit-to-output rate table): https://pika.art/pricing publishes a \"Model 2.5\" credit table (e.g. Text/Image-to-Video 720p/5s = 20 credits); https://pika.art/faq (\"How many credits do videos cost to generate?\") publishes a different table naming \"Turbo Model / Pro Mode / 1.0/1.5 Model / 2.1 Model / 2.2 Model\" with different figures for overlapping specs (e.g. its 2.2-Model Image-to-Video/Text-to-Video 720p/5s = 6 credits) and no 480p tier at all -- appears to predate the live pricing page's Model 2.5 rates. Coded credit_to_output_rate_published/credit_rate_location from the pricing page per protocol 6.2; FAQ table recorded here, not coded."
+register_events: []
+status: complete

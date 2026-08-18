@@ -1,0 +1,126 @@
+product_id: speechify
+product_name: Speechify
+category: AI voice
+product_status: active
+paid_submission: "no"
+entry_tier_name: Premium
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-12
+recheck_date: not_applicable
+primary_source_url: https://speechify.com/pricing/
+archive_url: https://web.archive.org/web/20260812083338/https://speechify.com/pricing/
+archive_status: archived
+default_display_state: >
+  USD, no currency selector or region picker present anywhere on the page. Billing toggle
+  defaults to MONTHLY: DOM class check before any interaction showed "Monthly" carrying
+  class "bg-white shadow-xs text-black" (the active/selected pill) while "Yearly" carried no
+  such background class -- confirmed independently by the page's own embedded SSR JSON payload
+  (self.__next_f RSC stream), which lists plan "tts-premium" with priceMonthly "$$29" as the
+  card's live figure alongside priceYearly "$$139" (not shown by default). A one-time
+  language-select modal ("Choose your language to get the best Speechify experience",
+  defaulting to English) was dismissed before reading; this is a language preference, not a
+  currency/region selector, and no cookie-consent banner blocked content. Read on a desktop
+  viewport (1280x900). Product-line scope: this is the flagship www.speechify.com/pricing/
+  page (Free / Premium text-to-speech reader + voice-AI-assistant product); "Speechify Studio"
+  (voice-over/dubbing) and "Speechify API" are separate product lines with their own pricing
+  pages, explicitly out of scope for this record -- see coder_note.
+
+sources:
+  - { url: "https://speechify.com/pricing/", kind: pricing, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812083338/https://speechify.com/pricing/", note: "rendered browser read (D-005); static WebFetch agreed. Fresh same-day capture required a 2nd save attempt -- 1st attempt returned a stale 2026-08-09 dedup. Local evidence copy: speechify-sources/pricing-page-rendered-2026-08-12.txt (includes DOM class check + embedded SSR JSON payload confirming $29/$139 in a second representation, per the read-a-price-twice rule)." }
+  - { url: "https://speechify.com/terms/", kind: tos, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812083313/https://speechify.com/terms/", note: "Full document read start-to-finish (79,309 chars, 'Updated July 1, 2025'), required for the unquantified_limit_clause full-read rule. Local evidence copy with all operative clauses quoted verbatim: speechify-sources/terms-of-service-key-clauses-2026-08-12.txt." }
+  - { url: "https://speechify.com/usage-limits/", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260721182758/https://speechify.com/usage-limits/", note: "ARCHIVE STALE (2026-07-21, predates collection date): two save attempts both returned the same dedup capture; archive_status for THIS source is local_copy_only per protocol 6.4's same-day requirement. Same-day evidence of record: speechify-sources/usage-limits-page-2026-08-12.txt (browser read + WebFetch cross-check, in agreement)." }
+  - { url: "https://speechify.com/refund-policy/", kind: refund, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260721182758/https://speechify.com/refund-policy/", note: "ARCHIVE STALE (2026-07-21): two save attempts both returned the same dedup capture; archive_status for THIS source is local_copy_only. Same-day evidence: speechify-sources/refund-policy-page-2026-08-12.txt." }
+  - { url: "https://speechify.com/blog/how-do-i-cancel-my-premium-or-trial-subscription/", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812083817/https://speechify.com/blog/how-do-i-cancel-my-premium-or-trial-subscription/", note: "official vendor blog/help article, second independent source corroborating trial_exists and trial_auto_converts. See speechify-sources/help-center-trial-cancellation-blogs-2026-08-12.txt." }
+  - { url: "https://speechify.com/blog/how-do-i-cancel-my-premium-subscription-on-ios/", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812084158/https://speechify.com/blog/how-do-i-cancel-my-premium-subscription-on-ios/", note: "official vendor blog/help article, iOS-specific cancellation route corroborating ToS 2.3(f). See speechify-sources/help-center-trial-cancellation-blogs-2026-08-12.txt." }
+  - { url: "https://speechify.com/pricing-studio/", kind: other, accessed: "2026-08-12", archive: archive_failed, note: "CONTEXT ONLY, not a coding source for this record -- Speechify Studio is a separate product line (own pricing, own credit system) out of scope for this product record. Not archived (effort not spent on a non-coding source per the economy instruction). See speechify-sources/studio-and-appstore-context-NOT-coding-sources.txt. No variable in this record is coded from this URL." }
+
+variables:
+  headline_price_usd: { value: 29.00, source: "https://speechify.com/pricing/", evidence: "Premium card, default MONTHLY toggle state: '$29 /MONTH'; corroborated by embedded SSR JSON payload priceMonthly:'$$29' (second representation, read-a-price-twice rule satisfied)." }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://speechify.com/pricing/", evidence: "'$29 /MONTH' shown with Monthly toggle active by default (DOM class bg-white on Monthly, not Yearly); no per-seat/per-user qualifier printed." }
+  first_charge_amount_usd: { value: 29.00, source: "https://speechify.com/pricing/", evidence: "Default display state is MONTHLY-preselected (not annual), so the annual-multiply branch of the decision rule does not apply; the first charge is the monthly figure itself, read directly not calculated. Corroborated by ToS 2.3(c): 'Speechify is authorized to charge your payment method for (i) the initial subscription fee at the rate disclosed at the time of purchase' -- the disclosed rate at time of purchase (default monthly state) is $29." }
+  mandatory_addon_present: { value: "no", source: "https://speechify.com/usage-limits/", evidence: "Full Premium feature list (pricing page) and usage-limits/ToS documentation reviewed; no required separate charge, minimum credit purchase, platform fee, or onboarding fee found for using Premium as advertised. 'Optional Extensions (After 2026)' are optional, not mandatory, and apply only after exhausting the guaranteed 1,000,000 words/month baseline." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://speechify.com/pricing/", evidence: "Headline figure ($29/mo) is read in the default MONTHLY state and does not depend on annual prepayment (rule 1: 'If [the headline figure] does not [depend on annual prepayment], code not_applicable')." }
+  annual_default_toggle: { value: monthly_preselected, source: "https://speechify.com/pricing/", evidence: "DOM class check before any interaction: Monthly button class includes 'bg-white shadow-xs text-black' (active/selected pill); Yearly button carries no such background class. No aria-selected/aria-checked attributes present; state read from Tailwind background-color class." }
+  free_plan_exists: { value: "yes", source: "https://speechify.com/pricing/", evidence: "Pricing page shows a standing 'Free' plan card ('START FOR FREE') alongside the Premium paid tier, not a time-limited trial." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://speechify.com/pricing/", evidence: "Free card lists two quantified standing limits: 'Listen at speeds up to 1.5x' (number+dimension) and '10 robotic sounding voices' (number+dimension); no unquantified limit found on the free-plan description. 'Text to speech features only' is a feature-scope statement, not a numeric usage limit, so it is excluded from this test per section 5.1." }
+  free_plan_cap_value: { value: "10 voices | 1.5x max listening speed", source: "https://speechify.com/pricing/", evidence: "'10 robotic sounding voices'; 'Listen at speeds up to 1.5x'. No free-tier word/character volume limit is documented anywhere (usage-limits page scope is explicitly 'Premium Voices' throughout and never addresses Free)." }
+  free_plan_watermark: { value: unknown, source: "https://speechify.com/pricing/", evidence: "No watermark/branding row or statement found in the pricing page feature grid, the Terms of Service, or the usage-limits page for Free-tier outputs (including AI Podcasts, a generated-audio Premium feature analog). Not coded not_applicable because the product's generated-audio outputs are of a kind that could plausibly carry a watermark; documents simply do not address it." }
+  free_plan_duration: { value: perpetual, source: "https://speechify.com/terms/", evidence: "ToS 2.3(a)(i): \"'Free Tier' means a limited version of the Services free of charge... Access to the Free Tier is provided at our sole discretion, is not guaranteed, and may be modified or terminated at any time without notice.\" This is a business-discretion clause about the offering, not a stated expiry for an individual account; pricing page presents Free as a standing tier alongside Premium with no expiry stated." }
+  trial_exists: { value: "yes", source: "https://speechify.com/terms/", evidence: "ToS 2.3(a)(iii): \"'Free Trial' means a promotional, time-limited, no-charge subscription offer (currently three (3) days unless a different period is stated at sign-up) that gives you access to additional features including and beyond the 'Free Tier.'\" Independently corroborated by official help-center articles treating 'Trial' as a current, supported account state (https://speechify.com/blog/how-do-i-cancel-my-premium-or-trial-subscription/)." }
+  trial_card_required: { value: "yes", source: "https://speechify.com/terms/", evidence: "ToS 2.3(a)(iii): 'Unless you cancel before the trial ends, the Free Trial automatically converts to a paid Subscription Plan at the then-current price... We will charge the payment method you provided at sign-up when the Free Trial converts.' The clause states a payment method was provided AT SIGN-UP (trial start), not merely that conversion happens automatically -- distinguished from the codebook's own 'implication is not a statement' example, which has no equivalent at-sign-up clause." }
+  trial_length_days: { value: 3, source: "https://speechify.com/terms/", evidence: "ToS 2.3(a)(iii): 'currently three (3) days unless a different period is stated at sign-up.' 3 is the documented standard length; the caveat that a specific sign-up flow could state a different period is noted in coder_note." }
+  trial_auto_converts: { value: "yes", source: "https://speechify.com/terms/", evidence: "ToS 2.3(a)(iii): 'the Free Trial automatically converts to a paid Subscription Plan at the then-current price and renews on the same billing cycle until cancelled.' Independently corroborated by help-center: 'Canceling before your free trial ends will prevent any future charges.'" }
+  credit_system_present: { value: "no", source: "https://speechify.com/usage-limits/", evidence: "Plan allowance is stated directly in output units (words), e.g. 'guarantees all Premium subscribers a total Premium Voice usage limit of 1,000,000 words per month' -- not an intermediate credit/token/point currency. (Speechify Studio, a separate out-of-scope product line, does use 'Studio credits'; not applicable to this record's product.)" }
+  credit_unit_defined: { value: not_applicable, source: "https://speechify.com/usage-limits/", evidence: "No credit system present for this product (see credit_system_present)." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://speechify.com/usage-limits/", evidence: "No credit system present for this product." }
+  credit_rate_location: { value: not_applicable, source: "https://speechify.com/usage-limits/", evidence: "No credit system present for this product." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://speechify.com/pricing/", evidence: "Premium is sold as unmetered flat-fee software access per user ($29/mo) rather than a per-artifact countable output; the word allowance functions as a fair-use ceiling on an otherwise flat subscription, not a per-unit price basis (rule 2: 'Where a product sells unmetered access to software rather than a countable artifact, the unit is per_seat_month')." }
+  cost_per_output_computable: { value: "yes", source: "https://speechify.com/pricing/", evidence: "Principal output unit is per_seat_month itself, so cost per unit equals the published plan price directly with no allowance conversion required. See computation_assumptions." }
+  computation_assumptions: { value: "Premium, $29/mo billed monthly (default state, DOM-confirmed). Unit=per_seat_month (unmetered flat-fee access). Cost/seat-month = plan price directly = $29.00/mo; no allowance conversion needed since the unit equals the billing period itself.", source: "https://speechify.com/pricing/", evidence: "" }
+  credit_rollover_policy: { value: not_applicable, source: "https://speechify.com/usage-limits/", evidence: "No credit system present for this product (see credit_system_present)." }
+  failed_generation_charge_policy: { value: unknown, source: "https://speechify.com/usage-limits/", evidence: "Documentation states words are consumed for Premium Voice output but is silent on whether a technically failed or empty generation (TTS conversion, AI Podcast, AI Summary) still consumes the word allowance. Full usage-limits page and ToS 6.3/6.5 reviewed; no statement addresses outcome/failure, only submission and fair-use/abuse conduct." }
+  auto_renewal_default: { value: "on", source: "https://speechify.com/terms/", evidence: "ToS 2.3(d): 'IMPORTANT NOTICE-AUTOMATIC RENEWAL: SUBSCRIPTION TERMS WILL AUTOMATICALLY RENEW FOR ADDITIONAL PERIODS EQUAL TO THE EXPIRING SUBSCRIPTION TERM UNLESS YOU CANCEL IN ACCORDANCE WITH THE CANCELLATION TERMS BELOW.'" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://speechify.com/terms/", evidence: "Automatic renewal is stated in ToS 2.3(d); not found on the pricing page as rendered/captured, and there is no separate dedicated purchase-terms document (the refund-policy page is refund-specific, not a general subscription-terms page). Help-center articles reference trial-conversion charge-prevention but do not state general subscription auto-renewal outside the trial context." }
+  renewal_notice_commitment: { value: advance_notice_stated, source: "https://speechify.com/terms/", evidence: "ToS 2.3(g): 'Annual Subscriptions: ...a reminder notice to your email address on file no less than 15 days and no more than 45 days before your subscription renews.' Also stated for promotional/trial offers lasting more than 31 days. Product/document-level value (not one of the six entry-tier variables); see coder_note for the gap on an ordinary monthly renewal." }
+  refund_policy_exists: { value: "yes", source: "https://speechify.com/refund-policy/", evidence: "'Speechify will issue refunds for purchases made in the past 7 days in case of a) if it is determined that your account has been taken over by a third party and used fraudulently, or b) you have been charged by Speechify in error.' Plus a conditional annual-plan low-usage right." }
+  refund_window_days: { value: 0, source: "https://speechify.com/refund-policy/", evidence: "'Subscriptions purchased on a Monthly, Quarterly, or Discounted basis are non-refundable.' This record's entry tier is coded in the pricing page's default MONTHLY state per sampling-rules 7.2, and this clause names that exact configuration. See coder_note for the annual-only 7-day/500-word right on the same plan and an unresolved internal-tension note against the policy's general fraud/billing-error clause." }
+  refund_conditions: { value: conditional, source: "https://speechify.com/refund-policy/", evidence: "Refund rights documented anywhere in the policy all carry conditions: a 7-day contact window plus a qualifying reason (fraud or billing error), or for annual plans, a 500-HD-word usage ceiling within 7 days. Product/document-level value, not entry-tier-scoped (unlike refund_window_days)." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://speechify.com/terms/", evidence: "ToS 2.3(f): 'YOU MAY CANCEL YOUR SUBSCRIPTION AT ANY TIME BY INITIATING A CANCELLATION THROUGH YOUR SPEECHIFY ACCOUNT SETTINGS...' plus the exact route: 'click the Cancel Subscription button... accessible at https://app.speechify.com/settings?tab=subscription.' Corroborated by official help-center cancellation articles." }
+  refund_policy_location: { value: dedicated_refund_page, source: "https://speechify.com/refund-policy/", evidence: "Substantive refund terms (7-day window, qualifying conditions, exclusions) live entirely on the dedicated https://speechify.com/refund-policy/ page. ToS 2.3(a)(ii) separately cross-references the Apple/Google App Store final-sale carve-out; see coder_note." }
+  commercial_use_lowest_tier: { value: not_granted, source: "https://speechify.com/terms/", evidence: "ToS 4.4: 'The Services, with the exception of Speechify Voice Over Studio, are not intended for your commercial use... You must not use any part of the materials used in or on the Services for commercial purposes without obtaining a written license.' This record's product (Premium/Free TTS reader) is part of 'the Services' and is NOT the carved-out Studio product, so commercial use is not granted at any tier coded here." }
+  watermark_removal_tier: { value: unknown, source: "https://speechify.com/pricing/", evidence: "No watermark/branding statement of any kind found in the pricing page feature grid, the Terms of Service, or the usage-limits page for this product's outputs." }
+  output_ownership_statement: { value: unknown, source: "https://speechify.com/terms/", evidence: "Full ToS read start-to-finish; section 7 (User Material) covers only an inbound license FROM the user TO Speechify over submitted/uploaded input. No clause addresses ownership of AI-generated audio/podcast/speech OUTPUT (searched 'generated content', 'AI-generated', 'synthesized', 'output ownership' -- zero hits). Section 5.1 Copyright covers Speechify's own platform IP, not user-facing generated output." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://speechify.com/usage-limits/", evidence: "Entry tier (Premium) usage limit is a quantified rate: 'guarantees all Premium subscribers a total Premium Voice usage limit of 1,000,000 words per month' (also a 150,000 words/month contractually guaranteed baseline, ToS 6.3). No other Premium-tier limit found lacking a number." }
+  unquantified_limit_clause: { value: absent, source: "https://speechify.com/terms/", evidence: "Terms of Service (full 79,309-character document) and usage-limits page read in full. ToS 6.5 and usage-limits section 5 'Fair-Use and Abuse Policy' triggers are conduct-based only (account sharing, resale/broadcast distribution, bots/automation, AUP violation), not an unquantified volume/intensity-of-use standard; codebook rule 3 excludes conduct-based prohibitions from this variable. No 'fair use', 'reasonable use', or 'excessive use' clause without a number was found anywhere in either document." }
+
+coder_note: |
+  Product-line scope: the entry tier coded in this record is Premium ($29/mo), part of Speechify's
+  flagship text-to-speech reader / voice-AI-assistant product at www.speechify.com/pricing/. Speechify
+  Studio (voice-over/dubbing, own pricing, own "Studio credits" system) and Speechify API are separate
+  product lines with their own pricing pages and are explicitly out of scope for every value in this
+  record.
+  Entry-tier selection (sampling-rules 7.2): only one paid tier is published (Premium); Free is not a
+  paid-tier candidate. Only one candidate was eligible, so there are no losing candidates to record.
+  Trial is a $0 free trial (3 days, ToS 2.3(a)(iii)), not a cheap non-zero paid intro period, so the
+  paid-time-limited-intro-period open question does not apply to this record.
+  Disclosure-thinness findings (free-tier limits and commercial-use rights, flagged as thin for this
+  category): the free plan's only documented limits are 10 voices and 1.5x max speed (both quantified);
+  no free-tier word/character volume limit is documented anywhere. Commercial use of this product's
+  output is explicitly NOT granted at any tier coded here (ToS 4.4 carves out only the separate Studio
+  product). Output ownership of AI-generated audio (TTS, AI Podcasts, AI Summaries) is nowhere addressed
+  in the full Terms of Service -- coded unknown, not not_applicable, since the product plainly generates
+  such output.
+  refund_window_days judgment call: the refund policy states a conditional 7-day/500-HD-word refund
+  right for the ANNUAL configuration of Premium, but explicitly lists "Subscriptions purchased on a
+  Monthly, Quarterly, or Discounted basis" as non-refundable. This record's entry tier is coded in the
+  pricing page's default MONTHLY state (sampling-rules 7.2, protocol 6.8), so refund_window_days = 0 for
+  the tier as coded, not 7. This creates an unresolved internal tension against the policy's earlier
+  general fraud/billing-error 7-day clause, which is not explicitly limited to annual -- flagged here
+  rather than resolved by inference, since the specific "Monthly...non-refundable" clause names our exact
+  configuration. refund_policy_exists/refund_conditions are coded at the document level (yes/conditional)
+  since they are not among the six entry-tier variables and a refund right does exist somewhere in the
+  policy.
+  trial_card_required="yes" judgment call: ToS 2.3(a)(iii) states "We will charge the payment method you
+  provided at sign-up when the Free Trial converts" -- this ties payment-method provision to the sign-up
+  moment specifically, which is a stronger statement than the codebook's own "converts automatically
+  unless canceled" example (coded unknown there for lack of an at-sign-up clause).
+  usage-limits page's own text is internally inconsistent: states the 1,000,000-words/month 2026
+  guarantee is active "through December 31, 2026" in one sentence, then "Expires automatically on
+  January 1, 2026" (sic) in the next -- read as a vendor drafting error (probably means Jan 1, 2027),
+  quoted verbatim, not corrected, and not relied on for any coded value since the guarantee is
+  unambiguously active as of this record's 2026-08-12 collection date either way.
+  Archival: pricing page and terms archived fresh same-day. usage-limits and refund-policy pages
+  returned a stale 2026-07-21 dedup capture on both save attempts (2 of 2 used); coded as
+  local_copy_only for those two sources per protocol 6.4, from same-day local evidence copies each
+  cross-checked by two independent extraction methods.
+  Read-a-price-twice: $29/$139 confirmed in a second representation (embedded SSR JSON payload,
+  self.__next_f RSC stream) independent of rendered DOM text; zero sup/sub elements on the page, ruling
+  out a superscript-cents misread. SAVE 60% badge arithmetic ($29x12=$348; ($348-$139)/$348=60.06%) is
+  internally consistent, confirming $139 is a genuine annual total, not a mislabeled monthly-equivalent
+  figure.
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "No conflict between official sources of equal authority was found on any coded variable. Cross-channel divergence (per assignment instruction): no PRICE divergence could be confirmed from official App Store/Play Store listings -- neither surfaces an itemized price on its current page layout (checked 2026-08-12: https://apps.apple.com/us/app/speechify-text-to-speech/id1209815023 and https://play.google.com/store/apps/details?id=com.cliffweitzman.speechify2&hl=en). A REFUND-RIGHTS divergence by purchase channel IS confirmed by official sources: purchases via Apple App Store or Google Play are final sale, non-refundable through Speechify regardless of the web refund policy's conditional 7-day terms (ToS 2.3(a)(ii): 'if you purchase a subscription through the Apple App Store or our iPhone application, the sale is final, and we will not provide a refund... subject to Apple's applicable payment policy'; same statement for Google Play; restated at the refund-policy page). Web purchasers use https://speechify.com/refund-policy/; store purchasers must use Apple's/Google's own refund mechanisms instead."
+register_events: []
+
+status: complete

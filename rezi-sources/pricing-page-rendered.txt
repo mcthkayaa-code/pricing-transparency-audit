@@ -1,0 +1,92 @@
+SOURCE: https://www.rezi.ai/pricing
+ACCESSED: 2026-08-12
+METHOD: rendered browser read (Claude Browser tool), viewport 1400x1000, cookies default (no consent banner shown)
+
+=== get_page_text (rendered DOM, representation 1) ===
+Title: Rezi Pricing - All Plans Include A 30-Day Money Back Guarantee
+URL: https://rezi.ai (canonicalizes from www.rezi.ai/pricing)
+
+Pricing
+The resume that actually gets you the interview
+62% of Rezi users land an interview. Pick a plan and find out why — free to start, no card required.
+
+Free
+$0
+Get a feel for how it works. No payment required.
+Try for free
+1 Resume / 1 AI Interview / 3 PDF Downloads / Standard Format Templates / AI Resume Writer / AI Resume Editor
+
+Pro
+$29 / month
+Access to all features plus unlimited AI & free monthly review.
+Get started
+Unlimited Resumes / Unlimited AI Interviews / Unlimited PDF Downloads / Access to all templates /
+AI Resume Writer / AI Resume Editor / Rezi Score / Keyword Targeting
+
+Lifetime Plan
+All features, one payment.
+Buy for $149
+
+Enterprise
+$99 / month per 200 users
+For universities, agencies, and career sites who want to empower their job seekers.
+Book a demo (links to /contact-sales)
+Everything in Pro / Education Videos / Domain Restriction / Transactional Email Settings /
+Authentication / Resume Review Management / Team Roles / Group Delegation / Single Sign-On (SSO) / Webhooks
+
+--- Compare table (feature grid) ---
+Free $0/month | Pro $29/month | Enterprise $99/mo/200 users
+Rezi Resume Builder: Free=1 Resume Limit, Pro=Unlimited, Enterprise=Unlimited
+Rezi Cover Letter Builder: Free=Not included, Pro=Unlimited, Enterprise=Unlimited
+Rezi Resignation Letter Builder: Free=Not included, Pro=Unlimited, Enterprise=Unlimited
+Rezi Score: Free=Limited, Pro=Full, Enterprise=Full
+AI Keyword Targeting: Free=Limited, Pro=Full, Enterprise=Full
+Real Time Content Analysis: Free=Limited, Pro=Full, Enterprise=Full
+Education Videos: Free=Not included, Pro=Not included, Enterprise=Included
+AI Resume Writer/Editor/Summary Writer: Included on all three
+AI Cover Letter Writer / AI Resignation Letter Writer: Free=Not included, Pro/Enterprise=Included
+AI Interview: Free=1 interview, Pro=Unlimited, Enterprise=Unlimited
+Rezi Resume Review: Free=From $8, Pro=1 per month (included), Enterprise=1 per month (included)
+.PDF File: Free=3 Downloads, Pro=Unlimited, Enterprise=Unlimited
+Microsoft Word .DOCX File: Free=Not included, Pro=Unlimited, Enterprise=Unlimited
+Google Drive Export: Free=Not included, Pro=Unlimited, Enterprise=Unlimited
+Resume Template Formats (Standard/Compact/Alternative/Bold/Modern): Free=Standard only, Pro/Enterprise=all
+Authentication/Domain Restriction/Transactional Email/Team Roles/Group Delegation/User Submitted Resume Review Mgmt: Free/Pro=Not included, Enterprise=Included
+Commission on Upgrades: Enterprise=Included (70%)
+Single Sign-On (SSO) / Webhooks: Free/Pro=Not included, Enterprise=Included
+
+No watermark row anywhere in this table. No billing-period toggle (monthly/annual) anywhere on the page -
+each plan card and the compare table shows exactly one price with no switcher UI.
+
+FAQ (Pricing category, JSON-LD acceptedAnswer text, representation 2 - see below for exact match)
+
+=== embedded JSON-LD (application/ld+json script tags, representation 2) ===
+Confirms via a SECOND representation (structured data, not text-extraction) exactly matching the rendered
+DOM figures above:
+
+FAQPage schema, Question "What are the main differences between Rezi's Free, Pro, and Lifetime plans?":
+"The Free plan is $0/month and allows you to create one resume, use limited AI tools (such as Keyword
+Targeting and Analysis), and download up to three PDFs. You can also create unlimited cover and
+resignation letters. No card is required to begin.‍The Pro plan is $29/month and provides unlimited access
+to all features, including unlimited resumes, full AI capabilities, unlimited downloads, and one free
+monthly expert resume review (resumes are reviewed by a person).‍The Lifetime plan is a $149 one-time
+payment. It grants permanent access to all the features of the Pro plan (unlimited resumes, full AI tools,
+and unlimited downloads), but it does not include the free monthly expert review (which can be purchased
+for an extra fee)."
+
+Question "What is your refund policy?":
+"Rezi offers a 100% money-back guarantee on all paid plans (Pro and Lifetime). If you are unsatisfied, you
+can request a full refund within 30 days of your purchase."
+
+Question "Can I switch or upgrade plans later?":
+"Yes, you can easily upgrade or downgrade your plan at any time through your Rezi Account Billing
+dashboard. Prorated credits will apply when switching."
+[NOTE: "Prorated credits" here = plan-switch proration terminology, not a metered AI-generation credit
+system. No other use of "credit" anywhere on this page.]
+
+WebPage schema meta description: "Rezi pricing plans. Start free, or upgrade to Pro for unlimited AI,
+unlimited resumes, and all templates."
+
+CONFIRMS: $29 (not $2900 or $2.90 - magnitude sanity-checked against both representations), $0, $149, $99
+all read identically in rendered DOM text and in embedded JSON-LD. No superscript/split-digit price markup
+detected (no CSS-fragmented cents).

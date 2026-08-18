@@ -1,0 +1,31 @@
+# is an annual plan charged as one lump sum payment for the full 12 months upfront, or billed monthly during a 12-month term?
+
+An **annual** Plus subscription is **billed on an annual cadence**, not as monthly charges spread across the 12-month term.
+
+* Paid plans are “billed either **monthly or annually**” depending on what you choose.
+* Subscriptions “automatically renew every month or **every year**.”
+* When switching **from an annual plan to a monthly plan**, your account gets a **credit for the payment you already made for your annual plan**, which is then applied to your future monthly payments.
+
+So, for an annual plan, you’re effectively charged for the full annual period at renewal time (rather than being billed month-by-month during the year). See [Plans and billing](/plus-ai/plans-and-billing.md).
+
+# Suggested Follow-up Questions:
+
+If you need more information, consider asking one of these follow-up questions by performing an HTTP GET request on the URL:
+
+- [Is annual billing cheaper overall?](https://guide.plusai.com?ask=Is%20annual%20billing%20cheaper%20overall%3F)
+- [Can I switch to monthly later?](https://guide.plusai.com?ask=Can%20I%20switch%20to%20monthly%20later%3F)
+- [How do I upgrade to annual?](https://guide.plusai.com?ask=How%20do%20I%20upgrade%20to%20annual%3F)
+
+# Sources:
+
+- [Plans and billing](https://guide.plusai.com/plus-ai/plans-and-billing.md)
+- [Free and paid plans](https://guide.plusai.com/other/live-snapshots/free-and-paid-plans.md)
+- [AI Agent](https://guide.plusai.com/ai-for-presentations/ai-agent.md)
+- [Install in Google Slides](https://guide.plusai.com/plus-ai/install-in-google-slides.md)
+- [Invite your team](https://guide.plusai.com/plus-ai/invite-your-team.md)
+- [Presentation Agent API](https://guide.plusai.com/apis-for-presentations/presentation-agent-api.md)
+- [Install in PowerPoint](https://guide.plusai.com/plus-ai/install-in-powerpoint.md)
+- [Generate a new document](https://guide.plusai.com/ai-for-google-docs/generate-a-new-document.md)
+- [Contact us](https://guide.plusai.com/help/contact-us.md)
+- [Welcome to Plus AI](https://guide.plusai.com/welcome-to-plus-ai.md)
+

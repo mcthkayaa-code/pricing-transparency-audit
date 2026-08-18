@@ -1,0 +1,77 @@
+HTTP/2 302 
+server: nginx
+date: Wed, 12 Aug 2026 07:00:22 GMT
+content-type: text/html; charset=utf-8
+content-length: 366
+location: https://web.archive.org/web/20260812070007/https://help.resume.io/en/categories/669632-billing-accounts
+x-app-server: wwwb-app55-dc6
+x-ts: 302
+x-tr: 18083
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-save-SERVER=wwwb-app55; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 302 
+server: nginx
+date: Wed, 12 Aug 2026 07:00:22 GMT
+content-type: text/plain; charset=utf-8
+content-length: 0
+x-archive-redirect-reason: found capture at 20260606110015
+location: https://web.archive.org/web/20260606110015/https://help.resume.io/en/categories/669632-billing-accounts
+server-timing: captures_list;dur=0.539811, exclusion.robots;dur=0.066239, exclusion.robots.policy;dur=0.053048, esindex;dur=0.009984, cdx.remote;dur=12.404836, LoadShardBlock;dur=100.786862, PetaboxLoader3.datanode;dur=68.209070
+x-app-server: wwwb-app253-dc8
+x-ts: 302
+x-tr: 135
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app253; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Wed, 12 Aug 2026 07:00:23 GMT
+content-type: text/html
+x-archive-orig-last-modified: Fri, 29 May 2026 13:25:30 GMT
+x-archive-orig-etag: "14fc7d327df9e36803b0ee0c77f1d085"
+x-archive-orig-age: 80474
+x-archive-orig-cache-control: no-cache, must-revalidate
+x-archive-orig-date: Fri, 05 Jun 2026 12:39:03 GMT
+x-archive-orig-accept-ranges: bytes
+x-archive-orig-x-served-by: cache-iad-kjyo7100117-IAD
+x-archive-orig-content-length: 84149
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+memento-datetime: Sat, 06 Jun 2026 11:00:15 GMT
+link: <https://help.resume.io/en/categories/669632-billing-accounts>; rel="original", <https://web.archive.org/web/timemap/link/https://help.resume.io/en/categories/669632-billing-accounts>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://help.resume.io/en/categories/669632-billing-accounts>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: CC-MAIN-2026-25-1780687572135.55-0041/CC-MAIN-20260606095603-20260606125603-00839.warc.gz
+server-timing: captures_list;dur=0.362985, exclusion.robots;dur=0.041522, exclusion.robots.policy;dur=0.032238, esindex;dur=0.007132, cdx.remote;dur=12.712940, LoadShardBlock;dur=158.643105, PetaboxLoader3.datanode;dur=101.437381, PetaboxLoader3.resolve;dur=209.767661, load_resource;dur=193.584144
+x-app-server: wwwb-app253-dc8
+x-ts: 200
+x-tr: 407
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app253; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

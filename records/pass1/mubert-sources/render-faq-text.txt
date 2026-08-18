@@ -1,0 +1,210 @@
+Frequently Asked Questions (FAQ) | Mubert
+You need to enable JavaScript to run this app.
+We are
+live on Product Hunt now
+— Vote for us
+Products
+Pricing
+Blog
+FAQ
+What's New
+Eng
+Log In
+Sign Up
+Generate
+My Tracks
+Premium
+-30%
+EXPLORE
+Genres
+Moods
+BPM
+Playlists
+Themes
+Instruments
+API
+Artists
+Home
+/
+FAQ
+Frequently Asked Questions
+General
+What is Mubert?
+Why are we different from competitors?
+What is DSP?
+How do I change my password?
+Can I change the login method? (Email/Google/Facebook)
+I want to completely delete my account. How can I do this?
+Music Generation
+How to remove the watermark?
+What is the difference between the generation modes? (track/jingle/loop/mix)
+May I mix the genres?
+May I generate tracks of 25 minutes + duration?
+How does the 'Search by reference' feature work?
+How is Quick Remix different from generating a new track?
+How many tracks can I generate?
+How do I know how many generations are left?
+Can I generate sound effects (SFX)?
+How can I download tracks in .wav?
+Remixing & Editing
+What is Quick Remix?
+Which stems can I edit?
+Can I regenerate and remove multiple stems at the same time?
+Can I preview my changes before generating a remix?
+Why don't I hear the changes immediately after removing or regenerating a stem?
+Does Quick Remix change my original track?
+Can I remix Staff Picks tracks?
+Can I change the track duration in Quick Remix?
+Can I download separate stems or MIDI files?
+Can I remix a remix?
+Does Quick Remix use one generation from my monthly limit?
+Can I undo a remix?
+Why does my remixed track sound different than expected?
+Music Usage Options
+May I release music on music streaming services or music stocks? (e.g. Spotify, Apple Music, Epidemic Sound, Audiojungle, etc.)
+May I use Mubert tracks as background music for YouTube functional music channel? (e.g. LoFi girl) Which plan do I need?
+May I use music in commercial projects on the Ambassador Plan?
+May I use Mubert music for my indie game? Which Plan do I need?
+May I use Mubert music for my app?
+Licensing & Subscription
+I want to use your music for free. What are the limitations?
+I’m trying to choose between Creator and Pro Plans. Which one do I need?
+What do I get with a Paid Plan?
+Do I own the rights to music created with Mubert?
+What happens if I cancel the Subscription?
+May I release music on music streaming services or music stocks? (e.g. Spotify, Apple Music, Epidemic Sound, Audiojungle, etc.)
+How do I cancel my subscription?
+Which payment options are available?
+How many track generations are left this month?
+Troubleshooting
+My track is not downloading. What should I do?
+It takes too long to generate the track. Am I doing something wrong?
+I accidentally chose the wrong plan. How can I upgrade?
+I got a copyright claim. Is it normal? What should I do?
+I used Google Collab previously. However, now it states I need a subscription to get the token. What plan should I take?
+Why is my remix taking longer than expected?
+Other
+How do I join the Mubert Affiliate Program?
+How do I get API access?
+Royalty-free music catalog
+Genres
+Disco Music
+EDM Music
+Bass
+Techno Music
+Drum'n'Bass Music
+Dubstep
+Folk Music
+Trance Music
+Dub Music
+Jazz & Funk
+and more
+Moods
+Sensual
+Energizing
+Sad Music
+Celebration
+Calm Music
+Dreamy Music
+Joyful
+Scary
+Heroic
+Beautiful Music
+and more
+BPM
+120
+139
+123
+115
+134
+174
+160
+130
+98
+70
+and more
+Playlists
+Space Voyager
+Music for YouTube
+Beauty Vlogs
+Power Up!
+Motivational Music
+Experimental Artists
+Top Tracks
+Thoughtful Guitars
+Kawaii Party
+Lo-Fi Vibes
+and more
+Themes
+Comedy
+Art
+Drama
+Holidays
+Nature
+Tutorial
+Documentary
+Road Trip
+Corporate
+Podcast
+and more
+Instruments
+Ethnic Percussion
+Synths
+Keys
+Bells
+Piano
+Acoustic Guitar
+Drums
+Electric Guitar
+Pads
+Artists
+glowingpalace
+otres
+khoza
+pulsarum
+25slap1
+ntechnique
+nixtra
+subcat
+khozyaskij
+alexkova
+and more
+Image to Music
+Text to Music
+Mubert Render
+Render
+Pricing
+License
+Use Cases
+How it works
+Mubert API
+API
+Pricing
+Documentation
+Use Cases
+Tools
+Mubert Fuse
+Youtube Copyright Checker
+DMCA Twitch Checker
+Instagram Reels Checker
+TikTok Sound Checker
+Other Products
+Mubert for Streamers
+Mubert for Business
+About
+Blog
+FAQ
+About
+Contacts
+Generate infinite music streams in 150+ moods and themes. Perfect for IRL, gaming, or creator streams that need non-stop, DMCA-free music.
+Mubert Inc
+8 The Green Dover
+Delaware US 19901
+[email protected]
+Eng
+© 2016 –
+2026
+, Mubert Inc. All music broadcasted on *.mubert.com domains is generated (created, composed, recorded) by Artificial Intelligence (algorithm, software, program) owned by Mubert® Inc and licensed by Mubert® Inc only for personal use. All rights are reserved. Public reproduction, recording, distribution of this music is prohibited.
+Terms of Use
+Privacy Policy
+DMCA Policy

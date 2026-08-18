@@ -1,0 +1,33 @@
+SOURCE: https://colossyan.zendesk.com/hc/en-us/articles/31601551901841-Video-rights
+ACCESS DATE: 2026-08-07
+ARCHIVE STATUS: archive_failed twice (web.archive.org/save returned HTTP 520/429 on colossyan.zendesk.com domain) -> local_copy_only per protocol-v1.md section 6.4
+TITLE: Video rights ⚖️ – Colossyan
+PAGE "Updated" LABEL AT ACCESS TIME: "1 year ago Updated"
+
+--- VISIBLE MAIN-CONTENT TEXT AS READ ---
+Colossyan
+ Account & Payments
+ARTICLES IN THIS SECTION
+Video rights ⚖️
+1 year ago Updated
+Understanding the Colossyan full-commercial license
+
+Colossyan provides a full-commercial license for all user-generated content with all paid plans (Starter, Pro and Enterprise). This means that users are the sole owners of the video content they create with the Colossyan Creator. We offer this license to ensure that you can freely share your work without any limitations or worries.
+
+Ownership of video content generated on Colossyan
+
+All video content created with the Colossyan Creator belongs entirely to the creator. You can find the full-commercial license agreement in our Terms and Conditions. This license allows you to share your video content anywhere you choose, as long as it follows our fair use terms.
+
+Sharing video content generated with the Colossyan Creator
+
+You have the complete authority to share your video on any platform or forum, as long as it complies with our fair use terms. These terms are outlined in our Terms and Conditions and should be reviewed before deciding where to share the video. Please note that the full-commercial license only applies to videos generated on Colossyan.
+
+Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Return to top
+
+NOTE: This article's "sole owners" / full ownership claim conflicts with the current Terms of Service (colossyan.com/terms/
+Section 5.5, Standard terms, last updated 19 Dec 2024), which grants only a perpetual, limited, REVOCABLE, non-exclusive
+license to use "Colossyan Material" within Customer Created Content, not an ownership statement, for non-Enterprise plans.
+Also uses stale plan names ("Starter, Pro and Enterprise") not matching current live pricing page naming. See conflict_note.

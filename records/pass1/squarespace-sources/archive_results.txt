@@ -1,0 +1,4 @@
+URL:https://support.squarespace.com/hc/en-us/articles/230364668-Automatic-subscription-renewals HTTP:429 FINAL:https://web.archive.org/save/https://support.squarespace.com/hc/en-us/articles/230364668-Automatic-subscription-renewals
+URL:https://www.squarespace.com/terms-of-service HTTP:200 FINAL:https://web.archive.org/web/20260812103837/https://www.squarespace.com/terms-of-service
+URL:https://support.squarespace.com/hc/en-us/articles/46051001586701-Website-refund-policy HTTP:429 FINAL:https://web.archive.org/save/_embed/https://support.squarespace.com/hc/en-us/articles/46051001586701-Website-refund-policy
+URL:https://www.squarespace.com/acceptable-use-policy HTTP:200 FINAL:https://web.archive.org/web/20260812103841/https://www.squarespace.com/acceptable-use-policy

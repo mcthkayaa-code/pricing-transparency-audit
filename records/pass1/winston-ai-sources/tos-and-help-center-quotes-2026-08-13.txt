@@ -1,0 +1,120 @@
+All entries below are verbatim operative-phrase quotes pulled via WebFetch (prompted
+explicitly for verbatim text, not summary) from the listed official URLs on 2026-08-13.
+Archival: web.archive.org/save attempted twice for the ToS URL via WebFetch; both attempts
+returned "Claude Code is unable to fetch from web.archive.org" (tool-level failure, matches
+D-012). archive_status = local_copy_only for every URL in this file.
+
+=== https://gowinston.ai/terms-conditions/ ===
+
+[Refunds]
+"All purchases are non-refundable, subject to any mandatory rights you may have under
+applicable consumer protection laws in your jurisdiction, including the Consumer
+Protection Act (Quebec) for Quebec residents."
+
+[Auto-renewal / recurring charges]
+"If your purchase is subject to recurring charges, then you consent to our charging your
+payment method on a recurring basis without requiring your prior approval for each
+recurring charge, until you notify us of your cancellation."
+
+[Cancellation]
+"You can cancel your subscription at any time by logging into your account or contacting
+us using the contact information provided below. Your cancellation will take effect at
+the end of the current paid term."
+
+[Prohibited-use clause containing "revenue-generating" / "compete with us" — FULL
+paragraph, confirmed to be a general anti-scraping/anti-competition prohibited-use clause
+about the Site/tool itself, NOT a statement granting or restricting commercial use of scan
+outputs/scores]:
+"Except as permitted by applicable law, decipher, decompile, disassemble, or reverse
+engineer any of the software comprising or in any way making up a part of the Site.
+Except as may be the result of standard search engine or Internet browser usage, use,
+launch, develop, or distribute any automated system, including without limitation, any
+spider, robot, cheat utility, scraper, or offline reader that accesses the Site, or using
+or launching any unauthorized script or other software. Make any unauthorized use of the
+Site, including collecting usernames and/or email addresses of users by electronic or
+other means for the purpose of sending unsolicited email, or creating user accounts by
+automated means or under false pretenses. Use the Site as part of any effort to compete
+with us or otherwise use the Site and/or the Content for any revenue-generating endeavor
+or commercial enterprise."
+
+[Output/content ownership — addresses SUBMITTED content, not generated reports]
+"You retain full ownership of all content you submit and any intellectual property
+rights or other proprietary rights associated with it."
+
+[Watermarks]: not addressed anywhere in the document (confirmed by targeted search).
+
+[Rate limits / fair-use clause — Section 18, "API Users — Obligations and Disclaimer"]:
+"API users may not resell, sublicense, or redistribute access to the Winston AI API
+without our express prior written permission. Rate limits and fair use policies apply
+and may be updated from time to time; continued use of the API following any update
+constitutes acceptance of the revised limits."
+(Scoped to "API Users" by the section heading and by "continued use of the API" in the
+operative sentence — narrower than a blanket "applies to all plans" clause. Recorded as
+coder judgment call in the record's coder_note.)
+
+[Currency]
+"We accept payments in the following currencies: US Dollar (USD), Euro (EUR), British
+Pound (GBP), Colombian Peso (COP), Brazilian Real (BRL), Indonesian Rupiah (IDR), Indian
+Rupee (INR), Mexican Peso (MXN), and Philippine Peso (PHP). Prices displayed on the Site
+may be shown in USD." / "If your payment method is denominated in a different currency,
+the applicable conversion rate will be determined by your payment provider at the time
+of the transaction."
+
+[Rollover / failed generation]: not specified anywhere in this document (see help center
+articles below for rollover; failed-generation charging was never confirmed in ANY
+official document — see coder_note in the record).
+
+=== https://help.gowinston.ai/account-management/do-my-unused-credits-carry-over ===
+"Word scan credits are refreshed at the beginning of each billing cycle. This means that
+any unused credits from the previous month do not carry over to the next month."
+
+=== https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis ===
+(fetched twice with different prompts; both fetches agreed on the figures below and
+neither surfaced a failed-scan credit statement)
+"AI detector (1 credit/word) — detects AI-generated content and gives a Human Score"
+"Plagiarism (2 credits/word) — checks for copied content across the web."
+"Fact checker (1 credit/word) — verifies factual claims against external sources"
+"Writing feedback (1 credit/word) — suggests grammar fixes, paraphrasing, and clarity
+improvements."
+"Essay grader (1 credit/word) — grades an essay."
+"minimum 500 characters" required to start a text scan.
+"The credit estimator updates immediately as you toggle features on and off" (supports:
+one shared credit pool across features, consumed at each feature's own per-word rate,
+not separate quotas per feature).
+"Elite plan users can purchase additional credits at any time using the Get more credits
+link in the top navigation bar — no waiting required." / for other plans: "once your
+monthly credits are used up, you wait until the next billing cycle."
+Second, more targeted fetch explicitly asked about failed-scan credit handling and
+character-limit ceilings: "The documentation does not specify what happens if a scan
+fails or address whether credits are refunded" and no maximum character limit is stated
+on this page (only the 500-char minimum).
+
+=== https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-image-analysis ===
+"Basic Scan costs 200 credits" / "Advanced Scan costs 500 credits" / "you can upgrade
+that same scan to Advanced from the results view for 300 credits". No document/OCR/
+handwriting-scan-specific credit cost stated on this page.
+
+=== https://help.gowinston.ai/pricing/how-much-does-it-cost ===
+Elite plan described as "Everything in Advanced plus HUMN-2 certification, unlimited
+members, credit top-ups" — i.e. this help-center page also attributes credit top-up
+specifically to Elite, corroborating the text-analysis article's Elite-only top-up
+statement and CONFLICTING with the pricing page, which lists "Top-up Credits" as a
+feature bullet under all four plan cards (Free/Essential/Advanced/Elite) alike. No
+failed-scan credit statement found on this page either. Directs readers to
+gowinston.ai/pricing/ for actual price figures (none given on this help page).
+
+=== https://help.gowinston.ai/article/how-do-i-cancel-my-subscription ===
+"Log in to your Winston AI account. In the left-hand menu, scroll down to the Billing
+section and click on Manage subscription." / "click on the Cancel Subscription button."
+/ "Review the details, then confirm the cancellation." No contact/support step required.
+
+=== https://gowinston.ai (homepage) ===
+Repeated CTA "Get started free" paired with "No credit card required". No stated time
+limit ("14-day", "free forever") appears on the homepage itself; homepage does not
+disambiguate whether "Free" is a standing plan or a time-limited trial.
+
+=== NOT used as a coding source ===
+https://getwinstonai.com/terms.html — surfaced in a WebSearch result under a different
+domain than the frame's vendor_home_url (gowinston.ai). Not opened or used: could not
+confirm it is the same company's official page rather than an unrelated/copycat domain,
+and codebook protocol requires official vendor sources only.

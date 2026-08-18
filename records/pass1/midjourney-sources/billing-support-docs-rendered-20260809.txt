@@ -1,0 +1,178 @@
+Combined local copy of Midjourney help-center (docs.midjourney.com) articles used as sources
+for this record. All accessed 2026-08-09, method: rendered browser read (mcp Claude_Browser,
+javascript_tool document.body.innerText). Network note: session egresses from Turkey; all pages
+rendered in English/USD, no geo variant observed. archive.org/save was attempted for the primary
+pricing page and the ToS (2 attempts total between them, both HTTP 520) and for example.com as a
+control (HTTP 429) — the save endpoint was rate-limited/erroring across the board at collection
+time, so per-URL retries were not repeated for the remaining articles below; all are recorded
+archive_status: local_copy_only.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/27870399340173-Free-Trials
+==============================================================================
+Free Trials
+
+A limited trial is available on the niji · journey app, available for iOS and Android devices. No free trial is currently available in Discord or the midjourney.com website.
+
+See our How to Subscribe article for help subscribing to Midjourney.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/25384024738573-Canceling-Your-Subscription
+==============================================================================
+Canceling Your Subscription
+
+You can cancel your Midjourney subscription at any time by going to your Manage Subscription Page and clicking the Cancel Plan button.
+
+Your cancellation will become effective at the end of your current billing cycle, and you'll still have access to all of your subscription features—including any remaining Fast time—until then.
+
+Canceling your subscription does not delete your generated images or account history. Any private images you have will stay private. You can choose to resubscribe at any time.
+
+If you have an upgrade or downgrade scheduled, make sure to cancel that change first by using the Cancel Change button before you proceed with canceling your subscription.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund
+==============================================================================
+Requesting a Refund
+
+You're eligible for a refund only if you've used less than 20 GPU minutes throughout the lifetime of your account. This includes both Fast/Turbo and Relax time.
+
+If you qualify for a refund, you'll automatically see the option to request one when you cancel your subscription. If you don't see the refund option, we're unable to provide a refund.
+
+Refund eligibility does not apply if your account is suspended or terminated due to a violation of our Terms of Service or Community Guidelines.
+
+Refund processing may take up to 10 business days, depending on your bank's processing times, but you'll receive a refund confirmation email from Midjourney within a few minutes.
+
+Before requesting a refund, make sure to cancel any other plan changes you have scheduled using the Cancel Change button.
+
+If you encounter any error messages, wait an hour and try again—your renewal payment might still be processing. If the issue persists, contact billing support for assistance.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/27868888211213-Turning-Off-Automatic-Renewals
+==============================================================================
+Turning Off Automatic Renewals
+
+All Midjourney subscriptions are set to renew automatically. If you'd prefer not to continue your subscription, you can cancel it via your Manage Subscription Page on midjourney.com. Be sure to log in first if you're not already.
+
+Once you cancel, you'll still enjoy your current plan's features and any remaining GPU time until your subscription period ends. However, the plan won't automatically renew at the end of your billing period. Remember, each time you subscribe, you'll need to cancel before renewal if you don't want it to auto-renew—disabling automatic renewals entirely isn't an option.
+
+Canceling comes without penalties, and all your images created with Midjourney will remain saved in your account. You can access them anytime on midjourney.com, even without an active subscription.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/27870433501837-Finding-Your-Renewal-Time
+==============================================================================
+Finding Your Renewal Time
+
+To know when your subscription renews, remember that it happens exactly on the same day and time each month as when you first subscribed.
+
+For those on a yearly plan, your plan hours refresh monthly on the same day. For instance, if you subscribed to a yearly plan on August 8, your plan hours will refresh on the 8th of each month.
+
+To easily find your renewal date, you can either use the info command in Discord or visit your Manage Subscription Page on midjourney.com.
+
+Your renewal time may vary up to an hour from what's shown in Discord due to Daylight Saving Time/Summer Time.
+
+Remember, all Midjourney subscription plans automatically renew unless you set your plan to cancel.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/27870375276557-Using-Images-Videos-Commercially
+==============================================================================
+Using Images & Videos Commercially
+
+With Midjourney, you own all the images and videos you create, even if you decide to cancel your subscription. Feel free to use them however you like, with just a couple of exceptions:
+
+If you upscale an image that another user created, that image belongs to the original creator, not you. It will show up in their gallery on our website, so you'll need their permission to use it.
+If you are part of a business grossing more than $1,000,000 USD a year, you need a Pro or Mega Plan to use your images commercially for your company.
+
+Full details can be found in the Midjourney Terms of Service, Section 4: Copyright and Trademark.
+
+Understanding Copyrights
+
+It's important to know that Midjourney cannot offer guidance on copyright matters. Copyright laws differ from one country to another, so we recommend contacting a lawyer or legal expert if you have specific questions or concerns.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo
+==============================================================================
+GPU Speed (Fast, Relax, Turbo)
+To change how fast your images and videos are made, adjust your GPU speed.
+
+Turbo mode is not currently supported in V8.1. For more information about V8.1, see our Version article.
+
+Midjourney uses powerful Graphics Processing Units (GPUs) to handle the prompts you give it and turn them into images and videos. When you subscribe to Midjourney, you're actually buying time to use these GPUs. Think of GPU time like the data you get with a cell phone plan. We offer 3 different GPU speeds to chose from: Fast, Relax, and Turbo.
+
+Note: It's important to understand that GPU time is different from the time you're spending on our website or in Discord, and even from the actual time you wait for your creations. GPU time is only used when Midjourney is actively working to create images/videos for you.
+
+Fast Mode
+
+When you're in Fast Mode, you're tapping into your Fast time. This is a set amount of GPU time you receive each month with your Midjourney subscription. Each time your subscription renews, your Fast time is reset. So, it's smart to use up your Fast time before the month ends, because any unused time doesn't carry over to the next month.
+
+To check how much Fast time you have left, head to your Manage Subscription page and look at the usage details. If you're in Discord, you can use the info command to see your remaining Fast time.
+
+How much GPU time does a prompt cost?
+
+Processing one image prompt usually takes about one minute of GPU time, and one video prompt about eight minutes. But remember, different tasks can use more or less. Upscaling images, using nonstandard aspect ratios, or older model versions might require more time. Creating variations or using lower quality settings often uses less.
+
+	Approximate GPU Cost
+SD Prompt (set of 4 images)	0.8 minutes
+HD Prompt (set of 4 images)	1.3 minutes
+Variation	less than 1 minute
+Grid Upscale (Discord only)	0 (no cost)
+Creative/Subtle Upscale	2 minutes
+Omni Reference Prompt (V7)	2 minutes
+Batch of 4 SD Videos	8 minutes
+Batch of 4 HD Videos	26 minutes
+
+If you need more Fast time before your plan renews, you can purchase additional Fast time on your Manage Subscription page or you may be able to complete tasks on our website to earn free Fast time.
+
+Relax Mode
+
+Relax Mode for images is only available to those with Standard, Pro, and Mega Plans. When you switch to Relax Mode, you're using your Relax time, which is unlimited. This means you can create as many images as you want each month without using your Fast time. The tradeoff? Images will take longer to generate compared to Fast Mode.
+
+Relax Mode for SD videos is limited to the Pro and Mega Plans.
+
+[... How Long Does Relax Mode Take / Limitations / Turbo Mode / Switching Speeds sections omitted,
+not operative to coded variables ...]
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/27870521824653-Subscription-Fast-Time-Expiration
+==============================================================================
+Subscription Fast Time Expiration
+
+Keep in mind that any unused Fast time from your subscription will not carry over to the next month. Whether you're on a monthly or yearly plan, unused Fast time vanishes at the end of each month, so be sure to use it up before the month ends!
+
+To know when your current subscription month ends, check out our Finding Your Renewal Time article.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/33570952624141-Purchasing-Extra-Fast-Time
+==============================================================================
+Purchasing Extra Fast Time
+
+If you run out of Fast time before your subscription renews, you can easily purchase more to continue creating without delays.
+
+Visit the Manage Subscription Page: Log in to midjourney.com and head over to the Manage Subscription Page. This is where you can find all the details about your plan and purchase extra Fast time.
+Purchase Additional Hours: Click the "Buy more Fast hours" button and select the amount of Fast time you wish to add. Keep in mind, these purchased hours come with a 60-day expiration, so plan accordingly.
+
+Active Subscription Needed: To use purchased Fast time, you must have an active subscription. If your subscription lapses, the extra Fast time won't be available unless you renew your plan.
+Non-Refundable: Once you've purchased the additional Fast time, it cannot be refunded.
+
+You may also be able to earn free Fast time by completing tasks on our website.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/28014645615373-Keeping-Your-Creations-Private
+==============================================================================
+Keeping Your Creations Private
+
+Midjourney thrives as an open-by-default community, which means that every image and video you create can potentially be found on the Explore page on midjourney.com. This includes images made in private Discord servers or direct messages with the Midjourney Bot.
+
+If privacy is a priority for you, consider using Stealth mode. Available only with our Pro and Mega Plans, Stealth mode keeps your creations hidden from other users on the website. However, your images and videos will still need to adhere to our Community Guidelines.
+
+Stealth mode only makes private your creations on midjourney.com. If you generate images and videos in a shared Discord space, other users in those channels will still be able to see them. For full privacy, use Stealth mode in direct messages with the Midjourney Bot in Discord, a private Discord server, or on your Create page on midjourney.com.
+
+==============================================================================
+URL: https://docs.midjourney.com/hc/en-us/articles/27868831424525-Payment-Currency
+==============================================================================
+Payment Currency
+
+Midjourney accepts payments exclusively in US Dollars (USD).
+
+If you're paying with a currency other than USD, your bank will automatically convert your payment to USD. This process will involve your bank's conversion rates, and depending on your account terms, they may also charge a foreign transaction fee.
+
+Please note that Midjourney has no control over the conversion rates or any bank fees applied. If you have questions concerning how your bank manages foreign transactions, it's a good idea to contact them before subscribing to understand what to expect.

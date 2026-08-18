@@ -1,0 +1,454 @@
+status: complete
+
+# --- Administrative ---
+product_id: autoshorts-ai
+product_name: AutoShorts.ai
+category: Faceless video
+product_status: active
+vendor_home_url: https://autoshorts.ai
+paid_submission: "no"
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+recheck_date: not_applicable
+entry_tier_name: STARTER
+
+primary_source_url: https://autoshorts.ai
+archive_url: https://web.archive.org/web/20260806230946/https://autoshorts.ai/
+archive_status: archived
+source_urls: https://autoshorts.ai | https://autoshorts.ai/faq | https://autoshorts.ai/terms | https://autoshorts.ai/privacy
+
+default_display_state: >
+  Single-page site; pricing lives in a #pricing section on the homepage (no separate
+  pricing URL). Billing interval control defaults to "Monthly" on load, confirmed both
+  visually (white/active pill on "Monthly", "Yearly" inactive) and via DOM inspection
+  (the Monthly option element carries the component's own "...selected..." CSS class;
+  the Yearly element does not). Plan cards in this state: FREE $0/mo, STARTER $19/mo,
+  DAILY $39/mo, HARDCORE $69/mo. The FREE card additionally shows a "Temporarily paused"
+  notice over its signup action. No cookie/consent banner was presented to accept or
+  decline. Annual-toggle price figures were not obtainable: the toggle click did not
+  reach the page's handler in this session's browser tool (verified via DOM re-read
+  showing no state change after repeated click attempts), and annual figures are not
+  present in the pre-click DOM (client-computed on toggle, not server-rendered), so no
+  value in this record is anchored to the Yearly state. Not needed for any coded
+  variable: the entry-tier selection and all Domain-1/2 variables use the Monthly
+  default state per protocol section 6.8 rule 4 (no reload/interaction-hunting for a
+  different state).
+
+sources:
+  - url: https://autoshorts.ai
+    description: Live pricing page (homepage #pricing section) - plan cards, prices, feature grid, billing toggle default state
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260806230946/https://autoshorts.ai/
+    archive_status: archived
+  - url: https://autoshorts.ai/faq
+    description: Official FAQ page. All 27 accordion questions (Series & Videos + Billing sections) were expanded and read in full.
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260806231146/https://autoshorts.ai/faq
+    archive_status: archived
+  - url: https://autoshorts.ai/terms
+    description: Terms & Conditions, read in full end to end.
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260806231303/https://autoshorts.ai/terms
+    archive_status: archived
+  - url: https://autoshorts.ai/privacy
+    description: Privacy Policy, read in full end to end (data-handling only; no billing, refund, renewal, or ownership content found).
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260806231404/https://autoshorts.ai/privacy
+    archive_status: archived
+
+variables:
+  # --- Domain 1: Headline price vs price actually charged ---
+  headline_price_usd:
+    value: "19.00"
+    source: https://autoshorts.ai
+    evidence: >
+      Pricing section, default Monthly state. STARTER card: "$19" large figure with
+      "/month" beneath. Eligible paid candidates and their annual-equivalent costs:
+      Starter $19/mo->$228/yr (lowest), Daily $39/mo->$468/yr, Hardcore $69/mo->$828/yr.
+      Free ($0) is not a paid tier so is not a candidate. See coder_note for full detail.
+
+  headline_billing_basis:
+    value: per_month_billed_monthly
+    source: https://autoshorts.ai
+    evidence: >
+      STARTER card shows "$19" with a "/month" qualifier directly beneath, read under the
+      Monthly tab (the page's default/preselected billing interval). No "billed annually"
+      or per-seat qualifier is attached to this figure. Plans scale by an adjustable
+      "Series" count (+/- control) whose effect on price was not explored, since doing so
+      would mean leaving the default display state; the figure recorded is the one shown
+      on load for the default 1-series configuration.
+
+  first_charge_amount_usd:
+    value: "19.00"
+    source: https://autoshorts.ai
+    evidence: >
+      Default display state is Monthly (not annual), and the page states the billing
+      frequency directly via the "/month" qualifier, so per codebook rule 2/3 no
+      multiplication or assumption is needed: the first charge equals the displayed
+      monthly figure. No mandatory add-on found (see mandatory_addon_present).
+
+  mandatory_addon_present:
+    value: "no"
+    source: https://autoshorts.ai | https://autoshorts.ai/faq
+    evidence: >
+      Pricing page: every feature the STARTER card advertises (Auto-Post To Channel,
+      Edit & Preview Videos, HD Video Resolution, Background Music, Voice Cloning, No
+      Watermark) shows a green check, i.e. included in the $19 price, no separate charge
+      indicated. FAQ read in full: the only extra-cost items found are OPTIONAL top-up
+      purchases ("you can purchase more if you need them" re: image credits; "purchase
+      'top off' credits" re: motion credits), which are overage-style optional purchases
+      excluded by codebook rule 3, not required charges to use the plan as advertised.
+
+  # --- Domain 2: Visibility of the annual-billing condition ---
+  annual_condition_disclosure:
+    value: not_applicable
+    source: https://autoshorts.ai
+    evidence: >
+      Decision rule step 1: the headline figure ($19/month, read under the default
+      Monthly tab) does not depend on annual prepayment, so this variable is
+      not_applicable regardless of the separate Yearly option existing elsewhere on
+      the same toggle.
+
+  annual_default_toggle:
+    value: monthly_preselected
+    source: https://autoshorts.ai
+    evidence: >
+      Visual: "Monthly" renders on a white/active pill, "Yearly" (labelled with a
+      "2 MONTHS FREE!" badge) does not, on first paint before any interaction.
+      Confirmed at the DOM level: document.querySelectorAll of the two option elements
+      shows class "BillingIntervalSwitchV2_option___bkyv BillingIntervalSwitchV2_selected__4fgLe"
+      on the Monthly element only; no element with the exact text "Yearly" carries a
+      "_selected_" class. Archived snapshot reflects the same server-rendered default.
+
+  # --- Domain 3: Real usability of the free plan ---
+  free_plan_exists:
+    value: "yes"
+    source: https://autoshorts.ai | https://autoshorts.ai/faq
+    evidence: >
+      Pricing page lists a "FREE $0" card alongside the paid tiers with its own feature
+      list (Creates 1 Video, 1 Series, 0 Motion Credits). FAQ "Is there a free trial?":
+      "you can create your first series for free to test a video. No credit card
+      required." Material caveat: the FREE card currently shows a "Temporarily paused"
+      banner, and the same FAQ answer adds "Update: We have temporarily suspended the
+      free plan due to abuse from botting / spamming. We will be re-enabling it soon."
+      The plan is documented as existing; new signups are paused at time of reading.
+
+  free_plan_cap_documented:
+    value: all_quantified
+    source: https://autoshorts.ai
+    evidence: >
+      Every limit the FREE card attributes to the free plan carries a number: "Creates
+      1 Video" (standing, qty 1), "1 Series" (standing, qty 1), "0 Motion Credits"
+      (qty 0). No unquantified free-plan limit found (contrast entry-tier "image
+      credits", which FAQ ties to billing-cycle/plan language and is not listed as a
+      FREE-card attribute at all -- see usage_cap_quantified for the paid-tier finding).
+
+  free_plan_cap_value:
+    value: "1 video | 1 series | 0 motion credits"
+    source: https://autoshorts.ai
+    evidence: "Verbatim quantities from the FREE $0 card feature list."
+
+  free_plan_watermark:
+    value: "yes"
+    source: https://autoshorts.ai
+    evidence: >
+      FREE card's "No Watermark" feature row shows a grey X with strikethrough text
+      (not included), while the same row shows a green check on STARTER, DAILY and
+      HARDCORE. A crossed "No Watermark" row for Free is a documented "yes" (outputs
+      are watermarked) per the codebook's own worked rule for this pattern.
+
+  free_plan_duration:
+    value: perpetual
+    source: https://autoshorts.ai | https://autoshorts.ai/faq
+    evidence: >
+      Presented as a standing column alongside the paid tiers, not as a time-limited
+      introductory offer; no expiry period is stated anywhere. The only limitation
+      documented is the current signup pause (an availability state, not a duration
+      condition on an account that already has the plan).
+
+  # --- Domain 4: Whether a trial requires a payment card ---
+  trial_exists:
+    value: "no"
+    source: https://autoshorts.ai/faq
+    evidence: >
+      FAQ question is literally "Is there a free trial?", but its answer describes the
+      ongoing free plan, not a time-limited trial of a paid tier: "you can create your
+      first series for free to test a video. No credit card required" (no day/time
+      limit stated; matches the FREE $0 card's own perpetual, no-expiry framing).
+      Codebook rule: "A free plan is not a trial. Domain 3 covers free plans." No other
+      document (pricing page, Terms) describes a separate time-limited trial of a paid
+      plan; paid-card CTAs read "TRY NOW!" but that is a signup button label, not a
+      stated trial period. Coded "no" on this reading; flagged here as a judgment call
+      since the vendor's own FAQ heading uses the word "trial" for what the codebook
+      would classify as the free plan.
+
+  trial_card_required:
+    value: not_applicable
+    source: https://autoshorts.ai/faq
+    evidence: "No trial per trial_exists=no."
+
+  trial_length_days:
+    value: not_applicable
+    source: https://autoshorts.ai/faq
+    evidence: "No trial per trial_exists=no."
+
+  trial_auto_converts:
+    value: not_applicable
+    source: https://autoshorts.ai/faq
+    evidence: "No trial per trial_exists=no."
+
+  # --- Domain 5: Comprehensibility of the credit system ---
+  credit_system_present:
+    value: "yes"
+    source: https://autoshorts.ai | https://autoshorts.ai/faq
+    evidence: >
+      Two named intermediate currencies distinct from raw output counts: "Motion
+      Credits" (quantified per tier on the pricing cards: 0/27/62/124) and "Image
+      credits" (FAQ: a separate top-up-able allowance for regenerating images). Neither
+      is itself the output; both convert into outputs.
+
+  credit_unit_defined:
+    value: "yes"
+    source: https://autoshorts.ai
+    evidence: >
+      Pricing-page tooltip on the Motion Credits row (info-icon aria-label, read via
+      the rendered DOM): "Used to add motion to your videos. 1 credit adds motion to
+      one image. A typical video may consume 15-20 credits if motion is applied to all
+      scenes. Credits included in your plan reset each month, but additional credits
+      can be purchased and do not expire." "1 credit adds motion to one image" ties the
+      unit to a recognizable output.
+
+  credit_to_output_rate_published:
+    value: partial
+    source: https://autoshorts.ai
+    evidence: >
+      Principal output is a video. The only rate tying credits to a video is the range
+      quoted above ("15-20 credits if motion is applied to all scenes"), a range with
+      no rule for which figure applies within it. Per rule 3, a range with no selection
+      rule is "partial".
+
+  credit_rate_location:
+    value: pricing_page
+    source: https://autoshorts.ai
+    evidence: >
+      The only place the numeric range (15-20 credits/video) appears is the pricing
+      page's own Motion Credits tooltip. The dedicated FAQ answer for "What are motion
+      credits?" covers the same mechanic in different, less specific wording and does
+      not repeat the 15-20 figure, so this is a single location, not "multiple".
+
+  # --- Domain 6: Computability of cost per output ---
+  cost_per_output_unit:
+    value: other
+    source: https://autoshorts.ai | https://autoshorts.ai/faq
+    evidence: >
+      Principal output is one complete short-form video (auto-posted to TikTok/YouTube/
+      Instagram); none of the enumerated units fit a discrete whole-video count (not
+      metered by minute -- FAQ: videos run "30 to 60 seconds" or "60 to 90 seconds" by
+      creative choice, not by price; not an image, seat-month, or API call). Named unit:
+      "per_video" (one generated/posted short).
+
+  cost_per_output_computable:
+    value: "yes"
+    source: https://autoshorts.ai | https://autoshorts.ai/faq
+    evidence: >
+      FAQ "How many videos can I create per day?": "The number of videos created by
+      each series can be seen on our pricing page... you set up a Series that
+      automatically generates videos on a schedule" -- i.e. the vendor directly names
+      posting frequency as the figure that answers video-output quantity. STARTER's
+      posting frequency ("Posts 3 Times A Week") is used as the allowance rather than
+      Motion Credits, because Motion Credits are an optional enhancement, not a
+      requirement to produce the principal output: the FREE card creates "1 Video" with
+      "0 Motion Credits", so a video can exist with zero credits spent, and using the
+      credit range would require assuming full-motion use on every video, which rule 7
+      excludes. See computation_assumptions for the arithmetic.
+
+  computation_assumptions:
+    value: >
+      Starter $19.00/mo, default Monthly display state. FAQ ties video count to posting
+      frequency; Starter posts 3x/week. Videos/mo = 3 * (30/7 days-per-week, per the
+      codebook's own day-conversion convention) = 12.857. $19.00 / 12.857 = $1.48 per
+      video. Not used: Motion Credits (27/mo, tooltip says a fully-animated video is
+      "typically" 15-20 credits) -- optional add-on to a video, not a requirement to
+      produce one (Free tier: 0 credits, 1 video), so using it would need an
+      unstated full-motion-usage assumption. That alternate path, if taken, gives a
+      range of $19.00/1.35=$14.07 to $19.00/1.80=$10.56 per fully-animated video
+      (27/20=1.35 to 27/15=1.8 videos/mo) -- noted for transparency, not the coded path.
+    source: https://autoshorts.ai | https://autoshorts.ai/faq
+    evidence: "Arithmetic as stated; both inputs (price, posting frequency) are on the pricing page, default display state."
+
+  # --- Domain 7: Rollover of unused credits ---
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: https://autoshorts.ai | https://autoshorts.ai/faq
+    evidence: >
+      Pricing-page tooltip: "Credits included in your plan reset each month, but
+      additional credits can be purchased and do not expire." FAQ "What are motion
+      credits?": "Each plan comes with motion credits that reset each billing cycle,
+      but you can also purchase 'top off' credits that never expire." FAQ "What are
+      image credits?": plan-included image credits "refill on a 30 day rolling basis."
+      The plan-included allowance resets/expires each period in both credit types;
+      only separately purchased top-up credits are stated not to expire.
+
+  # --- Domain 8: Charging for failed generations ---
+  failed_generation_charge_policy:
+    value: unknown
+    source: https://autoshorts.ai/terms | https://autoshorts.ai/faq
+    evidence: >
+      Terms & Conditions read in full: no mention of generation failures or credit
+      consumption on failure. FAQ read in full (all 27 questions, Series & Videos and
+      Billing sections): no question addresses what happens to credits/allowance on a
+      failed or errored generation. Closest adjacent statement, on a different topic
+      (re-renders from edits, not failures): "Features that render a new video such as
+      making script edits, or changing your series do not count against your plan."
+      Silent on outright failures.
+
+  # --- Domain 9: Auto-renewal ---
+  auto_renewal_default:
+    value: unknown
+    source: https://autoshorts.ai/terms | https://autoshorts.ai/faq
+    evidence: >
+      Terms & Conditions read in full: a generic boilerplate document (warranty
+      disclaimer, liability limits, cookies, iframes, third-party links); it contains
+      no billing, subscription, or renewal clause at all. FAQ read in full: "Can I
+      cancel at anytime?" states cancellation is available but never states that
+      subscriptions renew automatically or on what cadence. Per the codebook's own
+      worked example, implication from cancel-anytime language is not a statement, so
+      this is coded unknown rather than inferred as "on".
+
+  auto_renewal_disclosure_location:
+    value: absent
+    source: https://autoshorts.ai/terms | https://autoshorts.ai/faq | https://autoshorts.ai
+    evidence: >
+      All reachable document classes were checked (terms, help center/FAQ, pricing
+      page; no separate dedicated billing-policy page exists in the site's footer
+      navigation) and none states an auto-renewal position explicitly.
+
+  renewal_notice_commitment:
+    value: unknown
+    source: https://autoshorts.ai/terms | https://autoshorts.ai/faq
+    evidence: "No statement of advance notice (or its absence) before a renewal charge found in Terms or FAQ."
+
+  # --- Domain 10: Refund and cancellation terms ---
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: https://autoshorts.ai/faq
+    evidence: >
+      FAQ "Can I get a refund?": "Unfortunately, we cannot offer refunds as costs
+      incurred for creating AI videos and generating AI photos are extremely high...
+      During sign up you agree to withhold your right to refund for this reason. You
+      can cancel any time though and your subscription ends." Terms & Conditions (rank
+      1 for this variable class) is silent on refunds altogether -- it never mentions
+      the word; FAQ (rank 2, help center) is the only document that addresses the
+      topic, and does so with a clean determinate no-refunds position, so it governs
+      per section 2.1 step 2 (no conflict, since Terms does not state an incompatible
+      position -- it states none at all).
+
+  refund_window_days:
+    value: "0"
+    source: https://autoshorts.ai/faq
+    evidence: "No refunds given; codebook value table specifies 0 for this case."
+
+  refund_conditions:
+    value: not_applicable
+    source: https://autoshorts.ai/faq
+    evidence: "No refund is available at all (refund_policy_exists=no_refunds_stated), so no conditions attach."
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://autoshorts.ai/faq
+    evidence: >
+      FAQ "Can I cancel at anytime?": "You can cancel at the click of a button from the
+      dashboard's billing page." Direct account-settings self-service, no contact step.
+
+  refund_policy_location:
+    value: help_center
+    source: https://autoshorts.ai/faq
+    evidence: "Found only in the FAQ; not mentioned on the pricing page or in Terms & Conditions; no dedicated refund-policy page exists in site navigation."
+
+  # --- Domain 11: Commercial-use rights ---
+  commercial_use_lowest_tier:
+    value: free
+    source: https://autoshorts.ai/faq
+    evidence: >
+      FAQ "Do I own the videos?": "Yes, the videos are yours to do with as you please.
+      You can download them and use them on other platforms, or even sell them to
+      clients." This statement is unqualified by tier -- there is no "commercial use"
+      row on the pricing page's feature grid gating it to a paid plan, and the FAQ
+      answer sits in the general Series & Videos section, not a paid-only context.
+      Coded as granted from the free tier on the most literal reading of an
+      unrestricted statement; flagged here because the vendor's answer does not
+      explicitly say whether it was contemplating the (currently signup-paused) free
+      plan when it was written.
+
+  watermark_removal_tier:
+    value: lowest_paid
+    source: https://autoshorts.ai
+    evidence: >
+      Feature grid "No Watermark" row: crossed (X) on FREE, checked on STARTER, DAILY
+      and HARDCORE. Lowest tier at which it is checked is Starter, the entry paid tier.
+
+  output_ownership_statement:
+    value: user_owns
+    source: https://autoshorts.ai/faq | https://autoshorts.ai/terms | https://autoshorts.ai
+    evidence: >
+      FAQ "Do I own the videos?": "Yes, the videos are yours to do with as you please."
+      Terms & Conditions (rank 1) is silent on generated-video ownership -- its only
+      copyright clause concerns images a user uploads as input ("Copyright for all
+      images submitted to AutoShorts.ai remains with the original owner/author"),
+      which is a different matter from ownership of AI-generated video output, so it
+      neither confirms nor contradicts the FAQ. Consistent with the pricing/home page's
+      own "Your videos are yours -- download and keep everything you create" line
+      (rank 3, corroborating, not overriding).
+
+  # --- Domain 12: Undisclosed or unverifiable limits ---
+  usage_cap_quantified:
+    value: some_quantified
+    source: https://autoshorts.ai | https://autoshorts.ai/faq
+    evidence: >
+      Limits the documents attribute to the entry tier (Starter): "Posts 3 Times A
+      Week" (quantified rate: number+dimension+period), "1 Series" (quantified
+      standing), "27 Motion Credits" (quantified rate; FAQ confirms it resets each
+      billing cycle, giving it a period). Not quantified: "image credits" -- FAQ "What
+      are image credits?": "Your plan includes a certain number of image credits that
+      refill on a 30 day rolling basis" -- a stated, billing-cycle-scoped limit whose
+      actual number is never published for any tier, on the pricing page or in the FAQ.
+      Mix of quantified and unquantified limits -> some_quantified.
+
+  unquantified_limit_clause:
+    value: absent
+    source: https://autoshorts.ai/terms | https://autoshorts.ai/faq
+    evidence: >
+      Terms & Conditions read to the end in full: no fair-use, reasonable-use,
+      excessive-use, or discretionary-throttling clause of any kind (its content is
+      warranty disclaimer, liability limits, cookies, iframes, third-party links,
+      content liability, link removal). FAQ read in full (all 27 questions): the
+      closest adjacent topic, "Why am I not getting many views?", describes TikTok/
+      YouTube's own shadow-ban/algorithm behavior toward new accounts, not a discretion
+      AutoShorts reserves over a buyer's usage volume -- a different topic, does not
+      count. No document class reserves a numberless discretionary limit on use.
+
+
+conflict_note: not_applicable
+
+coder_note: >
+  Entry tier = Starter ($19/mo -> $228.00/yr annual-equivalent, lowest among eligible
+  paid candidates). Losing paid candidates: Daily $39/mo -> $468.00/yr; Hardcore
+  $69/mo -> $828.00/yr. Free ($0) is not a paid tier so was not an entry-tier
+  candidate; it is covered separately under Domain 3. Free plan is documented but
+  signup is currently "Temporarily paused" (pricing page banner; FAQ cites bot/spam
+  abuse, re-enabling planned). Three judgment calls flagged for review, each argued in
+  the affected variable's own evidence field: (1) trial_exists=no -- FAQ's "Is there a
+  free trial?" answer describes the free plan, not a time-limited paid-tier trial; (2)
+  commercial_use_lowest_tier=free -- the FAQ ownership/commercial-use statement carries
+  no tier qualification anywhere in the documents; (3) cost_per_output_computable=yes
+  via posting-frequency (not Motion Credits, which are optional) as the output
+  allowance -- see computation_assumptions for the alternate credit-based range.
+  Pricing page has a "Series" quantity +/- control on paid cards whose effect on price
+  was not tested (would require leaving the default display state). Yearly toggle
+  price figures could not be read (see default_display_state) but are not needed by
+  any coded variable.
+
+blindness: no other record, no review page, no pass-2 material was opened.
+
+register_events: []

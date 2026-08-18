@@ -1,0 +1,181 @@
+SOURCE CLASS: Official Suno documentation / help center (help.suno.com)
+METHOD: Static fetch via curl (Chrome UA), HTML tags stripped programmatically, verbatim text
+below. Each article verified as plain server-rendered HTML (no JS rendering needed — full
+article text present in the raw response).
+ACCESSED: 2026-08-13
+ARCHIVE: web.archive.org saves skipped this run per deviation D-012 (rate-limiting); these are
+the dated local verbatim captures serving as archive_status=local_copy_only evidence.
+
+================================================================================
+URL: https://help.suno.com/en/articles/2525441
+TITLE: "How many credits do I have left?"
+EDITED: Friday, December 19 2025
+================================================================================
+If you're using Suno on the web: Your remaining credits are listed in the left-side toolbar.
+If you are subscribed, you will also see this total at the top of the page when visiting
+suno.com/account. If you're using a Suno mobile app: Tap your profile photo at the bottom
+right. While visiting your profile page, your remaining credits will be visible in the upper
+left corner! Tap the credits icon to view a more detailed subscription page.
+
+FINDING: No definition of what one credit converts to in output terms (no "1 credit = X"
+statement) anywhere in this article.
+
+================================================================================
+URL: https://help.suno.com/en/articles/2643713
+TITLE: "What happens if I use all of my paid credits?"
+EDITED: Friday, December 19 2025
+================================================================================
+If you're using a Pro or Premier plan, credits are replenished once monthly at the same time
+as your original purchase. For example, if you subscribed on July 4th at 3pm local time, your
+next replenishment will happen at 3pm local time on August 4th. If you run out of monthly
+credits, you will receive the same 50 credit daily allotment as our Basic plan users, starting
+on the next day and running to the end of the billing cycle. When a new cycle begins, your
+monthly allotment will be used first, and the 50 daily credits will not reach your account
+until all monthly credits are used. Beyond the 50 extra daily credits, you can purchase
+additional credits by visiting suno.com/account then choosing Buy More Credits to purchase
+add-on credits to be used while you are subscribed.
+Note: Songs made with the 50 credits per day will still be granted commercial use rights, as
+long as you are still subscribed. Once your membership reverts to the Basic tier, any new
+songs will not be eligible for commercial use.
+
+================================================================================
+URL: https://help.suno.com/en/articles/2550209
+TITLE: "Can I get a refund?"
+EDITED: Friday, December 19 2025
+================================================================================
+There are a few key areas in our Terms of Service regarding refunds.
+From "Your Registration Obligations": "If we discontinue the Service, we will refund you any
+pre-paid fees on a pro rata basis, based upon the number of months left in the pre-payment
+period." This indicates that we will offer a refund in cases where we discontinue service. As
+noted, the refund will be prorated based on the remaining subscription duration.
+From "Refunds and Cancellations": "Payments made by you hereunder are final and
+non-refundable, unless otherwise determined by Suno." These are refunds made on a case-by-case
+basis. Some examples of reasons we would honor a refund would include:
+- Accidental payment: if you paid for a yearly subscription instead of a month, we can help to
+  revert your payment to a monthly plan. This would include a partial refund.
+- Accidental/unattended sign up: If you started a subscription but didn't use it at all. This
+  can be tricky to determine; but if there are zero songs in your account and we see one or
+  more payments, we're likely to assist with a refund.
+- Product malfunction: If you experience significant downtime due to an outage or feature
+  that isn't working, we'll go above and beyond to offer credits to make up for it. Unlike
+  monthly credits, these will carry over to the next month!
+Some cases where we would not honor a refund:
+- Changed your mind: You've used Suno for six months, and decided now that you don't like it.
+  In this case, our team will recommend you cancel your plan. You can continue to use the
+  service through the end of the billing cycle, and the account will revert to the Basic plan
+  upon completion. If it's only been a day or two, give our team a shout at support@suno.com
+  and we'll do our best to make it right!
+- Intermittent usage: If you've had a monthly plan and used Suno on and off for several
+  months, we cannot issue a refund for the time you didn't use it. Instead, we encourage you
+  to cancel anytime you won't be using Suno, and resubscribe when you're ready to use more than
+  the Basic plan credit allotment!
+
+================================================================================
+URL: https://help.suno.com/en/articles/9601601
+TITLE: "What rights do I have with the free plan?"  [category: Rights & Ownership > Rights]
+EDITED: Wednesday, December 17 2025
+================================================================================
+Songs made on the free plan are only intended for personal, non-commercial use. These songs
+cannot be monetized, but can be shared using your Suno link. On the free plan, you can:
+- Create using 50 credits that renew daily
+- Keep the tracks set to Link-Only, or Publish them to your Suno page
+- Share your songs using the link to your song page, playlist, etc.
+- Use the song in a personal, non-monetizing project
+As always, any material on Suno is subject to our Terms of Service and published tracks are
+subject to our Community Guidelines.
+FINDING: No mention of watermarks anywhere in this article. No explicit ownership statement
+(only a personal-use license description).
+
+================================================================================
+URL: https://help.suno.com/en/articles/9601665
+TITLE: "What rights do I have with a paid subscription?"  [category: Rights & Ownership > Rights]
+EDITED: Wednesday, December 17 2025
+================================================================================
+Songs made while subscribed are granted commercial use rights, in addition to your right to
+use them for personal, non-commercial purposes. Commercial use rights allow you to monetize
+the songs however you wish, without Suno claiming a stake in the earnings. With a paid
+subscription, you can:
+- Use any amount of your monthly allotment of credits (note that annual plans still drop
+  credits on a monthly basis)
+- Download your tracks for use outside of Suno
+- Monetize your songs
+- Distribute them to streaming platforms
+- Use them in film, tv, or video games
+- Sell them independently (such as selling an album via BandCamp, etc)
+Keep in mind, granting commercial use rights does not guarantee copyright protection!
+Copyright qualification and protection is determined by your region/country's copyright
+office, not by Suno.
+FINDING: No mention of watermarks anywhere in this article. Confirms credit allotment is
+monthly even under annual billing (relevant to cost-per-output period basis).
+
+================================================================================
+URL: https://help.suno.com/en/articles/2410049
+TITLE: "What type of plan do I have?"  [category: Accounts & Billing > Accounts]
+EDITED: Friday, December 19 2025
+================================================================================
+Suno offers three plan types, two of which are paid subscriptions. The Free plan offers 50
+credits that replenish daily. This is enough to make 10 songs per day! Pro is the entry option
+for paid subscriptions. With a Pro subscription, you receive an allotment of 2500 credits each
+month. Premier is our highest credit-per-month plan available. With a Premier plan, you
+receive 10,000 credits each month. You can compare the plans anytime by visiting
+suno.com/account. Need more credits? Pro and Premier plans also have the option to purchase
+more credits. Once you're signed up, you'll see the Buy More Credits button in the area linked
+above. Pro and Premier users who reach their monthly allotment will now receive up to 50
+credits per day after all monthly credits have been used!
+FINDING: Independently corroborates Pro = entry paid tier and the 2,500/10,000 monthly credit
+figures from the pricing page. No credit-to-song conversion rate stated.
+
+================================================================================
+URL: https://help.suno.com/en/articles/2524993
+TITLE: "Why did my credits reset?"  [category: Accounts & Billing > Troubleshooting]
+EDITED: Friday, December 19 2025
+================================================================================
+Yes, paid subscriptions still have expiring credits! If you're using the Basic (free) plan,
+you'll note that you get up to 50 new credits replenished daily. This means if you sign up on
+Saturday and start with 50 credits, no matter how many you use, you will start with 50 credits
+again on Sunday. If you use 50 credits Saturday, you will start with 50 on Sunday. If you use
+10 credits on Saturday, you will still start with 50 credits on Sunday! The same concept
+applies with our Pro and Premier subscription options, but with a monthly replenishment. Pro
+subscribers receive 2500 credits per month. Whether you use 10 credits or all 2500, your next
+billing cycle will start with 2500 credits. Premier subscribers receive 10,000 credits per
+month. No matter how many credits were used, the next billing cycle will start with 10,000
+credits. This information can also be found by visiting suno.com/account.
+FINDING: Direct, explicit, official statement that unused credits (free AND paid tiers) do
+NOT carry over between periods — each period resets to the flat allotment regardless of what
+was left unused. Primary evidence for credit_rollover_policy.
+
+================================================================================
+URL: https://help.suno.com/en/categories/566273
+TITLE: "Troubleshooting" category listing  [Accounts & Billing > Troubleshooting]
+EDITED: (category page, articles dated Friday, December 19 2025)
+================================================================================
+Full article list in this category (6 articles, confirmed by parsing all article-card links):
+1. /en/articles/2551617 "Something isn't working. How do I get help?"
+2. /en/articles/2479873 "Why can't I download wav files?" (wav downloads = Pro/Premier only)
+3. /en/articles/2551361 "Why don't I see songs in my profile?"
+4. /en/articles/2524993 "Why did my credits reset?" (captured in full above)
+5. /en/articles/2519105 "I can't log in with my phone number!"
+6. /en/articles/2553409 "I can't log in with my email address!"
+FINDING: No article in this category, nor anywhere else located via targeted site-restricted
+search of help.suno.com, addresses what happens to credits when a generation fails, errors,
+times out, or produces nothing usable. Checked this category plus Accounts & Billing (Billing
+and Accounts sub-categories) and Rights & Ownership. Silent across all of them.
+Third-party (non-official, NOT used for coding) discussion suggests failed/stuck generations
+may be cancellable with an automatic credit refund after a delay, but no official Suno
+document states this, so it is not used. Value coded from official silence: unknown.
+
+================================================================================
+CODER'S OWN ARITHMETIC (NOT a vendor statement — recorded per instrument's fabrication-
+avoidance rule, not used to code credit_to_output_rate_published or credit_unit_defined):
+Free tier: 50 credits/day allotment (pricing page + help articles) vs. 10 songs/day cap (from
+the pricing-page "Compare Suno plans" table, a SEPARATE row from the credits figure) => 50/10
+= 5 credits implied per song if evenly divided.
+Pro tier: 2,500 credits/month (pricing page + help articles) vs. 500 songs/month cap (from the
+same "Compare Suno plans" table, again a separate row) => 2,500/500 = 5 credits implied per
+song, same ratio.
+The two ratios agree, but the vendor has never, in any of the 10 official documents read for
+this record, published a statement connecting credits to song count directly (e.g. "1 song
+costs 5 credits"). The two figures appear on different, independently-labeled rows/sources.
+This is circumstantial, not a published conversion rate, and per the codebook's own worked
+examples (which require a vendor statement like "1 credit renders 1 second of video") is NOT
+sufficient for credit_unit_defined=yes or credit_to_output_rate_published=yes/partial.

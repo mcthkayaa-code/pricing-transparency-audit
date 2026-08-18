@@ -1,0 +1,12 @@
+URL: https://support.picsart.com/hc/en-us/articles/9814385860381-Are-images-generated-through-AI-available-for-commercial-use
+Accessed: 2026-08-10
+Method: rendered read via browser (document.body.innerText)
+Public archive attempt: web.archive.org/save/ returned HTTP 429 then HTTP 520 on 2 attempts (2026-08-10) - archive_failed for public archive; this file is the local copy per protocol 6.4.
+Note: this variable is primarily coded from picsart.com/genaitermsofuse/ (successfully publicly archived); this article is corroborating.
+---
+
+Are images generated through AI available for commercial use?
+
+When you generate images using Picsart's suite of generative AI tools, the resulting AI-generated images are made available to you for commercial purposes. However, please be aware that there are limitations that come along with using generative AI. For example, Picsart can't guarantee you will be able to claim copyright ownership in any of the images or that the images will not infringe any third party's intellectual property rights. Please review the Generative AI Additional Terms of Use, available here [https://picsart.com/genaitermsofuse].
+
+If you have any questions or concerns about this, we encourage you to consult with an attorney to better understand the risks involved with using AI-generated content for commercial purposes.

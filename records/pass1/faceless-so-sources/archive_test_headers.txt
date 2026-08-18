@@ -1,0 +1,60 @@
+HTTP/2 302 
+server: nginx
+date: Thu, 06 Aug 2026 10:14:33 GMT
+content-type: text/html; charset=utf-8
+content-length: 296
+location: https://web.archive.org/web/20260806101418/https://faceless.so/terms
+x-app-server: wwwb-app55-dc6
+x-ts: 302
+x-tr: 18069
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-save-SERVER=wwwb-app55; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Thu, 06 Aug 2026 10:14:34 GMT
+content-type: text/html; charset=utf-8
+x-archive-orig-date: Thu, 06 Aug 2026 10:14:18 GMT
+x-archive-orig-transfer-encoding: chunked
+x-archive-orig-connection: keep-alive
+x-archive-orig-server: cloudflare
+x-archive-orig-x-powered-by: Next.js
+x-archive-orig-server-timing: cfCacheStatus;desc="DYNAMIC"
+x-archive-orig-server-timing: cfEdge;dur=5,cfOrigin;dur=76
+x-archive-orig-vary: Accept-Encoding
+x-archive-orig-report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bd8OO3A9D5lP9cz0JqYo2QZ8no9OPeZG%2FtQNh7IO3AKmrUgX%2BVuAVjzRfayBP13doub1HqwYh1z04QRs%2BngFssvdEFRUsLqXdt9iXf7sRJznTU7hd2E7lrTIVFp7eQ%3D%3D"}]}
+x-archive-orig-cf-cache-status: DYNAMIC
+x-archive-orig-nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-archive-orig-cf-ray: a26d461e58a1dac8-SJC
+x-archive-orig-alt-svc: h3=":443"; ma=86400
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+x-archive-orig-content-encoding: gzip
+memento-datetime: Thu, 06 Aug 2026 10:14:18 GMT
+link: <https://faceless.so/terms>; rel="original", <https://web.archive.org/web/timemap/link/https://faceless.so/terms>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://faceless.so/terms>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: spn2-20260806063924-wwwb-spn13.us.archive.org-8002.warc.gz
+server-timing: captures_list;dur=0.531926, exclusion.robots;dur=0.048388, exclusion.robots.policy;dur=0.035500, esindex;dur=0.007938, cdx.remote;dur=6.616198, LoadShardBlock;dur=85.546653, PetaboxLoader3.datanode;dur=48.344788, PetaboxLoader3.resolve;dur=34.297881, load_resource;dur=21.112056
+x-app-server: wwwb-app218-dc8
+x-ts: 200
+x-tr: 158
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app218; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

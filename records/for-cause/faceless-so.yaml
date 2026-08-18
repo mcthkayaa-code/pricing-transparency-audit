@@ -1,0 +1,154 @@
+product_id: faceless-so
+product_name: Faceless.so
+category: unknown
+product_status: active
+paid_submission: unknown
+entry_tier_name: Starter
+for_cause: true
+for_cause_reason: "Ordered under deviation D-001 after the pass-1 coder self-disclosed a blindness breach (opened another product's completed record to check YAML structure); the for-cause blind reading was promised on 2026-08-06 and not carried out until found during the 2026-08-17 pre-freeze checklist review."
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-17
+recheck_date: not_applicable
+primary_source_url: https://faceless.so/pricing
+archive_url: https://web.archive.org/web/20260806101148/https://faceless.so/pricing
+archive_status: archived
+default_display_state: "USD; billing toggle default = Yearly/annual (Yearly button carries the active gradient class, Monthly does not; rendered Starter card shows $24/mo + billed $290 yearly; the $29 monthly figure appears only in <meta> tags, never in the rendered card). No region/country selector observed. Cookie-consent state not recorded in the saved captures."
+
+sources:
+  - { url: https://faceless.so/pricing, kind: pricing, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806101148/https://faceless.so/pricing, note: "Primary pricing source. Rendered capture (pricing-raw.html) shows hydrated plan cards; static <meta> tags separately show the $29 monthly figure, cross-checked against embedded chunk JSON." }
+  - { url: https://faceless.so/, kind: other, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806101044/https://faceless.so/, note: "Home page duplicates the full pricing grid and carries a 17-item FAQ (Getting Started / Monetization & Ownership / Features / Billing & Pricing). Question titles render in a collapsed JS accordion not captured in home-raw.html itself; answers captured separately as structured Q/A data in faq_home_raw_segment.txt (same URL, same collection pass)." }
+  - { url: https://faceless.so/terms, kind: tos, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806101418/https://faceless.so/terms, note: "Full ToS read. Generic boilerplate; no refund, cancellation, auto-renewal, credit, watermark, or output-ownership clause anywhere in it." }
+  - { url: https://faceless.so/developers, kind: docs, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806102030/https://faceless.so/developers, note: "Developer docs index only; no pricing/contract content." }
+  - { url: https://faceless.so/developers/docs/credits-and-limits, kind: docs, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806101721/https://faceless.so/developers/docs/credits-and-limits, note: "Credit-to-output rate table; plan project-cap language; no rollover/expiry or failed-generation-refund statement." }
+  - { url: https://faceless.so/developers/docs/getting-started, kind: docs, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806102011/https://faceless.so/developers/docs/getting-started, note: "Confirms credits charged at creation, model-tiered costs." }
+  - { url: https://faceless.so/developers/docs/series, kind: docs, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806101856/https://faceless.so/developers/docs/series, note: "Clarifies 'Series' vs. 'video project/episode' terminology; per-episode credit cost." }
+  - { url: https://faceless.so/developers/docs/videos, kind: docs, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806101741/https://faceless.so/developers/docs/videos, note: "Full video lifecycle; 'DELETE /videos/{id}: permanent, no credit refund' (deletion, not failure); async failure reported via status polling, no charge-on-failure statement." }
+  - { url: https://faceless.so/developers/docs/errors-and-rate-limits, kind: docs, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806101915/https://faceless.so/developers/docs/errors-and-rate-limits, note: "usage_limit_reached (403): plan caps number of video projects, no figure given for any plan. Async failures land in status polling, not HTTP errors." }
+  - { url: https://faceless.so/warmed-accounts, kind: other, accessed: 2026-08-06, archive: https://web.archive.org/web/20260806102128/https://faceless.so/warmed-accounts, note: "Separate, distinctly-priced optional add-on (warmed social accounts), not required for the Starter tier as advertised. Its own FAQ (refund/cancel/billing questions) is a collapsed accordion, not expanded in this capture; not used as evidence for the core product since it is a different SKU." }
+  - { url: https://faceless.so/billing, kind: other, accessed: 2026-08-06, archive: archive_failed, note: "307 redirect to /login (NextAuth). Account/billing area is authentication-gated; not opened per protocol §6.3. CDX query on 2026-08-17 returned no snapshot for this path (empty result set), consistent with it never being publicly cacheable content." }
+  - { url: https://faceless.so/privacy, kind: other, accessed: 2026-08-06, archive: archive_failed, note: "Read for completeness. No refund/renewal/ownership content beyond a passing mention that Stripe processes 'credits or subscriptions'. CDX lookup for this path returned 503 on 2026-08-17 (archive.org outage, confirmed independently)." }
+
+variables:
+  headline_price_usd: { value: 24.00, source: https://faceless.so/pricing, evidence: "Starter card, default (Yearly) render: '$<!-- -->24' '/mo' with 'billed $<!-- -->290<!-- --> yearly' beneath. Confirmed in a second representation: embedded chunk JSON (chunks/584c5016af948b8b.js) 'starterSubscription':{annual:{name:\"Starter (annual)\",price:24,pricePerYear:290,credits:500}}. Magnitude sanity-checked against tier name and billing basis." }
+  headline_billing_basis: { value: per_month_billed_annually, source: https://faceless.so/pricing, evidence: "Starter card shows '$24' '/mo' directly above 'billed $290 yearly'. No per-seat figure is stated anywhere (Team Members count is a separate feature bullet, not a pricing unit; price does not scale with seats chosen)." }
+  first_charge_amount_usd: { value: 290.00, source: https://faceless.so/pricing, evidence: "'billed $290 yearly' is stated directly by the vendor beneath the $24/mo figure in the Starter card -- read directly, not computed via 24x12 (24x12=288, a $2 rounding artifact of 290/12=24.17 displayed as $24; same pattern on Growth/Influencer/Ultra at $6 gaps). computation_assumptions not required per codebook (value read directly, not calculated)." }
+  mandatory_addon_present: { value: "no", source: https://faceless.so/pricing, evidence: "'Need accounts to post from? We build and run warmed TikTok and Instagram accounts for you, from $49.90 per account / month.' -- framed as a conditional need ('Need...?'), sold as a separate, distinctly-priced product at /warmed-accounts. Starter's own feature list (Auto-Post Videos; API docs: 'Connecting accounts (OAuth) happens in the web app') does not require purchasing warmed accounts to use the tier as advertised." }
+  annual_condition_disclosure: { value: adjacent, source: https://faceless.so/pricing, evidence: "'billed $290 yearly' is printed inside the same price block as '$24' '/mo', directly beneath the figure, inside the Starter card itself (same <div class=\"mt-4 flex items-baseline...\"> price block)." }
+  annual_default_toggle: { value: annual_preselected, source: https://faceless.so/pricing, evidence: "DOM: the 'Yearly' button carries the active/filled class 'bg-gradient-to-r from-primary-400 to-primary-500 text-white shadow-md'; 'Monthly' carries only an inactive hover class. The rendered price on load is $24 (the annual-equivalent figure); the $29 monthly figure appears only inside <meta name=\"description\"> tags, never in the visible card. Stable across two independent window reads (2026-08-06 raw capture and a 2026-08-10 live re-check note in the same evidence set)." }
+  free_plan_exists: { value: "no", source: https://faceless.so/pricing, evidence: "Rendered pricing grid (full-text extraction of pricing-raw.html, duplicated on home-raw.html) shows exactly four paid cards -- Starter/Growth/Influencer/Ultra -- plus a sales-gated Enterprise card; no $0/Free card anywhere in the rendered output. Pricing-page FAQ (native <details>, rendered): 'We don't offer a traditional free trial at the moment, but we have competitive pricing and a satisfaction guarantee' addresses trial, and no document states an ongoing no-cost usable allowance. Home hero (rendered, not behind an accordion): 'Sign up free, no credit card' / 'Instant Access - No credit card required to sign up' describe free ACCOUNT SIGNUP, not a usable no-cost product tier -- no credits or output allowance is ever stated as granted for $0." }
+  free_plan_cap_documented: { value: not_applicable, source: https://faceless.so/pricing, evidence: "No free plan is documented anywhere in the rendered captures; see free_plan_exists." }
+  free_plan_cap_value: { value: not_applicable, source: https://faceless.so/pricing, evidence: "No free plan is documented; see free_plan_exists." }
+  free_plan_watermark: { value: not_applicable, source: https://faceless.so/pricing, evidence: "No free plan is documented; see free_plan_exists." }
+  free_plan_duration: { value: not_applicable, source: https://faceless.so/pricing, evidence: "No free plan is documented; see free_plan_exists." }
+  trial_exists: { value: "no", source: https://faceless.so/pricing, evidence: "Pricing page FAQ, rendered native <details> element (answer text is present in the DOM regardless of open/closed state): 'Do you offer a free trial? We don't offer a traditional free trial at the moment, but we have competitive pricing and a satisfaction guarantee.' Direct, explicit, rendered statement of absence." }
+  trial_card_required: { value: not_applicable, source: https://faceless.so/pricing, evidence: "No trial exists; see trial_exists." }
+  trial_length_days: { value: not_applicable, source: https://faceless.so/pricing, evidence: "No trial exists; see trial_exists." }
+  trial_auto_converts: { value: not_applicable, source: https://faceless.so/pricing, evidence: "No trial exists; see trial_exists." }
+  credit_system_present: { value: "yes", source: https://faceless.so/developers/docs/credits-and-limits, evidence: "Rendered docs prose: 'Credits are the currency for video generation... Credits are charged once, at video creation, based on the model.' Pricing page (rendered): '500 Credits /month' feature line on every tier card. An intermediate currency that converts into outputs, not a direct output-unit allowance." }
+  credit_unit_defined: { value: "yes", source: https://faceless.so/developers/docs/videos, evidence: "Rendered docs table ties credits directly to the principal output (video): storyboard=20 credits ('Static AI scenes with motion effects'), motion_lite=50 credits ('Animated transitions between scenes'), motion_pro=100 credits ('Cinematic AI motion video'). A document states exactly what a credit buys for the principal output." }
+  credit_to_output_rate_published: { value: "yes", source: https://faceless.so/developers/docs/videos, evidence: "Rendered docs table gives three exact, fully-enumerated rates for the principal output (video), each keyed to a buyer-selected 'model' parameter with an unambiguous rule for which applies (you choose the model). Rendering/publishing are separately stated free/$0 ('Rendering the MP4... is free'); captioning existing footage is stated 'no credit cost'. Every output-adjacent operation has an exact published rate." }
+  credit_rate_location: { value: multiple, source: https://faceless.so/developers/docs/credits-and-limits, evidence: "Rate appears in developer docs (credits-and-limits, videos, getting-started, series -- rendered HTML prose) AND on the pricing page itself as a rendered, DOM-present tooltip on each plan card ('Video generation starts from 20 credits', role=tooltip, a real text node in the capture, not a separately-fetched payload)." }
+  cost_per_output_unit: { value: other, source: https://faceless.so/developers/docs/videos, evidence: "Credit cost is a flat per-video charge keyed to model tier (20/50/100 credits), not scaled by duration/minutes -- 'An everyday series on storyboard spends 20 credits per episode' regardless of the configured duration; the cost table has no duration dimension. No listed unit matches a flat per-artifact charge; named 'per video, by model tier (storyboard/motion_lite/motion_pro)' per rule 3." }
+  cost_per_output_computable: { value: partial, source: https://faceless.so/pricing, evidence: "Starter price $24/mo (default annual display) and allowance 500 credits/mo are already on the same period (rule 3, no conversion needed). Video costs 20 to 100 credits depending on model tier, a fully-enumerated set with no stated 'typical'/default model -- yields a range of cost-per-video ($0.96 to $4.80), not one figure, so per rule 8 this is partial rather than yes." }
+  computation_assumptions: { value: "Starter tier: $24/mo default annual display, 500 credits/mo included (same period). Video costs 20-100 credits by model (storyboard/motion_lite/motion_pro): 24/(500/20)=$0.96 to 24/(500/100)=$4.80 per video. Range; no typical-model stated, so no single figure.", source: https://faceless.so/pricing, evidence: "Price/allowance read from pricing page (rendered); per-model credit costs from developer docs (rendered, docs/videos and docs/credits-and-limits)." }
+  credit_rollover_policy: { value: unknown, source: https://faceless.so/developers/docs/credits-and-limits, evidence: "Searched every rendered capture (pricing, home, terms, all developer docs, warmed-accounts, privacy) for rollover / roll over / expire / unused-credit / credit-reset language: zero substantive hits. The only 'reset' matches anywhere in the corpus are unrelated PostHog analytics library boilerplate (resetGroups, resetPersonPropertiesForFlags). No document states what happens to unused monthly credits at period end. Vendor silence." }
+  failed_generation_charge_policy: { value: unknown, source: https://faceless.so/developers/docs/videos, evidence: "Docs state WHEN credits charge ('Credits are charged now, at creation' / 'charged at creation, not at render') and separately state generation can fail ('A video whose generation fails reports it through polling... status: \"failed\"'; 'On failed, read errorMessages for the reason') -- but no document states whether a failed generation's credits are kept or refunded. 'DELETE /videos/{id}... permanent, no credit refund' describes user-initiated deletion, not a technical failure. Matches the codebook's own worked example (Vendor O) closely: the statement covers timing/submission, not outcome. Vendor silence." }
+  auto_renewal_default: { value: unknown, source: https://faceless.so/terms, evidence: "Terms of service read in full: no renewal clause of any kind. Pricing page and all developer docs likewise never state whether billing renews automatically. 'Cancel anytime' / 'no long-term commitments' (rendered, pricing FAQ) implies recurring billing exists but does not state the renewal mechanism. The account/billing area (/billing) redirects to a login wall (NextAuth, 307) and is not opened per protocol §6.3, which directs unknown for exactly this circumstance." }
+  auto_renewal_disclosure_location: { value: unknown, source: https://faceless.so/terms, evidence: "Pricing page, terms of service (read in full), and all reachable developer docs checked; none discloses automatic renewal. The remaining plausible class -- account/billing settings -- is login-gated and out of scope per protocol §6.3, so the full document set could not be examined; coded unknown rather than absent for that reason." }
+  renewal_notice_commitment: { value: unknown, source: https://faceless.so/terms, evidence: "No document states any commitment to notify before a renewal charge; follows from auto_renewal_default being unstated." }
+  refund_policy_exists: { value: unknown, source: https://faceless.so/, evidence: "Pricing page (rendered <details> FAQ), terms of service (read in full), and all reachable developer docs never mention 'refund'. The home page's FAQ contains a rendered, visible QUESTION 'What is the refund policy?' (button label, aria-expanded=\"false\"), but its ANSWER is injected by a JS accordion and is not present in the rendered capture (home-raw.html) when collapsed -- unlike the pricing page's native <details> FAQ, whose answers stay in the DOM regardless of open/closed state. A separate saved file (faq_home_raw_segment.txt) holds apparent answer text in an unquoted-key object-literal format consistent with page-internals/JS source rather than a confirmed on-screen render; per binding rule A-019 (received mid-task, see coder_note) this is not used as disclosure. Coded unknown, kind=access failure: the question is named in the evidence, its rendered answer is not among the captures." }
+  refund_window_days: { value: unknown, source: https://faceless.so/, evidence: "Follows from refund_policy_exists=unknown: no rendered document states a refund window in days." }
+  refund_conditions: { value: unknown, source: https://faceless.so/, evidence: "Follows from refund_policy_exists=unknown: no rendered document states refund conditions." }
+  cancellation_self_serve: { value: unknown, source: https://faceless.so/pricing, evidence: "Pricing page FAQ, rendered native <details>: 'Can I cancel my subscription anytime? Yes, you can cancel your subscription at any time. There are no long-term commitments.' Confirms cancellation is possible but does not describe the route (account settings vs. contacting support). A more specific home-page FAQ answer ('two clicks from the billing page') is not confirmed rendered in any capture (see refund_policy_exists) and is not used as evidence under A-019." }
+  refund_policy_location: { value: unknown, source: https://faceless.so/, evidence: "No rendered document states a determinate refund policy (see refund_policy_exists), so its location cannot be stated either. The home-page FAQ question naming a refund policy is rendered/visible, but its answer -- and therefore which document class actually governs -- is not confirmed rendered in any capture." }
+  commercial_use_lowest_tier: { value: lowest_paid, source: https://faceless.so/, evidence: "Home page hero (rendered, plain visible marketing copy, not behind an accordion): 'Every video is original, monetizable, and fully yours.' Pricing page FAQ (rendered <details>): 'Can I monetize videos created with Faceless? Yes. You fully own the rights to all videos.' Neither statement is qualified to a specific tier; no free tier exists (free_plan_exists=no), so the grant applies from the entry paid tier (Starter) upward." }
+  watermark_removal_tier: { value: no_watermark, source: https://faceless.so/pricing, evidence: "'No watermark' feature bullet appears in the rendered feature list of all four published tiers (Starter/Growth/Influencer/Ultra); no tier is shown carrying a watermark, and no free/lower tier exists for comparison." }
+  output_ownership_statement: { value: user_owns, source: https://faceless.so/pricing, evidence: "Pricing page FAQ (rendered <details>): 'Can I monetize videos created with Faceless? Yes. You fully own the rights to all videos.' Pricing page benefits list (rendered plain text): '100% content ownership'. Home page hero (rendered): 'You own every video'. Terms of service (read in full) is silent on output ownership -- its IP clause (section 4) covers the Service's own platform content/features, not user-generated outputs -- so it does not conflict with these three consistent, mutually-agreeing statements." }
+  usage_cap_quantified: { value: some_quantified, source: https://faceless.so/pricing, evidence: "Starter tier (rendered pricing page): '500 Credits /month' (quantified rate) and '3 Team Members' (quantified standing limit) are quantified. 'Unlimited Series', 'Unlimited Exports', 'Unlimited Custom Templates' (rendered feature bullets) are qualified by a separate clause in the developer docs (rendered): 'usage_limit_reached (403): the team's plan caps its number of video projects' / 'Paid plans cap how many video projects a team can have' -- no figure is given for this cap on any plan. Per rule 3 an 'unlimited' claim qualified elsewhere by a no-number clause does not count as quantified, so the tier mixes quantified and unquantified limits." }
+  unquantified_limit_clause: { value: present, source: https://faceless.so/developers/docs/errors-and-rate-limits, evidence: "Terms of service read in full: no fair-use/reasonable-use/volume clause of any kind (its 'Use of the Service' section lists only prohibited conduct -- hacking, impersonation, illegal use -- not volume limits). Developer docs (rendered): 'usage_limit_reached (403): the team's plan caps its number of video projects and the cap is hit' / 'Paid plans cap how many video projects a team can have' -- a use-limiting standard with no published number for any plan." }
+
+coder_note: |
+  ENTRY TIER SELECTION (sampling-rules.md 7.2): four eligible standing, sales-contact-free,
+  generally-available candidates on the rendered pricing page, compared by annual-equivalent
+  cost in the default (Yearly) display state: Starter $290/yr (selected, lowest), Growth
+  $390/yr, Influencer $690/yr, Ultra $990/yr. Enterprise is excluded as a candidate (sales-gated,
+  "Contact Sales", no published price). All four eligible tiers carry identical core feature
+  sets (voiceovers, script/hook generation, background music, captions, no watermark, unlimited
+  exports/templates) scaled only by monthly credits (500/1,000/2,000/5,000) and team-member
+  count (3/5/7/10).
+
+  MANDATORY-ADDON CONTEXT: "Warmed Accounts" is a separate, distinctly-priced optional product
+  (from $49.90/account/month on the pricing-page teaser; the dedicated /warmed-accounts page
+  shows current pack pricing of $69.8-$49.96/account/month depending on pack size) for buyers
+  who want managed social accounts to post to. It is not required to use the Starter tier as
+  advertised (create/edit/download video, auto-post to a buyer's own connected accounts), so
+  mandatory_addon_present=no.
+
+  DESIGN LIMITATION (stated per assignment instructions): this coding is blind to pass-1's
+  VALUES and REASONING (that record and its YAML were never opened), but it is NOT blind to
+  pass-1's DOCUMENT SELECTION -- the evidence base is the 80-capture set pass 1 chose to save.
+  It therefore tests whether two readers of the same captured documents reach the same values;
+  it does not test whether the right documents were chosen or whether a from-scratch document
+  search would have found the same set (e.g. it would not surface a page pass 1 never saved).
+
+  MID-TASK RULE CHANGE (A-019, resolved 2026-08-17): received from the coordinator after
+  domains 1-6 were already drafted and committed, before domains 7-10 were drafted. Before this
+  rule reached me I had reasoned toward refund_policy_exists=yes, refund_conditions=conditional,
+  and cancellation_self_serve=self_serve_documented, based on faq_home_raw_segment.txt -- a
+  saved file holding home-page FAQ answers (including "What is the refund policy?" and "Can I
+  cancel my subscription anytime?") in an unquoted-key object-literal format. That format is
+  consistent with page-internals/JS source rather than a confirmed rendered/on-screen state, and
+  home-raw.html's own capture of the same accordion (collapsed, aria-expanded="false") does not
+  carry the answer text in the DOM the way the pricing page's native <details> FAQ does. None of
+  those three draft values were written to this file before the rule arrived, so nothing needed
+  amending -- they were coded unknown directly, on rendered-only evidence, as shown above.
+  Nothing else in this record rests on an unrendered payload: the one other place an embedded JS
+  chunk was consulted (chunks/584c5016af948b8b.js, for headline_price_usd) was a same-page
+  SECOND REPRESENTATION of a figure ($24/$290) already independently visible and rendered in
+  pricing-raw.html's DOM (the binding two-representation rule requires exactly this cross-check),
+  never the sole source for a value. That same chunk also contains several sets of
+  stale/historical plan-pricing objects (different plan names, e.g. "Starter/Pro/Business" and
+  other unrelated Pro/Premium/Ultra blocks at unconnected price points -- apparently leftover
+  template/config data from other products or past pricing schemes on the same codebase) that
+  were identified and deliberately never cited for any value.
+
+  CAPTURE-SET OBSERVATIONS: (1) the home page's FAQ accordion is JS-driven and does not carry
+  answer text in its own raw capture when collapsed, unlike the pricing page's native <details>
+  FAQ -- a second, separately-named file (faq_home_raw_segment.txt) happens to hold the same
+  answers in a source-like format, but per A-019 that does not count as disclosure; had that
+  auxiliary file not existed at all, this gap would have been invisible rather than merely
+  unusable. (2) The same accordion pattern recurs on /warmed-accounts (its own "Is there a
+  refund policy?" / "What happens if I cancel?" questions are listed but unexpanded), for a
+  different product line not used in this coding. (3) /billing is authentication-gated (307 to
+  /login) and carries no public archive snapshot (CDX query empty) -- a structurally
+  unreachable class under protocol §6.3, not merely an uncaptured one. (4) The one archive-save
+  attempt logged in the evidence (archive_test_headers.txt, /terms) plus independent CDX lookups
+  I ran today against the public index (not against pass-1's record) confirm ten window-dated
+  (2026-08-05/06) snapshots exist for the pages actually used as sources here.
+
+  ADMINISTRATIVE FIELDS: product_name taken from the vendor's own self-reference ("Faceless.so
+  Pricing" title tag; "faceless.so by Faceless LLC" in the ToS). category and paid_submission
+  are copied from the frozen frame per codebook §6, but the frame file is outside this
+  for-cause assignment's stated reading list, so both are coded unknown here rather than
+  guessed; the orchestrator holds the correct values already. product_status=active reflects
+  only the window-dated evidence (a live, functioning product throughout 2026-08-05/10 with no
+  shutdown signal); no live check was made per this assignment's evidence-only rule.
+
+  ARCHIVE ATTEMPTS TODAY: two live web.archive.org/save/ attempts for the pricing URL both
+  returned 520 (consistent with the stated 2026-08-17 outage); CDX read queries partially
+  succeeded and are what produced the archive_url values above, independently of pass-1's
+  record.
+
+  blindness: no other product's record was opened, in any pass -- not records/pass1/faceless-
+  so.yaml (the record under review), not any sibling record, not records/for-cause/gptzero.yaml
+  or records/for-cause/squarespace.yaml (both visible as directory siblings, neither opened),
+  not any orchestrator file, not aitoolspolice.com or site/content/reviews/. No repository git
+  history was read (no git log/show/diff/blame); only `git add` and `git commit -- <this path>`
+  were used, with commits scoped to this file at every checkpoint. This record's evidence base
+  is pass 1's saved capture set (records/pass1/faceless-so-sources/), as this assignment
+  directs -- see the design-limitation note above for what that does and does not make this
+  coding blind to.
+conflict_note: "not_applicable -- no two official sources of equal authority stated incompatible values for any variable in this record. The $29 (monthly) vs $24 (annual-equivalent) figures are the same vendor's two billing bases, not a conflict; the pricing-page FAQ's flat 'starts from 20 credits' and the developer docs' full 20/50/100 model-tiered table are consistent (the FAQ states the minimum, the docs the full range), not incompatible."
+register_events: []
+status: complete

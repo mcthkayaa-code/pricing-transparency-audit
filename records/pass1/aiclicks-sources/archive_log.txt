@@ -1,0 +1,32 @@
+=== Attempt 1: https://aiclicks.io/pricing ===
+response: 302 https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+SUCCESS pricing https://aiclicks.io/pricing
+=== Attempt 1: homepage -> https://aiclicks.io ===
+response: 302 https://web.archive.org/web/20260806132925/https://aiclicks.io/
+SUCCESS homepage https://aiclicks.io
+=== Attempt 1: tos -> https://aiclicks.io/terms-and-conditions ===
+response: 302 https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+SUCCESS tos https://aiclicks.io/terms-and-conditions
+=== Attempt 1: help_billing_faq -> https://docs.aiclicks.io/help-center/faq/billing ===
+response: 302 https://web.archive.org/web/20260806133004/https://docs.aiclicks.io/help-center/faq/billing
+SUCCESS help_billing_faq https://docs.aiclicks.io/help-center/faq/billing
+=== Attempt 1: help_billing_troubleshoot -> https://docs.aiclicks.io/help-center/troubleshooting/billing ===
+response: 302 https://web.archive.org/web/20260806133023/https://docs.aiclicks.io/help-center/troubleshooting/billing
+SUCCESS help_billing_troubleshoot https://docs.aiclicks.io/help-center/troubleshooting/billing
+=== Attempt 1: docs_content_agent -> https://docs.aiclicks.io/content-agent ===
+response: 302 https://web.archive.org/web/20260806133144/https://docs.aiclicks.io/content-agent
+SUCCESS docs_content_agent https://docs.aiclicks.io/content-agent
+=== Attempt 1: docs_prompts_overview -> https://docs.aiclicks.io/prompts-overview ===
+response: 302 https://web.archive.org/web/20260806133203/https://docs.aiclicks.io/prompts-overview
+SUCCESS docs_prompts_overview https://docs.aiclicks.io/prompts-overview
+=== Attempt 1: docs_create_prompts -> https://docs.aiclicks.io/create-prompts ===
+response: 302 https://web.archive.org/web/20260806133222/https://docs.aiclicks.io/create-prompts
+SUCCESS docs_create_prompts https://docs.aiclicks.io/create-prompts
+=== Attempt 1: docs_home -> https://docs.aiclicks.io/ ===
+response: 302 https://web.archive.org/web/20260806133243/https://docs.aiclicks.io/
+SUCCESS docs_home https://docs.aiclicks.io/
+=== Attempt 1: help_center_home -> https://docs.aiclicks.io/help-center ===
+response: 302 https://web.archive.org/web/20260806133306/https://docs.aiclicks.io/help-center
+SUCCESS help_center_home https://docs.aiclicks.io/help-center
+=== Attempt: loom video ===
+response: 302 https://web.archive.org/web/20260806133444/https://www.loom.com/share/e1c13d1239294424862883ee6f3df33f

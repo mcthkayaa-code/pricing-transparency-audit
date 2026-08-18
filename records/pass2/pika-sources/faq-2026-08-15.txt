@@ -1,0 +1,45 @@
+SOURCE: https://pika.art/faq
+ACCESSED: 2026-08-15 (pass-2 coder)
+CAPTURE METHOD: rendered browser read (claude-in-chrome), accordion items expanded via click for all Subscriptions & Billing questions plus the two relevant About Pika / Creating & Editing questions listed below. Not all "About Pika"/"Creating & Editing"/"Tech Issues" questions were expanded (only those touching codebook variables); their question titles were visible in the collapsed list and are not billing/pricing/rights related (What is Pika?, How does Pika work?, signatures of models, Are videos private?, delete profile, public API, Discord model parity, video resolution, adjust object/area, video length, Pikaffects usage, camera shot; Tech Issues: "What if I have questions that aren't answered here?").
+---
+[About Pika]
+Q: Can I use the content I made in Pika for commercial purposes?
+A: If you have a Pro or Fancy subscription, whatever you create using Pika can be used commercially, or non-commercially. If you have a Basic or Standard subscription, you can't use your content for commercial purposes. For more details, see our terms of service.
+
+[Creating & Editing]
+Q: How can I get rid of the Pika watermark?
+A: If you upgrade to a Pro or Fancy plan, your videos can be downloaded watermark-free. If you share a video directly from Pika, videos have a watermark for users of all tiers.
+
+[Subscriptions & Billing]
+Q: How does monthly video pricing work?
+A: Monthly video pricing is based on the number of credits each plan gives you per month. On the Basic (free) plan you get 150 credits per month. On Standard, you get 700. The Pro plan offers 2,300 credits. And the Fancy plan gives you 6,000. Feel like that's not enough? If you're on any of the paid plans, you can purchase additional credits that never expire.
+[NOTE: this 150 credits/month figure for the Basic/free plan CONFLICTS with the live pricing page, which states "80 monthly video credits" for Basic. See conflict_note in record.]
+
+Q: How many credits do videos cost to generate?
+A: Credits are our way of tracking your video generations across your subscription plan. Each different type of generation has a different credit value:
+Turbo Model: 5 credits (image-to-video or text-to-video); 10 credits (Pikascenes/Pikadditions/Pikaswaps); 60 credits (Pikatwists)
+Pro Mode: 20 credits (Pikadditions/Pikaswaps); 30 credits (Selfie With Your Younger Self); 80 credits (Pikatwists)
+1.0/1.5 Model: 15 credits
+2.1 Model: 35 credits (image-to-video or text-to-video); 60 credits (Pikascenes)
+2.2 Model: Pikaframes: 8 credits(720p)/25 credits(1080p) for 5s, 15 credits(720p)/60 credits(1080p) for 10s. Image-to-Video or Text-to-Video: 6 credits(720p)/18 credits(1080p) for 5s, 12 credits(720p)/45 credits(1080p) for 10s. Pikascenes: 15 credits(720p)/35 credits(1080p) for 5s, 30 credits(720p)/100 credits(1080p) for 10s.
+[NOTE: this table names models "Turbo/Pro Mode/1.0/1.5/2.1/2.2" and gives DIFFERENT credit numbers than the live pricing page's "Model 2.5" table (e.g. this FAQ's 2.2-Model Image-to-Video 720p/5s = 6 credits vs pricing page's Model 2.5 720p/5s = 20 credits; FAQ has no 480p tier at all). Appears to be a stale/outdated table predating the "Model 2.5" release on the live pricing page. See conflict_note in record.]
+
+Q: What happens if I want to change my plan?
+A: If you subscribed through the App, your plan is managed by your Apple subscription... If you subscribed through the Web, go to your profile on the Web to change your plan.
+
+Q: How do I change the billing cycle of my plan?
+A: For monthly to yearly it can happen immediately. The price will be discounted based on your current unused credits. For yearly to monthly or monthly to weekly it can only happen at the end of the current yearly billing cycle.
+
+Q: How do I cancel my subscription?
+A: You can switch to the Basic plan on the Pricing page (located in the dropdown menu under your profile name), or hit the "Cancel subscription" button on your profile page. Please be aware that cancellation will go into effect at the end of your current billing cycle (i.e., at the end of a year for a yearly subscription, and at the end of the month for a monthly subscription, at the end of the week for a weekly subscription). This means that no pro-rated refund will be provided. For any other questions, you can also email us at support@pika.art.
+
+Q: Will my subscription renew automatically?
+A: Your subscription will renew automatically based on the type of subscription you have (weekly, monthly or yearly) so you don't have to worry about anything.
+
+Q: Will my unused credits carry over?
+A: Video credits don't carry over from month to month. However, on the Standard, Pro, and Fancy plans, you can purchase additional video credits, and those WILL carry over.
+
+Q: What if I want more videos?
+A: Upgrade to Standard, Pro, or Fancy and you will be able to buy as many videos via credits as your heart desires. Here's the breakdown: $10 - 375 credits; $20 - 750 credits; $30 - 1125 credits.
+
+Q: Why do you charge money? [not expanded - not relevant to any coded variable]

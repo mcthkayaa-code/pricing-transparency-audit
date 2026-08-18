@@ -1,0 +1,92 @@
+SOURCE: https://autoshorts.ai/faq
+ACCESSED: 2026-08-14 (rendered read; accordion items expanded via documentary DOM interaction - clicking
+question rows to reveal answers already present client-side; no account/login/checkout involved)
+
+=== SERIES & VIDEOS (relevant items) ===
+
+Q: How many videos can I create per day?
+A: The number of videos created by each series can be seen on our pricing page. Remember, AutoShorts
+doesn't focus on individual video creation. Instead, you set up a Series that automatically generates
+videos on a schedule. Features that render a new video such as making script edits, or changing your
+series do not count against your plan.
+
+Q: Can I adjust the video length?
+A: When creating your series, you can choose between "30 to 60 seconds" or "60 to 90 seconds" length
+options. For more fine-tuned length control you can manually modify the length of your AI generated
+script, up to 1,600 characters max.
+
+Q: Will I get banned?
+A: Our service has been reviewed and approved by TikTok and YouTube. However, we recommend that brand
+new channels do not post more than once per day to avoid being flagged as spam; you should "warm" up
+these accounts. You should also preview your videos before posting to ensure that they are appropriate
+for your audience.
+[Note: this is guidance about third-party platform spam policies, not a self-imposed discretionary usage
+throttle by AutoShorts itself.]
+
+Q: Do I own the videos?
+A: Yes, the videos are yours to do with as you please. You can download them and use them on other
+platforms, or even sell them to clients.
+
+Q: What are image credits?
+A: By default, our AI models generate images for your videos. However, sometimes the images are not
+perfect, and you may need to generate a replacement image. Image credits allow you to generate new
+ones. Your plan includes a certain number of image credits that refill on a 30 day rolling basis, but
+you can purchase more if you need them.
+[Note: no per-tier image-credit COUNT is published anywhere on the pricing grid; only Motion Credits
+counts (27/62/124) are shown per tier.]
+
+Q: What are motion credits?
+A: By default, our AI creates still images for each scene in your video. Motion credits can animate
+those images. When setting up your series (or in your series settings), you can specify how many
+motion credits you are okay using per video, and our AI will automatically use them in your video. You
+can also manually use them in the media editor to add motion to still images.
+Each plan comes with motion credits that reset each billing cycle, but you can also purchase "top off"
+credits that never expire from the billing tab. Feel free to setup auto-reload if you'd like to
+automate top offs.
+
+Q: Why does the background music stop at 60 seconds?
+A: Unfortunately, TikTok does not currently allow uploaded music to be longer than 1 minute. Otherwise,
+you risk your video being muted or taken down. Once TikTok allows this, so will we!
+
+Q: How long will I have access to my videos?
+A: You can download past videos in your series for up to 120 days, after which they are removed from
+our servers. If you delete your series, all associated videos are also deleted, so be sure to download
+any you want to keep.
+
+=== BILLING (all items) ===
+
+Q: Is there a free trial?
+A: You bet your sweet bippy there is. Simply create an account and you can create your first series for
+free to test a video. No credit card required.
+Update: We have temporarily suspended the free plan due to abuse from botting / spamming. We will be
+re-enabling it soon once we implement a better bot detection system.
+
+Q: Can I cancel at anytime?
+A: Absolutely. We hate services that purposefully make it difficult to cancel. You can cancel at the
+click of a button from the dashboard's billing page.
+
+Q: How does the membership work?
+A: Beyond the free plan, we offer different tiers of paid memberships. The paid plans remove the
+watermark and allow you to post more frequently.
+
+Q: Can I get a refund?
+A: Unfortunately, we cannot offer refunds as costs incurred for creating AI videos and generating AI
+photos are extremely high. In turn, our upstream providers do not let us ask for refunds for the GPU
+processing time used to create your AI videos. This would make it a loss making endeavor for us.
+During sign up you agree to withhold your right to refund for this reason. You can cancel any time
+though and your subscription ends.
+
+Q: Can I upgrade or downgrade my subscription?
+A: Yes, you can upgrade or downgrade your subscription at any time. Go to the billing tab and select
+the plan you want to upgrade / downgrade to. If you move to a plan with less series than you currently
+have, the extra series will be automatically disabled.
+
+Q: Can I have multiple plans?
+A: Unfortunately, no. An AutoShorts account can only be on one plan "type" at a time. For example, you
+can't have one series on the Daily plan and another on the Hardcore plan; they would both need to be on
+the same plan type. The workaround is to create a separate account if you require multiple plans.
+
+=== NOT FOUND ANYWHERE ON THIS PAGE ===
+No explicit statement that subscriptions "renew automatically" / "auto-renew unless canceled".
+No stated advance-notice-before-renewal-charge commitment.
+No fair-use / reasonable-use / excessive-use discretionary limit clause.

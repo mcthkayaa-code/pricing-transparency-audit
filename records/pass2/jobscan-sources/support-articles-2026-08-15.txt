@@ -1,0 +1,25 @@
+Source: Jobscan Support Center (jobscansupport.frontkb.com), official help center. Accessed 2026-08-15 via rendered browser read.
+
+=== https://jobscansupport.frontkb.com/en/articles/11537217 "Why was I charged during my free trial?" ===
+"When you begin your free trial, Jobscan places a temporary $1 authorization hold on your payment method. This is not an actual charge—it's a standard practice used to verify that your payment method is valid and can be charged once your trial ends.
+The authorization hold is usually released within 24 hours, but depending on your bank or credit card issuer, it may take up to 7–10 business days to disappear from your account."
+
+=== https://jobscansupport.frontkb.com/en/articles/11537089 "I didn't pay in USD. Will this affect my refund?" ===
+"All subscription charges are processed in USD. If you paid using a different currency, your bank or payment provider will have converted the amount at their current exchange rate at the time of payment.
+When we issue a refund, it's also processed in USD. Because exchange rates can change daily, the amount you receive back in your local currency may be slightly more or less than what you originally paid. Any differences are due to currency conversion and are outside of our control.
+We recommend checking with your bank or payment provider for exact conversion details."
+
+=== https://jobscansupport.frontkb.com/en/articles/11537025 "Can I cancel within my free trial and not get charged?" ===
+"Yes, you can cancel during your trial period and you won't be charged.
+Please note that the free trial is only available with select Jobscan Premium accounts under a limited trial version—it does not apply to all Premium accounts or the LinkedIn Optimization add-on.
+Once you cancel, your account will automatically be downgraded to the Free plan at the end of the trial.
+If you forget to cancel before the trial ends, you may be charged. In that case, please review our Cancellation and Refund Policy for next steps."
+
+=== https://jobscansupport.frontkb.com/en/articles/11537153 "I meant to cancel my account but forgot before I was charged. Can I get a refund?" ===
+"We understand that this can happen! Please refer to our Cancellation and Refund Policy for details on how to request a refund and to see if your account is eligible.
+If you believe you were charged in error or need assistance, feel free to contact our support team and we'll be happy to help."
+
+=== https://jobscansupport.frontkb.com/en/categories/2362625 "Other Help Topics" -- relevant excerpt ===
+"How do I cancel my account? You can cancel your account by going to your Account Details page. If you paid with a credit card, you'll see a Cancel Plan button at the bottom..." [confirms self-serve cancellation, corroborates cancellation-policy page]
+"Can I use Jobscan in a language other than English? Currently, Jobscan is only available in English."
+No article in "Other Help Topics" (16 titles), "Using Jobscan" (5 titles), or "Billing & Subscription" (4 titles, all four captured above) addresses: watermarks on resume-builder exports, commercial use or ownership of AI-generated resume/cover-letter output, Auto Apply credit rollover/expiry, or a fair-use/excessive-use throttling clause.

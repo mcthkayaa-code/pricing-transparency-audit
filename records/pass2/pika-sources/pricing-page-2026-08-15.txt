@@ -1,0 +1,62 @@
+SOURCE: https://pika.art/pricing
+ACCESSED: 2026-08-15 (pass-2 coder)
+CAPTURE METHOD: rendered browser read (claude-in-chrome), default display state = Yearly toggle preselected (confirmed via DOM class: "Yearly -20% off" button carries class "text-dark-background" [selected style]; "Monthly"/"Weekly" carry "text-light-primary" [unselected style]). Cookie/consent: none presented.
+---
+SUBSCRIPTION PRICING
+Pika has four plans, so you can pick what fits your needs.
+[Toggle: Yearly -20% off (SELECTED) | Monthly | Weekly]
+
+$0 Free
+BASIC
+A perfect taste for the creatively curious
+- [check] 80 monthly video credits
+- [check] Access to Pika 2.5 (480p only), Pikascenes, Pikadditions, Pikaswaps, Pikatwists, Pikaffects Image-to-Video only
+- [cross] Download videos with no watermark
+- [cross] Purchase more roll over video credits
+- [cross] Commercial use
+
+$8 / month, billed yearly
+STANDARD
+More videos meets more editing features
+- [check] 700 monthly video credits
+- [check] Access to Pika 2.5 (all resolutions), Pikaframes, Pikascenes, Pikadditions, Pikaswaps, Pikatwists, all Pikaffects
+- [check] Fast generations
+- [check] Purchase more roll over video credits
+- [cross] Download videos with no watermark
+- [cross] Commercial use
+
+$28 / month, billed yearly [Best value]
+PRO
+More speed, more videos, more fun
+- [check] 2300 monthly video credits
+- [check] Access to Pika 2.5 (all resolutions), Pikaframes, Pikascenes, Pikadditions, Pikaswaps, Pikatwists, all Pikaffects
+- [check] Faster generations
+- [check] Purchase more roll over video credits
+- [check] Download videos with no watermark
+- [check] Commercial use
+
+$76 / month, billed yearly
+FANCY
+The crème de la creativity
+- [check] 6000 monthly video credits
+- [check] Access to Pika 2.5 (all resolutions), Pikaframes, Pikascenes, Pikadditions, Pikaswaps, Pikatwists, all Pikaffects
+- [check] Fastest generations
+- [check] Purchase more roll over video credits
+- [check] Download videos with no watermark
+- [check] Commercial use
+
+Credit cost tables (Model 2.5, current live pricing page):
+PIKAFFECTS: Type Image-to-Video/Video-to-Video, Duration 5s: 15 credits (Free-tier eligible, Image-to-Video), 18 credits (Paid-tier only, Video-to-Video)
+PIKASCENES: Quality 480p/720p/1080p, Duration 5s: 20 credits (Free, 480p), 35 credits (Paid, 720p), 65 credits (Paid, 1080p)
+PIKATWISTS: Model Turbo/Pro, Quality 720p/1080p, Duration 5s: 60 credits (Free, Turbo/720p), 80 credits (Paid, Pro/1080p)
+PIKADDITIONS & PIKASWAPS: Quality 480p/720p/1080p, Duration 5s: 20 credits (Free,480p), 35 credits (Paid,720p), 65 credits (Paid,1080p)
+TEXT-TO-VIDEO & IMAGE-TO-VIDEO: Model 2.5:
+  480p: 5s=12 credits (Free), 10s=24 credits (Paid)
+  720p: 5s=20 credits (Paid), 10s=40 credits (Paid)
+  1080p: 5s=40 credits (Paid), 10s=80 credits (Paid)
+PIKAFRAMES: Model 2.5, Quality 480p: 5s=12(Free) 10s=24(Paid) 10-15s=36(Paid) 15-20s=48(Paid) 20-25s=60(Paid)credits
+  Quality 720p: 5s=20 10s=40 10-15s=60 15-20s=80 20-25s=100 credits (all Paid)
+  Quality 1080p: 5s=40 10s=80 10-15s=120 15-20s=160 20-25s=200 credits (all Paid)
+PIKAFORMANCE: Quality 720p, Audio Duration up to 10s/30s: 3 credits/second (Free and Paid alike)
+
+Footer note: "Upgrade, switch and cancel plan any time. VAT rate may be charged, depending on your country of residence."

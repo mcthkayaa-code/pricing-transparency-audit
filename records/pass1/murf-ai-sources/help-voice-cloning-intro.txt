@@ -1,0 +1,94 @@
+SOURCE: https://help.murf.ai/what-is-murf-voice-cloning
+DATE ACCESSED: 2026-08-09
+METHOD: curl static fetch (server-rendered help/legal page, not a JS app-shell)
+ARCHIVE: https://web.archive.org/web/20260809194220/https://help.murf.ai/what-is-murf-voice-cloning
+PAGE TITLE: Introduction to Voice Cloning
+NETWORK NOTE: collection environment egresses from Turkey; this page's substantive text
+  (ToS/help-center prose) is not price-bearing in a way current-affected -- D-003 currency
+  check applies to the pricing page specifically (see pricing-rendered.txt).
+=== EXTRACTED TEXT (nav/boilerplate stripped where noted) ===
+Introduction to Voice Cloning
+Skip to content
+English
+Show submenu for translations
+Open main navigation
+Close main navigation
+English
+Show submenu for translations
+Open Studio
+Open Studio
+How can we help you today?
+There are no suggestions because the search field is empty.
+Help Center
+Voice Cloning
+Introduction
+Introduction to Voice Cloning
+Murf offers advanced voice synthesis, editing, and visual timing features to help you create high-quality audio cloning in minutes.
+Murf is a reliable online voice cloner that lets you easily clone your favorite actor’s voice. Murf ensures your cloned voices are safe and your team has exclusive access. But that’s not just all! Murf offers a complete voice solution. Murf offers advanced voice synthesis, editing, and visual timing features to help you create high-quality audio cloning in minutes.
+Once you sign up with Murf, you will be assigned a dedicated account manager to guide you in every step of your deep voice cloning efforts. Your account manager will be your point of contact, from taking you through the user cycle to troubleshooting and support requirements.
+With 24/7 instant access to your cloned voices, you are better poised to scale your content generation with ease. When you sign up for Murf for voice cloning services, you can access the entire Murf Studio. Use features like the soundtrack to add background music for your Audiobook or control pitch, speed, pause, and pronunciation to make your narration more relatable for your voice-over PPT. Simply upload your script and change it to audio using your custom voice clone. The possibilities are endless!
+We do not currently provide self-served Voice Cloning solutions.
+Contact our Enterprise Team today for more information.
+🈂️🔃   Voice Cloning for Dubbing/Translation Use Cases
+Our Murf Dub feature is a great option if you’re looking to clone a voice from an existing video or audio file in multiple languages. It lets you dub your content into different languages while preserving the original speaker’s voice.
+New to Murf
+Intro to Murf AI
+Setup and Onboarding
+Managing Your Account
+Free Trial
+Getting Started
+Script Import and Structuring
+Finding the Right Voice & Settings
+Adding Media Files
+Frequently Asked Questions
+New to Murf
+Working with the Studio
+Payment and Billing
+Workspaces and Account Management
+Voice Cloning
+Commercial Rights
+Working with the Studio
+Studio Elements
+Voices and Languages
+Voice Settings
+Working with Imports
+Timeline and Project Settings
+Exports
+Collaboration
+Gen2 Voice Model
+HTML Embed
+Audio to Text
+AI Dubbing
+Introduction
+Murf Dub Project
+Dubbing Credits
+Pricing and Plans
+Editing Dub
+Workspaces
+Introduction
+Types of User Roles
+Invite Team Members
+Managing Projects and Folders
+Permissions and Privacy
+Voice Generation Time (VGT)
+Tracking VGT Consumption
+Payments and Billing
+Managing Payments and Billing
+Frequently Asked Questions/ Troubleshooting
+Taxes
+YouTube Codes
+Adding YouTube Codes
+Introduction to YouTube Codes
+Content ID Claims
+API
+Introduction
+Generating Speech
+API Pricing and Plans
+Integrations & Add Ons
+PowerPoint Plugin
+Windows Voices Installer
+Canva
+Voice Cloning
+Introduction
+Help Center
+Copyright © 2026, Murf Inc.

@@ -1,0 +1,55 @@
+HTTP/2 302 
+server: nginx
+date: Thu, 06 Aug 2026 23:12:01 GMT
+content-type: text/html; charset=utf-8
+content-length: 296
+location: https://web.archive.org/web/20260806231146/https://autoshorts.ai/faq
+x-app-server: wwwb-app55-dc6
+x-ts: 302
+x-tr: 18072
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-save-SERVER=wwwb-app55; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Thu, 06 Aug 2026 23:12:02 GMT
+content-type: text/html; charset=utf-8
+x-archive-orig-server: nginx/1.14.0 (Ubuntu)
+x-archive-orig-date: Thu, 06 Aug 2026 23:11:46 GMT
+x-archive-orig-transfer-encoding: chunked
+x-archive-orig-connection: keep-alive
+x-archive-orig-x-powered-by: Next.js
+x-archive-orig-access-control-allow-origin: *
+x-archive-orig-etag: "ry1gjpyoio33b"
+x-archive-orig-vary: Accept-Encoding
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+x-archive-orig-content-encoding: gzip
+memento-datetime: Thu, 06 Aug 2026 23:11:46 GMT
+link: <https://autoshorts.ai/faq>; rel="original", <https://web.archive.org/web/timemap/link/https://autoshorts.ai/faq>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://autoshorts.ai/faq>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: spn2-20260806201707-wwwb-spn12.us.archive.org-8003.warc.gz
+server-timing: captures_list;dur=0.575656, exclusion.robots;dur=0.046274, exclusion.robots.policy;dur=0.033924, esindex;dur=0.009730, cdx.remote;dur=10.233930, LoadShardBlock;dur=207.619249, PetaboxLoader3.resolve;dur=60.831137, PetaboxLoader3.datanode;dur=65.597796, load_resource;dur=102.684484
+x-app-server: wwwb-app244-dc8
+x-ts: 200
+x-tr: 359
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app244; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

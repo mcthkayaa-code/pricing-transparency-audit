@@ -1,0 +1,21 @@
+URL: https://www.jobscan.co/resume-builder
+Accessed: 2026-08-09
+Method: WebFetch, targeted prompt asking specifically for watermark / paywall / ownership /
+commercial-use / licensing language.
+Purpose: a third-party WebSearch summary (not usable as a coded source) claimed Jobscan's free
+resume builder has "no watermarks"; this direct fetch of the official page was run to check for an
+exact vendor quote before coding free_plan_watermark.
+
+--- RESULT ---
+No exact sentence mentions "watermark" anywhere on the page. Cost/paywall language found instead:
+- "Create, edit, and save unlimited ATS-friendly resumes, free from start to finish."
+- "Other 'free' resume builders charge the moment you try to download. Ours doesn't."
+- "At Jobscan, we stand by our word. Our resume builder is free to use, with no hidden fees for
+  basic features."
+- "For those looking to unlock advanced AI tools, a paid version is available."
+
+Conclusion: this page documents absence of a download paywall, which is a different construct from
+a watermark. No official document found (this page, the plan page, or the ToS) states whether free
+or paid outputs carry a watermark either way. free_plan_watermark and watermark_removal_tier are
+coded unknown, not no/not_applicable, on this evidence -- the third-party "no watermark" claim is
+not corroborated by an official source and is excluded per the documents-only rule.

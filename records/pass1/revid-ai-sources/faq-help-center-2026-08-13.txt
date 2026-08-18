@@ -1,0 +1,98 @@
+SOURCE: https://www.revid.ai/faq
+ACCESSED: 2026-08-13
+CAPTURE METHOD: local verbatim capture (full main.textContent via javascript_tool, since the
+accordion answers are present in the DOM but visually collapsed; get_page_text alone returned
+only nav chrome because it reads visible/rendered text)
+PAGE'S OWN "Last updated" LABEL: "Last updated: June 2026" (roughly ~2 months before this
+collection date -- material because its plan list conflicts with the live pricing page, see below)
+
+=== FULL TEXT OF EVERY Q&A (verbatim, whitespace-collapsed) ===
+
+What is Revid.ai?
+Revid.ai is the #1 AI video generator -- a platform that turns text, prompts, articles, music,
+and images into ready-to-publish short-form videos for TikTok, Instagram, and YouTube. It
+combines cutting-edge models (Google Veo3, OpenAI Sora 2, ElevenLabs voices in 70+ languages,
+Flux/Seedream/GPT-Image visuals) with 100+ specialized tools, a full timeline editor, direct
+social publishing, and daily automation. More than 240,000 short videos have been created by
+14,000+ creators across 68 countries. [...]
+
+What AI models generate the visuals?
+"AI video per 5 seconds, billed pro rata per second: Base (15 credits), Pro (50), Ultra (100;
+Seedance 1080p 250, Seedance 4K 500), Google Veo3 (100), OpenAI Sora 2 (130). AI images per
+image: Base (1), Pro (4), Ultra (16). Plus stock footage, your own uploads, and gameplay
+backgrounds. [...]"
+
+What voices and languages are supported?
+"70+ languages via ElevenLabs [...] You can clone a voice, design one from a text description
+(Elite plan), or record yourself with the built-in teleprompter."
+-- NOTE: this answer references an "Elite plan" for voice design, one more reference to the
+plan name absent from the live pricing grid.
+
+Can I create talking avatar videos?
+"[...] generate a lifelike presenter (40/100/200 credits per 500 characters depending on
+quality). [...] Face Swap (motion transfer) swaps a face in existing footage (100 credits per
+5 seconds)."
+
+>>> What subscription plans are available? <<<
+"Growth: $39/month (2,000 credits) -- the most popular. Elite: $89/month (5,000 credits, voice
+cloning, 5 Auto-Mode workers). Ultra: $199/month (12,000 credits, 10 Auto-Mode workers). Yearly
+billing is roughly 17% cheaper. All paid plans include the 100+ tools, 70+ language voiceovers,
+direct publishing, and full API/MCP/CLI access. High-volume plans go up to 100,000 credits/month."
+
+>>> How do credits work and what do things cost? <<<
+"Credits are consumed by generation: AI images 1-16 credits, AI video 15-130 credits per 5
+seconds depending on the model (up to 500 for 4K Seedance, billed pro rata per second), voice
+10 credits per 500 characters, avatars 40-200 credits per 500 characters, music generation 20
+credits, 4K export 10 credits. A typical 30-second video with Pro moving images costs roughly
+40-80 credits. Estimate any render for free before paying."
+
+Can I buy extra credits?
+"Yes: Credit Boost packs of 1,000 ($49), 4,000 ($99), 10,000 ($199), and 100,000 ($1,900) stack
+on top of plan credits. Supported auto top-up packs can also be purchased programmatically via
+the API or MCP."
+-- These are OPTIONAL top-ups ("stack on top of plan credits"), not a required charge.
+
+What is Auto-Mode?
+"Auto-Mode workers are always-on pipelines [...] 3 workers on standard plans, 5 on Elite, 10 on
+Ultra." -- again names "Elite", not present on the live pricing page (which instead shows
+Growth at "3 Auto-Mode Workers" and Ultra at "10 Auto-Mode Workers", matching Ultra's figure but
+with Growth taking the position this FAQ assigns to the (here-absent) base "standard" plans).
+
+What export options are available?
+"720p, 1080p, or 4K (beta, 10 credits) at 30 or 60 fps, MP4 or GIF, three compression levels,
+and optional AI upscaling (5 credits/second) for AI-generated clips. [...]"
+
+[Full 26-question list covers: About Revid (4), Creating Videos (8), Pricing and Credits (3 --
+the two plan/credit answers quoted above plus the Credit Boost answer), Publishing and
+Automation (2), Developers and AI Agents (4), Video Editor (2), Trust and Comparisons (3). No
+question anywhere in the 26 addresses: free trial, free plan, watermark, commercial-use rights,
+failed/errored generation credit policy, or a self-serve cancellation route. "Trial" and
+"watermark" do not appear as strings anywhere in this page's text.]
+
+=== WHY THIS IS A CONFLICT_NOTE FINDING ===
+This official FAQ/help-center page (kind: docs, ranks SECOND for pricing variables per protocol
+6.2) names a plan structure that does NOT match https://www.revid.ai/pricing (kind: pricing,
+ranks FIRST for pricing variables) as read on this same collection date:
+
+  FAQ (labelled "Last updated: June 2026"):  Growth $39/mo (2,000cr) | Elite $89/mo (5,000cr,
+    voice cloning, 5 Auto-Mode workers) | Ultra $199/mo (12,000cr, 10 Auto-Mode workers)
+  Live pricing page (2026-08-13):  Hobby $39/mo (credits unstated) | Growth $99->$39/mo "Best
+    Value", 2,000cr, 3 Auto-Mode workers | Ultra $199/mo, 12,000cr, 10 Auto-Mode workers
+
+The Ultra figures agree exactly ($199, 12,000 credits, 10 workers). The "Growth" name and its
+$39/2,000-credit figure also agree. But: (a) the FAQ's "Elite" tier ($89/5,000cr/voice
+cloning/5 workers) has no counterpart on the live page at all; (b) the live page's "Hobby" tier
+($39/mo, no stated credits) has no counterpart in the FAQ, which never uses the word "Hobby";
+(c) the live page shows Growth's $39 as a "Discount locked in forever" markdown from a $99
+list price, which the FAQ does not mention. Per protocol 6.2 the live pricing page governs the
+coded pricing values (Hobby is coded as the entry tier); this conflict is recorded per
+codebook 2.1/section 3's binding rule that a hierarchy-resolved disagreement is still reported.
+Read together with the FAQ's own "Elite plan" cross-reference under "What voices and languages
+are supported?" and the "5 on Elite" figure under "What is Auto-Mode?", the FAQ is internally
+consistent with ITSELF about Elite existing -- this reads as a genuine stale/unsynced
+documentation page (dated ~2 months prior) rather than a one-off typo.
+
+This also means the FAQ never states Hobby's credit allocation, because the FAQ does not know
+Hobby exists. Cross-checked against the live pricing page (which also states no credit figure
+for Hobby) and the API docs (same silence) -- the entry tier's usage allowance is unpublished
+in every official document located, not merely omitted from one.

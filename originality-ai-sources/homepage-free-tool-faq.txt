@@ -1,0 +1,34 @@
+SOURCE: https://originality.ai/ (homepage, doubles as the AI Checker product page; nav link
+        text is literally "AI Checker")
+DATE ACCESSED: 2026-08-10
+METHOD: Rendered browser read; evidence quoted below lives inside a collapsed FAQ accordion
+        on this page (height:0 until clicked) -- confirmed present in the live DOM via
+        document.body.innerHTML, and expanding an accordion on an already-loaded public page
+        is expressly permitted reading under protocol Sec 6.3. Not third-party: same
+        originality.ai origin as the pricing page.
+
+=== FAQ ACCORDION TEXT (exact) ===
+Q: "Is Originality.ai free, or is there a free Originality trial?"
+A: "We don't offer a free trial of Originality.ai. Instead, we offer a limited free AI
+    detection tool, with 3 free daily scans."
+
+Q: (adjacent FAQ item)
+A: "Check up to 2,000 words with the free AI checker, and run up to 3 free AI scans daily.
+    To scan more words, upgrade to premium."
+
+=== USE ===
+- trial_exists: coded "no" directly from the first quote (vendor explicitly denies offering a
+  free trial, in plain first-party language -- this is stronger and more specific than the
+  generic ToS Sec 7.1 "we may offer trials... at any time" reservation-of-rights clause, which
+  is contingent/hypothetical and explicitly defers actual terms to "at signup" rather than
+  stating a currently offered trial. Both are read; the direct on-page denial governs per
+  codebook Sec 2.1 step 2 (documents state a determinate value) and is not contradicted by the
+  ToS's conditional language, so this is not coded `conflicting`.
+- free_plan_exists: coded "yes" -- a standing (no expiry date/time-limit), no-cost tool with an
+  ongoing daily allowance, explicitly contrasted against "trial" framing by the vendor itself
+  ("We don't offer a free trial... Instead...").
+- free_plan_cap_documented / free_plan_cap_value: both figures are quantified (2,000 words per
+  scan = standing cap; 3 scans per day = rate with period) -> all_quantified,
+  "2000 words per scan | 3 scans per day".
+- free_plan_duration: perpetual (no end date stated; positioned as a permanent alternative to a
+  trial, not a time-boxed trial itself).

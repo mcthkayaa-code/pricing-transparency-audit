@@ -1,0 +1,170 @@
+# Pass-1 record. Complete — see status line at bottom.
+product_id: invideo-ai
+product_name: InVideo AI
+category: Faceless video
+product_status: active
+paid_submission: "no"
+entry_tier_name: Plus
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://invideo.io/pricing/
+archive_url: https://web.archive.org/web/20260809164148/https://invideo.io/pricing/
+archive_status: archived
+default_display_state: >
+  USD throughout (no currency selector observed); "Individual" tab active by default (vs "Team &
+  Enterprise"); each of the four Individual plan cards carries its own Annual/Monthly switch,
+  defaulting to Annual ("is-on") with "Billed $X yearly" shown — no separate monthly figure visible
+  until the switch is clicked; no promotional/sale banner or strikethrough pricing present at read
+  time; collector's browser reports navigator.language=tr (Turkey egress) but the page rendered
+  all prices in USD regardless; no cookie-consent banner encountered.
+
+sources:
+  - { url: "https://invideo.io/pricing/", kind: pricing, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809164148/https://invideo.io/pricing/", note: "Static fetch (WebFetch + curl w/ en-US header) showed zero price figures; coded from a rendered read per deviation D-005. Archived capture is static and does not itself show the rendered prices -- local copy invideo-ai-sources/pricing-rendered.txt is the operative evidence, per the D-005 precedent. Includes embedded FAQPage JSON-LD with full credit/renewal/seat answers." }
+  - { url: "https://invideo.io/terms-and-conditions/", kind: tos, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809164206/https://invideo.io/terms-and-conditions/", note: "Rendered read; sections 3 (Plans/Subscriptions/Payments) and 4 (Content and Outputs) carry the coded contractual variables. Full-text keyword-scanned for domain 12." }
+  - { url: "https://invideo.io/usage-policy/", kind: tos, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809164325/https://invideo.io/usage-policy/", note: "Acceptable Use Policy, incorporated by reference into the Terms and Conditions (linked from it). Read in full (full-text keyword scan) for unquantified_limit_clause." }
+  - { url: "https://invideo.io/help/billing/how-do-credits-work/", kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809164250/https://invideo.io/help/billing/how-do-credits-work/", note: "Credit definition, plan credit-allowance table (incl. Free = \"Limited\"), rollover/reset policy." }
+  - { url: "https://invideo.io/help/billing/video-model-pricing/", kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809164314/https://invideo.io/help/billing/video-model-pricing/", note: "Principal-output (video) credit rate table, ~65 models, each a range." }
+  - { url: "https://invideo.io/help/billing/image-pricing/", kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809164429/https://invideo.io/help/billing/image-pricing/", note: "Secondary-output (image) credit rate table, used for credit_unit_defined only." }
+  - { url: "https://help.invideo.io/en/articles/9380226-can-i-use-invideo-ai-for-free", kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809164451/https://help.invideo.io/en/articles/9380226-can-i-use-invideo-ai-for-free", note: "Official current Free-plan article. Does not quantify free-plan limits beyond \"limited credits\", weekly reset." }
+
+variables:
+  headline_price_usd: { value: 17.00, source: "https://invideo.io/pricing/", evidence: "Plus card: \"$17 /mo\" (largest, most prominent figure) with \"*Billed $200 yearly\" beneath, in the page's default (Annual) display state. See pricing-rendered.txt." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://invideo.io/pricing/", evidence: "\"$17/mo\" qualified by \"*Billed $200 yearly\" in the same card; per-card toggle defaults to Annual (\"is-on\")." }
+  first_charge_amount_usd: { value: 200.00, source: "https://invideo.io/pricing/", evidence: "\"*Billed $200 yearly\" is the annual total stated directly by the document for the default (Annual) display state -- not computed via 17x12, per codebook rule 2 (documents state the annual total directly)." }
+  mandatory_addon_present: { value: "no", source: "https://invideo.io/pricing/", evidence: "Reviewed the Plus-tier feature list (credits, model access, workflows, avatars/voice clones, concurrency, storage, iStock assets, watermark-free exports) and the billing/credits docs (how-do-credits-work.txt, terms-and-conditions.txt Sec.3); no required charge beyond the stated plan price was found. Optional credit top-ups exist but are not mandatory to use Plus as advertised." }
+  annual_condition_disclosure: { value: adjacent, source: "https://invideo.io/pricing/", evidence: "\"*Billed $200 yearly\" prints directly beneath \"$17 /mo\" inside the same plan card, with the Annual/Monthly switch also inside that card." }
+  annual_default_toggle: { value: annual_preselected, source: "https://invideo.io/pricing/", evidence: "DOM state on load: all four Individual-tab plan cards carry class \"vp-annual-switch is-on\"; \"Billed $X yearly\" shown by default with no monthly figure visible until the switch is clicked." }
+  free_plan_exists: { value: "yes", source: "https://invideo.io/terms-and-conditions/", evidence: "\"We offer a free tier with limited features (“Free Plan”) and various paid subscription plans (“Paid Plans”)\" (Sec.3a). Corroborated by the pricing page's own FAQ: \"...your account will be downgraded to the Free plan...\", and by the credits table listing a \"Free\" row." }
+  free_plan_cap_documented: { value: none_quantified, source: "https://invideo.io/help/billing/how-do-credits-work/", evidence: "Credit-allowance table row: \"Free | Limited\" (word, no number). Corroborated by help.invideo.io: \"The free plan gives you limited credits to explore the platform\" and \"This quota on the Free plan is reset weekly on Monday at 12 a.m. UTC\" (a period is stated but no number/dimension, so still not quantified per codebook 5.1). No other free-plan limit (storage, exports, resolution) found stated with or without a number in any document read." }
+  free_plan_cap_value: { value: unknown, source: "https://invideo.io/help/billing/how-do-credits-work/", evidence: "No quantified limit exists to record; the only documented free-plan figure is the word \"Limited\", which free_plan_cap_value's own rule forbids paraphrasing into a number." }
+  free_plan_watermark: { value: unknown, source: "https://invideo.io/pricing/", evidence: "No document read (pricing page, credits docs, free-plan help article, Terms and Conditions) states whether Free-plan outputs carry a watermark or vendor branding. The pricing page states paid tiers export \"without watermark\" but never contrasts this against the Free plan explicitly." }
+  free_plan_duration: { value: perpetual, source: "https://invideo.io/terms-and-conditions/", evidence: "\"We offer a free tier with limited features (“Free Plan”) and various paid subscription plans (“Paid Plans”)\" frames Free Plan as a standing category alongside Paid Plans, not a time-limited state; no expiry stated anywhere. Corroborated by the weekly-recurring reset cadence (help.invideo.io) and by the pricing-page FAQ's post-cancellation \"downgraded to the Free plan\" (an ongoing destination, not itself time-limited)." }
+  trial_exists: { value: "no", source: "https://invideo.io/terms-and-conditions/", evidence: "Full-document keyword scan of the complete Terms and Conditions text found no free-trial-of-a-paid-tier provision anywhere (the only \"trial\" match in the whole document is \"jury trial\" inside the dispute-resolution clause). The pricing page's four plan cards and its FAQ accordion (both tabs) mention no trial either -- only the standing Free Plan (a separate construct, domain 3) and paid plans billed from day one." }
+  trial_card_required: { value: not_applicable, source: "https://invideo.io/terms-and-conditions/", evidence: "No trial exists (trial_exists = no)." }
+  trial_length_days: { value: not_applicable, source: "https://invideo.io/terms-and-conditions/", evidence: "No trial exists (trial_exists = no)." }
+  trial_auto_converts: { value: not_applicable, source: "https://invideo.io/terms-and-conditions/", evidence: "No trial exists (trial_exists = no)." }
+  credit_system_present: { value: "yes", source: "https://invideo.io/pricing/", evidence: "\"Credits work like currency on our platform and are used for video creation, generative models and across other features, not for downloading content.\" (pricing-page FAQ). Credits consume at variable model/resolution/duration-dependent rates, not a flat per-output count -- an intermediate currency, not a plan allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: "https://invideo.io/pricing/", evidence: "\"75 credits is enough for: 300 Nano banana pro, 600 Nano banana 2 generations\" (Plus card) converts credits into a specific output count; corroborated by the full per-model credits/image and credits/video tables in docs (image-pricing.txt, video-model-pricing.txt). Per codebook rule 3, yes applies where ANY document converts credits into ANY output unit, regardless of whether that output is the principal one." }
+  credit_to_output_rate_published: { value: partial, source: "https://invideo.io/help/billing/video-model-pricing/", evidence: "Rates ARE published for the principal output (video), across all ~65 supported models, but only as a range per model (e.g. \"VEO 3.1: 720p-4k, 4s-8s, 3.20-19.20 credits\"), with the exact figure for a given configuration shown only in-app (\"You'll see the exact cost for your chosen configuration before you confirm\") rather than resolved in the document. This matches the codebook's partial definition verbatim: rates published for the principal output \"only as a range\"." }
+  credit_rate_location: { value: multiple, source: "https://invideo.io/pricing/", evidence: "An illustrative credit-to-output example appears directly on the pricing page (\"75 credits is enough for: 300 Nano banana pro...\"); the comprehensive per-model rate tables live in the docs/help center (invideo.io/help/billing/video-model-pricing/, .../image-pricing/) -- two document classes both carry rate information." }
+  cost_per_output_unit: { value: per_video_minute, source: "https://invideo.io/pricing/", evidence: "InVideo AI's principal output, as its own site frames it (\"AI Video Generator\", nav category \"VIDEO TOOLS\"), is generated video. per_video_minute is the closest fit among the allowed value list; the vendor's own rate table (video-model-pricing.txt) actually denominates in seconds/duration-bands per model rather than a flat per-minute figure -- see cost_per_output_computable for why no single rate reduces cleanly to this unit." }
+  cost_per_output_computable: { value: "no", source: "https://invideo.io/help/billing/video-model-pricing/", evidence: "Entry tier Plus = $17.00/mo (default display state) for 75 credits/mo, both already on the same (monthly) period. The video credit-rate table publishes a DIFFERENT range for each of ~65 interchangeable third-party models (e.g. Kling 3.0 Video 1.01-25.20 credits/generation, VEO 3.1 Fast 1.28-9.60, Pixverse V6 0.08-5.55), with no default/typical model named anywhere in the documents. Computing a single cost-per-video-minute figure requires first assuming which model a buyer uses -- forbidden by the codebook's own rule 7 (\"needs an assumption about how a typical buyer uses the product\"). This differs from the codebook's worked \"range\" examples (one output, one bounded range); here the range exists ACROSS ~65 separately-priced sub-products, which rule 7 governs rather than rule 8." }
+  computation_assumptions: { value: not_applicable, source: "not_applicable", evidence: "not_applicable -- cost_per_output_computable = no, no computation was performed, and first_charge_amount_usd was read directly rather than calculated." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://invideo.io/pricing/", evidence: "\"Heads up: Unused credits don't roll over to the next month.\" (pricing-page FAQ). Corroborated by help.invideo.io: \"Unused credits do not roll over, it resets at the start of each billing cycle.\" Note: the same FAQ states upgrade-time credits DO carry into the new plan (\"If you upgrade to a higher plan, any unused credits from your previous plan will be rolled over to the new plan\") -- a mid-cycle-upgrade exception to the general no-rollover rule, recorded here and in coder_note; the default end-of-period behaviour that this variable measures is expiry." }
+  failed_generation_charge_policy: { value: unknown, source: "https://invideo.io/help/billing/how-do-credits-work/", evidence: "\"Am I charged per generation? Yes. Credits are charged differently for video creation, generative models, and premium features. The cost depends on the model, the output length, and the resolution.\" -- addresses successful-generation charging only; no document read (this page, the pricing-page FAQ, the Terms and Conditions) states what happens to credits on a failed, errored, or empty-result generation." }
+  auto_renewal_default: { value: "on", source: "https://invideo.io/terms-and-conditions/", evidence: "\"your plan will automatically renew at the end of each billing period unless you cancel before renewal through your account settings or any other cancellation method, we make available\" (Sec.3(b)(ii))." }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://invideo.io/terms-and-conditions/", evidence: "Checked all four classes: pricing page (no \"auto-renew\"/\"automatically renew\" wording found anywhere in the rendered text or FAQ), docs/help center (how-do-credits-work.txt states billing-cycle mechanics but never says renewal is automatic), Terms of Service (states it plainly, Sec.3(b)(ii), quoted above). Only the Terms state it." }
+  renewal_notice_commitment: { value: advance_notice_stated, source: "https://invideo.io/terms-and-conditions/", evidence: "\"if you live in a jurisdiction that requires advance notice of automatic renewal, we will send you a reminder by email before each renewal as required by applicable law\" (Sec.3(b)(iii)). Note: this commitment is conditional on the buyer's jurisdiction legally requiring it, not a universal advance-notice promise to every buyer -- recorded verbatim rather than smoothed into an unconditional reading; see coder_note." }
+  refund_policy_exists: { value: "yes", source: "https://invideo.io/terms-and-conditions/", evidence: "\"you may request a refund within seven (7) days of an initial purchase or renewal... provided you have not used any credits or premium features during that period\" (Sec.3(d))." }
+  refund_window_days: { value: 7, source: "https://invideo.io/terms-and-conditions/", evidence: "\"within seven (7) days of an initial purchase or renewal\" (Sec.3(d))." }
+  refund_conditions: { value: conditional, source: "https://invideo.io/terms-and-conditions/", evidence: "\"provided you have not used any credits or premium features during that period. We do not offer pro-rata or partial refunds for unused portions of a subscription period. Credits, whether free or paid, are non-refundable, non-redeemable and non-transferable.\" (Sec.3(d))." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://invideo.io/terms-and-conditions/", evidence: "\"...unless you cancel before renewal through your account settings or any other cancellation method, we make available\" (Sec.3(b)(ii))." }
+  refund_policy_location: { value: terms, source: "https://invideo.io/terms-and-conditions/", evidence: "Refund position is stated only in the Terms and Conditions Sec.3(d); no dedicated refund page was found in the site footer/nav (checked: footer lists Privacy policy, Terms & conditions, Child safety only -- no separate refund-policy link), and no refund mention found in the docs/help pages read." }
+  commercial_use_lowest_tier: { value: free, source: "https://invideo.io/terms-and-conditions/", evidence: "\"We also grant you a perpetual, irrevocable, worldwide, royalty-free, non-exclusive licence to use, reproduce, modify, distribute, perform, display and commercialise Outputs you generate through the Services.\" (Sec.4(h)) -- granted for \"Outputs you generate through the Services\" with no tier restriction stated; Sec.3(a) frames the Free Plan as one of the \"Plans\" this document covers. No carve-out excluding the Free Plan from this licence was found anywhere in the Terms or the pricing page. See coder_note for the judgment call this required." }
+  watermark_removal_tier: { value: lowest_paid, source: "https://invideo.io/pricing/", evidence: "\"Unlimited exports without watermark\" is listed as a feature of Plus (the entry paid tier) and of every higher Individual and Team tier; no equivalent statement was found for the Free plan (free_plan_watermark = unknown), so the lowest tier at which documents STATE watermark-free output is the entry paid tier." }
+  output_ownership_statement: { value: user_owns, source: "https://invideo.io/terms-and-conditions/", evidence: "\"As between you and Invideo, we assign to you all of our right, title and interest, if any, in Outputs you generate, to the extent we are able.\" and \"You retain ownership of your User Content and... of Outputs and Designs you create.\" (Sec.4(b), 4(h)). Licence \"survives any cancellation or termination of your subscription\" -- ownership is not conditioned on the subscription staying active. Carve-out: outputs incorporating third-party Licensed Content (stock media) remain subject to that content's own licence terms -- noted in coder_note but not treated as making general output ownership conditional." }
+  usage_cap_quantified: { value: some_quantified, source: "https://invideo.io/pricing/", evidence: "Plus-tier (entry paid tier) limits listed: \"75 credits/mo\" (quantified rate), \"20 GB storage\" (quantified standing), \"4 AI avatars & voice clones\" (quantified standing), \"100 iStock\" (quantified standing), \"Unlimited exports without watermark\" (counts as quantified per codebook 5.1 rule 3 -- no qualifying fair-use/discretionary clause was found anywhere in the Terms or the Acceptable Use Policy, see unquantified_limit_clause) vs. \"Limited concurrency\" (NOT quantified -- no number given, only the word \"Limited\"). At least one quantified and at least one not." }
+  unquantified_limit_clause: { value: absent, source: "https://invideo.io/terms-and-conditions/", evidence: "Terms and Conditions and the Acceptable Use Policy (invideo.io/usage-policy/) both read in full (complete-text keyword scan for fair use / reasonable use / excessive / abuse / throttle / rate limit / discretion). No fair-use, reasonable-use, excessive-use, or discretionary volume-throttling clause found. The AUP's only suspend-or-throttle power (Sec.7.2.3) is gated on \"has violated this AUP, the Terms of Service or applicable laws, or that your use... poses a credible risk of harm\" -- a conduct/violation trigger, not a volume-or-intensity-of-use cap, which the codebook explicitly excludes from `present`." }
+
+coder_note: |
+  ENTRY-TIER CANDIDATES (sampling-rules.md 7.2). Eligible (generally available, no sales contact,
+  standing plans): Plus $200.00/yr annual-equivalent (WINNER, single seat) | Max $1000.00/yr
+  (stated directly, "Billed $1000 yearly") | Generative $2000.00/yr (stated) | Elite $10800.00/yr
+  (stated) | Team Standard: sold in a minimum 2-seat block ("for teams of 2 to 30"), $40/mo/seat
+  annual price x 12 x 2 = $960.00/yr minimum block | Team Premium: minimum 2-seat block, $400/mo/
+  seat x 12 x 2 = $9600.00/yr minimum block. Excluded as ineligible: Enterprise ("Book a demo",
+  "Custom pricing", "Minimum 10 seats" -- requires contacting sales, fails eligibility rule 2; this
+  is not the sampling-rules 7.2 sales-gated SPECIAL case since Plus etc. are independently priced
+  and eligible, so headline_price_usd is a normal money value, not no_public_price).
+
+  PROMOTIONAL VS. STANDARD PRICING (per assignment note -- InVideo is known to run frequent
+  promotional pricing). At read time (2026-08-09, pricing-rendered.txt) no promotional banner,
+  strikethrough price, countdown timer, or "limited time" indicator was present anywhere on the
+  pricing page (checked raw HTML for strikethrough/line-through/was-price/original-price/
+  limited-time/sale-/countdown/flash-sale/offer-ends/expires -- zero matches; computed-style scan
+  for line-through text -- zero matches). The only discount framing present is the standing
+  15%/10% annual-vs-monthly toggle discount ("Annual 15% off" on Plus/Max/Generative, "10% off" on
+  Elite), which reads as InVideo's standard default pricing structure, not a time-limited
+  promotion. This is what was coded. A later re-check may find a different (promotional) state; if
+  so protocol 6.6/6.8 governs and it becomes a register event, not a silent overwrite.
+
+  COMPOSITE-UNIT PRICING (per assignment note). InVideo's principal composite unit is "credits", a
+  currency-like unit (credit_system_present=yes) that converts to actual outputs (video, image,
+  audio generations) at a DIFFERENT rate per third-party AI model, further varying by resolution/
+  duration/audio within each model (video-model-pricing.txt: ~65 models, e.g. VEO 3.1 Fast
+  1.28-9.60 credits per 4-8s generation, Kling 3.0 Video 1.01-25.20 credits per 3-15s generation).
+  This composite structure is precisely why credit_to_output_rate_published=partial (rates exist
+  only as per-model ranges) and cost_per_output_computable=no (no single model is named as
+  canonical/typical, so computing one figure requires an assumption the codebook's rule 7
+  forbids). This is a genuine, well-documented disclosure structure, not a gap in our search --
+  the vendor publishes extremely granular rate tables, they simply don't collapse to one number.
+
+  JUDGMENT CALLS.
+  - commercial_use_lowest_tier=free: Terms Sec.4(h) grants the commercialisation licence for
+    "Outputs you generate through the Services" with no tier carve-out found anywhere in the
+    Terms, the AUP, or the pricing page; Sec.3(a) frames the Free Plan as one of the "Plans" the
+    document covers. Coded free on the plain text; flagged here since it is the more consequential
+    of the two readings a reviewer might reach.
+  - output_ownership_statement=user_owns despite a Licensed-Content (stock-asset) carve-out in the
+    same clause: treated the carve-out as a scope clarification (you don't own a stock clip merely
+    by using it) rather than a tier/use-type condition on ownership of the buyer's own outputs,
+    since the license explicitly "survives any cancellation" (the codebook's own `conditional`
+    example turns on rights lapsing when a subscription ends, which is the opposite of what is
+    documented here).
+  - renewal_notice_commitment=advance_notice_stated: the commitment is conditional on the buyer's
+    jurisdiction legally requiring it ("if you live in a jurisdiction that requires advance
+    notice..."), not universal. The codebook offers no third "conditional" value for this
+    variable; coded to the closer determinate value with the condition quoted verbatim in the
+    variable's own evidence field so the nuance is not lost.
+  - cost_per_output_computable=no rather than partial: see COMPOSITE-UNIT PRICING above and the
+    reasoning recorded in video-model-pricing.txt. This is the single hardest call in this record;
+    an adjudicator re-reading codebook Domain 6 rules 7 and 8 in sequence should reach the same
+    conclusion, but the underlying situation (60+ interchangeable sub-priced models, not one
+    output with one range) is not explicitly anticipated by the codebook's worked examples.
+  - free_plan_cap_documented=none_quantified / free_plan_cap_value=unknown: a WebSearch AI-overview
+    surfaced specific free-plan figures (4 exports/week, 10 video-min/week, 10GB storage, InVideo
+    logo on exports) attributed loosely to invideo.io; NONE of those figures appear on the actual
+    current official free-plan article (help.invideo.io/en/articles/9380226, read directly and in
+    full, see free-plan-article.txt) or any other official page opened this session. Per protocol
+    6.3 prohibition 7, no value is coded from a third-party/search-synthesis source; this is
+    recorded so a re-check knows to look for those figures specifically if InVideo republishes them
+    on an official page.
+
+  CORRECTIONS TO THE FRAME ROW: none. category is copied verbatim from
+  frame-frozen-2026-08-04.csv ("Faceless video"); the assignment brief's shorthand "AI video
+  generator" describes the same product and is not a frame discrepancy requiring correction.
+
+  D-009 re-read 2026-08-10: check_price_arithmetic.py flags this record (17.00 x 12 = 204.00 vs
+  first_charge 200.00, off by $4). Re-confirmed entry_tier_name/headline_price_usd/
+  headline_billing_basis/first_charge_amount_usd in two fresh representations, independent of the
+  original 2026-08-09 collection. Representation 1 (live DOM text walk today, javascript_tool,
+  origin confirmed https://invideo.io): a leaf-node exact-text search (`^\$\d+$`, ruling out
+  concatenated-sibling artifacts) found the four Individual-tab cards read, in page order, Plus
+  $17/mo billed $200 yearly, Max $85/mo billed $1000 yearly, Generative $170/mo billed $2000
+  yearly, Elite $900/mo billed $10800 yearly -- identical to this record's own coder_note figures
+  above, captured a day earlier by a different extraction pass (full-page innerText). Representation
+  2 (raw HTML around the number, today): `el.outerHTML` on the Plus price node returned
+  `<div class="vp-price"><span class="amount">$17</span><span class="suffix">/mo</span></div>
+  <p class="vp-billed">*Billed $200 yearly</p>` -- a single unified text node for "$17" with no
+  adjacent superscript/cents span, structurally ruling out a nicepage-style concatenation error;
+  the toggle for this same card is `<span class="vp-annual-switch is-on">`, confirming the Annual
+  default from the DOM's own state class, not from which figure an extractor printed first.
+  Plan-grid row mapping confirmed: the $17/$200 pair sits inside the Plus card specifically (the
+  outerHTML walk started FROM that card's own price node), and the other three cards' figures
+  match their own stated tiers with no shift or duplication. Both representations agree with every
+  coded value and match yesterday's collection exactly -- no final-day change. Verdict: the
+  arithmetic flag is vendor rounding, not a misread. All four tiers show the SAME pattern (Elite:
+  900 x 12 = 10800 exactly; Plus/Max/Generative: monthly x 12 exceeds the stated annual total by
+  $4/$20/$40 respectively) -- the vendor sets the annual figure as the round marketing number and
+  derives/rounds the "/mo" display from it, consistently across the whole grid, not as an isolated
+  anomaly on the flagged entry tier alone. This is the "documents state the annual total directly"
+  case in codebook headline_price_usd rule 2 / first_charge_amount_usd rule 2. NO CORRECTION. All
+  four target variables CONFIRMED, values unchanged.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+computation_assumptions: not_applicable
+conflict_note: not_applicable
+register_events: []
+status: complete

@@ -1,0 +1,55 @@
+URL: https://humanizemy.ai/refund-policy
+Accessed: 2026-08-09
+Method: rendered read (mcp__Claude_Browser__javascript_tool, document.body.innerText), Chrome-based preview browser
+Page states "Last updated: July 29, 2026"
+Note: footer "Acceptable Use" link verified via DOM (a[href]) to point to /terms (no separate Acceptable-Use/AUP page exists; content lives in Terms of Service section 5 "Acceptable use", already captured in terms.txt).
+
+=== FULL RENDERED TEXT (document.body.innerText) ===
+HumanizeMyAI
+Tools
+Compare
+Guides
+Pricing
+Blog
+Research
+Sign in
+Get started
+Home›Refund & Cancellation Policy
+Refund & Cancellation Policy
+
+Last updated: July 29, 2026
+
+HumanizeMyAI is a digital subscription service operated by Mihci AI Studios LLC. This policy explains when access begins, how to cancel a subscription, and how refund and billing-dispute requests are handled.
+
+Digital delivery
+
+Paid features become available after payment is confirmed. There is no physical product, shipping, or delivery charge.
+
+Free evaluation
+
+HumanizeMyAI offers a free tier that does not require a payment card. Customers can evaluate the core service before purchasing a subscription.
+
+Cancellation
+You may cancel a subscription at any time from your account.
+Cancellation stops future renewals.
+Access continues through the end of the already-paid billing period.
+If self-service cancellation is unavailable, email hello@humanizemy.ai and we will process the request within one business day.
+Refund eligibility
+
+Paid subscription charges are generally non-refundable after digital access is provided. We will issue or consider a refund when required by applicable law, when a duplicate or incorrect charge occurred, or when a documented material service failure prevented access to the paid service.
+
+How to request a refund or raise a billing dispute
+Email hello@humanizemy.ai from the address associated with your account.
+Include the charge date, amount, and a short explanation. Do not send full card details.
+We will review the request and respond within 14 days.
+Approved refunds are returned to the original payment method. Bank and card-network processing times may apply.
+Contact
+
+Mihci AI Studios LLC · 30 N Gould St Ste R, Sheridan, WY 82801, USA · hello@humanizemy.ai · +1 (307) 218-6489
+
+See also the Terms of Service, Privacy Policy.
+
+[footer nav omitted, identical to pricing page footer]
+
+=== NOTE ===
+No day-count refund WINDOW is stated anywhere on this page (the "14 days" figure is how fast the vendor responds to a request, not a deadline by which the customer must request one). Refund availability is condition-triggered (legal requirement / duplicate-or-incorrect charge / documented material service failure), not window-triggered.

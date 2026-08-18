@@ -1,0 +1,116 @@
+product_id: pika
+product_name: Pika
+category: AI video generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Standard
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-10
+recheck_date: not_applicable
+primary_source_url: https://pika.art/pricing
+archive_url: https://web.archive.org/web/20260810104835/https://pika.art/pricing
+archive_status: archived
+default_display_state: "USD ($ symbol; ToS confirms billing 'in U.S. Dollars'); Yearly/annual billing toggle preselected on load (highlight indicator at first position, 'Yearly' rendered in selected/dark-on-accent style); no country/region or currency selector present on the page; four plan cards shown (Basic $0, Standard $8, Pro $28, Fancy $76), all labelled 'billed yearly'; no cookie-consent banner encountered in the fetched state."
+
+sources:
+  - { url: https://pika.art/pricing, kind: pricing, accessed: 2026-08-10, archive: "https://web.archive.org/web/20260810104835/https://pika.art/pricing", note: "static curl fetch was sufficient -- prices are server-rendered into the initial HTML; local raw copy saved as pricing-raw.html" }
+  - { url: https://pika.art/terms-of-service, kind: tos, accessed: 2026-08-10, archive: "https://web.archive.org/web/20260810104925/https://pika.art/terms-of-service", note: "page bails out to client-side rendering (BAILOUT_TO_CLIENT_SIDE_RENDERING marker); static fetch returned near-empty body; read via rendered copy tos-rendered.txt (r.jina.ai headless-render proxy of the same vendor URL)" }
+  - { url: https://pika.art/faq, kind: docs, accessed: 2026-08-10, archive: "https://web.archive.org/web/20260810105006/https://pika.art/faq", note: "same client-side-render bailout as ToS; read via rendered copy faq-rendered.txt" }
+  - { url: https://pika.art/acceptable-use-policy, kind: other, accessed: 2026-08-10, archive: "https://web.archive.org/web/20260810105025/https://pika.art/acceptable-use-policy", note: "same client-side-render bailout as ToS; read via rendered copy aup-rendered.txt; checked for unquantified_limit_clause only" }
+
+variables:
+  headline_price_usd: { value: 8.00, source: https://pika.art/pricing, evidence: "Standard card: \"$8\" / \"month\" with \"billed yearly\" beneath, under the page's default (Yearly-preselected) toggle state" }
+  headline_billing_basis: { value: per_month_billed_annually, source: https://pika.art/pricing, evidence: "\"$8 / month\" with \"billed yearly\" printed in the same card" }
+  first_charge_amount_usd: { value: 96.00, source: https://pika.art/pricing, evidence: "computed: $8/mo x 12; documents describe 'annually' as its own billing cycle (ToS) equal to a year (FAQ) -- see computation_assumptions" }
+  mandatory_addon_present: { value: "no", source: https://pika.art/pricing, evidence: "no required charge beyond the plan price found on the pricing page, FAQ billing section, or ToS; optional credit top-up packs ($10/$20/$30) are not mandatory to use the plan as advertised" }
+  annual_condition_disclosure: { value: adjacent, source: https://pika.art/pricing, evidence: "\"billed yearly\" is printed inside the same price block as \"$8 / month\", directly beneath the figure, within the Standard card" }
+  annual_default_toggle: { value: annual_preselected, source: https://pika.art/pricing, evidence: "toggle markup: highlight indicator at translateX(0) (first position) under the \"Yearly\" button, which carries the selected (dark-on-accent) text style; \"Monthly\" and \"Weekly\" carry the unselected style" }
+  free_plan_exists: { value: "yes", source: https://pika.art/pricing, evidence: "Basic card: \"$0\" price labelled \"Free\", standing alongside the three paid cards, page subtitle states \"Pika has four plans\"" }
+  free_plan_cap_documented: { value: all_quantified, source: https://pika.art/pricing, evidence: "\"80 monthly video credits\" (quantified rate) and \"Access to Pika 2.5 (480p only)\" (quantified standing resolution limit) are the only limits documented for the Basic/free tier" }
+  free_plan_cap_value: { value: "80 video credits per month | 480p max resolution", source: https://pika.art/pricing, evidence: "see conflict_note -- FAQ states a different free-tier credit figure (150/month); pricing page ranks higher for free-tier limits per protocol 6.2 and governs this value" }
+  free_plan_watermark: { value: "yes", source: https://pika.art/pricing, evidence: "DOM inspection: the \"Download videos with no watermark\" row on the Basic ($0) card uses icon href \"#check-circle-x\" (= not included), vs. \"#check-circle\" (included) on Pro/Fancy. Corroborated by FAQ: \"If you share a video directly from Pika, videos have a watermark for users of all tiers.\"" }
+  free_plan_duration: { value: perpetual, source: https://pika.art/pricing, evidence: "Basic is a standing card alongside the paid tiers; no expiry stated anywhere in pricing page, FAQ, or ToS" }
+  trial_exists: { value: "no", source: https://pika.art/pricing, evidence: "zero occurrences of the word \"trial\" on the pricing page or in the FAQ (Subscriptions & Billing section covers upgrade/downgrade/cancel/billing-cycle mechanics but never a trial). Per codebook rule 3, pricing page + documentation silence codes 'no'. See coder_note re: a generic ToS clause that does not change this." }
+  trial_card_required: { value: not_applicable, source: https://pika.art/pricing, evidence: "no trial exists (trial_exists = no)" }
+  trial_length_days: { value: not_applicable, source: https://pika.art/pricing, evidence: "no trial exists (trial_exists = no)" }
+  trial_auto_converts: { value: not_applicable, source: https://pika.art/pricing, evidence: "no trial exists (trial_exists = no)" }
+  credit_system_present: { value: "yes", source: https://pika.art/faq, evidence: "\"Credits are our way of tracking your video generations across your subscription plan.\" -- an intermediate currency converting into video outputs" }
+  credit_unit_defined: { value: "yes", source: https://pika.art/pricing, evidence: "pricing page's Text-to-Video & Image-to-Video rate table ties credits to an exact output: e.g. \"40 credits\" = 1080p, 5s, Model 2.5" }
+  credit_to_output_rate_published: { value: "yes", source: https://pika.art/pricing, evidence: "principal output (Text-to-Video & Image-to-Video, Model 2.5) rate table gives an exact credit figure for every Quality (480p/720p/1080p) x Duration (5s/10s) combination: 12/24 (480p), 20/40 (720p), 40/80 (1080p) credits" }
+  credit_rate_location: { value: pricing_page, source: https://pika.art/pricing, evidence: "full Model-2.5 rate table (by resolution and duration) appears on the pricing page. FAQ also publishes a credit-cost table, but for older/different named models (Turbo, Pro Mode, 1.0/1.5, 2.1, 2.2), not confirmed to be the same Model-2.5 rate -- see coder_note" }
+  cost_per_output_unit: { value: per_video_minute, source: https://pika.art/pricing, evidence: "principal output is a generated video clip (5s/10s), priced in credits; per_video_minute is the closest listed unit" }
+  cost_per_output_computable: { value: partial, source: https://pika.art/pricing, evidence: "computable, but yields a range rather than one figure: credit cost per output-minute differs by resolution (480p/720p/1080p each carry a different, but each individually exact, credits-per-second rate). Rule 8 (range published) applies." }
+  computation_assumptions: { value: "Standard (entry tier) $8/mo billed annually, 700 credits/mo, same period. Model 2.5 rate/resolution: 480p=2.4cr/s, 720p=4cr/s, 1080p=8cr/s (pricing page table). $8/700=$0.011429/credit x credits-per-min. Range by resolution -> partial; range value in coder_note.", source: https://pika.art/pricing, evidence: "" }
+  credit_rollover_policy: { value: expires_at_period_end, source: https://pika.art/faq, evidence: "\"Video credits don't carry over from month to month.\" (Separately purchased add-on credits do carry over and never expire -- a different credit pool, noted in coder_note.)" }
+  failed_generation_charge_policy: { value: unknown, source: https://pika.art/faq, evidence: "not addressed in pricing page, FAQ (incl. its empty Tech Issues section), ToS, or AUP" }
+  auto_renewal_default: { value: "on", source: https://pika.art/terms-of-service, evidence: "\"Unless stated otherwise, subscriptions automatically renew at the end of each billing cycle (e.g., monthly or annually).\" Corroborated by FAQ: \"Your subscription will renew automatically based on the type of subscription you have.\"" }
+  auto_renewal_disclosure_location: { value: multiple, source: https://pika.art/terms-of-service, evidence: "stated in agreement in both the ToS (\"Automatic Renewal and Recurring Charges\" clause) and the FAQ (\"Will my subscription renew automatically?\")" }
+  renewal_notice_commitment: { value: advance_notice_stated, source: https://pika.art/terms-of-service, evidence: "\"We will provide advance notice of any auto-renewal where required by applicable law.\" (conditional on legal requirement, no period stated -- quoted in full so the hedge is not lost)" }
+  refund_policy_exists: { value: no_refunds_stated, source: https://pika.art/terms-of-service, evidence: "\"Except as expressly provided in these terms of service or required by law, all subscription payments are non-refundable, and there are no refunds or credits for partially used periods.\"" }
+  refund_window_days: { value: 0, source: https://pika.art/terms-of-service, evidence: "no refunds are given (refund_policy_exists = no_refunds_stated)" }
+  refund_conditions: { value: not_applicable, source: https://pika.art/terms-of-service, evidence: "no general refund is available for conditions to attach to" }
+  cancellation_self_serve: { value: self_serve_documented, source: https://pika.art/terms-of-service, evidence: "\"You may cancel your subscription at any time through your account settings...\" Corroborated by FAQ: \"...hit the 'Cancel subscription' button on your profile page.\"" }
+  refund_policy_location: { value: multiple, source: https://pika.art/terms-of-service, evidence: "no-refunds position stated in agreement in the ToS (\"No Refunds\" clause) and twice in the FAQ (account deletion answer; cancellation answer: \"no pro-rated refund will be provided\")" }
+  commercial_use_lowest_tier: { value: mid_tier, source: https://pika.art/pricing, evidence: "DOM inspection: \"Commercial use\" row uses icon \"#check-circle-x\" on Basic and Standard, \"#check-circle\" on Pro and Fancy. Corroborated by FAQ: \"If you have a Pro or Fancy subscription, whatever you create using Pika can be used commercially... If you have a Basic or Standard subscription, you can't use your content for commercial purposes.\" Granted above the entry paid tier (Standard) and below the highest tier (Fancy) = mid_tier." }
+  watermark_removal_tier: { value: mid_tier, source: https://pika.art/pricing, evidence: "DOM inspection: \"Download videos with no watermark\" row uses icon \"#check-circle-x\" on Basic and Standard, \"#check-circle\" on Pro and Fancy. FAQ corroborates and adds a nuance: \"If you upgrade to a Pro or Fancy plan, your videos can be downloaded watermark-free... If you share a video directly from Pika, videos have a watermark for users of all tiers.\"" }
+  output_ownership_statement: { value: user_owns, source: https://pika.art/terms-of-service, evidence: "\"Pika does not claim ownership of any Inputs you submit or Outputs generated through your use of the Service. As between you and Pika, you retain all interest in those Outputs. To the extent Pika acquires any interest in the Outputs, we hereby assign all interest to you.\"" }
+  usage_cap_quantified: { value: all_caps_quantified, source: https://pika.art/pricing, evidence: "the only limit documented for the Standard (entry paid) tier is \"700 monthly video credits\", a quantified rate" }
+  unquantified_limit_clause: { value: absent, source: https://pika.art/terms-of-service, evidence: "ToS and Acceptable Use Policy read in full; all \"discretion\"/\"abuse\"/\"excessive\" language found governs content and conduct moderation (e.g. \"excessively violent\" content, \"at our sole discretion\" over AUP violations), not volume or intensity of use. No fair-use, reasonable-use, or throttling clause on usage volume was found." }
+
+coder_note: |
+  ENTRY-TIER SELECTION: Candidates were the three paid cards, Standard/Pro/Fancy (Basic at $0
+  is the free plan, domain 3, not a "paid tier" -- codebook separates these constructs and
+  headline_price_usd's own not_applicable definition ties "paid tier" to a product having one
+  at all, distinct from a free plan). Annual-equivalent costs in the default (Yearly) display
+  state: Standard 8*12=96.00 (winner), Pro 28*12=336.00 (lost), Fancy 76*12=912.00 (lost).
+
+  CODER-TOOLING MISREAD CAUGHT AND CORRECTED (per "read a price twice" rule): an initial
+  WebFetch (AI-summarized) read of the pricing page reported Standard=$28 ("Best value") and
+  Pro=Fancy=$76 (duplicate). A second representation -- raw HTML fetched via curl, with card
+  boundaries and h3/price DOM positions parsed directly -- shows this was wrong: the "Best
+  value" badge belongs to Pro ($28), not Standard, and Standard is actually $8 while Pro is
+  $28 and only Fancy is $76. The true reading (Basic $0, Standard $8, Pro $28 "Best value",
+  Fancy $76) is confirmed by exact byte offsets of each card's price span vs. its h3 heading
+  in pricing-raw.html and is what this record codes throughout.
+
+  CREDIT SYSTEM COMPLEXITY: the FAQ publishes a second credit-to-output table for what it
+  labels "2.2 Model" (plus separate Turbo/Pro Mode/1.0/1.5/2.1 figures), with different credit
+  counts than the pricing page's "Model 2.5" table used for this record's computations. These
+  are presented as different named model versions, not a restated conflicting claim about the
+  same model, so this was not coded as a source conflict -- but a reader should know a second,
+  differently-numbered rate table exists in the FAQ.
+
+  COST PER OUTPUT RANGE (cost_per_output_computable = partial): using the Standard tier ($8/mo
+  billed annually, 700 credits/mo) against the Model 2.5 rate table, cost per video-minute
+  ranges from about $1.65/min at 480p to about $2.74/min at 720p to about $5.49/min at 1080p,
+  depending on the resolution chosen. No single figure is possible because the vendor's rate
+  genuinely varies by resolution with no single "principal" resolution designated.
+
+  CURRENCY CHECK (deviation D-007/D-003): arm 1 succeeded directly -- ToS states billing is
+  "in U.S. Dollars" (Plan Selection and Subscription Payment clause), an explicit vendor
+  currency disclosure. No Accept-Language or IP-geolocation signal was used or relied on for
+  this determination.
+
+  FIRST-CHARGE COMPUTATION JUDGMENT CALL: no document states an explicit annual lump-sum
+  figure (e.g. "$96/year") in so many words. The $96.00 figure is computed under codebook
+  domain-1 rule 2, on the basis that (a) the ToS names "annually" as its own billing cycle
+  ("subscriptions automatically renew at the end of each billing cycle (e.g., monthly or
+  annually)") and (b) the FAQ's upgrade-flow answer describes crediting back "remaining
+  months" when upgrading off a yearly plan, which is only coherent if a yearly plan is prepaid
+  as one charge for the year. Flagged here for adjudication in case a stricter reading is
+  preferred (e.g. coding first_charge_amount_usd = unknown for want of a literal lump-sum
+  statement).
+
+  TRIAL: pricing page and FAQ are both silent on "trial" (zero occurrences of the word in
+  either). The ToS carries a generic, discretionary clause ("We may offer free or trial Plans
+  at our discretion... continue for the duration specified at signup (or, if unspecified,
+  seven days)... automatically convert to a paid subscription") that is not tied to any
+  concrete, currently-offered trial on the pricing page's four plans. Coded trial_exists = no
+  per codebook rule 3 (pricing page + documentation silence). A-012 does not apply -- this is
+  not a paid time-limited intro period, it is the ordinary "no trial found" case.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "free_plan_cap_value: pricing page states \"80 monthly video credits\" for the Basic/free tier (https://pika.art/pricing, accessed 2026-08-10) vs. FAQ states \"On the Basic (free) plan you get 150 credits per month\" (https://pika.art/faq, accessed 2026-08-10). Free-tier limits are a pricing-class variable where the live pricing page ranks above documentation per protocol 6.2, so 80/month (pricing page) is coded as the value; the FAQ's 150/month is recorded here rather than silently dropped."
+register_events: []
+status: complete

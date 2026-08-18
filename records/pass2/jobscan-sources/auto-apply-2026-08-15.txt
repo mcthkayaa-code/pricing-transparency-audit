@@ -1,0 +1,14 @@
+URL: https://www.jobscan.co/auto-apply
+Accessed: 2026-08-15
+Method: WebFetch (static fetch succeeded).
+
+=== EXTRACTED CONTENT ===
+Credit definition: "One credit is used for each job you choose to Auto Apply to."
+Credits included in Premium: "Premium users get 2 free Auto Apply credits, and their balance is topped up to 2 credits each month."
+Credit pack pricing (optional additional purchase, discounted for Premium members per the pricing-page "20% off Auto Apply Credits" line):
+- "5 credits $8.50 ($1.70/credit)"
+- "10 credits $15.00 ($1.50/credit)"
+- "25 credits $35.00 ($1.40/credit)"
+Rollover/expiration: not specified on this page.
+
+Note: Auto Apply is a secondary/optional feature, not the product's principal output (principal output = resume scanning/optimization, sold as "Unlimited" and flat-rate on the Premium plan, not credit-metered). This mirrors the codebook's Vendor J2 worked example (credit_unit_defined = yes via a secondary-output definition; credit_to_output_rate_published = partial because the rate is for a secondary feature, not the principal output).

@@ -1,0 +1,57 @@
+SOURCE: https://nicepage.com/agreement ("End-User License Agreement For Nicepage")
+DATE ACCESSED: 2026-08-10
+METHOD: Static curl fetch, header "Accept-Language: en-US,en;q=0.9" (D-003 US-locale
+check), standard desktop User-Agent. HTTP 200, 54058 bytes. Fully server-rendered.
+Read to the end for the unquantified_limit_clause check.
+ARCHIVE: https://web.archive.org/web/20260810063041/https://nicepage.com/agreement
+(1 attempt, succeeded, verified HTTP 200)
+
+NOTE ON SCOPE: this document is titled an EULA for "Work" (themes/templates/images) and
+reads as largely generic/boilerplate template-marketplace legal language (shared house
+style, entity "Artisteer Limited"), but it explicitly and repeatedly uses "Subscription"
+and "subscription fee" in a way that is not clearly scoped away from the Nicepage Premium
+plans found on /premium. Treated as a same-tier "terms of service / dedicated policy
+page" document per protocol 6.2, since the codebook does not rank ToS above/below a
+License Agreement.
+
+RELEVANT EXCERPTS (verbatim, tags stripped):
+
+[Limited License] "Your rights to use any Work are subject to this license agreement and
+are conditioned upon your payment to Nicepage.com for your use of the Work. If you fail
+to make any payment to Nicepage.com when due, or any check is dishonored, or the credit
+card charge is refused or charged back, your account will be deemed delinquent... your
+right to use any Work downloaded at any time shall automatically terminate unless all
+payments... are received... no later than fifteen (15) days from the date that your
+account became delinquent."
+
+[Restrictions, item 2] "Resell, redistribute, provide access to, share or transfer any
+Work except as specifically provided herein." Item 10: use of 'Editorial Use Only' Work
+"for any commercial, promotional, endorsement, advertising, or merchandising use" is
+prohibited (this is about stock-asset "Editorial Use Only" labeling, not about the
+Nicepage app/subscription tiers).
+
+[Miscellaneous, item 1 - REFUND, CONFLICTS WITH /terms] "The Nicepage.com website is
+under no obligation to refund your subscription fee under any circumstances. In case
+Nicepage.com determines that you are entitled to a refund of all or part of your
+subscription fee, such refund shall only be made to the credit card account originally
+used by you to purchase your Subscription. If your Subscription was paid by check, your
+refund would be made by check."
+=> This directly conflicts with /terms's "Refund Policy" section, which states buyers
+   "can request a refund within 14 days of the purchase date" and describes a review
+   process. Coded as `conflicting` on refund_policy_exists / refund_window_days /
+   refund_conditions - see conflict_note in the record.
+
+[Miscellaneous, item 3 - single-seat] "You may use your Subscription on ONE COMPUTER at
+any one time. If any two users on two separate computers use the same username and
+password, we reserve the right to terminate that subscriber's account without a refund
+or prior notice. Customized subscriptions with multiple points of access are available
+from Nicepage.com." => confirms single-seat licensing model (supports
+cost_per_output_unit = per_seat_month).
+
+No "renew"/"renewal" text anywhere in this document (grepped case-insensitively, zero
+hits) - silent on auto-renewal, like /terms.
+No explicit statement of who owns a user's generated/published website was found; this
+document addresses ownership/rights only for Nicepage's own downloadable "Work" (assets),
+not the buyer's finished output.
+No volume/intensity-based "fair use"/"reasonable use"/"excessive use"/throttling clause
+found anywhere in this document (read to the end).

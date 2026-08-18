@@ -1,0 +1,72 @@
+URL: https://www.aragon.ai/pricing
+Accessed: 2026-08-14
+Method: rendered browser read, reached by clicking "Subscription" tab (NOT the default state — default is "Headshots", verified separately; see pricing-page-headshots-tab-rendered file). Monthly/Annual toggle confirmed via screenshot defaulting to "Monthly" (switch un-toggled, "Annual - Save 25%" on the right, not selected).
+Second-representation check: DOM text-node inspection confirmed $15, $29, $49, $249 are each a single unsplit text node (<span class="...text-[34px]...">$15</span> etc.) — no superscript-cents structure.
+
+NOTE FOR RECORD: this tab is NOT the entry-tier candidate set (see coder_note in record — default display state is Headshots tab). Captured for context and for product-wide (non-entry-tier) variables: credit_system_present, credit_unit_defined, credit_to_output_rate_published, credit_rollover_policy, auto_renewal_default context, free_plan_exists.
+
+=== Visible text, Subscription tab, Monthly (default) ===
+Pick the best plan to suit your needs
+Get access to exclusive photo packs, AI video, virtual try-on, advanced editing tools, and chat-guided prompts to scale your creativity.
+Monthly / Annual (Save 25%) -- toggle defaults to Monthly
+
+Aragon Lite — For beginners exploring AI editing
+300 monthly credits — 300 images · 75 edits
+$15 /month — Billed monthly
+Includes: Standard-quality exports, No watermarks, 75+ AI editing tools, 100+ creative packs, Custom AI chat-guided edits, Prompt-based generation, AI video generation & editing, Up to 1 AI character yearly, Access to all models, Premium headshot photo packs, Early access to advanced AI features, Lowest cost per credit, Access to best models (Nano Banana FULL ACCESS, GPT Image 2.0, Flux 2 Pro, Seedream 5 Lite, Seedance 2.0, Kling 3.0, Veo 3.1)
+
+Aragon Pro — For enthusiasts wanting control
+1,200 monthly credits — 1,200 images · 300 edits
+$29 /month — Billed monthly
+[same feature list as Lite, "Up to 3 AI characters yearly", all models FULL ACCESS]
+
+Aragon Ultimate — Most popular — For high-volume professionals
+2,400 monthly credits — 2,400 images · 600 edits
+$49 /month — Billed monthly
+[same list, "Up to 5 AI characters yearly"]
+
+Aragon Creator — Best value — For power users scaling creativity
+12,000 monthly credits — 12,000 images · 3,000 edits
+$249 /month — Billed monthly
+Includes: High-quality exports (upgrade from "Standard-quality"), No watermarks, [same feature list], "Up to 10 AI characters yearly", "Lowest cost per credit 30% LESS"
+
+Ratio check (all 4 tiers consistent): credits ÷ images = 1.0 exactly (300/300, 1200/1200, 2400/2400, 12000/12000). credits ÷ edits = 4.0 exactly (300/75, 1200/300, 2400/600, 12000/3000). No sentence anywhere states "1 credit = 1 image" explicitly; this ratio is derived from the parallel figures printed on each plan card.
+
+Below pricing cards: "Users are eligible for refund only if they haven't consumed any credits from the subscription and make the refund request within 14 days of purchase."
+
+--- FAQ (Subscription tab) ---
+What are credits?
+"Credits are used in-app for AI photo editing, photo generation, and other advanced AI features on Aragon. You use credits each time you use one of these features."
+
+What are characters?
+"A character is a set of 6–10 photos of the same person. You upload these photos so the AI can generate AI photos of that individual."
+
+What's the difference between purchasing and buying credits?
+"A subscription gives you a recurring monthly credit allocation plus access to premium features... Purchasing credits is a one-time top-up that adds to your existing balance, useful when you need more credits without changing your plan."
+
+Can I use Aragon for free?
+"Yes. Free users receive 16 credits per active day. For higher limits and full feature access, a paid subscription is required."
+
+Can I upgrade or downgrade my plan?
+"Yes, at any time. Upgrades take effect immediately; downgrades apply at the start of your next billing cycle."
+
+Do unused credits roll over?
+"Monthly subscription credits expire at the end of each billing period and do not roll over. Additionally purchased credits do roll over and stay usable as long as your subscription is active."
+
+Do unused characters roll over?
+"Unused characters in your subscription do not roll over, but additionally purchased characters do roll over and remain usable as long as you stay subscribed."
+
+Do my characters ever expire?
+"Characters remain active as long as your subscription is active. If you cancel, your characters will expire 30 days after cancellation."
+
+Can I pause or cancel my subscription?
+"Yes, you can pause or cancel anytime from your billing page. You'll retain full access until the end of your current billing period."
+[NOTE: this conflicts with ToS clause requiring email to support@aragon.ai — see conflict_note in record]
+
+What is your refund policy?
+"If you haven't used any credits, we offer refunds on your most recent payment within 14 days of purchase. Refer to our refund policy for more details."
+
+Is it safe to upload my photos?
+"Yes. Aragon is SOC 2® Type II certified..."
+
+No mention anywhere of: failed/errored generation credit policy.

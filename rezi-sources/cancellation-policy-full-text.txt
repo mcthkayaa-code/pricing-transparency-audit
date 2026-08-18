@@ -1,0 +1,48 @@
+SOURCE: https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy
+ACCESSED: 2026-08-12
+METHOD: rendered browser read, full page text (get_page_text)
+DOC CLASS: dedicated policy page / help center (Rezi's official "Rezi User Guides" Intercom-hosted help
+center, linked from support@rezi.io channel)
+
+Title: Cancellation Policy | Rezi User Guides
+"Learn how to cancel your Rezi subscription and what to expect when completing the process."
+Updated over 2 weeks ago [relative to today 2026-08-12]
+
+"Subscription cancellations do not include a refund."
+
+Cancelling Your Subscription
+1. Log in to your Rezi account.
+2. From the dashboard, click the arrow-down button next to the circle profile badge on the upper-right-
+   hand of the screen.
+3. Select "Account" and scroll down to the "Cancel Subscription" section.
+4. Click the "Cancel Subscription" button.
+(If "Cancel Subscription" doesn't appear, it either means you're logged in to the incorrect account or
+platform. Please double-check your details and try again.)
+5. Complete the flow until the subscription is completely canceled.
+
+"When you cancel a recurring subscription:
+- Your access will remain active until the end of your current billing period.
+- Future charges will stop, but past payments will not be refunded.
+Rezi is not responsible for charges resulting from unconfirmed cancellations. Please verify that your
+subscription has been successfully cancelled in your Account Settings."
+
+Refund Eligibility
+Within the First 30 Days
+- Monthly and Quarterly Plans: Requests made within 30 days of the subscription start date may be
+  eligible for a refund.
+- Lifetime Plan: Requests must be made within 30 days of purchase.
+After the First 30 Days (Recurring Charges)
+- Monthly Plan: Requests accepted within 7 days of your billing date.
+- Quarterly Plan: Requests accepted within 14 days of your billing date.
+- Lifetime Plan: Not eligible.
+"If approved, only the most recent payment will be refunded."
+
+Connect with us
+"You may contact our support team at support@rezi.io. Please include: The reason for your cancellation
+request, the email address linked to your Rezi account. Submitting a request does not guarantee a
+refund. It can only be granted if the conditions above are met."
+
+NOTE: this page confirms a "Quarterly Plan" exists as a real, currently-administered billing option
+(distinct refund windows given for it), even though no Quarterly price or the Quarterly option itself
+appears anywhere on the public https://www.rezi.ai/pricing marketing page. See coder_note in the record
+for how this was handled for entry-tier selection.

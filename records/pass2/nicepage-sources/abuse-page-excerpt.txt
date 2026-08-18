@@ -1,0 +1,16 @@
+Source: https://nicepage.com/abuse
+Accessed: 2026-08-15
+Archive: https://web.archive.org/web/20260815122808/https://nicepage.com/abuse
+
+Checked as a candidate "acceptable-use policy" document for the unquantified_limit_clause (F2)
+determination, per codebook's instruction to read "the terms of service and the acceptable-use
+policy in full."
+
+Content is a copyright/rights-infringement abuse-reporting page ("Nicepage is a website builder
+helping users create and publish websites. Nicepage Administration takes no responsibility for any
+user-posted content.") with a complaint-submission form for third-party rights violations. No
+language anywhere on this page about usage limits, fair use, reasonable use, excessive use, abuse
+thresholds, or discretionary throttling tied to volume/intensity of product use. Not a substitute
+acceptable-use policy in the sense codebook section 7 domain 12 means; contributes to, but does not
+alone establish, the "absent" finding for unquantified_limit_clause (terms.md + agreement.md were
+the documents actually read in full for that variable).

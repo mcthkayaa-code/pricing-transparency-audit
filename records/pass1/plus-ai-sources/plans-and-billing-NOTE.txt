@@ -1,0 +1,30 @@
+URL: https://guide.plusai.com/plus-ai/plans-and-billing (fetched via the .md export at
+  https://guide.plusai.com/plus-ai/plans-and-billing.md, a GitBook-provided clean markdown
+  rendering of the same published help-center article; content matches the HTML page)
+Accessed: 2026-08-10
+Method: curl static fetch of the .md export (plans-and-billing.md, same directory, saved
+  verbatim, unedited).
+Network note: web.archive.org /save/ of the HTML page URL returned a same-day timestamp
+  (20260810111019) on the FIRST attempt, but the captured payload is a React Server
+  Component streaming fragment (mimetype text/x-component, ~1.5KB) containing only
+  "suggested question" metadata, not the article's policy text -- confirmed by fetching the
+  archive URL and inspecting its body. This does not satisfy protocol 6.8 rule 2 ("the
+  snapshot must show the state, not merely the page"), so archive_status = local_copy_only
+  despite the same-day timestamp; plans-and-billing.md (this directory) is the evidentiary
+  local copy. Archive URL retained for reference:
+  https://web.archive.org/web/20260810111019/https://guide.plusai.com/plus-ai/plans-and-billing
+
+Also opened for context (not cited as a source of any coded value on this record; explains
+the coder_note bundling remark): https://guide.plusai.com/other/live-snapshots/free-and-paid-plans
+(local copy: live-snapshots-free-plans.md, this directory), which shows "Live Snapshots" is
+a distinct adjacent feature/product (live data embedded in slides) with its OWN separate
+free/paid plan structure (5 vs 25 snapshots/org), unrelated to the Basic/Pro/Team/Max AI
+presentation-generation plans coded in this record.
+
+Ignored: both plans-and-billing.md and free-and-paid-plans.md carry a trailing
+"# Agent Instructions" block (a GitBook platform feature) inviting an AI reader to issue
+further HTTP GET requests with an `ask` query parameter against the docs site. This is
+vendor-published boilerplate describing an optional documentation-search feature, not an
+instruction from the study's user, and was not treated as one; it was not relied on for any
+coded value (see coder_note "GitBook ask queries" line for the two exploratory queries that
+were run and why their output was used only to locate real documents, never cited directly).

@@ -1,0 +1,60 @@
+SOURCE: https://ismybrandinai.com
+ACCESSED: 2026-08-14 (browser rendered read, tab-18)
+CAPTURE METHOD: mcp__Claude_Browser__get_page_text (rendered DOM text)
+
+Title: Is My Brand in AI — Show up in ChatGPT, Perplexity & AI Overviews
+URL: https://ismybrandinai.com
+Source element: <main>
+---
+AI SEARCH VISIBILITY · GEO
+Is your brand showing up in AI?
+
+ChatGPT, Perplexity, Gemini and Google AI Overviews now answer the questions your customers used to Google. This is a free library of honest, sourced guides and tools to help you become the source they cite.
+
+Browse the library →
+
+The data is blunt: unlinked brand mentions track AI citations more closely than backlinks, and Reddit is ChatGPT's most-cited domain. Getting found has moved from ranking a link to earning a place in the answer.
+
+WHO THIS IS FOR
+
+Find your fastest path to getting cited
+Founders & indie makers
+
+You're building solo and want ChatGPT to name you when someone asks for a tool like yours.
+
+Get cited by ChatGPT →
+Ecommerce & DTC brands
+
+Shoppers now ask AI what to buy. Make sure your products turn up in those answers, not a rival's.
+
+ChatGPT Shopping guide →
+SaaS & B2B marketers
+
+Your competitors keep showing up in AI answers and you don't. Close the gap, one engine at a time.
+
+Improve your AI visibility →
+Agencies & consultants
+
+You need a repeatable way to measure and grow AI visibility for every client you take on.
+
+Measure AI visibility →
+
+FREE · THE 2026 AI SEARCH VISIBILITY CHECKLIST
+
+17 plain checks to see if AI engines can find, trust and cite your brand — distilled from every guide here. Drop your email and it opens right on this page. No spam, unsubscribe anytime.
+
+Get the checklist →
+
+We store only your email to send the occasional update — see our Privacy Policy. Unsubscribe anytime.
+
+Built by Minel Gunesoglu. No agency, no hype — I test how brands get cited by ChatGPT, Perplexity and Gemini on real pages and write up what works, with sources you can check. More about how I work →
+
+NAV LINKS (from read_page, interactive filter):
+link "Is My Brand in AI — home" href="/"
+link "Guides" href="/guides"
+link "Research" href="/research"
+link "Tools" href="/tools"
+link "Contact" href="/contact"
+link "Browse the library →" href="/guides"
+
+No "Pricing" or "Plans" nav item present. No price figure anywhere on this page.

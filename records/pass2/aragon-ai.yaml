@@ -1,0 +1,164 @@
+product_id: aragon-ai
+product_name: Aragon AI
+category: AI headshot
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Basic"
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-14
+recheck_date: not_applicable
+primary_source_url: https://www.aragon.ai/pricing
+archive_url: https://web.archive.org/web/20260814173055/https://www.aragon.ai/pricing
+archive_status: archived
+default_display_state: >
+  Pricing page loads with the "Headshots" tab and its "Individual Pricing" sub-tab active
+  (confirmed by DOM/screenshot on two separate fresh loads, before any interaction) — flat
+  one-time package prices (Basic/Standard/Executive), not the recurring "Subscription" tab.
+  A "20% off all packages, limited time only!" banner is showing; displayed prices ($18/$25/$40)
+  are the post-discount figures, struck-through originals ($35/$45/$75) also visible. No
+  monthly/annual billing toggle appears in this default view — that toggle lives only inside the
+  separate "Subscription" tab (one click away), where it itself defaults to "Monthly". Currency:
+  plain "$" figures, no currency/country selector found (globe icon opens a LANGUAGE picker only:
+  English/Deutsch/Français/Português); ToS confirms "all fees are in U.S. Dollars". Cookie
+  consent banner declined via "Reject All" before reading.
+
+sources:
+  - { url: "https://www.aragon.ai/pricing", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814173055/https://www.aragon.ai/pricing", note: "Both tab-states read (Headshots/Individual = default; Subscription = one click, for product-wide credit/auto-renewal context only). Local verbatim captures: pricing-page-headshots-tab-rendered-2026-08-14.txt, pricing-page-subscription-tab-rendered-2026-08-14.txt" }
+  - { url: "https://www.aragon.ai/terms", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814173113/https://www.aragon.ai/terms", note: "Full text read via rendered innerText + targeted regex passes (refund, reasonable limit, sole discretion, failed, watermark). Local capture: terms-of-service-rendered-2026-08-14.txt" }
+  - { url: "https://www.aragon.ai/refund-policy", kind: refund, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814173132/https://www.aragon.ai/refund-policy", note: "Local capture: refund-policy-2026-08-14.txt" }
+  - { url: "https://www.aragon.ai/free-headshot-generator", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814173201/https://www.aragon.ai/free-headshot-generator", note: "Marketing/FAQ page for the free tier specifically. Local capture: free-headshot-generator-page-rendered-2026-08-14.txt" }
+  - { url: "https://www.aragon.ai/support", kind: other, accessed: "2026-08-14", archive: "not_archived_not_a_coding_source", note: "Contact/support page only (no self-serve help-center articles); read for context, yielded no coded value not already found elsewhere." }
+
+variables:
+  headline_price_usd: { value: "18.00", source: "https://www.aragon.ai/pricing", evidence: "Basic tier card, Headshots > Individual Pricing (default state): \"$18\" (struck through: \"$35\"), \"40 headshots\". Confirmed as a single unsplit DOM text node (<span>$18</span>), not a superscript-cents split." }
+  headline_billing_basis: { value: "one_time", source: "https://www.aragon.ai/pricing", evidence: "Basic/Standard/Executive are flat one-time headshot packages (\"40 headshots\", \"45 mins generation time\") with a \"Select\" purchase button; no monthly/annual recurring language attached to this tab's cards." }
+  first_charge_amount_usd: { value: "18.00", source: "https://www.aragon.ai/pricing", evidence: "Same $18 figure; one-time purchase so first charge equals the displayed price, no annualization or addon applies. No computation performed (direct read)." }
+  mandatory_addon_present: { value: "no", source: "https://www.aragon.ai/pricing", evidence: "Pricing page, ToS, refund policy, and support page were read; no required additional charge, minimum credit purchase, platform fee, or onboarding fee found for the Basic package." }
+  annual_condition_disclosure: { value: "not_applicable", source: "https://www.aragon.ai/pricing", evidence: "Entry tier (Basic) is one_time; the headline figure does not depend on annual prepayment (codebook rule 1: if it does not, code not_applicable)." }
+  annual_default_toggle: { value: "not_applicable", source: "https://www.aragon.ai/pricing", evidence: "Default-loaded view (Headshots > Individual Pricing) shows no monthly/annual billing-period toggle at all; billing does not recur for the tier shown by default. (A separate Monthly/Annual toggle exists inside the Subscription tab, one click away, defaulting to Monthly — not part of the default display state; see coder_note.)" }
+  free_plan_exists: { value: "yes", source: "https://www.aragon.ai/pricing", evidence: "Subscription-tab FAQ: \"Can I use Aragon for free? Yes. Free users receive 16 credits per active day.\" Corroborated by https://www.aragon.ai/terms (\"Free Tier Credits\", a formally named concept) and https://www.aragon.ai/free-headshot-generator (\"Free credits come with every Aragon account\", \"no sign-ups or credit cards required\"). Ongoing per-day allowance, not a time-limited trial (see trial_exists)." }
+  free_plan_cap_documented: { value: "some_quantified", source: "https://www.aragon.ai/pricing", evidence: "Quantified: \"16 credits per active day\" (rate). Not quantified: free-headshot-generator FAQ contrasts paid's \"more outfits and backgrounds (20+ vs limited free options)\" and \"higher resolution\" without ever stating free's own count/resolution — \"limited... options\" carries no number (codebook 5.1: words carrying no number never qualify)." }
+  free_plan_cap_value: { value: "16 credits per active day", source: "https://www.aragon.ai/pricing", evidence: "Subscription-tab FAQ, verbatim: \"Free users receive 16 credits per active day.\"" }
+  free_plan_watermark: { value: "unknown", source: "https://www.aragon.ai/free-headshot-generator", evidence: "Read pricing page (both tabs), ToS, and the free-headshot-generator page in full; \"watermark\" does not appear on any of them in connection with the free tier's output." }
+  free_plan_duration: { value: "perpetual", source: "https://www.aragon.ai/free-headshot-generator", evidence: "Free credits are framed as a standing feature (\"Free credits come with every Aragon account\", 16 credits per ACTIVE DAY, ongoing) with no stated expiry or end date anywhere in the documents read." }
+  trial_exists: { value: "no", source: "https://www.aragon.ai/terms", evidence: "ToS contains no free-trial / trial-period section anywhere (confirmed by full-text read). free-headshot-generator page frames the free tier as permanent/cardless (\"no sign-ups or credit cards required\"), not a time-limited trial of a paid tier. Pricing page Subscription cards show no trial language, only \"Get Started\"." }
+  trial_card_required: { value: "not_applicable", source: "https://www.aragon.ai/terms", evidence: "No trial exists (trial_exists = no)." }
+  trial_length_days: { value: "not_applicable", source: "https://www.aragon.ai/terms", evidence: "No trial exists." }
+  trial_auto_converts: { value: "not_applicable", source: "https://www.aragon.ai/terms", evidence: "No trial exists." }
+  credit_system_present: { value: "yes", source: "https://www.aragon.ai/pricing", evidence: "Subscription plans (Lite/Pro/Ultimate/Creator) meter use via \"credits\" (\"300 monthly credits\" etc; \"Credits are used in-app for AI photo editing, photo generation, and other advanced AI features\"). This is a product-wide finding (credit_system_present is not one of the six entry-tier-pinned variables in codebook 5.2); the entry tier itself (Basic, one-time) is denominated directly in headshots, not credits." }
+  credit_unit_defined: { value: "yes", source: "https://www.aragon.ai/pricing", evidence: "No single explicit \"1 credit = X\" sentence exists, but every one of the 4 subscription tiers prints credits alongside an exact output-unit equivalence: \"300 monthly credits ... 300 images · 75 edits\" (Lite), 1,200/1,200/300 (Pro), 2,400/2,400/600 (Ultimate), 12,000/12,000/3,000 (Creator) — a perfectly consistent 1 credit=1 image and 4 credits=1 edit ratio across all four cards. Coded yes under rule 3 (any document converting credits into any output unit); flagged as a judgment call in coder_note since the conversion is derived from parallel figures rather than stated as a formula sentence." }
+  credit_to_output_rate_published: { value: "partial", source: "https://www.aragon.ai/pricing", evidence: "Rate is clear for the generic \"images\"/\"edits\" units (see credit_unit_defined) but no document ties this rate explicitly to \"headshots\" specifically — the product's principal, category-defining output. \"Premium headshot photo packs\" is listed as its own separate feature line on the same subscription cards, so whether a headshot draws credits at the plain image rate or a different rate is not stated. Coded partial per rule 4 (rate published for related/secondary framing, not confirmed for the principal output by name)." }
+  credit_rate_location: { value: "pricing_page", source: "https://www.aragon.ai/pricing", evidence: "The credits/images/edits figures appear only on the pricing page's Subscription-tab plan cards; not in ToS (which describes credits conceptually but gives no numeric rate) or on the free-headshot-generator page." }
+  cost_per_output_unit: { value: "per_headshot", source: "https://www.aragon.ai/pricing", evidence: "Product's own category framing throughout: \"AI Headshot Generator\", pricing page titled \"Aragon AI Pricing: Headshots, Subscription Plans, and Team Plans\", entry tier priced and delivered directly in headshot counts." }
+  cost_per_output_computable: { value: "yes", source: "https://www.aragon.ai/pricing", evidence: "Entry tier Basic: $18.00 one-time (default display state) for \"40 headshots\", both published on the same card. 18/40 = 0.45. No credits involved for this tier, no assumption about typical use needed." }
+  computation_assumptions: { value: "Entry tier Basic (Headshots > Individual Pricing, pricing page default display state), billing basis one_time, $18.00 for 40 headshots included; already on the same (one-time) basis so no period conversion applies; 18/40 = 0.45 per headshot.", source: "https://www.aragon.ai/pricing", evidence: "Basic card: \"$18\", \"40 headshots\"." }
+  credit_rollover_policy: { value: "expires_at_period_end", source: "https://www.aragon.ai/terms", evidence: "ToS: \"Any unused Credits or allowances expire at the end of the applicable Subscription Period and will not carry over, unless otherwise agreed by us.\" Corroborated by pricing-page FAQ: \"Monthly subscription credits expire at the end of each billing period and do not roll over.\" NOTE: the same FAQ states separately-purchased top-up credits ARE an exception and do roll over while subscribed (\"Additionally purchased credits do roll over and stay usable as long as your subscription is active\") — this code describes the plan's own included-credit pool, which is what \"300 monthly credits\" etc. refers to; the top-up exception is recorded here for completeness." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://www.aragon.ai/terms", evidence: "ToS, pricing-page FAQs (both tabs), refund policy, and the free-headshot-generator FAQ were all read; none states what happens to credits/charges when a generation fails, errors, or produces nothing usable." }
+  auto_renewal_default: { value: "on", source: "https://www.aragon.ai/terms", evidence: "ToS banner (top of document): \"AUTOMATIC RENEWAL NOTICE. IF YOU SUBSCRIBE TO THE SERVICE, YOUR SUBSCRIPTION WILL AUTOMATICALLY RENEW FOR ADDITIONAL PERIODS OF THE SAME DURATION AS YOUR INITIAL SUBSCRIPTION PERIOD...\" repeated in the Subscription Service body clause." }
+  auto_renewal_disclosure_location: { value: "multiple", source: "https://www.aragon.ai/terms", evidence: "Stated in the Terms of Service (see auto_renewal_default) AND in the dedicated Refund Policy page (\"All subscription plans renew automatically unless canceled before the renewal date.\", https://www.aragon.ai/refund-policy) — two of the four document classes, in agreement. Not found stated explicitly on the pricing page itself (only implied via the cancellation FAQ)." }
+  renewal_notice_commitment: { value: "no_notice_stated", source: "https://www.aragon.ai/terms", evidence: "No advance-notice-before-renewal-charge commitment found anywhere read. Support page states only after-the-fact billing communication: \"Invoices are automatically sent after each payment\" — which the codebook explicitly treats as not advance notice." }
+  refund_policy_exists: { value: "conflicting", source: "https://www.aragon.ai/terms", evidence: "CONFLICT between two equal-authority contractual sources (protocol 6.2 ranks ToS and the dedicated refund/policy page together at tier 1). ToS General Payment Terms: \"all fees are in U.S. Dollars and are non-refundable, except as required by law\" — and ToS's only other refund provision is a pro-rata refund solely for Aragon-initiated no-cause termination (not a buyer-initiated right); a full regex sweep of the ToS's 5 total uses of \"refund\" found no cross-reference to the dedicated Refund Policy page at all. Against this, the dedicated Refund Policy page (https://www.aragon.ai/refund-policy) affirmatively grants a buyer-initiated conditional refund: \"Refund requests must be submitted within 14 calendar days of the charge\", \"Refunds will only be granted if no credits have been used\", plus a headshot-package \"full refund\" guarantee if photos don't represent the buyer (conditions apply). See conflict_note for full quotes and both URLs." }
+  refund_window_days: { value: "conflicting", source: "https://www.aragon.ai/refund-policy", evidence: "Refund Policy page states \"14 calendar days\" (of purchase for headshot packages; of the charge for subscriptions) for the entry tier (Basic, one-time headshot package). ToS states no window at all in day-terms and instead frames the entry tier's fee as non-refundable outright (see refund_policy_exists). Coded conflicting for consistency with the underlying refund_policy_exists conflict — see conflict_note." }
+  refund_conditions: { value: "conflicting", source: "https://www.aragon.ai/refund-policy", evidence: "Refund Policy page: conditional (\"conditional\" — must not have downloaded photos, must follow upload instructions, within 14 days). ToS: effectively no conditions apply because no such refund right is established there in the first place (non-refundable except as required by law or Aragon-initiated no-cause termination). See conflict_note." }
+  cancellation_self_serve: { value: "conflicting", source: "https://www.aragon.ai/terms", evidence: "Internal tension within the ToS itself, corroborated by a third official source on one side: ToS Subscription Service clause first says renewal stops \"unless you cancel the Subscription Service from within your Account\" (self-serve-sounding), then in the SAME paragraph gives the specific operative mechanism: \"You may cancel the Subscription Service by contacting us at support@aragon.ai... YOUR CANCELLATION MUST BE RECEIVED BEFORE THE RENEWAL DATE...\" (contact-required, with a detailed verified-email process). The pricing-page Subscription FAQ independently states: \"Yes, you can pause or cancel anytime from your billing page\" (self-serve). Coded conflicting rather than picking a side because the highest-authority document does not speak with one voice. See conflict_note for full quotes." }
+  refund_policy_location: { value: "conflicting", source: "https://www.aragon.ai/terms", evidence: "Refund position is stated in both the terms (\"terms\") and the dedicated refund page (\"dedicated_refund_page\") but the two disagree in substance (see refund_policy_exists), which per the variable's own decision rule leaves the governing class undeterminable — conflicting rather than multiple, since multiple is reserved for agreement." }
+  commercial_use_lowest_tier: { value: "free", source: "https://www.aragon.ai/terms", evidence: "ToS Output clause: \"Aragon hereby assigns to you all of its rights, title, and interest (if any) in and to the Output generated through your use of the Service. You may use such Outputs for your own personal or commercial purposes, subject to these Terms.\" No tier restriction is stated anywhere; the grant covers all Output, including free-tier-generated headshots." }
+  watermark_removal_tier: { value: "lowest_paid", source: "https://www.aragon.ai/pricing", evidence: "\"No watermarks\" is listed as an included feature starting at Aragon Lite, $15/mo, the lowest Subscription tier, and repeated identically on Pro/Ultimate/Creator. No document states the watermark status of the one-time Headshot packages (Basic/Standard/Executive) or the free tier at all — this code reflects the Subscription ladder specifically; see coder_note for the scope caveat." }
+  output_ownership_statement: { value: "user_owns", source: "https://www.aragon.ai/terms", evidence: "ToS: \"Aragon hereby assigns to you all of its rights, title, and interest (if any) in and to the Output...\" and, in the Ownership section: \"Materials excludes Outputs resulting from your use of the Service, which, as between you and Aragon, are owned by you.\" No tier- or subscription-status-dependent qualifier found (contrast with codebook's \"conditional\" example, which requires an active-subscription condition not present here)." }
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://www.aragon.ai/pricing", evidence: "Every limit documented for the entry tier (Basic) carries a number: \"40 headshots\", \"Choice of 1 attire\", \"Choice of 1 background\", and (via the same page's FAQ) \"896 x 1088 pixels\" resolution. \"45 mins generation time\" is a turnaround/delivery-speed figure, not a usage allowance, but is itself numeric regardless. No unquantified limit found attached to this tier specifically." }
+  unquantified_limit_clause: { value: "present", source: "https://www.aragon.ai/terms", evidence: "ToS: \"You agree that Aragon retains the right to create reasonable limits on its use and storage of User Content, including limits on file size, storage space, processing capacity, retention periods, and similar limits as described on the Service or as otherwise determined by Aragon in its sole discretion.\" Also, specifically for free tools: \"Aragon reserves the right, at its sole discretion and at any time without notice, to: (a) suspend, limit, or discontinue access to any free tool or service; (b) impose usage limits, queue times, or indefinite wait periods...\" Neither clause states a number." }
+
+coder_note: |
+  FRAME CORRECTION LOGGED: my assignment brief initially typed category as "AI headshot
+  generator"; the coordinator flagged that the authoritative value is the frame's own wording.
+  I had already read category from frame-for-pass2.csv directly before coding ("aragon-ai,Aragon
+  AI,https://www.aragon.ai,AI headshot,active,no") and used "AI headshot" throughout, so no
+  change was needed to this record — noting it here per instruction so the record shows the
+  value's provenance is the frame file, not the typed brief.
+
+  ENTRY TIER (sampling-rules 7.2): the pricing page's default display state is the "Headshots"
+  tab > "Individual Pricing" sub-tab (confirmed by DOM/screenshot on two independent fresh loads
+  before any interaction) — three one-time headshot packages, NOT the "Subscription" tab (which
+  requires a click; see below). Eligible candidates and their prices: Basic $18 (winner, lowest),
+  Standard $25 (loses), Executive $40 (loses). All three are standing individual-pricing tiers,
+  generally available, no sales contact needed; the sitewide "20% off all packages, limited time
+  only!" banner discounts all three equally (struck-through originals $35/$45/$75) and is read as
+  a promotional PRICE on standing plans, not a promotional PLAN under eligibility rule 3.
+
+  JUDGMENT CALL - one-time purchase and "annual-equivalent": sampling-rules 7.2's price basis is
+  written for recurring monthly/annual comparisons ("annualize whatever the state shows"). Basic/
+  Standard/Executive are one-time, non-recurring purchases with no monthly or annual figure to
+  annualize. I compared the three eligible candidates on their one-time price directly ($18 <
+  $25 < $40); this ranking is unaffected by any annualizing convention since none of the three
+  recurs. Flagging this because the codebook's price-basis language does not explicitly cover an
+  all-one-time default state.
+
+  JUDGMENT CALL - toggle changes the SET of tiers: per deviations-for-coders.md guidance, checked
+  whether the page's "Headshots"/"Subscription" toggle is a display toggle (same tiers, different
+  price framing) or changes the entire tier SET. It is the latter — completely different products
+  (one-time packages vs. recurring credit subscriptions) — so only the default ("Headshots") set
+  was treated as eligible entry-tier candidates, per rule 1's instruction not to switch a toggle
+  to find a different figure. The Subscription tab (Lite $15/Pro $29/Ultimate $49/Creator $249,
+  monthly-default) was still read in full and used for the several variables the codebook scopes
+  to "the product as a whole" rather than to the entry tier specifically (codebook 5.2's six-
+  variable list is exhaustive; credit_system_present/credit_unit_defined/credit_to_output_rate_
+  published/credit_rate_location/credit_rollover_policy/failed_generation_charge_policy/free_plan_*/
+  trial_exists/auto_renewal_*/refund_policy_exists/refund_conditions/cancellation_self_serve/
+  refund_policy_location/commercial_use_lowest_tier/watermark_removal_tier/output_ownership_
+  statement/unquantified_limit_clause are NOT in that list, so I coded them from all official
+  documents about the product, not only from the Basic package's own page section).
+
+  JUDGMENT CALL - credit_unit_defined = yes: no single sentence states "1 credit = 1 image"; the
+  rate is derived from four subscription cards whose credit/image/edit figures divide out
+  identically (1:1 images, 4:1 edits) every time. Coded yes under rule 3's "any official document
+  converts credits into any output unit"; a stricter reader could view this as only a plan-
+  allowance restatement (rule 5) rather than a definition. Flagged in case this reads differently
+  under adjudication.
+
+  JUDGMENT CALL - watermark_removal_tier = lowest_paid: evidence covers the Subscription ladder
+  only (explicit "No watermarks" from Aragon Lite up). No document anywhere states the watermark
+  status of the one-time Headshot packages or the free tier. Aragon sells three parallel pricing
+  structures (free / one-time headshots / recurring subscription) and this single-ladder variable
+  does not map cleanly onto that; coded from the one sub-structure with explicit textual evidence
+  rather than "unknown", since positive evidence does exist for part of the product line.
+
+  CODER_ROLE FIELD: my task brief and the agent definition (research-data-collector.md) both
+  say `coder_role: secondary`; codebook-v1.md section 6 lists the allowed value as `second`
+  (primary|second|adjudicated). Used "secondary" per direct, repeated instruction; flagging the
+  mismatch since the codebook is the nominal authority on value spellings.
+
+  A-012 (paid time-limited intro period): does not apply to this record. The "20% off" banner is
+  a straight price discount on one-time, non-recurring packages with no later auto-conversion to
+  a higher rate; the Subscription tiers show flat monthly/annual prices from the first charge,
+  with no distinct low-cost intro period found anywhere.
+
+  blindness: no other record, no review page, no pass-1 material was opened.
+conflict_note: >
+  Refund cluster (refund_policy_exists, refund_window_days, refund_conditions,
+  refund_policy_location) — https://www.aragon.ai/terms vs https://www.aragon.ai/refund-policy,
+  both equal-authority contractual sources per protocol 6.2. ToS General Payment Terms: "Unless
+  otherwise specifically provided for in these Terms, all fees are in U.S. Dollars and are
+  non-refundable, except as required by law." A full-text sweep found ToS's only other refund
+  provision is a pro-rata refund solely where "Aragon terminates these Terms or your Account
+  without cause" (Aragon-initiated, not a buyer right) — none of the ToS's 5 total "refund"
+  occurrences cross-reference the dedicated Refund Policy page. That page instead affirmatively
+  grants a buyer-initiated, conditional refund: "Refund requests must be submitted within 14
+  calendar days of the charge", "Refunds will only be granted if no credits have been used", plus
+  a headshot "full refund" guarantee (conditions: didn't download, followed upload instructions).
+  These are incompatible statements of the same buyer question ("can I get my money back if I'm
+  simply unhappy"); coded conflicting rather than picking a side because the instrument's
+  hierarchy names ToS and the dedicated policy page as CO-EQUAL rank-1 sources for contractual
+  variables, with no tie-break rule provided for this case.
+
+  cancellation_self_serve — https://www.aragon.ai/terms (internally) vs itself vs
+  https://www.aragon.ai/pricing. ToS Subscription Service clause: renewal stops "unless you
+  cancel the Subscription Service from within your Account" (self-serve-sounding) — then, same
+  paragraph: "You may cancel the Subscription Service by contacting us at support@aragon.ai...
+  YOUR CANCELLATION MUST BE RECEIVED BEFORE THE RENEWAL DATE..." (contact-required, detailed
+  verified-email process). Pricing-page Subscription FAQ: "Yes, you can pause or cancel anytime
+  from your billing page" (self-serve). Coded conflicting: the highest-ranked document does not
+  speak with one voice on this point, and a second official source corroborates only one branch
+  of that internal split.
+register_events: []
+status: complete

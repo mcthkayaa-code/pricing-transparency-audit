@@ -1,0 +1,33 @@
+URL: https://help.openai.com/en/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription
+Accessed: 2026-08-10
+Method: rendered read via browser tool (static WebFetch/curl blocked with HTTP 403 on this domain)
+Archival: web.archive.org/save/ attempted twice (HTTP 520 both times) -> archive_failed for a same-day snapshot. Nearest pre-existing IA snapshot found via availability API (not same-day, cited only as corroborating context, not as the coded source): http://web.archive.org/web/20260715183341/https://help.openai.com/en/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription (2026-07-15). Local copy only (this file) for the coded value.
+Page metadata showed "Updated: 19 saat önce" (Turkish, "19 hours ago") — confirms our Turkey-egress locale is being detected on this vendor's help-center timestamps even though body copy renders in English.
+
+--- innerText, first ~4000 characters (page continues with country-specific notes not reproduced here beyond what's quoted) ---
+How do I request a refund for my ChatGPT subscription?
+Refund eligibility and request steps for ChatGPT subscriptions
+
+How to request a refund
+The process to request a refund for your subscription depends on how you initially signed up. To help us verify your account and process your request quickly, please contact us while logged in to the OpenAI account tied to the subscription or from the email address associated with the relevant charge.
+
+You subscribed on the web at chatgpt.com
+[self-serve chat-widget refund request flow described]
+Our team will reply back to you as soon as possible. If you are eligible for a refund, we will process it within 5-7 business days. Accidental purchases are generally eligible for a refund if you contact us within 14 days of the charge.
+
+You subscribed via Apple Subscriptions
+For subscriptions made through Apple Subscriptions, cancellations and refunds must be requested directly from Apple.
+
+You subscribed via Google Play Store
+[same chat-widget flow] If you are eligible for a refund, we will process it within 10 business days. Accidental purchases are generally eligible for a refund if you contact us within 14 days of the charge.
+
+Note for EU, UK, and Turkey residents
+"If you live in the EU, UK, or Turkey, you are eligible for a prorated refund if you cancel your subscription within 14 days of purchase."
+
+Note for Korea residents
+"If you live in the Republic of Korea, you will receive a full refund if you request a refund within 7 days of the date of your purchase and have not used our service during that time. Otherwise, you will receive a pro-rated refund based on the period from the date you requested cancellation to the end of the subscription period you have paid for."
+
+Once you request a refund, the cancellation of your subscription will take effect immediately, and you will no longer have access to the subscription service.
+--- (truncated) ---
+
+Coder note: this is a general ChatGPT billing help-center article (not Sora-specific), but it is the OFFICIAL, currently-live document that help.openai.com's own Sora discontinuation FAQ explicitly points buyers to for "What if I need a refund?" (see help-openai-sora-discontinuation-rendered.txt in this same folder). Its content — "Accidental purchases are generally eligible for a refund if you contact us within 14 days of the charge" plus region-specific 14/7-day statutory rights — DIVERGES from OpenAI's Terms of Use clause "Payments are non-refundable, except where required by law." This divergence is coded as a conflict_note per codebook section 3 / protocol section 6.2 (Terms of Use ranks first for contractual variables including refunds; this help-center article ranks second), with the governing value taken from the Terms of Use and both URLs+quotes preserved in conflict_note.

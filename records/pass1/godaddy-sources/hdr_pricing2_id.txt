@@ -1,0 +1,55 @@
+HTTP/2 200 
+server: nginx
+date: Fri, 07 Aug 2026 09:10:25 GMT
+content-type: text/html; charset=utf-8
+x-archive-orig-server: envoy
+x-archive-orig-x-envoy-upstream-service-time: 707
+x-archive-orig-x-error-info: 0
+x-archive-orig-x-request-id: 658c8ecf
+x-archive-orig-x-akamai-transformed: 0 - 0 -
+x-archive-orig-vary: Accept-Encoding
+content-encoding: gzip
+x-archive-orig-expires: Fri, 07 Aug 2026 09:08:35 GMT
+x-archive-orig-cache-control: max-age=0, no-cache, no-store
+x-archive-orig-pragma: no-cache
+x-archive-orig-date: Fri, 07 Aug 2026 09:08:35 GMT
+x-archive-orig-transfer-encoding: chunked
+x-archive-orig-connection: keep-alive
+x-archive-orig-connection: Transfer-Encoding
+x-archive-orig-set-cookie: xpdpp3=B; expires=Tue, 06 Oct 2026 09:08:35 GMT; domain=godaddy.com; path=/; secure
+x-archive-orig-set-cookie: fb_sessiontraffic=S_TOUCH=&pathway=f609286e-5b8f-4eaf-8e5f-e4b271068ac2&V_DATE=&pc=0; Path=/; Domain=godaddy.com; Expires=Fri, 07 Aug 2026 09:28:35 GMT
+x-archive-orig-set-cookie: pathway=f609286e-5b8f-4eaf-8e5f-e4b271068ac2; Path=/; Domain=godaddy.com; Expires=Fri, 07 Aug 2026 09:28:35 GMT
+x-archive-orig-set-cookie: visitor=vid=f609286e-5b8f-4eaf-8e5f-e4b271068ac2; Path=/; Domain=godaddy.com; Expires=Fri, 06 Aug 2027 09:08:35 GMT
+x-archive-orig-set-cookie: _policy={"restricted_market":false,"tracking_market":"implicit_notice"}; Path=/; Domain=godaddy.com; Expires=Sat, 07 Aug 2027 09:08:35 GMT
+x-archive-orig-set-cookie: market=en-US; expires=Sat, 07-Aug-2027 09:08:35 GMT; path=/; domain=.godaddy.com
+x-archive-orig-set-cookie: currency=USD; expires=Sat, 07-Aug-2027 09:08:35 GMT; path=/; domain=.godaddy.com
+x-archive-orig-set-cookie: AKA_A2=A; expires=Fri, 07-Aug-2026 10:08:35 GMT; path=/; domain=godaddy.com; secure; HttpOnly
+x-archive-orig-x-frame-options: DENY
+x-archive-orig-x-origin-tag: frontdoor
+x-archive-orig-set-cookie: akaas_godaddy-com-wildcard=2147483647~rv=20~id=4fc17173834e040079e2dcaf47d292a0~rn=; path=/; Secure; SameSite=None
+x-archive-orig-x-arc: 2
+x-archive-orig-x-arc: 6a
+x-archive-orig-server-timing: ak_p; desc="1786093715065_399222546_1703710415_76347_17375_3_6_-";dur=1
+cache-control: max-age=1800
+accept-ranges: bytes
+memento-datetime: Fri, 07 Aug 2026 09:08:35 GMT
+link: <https://www.godaddy.com/pricing>; rel="original", <https://web.archive.org/web/timemap/link/https://www.godaddy.com/pricing>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://www.godaddy.com/pricing>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: spn2-20260807045716-wwwb-spn12.us.archive.org-8006.warc.gz
+server-timing: captures_list;dur=0.573094, exclusion.robots;dur=0.046160, exclusion.robots.policy;dur=0.033582, esindex;dur=0.009911, cdx.remote;dur=238.136660, LoadShardBlock;dur=316.645257, PetaboxLoader3.resolve;dur=230.050904, PetaboxLoader3.datanode;dur=43.971368, load_resource;dur=44.475986
+x-app-server: wwwb-app222-dc8
+x-ts: 200
+x-tr: 654
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app222; path=/
+cache-control: private
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

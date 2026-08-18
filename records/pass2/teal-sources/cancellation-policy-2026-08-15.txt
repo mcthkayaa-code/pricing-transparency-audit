@@ -1,0 +1,31 @@
+SOURCE: https://help.tealhq.com/en/articles/9451252-what-is-the-cancellation-policy
+TITLE: "What Is The Cancellation Policy? | Teal Knowledge Base"
+ACCESSED: 2026-08-15 (pass-2 collection)
+METHOD: Browser render (static WebFetch returned HTTP 403 Forbidden on this domain)
+ARCHIVE.ORG: save attempt stalled/failed, same pattern as the other two confirmed-failed saves this session (tealhq.com/terms x2, trial-faq article x2) — recorded archive_failed; this file is the dated local verbatim capture.
+Page says "Updated over 2 weeks ago"
+
+=== VERBATIM PAGE TEXT ===
+
+What Is The Cancellation Policy?
+"Looking for our cancellation and refund policy? Check out the information below!"
+
+Refund Policy
+"Cancelling your subscription does not automatically trigger a refund."
+"If you are not satisfied with your purchase, you may request a full refund by contacting our team at membersupport@tealhq.com with the following information: Reason for cancellation; Email associated with the account where the payment was made."
+"Submitting a refund request does not guarantee that a refund will be issued. Our team will only issue a refund based on the following conditions:"
+
+Eligibility Timeframe
+"Refund requests must be submitted within the specific timeframe allowed for your particular plan. Outside of this timeframe, your purchase would be ineligible for a refund."
+"Weekly Plan: Refund requests must be made within 2 calendar days of the billing period start date."
+"Monthly Plan: Refund requests must be made within 7 calendar days of the billing period start date."
+"Quarterly Plan: Refund requests must be made within 14 calendar days of the billing period start date."
+"Annual Plan: Refund requests must be made within 14 calendar days of the billing period start date."
+
+Subscription Cancellations
+"When you cancel your recurring subscription, the cancellation takes effect at the end of your current billing period."
+"By cancelling, you will stop future billing, but previous payments will not be refunded automatically – you must follow the instructions outlined in the 'Refund Policy' section to request a refund."
+"Teal cannot be held responsible for recurring subscriptions if a member fails to cancel their account. The customer must confirm the cancellation."
+"To confirm your subscription end date, head to your account settings and look for the red banner that states when the subscription is set to cancel."
+
+NOTE: this article names the four plan cadences "Weekly / Monthly / Quarterly / Annual Plan" — confirms the $79/Every-90-days card on the pricing page is the vendor's "Quarterly Plan," and its refund window is 14 calendar days. Fully consistent with tealhq.com/terms Section 5 refund clause (same windows, same wording pattern) — no conflict on this point across the two docs.

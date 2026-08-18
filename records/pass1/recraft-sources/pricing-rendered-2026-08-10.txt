@@ -1,0 +1,109 @@
+URL: https://www.recraft.ai/pricing
+Date accessed: 2026-08-10
+Method: Rendered read (browser render; static WebFetch returned no plan-level price figures — D-005 applies). Non-essential cookies declined via "Reject All" before reading (protocol §6.8 rule 5).
+Network note: session runs from Turkey network location; prices rendered directly in USD ($) with no currency selector encountered and no redirect to a localized-currency page (D-003/D-007 check — arm 1, vendor's own page, returned readable USD prices directly, so no further arm was needed).
+Default display state confirmed via DOM: billing toggle button has aria-checked="true" / data-state="checked", corresponding visually to the "Pay annually (save 20%)" label (highlighted) vs "Pay monthly" (greyed out) — i.e. ANNUAL is preselected on load.
+Second representation used to confirm price magnitudes (raw DOM text-node query, independent of rendered innerText extraction): spans with class "text-headline-1 text-content-1" contain exactly "$0", "$10", "$16", "$18" — no superscript-cents split detected.
+
+--- document.body.innerText (via get_page_text on rendered page) ---
+Title: Pricing and plans - Recraft
+URL: https://recraft.ai (redirect target; canonical https://www.recraft.ai/pricing)
+
+Flexible plans for creators and teams
+Pay monthly
+Pay annually (save 20%)
+Plans
+API
+Free
+For exploring AI features at a basic level. Personal use only.
+$0
+Limited free credits
+Get started
+What's included:
+3 generations per style per day
+3 image uploads daily
+Up to 2 images per generation
+Basic editing tools
+Style Library and custom style creation
+All images are public
+No commercial use
+No parallel generation
+Recraft models only
+Basic
+For individual creators with core image generation needs.
+$10
+per month
+billed annually $120
+1,000 credits per month
+Upgrade to Basic
+Everything in Free, plus:
+Nano Banana, Seedream, GPT Image, Flux, and other image generation and editing models
+Commercial rights and private generations
+Unlimited image uploads
+Advanced tools: Custom color palettes, Magic wand, Creative upscale, Artistic level, Extract prompt
+Unlimited styles usage
+Up to 4 images per generation
+Credit top-ups
+Up to 5 parallel generations
+Recommended
+Pro
+For professional creators who need scale and video generation.
+$16
+per month
+billed annually $192
+2,000 credits per month
+Upgrade to Pro
+Everything in Basic, plus:
+Video generation NEW
+Kling, Grok Imagine Video, Veo, Sora, Seedance, and other video generation models
+Full access to all video generation controls
+Priority generation for images
+Up to 10 parallel generations for images
+Up to 10 parallel generations for video
+Teams
+For teams collaborating on shared creative workflows.
+$18
+per month per seat
+billed annually $211
+2,000 credits per month per seat
+Add workspace / or Contact sales
+Everything in Pro, plus:
+Shared workspace for all team members
+Shared custom styles
+Centralized account management
+Centralized billing
+Premium 24/7 support
+Single Sign-On (SSO)
+The prices displayed are exclusive of Value Added Tax (VAT)
+
+Got questions?
+What's the difference between subscription credits and top-up credits?
+Subscription credits are included in your plan and reset at the start of each billing cycle — unused credits don't roll over.
+Top-up credits are purchased separately, never expire, and are used automatically once your monthly credits run out. Top-ups are only available to users on Basic and Pro plans.
+How much do operations cost?
+Credit costs vary depending on the type of action and the model used. For more details, please see the External Models pricing as well.
+What payment methods are accepted?
+Recraft accepts credit cards, debit cards, and bank transfers. Payments are processed securely via Stripe.
+Can I get a refund?
+Refunds are available if your account has used fewer than 30 credits in total and your most recent payment was made within the past 30 days. To request one, cancel your subscription and contact support at help@recraft.ai. Refunds are issued to the original payment method.
+How do I cancel my subscription?
+You can cancel at any time: Click your profile in the upper right and select "Manage subscription" — Click "Cancel plan" and confirm
+Your plan remains active until the end of the current billing period. After cancellation, images created during your paid subscription remain private and under your ownership.
+Who owns the images I generate on the Free plan?
+Images generated on the Free plan are owned by Recraft. They are publicly visible in the community gallery and are not licensed for commercial use.
+Who owns the images I generate on a paid plan?
+Paid plans grant you full ownership and commercial rights for all images generated while subscribed. Images remain private and are not shown in the community gallery.
+What happens to my images if I cancel my subscription?
+Images created during a paid subscription remain private and under your ownership even after the subscription ends.
+
+--- raw DOM query for price spans (second representation) ---
+[
+  {"text":"$0","cls":"text-headline-1 text-content-1"},
+  {"text":"$10","cls":"text-headline-1 text-content-1","parentText":"$10per month\nbilled annually $120"},
+  {"text":"$16","cls":"text-headline-1 text-content-1","parentText":"$16per month\nbilled annually $192"},
+  {"text":"$18","cls":"text-headline-1 text-content-1","parentText":"$18per month per seat\nbilled annually $211"}
+]
+
+--- billing toggle DOM state ---
+<button type="button" role="switch" aria-checked="true" data-state="checked" value="on" class="...data-[state=checked]:bg-base-12...">
+(visually: knob right-aligned toward "Pay annually (save 20%)"; that label rendered in purple/emphasized, "Pay monthly" in grey)

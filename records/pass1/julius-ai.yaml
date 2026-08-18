@@ -1,0 +1,156 @@
+product_id: "julius-ai"
+product_name: "Julius AI"
+category: "AI data analysis"
+product_status: "active"
+paid_submission: "no"
+entry_tier_name: "Plus"
+coder_pass: 1
+coder_role: "primary"
+collection_date: "2026-08-09"
+recheck_date: "not_applicable"
+primary_source_url: "https://julius.ai/pricing"
+archive_url: "local_copy_only"
+archive_status: "local_copy_only"
+default_display_state: "Pricing page loaded 2026-08-09 from Turkey network egress (Superonline ISP, per archive.org response headers), English UI, prices shown directly in USD with no localization; billing toggle defaulted to Yearly/annual (SAVE -20% badge) confirmed via DOM (input#pricing-yearly checked=true, .yearly-price display:block / .monthly-price display:none); no cookie-consent banner encountered."
+
+sources:
+  - { url: "https://julius.ai/pricing", kind: "pricing", accessed: "2026-08-09", archive: "local_copy_only", note: "Two web.archive.org/save/ attempts both returned HTTP 520 (archive.org-side error); local rendered-text copy saved at julius-ai-sources/pricing.txt. Client-side rendered (React) pricing table; static fetch (WebFetch, curl) returned HTTP 403 Cloudflare block, so page was read via browser rendering per D-005." }
+  - { url: "https://julius.ai/tos", kind: "tos", accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809172111/https://julius.ai/tos", note: "Last Updated: March 6, 2026 per document. Local excerpt saved at julius-ai-sources/tos.txt." }
+  - { url: "https://julius.ai/docs/account/managing-subscriptions", kind: "docs", accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809172142/https://julius.ai/docs/account/managing-subscriptions", note: "Local excerpt saved at julius-ai-sources/managing-subscriptions.txt." }
+  - { url: "https://julius.ai/docs/billing/credits-overview", kind: "docs", accessed: "2026-08-09", archive: "local_copy_only", note: "Two web.archive.org/save/ attempts both returned HTTP 520. Local copy at julius-ai-sources/credits-overview.txt, including expanded FAQ accordion content read from DOM." }
+  - { url: "https://julius.ai/docs/account/refund-policy", kind: "refund", accessed: "2026-08-09", archive: "local_copy_only", note: "Two web.archive.org/save/ attempts both returned HTTP 520. Local copy at julius-ai-sources/refund-policy.txt." }
+  - { url: "https://julius.ai/docs/faqs", kind: "docs", accessed: "2026-08-09", archive: "local_copy_only", note: "Two web.archive.org/save/ attempts both returned HTTP 520. Local copy at julius-ai-sources/faqs.txt, including expanded FAQ accordion content." }
+
+variables:
+  headline_price_usd: { value: "16.00", source: "https://julius.ai/pricing", evidence: "Plus plan shows '$16 / month' in the default Yearly-toggle display state (DOM: .yearly-price block visible, input#pricing-yearly checked=true). Entry tier per sampling-rules 7.2: lowest annual-equivalent cost among paid tiers (Plus 16x12=192.00 vs Pro 444.00, Max 1992.00, Business 4500.00, Ultra 4992.00)." }
+  headline_billing_basis: { value: "per_month_billed_annually", source: "https://julius.ai/pricing", evidence: "Price shown as '$16 / month' under the 'Yearly' toggle (SAVE -20%); confirmed by docs (credits-overview): 'Annual plans are billed once per year at a discounted rate, with all credits granted upfront.'" }
+  first_charge_amount_usd: { value: "192.00", source: "https://julius.ai/docs/billing/credits-overview", evidence: "'Annual plans are billed once per year at a discounted rate, with all credits granted upfront.' Plus $16/mo default display state x 12 = 192.00. See computation_assumptions." }
+  mandatory_addon_present: { value: "no", source: "https://julius.ai/pricing", evidence: "No required charge beyond the plan price is stated for any Plus-tier feature on the pricing page or in managing-subscriptions / credits-overview docs; all listed Plus features are included in the $16/mo price with no separate module fee mentioned anywhere." }
+  annual_condition_disclosure: { value: "adjacent", source: "https://julius.ai/pricing", evidence: "The 'Yearly / SAVE -20% / Monthly' toggle sits immediately above the plan cards and directly controls the displayed figure ($20 to $16 for Plus); per codebook section 7, 'the label of the toggle attached to it' qualifies as adjacent." }
+  annual_default_toggle: { value: "annual_preselected", source: "https://julius.ai/pricing", evidence: "DOM verification on load, before any interaction: input#pricing-yearly checked=true, input#pricing-monthly checked=false; .yearly-price computed style display:block, .monthly-price computed style display:none." }
+  free_plan_exists: { value: "yes", source: "https://julius.ai/pricing", evidence: "'Free' plan card, '$0 / month', 'Get started with Free', listed as a standing plan alongside the paid tiers." }
+  free_plan_cap_documented: { value: "all_quantified", source: "https://julius.ai/pricing", evidence: "Free-plan limits stated: '2 GB of RAM' (quantified standing limit) and credits ('25 welcome bonus + 25 daily credits' per credits-overview table). Both competing readings of the disputed credit figure (see free_plan_cap_value) are themselves quantified, so quantification itself is not in question, only the specific number." }
+  free_plan_cap_value: { value: "conflicting", source: "https://julius.ai/docs/billing/credits-overview", evidence: "Table: 'Free: 25 welcome bonus + 25 daily credits'. FAQ 'When are credits granted?': 'Free plan users receive a one-time grant of 100 credits when they sign up; these credits do not renew.' Both statements are on the same official page and are incompatible. Full detail in conflict_note." }
+  free_plan_watermark: { value: "unknown", source: "https://julius.ai/tos", evidence: "No document (pricing page, ToS, credits-overview, FAQs) states whether free-plan outputs carry a watermark or Julius branding; the word 'watermark' does not appear in any of them (checked via full-text keyword search of each)." }
+  free_plan_duration: { value: "perpetual", source: "https://julius.ai/pricing", evidence: "Free is listed as a standing plan card alongside paid tiers with no expiry stated anywhere; framed as ongoing use ('For individuals to complete small projects and basic analysis'), not a time-limited introductory period." }
+  trial_exists: { value: "no", source: "https://julius.ai/pricing", evidence: "No trial language appears on the pricing page, FAQs, ToS, managing-subscriptions, or credits-overview docs (checked via full-text keyword search for 'trial' across all five documents); the product offers a permanent Free plan in place of a time-limited trial." }
+  trial_card_required: { value: "not_applicable", source: "not_applicable", evidence: "No trial exists (trial_exists = no)." }
+  trial_length_days: { value: "not_applicable", source: "not_applicable", evidence: "No trial exists (trial_exists = no)." }
+  trial_auto_converts: { value: "not_applicable", source: "not_applicable", evidence: "No trial exists (trial_exists = no)." }
+  credit_system_present: { value: "yes", source: "https://julius.ai/pricing", evidence: "All paid tiers are metered in 'credits' (e.g. 'Plus: 24,000 credits per year'); per docs, 'Instead of counting messages, Julius now measures usage in credits' — an intermediate currency, not output units stated directly." }
+  credit_unit_defined: { value: "no", source: "https://julius.ai/docs/billing/credits-overview", evidence: "FAQ: 'How many credits does a single message cost? There is no single answer -- cost depends on the message complexity and which tools are invoked.' No document ties one credit to a fixed output unit." }
+  credit_to_output_rate_published: { value: "no", source: "https://julius.ai/docs/billing/credits-overview", evidence: "Same FAQ confirms no rate is published for any output type; a further FAQ, 'Does model selection affect credit usage?', answers 'Yes -- model choice is one of the biggest drivers of credit consumption', confirming cost varies with no fixed conversion stated anywhere." }
+  credit_rate_location: { value: "absent", source: "https://julius.ai/docs/billing/credits-overview", evidence: "No credit-to-output rate is published in any document class checked (pricing page, docs/FAQs, ToS)." }
+  cost_per_output_unit: { value: "other", source: "https://julius.ai/pricing", evidence: "Product sells credit-metered access to a general-purpose AI data-analysis agent (chat responses, code execution, charts, reports, slides all drawn from one credit pool); access is metered (not unmetered, so per_seat_month's own trigger condition is not met) and no single listed artifact-unit fits. Named unit in coder_note per rule 3." }
+  cost_per_output_computable: { value: "no", source: "https://julius.ai/docs/billing/credits-overview", evidence: "'How many credits does a single message cost? There is no single answer -- cost depends on the message complexity and which tools are invoked.' A published conversion figure is required and does not exist (rule 6); the figure would also require an assumption about typical task complexity (rule 7)." }
+  computation_assumptions: { value: "Plus (entry tier): pricing page default Yearly state shows $16/mo; credits-overview docs state annual plans 'billed once per year... all credits granted upfront'; 16 x 12 = 192.00 = first_charge_amount_usd. cost_per_output not computed: credit-to-task rate unpublished.", source: "https://julius.ai/docs/billing/credits-overview", evidence: "Annual plans are billed once per year at a discounted rate, with all credits granted upfront." }
+  credit_rollover_policy: { value: "expires_at_period_end", source: "https://julius.ai/docs/billing/credits-overview", evidence: "FAQ: 'Do unused credits roll over? No. Unused credits expire at the end of your billing cycle and do not carry over.' Independently confirmed by ToS: 'Unused credits expire at the end of each billing cycle and do not roll over.'" }
+  failed_generation_charge_policy: { value: "unknown", source: "https://julius.ai/docs/faqs", evidence: "Troubleshooting FAQs ('Julius crashed in the middle of an analysis', 'What can I do if my container is crashing?') describe recovery steps but state nothing about whether credits are consumed for a failed or crashed generation; not addressed in ToS, refund policy, or credits-overview either." }
+  auto_renewal_default: { value: "on", source: "https://julius.ai/docs/account/managing-subscriptions", evidence: "'Your subscription will auto-renew monthly or annually, depending on the type of subscription you have purchased.'" }
+  auto_renewal_disclosure_location: { value: "help_center_only", source: "https://julius.ai/docs/account/managing-subscriptions", evidence: "Auto-renewal is stated explicitly only on this docs/help-center page; full-text search of the ToS finds no auto-renewal statement (only an unrelated 'renewals' in the IP-rights clause), and the pricing page does not mention renewal at all." }
+  renewal_notice_commitment: { value: "unknown", source: "https://julius.ai/docs/account/managing-subscriptions", evidence: "No document commits to, or disclaims, notifying the buyer in advance of a renewal charge; managing-subscriptions, ToS, and the refund policy are all silent on advance notice." }
+  refund_policy_exists: { value: "yes", source: "https://julius.ai/docs/account/refund-policy", evidence: "'Refunds are not automatically granted and are reviewed on a case-by-case basis. If you believe you are entitled to a refund, please contact us...'; a 'Processing Approved Refunds' section confirms approvals occur." }
+  refund_window_days: { value: "unknown", source: "https://julius.ai/docs/account/refund-policy", evidence: "No day-count window is stated anywhere in the dedicated Refund Policy page, the ToS, or the FAQs; refunds are discretionary and case-by-case with no stated eligibility period." }
+  refund_conditions: { value: "conditional", source: "https://julius.ai/docs/account/refund-policy", evidence: "'Refunds are not automatically granted and are reviewed on a case-by-case basis'; a named-reason request with receipt number is required, and the vendor 'reserve[s] the right to deny refund requests... including in cases involving misuse... or bad faith or abuse.'" }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://julius.ai/docs/account/managing-subscriptions", evidence: "'Navigate to the Subscription page. Click Invoices and Payment Methods to open your billing portal. Click Cancel plan.' Confirmed by ToS: 'You may cancel and delete your Account at any time by either using the features on the Services to do so... or by written notice.'" }
+  refund_policy_location: { value: "dedicated_refund_page", source: "https://julius.ai/docs/account/refund-policy", evidence: "The substantive refund policy (process, conditions, discretion, contact route) lives only on this dedicated page; the ToS states only the narrower 'credits are non-refundable except where required by law' point, which this page also repeats." }
+  commercial_use_lowest_tier: { value: "unknown", source: "https://julius.ai/tos", evidence: "No document (pricing page, ToS, docs, FAQs) contains the word 'commercial' in relation to output-use rights; ToS grants full ownership of AI Content (Section 4) but does not separately address commercial versus personal use of that content on any tier." }
+  watermark_removal_tier: { value: "unknown", source: "https://julius.ai/pricing", evidence: "'Watermark' does not appear anywhere in the pricing page, ToS, docs, or FAQs (checked via full-text keyword search), despite paid tiers advertising exportable artifacts ('Export slides, HTML artifacts, charts, and images') that could plausibly carry branding." }
+  output_ownership_statement: { value: "user_owns", source: "https://julius.ai/tos", evidence: "'You exclusively own all right, title, and interest in and to the AI Content, including all associated Intellectual Property Rights.' ... 'We do not claim any ownership rights in any such User Generated Content...'" }
+  usage_cap_quantified: { value: "some_quantified", source: "https://julius.ai/pricing", evidence: "Plus (entry tier): '2,000 credits' monthly / '24,000 credits per year' and '1 seat included' are quantified. But 'Unlimited file storage formats' and 'Unlimited charts' are unlimited claims qualified by ToS Section 18's unquantified discretionary clause ('Julius AI may also impose limits on certain features or restrict your access... without notice'), so per codebook rule 3 they do not count as quantified." }
+  unquantified_limit_clause: { value: "present", source: "https://julius.ai/tos", evidence: "Section 18: 'Julius AI may also impose limits on certain features or restrict your access to part or all of the Services without notice or liability.' A discretionary, no-figure reservation of the right to limit use, read in full together with the rest of the ToS." }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): all five paid tiers are generally-available,
+  sales-contact-free candidates. Annual-equivalent single-seat costs computed from the
+  pricing page's default (Yearly) display state: Plus 16x12=192.00 (WINNER), Pro
+  37x12=444.00, Max 166x12=1992.00, Business 375x12=4500.00 (self-serve up to 50 team
+  members; only >50 requires sales contact), Ultra 416x12=4992.00. Free ($0) is not a
+  paid-tier candidate.
+
+  Judgment calls:
+  - cost_per_output_unit coded "other", named unit: credit-metered AI task/message with
+    no single fixed output type (chat response, code execution, chart, and report all
+    draw from one undifferentiated credit pool); access is metered (hard monthly/annual
+    credit caps exist), so per_seat_month's own "unmetered access" trigger condition
+    (rule 2) is not met, ruling that classification out despite the product's seat-based
+    plan structure.
+  - commercial_use_lowest_tier and watermark_removal_tier coded unknown rather than
+    not_applicable: the product does produce outputs (analyses, exportable charts,
+    slides, images) these constructs could plausibly attach to, and no document states
+    the construct is absent. Codebook section 2.2 warns specifically against defaulting
+    to not_applicable without positive documented absence, since that would wrongly
+    remove these items from the index denominator rather than scoring the gap as 0.
+  - usage_cap_quantified coded some_quantified via the "unlimited claim qualified by a
+    general discretionary clause" mechanism in codebook rule 3, applying ToS Section 18's
+    general "may impose limits... without notice" reservation to the pricing page's
+    "Unlimited file storage formats" / "Unlimited charts" bullets on Plus. This mirrors
+    the codebook's own Vendor U worked example precisely (unlimited claim + fair-use-type
+    clause elsewhere = not quantified), and is also why unquantified_limit_clause = present
+    (protocol 8.3.10's intentional F1/F2 double-count).
+  - refund_policy_location coded dedicated_refund_page rather than multiple: only the
+    dedicated Refund Policy page states the substantive case-by-case policy and process;
+    the ToS only reiterates the narrower "credits are non-refundable" point already on
+    that page, so the operative policy is not meaningfully duplicated across classes.
+  - annual_condition_disclosure coded adjacent on the strength of the shared Yearly/
+    Monthly toggle's label sitting immediately above the price cards and directly
+    controlling each card's displayed figure; codebook section 7 explicitly allows a
+    toggle label to qualify as adjacent.
+
+  Documentation-internal inconsistencies observed on the vendor's own pages (beyond the
+  free-plan credit conflict already coded on free_plan_cap_value, see conflict_note):
+  the credits-overview FAQ "How do credits work on annual plans?" states a Pro annual
+  subscriber "gets all 50,000 credits for the year", which matches neither the same
+  page's own plan table (Pro 5,000/mo x 12 = 60,000/yr) nor the pricing page ("60,000
+  credits per year" on the Pro card). Pro is not this record's entry tier, so this was
+  not coded against any variable; noted here only as context, since it corroborates the
+  general pattern of internally inconsistent credit figures on this vendor's docs.
+
+  Two claims surfaced by WebSearch (used only to locate official pages, per protocol
+  6.3/6.2) were checked against the live documents actually read today and NOT found in
+  them, so were disregarded entirely: (1) a "personal, non-commercial use" license
+  restriction supposedly in the ToS -- not present in the live ToS (Last Updated March 6,
+  2026) read in full; (2) a "14-day refund policy" -- not present anywhere in the live,
+  dedicated Refund Policy document. Neither third-party claim was used to code any value.
+
+  Network/currency: egress observed as a Turkish ISP (Superonline Iletisim Hizmetleri
+  A.S.) via archive.org response headers (D-003 context). No currency localization was
+  observed anywhere on julius.ai -- prices rendered directly in USD on first load -- so
+  no non_usd coding arose and no further D-003 cross-check was required.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 re-read 2026-08-10: re-opened https://julius.ai/pricing live and confirmed
+  entry_tier_name (Plus), headline_price_usd ($16), headline_billing_basis
+  (per_month_billed_annually) and first_charge_amount_usd ($192.00) in a SECOND representation
+  independent of the original innerText transcript: a card-by-card structural DOM query
+  (div.pricing-card containers, each card's plan-name text paired directly with its own
+  .yearly-price/.monthly-price divs). Confirmed toggle default from the DOM (input#pricing-yearly
+  .checked=true before interaction), confirmed the Plus card's $16 pairs correctly with the Plus
+  name (not a shifted row), and confirmed 0 <sup>/<sub> elements exist anywhere on the page
+  (rules out a nicepage-class superscript-cents misread). Re-read
+  julius.ai/docs/billing/credits-overview and confirmed "Annual plans are billed once per year at
+  a discounted rate, with all credits granted upfront" is still stated, present both in the
+  rendered innerText and in the page's embedded Next.js RSC payload (a second, independent
+  representation of the same source text). Evidence saved to
+  julius-ai-sources/d009-second-representation-2026-08-10.txt. No correction; all four scoped
+  values confirmed as coded.
+
+  D-009 provenance check (coordinator addendum, 2026-08-10): first_charge_amount_usd (192.00) IS
+  a coder computation (16 x 12), not a vendor-published annual total, per this record's own
+  computation_assumptions field. Codebook rule 2 permits multiplying a monthly figure by 12 only
+  where a document states the plan is charged once for twelve months. The supporting document,
+  julius.ai/docs/billing/credits-overview, states "Annual plans are billed once per year at a
+  discounted rate, with all credits granted upfront" -- re-read live today (see the D-009 note
+  above) and unchanged. "Billed once per year... upfront" is a positive statement that the annual
+  plan is charged as a single lump sum covering the year, which is what rule 2 requires ("charged
+  once for twelve months" and "billed once per year" describe the same cadence); it is not merely
+  a "billed annually" label with no lump-sum statement (contrast the mubert record in this same
+  slice, correctly coded unknown for exactly that gap, and the plus-ai case the coordinator cited).
+  Provenance verdict: SUPPORTED. 192.00 stands; not corrected to unknown.
+
+conflict_note: "Free-plan credit allowance disputed within a single official document, https://julius.ai/docs/billing/credits-overview (accessed 2026-08-09): the 'Credits by plan' table states 'Free: 25 welcome bonus + 25 daily credits' (a recurring daily grant), while the FAQ 'When are credits granted?' on the same page states 'Free plan users receive a one-time grant of 100 credits when they sign up; these credits do not renew' (a single one-time grant, different number). Both are equal-authority statements on the same source; protocol 6.2's hierarchy does not distinguish a table from an FAQ accordion on one page, so free_plan_cap_value is coded conflicting. free_plan_cap_documented itself is unaffected (all_quantified) since both competing readings are themselves numerically quantified -- only the figure, not the fact of quantification, is in dispute."
+
+register_events: []
+
+status: "complete"

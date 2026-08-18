@@ -1,0 +1,25 @@
+URL: https://support.fotor.com/hc/en-us/articles/4404154276121-How-to-Start-and-Cancel-the-Free-Trial
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save returned HTTP 520/429 on repeated attempts (Cloudflare/Zendesk bot protection blocks the archive.org crawler); this is the local evidentiary copy per protocol section 6.4.
+---
+Title: How to Start and Cancel the Free Trial? – Fotor Help Center
+
+Fotor Help Center > Payment, Subscriptions and Credits > Fotor Subscription
+How to Start and Cancel the Free Trial?
+Nora, 11 months ago Updated
+
+Recently, Fotor provides a 7-day free trial for new registrants. You can unlock all Fotor Pro premium privileges for free, including AI tools, advanced editing and beauty tools, 100,000+ premium templates, and other creative resources.
+
+Who can enjoy the free trial?
+New users who have just registered for Fotor within 2 days.
+Note: If your account registration has been more than three days. If you have subscribed, unsubscribed, exchanged with the promotion code, or enjoyed the free trial, you will not get the 7-day free trial anymore.
+
+Can I use a free trial and a discount together?
+No, it's not possible to combine a free trial with a discount. If you choose the free trial, you won't be able to apply the discount when purchasing our premium plan. Similarly, opting for the discount means you won't have access to the free trial period. Choose the option that best suits your needs!
+
+When will I be charged after starting the free trial?
+You will be charged after the 7-day free trial. However, due to regional differences and network delays, the fee will be charged a few hours in advance. Therefore, in order to ensure timely cancellation of subscriptions, we recommend that you cancel your subscription at least one day in advance.
+Note: If you do not cancel the trial within the stipulated time and the deduction is successful after that, Fotor will not provide a refund. For the details please check Article 6.2 (about Subscription) in the Terms of Service.
+
+How to stop the free trial?
+If you want to stop the free trial, you need to cancel it before the end of the free trial. Owing to the fee will be charged a few hours in advance, it's better to stop it at least one day in advance.
+Please go to Account Setting and then choose "Subscription" → "Cancel" to stop it. You can also get more details about How to Cancel the Subscription.

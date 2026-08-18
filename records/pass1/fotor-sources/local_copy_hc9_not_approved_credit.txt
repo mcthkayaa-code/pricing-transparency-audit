@@ -1,0 +1,13 @@
+URL: https://support.fotor.com/hc/en-us/articles/17764598361369-Why-is-the-AI-generated-image-not-approved-What-are-the-offensive-words-Does-it-consume-credit
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save blocked (Cloudflare/Zendesk); local evidentiary copy per protocol section 6.4.
+---
+Title: Why is the AI generated image "not approved"? What are the offensive words? Does it consume credit? – Fotor Help Center
+Fotor Help Center > AI Tools > AIGC (AI Image Generator)
+Nora, 3 years ago Updated
+
+Why is the image "not approved"? Two main reasons: (1) Offensive language in the prompt is automatically banned, the image is not generated and an "Image not approved" message is shown. (2) Offensive content: the generated image itself may be flagged by the NSFW filter before being displayed, even if the prompt had no offensive words; false positives are acknowledged as possible.
+
+What offensive words can be automatically banned? Explicit sexual language, racial slurs, hate speech, and other offensive/discriminatory language; the banned-word list is updated frequently.
+
+Does it consume credit when the generated image is not approved?
+No, your credits will not be consumed when a generated image is not approved. You will only be charged credits when an image is generated and approved successfully.

@@ -1,0 +1,34 @@
+Kept ONLY for coder_note / conflict_note product-line and cross-channel divergence documentation, per this
+assignment's explicit instruction. NO codebook variable in this record is coded from anything in this file.
+
+=== Speechify Studio (separate product line, out of scope for this record) ===
+URL: https://speechify.com/pricing-studio/
+Accessed: 2026-08-12 (WebFetch summary; not independently browser-rendered or archived -- out-of-scope context
+  only, so the full two-fetch/two-archive rigor was not spent here)
+Summary: Studio is a DIFFERENT product from the Premium/Free TTS reader coded in this record -- own pricing page,
+  own three tiers (Free/$0, Studio Starter $100/yr, Studio Creator $300/yr "Best Value"), and a genuine CREDIT
+  system ("Studio credits are the universal currency... voiceovers consume 1 credit per second, dubbing 3
+  credits per second; re-exporting unchanged speech is free"). Commercial use is explicit and tier-gated the
+  OPPOSITE way from Premium: Studio's Free plan states "no commercial usage rights" while BOTH paid Studio tiers
+  grant "commercial usage rights in perpetuity" -- consistent with, and the source of, Terms of Service 4.4's
+  "with the exception of Speechify Voice Over Studio" carve-out relied on for this record's
+  commercial_use_lowest_tier value.
+
+=== App Store / Play Store listings (never a qualifying coding source per codebook-v1.md section 4) ===
+Apple App Store: https://apps.apple.com/us/app/speechify-text-to-speech/id1209815023
+  Accessed 2026-08-12 (browser render). Listing shows only "Free · In-App Purchases" with no itemized IAP price
+  list surfaced on the current page layout (Apple's newer App Store page design does not print a price ladder
+  on this app's listing, unlike some other apps). No price figure could be confirmed or refuted from this page.
+Google Play: https://play.google.com/store/apps/details?id=com.cliffweitzman.speechify2&hl=en
+  Accessed 2026-08-12 (browser render). Listing shows only an "In-app purchases" badge with no price range text
+  found anywhere in rendered body text (regex-scanned for $-figures, zero matches).
+Neither store listing produced a verifiable price to compare against the web price ($29/mo, $139/yr), so no
+web-vs-app-store PRICE divergence could be confirmed either way from official store pages. (Unverified
+third-party aggregator pages surfaced a $19/mo figure in passing; not used for anything, per the
+third-party-sources-never-justify-a-value rule -- noted only as a reason a closer look was warranted.)
+What COULD be confirmed, from the vendor's own Terms of Service / Refund Policy (qualifying sources): Speechify
+explicitly documents a REFUND-RIGHTS divergence by purchase channel -- purchases made via the Apple App Store or
+Google Play are "final sale," with NO Speechify-issued refund regardless of the 7-day/annual/500-word conditional
+right that applies to direct web purchases; App Store/Play Store buyers must use Apple's/Google's own refund
+mechanisms instead. This is recorded in coder_note as the confirmed cross-channel divergence, sourced to the ToS
+and Refund Policy rather than to either store listing.

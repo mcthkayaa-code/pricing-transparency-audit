@@ -1,0 +1,225 @@
+=== SOURCE: https://pika.art/faq | accessed: 2026-08-10 | method: rendered read via r.jina.ai headless-render proxy (same client-side bailout as ToS) | network note: Turkey network location ===
+
+Title: Pika
+
+URL Source: https://pika.art/faq
+
+Markdown Content:
+## Frequently Asked Questions
+
+#### [](https://pika.art/faq#3273e4d34ad74f2abf7b171e0d1c0b8f "About Pika")About Pika
+
+### What is Pika?
+
+Pika is a video generation platform and App that allows you to create mindblowing, social-first content using AI. It’s the companion to your wildest dreams and weirdest content ideas. If you can imagine it, you can make it with a combination of Pikaffects, Pikascenes, image-to-video and text-to-video features.
+
+### How does Pika work**?**
+
+We could tell you, but then we’d have to… have you sign an NDA. Basically, we have a very strong tech team that developed the technology to train our own video model from scratch. That means it’s entirely ours! It doesn’t exist anywhere else on the market! We’re pretty darn excited about it! We’ve got scientists over here who have published many influential papers on AI, so all of that innovation gets baked into our model.
+
+### What are the signatures of all your models and features?
+
+**Pika 2.2, o**ur latest model, introduces Pikaframes and generations up to 10 seconds. Pikaframes is a stunning image-to-video feature that allows you to upload the first and the last frame as still images to generate a video that defies reality and expectations. Choose your generation length from 1-10 seconds for ultimate control.
+
+**With Pika 2.1**, anything you dream can come to life in high quality 1080p with mindblowing motion, sharp details, impressive character control and cinematic camera moves.
+
+**Pika 1.5** is the proud parent of Pikaffects. They will blow your mind. And melt it. And inflate it. And crush it with a hydraulic press. And squish it. And cake-ify it. Our effects give you more opportunity for creative mayhem than ever.
+
+**Turbo** is the model to use when you feel the need for speed. It’s up to 3x faster and 7x cheaper – all with high quality outputs. Get amazing, with lightning-fast generations. Fewer credits spent on each generation means you can make more than ever before.
+
+**Pikadditions** is our video-to-video feature that lets you add anyone or anything to any video. Add surprising objects, people, fantastical elements to your video while preserving the original video and sound. Or put yourself into any video scene you want. Your wildest video dreams are possible.
+
+**Pikaswaps** is our video-to-video feature that lets you swap objects in your real-world video with wild modifications and alterations, making any piece of your video become something entirely new. It’s a giant leap forward in enhancing and augmenting real-world footage with AI tools.
+
+**Pikatwists** is a video-to-video feature that lets you add a twist to your creative content. Enter a prompt and change the action of any character or object in your video, while maintaining the integrity of the original video.
+
+### Can I use the content I made in Pika for commercial purposes?
+
+If you have a Pro or Fancy subscription, whatever you create using Pika can be used commercially, or non-commercially.
+
+If you have a Basic or Standard subscription, you can’t use your content for commercial purposes. For more details, see our[terms of service](https://pika.art/terms-of-service).
+
+### Are the videos I created in my Pika account private?
+
+No, but let us explain. For the most part, other people will only see your videos if you share them. However, any videos created after the recent update of our Terms on November 29, 2024, may be selected by Pika to populate our Templates page. In that sense, your videos are not private.
+
+If a video of yours is selected to be featured, other users will see your display name and the video you created. If you don’t want anyone to see your videos, you can delete them.
+
+We are planning to offer plans with a private mode soon.
+
+### How can I delete my Pika profile?
+
+Email us at support@pika.art if you really want to say goodbye to your account. Please note that if you have an active subscription, and you take this step, your subscription will be invalidated, and no refund will be provided.
+
+### Do you have a publicly accessible API?
+
+We’re flattered you asked! We’re taking on select partners. Interested? Learn more and apply here: [https://pika.art/api](https://pika.art/api)
+
+### Is Discord using the same model as the web app?
+
+Currently, Discord is using the free beta version.
+
+#### [](https://pika.art/faq#6611b97df0724ae5bea58d5a91a54d2c "Creating & Editing")Creating & Editing
+
+### What is the resolution of the videos?
+
+Different Pika models have different outputs:
+
+Pika 2.2 - 720p or 1080p
+
+Pika 2.1 - 1080p
+
+Pika 1.5 (Pikaffects) - 720p
+
+Pika Turbo - 720p
+
+Pikadditions - 720p (Turbo) or 1080p (Pro)
+
+Pikaswaps - 720p (Turbo) or 1080p (Pro)
+
+Pikatwists - 720p (Turbo) or 1080p (Pro)
+
+### How can I adjust a specific object or area of my video?
+
+Use Pikaswaps to modify a specific object or area of your video. Upload your video, enter your text prompt and watch your video transform. For even more creative control, you can add image reference to swap into the area of the video you want to manipulate. Simply upload your video and your image reference (your dog, a friend, balloon art, anything!), and enter your prompt to indicate where you want to see that image swapped in. Now watch that specific image come to life swapped into your video just where you wanted it.
+
+### How long can Pika videos be?
+
+Pika generations’ lengths depend upon the specific model or feature selected.
+
+For Pika Model 2.2, Pikaframes generations can be up to 25 seconds. Other Model 2.2 generations (image-to-video, text-to-video or Pikascenes) can be either 5 or 10 seconds.
+
+All other models and features have 5 seconds long generations.
+
+### How can I get rid of the Pika watermark?
+
+Why? Don’t you like our logo? Seriously, though, we get it. If you upgrade to a Pro or Fancy plan, your videos can be downloaded watermark-free.
+
+If you share a video directly from Pika, videos have a watermark for users of all tiers.
+
+### How do I use Pikaffects like exploding or melting?
+
+Click on the “Pikaffects” button below the prompt bar. From there, select the effect you want to use and upload an image. Get crazy!
+
+### I’d like to try a cool camera shot. How do I do that?
+
+Include sexy keywords in your prompt, like bullet time, vertigo, timelapse or dolly down. Details can help, like “bullet time 360 degrees” or “vertigo into a closeup of that raccoon’s face.”
+
+#### [](https://pika.art/faq#9dc29180d94244eba86fa91e83689419 "Subscriptions & Billing")Subscriptions & Billing
+
+### How does monthly video pricing work?
+
+Monthly video pricing is based on the number of credits each plan gives you per month.
+
+On the Basic (free) plan you get 150 credits per month. On Standard, you get 700. The Pro plan offers 2,300 credits. And the Fancy plan gives you 6,000.
+
+Feel like that’s not enough? If you’re on any of the paid plans, you can purchase additional credits that never expire.
+
+### How many credits do videos cost to generate?
+
+Credits are our way of tracking your video generations across your subscription plan. Each different type of generation has a different credit value – it all depends on what type of video you are creating:
+
+**Turbo Model:**
+
+*   5 credits (image-to-video or text-to-video)
+
+*   10 credits (using Pikascenes, Pikadditions or Pikaswaps)
+
+*   60 credits (using Pikatwists)
+
+**Pro Mode:**
+
+*   20 credits (using Pikadditions or Pikaswaps)
+
+*   30 credits (using the Selfie With Your Younger Self feature)
+
+*   80 credits (using Pikatwists)
+
+**1.0/1.5 Model:**
+
+*   15 credits
+
+**2.1 Model:**
+
+*   35 credits (image-to-video or text-to-video)
+
+*   60 credits (using Pikascenes)
+
+**2.2 Model:**
+
+**Generation Type****5 seconds****10 seconds**
+Pikaframes 8 credits (720p) 25 credits (1080p)15 credits (720p) 60 credits (1080p)
+Image-to-Video or Text-to-Video 6 credits (720p) 18 credits (1080p)12 credits (720p) 45 credits (1080p)
+Pikascenes 15 credits (720p) 35 credits (1080p)30 credits (720p) 100 credits (1080p)
+
+### Do my generations cost the same amount of credits on Web and App?
+
+Yes! All the credit values are the same from Web to App.
+
+### If I have a Pika account can I use it on the Web AND on the iOS App?
+
+For now, generations you make from one account will show up in your account under “My Videos” no matter whether you generate them from the Web or the App.
+
+### What happens if I want to change my plan?
+
+If you subscribed through the App, your plan is managed by your Apple subscription. The App’s profile page will take you to the Settings > Apple ID > Subscriptions page to manage your plan directly through Apple’s system.
+
+If you subscribed through the Web, go to your profile on the Web to change your plan. It’s that simple!
+
+### How do I upgrade my plan?
+
+**ON THE WEB:**Head to the Pricing page (located in the dropdown menu under your profile name), and select the plan you want. Based on your current plan, there are a few billing scenarios for your upgrade:
+
+*   If you’re starting from Basic, just start a new Standard, Pro, or Fancy plan at the billing frequency of your choice.
+
+*   If you’re going from a monthly plan, you can select either a new monthly or yearly plan. The upgrade will take place immediately, and the price will be discounted based on your unused credits for that month.
+
+*   If you’re going from a yearly plan, you can upgrade to a new yearly plan immediately, and the price will be discounted based on the remaining months, and the unused credits from the current month. You can only change a yearly plan to a weekly or monthly plan after the currently yearly billing cycle ends.
+
+**IN THE APP:**Click the “Upgrade” button in the top right corner of the screen, or go to your profile icon in the menu bar and and click “Upgrade”, and then select the plan you want. Based on your current plan, there are a few billing scenarios for your upgrade:
+
+*   If you’re starting from Basic, just start a new Standard, Pro, or Fancy plan at the billing frequency of your choice.
+
+*   If you’re going from a weekly or monthly plan, you can select either a new weekly, monthly or yearly plan. The upgrade will take place immediately, and the price will be discounted based on your unused credits for that month.
+
+*   If you’re going from a yearly plan, you can upgrade to a new yearly plan immediately, and the price will be discounted based on the remaining months, and the unused credits from the current month. You can only change a yearly plan to a weekly or monthly plan after the currently yearly billing cycle ends.
+
+### How do I downgrade my plan?
+
+Go to the Pricing page (located in the dropdown menu under your profile name) on the Web or to your Profile in the App, and select the plan you want. Note that your plan will only be downgraded at the end of your current billing cycle (i.e., at the end of the year for a yearly subscription, and at the end of the month for a monthly subscription or the end of the week for a weekly subscription).
+
+### How do I change the billing cycle of my plan?
+
+For monthly to yearly it can happen immediately. The price will be discounted based on your current unused credits. For yearly to monthly or monthly to weekly it can only happen at the end of the current yearly billing cycle.
+
+### How do I cancel my subscription?
+
+Sad question! In all seriousness, though, you can switch to the Basic plan on the Pricing page (located in the dropdown menu under your profile name), or hit the “Cancel subscription” button on your profile page. Please be aware that cancellation will go into effect at the end of your current billing cycle (i.e., at the end of a year for a yearly subscription, and at the end of the month for a monthly subscription, at the end of the week for a weekly subscription). This means that no pro-rated refund will be provided. For any other questions, you can also email us at support@pika.art.
+
+### Will my subscription renew automatically?
+
+Your subscription will renew automatically based on the type of subscription you have (weekly, monthly or yearly) so you don’t have to worry about anything.
+
+### Will my unused credits carry over?
+
+Video credits don’t carry over from month to month. However, On the Standard, Pro, and Fancy plans, you can purchase additional video credits, and those WILL carry over.
+
+### What if I want more videos?
+
+Upgrade to Standard, Pro, or Fancy and you will be able to buy as many videos via credits as your heart desires.
+
+Here’s the breakdown:
+
+*   $10 - 375 credits
+
+*   $20 - 750 credits
+
+*   $30 - 1125 credits
+
+### Why do you charge money?
+
+Believe it or not, every time you click generate, we have to pay for the use of some heavy-duty machines. Also: We have some talented scientists and artists on staff that need to be fed.
+
+#### [](https://pika.art/faq#c819149e1d3d44c0b064ab3e2f55c695 "Tech Issues")Tech Issues
+
+### What if I have questions that aren’t answered here?

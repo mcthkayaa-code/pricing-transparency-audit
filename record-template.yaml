@@ -1,0 +1,70 @@
+# RECORD TEMPLATE — copy this shape. Never open another product's record.
+# Allowed values and decision rules live in codebook-v1.md; this file fixes only the SHAPE.
+# ALWAYS QUOTE values: write value: "yes" / "no", never bare yes/no — unquoted, YAML turns
+# them into booleans and the dataset ends up holding one value in two spellings (D-006).
+
+product_id: <slug>
+product_name: <vendor's name for the product>
+category: <frame category>
+product_status: active|discontinued
+paid_submission: "yes"|"no"      # from the frozen frame row — QUOTE IT (unquoted, YAML makes it a boolean)
+entry_tier_name: <plan name|not_applicable|unknown>
+coder_pass: 1|2|3               # 3 = adjudication, which protocol 7.4 step 2 calls a third pass
+coder_role: primary|second|adjudicated
+collection_date: <YYYY-MM-DD>
+recheck_date: <YYYY-MM-DD|not_applicable>
+primary_source_url: <the pricing page>
+archive_url: <snapshot of the pricing page|archive_failed|local_copy_only>
+archive_status: archived|archive_failed|local_copy_only
+default_display_state: <one line per protocol 6.8: currency, billing toggle, region>
+
+sources:
+  - { url: <url>, kind: pricing|tos|refund|docs|other, accessed: <YYYY-MM-DD>, archive: <snapshot-url|archive_failed|local_copy_only>, note: <optional> }
+
+variables:
+  headline_price_usd: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  headline_billing_basis: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  first_charge_amount_usd: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  mandatory_addon_present: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  annual_condition_disclosure: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  annual_default_toggle: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  free_plan_exists: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  free_plan_cap_documented: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  free_plan_cap_value: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  free_plan_watermark: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  free_plan_duration: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  trial_exists: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  trial_card_required: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  trial_length_days: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  trial_auto_converts: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  credit_system_present: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  credit_unit_defined: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  credit_to_output_rate_published: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  credit_rate_location: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  cost_per_output_unit: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  cost_per_output_computable: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  computation_assumptions: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  credit_rollover_policy: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  failed_generation_charge_policy: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  auto_renewal_default: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  auto_renewal_disclosure_location: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  renewal_notice_commitment: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  refund_policy_exists: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  refund_window_days: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  refund_conditions: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  cancellation_self_serve: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  refund_policy_location: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  commercial_use_lowest_tier: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  watermark_removal_tier: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  output_ownership_statement: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  usage_cap_quantified: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+  unquantified_limit_clause: { value: <allowed value>, source: <url>, evidence: "<operative phrase when the rule keys on wording>" }
+
+coder_note: |
+  <entry-tier losing candidates with their annual-equivalent figures; any judgment call;
+   any correction to the frame row; and the attestation line:>
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "<sources that disagree, with both URLs and both quotes; empty string if none>"
+register_events:
+  - { type: vendor_edit|display_variant, detail: "<one line>", urls: [<url>] }
+status: in_progress|complete

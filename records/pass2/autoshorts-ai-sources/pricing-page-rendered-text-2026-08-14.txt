@@ -1,0 +1,82 @@
+SOURCE: https://autoshorts.ai (homepage, pricing section id="pricing")
+ACCESSED: 2026-08-14 (rendered read via browser, desktop viewport 1280x900, cookies not explicitly banner-prompted)
+METHOD: mcp Claude_Browser get_page_text (rendered DOM text extraction) + screenshots + DOM class inspection
+
+=== DEFAULT TOGGLE STATE (confirmed via DOM class, not just visual) ===
+document.querySelector matching leaf node with text "Monthly":
+  className = "BillingIntervalSwitchV2_option___bkyv BillingIntervalSwitchV2_selected__4fgLe"
+  parentClassName = "BillingIntervalSwitchV2_pillSwitchRoot__55JIj"
+=> "selected" class is on the Monthly option on page load, before any interaction.
+Visually: "Monthly" sits in a white pill (active), "Yearly" is plain text beside a "2 MONTHS FREE!" badge.
+
+=== RENDERED TEXT (relevant excerpt, full page text captured separately) ===
+PRICING
+PAY FOR WHAT YOU NEED
+Monthly | Yearly [2 MONTHS FREE!]
+
+FREE  $0
+Creates 1 Video (check)
+1 Series (check)
+0 Motion Credits (check)
+Auto-Post To Channel (cross/strikethrough)
+Edit & Preview Videos (cross/strikethrough)
+HD Video Resolution (cross/strikethrough)
+Background Music (cross/strikethrough)
+Voice Cloning (cross/strikethrough)
+No Watermark (cross/strikethrough)
+CTA: info badge "Temporarily paused" (no signup button)
+
+STARTER  $19/month
+Posts 3 Times A Week (check)
+1 Series [+/- selector] (check)
+27 Motion Credits (check) [info icon tooltip - see below]
+Auto-Post To Channel (check)
+Edit & Preview Videos (check)
+HD Video Resolution (check)
+Background Music (check)
+Voice Cloning (check)
+No Watermark (check)
+CTA: "TRY NOW!"
+
+DAILY  $39/month
+Posts Once A Day (check)
+1 Series [+/- selector] (check)
+62 Motion Credits (check)
+Auto-Post To Channel (check)
+Edit & Preview Videos (check) [feature list identical pattern to Starter, confirmed via embedded JSON watermark:0]
+CTA: "TRY NOW!"
+
+HARDCORE  $69/month
+Posts Twice A Day (check)
+1 Series [+/- selector] (check)
+124 Motion Credits (check)
+Auto-Post To Channel (check)
+Edit & Preview Videos (check)
+HD Video Resolution (check)
+[continues, confirmed via embedded JSON watermark:0]
+CTA: "TRY NOW!"
+
+=== MOTION CREDITS TOOLTIP (click on (i) icon next to "Motion Credits", Hardcore card) ===
+"Used to add motion to your videos. 1 credit adds motion to one image. A typical video may
+consume 15-20 credits if motion is applied to all scenes. Credits included in your plan reset
+each month, but additional credits can be purchased and do not expire."
+
+=== EMBEDDED JSON PAYLOAD (__NEXT_DATA__ script tag) - SECOND REPRESENTATION for all money values ===
+props.pageProps.plans = [
+  {id:1, name:"Free", billingInterval:"once", price:0, frequency:0, maxSeries:1, watermark:1, available:1},
+  {id:2, name:"Starter", billingInterval:"monthly", price:19, frequency:3, maxSeries:1, watermark:0, available:1},
+  {id:3, name:"Daily", billingInterval:"monthly", price:39, frequency:7, maxSeries:1, watermark:0, available:1},
+  {id:4, name:"Hardcore", billingInterval:"monthly", price:69, frequency:14, maxSeries:1, watermark:0, available:1},
+  {id:648, name:"Starter", billingInterval:"yearly", price:190, frequency:3, maxSeries:1, watermark:0, available:1},
+  {id:649, name:"Daily", billingInterval:"yearly", price:390, frequency:7, maxSeries:1, watermark:0, available:1},
+  {id:650, name:"Hardcore", billingInterval:"yearly", price:690, frequency:14, maxSeries:1, watermark:0, available:1}
+]
+-- CONFIRMS: monthly prices $0/$19/$39/$69 exactly match rendered text. watermark flag 1=Free only,
+   0=all paid tiers, matching the pricing-grid check/cross reading for "No Watermark".
+   "frequency" field = posts/week (3,7,14) matches "Posts 3 Times A Week / Once A Day (7/wk) / Twice A Day (14/wk)".
+   Yearly: Starter $190/yr (=$15.83/mo eff., 19x12=228, saves 38=2 months, matches "2 MONTHS FREE!" badge),
+   Daily $390/yr, Hardcore $690/yr. NOT the default display state (Monthly is default) - recorded for
+   completeness / not used for headline/first-charge (those read the default state only).
+
+=== HOMEPAGE HERO TEXT (top of page, above pricing) ===
+"No credit card required · Cancel anytime" (directly under "Start Creating Free" / "See Plans & Pricing" CTAs)

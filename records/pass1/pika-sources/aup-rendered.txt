@@ -1,0 +1,185 @@
+=== SOURCE: https://pika.art/acceptable-use-policy | accessed: 2026-08-10 | method: rendered read via r.jina.ai headless-render proxy (same client-side bailout as ToS) | network note: Turkey network location ===
+
+Title: Pika
+
+URL Source: https://pika.art/acceptable-use-policy
+
+Markdown Content:
+Last updated: 05/16/2025
+
+### [](https://pika.art/acceptable-use-policy#1f523e1d26f480a78026f7ddb02ee5c7 "Introduction")**Introduction**
+
+This acceptable use policy (“**AUP**”) applies to your use of the service (the “**Service**”) offered by Mellis, Inc. (“**Pika**,” “**we**,” “**us**,” or “**our**”), and are intended to ensure our Service is used in a safe, respectful, and inclusive manner. Failure to adhere to this AUP may lead to a warning, a request to modify your behavior, suspension or termination of your account and access to the Service, or other actions. We reserve the right to determine whether your conduct or use of the Service violates this AUP at our sole discretion. By accessing or using the Service, you agree to follow this AUPO. Capitalized terms used but not defined in this AUP have the meaning set out in the [Terms of Service](https://pika.art/terms-of-service).
+
+At Pika, we are committed to creating and supporting an all-inclusive, harassment-free, and diverse community.
+
+### [](https://pika.art/acceptable-use-policy#1f523e1d26f4808e800ff105d5efab5f "Expected Behavior")**Expected Behavior**
+
+We expect all our users to create a safe community for all other users and participants.
+
+As a member of our community, you are expected to:
+
+*   Avoid conflict and confrontation – we are all here to help and learn from one another.
+
+*   Not demean, discriminate, or harass others.
+
+*   Be mindful of your fellow users.
+
+*   Promptly alert us if you notice a dangerous situation, someone in distress, or any violation of this AUP, even if the issue appears minor.
+
+### [](https://pika.art/acceptable-use-policy#1f523e1d26f480268a38d86ea7591ed6 "User Responsibility")**User Responsibility**
+
+You are solely responsible for your use of the Service and for all Inputs you make available to Pika, whether by uploading them through the Service or otherwise making them accessible to others. You are also solely responsible for any Outputs generated via the Service. You assume all risk associated with your Inputs, including their transmission, and are fully responsible for their accuracy, quality, legality, and appropriateness.
+
+Content posted by users does not constitute approval or endorsement by Pika. We expressly disclaim all liability related to any content accessed, submitted, or generated through the Service. You may not use any Output to compete with Pika, including to develop or offer a competing product or service.
+
+This AUP includes examples of prohibited Inputs and uses. Pika reserves the right to investigate and take appropriate legal action, in its sole discretion, against any violations, including removing offending content, suspending or terminating user accounts, and reporting violations to law enforcement authorities.
+
+### [](https://pika.art/acceptable-use-policy#1f523e1d26f4802587eed3b52a574698 "Prohibited Uses")Prohibited Uses
+
+You may use the Service only for lawful purposes and in accordance with this AUP and the [Terms of Service](https://pika.art/terms-of-service). You must not use the Service or any Output:
+
+*   In any way that violates, or promotes, facilitates, or contributes to violation of, any applicable federal, state, local, or international law, ordinance, or regulation (collectively, “**Laws**”). Laws include, without limitation, Laws applicable to:
+
+    *   design, development, deployment, implementation, operation, and use of AI technology; and
+    *   privacy and data protection.
+
+*   In any way that is inconsistent with this AUP, including to submit Input or generate Output prohibited in the Content Standards section of this AUP.
+
+*   To build or develop any AI technology in contravention of, or for use in any manner inconsistent with, this AUP.
+
+*   For exploiting, harming, or attempting to exploit or harm, children in any way, whether or not prohibited by Law, including by:
+
+    *   distributing or promoting child sexual abuse material;
+    *   facilitating or promoting trafficking, sextortion, grooming, or abuse of children;
+    *   exposing children to sexual or other inappropriate content;
+    *   collecting children’s personal information without proper disclosures and consent; or
+    *   using children’s personal information for secondary purposes without proper disclosures and consent.
+
+*   For engaging in, promoting, or facilitating human trafficking or sexual solicitation, exploitation, or violence.
+
+*   For engaging in, promoting, or facilitating nonconsensual sexual content, including but not limited to:
+
+    *   nonconsensual deepfake pornography;
+    *   sexual violence, coercion, or abuse; or
+    *   any other form of nonconsensual or exploitative material.
+
+*   To deceive, defraud, mislead, misinform, or disinform others, including to:
+
+    *   impersonate any person without authorization, consent, and legal right;
+    *   represent, or otherwise deceive or mislead others to think, that Outputs are human-generated;
+    *   engage in academic dishonesty or plagiarism;
+    *   distribute “spam”; or
+    *   distribute or promote misinformation or disinformation.
+
+*   To engage in, promote, facilitate, incite, or contribute to harassment, discrimination, violence, terrorism, abuse, bullying, threats, intimidation, or hateful behavior, content, or speech.
+
+*   In any way that you know or should know infringes or is likely to infringe any patent, trademark, trade secret, copyright, or other intellectual property or other rights of any person.
+
+*   In any way that compromises or violates the legal rights (including the rights of publicity and privacy) of any person, including by:
+
+    *   accessing, collecting, soliciting, processing, disclosing, or sharing personal information in any manner that does not strictly comply with Laws and any disclosures;
+    *   conducting unlawful monitoring, tracking, or surveillance of individuals; or
+    *   using or distributing digital replicas in any manner that does not strictly comply with Laws, including, without limitation, all disclosure, consent, and authorization requirements imposed by Laws.
+
+*   To generate or provide legal, financial, health, medical, tax, or other professional advice, decisions, or recommendations.
+
+*   To develop, use, operate, produce, market, exchange, or distribute weapons, explosives, or any dangerous, illegal, regulated, or controlled substances, products, or materials.
+
+*   To engage in or facilitate political campaigning or lobbying or the disruption or interference with any election process, including to generate campaign materials or political advertisements.
+
+*   To advertise, promote, or facilitate the sale of any goods or services without our prior written authorization.
+
+Additionally, you must not:
+
+*   Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the Service or any connected or related computer, software, firmware, hardware, device, data, database, system, or network.
+
+*   Violate, attempt to violate, or knowingly facilitate the violation of the security, integrity, or availability of the Service or any connected or related computer, software, firmware, hardware, device, data, database, system, or network.
+
+*   Introduce or distribute to the Service or use the Service to introduce or distribute any viruses, trojan horses, backdoors, malware, worms, logic bombs, malicious code, or other software, device, technology, or material that is malicious or technologically harmful.
+
+*   Circumvent or interfere with features, functionality, filters, or safeguards of the Service that are intended to limit or mitigate violations of Laws or this AUP or other harms resulting from use of the Service, including attempts to bypass AI filters or moderation systems.
+
+*   Prompt the Service to perform in a way that violates this AUP, the [Terms of Service](https://pika.art/terms-of-service), or any Law.
+
+*   Otherwise attempt to interfere with the proper working of the Service.
+
+### [](https://pika.art/acceptable-use-policy#1f523e1d26f480dea35ffea8b11671fb "Content Restrictions and Standards")Content Restrictions and Standards
+
+You must not use the Service to submit, upload, or input any Input, or generate or produce any Output, that:
+
+*   Violates Laws or promotes or facilitates any activity that violates Laws.
+
+*   Is inconsistent with this AUP, including the Prohibited Uses section of this AUP.
+
+*   Promotes, describes, or depicts exploitation, abuse, or harm to a child, including:
+
+    *   child sexual abuse material;
+    *   content impersonating or intended to impersonate a child; and
+    *   any scenario involving non-adult participants in sexual situations, whether real, fictional, or AI-generated.
+
+*   Includes, promotes, or normalizes nonconsensual sexual content, including but not limited to:
+
+    *   rape, sexual assault, coercion, or abuse;
+    *   incest, necrophilia, or bestiality; or 
+    *   any content involving real or simulated nonconsensual sexual situations.
+
+*   Is obscene under applicable Laws, or depicts extreme or violent sexual acts in violation of platform guidelines.
+
+*   Includes nonconsensual deepfake or AI-generated sexual content involving real individuals, or otherwise violates applicable Laws or platform standards on consent and impersonation.
+
+*   Is deceptive, fraudulent, misleading, or otherwise intended or likely to misinform or disinform others, including:
+
+    *   defamatory content;
+    *   fake online reviews, comments, or other engagement;
+    *   deepfakes presented as authentic;
+    *   “spam”; and
+    *   false information or content related to health, safety, laws and regulations, or elections.
+
+*   Includes, describes, or promotes harassment, discrimination, violence, terrorism, abuse, bullying, threats, intimidation, or hateful behavior, content, or speech.
+
+*   You know or should know infringes or is likely to infringe any patent, trademark, trade secret, copyright, or other intellectual property or other rights of any person.
+
+*   Violates the legal rights (including the rights of publicity and privacy) of any person or contains any material that could give rise to any civil or criminal liability under Law, including, without limitation, digital replicas created or generated in any manner that does not strictly comply with Laws and all consent and authorization requirements imposed by Laws.
+
+*   Causes annoyance, inconvenience, or needless anxiety or is likely to upset, embarrass, alarm, or annoy any other person.
+
+*   Impersonates any person without authorization, consent, and legal right, or misrepresents your identity or affiliation with any person.
+
+*   Gives the impression that it emanates from or is endorsed by us or any person, if this is not the case.
+
+*   Includes any viruses, trojan horses, backdoors, malware, worms, logic bombs, malicious code, or other technology or material that is malicious or technologically harmful.
+
+*   That, in our sole discretion, contradicts our values or is objectionable.
+
+### [](https://pika.art/acceptable-use-policy#1f523e1d26f4802493b6d5672051e25e "Use of Photographs or Portraits")Use of Photographs or Portraits
+
+**You must not upload or submit photographs, portraits, or other likenesses of real individuals without their express consent. You must only use images of yourself or of others where you have all necessary rights, licenses, and consents, including those required under privacy, publicity, and intellectual property Laws.**
+
+**You must not upload any images that depict or appear to depict individuals under the age of 18, or that include celebrity likenesses or copyrighted photographs without authorization.**
+
+### [](https://pika.art/acceptable-use-policy#1f523e1d26f4802e91bec506c14e7f75 "Disclosures and Consents")Disclosures and Consents
+
+*   You agree to disclose your use of the Service and obtain consent to use the Service as required by, and in accordance with, Laws.
+
+*   You agree to disclose that any deepfake Output has been artificially generated or manipulated.
+
+### [](https://pika.art/acceptable-use-policy#1f523e1d26f480baa681c4490de040e7 "Monitoring and Enforcement")Monitoring and Enforcement
+
+We may monitor your use of the Service to evaluate your compliance with this AUP and to investigate any suspected or reported violation by you. Any violation of this AUP by you constitutes a material breach of the [Terms of Service](https://pika.art/terms-of-service). In addition to our rights under the [Terms of Service](https://pika.art/terms-of-service), if we determine that you have violated this AUP, we may:
+
+*   Terminate or suspend your access to all or part of the Service.
+
+*   Take appropriate legal action, including without limitation, referral to law enforcement or any authority, for any illegal or unauthorized use of the Service.
+
+*   Report any violations of this AUP relating to exploitation or abuse of children, including child sexual abuse material, to the National Center of Missing & Exploited Children (NCMEC) and other relevant authorities and organizations.
+
+We also reserve the right to restrict or remove any content, Input, Output, or user access that we determine, in our sole discretion, poses a risk to the safety, integrity, legal compliance, or proper functioning of the Service—even if not expressly prohibited by this AUP.
+
+Without limiting the foregoing, we have the right to fully cooperate with any law enforcement authorities or court order requesting or directing us to disclose the identity or other information of anyone who accesses or uses the Service. You hereby waive and shall indemnify Pika and its affiliates, licensees, and service providers against any claims resulting from any action taken by any of the foregoing parties during, or taken as a consequence of, investigations by either those parties or law enforcement or other authorities.
+
+Users who believe their account was terminated in error may submit an appeal to support@pika.art. We reserve sole discretion in determining whether to reinstate accounts.
+
+### [](https://pika.art/acceptable-use-policy#1f523e1d26f480c09442e6ea82b3877a "Modifications")**Modifications**
+
+You acknowledge that we have the right, in our sole discretion, to modify this AUP on one or more occasions, and that modified terms become effective on posting. You are responsible for reviewing and becoming familiar with any modifications. Your continued use of the Service after the effective date of the modifications will be deemed acceptance of the modified terms.

@@ -1,0 +1,184 @@
+SOURCE: https://murf.ai/pricing
+DATE ACCESSED: 2026-08-09
+METHOD: Rendered read via browser (Claude_Browser preview tab), document.body.innerText after JS execution.
+  Static fetch (WebFetch) showed no pricing figures at all (JS-rendered page) -> rendered per D-005.
+NETWORK NOTE: Collection environment egresses from Turkey (per D-003 deviation note). This page
+  rendered prices in USD ($) with no currency selector observed -> no non_usd concern for this
+  source; D-003 US-locale cross-check still to be run before finalizing headline_price_usd.
+ARCHIVE: https://web.archive.org/web/20260809192800/https://murf.ai/pricing (web.archive.org/save, success first attempt)
+DEFAULT DISPLAY STATE OBSERVED: Billing toggle DOM classes checked directly: "Billed Monthly" label
+  carried class "opacity-50" (de-emphasized/inactive); "Billed Yearly" label carried class
+  "text-violet6 font-weight-600" (brand-accent color, bold, no dimming) = ACTIVE/preselected.
+  -> annual_default_toggle = annual_preselected on this read.
+  Product-line sub-tabs also present: Studio | Dub | API. Page loaded on "Studio" (default, no
+  interaction). Studio is Murf's core TTS/voiceover product and matches the review scope.
+  Cookie banner: none observed blocking content on this load.
+
+=== RENDERED TEXT (plan cards + comparison table), first ~5000 chars ===
+Choose a Pricing Plan
+Try for Free
+Studio | Dub | API
+Billed Monthly | Billed Yearly  Saved 33%
+
+FREE
+Get started. No Credit Card required
+$0 / month
+$0 Billed Annually
+Get Started
+10 Projects
+10 minutes of Voice Generation
+1 Editor
+Try Business Plan for free
+10 mins of Voice Generation
+Everything in Business Plan (No Downloads)
+No Commercial Rights
+
+CREATOR
+Starter plan to create voiceovers for Individuals & Freelancers
+$19 / month
+$228 Billed Annually
+Buy Plan
+100 Projects
+24 hrs/Year of Voice Generation
+1 Editor
+Get started with essentials
+All 200+ Voices, Styles & Tonalities
+Multi-Native Voices
+Unlimited Downloads
+Canva Integration
+Commercial Rights
+
+BUSINESS  (Best Value)
+Advanced Plan with Rich Features for High-Usage Business Needs.
+$66 / month
+$792 Billed Annually
+Buy Plan
+500 Projects
+96 hrs/Year of Voice Generation
+1 Editor
+Everything in Creator, Plus
+Business License
+Emphasis
+Variability
+Say It My Way
+Powerpoint Integration
+Audio to Text
+Murf voices for windows apps
+
+ENTERPRISE
+Unlimited Access, Enterprise-grade Security & Support
+Custom
+Contact Sales
+Custom Projects
+Unlimited Voice Generation
+Custom Editors
+Everything in Business, Plus
+Sharing & Collaboration
+Enterprise Grade Features
+AI Translation
+Single Sign-on (SSO)
+No Training on your Data
+Master Service Agreement
+IT Security Assessment
+PO & Invoicing
+Custom Voice Clones (Add-on)
+Customer Success Manager
+
+--- Compare table highlights ---
+Projects: 100 (Creator) / 500 (Business) / Custom (Enterprise)
+Voice Generation Time: 24 hours (Creator) / 96 hours (Business) / Unlimited (Enterprise)
+Maximum no. of Editor Seats: 1 / 1 / Custom (5+)
+Maximum no. of Viewer Seats: remove / remove / Unlimited
+No. of Downloads: Unlimited / Unlimited / Unlimited
+Commercial Rights: done(check) / done / done   [i.e. Creator, Business, Enterprise all check;
+   Free plan card explicitly states "No Commercial Rights"]
+Business License: remove (Creator) / done (Business) / done (Enterprise)
+Full Broadcasting Rights: remove / remove / Add-on (Enterprise only)
+Custom Models: remove / remove / Add-on (Enterprise only)
+Custom Integrations: remove / remove / Add-on (Enterprise only)
+Custom Voice Clones: listed only under Enterprise as "(Add-on)" -- not listed as a Creator or
+   Business feature at all (neither included nor offered as add-on on those tiers per this page).
+Deletion Recovery: remove / remove / Yes (60 days)  [Enterprise only]
+Data Privacy / GDPR-SOC2 / EU Compliance: done / done / done (all tiers, incl. Free by extension
+   of Creator row - table starts at Creator)
+
+=== FAQ ACCORDION ANSWERS (same page, expanded via click - permitted per protocol 6.3) ===
+
+Q: What are Projects on Murf Studio?
+A: Projects are where you seamlessly create, edit, customise, and share voiceovers in a
+well-organised workflow. Each new project created consumes one project credit and the no. of
+project credits available are subject to your plan's limit. For eg., a plan with 5 projects
+indicates that a total of 5 projects can be saved within your workspace at any given time.
+
+Q: How do you measure voice generation time?
+A: Voice generation time is calculated as the sum of generated speech length of every text
+block. It is consumed every time you render a newly created text block or modify text in an
+existing text block. Modifying the generated speech using a different Voice actor, Style,
+Pitch, Speed, Pause, Emphasis, Pronunciation, Punctuation and Volume for the same text will not
+consume any voice generation time.
+
+Q: How long can I use the free plan for?
+A: There is no time limit to the free plan. You can use it until you exhaust your voice
+generation time limit of 10 mins.
+
+Q: Will I lose my free 10 mins if I upgrade to a paid plan?
+A: No, your unused free minutes will not get lapsed. If you upgrade to a subscription plan,
+your unused minutes would get added to your account under Additional minutes.
+
+Q: What if I need more projects than I have in my plan limit?
+A: To create more projects beyond your plan's limit, upgrade to Business/Enterprise Plan or buy
+a plan with more projects. Alternatively, you can delete existing projects to create new
+projects.
+
+Q: Can I upgrade from a monthly to a yearly subscription?
+A: Yes, you can do that anytime. If you have subscribed to a monthly plan, you will see an
+Upgrade option on this page automatically.
+
+Q: Will project credits be allocated every month?
+A: No, Project credits are not allotted monthly. Regardless of the plan's duration, whether
+monthly or yearly, the maximum number of projects in your workspace depends on the project
+credits associated with your plan.
+
+Q: Are the monthly limits applicable to yearly plans?
+A: Yearly plans have no monthly limits, just an overall yearly limit. Let's say you take the
+Basic Yearly Plan. Your voice generation time would be 24 hours/year, which means you could use
+up more than 2 hours in months that you need more and less in others.
+
+Q: Is the Voice Generation time shared among users on a plan with multiple users?
+A: If you decide to go with a plan that has multiple users, don't worry! The voice generation
+time will be shared among all of you, so everyone on the plan can use it.
+
+Q: Can I cancel a subscription anytime?
+A: Yes, absolutely. If you want to cancel your plan, simply go to 'Manage Billing' under your
+profile and cancel. This will ensure that any future payments would not be deducted. If you
+cancel, you will continue to have access to all the premium features until the end of your
+current billing cycle.
+
+Q: I am a registered Business. Can I use Murf's creator Plan?
+A: As a registered business, it is ideal to opt for the Business Plan rather than the Creator
+Plan. The Business Plan provides licensing for commercial rights tailored for businesses, making
+it the ideal choice for your needs. [NOTE: advisory, not a stated prohibition -- Creator plan is
+not documented as unavailable/restricted for businesses, only "not ideal"]
+
+Q: What is your refund policy?
+A: Payments already made against monthly or annual subscriptions would not be eligible for a
+refund. If you have just bought an account and have an issue using it, please get in touch with
+us.
+[LOWER-AUTHORITY SOURCE for refund_policy_exists per codebook 3 / protocol 6.2 -- pricing page
+ranks 3rd of 4 for contractual variables. Dedicated refund FAQ / ToS checked separately below,
+higher-ranked, may state a more specific conditional window.]
+
+Q: Do you charge sales or consumption taxes?
+A: Certain US states are subject to a required sales or consumption tax. If your online order
+includes sales tax, VAT, GST, or comparable consumption taxes, you will see the tax amount along
+with the rate of tax applied in your shopping cart after the billing step and before checkout is
+complete. [confirms taxes are excluded/separate per codebook first_charge_amount_usd rule 5]
+
+Q: What is the difference between Personal and Business License?
+A: Personal License: The Personal License permits individuals to use Murf for both personal and
+commercial purposes on an individual basis. This license is suitable for personal projects and
+small-scale commercial projects.
+Business License: The Business License is designed for users representing businesses and
+organizations. It is recommended for businesses to leverage Murf for creating a wide range of
+content, both for internal and external purposes. This license is ideal for scaling up content
+creation within a corporate or organizational context.

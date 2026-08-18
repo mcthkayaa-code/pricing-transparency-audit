@@ -1,0 +1,129 @@
+product_id: humbot
+product_name: Humbot
+category: AI humanizer
+product_status: active
+paid_submission: "no"
+entry_tier_name: Basic
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://humbot.ai/pricing
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "Currency base=USD per vendor's own embedded pricing data (window.__NEXT_DATA__.props.pageProps.productsList, currency:USD on every SKU). As rendered to this TR-geolocated session: FIRST load showed all three plan prices blank ('-') due to a client hydration bug (React errors #418/#425/#423) tied to TR currency detection; a LATER same-session load fully rendered in TRY (currency selector, Yearly toggle badged '83% OFF'), e.g. Basic ₺339/mo struck through ₺509/mo, exactly matching the USD base data converted. Billing toggle default: Yearly, pre-selected on every load. See register_events and humbot-sources/pricing-page-2026-08-09.md."
+
+sources:
+  - { url: "https://humbot.ai/pricing", kind: pricing, accessed: "2026-08-09", archive: local_copy_only, note: "archive.org Save Page Now attempted twice, both HTTP 520 (systemic failure, see below); local evidence in humbot-sources/pricing-page-2026-08-09.md and productslist-2026-08-09.json" }
+  - { url: "https://humbot.ai/terms-of-service", kind: tos, accessed: "2026-08-09", archive: local_copy_only, note: "archive.org attempted twice, both HTTP 520; local evidence in humbot-sources/terms-of-service-2026-08-09.md" }
+  - { url: "https://humbot.ai/refund-policy", kind: refund, accessed: "2026-08-09", archive: local_copy_only, note: "archive.org attempted twice, both HTTP 520; content fully agrees with ToS refund section (7 days, 1,000-word cap)" }
+  - { url: "https://humbot.ai/hub", kind: docs, accessed: "2026-08-09", archive: not_archived, note: "checked as a candidate billing help-center/docs source; is an SEO content/blog hub only, no billing articles, no separate acceptable-use policy found; not used as a source of any coded value" }
+
+variables:
+  headline_price_usd: { value: 7.99, source: "https://humbot.ai/pricing", evidence: "Basic plan, annual SKU (price_id price_1OceZgDTBvGUnRQvGweFDLE9) = $95.88/yr = $7.99/mo, read from the page's own embedded productsList JSON because the first rendered load showed blank price text for this TR session; a later same-session render confirmed exactly (₺339/mo = try_cents 406800/12/100) per D-003/D-005. See humbot-sources/pricing-page-2026-08-09.md." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://humbot.ai/pricing", evidence: "Figure carries '/mo' suffix; Yearly toggle pre-selected by default; struck-through higher monthly-billing price shown alongside the bold annual-equivalent figure on later render (e.g. Basic ₺339 vs struck ₺509)." }
+  first_charge_amount_usd: { value: 95.88, source: "https://humbot.ai/pricing", evidence: "Basic annual SKU price field = $95.88, the full amount charged once for the 12-month term (documents state the annual total directly; not multiplied by a coder assumption)." }
+  mandatory_addon_present: { value: "no", source: "https://humbot.ai/pricing", evidence: "Full 'Compare All Features of Our Plans' table read for the Basic column: all listed features (AI Text Humanizer, AI Checker, Math Solver, Homework Helper, Image Detector, Quiz Generator, Article Rewriter, Summarizer, AI Reading, Plagiarism Checker, Grammar Checker, Translator, Citation Generator) are included in the plan price; 'Add more advanced word credits anytime' (seen on Pro/Unlimited cards) is an optional top-up, not a requirement to use Basic as advertised." }
+  annual_condition_disclosure: { value: adjacent, source: "https://humbot.ai/pricing", evidence: "Struck-through higher ('monthly-billing') price sits directly inside the same plan card next to the bold annual-equivalent figure (Basic ₺339 /mo, struck ₺509), directly beneath/beside the headline figure, with the pre-selected 'Yearly' toggle label immediately above the card row." }
+  annual_default_toggle: { value: annual_preselected, source: "https://humbot.ai/pricing", evidence: "'Yearly' toggle carries the selected checkmark on every load observed (screenshot), 'Monthly' unselected." }
+  free_plan_exists: { value: "yes", source: "https://humbot.ai/pricing", evidence: "FAQ: 'The paid plans come with more word usage and input limit... So you can try the Free plan to test out our features before subscribing.'" }
+  free_plan_cap_documented: { value: unknown, source: "https://humbot.ai/pricing", evidence: "No visible card, table row, or FAQ text anywhere on the page states a number for the Free plan's word or input limits (confirmed no DOM element containing bare text 'Free' exists on the rendered page); the vendor's embedded catalog does carry a Free SKU figure (200 words/mo, 100-word input) but it was never observed rendered to a reader across three separate loads, so it is not treated as documented. See humbot-sources/credit-usage-guide-2026-08-09.md." }
+  free_plan_cap_value: { value: unknown, source: "https://humbot.ai/pricing", evidence: "Follows from free_plan_cap_documented = unknown; no reader-facing figure found." }
+  free_plan_watermark: { value: unknown, source: "https://humbot.ai/pricing", evidence: "Not addressed anywhere in the documents read (pricing page, ToS, refund policy)." }
+  free_plan_duration: { value: unknown, source: "https://humbot.ai/pricing", evidence: "Not addressed anywhere in the documents read; FAQ frames it as something to 'try... before subscribing' without stating perpetual vs time-limited." }
+  trial_exists: { value: "no", source: "https://humbot.ai/pricing", evidence: "No trial of a paid tier is mentioned anywhere on the pricing page, Terms of Service, or Refund Policy; only a free plan and a 7-day refund window on paid purchases are offered." }
+  trial_card_required: { value: not_applicable, source: "https://humbot.ai/pricing", evidence: "No trial exists." }
+  trial_length_days: { value: not_applicable, source: "https://humbot.ai/pricing", evidence: "No trial exists." }
+  trial_auto_converts: { value: not_applicable, source: "https://humbot.ai/pricing", evidence: "No trial exists." }
+  credit_system_present: { value: "yes", source: "https://humbot.ai/pricing", evidence: "'Basic Words' and 'Advanced Words' are an intermediate currency spent across many bundled tools at documented, tool-specific and feature-specific rates (e.g. Grammar Checker consumes 'Input words x 1.6 + Output words x 6.7'), not a single direct 1:1 plan allowance in one output unit. Credit Usage Guide modal, same URL." }
+  credit_unit_defined: { value: "yes", source: "https://humbot.ai/pricing", evidence: "Credit Usage Guide modal: 'AI Text Humanizer | Basic Words | 1 word per output word' (and numeric/qualitative rates given for every other bundled tool)." }
+  credit_to_output_rate_published: { value: partial, source: "https://humbot.ai/pricing", evidence: "Principal output (AI Text Humanizer, the product's namesake function) has an exact numeric rate ('1 word per output word'), but several other advertised tools (AI Image Detector, AI Math Solver, AI Homework Helper, AI Quiz Generator, and the image-input path of AI Summarizer) are rated only 'Based on token usage' with no stated number -- not a computable figure. Coded partial because not every advertised output type carries a stated rate, even though the principal one does; see coder_note for the judgment call." }
+  credit_rate_location: { value: pricing_page, source: "https://humbot.ai/pricing", evidence: "Credit Usage Guide is a modal opened from a button on the /pricing page itself; not found on any other page." }
+  cost_per_output_unit: { value: per_1k_words, source: "https://humbot.ai/pricing", evidence: "Principal output (AI Text Humanizer) is metered in words at a 1:1 credit-to-word rate; per_1k_words is the closest enumerated unit for a word-metered text tool." }
+  cost_per_output_computable: { value: "yes", source: "https://humbot.ai/pricing", evidence: "All required figures published: Basic annual price ($95.88/yr = $7.99/mo), 3,000 Basic Words/mo allowance, and the 1-word-per-output-word conversion rate for the principal output (AI Text Humanizer). See computation_assumptions." }
+  computation_assumptions: "Basic (entry tier), Yearly default: $95.88/yr÷12=$7.99/mo; includes 3,000 Basic Words/mo (usage_list period=month on both monthly and annual SKUs). Credit guide: AI Text Humanizer=1 Basic Word per output word, so 3,000/1=3,000 output words/mo. 7.99/3000=$0.00266/word=$2.66 per 1,000 words. first_charge_amount_usd (95.88) required no computation either: the vendor's own embedded productsList JSON carries the Basic annual SKU (price_id price_1OceZgDTBvGUnRQvGweFDLE9) as price:9588 (cents) / duration:12 (months) -- a fixed field in the vendor's own pricing/billing data, read directly, not derived by multiplying the $7.99/mo figure by 12 (that figure was itself obtained by dividing 95.88/12, the reverse direction). Re-verified 2026-08-12 against humbot-sources/productslist-2026-08-09.json. See coder_note's D-009 provenance check entry."
+  credit_rollover_policy: { value: unknown, source: "https://humbot.ai/pricing", evidence: "Pricing page, Credit Usage Guide modal, Terms of Service, and Refund Policy all read; none states what happens to unused Basic/Advanced Words at period end. Programmatic full-text search for 'rollover'/'roll over'/'expire'/'unused'/'carry over' across the pricing page and open modal returned no matches." }
+  failed_generation_charge_policy: { value: unknown, source: "https://humbot.ai/pricing", evidence: "Not addressed in any document read. ToS states only 'Each subscription plan includes specific usage limits, and exceeding these may result in additional charges or temporary suspension' -- about exceeding quantified limits, not about failed/erroring generations specifically." }
+  auto_renewal_default: { value: "on", source: "https://humbot.ai/terms-of-service", evidence: "'Your subscription will automatically renew at the end of each period unless you cancel before the renewal date.'" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://humbot.ai/terms-of-service", evidence: "Auto-renewal is stated in the Terms of Service ('Billing, Subscription and Cancellation Policy' section) and was not found on the pricing page, in the Refund Policy, or in a help-center article (none exists)." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://humbot.ai/terms-of-service", evidence: "ToS commits to advance notice only for PRICE CHANGES ('we will notify you in advance... before the changes take effect'), and separately states 'a receipt will be sent to you via email after each payment' -- a post-charge receipt, which the codebook explicitly treats as not advance notice. No general commitment to notify before an ordinary renewal charge was found." }
+  refund_policy_exists: { value: "yes", source: "https://humbot.ai/terms-of-service", evidence: "'You may request a refund if, for any reason, you're unsatisfied with our services. A refund may be issued under certain conditions...'" }
+  refund_window_days: { value: 7, source: "https://humbot.ai/terms-of-service", evidence: "'You are only eligible for a refund if you request it within 7 days of your purchase...' -- matches the dedicated Refund Policy page exactly. See conflict_note: the pricing page states a conflicting '30-Day money back guarantee'; the two contractual-class sources (ToS + dedicated refund page) outrank the pricing page and govern this value per protocol §6.2." }
+  refund_conditions: { value: conditional, source: "https://humbot.ai/terms-of-service", evidence: "Refund requires: request within 7 days AND word usage not exceeding 1,000 words in that period AND original purchaser AND direct (non-third-party) purchase, with vendor discretion to deny suspected abuse." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://humbot.ai/terms-of-service", evidence: "'You have the flexibility to cancel your Humbot subscription at any time. To do so, you can either follow the cancellation instructions found in your account settings or contact our support team for help.'" }
+  refund_policy_location: { value: multiple, source: "https://humbot.ai/terms-of-service", evidence: "Refund terms are stated in full, in agreement, on both the Terms of Service (embedded 'Refund Policy' section) and the dedicated https://humbot.ai/refund-policy page." }
+  commercial_use_lowest_tier: { value: not_granted, source: "https://humbot.ai/terms-of-service", evidence: "User's Representations: '...you will not use the Website and/or Services for a commercial activity;' -- unqualified, no tier-based exception found anywhere in the Terms of Service or elsewhere." }
+  watermark_removal_tier: { value: unknown, source: "https://humbot.ai/pricing", evidence: "ADJUDICATION QUEUE A-018, resolved 2026-08-17 (orchestrator/A-018-resolution.md). WAS not_applicable on the reasoning below; corrected to unknown, kind = VENDOR SILENCE. Decided on documentary evidence rather than on precedent: a direct competitor in this same category with the same rewritten-text output answers the watermark question outright in its own pricing FAQ ('Will my texts be watermarked in the future? No.'), and a construct a competitor resolves in standard category vocabulary is not one incapable of existing for the output type. Note also that the two governing documents word the test differently -- codebook rule 3 says 'not a MEDIA artifact', protocol section 8.3 item E2 says 'not AN ARTIFACT a watermark could mark' -- and the original coding rested entirely on that adjective (D-046). Codebook 2.2 makes silence unknown, not not_applicable. Original coder reasoning, preserved: 'Principal output is plain rewritten text (AI Text Humanizer), not a visual/audio media artifact of the kind this variable's media-artifact test targets; codebook's own carve-out example is a detection score or an analysis table. Confirmed silent in every document read (pricing page, feature-comparison table, ToS, refund policy) -- the word watermark appears nowhere.' The silence finding itself is unchanged and was re-verified across all four local captures for brand/logo/powered-by/attribution/white-label." }
+  output_ownership_statement: { value: unknown, source: "https://humbot.ai/terms-of-service", evidence: "Intellectual Property section addresses only Humbot's OWN 'Materials' (site, software, trademarks) -- 'You have no rights in or to the Materials' -- and never addresses ownership of the user-generated humanized-text output. Full text searched for 'output'/'ownership'/'you own': no matches." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://humbot.ai/pricing", evidence: "Basic tier: 3,000 Basic words/mo (rate), 1,000 Advanced words/mo (rate), 500-word input limit per request (standing), plus every per-tool limit in the full feature-comparison table (e.g. Math Solver 8,000-character input / 1 document / 10 images; Image Detector 1 image, 1KB-10MB) -- all carry a number and dimension, none left as a bare qualitative claim." }
+  unquantified_limit_clause: { value: absent, source: "https://humbot.ai/terms-of-service", evidence: "Terms of Service read in full: no 'fair use', 'reasonable use', 'excessive use', or discretionary throttling clause governing ongoing usage was found. The only discretionary-sounding language found concerns refund-abuse and account-termination decisions, not usage limits; usage overage is instead handled by the quantified per-plan caps ('exceeding these may result in additional charges or temporary suspension'). No dedicated acceptable-use policy exists separate from the ToS." }
+
+coder_note: |
+  Entry-tier candidates (sampling-rules.md 7.2), annual-equivalent cost of the DEFAULT
+  dropdown/toggle selection on each card, Yearly toggle preselected:
+    - Basic: $95.88/yr (no dropdown, single SKU) -- WINNER, lowest annual-equivalent cost.
+    - Pro: $119.88/yr at its default-selected 5,000 Advanced-words dropdown option.
+    - Unlimited: $119.88/yr at its default-selected 10,000 Advanced-words dropdown option
+      (tied with Pro on price; both lose to Basic regardless).
+    - A "One-time" SKU ($9.99, 2,000 words, price_id price_1R4YuaDTBvGUnRQv0NsFMbyE) exists
+      in the vendor's backend product catalog but was never displayed on the /pricing plan
+      grid in any read (only Basic/Unlimited/Pro cards render); excluded as not a shown
+      candidate rather than evaluated on price.
+    - "Advanced Words" top-up SKUs (5k/10k/20k/40k/50k/60k/80k credit packs) are consumable
+      add-on purchases, not standing plans; excluded.
+
+  Judgment calls flagged for review:
+    1. headline_price_usd / first_charge_amount_usd were read from the pricing page's own
+       embedded __NEXT_DATA__ productsList JSON (currency:USD on every SKU) rather than from
+       legible on-screen text, because this TR-geolocated session's FIRST page load rendered
+       all three prices as blank "-" (a client hydration bug, React errors #418/#425/#423).
+       A later same-session load of the same URL, unprompted, rendered fully in TRY and
+       matched the USD-derived figures exactly to the cent (Basic ₺339/mo = try_cents
+       406800/12/100). D-003 additionally confirmed via a stale (2025-09-10) web.archive.org
+       capture that the vendor's normal rendering path is USD-denominated. Logged as a
+       display_variant register event, not coded as non_usd.
+    2. credit_to_output_rate_published coded `partial` rather than `yes`: the PRINCIPAL
+       output (AI Text Humanizer) carries an exact numeric rate (1 word per output word),
+       but several other bundled tools are rated only "Based on token usage" with no number.
+       A reasonable alternate reading could call this `yes` since the principal output's own
+       rate is exact; flagged for adjudication.
+    3. free_plan_cap_documented / _cap_value / _watermark / _duration coded `unknown` rather
+       than using the backend catalog's Free SKU (200 words/mo, 100-word input): no visible
+       card, table row, or FAQ text ever displayed these numbers to a reader across three
+       separate page loads (unlike Basic/Pro/Unlimited, confirmed twice by visual re-render).
+       free_plan_exists alone is `yes`, from an explicit FAQ sentence naming the plan without
+       figures.
+    4. watermark_removal_tier coded `not_applicable`: principal output is plain text, not a
+       visual/audio artifact; treated as analogous to the codebook's own "detection score or
+       analysis table" not_applicable example. Silent everywhere checked either way.
+    5. commercial_use_lowest_tier coded `not_granted` on an unqualified ToS clause ("you will
+       not use the Website and/or Services for a commercial activity"). Notable, surprising
+       finding for a paid writing/study tool with no tier-based exception found anywhere.
+    6. renewal_notice_commitment coded `no_notice_stated`: the only advance-notice commitment
+       in the ToS is scoped to price changes, not to ordinary renewal charges, and a
+       post-charge receipt is explicitly excluded from counting as advance notice by the
+       codebook.
+
+  Archival: web.archive.org Save Page Now (`/save/<url>`) was attempted twice per source URL
+  (pricing, terms-of-service, refund-policy) on 2026-08-09; every attempt returned HTTP 520,
+  a systemic failure across the whole domain rather than a per-page issue (CDX search for
+  2026 captures of humbot.ai/pricing also returned empty). archive_status=local_copy_only
+  throughout; local evidence retained in records/pass1/humbot-sources/.
+
+  D-009 PROVENANCE CHECK (2026-08-12): first_charge_amount_usd (95.88) is exactly 12x
+  headline_price_usd (7.99), the pattern the D-009 sweep report flagged for a provenance check
+  across five records including this one. Re-examined independently against this record's own
+  local capture (humbot-sources/productslist-2026-08-09.json): the Basic annual SKU (price_id
+  price_1OceZgDTBvGUnRQvGweFDLE9) carries price:9588 (cents) at duration:12 (months) as a fixed
+  field in the vendor's own embedded product catalog -- the same structured data this record's
+  headline_price_usd evidence already draws on. The $7.99/mo headline figure is the DERIVED
+  value here (95.88÷12), not the other way around: no coder multiplication of a monthly figure
+  by 12 produced 95.88. Case 1 (vendor published the annual total, in its own structured
+  pricing data; no computation happened). Verdict: SUPPORTED. 95.88 stands, unchanged; see
+  computation_assumptions for the added source note.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Pricing page (https://humbot.ai/pricing, 'Security & Support' feature-grid section) states '30-Day money back guarantee'. The Terms of Service (https://humbot.ai/terms-of-service) and the dedicated Refund Policy (https://humbot.ai/refund-policy) both state a 7-day window conditioned on word usage not exceeding 1,000 words, in full agreement with each other. Per protocol §6.2 the two contractual-class sources outrank the pricing page for refund variables; refund_window_days is coded 7 from them, and this pricing-page/contract gap is recorded here per protocol §6.2's instruction to log it even where the hierarchy resolves the value cleanly. All three pages accessed 2026-08-09."
+register_events:
+  - { type: display_variant, detail: "First load of https://humbot.ai/pricing (before any interaction) rendered all three plan prices as blank '-' with the '/mo' suffix still printed, console showing repeated React hydration errors (#418, #425, #423), correlated with this session's Turkey IP-geolocation via the page's own product.listPaymentPlatform currency-detection call (returned country:Turkey, code:TR). A later read within the same pass, same URL, no deliberate reload, rendered fully: a 'TRY' currency selector appeared, Yearly toggle carried an '83% OFF' badge, and figures showed e.g. Basic ₺339/mo (struck through ₺509/mo) -- an exact match to the vendor's embedded USD base data converted to TRY (try_cents 406800/12/100=339.00; 50900/100=509.00). Coded USD values are taken from that embedded productsList JSON (currency:USD on every SKU), cross-verified against this later rendering, not from either display state's own formatted text.", urls: ["https://humbot.ai/pricing"] }
+status: complete

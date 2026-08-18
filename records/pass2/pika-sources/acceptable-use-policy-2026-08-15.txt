@@ -1,0 +1,5 @@
+SOURCE: https://pika.art/acceptable-use-policy
+ACCESSED: 2026-08-15 (pass-2 coder)
+CAPTURE METHOD: rendered browser read (claude-in-chrome), full document read (Introduction, Expected Behavior, User Responsibility, Prohibited Uses, Content Restrictions and Standards, Use of Photographs or Portraits, Disclosures and Consents, Monitoring and Enforcement, Modifications). "Last updated: 05/16/2025".
+---
+Entire document concerns prohibited CONTENT/CONDUCT (child safety, nonconsensual sexual content, deepfake disclosure, harassment, IP infringement, impersonation, malware, likeness/consent requirements). Per codebook: "A prohibition on illegal or abusive content is not a usage limit and does not trigger present. This variable covers volume and intensity of use, not conduct." No number-free VOLUME/RATE limit clause (fair use / reasonable use / throttling) appears anywhere in this document -- that clause is in the Terms of Service instead ("General Practices Regarding Use and Storage", see terms-of-service capture). Read in full to support that absence finding; not used as the source for any coded value.

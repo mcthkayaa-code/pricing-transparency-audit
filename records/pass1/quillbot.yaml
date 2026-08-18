@@ -1,0 +1,156 @@
+# RECORD — QuillBot. Copied shape from record-template.yaml. Pass 1, primary coder.
+
+product_id: quillbot
+product_name: QuillBot
+category: AI humanizer
+product_status: active
+paid_submission: "no"
+entry_tier_name: Premium
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-10
+recheck_date: not_applicable
+primary_source_url: https://quillbot.com/premium
+archive_url: https://web.archive.org/web/20260810111052/https://quillbot.com/premium
+archive_status: archived
+default_display_state: "USD; Premium card shows $4.17/mo billed annually as the ONLY price for Premium (no monthly/quarterly/semi-annual toggle exists in the rendered DOM); Free $0/mo shown alongside; Team (separate URL) shows self-serve per-seat annual pricing $2.91-$3.75/mo/seat by seat band; no cookie-consent banner intercepted the read; request geolocated to Turkey (countryCode:TR in the page's own SSR data) yet every price object in that same data is explicitly tagged currency:USD with priceVariants empty (no region override served)."
+
+sources:
+  - { url: "https://quillbot.com/premium", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810111052/https://quillbot.com/premium", note: "primary pricing page; static curl + browser render + DOM toggle inspection, see quillbot-sources/premium-page-rendered-and-dom-findings.txt and quillbot-premium-raw.html" }
+  - { url: "https://quillbot.com/terms", kind: tos, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810111110/https://quillbot.com/terms", note: "Quillbot Terms of Service (supplements Learneo's); see quillbot-sources/terms-key-excerpts.txt section A" }
+  - { url: "https://www.learneo.com/legal/terms-of-service", kind: tos, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810111129/https://www.learneo.com/legal/terms-of-service", note: "Learneo master Terms of Service, incorporated by reference into quillbot.com/terms; see quillbot-sources/terms-key-excerpts.txt section B" }
+  - { url: "https://help.quillbot.com/hc/en-us/articles/6046562291223-Can-I-get-a-refund-for-Quillbot-subscription", kind: refund, accessed: "2026-08-10", archive: local_copy_only, note: "refund help article; web.archive.org returned HTTP 520 on two attempts; local copy at quillbot-sources/refund-help-article-local-copy.txt" }
+  - { url: "https://help.quillbot.com/hc/en-us/articles/360056300334-How-do-I-cancel-my-Premium-subscription", kind: refund, accessed: "2026-08-10", archive: local_copy_only, note: "cancellation help article; web.archive.org returned HTTP 520 on two attempts; local copy at quillbot-sources/cancel-help-article-local-copy.txt" }
+  - { url: "https://help.quillbot.com/hc/en-us/articles/360058341753-What-s-the-difference-between-a-free-and-a-Premium-account", kind: docs, accessed: "2026-08-10", archive: local_copy_only, note: "free-vs-Premium feature/limit comparison table; web.archive.org returned HTTP 520 on two attempts; local copy at quillbot-sources/free-vs-premium-help-article-local-copy.txt" }
+  - { url: "https://quillbot.com/upgrade/teams", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810111231/https://quillbot.com/upgrade/teams", note: "Team plan page (entry-tier losing candidate + commercial-use ceiling); see quillbot-sources/teams-page-rendered.txt" }
+
+variables:
+  headline_price_usd: { value: 4.17, source: "https://quillbot.com/premium", evidence: "\"$4.17\" \"USD\" \"Per month, billed annually\" — most prominent figure in the Premium plan card (default load, no interaction)" }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://quillbot.com/premium", evidence: "\"$4.17 USD Per month, billed annually\"" }
+  first_charge_amount_usd: { value: 49.95, source: "https://quillbot.com/premium", evidence: "embedded SSR JSON on the pricing page: {\"title\":\"Annual\",\"price\":49.95,\"monthlyPrice\":4.17,\"duration\":12,...,\"currency\":\"USD\"} — the actual stated annual total, not a computed 4.17x12 (which would misstate it as 50.04)" }
+  mandatory_addon_present: { value: "no", source: "https://quillbot.com/premium", evidence: "every feature the pricing page attributes to Premium (\"Full access to paraphrasing\", humanizing, AI Detector, plagiarism, etc.) is included in the one listed price; no separate charge, minimum credit purchase, platform fee, or onboarding fee found in the pricing page or either Terms document" }
+  annual_condition_disclosure: { value: adjacent, source: "https://quillbot.com/premium", evidence: "\"Per month, billed annually\" printed directly beneath \"$4.17\" inside the same Premium price card" }
+  annual_default_toggle: { value: no_toggle, source: "https://quillbot.com/premium", evidence: "DOM inspection: zero occurrences of \"Monthly\"/\"Quarterly\"/\"Semi-Annual\" as rendered text anywhere on the page; the page's only role=tab structure is an unrelated testimonial carousel (aria-selected=true on \"Efficiency\"); the page offers exactly one displayed billing configuration for Premium" }
+  free_plan_exists: { value: "yes", source: "https://quillbot.com/premium", evidence: "\"Free — Fix errors, strengthen your work, and get help brainstorming — $0 USD Per month\"" }
+  free_plan_cap_documented: { value: some_quantified, source: "https://quillbot.com/premium", evidence: "\"Paraphrase up to 125 words\", \"Humanize up to 125 words, 6 uses/day\" are quantified; \"Fix basic grammar errors\" and \"Generate basic summaries\" carry no number" }
+  free_plan_cap_value: { value: "125 words/paraphrase (2 modes) | humanize 125 words & 6 uses/day (pricing pg; help ctr says 3 uses, see conflict_note) | summarize 1200 words | AI Detector 1200 words & 10 scans/day | translate 5000 chars | AI Chat 20 queries/day | image gen 3/day | presentation gen 3/day | Flow storage 10MB", source: "https://quillbot.com/premium", evidence: "combined quantified limits from pricing page (primary, per protocol 6.2) and help center article 360058341753 (secondary, fills in figures the pricing page leaves unquantified)" }
+  free_plan_watermark: { value: unknown, source: "", evidence: "\"watermark\"/\"branding\" not mentioned in the pricing page, either Terms document, or any of the three help-center articles read; not coded not_applicable because Premium's bundle includes an AI Image Generator, an output type that could carry one, so absence of the construct is not positively established" }
+  free_plan_duration: { value: perpetual, source: "https://quillbot.com/premium", evidence: "Free is presented as a standing column alongside the paid tiers with no expiry stated anywhere in the documents read" }
+  trial_exists: { value: "no", source: "https://quillbot.com/premium", evidence: "no trial mentioned on the pricing page, in the Quillbot or Learneo Terms of Service, or in any of the three help-center articles read" }
+  trial_card_required: { value: not_applicable, source: "", evidence: "no trial (trial_exists = no)" }
+  trial_length_days: { value: not_applicable, source: "", evidence: "no trial (trial_exists = no)" }
+  trial_auto_converts: { value: not_applicable, source: "", evidence: "no trial (trial_exists = no)" }
+  credit_system_present: { value: "no", source: "https://quillbot.com/premium", evidence: "every allowance (free and Premium) is stated directly in native output units — words, characters, queries/day, generations/day, scans/day, MB — with no intermediate credit/token/point/coin currency mentioned anywhere in the pricing page, either Terms document, or the help-center feature table" }
+  credit_unit_defined: { value: not_applicable, source: "", evidence: "no credit system (credit_system_present = no)" }
+  credit_to_output_rate_published: { value: not_applicable, source: "", evidence: "no credit system (credit_system_present = no)" }
+  credit_rate_location: { value: not_applicable, source: "", evidence: "no credit system (credit_system_present = no)" }
+  cost_per_output_unit: { value: per_seat_month, source: "https://quillbot.com/premium", evidence: "pricing page frames the principal output as flat unmetered access to the writing suite: \"All Premium plans include: Paraphraser, Grammar Checker, Plagiarism Checker, AI Detector, AI Humanizer, Summarizer...\" sold as one per-seat monthly-equivalent price, not a countable per-output artifact" }
+  cost_per_output_computable: { value: "yes", source: "https://quillbot.com/premium", evidence: "unit is per_seat_month and the price is published in the default display state ($4.17/mo billed annually); cost per seat-month equals the published price itself, no further figures needed" }
+  computation_assumptions: { value: "Premium=entry tier, default display Annual: $4.17/mo billed annually = $49.95/yr (SSR JSON on pricing page). Principal output=per_seat_month (unmetered core writing suite per pricing-page framing). Cost/seat-month = $4.17, the published price itself; no allowance conversion needed.", source: "https://quillbot.com/premium", evidence: "" }
+  credit_rollover_policy: { value: not_applicable, source: "", evidence: "no credit system (credit_system_present = no)" }
+  failed_generation_charge_policy: { value: unknown, source: "", evidence: "the product does meter some generation (e.g. Image Generator 300/month, AI Presentation Generator 30/month on Premium), so not_applicable's \"no metered generation step at all\" bar is not met, yet no document read states what happens to the count on a failed/errored generation" }
+  auto_renewal_default: { value: "on", source: "https://quillbot.com/terms", evidence: "\"IF YOU PURCHASE AN AUTOMATICALLY RENEWING SUBSCRIPTION ... AND DO NOT CANCEL IT AS SPECIFIED BELOW, YOUR SUBSCRIPTION WILL AUTOMATICALLY RENEW FOR A TERM EQUAL IN LENGTH TO THE PREVIOUS SUBSCRIPTION PERIOD ... AND YOU AUTHORIZE US TO AUTOMATICALLY CHARGE YOUR PAYMENT METHOD\" (corroborated near-verbatim in Learneo ToS Paid Services section)" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://quillbot.com/terms", evidence: "stated in Quillbot Terms of Service Section 3 and in Learneo Terms of Service (Paid Services); not stated on the pricing page itself nor as a standalone help-center disclosure (help articles reference \"turning off auto renewal\" as an action without independently disclosing the on-by-default term)" }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://www.learneo.com/legal/terms-of-service", evidence: "general terms authorize charging on renewal with no stated advance-notice commitment (\"we may send you electronic communications related to our services\" is the only related line, and per codebook this is not advance notice); a regional exception exists only for Mexico-located users, see coder_note" }
+  refund_policy_exists: { value: "yes", source: "https://help.quillbot.com/hc/en-us/articles/6046562291223-Can-I-get-a-refund-for-Quillbot-subscription", evidence: "\"As a consumer located in the European Economic Area (EEA) and UK, you have the right to withdraw within 14 days of purchase of your Quillbot subscription.\"" }
+  refund_window_days: { value: 14, source: "https://help.quillbot.com/hc/en-us/articles/6046562291223-Can-I-get-a-refund-for-Quillbot-subscription", evidence: "\"right to withdraw within 14 days of purchase\" — EEA/UK only, see coder_note" }
+  refund_conditions: { value: unconditional, source: "https://help.quillbot.com/hc/en-us/articles/6046562291223-Can-I-get-a-refund-for-Quillbot-subscription", evidence: "no condition beyond EEA/UK residency and the 14-day window is stated for the withdrawal right" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://help.quillbot.com/hc/en-us/articles/360056300334-How-do-I-cancel-my-Premium-subscription", evidence: "\"Option 1: Cancel via your Account page ... Click on the Your Plan tab. Select Cancel subscription.\"" }
+  refund_policy_location: { value: multiple, source: "https://quillbot.com/terms", evidence: "referenced in Quillbot ToS Section 3 (\"Please see here for additional information about refunds\") and stated in full in the help-center article; both document classes agree" }
+  commercial_use_lowest_tier: { value: highest_tier, source: "https://quillbot.com/terms", evidence: "Annexure 1 (Team Plan Terms): \"Team Plan users may use the Quillbot Service for their personal or commercial purposes, including both internal and external business use.\" Contrast Section 1: Free = \"personal, non-commercial purposes\"; Premium = \"personal use or your internal business purposes\" (does not use the word commercial). Judgment call, see coder_note." }
+  watermark_removal_tier: { value: unknown, source: "", evidence: "\"watermark\" not mentioned in any document read; not coded not_applicable for the same reason as free_plan_watermark (product bundle includes image generation)" }
+  output_ownership_statement: { value: user_owns, source: "https://www.learneo.com/legal/terms-of-service", evidence: "Section IV (Your Content): \"You retain all ownership rights over your User Content.\" Quillbot's own Terms define \"Input and Output\" as part of \"User Content\" (Section 2), so this reaches generated outputs." }
+  usage_cap_quantified: { value: some_quantified, source: "https://help.quillbot.com/hc/en-us/articles/360058341753-What-s-the-difference-between-a-free-and-a-Premium-account", evidence: "quantified on Premium: \"25,000 words/month\" (Plagiarism Checker), \"Up to 6,000 words\" (Summarizer), \"300/month\" (image generation), \"30/month\" (AI Presentation Generator), \"100 MB\" (Flow storage), \"4,000 characters per scan\" (Text to Speech); NOT quantified: Premium's \"Unlimited\" paraphraser/humanizer/translator/AI Detector/AI Chat, because Learneo's ToS qualifies all such claims with an unquantified throttling clause (see unquantified_limit_clause), which under rule 3 makes an \"unlimited\" claim not-quantified" }
+  unquantified_limit_clause: { value: present, source: "https://www.learneo.com/legal/terms-of-service", evidence: "\"we may establish, modify, increase, or decrease reasonable usage limits and restrictions (such as throttling, queuing, or other similar measures) in order to maintain the stability, performance, security, and fair availability of the Learneo Services.\" No figure defines \"reasonable\"." }
+
+coder_note: |
+  BUNDLE NOTE (per orchestrator instruction): QuillBot sells ONE subscription (Premium) that unlocks
+  a full tool suite, not a humanizer-only product. Vendor's own words, pricing page: "All Premium
+  plans include: Paraphraser, Grammar Checker, Plagiarism Checker, AI Detector, AI Humanizer,
+  Summarizer, Apps, Browser Extensions, Much more." The help center further lists AI Chat, Image
+  Generator, AI Presentation Generator, Translator, Flow (storage), and Website Builder as also gated
+  by the same Premium subscription. The humanizer is one of roughly ten tools unlocked by this one
+  purchase; this record codes Premium (the plan that grants the humanizer) per the frame's AI-humanizer
+  categorization — no humanizer-only SKU exists.
+
+  ENTRY TIER: Premium is the only single-seat, generally-available, no-sales-contact standing paid
+  plan. Annual-equivalent cost in the default display state (Annual) = $49.95/yr ($4.17/mo billed
+  annually). Losing candidate: Team (quillbot.com/upgrade/teams) — self-serve, no sales contact
+  required on the page itself, but its minimum purchasable block is 2 seats at $44.95/seat/yr
+  (2-10 seat band) = $89.90/yr for the smallest block a buyer can actually purchase (sampling-rules
+  7.2's "a buyer cannot buy less" rule for seat-block minimums), which exceeds Premium's $49.95/yr;
+  Team loses. Its other bands (11-50 seats $39.95/seat/yr; 51+ $34.95/seat/yr) exceed Premium's
+  single-seat cost by an even wider margin at their own minimums.
+
+  ANNUAL-PRICING PRESENTATION (flagged by orchestrator as a known vendor pattern; confirmed true
+  here): the /premium marketing page shows ONLY the Annual plan's monthly-equivalent figure ($4.17)
+  with "billed annually" adjacent; it never displays a true monthly-billed price ($9.95/mo) or the
+  annual total ($49.95) anywhere in its rendered/visible text. Both figures exist only inside the
+  page's own embedded SSR JSON payload (script type=application/json, data-for=route-props), never
+  in anything a visitor reads. DOM was inspected directly (not just text-extracted) to confirm: zero
+  occurrences of "Monthly"/"Quarterly"/"Semi-Annual" as rendered text anywhere on the page, and the
+  page's only role=tab structure is an unrelated testimonial carousel. Coded annual_default_toggle=
+  no_toggle on that basis: there is no toggle control to preselect, only one displayed configuration.
+  A naive 4.17 x 12 = 50.04 would MISSTATE the true first charge; the vendor's own embedded data
+  states the annual total directly as 49.95 (used for first_charge_amount_usd instead of computing
+  it) — a real $0.09 gap between the computed and the stated figure, exactly the "read a price twice"
+  trap the instrument warns about.
+
+  FREE-TIER LIMITS, TWO SOURCES: the pricing page states six free-plan features, three quantified
+  ("Paraphrase up to 125 words", "Paraphrase in 2 modes", "Humanize up to 125 words, 6 uses/day") and
+  three not ("Fix basic grammar errors", "Generate basic summaries", "Access AI Detector (limited)").
+  The official help-center comparison article (360058341753) publishes a fuller, mostly-quantified
+  table (Summarizing up to 1,200 words; AI Detector up to 1,200 words + 10 scans/day; Translator up
+  to 5,000 characters; 20 AI Chat queries/day; 3 image generations/day; 3 AI presentation
+  generations/day; 10 MB Flow storage; 5 Website Builder create/edit) that is not surfaced on the
+  marketing pricing page at all — confirms the orchestrator's expectation that "the pricing page and
+  the in-product copy often differ." See conflict_note for the one item (Humanizer) where the two
+  sources give incompatible numbers rather than merely different precision.
+
+  USAGE CAP ON PREMIUM: several Premium features carry an explicit quantified monthly/per-scan cap
+  (listed in usage_cap_quantified's evidence). The core paraphraser/humanizer/AI Chat/Translator/AI
+  Detector are marketed "Unlimited", but Learneo's general Terms of Service (incorporated by
+  reference) reserves the right to impose "reasonable usage limits and restrictions (such as
+  throttling, queuing, or other similar measures)" with no figure attached — the same fact pattern as
+  the codebook's own Vendor U worked example — so those "Unlimited" claims are coded not-quantified
+  and unquantified_limit_clause=present.
+
+  COMMERCIAL USE (judgment call, flagged for adjudication): a three-way gradient in the Terms — Free:
+  "personal, non-commercial purposes" (excluded); Premium: "personal use or your internal business
+  purposes" (does not use the word commercial); Team: "personal or commercial purposes, including
+  both internal and external business use" (explicit). Coded commercial_use_lowest_tier=highest_tier
+  (Team) on the reading that "internal business purposes" is deliberately narrower than "commercial
+  purposes ... external business use" and stops short of a general commercial-use grant. A reader
+  could reasonably treat Premium's "internal business purposes" as already a form of commercial use;
+  flagging for review rather than resolving silently.
+
+  TRIAL: no free trial of Premium is documented anywhere (pricing page, both Terms documents, three
+  help-center articles read); the free plan is a standing metered tier, not a time-limited trial. No
+  A-012 concern — the Monthly/Quarterly/Semi-Annual/Annual options are all standard ongoing recurring
+  terms at their own stated recurring rate, not a cheap intro period that jumps to a higher rate after
+  a short window.
+
+  WATERMARK: not mentioned in any document read (pricing page, Quillbot ToS, Learneo ToS, three help
+  articles). Coded unknown rather than not_applicable because Premium's bundle now includes an AI
+  Image Generator (300 images/month) — an output type that could carry a watermark — so positive
+  evidence that "the construct does not exist for this product" (section 2.2's bar for not_applicable)
+  is not met; the documents are simply silent.
+
+  MINOR DOCUMENT INCONSISTENCIES (see conflict_note; neither affects an entry-tier coded value):
+  (1) the refund help-center article cites Terms "Section 5" for the refund position, but
+  quillbot.com/terms' own Section 5 is "Take-Down Requests", not refunds — the operative refund text
+  was instead read directly from the help-center article and from Learneo's general Paid Services
+  clause; (2) quillbot.com/terms Section 3 legal boilerplate labels "QUARTERLY" as "(4 MONTH)" while
+  the same page's own embedded SSR pricing data defines Quarterly as a 3-month term ($19.95 total).
+
+  CURRENCY (deviation D-003/D-007): request made from the study's Turkey network location. The
+  pricing page's own SSR JSON explicitly tags every price object currency:USD despite detecting
+  countryCode:TR, with priceVariants empty (no region-specific price override being served). No EUR/
+  GBP/TRY symbols found anywhere on any page read. Treated as strong vendor-side evidence the reader
+  is served USD, not a currency requiring unknown/non_usd.
+
+  blindness: no other product's record, no aitoolspolice.com review page, and no pass-2 material was
+  opened.
+conflict_note: "Free-plan Humanizer limit: quillbot.com/premium states \"Humanize up to 125 words, 6 uses/day\"; the official help-center feature table (https://help.quillbot.com/hc/en-us/articles/360058341753-What-s-the-difference-between-a-free-and-a-Premium-account) states \"Humanize text (Advanced mode): 3 uses\" for Free — a different structure/number, not merely added precision. Pricing page ranks first for free-tier limits per protocol 6.2, so free_plan_cap_value is coded from it; the help-center figure is recorded here rather than silently dropped. Also: quillbot.com/terms Section 3 boilerplate labels a \"QUARTERLY (4 MONTH)\" subscription term while the same page's own embedded pricing JSON defines Quarterly as duration:3 (3 months, $19.95) — does not affect any coded value (entry tier is Annual/Premium). Also: the refund help article cites Terms \"Section 5\" for the refund position, but quillbot.com/terms' own Section 5 is \"Take-Down Requests\" — operative refund text was read from the help-center article and Learneo's general terms instead."
+register_events: []
+status: complete

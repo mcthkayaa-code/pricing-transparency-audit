@@ -1,0 +1,43 @@
+SOURCE: https://help.invideo.io/en/articles/9380226-can-i-use-invideo-ai-for-free
+ACCESSED: 2026-08-09
+METHOD: Rendered read via headless browser, document.body.innerText.
+ARCHIVE: https://web.archive.org/web/20260809164451/https://help.invideo.io/en/articles/9380226-can-i-use-invideo-ai-for-free
+
+=== RENDERED TEXT (verbatim) ===
+Can I use invideo AI for free?
+Updated over a week ago
+
+Yes, you can use invideo AI for free without entering your card details.
+
+The free plan gives you limited credits to explore the platform. You can use these credits across
+invideo's features including the Agents & Models flow for image generation.
+
+Note: This quota on the Free plan is reset weekly on Monday at 12 a.m. UTC.
+
+What you can do on the free plan
+Access to AI models with limited credits
+Generate images using the Agents & Models flow
+Use and share videos on social media
+
+[generation walkthrough steps omitted — not evidentiary]
+
+Note: Credits are consumed per generation depending on the model and settings chosen. For a full
+breakdown of image generation credit costs: https://invideo.io/help/billing/image-pricing/
+
+Want more credits? Upgrade to a paid plan to get a higher monthly credit allocation. View all plans
+here: https://invideo.io/pricing/
+
+=== CODING NOTE ===
+This is the current, live official help-center article on the free plan (title bar confirms
+"Updated over a week ago"). It does NOT state a numeric export count, video-minute limit, or storage
+figure for the Free plan — only "limited credits" (no number) and a reset cadence (weekly, Monday
+00:00 UTC — a period, but with no accompanying number/dimension, so still not quantified per
+codebook section 5.1). A prior WebSearch AI-overview synthesis (third-party, not a valid coded
+source) had surfaced different figures ("4 exports/week", "10 min/week", "10 GB storage", "exports
+carry the invideo logo") attributed loosely to invideo's free plan; none of those figures appear on
+this actual official article as read on 2026-08-09, and per protocol 6.3 prohibition 7 a value may
+never be coded from a third-party source, so none of those figures are coded. This discrepancy
+itself is recorded here in case a later re-check finds them on a different official page.
+No statement found anywhere in the documents read (this article, the credits table, the Terms and
+Conditions, the pricing page) about whether Free-plan outputs carry a watermark -> free_plan_watermark
+= unknown.

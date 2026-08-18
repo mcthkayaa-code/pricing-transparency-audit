@@ -1,0 +1,208 @@
+product_id: ismybrandinai
+product_name: Is My Brand In AI
+category: AI bot checker
+product_status: active
+paid_submission: "no"
+entry_tier_name: not_applicable
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-17
+recheck_date: not_applicable
+primary_source_url: https://ismybrandinai.com/
+archive_url: https://web.archive.org/web/20260805193918/https://ismybrandinai.com/
+archive_status: archived
+default_display_state: >
+  No pricing page exists anywhere on this vendor's domain (both passes independently
+  confirmed via the full sitemap.xml, 54 URLs, none named pricing/plans/premium/upgrade/
+  subscribe/checkout; /pricing returns HTTP 404). The site is a single standing, always-free
+  toolset (AI Bot Checker, AI Readiness Checker, AI Prompt Generator, llms.txt Generator)
+  under one Terms of Use; no billing toggle, no currency figure, no plan selector, no region
+  variant exists anywhere to record a default state for. Re-confirmed live 2026-08-17
+  (post-window, for confirmation only): content unchanged from both passes' 2026-08-05 and
+  2026-08-14 reads.
+
+sources:
+  - { url: "https://ismybrandinai.com/", kind: other, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814182846/https://ismybrandinai.com/", note: "homepage; confirms no pricing nav item. Archive verified: HTTP 200, memento-datetime matches cited timestamp exactly, no redirect." }
+  - { url: "https://ismybrandinai.com/tools", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814182552/https://ismybrandinai.com/tools", note: "tools listing; 'A small set of free tools ... No signup, nothing stored.' Lists all four tools, two checkers and two generators. Archive verified real (HTTP 200, matching memento-datetime, no redirect)." }
+  - { url: "https://ismybrandinai.com/tools/ai-bot-checker", kind: docs, accessed: "2026-08-05", archive: "https://web.archive.org/web/20260805194008/https://ismybrandinai.com/tools/ai-bot-checker", note: "the reviewed tool's own page. Using pass 1's archive citation here, not pass 2's: pass 2's cited timestamp (20260814181655) is a PHANTOM CITATION -- see coder_note. Pass 1's capture verified real (HTTP 200, matching memento-datetime, no redirect)." }
+  - { url: "https://ismybrandinai.com/terms", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814182215/https://ismybrandinai.com/terms", note: "entire ToS, read in full by both prior passes and re-read by this adjudicator; carries the 'anything you generate' clause this adjudication turns on. Archive verified real via CDX (distinct capture, own digest, exact timestamp match)." }
+  - { url: "https://ismybrandinai.com/about", kind: other, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814182922/https://ismybrandinai.com/about", note: "'Free tools, no signup. The tools here run in your browser, free, with nothing to install.' Archive verified real." }
+  - { url: "https://ismybrandinai.com/methodology", kind: other, accessed: "2026-08-05", archive: "https://web.archive.org/web/20260805194215/https://ismybrandinai.com/methodology", note: "read by pass 1 to rule out paid offerings; mentions of pricing refer to third-party vendors in editorial context. Archive verified real." }
+
+variables:
+  headline_price_usd: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "\"Free, no signup — the check runs in your browser.\" FAQ: \"Is this tool really free? Yes. It reads a public text file and analyzes it in your browser. No signup, no account, nothing stored.\" No paid tier exists anywhere on the site (/pricing = HTTP 404; confirmed against full sitemap.xml). Agreed by both passes." }
+  headline_billing_basis: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No paid tier; no billing basis of any kind is published. Agreed by both passes." }
+  first_charge_amount_usd: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No paid tier exists; ToS: \"Free tools — provided \\\"as is\\\".\" Nothing is ever charged. Agreed by both passes." }
+  mandatory_addon_present: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No paid tier exists, paired with first_charge_amount_usd=not_applicable per the A3 impossible-pair rule's undaggered corner. Agreed by both passes." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No annual billing option exists; product has no paid tier at all. Agreed by both passes." }
+  annual_default_toggle: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No pricing page and no billing toggle of any kind exists on this vendor's site. Agreed by both passes." }
+  free_plan_exists: { value: "yes", source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "\"Free, no signup — the check runs in your browser.\"; About: \"Free tools, no signup. The tools here run in your browser, free, with nothing to install.\" Ongoing no-cost use, no trial time limit. Agreed by both passes." }
+  free_plan_cap_documented: { value: unknown, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No document anywhere states a usage limit (quantified or unquantified) on how many checks may be run, nor an explicit 'unlimited' claim. The no-account, client-side design makes a cap technically improbable, but that is an inference, not a documented statement. Agreed by both passes." }
+  free_plan_cap_value: { value: unknown, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No quantified limit is published; matches free_plan_cap_documented=unknown. Agreed by both passes." }
+  free_plan_watermark: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "Output type cannot carry a watermark: the tool returns a crawler-by-crawler allow/block/partial-limit report on the reader's own robots.txt, not a media artifact. No document mentions watermarking. Agreed by both passes." }
+  free_plan_duration: { value: perpetual, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "Presented as a standing entry on the permanent /tools page, not framed as time-limited anywhere; no expiry stated in any document. Agreed by both passes." }
+  trial_exists: { value: "no", source: "https://ismybrandinai.com/terms", evidence: "No trial mentioned anywhere in the ToS, About, Tools listing, or the tool page itself; the tools are described as free outright, never as a trial. Agreed by both passes." }
+  trial_card_required: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No trial exists. Agreed by both passes." }
+  trial_length_days: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No trial exists. Agreed by both passes." }
+  trial_auto_converts: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No trial exists. Agreed by both passes." }
+  credit_system_present: { value: "no", source: "https://ismybrandinai.com/terms", evidence: "No mention of credits, tokens, points, coins, or generation-metering anywhere on the site; a single free check with no account to meter against. Agreed by both passes." }
+  credit_unit_defined: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No credit system. Agreed by both passes." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No credit system. Agreed by both passes." }
+  credit_rate_location: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No credit system. Agreed by both passes." }
+  cost_per_output_unit: { value: other, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "Principal output is one crawler-access report per domain submitted (\"Enter your domain and we'll read your robots.txt...\"). None of the enumerated units fit a diagnostic report; coded other, named 'per domain / robots.txt check'. Agreed by both passes." }
+  cost_per_output_computable: { value: "yes", source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "\"Is this tool really free? Yes.\" No paid tier exists anywhere, so the only figure needed (price) is published outright as free/$0, with no usage assumption required. Agreed by both passes." }
+  computation_assumptions: { value: "No paid tier exists anywhere on the site (ToS, About, Tools listing, and the AI Bot Checker page all state the tools are free; no pricing page exists per sitemap.xml). Cost per principal output (one robots.txt check) = $0.00; the vendor's free statement is the only figure needed.", source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "Synthesized from both passes, which agreed on cost_per_output_computable=yes and $0.00; only the free-text wording differed (flagged PROSE by tools/disagreements.py, not a substantive disagreement)." }
+  credit_rollover_policy: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No credit system. Agreed by both passes." }
+  failed_generation_charge_policy: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "The product has no metered generation step: a free, unmetered robots.txt read-and-compare, not a generation product. Agreed by both passes." }
+  auto_renewal_default: { value: no_recurring_billing, source: "https://ismybrandinai.com/terms", evidence: "ToS: \"Free tools — provided \\\"as is\\\".\" No subscription, purchase, or billing of any kind is documented anywhere. not_applicable is unavailable on this variable; no_recurring_billing is the closest available determinate value even though its own definition (\"sold as a one-time purchase\") does not perfectly fit a product that is never sold. Agreed by both passes; both flagged the imperfect fit independently and reached the same value." }
+  auto_renewal_disclosure_location: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "Billing does not recur (no billing exists at all). Agreed by both passes." }
+  renewal_notice_commitment: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "Billing does not recur. Agreed by both passes." }
+  refund_policy_exists: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "The product has no paid tier and the documents say so, so there is nothing a refund could attach to. Agreed by both passes." }
+  refund_window_days: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No paid tier. Agreed by both passes." }
+  refund_conditions: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No refund available; no paid tier. Agreed by both passes." }
+  cancellation_self_serve: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "Billing does not recur. Agreed by both passes." }
+  refund_policy_location: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "refund_policy_exists is not_applicable, meaning no paid tier exists. Agreed by both passes." }
+  commercial_use_lowest_tier: { value: unknown, source: "https://ismybrandinai.com/terms", evidence: "ADJUDICATED per codebook Domain 11: not_applicable requires 'the product produces no output a commercial-use right could attach to' -- a whole-product test, not the principal-output test E2 alone carries. Terms: 'tools like the llms.txt generator ... you're responsible for reviewing anything you generate before you publish or rely on it'; /tools also lists an AI Prompt Generator. Both generate artifacts a user may publish, so not_applicable fails; no document addresses commercial use of them. unknown (vendor silence). Was: pass1 unknown, pass2 not_applicable (E2's principal-output test misapplied to E1)." }
+  watermark_removal_tier: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "The principal output is not a media artifact a watermark could mark -- it is an analysis table (crawler-by-crawler allowed/blocked/partial), matching the codebook's own worked example for this value, which IS scoped to the principal output alone. Agreed by both passes; not disputed." }
+  output_ownership_statement: { value: unknown, source: "https://ismybrandinai.com/terms", evidence: "ADJUDICATED per codebook Domain 11: not_applicable requires 'the product generates no artifact at all,' the same whole-product test as commercial_use_lowest_tier, not E2's principal-output-only test. Terms name 'the llms.txt generator' among free tools and say users must review 'anything you generate before you publish'; /tools also lists an AI Prompt Generator. The product does generate artifacts, so not_applicable fails; the IP clause ('content on this site is ours') covers site content only, never tool output. unknown (vendor silence). Was: pass1 unknown, pass2 not_applicable." }
+  usage_cap_quantified: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No paid tier. Agreed by both passes." }
+  unquantified_limit_clause: { value: absent, source: "https://ismybrandinai.com/terms", evidence: "Terms of Use read in full end to end by both prior passes and independently re-read by this adjudicator (the only terms/AUP-equivalent document on the site; no separate acceptable-use policy page exists per sitemap.xml). No fair-use, reasonable-use, excessive-use, abuse-threshold, or discretionary-throttling clause anywhere in it. This is a genuine full read, not a keyword search. Agreed by both passes." }
+
+coder_note: |
+  ADJUDICATION SUMMARY (2026-08-17). tools/disagreements.py reported 2 substantive
+  disagreements plus 1 prose field for this product; independently re-verified by manually
+  diffing all 37 coded variables across both records, which confirmed exactly 2 value
+  differences and no others. Both of the 2 resolved BY RULE (codebook decision rule applied
+  directly to the vendor's own documents). Zero were left unknown-by-adjudicator-default,
+  zero were classified date_explained, zero were classified variant_explained.
+
+  1. commercial_use_lowest_tier: pass1 unknown, pass2 not_applicable. RESOLVED unknown.
+  Rule: codebook-v1.md Domain 11, this variable's own not_applicable row reads "The product
+  produces no output a commercial-use right could attach to" -- a WHOLE-PRODUCT test. This is
+  textually distinct from watermark_removal_tier's (E2) not_applicable row, which is scoped
+  to "the principal output" specifically. Pass 2 read the AI Bot Checker's own report
+  correctly as not itself an artifact, then applied E2's principal-output scoping to E1 too
+  -- its own local capture (ismybrandinai-sources/tools-ai-bot-checker-2026-08-14.txt) cites
+  E2's worked example ("a detection score or an analysis table") to justify not_applicable on
+  all three E-domain variables at once, but codebook Domain 11 gives E1 no such scope limit.
+  This vendor's one product is not only the AI Bot Checker: its Terms of Use ("Free tools --
+  provided 'as is'") name "the llms.txt generator" among its free tools and state "you're
+  responsible for reviewing anything you generate before you publish or rely on it," and
+  /tools lists an AI Prompt Generator ("Generate the real buyer prompts...") alongside it.
+  Both are standing, documented tools on this one product's site, governed by this one Terms
+  of Use, that generate an artifact a user takes away and may publish (an llms.txt file; a
+  prompt list). not_applicable therefore fails the product-wide test. No document states a
+  commercial-use position for those generated outputs -- the terms' IP clause ("The content
+  on this site is ours unless stated otherwise") covers site/editorial content, not tool
+  output. unknown, kind: vendor silence (the terms, about, and tools pages were read in full
+  and are reachable; the vendor simply never addresses commercial use of what its generator
+  tools produce).
+
+  2. output_ownership_statement: pass1 unknown, pass2 not_applicable. RESOLVED unknown, by
+  the same rule. This variable's own decision rule states its not_applicable test in so many
+  words: "requires that the product generates no artifact at all, which is the same test
+  commercial_use_lowest_tier applies." Same evidence as item 1: the product does generate
+  artifacts (llms.txt Generator, AI Prompt Generator), so not_applicable fails, and no
+  document assigns ownership of them (the IP clause covers site content only, never tool
+  output). unknown, kind: vendor silence.
+
+  Neither disagreement is date_explained (register_events is empty on both prior passes; no
+  vendor_edit entry exists that could explain it) or variant_explained (this is not a
+  display-state disagreement under §6.8/§7.4.2 -- both passes read the same static,
+  non-toggled pages, and no two archive snapshots show two different states of anything).
+  It is a scope-of-construct disagreement: which part of this multi-tool product "the
+  product" means for the not_applicable test. Resolved directly by reading E1 and E3's own
+  value-table wording on its own terms rather than importing E2's neighboring "principal
+  output" scope into variables whose own text does not carry it.
+
+  CITATION INTEGRITY (adjudicator's standing duty to verify every cited capture). Pass 2's
+  archive citation for https://ismybrandinai.com/tools/ai-bot-checker --
+  web.archive.org/web/20260814181655/... -- used as BOTH pass 2's top-level
+  primary_source_url/archive_url AND the cited source for its commercial_use_lowest_tier and
+  output_ownership_statement values -- does NOT resolve to an independent capture. A direct
+  request returns HTTP 302 with header "x-archive-redirect-reason: found capture at
+  20260805194008" (pass 1's own capture, nine days earlier). The CDX index for this exact URL
+  across 2026-08-01 to 2026-08-20 lists exactly three captures, all timestamped 2026-08-05,
+  none on 2026-08-14. Verified independently via curl against web.archive.org (WebFetch
+  refuses that host) after the Wayback Machine's playback service recovered from an apparent
+  broad outage (confirmed unrelated to this citation: an unrelated domain, example.com, also
+  503'd during the same window), and cross-checked against
+  orchestrator/archive-verification.csv, which records the identical redirect independently.
+  This is a phantom citation, not a misreading: no genuine 2026-08-14 public capture of this
+  page exists. It does NOT change any coded value in this record: pass 2 also holds a
+  genuine local capture (ismybrandinai-sources/tools-ai-bot-checker-2026-08-14.txt) read live
+  on 2026-08-14 via a rendered-DOM browser tool, and its text is identical in substance to
+  pass 1's independently-captured 2026-08-05 version and to the live page re-checked
+  2026-08-17, so the underlying facts read from that page are not in doubt. But per protocol
+  §6.4 this source should have been coded archive_status=local_copy_only (as pass 1 correctly
+  did for its own failed /tools archive attempt), not "archived" under a timestamp that turns
+  out not to exist. This adjudicated record's sources: registry cites pass 1's verified real
+  capture (20260805194008) for this URL instead, and notes the substitution there.
+
+  All other archive citations across both passes for this product were checked the same way
+  and resolve cleanly, matching memento-datetime, no redirect: pass1 home (20260805193918),
+  pass1 ai-bot-checker (20260805194008), pass1 about (20260805194153), pass1 methodology
+  (20260805194215), pass1 terms (20260805194133 -- confirmed real via the CDX index, which
+  lists it with its own distinct entry; the direct /web/ fetch stayed throttled through every
+  retry attempted), pass2 home (20260814182846), pass2 tools listing (20260814182552), pass2
+  terms (20260814182215), pass2 about (20260814182922).
+
+  QUOTE VERIFICATION: the terms clause this adjudication turns on -- "Tools like the llms.txt
+  generator are free and provided 'as is,' without warranty. You're responsible for reviewing
+  anything you generate before you publish or rely on it." -- was read directly in pass 1's
+  local copy (records/pass1/ismybrandinai-snapshots/terms.txt) and pass 2's local capture
+  (records/pass2/ismybrandinai-sources/terms-2026-08-14.txt), word for word identical across
+  both independent reads nine days apart, and re-confirmed on the live page 2026-08-17
+  (post-window, confirmation only -- the coded value rests on the window-dated captures, both
+  independently verified real above, not on the live re-check). /tools was also re-fetched
+  live 2026-08-17: llms.txt Generator and AI Prompt Generator remain the two generator-type
+  tools alongside the two checker-type tools (AI Bot Checker, AI Readiness Checker); nothing
+  material has changed since collection.
+
+  SCOPE NOTE: this vendor's frame row (orchestrator/frame-frozen-2026-08-04.csv, this
+  product_id's row only) carries vendor_home_url=https://ismybrandinai.com, the whole domain,
+  under category "AI bot checker," as ONE product_id with one record, not four. Per
+  sampling-rules.md §7.1 the unit of analysis is the product, not the plan or the vendor;
+  "AI bot checker" is this product's stratification category, not a scope restriction to one
+  of its four free tools. primary_source_url here is set to the vendor home page (pass 1's
+  choice) rather than the AI Bot Checker tool page (pass 2's choice): no dedicated pricing
+  page exists on either read, and the home page is the natural "page opened first" for a
+  coder who does not yet know that. Every Domain 1-10 and F-domain value is identical on
+  either scope choice (both passes independently reached the same values on all 35
+  undisputed variables), so this affects presentation only, not any coded value.
+
+  AGREEMENT CHECK ON THE 35 UNDISPUTED VARIABLES: read in full across both records, not just
+  diffed by value, per the instruction that agreement between two passes is not by itself
+  evidence of correctness. Several were flagged by pass 2 as its own judgment calls
+  (auto_renewal_default=no_recurring_billing despite that value's literal one-time-purchase
+  wording not perfectly fitting a product that is never sold; renewal_notice_commitment=
+  not_applicable by consistency rather than an explicit codebook trigger for this specific
+  variable; cost_per_output_computable=yes on a $0 figure with no priced entry tier to anchor
+  codebook rule 1's price input to). Pass 1 reached the identical value independently on each,
+  with materially the same reasoning, so none is a live disagreement; all carried through
+  unchanged. unquantified_limit_clause=absent on both passes rests on an explicit full read of
+  the Terms of Use to its end (both coders state this, and this adjudicator independently
+  re-read the same document via both local captures): the document genuinely contains no
+  fair-use/reasonable-use/discretionary-throttling clause anywhere, so this is a genuine full
+  read, not the keyword-search failure mode, and stands.
+
+  Entry-tier candidates: none exist. Zero paid tiers are published anywhere on this vendor's
+  site (sampling-rules.md §7.3, free-only case); entry_tier_name=not_applicable, confirmed
+  independently by both passes and by this adjudicator's own live re-check on 2026-08-17.
+
+  Materials read for this adjudication: both pass1 and pass2 records and source sets in full,
+  including pass1's local snapshots (records/pass1/ismybrandinai-snapshots/) and pass2's local
+  captures (records/pass2/ismybrandinai-sources/); codebook-v1.md in full; protocol-v1.md §7.4,
+  §7.4.1, §7.4.2 and the sections on archival and mid-window change; sampling-rules.md in full;
+  record-template.yaml; deviations-for-adjudicators.md; this product's own single row in
+  frame-for-pass2.csv and orchestrator/frame-frozen-2026-08-04.csv (grepped for this
+  product_id only, no other row read); tools/disagreements.py source and output;
+  tools/verify_archives.py source and its output for this product's URLs only
+  (orchestrator/archive-verification.csv, grepped for this product_id only); and the vendor's
+  own live pages (ismybrandinai.com/terms, /tools, and the AI Bot Checker tool page) on
+  2026-08-17. Not opened, per protocol: any other product's record or source set,
+  aitoolspolice.com, site/content/reviews/, orchestrator/deviations-log.md,
+  orchestrator/adjudication-queue.md, orchestrator/interim-signals.md.
+conflict_note: "not_applicable - no disagreement between official sources; home, tools index, tool page, about, and terms state the free position identically, and no source publishes a price, a commercial-use position, or an ownership position for tool output. The disagreement adjudicated here was between the two coding passes' reading of variable scope, not between vendor documents."
+register_events: []
+status: complete

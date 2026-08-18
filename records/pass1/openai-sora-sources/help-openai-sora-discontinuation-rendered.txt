@@ -1,0 +1,27 @@
+URL: https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation
+Accessed: 2026-08-10
+Method: rendered read via browser tool (static WebFetch returned HTTP 403 for this domain)
+Network note: collection network egresses from Turkey; page metadata showed "Updated: 11 gün önce" (Turkish for "11 days ago"), i.e. the help page itself detected/served a Turkish locale marker on the update timestamp even though body text rendered in English; no price content on this page so the D-003 currency check does not apply here.
+
+--- article innerText, full page ---
+What to know about the Sora discontinuation
+Updated: 11 gün önce
+
+When will Sora be discontinued?
+The Sora web and app experiences were discontinued on April 26, 2026.
+The Sora API will be discontinued on September 24, 2026.
+
+Will I be able to export my data after the Sora app is discontinued?
+Yes, you can export your data following the steps below. If a final export window is offered, we'll notify you by email before it begins. We recommend you export your Sora content as soon as possible.
+
+What happens to my data after the Sora app is discontinued?
+After Sora is discontinued, and after the period of time of any final export window passes (if we are able to offer one), we will permanently delete any data associated with your use of Sora.
+
+How can I access and export content I created in Sora?
+You can export content you created in Sora by going to sora.chatgpt.com/sunset and clicking on Export. You'll get an email when it's ready.
+
+What if I need a refund?
+For refund questions, please see How do I request a refund for my ChatGPT subscription? Note that any purchased ChatGPT/Sora credits can still be used for Codex, if you so choose.
+--- end ---
+
+Coder note: this is an official OpenAI Help Center article, directly on point. It establishes (a) the Sora consumer web/app product (matching the frame's vendor_home_url, sora.com, which redirects to sora.chatgpt.com) was discontinued 2026-04-26, months before this collection date; (b) the Sora developer API continues until 2026-09-24; (c) refunds for any remaining ChatGPT/Sora billing route through the general "ChatGPT subscription" refund process, not a Sora-specific one; (d) "purchased ChatGPT/Sora credits" existed as a real construct (mandatory add-on / credit system candidate) before shutdown.

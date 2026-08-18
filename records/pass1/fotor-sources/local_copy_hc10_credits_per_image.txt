@@ -1,0 +1,10 @@
+URL: https://support.fotor.com/hc/en-us/articles/17765519966745-How-Credits-are-Consumed-How-Many-Credits-Do-I-Cost-to-Generate-One-AI-Image
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save blocked (Cloudflare/Zendesk); local evidentiary copy per protocol section 6.4.
+---
+Title: How Credits are Consumed? How Many Credits Do I Cost to Generate One AI Image? – Fotor Help Center
+Fotor Help Center > AI Tools > AIGC (AI Image Generator)
+Nora, 3 years ago Updated
+
+Since computation costs and server costs are incurred during the generation process, credits are consumed during the AI image generating process.
+
+Currently, one credit is consumed for each AI image generated in Fotor. The value of the credits is the same regardless of how they are earned, whether they are earned in the Fotor Pro/Pro+ plan, in the credits plan, or received from other ways.

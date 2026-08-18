@@ -1,0 +1,17 @@
+SOURCE: https://writehuman.ai/faqs
+ACCESSED: 2026-08-13
+METHOD: rendered browser read (Claude Browser pane), get_page_text + read_page(interactive)
+Page is labeled "HELP CENTER" and is a DISTINCT document from the /pricing page's embedded FAQ accordion.
+
+Category structure and full question list observed:
+- AI Humanizer (5 questions): What is WriteHuman? / How does the AI humanizer work? / How does WriteHuman improve the quality of AI-generated text? / Is there a free plan? / What languages are supported? / Is WriteHuman's AI humanizer free? / What kinds of writing does WriteHuman work best on? / Which AI models does the humanizer work with? / How does WriteHuman rewrite AI text so it reads naturally?
+- AI Detector (3 questions, more listed): What is the AI detector? / How accurate is the AI detector? / Can I use the detector for free? / Which AI models can the detector identify? / Why does the AI detector sometimes flag human-written text? / Can the detector catch text that has been paraphrased or humanized? / Does the AI detector work on languages other than English? / Can teachers and editors use the detector to grade student work? / How long does a scan take?
+- AI Image Detector (7 questions): How does AI image detection work? / Which AI image generators can you detect? / How accurate is the detection? / Is my uploaded image stored? / What file formats and sizes are supported? / Do I need to create an account? / How long does analysis take?
+- Word Counter (5 questions): Is the word counter really free? / How is reading time calculated? / How are sentences counted? / How are paragraphs counted? / Is my text private?
+- General (4 questions): What detectors does WriteHuman work with? / My content got flagged as AI. What can I do? / Do you have tips for better humanization results? / Are there ethical concerns to removing AI watermarking?
+
+Expanded answer captured:
+Q: "How does WriteHuman improve the quality of AI-generated text?"
+A: "WriteHuman restructures and refines AI-generated content to sound naturally human, adjusting sentence flow, vocabulary, and tone while preserving the original meaning and quality of your writing."
+
+FINDING relevant to this record: this Help Center page contains NO billing/refund/cancellation/auto-renewal/pricing category or question anywhere in its five categories. Those topics are addressed exclusively in the /pricing page's own FAQ accordion (see pricing-2026-08-13.txt). No output-watermarking statement (WriteHuman applying its own mark to outputs) was found here either — the one watermark-adjacent question ("Are there ethical concerns to removing AI watermarking?") concerns the ethics of evading third-party AI-text watermarks, not WriteHuman branding its own output.

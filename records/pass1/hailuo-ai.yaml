@@ -1,0 +1,201 @@
+# RECORD — Hailuo AI (hailuo-ai), pass 1, primary coder.
+product_id: hailuo-ai
+product_name: Hailuo AI
+category: AI video generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Standard Plan
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+recheck_date: not_applicable
+primary_source_url: https://hailuoai.video/subscribe
+archive_url: https://web.archive.org/web/20260807114246/https://hailuoai.video/subscribe
+archive_status: archived
+default_display_state: >
+  Anonymous US-locale GET (curl, Accept-Language en-US) to hailuoai.video/subscribe returned
+  full server-rendered content (prices in USD, monthly-only figures, no annual price found
+  anywhere). The interactive plan-selection UI (cards, any billing toggle) could not be
+  visually confirmed in a browser: the client app redirects an unauthenticated session away
+  from /subscribe to the homepage after hydration, before rendering plan cards or a toggle.
+  No cookie-consent banner blocked the content read; a promo banner ("MiniMax H3 Is Live")
+  overlays the homepage only.
+
+sources:
+  - { url: "https://hailuoai.video/subscribe", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807114246/https://hailuoai.video/subscribe", note: "Live pricing page; SSR HTML fetched via curl (US-locale header). Contains an embedded pricing FAQ block with per-plan price/credits text." }
+  - { url: "https://hailuoai.video/doc/payment-policy.html", kind: refund, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807114956/https://hailuoai.video/doc/payment-policy.html", note: "Dedicated subscription/payment terms doc, explicitly incorporated into the Terms of Service. Covers plans/fees, credits, renewal-adjacent termination clause, refund, IP/ownership for paid users." }
+  - { url: "https://hailuoai.video/doc/terms-of-service.html", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115139/https://hailuoai.video/doc/terms-of-service.html", note: "General Terms of Service (Nanonoble Pte. Ltd., Singapore). Read in full for User Generated Content ownership clause and for the unquantified-limit-clause check (F2)." }
+
+variables:
+  # --- placeholders; filled group by group in subsequent checkpoints ---
+  headline_price_usd: { value: 14.99, source: "https://hailuoai.video/subscribe", evidence: "Standard Plan: Price: $14.99/month, limited-time offer at $7.99. The price will return to $14.99 after the promotion period." }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Standard Plan: Priced at $14.99 per month" }
+  first_charge_amount_usd: { value: 14.99, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Standard Plan: Priced at $14.99 per month, this plan includes accelerated video generation (queue priority), watermark-free downloads, and 1,000 credits per month." }
+  mandatory_addon_present: { value: "no", source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Subscription Plans and Fees section lists only credits/features included in the base price; no required separate charge found for the Standard tier as advertised." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Headline figure is monthly with no annual-prepayment option found in any document, so no annual condition exists to disclose." }
+  annual_default_toggle: { value: unknown, source: "https://hailuoai.video/subscribe", evidence: "Could not be determined: the client app redirects an unauthenticated session away from /subscribe before any plan-card/toggle UI renders, so the toggle's default state could not be visually observed." }
+  free_plan_exists: { value: "yes", source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Free Users: Upon logging in, they have access to basic features such as sequential queuing and parallel video generation, and download videos that include a watermark." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Free users may submit up to three video generation tasks to the queue at any given time... Free users are limited to generating one video at a time in parallel." }
+  free_plan_cap_value: { value: "3 queued tasks | 1 parallel video", source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Free users may submit up to three video generation tasks to the queue... Free users are limited to generating one video at a time in parallel." }
+  free_plan_watermark: { value: "yes", source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Free Users: ...download videos that include a watermark." }
+  free_plan_duration: { value: perpetual, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "This product provides both free and paid service models... Free Users: Upon logging in, they have access to basic features (free tier presented as a standing, ongoing option; no expiry stated anywhere)." }
+  trial_exists: { value: "no", source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Payment Policy's dedicated 'Promotional Offers and New User Benefits' section describes only a one-time welcome credit package for new users (expires 3 days after grant); no document uses 'trial' to describe a time-limited trial of a paid tier." }
+  trial_card_required: { value: not_applicable, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "not_applicable: no trial documented" }
+  trial_length_days: { value: not_applicable, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "not_applicable: no trial documented" }
+  trial_auto_converts: { value: not_applicable, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "not_applicable: no trial documented" }
+  credit_system_present: { value: "yes", source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Credit System: Credits are categorized into three distinct types, applicable to different usage scenarios: Membership Credits... Purchased Credits... Bonus credits..." }
+  credit_unit_defined: { value: "yes", source: "https://hailuoai.video/subscribe", evidence: "Receive 1,000 credits per month, enough to generate around 40 6-second 768P videos/20 10-second 768P videos/12 6-second 1080P videos" }
+  credit_to_output_rate_published: { value: partial, source: "https://hailuoai.video/subscribe", evidence: "Conversion given only as approximate ('around') output counts across three duration/resolution configurations, not as a single stated per-unit rate; treated as range-like per codebook rule 3." }
+  credit_rate_location: { value: pricing_page, source: "https://hailuoai.video/subscribe", evidence: "Credit-to-video conversion figures appear only in the pricing page's own FAQ content; payment-policy.html states credits-per-plan but not credits-per-video." }
+  cost_per_output_unit: { value: per_video_minute, source: "https://hailuoai.video/subscribe", evidence: "Product's principal output is video (category: AI video generator)." }
+  cost_per_output_computable: { value: "no", source: "https://hailuoai.video/subscribe", evidence: "Credits-per-video figures vary by both resolution (768P vs 1080P) and duration (6s vs 10s), given only as approximate ('around') examples with no single canonical rate; computing one figure would require assuming a specific resolution/duration combination, which codebook C3 rule 7 disallows." }
+  computation_assumptions: { value: not_applicable, source: "https://hailuoai.video/subscribe", evidence: "not_applicable: cost_per_output_computable is no, so no computation was performed." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Membership Credits: Credits allocated to subscription members are valid for one month and expire thereafter. Unused credits do not roll over to the next month." }
+  failed_generation_charge_policy: { value: not_charged, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "In the event of a video generation failure or if the content does not pass the review process, the system shall automatically refund the credits consumed during the process." }
+  auto_renewal_default: { value: unknown, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Paid subscribers may terminate the paid service at any point during the billing cycle. The termination will take effect at the beginning of the subsequent billing cycle, and no refunds shall be issued for payments already made." }
+  auto_renewal_disclosure_location: { value: absent, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Pricing page, terms of service, and payment policy all read; no document class uses 'renew'/'renewal'/'auto-renew' language anywhere." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Upon successful payment, the system will provide a confirmation notice. (Confirmation is post-charge, not advance notice; no advance-notice commitment found.)" }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "The termination will take effect at the beginning of the subsequent billing cycle, and no refunds shall be issued for payments already made." }
+  refund_window_days: { value: 0, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "no refunds shall be issued for payments already made" }
+  refund_conditions: { value: not_applicable, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "not_applicable: no refund is available to attach a condition to." }
+  cancellation_self_serve: { value: unknown, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Paid subscribers may terminate the paid service at any point during the billing cycle. (States termination is permitted and when it takes effect, but never describes the method — no 'account settings' or 'contact us' language found.)" }
+  refund_policy_location: { value: terms, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Payment Policy is 'hereby incorporated into the Hailuo AI Video Terms of Service... and forms an integral part thereof' (clause 1.1); refund position stated only there." }
+  commercial_use_lowest_tier: { value: lowest_paid, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "We do not claim ownership over content you generate and download while on a paid subscription plan... you retain any and all intellectual property rights to such content, including the right to use it for commercial purposes." }
+  watermark_removal_tier: { value: lowest_paid, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Paid Users: Standard plan subscribers and higher-tier users will be able to download videos without a watermark." }
+  output_ownership_statement: { value: user_owns, source: "https://hailuoai.video/doc/terms-of-service.html", evidence: "We do not claim ownership of User Contributions or User Generated Content. By using the Services, you grant to us... a...license..." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://hailuoai.video/doc/payment-policy.html", evidence: "Standard Plan: ...1,000 credits per month... paid users may submit up to five tasks concurrently... paid users may generate up to two videos simultaneously... Support for generating 6-second 1080P HD videos." }
+  unquantified_limit_clause: { value: absent, source: "https://hailuoai.video/doc/terms-of-service.html", evidence: "Terms of Service and Payment Policy read in full; no fair-use, reasonable-use, excessive-use, or discretionary-throttling clause found (confirmed by targeted re-search: no match for fair use/reasonable/excessive/abuse/throttle in either document)." }
+
+coder_note: |
+  VENDOR HOME URL: frame's vendor_home_url (https://hailuoai.video) is correct and live;
+  vendor is MiniMax (China-based), coded from the English global site as instructed. No
+  correction needed.
+
+  ENTRY TIER: Standard Plan, $14.99/mo, eligible and cheapest among eligible candidates
+  (annual-equivalent 179.88). Losing eligible candidates (annual-equivalent):
+  - Pro Plan: $54.99/mo = 659.88/yr.
+  - Master Plan: figure CONFLICTS between sources — subscribe.html's embedded FAQ text says
+    "$94.99/month, limited-time offer at $63.99" (10,000 credits), but payment-policy.html
+    says "Priced at $119.99 per month" (also 10,000 credits) with no promo mentioned. Used
+    119.99/mo = 1,439.88/yr as the higher, dedicated-policy-doc figure for this note; see
+    conflict_note. Not the entry tier either way, so this does not change entry_tier_name.
+  - Ultra Plan: $124.99/mo = 1,499.88/yr (figure agrees across both sources).
+  - Max Plan: $199.99/mo = 2,399.88/yr (figure agrees across both sources).
+  - "Unlimited Plan" ($94.99/mo per payment-policy.html) EXCLUDED as ineligible: policy
+    states it is "a legacy plan only available for purchase before June 18, 2025", i.e. not
+    currently purchasable / not generally available (sampling-rules 7.2 eligibility 1-2).
+
+  JUDGMENT CALLS (documented per codebook 1.7, "where documents leave room"):
+  1. headline_price_usd coded 14.99, not the "$7.99 limited-time offer" also mentioned in the
+     same subscribe.html FAQ sentence ("Price: $14.99/month, limited-time offer at $7.99. The
+     price will return to $14.99 after the promotion period."). The FAQ text's own label
+     "Price:" attaches to $14.99, and the independent payment-policy.html document states
+     the plan is simply "Priced at $14.99 per month" with no discount mentioned at all. Could
+     not visually confirm which figure is most prominent on an actual rendered plan card
+     (see ACCESS LIMITATION below), so used the value both official documents agree names as
+     "the price". The $7.99 promo claim is real and documented, just not coded as headline.
+  2. auto_renewal_default coded unknown, not "on", despite payment-policy.html's termination
+     clause ("termination will take effect at the beginning of the subsequent billing cycle")
+     structurally implying recurring billing. No document anywhere uses "renew"/"renewal".
+     Parallel to codebook's own trial_card_required worked example (Vendor I: automatic
+     conversion implies stored card, "implication is not a statement" -> unknown). Applied
+     the same standard here.
+  3. cost_per_output_computable coded no. subscribe.html's FAQ gives approximate ("around")
+     credits-per-video figures that vary by BOTH resolution and duration (Standard: ~25
+     credits/6s-768P video, ~50/10s-768P, ~83/6s-1080P, each "around" not exact); Pro's
+     figures imply a consistent ~25-credit base rate but the codebook bars computing via an
+     assumed configuration (rule 7). credit_unit_defined=yes / credit_to_output_rate_published
+     =partial because a conversion to output units does exist, just not a single clean rate.
+  4. output_ownership_statement coded user_owns from the general ToS (ranks first for this
+     variable). payment-policy.html separately states, for paid users specifically: "We do
+     not claim ownership over content you generate and download while on a paid subscription
+     plan... you retain any and all intellectual property rights..., including the right to
+     use it for commercial purposes." The "while on a paid plan" phrasing is scope-limiting
+     (which users this clause is about) rather than a stated durational contingency like the
+     codebook's own `conditional` example ("owns outputs for as long as the subscription
+     remains active"), so not coded conditional; flagged here for a second coder to weigh.
+
+  FREE-TIER CREDITS: payment-policy.html and terms-of-service.html (my coded sources) never
+  state a specific ongoing credit/output allowance for free users — only the queue-behavior
+  limits coded above. The client-side app bundle (JS payload served with the /subscribe page)
+  contains numerous mutually-inconsistent promotional strings for new-user signup credits
+  (variously "2,000 free credits", "3,000 free credits", "Bonus 10000 credits" in different
+  UI-string fragments) and pricing-table cells referencing other vendors' models ("Veo 3.1
+  Access", "Sora 2 Access") and credit amounts (e.g. 27,000; 10,500) that do not match either
+  official document. These read as leftover/bundled i18n strings from other or historical
+  pricing-table versions, not a coherent current statement, so none of them were used as a
+  coding source anywhere in this record (per codebook 1.6, "never infer... from marketing
+  tone"; treated as too unreliable to be a determinate official statement). Only the
+  coherent FAQ prose paragraph (which matches payment-policy.html exactly on Standard, Pro,
+  Ultra, and Max) was used, and only where noted above.
+
+  ACCESS LIMITATION (rendering attempted repeatedly, per D-005: rendering a public page is
+  documentary reading, not prohibited use): hailuoai.video/subscribe server-renders full
+  pricing content to an anonymous static request (confirmed via curl with Accept-Language:
+  en-US,en;q=0.9 from a Turkey-based network location per archive.org's x-nid response header
+  — USD figures were returned directly, so the protocol/D-003 US-locale currency check was
+  satisfied by this same request and no non_usd value was ever in play). A RENDERED read was
+  also attempted, multiple times, including fresh tabs navigating directly to /subscribe as
+  the first load: every attempt is client-side redirected to the homepage before any plan
+  card or billing toggle mounts. Clicking the mobile "Subscribe" nav tab produced a hang
+  consistent with a blocked sign-in-gated modal; clicking the homepage's "$9.99/mo" pricing
+  teaser widget (see below) produced no observable navigation or modal either. No login,
+  account creation, or product use was attempted at any point, per protocol 6.3.
+
+  UNRESOLVED RENDERED FINDING: the homepage (not /subscribe itself, which never rendered)
+  persistently shows a sidebar widget reading "From $9.99/mo" (confirmed via DOM inspection:
+  a plain, non-interactive-attribute div, no href, cursor-pointer styling only, no tooltip or
+  nearby text explaining what it prices). This figure matches NONE of the documented Hailuo
+  Video plan prices (Standard 14.99, the FAQ's own promo 7.99, Pro 54.99, Master 94.99/119.99
+  conflicting, Ultra 124.99, Max 199.99) and does not appear anywhere in the static SSR
+  payload searched. Two plausible explanations, neither confirmable without an account: (a)
+  an undocumented annual-billing discount on the Standard tier (9.99/mo ~ 33% off 14.99,
+  fetched client-side rather than server-rendered, which would mean an annual toggle DOES
+  exist and headline_billing_basis/annual_default_toggle are under-coded here), or (b) a
+  MiniMax-platform-wide price (the same sidebar also links to design.minimax.io) out of this
+  product's scope. headline_price_usd is NOT changed to 9.99 because it cannot be confirmed
+  to be Hailuo Video's own /subscribe-page figure rather than a homepage teaser for something
+  else; annual_default_toggle stays unknown, now for a stronger, more specific reason (real
+  evidence an annual option may exist, but neither its terms nor its default state could be
+  confirmed). Flagged here explicitly for the recheck (protocol 6.6) and for adjudication.
+
+  TRIAL: one ambiguous i18n UI-string fragment ("one_time_free_trial_credits": "One-time free
+  trial credits") exists in the SPA bundle, but no "trial" language appears anywhere in
+  payment-policy.html (which has a dedicated "Promotional Offers and New User Benefits"
+  section covering exactly this topic) or terms-of-service.html. Coded trial_exists=no on the
+  clean documents; the ambiguous string is noted here, not used as a source.
+
+  D-009 re-read 2026-08-10: not arithmetic-flagged (basis is monthly, 14.99 x 1 = 14.99 = first
+  charge, no mismatch). Re-confirmed entry_tier_name/headline_price_usd/headline_billing_basis/
+  first_charge_amount_usd. Live browser access to /subscribe still redirects an unauthenticated
+  session to the homepage before rendering any plan card (confirmed again today, same as original
+  collection) -- no visual card representation is reachable by any method tried, then or now.
+  Fell to the same two documents the original record cites, each independently re-fetched fresh
+  today (curl, Accept-Language: en-US) rather than trusted from the saved copies: (1)
+  subscribe.html: byte-identical to the saved copy -- "1. Standard Plan  Price: $14.99/month,
+  limited-time offer at $7.99. The price will return to $14.99 after the promotion period."; (2)
+  doc/payment-policy.html: byte-identical to the saved copy -- "Standard Plan: Priced at $14.99 per
+  month, this plan includes accelerated video generation (queue priority), watermark-free
+  downloads, and 1,000 credits per month." Treated as two representations because they are two
+  independently-authored official documents (a plan-description FAQ blob vs. a formal payment
+  policy page), not two extractions of the same text: the FAQ prose explicitly labels $14.99
+  "Price:" and flags $7.99 as a "limited-time offer" that "will return to $14.99", while the
+  payment-policy document states $14.99 as the plan's price outright, with no mention of $7.99 or
+  any promotion at all. Both agree on $14.99 as the standing price; this coder judges that
+  choosing $14.99 (not the flagged-temporary $7.99) as headline_price_usd is the correct reading
+  under codebook headline_price_usd rule 2, since the vendor's own text draws this exact
+  distinction ("Price" vs. "limited-time offer... will return to") rather than presenting $7.99 as
+  an undifferentiated permanent figure -- this is unlike the struck-through-original patterns seen
+  elsewhere in this pass (faceless-so, fotor), where the current discounted figure was clearly the
+  vendor's own "this is what you pay" figure and was coded instead of the struck original; here the
+  vendor's own words point the other way. PROVENANCE of first_charge_amount_usd (per orchestrator
+  request): $14.99 is not computed -- basis is monthly, so first charge equals the headline figure
+  directly, rule 2's annualization clause does not apply; no computation_assumptions entry needed.
+  No final-day change (both documents byte-identical to the original 2026-08-06 collection). NO
+  CORRECTION. All four target variables CONFIRMED, values unchanged.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+conflict_note: "Master Plan monthly price disagrees between two official sources of comparable authority: https://hailuoai.video/subscribe (embedded FAQ text) states \"$94.99/month, limited-time offer at $63.99\" while https://hailuoai.video/doc/payment-policy.html states \"Priced at $119.99 per month\" (both cite 10,000 credits/month). Master Plan is not the entry tier under either figure, so no coded variable's value depends on this conflict; recorded here and in coder_note for transparency per protocol 6.2's instruction that a divergence is reported even where it does not change a coded value."
+register_events: []
+status: complete

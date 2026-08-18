@@ -1,0 +1,282 @@
+product_id: sapling
+product_name: Sapling AI Detector
+category: AI detector
+product_status: active
+paid_submission: "no"
+entry_tier_name: Pro
+
+coder_pass: 3
+coder_role: adjudicated
+collection_date: "2026-08-16"
+recheck_date: not_applicable
+primary_source_url: "https://sapling.ai/pricing"
+archive_url: "https://web.archive.org/web/20260815125126/https://sapling.ai/pricing"
+archive_status: archived
+
+default_display_state: >-
+  USD ($) throughout; no currency/country selector anywhere on the page (both passes checked,
+  agree). PRO card loads with "$25 / month" as the large primary figure; "Annual ($12 / mon)"
+  renders as a separate action button/link (href=javascript:void(0)), not a pre-flipped toggle
+  state -- no checked/aria-selected state and no toggle/switch input control billing period
+  anywhere in the DOM (pass 2 confirmed by explicit querySelector search). No cookie-consent
+  banner encountered by either pass. This adjudicator re-fetched the live page 2026-08-16: the
+  FREE/PRO/ENTERPRISE/API grid, the $25/$12 figures, and the DOM structure are unchanged. Not
+  disputed.
+
+sources:
+  - { url: "https://sapling.ai/pricing", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125126/https://sapling.ai/pricing", note: "Primary pricing page (FREE/PRO/ENTERPRISE/API). Read independently by pass 1 (2026-08-12, local copy only -- two archive.org save attempts both returned a stale 2026-07-16 capture instead of a same-day snapshot) and pass 2 (2026-08-15, archived successfully; DOM-level check/cross-mark extraction for the feature grid, saved at records/pass2/sapling-sources/pricing-feature-grid-dom.txt). Every figure agrees between the two reads. This adjudicator independently re-fetched the live page 2026-08-16 (raw curl, no summarizing tool) and confirms it is unchanged: same $25/$12 figures, same empty Free-column cell for 'AI detector (longer queries)', same 'Snippets: 20' (not 'Unlimited') under Free. archive_url here is pass 2's, the later and only genuinely archived capture of the two." }
+  - { url: "https://sapling.ai/ai-content-detector", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125206/https://sapling.ai/ai-content-detector", note: "Official AI-detector product page/tool; states the free-tier and Pro/Enterprise character-per-query caps verbatim. Read independently by pass 1 (2026-08-12, local copy -- archive.org twice returned a stale 2026-07-20 capture; pass 1 also caught and corrected its own initial WebFetch summarization error, which had fabricated a false 'Pro=50,000/Enterprise=100,000' split against the verbatim DOM text) and pass 2 (2026-08-15, archived successfully). Both agree on every figure. This adjudicator verified pass 2's cited archive URL against the Wayback CDX index (timestamp 20260815125206 exists, HTTP 200, no x-archive-redirect-reason header, i.e. not a redirect to a different capture) and fetched its body directly: the '2000 characters' and '100,000 characters' quotes both appear verbatim, and 'unlimited' appears nowhere on the page. Also independently re-fetched the live page 2026-08-16: identical figures, 'unlimited' still absent." }
+  - { url: "https://sapling.ai/tos", kind: tos, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260812203156/https://sapling.ai/tos", note: "Full Terms of Service, read to the end by both passes (~31.8k chars) and independently by this adjudicator. Pass 1 cites its own 2026-08-12 08:29:27 capture; pass 2 cites a 2026-08-12 20:31:56 capture (its own two same-day save attempts on 2026-08-15 both returned this earlier memento rather than a fresh one). This adjudicator verified BOTH cited timestamps against the Wayback CDX index -- both exist, both return HTTP 200 with no redirect header -- and additionally found a THIRD capture neither pass cited, timestamp 20260815125226, also genuine. All three were fetched and stripped to plain text: the 08-12 08:29 and 08-12 20:31 captures are byte-identical; the 08-15 12:52 capture differs only in unrelated site-nav/footer links (e.g. 'Snippets' vs 'Agents' in the product menu), not in any clause. A live fetch on 2026-08-16 is likewise identical in every operative clause. No vendor_edit occurred anywhere in this document across the full window; register_events stays empty and date_explained is unavailable for any variable sourced from it." }
+  - { url: "https://sapling.ai/billing_faq", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125246/https://sapling.ai/billing_faq", note: "Official billing help-center FAQ; trial-conversion and cancellation-route evidence. Read independently by both passes (pass 1: local copy, 2026-08-12; pass 2: archived, 2026-08-15), agreeing on every quoted line. Not independently re-fetched by this adjudicator -- no disputed variable rests on this document." }
+  - { url: "https://sapling.ai/docs/api/pricing", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125305/https://sapling.ai/docs/api/pricing/", note: "Pass-2-only source; metered API rate card, read on its AI Detector tab specifically. Used only as context for excluding the API as a non-comparable entry-tier candidate (sampling-rules.md 7.2 item 5) -- the same exclusion pass 1 reached independently without opening this page. Not disputed, not separately re-verified." }
+  - { url: "https://sapling.ai/", kind: other, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125326/https://sapling.ai/", note: "Pass-2-only source for the homepage's free-trial / 'no card required' language, which pass 1 read via the pricing page's own FAQ instead. Both land on the same trial facts (30 days, no card). Not disputed, not separately re-verified." }
+
+variables:
+  headline_price_usd: { value: 25.00, source: "https://sapling.ai/pricing", evidence: "PRO card, default state: \"$25 / month\", confirmed a second time via the Subscribe payment dialog (\"You are subscribing to Sapling Pro ($25/month).\"). ToS 3.1: \"All fees are in U.S. Dollars\" -- USD confirmed. Not disputed; both passes agree; unchanged on live re-check 2026-08-16." }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://sapling.ai/pricing", evidence: "Default-loaded state shows \"$25 / month\" as the primary figure; \"Annual ($12 / mon)\" is a separate action link, not a pre-flipped toggle state (no toggle/switch input exists in the DOM). Not disputed." }
+  first_charge_amount_usd: { value: 25.00, source: "https://sapling.ai/pricing", evidence: "Default billing config is monthly, so the first charge equals the headline figure; ToS 3.3 confirms periodic charging \"on the Subscription Billing Date all applicable fees for the next subscription period.\" No multiplication performed. Not disputed." }
+  mandatory_addon_present: { value: "no", source: "https://sapling.ai/pricing", evidence: "Pricing page, detector page, billing FAQ, API docs and ToS 3.1 were all read by at least one pass; none states a required charge beyond the $25/month Pro price for any Pro-listed feature, including the detector's 100,000-character-per-query allowance. Not disputed." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://sapling.ai/pricing", evidence: "Rule 1: the default headline figure ($25/month) does not depend on annual prepayment -- monthly billing is the default, annual a separate non-default link. Not disputed." }
+  annual_default_toggle: { value: monthly_preselected, source: "https://sapling.ai/pricing", evidence: "Page loads showing \"$25 / month\" with \"Annual ($12 / mon)\" as a separate action link, not a pre-selected toggle state; pass 2 confirmed no toggle/switch input controls billing period anywhere in the DOM (explicit querySelector search). Not disputed." }
+  free_plan_exists: { value: "yes", source: "https://sapling.ai/ai-content-detector", evidence: "The public AI-detector checker is usable at no cost with no account or sign-in (pass 1: full-page keyword search found zero occurrences of \"account\"/\"sign in\"; pass 2: a score renders on page load with none performed) -- a standing free tool distinct from the suite's separate $0/mo \"Free\" plan, whose own feature column does not list detector access at all. Not disputed." }
+
+  free_plan_cap_documented:
+    value: all_quantified
+    source: "https://sapling.ai/ai-content-detector"
+    evidence: >-
+      DISPUTED, RESOLVED BY RULE. Pass 1: all_quantified (the 2000-character truncation is the
+      only limit the documents attribute to free-tier detector use). Pass 2: some_quantified,
+      treating the ToS Acceptable Use Policy's unquantified query-volume clause ("not... more
+      than a reasonable number of searches, requests, or queries, determined in Sapling's sole
+      discretion... under your subscribed level of Service") as a second, unquantified limit
+      reaching the free tier. Both readings agree the clause exists and is unquantified (neither
+      disputes unquantified_limit_clause = present) -- the dispute is only whether codebook
+      `free_plan_cap_documented` counts it against THIS variable.
+      Resolved by the variable's own rule 3, which is the ONLY stated mechanism for a
+      discretionary clause to affect this variable: "Where the documents describe the free plan
+      as unlimited in some respect, apply the test in usage_cap_quantified rule 3... unless a
+      clause elsewhere qualifies it... and unquantified_limit_clause records the clause." That
+      precondition -- an affirmative "unlimited" claim ABOUT THE FREE PLAN -- is not met anywhere
+      in the documents. Verified directly, not taken on either coder's word: the detector page
+      contains zero occurrences of "unlimited" (confirmed again live 2026-08-16), and the general
+      suite's own Free ($0) column -- captured by pass 2's own DOM extraction,
+      pricing-feature-grid-dom.txt -- shows "Snippets: 20" (a number, not "Unlimited") and an
+      EMPTY cell for "AI detector (longer queries)"; nothing in either scoping of "free plan" is
+      ever called unlimited. Contrast Pro: its grid row for "Snippets" and "Unlimited use on
+      premium domains" IS marked "Unlimited", which is exactly why the same clause correctly
+      un-quantifies usage_cap_quantified (agreed some_quantified by both passes, not disputed) --
+      rule 3 fired there because its precondition was met there. The AUP clause itself sits among
+      anti-virus/anti-hacking/anti-scraping/anti-multiple-account/anti-harassment prohibitions
+      (ToS Sec. 4.3(ii)-(viii)) -- a Service-wide anti-abuse provision, which is exactly what the
+      codebook's OWN dedicated, ungated variable (unquantified_limit_clause, F2) exists to record
+      once; rule 3 does not additionally re-apply it to every tier-specific cap variable absent an
+      "unlimited" claim on that tier, or F1/F2's deliberate "double count... on an unlimited
+      allowance a fair-use clause qualifies" (protocol 8.3.10) would instead be an unbounded
+      N-count with no textual anchor. With rule 3's carve-out not triggered, the free plan's only
+      documented, tier-specific limit is the 2000-character standing cap: quantified under
+      section 5.1 (number + dimension; a standing limit needs no period, per "1 seat"/"50 MB per
+      file"). 1 of 1 listed limits quantified -> all_quantified. Both cited captures verified
+      genuine against the Wayback CDX index (no redirect); live-reconfirmed 2026-08-16.
+
+  free_plan_cap_value:
+    value: "2000 characters per query"
+    source: "https://sapling.ai/ai-content-detector"
+    evidence: >-
+      DISPUTED, RESOLVED. Pass 1: "2000 characters per query". Pass 2: "2000 characters" (same
+      underlying quote, "The free version is currently truncated to 2000 characters (roughly 400
+      to 500 tokens)."). Both cite the identical sentence; the only difference is whether the
+      per-instance qualifier is retained. Resolved toward pass 1's fuller form on the codebook's
+      own section 5.1 precedent for a quantified STANDING limit -- "50 MB per file" is the
+      codebook's own worked example of a correctly quantified standing limit, and it retains the
+      instance qualifier ("per file") rather than dropping it. "Per query" plays the identical
+      role here (this is unambiguously a per-submission ceiling, not a monthly/lifetime
+      allowance -- the source sentence answers "how do I run the detector on LONGER TEXTS",
+      i.e. per-submission length): omitting it risks a reader misreading "2000 characters" as a
+      cumulative allowance. Directly tied to the free_plan_cap_documented resolution above (the
+      same single limit). Quote verified against the live page and against the CDX-confirmed
+      archive capture, unchanged 2026-08-16.
+
+  free_plan_watermark: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "Detector output is a probability score (e.g. \"Fake: 73.6%\") plus a per-sentence breakdown and a time-limited share certificate, not a media artifact -- matches codebook `watermark_removal_tier` rule 3's own worked example verbatim (\"a detection score or an analysis table\"), which this record's sibling variables below also rest on. Zero mentions of \"watermark\" anywhere on the detector page or in the full ToS (confirmed independently by this adjudicator's own full-text search of all three ToS captures). Not disputed. See coder_note for this adjudicator's check of the not_applicable/unknown boundary on this and the three domain-11 variables below." }
+  free_plan_duration: { value: perpetual, source: "https://sapling.ai/ai-content-detector", evidence: "The free 2000-character checker is presented as a standing page feature; no expiry stated anywhere, distinct from the separate time-limited Sapling Pro trial (domain 4). Not disputed." }
+
+  trial_exists: { value: "yes", source: "https://sapling.ai/pricing", evidence: "\"Haven't yet registered? Just sign up (no credit card required) to start a free 1-month trial of Sapling Pro.\" Not disputed." }
+  trial_card_required: { value: "no", source: "https://sapling.ai/billing_faq", evidence: "Pricing-page CTA: \"(no credit card required)\"; billing FAQ: \"You are only subscribed when you provide payment information... The free trial automatically cancels if no payment method is added.\" Not disputed." }
+  trial_length_days: { value: 30, source: "https://sapling.ai/pricing", evidence: "\"...a free 1-month trial of Sapling Pro.\" Converted at 30 days/month per codebook rule. Not disputed." }
+  trial_auto_converts: { value: "no", source: "https://sapling.ai/billing_faq", evidence: "\"The free trial automatically cancels if no payment method is added.\" Explicit: the trial lapses rather than auto-converting; becoming a paying subscriber requires the buyer's own action. Not disputed." }
+
+  credit_system_present: { value: "no", source: "https://sapling.ai/pricing", evidence: "Pro grants detector access for a flat $25/month gated only by a per-check character cap (100,000 chars) and the unquantified AUP clause, not by a purchased/converted credit balance. No mention of credits/tokens/points/coins/generations as a metering unit for the consumer Free/Pro/Enterprise plans. Not disputed." }
+  credit_unit_defined: { value: not_applicable, source: "https://sapling.ai/pricing", evidence: "No credit system exists on the entry tier. Not disputed." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://sapling.ai/pricing", evidence: "No credit system exists on the entry tier. Not disputed." }
+  credit_rate_location: { value: not_applicable, source: "https://sapling.ai/pricing", evidence: "No credit system exists on the entry tier. Not disputed." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://sapling.ai/pricing", evidence: "Pro is a flat, unmetered monthly subscription per individual user, not a pay-per-check/pay-per-scan product (codebook rule 2: unmetered software access defaults to per_seat_month). Not disputed." }
+  cost_per_output_computable: { value: "yes", source: "https://sapling.ai/pricing", evidence: "Unit is per_seat_month, so cost per seat-month is the published entry-tier price itself ($25.00/month, default display state); no conversion needed. Not disputed. See computation_assumptions." }
+
+  computation_assumptions:
+    value: >-
+      Pro, $25.00/month billed monthly, default display state (unchanged live 2026-08-16). Unit =
+      per_seat_month (rule 2): flat, unmetered access; only caps are a 100,000-char/check limit
+      and the unquantified AUP query clause, not a credit allowance. Cost/seat-month = $25.00
+      itself; no conversion.
+    source: "https://sapling.ai/pricing"
+    evidence: >-
+      Not a scored disagreement -- `computation_assumptions` records the coder's own arithmetic
+      (codebook 2.3: `unknown`/`conflicting` unavailable), and both passes performed IDENTICAL,
+      correct arithmetic reaching the same figure by the same method (flagged by
+      tools/disagreements.py as a prose difference only, not a value dispute). Consolidated here
+      per codebook section 7 rules 2-3 and trimmed to the variable's own 300-character format cap
+      -- pass 2's own value ran to 416 characters, over that cap; noted in coder_note.
+
+  credit_rollover_policy: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "No credit system exists on the entry tier. Not disputed." }
+  failed_generation_charge_policy: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "Pro is flat-rate/seat-based with no per-check accounting or credit deduction (a character-per-query cap only, not a consumed allowance) -- matches the codebook's not_applicable case, \"a flat-rate seat-based tool with no per-output accounting\". No document describes a failure/error policy for detector checks. Not disputed." }
+
+  auto_renewal_default: { value: "on", source: "https://sapling.ai/tos", evidence: "ToS 3.3: \"Your account will be charged automatically on the Subscription Billing Date all applicable fees for the next subscription period\" / \"...until cancellation of either the recurring payments or your account\". Not disputed." }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://sapling.ai/tos", evidence: "Auto-renewal language located only in ToS 3.3. Pricing page and billing FAQ both read by at least one pass; neither states subscriptions renew automatically (pass 2: regex over the full /pricing HTML for \"renew\" returns zero matches). Not disputed." }
+
+  renewal_notice_commitment:
+    value: unknown
+    source: "https://sapling.ai/tos"
+    evidence: >-
+      DISPUTED, RESOLVED. Pass 1: unknown. Pass 2: no_notice_stated. Both passes' own evidence
+      agrees on the underlying document: the ~31.8k-character ToS, read to the end by both, states
+      a conditional FEE-CHANGE notice ("Sapling may change the fees for any feature of the
+      Service... if Sapling gives you advance notice of changes before they apply") and a 30-day
+      TERMS-CHANGE notice ("Any changes to these Terms will be effective upon the earlier of
+      thirty (30) calendar days following our dispatch of an e-mail notice..."), and states
+      neither a commitment to, nor a denial of, notice before an ordinary RENEWAL charge
+      specifically. This adjudicator independently re-read the full document (live 2026-08-16, and
+      the three archived captures listed under sources -- all byte-identical in body text) and
+      confirms no such clause exists in any version across the window. The disagreement is a
+      codebook-application question, not a documentary one, and is resolved by the codebook's own
+      internal structure rather than by picking a side: `renewal_notice_commitment`'s decision
+      rule states a test only for `advance_notice_stated` ("requires a stated commitment") and for
+      `conflicting"; it says nothing about the no_notice_stated/unknown boundary. Its only
+      structural analog in the instrument is `refund_policy_exists`, whose `no_refunds_stated` is
+      explicit that the value "is a determinate value, not a gap" and REQUIRES an affirmative
+      vendor quote (worked example: "Subscription fees are non-refundable except where required by
+      law") -- not mere silence. `renewal_notice_commitment` also carries no `absent` value, so
+      section 2.2's carve-out (which lets full-search-silence stand as a determinate value on
+      variables that DO carry that token, e.g. sibling `auto_renewal_disclosure_location`'s own
+      table: `absent` = "All four document classes were read and none states it" vs `unknown` =
+      "documents could not be located") does not extend to it by name. Section 2.1's general
+      default therefore governs: "Do official documents state a determinate value? ... Otherwise,
+      code unknown" -- and protocol non-claim 4 ("An undocumented term is coded as undocumented,
+      never as concealment") plus protocol 6.3 ("never close a gap by inference") both caution
+      against reading true silence as an affirmative no-notice position. `unknown`, kind VENDOR
+      SILENCE: not access failure (the ToS was fully retrieved and read to completion, repeatedly,
+      by both passes and by this adjudicator, with zero retrieval barrier of any kind at any
+      capture date) and not instrument gap (the vendor did not document renewal notice in a form
+      the codebook lacks a slot for -- it never addressed the construct at all, in any form). No
+      vendor_edit occurred in this document across the window (see sources), so date_explained does
+      not apply; no display-state variance exists on this contractual document, so
+      variant_explained does not apply either.
+
+  refund_policy_exists: { value: no_refunds_stated, source: "https://sapling.ai/tos", evidence: "ToS 3.1: \"All fees are in U.S. Dollars and are non-refundable, and Sapling will not prorate any fees paid for a subscription that is terminated before the end of its term.\" Not disputed." }
+  refund_window_days: { value: 0, source: "https://sapling.ai/tos", evidence: "\"All fees are... non-refundable\" -- no refund window exists. Not disputed." }
+  refund_conditions: { value: not_applicable, source: "https://sapling.ai/tos", evidence: "No refund is available (refund_policy_exists = no_refunds_stated). Not disputed." }
+  cancellation_self_serve: { value: contact_required, source: "https://sapling.ai/tos", evidence: "ToS 3.3: \"You may cancel the Subscription Service by contacting us at: support@sapling.ai\". See conflict_note: billing FAQ (help center, second-ranked source) describes a self-serve dashboard route instead; ToS governs per protocol 6.2's hierarchy for contractual variables. Not disputed between passes -- both coded contact_required and both logged the same conflict." }
+  refund_policy_location: { value: terms, source: "https://sapling.ai/tos", evidence: "Refund position stated only in ToS 3.1; the billing FAQ contains no mention of \"refund\" anywhere. Not disputed." }
+
+  commercial_use_lowest_tier: { value: not_applicable, source: "https://sapling.ai/tos", evidence: "Principal output is a probability score plus a shareable certificate, not an artifact a commercial-use right would attach to. ToS has no defined term for detection \"Output\" and no clause addressing commercial use of detection results (only a restriction on commercially exploiting the Service/platform itself). Not disputed. See coder_note for this adjudicator's not_applicable/unknown boundary check." }
+  watermark_removal_tier: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "Matches codebook rule 3's own worked example verbatim: \"the principal output is not a media artifact a watermark could mark, for example a detection score or an analysis table.\" Zero mentions of \"watermark\" anywhere in the detector page or the full ToS. Not disputed. See coder_note." }
+  output_ownership_statement: { value: not_applicable, source: "https://sapling.ai/tos", evidence: "Same no-output-to-attach-to finding as commercial_use_lowest_tier. ToS \"Ownership\" clause covers IP in the Service/platform; the User Content license covers the user's INPUT text; no clause anywhere addresses ownership of generated detection results. Keyword search for the defined term \"Output\" returns zero matches. Not disputed. See coder_note." }
+
+  usage_cap_quantified: { value: some_quantified, source: "https://sapling.ai/ai-content-detector", evidence: "Pro's detector cap is a specific quantified standing limit (100,000 characters/query), but the SAME tier's \"Unlimited\" Snippets and \"Unlimited use on premium domains\" grid entries ARE qualified by the ToS AUP's unquantified discretionary clause (rule 3's precondition is met here, unlike on the free tier -- see free_plan_cap_documented). At least one quantified and at least one not -> some_quantified. Not disputed." }
+  unquantified_limit_clause: { value: present, source: "https://sapling.ai/tos", evidence: "ToS 4.3(i): \"you agree not to: (i) submit or generate more than a reasonable number of searches, requests, or queries, determined in Sapling's sole discretion, and in no event more than the number allowed under your subscribed level of Service\" -- an unquantified fair/reasonable-use standard at the vendor's sole discretion, no figure given. This adjudicator confirmed by a full re-read of the ToS that this is the ONLY discretionary/fair-use/limits clause in the document (no separate business/Enterprise-specific rate-limit or quota clause exists anywhere). Not disputed." }
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-16. tools/disagreements.py reported 3 substantive disagreements
+  plus one prose field for sapling. All 3 resolved by rule; none left unresolved as "the documents
+  don't determine this" in the sense protocol 7.4 step 5 anticipates -- each disagreement turned on
+  which codebook rule governs, not on genuinely ambiguous vendor documents, though the RESOLVING
+  rule was, in one case, thinner than it should be (flagged below).
+
+  1. free_plan_cap_documented (pass 1 all_quantified / pass 2 some_quantified) -> ADJUDICATED
+     all_quantified, decided by free_plan_cap_documented rule 3's explicit "unlimited"
+     precondition, which is not met anywhere in the documents attributable to the free plan
+     (verified directly, not taken on either coder's word -- see the variable's own evidence
+     field for the full chain).
+  2. free_plan_cap_value (pass 1 "2000 characters per query" / pass 2 "2000 characters") ->
+     ADJUDICATED "2000 characters per query", the fuller form, on the codebook's own section 5.1
+     "50 MB per file" precedent for a quantified standing limit and directly tied to (1).
+  3. renewal_notice_commitment (pass 1 unknown / pass 2 no_notice_stated) -> ADJUDICATED unknown,
+     kind VENDOR SILENCE, decided by cross-referencing this variable's decision rule (which
+     defines only advance_notice_stated and conflicting) against its one structural analog in the
+     instrument, refund_policy_exists, whose no_refunds_stated explicitly requires an affirmative
+     vendor quote rather than silence -- see the variable's own evidence field.
+  Net: 2 of 3 disagreements resolved to a determinate value (both toward pass 1's reading); 1 of 3
+  resolved to `unknown` (also pass 1's reading, but reached independently through the codebook's
+  own no_X_stated/absent structure, not by deferring to pass 1 -- see below). Zero
+  date_explained or variant_explained classifications: this adjudicator independently verified
+  that neither document behind any of the three disputes changed across the collection window
+  (ToS: three archive timestamps spanning 2026-08-12 to 2026-08-15, plus a live 2026-08-16 fetch,
+  all byte-identical in body text; ai-content-detector: live-reconfirmed unchanged 2026-08-16), so
+  no register_events entry was available to support either classification and none is claimed.
+
+  ON NOT DEFERRING TO PASS 1 BY DEFAULT. All three of pass 1's readings are adopted, which risks
+  looking like a tie-break toward whichever pass went first. It is not: for (1)/(2), pass 2's own
+  captured evidence (the pricing-feature-grid-dom.txt DOM extraction) is what disproves pass 2's
+  own conclusion -- pass 2's argument requires an "unlimited" claim on the free tier that pass 2's
+  own source file shows does not exist. For (3), pass 1's `unknown` is adopted not because pass 1
+  wrote it first but because the codebook's OWN naming convention (no_refunds_stated's explicit
+  affirmative-statement requirement) resolves the ambiguity pass 2's reading otherwise has no
+  textual anchor against. Protocol 7.4 step 3 is explicit that agreement between two prior records
+  is not evidence and that both can be wrong; here both passes' underlying document-reading was
+  careful and accurate on all three, and the disagreement was entirely about which codebook rule
+  governs a value neither disputed as a fact.
+
+  CITATION VERIFICATION (the "verify a cited capture exists" duty, confirmed live and material on
+  another product today). Every citation behind a disputed value was checked against the Wayback
+  CDX index and refetched: ToS at pass 1's 2026-08-12 08:29:27 timestamp, pass 2's cited
+  2026-08-12 20:31:56 timestamp, and a third capture neither pass cited (2026-08-15 12:52:26,
+  found while checking the CDX index for drift) -- all three exist, none redirects
+  (no x-archive-redirect-reason header), and all three are byte-identical in body text. The
+  ai-content-detector capture pass 2 cites (2026-08-15 12:52:06) likewise exists, does not
+  redirect, and its body contains both quoted figures ("2000 characters", "100,000 characters")
+  verbatim, with "unlimited" appearing nowhere. No citation in this record pointed at a capture
+  that does not exist or does not carry its quoted figure.
+
+  NOT_APPLICABLE/UNKNOWN BOUNDARY CHECK (flagged in the brief as an open question elsewhere in the
+  adjudication queue: A-018 ruled that `not_applicable` on the watermark/ownership/commercial-use
+  variables does not extend to TEXT-PRODUCING outputs, e.g. humbot's "plain rewritten text", which
+  IS a work product -- both prior adjudicators there moved the value to `unknown`). Checked whether
+  this record's four agreed not_applicable codings (free_plan_watermark, commercial_use_lowest_tier,
+  watermark_removal_tier, output_ownership_statement) fall into that same trap. They do not: this
+  product's principal output is a probability score ("Fake: 73.6%") plus a per-sentence breakdown
+  and a share certificate -- re-read directly against codebook `watermark_removal_tier` rule 3,
+  which names "a detection score or an analysis table" as its OWN explicit not_applicable example,
+  a verbatim, not merely analogous, match. This is the opposite fact pattern from humbot's rewritten
+  essay (an actual work product) and does not touch the A-018 precedent. Left as both passes coded
+  it. Not one of the tool's 3 reported disagreements (both passes already agreed), so not subject to
+  independent re-derivation under this role's mandate, but checked because the brief specifically
+  flagged the boundary as live and reversal-prone elsewhere in the queue.
+
+  WHAT THE TOOLING/CODEBOOK SHOULD HAVE CAUGHT AND DID NOT.
+  1. `renewal_notice_commitment`'s decision rule is materially thinner than its structural sibling
+     `refund_policy_exists`: it defines `advance_notice_stated` and `conflicting` but is silent on
+     the `no_notice_stated`/`unknown` boundary that this record's disagreement turned on entirely.
+     Two careful blind passes read the identical document and split on it for exactly that reason.
+     Worth a codebook clarification for wave 2 stating explicitly whether `no_notice_stated`
+     requires an affirmative vendor statement (parallel to `no_refunds_stated`) or a full-search
+     silence finding (parallel to the `absent` convention) -- this record resolves it the first way,
+     by analogy, but the rule itself does not say so.
+  2. `computation_assumptions`'s codebook format rule caps its value at 300 characters. Pass 2's own
+     value on this record ran to 416 -- an out-of-format value that neither `validate_records.py`
+     (structural presence only) nor `check_value_enums.py` (status-word enums on free-text fields
+     are deliberately left open, so length is never checked) would catch. Not scored as one of the
+     3 disagreements since the field carries no unknown/conflicting status to dispute, but worth a
+     length check in `check_value_enums.py` given it is already parsing these entries.
+  3. Confirms the sapling-specific "verify a cited capture exists" instruction in this task's brief:
+     no fabricated citation was found on THIS record, but a genuine, previously-uncited third ToS
+     capture (2026-08-15 12:52:26) turned up in the CDX index during the routine drift check, which
+     is a reminder that the CDX index is worth checking even when no problem is suspected -- it is
+     what surfaced the extra timestamp, not either pass's own citation.
+
+  blindness: this adjudicator read both pass-1 and pass-2 records and both source sets for sapling
+  only, plus codebook-v1.md, protocol-v1.md, sampling-rules.md, record-template.yaml,
+  orchestrator/deviations-log.md (per this role's own instruction), and the vendor's own live and
+  archived pages. orchestrator/interim-signals.md was NOT opened, per this role's explicit
+  instruction. No other product's record was opened.
+
+conflict_note: "cancellation_self_serve: ToS Section 3.3 (https://sapling.ai/tos) states \"You may cancel the Subscription Service by contacting us at: support@sapling.ai\" (contact_required). The billing FAQ (https://sapling.ai/billing_faq, help center -- second-ranked source for contractual variables) states \"Please sign in and visit https://sapling.ai/dashboard-billing and click Manage billing. There you can manage your billing information and subscription\" -- a self-serve dashboard/Stripe-portal route with no mention of contacting support. Coded contact_required from the ToS per protocol 6.2's hierarchy (terms of service ranks above the help center for contractual variables). Both passes recorded this identically; not itself in dispute."
+register_events: []
+status: complete

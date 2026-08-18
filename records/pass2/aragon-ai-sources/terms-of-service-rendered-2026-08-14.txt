@@ -1,0 +1,45 @@
+URL: https://www.aragon.ai/terms
+Accessed: 2026-08-14
+Method: rendered browser read (document.querySelector('main').innerText), full-text regex searches run for: refund, reasonable limit, fair use, sole discretion, failed, watermark.
+Last Updated (per document): 03/17/2026
+
+=== Key verbatim clauses ===
+
+AUTOMATIC RENEWAL (banner notice, top of doc):
+"AUTOMATIC RENEWAL NOTICE. IF YOU SUBSCRIBE TO THE SERVICE, YOUR SUBSCRIPTION WILL AUTOMATICALLY RENEW FOR ADDITIONAL PERIODS OF THE SAME DURATION AS YOUR INITIAL SUBSCRIPTION PERIOD AT ARAGON'S THEN-CURRENT FEE FOR SUCH SUBSCRIPTION UNLESS YOU CANCEL BEFORE THE RENEWAL DATE IN ACCORDANCE WITH THE SUBSCRIPTION SERVICE TERMS BELOW."
+
+General Payment Terms:
+"Unless otherwise specifically provided for in these Terms, all fees are in U.S. Dollars and are non-refundable, except as required by law."
+
+Subscription Service (full clause):
+"...will automatically renew for successive periods of the same duration as the Initial Subscription Period... unless you cancel the Subscription Service from within your Account, or as otherwise indicated on the Service, or we terminate it... Credits and usage allowances provided with your Subscription Service are subject to rate limits that may vary by feature and by subscription period, including both monthly and annual limits. Any unused Credits or allowances expire at the end of the applicable Subscription Period and will not carry over, unless otherwise agreed by us. ... Your account will be charged automatically on the Subscription Billing Date and thereafter on the renewal date... You may cancel the Subscription Service by contacting us at support@aragon.ai. Subscription modification or cancellation requests submitted via email must be sent from the email address associated with your Aragon Account. Aragon will not process modification or cancellation requests sent from any other email address or submitted by third parties on your behalf, unless required by applicable law. If you contact support@aragon.ai from an email address other than your Account email, you may be asked to verify your identity before any changes are made. YOUR CANCELLATION MUST BE RECEIVED BEFORE THE RENEWAL DATE IN ORDER TO AVOID CHARGE FOR THE NEXT SUBSCRIPTION PERIOD."
+[NOTE: "from within your Account" (self-serve-sounding) vs. "by contacting us at support@aragon.ai" (contact-required) appear in the SAME paragraph — internal tension, recorded in conflict_note.]
+
+Refund search — ALL 5 occurrences of "refund" in the full document (regex over full innerText):
+1. (General Payment Terms, above) "...all fees are in U.S. Dollars and are non-refundable, except as required by law."
+2. "Users who Post, upload, generate, or attempt to generate illegal content will have their accounts immediately terminated without refund..."
+3 & 4. "...in the event Aragon terminates these Terms or your Account without cause (i.e., not as a result of your breach of these Terms or violation of applicable law), Aragon will refund you the pro-rata portion of any pre-paid Subscription Fee attributable to the unused remainder of the then-current Subscription Period. No refund shall be due where termination is for cause..."
+5. Apple App Store boilerplate (irrelevant third-party clause: "If the Service fails to conform to any applicable warranty, you may notify Apple, and Apple will refund any applicable purchase price for the mobile application...")
+NO occurrence cross-references or mentions the dedicated Refund Policy page (aragon.ai/refund-policy) or its 14-day money-back terms. The only refund right ToS itself grants is: (a) as required by law, (b) pro-rata for Aragon-initiated no-cause termination. This is INCOMPATIBLE with the dedicated Refund Policy page's customer-initiated 14-day conditional refund guarantee — see conflict_note.
+
+Credits (general clause):
+"In certain instances, you may receive or purchase credits ("Credits") to access and use specific features of the Service. Purchased Credits can be redeemed only for products and services available through the Service and may only be used within the specified timeframe designated at the time of purchase... Credits are not stored value vehicles or any other financial instrument... Aragon may change Credit terms, pricing, and the value of services obtainable with Credits at any time in its sole discretion upon reasonable notice to you."
+No numeric credit-to-output conversion rate stated in ToS itself.
+
+Promotional Credits:
+"Aragon may, at its discretion, offer loyalty, award, or promotional Credits ("Promotional Credits"), including to free tier users ("Free Tier Credits")." [confirms a formally recognized "free tier" exists]
+
+Output / commercial use / ownership:
+"Output. The AI Tools will use your Inputs to generate the Output. Subject to your compliance with these Terms, Aragon hereby assigns to you all of its rights, title, and interest (if any) in and to the Output generated through your use of the Service. You may use such Outputs for your own personal or commercial purposes, subject to these Terms." [no tier restriction stated anywhere]
+"Ownership; Proprietary Rights... For clarity, Materials excludes Outputs resulting from your use of the Service, which, as between you and Aragon, are owned by you."
+
+Discretionary / unquantified limit clauses:
+"You agree that Aragon retains the right to create reasonable limits on its use and storage of User Content, including limits on file size, storage space, processing capacity, retention periods, and similar limits as described on the Service or as otherwise determined by Aragon in its sole discretion."
+"[Free services clause] Aragon reserves the right, at its sole discretion and at any time without notice, to: (a) suspend, limit, or discontinue access to any free tool or service; (b) impose usage limits, queue times, or indefinite wait periods; and (c) modify or deprecate features without prior notice."
+No numeric rate-limit found anywhere (e.g., no "X requests per minute").
+
+Failed/incomplete generations: NOT mentioned anywhere in the document (regex search for "fail" returned no hits about generation outcomes/credit charges — only Force Majeure "failure to perform", storage "failure to store/transmit", and unrelated boilerplate).
+
+Watermark: not mentioned anywhere in ToS (confirmed both by targeted WebFetch pass and by absence in all raw-text searches run).
+
+Mandatory add-on / required extra fee: not found anywhere in ToS.

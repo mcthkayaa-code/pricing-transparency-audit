@@ -1,0 +1,86 @@
+LOCAL CAPTURE (archive.org save failed x2, internal error) — verbatim
+URL: https://www.adobe.com/express/pricing?country=us
+Accessed: 2026-08-14 (rendered browser read; country selector set to "United States - USD $"
+via the vendor's own country/currency picker in the page footer, per currency-check protocol
+arm 1)
+Method: get_page_text (rendered DOM text extraction) + raw DOM structural check on price nodes
+
+=== raw DOM structural check (second representation, avoids superscript-cents misread) ===
+Free plan price node:
+<span is="inline-price" ...><span class="price"><span class="price-currency-symbol">US$</span>
+<span class="price-currency-space disabled"></span><span class="price-integer">0</span>
+<span class="price-decimals-delimiter">.</span><span class="price-decimals">00</span>
+<span class="price-recurrence disabled"></span>...</span></span>
+-> reads as US$0.00, confirmed.
+
+Acrobat Express price node:
+<span is="inline-price" ...><span class="price"><span class="price-currency-symbol">US$</span>
+<span class="price-currency-space disabled"></span><span class="price-integer">10</span>
+<span class="price-decimals-delimiter">.</span><span class="price-decimals">99</span>
+<span class="price-recurrence">/mo</span>...</span></span>
+-> reads as US$10.99/mo, confirmed. Matches get_page_text extraction below. No toggle for
+monthly/annual billing found on this page for the Individuals segment (search of
+[class*="toggle"],[class*="switch"],[role="switch"],[aria-checked] found only nav/FAQ-accordion
+toggles, none billing-period related).
+
+=== get_page_text rendered output (full) ===
+Title: Pricing: Compare Free & Premium Plans | Adobe Express
+URL: https://www.adobe.com/express/pricing?country=us
+
+Stand out with Adobe Express. Pick your plan.
+Individuals [tab, selected by default] | Businesses | Students | Educators
+
+Adobe Express Free
+US$0.00
+For individuals who want basic content creation tools, limited generative AI credits and assets.
+Free to use. No credit card required.
+Get free plan
+
+Acrobat Express  [card marked "Best value"]
+US$10.99/mo
+Includes all free plan features, and more.
+Generative AI: 250 generative credits per month per user with generative AI features designed to
+be commercially safe.
+Templates: access to all premium static and video templates
+Assets: 200M+ royalty-free Adobe Stock photos, videos, music tracks, and design elements
+Fonts: complete Adobe Fonts collection, 30,000+ fonts
+Editing tools: additional tools like Remove Video Background, advanced animation, and more
+Content scheduling: 3 accounts per social network
+Version history: 30 days
+Storage: 100GB
+One-click Resize; Brand Kits
+Acrobat Reader: View, comment, print, plus fill and sign PDF forms
+Acrobat AI Assistant: Summarize documents and get answers with citations
+Generate podcast; PDF Spaces; Generate presentations
+For individuals who want to create standout content with premium templates, more generative
+credits, and AI-powered document workflows. Includes Adobe Express Premium and Acrobat AI
+Assistant.
+No annual commitment, billed monthly.[1]
+Start 7-day free trial
+
+Footnote 1: "If you have signed up for a free trial, billing begins when free trial ends. Cancel
+before free trial ends and you won't be charged. Subscription automatically renews until you
+cancel." (repeated near page bottom as: "Billing begins when free trial ends. Cancel anytime.
+Cancel before free trial ends and you won't be charged. Subscription automatically renews until
+you cancel.")
+
+Footnote 2: "Adobe Express membership required. The Adobe Stock photo collection does not include
+Premium or editorial content. Limited Adobe Stock functionality available in webpage and video
+features."
+
+Feature comparison table (Adobe Express Free vs Acrobat Express only — Firefly Pro NOT shown as
+a purchasable card on this country=us view; it appears only as a descriptive blurb under "Adobe
+apps" with no price/CTA: "Adobe Firefly Pro: Create images, video, audio, and vector graphics.
+Ideate, create, and collaborate with Firefly Boards. And work with the latest commercially safe
+Firefly generative AI models.")
+
+No refund/cancellation/renewal terms stated on this page beyond footnote 1 above. No mandatory
+add-on charge mentioned for Acrobat Express - full feature set stated as included in the $10.99/mo
+price.
+
+FAQ section (unrelated to pricing mechanics — template/library/brand/commercial-use-of-AI-output
+questions). One relevant FAQ: "Can customers make commercial use of the images generated with AI
+tools powered by Firefly? In general, you may use outputs from generative AI features commercially.
+However, if Adobe designates in the product or elsewhere that a beta version of a generative AI
+feature cannot be used commercially, then the generated outputs from that beta feature are for
+personal use only and cannot be used commercially."

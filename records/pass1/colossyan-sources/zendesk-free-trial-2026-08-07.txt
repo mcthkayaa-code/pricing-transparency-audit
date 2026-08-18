@@ -1,0 +1,50 @@
+SOURCE: https://colossyan.zendesk.com/hc/en-us/articles/31601559867921-Free-Trial
+ACCESS DATE: 2026-08-07
+ARCHIVE STATUS: archive_failed twice (web.archive.org/save returned HTTP 520, then 429, then 520 again on colossyan.zendesk.com domain across multiple articles) -> local_copy_only per protocol-v1.md section 6.4
+TITLE: Free Trial 🧪 – Colossyan
+PAGE "Updated" LABEL AT ACCESS TIME: "1 year ago Updated"
+
+--- VISIBLE MAIN-CONTENT TEXT AS READ ---
+Colossyan
+ Account & Payments
+ARTICLES IN THIS SECTION
+Free Trial 🧪
+1 year ago Updated
+
+We're currently offering a 14-day trial to all subscribers who sign up at Colossyan.
+
+The idea behind the trial is to showcase full Enterprise capabilities and features without any limitations.
+
+Helping you make a better decision on the type of plan needed for your use case.
+
+How long is the free trial period?
+
+14 days.
+
+How many videos can I create?
+
+You can create as many videos as you want as long as their combined length is less or equal to 5 minutes.
+
+How do you calculate minutes?
+
+Each time you click on Generate to generate a video, we deduct the length of that video from your video generation minutes.
+
+Do I have to enter my credit card information?
+
+No.
+
+What happens when the trial ends?
+
+You will be on our Free plan, which has 3 minutes of video generation overall.
+After that, you won't be able to generate videos unless you upgrade to a paid plan.
+
+Your drafts and videos will remain intact on your account
+
+Feature comparison
+
+Please visit our pricing page for a full comparison of the available Colossyan plans.
+
+Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Return to top

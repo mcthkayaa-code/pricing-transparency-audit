@@ -1,0 +1,619 @@
+product_id: jobscan
+product_name: Jobscan
+category: AI resume builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: Quarterly
+
+coder_pass: 3
+coder_role: adjudicated
+collection_date: "2026-08-16"
+recheck_date: not_applicable
+primary_source_url: "https://app.jobscan.co/plan"
+archive_url: "http://web.archive.org/web/20260809165206/https://app.jobscan.co/plan"
+archive_status: local_copy_only
+
+default_display_state: >-
+  USD ($), no currency/region selector; three plan cards render simultaneously and permanently --
+  Free / Quarterly / Monthly -- with no monthly-vs-annual or any other billing toggle anywhere on
+  the page; the Quarterly card carries a "Most popular" ribbon (pass 1's screenshot-derived layout
+  note) / highlighted pill (pass 2's screenshot), the same visual fact described in different words.
+  No annual billing option exists. Non-essential cookies declined; read from a Turkey-egress network
+  on both collection dates (2026-08-09, 2026-08-15), consistent in both. Contrast the Terms of
+  Service, hosted on the same domain, which DOES localize by network geography -- see sources below
+  and unquantified_limit_clause.
+
+sources:
+  - { url: "https://app.jobscan.co/plan", kind: pricing, accessed: "2026-08-15", archive: local_copy_only, note: "SPA; static fetch and archive.org both return the JS shell only (0 price figures) on every attempt across both passes, per D-005. Rendered read required. Read independently by pass 1 (2026-08-09, jobscan-sources/plan-rendered-2026-08-09.txt, plus a second independent DOM-query representation on 2026-08-10 per D-009) and pass 2 (2026-08-15, records/pass2/jobscan-sources/pricing-page-2026-08-15.txt, cross-checked via get_page_text + screenshot). Both captures agree on every figure and on the card layout. Not independently re-fetched by this adjudicator -- no disagreement on this document's content required it." }
+  - { url: "https://www.jobscan.co/terms-of-service", kind: tos, accessed: "2026-08-16", archive: local_copy_only, note: "Embedded via a Termly iframe that auto-localizes by network geography (Turkey-egress collection network renders Turkish). Pass 1 (2026-08-09) obtained the English original by querying Termly's own content-delivery API directly (locale=en, created_locales=[en]) and saved the full 1,137-line document verbatim (jobscan-sources/tos-en-US-plaintext.txt, jobscan-sources/tos-content-enUS.json), logged as a display_variant register event. Pass 2 (2026-08-15) tried six methods -- WebFetch, two browser navigations, a guessed /en/ locale path, a web.archive.org capture, and archive.ph -- all of which returned Turkish body text, a pre-hydration shell, a 404, or a failure; none tried a direct content-API query. This is deviation D-018. This adjudicator independently re-fetched the SAME Termly content-API endpoint live on 2026-08-16 via raw curl (bypassing any summarizing tool): locale=en, content length 157,642 characters, BYTE-IDENTICAL to pass 1's saved 2026-08-09 JSON capture, and the document's own 'Last updated' date (March 16, 2026) predates the entire collection window, so the document was stable throughout. Full text read by this adjudicator start to finish. See unquantified_limit_clause, commercial_use_lowest_tier, watermark_removal_tier, output_ownership_statement." }
+  - { url: "https://www.jobscan.co/cancellation-policy", kind: refund, accessed: "2026-08-16", archive: archive_failed, note: "Dedicated cancellation/refund/trial-billing policy page, English, no localization observed by either pass. Pass 1 (2026-08-09) fetched it via WebFetch, whose summarizing model extracted only the Refund/Cancellation/Auto-Renewal clauses and DROPPED the page's first section, 'JOBSCAN PREMIUM -- TRIAL PERIOD POLICY', entirely -- see trial_card_required. Pass 2 (2026-08-15) read the full text via a rendered browser plus an independent WebFetch cross-check, both matching, and captured the dropped section. This adjudicator independently WebFetched the same URL live 2026-08-16 and confirmed pass 2's quotation verbatim. Both passes' archive.org save attempts failed (HTTP 000 / HTTP 520); archive_status=archive_failed on this URL specifically, local captures are the evidentiary copies." }
+  - { url: "https://www.jobscan.co/auto-apply", kind: docs, accessed: "2026-08-15", archive: local_copy_only, note: "Official Auto Apply credit-system page. Read independently by both passes; figures agree (1 credit = 1 application; 5/10/25-credit packs)." }
+  - { url: "https://www.jobscan.co/saas-agreement", kind: tos, accessed: "2026-08-16", archive: local_copy_only, note: "Separate negotiated B2B/Order-Form contract for the 'Organizations'/Jobscan Coach track, not the individual Free/Quarterly/Monthly consumer product this record's entry tier is drawn from. Read in full by both passes; neither found a fair-use/reasonable-use/excessive-use throttling clause (only a standard anti-resale/anti-reverse-engineering restriction, correctly excluded under unquantified_limit_clause rule 3 by both). Pass 1 read it but deliberately did not add it to sources or use it for any coded value; pass 2 used it as supplementary evidence for output_ownership_statement and unquantified_limit_clause, clearly flagged as out of scope for the entry tier. Cited here for the same supplementary purpose, consistent with pass 2's treatment." }
+  - { url: "https://jobscansupport.frontkb.com/en/articles/11537217", kind: docs, accessed: "2026-08-16", archive: local_copy_only, note: "Official help center, 'Why was I charged during my free trial?' Pass 1 never opened any jobscansupport.frontkb.com URL. Found by pass 2 (2026-08-15, records/pass2/jobscan-sources/support-articles-2026-08-15.txt); this adjudicator independently re-fetched it live 2026-08-16 and confirmed the $1-authorization-hold quotation verbatim. See trial_card_required." }
+  - { url: "https://www.jobscan.co/resume-builder", kind: other, accessed: "2026-08-15", archive: not_archived, note: "Checked by both passes for watermark/ownership/commercial-use language on the free resume builder; neither found any (only generic 'no hidden fees' cost language)." }
+
+variables:
+  headline_price_usd:
+    value: 29.98
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      Quarterly card: "$29.98" / "per month", the largest, most prominent figure on the entry
+      tier's card in the default (only) display state. Both passes agree; confirmed in a second,
+      structurally independent DOM-query representation by pass 1 (D-009, 2026-08-10).
+
+  headline_billing_basis:
+    value: unknown
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      ADJUDICATED. Pass 1: per_month_billed_annually. Pass 2: unknown. Both passes read the SAME
+      fact identically: "Billed as $89.95 every 3 months" -- a quarterly prepayment cadence. The
+      decision rule's only value-producing steps are "where a per-seat figure and a per-month
+      figure are both stated, code per_seat_per_month" (does not apply -- no per-seat framing) and,
+      failing that, checking whether the qualifier is ABSENT and falling to unknown if so. Neither
+      literally covers this case: the qualifier is not absent, it is present and unambiguous, and
+      it names a cadence (quarterly) that none of the five substantive enum values (annually,
+      monthly, per-seat, one-time, usage-based) describes. Per the general decision tree (codebook
+      section 2.1 step 4), where the specific rule provides no value-producing step for the
+      observed state, the fallback is unknown. This is adjudication item A-011, independently
+      reproduced by two blind pass-2 coders (jobscan and teal) working from nothing but the product
+      name and vendor URL, which the queue itself calls "the instrument failing the same way twice
+      under independent observation." Per protocol/codebook section 11 (instrument stability), no
+      value may be added mid-wave; wave 1 codes unknown and wave 2's codebook extends the enum.
+      Pass 1's per_month_billed_annually is not merely an imperfect label -- it affirmatively
+      misstates the vendor's actual practice (the charge recurs every 3 months, not every 12), and
+      codebook section 1 rule 6 and section 2's own preference for unknown over a confident wrong
+      answer both count against carrying it into the published dataset. Not resolved by rule to a
+      determinate value; both prior values are retained in the reliability file per protocol §7.4
+      step 6.
+
+  first_charge_amount_usd:
+    value: 89.95
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      "Billed as $89.95 every 3 months" -- stated directly, no multiplication assumed. Both passes
+      agree. Excludes sales tax (FAQ: "We will apply state and local sales tax based on your
+      billing address") and excludes the separate refundable $1 pre-authorization hold (pass 2's
+      help-center source: "This is not an actual charge"), per rule 5. Note for
+      tools/check_price_arithmetic.py: with headline_billing_basis=unknown this correctly prints a
+      BASIS line, not a FLAG -- the two money figures ARE consistent with a quarterly cadence
+      (29.98 x 3 = 89.94, one cent from 89.95, ordinary rounding, per pass 2's own check).
+
+  mandatory_addon_present:
+    value: "no"
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      Full Quarterly-tier feature list carries no required separate charge; "Auto Apply Credits"
+      and "Interview Practice" are optional, separately-purchased add-ons ("20% off ... after
+      trial"), excluded under rule 3. Both passes agree.
+
+  annual_condition_disclosure:
+    value: not_applicable
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      ADJUDICATED. Pass 1: adjacent (applied the positional adjacent/same_page/one_click_away/absent
+      test to the QUARTERLY disclosure by analogy). Pass 2: not_applicable. Decision rule step 1 is
+      literal and dispositive: "Establish whether the headline figure depends on annual
+      prepayment. If it does not, code not_applicable." Jobscan's headline figure depends on
+      QUARTERLY prepayment; no annual option exists on the page at all (confirmed independently by
+      both passes and unchanged on this adjudicator's review of both captures). The value table's
+      own not_applicable row reads "No annual billing option exists, or billing does not recur" --
+      the first clause is exactly this product's state. Pass 1's adjacent reads the quarterly
+      condition as if it answered a question this variable does not ask; that is a
+      misclassification, not a defensible alternative construction of the same rule text, because
+      the rule names "annual prepayment" specifically and repeatedly, not "any multi-month
+      prepayment condition." Resolved by rule, not by preference between the two prior values.
+
+  annual_default_toggle:
+    value: unknown
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      ADJUDICATED. Pass 1: no_toggle. Pass 2: unknown. Both passes agree on every underlying fact:
+      no interactive toggle exists; three cards (Free/Quarterly/Monthly) render simultaneously and
+      permanently; no annual option exists; the Quarterly card carries a "Most popular"
+      ribbon/highlighted pill. The dispute is purely which enum value that state maps to, and
+      neither fits cleanly. This variable's decision rule contains exactly one value-producing
+      step -- step 2, "where the page offers annual AND monthly options, record which is active on
+      load" -- which does not fire here (no annual option). The rule's text never actually states
+      when to code no_toggle; that value's OWN value-table meaning is "the page offers ONE billing
+      period only," which does not describe Jobscan (it offers two recurring paid periods,
+      quarterly and monthly, simultaneously). not_applicable is also textually foreclosed: unlike
+      annual_condition_disclosure, THIS variable's not_applicable row reads only "Billing does not
+      recur" (no "no annual option" disjunct), and Jobscan's billing does recur. With no
+      value-producing step reaching a determinate answer and no not_applicable criterion met, the
+      general decision tree's fallback governs (codebook section 2.1 step 4: "otherwise, code
+      unknown"). This is NOT a claim that the page's state is unobserved -- it is fully observed
+      and recorded above -- it is that no codebook value correctly labels a three-simultaneous-tier,
+      no-toggle, no-annual-option display. Structurally the same underlying vendor characteristic
+      (quarterly cadence, no annual option) that produces the A-011 gap on headline_billing_basis,
+      but a distinct rule failure on a distinct variable, not itself part of the A-011 queue item as
+      currently scoped -- flagged here for the queue's attention alongside it.
+
+  free_plan_exists:
+    value: "yes"
+    source: "https://app.jobscan.co/plan"
+    evidence: "\"Free\" / \"$0\" / \"forever\" plan card with a feature list and a \"Select\" button. Both passes agree."
+
+  free_plan_cap_documented:
+    value: all_quantified
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      "5 Free Resume Scans monthly" (quantified rate) and "5 ATS & Recruiter Findings" (quantified
+      standing limit); other listed items are unqualified feature inclusions, not limits. Both
+      passes agree.
+
+  free_plan_cap_value:
+    value: "5 resume scans per month | 5 ATS & Recruiter Findings"
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      Verbatim, quantity+unit+period format per section 5.1. Both passes agree; pass 2 additionally
+      flagged (uncoded observation, not a disagreement) that the ATS/Recruiter figure may describe
+      output-per-scan rather than an independent allowance -- the page does not disambiguate, so
+      both bullets stand as published.
+
+  free_plan_watermark:
+    value: unknown
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      Silent on the plan page, the dedicated resume-builder page, and (per pass 2's wider sweep) the
+      full Jobscan Support Center. Both passes agree. Genuine vendor silence, not an access
+      limitation -- both documents this variable could rest on were fully read by both passes.
+
+  free_plan_duration:
+    value: perpetual
+    source: "https://app.jobscan.co/plan"
+    evidence: "\"Free\" / \"$0\" / \"forever\" -- standing tier, no expiry stated anywhere. Both passes agree."
+
+  trial_exists:
+    value: "yes"
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      "Try 7 Days Free" CTA; FAQ "You will have 7 days from the time you start your trial";
+      corroborated by ToS §6 ("We offer a 7-day free trial"). Both passes agree.
+
+  trial_card_required:
+    value: "yes"
+    source: "https://www.jobscan.co/cancellation-policy"
+    evidence: >-
+      ADJUDICATED. Pass 1: unknown, citing the codebook's own Vendor I example (auto-conversion
+      implies a stored card, but implication is not a statement) -- a correct reading of the
+      evidence pass 1 had. Pass 2: yes, quoting the official help center ("When you begin your free
+      trial, Jobscan places a temporary $1 authorization hold on your payment method"), corroborated
+      by the cancellation-policy page ("There is a pre-authorization charge upon initial sign up to
+      ensure the credit card is valid. This amount will be refunded."). The second quotation is from
+      a URL pass 1 ALSO fetched and listed as a source -- but pass 1's WebFetch call returned only a
+      model-generated summary that extracted the Refund/Cancellation/Auto-Renewal clauses and
+      dropped the page's first section, "JOBSCAN PREMIUM -- TRIAL PERIOD POLICY," entirely, which is
+      where this sentence lives. This adjudicator independently re-fetched both the cancellation
+      policy and the help-center article live on 2026-08-16 and confirmed both quotations verbatim.
+      Both statements are direct: a pre-authorization CHARGE that validates the card happens AT
+      SIGNUP (which for a trial-eligible plan is trial start), and a $1 hold is explicitly tied to
+      "when you begin your free trial." Neither rests on the auto-renewal inference the codebook's
+      Vendor I example rejects; decision rule value "yes: documents state a card is required"
+      applies directly. Resolved by coverage: the evidence was in pass 1's own fetched document, but
+      the extraction method used lost it before pass 1 ever saw it, and independently in a second,
+      pass-2-only official document that corroborates the same fact.
+
+  trial_length_days:
+    value: 7
+    source: "https://app.jobscan.co/plan"
+    evidence: "\"You will have 7 days from the time you start your trial\"; ToS §6 agrees. Both passes agree."
+
+  trial_auto_converts:
+    value: "yes"
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      "Once your trial ends, you will be billed for the next quarter of your subscription if you
+      selected a quarterly plan"; ToS §6 agrees, no further buyer action stated as required. Both
+      passes agree.
+
+  credit_system_present:
+    value: "yes"
+    source: "https://www.jobscan.co/auto-apply"
+    evidence: >-
+      "Auto Apply uses a simple credit-based system" -- an intermediate currency distinct from the
+      plan's core scan/optimization allowance, which is stated directly in output units. Both
+      passes agree.
+
+  credit_unit_defined:
+    value: "yes"
+    source: "https://www.jobscan.co/auto-apply"
+    evidence: "\"One credit is used for each job you choose to Auto Apply to\" -- ties the unit to a recognizable output. Both passes agree."
+
+  credit_to_output_rate_published:
+    value: partial
+    source: "https://www.jobscan.co/auto-apply"
+    evidence: >-
+      Rate published for the secondary Auto Apply output (1 credit = 1 application) but the
+      principal output (resume scans/optimizations) is not credit-metered at all -- stated directly
+      as "Unlimited". Both passes agree.
+
+  credit_rate_location:
+    value: pricing_page
+    source: "https://www.jobscan.co/auto-apply"
+    evidence: >-
+      Credit-pack prices and the 1-credit-per-application rate are both published on this one
+      official page, coded pricing_page as the closest available value (the instrument has no
+      distinct "other official page" option). Both passes agree, and both flag the same nuance:
+      this is a different URL than app.jobscan.co/plan itself.
+
+  cost_per_output_unit:
+    value: per_seat_month
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      Entry tier sells unmetered access ("Unlimited Resume Scans", "Unlimited AI Optimizations")
+      for a flat recurring fee per single-seat account, matching decision rule 2. Both passes agree.
+
+  cost_per_output_computable:
+    value: "yes"
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      Because the unit is per_seat_month, the entry tier's own published price directly is the cost
+      per output unit -- no allowance figure to divide by, no assumption needed, and unaffected by
+      the headline_billing_basis enum gap (the actual cadence and price are both known facts; only
+      their categorical label is unresolvable). Both passes agree.
+
+  computation_assumptions:
+    value: >-
+      Quarterly (entry tier), $29.98/mo per default display state (billed $89.95 every 3 months).
+      Principal output = per_seat_month, unmetered (Unlimited scans/optimizations). No allowance to
+      convert; cost per seat-month = the headline monthly price itself = $29.98.
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      PROSE field (tools/disagreements.py flags it, not a substantive disagreement) -- both passes
+      reached the identical tier, price and conclusion, differing only in wording. Merged into one
+      statement. cost_per_output_computable="yes" is agreed and unaffected.
+
+  credit_rollover_policy:
+    value: unknown
+    source: "https://www.jobscan.co/auto-apply"
+    evidence: >-
+      States the monthly free-credit top-up size ("topped up to 2 credits each month") but never
+      states whether unused free or purchased credits carry over or expire. Both passes agree;
+      genuine silence, not an access limitation.
+
+  failed_generation_charge_policy:
+    value: unknown
+    source: "https://www.jobscan.co/terms-of-service"
+    evidence: >-
+      No document -- the full ToS (read by pass 1 and, independently, by this adjudicator),
+      cancellation-policy, plan page, auto-apply page, or support center (pass 2's sweep) -- states
+      what happens to a free-tier scan or an Auto Apply credit if the underlying action fails or
+      errors. Both passes agree; genuine silence, confirmed by a completed full read, not an access
+      limitation.
+
+  auto_renewal_default:
+    value: "on"
+    source: "https://www.jobscan.co/terms-of-service"
+    evidence: >-
+      ToS §6 Billing and Renewal: "Your subscription will continue and automatically renew unless
+      canceled. You consent to our charging your payment method on a recurring basis without
+      requiring your prior approval for each recurring charge, until such time as you cancel...".
+      Both passes agree on the VALUE; pass 1 sourced it from the ToS directly (which ranks first
+      for contractual variables), pass 2 from the cancellation policy ("billing will continue
+      according to the cycle stated... until you cancel") because the ToS was inaccessible to it.
+      This adjudicator's own full ToS read confirms the higher-ranked source independently states
+      the same thing, closing that sourcing gap for the published record. Left at the codebook's
+      permitted token ("on"), not "yes".
+
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: "https://www.jobscan.co/terms-of-service"
+    evidence: >-
+      Stated in the ToS §6 AND independently on the dedicated cancellation-policy page ("Until you
+      cancel, billing will continue according to the cycle stated at the time of subscription") AND
+      on the pricing-page FAQ ("If you cancel your plan before the next renewal cycle..."). Both
+      passes agree on multiple (citing at least two of the three); this adjudicator's full read adds
+      the third document class to the record without changing the value.
+
+  renewal_notice_commitment:
+    value: unknown
+    source: "https://www.jobscan.co/terms-of-service"
+    evidence: >-
+      ToS §6 "Fee Changes" commits only to notice of PRICE changes ("in accordance with applicable
+      law"), never to advance notice of a routine renewal charge at the existing price; the
+      cancellation-policy page is likewise silent on advance notice. Both passes agree; this
+      adjudicator's own full ToS read confirms the silence directly (rather than relying on either
+      coder's account of it, per this study's standing caution about clause-type unknowns). Genuine
+      silence, not an access limitation.
+
+  refund_policy_exists:
+    value: "yes"
+    source: "https://www.jobscan.co/cancellation-policy"
+    evidence: >-
+      "Refunds will only be granted to Jobscan Premium members who refute their charges within 2
+      calendar days of the billing period start and have not used the service within the said
+      billing period." The general ToS is silent on refunds (confirmed by this adjudicator's full
+      read: zero occurrences of "refund" in the ToS body), so this dedicated page governs. Both
+      passes agree.
+
+  refund_window_days:
+    value: 2
+    source: "https://www.jobscan.co/cancellation-policy"
+    evidence: "\"...within 2 calendar days of the billing period start...\". Both passes agree."
+
+  refund_conditions:
+    value: conditional
+    source: "https://www.jobscan.co/cancellation-policy"
+    evidence: >-
+      Window of 2 calendar days, no service use in that billing period, a 3.5% processing fee, and a
+      required email to support@jobscan.co with subject "Refund Request"; "granted/denied on a case
+      by case basis." Both passes agree.
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: "https://www.jobscan.co/cancellation-policy"
+    evidence: >-
+      "Cancel Membership instructions within your Account page" -- cancellation itself needs no
+      contact (ToS §6 agrees). A REFUND specifically requires emailing support, captured separately
+      under refund_conditions. Both passes agree.
+
+  refund_policy_location:
+    value: dedicated_refund_page
+    source: "https://www.jobscan.co/cancellation-policy"
+    evidence: >-
+      The refund position appears only on the dedicated Cancellation Policy page; the general ToS
+      contains zero mentions of "refund" (confirmed by this adjudicator's full read). Both passes
+      agree.
+
+  commercial_use_lowest_tier:
+    value: unknown
+    source: "https://www.jobscan.co/terms-of-service"
+    evidence: >-
+      ToS §2 grants a limited license to JOBSCAN'S OWN content/software for personal, non-commercial
+      use; §7 bars using the Services for competing or revenue-generating endeavors. Neither
+      addresses commercial use of the AI-GENERATED OUTPUTS (optimized resume text, cover letters)
+      the product produces for the buyer -- a different construct, no clause found addressing it.
+      Both passes agree on the VALUE. Pass 2 could not read the ToS in English at all (D-018) and
+      reached unknown on an incomplete document set; pass 1 read the full ToS and reached the same
+      value on genuine silence. This adjudicator independently re-read the complete document
+      (live-reverified 2026-08-16, byte-identical to pass 1's capture) and confirms: this unknown
+      records genuine vendor silence, not our inability to access the document -- the access
+      barrier that affected pass 2's own collection did not propagate to this published value.
+
+  watermark_removal_tier:
+    value: unknown
+    source: "https://www.jobscan.co/plan"
+    evidence: >-
+      No document -- plan page, resume-builder page, or (pass 2's sweep) the support center --
+      states that any tier's outputs do or do not carry a watermark or Jobscan branding. Both passes
+      agree on the VALUE for the same reason as commercial_use_lowest_tier: pass 2's own ToS access
+      failure (D-018) did not prevent this determination, since the ToS was never the plausible
+      source for this variable in the first place (both passes correctly sourced it from
+      product-facing pages, not the ToS) and this adjudicator's own check of all four candidate
+      documents, including a full ToS read, confirms the silence is genuine (zero occurrences of
+      "watermark" anywhere in the ToS).
+
+  output_ownership_statement:
+    value: unknown
+    source: "https://www.jobscan.co/terms-of-service"
+    evidence: >-
+      ToS §8-9 address content a user posts PUBLICLY to Jobscan (forums/comments) -- "We do not
+      assert any ownership over your Contributions. You retain full ownership..." -- the OPPOSITE
+      direction from ownership of outputs Jobscan GENERATES FOR the user. The SaaS Agreement's
+      "Customer Content" clause (both passes read it) covers a separate enterprise track and
+      plausibly means uploaded/input content, not AI-generated output either. No clause addresses
+      the actual construct. Both passes agree on the VALUE. As with the two variables above, pass
+      2's D-018 access barrier did not determine this published value: this adjudicator's own full
+      ToS read (live-reverified 2026-08-16) independently confirms genuine silence on this specific
+      construct.
+
+  usage_cap_quantified:
+    value: none_quantified
+    source: "https://app.jobscan.co/plan"
+    evidence: >-
+      ADJUDICATED, cascades from unquantified_limit_clause=present below (not itself flagged by
+      tools/disagreements.py, since both passes agreed on all_caps_quantified -- but that agreement
+      shared one incorrect premise, so it does not survive the clause finding unchanged). The entry
+      tier's ONLY stated limits are four "Unlimited" claims (Resume Scans, AI Optimizations, keyword
+      comparisons, ATS & Recruiter Findings) -- no other quantified rate or standing limit is
+      attributed to this tier. Rule 3: "Unlimited counts as quantified only where no clause
+      elsewhere qualifies it." Since a qualifying discretionary clause is present (ToS §13 item 4,
+      general and platform-wide, not scoped away from any tier or feature), all four claims are
+      qualified and none remain quantified. With zero quantified limits and zero remaining
+      unqualified "Unlimited" claims for the entry tier, none_quantified is correct -- not
+      some_quantified, which would require at least one limit to survive unqualified.
+
+  unquantified_limit_clause:
+    value: present
+    source: "https://www.jobscan.co/terms-of-service"
+    evidence: >-
+      ADJUDICATED, reversed to a value neither prior pass coded. Pass 1: absent, having read ToS §13
+      "Services Management" in full but characterizing every "sole discretion" clause in it as
+      "content moderation, account termination... or security/abuse response." Pass 2: unknown,
+      unable to read the ToS in English at all (D-018). This adjudicator independently re-fetched
+      the Termly content-delivery API live via raw curl on 2026-08-16 (bypassing the Turkish-
+      localizing iframe and any summarizing tool) and confirmed, byte-identical to pass 1's own
+      2026-08-09 capture: ToS §13, item (4): "in our sole discretion and without limitation, notice,
+      or liability, to remove from the Services or otherwise disable all files and content that are
+      excessive in size or are in any way burdensome to our systems." This clause squarely matches
+      the definition: vendor "sole discretion", the word "excessive" (one of the definition's own
+      listed examples), and "burdensome to our systems" (an unquantified, discretionary standard --
+      no figure defines "excessive" or "burdensome" -- structurally identical to the codebook's own
+      Vendor V example, "usage substantially exceeds typical usage. No figure defines typical.
+      present."). Rule 3's conduct carve-out does not apply: item (4) sits under "SERVICES
+      MANAGEMENT," addressing resource size/burden, not under the separate "PROHIBITED ACTIVITIES"
+      list (§7) that covers illegal/abusive conduct; "files and content" is undefined and, by
+      contrast with the immediately preceding item (3) in the SAME section ("any of your
+      Contributions"), is broader than the separately-defined "Contributions" term and so is not
+      limited to community/forum posts -- it plausibly reaches a user's accumulated resume uploads
+      and scan-report files, the byproduct of exercising the entry tier's "Unlimited Resume Scans"
+      claim. This exact clause, word-for-word, was independently adjudicated `present` elsewhere in
+      this same study (records/adjudicated/undetectable-ai.yaml, a different vendor using the same
+      Termly template section) under the same codebook, for the same reasoning; this record reaches
+      the same conclusion on its own merits, and the two are noted as consistent rather than one
+      deferring to the other. Pass 1's absent is a misclassification, not a defensible alternative
+      reading: its own evidence text shows it read §13 (it names the section) but folded item (4)
+      into a "security/abuse response" bucket rather than testing it against this variable's own
+      definition; the pattern matches this study's known failure mode of a search that stops at the
+      first matching keyword ("excessive use of capital letters and spamming" in §7, the OTHER
+      "excessive" occurrence in this ToS) without checking the remaining occurrences individually.
+      Live count confirmed 2026-08-16: "excessive" appears 3 times in the ToS -- the §7 spam/format
+      occurrence (correctly not this construct), the §13(4) occurrence (this one), and an unrelated
+      arbitration-cost occurrence. Not resolved toward either prior value; the rule and the evidence
+      point to a third answer neither coder reached.
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-16 (protocol §7.4). tools/disagreements.py jobscan reports 5
+  substantive disagreements (headline_billing_basis, annual_condition_disclosure,
+  annual_default_toggle, trial_card_required, unquantified_limit_clause) plus 1 prose-only
+  difference (computation_assumptions, not a scored disagreement). All 5 were resolved by applying
+  the codebook decision rule to the evidence, re-verified against the vendor's live/current
+  documents (a raw curl of the Termly content-delivery API bypassing both the localizing iframe and
+  any summarizing tool, plus live WebFetch checks of the cancellation policy and a help-center
+  article) rather than trusted from either coder's transcription. A sixth variable,
+  usage_cap_quantified, was NOT flagged by the tool (both passes agreed all_caps_quantified) but is
+  changed here as a necessary cascade of the unquantified_limit_clause finding -- codebook rule 3
+  ties the two together explicitly, and leaving usage_cap_quantified unchanged after reversing its
+  premise would publish an internally inconsistent record.
+
+  REGISTER CHECK, done before classifying anything, per instruction. records/pass1/jobscan.yaml
+  carries ONE register_event: {type: display_variant, ToS Turkish-vs-English localization}. This
+  documents HOW pass 1 obtained the English ToS (a direct Termly content-API query bypassing the
+  geo-localizing iframe); it is a real, useful register entry, but it is a display_variant, and
+  §7.4.1 is explicit that a display_variant entry never supplies date_explained. records/pass2/
+  jobscan.yaml carries register_events: [] -- empty; pass 2's own ToS access failure was never
+  logged as an event because pass 2 never obtained a second state to compare (it has only "Turkish,
+  every method tried"), not two archived states of one document. Per the task's own framing, checked
+  explicitly: no register entry in EITHER record is a vendor_edit, so date_explained is unavailable
+  for anything on this record (§7.4.1). variant_explained is also unavailable: it requires TWO
+  ARCHIVE SNAPSHOTS showing two DISPLAY states of the same unedited document (§7.4.2), and what
+  actually happened here is that one collection method (pass 1's, and this adjudicator's own live
+  recheck) successfully retrieved the vendor's single English document while another method (pass
+  2's six attempts) did not -- a tooling/coverage gap between coders, not two states the vendor
+  served. A tooling failure is a misread, not a variant. Every disagreement below is accordingly an
+  ORDINARY disagreement, resolved on the merits.
+
+  ENTRY-TIER SELECTION (sampling-rules §7.2), not disputed. Candidates: Quarterly ($89.95/3mo =
+  $359.80/yr annual-equivalent, or 29.98 x 12 = $359.76/yr) and Monthly ($49.95/mo x 12 = $599.40/
+  yr). Free ($0) is not a paid tier and was not a candidate. Both generally available, self-serve,
+  standing, single-seat. Quarterly wins on lowest annual-equivalent cost; both passes agree
+  independently.
+
+  DISPOSITION, four clusters plus the prose field:
+
+  1. BILLING-CADENCE CLUSTER (headline_billing_basis, annual_condition_disclosure,
+     annual_default_toggle) -- all three disagreements share one root cause, Jobscan's entry tier
+     billing quarterly rather than annually or monthly-only, which the codebook's Domain 1/2
+     variables are framed around an annual/monthly binary. The three do NOT resolve the same way,
+     because each variable's own rule text responds differently to the same underlying fact:
+       - headline_billing_basis: the rule's only fallback for an unenumerable-but-present qualifier
+         is unknown. This is adjudication item A-011 (open queue item, four records: canva,
+         jobscan, resume-io, teal), independently reproduced by two blind pass-2 coders. Per the
+         instrument freeze (codebook §11), coded unknown here; the enum question is left to the
+         queue and wave 2, not invented on this record.
+       - annual_condition_disclosure: this variable's rule is literally about ANNUAL prepayment
+         specifically, and its own not_applicable criterion explicitly covers "no annual billing
+         option exists" -- which is Jobscan's exact state. not_applicable is not a fallback here,
+         it is the rule's own determinate answer.
+       - annual_default_toggle: like headline_billing_basis, this variable's rule provides no
+         value-producing step for a no-toggle, no-annual-option, THREE-simultaneous-tier display,
+         and its not_applicable criterion ("billing does not recur") does not fit Jobscan
+         (billing does recur). Falls to the general unknown fallback, same conclusion as
+         headline_billing_basis but reached independently through this variable's own text, and
+         flagged as a related-but-distinct instrument gap (not currently part of A-011's own
+         scope, which names only headline_billing_basis).
+     Reading these three together matters for the paper: one underlying vendor characteristic
+     (quarterly cadence, no toggle) produces three different rule outcomes (unknown,
+     not_applicable, unknown) because the instrument's variables are not uniformly built around
+     the same annual/monthly assumption. That unevenness is itself worth stating in the
+     limitations, not smoothed into one answer.
+
+  2. TRIAL-CARD ITEM (trial_card_required) -- adjudicated "yes" against pass 1's "unknown" and
+     confirming pass 2's "yes". Pass 1's reasoning was sound applied to what pass 1 saw (correctly
+     rejecting an auto-renewal inference, per the codebook's own Vendor I example) -- the miss was
+     upstream, in the WebFetch summarization step silently dropping the cancellation-policy page's
+     Trial Period Policy section, from a document pass 1 itself had listed as a source. Pass 2 found
+     the same underlying fact through the untruncated version of that same document plus an
+     independent help-center article pass 1 never opened. Both quotations verified live 2026-08-16.
+
+  3. USAGE-LIMIT CLUSTER (unquantified_limit_clause, usage_cap_quantified) -- adjudicated "present"/
+     "none_quantified" against BOTH passes having settled on "absent"/"all_caps_quantified" or
+     "unknown"/"all_caps_quantified". This is the single largest finding in this record: neither
+     prior coder reached "present" on unquantified_limit_clause, matching this study's standing
+     caution that this specific variable carries the lowest inter-coder agreement and the highest
+     risk of a keyword search stopping at the first match. Full textual analysis, the live
+     verification method, and the parallel with this study's own undetectable-ai.yaml adjudicated
+     record (the SAME clause, word for word, from a different vendor's Termly-templated terms) are
+     in unquantified_limit_clause's own evidence field above.
+
+  4. PROSE (computation_assumptions) -- reconciled, not adjudicated as a value dispute. Both passes
+     reached the identical tier, price, and conclusion; wording merged into one statement.
+
+  D-018 ACCOUNTING (access-limited vs vendor-silent unknowns), done explicitly per instruction,
+  since the two are different findings and are reported separately in the paper. This record carries
+  9 `unknown` values in total: headline_billing_basis, annual_default_toggle, free_plan_watermark,
+  credit_rollover_policy, failed_generation_charge_policy, renewal_notice_commitment,
+  commercial_use_lowest_tier, watermark_removal_tier, output_ownership_statement.
+    - ZERO of the 9 are access-limited in this PUBLISHED record. D-018 flagged four variables in
+      pass 2's OWN collection as blocked by the ToS being unreadable in English
+      (commercial_use_lowest_tier, watermark_removal_tier, output_ownership_statement,
+      unquantified_limit_clause) -- but this adjudicator obtained and fully read the same English
+      document pass 1 had already obtained (independently re-verified live, byte-identical), which
+      closes that access barrier for the record this study publishes. Of those four: three
+      (commercial_use_lowest_tier, watermark_removal_tier, output_ownership_statement) resolve to
+      unknown on GENUINE VENDOR SILENCE, confirmed by a completed full read (their evidence fields
+      above say so explicitly) rather than left resting on "pass 2 could not look." The fourth
+      (unquantified_limit_clause) resolves off unknown entirely, to a determinate present.
+    - 7 of the 9 are genuine vendor silence: the three above, plus free_plan_watermark,
+      credit_rollover_policy, failed_generation_charge_policy, and renewal_notice_commitment, none
+      of which was ever access-blocked for either pass -- both passes read the relevant documents
+      and found them silent, independently confirmed by this adjudicator's own read where the ToS
+      was the relevant document.
+    - 2 of the 9 (headline_billing_basis, annual_default_toggle) are a THIRD category, distinct
+      from both halves of the D-018 dichotomy: the document was read, the underlying fact is fully
+      known (quarterly billing, no toggle), and unknown records an INSTRUMENT/ENUM coverage gap,
+      not vendor silence and not our inability to access anything. Reporting these as either
+      "vendor silent" or "access-limited" would misstate the finding; they are their own thing
+      (the A-011 family) and are labeled as such in each variable's evidence field above.
+    In short: pass 2's real, well-documented D-018 access barrier explains why PASS 2's OWN record
+    under-determines four variables, and that fact is preserved in the reliability file where pass
+    2's record stands unedited -- but it explains none of the unknowns in the record this study
+    actually publishes, because adjudication had access pass 2 did not.
+
+  CROSS-CHECKS RUN: python3 tools/validate_records.py records/adjudicated/jobscan.yaml, python3
+  tools/check_value_enums.py records/adjudicated/jobscan.yaml, and python3
+  tools/check_price_arithmetic.py records/adjudicated/jobscan.yaml, all after the record was
+  complete.
+
+  SCOPE OF THIS PASS: adjudicator per protocol §7.4, not blind by design. Read
+  records/pass1/jobscan.yaml, records/pass2/jobscan.yaml, pass 1's full jobscan-sources/ (all
+  fifteen files, including the complete 1,137-line tos-en-US-plaintext.txt read start to finish)
+  and pass 2's full records/pass2/jobscan-sources/ (all six files, including the ACCESS-NOTE's
+  six-method account of the ToS failure), protocol-v1.md sections 6.2/6.3/6.4/6.6/6.8/7.4/7.4.1/
+  7.4.2 in full, the complete codebook-v1.md (sections 1-6, all 37 variable definitions, sections
+  8-11), sampling-rules.md §7.2, record-template.yaml, tools/disagreements.py,
+  tools/validate_records.py, tools/check_value_enums.py, tools/check_price_arithmetic.py,
+  orchestrator/deviations-log.md (D-018 in full, plus D-003/D-005/D-006/D-009 referenced from
+  pass-1's own coder_note), orchestrator/adjudication-queue.md (A-011 in full), and
+  orchestrator/collection-status.md and pre-freeze-checklist.md (grepped for "jobscan"). Also read
+  records/adjudicated/undetectable-ai.yaml for the unquantified_limit_clause precedent (shape AND
+  content, since the same clause text is directly relevant evidence here, not merely a formatting
+  example). Did not read orchestrator/interim-signals.md, aitoolspolice.com, site/content/reviews/,
+  or any other product's records, per this agent's scope. Independently re-fetched, live on
+  2026-08-16: the Termly content-delivery API directly via raw curl (verifying
+  unquantified_limit_clause, commercial_use_lowest_tier, watermark_removal_tier,
+  output_ownership_statement, renewal_notice_commitment, refund_policy_exists,
+  refund_policy_location, auto_renewal_default and auto_renewal_disclosure_location against the
+  full document rather than either coder's excerpt), the cancellation-policy page via WebFetch
+  (verifying trial_card_required), and the frontkb.com help-center article via WebFetch (verifying
+  trial_card_required). Did not re-render the pricing-page SPA live, since nothing about its
+  content was in dispute between the two passes.
+
+  blindness: not applicable to this pass (adjudicator, not blind by design, per protocol §7.4 and
+  this agent's own instructions). No other product's records, aitoolspolice.com, or
+  site/content/reviews/ were opened.
+conflict_note: >-
+  Two Jobscan documents address refunds in incompatible-looking ways for what could be read as the
+  same event: the SaaS Agreement grants a 30-day refund of prepaid fees, but only if Jobscan
+  modifies the Service in a way that materially diminishes functionality, and that document is
+  framed throughout as a negotiated Order-Form/"Customer" contract for the separate "Organizations"
+  offering. The Cancellation Policy grants a 2-day, 3.5%-fee refund for the individual self-serve
+  Premium plan sold on the pricing page (the entry tier this record codes). Both passes that read
+  the SaaS Agreement treated these as two different documents governing two different
+  products/contracts rather than a same-variable conflict between equal-authority sources, and this
+  adjudicator agrees: refund_policy_exists/refund_window_days/refund_conditions are coded from the
+  Cancellation Policy only. URLs: https://www.jobscan.co/saas-agreement and
+  https://www.jobscan.co/cancellation-policy.
+register_events:
+  - { type: display_variant, detail: "ToS page (jobscan.co/terms-of-service) embeds a Termly policy viewer that auto-localizes by network geography (Turkey-egress collection network renders Turkish). The underlying Termly content-delivery API returns locale:en (English original, created_locales:[en]) when queried directly; that English text is what pass 1 and this adjudicator both coded from. Carried forward from pass 1's record (originally logged 2026-08-09); independently re-verified by this adjudicator live 2026-08-16 via raw curl of the same API endpoint -- content length 157,642 characters, byte-identical to pass 1's saved capture, confirming both the retrieval mechanism and that the underlying document did not change across the collection window (its own 'Last updated' date, March 16, 2026, predates the window entirely).", urls: ["https://www.jobscan.co/terms-of-service", "https://app.termly.io/api/v1/consumer/policies/186bf27c-eb55-4548-a82c-ea2013d118a0/content"] }
+status: complete

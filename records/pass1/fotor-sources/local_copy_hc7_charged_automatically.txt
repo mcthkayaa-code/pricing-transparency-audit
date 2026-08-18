@@ -1,0 +1,9 @@
+URL: https://support.fotor.com/hc/en-us/articles/900007630843-When-Will-I-Be-Charged-Automatically
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save blocked (Cloudflare/Zendesk); local evidentiary copy per protocol section 6.4.
+---
+Title: When Will I Be Charged Automatically? – Fotor Help Center
+Nora, 3 years ago Updated
+
+For the subscription, Fotor adopts recurring billing, which is a payment model widely seen in subscription business to charge user on a regular billing schedule. In Fotor's case, recurring billing is based on subscription period. Unless you voluntarily cancels subscription or withdraws permission, Fotor will charge you at the end of each subscription period automatically.
+
+Exceptionally, if your payment date is on the 29th, 30th or 31st of a month, while there is no same day next month or next year, next payment date will be automatically shifted by the system to an earlier date, say, either on the last day of the next month or on the 28th February next year.

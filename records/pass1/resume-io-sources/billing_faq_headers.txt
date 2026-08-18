@@ -1,0 +1,20 @@
+HTTP/2 308 
+location: /en/articles/3785664
+cache-control: no-cache, must-revalidate
+last-modified: Fri, 29 May 2026 13:25:29 GMT
+etag: "1b32da3a334c46f5d9fe5f737d769bc6"
+x-served-by: cache-fra-etou8220091-FRA
+date: Wed, 12 Aug 2026 06:30:24 GMT
+content-length: 0
+
+HTTP/2 200 
+cache-control: no-cache, must-revalidate
+date: Mon, 10 Aug 2026 17:04:34 GMT
+last-modified: Fri, 29 May 2026 13:25:28 GMT
+etag: "62796e81e89dd1e495569f57d1b38200"
+age: 134753
+content-type: text/html
+accept-ranges: bytes
+x-served-by: cache-fra-etou8220091-FRA
+content-length: 86854
+

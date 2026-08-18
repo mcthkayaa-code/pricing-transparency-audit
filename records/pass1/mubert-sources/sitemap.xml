@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://mubert.com/blog/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://mubert.com/sitemap-mubert-app.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://mubert.com/tools/fuse/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://mubert.com/sitemap-resources.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://mubert.com/tools/cast/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>

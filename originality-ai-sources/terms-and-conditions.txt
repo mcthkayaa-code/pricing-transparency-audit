@@ -1,0 +1,70 @@
+SOURCE: https://originality.ai/terms-and-conditions
+DATE ACCESSED: 2026-08-10
+METHOD: Rendered browser read (get_page_text), full document, 27 sections. Date of Last
+        Amendment printed on page: June 17, 2026.
+
+=== OPERATIVE QUOTES USED FOR CODING ===
+
+Sec 7 (Orders, Subscriptions, Credits, Billing, and Taxes):
+"Unless stated otherwise, subscriptions renew automatically for the applicable billing period
+until cancelled. To avoid renewal charges, you must cancel before the renewal date or within
+the cancellation window stated at purchase, in the product, or in supplemental subscription
+terms."
+-> auto_renewal_default = on
+
+"Credits, scan allowances, word allowances, API usage, or similar usage units may expire, be
+subject to plan limits, or be non-transferable unless we state otherwise in writing. Overage or
+top-up charges may apply if your usage exceeds plan limits."
+
+Sec 7.1 (Trials and Promotional Offers):
+"We may offer trials, promotional pricing, beta access, limited free scans, free word limits,
+or similar offers. We may change, suspend, or discontinue promotional offers at any time.
+Trials may convert to paid subscriptions unless cancelled before the trial ends, where this is
+disclosed at signup."
+-> Contingent/reservation-of-rights language, not a statement that a trial currently exists;
+   see homepage-free-tool-faq.txt for the direct, specific denial that governs trial_exists.
+   Recorded here for the coder_note trail and in case of adjudication disagreement.
+
+Sec 7.2 (Cancellations and Refunds):
+"You may cancel recurring subscriptions using the available Account controls or by contacting
+support. Cancellation stops future renewals but does not automatically refund prior charges."
+-> cancellation_self_serve = self_serve_documented
+
+"Unless required by applicable law or expressly stated in an order form or supplemental refund
+policy, fees are non-refundable once paid, and completed scans, plagiarism checks, AI-detection
+checks, citation checks, fact checks, proofreading outputs, API calls, credit usage, and other
+consumed Services cannot be cancelled or refunded."
+-> This clause explicitly cross-references a "supplemental refund policy" as the governing
+   document for exceptions -- resolved via the dedicated Refund Policy page (see
+   refund-policy.txt), not a conflict.
+
+Sec 11 (User Content; Ownership; Licenses):
+"As between you and Originality.AI, you retain ownership of Input and User Content, subject to
+any rights held by third parties."
+"To the extent we have any rights in Output generated specifically for you through the
+Services, we assign those rights to you, subject to these Terms, applicable law, and
+third-party rights. This assignment does not apply to our Services, models, algorithms,
+interfaces, general know-how, templates, generic suggestions, system outputs provided to other
+users, or third-party content."
+-> output_ownership_statement = user_owns (carve-outs are the vendor's own retained IP/
+   templates, not a tier- or active-subscription-conditional restriction, so `conditional`
+   does not apply)
+
+Sec 9 (Acceptable Use and Restrictions) and Sec 18 (Suspension and Termination): read in full
+for unquantified_limit_clause. No "fair use", "reasonable use", "excessive use", or
+discretionary-throttling clause found; only references to the stated numeric plan/credit
+limits already captured elsewhere. "exceeded usage limits" (Sec 18) is a ground for suspension
+tied to the already-quantified credit system, not an independent unquantified ceiling.
+-> unquantified_limit_clause = absent
+
+No explicit, freestanding "commercial use of Outputs" grant or restriction found anywhere in
+the document (distinct from the general ownership/license clause above).
+-> commercial_use_lowest_tier = unknown
+
+No watermark clause found anywhere (expected: principal output is a detection score/report,
+not a media artifact).
+-> watermark_removal_tier = not_applicable
+
+No advance-renewal-notice commitment found (Sec 24 "Electronic Communications" covers consent
+to receive billing/transactional email generally, not a commitment to notify before charging).
+-> renewal_notice_commitment = unknown

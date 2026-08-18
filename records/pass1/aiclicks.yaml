@@ -1,0 +1,566 @@
+# Pricing Transparency Audit — coded record
+# product_id: aiclicks · pass 1 (primary coder)
+# Schema follows codebook-v1.md sections 6-7 (administrative + coded variables)
+# and sampling-rules.md section 7.2 (entry paid tier).
+
+product_id: aiclicks
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-06
+recheck_date: not_applicable
+
+# --- sources + archival (group 1) ---
+sources:
+  - url: https://aiclicks.io/pricing
+    role: primary_pricing_page
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    archive_status: archived
+  - url: https://aiclicks.io/
+    role: homepage_secondary_faq
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132925/https://aiclicks.io/
+    archive_status: archived
+  - url: https://aiclicks.io/terms-and-conditions
+    role: terms_of_service
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    archive_status: archived
+  - url: https://docs.aiclicks.io/help-center/faq/billing
+    role: help_center_billing_faq
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806133004/https://docs.aiclicks.io/help-center/faq/billing
+    archive_status: archived
+  - url: https://docs.aiclicks.io/help-center/troubleshooting/billing
+    role: help_center_billing_troubleshooting
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806133023/https://docs.aiclicks.io/help-center/troubleshooting/billing
+    archive_status: archived
+  - url: https://docs.aiclicks.io/content-agent
+    role: product_docs_content_agent
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806133144/https://docs.aiclicks.io/content-agent
+    archive_status: archived
+  - url: https://docs.aiclicks.io/prompts-overview
+    role: product_docs_prompts_overview
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806133203/https://docs.aiclicks.io/prompts-overview
+    archive_status: archived
+  - url: https://docs.aiclicks.io/create-prompts
+    role: product_docs_create_prompts
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806133222/https://docs.aiclicks.io/create-prompts
+    archive_status: archived
+  - url: https://docs.aiclicks.io/
+    role: docs_home
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806133243/https://docs.aiclicks.io/
+    archive_status: archived
+  - url: https://docs.aiclicks.io/help-center
+    role: help_center_home
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806133306/https://docs.aiclicks.io/help-center
+    archive_status: archived
+  - url: https://www.loom.com/share/e1c13d1239294424862883ee6f3df33f
+    role: help_center_billing_tutorial_video_embed_cited_in_conflict_note_only
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806133444/https://www.loom.com/share/e1c13d1239294424862883ee6f3df33f
+    archive_status: archived
+
+primary_source_url: https://aiclicks.io/pricing
+archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+archive_status: archived
+source_urls: "https://aiclicks.io/pricing | https://aiclicks.io/ | https://aiclicks.io/terms-and-conditions | https://docs.aiclicks.io/help-center/faq/billing | https://docs.aiclicks.io/help-center/troubleshooting/billing | https://docs.aiclicks.io/content-agent | https://docs.aiclicks.io/prompts-overview | https://docs.aiclicks.io/create-prompts | https://docs.aiclicks.io/ | https://docs.aiclicks.io/help-center"
+
+# --- administrative / default-state (group 2) ---
+product_name: AIclicks
+vendor_home_url: https://aiclicks.io
+category: AI bot checker
+product_status: active
+paid_submission: "no"
+entry_tier_name: Starter
+default_display_state: >
+  Pricing page (https://aiclicks.io/pricing) loads with the Monthly/Yearly toggle
+  set to Monthly (visually highlighted, active pill); the Yearly option, labeled
+  "Up to -29%", is not selected. All four plan cards (Starter, Pro, Business,
+  Enterprise) display their monthly-billed figures ($59, $189, $499, Custom) with
+  no annual-prepay qualifier attached, since annual is not the loaded state.
+  Observed on 2026-08-06 after declining non-essential cookies where a consent
+  prompt appeared; no reload was performed before recording this state; the
+  fresh page load was independently confirmed by the web.archive.org save
+  request (server-side fetch, not reliant on browser session state), which
+  captured the same default. No display-variant was observed on a later read
+  within this pass, so no register_events entry was needed for this rule.
+
+# --- A-domain, free-tier, trial, credit system, contractual, and caps groups
+# are coded below inside variables{}; notes group (conflict_note, coder_note,
+# register_events, blindness, status) is at the end of this file. ---
+
+variables:
+  # --- A-domain: domain 1 (headline vs first charge) + domain 2 (annual disclosure) ---
+  headline_price_usd:
+    value: 59.00
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Entry tier selected per sampling-rules.md 7.2 is Starter (see entry_tier_name
+      / coder_note for candidate comparison). Starter card reads "$59 / month" as
+      the most prominent figure, read in the page's default display state
+      (Monthly toggle active, not clicked/switched before reading).
+  headline_billing_basis:
+    value: per_month_billed_monthly
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      "$59 / month" shown under the active "Monthly" toggle pill (not "billed
+      annually"). No per-seat qualifier anywhere on the page; pricing FAQ states
+      the three pricing drivers are prompts tracked, platforms monitored, and
+      answer volume — seats are never mentioned as a scaling dimension, so
+      per_seat_per_month does not apply.
+  first_charge_amount_usd:
+    value: 59.00
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Default display state is Monthly, not annual, so rule 2's annual-to-total
+      multiplication does not apply; the first charge equals the displayed
+      monthly figure. mandatory_addon_present = no, so nothing is added. ToS
+      (terms-and-conditions) confirms "your card on file is charged
+      automatically" once the 3-day trial ends, at the plan's stated price; ToS
+      does not restate the dollar figure itself, so the amount is read from the
+      pricing page. Read directly; not calculated, so computation_assumptions
+      does not need to cover this figure (see cost_per_output_computable
+      instead, which does require it).
+  mandatory_addon_present:
+    value: "no"
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Pricing page feature grid and ToS (Payment & Billing, Acceptable Use
+      Policy sections) were both read; neither documents a required separate
+      charge, minimum credit purchase, platform fee, or compulsory onboarding
+      fee for the Starter tier. The "Choose N from" model-selection widget is a
+      configuration choice within the plan price, not an add-on charge.
+  annual_condition_disclosure:
+    value: not_applicable
+    evidence: >
+      Rule 1: the headline figure (Starter, $59/month, read in the default
+      Monthly display state) does not depend on annual prepayment, so this
+      variable does not reach the adjacent/secondary/one_click_away/absent
+      test. (An annual toggle exists on the page offering "Up to -29%", but it
+      is not the loaded default and was not switched to before recording,
+      per protocol-v1.md 6.3/6.8.)
+  annual_default_toggle:
+    value: monthly_preselected
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      On load, the "Monthly" pill is visually active/highlighted and "Yearly
+      Up to -29%" is not; screenshot taken immediately after a fresh
+      (force-reloaded) page load, before any interaction. No toggle click
+      occurred prior to this observation.
+  # --- free-tier: domain 3 ---
+  free_plan_exists:
+    value: "no"
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Pricing page shows exactly four tiers — Starter ($59/mo), Pro ($189/mo),
+      Business ($499/mo), Enterprise (Custom) — all paid or sales-gated; no
+      $0/ongoing-allowance tier is shown. Homepage CTAs "Start Free Audit" and
+      a footer/tools section of standalone lead-gen micro-tools (GEO Audit
+      Tool, Robots.txt Checker, etc.) are one-off free utilities distinct from
+      the priced AIclicks tracking subscription itself, not a free plan of the
+      product being priced; see coder_note.
+  free_plan_cap_documented:
+    value: not_applicable
+    evidence: "No free plan (free_plan_exists = no)."
+  free_plan_cap_value:
+    value: not_applicable
+    evidence: "No free plan (free_plan_exists = no)."
+  free_plan_watermark:
+    value: not_applicable
+    evidence: "No free plan (free_plan_exists = no)."
+  free_plan_duration:
+    value: not_applicable
+    evidence: "No free plan (free_plan_exists = no)."
+  # --- trial: domain 4 ---
+  trial_exists:
+    value: "yes"
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Starter and Pro plan cards both carry a "Start a 3-day trial" call to
+      action; ToS section 11 states "AIclicks offers a 3-day free trial for
+      new subscribers."
+  trial_card_required:
+    value: "no"
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Pricing-page FAQ: "Can I try AIclicks before committing? Yes. Starter
+      and Pro plans include a 3-day free trial. No credit card required to
+      start."
+  trial_length_days:
+    value: 3
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Entry tier is Starter. Starter card CTA: "Start a 3-day trial"; pricing
+      FAQ: "Starter and Pro plans include a 3-day free trial." ToS section 11
+      corroborates "a 3-day free trial for new subscribers." No conversion
+      needed (already stated in days).
+  trial_auto_converts:
+    value: "yes"
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      ToS section 11: "Once the trial ends, your subscription becomes active
+      and your card on file is charged automatically." Functionally
+      equivalent to "converts unless canceled" — no further buyer action
+      converts the trial to a paid subscription.
+  # --- credit system + cost-per-output + rollover + failed-gen: domains 5-8 ---
+  credit_system_present:
+    value: "no"
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Rule 1: plan allowances are stated directly in output units on the
+      pricing page — "Tracked prompts: 30", "LLM responses / mo: 4,650",
+      "AI-optimized articles per month: 5" — with no abstracted/pooled
+      currency and no conversion table between them. This is the
+      higher-authority document for this variable class (protocol-v1.md 6.2:
+      pricing page ranks first for credit rates). See conflict_note for a
+      lower-authority terminology divergence (docs/help-center use the word
+      "credits") that does not change this coding.
+  credit_unit_defined:
+    value: not_applicable
+    evidence: "No credit system (credit_system_present = no)."
+  credit_to_output_rate_published:
+    value: not_applicable
+    evidence: "No credit system (credit_system_present = no)."
+  credit_rate_location:
+    value: not_applicable
+    evidence: "No credit system (credit_system_present = no)."
+  cost_per_output_unit:
+    value: other
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      No enumerated unit fits a GEO/AI-visibility tracking product. Principal
+      output = "tracked prompts per month": pricing-page FAQ frames pricing
+      itself around it ("Pricing is based on three things: the number of
+      prompts you track, the number of AI engines monitored, and the volume
+      of AI answers analyzed per month"), and "Tracked prompts" is the first
+      quantified row in every plan card and in the full comparison table,
+      ahead of responses/websites/countries. Coder-supplied unit label per
+      decision rule 3: "tracked prompts per month".
+  cost_per_output_computable:
+    value: "yes"
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Starter (entry tier): $59/month (default display state, billed
+      monthly) ÷ 30 tracked prompts/month (same plan, same period, no
+      conversion needed per rule 3) = 1.9667, rounds to 1.97. No assumption
+      about typical use required — both figures are published plan
+      constants. cost_per_output_value_usd (derived) = 1.97, unit =
+      per tracked prompt/month.
+  computation_assumptions: >
+    Starter (entry tier), $59/mo billed monthly per default display state; 30
+    tracked prompts/mo included per pricing-page comparison table. Same
+    period already (monthly), no conversion needed. 59/30=1.9667, rounds to
+    1.97 per tracked prompt/month.
+  credit_rollover_policy:
+    value: not_applicable
+    evidence: "No credit system (credit_system_present = no)."
+  failed_generation_charge_policy:
+    value: unknown
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      ToS, pricing page, and product docs (content-agent, prompts-overview,
+      create-prompts) were all read; none states whether a failed/errored
+      prompt check or a failed article generation still consumes the
+      monthly tracked-prompts or articles-per-month allowance. Silent, per
+      decision rule 3 ("this variable is silent often. That is the
+      finding").
+  # --- contractual: domains 9-11 ---
+  auto_renewal_default:
+    value: "on"
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      ToS, "Payment & Billing": "Subscriptions renew automatically unless
+      canceled before the renewal date." ToS ranks first for this
+      contractual variable class.
+  auto_renewal_disclosure_location:
+    value: terms_only
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      All four document classes checked (pricing page, docs, help center,
+      terms). Only the ToS "Payment & Billing" clause states automatic
+      renewal directly. Pricing-page FAQ ("cancel at any time... no lock-in
+      contracts on monthly plans") and Help Center billing articles discuss
+      cancellation mechanics but do not themselves state that the
+      subscription renews automatically — that fact appears only in the ToS.
+  renewal_notice_commitment:
+    value: unknown
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      ToS, pricing-page FAQ, and Help Center billing FAQ/troubleshooting
+      pages were all read; none commits to notifying the buyer before a
+      renewal charge (no stated period, no "we will email you before
+      renewal" language of any kind).
+  refund_policy_exists:
+    value: no_refunds_stated
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      ToS section 11, "Refunds & Cancellations": "no refund is issued for
+      charges processed after the trial has ended... Refund requests
+      submitted after the trial period has expired and the billing cycle has
+      begun will not be honored." Determinate no-refunds finding.
+  refund_window_days:
+    value: 0
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: "Same clause as refund_policy_exists; no refund window exists once billing has begun."
+  refund_conditions:
+    value: not_applicable
+    evidence: "No refund is available (refund_policy_exists = no_refunds_stated)."
+  cancellation_self_serve:
+    value: self_serve_documented
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      ToS section 11: "You may cancel your subscription at any time through
+      your account settings." Corroborated by Help Center billing FAQ
+      ("Go to Billing > Manage Billing > Cancel Subscription in your
+      AIclicks dashboard") and troubleshooting article, both self-serve,
+      no contact-required route documented anywhere.
+  refund_policy_location:
+    value: terms
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      Refund position is stated in section 11 of the Terms & Conditions
+      page; no separate/dedicated refund-policy URL exists on the site
+      (footer and full link scan show only /terms-and-conditions and
+      /privacy-policy as legal pages).
+  commercial_use_lowest_tier:
+    value: unknown
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      The product generates an output a commercial-use right could attach
+      to (AI-optimized blog-post drafts via the Content Agent feature,
+      "ready for your team to refine" and publish). ToS "Intellectual
+      Property" clause addresses only AIclicks' own platform/software/
+      branding IP ("You may not reproduce, redistribute, or modify any part
+      of the platform"), not the buyer's right to use generated article
+      output commercially. No document addresses this, so unknown rather
+      than not_applicable (codebook 2.2).
+  watermark_removal_tier:
+    value: not_applicable
+    evidence: >
+      This variable's not_applicable test is scoped to the PRINCIPAL output
+      specifically (codebook wording: "the principal output is not a media
+      artifact a watermark could mark, for example... an analysis table"),
+      unlike commercial_use_lowest_tier/output_ownership_statement whose
+      not_applicable tests are not principal-output-scoped. Principal output
+      here (per cost_per_output_unit) is prompt-visibility tracking/
+      analytics data — an analysis-table-type deliverable, not a
+      watermarkable media artifact. Caveat: the secondary AI-articles
+      (text) output is not addressed by any document either way; see
+      coder_note.
+  output_ownership_statement:
+    value: unknown
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      Same reasoning as commercial_use_lowest_tier: the product generates an
+      artifact (AI-optimized article drafts) ownership could attach to; the
+      ToS Intellectual Property clause covers only AIclicks' own platform
+      IP and is silent on who owns generated article/analytics output.
+      Not not_applicable, because the not_applicable test on this variable
+      is not principal-output-scoped either (matches commercial_use_lowest_tier's
+      "any output" test per codebook wording).
+  # --- caps: domain 12 ---
+  usage_cap_quantified:
+    value: all_caps_quantified
+    source_url: https://aiclicks.io/pricing
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132756/https://aiclicks.io/pricing
+    evidence: >
+      Every limit the comparison table attributes to Starter (entry tier)
+      carries a number and dimension: "Tracked prompts: 30", "Websites you
+      can add: 1", "LLMs you can track: 3", "Countries per project: 1"
+      (standing limits, no period required per section 5.1), and
+      "LLM responses / mo: 4,650", "AI-optimized articles per month: 5"
+      (rate limits, period stated as "/mo"). No vague/unquantified limit
+      (e.g. "generous", "limited") attributed to this tier.
+  unquantified_limit_clause:
+    value: absent
+    source_url: https://aiclicks.io/terms-and-conditions
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806132944/https://aiclicks.io/terms-and-conditions
+    evidence: >
+      Terms & Conditions read in full end to end (through section 13,
+      "Contact Us"), including the embedded "Acceptable Use Policy" section,
+      which is the only such policy on the site (link scan of the full site
+      footer/nav found no separate dedicated AUP page — only
+      /terms-and-conditions and /privacy-policy exist as legal documents).
+      The Acceptable Use Policy prohibits spam/illegal/deceptive use, IP
+      violation, and reverse engineering — conduct restrictions, not a
+      volume/intensity-of-use clause (decision rule 3). No fair-use,
+      reasonable-use, excessive-use, or discretionary-throttling language
+      tied to usage volume appears anywhere in the document.
+
+# NOTE: computation_assumptions is a codebook-v1.md section 7 (domain 6) CODED
+# variable, so per the "every codebook section 7 variable exactly once" rule it
+# lives inside variables{} above (see variables.computation_assumptions), not
+# duplicated here as a separate top-level field.
+
+conflict_note: >
+  (1) Trial coverage for the Business tier is inconsistent between two
+  official pages of equal rank: the homepage FAQ (https://aiclicks.io)
+  states "All plans include a 3-day free trial," while the dedicated
+  pricing-page FAQ (https://aiclicks.io/pricing) states "Starter and Pro
+  plans include a 3-day free trial... Business plan includes a live demo
+  with the team." The Business plan card's own CTA button on the pricing
+  page itself also reads "Start a 3-day trial" (matching the homepage),
+  contradicting its own page's FAQ text lower on the same page. Protocol-v1.md
+  6.2 gives no hierarchy distinguishing a homepage FAQ from a dedicated
+  pricing-page FAQ within the same (pricing) variable class, so this cannot
+  be resolved by rank. Does not change any coded value: the entry tier is
+  Starter, and every source agrees Starter carries an unconditional 3-day
+  trial with no card required (trial_exists, trial_length_days,
+  trial_card_required all unaffected).
+
+  (2) credit_system_present is coded "no" from the pricing page
+  (https://aiclicks.io/pricing), which frames every plan allowance directly
+  in output units and is the higher-authority document for this variable
+  class per protocol-v1.md 6.2. Two lower-authority documents use
+  credit-adjacent wording for the same allowances: docs.aiclicks.io/create-prompts
+  states an activated prompt "consumes prompt credits from your team's
+  remaining prompts," and the Help Center billing tutorial
+  (docs.aiclicks.io/help-center/faq/billing, embedded Loom video,
+  https://www.loom.com/share/e1c13d1239294424862883ee6f3df33f) shows an
+  in-app billing-dashboard frame headed "AVAILABLE CREDITS" over two
+  separate direct sub-counts, "Prompts" and "Blog Posts" — no shared/fungible
+  pool and no stated conversion rate between them. Coded from the
+  higher-authority pricing page per protocol-v1.md 6.2; this terminology
+  divergence is recorded here rather than changing credit_system_present,
+  credit_unit_defined, credit_to_output_rate_published, or credit_rate_location.
+
+coder_note: >
+  Entry-tier selection (sampling-rules.md 7.2): eligible candidates were
+  Starter ($59/mo), Pro ($189/mo), Business ($499/mo); Enterprise was
+  excluded as ineligible under rule 2 ("Custom" price, "Book a Call" CTA,
+  sales-gated, no self-serve purchase path). Annual-equivalent cost in the
+  default Monthly display state (monthly figure x12): Starter = 708.00
+  (winner, lowest), Pro = 2268.00 (lost), Business = 5988.00 (lost).
+
+  Domain discrepancy: the assignment brief's vendor_home_url
+  (https://aiclicks.ai) does not resolve — DNS resolves the name to
+  192.64.119.187 but the TLS/HTTP connection times out with no response at
+  all (curl, 15s timeout, verified 2026-08-06; this is a dead/non-responding
+  host, not an HTTP redirect). The frozen frame
+  (frame-frozen-2026-08-04.csv) lists https://aiclicks.io instead, which is
+  live (HTTP 200, Framer-hosted, confirmed 2026-08-06) and matches the
+  product's own on-site branding (footer "(c) 2026 AIclicks", logo wordmark
+  "AIclicks"). All research in this record was conducted against
+  aiclicks.io as the official product domain, per the assignment's
+  instruction to follow to the official product domain when the assigned
+  one differs.
+
+  product_name: the frozen frame lists "AIclicks" (matches the vendor's own
+  logo/footer casing exactly, e.g. "(c) 2026 AIclicks. All rights
+  reserved"); the assignment brief's "AIClicks" capitalization was not used
+  in this record's product_name field. category ("AI bot checker") and
+  product_status ("active") were copied from the frozen frame, consistent
+  with the assignment brief. paid_submission ("no") was read from the
+  frozen frame only, since the assignment brief did not state it.
+
+  Free-only note: homepage CTAs ("Start Free Audit", "GEO Content Agent 2.0
+  Is Live: Generate AI SEO Articles for Free") and a footer catalogue of
+  standalone micro-tools (GEO Audit Tool, Robots.txt Checker, EEAT Checker,
+  Domain Authority Checker, etc.) are separate one-off / lead-gen free
+  utilities, not a free plan of the priced AIclicks tracking subscription
+  itself. The pricing page shows no $0 ongoing tier of the subscription
+  product, so free_plan_exists = no rather than yes or unknown.
+
+  watermark_removal_tier / commercial_use_lowest_tier /
+  output_ownership_statement: these three turned on a close reading of each
+  variable's own not_applicable clause. watermark_removal_tier's clause is
+  scoped to the PRINCIPAL output specifically ("the principal output is not
+  a media artifact a watermark could mark... an analysis table"); the other
+  two variables' clauses are written without that scoping ("the product
+  produces no output [ownership/a commercial-use right] could attach to" —
+  any output). The principal output here (tracked-prompt visibility
+  analytics, see cost_per_output_unit) supports not_applicable for
+  watermark_removal_tier. The secondary AI-article-draft output (Content
+  Agent / "Write Content" feature, docs.aiclicks.io/content-agent) is a real
+  generated artifact that no document addresses ownership or commercial-use
+  rights for, which is why commercial_use_lowest_tier and
+  output_ownership_statement are coded unknown rather than not_applicable.
+
+  Within-page inconsistency (not a coded-value conflict, so not placed in
+  conflict_note): on the pricing page itself, all three visible plan-card
+  CTA buttons (Starter/Pro/Business) read "Start a 3-day trial," including
+  Business, while the same page's FAQ says Business gets a live demo
+  instead of a trial — likely a shared CTA-button template not customized
+  per plan. Does not affect Starter (entry tier) coding.
+
+  Blindness administrative note: product_name, category, product_status,
+  and paid_submission were cross-checked only against
+  frame-frozen-2026-08-04.csv (the sampling frame file), which is neither a
+  coded record nor a review page.
+
+  D-009 re-read 2026-08-10: re-confirmed entry_tier_name, headline_price_usd,
+  headline_billing_basis and first_charge_amount_usd via a fresh live browser session. Two
+  representations: (1) a DOM text search reproduced "STARTER / Perfect for individuals & small
+  teams / $59 / month" verbatim under a "Monthly / Yearly Up to -29%" toggle; (2) a screenshot
+  shows the "Monthly" pill with a solid active-state fill versus plain-text "Yearly" beside it,
+  confirming the default toggle state visually (this Framer-built site carries no
+  aria-selected/aria-checked attributes on the toggle, so the screenshot was necessary rather
+  than optional). Four cards confirmed left to right: Starter $59, Pro $189, Business $499,
+  Enterprise Custom -- Starter unambiguously cheapest/leftmost. Provenance check (per
+  coordinator's D-009 addendum): first_charge_amount_usd=59.00 performs no computation -- the
+  record's own evidence already says "Read directly; not calculated" because Monthly (not
+  annual) is the default state, confirmed clean by this re-read. Verdict: CONFIRMED, no
+  correction on any of the four variables. Evidence saved to
+  aiclicks-sources/d009-reread-2026-08-10.md. Blindness maintained: no other product's record
+  was opened during this re-read.
+
+register_events: []
+
+blindness: "no other record, no review page, no pass-2 material was opened."
+
+status: complete

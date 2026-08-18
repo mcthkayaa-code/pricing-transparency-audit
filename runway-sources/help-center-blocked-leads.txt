@@ -1,0 +1,46 @@
+SOURCE: help.runwayml.com (Zendesk-hosted help center) — multiple articles
+DATE attempted: 2026-08-12
+METHOD: attempted WebFetch direct (403 Forbidden on every article tried), then
+web.archive.org/save (HTTP 520 from archive.org's own service on every article tried), then a
+generic wayback retrieval for one article (returned Wayback's own "no capture found" landing
+page, 151311 bytes of Internet-Archive-authored HTML, zero Runway content), then the Wayback
+availability API (HTTP 429 rate-limited, likely from concurrent sibling coders in this same
+study window hitting archive.org simultaneously). This exceeds the 2-fetch/2-archive budget
+for this domain; per protocol 6.4 ("no value may be coded from a page that has not been
+snapshotted the same day") these leads are NOT used as the coded source for any variable in
+runway.yaml. They are recorded here only as leads for a future coder/adjudicator with better
+network access to this domain.
+
+Articles attempted (all 403/520/no-capture):
+- https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details
+- https://help.runwayml.com/hc/en-us/articles/32880432736659-Why-am-I-receiving-errors-when-trying-to-generate
+- https://help.runwayml.com/hc/en-us/articles/24343363554067-Requesting-a-refund-for-your-plan-or-payment
+- https://help.runwayml.com/hc/en-us/articles/18927776141715-Usage-rights
+- https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work
+
+WebSearch (locating tool only, per protocol — NOT used to justify a coded value) surfaced the
+following claimed quotes from these pages. Uncorroborated by direct read of the source:
+
+1. Free-plan-details: "All videos generated on a Free plan feature a Runway watermark. You can
+   generate without a watermark by signing up for the Standard plan or above." If true, this
+   would make free_plan_watermark = yes rather than the unknown coded in the record (the live
+   pricing page's Free-tier card is silent on watermarking either way, which alone is
+   "unknown" per codebook's own silent-pricing-table rule).
+
+2. Why-am-I-receiving-errors: "Credits are only automatically returned when a generation ends
+   in a generation error... credits (if used) will be returned to your account within a few
+   minutes." If true, this would make failed_generation_charge_policy = not_charged rather
+   than the unknown coded in the record.
+
+3. Requesting-a-refund: "You can request a refund if you purchased or renewed your
+   subscription within the last 30 days and your subscription is unused or close to unused...
+   you can request a refund for credit purchases made within the past 30 days if the credits
+   have not yet been used." If true, this documents a concrete conditional refund policy at
+   odds with the Terms of Use's blanket "non-refundable" framing (Section 8.5) — see
+   conflict_note in runway.yaml, which cites this lead by URL for a future coder to verify
+   directly and potentially move refund_policy_exists / refund_window_days / refund_conditions
+   off the ToS-only reading.
+
+A coder with access to this domain should re-attempt these five URLs first; all five bear
+directly on a coded value currently sitting at `unknown` or resolved conservatively from a
+lower-detail source.

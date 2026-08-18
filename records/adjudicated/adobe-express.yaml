@@ -1,0 +1,448 @@
+# Pricing Transparency Audit — adjudicated record (pass 3)
+# product: Adobe Express | codebook v1.2 / protocol v1.2 / sampling-rules v1.2
+# Adjudicator reconciles records/pass1/adobe-express.yaml against records/pass2/adobe-express.yaml
+# (the clean re-code; the withdrawn records/pass2-contaminated/adobe-express.yaml was not read).
+
+product_id: adobe-express
+product_name: Adobe Express
+category: AI design
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Acrobat Express"
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-16
+recheck_date: not_applicable
+primary_source_url: https://www.adobe.com/express/pricing
+archive_url: "https://web.archive.org/web/20260814153810/https://www.adobe.com/express/pricing"
+archive_status: local_copy_only
+
+default_display_state: >
+  Individuals tab, the page's default segment. The bare URL geo-serves a Türkiye/TRY
+  state to a Turkey-network reader (tier "Adobe Express Premium", TRY 238.80/mo incl.
+  KDV, 30-day trial) and a US/USD state to others (tier "Acrobat Express", US$10.99/mo,
+  7-day trial) -- both billed monthly only, no annual toggle. Per the currency-check
+  protocol (deviations-for-coders.md, "Currency" arm 1), every entry-tier value below is
+  coded from the US/USD state, reached via the vendor's own footer country selector,
+  because the vendor publishes a USD figure and protocol 6.5 requires using it; the
+  TRY-geo default is logged as a display_variant, not coded from. Neither pass's
+  web.archive.org snapshot of the plain pricing URL preserves the client-side-injected
+  plan/price fragment (protocol section 9, limitation 8) -- archive_status above follows
+  pass 1's franker framing over pass 2's "archived" label for the identical defect (see
+  coder_note, "process notes"). The operative evidence for every pricing-page-sourced
+  value is the dated local text captures in both passes' -sources/ directories,
+  principally pass2/adobe-express-sources/pricing-us-country-param-2026-08-14.txt (the
+  US/USD state actually coded from) and pass1/adobe-express-sources/pricing-page-
+  individuals-2026-08-06.txt (an independent, line-by-line transcription of the same
+  comparison table taken 8 days earlier).
+
+sources:
+  - { url: "https://www.adobe.com/express/pricing", kind: pricing, accessed: 2026-08-14, archive: local_copy_only, note: "Bare URL, TRY/Turkiye-geo default state as read by pass 2. archive.org capture returns pre-hydration markup with no prices (known JS-render gap). Local verbatim capture: pass2/adobe-express-sources/pricing-default-geo-tr-2026-08-14.txt. Not the state coded from." }
+  - { url: "https://www.adobe.com/express/pricing?country=us", kind: pricing, accessed: 2026-08-14, archive: local_copy_only, note: "US/USD state, reached via the vendor's own country selector. archive.org /save/ failed twice (capped at two attempts per deviations-for-coders.md). Local verbatim capture, incl. raw DOM price-node check: pass2/adobe-express-sources/pricing-us-country-param-2026-08-14.txt. This is the state every entry-tier variable below is coded from." }
+  - { url: "https://www.adobe.com/express/pricing", kind: pricing, accessed: 2026-08-06, archive: local_copy_only, note: "Pass 1's independent US-state capture, 8 days earlier (4 of 5 fresh loads rendered USD; 1 of 5 rendered TRY). Local verbatim capture, incl. an explicit line-by-line Free|Paid feature-comparison transcription: pass1/adobe-express-sources/pricing-page-individuals-2026-08-06.txt. Cited specifically as the verified source for free_plan_cap_value below -- see coder_note." }
+  - { url: "https://www.adobe.com/legal/subscription-terms.html", kind: tos, accessed: 2026-08-14, archive: "https://web.archive.org/web/20260814153917/https://www.adobe.com/legal/subscription-terms.html", note: "Adobe Subscription and Cancellation Terms, effective Aug 1 2026. 'Creative Cloud for Individuals > Month to month' section governs this entry tier. Corroborated independently by pass 1's own 2026-08-06 read of the same document (archive: https://web.archive.org/web/20260806112851/https://www.adobe.com/legal/subscription-terms.html)." }
+  - { url: "https://www.adobe.com/legal/terms.html", kind: tos, accessed: 2026-08-14, archive: "https://web.archive.org/web/20260814153851/https://www.adobe.com/legal/terms.html", note: "Adobe General Terms of Use. Source of output_ownership_statement (4.2) and of the link to the Adobe Generative AI Product Specific Terms (1.2). Corroborated independently by pass 1's own 2026-08-06 read (archive: https://web.archive.org/web/20260806120414/https://www.adobe.com/legal/terms.html)." }
+  - { url: "https://www.adobe.com/go/adobe-gen-ai-addl-terms", kind: tos, accessed: 2026-08-14, archive: local_copy_only, note: "Redirects to adobe-generative-ai-product-specific-terms-en-us-20260423.pdf, effective Apr 23 2026, incorporated by reference into the General Terms (its own section 1.2). Read by pass 2 via curl + pypdf text extraction (local copy: pass2/adobe-express-sources/adobe-generative-ai-product-specific-terms-pdf-20260423.txt); NOT opened by pass 1, which cited a non-existent 'hard rule against downloading files' -- see coder_note. SOURCE OF unquantified_limit_clause. The adjudicator independently re-fetched this exact URL live on 2026-08-16: it still resolves to the identical filename/effective date and the quoted throttle clause is verbatim present (scratchpad verification copy, not part of the published dataset)." }
+  - { url: "https://helpx.adobe.com/firefly/using/generative-credits-faq.html", kind: docs, accessed: 2026-08-14, archive: "https://web.archive.org/web/20260814170210/https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", note: "Generative credits FAQ (redirects to the creative-cloud/apps path; archived under the resolved URL). Source of credit_unit_defined, credit_to_output_rate_published, credit_rollover_policy, commercial_use_lowest_tier. Corroborated independently by pass 1's own 2026-08-06 read (archive: https://web.archive.org/web/20260806113534/...), confirmed no occurrence of 'fail' anywhere on the page." }
+  - { url: "https://www.adobe.com/go/creativecloudexpressterms", kind: tos, accessed: 2026-08-14, archive: local_copy_only, note: "Redirects to Adobe-Express-Product-Specific-Terms-en_US-20241007.pdf. Read by pass 2 only; no watermark/commercial-use-tier/credit-rate content found in it." }
+  - { url: "https://helpx.adobe.com/express/web/adobe-express-subscription/free.html", kind: docs, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806120439/https://helpx.adobe.com/express/web/adobe-express-subscription/free.html", note: "Adobe Express-specific free-plan help page, read by pass 1 only; corroborates the free-tier caps below (5GB storage, 10-day version history, 1 social account)." }
+
+variables:
+  # --- Domain 1: headline price vs. price actually charged --- (agreed both passes)
+  headline_price_usd:
+    value: 10.99
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "Acrobat Express card: \"US$10.99/mo\", confirmed in raw DOM price-node structure (not a superscript-cents misread). Agreed by both passes."
+  headline_billing_basis:
+    value: per_month_billed_monthly
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "\"No annual commitment, billed monthly.\" No monthly/annual toggle for the Individuals segment. Agreed by both passes."
+  first_charge_amount_usd:
+    value: 10.99
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "Default state is monthly, no annual option; first charge equals the published monthly figure, no annualization performed. Agreed by both passes."
+  mandatory_addon_present:
+    value: "no"
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "Full feature list presented as included in the $10.99/mo price; no separate required charge in the pricing page, Subscription and Cancellation Terms, General Terms of Use, or either Product Specific Terms document. Agreed by both passes."
+
+  # --- Domain 2: visibility of the annual-billing condition --- (agreed both passes)
+  annual_condition_disclosure:
+    value: not_applicable
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "The entry tier has no annual billing option at all. Agreed by both passes."
+  annual_default_toggle:
+    value: no_toggle
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "One billing period only (monthly); no monthly/annual switch rendered for this tier. Agreed by both passes."
+
+  # --- Domain 3: real usability of the free plan ---
+  free_plan_exists:
+    value: "yes"
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "\"Adobe Express Free — US$0.00 — Free to use. No credit card required.\" Agreed by both passes, corroborated by the dedicated helpx Adobe Express Free-plan page."
+  free_plan_cap_documented:
+    value: some_quantified
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "Quantified: 5GB storage, 10 days version history, 1 account per social network, 5 lifetime Generate-Presentations uses, 2 lifetime 5-second-video generations, 10 PDF Quick Actions/month. Not quantified: 'Free daily generations' (image/text-effect/template generation, insert & remove objects) carries no figure. Agreed by both passes."
+  free_plan_cap_value:
+    value: "5GB storage | 10 days version history | 1 account per social network | 5 lifetime generate-presentation uses | 2 lifetime 5-second-video generations | 10 PDF Quick Actions per month"
+    source: https://www.adobe.com/express/pricing
+    evidence: >
+      ADJUDICATED — disagreement resolved by verifying the cited capture (protocol 6.4;
+      no value may be coded from a page not snapshotted the same day). Pass 1 transcribed
+      six quantified free-tier caps verbatim from an explicit, line-by-line Free|Paid
+      comparison-table capture dated 2026-08-06 (pricing-page-individuals-2026-08-06.txt,
+      lines 31-41). Pass 2 carried the same six items plus a seventh, "up to 30 min video
+      length," cited to the same table's Free column on 2026-08-14. That seventh figure
+      — and a related "Up to 2 hours long" video figure pass 2 cites separately, in
+      usage_cap_quantified's evidence, for the paid tier — do not appear anywhere in
+      EITHER of pass 2's own saved local captures of that URL (grepped exhaustively
+      across every file in pass2/adobe-express-sources/: no hit for "30 min", "2 hour",
+      "video length" or "video duration"). The adjudicator independently attempted to
+      re-render the live, script-injected pricing page today (2026-08-16, via WebFetch
+      and via curl against the page and its pricing-table fragment endpoint) and hit the
+      same JS-rendering barrier the coders' own tooling notes (protocol section 9,
+      limitation 8): neither confirms nor rules out a current video-length row, which is
+      exactly the situation in which an unlocated quotation is treated as unsupported
+      rather than resolved in its favour. Adjudicated value carries the six items both
+      passes' verified evidence actually supports; the uncited seventh item is dropped.
+  free_plan_watermark:
+    value: unknown
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "No 'watermark' row or statement in the pricing-page feature grid, General Terms of Use, Subscription and Cancellation Terms, either Product Specific Terms document, generative-credits FAQ, or the Express Free-plan help page. Agreed by both passes. Both passes also independently distinguish this from the Content-Credentials/provenance-metadata clause in the Generative AI Product Specific Terms, which is invisible AI-provenance metadata, not a tier-differentiated visible watermark statement."
+  free_plan_duration:
+    value: perpetual
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "Presented as a standing plan alongside the paid tier, no expiry stated anywhere in the documents reviewed. Agreed by both passes."
+
+  # --- Domain 4: whether a trial requires a payment card ---
+  trial_exists:
+    value: "yes"
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "Entry tier's call to action: \"Start 7-day free trial\", distinct from the separate $0 Free plan. Agreed by both passes."
+  trial_card_required:
+    value: unknown
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "No document read (pricing page, Subscription and Cancellation Terms, General Terms of Use, either Product Specific Terms document, generative-credits FAQ) states whether a card is required to start the trial. The auto-charge-at-trial-end footnote implies a stored payment method, but implication is not a statement (codebook trial_card_required rule 3 / worked example). Agreed by both passes. Kind: vendor silence -- the documents that would settle this were all located and read; none states a position either way."
+  trial_length_days:
+    value: 7
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: >
+      Entry tier ("Acrobat Express", US/USD state) CTA: "Start 7-day free trial." NOT a
+      disputed value -- both passes independently coded 7 (disagreements.py confirms no
+      disagreement on this variable). See coder_note for the adjudicator's section 7.4.2
+      determination on the related geography display-variant register event: it does not
+      qualify as variant_explained because no cross-pass disagreement exists for that
+      classification to attach to.
+  trial_auto_converts:
+    value: "yes"
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "\"Billing begins when free trial ends... Subscription automatically renews until you cancel.\" Agreed by both passes."
+
+  # --- Domain 5: comprehensibility of the credit system ---
+  credit_system_present:
+    value: "yes"
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: "Generative credits are an intermediate currency converting into outputs (\"1 credit per generation\" for standard features, itemized rates for premium ones); 250 credits/month included on the entry tier. Agreed by both passes."
+  credit_unit_defined:
+    value: "yes"
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: "Multiple explicit conversions published (\"1 credit per generation\" for standard features; itemized rates e.g. \"Firefly Image 4 Ultra: 20 credits per generation\", \"Generate Video, 1080p/24fps: 100 credits per second\"). Agreed by both passes."
+  credit_to_output_rate_published:
+    value: "yes"
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: >
+      ADJUDICATED, and flagged as a codebook gap rather than a coder error on either
+      side. cost_per_output_unit = per_seat_month is agreed by both passes (Adobe
+      Express is sold as unmetered per-seat access, not a single countable artifact --
+      cost_per_output_unit rule 2). Pass 1 read credit_to_output_rate_published's own
+      "principal output" language (rule 1) as inheriting that same per_seat_month
+      answer, mechanically concluding partial under rule 4 ("rates published for
+      secondary features but not the principal output") since a seat-month structurally
+      cannot itself carry a credit rate -- a careful, textually-grounded reading pass 1
+      explicitly flagged in its own coder_note for adjudication. Pass 2 read it as yes:
+      Adobe's generative-credits FAQ publishes a general baseline rate (1 credit per
+      generation, standard features) plus an itemized table for every premium/video/
+      audio output type the credit system touches, plus an explicit list of which
+      Express features are credit-free -- leaving no rate withheld anywhere within the
+      credit system's own scope. Adjudicator finds for pass 2's outcome, on two grounds:
+      (1) the codebook's only worked example of `partial` under this rule
+      (credit_unit_defined's Vendor J2) is a product whose principal output IS itself a
+      discrete creditable artifact (video) that simply lacks a published rate; nothing
+      in the codebook addresses a per_seat_month product -- whose own rule exists
+      precisely to say it has NO discrete creditable principal output -- running a
+      fully-disclosed secondary credit layer, and no dagger/impossible-pair/matrix note
+      anywhere in this instrument names "partial, always, for every per_seat_month
+      product with credits" as an intended state the way every other structurally-forced
+      outcome in this study is explicitly flagged and argued (A3, B1, B3). (2) Read
+      within the scope the variable's own definition asks about ("published for the
+      product's outputs"), Adobe's disclosure is exhaustive -- a general rate, a
+      complete itemized table, and an explicit free-feature list -- matching the `yes`
+      row's own test ("rates are published for... the other output types the plan
+      advertises") with nothing held back. This is a genuine instrument gap:
+      credit_to_output_rate_published's principal-output test does not anticipate
+      cost_per_output_unit = per_seat_month, and a future codebook version should name
+      this interaction explicitly, parallel to how the A3 and B1 matrices name their own
+      unreachable pairs.
+  credit_rate_location:
+    value: docs_help_center
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: "Per-output credit rates appear only on this Adobe Help Center page; the pricing page states only the total monthly allowance, and the Subscription and Cancellation Terms / Generative AI Product Specific Terms both link out to this same FAQ rather than stating figures inline. Agreed by both passes."
+
+  # --- Domain 6: computability of cost per output ---
+  cost_per_output_unit:
+    value: per_seat_month
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "Adobe Express is sold as per-seat access to a general design/content/PDF tool, not a single countable artifact type (cost_per_output_unit rule 2). Agreed by both passes."
+  cost_per_output_computable:
+    value: "yes"
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "Unit is per_seat_month, so the published entry-tier price directly is the cost per unit; no further figures or assumptions needed. Agreed by both passes. See computation_assumptions."
+  computation_assumptions:
+    value: "Acrobat Express (entry tier), US/USD default-selector state: $10.99/mo billed monthly, 1 seat. Principal-output unit = per_seat_month (unmetered suite access, not a single countable artifact). Price and allowance already share the monthly period, so no conversion is needed under rule 3: cost per seat-month = 10.99 / 1 seat / 1 month = 10.99."
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "not_applicable (coder arithmetic field, not a vendor statement). Both passes' arithmetic agrees; this is the PROSE field disagreements.py lists as not a measurement (free-text wording differs, no figure differs). Pass 1 stored this at the top level rather than nested in variables{}, a template-shape drift also seen across other pass-1 records (D-010); the adjudicated record follows record-template.yaml and nests it here."
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "\"Unused generative credits do not rollover\" -- stated identically in the Subscription and Cancellation Terms and the generative-credits FAQ, and corroborated a third time in the Generative AI Product Specific Terms section 5 (\"expire on a monthly cadence... do not rollover\"). Agreed by both passes."
+
+  # --- Domain 8: charging for failed generations ---
+  failed_generation_charge_policy:
+    value: unknown
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: "Not addressed in the Subscription and Cancellation Terms, General Terms of Use, either Product Specific Terms document, or the generative-credits FAQ. The FAQ addresses normal consumption and a queue-limit error but not generation failure specifically. Agreed by both passes. Kind: vendor silence -- all relevant documents were located and read."
+
+  # --- Domain 9: auto-renewal ---
+  auto_renewal_default:
+    value: "on"
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "\"Your subscription will automatically renew each month without notice until you cancel.\" Corroborated by the pricing-page footnote. Agreed by both passes."
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "Stated on the pricing page itself and in the dedicated Subscription and Cancellation Terms. Agreed by both passes."
+  renewal_notice_commitment:
+    value: no_notice_stated
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "Renewal at the existing rate is explicitly \"without notice\"; the only notice commitment is narrower, for a RATE CHANGE specifically, which does not meet the advance-notice-of-renewal bar. Agreed by both passes."
+
+  # --- Domain 10: refund and cancellation terms ---
+  refund_policy_exists:
+    value: "yes"
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "\"If you cancel within 14 days of your initial order, you'll be fully refunded.\" Agreed by both passes."
+  refund_window_days:
+    value: 14
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "\"If you cancel within 14 days of your initial order, you'll be fully refunded.\" Agreed by both passes."
+  refund_conditions:
+    value: unconditional
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "No condition beyond timing -- no usage threshold, stated reason, or approval step. Agreed by both passes."
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "\"You can cancel your subscription anytime via your Adobe Account or by contacting Customer Support.\" Self-serve via account settings explicitly documented. Agreed by both passes."
+  refund_policy_location:
+    value: dedicated_refund_page
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "The 14-day refund window and conditions appear only in the dedicated Adobe Subscription and Cancellation Terms, confirmed absent from the General Terms of Use and not stated on the pricing page. Agreed by both passes."
+
+  # --- Domain 11: commercial-use rights ---
+  commercial_use_lowest_tier:
+    value: free
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: "\"In general, you may use outputs from generative AI features commercially\", gated only by beta-vs-non-beta feature status, not by tier; free-tier users have access to non-beta generative features. Agreed by both passes."
+  watermark_removal_tier:
+    value: unknown
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: "No document states which tier(s) carry vendor watermarks/branding, or that none do; no watermark row exists in the pricing feature grid. Distinct from the Content-Credentials/provenance-metadata clause (invisible AI-provenance metadata, not a tier-differentiated visible watermark statement). Agreed by both passes."
+  output_ownership_statement:
+    value: user_owns
+    source: https://www.adobe.com/legal/terms.html
+    evidence: "General Terms of Use 4.2: \"you...retain all rights and ownership of your Content. We do not claim any ownership rights to your Content\", with \"Content\" defined to include material created using the Services. Confirmed to cover generative-AI outputs specifically by the Generative AI Product Specific Terms section 1 (\"The Input and Output are your Content\"). Agreed by both passes."
+
+  # --- Domain 12: undisclosed or unverifiable limits ---
+  usage_cap_quantified:
+    value: all_caps_quantified
+    source: https://www.adobe.com/express/pricing?country=us
+    evidence: >
+      Every limit the documents attribute to the entry tier carries a number: 250
+      generative credits/month, 100GB storage, 30 days version history, 3 accounts per
+      social network. "Unlimited Quick Actions" is stated but is not qualified by the
+      discretionary generative-AI throttle clause found in the Generative AI Product
+      Specific Terms, since that clause is scoped to generative AI features specifically
+      and Quick Actions is a non-generative edit/crop/resize toolset. Value agreed by
+      both passes; this record carries pass 2's phrasing of that reasoning rather than
+      pass 1's, because pass 1's own phrasing cross-referenced "unquantified_limit_clause
+      = absent", which this record's adjudicated unquantified_limit_clause = present
+      supersedes -- carrying pass 1's wording forward unedited would have made this
+      record self-contradictory. The value itself (all_caps_quantified) is unaffected
+      either way: it does not depend on unquantified_limit_clause's resolution, since the
+      one "Unlimited" claim on this tier is outside that clause's scope regardless. NOTE:
+      pass 2's evidence for this variable separately cites an "Up to 2 hours long" video
+      figure that could not be located in any saved pass-2 source (same citation gap as
+      free_plan_cap_value's dropped seventh item) -- immaterial to this value, since the
+      tier's other, verified caps already carry it to all_caps_quantified, but flagged
+      here for the same reason.
+  unquantified_limit_clause:
+    value: present
+    source: https://www.adobe.com/go/adobe-gen-ai-addl-terms
+    evidence: >
+      ADJUDICATED by codebook decision rule 1 ("Read the terms of service and the
+      acceptable-use policy in full for this variable. A skim is not sufficient. `absent`
+      is a claim about a document you have read to the end.") Pass 1 coded absent from a
+      keyword sweep of the General Terms of Use and the Subscription and Cancellation
+      Terms, explicitly declining to open the Adobe Generative AI Product Specific Terms
+      PDF -- linked directly from the General Terms' own section 1.2, and stating in its
+      own first paragraph that it is incorporated by reference into "the Terms" -- on the
+      stated ground of "this study's hard rule against downloading files." No such rule
+      exists anywhere in protocol-v1.md, codebook-v1.md, sampling-rules.md,
+      deviations-for-coders.md, or the full orchestrator/deviations-log.md (grepped all
+      five for "download"/"pdf": zero hits in the first four; the deviations log's one
+      PDF-adjacent entry, D-009, concerns a price-representation check unrelated to
+      document access). Pass 2 opened that same PDF (curl + pypdf text extraction, a
+      legitimate documents-only read of an official, linked vendor document) and found,
+      in section 1 "Generating Content": "Adobe reserves the right to throttle, limit,
+      disable, suspend, or terminate your right to use or access the generative AI
+      features at any time in our sole discretion without prior notice to you" -- an
+      unquantified, discretionary standard squarely matching the `present` row. The
+      adjudicator independently re-fetched this exact URL live on 2026-08-16: it still
+      resolves to the identical filename and effective date (20260423) and the clause is
+      verbatim present. Pass 1's `absent` value does not meet the codebook's own
+      evidentiary bar because it rests on a document pass 1 did not read, for a reason
+      that is not a real rule; `present` is the rule-based value.
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-16. disagreements.py reported 3 substantive
+  disagreements plus the computation_assumptions prose field for adobe-express. All 3
+  resolved by rule; none became `unknown`. No `date_explained` or `variant_explained`
+  classification applies to this record (reasoning below). No prior deviations-log entry
+  needed correction beyond what is recorded per-variable above.
+
+  1. free_plan_cap_value -- resolved by verifying the cited capture (protocol 6.4 / this
+     role's citation-verification duty). Pass 2's seventh item, "up to 30 min video
+     length," and a related "2 hours" figure elsewhere in pass 2's own
+     usage_cap_quantified evidence, do not appear in any saved pass-2 source file
+     (grepped exhaustively). Pass 1's independent, line-by-line capture of the same
+     table 8 days earlier contains neither. Adjudicated value carries the six
+     mutually-verified items only. See that variable's evidence field for the full
+     citation trail, including today's unsuccessful attempt to independently re-render
+     the live page (blocked by the same JS-rendering barrier protocol section 9
+     anticipates, so this is reported as unresolved-by-capture, not as disproven).
+
+  2. credit_to_output_rate_published -- resolved `yes` (pass 2's value), reasoned through
+     rather than adopted on say-so. This is a genuine codebook gap: the variable's
+     principal-output test (rules 1 and 4) has no worked example or rule for a product
+     whose cost_per_output_unit is per_seat_month (i.e., a product already determined to
+     have no single discrete, creditable principal output) running a fully-documented
+     secondary credit layer. Pass 1's `partial` is a careful, textually-defensible
+     mechanical reading of rule 4, self-flagged for adjudication rather than asserted.
+     Full reasoning for why `yes` is nonetheless the better resolution is in that
+     variable's evidence field; recommend the codebook name this interaction explicitly
+     in a future version, the way the A3 and B1 matrices name their own unreachable
+     pairs, so the next coder to meet a per-seat-plus-credits product is not left to
+     rediscover the same tension.
+
+  3. unquantified_limit_clause -- resolved `present` (pass 2's value) by codebook
+     decision rule 1: pass 1's `absent` rests on a document (the Adobe Generative AI
+     Product Specific Terms) it declined to open, citing a "hard rule against
+     downloading files" that does not exist anywhere in this study's governing
+     documents (verified by exhaustive grep of all five). Pass 2 read that document and
+     found a squarely on-point discretionary throttle clause, which the adjudicator
+     independently re-verified live today, verbatim, against the same effective-date
+     PDF. This is the failure mode this role's brief names directly: absence of a
+     keyword-search hit is not absence of a clause, and here it was compounded by the
+     clause's own document never having been opened. Downstream: usage_cap_quantified
+     (agreed value, unaffected) already reasoned correctly that this clause's scope
+     (generative AI features) does not reach the tier's one "Unlimited" claim (Quick
+     Actions, non-generative) -- carried forward using pass 2's phrasing of that
+     reasoning so the adjudicated record does not contradict its own
+     unquantified_limit_clause value; see that variable's evidence field.
+
+  TRIAL-LENGTH DISPLAY VARIANT -- section 7.4.2 determination (this brief's classification
+  question). Pass 2's own single pass discovered, per protocol 6.8, that the bare
+  pricing-page URL geo-serves a Türkiye/TRY default state (tier "Adobe Express Premium",
+  30-day trial, TRY 238.80/mo, narrower feature set) differing from the US/USD state
+  reached via the vendor's own currency selector (tier "Acrobat Express", 7-day trial,
+  $10.99/mo, richer feature set). Per the currency-check protocol's arm-1 rule, pass 2
+  coded every entry-tier variable, trial length included, from the US/USD state and
+  logged the TRY state as a `display_variant` register event -- correctly: `conflicting`
+  is reserved by trial_length_days's own codebook rule for "two official sources of
+  equal authority," not for one URL varying by inferred geography, which section 6.8
+  governs instead. Pass 1 independently reached the identical trial_length_days = 7 from
+  its own, differently-triggered USD read (4 of 5 loads); pass 1's own TRY sighting
+  logged a price/tier-name difference only and never registered a trial-length figure.
+  disagreements.py confirms both passes agree at trial_length_days = 7 -- it is not one
+  of the 3 disagreements. Section 7.4.2 classifies a DISAGREEMENT between the two
+  passes' coded values, and none exists here, so `variant_explained` has nothing to
+  attach to: this is not a case where the bar is unmet on the merits, it is a case where
+  the predicate (a disagreement) is absent altogether. Tested against the bar anyway,
+  for completeness: section 7.4.2 requires "two archive snapshots showing the two
+  states" from "two passes" -- here only pass 2 archived/read a trial-length figure for
+  the TRY state at all; pass 1's TRY sighting is described in its own record as
+  screenshotted, but no such screenshot exists anywhere in
+  pass1/adobe-express-sources/ (a completeness gap in pass 1's own register-event
+  documentation, noted here though immaterial since it never fed a coded value). No
+  `variant_explained` classification is applied on this record. The register event
+  below is correctly logged as `display_variant` under sections 6.6/6.8 and required no
+  adjudication of a disagreement that does not exist.
+
+  ENTRY-TIER NAME, noted as an instrument limitation rather than a coder error, per this
+  brief's steer. The same TRY/US divide also swaps the entry tier's published NAME and
+  feature bundle: "Adobe Express Premium" (a leaner SKU, no Acrobat cross-sell, and
+  confirmed by pass 2's own corroborating read of
+  helpx.adobe.com/express/web/adobe-express-subscription/premium.html to still be a real,
+  currently-sold SKU) vs. "Acrobat Express" (bundles Acrobat Reader, Acrobat AI
+  Assistant, PDF Spaces, podcast generation) at what both coders read as the same price
+  point and the same 250-credit/month allowance. Neither coder's own live read ever
+  showed two competing paid Individual cards at once, so neither faced an actual
+  two-candidate choice under sampling-rules.md 7.2 -- but the underlying fact that
+  "Adobe Express," this frame's product_id, is sold on Adobe's own US page only as part
+  of an Acrobat-bundled bundle is a genuine ambiguity about which purchasable plan on
+  Adobe's wider platform this record's entry tier refers to. Named here as the brief
+  requested, not scored as a disagreement since none exists.
+
+  ENTRY-TIER LOSING CANDIDATES (codebook section 6 requirement, carried from pass 1,
+  which read the Businesses tab; pass 2 did not and so understated this to "only one
+  eligible candidate" -- immaterial to entry_tier_name, which both passes agree on,
+  since the loser was never close): "Acrobat Express for Teams" (Businesses tab,
+  US$11.99/mo per license, single-seat per sampling-rules 7.2 rule 4, annual-equivalent
+  $143.88) LOSES to "Acrobat Express" ($10.99/mo, annual-equivalent $131.88).
+  "Acrobat Express for Enterprise" is sales-gated ("Contact Sales") and ineligible under
+  sampling-rules 7.2 eligibility rule 2. Student/Educator tabs excluded categorically
+  under eligibility rule 1. "Adobe Express Free" ($0) is not a paid-tier candidate.
+
+  PROCESS NOTE -- archive_status framing. Both passes' primary pricing-page snapshot
+  fails to capture the client-side-injected plan/price content (protocol section 9,
+  limitation 8). Pass 1 labeled this `local_copy_only`; pass 2 labeled the identical
+  defect `archived`, even though its own sources[] note for that URL states the
+  archive.org capture "returns pre-hydration/empty markup (no prices)." This record
+  follows pass 1's franker framing at the top level. Flagged for the study's own QA: the
+  two passes are applying `archived` vs. `local_copy_only` inconsistently to the same
+  underlying evidentiary state, and no mechanical check catches it because
+  `archive_status` values are never cross-checked against their own sources[] notes.
+
+  ADJUDICATOR SCOPE: read records/pass1/adobe-express.yaml, records/pass2/adobe-express.yaml
+  and both -sources/ directories in full; read protocol-v1.md, codebook-v1.md,
+  sampling-rules.md, deviations-for-coders.md, record-template.yaml, and the study-wide
+  tools/; re-read the vendor's own live/archived documents where saved sources did not
+  settle a disputed value, and independently re-fetched the Generative AI Product
+  Specific Terms PDF live (2026-08-16). Did not open records/pass2-contaminated/
+  adobe-express.yaml (the withdrawn, quarantined pass-2 version -- see
+  orchestrator/deviations-log.md D-014/D-014-amended, which confirms adobe-express was
+  one of five records re-spawned under the pre-fix reading list and correctly quarantined
+  and re-coded blind, though only as a Tier-B/process-only exposure, no coded value
+  disclosed). Did not open orchestrator/interim-signals.md or any other product's record.
+  Within orchestrator/, opened only deviations-log.md, and only via targeted grep for
+  "adobe-express" and "pdf"/"download", not a full top-to-bottom read.
+
+conflict_note: "No disagreement between two official sources of equal authority was found: the pricing page, Subscription and Cancellation Terms, General Terms of Use, both Product Specific Terms documents, and the generative-credits FAQ corroborate rather than contradict each other on every value in this record. The TR-vs-US geo display variance (price, tier name, feature composition, trial length) is the SAME document/URL varying by inferred geography, not two sources of equal authority in conflict, so it is coded as a display_variant register event under protocol 6.8 rather than as conflicting -- see register_events and coder_note."
+
+register_events:
+  - { type: display_variant, detail: "Bare pricing-page URL geo-serves TRY/Turkiye pricing by default (tier \"Adobe Express Premium\", TRY 238.80/mo, 30-day trial, narrower feature set) vs. the US/USD state reached via the vendor's own footer country selector (tier \"Acrobat Express\", $10.99/mo, 7-day trial, adds Acrobat Reader/AI Assistant/PDF Spaces/podcast generation) -- same underlying price point and 250-credit/month allowance. All entry-tier variables coded from the US/USD state per the currency-check protocol's arm-1 rule. Independently corroborated by pass 1's own TRY/USD sighting (price and tier-name divergence only; pass 1 did not register a trial-length figure for the TRY state, and its claimed screenshot of that state is not present in its sources directory). Adjudicator finds this does NOT meet section 7.4.2's variant_explained bar: trial_length_days is not a disagreement between the two passes (both code 7 from the US state), so there is no disagreement for that classification to attach to -- see coder_note.", urls: ["https://www.adobe.com/express/pricing", "https://www.adobe.com/express/pricing?country=us"] }
+  - { type: display_variant, detail: "Pass-1-only sighting: on one navigation, and once via the Adobe Express home page's own \"Plans > Compare all plans\" link, the same URL rendered an Adobe-Firefly-branded plans page (Firefly Standard/Pro/Pro Plus/Premium) instead of the Express-native Free/Acrobat Express cards; on one occasion the tab transitioned from the Express-branded render to this Firefly-branded render with no user interaction. Not used for coding -- Adobe Firefly is a separate product_id in this study's frame. Not independently observed by pass 2.", urls: ["https://www.adobe.com/express/pricing"] }
+
+status: complete

@@ -1,0 +1,129 @@
+product_id: synthesia
+product_name: Synthesia
+category: AI avatar
+product_status: active
+paid_submission: "no"
+entry_tier_name: Starter
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-12
+recheck_date: not_applicable
+primary_source_url: https://www.synthesia.io/pricing
+archive_url: "https://web.archive.org/web/20260812114521/https://www.synthesia.io/pricing"
+archive_status: archived
+default_display_state: "Yearly (annual) billing preselected on load: DOM tab control shows Yearly aria-selected=true / class w--current, Monthly aria-selected=false. Prices shown in USD ($), no country/currency selector present on page. A sitewide banner reads 'NEW LOWER PRICES - Plans now starting from $18/month - Save 38%'; Starter/Creator cards show the annual per-month price with a struck-through monthly-billed reference price. No cookie-consent modal was presented during this read."
+
+sources:
+  - { url: "https://www.synthesia.io/pricing", kind: pricing, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812114521/https://www.synthesia.io/pricing", note: "default state Yearly/annual toggle preselected; DOM-verified via w-tab-pane w--tab-active and pricing-string price attributes, not text order" }
+  - { url: "https://www.synthesia.io/legal/customer-terms-of-service", kind: tos, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812114545/https://www.synthesia.io/legal/customer-terms-of-service", note: "Effective July 20, 2026; ranks first for contractual variables" }
+  - { url: "https://www.synthesia.io/legal/acceptable-use-policy", kind: tos, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812114551/https://www.synthesia.io/legal/acceptable-use-policy", note: "source for unquantified_limit_clause (F2)" }
+  - { url: "https://help.synthesia.io/en/articles/15972602-what-is-synthesia-s-refund-and-billing-policy", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812114638/https://help.synthesia.io/en/articles/15972602-what-is-synthesia-s-refund-and-billing-policy", note: "official help-center billing/refund FAQ" }
+  - { url: "https://help.synthesia.io/en/articles/15972027-how-do-i-manage-my-synthesia-plan-and-billing", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812114745/https://help.synthesia.io/en/articles/15972027-how-do-i-manage-my-synthesia-plan-and-billing", note: "cancellation/renewal mechanism" }
+  - { url: "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812114720/https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans", note: "credit unit definition and rate table" }
+  - { url: "https://help.synthesia.io/en/articles/6341928-synthesia-video-licensing", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812114739/https://help.synthesia.io/en/articles/6341928-synthesia-video-licensing", note: "commercial-use / avatar licensing table" }
+  - { url: "https://help.synthesia.io/en/articles/15972650-what-are-synthesia-s-pricing-plans", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812115903/https://help.synthesia.io/en/articles/15972650-what-are-synthesia-s-pricing-plans", note: "cross-check; defers to pricing page for figures, no trial mention, notes a closed 'Personal' maintenance-mode plan" }
+
+variables:
+  headline_price_usd: { value: "18.00", source: "https://www.synthesia.io/pricing", evidence: "Starter card, default Yearly tab: '$18/mo' (span price=\"\" yearly-per-month-starter=\"\">18); most prominent figure for the entry tier" }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://www.synthesia.io/pricing", evidence: "'$18/mo' with 'Billed yearly.' printed in the same card; Monthly tab (aria-selected=false) shows the un-discounted $29/mo" }
+  first_charge_amount_usd: { value: conflicting, source: "https://www.synthesia.io/pricing", evidence: "Rendered price card (default Yearly state, DOM-verified) implies $18 x 12 = $216.00/yr; the SAME page's FAQ JSON-LD answer to 'How much does Synthesia cost?' states 'Synthesia costs $29 per month or $264 if you go with an annual plan' for Starter -- both are on the live pricing page (equal authority, no hierarchy resolves it)" }
+  mandatory_addon_present: { value: "no", source: "https://www.synthesia.io/pricing", evidence: "Starter's advertised feature list includes personal/custom avatars (3 personal avatars, compare-table row) at no separate charge; the only paid add-on found, Studio Avatars ($1,000/year), is an optional premium avatar type not required to use Starter as advertised" }
+  annual_condition_disclosure: { value: adjacent, source: "https://www.synthesia.io/pricing", evidence: "'Billed yearly. Pay monthly' printed directly beneath the $18/mo figure inside the Starter price card itself" }
+  annual_default_toggle: { value: annual_preselected, source: "https://www.synthesia.io/pricing", evidence: "DOM: a[.pricing-tab-button][aria-selected] -- 'Yearly' has aria-selected=\"true\" and class w--current; 'Monthly' has aria-selected=\"false\"" }
+  free_plan_exists: { value: "yes", source: "https://www.synthesia.io/pricing", evidence: "'Basic / Free / Get started on desktop / No credit card required' shown as a standing plan card alongside the paid tiers" }
+  free_plan_cap_documented: { value: all_quantified, source: "https://www.synthesia.io/pricing", evidence: "'INCLUDES 1,200 CREDITS/MO', 'Usable for up to 10 minutes of video/month', '25 AI-generated video assets', '1 editor' (Seats row) -- every stated limit carries a number, a dimension, and a period where it is a rate" }
+  free_plan_cap_value: { value: "1200 credits per month | 10 minutes of video per month | 25 AI-generated video assets per month | 1 editor", source: "https://www.synthesia.io/pricing", evidence: "Basic plan card and compare-plans table, Seats row" }
+  free_plan_watermark: { value: "yes", source: "https://www.synthesia.io/pricing", evidence: "'Remove Synthesia logo' is listed under 'WHAT YOU GET IN BASIC +' as a feature Starter adds beyond Basic, implying Basic outputs carry the Synthesia logo (same pattern as the codebook's own worked example)" }
+  free_plan_duration: { value: perpetual, source: "https://www.synthesia.io/pricing", evidence: "Basic is presented as a standing plan card beside the paid tiers with no expiry stated; no expiry mentioned in ToS, AUP, or the help-center pricing-plans article either" }
+  trial_exists: { value: "no", source: "https://www.synthesia.io/pricing", evidence: "Pricing-page FAQ 'How can I test Synthesia?' offers only the free Basic plan, a free product tour, and a free sales demo -- no time-limited trial of a paid tier is mentioned anywhere on the pricing page, in the Customer ToS, the AUP, or the help-center 'What are Synthesia's pricing plans?' article" }
+  trial_card_required: { value: not_applicable, source: "https://www.synthesia.io/pricing", evidence: "no trial exists" }
+  trial_length_days: { value: not_applicable, source: "https://www.synthesia.io/pricing", evidence: "no trial exists" }
+  trial_auto_converts: { value: not_applicable, source: "https://www.synthesia.io/pricing", evidence: "no trial exists" }
+  credit_system_present: { value: "yes", source: "https://www.synthesia.io/pricing", evidence: "Every self-serve plan is denominated in 'credits' (e.g. 'INCLUDES 1,200 CREDITS/MO') which convert into video minutes and other outputs -- an intermediate currency" }
+  credit_unit_defined: { value: "yes", source: "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans", evidence: "'Each second of a video uses 2 credits. Ex: A one-minute video will consume 120 credits.' -- confirmed identically in both the main article body and its expanded 'How are credits calculated?' FAQ entry" }
+  credit_to_output_rate_published: { value: "yes", source: "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans", evidence: "principal output (video): 2 credits/sec; also published for other outputs the plan advertises -- AI Dubbing 240 credits/min (with lip sync) / 120 (without), Bulk Personalization 90 credits/min, API 75 credits/min, AI images 3-9 credits each" }
+  credit_rate_location: { value: docs_help_center, source: "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans", evidence: "the per-second/per-credit rate table lives on this help-center article; the pricing page shows only aggregate plan totals ('1,200 credits/mo') and a derived 'usable for up to N minutes' estimate, not the atomic rate" }
+  cost_per_output_unit: { value: per_video_minute, source: "https://www.synthesia.io/pricing", evidence: "Synthesia is sold and metered as video minutes ('10 minutes of video/month', etc.); video is the principal output" }
+  cost_per_output_computable: { value: "yes", source: "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans", evidence: "Starter entry-tier price ($18/mo, default Yearly display) plus published annual credit allowance (14,500/yr) plus published rate (2 credits/sec) let a reader compute an exact cost per video minute with no assumption about typical use" }
+  computation_assumptions: { value: "Starter, default Yearly display: $18/mo (x12=$216.00/yr); allowance 14,500 credits/yr = 1208.33 credits/mo; rate 2 credits/sec = 120 credits/min; 1208.33/120=10.07 min/mo; 18.00/10.07=$1.79/video-minute. Uses price-card figure per rule 1, not the conflicting FAQ total.", source: "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans", evidence: "arithmetic per codebook cost_per_output_computable rule 3" }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans", evidence: "'No, credits for usage are reset at the start of the billing period and there is no accumulation of unused credit.' -- consistent with the pricing-page FAQ: 'the unused videos do not roll over to the next billing period'" }
+  failed_generation_charge_policy: { value: unknown, source: "https://www.synthesia.io/pricing", evidence: "no document (pricing page, ToS, AUP, or the two credits help-center articles) states whether a failed, errored, or empty generation consumes credits -- all found language addresses successful generation only" }
+  auto_renewal_default: { value: "on", source: "https://www.synthesia.io/legal/customer-terms-of-service", evidence: "'all subscriptions automatically renew (without the need to go through the Services-interface check-out or execute a renewal Order Form) for additional periods equal to one (1) year or the preceding term, whichever is shorter'" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://www.synthesia.io/legal/customer-terms-of-service", evidence: "stated in the ToS ('Auto-Renewal' section, above) AND independently in the help center: 'Paid plans renew automatically at the same per-unit price as your current term.'" }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://help.synthesia.io/en/articles/15972602-what-is-synthesia-s-refund-and-billing-policy", evidence: "'Check your next renewal date under Billing in your account settings well before it arrives, since a reminder email isn't guaranteed for every plan.' -- an explicit disclaimer of proactive notice, not a commitment to it" }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://www.synthesia.io/legal/customer-terms-of-service", evidence: "'Payment obligations are non-cancelable and, except as expressly stated in the Contract, fees paid are non-refundable.' Help center restates: 'all purchases are non-cancelable and... non-refundable', including 'even if the subscription wasn't used'" }
+  refund_window_days: { value: "0", source: "https://www.synthesia.io/legal/customer-terms-of-service", evidence: "no refunds given under the general policy" }
+  refund_conditions: { value: not_applicable, source: "https://www.synthesia.io/legal/customer-terms-of-service", evidence: "no refund available under the general policy" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://help.synthesia.io/en/articles/15972027-how-do-i-manage-my-synthesia-plan-and-billing", evidence: "'Self-serve cancellation is available on the Starter and Creator plans' with a documented in-app path (Account info > Billing > three-dot menu > Cancel your subscription)" }
+  refund_policy_location: { value: multiple, source: "https://www.synthesia.io/legal/customer-terms-of-service", evidence: "stated in the ToS ('Payment Obligations' section) and in a dedicated help-center article ('What is Synthesia's refund and billing policy?')" }
+  commercial_use_lowest_tier: { value: free, source: "https://help.synthesia.io/en/articles/6341928-synthesia-video-licensing", evidence: "Stock/Synthetic avatar licence table (applies by avatar type, not by plan tier -- Basic/free already includes 9 Stock avatars per the compare table) allows business use incl. website/training/product videos and organic social, and disallows only paid advertising (paid TV/Facebook/Instagram/YouTube/TikTok ads, paid programmatic, 'any form of paid promotion')" }
+  watermark_removal_tier: { value: lowest_paid, source: "https://www.synthesia.io/pricing", evidence: "'Remove Synthesia logo' listed as a feature Starter (the lowest paid tier) adds beyond Basic" }
+  output_ownership_statement: { value: user_owns, source: "https://www.synthesia.io/legal/customer-terms-of-service", evidence: "'Customer will own all Customer Data, but excluding the components of the Services and Synthesia Content.' Customer Data is defined to include 'Output': 'any videos, images, audio files, and/or content created from Inputs'" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.synthesia.io/pricing", evidence: "Starter (entry tier): '14,500 CREDITS/Y', '120 minutes of video or AI Dubbing/year', '300 AI-generated video assets', '1 editor & 3 guests' -- every stated limit carries a number, a dimension, and a period where it is a rate" }
+  unquantified_limit_clause: { value: present, source: "https://www.synthesia.io/legal/acceptable-use-policy", evidence: "prohibits 'Excessively, disproportionately or unreasonably consuming compute or AI-generation resources' -- a discretionary standard with no figure; corroborated by the pricing page's Enterprise unlimited-avatars claim being qualified '(subject to reasonable consumption and compute)'" }
+
+coder_note: |
+  Entry tier selection (sampling-rules 7.2): eligible paid candidates were Starter ($18/mo
+  yearly default = $216.00/yr annual-equivalent, single seat/1 editor) and Creator ($64/mo
+  yearly default = $768.00/yr, losing candidate). Starter wins on lowest annual-equivalent
+  cost. Excluded as ineligible: Enterprise (sales-gated, "Let's talk" / Book demo, no
+  published price, fails criterion 2); "Personal" plan, found only in the help-center pricing
+  article, is in maintenance mode and closed to new signups ("If your subscription expires,
+  you can only subscribe to a plan that isn't in maintenance mode") -- fails criterion 1,
+  generally available to any buyer.
+
+  Judgment calls made, flagged for reviewer attention:
+  1) refund_policy_exists coded no_refunds_stated rather than yes, even though the Contract
+     does carve out one scenario (termination-for-cause refund of prepaid remainder-of-term
+     fees). This mirrors the codebook's own worked example (Vendor Q, "non-refundable except
+     where required by law" -> no_refunds_stated with the exception noted) -- both official
+     sources (ToS, help center) lead with "non-refundable" as the headline position.
+  2) commercial_use_lowest_tier coded free, not lowest_paid. The Video Licensing help article's
+     allowed/not-allowed table is gated by AVATAR TYPE (stock/synthetic vs custom), not by
+     plan tier, and Basic/free already includes 9 stock avatars (compare table), so the same
+     licence (business use allowed; only PAID ADVERTISING disallowed) reads as applying from
+     the free tier up. No document ties the licence table to a paid subscription.
+  3) first_charge_amount_usd coded conflicting: see conflict_note. Not a coder misread -- the
+     $18/mo card figure was confirmed in raw HTML (span[yearly-per-month-starter]="18", w-tab-
+     pane w--tab-active = the Yearly pane) and via screenshot, independent of the FAQ figure.
+
+  Read-twice / row-mapping checks performed (not merely trusted text-extractor order):
+  - Price card figures confirmed via DOM attributes (pricing-string spans: currency-symbol +
+    price + month, e.g. yearly-per-month-starter="18") AND a screenshot, not just innerText.
+  - Yearly-vs-Monthly default state confirmed via aria-selected/w--current on the Webflow tab
+    control and via which w-tab-pane carries w--tab-active, not from which price printed first.
+  - Compare-table "Personal Avatars" and "Studio Avatars" rows re-verified cell-by-cell by
+    indexed child element (idx0=label,1=Basic,2=Starter,3=Creator,4=Enterprise) rather than
+    flattened text, after a duplicate mobile-accordion DOM instance produced a different-
+    looking readout for the Studio Avatars row (see below).
+  - Observed, not used to code anything: the pricing page renders the "Studio Avatars" row
+    TWICE in the DOM (desktop table + a separate mobile accordion list). The desktop instance
+    shows the $1,000/year paid add-on available on Enterprise only (cross icons on Basic/
+    Starter/Creator); the mobile-accordion instance shows it available on Starter/Creator/
+    Enterprise too. Immaterial to mandatory_addon_present either way, since a Studio Avatar
+    is an optional premium upsell, not required to use Starter as advertised -- flagged only
+    for completeness.
+
+  Currency: USD ($) served directly on every read, no country/currency selector or geo-based
+  price found anywhere on the pricing page; no non_usd signal arose so the D-003 arm-by-arm
+  check was not needed.
+
+  A-012: not applicable -- no paid time-limited intro period found (Synthesia's trial-adjacent
+  offerings are a free plan and a free one-off "try for free" video generator, not a discounted
+  paid intro period).
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Same-URL, same-authority conflict on https://www.synthesia.io/pricing (pricing
+  page ranks first for pricing variables; no sub-hierarchy between page sections). The default
+  Yearly-tab price card (DOM-verified, w-tab-pane w--tab-active) shows Starter at $18/mo, which
+  implies a $216.00/yr annual total (18x12). The SAME page's FAQPage JSON-LD, answering 'How
+  much does Synthesia cost?', states verbatim: 'For Starter plan users, Synthesia costs $29 per
+  month or $264 if you go with an annual plan.' 264/12=$22.00/mo and 89(Creator monthly)->
+  804/12=$67.00/mo, neither of which matches the live $18/mo or $64/mo card figures (both clean
+  round numbers, consistent with the FAQ predating the page's own 'NEW LOWER PRICES - Save 38%'
+  promotional banner and struck-through reference prices). Coded first_charge_amount_usd =
+  conflicting rather than inferring the FAQ is stale, per protocol's bar on inference. Both
+  statements are on https://www.synthesia.io/pricing, accessed 2026-08-12, archived at
+  https://web.archive.org/web/20260812114521/https://www.synthesia.io/pricing."
+register_events: []
+status: complete

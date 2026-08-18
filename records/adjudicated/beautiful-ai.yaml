@@ -1,0 +1,608 @@
+product_id: beautiful-ai
+product_name: Beautiful.ai
+category: AI presentation
+product_status: active
+paid_submission: "no"
+entry_tier_name: Pro
+
+coder_pass: 3
+coder_role: adjudicated
+collection_date: "2026-08-16"
+recheck_date: not_applicable
+primary_source_url: https://www.beautiful.ai/pricing
+archive_url: https://web.archive.org/web/20260816101253/https://www.beautiful.ai/pricing
+archive_status: archived
+
+default_display_state: >
+  USD throughout; no country/currency selector on any read (pass 1, pass 2, or this
+  adjudication's re-check). Cookies declined (non-essential) in every read. The Pro (entry
+  tier) card carries no monthly/annual toggle of its own and prints a static "Billed
+  annually" label. The Pro price FIGURE ITSELF is under a live, ongoing, client-side A/B
+  test run via a third-party script (app.optibase.io/script.js, a Webflow
+  personalization/experimentation tool): the DOM node carries
+  data-pricing-exp-false="$12" data-pricing-exp="true" data-pricing-exp-true="$14.50" on
+  one element. Pass 1 (2026-08-07, three independent fresh loads) consistently rendered
+  the "$12" branch. Pass 2 (2026-08-14, one live rendered read) rendered the "$14.50"
+  branch, confirmed by that pass's own get_page_text extraction and a described
+  screenshot. THE DECISIVE FACT FOR ADJUDICATION (see headline_price_usd evidence and
+  coder_note): the PUBLIC ARCHIVE SNAPSHOT captured at each of three independent
+  timestamps -- pass 1's 2026-08-06T23:51:27Z, pass 2's 2026-08-14T17:51:59Z, and this
+  adjudication's own fresh 2026-08-16T10:12:53Z submission -- shows the IDENTICAL "$12"
+  text in the archived/replayable capture every time, because web.archive.org's capture
+  process preserves the raw/pre-script markup rather than executing the third-party
+  Optibase script the way a live visitor's browser does. The same rendered page's own FAQ
+  prose ("How much does Beautiful.ai cost?") is untouched by the experiment script and
+  reads "$12/month (billed annually)" in every read, including today's. The Team card
+  carries a real monthly/annual toggle that defaults to annual ($40, not $50) -- not
+  disputed between passes.
+
+sources:
+  - { url: "https://www.beautiful.ai/pricing", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260806235127/https://www.beautiful.ai/pricing", note: "Pass 1's read. Rendered/visible Pro price: $12/mo. Archive (verified directly by this adjudication via the id_ raw endpoint) shows $12 and both data-pricing-exp-* attributes." }
+  - { url: "https://www.beautiful.ai/pricing", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814175159/https://www.beautiful.ai/pricing", note: "Pass 2's read. Rendered/visible Pro price: $14.50/mo (confirmed by pass 2's own get_page_text capture, records/pass2/beautiful-ai-sources/pricing-page-rendered-text-2026-08-14.txt). Archive (verified directly by this adjudication via the id_ raw endpoint, and independently corroborated by pass 2's own saved records/pass2/beautiful-ai-sources/archive-save-pricing-response.html -- the literal HTTP body web.archive.org returned to pass 2's own save request) shows $12, NOT $14.50, and both data-pricing-exp-* attributes." }
+  - { url: "https://www.beautiful.ai/pricing", kind: pricing, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260816101253/https://www.beautiful.ai/pricing", note: "This adjudication's own fresh re-check. Raw HTML (curl) still carries both data-pricing-exp-* attributes and the FAQ's static $12/month text, unchanged from both passes. Freshly submitted archive snapshot (verified via the id_ raw endpoint) again shows $12 -- the third of three independent public snapshots to do so." }
+  - { url: "https://www.beautiful.ai/terms-of-service", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814175228/https://www.beautiful.ai/terms-of-service", note: "Read in full via pass 2's local plaintext capture (records/pass2/beautiful-ai-sources/tos-plaintext-2026-08-14.txt) for this adjudication, including full verbatim context of section 2.2 (License) and section 2.9 (Suspension, header confirmed) and section 6.2 (Termination, header confirmed) -- see coder_note." }
+  - { url: "https://www.beautiful.ai/terms-of-service", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260806235421/https://www.beautiful.ai/terms-of-service", note: "Pass 1's independent read, same document, last-revised header 2025-08-22 per both passes." }
+  - { url: "https://support.beautiful.ai/hc/en-us/articles/360031086751-What-happens-if-I-hit-my-slide-limit-in-Basic", kind: docs, accessed: "2026-08-07", archive: "local_copy_only", note: "Pass 1 only (records/pass1/beautiful-ai-sources/local-basic-slide-limit.html); public archiving Cloudflare-blocked for both passes. Verbatim quote confirmed by this adjudication against the local capture. This adjudication independently confirmed the article is genuine, long-standing vendor documentation via the Wayback CDX index (continuous snapshots of this exact URL/title from 2020 through 2025-08-06, most recently ~1 year before pass 1's read)." }
+  - { url: "https://support.beautiful.ai/hc/en-us/articles/360030940931-What-happens-when-I-downgrade-my-account", kind: docs, accessed: "2026-08-07", archive: "local_copy_only", note: "Pass 1 only (records/pass1/beautiful-ai-sources/local-basic-downgrade.html); same Cloudflare block. Verbatim quote confirmed by this adjudication against the local capture. CDX-confirmed continuous snapshot history 2020-2025 as above." }
+  - { url: "https://support.beautiful.ai/hc/en-us/articles/360030985471-How-do-I-cancel-my-subscription-Trial-or-Pro", kind: docs, accessed: "2026-08-07", archive: "local_copy_only", note: "Pass 1 only; describes cancelling Pro as downgrading to Basic. Corroborates free_plan_exists." }
+  - { url: "https://support.beautiful.ai/hc/en-us/articles/26598025191565-Customizing-Beautiful-ai-Player-Links", kind: docs, accessed: "2026-08-07", archive: "local_copy_only", note: "Pass 1 only. Establishes the pricing page's 'Player branding' compare-grid row means a custom-domain share-link URL, not output watermarking -- rules out a competing (wrong) citation for watermark_removal_tier." }
+  - { note: "Full per-pass source lists (11 sources, pass 1; 5 sources, pass 2) are preserved in records/pass1/beautiful-ai.yaml and records/pass2/beautiful-ai.yaml. This list carries only the sources this adjudication cites directly." }
+
+variables:
+  headline_price_usd:
+    value: 12.00
+    source: "https://www.beautiful.ai/pricing"
+    evidence: >
+      NOT variant_explained (protocol §7.4.2) -- checked and ruled out, not assumed. §7.4.2
+      requires TWO ARCHIVE SNAPSHOTS SHOWING THE TWO STATES; markup proving both arms of an
+      A/B test exist is explicitly not enough on its own. This adjudication fetched both
+      passes' public archive_url values directly (via the Wayback id_ raw endpoint, bypassing
+      the toolbar rewrite) rather than trusting either coder's account: pass 1's snapshot
+      (2026-08-06T23:51:27Z) shows "$12"; pass 2's snapshot (2026-08-14T17:51:59Z) ALSO shows
+      "$12", not "$14.50" -- byte-for-byte the same
+      data-pricing-exp-false="$12" data-pricing-exp="true" data-pricing-exp-true="$14.50"
+      markup with "$12" as the rendered text content in both. A fresh third snapshot taken for
+      this adjudication (2026-08-16T10:12:53Z) shows "$12" again. Independently corroborated by
+      pass 2's OWN saved evidence: records/pass2/beautiful-ai-sources/archive-save-pricing-response.html
+      is the literal HTTP response web.archive.org returned to pass 2's own save submission,
+      and it too carries the raw "$12" markup, not "$14.50" -- meaning pass 2's own source
+      trail already contained proof the public archive would not preserve the $14.50 state
+      pass 2's live browser rendered, though pass 2 did not flag the discrepancy. The reason:
+      web.archive.org's capture preserves the pre-script/server-rendered markup rather than
+      executing the third-party Optibase experiment script the way a live visitor's browser
+      does, so it cannot capture either A/B arm as "the" served state -- it captures the same
+      static default every time, regardless of which arm a live session was bucketed into.
+      With no snapshot pair showing two states, §7.4.2's classification is unreachable; this is
+      an ordinary disagreement, resolved on the codebook's own rule for headline_price_usd:
+      "Where the figure appears in a plan card rendered by script, the archive reference must
+      show it" (codebook-v1.md, headline_price_usd Evidence clause). Pass 1's $12 satisfies
+      this -- observed live AND shown in its own archive reference. Pass 2's $14.50 does not --
+      genuinely observed live (not disputed; corroborated by pass 2's own get_page_text
+      capture and described screenshot) but shown in NO archive reference, including pass 2's
+      own. Coded 12.00 on that rule, from pass 1's properly evidenced reading. This is a live,
+      ongoing vendor A/B test (re-confirmed unchanged as of 2026-08-16, this adjudication's own
+      date) -- protocol §9 item 13's exposure applies in full: a real buyer visiting today may
+      be served either $12 or $14.50, and the published figure is the durably-evidenced state,
+      not a claim that it is the only one served.
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: "https://www.beautiful.ai/pricing"
+    evidence: >
+      Both passes agree. "/MO" qualifier printed with the figure (no "/user" or "/seat" suffix
+      on the Pro card, unlike Team's "/MO/USER"); "Billed annually" printed beneath, static, no
+      toggle. Unaffected by the price-figure A/B test, which only swaps the numeral.
+  first_charge_amount_usd:
+    value: 144.00
+    source: "https://www.beautiful.ai/pricing | https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      12.00 x 12 = 144.00. ToS section 6.1/2.1: the Subscription Term renews for successive
+      periods equal to the initial term; annual selection is charged as one payment (ToS 4.1:
+      annual plans billed "prior to the start of the next year"; ToS 4.2: fees "due and payable
+      ... in advance"). Follows headline_price_usd's resolution to 12.00 -- see that variable's
+      evidence for the full archive-snapshot analysis. Pass 2's 174.00 (14.50 x 12) is
+      arithmetically consistent with pass 2's own headline_price_usd but is not the published
+      figure for the same reason.
+  mandatory_addon_present:
+    value: "no"
+    source: "https://www.beautiful.ai/pricing | https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Both passes agree. Full Pro feature list and ToS section 4 (Fees & Payment Terms) state no
+      required charge beyond the plan price. The $45/mo "ad hoc / single presentation" offer is
+      an alternative billing option, not a required addition to Pro.
+  annual_condition_disclosure:
+    value: adjacent
+    source: "https://www.beautiful.ai/pricing"
+    evidence: >
+      Both passes agree. "Billed annually" is printed directly beneath the price figure inside
+      the same Pro price card, in every read regardless of which A/B branch rendered the
+      numeral above it.
+  annual_default_toggle:
+    value: annual_preselected
+    source: "https://www.beautiful.ai/pricing"
+    evidence: >
+      Both passes agree. Team's explicit toggle loads with "Billed annually" selected (its
+      "yearly" duration span rendering, "$40" not "$50"); Pro shows only the annual state, no
+      toggle. Consistent across all reads by both passes and this adjudication's re-check.
+  free_plan_exists:
+    value: "yes"
+    source: "https://support.beautiful.ai/hc/en-us/articles/360030985471-How-do-I-cancel-my-subscription-Trial-or-Pro | https://support.beautiful.ai/hc/en-us/articles/360031086751-What-happens-if-I-hit-my-slide-limit-in-Basic | https://support.beautiful.ai/hc/en-us/articles/360030940931-What-happens-when-I-downgrade-my-account"
+    evidence: >
+      Resolved by codebook §2.1 step 2 and §3: the live pricing page ranks first for this
+      variable class but is SILENT on a "Basic" plan (never uses the words "Basic" or "free
+      plan" outside "free trial") -- silence is not a contrary statement, so there is no
+      hierarchy conflict to resolve, and the next-ranked source (Help Center, §3) supplies the
+      determinate value where the top-ranked source does not speak. Three independent,
+      official support.beautiful.ai articles affirmatively and operationally document an
+      ongoing zero-cost "Basic" account state: cancelling Pro "downgrad[es] your account to our
+      Basic plan"; "The Basic plan has a limit of 100 slides"; and downgrading to Basic causes
+      named, specific consequences (branding appears, Analytics/Revision History/Desktop Player
+      lost). This adjudication independently verified all three quotes against pass 1's saved
+      local HTML captures (verbatim match) and independently confirmed via the Wayback CDX
+      index that these exact article URLs have existed continuously since 2020, most recently
+      snapshotted ~1 year before pass 1's read -- genuine, stable, long-standing vendor
+      documentation, not a stale or fabricated page. Pass 2 coded "no" without opening any of
+      these three URLs (confirmed: absent from pass 2's own sources list) -- an incomplete
+      search of the documents, not a genuine documentary conflict. free_plan_exists rule 3
+      requires "no free option ANYWHERE IN THE DOCUMENTS" for a "no" coding; that condition is
+      not met once the Help Center is read.
+  free_plan_cap_documented:
+    value: all_quantified
+    source: "https://support.beautiful.ai/hc/en-us/articles/360031086751-What-happens-if-I-hit-my-slide-limit-in-Basic"
+    evidence: >
+      Follows free_plan_exists = "yes". "The Basic plan has a limit of 100 slides" is a
+      quantified standing limit (number + dimension, no period required, codebook §5.1) --
+      verified verbatim against pass 1's local capture. The other downgrade consequences
+      (feature loss, branding) are availability/branding statements, not capped quantities.
+  free_plan_cap_value:
+    value: "100 slides"
+    source: "https://support.beautiful.ai/hc/en-us/articles/360031086751-What-happens-if-I-hit-my-slide-limit-in-Basic"
+    evidence: >
+      Follows free_plan_exists = "yes". "The Basic plan has a limit of 100 slides" -- verbatim,
+      verified against the local capture. Format: "quantity unit" standing-limit form.
+  free_plan_watermark:
+    value: "yes"
+    source: "https://support.beautiful.ai/hc/en-us/articles/360030940931-What-happens-when-I-downgrade-my-account"
+    evidence: >
+      Follows free_plan_exists = "yes". "During playback, sharing, and exporting your
+      presentation, it will now show Beautiful.ai branding on the page and ending slide" --
+      stated as a consequence of downgrading to Basic (the word "now" marks the before/after
+      contrast), verified verbatim against pass 1's local capture. free_plan_watermark's own
+      definition asks whether outputs "carry vendor branding or a watermark" -- branding
+      qualifies explicitly, no inference required.
+  free_plan_duration:
+    value: perpetual
+    source: "https://support.beautiful.ai/hc/en-us/articles/360030985471-How-do-I-cancel-my-subscription-Trial-or-Pro | https://support.beautiful.ai/hc/en-us/articles/360031086751-What-happens-if-I-hit-my-slide-limit-in-Basic"
+    evidence: >
+      Follows free_plan_exists = "yes". Basic is documented as the standing account state a
+      cancelled/downgraded Pro subscription lands on and remains on indefinitely (slide count
+      is user-manageable by deleting slides, not time-limited); no document states an expiry.
+  trial_exists:
+    value: "yes"
+    source: "https://www.beautiful.ai/pricing"
+    evidence: "Both passes agree. Pricing-page FAQ: 14-day free trial of Pro or Team features."
+  trial_card_required:
+    value: "yes"
+    source: "https://www.beautiful.ai/pricing"
+    evidence: "Both passes agree. FAQ: \"A credit card is required for the 14-day Pro trial.\""
+  trial_length_days:
+    value: 14
+    source: "https://www.beautiful.ai/pricing | https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Both passes agree. Pricing-page FAQ and ToS section 2.3 independently both state
+      fourteen (14) days.
+  trial_auto_converts:
+    value: "yes"
+    source: "https://www.beautiful.ai/pricing"
+    evidence: >
+      Both passes agree. FAQ: card on file "charged automatically" if the trial is not
+      cancelled before the 14 days end.
+  credit_system_present:
+    value: "no"
+    source: "https://www.beautiful.ai/pricing | https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Both passes agree. Pro is sold as "Unlimited AI content generation" (a feature flag, not
+      a metered allowance); no credits/tokens/points concept in the pricing page or ToS; the
+      one quantified plan allowance found anywhere (Basic's 100 slides) is stated directly in
+      the output unit, which codebook §5 domain 5 rule 1 excludes from counting as a credit
+      system.
+  credit_unit_defined:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = \"no\"). Both passes agree."
+  credit_to_output_rate_published:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = \"no\"). Both passes agree."
+  credit_rate_location:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = \"no\"). Both passes agree."
+  cost_per_output_unit:
+    value: per_seat_month
+    source: "https://www.beautiful.ai/pricing"
+    evidence: >
+      Both passes agree. Pro sells unmetered per-seat software access at a flat monthly price
+      (codebook domain 6 rule 2).
+  cost_per_output_computable:
+    value: "yes"
+    source: "https://www.beautiful.ai/pricing"
+    evidence: "Both passes agree the calculation is possible; see computation_assumptions for the resolved figure."
+  computation_assumptions:
+    value: >
+      Entry tier Pro, $12.00/mo billed annually per the pricing page's default display state
+      (annual, the only state Pro's card shows -- no monthly toggle exists on the Pro card
+      itself). Unit = per_seat_month (unmetered software, domain 6 rule 2), so the included
+      allowance IS the seat-month itself; no separate credit/output allowance to convert. Cost
+      per seat-month = the published price directly = 12.00. First charge: ToS 2.1/6.1 state
+      the Subscription Term renews for successive periods equal to the initial term, and annual
+      billing is charged once for the full term (ToS 4.1/4.2); 12 x 12 = 144.00. The vendor
+      runs a live A/B test on this element (data-pricing-exp-false="$12" /
+      data-pricing-exp-true="$14.50"); see headline_price_usd evidence for why the archive
+      evidence supports $12.00 as the published figure rather than the $14.50 branch pass 2's
+      browser session was independently, genuinely served.
+    source: "https://www.beautiful.ai/pricing"
+    evidence: >
+      Not independently adjudicated as a disagreement (protocol: free-prose field, disagrees by
+      construction, tools/disagreements.py PROSE set). Restated here to match the resolved
+      headline_price_usd = 12.00 rather than either pass's own $12 or $14.50 narrative verbatim.
+  credit_rollover_policy:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = \"no\"). Both passes agree."
+  failed_generation_charge_policy:
+    value: not_applicable
+    source: not_applicable
+    evidence: >
+      Both passes agree. Pro has no metered generation step to fail against -- generation is
+      flat/unlimited, not drawn from an allowance.
+  auto_renewal_default:
+    value: "on"
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Both passes agree. ToS section 2.1: the Subscription Term "automatically renew[s] for
+      successive periods equal to the initial Subscription Term" absent written notice of
+      non-renewal.
+  auto_renewal_disclosure_location:
+    value: terms_only
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Both passes agree. The explicit "automatically renew" statement is found only in the
+      ToS; the pricing-page FAQ and Help Center describe stopping a renewal without stating in
+      so many words that renewal is automatic by default.
+  renewal_notice_commitment:
+    value: unknown
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Both passes independently found the SAME underlying fact on a full-text read of the ToS:
+      it commits to advance notice for material service changes and for agreement changes, but
+      contains no commitment to notify before a renewal CHARGE specifically (ToS section 14.3
+      addresses general notice mechanics, not a pre-renewal-charge commitment). The dispute is
+      purely which CODE that shared fact earns. Resolved against pass 2's no_notice_stated:
+      this variable's decision rule defines only advance_notice_stated's bar and gives
+      no_notice_stated no rule text of its own, unlike variables the codebook DOES equip with an
+      explicit "checked, found silent = documented absence" value (e.g. annual_condition_disclosure's
+      and unquantified_limit_clause's dedicated absent value, each with its own rule sentence --
+      "If none of them state it, code absent" / "The terms ... were read and contain no such
+      clause"). renewal_notice_commitment carries no such value or rule. Elsewhere in this same
+      codebook, a "no_X_stated"-style value is defined to require an AFFIRMATIVE vendor
+      statement of absence (refund_policy_exists's no_refunds_stated: "Documents state that no
+      refunds are given"; free_plan_watermark's "no": "Documents state free outputs are not
+      watermarked" against "A silent pricing table is unknown"), not mere silence on an
+      adjacent-but-different trigger. No document here affirmatively states "we do not notify
+      before renewal" -- only that other, different triggers get notice. Per codebook §2.1 step
+      4, that residual silence codes unknown. (Independently, per protocol §7.4 step 5: two
+      careful coders reading the identical clause and reaching opposite codes over an
+      undefined value boundary is itself evidence the instrument does not determine an answer
+      here -- the same destination by a second route.)
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Both passes agree. ToS section 4.2: "All fees are non-refundable and non-cancellable."
+      ToS ranks first for contractual variables (codebook §3). See conflict_note for the
+      Help Center's/pricing page's contrary 24-hour-window claim.
+  refund_window_days:
+    value: 0
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: "Both passes agree. Governed by refund_policy_exists = no_refunds_stated."
+  refund_conditions:
+    value: not_applicable
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: "Both passes agree. No refund available per the governing ToS position."
+  cancellation_self_serve:
+    value: contact_required
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Resolved by codebook §3's hierarchy: "cancellation" is named explicitly among the
+      contractual variables for which "the terms of service ... ranks first, above the pricing
+      page." ToS section 6.2, headed "Termination" (verified verbatim against the full section
+      text), states: "Customer may terminate this Agreement and its Account, at any time, by
+      submitting its request to Beautiful.ai by contacting us at: support@beautiful.ai;
+      provided, however, any prepaid fees ... will not be refunded and any unpaid fees for the
+      remainder of the Subscription Term shall become immediately due and payable." That fee
+      language -- prepaid fees not refunded, remaining-term fees accelerated -- confirms this
+      IS the ToS's substantive mechanism for ending the paid subscription relationship, not an
+      unrelated broader legal abstraction distinct from "cancelling." This record's own
+      undisputed refund-variable treatment (both passes let this same ToS override the
+      friendlier pricing-page/Help-Center refund language, see conflict_note) applies the
+      identical hierarchy to a directly parallel ToS-vs-FAQ fact pattern one section away.
+      Pass 2's self_serve_documented, from the pricing-page FAQ ("cancel your ... subscription
+      on the Billing section of your Profile"), is not disputed as a genuine, real, separately
+      documented self-serve flow -- preserved in conflict_note as a real disclosure gap between
+      the vendor's marketing/support content and its governing contract, per protocol's
+      instruction that such gaps are findings, not noise to be resolved and forgotten -- but
+      the coded value follows the higher-ranked contractual source per §3.
+  refund_policy_location:
+    value: terms
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: "Both passes agree. Governing refund position carried in the ToS; see conflict_note for the other classes' disagreement."
+  commercial_use_lowest_tier:
+    value: unknown
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      ToS section 2.2, read in full for this adjudication: the license grant covers (a)
+      installing/running the Application, (b) accessing/using the Service, and (c) using
+      Beautiful.ai's own template/design materials, and states "in each of the foregoing
+      cases, solely for Customer's internal business or personal, non-commercial purposes" --
+      the restriction reaches the ENTIRE license (all three clauses), not narrowly the
+      Materials-usage clause alone as pass 1's evidence field suggested. That broader reach
+      does not resolve the ambiguity, though: the phrase remains genuinely, grammatically
+      two-way ambiguous between (i) "[Customer's internal business] OR [personal,
+      non-commercial] purposes" -- business use permitted, only personal use restricted to
+      non-commercial -- and (ii) "[Customer's internal business or personal], [all of it]
+      non-commercial purposes" -- all use, business or personal, must be non-commercial. No
+      other ToS text uses "commercial"/"non-commercial" in a way that disambiguates (the only
+      other occurrences are an unrelated FAR/DFAR "commercial computer software" government-
+      licensing clause). A buyer reading this document cannot reliably determine from it
+      alone whether their commercial use is permitted -- which is exactly what this variable
+      measures. Coded unknown under codebook §2.1 step 4 (no determinate value) and per
+      protocol §7.4 step 5 (an unresolvable disagreement between two careful readers,
+      confirmed by this adjudication's own close reading rather than deferred to either pass,
+      is itself evidence the documents do not determine the answer). Pass 2's not_granted
+      over-reads the ambiguous clause as a flat bar; pass 1's unknown is affirmed, though not
+      for pass 1's own narrower "only about our Materials" reasoning.
+  watermark_removal_tier:
+    value: lowest_paid
+    source: "https://support.beautiful.ai/hc/en-us/articles/360030940931-What-happens-when-I-downgrade-my-account | https://support.beautiful.ai/hc/en-us/articles/26598025191565-Customizing-Beautiful-ai-Player-Links"
+    evidence: >
+      Same source and reasoning as free_plan_watermark, verified verbatim against pass 1's
+      local capture: "Once you downgrade to Basic ... it will now show Beautiful.ai branding
+      on the page and ending slide" is stated as a change CAUSED BY leaving the paid (Pro)
+      tier -- i.e. Pro itself does not show it, and Pro is the lowest paid tier. The
+      definition's "no vendor watermark or branding" explicitly treats watermark and branding
+      as the same construct, so no inferential leap is required. Pass 2 coded unknown without
+      opening this Help Center article (confirmed absent from pass 2's source list) -- an
+      incomplete search, not a genuine conflict; pass 2 correctly found the pricing page's
+      "Player branding" compare-grid row is NOT itself a watermark signal, and this
+      adjudication independently confirms that exclusion is right: a separate Help Center
+      article establishes "Player branding" means a custom-domain share-link URL, a distinct
+      feature from output watermarking. That correct exclusion is why pass 2 found nothing on
+      the pricing page/ToS alone -- the actual citation lives in the Help Center pass 2 did
+      not open.
+  output_ownership_statement:
+    value: conditional
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Both passes agree. ToS section 5.2: Customer retains rights in Customer Content/Output
+      based on it, but Output based on Beautiful.ai Materials is deemed Beautiful.ai Materials
+      and only licensed, not owned outright -- rights depend on what the output incorporates.
+  usage_cap_quantified:
+    value: all_caps_quantified
+    source: "https://www.beautiful.ai/pricing | https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      Follows unquantified_limit_clause = absent (see that variable). Pro's compare-table
+      "Members: 1" is a quantified standing limit. "Unlimited AI content generation" is an
+      explicit no-limit statement; per rule 3 it counts as quantified because, on this
+      adjudication's own full read of ToS section 2.9 (see unquantified_limit_clause), no
+      clause in the documents actually qualifies it by an unquantified volume-of-use standard.
+      One quantified standing limit + one unlimited claim not qualified by any clause = all
+      limits quantified.
+  unquantified_limit_clause:
+    value: absent
+    source: "https://www.beautiful.ai/terms-of-service"
+    evidence: >
+      ToS section 2.9 read in full, verbatim, for this adjudication, including its own header:
+      "2.9 Suspension. Beautiful.ai may suspend, terminate, or otherwise deny Customer's ...
+      access to or use of ... the Beautiful.ai Services ... if: (a) [a legal/government
+      order]; (b) Beautiful.ai believes, in good faith ... that (i) [use beyond the scope of
+      granted rights]; (ii) [fraud/illegal activity]; (iii) such access and use poses an
+      imminent security risk ... or will interfere materially with the proper continued
+      operation of the Beautiful.ai Services; (c) [Customer Content/conduct violates the
+      Agreement]; or (d) [the Agreement or Subscription Term expires or is terminated]." Pass
+      1 cited clause (iii) as an unquantified usage cap. Read in its full structural context --
+      a FOR-CAUSE SUSPENSION clause, titled "Suspension," whose sibling grounds are a legal
+      order, unauthorized-scope use, fraud, content/conduct violation, and contract expiry --
+      clause (iii) is a security/system-integrity and platform-abuse provision, of a kind with
+      its siblings, not a standing "fair use" ceiling on an individual customer's ordinary
+      legitimate usage volume the way codebook §12's worked example describes (a fair-use
+      policy that specifically qualifies a marketed "unlimited" claim). It does not name or
+      reference the "Unlimited AI content generation" feature it would need to qualify, and its
+      function within the ToS's structure is grounds for suspending exceptional/bad-actor
+      access, not routine usage-shaping. Pass 1 itself applied exactly this
+      conduct-vs-volume distinction to exclude a neighboring clause, ToS 2.9(c), for the same
+      reason; the same reasoning, applied to (iii) once its own section header is read, excludes
+      it too. Pass 2's full-text keyword sweep (fair use / reasonable use / excessive / abuse /
+      throttl* / sole discretion / rate limit) independently found no volume-of-use clause,
+      consistent with this reading. No separate Acceptable Use Policy exists on this site.
+      Coded absent, not present: the terms were read in full and contain no clause
+      conditioning the VOLUME of use on an unquantified standard.
+
+conflict_note: >
+  REFUND POLICY. ToS section 4.2 (https://www.beautiful.ai/terms-of-service, contractual
+  class, ranks first per codebook §3): "All fees are non-refundable and non-cancellable."
+  Contradicted by the Help Center article "What is your refund policy?"
+  (https://support.beautiful.ai/hc/en-us/articles/360030719012-What-is-your-refund-policy,
+  rank-2, Cloudflare-blocked for both passes, local_copy_only) and the pricing-page FAQ of
+  the same content (https://www.beautiful.ai/pricing, rank-3), which agree with each other:
+  annual subscribers "may be able to receive a partial refund" within 24 hours of purchase
+  or renewal, subject to a processing fee; monthly subscriptions are not refundable. Both
+  passes independently coded refund_policy_exists / refund_window_days / refund_conditions /
+  refund_policy_location from the ToS per the hierarchy; this adjudication affirms that
+  reading. A buyer relying on the pricing page or Help Center instead of the ToS would expect
+  a 24-hour annual refund window the ToS says does not exist.
+
+  CANCELLATION MECHANISM. ToS section 6.2(a) (https://www.beautiful.ai/terms-of-service,
+  headed "Termination"): "Customer may terminate this Agreement and its Account ... by
+  contacting us at: support@beautiful.ai," with unrefunded-prepaid-fee /
+  accelerated-remaining-fee consequences attached. Contradicted by the pricing-page FAQ
+  (https://www.beautiful.ai/pricing) and the Help Center cancellation article
+  (https://support.beautiful.ai/hc/en-us/articles/360030985471-How-do-I-cancel-my-subscription-Trial-or-Pro,
+  Cloudflare-blocked for pass 2, local_copy_only for pass 1), which both describe a fully
+  self-serve flow (Profile > Manage Account > Billing tab > Manage Plan > cancel) with no
+  contact step, and which the FAQ itself treats as distinct from full account deletion.
+  Coded cancellation_self_serve = contact_required from the ToS under codebook §3's
+  contractual-class hierarchy (see that variable's evidence for the full reasoning, including
+  why this record's own undisputed refund-hierarchy treatment reinforces it). Recorded as a
+  genuine, real disclosure gap regardless: a buyer reading only the marketing/support content
+  would reasonably expect self-serve cancellation, and the governing contract instead names a
+  contact-required route.
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-16 (protocol §7.4). 13 substantive disagreements plus 1 prose
+  disagreement (computation_assumptions) reviewed against protocol §7.4/7.4.1/7.4.2, codebook
+  §2-12, and both full source sets.
+
+  DISPOSITION. 5 resolved to pass 1's value on fuller/independently-verified source coverage
+  (free_plan_exists, free_plan_cap_documented, free_plan_cap_value, free_plan_watermark,
+  free_plan_duration -- pass 2 never opened the three Help Center articles these rest on).
+  1 resolved to pass 1's value on the price A/B-test archive analysis below
+  (headline_price_usd, with first_charge_amount_usd and computation_assumptions following
+  arithmetically). 1 resolved to pass 1's value on codebook §3's contractual-class hierarchy,
+  reinforced by this record's own undisputed refund-variable treatment
+  (cancellation_self_serve). 1 resolved to pass 1's value on fuller source coverage plus the
+  codebook's watermark/branding equivalence (watermark_removal_tier). 2 resolved to PASS 2's
+  value on this adjudication's own full verbatim re-read of ToS clauses neither record quoted
+  in full (usage_cap_quantified, unquantified_limit_clause -- ToS §2.9 is headed
+  "Suspension" and groups pass 1's cited clause with fraud/security/legal-order/breach
+  grounds, not a volume-of-use fair-use ceiling). 1 resolved to unknown, affirming pass 1's
+  ultimate value but on a narrower ground than pass 1 itself argued
+  (commercial_use_lowest_tier -- ToS §2.2's non-commercial-purposes clause is genuinely
+  two-way ambiguous even read in full, not merely narrow to Beautiful.ai's own template
+  assets). 1 resolved to unknown, an instrument-boundary gap neither pass's own value fits
+  cleanly (renewal_notice_commitment -- both passes found the identical underlying fact and
+  disagreed only on which code an undefined value boundary earns). Zero resolved to
+  conflicting. Zero variables left the disputed set unresolved to a determinate-or-unknown
+  value.
+
+  THE PRICE A/B TEST -- WHY NOT variant_explained. This is the center of the adjudication and
+  is addressed at length because the study's own deviations/register machinery makes it easy
+  to reach for a classification that looks right and is not, per protocol's explicit warning
+  that neither date_explained nor variant_explained "may be reached for by anyone who wants a
+  better figure." Pass 1 found the vendor's Optibase A/B-test DOM attributes
+  (data-pricing-exp-false="$12" / data-pricing-exp-true="$14.50") but only ever saw "$12"
+  rendered (3 independent loads), and logged a self-invented register_events type,
+  pricing_experiment_detected -- explicitly NOT display_variant, "since only one state was
+  ever actually rendered in this pass." Pass 2 saw "$14.50" rendered (1 live read, corroborated
+  by its own get_page_text capture) and logged type: display_variant. Two register entries,
+  two different types, one substantive price disagreement. §7.4.2 is explicit that the
+  variant_explained classification "requires two archive snapshots showing the two states,"
+  that "a coder's recollection ... is not evidence," and -- critically, per this adjudicator's
+  brief -- that markup proving both experiment arms exist is not enough either. So this
+  adjudication did not take either pass's account, or the DOM markup, as settling the
+  question: it fetched the actual archive_url from both records directly (via
+  web.archive.org's id_ raw endpoint, bypassing the toolbar rewrite that can obscure raw
+  content) and read what each snapshot actually contains. Both show "$12." Not one showing
+  $12 and one showing $14.50 -- both, byte-for-byte, the same pre-script markup, including
+  pass 2's own snapshot, taken minutes after pass 2's browser rendered $14.50 live. A third,
+  fresh snapshot taken today (2026-08-16) for this adjudication shows "$12" again -- three
+  independent public captures, zero showing the $14.50 state. The mechanism: web.archive.org's
+  capture preserves the raw/server-rendered markup rather than executing the third-party
+  Optibase script the way a live visitor's own browser session does, so the archive cannot
+  and does not preserve either A/B arm as "the" served state -- it preserves the same static
+  default underneath both arms, every time, regardless of which arm a live session was
+  bucketed into. The snapshot pair §7.4.2 requires DOES NOT EXIST. This is confirmed, not
+  merely unproven: three checks, three identical results, one of them (pass 2's own
+  archive-save-pricing-response.html, the literal API response pass 2's own save request
+  received) sitting unflagged in pass 2's own source directory the whole time. Per this
+  adjudicator's brief, that settles it as an ORDINARY disagreement, resolved on
+  headline_price_usd's own codebook rule ("Where the figure appears in a plan card rendered by
+  script, the archive reference must show it") rather than on the display-variant apparatus --
+  see that variable's evidence for the resulting 12.00 figure. Had the snapshot pair existed,
+  the classification would have applied and the disagreement would have stayed inside the
+  primary agreement statistic per §7.4.2 (both states genuinely served simultaneously, a real
+  buyer could meet either) rather than being excluded the way a date_explained disagreement
+  is; since it does not apply, this is simply one of the 13 ordinary disagreements, counted
+  the same as any other in the primary statistic, with no special exclusion or inclusion
+  flag needed.
+
+  DATE-DRIFT CHECK (§7.4.1). Neither record's register_events carries a vendor_edit entry (pass
+  1: pricing_experiment_detected; pass 2: display_variant) -- date_explained requires a
+  vendor_edit entry specifically, and a display_variant entry never supplies it, per protocol's
+  own text and this adjudicator's brief alike. Independently, the underlying page did not
+  change between the two collection dates -- the identical experiment scaffolding and the
+  identical static FAQ text are present in pass 1's capture, pass 2's capture, and today's
+  fresh capture -- so this is not a case of the document moving between reads either. No
+  disagreement on this record is date_explained.
+
+  ADMINISTRATIVE CORRECTION. paid_submission: pass 1 recorded "yes", pass 2 recorded "no" --
+  not a CODED variable (outside tools/disagreements.py's comparison set) but still needed one
+  value for a record that stands alone. orchestrator/frame-frozen-2026-08-04.csv, the
+  authoritative frozen frame, gives "no" for beautiful-ai; used here, matching pass 2. Pass
+  1's "yes" appears to be a transcription slip.
+
+  ENTRY-TIER SELECTION (unaffected by the price resolution -- Pro wins either way; both
+  passes and this adjudication agree). Eligible candidates by annual-equivalent cost at the
+  ADJUDICATED $12.00/mo: Pro (WINNER, $144.00/yr, single seat, no sales contact) against Team
+  (2-seat minimum, $480.00/yr per-seat or $960.00/yr for the minimum purchasable block) and
+  the $45/mo "ad hoc / single presentation" recurring option ($540.00/yr). Enterprise
+  ("Contact sales") excluded, sales-gated. The "SMB plan" landing page publishes no self-serve
+  price. Only Pro is eligible with a clearly lower annual-equivalent cost, regardless of
+  whether Pro itself prices at $12 or $14.50 -- the tier-selection WINNER does not depend on
+  which A/B arm the reader was served, only the WINNER's own headline figure does.
+
+  METHOD. Read .claude/agents/research-adjudicator.md in full, then protocol-v1.md section 7.4
+  in full including 7.4.1 and 7.4.2, before opening either record. Read both
+  records/pass1/beautiful-ai.yaml and records/pass2/beautiful-ai.yaml in full, and both
+  beautiful-ai-sources/ directories, including pass 1's 9 local Help Center captures and pass
+  2's local raw-HTML/plaintext ToS and pricing captures and its archive-save-*-response.html
+  files (the literal Wayback API responses pass 2 received). Independently verified pass 1's
+  Help Center quotes against its local captures, and independently re-fetched
+  support.beautiful.ai/.../360031086751 and /360030940931 live for this adjudication (blocked
+  by the same Cloudflare challenge both passes hit; relied on the local captures plus Wayback
+  CDX history instead, confirming continuous vendor-side existence 2020-2025). Fetched the
+  live vendor pricing page and both passes' archive_url values directly via curl (Wayback id_
+  raw endpoint) rather than trusting either pass's account of what the archive shows;
+  submitted and verified a fresh archive snapshot dated 2026-08-16 for this record's own
+  administrative archive_url. Read ToS sections 2.2, 2.9, and 6.2 in full, verbatim, past what
+  either pass quoted, including each section's own header. Read codebook-v1.md sections 2, 3,
+  and every domain covering a disputed variable, record-template.yaml,
+  tools/disagreements.py, tools/validate_records.py, tools/check_price_arithmetic.py, and
+  orchestrator/frame-frozen-2026-08-04.csv and orchestrator/collection-status.md (confirmed
+  the A/B-test finding was already flagged there, consistent with everything above). Did not
+  read orchestrator/interim-signals.md, any other product's record, aitoolspolice.com, or
+  site/content/reviews/, per this agent's own scope.
+
+  blindness: no other product's record, review page, or pass-2 material was opened. Not blind
+  by design -- adjudicator per protocol §7.4.
+
+register_events:
+  - type: pricing_experiment_detected
+    variable: headline_price_usd
+    detail: >
+      Carried forward from pass 1 (2026-08-07). DOM inspection of the Pro price element found
+      data-pricing-exp="true" data-pricing-exp-false="$12" data-pricing-exp-true="$14.50".
+      Rendered/visible value in every one of pass 1's loads was "$12" (the false branch); the
+      $14.50 branch was never visually rendered to pass 1. Logged as this distinct type,
+      deliberately not display_variant, because only one state was ever actually rendered in
+      that pass.
+    source_url: "https://www.beautiful.ai/pricing"
+    access_date: "2026-08-07"
+  - type: display_variant
+    detail: >
+      Carried forward from pass 2 (2026-08-14). Pro tier headline price is live A/B tested
+      (Optibase script): DOM node carries data-pricing-exp-false="$12" and
+      data-pricing-exp-true="$14.50" on the same element. Pass 2's rendered browser load
+      displayed $14.50/mo, confirmed by get_page_text and a described screenshot; a non-JS
+      static fetch of the identical URL, and the same rendered page's own FAQ prose, both
+      independently show "$12." ADJUDICATOR'S FINDING (2026-08-16, see coder_note in full):
+      despite this pass's own type label, the disagreement does NOT qualify as
+      variant_explained under protocol §7.4.2, because the required second archive snapshot
+      showing the $14.50 state does not exist -- pass 2's own public archive_url, verified
+      directly, shows "$12," not "$14.50," as does pass 1's and a fresh snapshot taken for
+      this adjudication. Treated as an ordinary disagreement and resolved on
+      headline_price_usd's own codebook evidence rule instead.
+    urls:
+      - "https://www.beautiful.ai/pricing"
+      - "https://web.archive.org/web/20260814175159/https://www.beautiful.ai/pricing"
+
+status: complete

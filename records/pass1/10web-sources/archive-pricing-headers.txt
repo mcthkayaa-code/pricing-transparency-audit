@@ -1,0 +1,80 @@
+HTTP/2 302 
+server: nginx
+date: Thu, 06 Aug 2026 08:20:32 GMT
+content-type: text/html; charset=utf-8
+content-length: 314
+location: https://web.archive.org/web/20260806082017/https://10web.io/pricing-platform/
+x-app-server: wwwb-app223-dc8
+x-ts: 302
+x-tr: 18164
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-save-SERVER=wwwb-app223; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Thu, 06 Aug 2026 08:20:35 GMT
+content-type: text/html; charset=UTF-8
+x-archive-orig-date: Thu, 06 Aug 2026 08:20:17 GMT
+x-archive-orig-transfer-encoding: chunked
+x-archive-orig-connection: keep-alive
+x-archive-orig-server: cloudflare
+x-archive-orig-vary: Accept-Encoding
+x-archive-orig-expires: Fri, 06 Aug 2027 08:20:17 GMT
+x-archive-orig-cache-control: public, max-age=31536000
+x-archive-orig-pragma: no-cache
+x-archive-orig-cf-edge-cache: cache,platform=wordpress
+x-archive-orig-x-two-optimize: 1
+x-archive-orig-x-two-version: 2.33.0
+x-archive-orig-x-two-cache-date: 1786003038
+x-archive-orig-x-two-page-is-optimized: 1
+x-archive-orig-link: <https://10web.io/wp-json/>; rel="https://api.w.org/"
+x-archive-orig-link: <https://10web.io/wp-json/wp/v2/pages/19>; rel="alternate"; title="JSON"; type="application/json"
+x-archive-orig-link: <https://10web.io/?p=19>; rel=shortlink
+x-archive-orig-x-cache: BYPASS
+x-archive-orig-strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-archive-orig-x-xss-protection: 1; mode=block
+x-archive-orig-x-content-type-options: nosniff
+x-archive-orig-content-security-policy_extra: default-src 'self' blob: https://10web.io *.10web.io
+x-archive-orig-content-security-policy_extra: script-src 'self' blob: 'unsafe-inline' 'unsafe-eval' 'report-sample' ajax.cloudflare.com *.googleoptimize.com *.taboola.com *.tiktok.com *.clarity.ms https://ams.wpml.org https://cdn.jsdelivr.net/npm/air-datepicker@3.3.5/air-datepicker.min.js https://js.stripe.com/v3 https://ams.wpml.org/mini_app/style.css https://*.smooch.io https://*.zendesk.com https://widget.trustpilot.com/ https://embed.typeform.com/next/embed.js https://api.smooch.io/ https://cdn.jsdelivr.net/* https://api.smooch.io https://js.hsleadflows.net https://js.hs-banner.com https://js.hsadspixel.net https://js.hubspotfeedback.com https://js.usemessages.com https://js.hscollectedforms.net https://js.hsforms.net https://forms.hsforms.com  *.hubspot.com *.hubspot.net *.hs-scripts.com  *.hs-analytics.net jsfiddle.net *.jsfiddle.net *.bing.com *.datatables.net *.gstatic.com instagram.com *.instagram.com instagr.am https://10web.io *.10web.io *.twitter.com twitter.com *.google.com google.com *.firstpromoter.com firstpromoter.com *.facebook.net *.facebook.com facebook.com *.fbcdn.net reddit.com *.reddit.com redditstatic.com *.redditstatic.com quora.com *.quora.com *.cloudflare.com cloudflare.com https://d10lpsik1i8c69.cloudfront.net https://googleads.g.doubleclick.net *.googleapis.com https://s.ytimg.com https://snap.licdn.com https://static.ads-twitter.com *.google-analytics.com google-analytics.com https://www.googleadservices.com https://*.googletagmanager.com https://googletagmanager.com https://www.youtube.com *.zdassets.com *.zendesk.com *.zopim.com *.zopim.io zopim.com *.googleusercontent.com googleusercontent.com *.sentry-cdn.com producthunt.com *.producthunt.com *.fontawesome.com https://unpkg.com/web-vitals/dist/web-vitals.iife.js data:
+x-archive-orig-content-security-policy_extra: style-src 'self' 'unsafe-inline' 'report-sample' https://embed.typeform.com/next/css/widget.css https://10web.io *.10web.io https://cdn.jsdelivr.net/npm/air-datepicker@3.3.5/air-datepicker.min.css https://*.smooch.io https://*.zendesk.com https://hello.myfonts.net/count/36f1f3 https://tools.luckyorange.com *.datatables.net https://d10lpsik1i8c69.cloudfront.net *.googleapis.com *.googleusercontent.com googleusercontent.com google.com *.google.com *.googletagmanager.com googletagmanager.com *.sentry-cdn.com *.fontawesome.com data: blob: https://10web.io *.10web.io; img-src * 'self' data: blob:; font-src 'self' data:  https://10web.io *.10web.io https://*.smooch.io https://*.zendesk.com *.gstatic.com *.googleusercontent.com googleusercontent.com storage.googleapis.com https://s3.amazonaws.com/luckyorange-clickstream/fonts/ hello.myfonts.net *.fontawesome.com; connect-src * 'self'
+x-archive-orig-content-security-policy_extra: media-src 'self' https://10web.io *.10web.io *.s3.us-west-2.amazonaws.com *.amazonaws.com https://s3-us-west-2.amazonaws.com/10web-tts/audios/* *.s3.amazonaws.com *.imgur.com imgur.com https://d10lpsik1i8c69.cloudfront.net wss://*.smooch.io https://*.smooch.io https://*.zendesk.com *.zdassets.com *.zendesk.com *.zopim.com *.zopim.io zopim.com *.google.com google.com *.googleusercontent.com googleusercontent.com *.sentry-cdn.com *.firstpromoter.com firstpromoter.com
+x-archive-orig-content-security-policy_extra: frame-src 'self' jsfiddle.net https://tenweb.zendesk.com/ https://form.typeform.com https://demo.arcade.software https://widget.trustpilot.com https://forms.hsforms.com/ https://app.hubspot.com *.jsfiddle.net https://anchor.fm https://10web.io *.10web.io *.google.com google.com *.doubleclick.net *.facebook.com facebook.com *.facebook.net *.fbcdn.net instagram.com *.instagram.com instagr.am *.youtube.com youtube.com *.firstpromoter.com firstpromoter.com jsfiddle.net https://app.hubspot.com  *.jsfiddle.net https://anchor.fm https://10web.io *.10web.io *.google.com google.com *.doubleclick.net *.facebook.com facebook.com *.facebook.net *.fbcdn.net instagram.com *.instagram.com instagr.am *.youtube.com youtube.com *.firstpromoter.com firstpromoter.com; base-uri 'self' https://10web.io *.10web.io; manifest-src 'self' https://10web.io *.10web.io; report-uri https://o397950.ingest.sentry.io/api/5263028/security/?sentry_key=8444a18b08184aef960a8eded99e7e7a;
+x-archive-orig-x-frame-options: SAMEORIGIN
+x-archive-orig-referrer-policy: no-referrer-when-downgrade
+x-archive-orig-referrer-policy: strict-origin-when-cross-origin
+x-archive-orig-permissions-policy: geolocation=(), midi=(), sync-xhr=(self), microphone=(self), camera=(), magnetometer=(), gyroscope=(), fullscreen=(self https://*.youtube.com https://demo.arcade.software https://widget.trustpilot.com), payment=()
+x-archive-orig-age: 948
+x-archive-orig-last-modified: Thu, 06 Aug 2026 08:14:56 GMT
+x-archive-orig-cf-cache-status: HIT
+x-archive-orig-cf-ray: a26c9f177aaeed3d-SJC
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+x-archive-orig-content-encoding: gzip
+memento-datetime: Thu, 06 Aug 2026 08:20:17 GMT
+link: <https://10web.io/pricing-platform/>; rel="original", <https://web.archive.org/web/timemap/link/https://10web.io/pricing-platform/>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://10web.io/pricing-platform/>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: spn2-20260806062942-wwwb-spn06.us.archive.org-8006.warc.gz
+server-timing: captures_list;dur=0.720963, exclusion.robots;dur=0.058637, exclusion.robots.policy;dur=0.043226, esindex;dur=0.013696, cdx.remote;dur=16.291730, LoadShardBlock;dur=149.726580, PetaboxLoader3.datanode;dur=60.189464, PetaboxLoader3.resolve;dur=33.395977, load_resource;dur=51.366369
+x-app-server: wwwb-app254-dc8
+x-ts: 200
+x-tr: 324
+server-timing: TR;dur=0,Tw;dur=2891,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app254; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

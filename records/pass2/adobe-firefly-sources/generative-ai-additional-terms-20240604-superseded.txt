@@ -1,0 +1,23 @@
+SOURCE: https://wwwimages2.adobe.com/content/dam/cc/en/legal/servicetou/Adobe-Generative-AI-Additional-Terms_en_US_20240604.pdf
+ACCESSED: 2026-08-14 (found via WebSearch, fetched via WebFetch's built-in PDF extraction)
+STATUS: SUPERSEDED as of 2026-04-23 by "Adobe Generative AI Product Specific Terms" (see companion source
+file generative-ai-product-specific-terms-20260423.txt). Kept here ONLY as evidence for the conflict_note /
+register_events entry documenting what changed between versions -- NOT used to code any current value.
+
+RELEVANT CLAUSE THAT WAS REMOVED (section 4.1 in this 2024 version; no equivalent exists in the current
+2026-04-23 version):
+
+"4.1. Text-based Inputs by Free Users. If you do not currently have a paid subscription to Services and
+Software and submit a text-based Input (including any design settings, such as style) to a generative AI
+feature, you grant us a non-exclusive, perpetual, irrevocable, worldwide, royalty-free license to use,
+reproduce, distribute, modify, sublicense, create derivative works based on, publicly display, publicly
+perform, or translate both the submitted Input and any corresponding Outputs for any purpose. For example,
+we could make your Inputs and Outputs publicly available to other users and allow those users to use the
+Inputs or Outputs to create their own content. This license survives termination or expiration of the
+Terms. If you do not want to grant us this license, you should purchase a paid subscription to Services and
+Software."
+
+Everything else in the 2024 document (Output responsibilities, no-AI-training clause, Firefly Gallery
+license, Gen AI Add-on Subscription rollover language, Firefly Output Indemnification) is materially
+unchanged in the current version -- only the free-user broad-license clause (4.1) and the outdated
+"$10,000 / Creative Cloud Pro Edition" eligible-plan naming (now "Creative Cloud Pro Plus") differ.

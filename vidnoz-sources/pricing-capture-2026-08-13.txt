@@ -1,0 +1,159 @@
+VERBATIM CAPTURE — https://www.vidnoz.com/pricing.html
+Accessed: 2026-08-13 (Turkey network location per study protocol)
+Method: rendered browser read (static curl to this URL returned HTTP 000 / no response;
+page is JS-rendered, consistent with protocol D-005). archive.org save endpoint returned
+no response (HTTP 000) on two attempts across two URLs on this date — treated as the
+D-012 systemic outage; archive_status = local_copy_only for all sources in this record.
+Viewport 1280x720, desktop, non-essential cookies not accepted/declined interaction not
+forced before capture (no consent banner blocked the pricing page at this viewport).
+
+=== DEFAULT DISPLAY STATE (before any interaction) ===
+Billing toggle DOM: <div class="Monthly type">Monthly</div> <span> in parent
+class="Yearly type active">Yearly <span class="off">25% Off</span></span>
+=> Yearly (annual) is the ACTIVE/preselected toggle state on page load.
+
+Credit-slider default handles (DOM, before interaction):
+Starter: ticks 300/450/900/1800, active handle = "450" (class "handle-min m-active")
+Business: ticks 900/1800/2700, active handle = "900" (class "handle-min m-active")
+
+=== HERO PRICING CARDS (default = Yearly) ===
+Free:
+  $0.00 / Get Plan
+  Video Creation: 8 credits/day (=16 secs); Max 3 mins/video; 1,600+ AI avatars;
+  3,400+ video templates; 890 voices; 720p video export; Standard video processing
+  Highlight Features: Expressive avatars (1 use); 2 photo avatars/day; 2,000 characters/scene;
+  Text to video
+
+Starter (raw DOM, div.area-item#starter):
+  <p class="name">Starter <span class="first-off" style="display:none"><span class="first-off-num">25% OFF</span><span class="first-off-mon">First Month</span></span></p>
+  <p class="old-price" style="visibility: visible;">$26.99</p>
+  <p class="price"><span class="doll">$</span><span class="ceil ceil-starter">19.99</span><span class="floor">/mo</span><span class="grey-price-m"><span class="grey-price">$0.04</span>/credit</span></p>
+  NOTE: the "25% OFF First Month" badge exists in the DOM but is display:none at this
+  viewport/state -- NOT visually shown to the default-state reader. Only the struck-through
+  "$26.99" -> "$19.99/mo" and "$0.04/credit" are visible.
+  Video Creation: 450 credits/month; Max 60 mins/video; 1,700+ AI avatars; 3,400+ video
+  templates; 2,680+ voices; 1080p video export; Fast video processing
+  Highlight Features: Expressive avatars; 100 photo avatars/day; 15,000 characters/scene;
+  Text to video; No watermark; Voices with emotions; SCORM export
+
+Business ("Most POPULAR" badge):
+  old price $74.99 struck through -> $56.99/mo, $0.06/credit
+  Video Creation: 900 credits/month; Max 60 mins/video; same library counts as Starter
+  "Everything in Starter, Plus": Unlimited photo avatars; Voice clone; Video translation;
+  Brand kit; Branded video page; CTA on video page; Embed videos; SAML/SSO; Team
+  collaboration; Video analytics
+
+Enterprise: "Let's Talk" / "Book a Demo" — Custom credits, Custom duration — sales-gated,
+no published price.
+
+=== MONTHLY TOGGLE (read after recording default state, permitted by protocol 6.3/6.8) ===
+Clicking "Monthly": Starter -> $26.99/mo, $0.06/credit (no strikethrough, no old-price, no
+first-off badge). Business -> $74.99/mo, $0.08/credit. Slider ticks shift (Starter: 450/900/1800,
+loses the 300 tick). This confirms $26.99 / $74.99 are the monthly-billing (no annual
+commitment) list prices; the annual/Yearly toggle applies a ~25% discount to the
+monthly-equivalent rate. No "renew"/"first billing"/"then $" language found anywhere on the
+page (body.innerText keyword search, both toggle states).
+
+=== STICKY COMPARE-PLANS TABLE HEADER (secondary widget, same page) ===
+Free: id="tableFree" "$0/mo" / "Try for free"
+Starter: id="tableStarer" "$19.99/mo" / <span class="tableType">Billed yearly</span>
+Business: id="tableBusiness" "$56.99/mo" / <span class="tableType">Billed yearly</span>
+Enterprise: id="tableEnter" "Custom" / "Custom pricing"
+(This is the only place on the page where the literal words "Billed yearly" appear next to
+the Starter/Business figures; the hero price cards above do not carry that phrase themselves,
+only the shared Monthly/Yearly toggle governs them.)
+
+=== FEATURE COMPARISON TABLE — SELECTED ROWS (raw DOM, columns = Free | Starter | Business | Enterprise) ===
+Unit Price: $0 | $0.04/credit yearly | $0.06/credit yearly | Custom
+Credits Plans: 8 credits/day (=16 secs) | 450/mo + 30 free/day | 900/mo + 30 free/day | Custom
+User Seats: 1 | 1 | 1,000 | Custom
+Remove Vidnoz Watermark: <span class="wrong"> (Free) | <span class="have"> (Starter) |
+  <span class="have"> (Business) | <span class="have"> (Enterprise)
+Full Commercial License: "With Vidnoz watermark" (Free, TEXT not icon) | <span class="have">
+  (Starter) | <span class="have"> (Business) | <span class="have"> (Enterprise)
+Photo Avatars: 2/day (Free) | 100/day (Starter) | Unlimited (Business) | Unlimited (Enterprise)
+Voice Clone: <span class="wrong"> (Free) | "Paid Add-on" (Starter, TEXT) | "1" (Business) |
+  Custom (Enterprise)
+Avatar Pro: <span class="wrong"> (Free) | "Paid Add-on" (Starter, TEXT) | "Paid Add-on"
+  (Business, TEXT) | Custom (Enterprise)
+
+=== CREDIT-TO-OUTPUT CONVERSION TABLE (faq-table, opened via the "Here's how different
+features consume credits" link inside the "What do the credits mean?" FAQ; table.innerText) ===
+Products | Credit | Minimum Cost
+Vidnoz AI:
+  Video Generation | 0.5 credits per 1s | min cost 1 credit
+  Expressive Avatar | 2 credits per 1s | min cost 2 credits
+  Product Avatar | 2 credits per 1s | min cost 2 credits
+  AI Photo Avatar | 2 credits per generation | -
+  Portrait Effects | 2 credits per generation | -
+  AI Image generator | 2 credits per generation | -
+  Product Background | 10 credits per 5s | min cost 10 credits
+  AI Script Assistant | 2 credits per generation | -
+  Text to video (Scene Generation) | 2 credits per scene | -
+  Text to video (Animatic Generation) | 1 credit per 1s | -
+
+=== ADD-ONS (below feature grid) ===
+Avatar Pro: "Create your own custom AI Avatar to serve as your digital twin." $299/yr
+  (was $598, "50% OFF", "Billed yearly")
+Voice Clone: "Clone your voice for personalized, captivating content and get more
+  engagement." $9.99/mo (was $19.99, "50% OFF", "Billed monthly")
+
+=== FAQ (h3.hover-faq-name + sibling .hover-desc, full text via DOM, all items were
+CSS-collapsed but present in DOM — not gated behind login/JS action beyond a click that
+expands an accordion, permitted under protocol 6.3) ===
+Q: "Do unused add-on credits carry over?"
+A: "Whether you have a monthly or annual subscription, any Vidnoz add-on credit package
+purchased will expire at the end of your current cycle and won't carry over. To maximize
+value, please use it within the same cycle."
+
+Q: "Is Vidnoz AI free to use?"
+A: "Yes, we offer a free plan for creating AI videos. For much more content and advanced
+features, you can subscribe Vidnoz AI on monthly or yearly basis."
+
+Q: "What payment methods do you offer?"
+A: "Currently, We accept Visa, Mastercard, American Express, Discover, Japan Credit Bureau
+(JCB) and other credit cards."
+
+Q: "Why did my payment fail?"
+A: "1. Double-check that you've entered your payment details correctly. 2. Check your
+credit card or bank account to ensure you have enough funds, and that you haven't passed
+your daily spending limit. 3. Try using another card or choose a different payment method."
+
+Q: "What do the credits mean?"
+A: "In Vidnoz AI, the credits in your subscription refer to the total amount of video
+content you can create during the subscription period. Here's how different features
+consume credits:" [see conversion table above]
+
+Q: "Do unused credits carry over into the next billing period?"
+A: "No, the unused credits do not carry over to the next billing period. Besides, if you
+decide to delete your video projects, it will not restore the used video credits."
+
+Q: "Can I cancel my subscription and get money back?"
+A: "1. You can cancel your subscription at any time by contacting our support. When you
+cancel your subscription, you will not be charged after the term expires. The unused
+credits will be available till the end of the term of your current plan. 2. We provide
+7-day full Money Back Guarantee for 1-year subscription. Refund requests for a 1-month
+subscription will not be accepted. If you request your money back, then all paid features
+are unavailable to use once the refund is approved. 3. The subscription refers to your
+monthly/yearly subscription begins on the day your payment is taken and continues until
+the same date on the following month/year."
+
+Q: "Is my data secure?"
+A: "Yes, we care deeply about the security of your data. We employ robust security
+measures to safeguard your information and prevent unauthorized access."
+
+Q: "I can't find a plan that fits all my needs. Who can help?"
+A: "Please talk to our sales to get your customized plan. For any techinical issues,
+please contact our support team at support@vidnoz.com."
+
+=== A DIFFERENT-PRODUCT HELP ARTICLE FOUND AND EXCLUDED ===
+https://www.vidnoz.com/get-started/how-does-vidnoz-ai-studio-billing-work.html is about
+"Vidnoz AI Studio" (a distinct product in the vendor's portfolio — an image/video enhancer,
+per its sidebar: "How to Enhance Image Quality", "How to Fix Blurry Images", "How to
+Generate Longer MVs/AI Songs"), NOT our target product ("Vidnoz" / "Vidnoz AI" avatar-video
+generator on pricing.html). A third-party-summarized web search of that article claimed
+credits "accumulate" and roll over, and cited "200 Credits" monthly / "1,500 Credits"
+yearly plan allowances — figures that do not match Vidnoz AI's Starter/Business allowances
+(450/900 credits per month) seen on pricing.html, confirming it is a different product's
+billing help page. Excluded as out-of-scope for this record per sampling-rules.md 7.1
+(unit of analysis is the product); NOT used to code credit_rollover_policy.

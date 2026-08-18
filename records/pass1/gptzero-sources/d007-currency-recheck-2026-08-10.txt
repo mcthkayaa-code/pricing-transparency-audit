@@ -1,0 +1,115 @@
+D-007 CURRENCY RE-CHECK — gptzero — 2026-08-10
+Method: rendered reads (mcp browser tools) for Arm 1 and a fresh Arm 2 archive
+check. This is the record that TRIGGERED D-007 alongside phrasly's near-identical
+finding: the original coder ran the old D-003 check honestly, both its arms
+failed, and D-003's closing clause forced non_usd anyway. This re-check applies
+the amended rule, which does not force that outcome.
+
+RESULT UP FRONT: this re-check CHANGES the coded value, but NOT to a money figure
+-- to unknown. GPTZero's own Terms of Use contain a genuine, explicit currency
+disclosure ("All payments shall be in U.S. dollars"), which is real Arm-1
+evidence, but it names no figure, and Arm 2 again returns nothing readable. The
+combination does not support non_usd (positive evidence a non-USD price is
+published is exactly what this statement argues AGAINST), and it does not
+support a money value either (no USD number appears anywhere). unknown is the
+value the amended rule assigns to "we could not determine a figure," and that is
+what applies here.
+
+ARM 1 — vendor's own currency disclosure
+----------------------------------------------------------------------------
+1a. Currency/country selector on the live pricing page (rendered DOM inspection,
+    2026-08-10, https://gptzero.me/pricing -- still TRY 549/mo for Premium,
+    unchanged from the original 2026-08-08 rendered capture).
+    Query: select, [class*="currency" i], [class*="country" i], [id*="currency" i],
+    [id*="country" i], [aria-label*="currency" i], [aria-label*="country" i].
+    Result: 0 matches (re-confirms the original pass's D-005 rendered-capture
+    read, which showed the same plan grid with no selector control described).
+
+1b. Vendor-supported currency URL parameter.
+    Tried: https://gptzero.me/pricing?currency=USD , rendered 2026-08-10.
+    Result: no effect, still "TRY 549/ month, billed annually" for Premium. Not a
+    supported mechanism.
+
+1c. Explicit currency statement in billing/help documentation or the terms.
+    ALREADY ON FILE in this record (terms-of-use-visible-text.txt / this record's
+    own conflict_note "tos_usd_vs_pricing_page_try"), re-confirmed by re-reading
+    the same clause 2026-08-10: ToS Section 5, "FEES AND PAYMENT": "All payments
+    shall be in U.S. dollars." This IS a genuine, explicit, official currency
+    statement in the terms -- real Arm-1 evidence, and it says the OPPOSITE of
+    "the vendor publishes only a non-USD price": it is an unconditional
+    contractual statement that payments are processed in USD. Unlike Canva's
+    equivalent clause (found elsewhere in this same sweep), GPTZero's is not
+    phrased as a fallback ("if local currency unavailable") -- it reads as an
+    always-applies statement.
+    THE GAP: this statement names a currency but not a figure. No document --
+    this ToS clause, the D-005 rendered pricing capture, or any of the 7 official
+    support articles already in this record -- states what the USD amount
+    actually is. The pricing page shows only TRY 549/TRY 1,049; nothing converts
+    that to a USD number anywhere official.
+
+ARM 1 CONCLUSION: a real documentary currency statement exists, but it supplies a
+currency, not a price. It affirmatively contradicts a "vendor publishes only a
+non-USD price" reading (the necessary condition for non_usd under the amended
+rule), while supplying no number to code as a money value.
+
+ARM 2 — US-crawled archive capture that actually contains price figures
+----------------------------------------------------------------------------
+Re-tested 2026-08-10 (re-confirms and extends the original pass's own D-003
+check, run 2026-08-09, on the SAME snapshot):
+https://web.archive.org/web/20260807100537/https://gptzero.me/pricing , read in
+full via rendered browser load. Result: 1,745-character body, and the ENTIRE
+relevant content is:
+  "...Professional Plan / Billing Cycle / Annual (Save 45%) / Seats / $0/mo
+  billed annually / $0/mo x 2 members / Save $0/year / Purchase Seats..."
+Every figure is $0 -- a pre-hydration placeholder state (GPTZero's price is
+fetched client-side at runtime, confirmed by the original pass's own JS-source
+inspection), not a real price. This is precisely the amended rule's excluded
+case: "a capture that returns pre-hydration markup with no prices has NOT
+answered the question." $0/mo is not a genuine free price (Premium is a paid
+plan); it is the unloaded state.
+Attempted a second angle: a Wayback CDX API query for any snapshot of this URL
+between 2026-08-01 and 2026-08-11, to check whether a newer/different capture
+exists with better luck (curl, twice -- both timed out reaching
+web.archive.org's CDX endpoint specifically, a transient/rate-limited endpoint
+issue distinct from the successful fetches used elsewhere in this sweep). Did
+not retry a third time (effort cap). The "closest available" capture the
+Wayback UI itself resolves to today (https://web.archive.org/web/2026/...) is
+still the same 20260807100537 snapshot already checked, so no newer capture is
+known to exist regardless.
+
+ARM 2 CONCLUSION: fails again. No readable price of any kind, in any currency.
+
+OUTCOME
+----------------------------------------------------------------------------
+Neither arm returns a readable price. Arm 1 returns something in between: real
+evidence that bears on currency (the vendor states its own payments are in USD)
+without supplying a figure. Under the amended rule, non_usd requires positive
+evidence that the vendor publishes a non-USD price -- and here the vendor's own
+terms argue against that framing, so non_usd cannot stand. A money value cannot
+be coded either, since no document states what the USD amount is. This is the
+"we could not look/could not determine the figure" case the amended rule assigns
+to unknown, not to non_usd -- with the added twist, worth recording plainly,
+that the reason is not merely absence of evidence but a live contradiction
+between the vendor's displayed price (TRY, no USD figure) and its own contract
+(payments stated to be in USD). This is the exact case the study's own
+conflict_note "tos_usd_vs_pricing_page_try" already named as "undeterminable for
+this reader from public materials, not merely undisclosed by the vendor" --
+which now resolves to unknown under the amended rule rather than to non_usd
+under the old one.
+
+VALUE CHANGES:
+- headline_price_usd: non_usd -> unknown.
+- first_charge_amount_usd: unknown -> unknown (value UNCHANGED -- it was already
+  unknown for an independent, still-valid reason, the unconfirmed
+  once-for-twelve-months billing frequency; its evidence text is updated only to
+  stop citing the now-superseded "headline_price_usd = non_usd" clause).
+- cost_per_output_computable: UNCHANGED ("yes"), and its computation stays
+  TRY-denominated and unchanged in figures (549/300,000 words = TRY 1.83/1,000
+  words) -- this variable's decision rule has never gated on headline_price_usd's
+  specific value or currency (the original coder's own point, still true), so
+  there is no new USD figure to substitute and no computation to redo. Only the
+  stray cross-reference to "headline_price_usd=non_usd" in its
+  computation_assumptions text is corrected to the new value.
+- The existing register_events display_variant entry's "non_usd stands per
+  protocol-v1.md 6.5" line is corrected in place (historical observation fields
+  preserved) to state the D-007 outcome.

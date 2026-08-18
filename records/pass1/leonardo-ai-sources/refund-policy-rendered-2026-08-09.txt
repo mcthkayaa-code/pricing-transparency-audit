@@ -1,0 +1,38 @@
+URL: https://leonardo.ai/refund-policy
+Access date: 2026-08-09
+Method: rendered read via Claude Browser tool (static fetch of leonardo.ai returns Cloudflare 403 challenge; rendered browser read succeeded)
+Network note: no geo-redirect. Entity: Leonardo Interactive Pty Ltd (ACN 662 209 485) -- same entity as the Terms of Service, not Canva.
+
+--- FULL TEXT (verbatim, 2713 chars) ---
+REFUND POLICY
+Leonardo Interactive Pty Ltd – Refund Policy
+
+This Refund Policy (Policy) applies to the purchase of digital goods and services from Leonardo Interactive Pty Ltd (ACN 662 209 485) (we, us or our).
+
+COVERED PRODUCTS
+This Policy applies to the following products and services:
+Monthly or annual subscriptions granting access to our platform's exclusive features and higher token allocations;
+Direct purchases of tokens from us or one of our third-party partners; and
+Direct purchases of other digital goods or services (e.g., wallpapers) from us or via one of our third-party partners.
+
+REFUND ELIGIBILITY
+As a consumer, you will be entitled to a refund under the following circumstances:
+Major Faults: If a product or service has a major fault, such as not functioning as described, or being significantly defective.
+Misleading Description: If the product or service is not as described.
+Unfit for Intended Purpose: If the product or service is not suitable for the purpose for which it was described or presented.
+Technical Issues: If persistent technical issues prevent access to the purchased product or service.
+Non-Delivery of Tokens: If tokens purchased are not delivered or credited to your account due to system errors.
+Defective Digital Goods: If purchased digital goods are significantly defective or not as described.
+
+EXCLUSIONS:
+We retain the right to refuse a refund if:
+You simply changed your mind;
+You misused the product or service in a way that contributed to the problem;
+You requested a service to be carried out against our advice or were unclear about your requirements; or
+A service problem was completely beyond our control.
+
+Please note that this Policy complies with the primary Consumer Guarantees that are most likely to be relevant to you. We offer no protections beyond the minimum requirements under Australian Consumer Law.
+[... Australian Consumer Law reference, ACCC link, contact@leonardo.ai ...]
+
+--- END ---
+NOTE: No refund window measured in days is stated anywhere on this page. Refund eligibility is fault/consumer-guarantee-based (major fault, misleading description, unfit for purpose, technical issues, non-delivery, defective goods), not a "cancel within N days for any reason" window. "Changed your mind" is expressly excluded.

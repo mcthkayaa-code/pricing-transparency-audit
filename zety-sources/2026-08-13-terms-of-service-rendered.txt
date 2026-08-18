@@ -1,0 +1,606 @@
+Title: Terms of Use
+URL: https://zety.com
+Source element: <body>
+---
+Skip to content
+ToolsResumeCVCover LetterCareer BlogAbout
+My Account
+
+Home
+–
+Terms of Use
+
+Terms of Use
+
+Last Updated: April 1, 2025
+
+Welcome! These Terms of Use and all other legal documents incorporated by reference (collectively, the “Terms”) set forth the legal contract between BOLD LLC (352385) and each end user (“User” or “you” or “your”) with respect to access to and use of our associated internet properties as linked and offered by us, our subsidiaries and affiliated companies, and any software that we provide to you for download in your mobile devices (each a “mobile application”) (all of these collectively, the “Site”). Auxiliant S.à.r.l (B199343) may additionally act in our contract as a merchant of record, in which case BOLD LLC and Auxiliant S.à.r.l are collectively called “Provider”, “we,” or “us”. Unless otherwise specified, all references to “Site” also include the use of our online platform, materials, proprietary content, tools, software, and services available through the Site (collectively, all of these and the Site are called the “Service”). 
+
+PLEASE READ THESE TERMS CAREFULLY BEFORE USING THE SERVICE, BECAUSE THEY AFFECT YOUR LEGAL RIGHTS AND OBLIGATIONS. IF YOU DO NOT AGREE TO BE BOUND BY THESE TERMS, OR IF AT ANY TIME, THE TERMS ARE NO LONGER ACCEPTABLE TO YOU, PLEASE CEASE USE OF THE SERVICE IMMEDIATELY. THE SITE IS DIRECTED TO PEOPLE WITHIN THE UNITED STATES. CONTENT AVAILABLE ON OR THROUGH THE SITE MAY NOT BE APPROPRIATE OR AVAILABLE IN OTHER LOCATIONS. BOLD MAY LIMIT THE AVAILABILITY OF THE SITE AND SERVICE TO ANY PERSON OR GEOGRAPHIC AREA AT ANY TIME. IF YOU ACCESS THE SITE FROM OUTSIDE THE UNITED STATES, YOU DO SO AT YOUR OWN RISK.
+
+SECTION 24 CONTAINS AN ARBITRATION CLAUSE AND CLASS ACTION WAIVER. BY AGREEING TO THESE TERMS, YOU AGREE (A) TO RESOLVE ALL DISPUTES (WITH LIMITED EXCEPTIONS) RELATED TO THE PROVIDER’S SERVICES AND/OR PRODUCTS THROUGH BINDING INDIVIDUAL ARBITRATION, WHICH MEANS THAT YOU WAIVE ANY RIGHT TO HAVE THOSE DISPUTES DECIDED BY A JUDGE OR JURY, AND (B) TO WAIVE YOUR RIGHT TO PARTICIPATE IN CLASS ACTIONS, CLASS ARBITRATIONS, OR REPRESENTATIVE ACTIONS, AS SET FORTH BELOW.  YOU HAVE THE RIGHT TO OPT-OUT OF THE ARBITRATION CLAUSE AND THE CLASS ACTION WAIVER AS EXPLAINED IN SECTION 24.
+
+ 
+
+Terms of Use Highlights
+
+Please also read our full Terms of Use.
+
+Your Acceptance
+
+Each time you access and/or use the Service, you agree to be bound by these Terms and any Additional Terms (defined in Section 3(d)) that will apply to you, prospectively. 
+
+Your Privacy
+
+We collect certain information to perform the Service and to allow Provider and/or third parties to find and contact you as part of the services provided. You can find more information about your personal information and how we process it in our Privacy Policy.
+
+Payments, Subscriptions and Cancellations
+
+You will honor your payment obligations for services you purchase on the Site. For recurring charges applicable to your subscription, you agree that third-parties working on our behalf may store your payment information to process the payments. Provider has the discretion to alter prices of its services at any time. In case there is a price change you will be notified in advance and provided a period of time to manage your subscription. You understand that additional fees and taxes may apply to your purchase. You may cancel or sometimes suspend your subscription at any time by going to the home page under My Accounts and My Settings. Please refer to our Cancellations section for more information. Provider does not guarantee refunds.
+
+Arbitration of All Disputes; No Class Relief
+
+These Terms contain a dispute resolution and arbitration provision, including a class action waiver that affects your rights. Please note that, depending on your country of residence, under certain circumstances you may be able to bring a dispute before the appropriate authorities or courts in the country in which you reside.
+ Any disputes under these Terms (subject to limited, enumerated exceptions outlined below) will be resolved on an individual basis through binding arbitration, with no class relief. 
+
+Our Content, Intellectual Property, Copyrights and Trademarks
+
+You may not use, copy, reproduce, republish, upload, sale, resale, display, post, transmit, distribute, scrape, reverse engineer, or license any content or intellectual property, copyrights and trademarks on the Service without the Provider’s authorization. 
+
+Disclaimer of Warranties
+
+To the extent permitted by law, we disclaim warranties and conditions and provide the Service “As is”.
+
+Limitation of Liability
+
+To the extent permitted by law, our liability is limited.
+
+Contact
+
+Questions about these Terms may be sent to support@bold.com or as otherwise set forth in these Terms.
+
+ 
+
+Full Terms of Use
+
+ 
+
+1. Your Acceptance and Contractual Relationship.
+
+You represent and warrant that you are of age under the laws of your jurisdiction and/or lawfully able to enter contracts. If you are not legally able to enter contracts, you shall not use the Service at any time or in any manner or submit any information to Provider or the Service. 
+
+ 
+
+2. Privacy.
+
+Your privacy is important to us. Please review Provider’s Privacy Policy which explains how we use information that you submit to Provider and the choices you can make about the way this information is collected and used. The Privacy Policy is hereby incorporated by reference.
+
+ 
+
+3.  Modifications to the Terms or to the Service.
+
+(a) Terms: Provider can change, update, add or remove provisions of these Terms, at any time by posting the updated Terms on the Site and by providing a notice on the Site. Material changes to the Terms will be notified either by posting a notice on the Dashboard or sending you an email. If you do not agree with any of the updated Terms, you must stop using the Service. If you would like to receive a copy of a previous version of the Terms that have applied to you, please send an email with your request to legal@bold.com.
+
+(b) Service: Provider may make changes to the Service at any time, without notice. If you object to any changes to the Service, your only recourse will be to cease using it. Continued use of the Service following posting of any such changes will indicate your acknowledgement of such changes and satisfaction with the Service as modified. We also reserve the right to discontinue the Service or any component of it, at any time without notice. We will not be liable to you or any third-party should we exercise our right to modify or discontinue the Service.
+
+(c) Paid subscriptions: Please note that if you are under paid subscription services with us, in the event we change the price for the services which you have previously agreed to pay or if we substantially change the services you are paying for, we will notify you of such changes as contemplated in Section 3(a). Any changes will become effective as of, and reflected on, your next scheduled payment. If you do not agree with such changes you may cancel your paid subscription by communicating with us in accordance with the Cancellation section below.
+
+(d) Additional Terms: In addition, certain features of the Service may be subject to additional terms of use (“Additional Terms”), which shall be provided to you at the moment you choose to use such features. By using such features, or any part thereof, you agree to be bound by the Additional Terms applicable to such features. In the event that any of the Additional Terms governing such area conflict with these Terms, the Additional Terms will govern.
+
+ 
+
+4.  Use of Our Service and Accounts
+
+We provide resume and curriculum vitae building, document storage services, resume database and other resume and career enhancement tools. For as long as you agree to these Terms and abide by them, you may use the Service. These Terms apply to all Users of the Service, including Visitors, Registered Users and Subscribers.
+
+(a) Visitors: Visitors may browse the Site in accordance with these Terms, but will not have full access to the Service (which may include but are not limited to contributing content, downloading tools, posting comments or signing up for special programs) without first becoming “Registered Users”.
+
+(b) Registered Users and Accounts: In order to access certain features of the Service you may be required to become a Registered User. A “Registered User” is a User who has registered an account with us (your “Account”) or who has a valid account on the social networking service (“SNS”) through which the User has connected to the Service (each such account, a “Third-Party Account”). As a Registered User, you will have access to view your documents, but will not be able to edit, print, or  download them unless you are a Subscriber.
+
+(c) Subscribers. Users that have entered in an agreement with Provider to receive additional access in order to, modify, print, download, and share their resume and/or cover letter as well as make use of additional Site offerings are considered subscribers (“Subscriber”). Subscriber offers may vary from time to time. Please review the information included in your purchase order confirmation email and/or contact our Customer Service team if you have any questions. You will need to be a Registered User first in order to be able to purchase a subscription and be considered a Subscriber.
+
+(d) Registration Data: In registering for the Service, you agree to (i) provide true, accurate, current and complete information about yourself as prompted by the Service’s registration form (the “Registration Data”); and (ii) maintain and promptly update the Registration Data to keep it true, accurate, current and complete. You are responsible for all activities that occur under your Account. You may not share your Account or password with anyone, and you agree to (A) notify Provider immediately of any unauthorized use of your password or any other breach of security at support@bold.com; and (B) exit from your Account at the end of each session. If you provide any information that is untrue, inaccurate, not current or incomplete, or Provider has reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, Provider has the right to suspend or terminate your Account and refuse any and all current or future use of the Service (or any portion thereof). Provider shall be entitled to monitor your username and password and, at its discretion, require you to change it. If you use a username and password that Provider considers insecure, Provider will be entitled to require this to be changed and/or terminate your Account. Provider reserves the right to remove or reclaim any usernames at any time and for any reason, including but not limited to, claims by a third party that a username violates the third party’s rights. You agree not to register for an Account on behalf of an individual other than yourself, or register for an Account on behalf of any group or entity unless you are authorized to bind such person, group or entity to these Terms (see “Shared Accounts” below). By registering another person, group or entity you hereby represent that you are authorized to do so.
+
+(e) Access through Social Networking Sites: If you access the Service through an SNS as part of the functionality of the Service, you may link your Account with Third-Party Accounts, by allowing Provider to access your Third-Party Account, as is permitted under the applicable terms and conditions that govern your use of each Third-Party Account. You represent that you are entitled to disclose your Third-Party Account login information to Provider and/or grant Provider access to your Third-Party Account (including, but not limited to, for use for the purposes described herein) without breach by you of any of the terms and conditions that govern your use of the applicable Third-Party Account and without obligating Provider to pay any fees or making Provider subject to any usage limitations imposed by such third-party service providers. By granting Provider access to any Third-Party Accounts, you understand that Provider may access, make available and store (if applicable) any information, data, text, software, music, sound, photographs, graphics, video, messages, tags and/or other materials accessible through the Provider internet properties that you have provided to and stored in your Third-Party Account (“SNS Content”) so that it is available on and through the Provider internet properties via your Account. Unless otherwise specified in the Terms, all SNS Content shall be considered to be your User Content (as defined in Section 5) for all purposes of these Terms. Depending on the Third-Party Accounts you choose and subject to the privacy settings that you have set in such Third-Party Accounts, information that you post to your Third-Party Accounts may be available on and through your Account on the Provider internet properties. Please note that if a Third-Party Account or associated service becomes unavailable or Provider’s access to such Third-Party Account is terminated by the third-party service provider, then SNS Content will no longer be available on and through the Provider internet properties. You have the ability to disable the connection between your Account and your Third-Party Accounts at any time by accessing the “Settings” section of the Service. PLEASE NOTE THAT YOUR RELATIONSHIP WITH THE THIRD-PARTY SERVICE PROVIDERS ASSOCIATED WITH YOUR THIRD-PARTY ACCOUNTS IS GOVERNED SOLELY BY YOUR AGREEMENT(S) WITH SUCH THIRD-PARTY SERVICE PROVIDERS, AND PROVIDER DISCLAIMS ANY LIABILITY FOR PERSONAL INFORMATION THAT MAY BE PROVIDED TO IT BY SUCH THIRD-PARTY SERVICE PROVIDERS IN VIOLATION OF THE PRIVACY SETTINGS THAT YOU HAVE SET IN SUCH THIRD-PARTY ACCOUNTS. Provider makes no effort to review any SNS Content for any purpose, including but not limited to, for accuracy, legality or non-infringement, and Provider is not responsible for any SNS Content.
+
+(f) Product Development: From time to time and in an effort of optimizing the User experience, Provider may develop multiple Site experiences and A/B test multiple factors such as Site performance, User preferences, new tools and services, among others.  These A/B tests may not be the same for every customer and may not be available every time. Certain tests may fail and may show errors through the Site. If you have any issues or concerns, please call our Customer Service for support.  
+
+5. Your Content and Your License to Us
+
+As a Registered User you may upload, post, share, reframe, transmit or otherwise make available (“Make Available”) your User Content through the Service. “User Content” means, without limitation, your Account information, resume, career history, educational history, reviews, ratings, rankings, responses, videos, photos, pictures, audio, profile entries, posts, questions, career materials, testimonials, submissions, and/or any other information you provide on or through the Service or that we may create for you. When you create an Account or provide career information on or through the Service (including via forms available on the Site or by uploading a resume) you agree that you are solely responsible for the accuracy of your User Content. You agree that Provider may also offer information and other proprietary content that is of most interest to you.
+
+You may choose to make some of your User Content public on the Service. For some of our features, other members may be able to request email notifications of your new public User Content or publish their own comments to your comments. We may use the public User Content to improve our service, make connections with potential employers, personalize site views, market services, promote or show you other career building services or tools, and identify or feature popular members.
+
+For clarity, you retain ownership of your User Content at all times. However, by posting, uploading and/or Making Available any User Content within the Service, and/or by providing any communication or material to Provider, you automatically:
+
+(a) Grant Provider a worldwide, perpetual, irrevocable, non-exclusive, royalty-free, sublicensable through multiple tiers, and transferable, license to use, copy, reproduce, process, adapt, modify, publish, transmit, distribute, prepare derivative works of, display, and perform the User Content in connection with the Service and Provider’ (and its successors’ and affiliates’) business, including without limitation for promoting and redistributing part or all of the Service (and derivative works thereof) in any media formats and through any media channels (now known or later developed). We may modify or adapt your User Content in order to transmit, display or distribute it over computer networks and in various media and/or make changes to your User Content as are necessary to conform and adapt that Content to any requirements or limitations within the Service, or of any networks, devices, services or media; including, but not limited, to structured data markups for content ratings. You also hereby grant each user of the Service a non-exclusive license to access your public User Content, and to use, reproduce, distribute, display and perform such User Content as permitted through the functionality of the Service and under these Terms. To the extent permitted by applicable law, (i) the above licenses granted by you in User Content you submit to the Service will survive even if you remove or delete your User Content from the Service and, (ii) the above licenses granted by you in forum comments, testimonials or submissions you submit are perpetual and irrevocable. Except with respect to your User Content, you agree that you have no right or title in or to any other content or Materials (see Section 11 below) that appears on or in the Service, including, but not limited to any information associated with another Account or user profile or stored on or in the Service.
+
+(b) To the extent permitted by applicable law, waive all moral rights in the User Content which may be available to you in any part of the world and confirm that no such rights have been asserted;
+
+(c) Appoint Provider as your agent with full power to enter into any document and/or do any act Provider may consider appropriate to confirm the grant and assignment, consent and waiver set out above;
+
+(d) Warrant that you are the owner of the User Content and entitled to enter into these Terms and that the User Content does not infringe the proprietary or privacy rights of any third party;
+
+(e) Confirm that such User Content will not be subject to any obligation, of confidence or otherwise, to you or any other person and that Provider shall not be liable for any use or disclosure of such User Content.
+
+(f) Agree and understand that your User Content is subject at all times to our Acceptable Use Policy.
+
+ 
+
+6.  Deletion or Deactivation of User Content and/or your Account.
+
+You may request that we delete resumes and cover letters by logging into your Account and clicking on the My Settings and “Resumes” or “Letters” tabs. Your User Content can only be completely deleted from public view by deactivating or deleting your Account by going to your Account and clicking the My Settings tab  . When you request that your public User Content be deleted, your resume or profiles will no longer be visible to other users within the Service, but if your User Content, including your information, was previously accessed, stored, and/or copied by others, we are unable to delete the information from their systems. When you deactivate your Account or ask that we delete your User Content we will retain logs and non-personally identifiable information about you along with an archival copy of your information, which is not accessible by you or third parties within the Service but which might be used for recordkeeping and internal legitimate business purposes. If you terminate your Subscription, you will still be able to use your login credentials as a Registered User to access and view the documents uploaded on your Account. This information will be available to you if you have an Account open. If you wish to close your Account and delete your data from our systems, you can do so by clicking here  or by contacting our Customer Service team.
+
+You further understand that Provider may keep and use data in various ways as outlined in these Terms and in the Privacy Policy. If you request that your User Content be deleted by us, it will no longer be publicly available and to the extent permissible by law, we will take all reasonable steps to delete it. Provider has no obligation to maintain any Account you open and may delete it if you violate these Terms as determined in Provider’s sole and absolute discretion (please see also our Acceptable Use Policy).
+
+Provider does not endorse any User Content submitted to the Service by any user or other licensor, or any opinion, recommendation, or advice expressed therein, and Provider expressly disclaims any and all liability in connection with User Content towards third parties in the event of a violation of these Terms or in the event of illegal activities, contrary to decency, violating the interest of Provider or personal rights of third parties. Should Provider remove the User’s Account, blocks access to the Site or cease to provide the Services to the User as a result of the above-mentioned violations, all fees paid by the User are not refundable. The Provider is not liable for damages resulting from the events described above. Provider does not permit copyright infringing activities and infringement of intellectual property rights on the Service, and Provider will remove User Content if properly notified that such User Content infringes on another’s intellectual property rights (please refer to our Copyright and Intellectual Property Infringement Notification Section). Provider reserves the right to remove User Content without prior notice.
+
+ 
+
+7. Our Community and Our Acceptable Use Policy
+
+This section provides the acceptable use policy (“AUP”) which defines acceptable practices relating to the use of the Service, including limitations on User Content, system abuse and security. The Service must be used in a manner that is consistent with the intended purpose of the Service and the terms of the applicable agreement with Provider, including our Terms. By using the Service, you consent to be bound by the terms of this AUP. If you do not agree with anything in this section, you must discontinue use of the Service. For purposes of this section, “Provider” includes all of Provider’s affiliates, including direct and indirect subsidiaries.
+
+(a) Summary of Generally Prohibited Conduct: You will not use the Service to transmit, distribute or store material in a manner that: (i) violates any applicable law or regulation; (ii) may adversely affect the Service or other Users; (iii) may expose Provider to criminal or civil liability, or (iv) violate, infringe upon or otherwise misappropriate any third-party rights, including intellectual property rights, rights of publicity and privacy rights. You are prohibited from facilitating the violation of any part of this section or applicable third-party policies, including, but not limited to transmitting, distributing, or otherwise making available any product or service that violates this section or another provider’s policy.
+
+(b) Responsible Use of the Service: Please act responsibly when using the Service. You may only use the Service and its contents for lawful purposes and in accordance with applicable law and you are prohibited from storing, distributing or transmitting any unlawful material through the Service. You may not collect or store personal information from other users. You recognize that storing, distributing or transmitting unlawful material could expose you to criminal and/or civil liability. You agree that if a third party claims that the material you have contributed to the Service is unlawful, you will bear the burden of establishing that it is lawful. You understand and agree that all materials publicly posted or privately transmitted on or through the Service are the sole responsibility of the sender, not Provider, and that you are responsible for all material you upload, publicly post or otherwise transmit to or through the Service.
+
+(c) Content Limitations. We require that you do not post resumes, cover letters, send e-mails or submit to or publish through forums available on the Service, or otherwise make available on the Service any content, or act in a way, which in our opinion:
+
+Libels, defames, invades privacy, stalks, is obscene, pornographic, racist, abusive, harassing, threatening or offensive;
+Disparages, criticizes, belittles, parodies or otherwise portrays in a negative light any actor appearing in the content;
+Seeks to exploit or harm children by exposing them to inappropriate content, asking for personally identifiable details or otherwise;
+Infringes any intellectual property or other right of any entity or person, including violating anyone’s copyrights or trademarks or their rights of publicity;
+Violates any law or may be considered to violate any law;
+You do not have the right to transmit under any contractual or other relationship (e.g., inside information, proprietary or confidential information received in the context of an employment or a non-disclosure agreement);
+Advocates or promotes illegal activity;
+Impersonates or misrepresents your connection to any other entity or person or otherwise manipulates headers or identifiers to disguise the origin of the content;
+Solicits funds, advertisers or sponsors;
+Includes programs which contain viruses, worms and/or “Trojan horses” or any other computer code, files or programs designed to interrupt, overload, collapse, destroy or limit the functionality of any computer software or hardware or telecommunications;
+Disrupts the normal flow of dialogue, causes a screen to scroll faster than other users are able to type, or otherwise act in a way which affects the ability of other people to engage in real time activities via the Service;
+Copies any other pages or images on the Service except with appropriate authority;
+Includes illegally sourced MP3 format files;
+Amounts to a “pyramid” or similar scheme;
+Amounts to “data warehousing” (i.e., using any web space made available to you as storage for large files or large amounts of data which are only linked from other sites);
+Disobeys any policy or regulations established from time to time regarding use of the Service or any networks connected to the Service; or
+Contains links to other sites that contain the kind of content that falls within the descriptions described above.
+In addition, you are prohibited from removing any sponsorship banners or other material inserted by Provider anywhere on the Service (e.g., on any web space made available for your use).
+
+PLEASE BE AWARE THAT WE COOPERATE WITH LAW ENFORCEMENT AND REPORT SUSPICIOUS ACTIVITY.
+
+(d) System Abuse: Without limitation, you agree not to:
+
+Send, create or reply to so called “mailbombs” (i.e., emailing copies of a single message to many users, or sending large or multiple files or messages to a single user with malicious intent) or engage in “spamming” (i.e., unsolicited emailing for business or other purposes) or undertake any other activity which may adversely affect the operation or enjoyment of this Service by any other person;
+Copy, display, distribute, duplicate, aggregate, redistribute, alter or modify, any of the content available within the Service, or User Content in any medium, or to any other individual or entity, other than as may be reasonably necessary to use the Service for their intended purpose;
+Use any automated software or devices, such as spiders, artificial intelligence software or tools, robots or data mining techniques such as scraping, spidering, crawling or any other techniques to download, store, analyze, distribute or otherwise reproduce content within the Service and/or the Service itself;
+Use or copy the Service including any data you view on and/or obtain from the Service to provide any product or service that is competitive to the Service determined in Provider’s sole discretion;
+Interfere with, interrupt, destroy or limit the functionality of the Service or any computer software or hardware or telecommunications equipment;
+Use the Service in any manner that could damage, disable, overburden, or impair any Provider’s server, or networks connected to any Provider’s server, or interfere with any other party’s use and enjoyment of the Service;
+Gain unauthorized access to the Service, other accounts, computer systems or networks connected to any Provider’s server or to the Service, through hacking, cracking, and distribution of counterfeit software, password mining or any other means;
+Reverse engineer, decompile or disassemble any software accessed through the Service, including any proprietary communications protocol used by Provider;
+Use information obtained from the Service to transmit any commercial, advertising or promotional materials without Provider’s written permission and except as expressly authorized by Provider, advertise or offer to sell or buy any goods or services for any purpose;
+Provide any contact information which is not current and accurate, impersonate or create a false identity or falsify any information;
+Use, download or otherwise copy, or provide (whether or not for a fee) to a person or entity any directory of users of the Service, or other user or usage information or any portion thereof;
+Exploit, distribute or publicly communicate any error, miscue or bug which gives an unintended advantage; or
+Reproduce, sell, resell or otherwise exploit any resource, or access to any resource, contained on this Service.
+
+(e) Violation of Security Systems: You are prohibited from using any services or facilities provided in connection with the Service to compromise its security or tamper with system resources and/or accounts. The use or distribution of tools designed for compromising security (e.g. password guessing programs, cracking tools or network probing tools) is strictly prohibited. If you become involved in any violation of system security, Provider reserves the right to release your details to system administrators at other sites or to law enforcement in order to assist them in resolving security incidents.
+
+(f) Responsibility for Content. Provider takes no responsibility for any material created or accessible on or through the Service and will not exercise any editorial control over such material. Provider is not obligated to monitor such material, but reserves the right to do so.
+
+You acknowledge that Provider has no obligation to pre-screen User Content, although Provider reserves the right in its sole discretion to pre-screen, refuse or remove any User Content. By entering into these Terms, you hereby provide your irrevocable consent to such monitoring. You acknowledge and agree that you have no expectation of privacy concerning the transmission of your User Content, including without limitation videos, comments, any chat, text, or voice communications that may be facilitated through the Service. In the event that Provider pre-screens, refuses or removes any User Content, you acknowledge that Provider will do so for Provider’s benefit, not yours. Provider may provide you with tools to flag User Content, however, Provider makes no promises or representations regarding removal of flagged User Content.
+
+Violations of this AUP may be reported to: legal@bold.com.
+
+ 
+
+8. Additional Services
+A. Resume Posting 
+
+We provide resume and curriculum vitae building services and tools. In addition, our “Resume Posting Services” may facilitate the posting of your resume or a career profile on various third-party sites. If you sign up for our Resume Posting Services, you agree that we will use proprietary web-based information gathering tools to create a career profile for you. You further agree that the wording and interpretation of your information for purposes of Resume Posting Services will be in our sole discretion, and we will not be liable for any decisions to include, not include or phrase information about you as part of the Resume Posting Services. You understand, and consent to, that prior to posting your career profile or resume on a third-party career site, Provider will be accepting terms and conditions of use and privacy policies, and other policies that it might be prompted to accept, on these third-party sites.  By using our Resume Posting Services you’re accepting full and total responsibility for the actions Provider performs on your behalf and at your request as if you had performed those actions yourself. You further acknowledge and agree that you will take full responsibility and are personally liable for any consequences arising from your use of the Resume Posting Services.
+
+Provider may also offer job posting and resume submission features as part of the Service in certain locations or jurisdictions. These features may be used only by individuals seeking employment and/or career information. In the same vein, certain Provider services may only be used by employers seeking employees.
+
+Depending on your location or jurisdiction, Provider may provide job alerts or may use third parties and automated search engines to provide job alerts, matching employment opportunities found on third-party job searching sites with your resume or career profile, job search requests submitted by you, and/or other usage data relating to your use of the Service. Provider tries to match the information available to ensure employment opportunities presented to you in job alerts match the type of career opportunities desired by you but Provider makes no guarantee that you will receive career opportunities or the job alert leads you desire.
+
+B. Resume Parsing
+
+Provider may also offer additional services that may help you in your application process, such as tracking your resume and facilitating the transfer and interpretation of your resume data by the third-parties involved in your application process (“Resume Parsing”). Upon downloading your resume, you agree that Provider may include a metadata and an identifier into your resume and share it with third-parties such as parsing companies, applicant tracking systems (ATS), and employers for the purpose of facilitating your application process and allowing such third parties, through technology, capture your data, process it, and deliver it to the prospective employer to whom you have submitted a job application.
+
+To see if the link on you resume has been clicked, please go to your Resume Analytics pannelpanel in your Account. Your Resume Analytics pannelpanel may give you data regarding your Resume Parsing activities, which may include (when available) the number of times your resume has been ‘parsed’, dates, and location. Note that all of this information may not always be available. Due to privacy, we may not be able to give you the name of the person, entity or third party who is parsing your resume, unless such person agrees to disclose its name. We do not guarantee the accuracy of the information on your Resume Analytics pannelpanel, nor the time or the location displayed on your Resume Analytics pannelpanel, as some people may be using blockers or VPNs to avoid tracking technologies such as the one in your Resume Parsing service. Each time the third party performs a parsing function over your resume, such activity will be automatically featured on the Resume Analytics pannelpanel and will show the user with the total number of parsing activities for your unique downloaded resume, which carries a specific document id. Your resume may be parsed multiple times within a single application process. Therefore, note that the number of parsing activities in your Resume Analytics pannelpanel may be triggered by the same third party and may not be indicative that different third-parties or employers have parsed or viewed your resume. You may download multiple resumes to capture a unique ID on each one enabling you to track the activities of each of such resumes.
+
+We may also enable a notification system to notify you when your resume has been parsed, which we may do by email or text, should such service become available. Such notifications shall be made (when available) under the terms and conditions contained herein applicable to notifications to our Subscribers. You acknowledge that the actual time between a parsing activity over your resume and the time the notification is sent to you depends on a number of factors, including your wireless service and coverage within the area in which you are located at that time, and that such notices may be delayed, experience delivery failures, or face other transmission problems. Email notices may be affected by Internet outages and other problems impacting the transmission and receipt of email messages. Additionally, and if you choose to download a word version of your resume, we will be able to notify you through the Resume Analytics   page each time such document is opened. This security functionality allows you to not only make sure you can track how many times your word document has been opened, but also from where. Note this information may not always be accurate as some people may be using blockers or VPNs to avoid tracking technologies such as the one in your Resume Parsing service.
+
+You may always opt-out of the Resume Parsing services and from receiving these notifications. To opt-out please visit your Resume Analytics pannelpanel or contact customer service. The Provider makes no guarantee that you will receive career opportunities or that the notices of Resume Parsing services will meet your requirements.
+
+Please remember that the Resume Parsing services will only become available if you download the resume from this Site and share your resume with third parties as part of your application process. The Resume Parsing service and any corresponding notice is not triggered by Provider and is only triggered upon your direct sharing of your resume with third-parties that are enabled with the parsing technology necessary to process the Resume Parsing services. That said, note that not all employers nor ATS are equipped with Bold’s proprietary technology and therefore, you will only receive notice only from those employers and ATS that have the Resume Parsing technology integrated in their systems. Our Resume Parsing technology accuracy will be dependent on the capabilities of the technology that the third-party has enabled in their systems to upload and read your resume. Therefore, Provider cannot guarantee that these third-parties receiving your resume will have the capabilities necessary to enable a 100% accuracy when processing your resume. By sharing your resume with third parties, you do so at your own risk.
+
+C. Digital Resume and public Resume Database
+1. Digital Resume
+
+Provider may offer digital resume services that allow you to create an online digital resume (“Profile”) using either your existing resume data or by creating a Profile from scratch using our proprietary builder which, once published, will be available online and part of our online public digital resume database.  Take advantage of this tool by creating multiple resumes and including unique web address identifiers (“Digital Resume IDs”) for each one; that way, you can keep better track of who has viewed your Profile and see the details on your Analytics page.
+
+If you create a Profile, you agree that we will use the information you provide us to create a digital version of your resume, which once you agree to publish it, will be publicly available. Third parties may get access to your Profile by multiple routes, either by your direct sharing of your Profile link, by performing searches in publicly available search engines, such as Google, Bing, or through our publicly available resume database. Provider will not be responsible for claims or takedowns of your Profile if it’s featured on a third party site, since we do not have control over that content.
+
+When you create your Profile you also agree to have your data transferred to any of our affiliate websites or third parties. This will enable us to provide you with our services and, as part of it, make your profile more visible. Visit your Settings  page at any time to change your privacy preferences.
+
+Your Resume Analytics panel will give you all the data regarding your Profile, which may include (when available) the number of visits, visit dates, location of the visitor, source, and the number of contact requests received in the last 30 days. Note that all of this information may not always be available. If you search for a Profile, the Profile owner may be able to see your name in the Analytics panel and your general location (i.e. city and state).  We do not guarantee the accuracy of the information on your Analytics panel, nor the location of the person looking at your Profile, as some people may be using blockers or VPNs to avoid tracking technologies such as the one in your Profile. Also, each time a third party visits your Profile, the visit will be automatically featured on the Analytics panel and will provide the user with the total number of visits grouped based on the following characteristics: source, country, city, and timestamp. If the “Include your Digital Resume link” option is enabled for a specific resume, the visits that get attributed to each link will be featured on the resume Analytics panel, along with the Digital Resume unique ID they came from. By default, when your Profile gets published you will be given a web address with a unique identifier that will allow us to track and gather the above data, your resume will then be automatically made part of our resume database. This tool will help your Profile get more visibility. However, and although we do our best efforts to provide you with accurate information, we do not guarantee the accuracy of any of the above tracking data or statistics displayed on your Analytics panel.
+
+Your Profile will include the information you provided and agreed to publish, as well as a contact form that enables anyone  to request to contact you. WE WILL NOT DISCLOSE YOUR CONTACT DATA TO ANY THIRD PARTIES. However, we have no obligation to pre-screen information provided by you, this means that if you decide to include your contact data in any section of your Profile, it will be published and publicly available to everyone. Each time a third party visits your Profile and issues a contact request, we will send you an email notification with the contact data and message left by the third party (“Sender”). If you choose to continue the communications with the Sender, you do so entirely at your own risk. Your communications with the Sender are not under Provider’s control, and you acknowledge that the Provider is not responsible for any aspects of the content/information you receive from the Sender. 
+
+If you elect to use our digital resume tool, you understand that (a) your Profile will be available for anyone, including third parties, and (b) your communication with such third-party will be at your own risk. The Provider does not make any representations or warranties as to the security of any information you might be requested to give the Sender, and you irrevocably waive any claim against us concerning such communication and from the use of the Profile. The Provider makes no guarantee that you will receive career opportunities, or the job alert leads you desire, nor that the communications received from the Sender will meet your requirements. The Provider is not responsible for any messages or hyperlinks embedded in messages obtained from the Sender. Under no circumstances will Provider be liable for any loss or damage caused by your reliance on the information from the Sender or your communication with the Sender. The Provider makes no effort to review any contact request from the Sender for any purpose, including accuracy, legality, or non-infringement.
+
+As Sender, you acknowledge that Provider has no obligation to pre-screen information provided by you through the contact form. However, Provider reserves the right in its sole discretion to pre-screen, refuse, or remove any information. By using the contact form on the Profile you are agreeing to these Terms, and you hereby provide your irrevocable consent to such monitoring.  You acknowledge and agree that you have no expectation of privacy concerning the transmission of the information (including your name, surname, contact data) provided through the contact form.  As Sender, you are requested to provide true and accurate data in the contact form. You must not provide the data of an individual other than yourself. We will send a copy of the information provided in the contact form to your email address. If Provider pre-screens, refuses or removes any information provided through the contact form, you acknowledge that Provider will do so for Provider’s benefit, not yours. Furthermore, you understand that the Provider does not guarantee the user will respond to your contact request.
+
+You recognize that storing, distributing, or transmitting unlawful material could expose you to criminal and/or civil liability. You agree that you are responsible for all material or information you send. Furthermore, you are obliged to refrain from transmitting any commercial, advertising, or promotional materials, or use the digital resume for commercial purposes. We require that you do not provide any content that violates any law or may be considered to violate any law. You are obliged to abide by all the applicable law, as well as you agree to abide by these Terms, and in particular obligations set out in sec. 7 of these Terms. 
+
+As part of creating your Profile, you may be offered an option to be featured on other Profiles that share some of the same qualifications, job experience, or titles “Similar Profiles”. You can change your preferences at any time, and we will no longer feature your Profile on other Profiles. We do not guarantee that you will be featured on any Profile. You can come back at any time to set your preferences. Please refresh your browser if you don’t see your changes applied or contact our Customer Service team.
+
+ANY COMMUNICATION WITH THE SENDER WILL BE AT YOUR OWN RISK AND WILL BE SUBJECT TO THE DISCLAIMERS AND LIMITATIONS ON LIABILITY SET OUT IN THESE TERMS. PROVIDER GROUP (DEFINED IN SECTION 18) WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE (DIRECT, INDIRECT, PUNITIVE, ACTUAL, CONSEQUENTIAL, INCIDENTAL, SPECIAL, EXEMPLARY OR OTHERWISE) RESULTING FROM ANY USE OR MISUSE OF THE DIGITAL RESUME OR PROFILE. IF APPLICABLE LAW DOES NOT ALLOW ALL OR ANY PART OF THE ABOVE LIMITATION OF LIABILITY TO APPLY TO YOU, THE LIMITATIONS WILL APPLY TO YOU ONLY TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+
+Please note that the cancellation of your subscription will not result in the unpublishing of your Profile from the public resume database.    Your Profile may be removed by deleting your Account. You can manage your Profile privacy settings by logging into your Account. You can edit your Profile content and design within the constraints of the feature as well as manually publish and unpublish your Profile. Please note that with the Profile unpublishing, the contact form feature, as well as the tracking feature will be automatically disabled, and your Profile won’t be accessible to third parties . When you request that your Account be deleted, your Profile will no longer be visible on the public resume database. However, once your information is disclosed on Profile, it may have been already previously accessed, stored, and/or copied by others, and therefore, we are unable to delete the information from their systems. By sharing your Profile with third parties, you do so at your own risk. Once your Profile is published, we have no control over your publicly available data. 
+
+2. Resume Database
+
+Provider may offer as part of the service publicly available searchable database to which anyone can have access. When you decide to publish a Profile you will be automatically included as part of the database and your Profile will be searchable by anyone unless you actively opt-out. We will not show your address, phone number, or email address unless you have agreed to make this information available. Provider is not obligated to make available any information on the Profile and can remove it at any time without notice. You can change your privacy setting at any time by logging into your account and clicking on My Settings. Provider has no control over how third parties will use the information publicly visible on the database and you agree to share it at your own risk. Our searchable database will provide aleatory results depending on the job title and location where potential employers are looking to hire. Results are based on a computer system that provides results that best match the words imputed on the search form. If you prefer to have your Profile private, please set your privacy preferences on your Settings page and we will remove your profile from all publicly searchable databases.
+
+To the extent permitted by applicable law in your jurisdiction, you agree to indemnify and hold harmless Provider and its officers, directors, employees, agents, distributors, and affiliates from and against any and all claims, demands, liabilities, costs or expenses, including reasonable legal fees, resulting from your use of Profile and its inclusion on our public resume database (or from your use of the Contact form if you are acting as a Sender).
+
+D. Resume Storing Service
+
+Provider offers a resume and cover letter storing service free of charge as part of being a Registered User and having an active Account in our system. As long as you have an active username and password you will be able to access the documents you have created or uploaded into our system. As a Registered User you will always be able to view and edit these documents, but will not be able to print, download or share unless you have an active Subscription. This service will be available even after canceling your Subscription, so you are able to come back at any time and have all your documents waiting for you. If you do not want us to keep your documents, you may request your data be deleted by clicking here or contacting our Customer Service team.
+
+E. Resume Buttons
+
+Provider may make available Resume Buttons to include as part of your resume. These buttons are interactive and will provide an additional method of contact for employers that receive your resume. If you add a Resume Button to your resume, when an employer receives your resume, he/she will be able to click on the button(s) and contact you through a form. The information included on the form is confidential and is only shared with third parties that are part of the job application process. By including Resume Buttons on your resume you accept to share your information with the employer and any third party that is part of the job application process.
+
+Once an employer communicates with you through the Resume Button feature you will receive a notification on your Dashboard and also an email. You may also sign up to receive text notifications, this may be enabled or disabled on your Dashboard or via text message. The number of text notifications you will receive will depend on how many times you are contacted. Standard text message rates may apply.
+
+The Resume Buttons feature is optional and may not always be available. By including Resume Buttons, you authorize us to share the information included on your resume and receive messages from employers who wish to contact you further.
+
+All disclaimers, requirements, and waivers previously stated in subsection (c) apply to the Resume Buttons feature, including consent and acknowledgment by employers that we may inform customers via text message they have been contacted using Resume Buttons.
+
+F. Other Career Enhancing Services
+
+We want to help you get your resume out there and enhance your career in any possible way. Therefore, Provider may show or send you information about opportunities available. By using our Services, you also agree for Provider to share your information with third parties that we work with and that help us on the process of building career services. Sometimes, the sharing of information with third parties may involve a monetary compensation. You may manage your privacy settings at any time by login to your Account page, and clicking on the Settings section, or by contacting our friendly Customer Service team.
+
+As part of our Services, our writers have prepared articles to help you in your career journey. Our professional writers will always seek to provide the most accurate information. However, their advice is not meant to constitute legal advice. 
+
+G. Third Party Services Available Through the Site
+1. General Terms
+
+Provider may also partner with third party service providers to offer additional tools and services otherwise not available through the Site. These additional services may or may not have additional costs. Provided further that, depending on the type of integration available through our Site with such third party, you may be required to create a separate account with such third-party provider in order to receive the service. Provider has no control over any data shared by you nor over any services provided through such third-party sites. For support regarding such services, please visit the third-party site.
+
+H. Artificial Intelligence and other Machine Learning Tools
+
+Provider may use third party tools that integrate with our Services including artificial intelligence tools, machine learning and other autonomous systems that execute algorithms for the purpose of delivering Services to the Users. Provider may check, modify, correct, edit, or change at any moment the output generated by these tools. However, Provider does not guarantee that such output will be free from any errors or omissions. Provider also does not guarantee that such output will be available all the time and may remove such services at any time. If at any time during your experience in our Site you encounter material that may seem offensive, inaccurate or incorrect please let us know by contacting our Customer Service team at support@bold.com. Provider disclaims any liability that may arise by content generated as part of the usage of third-party artificial intelligence tools.
+
+I. Webinars
+
+As part of Provider’s offerings, we may offer webinars which provide information to our customers and visitors about different topics in their job searching journey. As part of the webinar the speaker(s) may promote their book, or any other product created by him/her. Provider does not in any way endorse any product promoted by the speaker and disclaims any liability. The information provided by speakers is done as a general knowledge basis and should not replace any legal or expert advice. Webinars are pre-recorded and the questions submitted through the chat are completely voluntary. The speaker will try to answer but does not ensure that your question(s) will or can be answered. 
+
+9. Payments and Subscriptions.
+
+If you purchase any Services that Provider offers for a fee, either on a one-time or on a subscription basis, you agree that Provider’s third-party vendors may store your payment information. You also allow Provider, through such third-party vendors, to use your payment method on file to process your subscription recurring charges and to process un-scheduled purchase transactions made by you through the Site. You also agree to pay the applicable fees for the services you order (including, without limitation, periodic fees for monthly or annual subscriptions, or any additional administrative charge that may be applied) as they become due plus all related taxes, and to reimburse us for all collection costs and interest for any overdue amounts. 
+
+There are various services offered by Provider that are free and do not have a payment requirement.  These can be accessed by any Visitor or Registered User at any time. Some of the free Services include using our resume builder, which offers unlimited use of our proprietary content and the ability of downloading a free .txt version of your resume. Provider also offers free template examples that might be downloaded and modified at any time. Also, there are other career related content accessible by just browsing our Site as a Visitor or Registered User.. Other additional features may require a payment. 
+
+Once your subscription is active, it will automatically renew as described on the offer page until you terminate the contract. The subscription fee is charged in advance, at the end of each billing period. Any recurring charge will be fixed at the price agreed to at the time of purchase. The specific billing terms for the services you order will be described on the offer or checkout page on the Site. Payment will be collected from the payment method chosen by you and provided by the User and found in your Account. Note that to avoid the unintended cancelation of your Subscription, certain credit card issuers may automatically notify us of any updates in your credit card and provide us the updated card details. This service is not controlled by Provider and your credit card issuer is solely responsible. 
+
+When you sign up and purchase a Subscription, you agree to automatic or recurring billing. You will be again notified of the billing terms and how to stop recurring billing on your transaction receipt. By signing up for Provider Services with recurring billing, you will be deemed to agree to those billing terms as described specifically on the Site. In the event that your payment method does not successfully process you authorize us to complete a partial payment of the available balance on your card. The remaining balance will be charged on a separate transaction either to the same card or any other card on file.
+
+For un-scheduled purchases, such as individual resume downloads, prints or emails, when such purchases are available, you agree that the Provider will charge your payment method on file for each of such un-scheduled purchases, individually, at the time of purchase. Such individual transactions are final and therefore, if you want a new modified version of your downloaded, printed or emailed resume, it will require a separate purchase.
+
+Provider may offer certain premium services such as Resume Review, Resume Writing, Premium Career Report and Cover Letter Writing, which may not be included in the cost of Provider’s basic subscription services. Failure to pay for these premium services, if purchased, may result in the termination of your subscription. Pricing for Provider’s Services may vary from time to time and may be dependent on your selection. Provider may customize your offer depending on your input and site settings.
+
+Depending on where you transact with us, the type of payment method used and where your payment method was issued, your transaction may be subject to foreign exchange fees or differences in prices, because of exchange rates. Your transaction may also be subject to foreign currency exchange fees assessed by your bank or card issuer. Provider is not responsible for any foreign currency exchange fees or surcharges and will not make any compensation or reimbursement for charges imposed by your bank or card issuer. Provider does not support all payment methods, currencies or locations for payment. If the payment method you use with us, such as a credit card, reaches its expiration date and you do not edit your payment method information or cancel your Account or the applicable service, you authorize us to continue billing that payment method and you remain responsible for any uncollected amounts. Your obligation to pay fees continues until you cancel your subscription. All applicable taxes are calculated based on the billing information you provide us at the time of purchase.
+
+ 
+
+10. Cancellations.
+
+You may cancel your subscription anytime by contacting our customer service department or by going to the online cancel page under your settings  page. Provider will send an email with a cancellation number to confirm any cancellation request. If you do not receive this confirmation and still wish to cancel, please contact our customer service department directly for further assistance. You may request a refund if notice of cancellation of your subscription is provided before the end of the initial period, if the initial period is offered. 
+
+We do our best to describe every product or service offered on the Service as accurately as possible. However, we are human, and therefore we do not warrant that product specifications, pricing, or other content on the online services is complete, accurate, reliable, current, or error-free. In the event of any errors relating to the pricing or specifications, Provider shall have the right to refuse or cancel any orders in its sole discretion. Additional terms may apply.
+
+ 
+
+11.  Our Intellectual Property, Trademarks and Copyrights.
+
+Except with respect to your User Content and other Registered Users’ Content, you agree that, as between you and us, Provider (and our affiliated companies and suppliers) own all rights, title and interest in the Service and all tools, and all related intellectual property rights. The Service as a whole is copyrighted as a collective work, and individual works or content appearing on or accessible through the Site owned by or licensed to Provider or its content providers are likewise subject to copyright protection domestically and internationally. Likewise, all data files, program files, software, code, proprietary methods, systems and other materials that are made available to download from or used to provide the Service (“Materials”) may not be copied, modified, reproduced, republished, posted, transmitted, sold, offered for sale, or redistributed in any way without our prior written permission and the prior written permission of our applicable licensors. The Materials are protected by copyrights, patents, trade secrets or other proprietary rights.
+
+You must abide by all copyright notices, information, or restrictions contained in or attached to any of our Materials. Nothing in this Agreement grants you any right to receive delivery of a copy of our Materials or to obtain access to our Materials except as generally and ordinarily permitted through the Service according to these Terms. Certain names, logos, distinctive features, source identifiers and other materials displayed on the Site or in the Services, including its “look and feel”, constitute trademarks, tradenames, service marks, trade dress or logos (“Trademarks”) of us or other entities. All Trademarks not owned by Provider that appear on this site are the property of their respective owners. You are not authorized to use any such Trademarks. Ownership of all such Trademarks and the goodwill associated therewith remains with us or those other entities. Unless you first obtain the copyright owner’s prior written consent, you may not copy, distribute, publicly perform, publicly display, digitally perform (in the case of sound recordings), or create derivative works from any copyrighted work made available or accessible via the Service. You will not remove, alter or obscure any copyright, trademark, service mark or other proprietary rights notices incorporated in or accompanying the Service.
+
+The Site, and all intellectual property thereunder, is owned by Bold Limited.
+
+ 
+
+12. Your Use of Materials.
+
+Your right to make use of the Service and any Material or other content appearing on it is subject to your compliance with these Terms. Modification or use of the Material or any other content on the Service for any purpose not permitted by these Terms may be a violation of our intellectual property rights (see Section 11 above) as protected by law and these Terms and is prohibited.
+
+You may copy, access, download and display Materials and all other content displayed on the Service for non-commercial, personal or entertainment use. The Materials and all other content on the Service may not otherwise be copied, reproduced, republished, uploaded, displayed, posted, transmitted, distributed, licensed or used in any way unless specifically authorized by Provider. Any authorization to copy or download Material granted by Provider in any part of the Service for any reason is restricted to making a single copy for non-commercial, personal, entertainment use, and is subject to your keeping intact all copyright and other proprietary notices. Using any Material on any other website or networked computer environment is prohibited. Also, decompiling, reverse engineering, disassembling, or otherwise reducing the code used in any software on the Service into a readable form in order to examine the construction of such software and/or to copy or create other products based (in whole or in part) on such software, is prohibited (please refer to our Acceptable Use Policy for more information).
+
+ 
+
+13. Public Discourse and Forums.
+
+The Service may include various bulletin boards, chat rooms, community pages, comments or chat features, or other forums (“Forums”) where you can post User Content, including, but not limited to, your observations and comments on designated topics and on others’ User Content. Provider cannot guarantee that other Users will not use the ideas and information that you share. Therefore, if you have an idea or information that you would like to keep confidential and/or do not want others to use, do not post it publicly on the Service. When you disclose information or rely on any information in the Forums, you do so at your own risk. Provider reserves the right to, but has no obligation to, monitor the Forums, or any postings or other materials that you or other users transmit or post on the Forums, to alter or remove any such materials, and to disclose such materials and the circumstances surrounding their transmission to any third party in order to operate the Service properly or to comply with legal obligations or governmental requests. Furthermore, you acknowledge that a large volume of information is available in these Forums and that people participating in such Forums may occasionally post message or make statements, whether intentionally or unintentionally, that are inaccurate, misleading, deceptive, abusive or even unlawful. Provider neither endorses nor is responsible for such messages or statements, or for any opinion, advice, information or other utterance made or displayed in the Forums by you or the other users. The opinions expressed in the Forums reflect solely the opinions of you and/or the other users and may not reflect the opinions of Provider. Provider is not responsible for any errors or omissions in postings, for hyperlinks embedded in messages or for any results obtained from the use of the information contained in the Forums. Under no circumstances will Provider be liable for any loss or damage caused by your reliance on the information in the Forums or posted User Content or your use of the Forums or User Content. ANY USE OF THE FORUMS WILL BE AT YOUR OWN RISK AND WILL BE SUBJECT TO THE DISCLAIMERS AND LIMITATIONS ON LIABILITY SET OUT IN THESE TERMS.
+
+ 
+
+14. Invited Submissions.
+
+From time to time, areas on the Site may expressly request submissions of ideas or improvements through promotions, surveys or otherwise (“Invited Submissions”’). Sometimes Provider may incentivize users to participate in Invited Submissions. Where this is the case, please carefully read any Additional Terms that govern those submissions, as they will affect your legal rights. If no Additional Terms govern those submissions, then these Terms will apply in full to any Invited Submissions you make. IN ANY EVENT, ANY MATERIAL YOU SEND TO US MAY NOT BE TREATED AS CONFIDENTIAL. Regardless of any industry custom or practice, we will not pay you for the use of any content or submissions that you submit to the Site. Provider may use such content and submissions as user testimonials.
+
+ 
+
+15. Disclaimer Regarding Testimonials, Ratings and Social Counters
+
+The Service may contain testimonials and opinions (“Testimonials”) by users of our services. These testimonials reflect the real-life experiences and opinions of such users. However, the experiences are personal to those particular users, and may not necessarily be representative of all users of our services. We do not claim, and you should not assume, that all users will have the same experiences. YOUR INDIVIDUAL RESULTS MAY VARY.
+
+The testimonials on the Service are submitted in various forms such as text, audio and/or video, and are reviewed by us before being posted. They appear on the Service as given by the users, except for the correction of grammar or typing errors. Some testimonials may have been shortened for the sake of brevity where the full testimonial contained extraneous information not relevant to the general public. For privacy purposes, photos or names added next to testimonials may not always represent the person giving the testimonial. The views and opinions contained in the testimonials belong solely to the individual user and do not reflect our views and opinions. We are not affiliated with users who provide testimonials, and users are not paid in cash or compensated for their testimonials unless the testimonial is part of an incentivized Invited Submission.
+
+Provider may display Site usage data to users “Social Proof”. This information is regularly kept up to date, but it may depend on third party tools that are not always in the Provider’s control. In some cases, and for confidentiality and privacy purposes, Social Proofs may be displayed along with a disclaimer which may include further details on how the number was calculated. 
+
+Ratings displayed by third party tools are not controlled by Provider and they may be shown as part of an API integration or posted as designs that are reviewed for accuracy and correctness. Provider works hard to maintain the most accurate data but sometimes we depend on third party systems which we may not control.    
+
+ 
+
+16. Copyright and Infringement Notification Policy
+
+We respect the intellectual property rights of others and encourage you to do the same. Accordingly, we have a policy of removing content that violates the intellectual property rights of others, suspending access to the Service (or any portion thereof) to any user who uses the Service in violation of someone else’s intellectual property rights, and/or terminating in appropriate circumstances the Account of any user who uses the Service in violation of someone else’s intellectual property rights.
+
+a) Submitting a Notification for Removing Infringing Content. We have implemented procedures for receiving written notification of claimed copyright infringement and for processing such claims in accordance with applicable law (including 17 U.S.C. § 512 Digital Millennium Copyright Act (“DMCA”)). If you believe your copyright or other intellectual property right is being infringed by a user of this Site, please provide written notice to our agent for notice of claims of infringement at either:
+
+Attn: BOLD LLC, DMCA Designated Agent,
+
+City View Plaza II, Ste 6000
+
+48 Road 165
+
+Guaynabo, Puerto Rico 00968,
+
+or at,
+
+Email: legal@bold.com. 
+
+To be sure the matter is handled immediately, your written notice must:
+
+Contain your physical or electronic signature;
+Identify the copyrighted work or other intellectual property alleged to have been infringed;
+Identify the allegedly infringing material in a sufficiently precise manner to allow us to locate that material;
+Contain adequate information by which we can contact you (including postal address, telephone number, and e-mail address);
+Contain a statement that you have a good faith belief that use of the copyrighted material or other intellectual property is not authorized by the owner, the owner’s agent or the law;
+Contain a statement that the information in the written notice is accurate; and
+Contain statement, under penalty of perjury, that you are authorized to act on behalf of the copyright or other intellectual property right owner.
+
+Unless the notice pertains to copyright or other intellectual property infringement, the agent will be unable to address the listed concern.
+
+b) Submitting a Counter-Notification. We will notify you that we have removed or disabled access to copyright-protected material that you provided if such removal is pursuant to a validly received DMCA take-down notice. In response, if you believe the material was removed or disabled by mistake or because of a misidentification of the material, you may provide our agent with a written counter-notification that includes the following information:
+
+Your physical or electronic signature;
+Identification of the material that has been removed or to which access has been disabled, and the location at which the material appeared before it was removed or access to it was disabled;
+A statement from you under the penalty of perjury, that you have a good faith belief that the material was removed or disabled as a result of a mistake or misidentification of the material to be removed or disabled; and
+Your name, physical address and telephone number, and a statement that you consent to the jurisdiction of a court for the judicial district in which your physical address is located, or if your physical address is outside of the United States of America, for any judicial district in which we may be located, and that you will accept service of process from the person who provided notification of allegedly infringing material or an agent of such person.
+
+c) Termination of Repeat Infringers. We reserve the right, in our sole discretion, to terminate the accounts of repeat infringers in appropriate circumstances.
+
+Provider seeks to preserve any and all exemptions from liability that may be available under the copyright law, but does not necessarily stipulate that it is a service provider as defined in USC section 512(c) or elsewhere.
+
+ 
+
+17. User Interactions and Release.
+
+You are solely responsible for your interactions with other users of the Site and any other parties with whom you interact through the Site. If you have a dispute with one or more users (including merchants), you hereby release the Provider Group (defined in Section 18) from any claims, demands, liabilities, costs or expenses and damages (actual and consequential of every kind and nature, known and unknown, arising out of or in any way connected with such disputes. In entering into this release, you expressly waive any protections (whether statutory or otherwise) to the extent permitted by applicable law, that would otherwise limit the coverage of this release to include only those claims which you may know or suspect to exist in your favor at the time of agreeing to this release. If you are a California resident, you waive California Civil Code §1542, which says: “A GENERAL RELEASE DOES NOT EXTEND TO CLAIMS WHICH THE CREDITOR DOES NOT KNOW OR SUSPECT TO EXIST IN HIS OR HER FAVOR AT THE TIME OF EXECUTING THE RELEASE, WHICH IF KNOWN BY HIM OR HER MUST HAVE MATERIALLY AFFECTED HIS SETTLEMENT WITH THE DEBTOR.”
+
+ 
+
+18.  Disclaimer of Warranties.
+
+YOUR USE OF THE SERVICE IS AT YOUR OWN RISK. THE SERVICE AND ALL THE MATERIALS, INFORMATION, SOFTWARE, AND OTHER CONTENT IN THE SERVICE ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, AND TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, PROVIDER AND ANY SUBSIDIARIES OR AFFILIATED COMPANIES OF THE PROVIDER (“PROVIDER GROUP”) DISCLAIM ALL WARRANTIES AND CONDITIONS, EXPRESS IMPLIED OR COLLATERAL, RELATED TO THE SERVICE, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. THE PROVIDER GROUP DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SERVICE WILL BE AVAILABLE, UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE SERVICE OR THE SERVERS THAT MAKE THE SERVICE AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. THE PROVIDER GROUP DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS OR CONDITIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THE MATERIAL, INFORMATION, SOFTWARE, FACILITIES, SERVICES OR OTHER CONTENT ON THE SERVICE OR ANY WEB SERVICES LINKED TO THE SERVICE IN TERMS OF THEIR CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE. THE PROVIDER GROUP MAKES NO WARRANTIES OR CONDITIONS THAT YOUR USE OF SERVICE, OR THE MATERIALS, INFORMATION, SOFTWARE, FACILITIES, OR OTHER CONTENT IN THE SERVICE OR ANY WEB SERVICE WILL NOT INFRINGE THE RIGHTS OF OTHERS AND THE PROVIDER GROUP ASSUMES NO LIABILITY OR RESPONSIBILITY FOR ERRORS OR OMISSIONS IN SUCH MATERIALS, INFORMATION, SOFTWARE, FACILITIES, OR OTHER CONTENT OF THE SERVICE OR ANY OTHER WEB SERVICE.
+
+IF APPLICABLE LAW DOES NOT ALLOW THE EXCLUSION OF SOME OR ALL OF THE ABOVE IMPLIED WARRANTIES AND CONDITIONS, THE ABOVE EXCLUSIONS WILL APPLY TO YOU ONLY TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+
+IF YOU ARE ACCESSING THE SERVICE FROM THE EUROPEAN UNION OR OTHER JURISDICTIONS THAT TO DO NOT RECOGNIZE DISCLAIMERS OF CERTAIN WARRANTIES, NOTHING IN THIS AGREEMENT SHALL EXCLUDE OR LIMIT LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM THE NEGLIGENCE OF EITHER PARTY OR THEIR SERVANTS, AGENTS OR EMPLOYEES.
+
+ 
+
+19. Limitation of Liability.
+
+THE PROVIDER GROUP DISCLAIMS ALL LIABILITY WHETHER BASED IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, AND DOES NOT ACCEPT ANY LIABILITY FOR ANY LOSS OR DAMAGE (DIRECT, INDIRECT, PUNITIVE, ACTUAL, CONSEQUENTIAL, INCIDENTAL, SPECIAL, EXEMPLARY OR OTHERWISE) RESULTING FROM ANY USE OR MISUSE OF, OR INABILITY TO USE, THE SITE OR ANY OTHER WEB SITE, OR THE MATERIAL, INFORMATION, SOFTWARE, FACILITIES, SERVICES OR OTHER CONTENT ON THE SITE OR ANY OTHER WEB SITE, REGARDLESS OF THE BASIS UPON WHICH LIABILITY IS CLAIMED AND EVEN IF ANY MEMBER OF THE PROVIDER GROUP HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE. WITHOUT LIMITATION, YOU (AND NOT ANY MEMBER OF THE PROVIDER GROUP) ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION IN THE EVENT OF ANY SUCH LOSS OR DAMAGE ARISING.
+
+IF APPLICABLE LAW DOES NOT ALLOW ALL OR ANY PART OF THE ABOVE LIMITATION OF LIABILITY TO APPLY TO YOU, THE LIMITATIONS WILL APPLY TO YOU ONLY TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+
+ 
+
+20. Indemnity.
+
+To the extent permitted by applicable law in your jurisdiction, you agree to indemnify and hold harmless Provider and its officers, directors, employees, agents, distributors and affiliates from and against any and all claims, demands, liabilities, costs or expenses, including reasonable legal fees, resulting from your breach of these Terms, including any of the foregoing provisions, representations, warranties or conditions, and/or from your placement or transmission of any content onto Provider’s servers, and/or from any and all use of your Account.
+
+ 
+
+21. Investigations.
+
+Provider reserves the right to investigate suspected violations of these Terms, including without limitation any violation arising from any submission, posting or e-mails you make or send to any Forum. Provider may seek to gather information from the user who is suspected of violating these Terms, and from any other user. Provider may suspend any users whose conduct or postings are under investigation and may remove such material from its servers as it deems appropriate and without notice. If Provider believes, in its sole discretion, that a violation of these Terms has occurred, it may take any corrective action it deems appropriate, as permitted by applicable law. Provider will fully cooperate with any law enforcement authorities or court order requesting or directing Provider to disclose the identity of anyone posting any e-mails, or publishing or otherwise making available any materials that are believed to violate these Terms. BY ACCEPTING THIS AGREEMENT, YOU WAIVE AND HOLD HARMLESS ALL MEMBERS OF THE PROVIDER GROUP FROM ANY CLAIMS RESULTING FROM ANY ACTION TAKEN BY ANY MEMBER OF THE PROVIDER GROUP DURING OR AS A RESULT OF ITS INVESTIGATIONS AND/OR FROM ANY ACTIONS TAKEN AS A CONSEQUNCE OF INVESTIGATIONS BY EITHER A MEMBER OF THE PROVIDER GROUP OR LAW ENFORCEMENT AUTHORITIES.
+
+ 
+
+22. Third-Party Sites.
+
+The Service may link you to other sites on the Internet that may or may not be affiliated with Provider. These sites may contain information about job opportunities, employers, interview products, job candidates or material that some people may find inappropriate or offensive. These other sites are not under the control of Provider, and you acknowledge that (whether or not such sites are affiliated in any way with Provider), Provider is not responsible for the accuracy of job postings, employer descriptions, candidate resumes, legality, decency, or any other aspect of the content of such sites. The inclusion of such a link does not imply endorsement of any site by Provider or any association with its operators. If you elect to use such third-party sites, and/or if you elect to ‘click’ on a link or button, you understand that (a) you will be leaving our Site and (b) your use of any such third-party sites will be subject to any terms and conditions and privacy policies required by the applicable third-party provider(s). Provider does not make any representations or warranties as to the security of any information (including, without limitation, credit card and other personal information) you might be requested to give any third party, and you irrevocably waive any claim against us with respect to such sites. We strongly encourage you to use caution before providing any sensitive information (e.g., social security numbers or financial information) to any third party and to make whatever investigation you feel necessary or appropriate before proceeding with any communications with any of these third parties.
+
+Provider may also partner with third party sites to provide additional services as part of your subscription. These services may or may not be free to use and Provider reserves the right to charge additional fees to Subscribers to allow access to such third party tools. Once the User leaves Provider’s site and access the third-party site, Provider may not be able to support such third-party site usage, and user may need to contact the third-party customer service for support, if needed. Provider’s customer service may take reasonable steps to help the Subscribers, but they may be redirected to the third-party site for further support. The data that you share with the third-party is not under Provider’s control and it’s shared by you in compliance with the third party Privacy Policy and at your own risk. Cancellation of your subscription may also cancel access to the third-party services. Provider may modify, suspend, or terminate third-party services at any time at Provider’s sole discretion, which may affect your access to the third-party account. If this affects your access, you will receive a notice on your Dashboard before the update. Provider disclaims liability for any changes in third-party sites and services, their availability, content, and features. Provider also disclaims liability for any additional fees charged by third parties for access to additional tools or services they provide beyond those made available with our subscription. 
+
+ 
+
+23. Governing Law.
+
+Subject to provisions below, this agreement is subject to the laws of the State of New York (US).
+
+To the fullest extent permitted by the applicable jurisdiction, these Terms shall be governed by, construed and enforced in accordance with the laws applicable to the merchant outlet location that processed your payment. Therefore, for transactions processed by BOLD LLC, the laws of the State of New York, United States of America, shall apply. If your transaction was processed by Auxiliant S.à.r.l, the laws of Luxembourg shall apply. Accordingly, both parties submit to the non-exclusive jurisdiction of the courts of New York or Luxembourg, which means that in order to assert your rights under these Terms of Use, you may bring an action in front of a court in New York or Luxembourg.
+
+Notwithstanding the foregoing, If you are a U.S. resident, except as otherwise provided in this section or as otherwise required by law, these Terms involve transactions between the parties in interstate commerce and shall be governed by the Federal Arbitration Act, 9 USC § 1-19 of the United States of America. Judgment upon any interim or final award shall be entered and confirmed in any court or tribunal of competent jurisdiction. The substantive law of the State of New York (excluding its conflicts of law provisions) shall apply to all disputes and these Terms. If there is a difference between the Federal Arbitration Act and New York law, the Federal Arbitration Act controls. In any circumstances where the foregoing Terms permit the parties to litigate in court, the parties hereby agree to submit to the personal jurisdiction of the courts located within New York, New York for such purpose.
+
+These Terms will not be governed by the United Nations Convention on Contracts for the International Sale of Goods.
+
+ 
+
+24.  Binding Arbitration Agreement and Class Action Waiver.
+
+PLEASE READ THIS SECTION CAREFULLY – IT MAY SIGNIFICANTLY AFFECT YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT AND TO HAVE A JURY HEAR YOUR CLAIMS.  IT CONTAINS PROCEDURES FOR MANDATORY BINDING ARBITRATION AND A CLASS ACTION WAIVER. 
+
+Scope of the Arbitration Agreement.  You and we each agree that, except as provided below, any dispute, claim, or controversy relating in any way to or arising in any way out of the Terms, the Provider’s services, or the Provider’s products, including the Service, and any use (or lack of use) or access (or lack of access) thereto, or purchase from the Provider (collectively, “Dispute”)—irrespective of when that Dispute arose—whether based in contract, warranty, tort, statute, regulation, ordinance, or any other legal or equitable basis, shall be resolved exclusively through final and binding individual arbitration, rather than in Court.  You and we thereby agree to waive any right to a jury trial, and agree that you and we may bring claims against each other only in an individual capacity, and not as a plaintiff or class member in any purported class or representative proceeding.   “Dispute” will be given the broadest possible meaning allowable under law.
+
+(a) Informal Dispute-Resolution Process.  Either party asserting a Dispute shall first try in good faith to resolve it by providing written notice to the other party, as specified below, describing the facts and circumstances relating to the Dispute (including any relevant documentation).  You must send any notice to legal@bold.com or to the U.S. mailing address listed in the “Contact Us” section of these Terms.  Any notice we send to you will be sent to the most recent contact information that you provide us.  If no such information exists or if such information is not current, we have no obligation under this section. For a period of sixty (60) days from the date of receipt of notice from the other party, you and the Provider will attempt in good faith to resolve the Dispute, though nothing will require either you or the Provider to resolve the Dispute on terms that either you or the Provider, in each of our sole discretion, find unacceptable.  Both you and the Provider agree that this Informal Dispute-Resolution Process is a condition precedent which must be satisfied before the initiation of arbitration against the other party.   
+
+(b) Arbitrating Disputes.  After the Informal Dispute-Resolution Process, any remaining Dispute will be resolved through binding arbitration, using the English language, administered by JAMS under its Streamlined Arbitration Rules and Procedures (the “JAMS Rules”) then in effect (those rules are deemed to be incorporated by reference into this section, and as of the date of these Terms).  If arbitration before JAMS is unavailable or impossible for any valid reason, any Dispute remaining after the Informal Dispute-Resolution Process will be conducted by, and according to, the rules and regulations then in effect of the American Arbitration Association (AAA).  Either Party may initiate arbitration of a Dispute upon completion of the Informal Dispute-Resolution Process for that Dispute.  The arbitrator, and not any federal, state, or local court or agency, shall have exclusive authority to resolve any and all Disputes arising out of or relating to the formation, existence, scope, validity, interpretation, applicability, or enforceability of this agreement to arbitrate, or any part of it, or of these Terms of Use, including, but not limited to, any claim (except as explicitly outlined below) that all or any part of this agreement to arbitrate or the Terms of Use is void or voidable.  If any party disagrees about whether any portion of this Section 24 can be enforced or whether it applies to the Dispute, the parties agree that the arbitrator will decide that Dispute.  Notwithstanding the foregoing, the parties agree that any issue concerning the validity of the class action waiver contained in this arbitration agreement must be decided by a court, and an arbitrator does not have authority to consider the validity of the class action waiver.  Both you and the Provider understand and agree that we are waiving our right to sue or go to court to assert or defend our rights, except as set forth below.
+
+Unless you and the Provider agree otherwise, including to conduct the arbitration by telephone or videoconference or to have the arbitrator decide the Dispute without a hearing, any arbitration brought by or against a User who lives in the United States shall take place in-person in the User’s hometown or in New York, NY, unless the arbitrator determines that a different location would better serve the convenience of the parties.  If you live outside the United States, any arbitration will take place in New York, NY.  
+
+Arbitration will be handled by a single arbitrator in accordance with the JAMS Rules. Judgment on the arbitration award may be entered in any court that has jurisdiction. Any arbitration under these Terms will take place on an individual basis – class arbitrations and class actions are not permitted. You understand that by agreeing to these Terms, you and the Provider are each waiving the right to trial by jury or to participate in a class action or class arbitration.
+
+(c) Exceptions.  Notwithstanding the arbitration agreement in this Section 24, you and the Provider agree that the following types of Disputes will be resolved in a court of proper jurisdiction, unless both you and the Provider agree to submit the Dispute to arbitration pursuant to the procedures in this binding arbitration agreement:
+
+(i) Disputes or claims within the jurisdiction of a small claims court consistent with the jurisdictional and dollar limits that may apply, as long as the action or proceeding is brought and maintained as an individual action or proceeding and not as a class, representative, or consolidated action or proceeding;
+
+(ii) Disputes or claims where the sole form of relief sought is injunctive relief (including public injunctive relief); or
+
+(iii) intellectual property Disputes.
+
+Any litigation in court of the foregoing types of Disputes (except for small claims court actions) may be commenced only in a federal or state court located within New York, NY, and you and the Provider each consent to the jurisdiction of those courts for such purposes.  Regardless of whether the foregoing types of Disputes in this Exceptions provision are resolved by a court or pursuant to arbitration, you and the Provider agree that the Dispute is subject to the class action waiver provision set in this Section 24.
+
+(d) Costs of Arbitration. Payment of all filing, administration, and arbitrator costs and expenses will be governed by the JAMS Rules, except that if you demonstrate that any such costs and expenses owed by you under those rules would be prohibitively more expensive than a court proceeding, the Provider will pay the amount of any such costs and expenses that the arbitrator determines are necessary to prevent the arbitration from being prohibitively more expensive than a court proceeding (subject to possible reimbursement as set forth below). 
+
+Each party is responsible for his, her, their or its own attorneys’ fees and expenses, and the Provider will not pay your attorneys’ fees or expenses except to the extent ordered by the arbitrator.  For the avoidance of doubt, in cases where a statute give you the right to recover attorneys’ fees if you prevail, the arbitrator may award attorneys’ fees pursuant to that statute.  In the event the arbitrator determines the Dispute you brought to arbitration is, in whole or in part, frivolous according to Federal Rule of Civil Procedure 11, or brought for an improper purpose, you agree to reimburse the Provider for all fees associated with the arbitration paid by the Provider that you otherwise would have been obligated to pay under the JAMS Rules. In determining whether a Dispute is frivolous, in whole or in part, the arbitrator may consider whether the Provider has offered you a full refund of the sum you paid to the Provider for services provided by the Provider or has otherwise offered full relief to you in relation to your individual claim. If the arbitrator, upon final disposition of the case, finds your Dispute was not frivolous, the Provider will reimburse any filing fees that you paid and were not otherwise reimbursed.  Judgment on the arbitration award may be entered in any court that has jurisdiction.  
+
+(e) Opt-Out. You have the right to opt-out and not be bound by the arbitration provisions set forth in these Terms by sending written notice of your decision to opt-out to:
+
+BOLD LLC
+
+City View Plaza II, Suite 6000
+
+Guaynabo, PR 00968
+
+United States of America
+
+The notice must be sent to the Provider within thirty (30) days of your first agreeing to these Terms; otherwise you shall be bound to arbitrate disputes on a non-class basis in accordance with these Terms.  If you opt out of only the arbitration provisions, and not also the class action waiver provision, the class action waiver still applies.  You may not opt out of only the class action waiver provision and not also the arbitration provisions.  If you opt-out of the arbitration provisions, or if you opt out of both the arbitration and the class action waiver provisions, the Provider will also not be bound by them.
+
+(f) WAIVER OF RIGHT TO BRING CLASS ACTION AND REPRESENTATIVE CLAIMS.  To the fullest extent permitted by applicable law, you and the Provider each agree that any proceeding, whether in court or arbitration, to resolve any Dispute will be brought and conducted ONLY IN THE RESPECTIVE PARTY’S INDIVIDUAL CAPACITY AND NOT AS PART OF ANY CLASS (OR PURPORTED CLASS), CONSOLIDATED, MULTIPLE-PLAINTIFF, OR REPRESENTATIVE ACTION OR PROCEEDING (“CLASS ACTION”).  You and the Provider AGREE TO WAIVE THE RIGHT TO PARTICIPATE AS A PLAINTIFF OR CLASS MEMBER IN ANY CLASS ACTION.  You and the Provider EXPRESSLY WAIVE ANY ABILITY TO MAINTAIN A CLASS ACTION IN ANY FORUM (whether arbitration, court, or otherwise).  If the dispute is subject to arbitration, THE ARBITRATOR WILL NOT HAVE THE AUTHORITY TO COMBINE OR AGGREGATE CLAIMS, CONDUCT A CLASS ACTION, OR MAKE AN AWARD TO ANY PERSON OR ENTITY NOT A PARTY TO THE ARBITRATION.  Further, you and the Provider agree that the ARBITRATOR MAY NOT CONSOLIDATE PROCEEDINGS FOR MORE THAN ONE PERSON’S CLAIMS, AND THE ARBITRATOR MAY NOT OTHERWISE PRESIDE OVER ANY FORM OF A CLASS ACTION.  For the avoidance of doubt, the waiver of the right to bring claims in or otherwise participate in a class, representative, or consolidated action or proceeding set forth in the class action waiver contained herein does not prevent you from seeking public injunctive relief in an individual capacity to the extent otherwise authorized by law.
+
+IF THIS CLASS ACTION WAIVER IS LIMITED, VOIDED, OR FOUND UNENFORCEABLE, THEN, UNLESS THE PARTIES MUTUALLY AGREE OTHERWISE, THE PARTIES’ AGREEMENT TO ARBITRATE SHALL BE NULL AND VOID WITH RESPECT TO SUCH PROCEEDING SO LONG AS THE PROCEEDING IS PERMITTED TO PROCEED AS A CLASS ACTION.  If a court decides that the limitations of this Section 24(f) are deemed invalid or unenforceable, any putative class, private attorney general, or consolidated or representative action must be brought in a court of proper jurisdiction and not in arbitration.
+
+(g) Miscellaneous. We will provide notice of any material changes to this binding Arbitration Agreement and/or class action waiver (which may be satisfied by updating these Terms of Use, unless not otherwise permitted by law), in which case you will have the right to opt out of the arbitration provisions and/or class action waiver within 30 days after such change, consistent with the terms above. Except as set forth above regarding the class action waiver provision, if any portion of these arbitration provisions is deemed invalid or unenforceable, it will not invalidate the remaining portions of these arbitration provisions. Other than with respect to the class action waiver, as set forth above, only the arbitrator is authorized to make determinations as to the scope, validity, or enforceability of this binding Arbitration Agreement, including whether any Dispute falls within its scope. 
+
+In the event that the arbitration agreement and/or class action waiver in this Section 24 is for any reason held to be unenforceable, any litigation against us (except for actions in small claims court) may be commenced only in a federal or state court located in New York, NY, and you and the Provider each consent to the jurisdiction of those courts for such purposes.  In the event any provision of these Terms of Use is found by an arbitrator or court of competent jurisdiction to be invalid, void, or unenforceable, you agree that, unless it materially affects the entire intent and purpose of these Terms of Use, the invalidity, voidness, or unenforceability shall affect neither the validity of these Terms of Use nor the remaining provisions herein (except as set forth above with respect to the class action waiver), and the provision in question shall be deemed to be replaced with a valid and enforceable provision most closely reflecting the intent and purpose of the original provision.
+
+(h) Non-Us Residents: If any controversy, allegation, or claim (including any non-contractual claim) arises out of or relates to the Site or these Terms, then you and we agree to send a written notice to the other providing a reasonable description of this Section 24(b) dispute, along with a proposed resolution of it. Our notice to you will be sent to you based on the most recent contact information that you provide us. If no such information exists or if such information is not current, then, we have no obligation under this section. For a period of sixty (60) days from the date of receipt of notice from the other party, Provider and you will engage in a dialogue in order to attempt to resolve the dispute, though nothing will require either you or Provider to resolve the Section 24(b) dispute on terms either you or Provider, in each of our sole discretion, are uncomfortable. Nothing in this Section will prevent a party from pursuing their claims in Court or another complaint process.
+
+ 
+
+25. Local Regulations.
+
+Provider makes no representation that Materials or other content on the Service are appropriate or available for use outside of the United States of America, and if accessing the Service from outside the United States, then Provider makes no representation that Materials or other content on the Site are appropriate or available for use from your current location. Provider may have certain localized websites available to you in the United Kingdom, Canada, France, Belgium, Switzerland, Italy, Germany, Australia, New Zealand, the Netherlands, Poland and Spain, and their territories, possessions and protectorates, and others, but makes no representation as to availability and appropriateness of the Service in such jurisdictions. If you choose to access the Service from other locations outside the United States, you do so on your own initiative and at your own risk.
+
+You are responsible for complying with local laws, if and to the extent local laws are applicable.
+
+ 
+
+26. Electronic Communications.  
+
+The communications between you and Provider may be made through electronic means, whether you visit the Service or send Provider emails, or whether Provider posts notices on the Service or communicates with you via email. We will communicate with you using various types of electronic communication channels, including e-mail, also by posting messages or messages on the website or as part of other website functionalities, such as the Dashboard. For contractual purposes, you (1) consent to receive communications from Provider in an electronic form; and (2) agree that all terms and conditions, agreements, notices, disclosures, and other communications that Provider provides to you electronically satisfy any legal requirement that such communications would satisfy if it were to be in writing. The foregoing does not affect your statutory rights.
+
+ 
+
+27.  California Residents Notice
+
+Under California Civil Code Section 1789.3, California residents are entitled to the following consumer rights notice: The Service is provided BOLD LLC. If you have a question or complaint regarding the Service, please contact Customer Service at support@bold.com. You may also contact us by writing us at BOLD LLC, City View Plaza II, 48 Road 165 Suite 6000, Guaynabo, PR 00968, USA. California residents may reach the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by post at 1625 North Market Blvd., Suite N 112, Sacramento, CA 95834 or by telephone at (916) 445-1254 or (800) 952-5210 or Hearing Impaired at TDD (800) 326-2297 or TDD (916) 322-1700. Email:  dca@dca.ca.gov.
+
+ 
+
+28. General.
+
+If any provision of these Terms shall be unlawful, void, or for any reason unenforceable, then that provision shall be deemed severable from this agreement and shall not affect the validity and enforceability of any remaining provisions. This is the entire agreement between you and Provider relating to the matters contained here and the Site.
+
+ 
+
+29. Contact Us.
+
+The Site is controlled and operated by Provider. Whether you access the services through any of our internet properties or family Sites you may contact Provider using the information provided herein. Please forward any comments or complaints about the Site to support@bold.com or write to BOLD LLC, City View Plaza II, Suite 6000, Guaynabo, PR 00968, United States of America or to Auxiliant S.à.r.l, 1A, rue Thomas Edison, L-1445 Strassen, Luxembourg.
+
+Customers have been hired by: *
+
+*The professionals using our tools have previously been employed by these organizations.
+
+Zety’s job-winning Resume Builder, Cover Letter Generator, and professionally designed resume templates are powered by leading career experts and data-driven insights.
+
+Create My Resume
+
+Follow us
+
+ Facebook
+ LinkedIn
+Call us: 800-985-7561
+Email: support@zety.com
+
+Resume
+
+Resume Builder
+Resume Templates
+Resume Checker
+Resume Examples
+How to Write a Resume
+Resume Help
+
+CV
+
+CV Builder
+CV Templates
+CV Examples
+How to Write a CV
+CV Help
+
+Cover Letter
+
+Cover Letter Builder
+Cover Letter Templates
+Cover Letter Examples
+Cover Letter Format
+How to Write a Cover Letter
+Cover Letter Help
+
+Support
+
+About
+Pricing
+Contact
+Editorial Guidelines
+Media Mentions
+Accessibility
+Affiliates
+Privacy Policy
+Terms of service
+Cookies & Tracking Policy
+
+Choose Your Region
+
+English (US)
+Deutsch
+Español
+Français (France)
+Italiano
+Polski
+Português (Brasil)
+© 2026 Works Limited. All Rights Reserved.
+ 
+
+You control your data
+
+We and our partners use cookies to provide you with our services, and depending on your choices, gather analytic information and tailor your experience on the site. You can manage your cookie preferences by clicking on “Cookie Settings” or you can accept all cookies by clicking “Accept All”. If you would like to have more details about the use of cookies please visit our Cookie Policy.
+
+Cookie Settings
+Accept All
+
+This site uses cookies to ensure you get the best experience on our website. To learn more visit our Privacy Policy
+
+Got It!

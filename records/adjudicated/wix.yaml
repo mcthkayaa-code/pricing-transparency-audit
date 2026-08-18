@@ -1,0 +1,255 @@
+product_id: wix
+product_name: Wix
+category: AI website builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: Light
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-17
+recheck_date: not_applicable
+primary_source_url: https://www.wix.com/plans
+archive_url: https://web.archive.org/web/20260813111451/https://www.wix.com/plans
+archive_status: archived
+default_display_state: >
+  Carried unchanged from pass 1 (not re-collected; nothing in this adjudication touches the
+  pricing page). USD ($) figures shown directly (no currency picker used); annual billing shown
+  with NO monthly/annual toggle present anywhere on the page -- the page presents one billing
+  state only, disclosed by footnote as "yearly subscriptions, paid in full at the time of
+  purchase"; read after declining/without accepting non-essential cookies. Cards shown
+  left-to-right: Business Elite $159/mo, Business $39/mo (marked "RECOMMENDED"), Core $29/mo,
+  Light $17/mo, Free $0.
+
+sources:
+  - { url: "https://www.wix.com/plans", kind: pricing, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813111451/https://www.wix.com/plans", note: "primary pricing page; carried from pass 1, not re-collected" }
+  - { url: "https://support.wix.com/en/article/wix-premium-plan-pricing", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813111923/https://support.wix.com/en/article/wix-premium-plan-pricing", note: "carried from pass 1: no-trial statement, geo price-variance disclosure" }
+  - { url: "https://support.wix.com/en/article/canceling-a-wix-premium-plan", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813111940/https://support.wix.com/en/article/canceling-a-wix-premium-plan", note: "carried from pass 1: self-serve cancellation steps, refund window, Wix-ads-on-revert statement" }
+  - { url: "https://support.wix.com/en/article/turning-off-the-auto-renewal-for-a-wix-premium-plan", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112004/https://support.wix.com/en/article/turning-off-the-auto-renewal-for-a-wix-premium-plan", note: "carried from pass 1: auto-renewal default statement, 30-day reminder-email commitment" }
+  - { url: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", kind: refund, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112013/https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", note: "carried from pass 1: dedicated refund policy page; also states free-site 500MB storage/500MB bandwidth" }
+  - { url: "https://www.wix.com/about/terms-of-use", kind: tos, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260813112526/https://www.wix.com/about/terms-of-use", note: "ENGLISH RENDERING CONFIRMED STILL BROKEN as of 2026-08-17 (re-fetched live and re-fetched this exact archive capture; both reproduce pass 1's finding exactly -- only Section 1 and the Israel addendum render). Also fetched a 2026-03-20 Wayback capture: the identical broken placeholder banner already existed then, reading an earlier incrementing date, so this is a persistent multi-month vendor-side defect, not new and not window-specific. Kept as a source because its (broken) existence and its persistence are themselves evidence, argued in coder_note." }
+  - { url: "https://support.wix.com/en/article/about-storage-and-bandwidth", kind: docs, accessed: "2026-08-13", archive: "archive_failed", note: "carried from pass 1: premium-plan storage/bandwidth table; free-plan bandwidth figure CONFLICTS with the refund-policy page (1GB vs 500MB) -- see conflict_note" }
+  - { url: "https://www.wix.com/blog/is-wix-free", kind: other, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112559/https://www.wix.com/blog/is-wix-free", note: "carried from pass 1: official Wix blog post; monthly prices, free-plan feature list, no-trial FAQ" }
+  - { url: "https://support.wix.com/en/article/about-ai-credits", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112631/https://support.wix.com/en/article/about-ai-credits", note: "carried from pass 1: AI credit system covering Smart Chat / AI Custom Agent / AI Marketing Agent / Wixel" }
+  - { url: "https://support.wix.com/en/article/wix-vibe-about-your-daily-chat-request-limit", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112641/https://support.wix.com/en/article/wix-vibe-about-your-daily-chat-request-limit", note: "carried from pass 1: separate daily-credit system gating the AI site-building chat" }
+  - { url: "https://support.wix.com/en/article/wix-account-and-site-ownership-disputes", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112703/https://support.wix.com/en/article/wix-account-and-site-ownership-disputes", note: "carried from pass 1: covers ACCOUNT access-control ownership only, not content/IP rights" }
+  - { url: "https://tr.wix.com/about/terms-of-use", kind: tos, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260805084438/https://tr.wix.com/about/terms-of-use", note: "NEW this adjudication. Complete rendering of the same governing instrument (Sections 1-19 + Israel addendum) in Turkish; English's own Sections 2-19 do not render (see the terms-of-use source above) -- see coder_note for the non-English sourcing rule this record applies. Cited archive is a PRE-EXISTING public capture dated 2026-08-05 (5 days before window close), fetched and read today; a fresh same-day (2026-08-17) archive.org SAVE submission was attempted and failed (connection errors on /save/, consistent with both retrieval sweeps' documented archive.org instability that week), so the pre-existing capture substitutes. Self-dated \"Son Güncelleme: 30 Ekim 2025\" in both the live 2026-08-17 read and the 2026-08-05 capture." }
+  - { url: "https://de.wix.com/about/terms-of-use", kind: tos, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260518130450/https://de.wix.com/about/terms-of-use", note: "NEW this adjudication. Complete rendering of the same governing instrument in German, independent second locale corroborating the Turkish reading throughout. Cited archive is a pre-existing public capture dated 2026-05-18 (about 3 months before window close), fetched and read today; a fresh same-day resubmission was attempted and failed for the same reason as the Turkish source. Self-dated \"Letzte Überarbeitung: 30. Oktober 2025\" in both the live read and the 2026-05-18 capture." }
+
+variables:
+  headline_price_usd: { value: 17.00, source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. Light plan card: \"$17/mo\", confirmed in rendered DOM and raw HTML. Not touched by this adjudication." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. \"Displayed prices are for yearly subscriptions, paid in full at the time of purchase.\"" }
+  first_charge_amount_usd: { value: 204.00, source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. Yearly plan paid in full at purchase = charged once for 12 months; 17.00 x 12 = 204.00." }
+  mandatory_addon_present: { value: "no", source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "Unchanged from pass 1. Light-tier feature set carries no separately-billed required module." }
+  annual_condition_disclosure: { value: same_page_secondary, source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. Footnote below the plan grid: \"Displayed prices are for yearly subscriptions, paid in full at the time of purchase.\"" }
+  annual_default_toggle: { value: no_toggle, source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. No monthly/annual toggle control exists on the page." }
+  free_plan_exists: { value: "yes", source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. \"Free / No credit card required / $0\" card shown alongside the four paid tiers." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://support.wix.com/en/article/about-storage-and-bandwidth", evidence: "Unchanged from pass 1. Storage+bandwidth both number+dimension; AI-credits doc adds number+dimension+period." }
+  free_plan_cap_value: { value: conflicting, source: "https://support.wix.com/en/article/about-storage-and-bandwidth", evidence: "Unchanged from pass 1. Bandwidth figure conflicts across two equal-authority help-center pages -- see conflict_note. Not touched by this adjudication; unrelated to the ToS-locale question." }
+  free_plan_watermark: { value: "yes", source: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", evidence: "Unchanged from pass 1. \"The free site version includes up to 500MB of storage, up to 500MB bandwidth and displays Wix ads.\"" }
+  free_plan_duration: { value: perpetual, source: "https://www.wix.com/blog/is-wix-free", evidence: "Unchanged from pass 1. \"There's no time limit. You can keep your free website for as long as you need it.\"" }
+  trial_exists: { value: "no", source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "Unchanged. \"We do not offer a free trial for Premium plans, but there is a 14-day money-back guarantee...\" CHECKED against the newly-readable ToS Sec 6.6 (\"Ücretsiz Deneme\"/\"Kostenlose Testphase\"): a general, permissive, vendor-wide reservation clause -- TR \"tamamen kendi takdirine bağlı olmak üzere, belirli Wix hizmetleri, özellikleri veya paketleri için ücretsiz deneme süresi...sunabilir\"; DE independently \"kann nach eigenem Ermessen eine kostenlose Testphase...für bestimmte Dienste, Funktionen oder Pakete von Wix anbieten\" [Wix MAY, at its own discretion, offer a free trial for CERTAIN Wix services, features or packages; duration and terms are set by Wix and communicated at registration -- TR/DE agree]. This is an enabling clause covering Wix's broad multi-product portfolio, not a representation that a trial currently exists for Premium/Light plans specifically; it does not contradict the specific, on-point help-center statement. See coder_note. No conflict, no change." }
+  trial_card_required: { value: not_applicable, source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "Unchanged. Follows from trial_exists = no, confirmed above." }
+  trial_length_days: { value: not_applicable, source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "Unchanged. Follows from trial_exists = no, confirmed above." }
+  trial_auto_converts: { value: not_applicable, source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "Unchanged. Follows from trial_exists = no, confirmed above." }
+  credit_system_present: { value: "yes", source: "https://support.wix.com/en/article/about-ai-credits", evidence: "Unchanged from pass 1. Two parallel AI credit systems documented (AI credits; Wix Vibe daily chat credits)." }
+  credit_unit_defined: { value: "no", source: "https://support.wix.com/en/article/about-ai-credits", evidence: "Unchanged from pass 1. No fixed 1-credit-equals-X statement found for either system." }
+  credit_to_output_rate_published: { value: "no", source: "https://support.wix.com/en/article/about-ai-credits", evidence: "Unchanged from pass 1. Only non-binding example estimates published; no per-unit rate." }
+  credit_rate_location: { value: absent, source: "https://support.wix.com/en/article/about-ai-credits", evidence: "Unchanged from pass 1. No rate is published anywhere." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. Flat monthly price per site, unmetered access." }
+  cost_per_output_computable: { value: "yes", source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. Light tier $17.00/mo IS the per-seat-month price; no conversion needed." }
+  computation_assumptions: { value: "Light tier, $17/mo default display (billed annually, paid in full = 12mo, per pricing-page footnote): first charge 17x12=204.00. Same $17/mo is the per-seat-month output cost directly (unmetered plan, no allowance to convert).", source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. Not touched by this adjudication." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://support.wix.com/en/article/about-ai-credits", evidence: "Unchanged from pass 1. \"Unused AI credits do not roll over to the next credit cycle.\"" }
+  failed_generation_charge_policy: { value: unknown, source: "https://support.wix.com/en/article/about-ai-credits", evidence: "Unchanged value. unknown_kind=vendor_silence. Pass 1's reading stands: the only related statement addresses dissatisfaction, not technical failure. ADDITIONALLY CHECKED 2026-08-17: ToS Sec 5.2 (\"Çıktı Doğruluğu\"/\"Ausgabegenauigkeit\", AI Services -- Output Accuracy), now readable, disclaims accuracy/completeness/bias of AI outputs but likewise says nothing about whether a technical failure or empty result consumes the allowance -- a second reachable, fully-read document, same genuine silence. Both document classes for this construct have been read in full and neither addresses it: vendor silence, not an access gap." }
+  auto_renewal_default: { value: "on", source: "https://tr.wix.com/about/terms-of-use", evidence: "Unchanged value, source upgraded. Codebook rule: \"The terms of service ranks first for this variable, above the pricing page.\" ToS Sec 6.3 (\"Aboneliklerin Otomatik Olarak Yenilenmesi\"/\"Automatische Abonnementverlängerungen\"), now readable via the non-English rule (see coder_note): TR \"bazı Ücretli Hizmetler varsayılan olarak otomatik yenileme seçeneği içerir\" [certain Paid Services include an automatic-renewal option by default]; DE independently \"enthalten bestimmte kostenpflichtige Dienste standardmäßig eine automatische Verlängerungsoption\" -- TR and DE agree verbatim in substance. Corroborates, does not merely duplicate, the help-center statement pass 1 already held (\"Wix plans are set to renew automatically at the end of the subscription period\") -- now confirmed from the higher-ranked document." }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://tr.wix.com/about/terms-of-use", evidence: "CHANGED from help_center_only. Pass 1 coded help_center_only specifically because \"the Terms of Use body could not be read...so 'terms' cannot be confirmed\" (pass-1 evidence, this record's history). That blocker is resolved: ToS Sec 6.3, now readable via tr.wix.com/de.wix.com (non-English rule, see coder_note; quoted verbatim under auto_renewal_default above), states auto-renewal plainly, independently agreeing with the help-center article already on this record (support.wix.com/en/article/turning-off-the-auto-renewal-for-a-wix-premium-plan). Codebook rule: \"Code multiple where two or more state it in agreement, since proximity to the price is what this variable measures and repetition is the strongest form of it.\"" }
+  renewal_notice_commitment: { value: advance_notice_stated, source: "https://tr.wix.com/about/terms-of-use", evidence: "Unchanged value, source upgraded and strengthened. ToS Sec 6.3 (the post-window retrieval sweep's note said \"Section 6.2\" -- verified directly and corrected: 6.2 is \"Faturalar\"/\"Rechnungen\" [Invoices], the 30-day clause is in 6.3): TR \"Wix, söz konusu Ücretli Hizmetin yenilenmesinden önce, yenileme tarihinden en az otuz (30) gün önce size bir bildirim sunmaya çalışacaktır\" [Wix will attempt to notify you at least thirty (30) days before the renewal date, before renewal of that Paid Service]; DE independently \"wird Sie Wix...mindestens dreißig (30) Tage vor dem Verlängerungsdatum benachrichtigen\" -- TR and DE agree verbatim in substance, both give 30 days, both scoped to annual/multi-year terms. A stated commitment with a stated period, meeting the codebook's advance_notice_stated definition directly. Agrees with (does not merely restate) the help-center reminder-email commitment pass 1 already found (\"Wix sends reminder emails starting 30 days before your payment is due\") -- two different document classes, two related-but-distinct mechanisms (formal contractual notice vs. reminder email), same 30-day figure, same conclusion, now from the first-ranked contractual source." }
+  refund_policy_exists: { value: "yes", source: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", evidence: "Unchanged from pass 1. \"Wix offers a 14-day, money-back guarantee for new Premium or Studio site plans.\" Independently corroborated, not contradicted, by ToS Sec 6.4 (\"Para İade Garantisi\"/\"Geld-zurück-Garantie\"), now readable, which states the same 14-day first-purchase-only guarantee -- checked 2026-08-17, not previously blocked since the dedicated refund page is itself first-rank authority under codebook Domain 10 rule 1." }
+  refund_window_days: { value: 14, source: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", evidence: "Unchanged from pass 1. Applies to both monthly and yearly plans per the dedicated refund page; ToS Sec 6.4 states the same 14-day figure." }
+  refund_conditions: { value: conditional, source: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", evidence: "Unchanged from pass 1. \"The 14-day refund policy only applies to new Premium or Studio plans...does not apply if...requesting a refund for a plan renewal...for the upgrade of an existing plan.\" ToS Sec 6.4 states the same first-purchase-only condition." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://support.wix.com/en/article/canceling-a-wix-premium-plan", evidence: "Unchanged from pass 1. Step-by-step self-serve cancellation via account settings. ToS Sec 7.1, now readable, corroborates without conflict: cancellation is available \"at any time\" per Wix Services' own instructions, with a pointer to the Help Center for details." }
+  refund_policy_location: { value: multiple, source: "https://www.wix.com/plans", evidence: "Unchanged from pass 1. Pricing-page banner plus dedicated refund help-center page." }
+  commercial_use_lowest_tier: { value: unknown, source: "https://tr.wix.com/about/terms-of-use", evidence: "Unchanged value. unknown_kind=vendor_silence. I independently re-read (2026-08-17, via the non-English rule, not merely trusting the first retrieval sweep's account) ToS Sections 2 (Obligations, incl. the 2.3 prohibited-conduct list), 3 (Content and Ownership, incl. 3.2 Wix's own IP), and 8 (E-Commerce, seller obligations for User Products): no clause grants or restricts, by tier, the right to use outputs/site content commercially. Every commercial-use-adjacent clause runs the other way -- restricting exploitation of WIX's own Licensed Content/assets (Sec 2.3), or governing a seller's tax/delivery/legality obligations when using the e-commerce feature (Sec 8) -- none gates a user's own commercial-use right by plan. Independently keyword-checked the pricing page (always English-readable): zero occurrences of \"commercial\". Both first-ranked (ToS) and second-ranked (pricing-page grid) document classes read and silent on a tier-gated right: vendor silence, not an access gap." }
+  watermark_removal_tier: { value: lowest_paid, source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "Unchanged from pass 1. Light is the entry paid tier and the lowest tier at which ad/branding removal is granted." }
+  output_ownership_statement: { value: user_owns, source: "https://tr.wix.com/about/terms-of-use", evidence: "CHANGED from unknown. ToS Sec 3.1 (\"Fikri Mülkiyetiniz\"/\"Ihr geistiges Eigentum\"): between you and Wix, all IP rights in your User Content belong to you; Wix claims no ownership right. Sec 5.4 (\"Çıktı Sahipliği\"/\"Eigentum an den Ausgaben\" -- AI Output Ownership specifically) extends this to AI outputs in the same terms, qualified only by TR \"Wix'e ait önceden var olan herhangi bir fikrî mülkiyeti içermediği bir çerçevede\" / DE \"insoweit diese keinerlei bereits zuvor bestehendes geistiges Eigentum von Wix beinhaltet\" [to the extent the Output contains no pre-existing Wix IP] -- a subject-matter scope carve-out inherent to any output-ownership clause (a vendor cannot grant away its OWN pre-existing IP), not a tier/use-type/subscription-status gate, so it does not meet the codebook's own definition of conditional (\"Rights depend on tier, on use type, or on a subscription staying active\"). Sec 5.5 grants WIX a non-exclusive, sublicensable, worldwide licence over Inputs/Outputs for service improvement and model training -- a licence FROM the user TO Wix, the ordinary operational pattern, which does not convert this into vendor_license_retained (that value requires the VENDOR to retain ownership and license back to the user -- the reverse of what these clauses say). TR and DE agree verbatim in substance on all three clauses. Codebook rule applied: \"The terms of service ranks first...code from the terms\" -- read directly from Sections 3.1/5.4/5.5, not inferred from marketing." }
+  usage_cap_quantified: { value: some_quantified, source: "https://support.wix.com/en/article/about-storage-and-bandwidth", evidence: "Unchanged value, reasoning corrected. Light: \"2 GB\" storage remains a quantified standing limit. Pass 1 treated \"Unlimited\" bandwidth as quantified via the unlimited carve-out because \"no qualifying clause located\" -- that search was defeated by the same ToS access failure resolved elsewhere on this record. ToS Sec 2.2 item 7, now readable (non-English rule, see coder_note), reserves Wix's right to impose per-plan, unquantified restrictions expressly including \"network trafiği ve bant genişliği\"/\"Bandbreite\" (network traffic and bandwidth) -- no figure attached, TR and DE agree. Per usage_cap_quantified rule 3 (\"Unlimited counts as quantified only where no clause elsewhere qualifies it\"), the bandwidth claim is therefore not cleanly quantified after all. Categorical value is unaffected either way: Light still has at least one quantified limit (storage, 2GB) and at least one not (now both bandwidth and the already-hedged AI-credit allowance) -- some_quantified under both readings." }
+  unquantified_limit_clause: { value: present, source: "https://tr.wix.com/about/terms-of-use", evidence: "CHANGED from unknown. TWO independent unquantified-standard clauses found in ToS Section 2, read via tr.wix.com/de.wix.com (English Sections 2-19 do not render -- non-English rule in coder_note). (a) Sec 2.2 item 7: Wix reserves the right to impose different, per-plan restrictions on upload/storage/download/use including but not limited to network traffic and bandwidth, content size, download volume, subscriber count, storage volume -- no figure given for any. (b) Sec 2.3 prohibited-conduct list: TR \"makul olmayan, aşırı veya orantısız büyüklükte bir yük\"; DE independently \"unzumutbaren und unverhältnismäßigen Last\" [placing an unreasonable, excessive or disproportionately large burden] on Wix Services or interfering with server/network operation. Both are vendor-discretion, no-number standards on VOLUME/INTENSITY of use, matching the value table's own \"excessive use\" and \"abuse thresholds\"/\"throttling at the vendor's discretion\" entries -- read before, and controlling over, the decision rule's single illustrative example, per this study's own instruction that a table is never bound by its example. Decision rule 3's carve-out is for a prohibition on illegal/abusive CONTENT; these clauses are not about content legality, they are about USE VOLUME, which is exactly what this variable is defined to cover, so rule 3 does not exclude them. Read Section 2 in full for this determination (rule 1); a present finding does not require exhausting the remaining, topically unrelated sections (10-19: third-party services, logo maker, Wix Studio, warranty, liability, arbitration) the way an absent finding would." }
+
+coder_note: |
+  2026-08-17 ADJUDICATION SUMMARY (coder_pass 3). NOT a two-coder disagreement -- wix was
+  single-coded (pass 1 only; no pass-2 record exists for this product). This adjudication was
+  triggered by a 2026-08-17 post-window supplementary retrieval (orchestrator/
+  post-window-retrieval.md and post-window-retrieval-2.md) that recovered the vendor's Terms of
+  Use body -- confirmed unreadable in English across 4 independent pass-1 attempts -- via two
+  non-English locale renderings, and explicitly declined to code the result, referring the
+  construct question on unquantified_limit_clause, the non-English sourcing-rule question, and
+  the renewal-notice/trial/output-ownership questions to adjudication.
+
+  Of 37 coded variables: 3 values CHANGED by rule (unquantified_limit_clause unknown->present;
+  output_ownership_statement unknown->user_owns; auto_renewal_disclosure_location
+  help_center_only->multiple). 3 values UNCHANGED but re-sourced/strengthened from the
+  newly-readable ToS (renewal_notice_commitment stays advance_notice_stated with an upgraded
+  citation and a corrected section number, 6.3 not 6.2; auto_renewal_default stays "on" with an
+  upgraded citation; usage_cap_quantified stays some_quantified with corrected reasoning about
+  the "unlimited" bandwidth claim). 2 pre-existing unknowns CONFIRMED with an explicit kind
+  declared (commercial_use_lowest_tier, failed_generation_charge_policy; both
+  unknown_kind=vendor_silence). 4 trial-domain variables (trial_exists, trial_card_required,
+  trial_length_days, trial_auto_converts) CHECKED against the newly-readable ToS Sec 6.6 and
+  found not to conflict; left unchanged. refund_policy_exists/refund_window_days/
+  refund_conditions/cancellation_self_serve independently corroborated by the newly-readable ToS
+  (Secs 6.4, 7.1) without contradiction; left unchanged. The remaining ~24 variables pass through
+  untouched. 0 values were newly coded unknown by this adjudication. 0 date_explained or
+  variant_explained classifications: protocol 7.4.1 requires a vendor_edit register entry and
+  7.4.2 requires two archive snapshots of the SAME URL showing two DISPLAY states; neither
+  mechanism fits a retrieval-capability change (a document became readable that previously was
+  not, via a route -- a different locale -- that was always live), so neither classification is
+  claimed.
+
+  === NON-ENGLISH SOURCING RULE (stated once, applied to every ToS-sourced value above) ===
+  Wix's English Terms of Use (www.wix.com/about/terms-of-use) has a confirmed, PERSISTENT,
+  vendor-side rendering defect: Sections 2-19 fail to display. This is not new and not
+  window-specific -- the SAME broken "terms updated" banner (unfilled "[date of publication]" /
+  "[enter future date- ~2 weeks from publications]" placeholder tokens) with an incrementing
+  "Last Revised" label appears in a Wayback capture from 2026-03-20 (reading "January 5, 2026")
+  and in the pass-1-cited 2026-08-13 capture and my own 2026-08-17 read (both reading "July 9,
+  2026") -- five continuous months of the identical failure. I checked this specifically because
+  it raised a real concern (had English been substantively re-issued after the Turkish/German
+  30-October-2025 date?): the answer is no, this broken banner is a long-standing, unrelated
+  widget malfunction, not evidence of a post-window rewrite, and see the window-era-warrant
+  paragraph below for the direct check.
+
+  The IDENTICAL instrument renders completely, via Wix's own first-party infrastructure (server:
+  Pepyaka; x-meta-site-is-wix-site: 1; content-language negotiated server-side per locale; NOT a
+  third-party embed -- verified by comparing response headers across the English, Turkish and
+  German URLs today), at tr.wix.com/about/terms-of-use and de.wix.com/about/terms-of-use: same
+  19-section spine, same topic order (2 Obligations / 3 Content-Ownership / 5 AI Services / 6
+  Fees / 7 Cancellation / 8 E-Commerce ... 19 Arbitration), same Israel addendum. Both self-date
+  "last updated: 30 October 2025." Both independently, in their own language, at ToS Section 17
+  (General), state that the document was authored in English and translated into other languages
+  for the reader's convenience, with the English version controlling in case of conflict (TR:
+  "Bu Kullanım Koşulları İngiliz dilinde yazılmış ve kolaylık sağlamak amacıyla diğer dillere
+  tercüme edilmiştir...İngilizce versiyonda yer alan hükümler geçerli olacaktır"; DE: "Diese
+  Nutzungsbedingungen wurden in englischer Sprache verfasst und zum besseren Verständnis in
+  andere Sprachen übersetzt...die Bestimmungen der englischsprachigen Version genießen
+  Vorrang"). That is the vendor's OWN confirmation that these are genuine parallel translations
+  of ONE governing instrument, not two coincidentally similar documents.
+
+  Critically -- per the specific check this adjudication was asked to run -- this is NOT the
+  client-side, request-locale-driven rendering-of-one-source artifact the second retrieval sweep
+  found on a different product in this same study (a Termly-hosted ToS whose own API response
+  carried "locale":"en" and "created_locales":["en"], proving only English was ever authored and
+  the non-English text a coder met there was the SAME English source relocalised on the fly by a
+  third-party widget -- one document, one reading, not two). I checked for the equivalent signal
+  here and found the opposite: no third-party viewer, no machine-translation banner, and instead
+  a first-party-served, professionally structured, self-dated, hreflang-declared pair of complete
+  legal documents whose revision date and every quoted clause I checked agree with each other and
+  with archive captures independent of today spanning three months (2026-05-18 through
+  2026-08-05). Wix's tr/de pages are a different KIND of evidence than the Jobscan case, not
+  merely a similar-looking one, and I verified the difference rather than assuming it.
+
+  RULE: where two independently-fetched non-English locales of the vendor's own contractual
+  document agree on a clause, and I have no reason to think the operative English wording would
+  read differently (per the two paragraphs above), I code the construct from that text, and I
+  flag every such value's evidence as resting on a non-English rendering of the vendor's own
+  document rather than a confirmed reading of the (defectively-rendered) English original.
+  Protocol section 9 item 6 ("English-language public pages only...understates disclosure for
+  non-English-first vendors") does not govern this case and I am not applying it as a bar: that
+  limitation describes a non-English-first vendor whose disclosure exists only in another
+  language BY DESIGN, which this study's ordinary English-only collection practice would then
+  undercount. Wix is not that. English is this document's own stated authoritative language, an
+  English URL and template exist and are clearly intended to serve it, and five other document
+  classes on this very record (pricing page, four help-center articles, blog post) are English
+  and were read normally. This is a narrow, persistent RENDERING DEFECT on one locale of a
+  document the vendor otherwise publishes, and plainly intends to publish, in English -- not a
+  vendor choice to withhold English content. Where I could not obtain two independently-agreeing
+  non-English locales for a construct, I did not apply this rule and left the value as pass 1
+  coded it.
+
+  === WINDOW-ERA WARRANT ===
+  The collection window closed 2026-08-13; my read is 2026-08-17. Both non-English bodies carry
+  a stable, matching "last updated: 30 October 2025" self-date, which by itself predates the
+  window by roughly 9.5 months. I did not rely on today's claim alone: a public Wayback capture
+  of tr.wix.com/about/terms-of-use dated 2026-08-05 08:44:38 UTC (5 days before window close,
+  fetched and read today, not merely cited) shows the identical date stamp and contains the
+  Section 2.3 "orantısız büyüklükte bir yük" clause verbatim. A public capture of
+  de.wix.com/about/terms-of-use dated 2026-05-18 (about 3 months before window close, also
+  fetched and read, not merely cited) shows the same date stamp and the Section 2.3
+  "unverhältnismäßigen Last" clause verbatim. I could NOT obtain a working archive.org replay
+  for the exact collection date (2026-08-13) of either locale despite several retry rounds across
+  this session -- archive.org's replay path was intermittently 503/unreachable throughout, the
+  same instability both retrieval sweeps reported for 2026-08-17 -- so 2026-08-05 (TR) and
+  2026-05-18 (DE) are the closest captures I could independently read, and I report that gap
+  rather than closing it by assumption. A fresh same-day archive.org SAVE submission for both
+  locale URLs was attempted (web.archive.org/save/...) and failed with connection errors; the
+  pre-existing captures above substitute and are what this record's sources[].archive fields
+  cite. VALUES I COULD NOT WARRANT TO THE WINDOW: none of the changed or re-sourced values above
+  -- every one rests on text stable across a span (2026-05-18 through 2026-08-17, on the specific
+  clauses used) that brackets the window on both sides. Where I could not establish this
+  (i.e. for any construct not corroborated by two agreeing locales and, where checked, an
+  archive capture), I left the value as pass 1 coded it rather than back-dating an unwarranted
+  reading.
+
+  === CITATION VERIFICATION ===
+  I re-fetched the pass-1-cited archive capture for the (broken) English ToS
+  (web.archive.org/web/20260813112526/...) myself today: it exists, returns HTTP 200 once
+  decompressed (archive.org's id_ responses are gzipped; a naive read of the raw bytes looks
+  empty), and reproduces pass 1's finding exactly. It is not a fabricated or misdirected
+  citation. I independently confirmed the two retrieval sweeps' central tr.wix.com/de.wix.com
+  quotations by locating the same words myself, in situ, with section numbers, rather than
+  trusting either sweep's account alone -- and in doing so found one small citation error in the
+  second sweep: it locates the 30-day renewal-notice clause at ToS "Section 6.2"; the clause is
+  actually in Section 6.3 (6.2 is "Invoices" / "Rechnungen"; 6.3 is "Automatic Subscription
+  Renewals" / "Automatische Abonnementverlaengerungen"), corrected in this record since verifying
+  citations is this pass's standing duty.
+
+  === SCOPE DISCLOSURE ===
+  Read for this adjudication: this record's pass-1 file and its full -sources/ directory (11
+  files); codebook-v1.md and protocol-v1.md in full, including 7.4/7.4.1/7.4.2; record-
+  template.yaml; sampling-rules.md sections 4 and 7-9 (entry-tier rule, frame criteria);
+  deviations-for-adjudicators.md in full; tools/source_paths.py, validate_records.py,
+  check_value_enums.py, check_price_arithmetic.py, check_free_text_caps.py; the vendor's own
+  live pages (www/tr/de.wix.com/about/terms-of-use) and Wayback Machine captures of them spanning
+  2026-03-20 to 2026-08-13, fetched directly via curl. I also read the "wix" sections of
+  orchestrator/post-window-retrieval.md and post-window-retrieval-2.md as directed, and in doing
+  so also read those two files' methodology, summary and self-critique sections, which name other
+  products (Canva, Sora, Picsart, Jobscan, LOVO, Runway, Hailuo, Adobe Firefly, GPTZero, Phrasly)
+  in the course of describing the sweep's own retrieval mechanisms and reliability -- reading
+  material my task brief itself required for one specific, named comparison (whether wix's
+  tr/de pages are genuine translations or a Jobscan-style client-side artifact, addressed above).
+  I did not use any other product's coded VALUE to inform any determination on this record, and
+  I did not open any other product's pass-1/pass-2/adjudicated record, the adjudication queue,
+  interim-signals.md, the raw deviations log, aitoolspolice.com, or site/content/reviews/.
+  Disclosed per deviations-for-adjudicators.md's own instruction on where a boundary is genuinely
+  unclear.
+
+  ENTRY-TIER (carried from pass 1, unchanged): Light ($17/mo default display, $204.00/yr
+  annual-equivalent). Losing eligible candidates: Core $29/mo = $348.00/yr; Business $39/mo =
+  $468.00/yr; Business Elite $159/mo = $1908.00/yr. Free ($0) excluded from entry-tier selection
+  per sampling-rules 7.2/7.3, scored separately under free_plan_exists.
+
+conflict_note: >
+  free_plan_cap_value / bandwidth (unchanged from pass 1, unrelated to this adjudication):
+  support.wix.com/en/article/about-storage-and-bandwidth states "Free Wix sites come with up to
+  500MB of storage and up to 1GB bandwidth." support.wix.com/en/article/requesting-a-refund-for-
+  a-premium-plan states "The free site version includes up to 500MB of storage, up to 500MB
+  bandwidth and displays Wix ads." Both official Wix help-center articles, equal authority;
+  storage agrees, bandwidth does not (1GB vs 500MB). Coded conflicting per codebook decision tree
+  2.1 step 3.
+
+  English rendering defect (resolved this adjudication via the non-English rule in coder_note,
+  not via a source-hierarchy override): www.wix.com/about/terms-of-use's Sections 2-19 still do
+  not render in English as of 2026-08-17 (reproduced live, via the pass-1-cited archive capture,
+  and via an independent 2026-03-20 capture showing the identical defect -- a persistent,
+  multi-month, vendor-side bug, not specific to the collection window). The SAME instrument
+  renders completely at tr.wix.com/about/terms-of-use and de.wix.com/about/terms-of-use, both
+  self-dated "last updated 30 October 2025," corroborated by archive captures from 2026-08-05 and
+  2026-05-18 bracketing the window. This is not a disagreement between two equal-authority
+  sources requiring a conflicting code: the two locales agree with each other in substance and
+  with the vendor's own stated translation/precedence clause (ToS Sec 17: authored in English,
+  translated for convenience, English governs in case of conflict). It is one source read through
+  a working rendering path instead of a broken one. On this basis: unquantified_limit_clause
+  (unknown -> present), output_ownership_statement (unknown -> user_owns), and
+  auto_renewal_disclosure_location (help_center_only -> multiple) are coded from the TR/DE text;
+  renewal_notice_commitment, auto_renewal_default, usage_cap_quantified, and
+  commercial_use_lowest_tier are confirmed/re-sourced with no value change.
+register_events: []
+status: complete

@@ -1,0 +1,19 @@
+URL: https://apps.apple.com/us/app/picsart-photo-video-editor/id587366035
+Accessed: 2026-08-10 (via WebFetch, US App Store region)
+STATUS: App-store listing. Per codebook-v1.md section 4 evidence table, app-store listings do NOT qualify as a coding source. This file is kept ONLY to document, per the picsart assignment note, the web-vs-app-store price/plan divergence in conflict_note. NO codebook variable is coded from this file.
+---
+
+Apple App Store (US) In-App Purchase listing for Picsart:
+Picsart Gold - Annual: $57.00
+Picsart Gold - Monthly: $12.99
+Picsart Gold Weekly: $4.99
+Picsart Pro Annual: $83.99
+Picsart Pro Monthly: $13.99
+Picsart Pro Weekly: $11.99
+Picsart Plus - Annual: $64.99
+Picsart Plus - Monthly: $11.99
+
+Observations (context only):
+- App Store structure is a THREE-tier system (Plus / Gold / Pro) with weekly/monthly/annual billing, distinct from the web pricing page's TWO-tier system (Pro / Ultra).
+- A Picsart support article ("Picsart Gold to Pro") suggests "Gold" is a legacy tier name being transitioned/renamed to "Pro" branding for some cohorts - the App Store listing appears to carry both an old and current naming scheme simultaneously.
+- App Store's "Picsart Pro Annual" at $83.99/yr = ~$7.00/mo equivalent, which is a plausible USD magnitude for the web page's "Pro" plan (₺83.25/mo local display) - used only as a magnitude sanity-check per the "read a price twice" rule, NOT as a coded value.

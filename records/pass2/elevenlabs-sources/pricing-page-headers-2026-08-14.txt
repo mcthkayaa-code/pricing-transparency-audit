@@ -1,0 +1,27 @@
+HTTP/2 200 
+server: nginx/1.30.4
+date: Fri, 14 Aug 2026 15:57:44 GMT
+content-type: text/html; charset=utf-8
+content-length: 650400
+vary: Accept-Encoding
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+content-security-policy: frame-ancestors 'self' https://payload.elevenlabs.io;
+set-cookie: anon_distinct_id=01a000fe-5ac8-7463-864f-d1c1274dc2b9; Path=/; Expires=Mon, 09 Aug 2027 15:57:44 GMT; Max-Age=31104000; Domain=.elevenlabs.io; Secure; SameSite=strict
+set-cookie: bootstrap_data=%7B%22distinctID%22%3A%2201a000fe-5ac8-7463-864f-d1c1274dc2b9%22%2C%22deviceId%22%3A%2201a000fe-5ac8-7463-864f-d1c1274dc2b9%22%2C%22isFirstVisit%22%3Atrue%2C%22featureFlags%22%3A%7B%7D%2C%22featureFlagPayloads%22%3A%7B%7D%7D; Path=/
+set-cookie: geo_country=TR; Path=/; Expires=Sat, 15 Aug 2026 15:57:44 GMT; Max-Age=86400; SameSite=strict
+set-cookie: pending_exposures=%5B%7B%22flagName%22%3A%22mw-cro-pricing-onboarding-selected-plan%22%2C%22variant%22%3A%22test-onboarding%22%2C%22pathname%22%3A%22%2Fpricing%22%7D%5D; Path=/; Expires=Fri, 14 Aug 2026 16:02:44 GMT; Max-Age=300; SameSite=strict
+x-ab-test: mw-cro-pricing-onboarding-selected-plan
+x-ab-variant: test-onboarding
+x-deployment-id: 6b6c893362436561649ea21c1f85e4c3ad80ae5a
+x-region: europe-west4
+x-middleware-rewrite: /en/pricing/abtest/choose-plan-intent
+x-nextjs-cache: HIT
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-powered-by: Next.js
+cache-control: s-maxage=3600, stale-while-revalidate=31532400
+etag: "3jwwh2ei0adxsq"
+via: 1.1 google
+strict-transport-security: max-age=1800;
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

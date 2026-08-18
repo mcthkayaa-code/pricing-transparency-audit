@@ -1,0 +1,95 @@
+SOURCE: https://undetectable.ai/pricing
+ACCESSED: 2026-08-15 (UTC ~13:40-13:47)
+METHOD: Rendered browser read (Claude Browser tool), fresh navigation, default state (no toggle clicked before recording), desktop viewport, cookies: non-essential declined not explicitly prompted on this load.
+ARCHIVE: https://web.archive.org/web/20260815134758/https://undetectable.ai/pricing (submitted same session; Wayback capture of this JS-rendered page may not preserve hydrated price text, so this local capture is the operative evidence for price figures per D-005).
+
+=== DOM evidence: billing toggle default state (via javascript_tool, first paint, no interaction) ===
+Two buttons found:
+1. text: "Monthly" | class: "...bg-transparent text-gray-800 px-2" (INACTIVE styling)
+2. text: "Yearly\n50% off" | class: "...bg-blue-700 !text-white px-2" (ACTIVE styling: blue fill + white text)
+=> Yearly/annual carries the active visual state on load. annual_default_toggle = annual_preselected.
+
+=== get_page_text extraction (main content), first navigation, before any interaction ===
+Title: Plans & Pricing | UNDETECTABLE AI
+URL: https://undetectable.ai/pricing
+
+"Making AI-generated content more human-like"
+Try our AI Humanizer and Detector rated #1 on Forbes!
+Money back guarantee. If anything we produce is flagged as not human, we will refund the cost of humanization. Check Help for more info.
+
+Monthly
+Yearly
+50% off
+
+10K words/month
+$9.99 [struck through]
+$5.00 /mo [green, prominent]
+Charged annually $60.00
+Quick look at features:
+Passes AI detectors
+High quality, legible content
+Watermark and future proof
+Writing level matching
+API compatible
+Unlimited Human Auto Typer
+Unlimited AI Detecting
+Start FREE Trial
+
+20K words/month
+$19.00 [struck through]
+$9.50 /mo [green]
+Charged annually $114.00
+(same feature list)
+Start FREE Trial
+
+35K words/month
+$31.00 [struck through]
+$15.75 /mo [green]
+Charged annually $189.00
+(same feature list)
+Start FREE Trial
+
+50K words/month
+$42.50 [struck through]
+$21.25 /mo [green]
+[slider control: 50,000 -- 380,000 words, adjustable scale plan]
+Includes all features from other plans
+Start FREE Trial
+6 Months Free • Cancel Anytime
+
+For Business
+Need bulk credits? Looking for permanent words with no monthly expiration?
+Contact Us
+Quick look at features:
+Custom Pricing & Plans
+Non-expiring credits
+Redistribution & white labeling
+Built to fit your needs
+Priority support
+Unlimited Human Auto Typer
+Unlimited AI Detecting
+Access to Smart Job Applier
+API compatible
+
+Free Trial is limited to 250 words. Additional usage requires paid plan activation.
+
+TRUSTED BY 24,098,384 USERS / 30,773 NEW USERS THIS WEEK
+
+H3 headings confirmed via DOM query (document.querySelectorAll('h1,h2,h3...')):
+H1: "Try our AI Humanizer and Detector rated #1 on Forbes!"
+H3: "10K\nwords/month"
+H3: "20K\nwords/month"
+H3: "35K\nwords/month"
+H3: "50K\nwords/month"
+H2: "For Business"
+=> No separate branded plan names (e.g. "Starter/Pro") exist; the vendor's own published name for each tier IS its word-count heading, e.g. "10K words/month".
+
+=== Embedded JSON-LD (script tags), same page load ===
+WebApplication schema present (name "Undetectable AI - Plans & Pricing", url https://undetectable.ai/pricing/).
+FAQPage schema present, one Q&A pair reads verbatim:
+  Q: "What pricing plans are available?"
+  A: "We offer flexible monthly and yearly subscription plans. The yearly plan provides the best value at $5/month (billed annually at $60), while the monthly plan is $19/month with no long-term commitment."
+NOTE: This FAQ answer's "$19/month" figure does not match the 10K plan's own monthly card price ($9.99); it appears to conflate the 10K plan's annual figure ($5/mo, $60/yr -- which matches the 10K card exactly) with the 20K plan's monthly figure ($19.00 -- matches the 20K card exactly). Read as stale/inconsistent marketing copy internal to the same page rather than a second official source; not used as the coded value. The plan CARD figures (screenshot-confirmed, DOM H3-scoped) are the "largest, most prominent" figures per headline_price_usd rule 2 and are what was coded.
+
+=== Second representation check (magnitude sanity) ===
+All price strings extracted as clean two-decimal figures with no superscript/digit-roller markup detected in DOM (plain text nodes: "$5.00", "/mo", "Charged annually $60.00"). Cross-checked against the FAQPage JSON-LD figure ($5/month, $60 annually) for the 10K tier specifically -- figures match exactly. No order-of-magnitude discrepancy found.

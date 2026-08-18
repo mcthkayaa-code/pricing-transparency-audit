@@ -1,0 +1,90 @@
+D-007 CURRENCY RE-CHECK — canva — 2026-08-10
+Method: rendered reads (mcp browser tools) + WebSearch used only to LOCATE official
+Canva help-center URLs (never to justify a value — protocol-v1.md 6.3/6.2).
+Purpose: apply the amended currency-check rule (deviations-log.md D-007), which
+supersedes the D-003 Accept-Language / archive-only check this record originally
+rested on.
+
+ARM 1 — vendor's own currency disclosure
+----------------------------------------------------------------------------
+1a. Currency/country selector on the pricing page (rendered DOM inspection).
+    Checked on TWO locale variants of the pricing page, rendered 2026-08-10:
+    - https://www.canva.com/pricing/ (resolves to /tr_tr/ucretlendirme/ for this
+      network) — DOM query for select/[class*=currency]/[class*=country]/
+      [id*=currency]/[id*=country]/[aria-label*=currency]/[aria-label*=country]:
+      0 matches.
+    - https://www.canva.com/en/pricing/ (a locale path NOT tried in the original
+      D-003/D-005 passes, which only tried /en_us/pricing/) — same query: 0
+      matches. This page renders its labels/CTAs in English ("Individuals", "Free",
+      "Pro", "/year for one person") while STILL pricing in TRY (₺1,920 for Pro,
+      ₺3,400 for Business) — direct confirmation that language and currency are
+      independent on this vendor's site, corroborating the original pass's
+      /en_us/pricing/ finding via a second, different URL.
+    A footer control reading "Türkçe" was found (button, aria-expanded="false",
+    inside a listbox structure) — this is a LANGUAGE switcher, a distinct construct
+    from a currency/country selector per the rule's own wording. One attempt to open
+    it via a synthetic click event did not populate its (empty) listbox, consistent
+    with it requiring a trusted user gesture; not pursued further; even the English
+    -language surface reached by other means (/en/pricing/) still prices in TRY, so
+    a working language switch would not itself answer the currency question anyway.
+
+1b. Vendor-supported currency URL parameter.
+    Tried: https://www.canva.com/pricing/?currency=USD , rendered 2026-08-10.
+    Result: redirects to /tr_tr/ucretlendirme/?currency=USD; the parameter is
+    dropped/ignored — page renders identically, Pro still "1.920 ₺". Not a
+    supported mechanism.
+
+1c. Explicit currency statement in billing/help documentation or the terms.
+    Official Canva Help Center article, https://www.canva.com/help/pay-credit-debit-card/
+    ("Pay using credit or debit card"), rendered and read directly 2026-08-10 (its
+    official URL was located via a web search of canva.com's own help domain; the
+    page itself, not the search result, is the evidence):
+      "Use your credit or debit card to pay for premium elements, Canva Print
+      orders, or your Canva Pro or Canva Teams plan. If your local currency isn't
+      available, you'll be charged in US dollars using your bank's conversion rate."
+    This is a genuine documentary currency statement: Canva's stated policy is
+    local-currency billing by default, with USD used ONLY as a fallback where the
+    buyer's local currency is not supported. TRY is demonstrably an actively-served,
+    supported currency for this reader (real, non-placeholder TRY prices render
+    consistently across both locale-path variants tested above), so under the
+    vendor's own stated policy this reader is NOT in the "local currency unavailable"
+    fallback case, and would be billed in TRY, not USD.
+    (Already on file in this record, retained as corroborating context: the AI Pass
+    help article's "AI Pass is USD $100 globally per person, per month" is a
+    genuine vendor-published USD figure, but for the separate AI Pass add-on, not
+    the Pro/Business base plan being priced here.)
+
+ARM 1 CONCLUSION: no selector, no working URL parameter, but a genuine documentary
+currency-policy statement was found and read directly from Canva's own help center.
+Combined with the directly-observed rendered state (real TRY figures, unchanged
+across a TR-locale and an EN-locale URL), this is positive evidence under the
+amended rule that the vendor bills this reader in TRY, not USD.
+
+ARM 2 — US-crawled archive capture that actually contains price figures
+----------------------------------------------------------------------------
+Re-tested 2026-08-10 (this record's original D-003 check already ran the equivalent
+test on 2026-08-09; re-run here fresh under the new rule rather than reused, since
+the standard for what counts as a pass changed):
+- https://web.archive.org/web/2026/https://www.canva.com/pricing/ -> redirects to a
+  snapshot (20260717233344) whose title is Canva's own "Unsupported client – Canva"
+  interstitial, body.innerText = 321 chars, no price content, no "$".
+- https://web.archive.org/web/2026/https://www.canva.com/en/pricing/ -> also
+  redirects to a snapshot (20260708...) of the SAME "Unsupported client" interstitial
+  (canonicalized back to /pricing/), 321 chars, no price content.
+Two distinct URLs tried, both fail identically: archive.org's own crawler is served
+Canva's bot-block page, not the priced page, in every capture reachable today. Arm 2
+returns no readable price figures. This matches the original pass's finding
+(attempt 1 of that pass hit the same interstitial); not retried a third time, per
+the two-attempts-per-arm cap.
+
+OUTCOME
+----------------------------------------------------------------------------
+Arm 2 fails (no readable capture). Arm 1 returns positive documentary evidence: an
+official Canva help-center article stating the vendor's own currency policy (local
+currency by default, USD only where local currency is unsupported), read together
+with the directly observed, repeatedly-confirmed fact that TRY is this reader's
+actively-served local currency. Under the amended rule this is "readable evidence
+[that] shows the vendor publishes a non-USD price to the reader" — non_usd is
+justified by positive Arm-1 evidence, not by the absence-only Accept-Language check
+this record previously rested on. No value changes: headline_price_usd and
+first_charge_amount_usd both remain non_usd (Pro, TRY 1,920/yr).

@@ -1,0 +1,469 @@
+product_id: d-id
+product_name: D-ID
+category: AI avatar
+product_status: active
+paid_submission: "no"
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+recheck_date: not_applicable
+
+sources:
+  - label: "Pricing page (Studio)"
+    url: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807024314/https://www.d-id.com/pricing/studio/
+    archive_status: archived
+    role: primary_source
+  - label: "Studio EULA / D-ID Products Terms of Use"
+    url: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807032642/https://www.d-id.com/studio-end-user-license-agreement/
+    archive_status: archived
+    role: contractual_primary
+    note: "Governs self-serve Studio Guest User (Trial) and Paying User (Lite/Pro/Advanced) plans; last updated July 2024."
+  - label: "End User Agreement (general EUA, incl. Fair-Use Guidelines section 15)"
+    url: https://www.d-id.com/eula/
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807032703/https://www.d-id.com/eula/
+    archive_status: archived
+    role: fair_use_source
+    note: "Order-Form/API-oriented EUA; Section 15 Fair Use Guidelines is the target of the pricing page's Fair-Use Policy footnote link (/eula/#h-15-fair-use-guidelines)."
+  - label: "FAQs"
+    url: https://www.d-id.com/faqs/
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807032725/https://www.d-id.com/faqs/
+    archive_status: archived
+    role: docs_help_center
+  - label: "Help Center: Understanding subscriptions: key information you should know"
+    url: https://help.d-id.com/hc/en-us/articles/31234293852433-Understanding-subscriptions-key-information-you-should-know
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/d-id-sources/local_copy_help_understanding_subscriptions.txt
+    role: docs_help_center
+    note: "web.archive.org/save returned HTTP 520 on 3 attempts; page also returns HTTP 403 to scripted curl/WebFetch (Zendesk bot protection). Content captured via browser render (get_page_text) and saved locally."
+  - label: "Help Center: What are the copyright and commercial use rights for my videos?"
+    url: https://help.d-id.com/hc/en-us/articles/31350883819537-What-are-the-copyright-and-commercial-use-rights-for-my-videos
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/d-id-sources/local_copy_help_commercial_use_rights.txt
+    role: docs_help_center
+    note: "web.archive.org/save returned HTTP 520 on 3 attempts; page also returns HTTP 403 to scripted curl/WebFetch (Zendesk bot protection). Content captured via browser render (get_page_text) and saved locally."
+  - label: "Help Center: What happens when I run out of credits?"
+    url: https://help.d-id.com/hc/en-us/articles/31425358108305-What-happens-when-I-run-out-of-credits
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/d-id-sources/local_copy_help_run_out_of_credits.txt
+    role: docs_help_center
+    note: "web.archive.org/save returned HTTP 429/520 on 3 attempts; page also returns HTTP 403 to scripted curl/WebFetch (Zendesk bot protection). Content captured via browser render (get_page_text) and saved locally."
+
+source_urls: "https://www.d-id.com/pricing/studio/ | https://www.d-id.com/studio-end-user-license-agreement/ | https://www.d-id.com/eula/ | https://www.d-id.com/faqs/ | https://help.d-id.com/hc/en-us/articles/31234293852433-Understanding-subscriptions-key-information-you-should-know | https://help.d-id.com/hc/en-us/articles/31350883819537-What-are-the-copyright-and-commercial-use-rights-for-my-videos | https://help.d-id.com/hc/en-us/articles/31425358108305-What-happens-when-I-run-out-of-credits"
+
+primary_source_url: https://www.d-id.com/pricing/studio/
+archive_url: https://web.archive.org/web/20260807024314/https://www.d-id.com/pricing/studio/
+archive_status: archived
+
+entry_tier_name: Lite
+
+default_display_state: >
+  Pricing page https://www.d-id.com/pricing/studio/ (www.d-id.com/pricing/ redirects here) loaded
+  with the "Annual" billing toggle pre-selected ("Save up to 45%" badge active on the Annual pill;
+  Monthly not selected). Non-essential cookies (Preferences/Statistics/Marketing) were declined via
+  the consent banner's "Deny" control before other variables were read; only Necessary cookies
+  remained active. Each plan card's credit-package selector defaulted to its lowest listed option
+  (Lite=40 credits, Pro=60 credits, Advanced=400 credits) with the higher options (52/64, 100/240,
+  600/700) shown unselected in gray. This state was archived (see sources). A mid-session browser
+  reload (technical recovery, not preference-hunting) reproduced the identical default state
+  (Annual pre-selected, same prices) before any variable was read from it, so no display_variant
+  register event applies.
+
+variables:
+  # --- Domain 1: Headline price vs price actually charged ---
+  headline_price_usd:
+    value: 4.70
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      Entry paid tier Lite card reads "$4.7/month" as the largest/most prominent figure, in the
+      page's default (Annual toggle, 40-credit package) display state.
+
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      Lite card shows "$4.7/month" with "$56 billed annually (20% discount)" beneath it; no
+      "per seat"/"per user" qualifier appears anywhere on the pricing page for Lite/Pro/Advanced.
+
+  first_charge_amount_usd:
+    value: 56.00
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      Default state is Annual and headline is a monthly figure; the annual total is stated
+      directly ("$56 billed annually"), so it is read, not computed.
+
+  mandatory_addon_present:
+    value: "no"
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      Section 8 (Payments) describes only the Subscription Fee per selected Plan; no required
+      minimum credit purchase, platform fee, or onboarding fee is stated. Pricing page's Lite
+      feature list carries no separate paid line item.
+
+  # --- Domain 2: Visibility of the annual-billing condition ---
+  annual_condition_disclosure:
+    value: adjacent
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      "$56 billed annually (20% discount)" sits directly beneath "$4.7/month" inside the same
+      Lite plan card/price block.
+
+  annual_default_toggle:
+    value: annual_preselected
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      "Annual" pill is the active/highlighted control ("Save up to 45%" badge) on page load,
+      before any interaction; "Monthly" is unselected.
+
+  # --- Domain 3: Real usability of the free plan ---
+  free_plan_exists:
+    value: "no"
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      The only $0 offering is "Trial", explicitly labeled "14-day trial" (time-limited), which
+      per codebook rule 1 is a trial, not a free plan. No other plan carries a $0 price; Lite,
+      Pro, Advanced, Enterprise are all paid/sales-gated. No free-forever plan is documented
+      anywhere on the pricing page, FAQ, or ToS.
+
+  free_plan_cap_documented:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No free plan exists (see free_plan_exists)."
+
+  free_plan_cap_value:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No free plan exists."
+
+  free_plan_watermark:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No free plan exists."
+
+  free_plan_duration:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No free plan exists."
+
+  # --- Domain 4: Whether a trial requires a payment card ---
+  trial_exists:
+    value: "yes"
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      Pricing page "Trial" card: "$0", "14-day trial", CTA "START FREE TRIAL". Corroborated by
+      Studio EULA/Terms of Use section 3.1: Guest User may use the Software "for a period of two
+      weeks... with limited features for non-commercial use only."
+
+  trial_card_required:
+    value: unknown
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      Neither the pricing page, the Studio EULA/Terms of Use (section 3.1, Guest User), nor the
+      FAQ states whether payment details are required to start the Studio (web) trial; no
+      "no credit card required" statement, no statement requiring one. Per rule, absence of any
+      statement is unknown; not inferred from the signup link's design. NOTE (context, not basis
+      for this value): a separate Help Center article, "How do I start a trial on the D-ID mobile
+      app?" (help.d-id.com/hc/en-us/articles/31288639829009), explicitly instructs users to
+      "Select a subscription plan and enter your credit card details" for the MOBILE APP trial
+      specifically -- a distinct signup flow from the Studio web product this record is anchored
+      to, so it is not used to code the web trial's value.
+
+  trial_length_days:
+    value: 14
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      Pricing page: "14-day trial". Studio EULA/Terms of Use section 3.1: "a period of two weeks"
+      (=14 days). Help Center "Understanding subscriptions" article: "Free Trial - 14 days of
+      unlimited use". All three agree on 14 days. (The "unlimited use" wording in that last
+      source conflicts with the pricing page's own Trial INCLUDES line, "3 minutes for Videos,
+      Agents, Video Translate & API" -- a genuine disclosure discrepancy about trial usage caps,
+      noted here because no codebook variable directly scores a trial usage-cap value; it does
+      not affect trial_length_days, on which all sources agree.)
+
+  trial_auto_converts:
+    value: unknown
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      No official document for the Studio (web) trial states whether it converts to a paid
+      subscription automatically at expiry or simply ends/locks access. Studio EULA section 3.1
+      is silent on this. (A separate mobile-app-specific Help Center article implies auto-charge
+      unless canceled for that distinct signup flow; not used here for the same reason given
+      under trial_card_required.)
+
+  # --- Domain 5: Comprehensibility of the credit system ---
+  credit_system_present:
+    value: "yes"
+    source: https://www.d-id.com/faqs/
+    access_date: 2026-08-07
+    evidence: >
+      FAQ "Payment and Credits > What are credits?": "Each credit is worth up to 15 seconds of
+      video." Credits are an intermediate currency converting into output (video seconds/minutes),
+      not an output-unit allowance stated directly. Pricing page shows plan allowances in credits
+      (e.g. "40 credits").
+
+  credit_unit_defined:
+    value: "yes"
+    source: https://www.d-id.com/faqs/
+    access_date: 2026-08-07
+    evidence: >
+      FAQ: "Each credit is worth up to 15 seconds of video. When generating longer videos,
+      credits add up according to the length of the generated video. For example, a 40-second
+      video consumes 3 credits." Ties the unit to a recognizable output (seconds of video).
+
+  credit_to_output_rate_published:
+    value: "yes"
+    source: https://www.d-id.com/faqs/
+    access_date: 2026-08-07
+    evidence: >
+      Principal output is video. FAQ publishes the credit-to-video-seconds rate (1 credit = up to
+      15 sec) with a worked example (40 sec = 3 credits). The same base rate is stated for the
+      product's other advertised output types too: Video Translate (Help Center "How are credits
+      calculated for Video Translation?": "1 credit = up to 15 seconds") and Agents (Help Center
+      "How does Agent pricing work?": each message/15-second interval consumes 0.5 credits).
+      Rate published for the principal output and the other output types the plan advertises.
+
+  credit_rate_location:
+    value: docs_help_center
+    source: https://www.d-id.com/faqs/
+    access_date: 2026-08-07
+    evidence: >
+      Rate is published on the FAQ page (d-id.com/faqs) and corroborated on the Zendesk Help
+      Center (help.d-id.com), both within the documentation/help-center source class; not stated
+      on the pricing page itself or in the ToS.
+
+  # --- Domain 6: Computability of cost per output ---
+  cost_per_output_unit:
+    value: per_video_minute
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      D-ID Studio's principal output is avatar-driven video, naturally measured in minutes on the
+      pricing page itself ("10 min. / month for Videos, Agents, Video Translate & API" on Lite).
+
+  cost_per_output_computable:
+    value: "yes"
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      Entry tier Lite: $4.70/mo (default display state), 40 credits/mo included (default
+      package), 1 credit = up to 15 sec video (FAQ). 40 credits x 15 sec = 600 sec = 10 min/mo,
+      which independently matches the pricing page's own stated "10 min. / month" allowance for
+      Lite. 4.70 / 10 = 0.47 USD per video minute. See computation_assumptions.
+
+  computation_assumptions:
+    value: >
+      Lite tier, $4.70/mo billed annually (default state, 40-credit pkg default). Allowance
+      10 min/mo per pricing page = 40 credits x up to 15 sec/credit (FAQ); matches exactly. Same
+      period both sides, no conversion needed. 4.70/10=0.47 per video minute.
+    source: not_applicable
+    evidence: "Coder's own arithmetic; see cost_per_output_computable."
+
+  # --- Domain 7: Rollover of unused credits ---
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: https://www.d-id.com/faqs/
+    access_date: 2026-08-07
+    evidence: >
+      FAQ: "Do unused credits carry over to the next month? Credits do not accumulate, they are
+      renewed every month and unused credits become void." Corroborated by Studio EULA/Terms of
+      Use section 8.2: "Unused Credits will expire at the end of the applicable Billing Period
+      and would not be rolled over to a subsequent Billing Period."
+
+  # --- Domain 8: Charging for failed generations ---
+  failed_generation_charge_policy:
+    value: unknown
+    source: https://www.d-id.com/faqs/
+    access_date: 2026-08-07
+    evidence: >
+      Pricing page, FAQ, Studio EULA/Terms of Use, and the Help Center (searched directly for
+      "failed"/"error" + credits) were read; none states whether a technically failed or empty
+      generation consumes a credit. FAQ's moderation-rejection Q&As address why an image/audio/
+      text submission is rejected pre-generation, not credit treatment of a failed attempt.
+
+  # --- Domain 9: Auto-renewal ---
+  auto_renewal_default:
+    value: "on"
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      Section 8.2 (Payments): "The Subscription Fee shall automatically renew for successive
+      Billing Periods." ToS ranks first for this contractual variable.
+
+  auto_renewal_disclosure_location:
+    value: terms_only
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      Automatic renewal is stated only in Studio EULA/Terms of Use section 8.2. The pricing page
+      states no renewal language near the price, and the FAQ/Help Center billing articles
+      describe canceling and running out of credits but never state that billing "automatically
+      renews".
+
+  renewal_notice_commitment:
+    value: no_notice_stated
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      Section 8 (Payments) was read in full; it states the renewal and the 15-day advance-
+      cancellation requirement to avoid the next charge, but contains no commitment by D-ID to
+      notify the buyer in advance of an upcoming renewal charge. No such commitment found
+      elsewhere (FAQ, Help Center).
+
+  # --- Domain 10: Refund and cancellation terms ---
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      Section 8.5: "Payments shall be made without any right of set-off or deduction and are
+      irrevocable and nonrefundable (except as explicitly provided herein)." No exception for
+      Studio/Stripe subscription payments is spelled out elsewhere in the document (the only
+      other "refund" mention concerns Apple App Store purchases under the Distributor
+      Requirements rider, not the web/Stripe checkout path used for the entry tier).
+
+  refund_window_days:
+    value: 0
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: "No refunds are given per section 8.5 (see refund_policy_exists)."
+
+  refund_conditions:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No refund is available (refund_policy_exists = no_refunds_stated)."
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      Section 8.2: "You may cancel your automatic subscription at any time either through the
+      Software or by contacting us at: support@d-id.com." Self-serve cancellation "through the
+      Software" is documented (an alternate contact route is also offered). Corroborated by FAQ:
+      "You can cancel your monthly subscription any time on the 'Account & API' page."
+
+  refund_policy_location:
+    value: terms
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      The no-refunds statement lives inside section 8.5 of the Studio EULA/Terms of Use, a
+      general terms document, not a standalone dedicated refund page.
+
+  # --- Domain 11: Commercial-use rights ---
+  commercial_use_lowest_tier:
+    value: mid_tier
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      Section 20.2: "Paying Users subscribed to the 'Lite' Plan will be able to use the Software
+      and/or Animations for non-commercial use only." Entry tier Lite = personal/non-commercial.
+      Pricing page License row: Pro = first tier marked "Commercial use" (Trial/Lite = "Personal
+      use"). Help Center "What are the copyright and commercial use rights for my videos?":
+      "Trial, Lite, Build - For personal use only... Pro, Advanced, Enterprise, Launch, Scale -
+      For commercial use." All three sources agree: commercial use starts at Pro, which sits
+      above entry tier Lite and below Advanced, the highest generally-available (non-sales-gated)
+      tier -> mid_tier.
+
+  watermark_removal_tier:
+    value: never_removed
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      Section 4.2: "All Animations contain a synthetic mark, in order to clarify that the
+      Animations are edited... ('Synthetic Mark')... Animations created for Guest Users will
+      contain additional watermarks ('Watermarks')... Replacement of the D-ID logo with an
+      alternate watermark... may be requested by Enterprise customers... subject to D-ID's prior
+      written approval." No tier removes marking entirely; Enterprise can only replace/customize
+      it. See conflict_note for the section 3.2 phrasing this reconciles.
+
+  output_ownership_statement:
+    value: user_owns
+    source: https://www.d-id.com/studio-end-user-license-agreement/
+    access_date: 2026-08-07
+    evidence: >
+      Section 20.2 (Ownership and Responsibility): "Notwithstanding anything to the contrary in
+      this Agreement, you retain all of your ownership rights in your User Submissions, Output
+      and/or Animations." Stated without a tier condition (the tier-based restriction in the same
+      sentence context concerns commercial-use rights, not ownership itself). Section 7.2
+      corroborates: Inputs/Outputs/Animations are expressly excluded from D-ID's own "Software
+      Content".
+
+  # --- Domain 12: Undisclosed or unverifiable limits ---
+  usage_cap_quantified:
+    value: some_quantified
+    source: https://www.d-id.com/pricing/studio/
+    access_date: 2026-08-07
+    evidence: >
+      Entry tier Lite's documented limits mix quantified and unquantified. Quantified:
+      "10 min. / month for Videos, Agents, Video Translate & API" (rate); "40 credits" default
+      package (rate, monthly per FAQ); "3 Agentic Videos", "1 Personal Avatar", "2" Video
+      Avatars, "50" AI Prompted Avatar Generations, "1000" Agent Memory (standing limits).
+      Unquantified: "Unlimited videos[1] for your first month!" where footnote 1 reads
+      "Reasonable use limits apply. See Fair-Use Policy." -- an unlimited claim qualified by a
+      no-number fair-use clause elsewhere fails the quantified test (rule 3) -> not quantified.
+      At least one quantified and at least one not -> some_quantified.
+
+  unquantified_limit_clause:
+    value: present
+    source: https://www.d-id.com/eula/
+    access_date: 2026-08-07
+    evidence: >
+      The pricing page's "Unlimited videos" footnote links to the Fair-Use Policy
+      (fairUsePolicyUrl default "/eula/#h-15-fair-use-guidelines", confirmed in the pricing page's
+      own JS bundle). EUA section 15 "Fair Use Guidelines": "Usage must remain within reasonable
+      bounds consistent with normal individual or business use. Any usage patterns that are
+      excessive, abnormal, or indicative of misuse... are prohibited... D-ID reserves the right
+      to monitor usage and, at its discretion, suspend, limit, or terminate access if a User's
+      activities exceed what is deemed by D-ID as fair and reasonable." No number given for what
+      is "reasonable" -- a discretionary, unquantified standard.
+
+coder_note: >
+  Entry tier=Lite (ann-equiv $56.00). Losing eligible: Pro $191.00, Advanced $1,293.00
+  (ann-equiv). Enterprise excluded: sales-gated, no public price. Trial excluded: $0, not a
+  paid tier (see trial_* variables).
+
+# Top-level mirror of variables.computation_assumptions.value, for convenience per the
+# record schema (computation_assumptions listed alongside coder_note/conflict_note).
+computation_assumptions: >
+  Lite tier, $4.70/mo billed annually (default state, 40-credit pkg default). Allowance
+  10 min/mo per pricing page = 40 credits x up to 15 sec/credit (FAQ); matches exactly. Same
+  period both sides, no conversion needed. 4.70/10=0.47 per video minute.
+
+conflict_note: >
+  watermark_removal_tier: ToS S3.2 says Paying Users' Animations "will not have Watermarks";
+  S4.2 clarifies a non-removable Synthetic Mark applies to ALL tiers, only Guest Users get
+  extra "Watermarks". Matches pricing page + FAQ (Enterprise customizes, can't remove). Coded
+  never_removed.
+
+register_events: []
+# No display_variant observed: the one mid-pass reload of the pricing page (browser-pane
+# recovery, not preference-hunting) reproduced the identical default state (Annual pre-selected,
+# same prices) before any variable was read from it. Nothing to log under protocol section 6.8
+# rule 3 / section 6.6.
+
+blindness: no other record, no review page, no pass-2 material was opened.
+
+status: complete

@@ -1,0 +1,28 @@
+Access date (all): 2026-08-06
+Coder pass: primary
+
+1. pricing: https://www.findanomaly.ai/pricing
+   archive: https://web.archive.org/web/20260806194233/https://www.findanomaly.ai/pricing
+2. terms: https://www.findanomaly.ai/terms
+   archive: https://web.archive.org/web/20260806194352/https://www.findanomaly.ai/terms
+3. privacy: https://www.findanomaly.ai/privacy
+   archive: https://web.archive.org/web/20260806194437/https://www.findanomaly.ai/privacy
+4. security: https://www.findanomaly.ai/security
+   archive: https://web.archive.org/web/20260806194505/https://www.findanomaly.ai/security
+5. ai-for-large-datasets: https://www.findanomaly.ai/ai-for-large-datasets
+   archive: https://web.archive.org/web/20260806194550/https://www.findanomaly.ai/ai-for-large-datasets
+6. home: https://www.findanomaly.ai/
+   archive: https://web.archive.org/web/20260806194641/https://www.findanomaly.ai/
+7. capabilities: https://www.findanomaly.ai/capabilities
+   archive: https://web.archive.org/web/20260806194723/https://www.findanomaly.ai/capabilities
+8. contact: https://www.findanomaly.ai/contact
+   archive: https://web.archive.org/web/20260806194808/https://www.findanomaly.ai/contact
+9. manifesto: https://www.findanomaly.ai/ai-data-analysis-code-first-philosophy
+   archive: https://web.archive.org/web/20260806194854/https://www.findanomaly.ai/ai-data-analysis-code-first-philosophy
+10. solutions: https://www.findanomaly.ai/solutions
+    archive: https://web.archive.org/web/20260806194935/https://www.findanomaly.ai/solutions
+
+Notes:
+- vendor_home_url given in assignment (https://tryanomaly.ai) does not resolve (DNS NXDOMAIN, confirmed via curl and WebFetch). WebSearch shows tryanomaly.ai/tryanomaly.in belongs to an unrelated Indian company "TryAnomaly Technologies" (AI competitive-intelligence, incorporated 25 Mar 2026), not the AI-data-analysis product "Anomaly AI" assigned here. Followed to the official product domain www.findanomaly.ai (findanomaly.ai 301-redirects to www.findanomaly.ai), confirmed via: (a) ToS naming "Mindlake Ltd, trading as Anomaly AI" operating www.findanomaly.ai and app.findanomaly.ai; (b) category match (AI data analysis / "AI data analyst for recurring business reports"); (c) third-party listings (Capterra, ai.cc, theresanaiforthat -- used only to locate the domain, not as coded sources).
+- Default display state confirmed by live browser render (JS-hydrated, cookies rejected via "Reject non-essential") AND by static SSR HTML: Monthly billing tab is pre-selected on load; annual ("Yearly") figures exist only in an embedded JSON data blob not rendered by default.
+- Pages fetched via curl use User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36".

@@ -1,0 +1,28 @@
+SOURCE: https://hyperleap.ai/pricing
+ACCESS DATE: 2026-08-09
+METHOD: Rendered read via headless Chromium browser tool (mcp Claude_Browser), real page load + JS execution (not static fetch). Cookie/consent: no consent banner was presented; no cookies were interacted with.
+NETWORK NOTE: session network egress point unknown/unverified for this specific browser tool (separate network path from the Bash-tool curl fetches, which egressed showing no non-USD currency indication). All figures observed below are in USD ($), matching the static curl fetch (pricing-static-raw.html) and the pricing.md mirror. No non-USD figure was observed at any point, so the D-003 currency-check escalation (web.archive.org US-locale cross-check) was not required beyond the US-locale-header curl fetch already performed.
+PURPOSE: Confirm the pricing page's DEFAULT display state (protocol 6.8) — which billing toggle position (Monthly/Annual) is active before any interaction — and capture the entry-tier candidates' figures as actually rendered.
+
+=== STEP 1: default state on load, before any interaction ===
+Screenshot + DOM read on load showed the billing toggle section:
+  "Monthly" label rendered in class="text-sm font-medium text-slate-900 dark:text-white" (dark/emphasized)
+  toggle <button> knob at class="absolute top-1 left-1 ..." with NO translate-x transform applied (left/off position)
+  "Annual" label rendered in class="text-sm font-medium text-slate-500 dark:text-slate-400" (muted/grey)
+  "2 months free" badge shown next to Annual
+This matches the static HTML fetch (pricing-static-raw.html) byte-for-byte for this DOM region, confirming the SSR default and the client hydration default agree: MONTHLY is the pre-selected/default state. Screenshot evidence: toggle knob visually on the left side, "Monthly" in bold black text, "Annual" in grey text (see screenshots taken this session, not separately saved as files but directly observed via the computer/screenshot tool).
+
+Plan cards in this DEFAULT (Monthly) state:
+  Plus:  "$40 /mo"   — no "billed annually" qualifier — "7-day free trial" directly beneath the price
+  Pro:   "$100 /mo"  (from static text extraction, same load state)
+  Max:   "$200 /mo"  (from static text extraction, same load state)
+No plan card showed an annual-prepayment condition in this state, consistent with annual_condition_disclosure = not_applicable (headline figure does not depend on annual prepayment in the state it loaded).
+
+=== STEP 2: billing toggle clicked AFTER default state was recorded (permitted per protocol 6.3/6.8 — reading, not a transaction) ===
+Clicking the toggle switched the visual state to Annual-active (knob moved right, "Annual" became bold/dark, "Monthly" became grey). Resulting figures (document.body.innerText captured via javascript_tool, full text saved separately is not duplicated here to avoid redundancy with the pricing.md source; key figures):
+  Plus:  "$33 /mo" — "Billed $396/year · Save $84/year"
+  Pro:   "$83 /mo" — "Billed $996/year · Save $204/year"
+  Max:   "$166 /mo" — "Billed $1992/year · Save $408/year"
+This is supplementary context only. Per sampling-rules.md 7.2 rule 2, the entry-tier price basis is computed by annualizing the DEFAULT state's monthly figure ($40 x 12 = $480 for Plus), not from this toggled Annual figure. Recorded here for completeness/audit only; not used as the basis for headline_price_usd or entry_tier_name.
+
+=== Full page text captured post-toggle (document.body.innerText) is preserved in the tool-call transcript of this session; the pre-toggle default-state page content is fully represented in pricing-static-raw.html (raw HTML) and pricing.md (vendor's own markdown mirror of the same canonical page, https://hyperleap.ai/pricing), both saved alongside this file and both submitted to web.archive.org the same day. ===

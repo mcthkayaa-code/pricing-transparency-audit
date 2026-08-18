@@ -1,0 +1,181 @@
+product_id: myperfectresume
+product_name: MyPerfectResume
+category: AI resume builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: "1-Year Premium Access"
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-10
+recheck_date: not_applicable
+primary_source_url: https://www.myperfectresume.com/pricing
+archive_url: https://web.archive.org/web/20260810062217/https://www.myperfectresume.com/pricing
+archive_status: archived
+default_display_state: "USD ($) prices shown directly, no locale/currency switch observed; no monthly/annual toggle control on page -- three static plan cards (Free / 14-Day Premium Access / 1-Year Premium Access) each with its own fixed price; non-essential cookies declined (Cookie Settings > Save Preferences, Analytics/Performance/Advertising left off); read from Turkey network, no VPN."
+
+sources:
+  - { url: "https://www.myperfectresume.com/pricing", kind: pricing, accessed: 2026-08-10, archive: "https://web.archive.org/web/20260810062217/https://www.myperfectresume.com/pricing", note: "rendered read (static fetch failed twice, see coder_note); local copy myperfectresume-sources/pricing-rendered.txt" }
+  - { url: "https://www.myperfectresume.com/terms-conditions", kind: tos, accessed: 2026-08-10, archive: "https://web.archive.org/web/20260810064404/https://www.myperfectresume.com/terms-conditions", note: "Terms of Use, last updated per page banner 2026-04-30; local copy myperfectresume-sources/terms-conditions-rendered.txt" }
+  - { url: "https://www.myperfectresume.com/faq", kind: docs, accessed: 2026-08-10, archive: archive_failed, note: "2 archive.org save attempts both HTTP 520 -> local_copy_only; local copy myperfectresume-sources/faq-and-contact-billing-rendered.txt; general product FAQ, no billing content found" }
+  - { url: "https://www.myperfectresume.com/contact-us", kind: docs, accessed: 2026-08-10, archive: archive_failed, note: "2 archive.org save attempts both HTTP 520 -> local_copy_only; local copy myperfectresume-sources/faq-and-contact-billing-rendered.txt; official support FAQ accordion with billing-adjacent Q&A" }
+
+variables:
+  headline_price_usd: { value: 7.95, source: "https://www.myperfectresume.com/pricing", evidence: "\"$7.95/month\" -- headline figure on the 1-Year Premium Access card (entry tier, see coder_note)" }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://www.myperfectresume.com/pricing", evidence: "\"$7.95/month ... Pay $95.40 up-front and save 69%. Automatically renews each year.\"" }
+  first_charge_amount_usd: { value: 95.40, source: "https://www.myperfectresume.com/pricing", evidence: "\"Pay $95.40 up-front and save 69%.\" -- documents state the annual total directly, no multiplication needed" }
+  mandatory_addon_present: { value: "no", source: "https://www.myperfectresume.com/terms-conditions", evidence: "\"Provider may offer certain premium services such as Resume Review, Resume Writing, Premium Career Report and Cover Letter Writing, which may not be included in the cost of Provider's basic subscription services.\" -- framed as optional upsells, not required to use the entry tier's advertised features (builder, templates, unlimited downloads, ResumeCheck, ExpertApply all included per pricing page without extra charge)" }
+  annual_condition_disclosure: { value: adjacent, source: "https://www.myperfectresume.com/pricing", evidence: "\"Pay $95.40 up-front and save 69%. Automatically renews each year. Cancel anytime.\" printed directly beneath the $7.95/month figure inside the same plan card" }
+  annual_default_toggle: { value: no_toggle, source: "https://www.myperfectresume.com/pricing", evidence: "DOM inspection found no interactive billing-period toggle; three plan cards (Free / 14-Day Premium Access / 1-Year Premium Access) render side by side, each with its own fixed price" }
+  free_plan_exists: { value: "yes", source: "https://www.myperfectresume.com/pricing", evidence: "\"FREE PLAN / Basic Access / Free / Access our basic features. Start building your professional resume and cover letter today.\" -- standing tier shown alongside paid tiers, no expiry stated" }
+  free_plan_cap_documented: { value: some_quantified, source: "https://www.myperfectresume.com/pricing", evidence: "DOM check/lock-icon inspection of the Free plan card (wrapper class \"lock-3\"): \"Unlimited Downloads in TXT Format\" unlocked (explicit unlimited = quantified per codebook 5.1 rule 3 carve-out); \"Professionally Designed Templates\", \"Unlimited PDF & Word Downloads\", \"ResumeCheck (TM) Feedback\", \"Interview Preparation Tools\", \"Career Development Webinars\" all shown with a lock.svg icon (no number attached to the exclusion) -- coder judgment call, see coder_note" }
+  free_plan_cap_value: { value: "unlimited txt-format downloads", source: "https://www.myperfectresume.com/pricing", evidence: "\"Unlimited Downloads in TXT Format\" -- the only limit on the free plan that carries the codebook's explicit-unlimited quantified carve-out; other free-plan restrictions are binary feature locks with no number, not recorded here per free_plan_cap_value's numeric-only format" }
+  free_plan_watermark: { value: unknown, source: "https://www.myperfectresume.com/terms-conditions", evidence: "0 hits for \"watermark\" across the full terms-conditions text (113,851 chars) and the pricing page; free-tier restriction is a complete TXT-only format lock, not a watermark mechanism, and no document states either way" }
+  free_plan_duration: { value: perpetual, source: "https://www.myperfectresume.com/pricing", evidence: "Free (\"Basic Access\") shown as a standing column alongside the paid tiers with no expiry or end date stated anywhere in the pricing page or terms" }
+  trial_exists: { value: "yes", source: "https://www.myperfectresume.com/pricing", evidence: "\"14-Day Premium Access / $2.95 / After 14 days, auto-renews at $23.95 billed every 4 weeks.\" -- coder judgment call: this is a PAID ($2.95) time-limited (14-day) introductory period to the paid tier that auto-converts to a materially higher recurring rate, not a literal $0 trial; codebook's variable-level definition text says \"free trial\" but the domain title (9: \"Whether a trial requires a payment card\") does not require zero cost, and the vendor's own documents never use the word \"trial\" at all (0 hits, ToS full-text search). Coded yes because this is precisely the low-price-then-auto-convert construct Domain 4 is designed to catch. See coder_note for the reasoning and for a human override point." }
+  trial_card_required: { value: unknown, source: "https://www.myperfectresume.com/pricing", evidence: "ADJUDICATION QUEUE A-012, resolved 2026-08-17 (orchestrator/A-012-resolution.md). WAS \"yes\"; corrected to unknown, kind = VENDOR SILENCE. This variable's rule 3 explicitly BARS inference and makes vendor silence unknown, and the original value was reached by inference -- the coder said so in its own evidence: a non-zero immediate charge 'necessarily requires payment details'. That is a sound inference and it is still an inference. No document states whether payment details are required. Direction: this correction COSTS the vendor 2 points on B3 (5 to 3), and is applied with the same care an owner-favourable correction would get. Original coder reasoning, preserved: '\"$2.95\" is charged immediately to start 14-Day Premium Access -- a real, non-zero, immediate charge necessarily requires payment details. No document uses the literal phrase \"card required\"; this value follows directly from the published price, not from signup-flow design (which was not opened).'" }
+  trial_length_days: { value: 14, source: "https://www.myperfectresume.com/pricing", evidence: "\"14-Day Premium Access\" / \"After 14 days, auto-renews...\"" }
+  trial_auto_converts: { value: "yes", source: "https://www.myperfectresume.com/pricing", evidence: "\"After 14 days, auto-renews at $23.95 billed every 4 weeks. Cancel anytime.\"" }
+  credit_system_present: { value: "no", source: "https://www.myperfectresume.com/pricing", evidence: "\"Unlimited Downloads in TXT Format\", \"Unlimited PDF & Word Downloads\" -- flat unmetered access; no credits/tokens/points/coins/generations terminology anywhere on the pricing page, terms, or FAQ" }
+  credit_unit_defined: { value: not_applicable, source: "https://www.myperfectresume.com/pricing", evidence: "no credit system present" }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://www.myperfectresume.com/pricing", evidence: "no credit system present" }
+  credit_rate_location: { value: not_applicable, source: "https://www.myperfectresume.com/pricing", evidence: "no credit system present" }
+  cost_per_output_unit: { value: per_seat_month, source: "https://www.myperfectresume.com/pricing", evidence: "unmetered flat-rate subscription access sold at a fixed per-period price per user, no per-document metering (matches codebook's Vendor L pattern)" }
+  cost_per_output_computable: { value: "yes", source: "https://www.myperfectresume.com/pricing", evidence: "unit = per_seat_month; the entry tier's own published monthly price already IS the cost per seat-month, no further published figure or assumption needed" }
+  computation_assumptions: { value: "Entry tier 1-Year Premium Access, $7.95/month per default display state (billed $95.40/yr up-front per pricing page); unit=per_seat_month (unmetered flat-rate access, no per-document metering); cost per seat-month = plan price = 7.95; already monthly, no period conversion needed.", source: "https://www.myperfectresume.com/pricing", evidence: "" }
+  credit_rollover_policy: { value: not_applicable, source: "https://www.myperfectresume.com/pricing", evidence: "no credit system present" }
+  failed_generation_charge_policy: { value: not_applicable, source: "https://www.myperfectresume.com/pricing", evidence: "product has no metered generation step -- flat-rate unlimited access, nothing is consumed per action" }
+  auto_renewal_default: { value: "on", source: "https://www.myperfectresume.com/terms-conditions", evidence: "Section 9, \"Payments and Subscriptions\": \"Once your subscription is active, it will automatically renew as described on the offer page until you terminate the contract... When you sign up and purchase a Subscription, you agree to automatic or recurring billing.\" Consistent with pricing page: \"auto-renews at $23.95 billed every 4 weeks\" / \"Automatically renews each year.\"" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://www.myperfectresume.com/terms-conditions", evidence: "Stated in both the pricing page (with the specific dollar figure and cadence, adjacent to each plan's price) and the terms of service Section 9 (general automatic-renewal obligation, which explicitly defers the specific figure to \"the offer page\" rather than restating it)" }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://www.myperfectresume.com/terms-conditions", evidence: "Terms address notice only for PRICE CHANGES (\"In case there is a price change you will be notified in advance and provided a period of time to manage your subscription\") and for AFTER-the-fact cancellation/subscription confirmation emails (Section 10); full-text read found no commitment to notify before a routine renewal charge specifically" }
+  refund_policy_exists: { value: "yes", source: "https://www.myperfectresume.com/pricing", evidence: "\"Money-Back Guarantee: Request a refund within 14 days of subscribing to premium access to qualify.\" Consistent with terms Section 10: \"You may request a refund if notice of cancellation of your subscription is provided before the end of the initial period, if the initial period is offered.\"" }
+  refund_window_days: { value: 14, source: "https://www.myperfectresume.com/pricing", evidence: "\"Request a refund within 14 days of subscribing to premium access to qualify.\"" }
+  refund_conditions: { value: conditional, source: "https://www.myperfectresume.com/terms-conditions", evidence: "Refund requires cancellation notice before the end of the 14-day initial period (not available on request at any time); Highlights section also states \"Provider does not guarantee refunds.\"" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.myperfectresume.com/terms-conditions", evidence: "Section 10, \"Cancellations\": \"You may cancel your subscription anytime by contacting our customer service department or by going to the online cancel page under your settings page.\" (self-serve route documented as one of two options)" }
+  refund_policy_location: { value: multiple, source: "https://www.myperfectresume.com/terms-conditions", evidence: "Stated on both the pricing page (\"Money-Back Guarantee\" line, with the 14-day figure) and the terms of service Section 10 (\"Cancellations\", general conditional right)" }
+  commercial_use_lowest_tier: { value: unknown, source: "https://www.myperfectresume.com/terms-conditions", evidence: "No document grants or denies a commercial-use right for the resume/cover-letter output itself. One AUP phrase found -- \"you are obliged to refrain from transmitting any commercial, advertising, or promotional materials, or use the digital resume for commercial purposes\" -- appears in the Bold.pro public-profile acceptable-use rules (anti-spam/anti-advertising via the profile page), a different context from licensing the resume output; not used to code a determinate value. See coder_note." }
+  watermark_removal_tier: { value: unknown, source: "https://www.myperfectresume.com/terms-conditions", evidence: "0 hits for \"watermark\" anywhere in the terms or pricing page; MyPerfectResume gates the free plan by complete format lock (TXT only) rather than by watermarking, and no document states a watermark policy either way" }
+  output_ownership_statement: { value: user_owns, source: "https://www.myperfectresume.com/terms-conditions", evidence: "Section 5, \"Your Content and Your License to Us\": \"For clarity, you retain ownership of your User Content at all times.\" User Content is defined to include \"resume, career history... or any other information you provide on or through the Service or that we may create for you.\"" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.myperfectresume.com/pricing", evidence: "\"Access 40+ customizable templates\", \"Scan your resume for 30+ issues\" (ResumeCheck), \"Unlimited PDF & Word Downloads\" / \"Unlimited Downloads in TXT Format\" (explicit unlimited, quantified per 5.1 rule 3), and terms-conditions ExpertApply clause: \"the Site may limit the number of job applications being submitted to 1,000 per month per user\" -- every stated limit on the entry tier's features carries a number" }
+  unquantified_limit_clause: { value: absent, source: "https://www.myperfectresume.com/terms-conditions", evidence: "Full keyword sweep of the complete 113,851-character terms-conditions text for fair use / reasonable use / excessive / throttle / abuse / discretion / suspend / sole discretion found no discretionary unquantified usage-limiting clause on the resume-builder features; the one quantified cap found (ExpertApply, 1,000/month) carries no qualifying fair-use language beyond its own stated number" }
+
+coder_note: |
+  STATIC FETCH FAILURE, PER D-005: WebFetch on both the homepage and /pricing timed out
+  (60s). curl also failed against myperfectresume.com from this network: HTTP/2 attempt exit
+  92 (connection failure), HTTP/1.1 retry exit 28 (timeout). Both count as the two capped
+  fetch attempts. Per D-005 this is not a finding ("our fetcher could not see it" is not
+  unknown) -- pivoted immediately to a rendered read via mcp__Claude_Browser, which succeeded
+  cleanly. All coded values rest on that rendered read (pricing, terms-conditions) or a
+  second rendered read (faq, contact-us), never on the failed static fetch.
+
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2) -- the single biggest judgment call in this
+  record, documented for override. Two eligible paid candidates on the pricing page:
+    (1) "14-Day Premium Access" -- headline $2.95, described as "After 14 days, auto-renews
+        at $23.95 billed every 4 weeks."
+    (2) "1-Year Premium Access" -- headline $7.95/month, "Pay $95.40 up-front... Automatically
+        renews each year."
+  Sampling-rules 7.2 rule 2 enumerates exactly three annualization patterns (monthly x12,
+  annual as-is, "per month billed annually" x12) and none cleanly covers a flat one-time
+  introductory charge for a stated non-monthly, non-annual period (14 days) with a SEPARATELY
+  disclosed follow-on recurring rate. Candidate (2) matches the rule cleanly: $7.95/mo x 12 =
+  $95.40/yr, matching the page's own stated up-front figure. For candidate (1), multiplying
+  the $2.95 headline by 12 would misstate what the buyer actually pays annually (the page
+  itself labels $2.95 as a one-time 14-day charge, not a monthly recurring rate) and would
+  defeat the purpose of the annual-equivalent rule (comparing TRUE ongoing cost rather than a
+  teaser sticker). I instead annualized candidate (1) from its own disclosed steady-state
+  recurring rate: $23.95 every 4 weeks x 13 four-week periods/year = $311.35/year. On that
+  basis candidate (2) has the lower annual-equivalent cost ($95.40 vs $311.35) and is the
+  selected entry tier. LOSING CANDIDATE: "14-Day Premium Access", annual-equivalent
+  approximately $311.35 (computed from the disclosed post-intro recurring rate, not the $2.95
+  teaser; see above). Both candidates were otherwise eligible (generally available, no sales
+  contact, standing plans, no seat scaling). A reader who annualizes differently (e.g. treats
+  $2.95 x 12 = $35.40 as the comparison figure, ignoring the disclosed renewal rate) would
+  select "14-Day Premium Access" instead; I judge that reading inconsistent with the rule's
+  stated purpose and with the worked examples in codebook-v1.md, but flag it explicitly here.
+
+  DOMAIN 4 (trial_*) JUDGMENT CALL: codebook-v1.md's trial_exists definition text says "a
+  time-limited free trial of a paid tier", but the domain-9 map title (section 9) reads only
+  "Whether a trial requires a payment card", with no zero-cost requirement, and the vendor's
+  own documents never use the word "trial" anywhere (0 hits across the full 113,851-char
+  terms-conditions and the pricing page). MyPerfectResume's "14-Day Premium Access" is a PAID
+  ($2.95, charged immediately) time-limited period that auto-converts to a much higher
+  recurring rate -- functionally the exact pattern this domain exists to catch, even though it
+  is not literally "free" and the vendor does not use the word "trial". I coded trial_exists =
+  yes, trial_card_required = yes (necessarily, since $2.95 is charged to start it),
+  trial_length_days = 14, trial_auto_converts = yes on that reading. If the intended reading
+  of "free trial" is strictly zero-cost, all four values should instead be: trial_exists = no,
+  and trial_card_required / trial_length_days / trial_auto_converts = not_applicable. Flagging
+  for human sign-off per protocol 7.5 either way, since this is a genuine definitional gap, not
+  a documents gap.
+
+  free_plan_cap_documented / free_plan_cap_value JUDGMENT CALL: the free ("Basic Access") plan
+  card is NOT distinguishable from the two Premium cards by plain text extraction -- all three
+  show an identical bullet list. DOM inspection (::before background-image) revealed the free
+  card's wrapper carries CSS class "lock-3": the first 3 of 6 Resume Tools bullets (Resume &
+  Cover Letter Builder, Expert-Written Content Suggestions, Unlimited Downloads in TXT Format)
+  render with a navy checkmark, the remaining 3 (Professionally Designed Templates, Unlimited
+  PDF & Word Downloads, ResumeCheck (TM) Feedback) plus 2 of 3 Career Tools bullets (Interview
+  Preparation Tools, Career Development Webinars) render with a grey lock.svg icon
+  (background-image url ".../wp-content/uploads/2025/04/lock.svg"). Neither Premium card
+  carries a lock-N class -- both show all 9 bullets unlocked. I treated the one explicit
+  numberless "unlimited" statement (TXT downloads) as the plan's one quantified limit, and the
+  5 entirely-locked (0-access) items as unquantified limits on the free plan's real usability,
+  landing on some_quantified. The codebook's own worked example (Vendor G) only covers caps on
+  things a plan DOES provide in some quantity; it does not directly address an entirely-locked
+  feature carrying no number at all. A stricter reading that entirely-excluded features are
+  not "limits" in this variable's sense (they're just tier differences) would instead give
+  all_quantified (the one stated limit, "unlimited", is quantified). Flagging for override.
+
+  commercial_use_lowest_tier / watermark_removal_tier / free_plan_watermark = unknown: no
+  document states a commercial-use right or a watermark policy for the resume/cover-letter
+  output. One ambiguous phrase was found in the acceptable-use section governing the Bold.pro
+  public profile page ("...refrain from transmitting any commercial, advertising, or
+  promotional materials, or use the digital resume for commercial purposes") but this reads as
+  an anti-spam/anti-advertising rule for the public profile, not a licensing restriction on the
+  resume output itself (a literal reading would be self-contradictory, since job-seeking is the
+  product's entire purpose); not used to code a determinate value.
+
+  ENTRY-TIER VARIABLE SCOPING NOTE (codebook-v1.md 5.2): trial_length_days is nominally scoped
+  to "the entry paid tier", but the selected entry tier (1-Year Premium Access) has no trial of
+  its own -- only the losing candidate (14-Day Premium Access) does. There is exactly one trial
+  construct anywhere in the product, so I recorded its length (14) rather than coding
+  not_applicable/unknown, on the reading that the entry-tier caveat exists to disambiguate
+  BETWEEN multiple trials of different length, a case that does not arise here. Flagging this
+  as a second consequence of the same entry-tier tension described above.
+
+  All other entry-tier-scoped variables (first_charge_amount_usd, mandatory_addon_present,
+  usage_cap_quantified, cost_per_output_computable, refund_window_days) were read cleanly off
+  the selected entry tier (1-Year Premium Access) or, for refund_window_days, off a
+  premium-access-wide statement that does not vary by which path was purchased.
+
+  ARCHIVAL: pricing and terms-conditions archived cleanly to web.archive.org on first attempt.
+  faq and contact-us both failed archival twice (HTTP 520 from web.archive.org, transient
+  server-side) -- local text copies saved instead per protocol 6.4 (myperfectresume-sources/),
+  archive_status local_copy_only for those two sources.
+
+  D-003 CURRENCY CHECK: not triggered. All price figures were observed directly in USD ($) on
+  the rendered read from our Turkey-based network, no VPN, no geo-based currency variant
+  detected. No non_usd value was coded anywhere in this record, so the mechanical US-locale
+  cross-check was not required; noting the observation here for auditability per the D-003
+  instruction to log local-state observations even when non_usd is not coded.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 re-read 2026-08-10: re-opened https://www.myperfectresume.com/pricing live and confirmed
+  entry_tier_name ("1-Year Premium Access"), headline_price_usd ($7.95), headline_billing_basis
+  (per_month_billed_annually) and first_charge_amount_usd ($95.40) in a SECOND representation
+  independent of the original innerText transcript: direct structural DOM/outerHTML search.
+  Confirmed the "1-Year Premium Access" <h2> and the $7.95/$95.40 <p> tags sit inside the same
+  card container, correctly mapped. Investigated a genuine <sup> tag found near the headline
+  price (<p class="free-title package-price">$7.95<sup>/month</sup></p>): the superscript wraps
+  only the "/month" unit label, not any digit -- the price itself, "$7.95", is one plain unsplit
+  text node, so this does not create a nicepage-class magnitude error. first_charge_amount_usd
+  provenance (coordinator addendum): confirmed a DIRECT read, not a coder computation -- the
+  phrase "Pay $95.40 up-front and save 69%. Automatically renews each year." is vendor prose
+  printed verbatim on the card, unchanged since original collection; rule 2/3's
+  once-for-twelve-months requirement does not apply since no x12 multiplication was performed.
+  Evidence saved to myperfectresume-sources/d009-second-representation-2026-08-10.txt. No
+  correction; all four scoped values confirmed as coded. This re-read does not revisit the
+  original coder's flagged entry-tier selection judgment call (1-Year vs. 14-Day Premium Access).
+conflict_note: ""
+register_events: []
+status: complete

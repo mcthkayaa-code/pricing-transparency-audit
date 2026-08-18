@@ -1,0 +1,79 @@
+SOURCE: https://julius.ai/tos
+ACCESS DATE: 2026-08-09
+METHOD: Rendered read via browser automation. archive.org/save/ succeeded on first
+  attempt: https://web.archive.org/web/20260809172111/https://julius.ai/tos
+  archive_status = archived. This file holds operative excerpts only (full document is
+  ~48,360 characters across 21 numbered sections; full text was read in full in-session
+  and checked with in-page keyword search, see note at bottom).
+KIND: tos
+DOCUMENT DATE: "Last Updated: March 6, 2026" (as printed on the page).
+PARTY: Caesar Labs Inc. ("Julius AI")
+
+=== OPERATIVE EXCERPTS ===
+
+[Section 3, Billing and Payment] "Unless otherwise indicated, all prices, fees and other
+charges are in U.S. dollars, and all payments shall be in U.S. currency."
+
+[Section 3, Credits subsection] "As part of your subscription or the Free plan, you may
+be granted credits that serve as a usage entitlement for certain features and
+capabilities within the Services. Credits have no cash value, are not a stored-value
+instrument, and cannot be redeemed for cash. All credits are non-refundable except where
+required by applicable law, and cannot be transferred between accounts."
+"Unused credits expire at the end of each billing cycle and do not roll over. Promotional
+or bonus credits are subject to the same terms unless explicitly stated otherwise at the
+time of grant."
+
+[Section 4, AI Functions and User Generated Content] "You exclusively own all right,
+title, and interest in and to the AI Content, including all associated Intellectual
+Property Rights." ... "By making available[e] any User Generated Content through the
+Services, you hereby grant to Julius AI a worldwide, irrevocable, perpetual,
+non-exclusive, transferable, royalty free license... We do not claim any ownership rights
+in any such User Generated Content..."
+[No restriction to "personal, non-commercial use" appears anywhere in this live document
+— a WebSearch AI-generated summary snippet claimed such a restriction exists, quoting
+"...for your personal, non-commercial use", but that phrase does NOT appear anywhere in
+this live page (checked via in-page string search for "non-commercial", "noncommercial",
+"personal use" — all not found). That summary is disregarded as it does not match the
+document actually read; per protocol 6.3 prohibition 7, only the document itself governs.]
+
+[Section 7, Termination and Suspension] "You may cancel and delete your Account at any
+time by either using the features on the Services to do so (if applicable and available)
+or by written notice to team@julius.ai." ... "Upon termination or suspension of your
+Account for any reason, all credits associated with your Account are immediately
+forfeited and cannot be recovered."
+[No mention anywhere in this section, or anywhere else in the document, of automatic
+renewal / "auto-renew" / "renews automatically" — checked via in-page string search for
+"renew"; only match found is unrelated ("...registrations, renewals and extensions..." in
+the IP-rights definitions of Section 4).]
+
+[Section 9, Intellectual Property Rights] "You may not copy, download, use, redesign,
+reconfigure, or retransmit anything from the Services without Julius AI's express prior
+written consent..." "Subject to the terms and conditions hereof, you are hereby granted a
+limited, nonexclusive, nontransferable, freely revocable, license to access and use the
+Services."
+
+[Section 18, Changes to this Agreement and the Services] "Julius AI reserves the right,
+at its sole and absolute discretion, to change, modify, add to, supplement, suspend,
+discontinue, or delete any of the terms and conditions of this Agreement... Julius AI may
+also impose limits on certain features or restrict your access to part or all of the
+Services without notice or liability."
+[This is the operative clause for unquantified_limit_clause = present: a discretionary,
+no-figure reservation of the right to limit features/access. It is also the clause that
+qualifies the pricing page's "Unlimited charts" / "Unlimited file storage formats"
+claims on Plus and up, under the same rule the codebook's Vendor U worked example
+applies (usage_cap_quantified rule 3).]
+
+=== FULL-DOCUMENT KEYWORD SEARCH RESULTS (run against complete 48,360-char body text) ===
+"renew"          -> only "renewals" (IP-rights boilerplate), no auto-renewal statement
+"commercial"     -> only "Commercial Arbitration Rules" (AAA rules name), no commercial-
+                    use-of-output clause
+"watermark"      -> not found
+"fair use"       -> not found
+"throttl"        -> not found
+"reasonable use" -> not found
+"excessive"      -> not found
+"rate limit"     -> not found
+"typical usage"  -> not found
+"abuse"          -> only re: credits-system fraud/abuse (Section 3) and reservation of
+                    rights re: refusing service (Section 7); not a quantified-use clause
+"trial"          -> not found anywhere in the document

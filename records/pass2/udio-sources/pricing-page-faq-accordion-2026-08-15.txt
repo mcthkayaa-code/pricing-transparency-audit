@@ -1,0 +1,37 @@
+URL: https://www.udio.com/pricing (FAQ accordion section, same page/URL as pricing-page-2026-08-15.txt)
+Accessed: 2026-08-15 (rendered read, browser; expanded each accordion item via click -- permitted under protocol 6.3, does not create an account or start a purchase)
+
+When does the daily limit refresh?
+With a free plan, you have a limit of 10 credits per day. These credits refresh 24 hours after creating your first song (e.g., if you create a song at 10 AM, you have 10 credits until 10 AM the next day).
+
+How does the free plan monthly limit work?
+Once you've used up the daily credits, you begin to use up monthly limit. The monthly limit cycle starts from first song created or previous subscription end and refreshes on the same date of the following month.
+
+How do the paid tier credit systems work?
+The credits refresh a month after your payment goes through and the plan starts. The paid plans do not include the 10 daily credit limits or the 100 monthly credit limits.
+
+How does the free trial work?
+During the free trial, you can access all Standard features but remain on the free tier credit limits (i.e. 10/day). The free trial can be converted to a paid plan at any time from the pricing page.
+
+What is a credit?
+1 credit corresponds to 1 ~30 second audio track. Each generation generates 2 tracks, so each generation costs 2 credits. The udio130 2-min model will be correspondingly higher
+
+What else are credits used for?
+Credits are only used for generating new tracks currently.
+
+How do I purchase credits?
+[question was clicked but no additional text distinct from the "Purchase 100 credits - $3.00 / Purchase 1000 credits - $25.00" plan-card content appeared beyond what's already captured in pricing-page-2026-08-15.txt]
+
+Can purchased credits expire?
+No, purchased credits never expire, however monthly credits granted as part of your plan (e.g. 1200 credits for standard) will reset one month after your plan start date.
+
+*** NOTE -- INTERNAL PRICING-PAGE INCONSISTENCY FLAGGED ***
+This FAQ answer says "e.g. 1200 credits for standard" as an illustrative aside. This CONTRADICTS the same page's own Standard plan card, which states "2400 credits per month (monthly credit limit, no rollovers)*" prominently and repeatedly, and also contradicts help.udio.com's dedicated "Credits and credit limits" article (accessed 2026-08-15, archived separately), which states "With our Standard subscription, you can use up to 2400 credits per month." Two independently-corroborating, on-point, directly-dedicated official statements say 2400; only this one incidental "e.g." aside on an unrelated question (credit expiry, not plan allowance) says 1200. Treated as a vendor-side documentation inconsistency; coded cost_per_output_computable using the corroborated 2400 figure, with this conflict disclosed in conflict_note/coder_note rather than silently dropped.
+
+What happens if I run out of credits?
+If you run out of credits, you will be unable to generate new tracks or cover art until more credits are purchased. You can buy additional credits anytime from this page at https://www.udio.com/pricing.
+
+What features are included in the free plan?
+You are able to Remix and Extend tracks in the free plan but some features will only be available to the paid plans. You will have a limited number of udio130 2-min generations as well.
+
+No FAQ item addresses: watermarking/branding of outputs, charging policy for failed/errored generations, or an unquantified "fair use"/discretionary throttling clause.

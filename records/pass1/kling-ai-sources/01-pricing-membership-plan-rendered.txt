@@ -1,0 +1,154 @@
+URL: https://app.klingai.com/global/membership/membership-plan
+Accessed: 2026-08-09 (UTC ~17:15-17:25)
+Method: Rendered read via headless browser (Claude Browser tool), JS executed, document.body.innerText captured. Static curl fetch of the underlying route showed no subscription-tier price figures (only per-unit dev/API JSON unrelated to membership plans) -- rendered read required per deviation D-005.
+Network note: Collection network egresses from Turkey. klingai.com (bare root, no /global/ or /cn/ prefix) auto-redirected on load to https://klingai.com/cn/ (Chinese-language regional site) -- an inferred-geography default-display-state variant per protocol-v1.md section 6.8. Coder manually navigated to https://klingai.com/global/ (English global site) per assignment instruction to code from the global English site when both a global and regional site exist. From /global/, the "Plans from $" sidebar button (no visible top-nav pricing link) leads to the URL below. All prices rendered natively in USD; no currency localization observed on the English global site (D-003 check: a plain curl with Accept-Language: en-US,en;q=0.9 against klingai.com/pricing and kling.ai/pricing also showed no non-USD figures).
+Default display state observed: Individual tab active (vs Business tab); Monthly billing tab active (DOM class "tab tab-active", NOT the Yearly tab); no cookie-consent banner appeared during this read.
+Canonical URL used (tracking param ?r=26 stripped, confirmed identical content): https://app.klingai.com/global/membership/membership-plan
+Archive attempt: https://web.archive.org/save/https://app.klingai.com/global/membership/membership-plan -> HTTP 302 -> https://web.archive.org/web/20260809172915/https://kling.ai/app/membership/membership-plan (verified reachable, HTTP 200). Note the archived snapshot is a server-side/crawler fetch of the SPA shell and its own captured state; it is not guaranteed to display the same client-rendered prices as this evidence file, which is the coder's actual rendered read used for coding per D-005.
+
+===== RENDERED TEXT (document.body.innerText) =====
+
+Individual
+Business
+Use Referral Code for
+50%
+Bonus Credits First Month (First-Time Subscriber Only, up to 5000 Bonus Credits)
+Enter Code Now
+Plans
+Credits
+Gift Cards
+Yearly
+-34%
+Monthly
+-12%
+Basic
+$0
+Free forever
+Free
+No monthly Credits
+Element Creation Quantity: 30
+Login to receive monthly credits
+Login to experience monthly subscribers' features
+Generated content is not for commercial use
+Standard
+$6.99 / Month$10
+Next monthly renewal: $8.8 (12% off)
+Up to 30% off
+Subscribe Special Offer
+Discount only for the first subscription, cancel Anytime
+660 Credits per month
+As low as $1.33 per 100 Credits
+660 images / 33 720p videos
+VIDEO 2.6 - Voice Control
+Free
+VIDEO O1 - Element AI Multi-Shot
+Daily 3 Free Uses
+Element Creation Quantity: 50
+Queue unlimited tasks
+Fast-track generation
+1080p Video Generation
+Image upscaling
+Brand watermark removal
+Video extension
+Generated content is for commercial use
+Pro
+$25.99 / Month$37
+Next monthly renewal: $32.56 (12% off)
+Up to 30% off
+Subscribe Special Offer
+Discount only for the first subscription, cancel Anytime
+3000 Credits per month
+As low as $1.09 per 100 Credits
+3000 images / 150 720p videos
+VIDEO 2.6 - Voice Control
+Free
+VIDEO O1 - Element AI Multi-Shot
+Daily 3 Free Uses
+Element Creation Quantity: 150
+Queue unlimited tasks
+Fast-track generation
+1080p Video Generation
+Image upscaling
+Brand watermark removal
+Video extension
+Priority access to new features
+Generated content is for commercial use
+Premier
+$64.99 / Month$92
+Next monthly renewal: $80.96 (12% off)
+Up to 29% off
+Subscribe Special Offer
+Discount only for the first subscription, cancel Anytime
+8000 Credits per month
+As low as $1.01 per 100 Credits
+8000 images / 400 720p videos
+VIDEO 2.6 - Voice Control
+Free
+VIDEO O1 - Element AI Multi-Shot
+Daily 3 Free Uses
+Element Creation Quantity: 150
+Queue unlimited tasks
+Fast-track generation
+1080p Video Generation
+Image upscaling
+Brand watermark removal
+Video extension
+Priority access to new features
+Generated content is for commercial use
+Ultra
+NEW
+$127.99 / Month$180
+Next monthly renewal: $159.99 (11% off)
+Up to 29% off
+Subscribe Special Offer
+Discount only for the first subscription, cancel Anytime
+26000 Credits per month
+As low as $0.62 per 100 Credits
+26000 images / 1300 720p videos
+VIDEO 2.6 - Voice Control
+Free
+VIDEO O1 - Element AI Multi-Shot
+Daily 3 Free Uses
+Element Creation Quantity: 500
+Queue unlimited tasks
+Fast-track generation
+1080p Video Generation
+Image upscaling
+Brand watermark removal
+Video extension
+Priority access to new features
+Beta test invite (if applicable)
+Generated content is for commercial use
+Premium Features
+Accelerated access
+Membership accelerated access for results in as fast as 30(s)
+1080p Video Generation
+Upscaled resolution, Refined esthetics, Realistic motions, Responsive Prompts
+Video Extension
+Video extension for multiple times, up to a maximum of 3 minutes
+Explore
+Assets
+Omni
+Generate
+Canvas
+All Tools
+Sign In
+Plans from
+$6.99
+
+===== SUPPORTING DOM EXTRACT (Basic/free card outerHTML, confirms benefit list + icon states) =====
+Basic card top-part price block: <span>$<i>0</i></span> ; description "Free forever"; buy button text "Free" (disabled)
+Basic card benefits (all rows carry the same "icon-checked" checkmark glyph, i.e. none are shown crossed out -- they are simply the free tier's own bullet list):
+ - "No monthly Credits" (title row, dot marker not checkmark)
+ - "Login to receive monthly credits" (checked icon)
+ - "Login to experience monthly subscribers' features" (checked icon)
+ - "Generated content is not for commercial use" (checked icon)
+
+===== SUPPORTING DOM EXTRACT (Standard card outerHTML, confirms price block structure) =====
+<div class="price"><span>$<i>6.99</i> / Month</span><span class="old-price">$10</span></div>
+<div class="description">Next monthly renewal: <i>$8.8</i> (12% off)</div>
+<div class="tags"><div class="tag"><span>Up to 30% off</span></div></div>
+<button class="generic-button vip">Subscribe Special Offer</button>
+<div class="rebuy-notice"><span>Discount only for the first subscription, cancel Anytime</span></div>
+Benefit-top: "660 Credits per month" / "As low as $1.33 per 100 Credits" / "660 images / 33 720p videos"
+Toggle state confirmed via DOM: <span class="tab vertical-center">Yearly</span> (class="" -- inactive) and <span class="tab tab-active vertical-center">Monthly</span> (class contains "tab-active" -- this is the DEFAULT/loaded state).

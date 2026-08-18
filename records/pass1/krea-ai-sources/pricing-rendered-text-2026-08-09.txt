@@ -1,0 +1,99 @@
+SOURCE EVIDENCE FILE
+URL: https://www.krea.ai/pricing
+Accessed: 2026-08-09
+Method: full browser render (Claude_Browser tool), JS executed, default page state (no interaction), viewport 1280x900 desktop. Cookie/consent: no consent banner appeared; no interaction performed before capture.
+Network note: collection environment egresses from Turkey. Rendered page displayed USD prices ($ symbol) and English copy identical in substance to the en-US curl fetch (see pricing-static-fetch-2026-08-09.html); number formatting differed cosmetically (this render showed "5.000 units /month" with a period thousands-separator, the en-US curl fetch showed "5,000 units /month" with a comma) — same numeric value (five thousand), different locale formatting of the digit grouping. Logged as a display_variant register event in the record; the en-US comma-formatted figures are used as the canonical citation form for clarity.
+Archive: https://web.archive.org/web/20260809175002/https://www.krea.ai/pricing (same URL as the static fetch; single page, both reads archived under one capture)
+Default display state observed: billing toggle preselected to "Yearly" (segmented control aria-checked="true" on "Yearly"; switch aria-label="Use annual billing" aria-checked="true"). No cookie banner shown. Currency USD throughout.
+
+--- document.body innerText (via get_page_text tool) ---
+
+Sign up for free
+Log in
+Pick your plan
+Trusted by 40M subscribers: creatives, enterprises, agencies, and studios
+Monthly
+Yearly
+Save 40% on yearly plans
+Free
+100 units /day
+1 Nano Banana 2 generation
+<1 Seedance 2.0 videos
+Get Free
+Krea 2
+Generate images with our latest in-house model.
+NEW
+All image models [not included, free tier]
+All video models [not included, free tier]
+All 3D & lipsync models [not included, free tier]
+Limited LoRA training [included, no quantified figure attached to this line]
+Limited image upscaling [included]
+Upscale images up to 2K resolution using our basic upscaling models.
+Krea Nodes [not included, free tier]
+App Builder [not included, free tier]
+Nodes Agent [not included, free tier]
+Early access to new features [not included, free tier]
+Commercial license [not included, free tier — no checkmark, matches FAQ: "Basic, Pro, Max, Business, and Enterprise plans include a commercial license" which omits Free]
+Bulk discounts on compute unit packs [not included, free tier]
+Unlimited relaxed generations [not included, free tier]
+Image concurrency: 1
+Video concurrency: 0
+Images per LoRA: 50
+Most popular [badge on Pro]
+Basic
+5,000 units /month
+64 Nano Banana 2 generations
+20 Seedance 2.0 videos
+$9 (strikethrough) $5 /month  [visible digits after full hydration: integer "5", fraction part empty — no cents shown; underlying annual total per embedded JSON = $63/yr = $5.25/mo precisely, see pricing-embedded-json-excerpt file]
+Get Basic
+Krea 2 (NEW), All image models, Selected video models, All 3D & lipsync models, LoRA training, Image upscaling up to 22K, Krea Nodes, App Builder, Nodes Agent (NEW), Early access to new features, Commercial license ("Use all generated content for commercial purposes including marketing, products, and client work."), Bulk discounts on compute unit packs, Unlimited relaxed generations — all checked/included for Basic per the visual feature grid (checkmarks confirmed via screenshot).
+Image concurrency: 4
+Video concurrency: 2
+Images per LoRA: 50
+Pro
+20,000 units /month
+257 Nano Banana 2 generations
+83 Seedance 2.0 videos
+$35 (strikethrough) $21 /month
+Get Pro
+[full feature set incl. "All video models — Full access to all video models including Veo3, Sora, Kling, and more."]
+Image concurrency: 8
+Video concurrency: 4
+Images per LoRA: 50
+Max
+60,000 units /month
+771 Nano Banana 2 generations
+250 Seedance 2.0 videos
+[compute-unit slider: 40k / 60k / 80k / 100k, default position = 60k]
+$105 (strikethrough) $63 /month
+Get Max
+Image concurrency: Unlimited
+Video concurrency: Unlimited
+Images per LoRA: 2000
+See all features
+For Teams and Enterprises
+Business
+80,000 units /month
+1,028 Nano Banana 2 generations
+333 Seedance 2.0 videos
+[compute-unit slider: 20k/40k/80k/160k/240k/400k/500k/750k/1M/1.5M, default position = 80k]
+Try Business
+Up to 50 seats included — "One flat price covers your entire team – up to 50 members get full Business benefits at no extra cost per seat."
+Business Terms of Service — "Comprehensive legal terms designed for businesses, including data protection and no-training clauses for your content."
+[team/admin features, commercial license, unlimited relaxed generations]
+Image concurrency: Unlimited: Video concurrency: Unlimited; Images per LoRA: 2000
+Enterprise
+Custom pricing
+Contact Sales
+[same team features as Business, plus SAML SSO, priority support w/ SLA, per-member spend limits, indemnification]
+Images per LoRA: Custom
+Need More Compute?
+Purchase one-time compute packs for additional credits. Applied instantly and valid for 90 days. To get more credits out of your purchase, consider upgrading your plan.
+Packs: 2000 / 5000 / 10000 / 24000 / 50000 units, each "Sign in required" to buy
+Credits are added instantly after purchase and expire after 90 days.
+Compare plans / Frequently Asked Questions (see pricing-faq-jsonld-2026-08-09.txt for full FAQ text)
+Footer: Pricing, Enterprise, Models, Model Licensing, Terms of Service, Privacy Policy, Security, Press, Release Notes, API, Documentation, etc. (c) 2026 Krea
+
+--- end innerText excerpt ---
+
+No occurrence of the word "watermark" anywhere in the full rendered page text (checked programmatically). No occurrence of the word "trial" anywhere in the full rendered page text.

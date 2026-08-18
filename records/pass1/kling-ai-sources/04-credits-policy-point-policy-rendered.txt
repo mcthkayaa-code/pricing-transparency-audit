@@ -1,0 +1,60 @@
+URL: https://klingai.com/global/docs/point-policy
+(Labeled "Credits Policy" in the site's own legal-docs tab bar; the underlying route slug is "point-policy", not "credits-policy". A guessed URL at /global/docs/credits-policy returns HTTP 200 but is a different, effectively-empty client route -- not this document. This document was reached by clicking the "Credits Policy" tab from the payment-policy page and reading the resulting URL.)
+Accessed: 2026-08-09 (UTC ~17:30)
+Method: Rendered read via headless browser (Claude Browser tool), JS executed, document.body.innerText captured. A static curl fetch of the (wrong) /credits-policy slug returned only ~178 chars of nav boilerplate with no policy text, so the rendered read is the operative source for this document.
+Network note: Same session as the pricing page read; English global site; no locale/currency issue (this document is policy text, not price figures).
+Archive attempt: https://web.archive.org/save/https://klingai.com/global/docs/point-policy -> HTTP 302 -> https://web.archive.org/web/20260809173058/https://kling.ai/docs/point-policy (verified reachable, HTTP 200).
+
+===== RENDERED TEXT (document.body.innerText) =====
+
+Terms of Service
+Privacy Policy
+Terms of Paid Service
+Credits Policy
+Community Guidelines
+Cookie Policy
+Credits Policy
+1. What are "Credits"?
+"Credits" are a virtual currency designed to meet the needs of users who want to access more KLlNG AI services.
+"Credits" can be used to redeem access to specific features or value-added services within the KLlNG AI platform.
+"Credits" can only be obtained and used by logged-in users within the KLlNG AI platform.
+For the avoidance of doubt, the Credits service is a network technology and related service provided by the platform to users. The Credits service is not an online payment service, and Credits are not tokens, virtual currencies, or prepaid vouchers. They do not have monetary value or prepaid value.
+
+2. What are the categories, validity periods, and methods of acquiring and consuming "Credits"?
+
+	Category	Acquisition/Consumption	Validity Period
+Credits Acquisition	Promotional Credits	Acquired through platform promotional activities	According to the relevant product interfaceand the event notice
+Membership's Subscription Credits	Regular Membership Benefits Credits:
+After the membership subscription becomes effective, it shall be distributed monthly during the validity period of the subscription	Valid for 1 month from the date of distributed
+7-Day Trial Membership Credits:
+Credits are granted immediately upon activation of the Membership subscription	Valid for 7 days from the date of distributed
+Login Credits
+During the event (as shown in the interface), Kling subscribers can claim daily credits upon login/refresh. Amounts are subject to platform announcement.	Issued on the first login each day and reset at 24:00.
+Special Membership Credits:
+Credits may be offered as part of promotional events organized by the platform from time to time.	Final terms and conditions are as displayed on the relevant product page and promotional rules at the time of your participation.
+Purchase Credits	Acquired through purchase	Valid for 2 years from the date of distribution
+Credits Consumption	Credits Consumed for Generation	Consuming Credits for AI creation functions will deplete Credits (subject to the display of the relevant interface at that time)	1. The corresponding Credits will be deducted immediately upon generation.
+2. If the generation fails, the corresponding Credits will be refunded.
+Note: Due to modification of product strategy, the validity period and applicable rules of Credits may be changed. The relevant rules will take effect from the date of publication. The usage rights for paid services that users have already paid for before the adjustments take effect will not be affected. For more details, please pay attention to the system announcements, check the inquiry path, or contact platform customer service for consultation.
+
+
+3. What's the pricing standard for purchasing "Credits"?
+Standard Pricing: $1 USD = 66 Credits
+Discounted Pricing: We may occasionally launch promotional activities with purchase discounts. The discounted prices will be subject to the relevant product interface and the published activity rules.
+We may also update and optimize the Credits Policy of services, features, pricing plans, and user benefits. The actual amount of Credits you receive will be based on the relevant promotion pages and payment pages.
+4. What is the Usage Order of "Credits"?
+The usage order is based on the "Credits Validity Period". Credits with a shorter validity period will be used first
+5.  What can "Credits" be used for and how are they used?
+Currently, after users purchase Credits, they can use AI creation through the consumption of "Credits" on the Kling AI platform and our partner's platforms. For more information, please refer to the related interfaces.
+6. What is the relation between Credits and Membership?
+Credits can only be used for access specific features and services on the Kling AI platform and partner's platforms.
+Credits cannot be exchanged for value-added services such as  services for Membership. Credits cannot be transferred or gifted between different Users, between different accounts controlled by the same User, or between different spaces owned by the same User (e.g., personal, team, or enterprise spaces). For Team Memberships, the Team Owner and Administrators may manage Credits within the Team Space, including recharging and allocating Credits. Credits are non-refundable and cannot be redeemed for cash; in addition, some features (e.g., Fast-track generation, 1080p videos, Watermark removal, Master shot & video extension, Image upscaling) are exclusively available to Membership and cannot be accessed through Credits.
+7. How to check the "Credits" balance and usage details
+You can check the details on the:
+ Sidebar on the left, then click on the number indicating remaining Credits; or
+ by clicking on the [ top left menu] - [Contact Us] in Kling AI APP
+8. Why cannot I use some features even though I have "Credits"?
+Currently, "Credits" only support the use of specific functions. Other functions such as Fast-track generation, 1080p videos, Watermark removal, Master shot & video extension, Image upscaling are premium-only functions. For the specific functions, please refer to the actual page for details.
+9. Can I use the "Credits" when my Membership subscription expires?
+Credits acquired through promotional activities and through purchase are unaffected by your Membership subscription status.
+Membership's subscription credits are valid for 1 month from the date of distribution.

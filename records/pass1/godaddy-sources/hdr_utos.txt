@@ -1,0 +1,20 @@
+HTTP/2 302 
+server: nginx
+date: Fri, 07 Aug 2026 08:48:02 GMT
+content-type: text/html; charset=utf-8
+content-length: 400
+location: https://web.archive.org/web/20260807084742/https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement
+x-app-server: wwwb-app223-dc8
+x-ts: 302
+x-tr: 24176
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-save-SERVER=wwwb-app223; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

@@ -1,0 +1,628 @@
+product_id: apify-robots-checker
+product_name: "Apify Robots.txt AI Checker"
+vendor_home_url: "https://apify.com"
+category: "AI bot checker"
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Pay Per Event -- Robots.txt ai policy row ($11.00 per 1,000 delivered results)"
+coder_pass: 1
+coder_role: primary
+collection_date: "2026-08-06"
+recheck_date: not_applicable
+
+# --- Unit-of-analysis note (per assignment) ---
+# This product is a Community Actor on the Apify marketplace:
+# taroyamada/robotstxt-ai-checker ("robots.txt Parser & AI Crawler Block Checker").
+# Confirmed as the correct actor via site/lib/affiliates.ts URL mapping for this
+# product_id (technical link-mapping file only; no rating/review content opened).
+# The actor uses Apify's "Pay Per Event" monetization model: a flat per-result
+# rate is the PRODUCT's own price. Apify account subscription plans (Free /
+# Starter / Scale / Business / Enterprise) are the payment vehicle, per
+# assignment instruction. Each coded variable below carries a `layer` tag:
+# "actor" = read from the actor's own Apify Store page; "platform" = read from
+# Apify's account-level pricing/legal/help docs, used because the actor page
+# was silent on that (mostly contractual) point.
+
+primary_source_url: "https://apify.com/taroyamada/robotstxt-ai-checker"
+archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+archive_status: archived
+
+source_urls: "https://apify.com/taroyamada/robotstxt-ai-checker | https://apify.com/taroyamada/robotstxt-ai-checker/pricing | https://apify.com/pricing | https://docs.apify.com/legal/general-terms-and-conditions | https://docs.apify.com/legal/actor-terms-and-conditions | https://docs.apify.com/legal/acceptable-use-policy | https://help.apify.com/en/articles/10717922-resolving-actor-compensations | https://docs.apify.com/platform/actors/publishing/monetize/pay-per-event | https://docs.apify.com/legal"
+
+sources:
+  - url: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    label: "Actor page (README/Input/Cost section) -- live pricing page, rank 1 for pricing vars, actor layer"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    archive_status: archived
+  - url: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    label: "Actor Pricing tab (structured pricing widget) -- live pricing page, rank 1 for pricing vars, actor layer"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    archive_status: archived
+  - url: "https://apify.com/pricing"
+    label: "Apify platform pricing page + FAQ -- platform layer, used for account Free plan and renewal/cancellation FAQ corroboration"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192655/https://apify.com/pricing"
+    archive_status: archived
+  - url: "https://docs.apify.com/legal/general-terms-and-conditions"
+    label: "Apify General Terms and Conditions (eff. 2026-07-09) -- contractual rank-1 doc, platform layer"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193448/https://docs.apify.com/legal/general-terms-and-conditions"
+    archive_status: archived
+  - url: "https://docs.apify.com/legal/actor-terms-and-conditions"
+    label: "Apify Actor Terms and Conditions (eff. 2026-07-09) -- contractual rank-1 doc for Actor-specific IP/output terms, prevails over General Terms for Actor matters; actor layer"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193814/https://docs.apify.com/legal/actor-terms-and-conditions"
+    archive_status: archived
+  - url: "https://docs.apify.com/legal/acceptable-use-policy"
+    label: "Apify Acceptable Use Policy (last updated 2026-02-20) -- read in full for unquantified_limit_clause; platform layer"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806194201/https://docs.apify.com/legal/acceptable-use-policy"
+    archive_status: archived
+  - url: "https://help.apify.com/en/articles/10717922-resolving-actor-compensations"
+    label: "Apify Help Center: 'Resolving Actor compensations' -- official help-center article, platform layer, rank 2 for contractual vars"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806195917/https://help.apify.com/en/articles/10717922-resolving-actor-compensations"
+    archive_status: archived
+  - url: "https://docs.apify.com/platform/actors/publishing/monetize/pay-per-event"
+    label: "Apify Documentation: 'Pay-per-event pricing model' -- official product documentation describing the billing model this actor uses; platform layer, rank 2 for pricing vars"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806195937/https://docs.apify.com/actors/publishing/monetize/pay-per-event"
+    archive_status: archived
+  - url: "https://docs.apify.com/legal"
+    label: "Apify Legal index -- used to confirm no separate Fair Use Policy document exists beyond AUP"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806200005/https://docs.apify.com/legal"
+    archive_status: archived
+
+default_display_state: >
+  Actor page (apify.com/taroyamada/robotstxt-ai-checker) and its Pricing tab show
+  ONE flat pay-per-event rate ($11.00 per 1,000 delivered results); there is no
+  monthly/annual billing toggle on the actor's own pricing (usage-based, no
+  subscription). Cookie-consent banner ("Apify uses cookies") was present on
+  apify.com on first load; no analytics/marketing cookies were affirmatively
+  accepted and no account/login action was taken at any point. Currency: USD
+  throughout, no non-USD figures encountered. Apify's separate ACCOUNT/platform
+  pricing page (apify.com/pricing) has its own "Bill monthly / Bill annually"
+  toggle for account subscription plans (Free/Starter/Scale/Business), but that
+  toggle state does not feed any coded value of this product (this product's
+  own price is the flat per-event rate, not an account subscription tier).
+
+variables:
+  # ===== Domain 1: Headline price vs. price actually charged (A1, A3) =====
+  headline_price_usd:
+    value: "11.00"
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: >
+      Only one paid pricing candidate is published: usage-based Pay Per Event.
+      Header badge (shown identically 3x on the actor page) and the Pricing tab
+      table both read "$11.00 / 1,000 robots.txt ai policy rows". Per rule 6
+      (usage-based pricing is the only paid option): recorded the published
+      unit rate; unit named in coder_note. Per-unit equivalent stated
+      elsewhere on the same page as "$0.011 per delivered result" (11/1000 =
+      0.011, internally consistent).
+
+  headline_billing_basis:
+    value: usage_based
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: >
+      Cost section: "Pay Per Event: ... apify-default-dataset-item: $0.011 per
+      delivered result. ... No subscription required — you only pay for what
+      you use." No monthly/annual qualifier anywhere on the page.
+
+  first_charge_amount_usd:
+    value: unknown
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: >
+      Pure pay-per-event pricing, no minimum purchase, no subscription, no
+      stated billing period ("No subscription required — you only pay for
+      what you use"). No document states a determinate first-transaction
+      total: actual first charge depends entirely on how many domains the
+      buyer chooses to check in the first run. Rule 3 applies (billing
+      frequency/period not stated in the periodic sense this variable
+      assumes) rather than inventing a "smallest possible charge" figure.
+      README Cost section also hedges current pricing ("Current transition
+      pricing may include a temporary legacy start fee until the scheduled
+      pricing update activates") without stating an amount, reinforcing that
+      no stable first-charge figure is determinable. See conflict_note.
+
+  mandatory_addon_present:
+    value: "no"
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: >
+      Structured Pricing tab, "Additional costs" row: "Platform usage: Free
+      (See all usage prices)". Only one billed event listed
+      (apify-default-dataset-item, $0.011/result). Coded from this structured
+      table rather than the README's vaguer "legacy start fee" hedge; see
+      conflict_note for the divergence.
+
+  # ===== Domain 2: Visibility of the annual-billing condition (A2) =====
+  annual_condition_disclosure:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: >
+      Rule 1: headline figure ($11.00/1,000) does not depend on annual
+      prepayment at all -- pure pay-as-you-go per delivered result, no
+      billing-period commitment of any kind.
+
+  annual_default_toggle:
+    value: no_toggle
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: >
+      Actor Pricing tab shows exactly one rate with no monthly/annual
+      selector control (unlike the separate account-level apify.com/pricing
+      page, which does have a "Bill monthly / Bill annually" toggle for
+      account subscription plans, not for this product's own per-event
+      rate). "The page offers one billing period only" read as: one price,
+      no toggle.
+
+  # ===== Domain 3: Real usability of the free plan (B1, B2) =====
+  # Actor itself publishes no free tier of its own (flat pay-per-event only).
+  # Apify's account-level Free plan is documented to fund Store-actor
+  # pay-per-event charges (platform layer), so it is coded here as this
+  # product's free plan per rule 2 ("a plan priced at zero with an ongoing
+  # allowance is a free plan"). See coder_note for the layer explanation.
+  free_plan_exists:
+    value: "yes"
+    layer: platform
+    source: "https://apify.com/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192655/https://apify.com/pricing"
+    evidence: >
+      Platform pricing page, "Free" plan card: "$0 ... $5 to spend in Apify
+      Store or on your own Actors ... Start for free ... No credit card
+      required." FAQ: "Both models [pay per event / pay per usage] draw on
+      the platform usage credits included in your plan" -- confirms the
+      Free plan's $5/mo credit is spendable on this actor's $0.011/result
+      charge. Actor's own Pricing tab corroborates: "Additional costs:
+      Platform usage: Free", i.e. no extra platform surcharge on top of the
+      per-event rate this credit would be spent against.
+
+  free_plan_cap_documented:
+    value: all_quantified
+    layer: platform
+    source: "https://apify.com/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192655/https://apify.com/pricing"
+    evidence: >
+      The one free-plan limit clearly and unambiguously attributable to this
+      product is "$5 to spend ... / month" -- number + dimension (USD to
+      spend) + period (month) = quantified rate per section 5.1. The
+      platform comparison table also lists other Free-row infrastructure
+      figures (compute units, RAM, concurrent runs, proxy allowances); these
+      are platform-wide capacity figures not specific to using this actor,
+      and the table's column-to-value mapping could not be read unambiguously
+      from rendered text without risking misattribution across plan columns,
+      so they are not separately claimed here (see coder_note).
+
+  free_plan_cap_value:
+    value: "5 usd platform credit per month"
+    layer: platform
+    source: "https://apify.com/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192655/https://apify.com/pricing"
+    evidence: >
+      "Free / $0 / $5 to spend in Apify Store or on your own Actors ...
+      $5/month" (Prepaid usage row of the plan-comparison table). Recorded
+      only this directly-published, unambiguous figure; not paraphrased into
+      an estimated row-count.
+
+  free_plan_watermark:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: >
+      Output is structured dataset rows (robots.txt AI-crawler policy
+      findings: domain, status, aiPolicies, rowType, etc.) -- a data/analysis
+      output, not a media artifact a watermark could mark. No mention of
+      watermarking or branding anywhere on the actor page.
+
+  free_plan_duration:
+    value: perpetual
+    layer: platform
+    source: "https://apify.com/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192655/https://apify.com/pricing"
+    evidence: >
+      Free is presented as a standing plan alongside paid plans ("Start for
+      free", "No credit card required"), not as a time-limited introductory
+      period; credit renews every billing cycle ("unused usage credits are
+      not rolled over ... they expire at the end of the billing cycle" --
+      i.e. a fresh $5 every month, indefinitely). No expiry of the plan
+      itself is stated anywhere.
+
+  # ===== Domain 4: Whether a trial requires a payment card (B3) =====
+  trial_exists:
+    value: "no"
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: >
+      Neither the actor page nor the platform pricing page mentions a
+      time-limited trial of a paid tier. The actor's "Try for free" CTA and
+      the platform's "Start for free" both route to the standing, perpetual
+      Free plan (domain 3), not a dated trial; product is pure pay-per-event
+      with no distinct "paid tier" a trial could time-box. Rule 3: pricing
+      page and documentation mention no trial.
+
+  trial_card_required:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: "No trial (trial_exists=no)."
+
+  trial_length_days:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: "No trial (trial_exists=no)."
+
+  trial_auto_converts:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: "No trial (trial_exists=no)."
+
+  # ===== Domain 5: Comprehensibility of the credit system (C1, C2) =====
+  credit_system_present:
+    value: "no"
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: >
+      Price is stated directly in USD per output unit ("$0.011 per delivered
+      result" / "$11.00 / 1,000 ... rows"), with no intermediate abstracted
+      unit (credits/tokens/points/coins) to convert. Apify's account-level
+      "prepaid usage" balance is a dollar-denominated spend balance, not an
+      intermediate currency needing a conversion rate -- rule 1 applies
+      ("allowance stated directly in output units ... is not a credit
+      system"; here it is stated directly in USD per unit, even more direct).
+      Gates C1/C2/C4 out of the index.
+
+  credit_unit_defined:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: "No credit system (credit_system_present=no)."
+
+  credit_to_output_rate_published:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: "No credit system (credit_system_present=no)."
+
+  credit_rate_location:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: "No credit system (credit_system_present=no)."
+
+  # ===== Domain 6: Computability of cost per output (C3) =====
+  cost_per_output_unit:
+    value: other
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: >
+      Principal output is a delivered dataset row: one robots.txt AI-crawler
+      policy check result per domain (billed event apify-default-dataset-item,
+      "$0.011 per delivered result"). None of the enumerated units fits;
+      coder_note names it "per delivered dataset row / robots.txt ai policy
+      row (one domain's AI-crawler policy check)".
+
+  cost_per_output_computable:
+    value: "yes"
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: >
+      Entry tier price ($11.00/1,000 results, default display state, no
+      toggle to switch) is already expressed as a direct per-unit-output
+      rate -- no plan allowance or credit layer to convert. $11.00 / 1,000 =
+      $0.011/result, matching the vendor's own separately-published
+      "$0.011 per delivered result" figure exactly. No assumption about
+      typical use required. (cost_per_output_value_usd is a derived
+      variable per codebook section 8, computed later from
+      computation_assumptions below -- not coder-entered.)
+
+  computation_assumptions:
+    value: >
+      Entry tier: Pay Per Event (only option), usage_based, no monthly/annual
+      toggle, no periodic allowance to convert. Pricing tab: $11.00/1,000
+      delivered rows = $0.011/row (vendor's own stated per-unit figure;
+      arithmetic self-consistent, no conversion needed).
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+
+  # ===== Domain 7: Rollover of unused credits (C4) =====
+  credit_rollover_policy:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192207/https://apify.com/taroyamada/robotstxt-ai-checker/pricing"
+    evidence: "No credit system (credit_system_present=no)."
+
+  # ===== Domain 8: Charging for failed generations (C5) =====
+  failed_generation_charge_policy:
+    value: charged
+    layer: platform
+    source: "https://docs.apify.com/platform/actors/publishing/monetize/pay-per-event"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806195937/https://docs.apify.com/actors/publishing/monetize/pay-per-event"
+    evidence: >
+      Apify's own Pay-Per-Event documentation (the billing model this actor
+      uses) instructs, under "Charge for invalid input": "Charge for inputs
+      that seem valid but lead to errors, such as URLs that return a 404.
+      Even though such action doesn't produce usable data, you still spend
+      platform resources... Instead of failing the entire run because of the
+      bad input, return error items with clear error codes and messages."
+      This actor's own output schema implements exactly that pattern:
+      rowType includes robots_txt_error / robots_txt_invalid_domain as
+      regular emitted result rows alongside robots_txt_policy_snapshot, and
+      the README states "Every emitted Dataset row is pushed individually...
+      and must receive chargedCount >= 1." Actor page also documents a
+      separate, discretionary post-charge remedy: help.apify.com's
+      "Resolving Actor compensations" describes a request-based credit
+      (not cash refund) process for disputed/problematic runs via the
+      Issues tab -- a secondary appeal path, not evidence that failures are
+      free by default. Output schema field chargedEvent is documented as
+      "string or null" (i.e. some rows can in principle be unbilled), so
+      this is not airtight for every row type; recorded as `charged` on the
+      weight of the two corroborating platform/actor sources above.
+
+  # ===== Domain 9: Auto-renewal (D1, D2) =====
+  # Actor page is entirely silent on renewal (pure pay-per-event, "No
+  # subscription required"). Per assignment instruction, platform-layer ToS
+  # governs this contractual variable where the actor page is silent.
+  auto_renewal_default:
+    value: "on"
+    layer: platform
+    source: "https://docs.apify.com/legal/general-terms-and-conditions"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193448/https://docs.apify.com/legal/general-terms-and-conditions"
+    evidence: >
+      General T&C 14.3: "Unless otherwise specified in the Order, each Order
+      will automatically renew for the same Order Term at the then-current
+      pricing. To prevent automatic renewal, either party must notify the
+      other in writing... You may also cancel auto-renewal directly through
+      your Account." Corroborated by apify.com/pricing FAQ ("Can I upgrade,
+      downgrade or cancel my plan?"): "If you decide to cancel, your
+      subscription will last until the end of the current billing cycle. It
+      won't be renewed after that." -- two sources in agreement (see
+      auto_renewal_disclosure_location=multiple). Actor's own pay-per-event
+      charges themselves require no subscription/Order at all; this value
+      describes the account-subscription payment-vehicle layer per
+      assignment framing, since the actor page is silent on renewal.
+
+  auto_renewal_disclosure_location:
+    value: multiple
+    layer: platform
+    source: "https://docs.apify.com/legal/general-terms-and-conditions | https://apify.com/pricing"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193448/https://docs.apify.com/legal/general-terms-and-conditions"
+    evidence: >
+      Stated in both the terms (14.3, explicit "will automatically renew")
+      and the pricing-page FAQ (cancellation implies renewal is the default
+      state being opted out of) -- two document classes in agreement.
+
+  renewal_notice_commitment:
+    value: no_notice_stated
+    layer: platform
+    source: "https://docs.apify.com/legal/general-terms-and-conditions"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193448/https://docs.apify.com/legal/general-terms-and-conditions"
+    evidence: >
+      No clause commits to advance notice before a renewal charge. Notice
+      commitments found are for different events only: ToS changes ("For
+      material revisions, Apify will notify you") and overage notifications
+      ("you'll get a notification" when prepaid usage is exceeded) -- neither
+      is advance notice of a renewal charge itself.
+
+  # ===== Domain 10: Refund and cancellation terms (D3, D4) =====
+  refund_policy_exists:
+    value: no_refunds_stated
+    layer: platform
+    source: "https://docs.apify.com/legal/general-terms-and-conditions"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193448/https://docs.apify.com/legal/general-terms-and-conditions"
+    evidence: >
+      7.4: "Fees are non-cancellable, non-refundable, and shall not be
+      subject to any set-off unless stated otherwise." 15.6: "We will not
+      refund any Fees if you downgrade the purchased Services or terminate
+      the Agreement, except if you terminate the Agreement in accordance
+      with Section 15.5.2 [Apify's own uncured material breach]; in such a
+      case, you are entitled to receive a pro-rata refund for unused
+      prepaid Fees." Narrow breach-remedy exception, not a buyer-initiated
+      refund window -- same pattern as the codebook's own Vendor Q worked
+      example ("non-refundable except where required by law" ->
+      no_refunds_stated). Corroborated by help.apify.com "Resolving Actor
+      compensations": "as Apify's terms and conditions specify, we do not
+      return money" (compensation is credit, not cash). Preamble also
+      states Services are "business use only... not suitable for
+      consumers", so no consumer statutory withdrawal right applies either.
+
+  refund_window_days:
+    value: "0"
+    layer: platform
+    source: "https://docs.apify.com/legal/general-terms-and-conditions"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193448/https://docs.apify.com/legal/general-terms-and-conditions"
+    evidence: >
+      No refunds given as a general matter (refund_policy_exists=
+      no_refunds_stated); the 15.5.2 exception is condition-triggered
+      (Apify's own uncured breach), not a day-count window.
+
+  refund_conditions:
+    value: not_applicable
+    layer: platform
+    source: "https://docs.apify.com/legal/general-terms-and-conditions"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193448/https://docs.apify.com/legal/general-terms-and-conditions"
+    evidence: "No refund available as a general/buyer-initiated matter (refund_policy_exists=no_refunds_stated); parallels refund_window_days=0."
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    layer: platform
+    source: "https://docs.apify.com/legal/general-terms-and-conditions"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193448/https://docs.apify.com/legal/general-terms-and-conditions"
+    evidence: >
+      15.3: "...terminate the Agreement or an Order for any reason at any
+      time by delivering a written notice to Apify or by deleting your
+      Account on the Platform." 15.4: "Voluntary Account Deletion. If you
+      decide to delete your account for any reason, you can do so at any
+      time by going into Settings on your Account. We cannot cancel
+      Accounts in response to an email or phone request." Explicit
+      account-settings self-serve route documented.
+
+  refund_policy_location:
+    value: terms
+    layer: platform
+    source: "https://docs.apify.com/legal/general-terms-and-conditions"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193448/https://docs.apify.com/legal/general-terms-and-conditions"
+    evidence: "General T&C sections 7.4 and 15.6, corroborated by the help-center compensation article; no dedicated standalone refund page found."
+
+  # ===== Domain 11: Commercial-use rights (E1, E2, E3) =====
+  commercial_use_lowest_tier:
+    value: unknown
+    layer: actor
+    source: "https://docs.apify.com/legal/actor-terms-and-conditions"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193814/https://docs.apify.com/legal/actor-terms-and-conditions"
+    evidence: >
+      No document (Actor T&C, General T&C, actor page) uses "commercial
+      use"/"commercial license" language or a feature-grid commercial-use
+      row (there are no tiers/feature-grid at all for this flat-rate
+      product). Actor T&C 3.2 grants full, unconditional IP ownership in
+      Actor Output (see output_ownership_statement) and the General T&C
+      preamble frames the Services as "business use only", which may imply
+      commercial use is fine, but neither document states it explicitly, so
+      coded unknown per decision-tree step 4 rather than inferred.
+
+  watermark_removal_tier:
+    value: not_applicable
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: >
+      Principal output is a structured audit/analysis table (robots.txt
+      AI-crawler policy findings), not a media artifact a watermark could
+      mark -- the exact "analysis table" example the codebook itself gives
+      for this not_applicable case.
+
+  output_ownership_statement:
+    value: user_owns
+    layer: actor
+    source: "https://docs.apify.com/legal/actor-terms-and-conditions"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806193814/https://docs.apify.com/legal/actor-terms-and-conditions"
+    evidence: >
+      Actor T&C 3.2: "As between you and Creator, and to the extent
+      permitted by applicable law, you retain all intellectual property
+      rights that subsist in your Actor Input and Actor Output. However,
+      you grant Creator a non-exclusive, worldwide, royalty-free license to
+      process your Actor Inputs and Actor Outputs as necessary to provide
+      the Actor's functionality to you." Unconditional (not tier-gated).
+      Actor T&C prevails over General T&C for Actor matters per its own
+      preamble, so this is the correct governing document (not General T&C
+      5.8's broader Customer Data clause).
+
+  # ===== Domain 12: Undisclosed or unverifiable limits (F1, F2) =====
+  usage_cap_quantified:
+    value: all_caps_quantified
+    layer: actor
+    source: "https://apify.com/taroyamada/robotstxt-ai-checker"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806192139/https://apify.com/taroyamada/robotstxt-ai-checker"
+    evidence: >
+      Input schema: "domains: array... List of domains to analyze robots.txt
+      for AI crawler policies. Max 500." -- a quantified standing limit
+      (number + dimension, no period needed per section 5.1). This is the
+      only buyer-facing usage limit documented for the entry (only) tier;
+      pricing is otherwise explicitly open-ended ("No subscription required
+      — you only pay for what you use"). The `concurrency` input parameter's
+      note ("may trigger rate limits") was excluded: read in context it
+      warns about the target websites' own rate limiting, not a
+      vendor-imposed cap on the buyer's plan. AUP/ToS read in full (see
+      unquantified_limit_clause) surfaced no vague/fair-use cap that would
+      qualify this as unquantified per rule 3.
+
+  unquantified_limit_clause:
+    value: absent
+    layer: platform
+    source: "https://docs.apify.com/legal/acceptable-use-policy"
+    access_date: "2026-08-06"
+    archive_url: "https://web.archive.org/web/20260806194201/https://docs.apify.com/legal/acceptable-use-policy"
+    evidence: >
+      Acceptable Use Policy read in full (3,325 chars): Prohibited
+      Activities (2.1) are entirely conduct-based (DDoS, fraud, spam,
+      review-abuse, SEO manipulation, etc.), not volume/intensity of
+      legitimate use -- rule 3 excludes conduct prohibitions from
+      triggering `present`. Clause 3.1 ("Apify may limit the use... in its
+      sole discretion to prevent... damage") is tied to enforcement against
+      those Prohibited Activities, not a generic fair-use/throttling cap on
+      ordinary usage. General T&C and Actor T&C (both read in full) contain
+      no separate fair-use/reasonable-use/throttling clause; docs.apify.com/
+      legal index confirms no distinct Fair Use Policy document exists.
+      Positive finding of absence per rule 1 ("a coder who has read the
+      terms in full").
+
+register_events: []
+
+conflict_note: >
+  Actor README hints at a possible undisclosed "temporary legacy start fee"
+  during an unstated transition period; structured Pricing tab states
+  "Additional costs: Platform usage: Free", no such fee. Coded
+  mandatory_addon_present=no, first_charge_amount_usd=unknown given this
+  ambiguity.
+
+coder_note: >
+  Only one entry-tier candidate: Apify Store "Pay Per Event" flat rate (no
+  seats/packages/promos to compare). Account plans (Free/Starter/Scale/
+  Business) are payment-vehicle only, not competing tiers.
+  cost_per_output_unit: per delivered dataset row (robots.txt ai policy row).
+
+status: complete
+blindness: "no other record, no review page, no pass-2 material was opened."

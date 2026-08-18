@@ -1,0 +1,33 @@
+Archive submission log — invideo-ai — 2026-08-09
+All submissions via: curl -sI --max-time <20-25s> "https://web.archive.org/save/<url>", one attempt
+each except usage-policy (first attempt within a batched run returned curl http_code=000 / no
+response before the batch's overall timeout; second isolated attempt succeeded). Full response
+headers saved as archive-headers-*.txt in this directory.
+
+https://invideo.io/pricing/
+  -> https://web.archive.org/web/20260809164148/https://invideo.io/pricing/  [archived]
+  NOTE: archived capture is static HTML and does not display the script-rendered prices (verified:
+  grepped archived-pricing-check.html for price patterns, zero matches). Operative price evidence is
+  the local rendered-text copy, pricing-rendered.txt (per D-005 precedent).
+
+https://invideo.io/terms-and-conditions/
+  -> https://web.archive.org/web/20260809164206/https://invideo.io/terms-and-conditions/  [archived]
+
+https://invideo.io/usage-policy/
+  -> https://web.archive.org/web/20260809164325/https://invideo.io/usage-policy/  [archived, 2nd attempt]
+
+https://invideo.io/help/billing/how-do-credits-work/
+  -> https://web.archive.org/web/20260809164250/https://invideo.io/help/billing/how-do-credits-work/  [archived]
+
+https://invideo.io/help/billing/video-model-pricing/
+  -> https://web.archive.org/web/20260809164314/https://invideo.io/help/billing/video-model-pricing/  [archived]
+
+https://invideo.io/help/billing/image-pricing/
+  -> https://web.archive.org/web/20260809164429/https://invideo.io/help/billing/image-pricing/  [archived]
+
+https://help.invideo.io/en/articles/9380226-can-i-use-invideo-ai-for-free
+  -> https://web.archive.org/web/20260809164451/https://help.invideo.io/en/articles/9380226-can-i-use-invideo-ai-for-free  [archived]
+
+All 7 official sources archived successfully (archive_status: archived for all). No archive_failed
+or local_copy_only cases this run beyond the static-vs-rendered caveat noted above for the pricing
+page.

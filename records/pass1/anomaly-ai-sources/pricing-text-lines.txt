@@ -1,0 +1,115 @@
+AI Data Analyst Pricing — Start Free
+Anomaly AI
+Manifesto
+Pricing
+Blog
+Contact
+Security
+Privacy
+Login
+Book Demo
+Pricing
+Simple plans for AI data analysis, dashboards, and team reporting.
+Monthly
+Yearly
+Save 20%
+Free
+$0
+/month
+Try the product and get to first value fast
+Included credits
+Enough to try core analysis and dashboard workflows.
+See details →
+Included credits to get started
+All data sources supported
+Core analysis features
+Live chat support
+Get Started Free
+Pro
+$25
+/month
+For recurring analysis, dashboards, and scheduled work
+1,000 credits/month
+~600 insights with charts or ~200 dashboards per month.
+See details →
+1,000 credits per month
+All data sources supported
+Shareable dashboards
+Auto report scheduling
+Priority support
+Start Pro Plan
+Analyst
+$90
+/month
+For heavy recurring analysis, python workloads, and scheduled reporting
+4,000 credits/month
+~2,400 insights with charts or ~800 dashboards per month.
+See details →
+4,000 credits per month
+Everything in Pro
+Built for python-heavy workflows
+Priority support
+Start Analyst Plan
+Team
+$45
+/seat/month
+For teams sharing workspaces — minimum 2 seats ($90/month)
+2,000 credits/seat/month, pooled
+~1,200 insights with charts or ~400 dashboards per seat, shared as one pool.
+See details →
+Credits pooled across the team — 2,000 per seat
+Everything in Pro
+Shared workspace and team billing
+Team usage visibility
+Collaboration and admin controls
+Start Team Plan
+Enterprise
+Custom
+For organizations with larger or specialized needs
+Credits sized to your team
+Annual contracts available
+Seat-based pricing options
+Dedicated support
+SSO + SAML
+Custom SLA
+Advanced security & compliance
+Contact Sales
+How credits work
+Most steps the AI agent takes cost
+0.5 credits
+—
+            running a query, transforming data, building a chart or KPI, or regenerating a dashboard card.
+            Heavier steps — running a Python script or validating an Excel workbook — cost
+1 credit
+each.
+Anomaly AI
+AI data analyst for recurring business reports from large spreadsheets, GA4, ad platforms, and databases.
+Product Pages
+Capabilities
+AI for Large Datasets
+Solutions
+Connectors
+Pricing
+Data Connectors
+All Connectors
+BigQuery Analysis
+Excel Analysis
+GA4 Analysis
+Snowflake Analysis
+MySQL Analysis
+Google Sheets Analysis
+Resources
+Blog
+Tutorials
+Glossary
+Capabilities
+Company
+Contact Us
+Security
+Privacy Policy
+Terms of Service
+Cookie Policy
+Cookie Settings
+©
+2026
+Anomaly AI. All rights reserved.

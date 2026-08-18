@@ -1,0 +1,264 @@
+product_id: adobe-firefly
+product_name: Adobe Firefly
+category: AI image generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Firefly Standard"
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-16
+recheck_date: not_applicable
+primary_source_url: https://www.adobe.com/products/firefly/plans.html
+archive_url: https://web.archive.org/web/20260806112138/https://www.adobe.com/products/firefly/plans.html
+archive_status: archived
+
+default_display_state: |
+  Individuals tab active by default (aria-selected="true"; confirmed by accessibility-tree read on
+  both passes and by this adjudicator). A Turkey-geolocation interstitial ("Bu Adobe sitesi,
+  konumunuzla eşleşmiyor") appears first on every fresh load of both the plans page and the
+  adobe.com/legal pages; dismissed via its own Close control (declining redirection, not an account
+  action) on all three reads, after which the page serves US/USD content throughout -- confirmed by
+  this adjudicator's own live network inspection 2026-08-16: every web_commerce_artifact request
+  carries country=US&locale=en_US. Default card slots: Firefly Standard "US$9.99/mo" / "Monthly" and
+  Firefly Pro "US$19.99/mo" / "Monthly" (both passes, reproduced identically across repeated loads;
+  this adjudicator independently re-derived Standard's figure live from the same commerce endpoint,
+  matched to the visible "Buy now"/"Free trial" controls via their data-wcs-osi attributes). No
+  monthly/annual toggle exists anywhere on the Individuals tab; all four Individual-segment offers
+  (Standard/Pro/Pro Plus/Premium) carry commitment:"MONTH" in their own embedded commerce JSON,
+  confirmed independently by pass 2 and this adjudicator. Pro Plus and Premium require an extra
+  per-card dropdown selection to view and are not in the two default card slots; both carry a
+  "Limited-time offer" (30% off first year) promo not applicable to the entry tier. Business/Team-tab
+  variants (commitment:"YEAR") are a different, non-default segment reached only by clicking
+  "Business".
+
+sources:
+  - { url: "https://www.adobe.com/products/firefly/plans.html", kind: pricing, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260806112138/https://www.adobe.com/products/firefly/plans.html", note: "PRIMARY SOURCE. Pass 1 archived 2026-08-06 (public archive.org capture). Pass 2 read 2026-08-14 (local_copy_only; archive.org attempts deduped to a stale 2026-08-11 capture). This adjudicator re-read live 2026-08-16, including direct network-request inspection of the embedded commerce API (web_commerce_artifact) and DOM-to-request correlation via each button's data-wcs-osi attribute -- all three reads agree verbatim on every figure checked (Standard $9.99/mo, Pro $19.99/mo, 2,000/4,000 credits, no toggle, TRIAL_7_DAY offer for FFST). No vendor edit occurred in the window or since." }
+  - { url: "https://www.adobe.com/legal/subscription-terms.html", kind: refund, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260814153917/https://www.adobe.com/legal/subscription-terms.html", note: "Adobe Subscription and Cancellation Terms, Effective Date August 1 2026; explicitly scoped to CREATIVE CLOUD, DOCUMENT CLOUD, FIREFLY, ACROBAT & FRAME. Dedicated policy document, distinct from the General Terms of Use (see that source's note below) -- ranks first for contractual variables under protocol 6.2 and is the sole document class stating auto-renewal. This adjudicator re-read the 'Month to month' clause live 2026-08-16 via full DOM textContent (the accordion collapses in rendered view, matching both passes' experience); the automatic-renewal and 14-day-refund clauses are verbatim identical to both prior records' quotations and unchanged since 2026-08-06." }
+  - { url: "https://www.adobe.com/legal/terms.html", kind: tos, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260806120414/https://www.adobe.com/legal/terms.html", note: "Adobe General Terms of Use, published/effective 2025-10-03. This adjudicator full-text-searched the live document for 'renew' and 'automat' 2026-08-16: the only 'renew' hit is an unrelated passing mention of a 'renewal date' in the License section (3.1); the Fees and Payment section (7.2) refers OUT to 'your Subscription and Cancellation Terms' rather than stating a renewal commitment itself. No affirmative auto-renewal statement exists in this document. Confirms section 1.2's own text that the Subscription and Cancellation Terms is a separate, dedicated document merely incorporated by reference." }
+  - { url: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", kind: docs, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260814154844/https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", note: "Official help-center FAQ. Both passes read the per-feature premium-rate table. This adjudicator additionally extracted, live 2026-08-16, the full Firefly Free/Standard/Pro/Pro Plus/Premium comparison table via DOM textContent (the table renders as a stacked, unlabeled grid in plain text extraction, which is likely why neither pass transcribed it in full): row 'Generative credits' -- Free='Limited', Standard='2,000 credits per month' [...]; row 'Standard features' -- Free='Deducts credits', Standard/Pro/Pro Plus/Premium each='Unlimited access / Does not deduct credits'; row 'Premium features' -- Free='Limited complimentary generations', Standard/Pro/Pro Plus/Premium each='Deducts credits'. This table is the deciding evidence for credit_to_output_rate_published and cost_per_output_computable below." }
+  - { url: "https://www.adobe.com/go/adobe-gen-ai-addl-terms", kind: tos, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260814170221/https://www.adobe.com/cc-shared/assets/pdf/legal/servicetou/adobe-generative-ai-product-specific-terms-en-us-20260423.pdf", note: "Adobe Generative AI Product Specific Terms, effective 2026-04-23 (current live version at all three collection dates). Pass 1 could only retrieve a superseded 2025-06-17 version and flagged the gap; pass 2 retrieved the current version. Both versions state the same discretionary throttle clause relied on by unquantified_limit_clause (agreed, unaffected)." }
+  - { url: "https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html", kind: docs, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260806121228/https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html", note: "Official help-center article, 'Last updated on Jul 24, 2026'. Read by pass 1; ABSENT from pass 2's sources list entirely -- pass 2 never opened this URL. This adjudicator re-fetched it live 2026-08-16 and confirms pass 1's quotation verbatim: 'Cancellation fee and refunds: A refund depends on when you cancel and the type of subscription you purchased. For most plans, you get a full refund if you cancel within 14 days of your initial purchase.' No auto-renewal statement appears on this page (checked directly, contributes to auto_renewal_disclosure_location's ruling-out of help_center_only)." }
+  - { url: "https://helpx.adobe.com/account/individual/terms-policies-and-regulations/adobe-subscription-terms.html", kind: docs, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806121207/https://helpx.adobe.com/account/individual/terms-policies-and-regulations/adobe-subscription-terms.html", note: "Read by pass 1 only ('Cancellation details for common Adobe plans'), for the month-to-month downgrade/no-early-termination-fee point. Not load-bearing for any disputed variable; not independently re-read by this adjudicator." }
+  - { url: "https://www.adobe.com/express/pricing", kind: other, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806111951/https://www.adobe.com/express/pricing", note: "Read by pass 1 only, as a substitute source for commercial_use_lowest_tier after Firefly's own plans-page FAQ would not expand in that session. Superseded in practice by pass 2's and this adjudicator's ability to read Firefly's own FAQ directly (same finding, better-sourced); kept here because pass 1's evidence field still cites it." }
+
+variables:
+
+  # ---- Domain 1: headline price vs price actually charged ----
+
+  headline_price_usd: { value: 9.99, source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Firefly Standard card, default Individuals-tab display state: 'US$9.99/mo' / 'Monthly'. Confirmed in a second representation, embedded commerce JSON (productCode FFST, PA-1930): price 9.99, currencyCode USD. Re-confirmed live by this adjudicator 2026-08-16 via direct network-request inspection of the same commerce endpoint, matched to the visible 'Buy now' control via its data-wcs-osi attribute." }
+  headline_billing_basis: { value: "per_month_billed_monthly", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Card reads 'Monthly' (not 'billed annually'); commerce JSON confirms commitment:MONTH, term:MONTHLY. No annual-prepay option exists for any Individual-tab plan -- all four carry commitment:MONTH in their own JSON." }
+  first_charge_amount_usd: { value: 9.99, source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "AGREED. Month-to-month Subscription Terms: subscription 'begins as soon as your initial payment is processed' and charges 'the then-current rate for your plan... every month'. No annual commitment applies and no mandatory add-on exists (see mandatory_addon_present), so first charge = the published monthly rate; no arithmetic performed on either pass or this adjudication." }
+  mandatory_addon_present: { value: "no", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Pricing-page FAQ: 'Adobe will not charge you for additional credits unless you choose to purchase them.' Credit add-on packs are explicitly optional; no other required charge found on top of the $9.99/mo price for the plan as advertised." }
+  annual_condition_disclosure: { value: "not_applicable", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. No annual-prepay option exists anywhere on the default Individuals tab (see annual_default_toggle); the headline figure does not depend on annual prepayment (rule 1)." }
+  annual_default_toggle: { value: "no_toggle", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Accessibility-tree/DOM inspection (both passes, independently, and this adjudicator) finds no monthly/annual billing-period control on the Individuals tab; all four Individual-segment offers carry commitment:MONTH in their own embedded commerce JSON. An 'Annual, billed monthly' control exists in the DOM but belongs to the Business/Team tab only, not the default view." }
+
+  # ---- Domain 3: real usability of the free plan ----
+
+  free_plan_exists: { value: "yes", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Plans page: 'You don't need a plan to get free daily generations across image, video, and audio... Limits refresh every day.' Confirmed by the plans-page FAQ: 'Is there a free version of Adobe Firefly? Yes...'. An ongoing allowance, not a time-limited trial (domain 4)." }
+  free_plan_cap_documented: { value: "none_quantified", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "AGREED. Plans page: 'free daily generations... Limits refresh every day' (no figure). Help-center comparison table, 'Firefly Free' column, 'Generative credits' row: 'Limited' (no number; re-confirmed live by this adjudicator 2026-08-16 via full table extraction -- see sources note). No official document publishes a specific quantity for the free tier. NOTE (protocol 6.2): the same help-center page separately states free-plan generative credits are 'allocated upon first use... expire one month from allocation' -- a different CADENCE than the pricing page's 'daily' framing (logged in conflict_note below). Free-tier limits are a pricing-class construct, so protocol 6.2 ranks the live pricing page first regardless of which description reads as more precise, and both passes correctly coded from it." }
+  free_plan_cap_value: { value: "unknown", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "ADJUDICATED 2026-08-16 under the variable's own Format and Decision rule (codebook Domain 3, `free_plan_cap_value`): the only permitted values are a properly-formatted quantified limit ('quantity unit per period' / 'quantity unit') OR the literal tokens unknown / not_applicable / conflicting -- 'Do not paraphrase an unquantified limit into a number.' Both passes independently agree free_plan_cap_documented=none_quantified (no source anywhere -- plans page 'free daily generations... refresh every day', help-center table 'Limited' -- publishes a number), so there is nothing quantified to transcribe. Pass 2's value is a well-researched but non-conforming free-text paraphrase of that same absence, not a value the field's own format allows; its underlying research (the comparison table's 'Limited' cell, re-confirmed live 2026-08-16) is preserved in free_plan_cap_documented's evidence rather than discarded. Prior values: pass1=unknown, pass2='unspecified count, daily-refreshing (no numeric figure published in any official source found)'." }
+  free_plan_watermark: { value: "unknown", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. No document read (plans-page feature grid, help-center comparison table, Gen AI Product Specific Terms) states whether free-tier outputs are watermarked. The Gen AI terms' non-removal clause ('must not remove... any watermarks... that MAY be generated') is conditional and does not state whether or for which tier a watermark is actually applied." }
+  free_plan_duration: { value: "perpetual", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Presented as a standing, no-plan-needed option with a refreshing (not one-time) allowance and no expiry date stated anywhere. See conflict_note re: the help-center's differently-cadenced description of the same free allocation ('allocated upon first use... expire one month from allocation, ... again allocated' the next month) -- that description is ALSO of an ongoing, renewing arrangement, so the duration finding is unaffected by the cadence conflict either way." }
+
+  # ---- Domain 4: whether a trial requires a payment card ----
+
+  trial_exists: { value: "yes", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Firefly Standard and Firefly Pro cards each show a 'Free trial' control alongside 'Buy now'. Confirmed in the embedded commerce JSON: a distinct TRIAL-type offer exists for FFST and FFPO, re-verified live by this adjudicator 2026-08-16." }
+  trial_card_required: { value: "unknown", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. No official document (pricing page, General Terms of Use section 3.7, Subscription and Cancellation Terms) states whether payment details are required to start the trial. The Subscription and Cancellation Terms' 'Free Trial Terms' language appears only under 'Annual contract' plan-type subsections, not under the 'Month to month' type that governs this entry tier's confirmed commitment, so it cannot be read across without the inference the instrument bars." }
+  trial_length_days: { value: 7, source: "https://www.adobe.com/products/firefly/plans.html", evidence: "ADJUDICATED 2026-08-16 under deviations-for-coders.md's binding 'Reading a page' rule ('A rendered read IS a documentary read... Check the page's embedded JSON payload as well as its rendered text. Prices and plan data routinely live in a payload that never becomes visible text') and the D-005 rendered-read principle it generalizes. Independently re-verified live by this adjudicator, not merely trusted from pass 2's capture: the plans-page DOM's 'Free trial - Firefly Standard' link carries data-wcs-osi='6CvaGeeAH5XUkdTDddYlZcoJa6g7az1dXzD7UwQhDX8'; the matching live network response from adobe.com's own commerce API (web_commerce_artifact, offer_selector_ids=<same id>, productCode FFST) reads offerType:'TRIAL', pricePoint:'TRIAL_7_DAY_TWP_CCI_FIREFLY_STANDARD_FOR_CREATORS_FFST' -- Adobe's own first-party data for this exact entry-tier trial offer, tied to the visible control via the DOM. Pass 1's unknown reflects a session-side tooling gap (no embedded-JSON/network inspection performed; that session's own register_events separately document FAQ-accordion and price-digit rendering struggles on this same page), not vendor silence -- 'a coder-tooling misread is never a display_variant... document it in coder_note and code the true value.' Prior values: pass1=unknown, pass2=7." }
+  trial_auto_converts: { value: "unknown", source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "AGREED, same gap as trial_card_required. The Subscription and Cancellation Terms' automatic-conversion language ('At the end of your free trial... Adobe will automatically charge...') is stated only under 'Annual contract' subsections, not the 'Month to month' subsection matching this entry tier. General Terms of Use 3.7 is permissive ('you may continue... in a paid subscription, if available'), not an explicit auto-conversion statement. Coded unknown rather than reading the annual-plan clause across to a month-to-month product." }
+
+  # ---- Domain 5: comprehensibility of the credit system ----
+
+  credit_system_present: { value: "yes", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "AGREED. 'Generative credits are like tokens you can use to generate... image, vector, video, and audio outputs' -- an intermediate currency the plans page itself sells in units of 'credits per month' rather than directly in one output unit." }
+  credit_unit_defined: { value: "yes", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "AGREED. Generative-credits FAQ ties the unit to specific outputs: 'Most standard generative AI features... use 1 credit per generation'; 'Firefly Image 5... 10 credits per generation'; 'Generate Video... 100 credits per second' (1080p); etc. A document defines the unit against recognizable outputs, which is all this variable (unlike credit_to_output_rate_published) requires." }
+  credit_to_output_rate_published: { value: "partial", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "ADJUDICATED 2026-08-16 under codebook Domain 5 `credit_to_output_rate_published` rule 4 ('Rates published for secondary features but not the principal output are partial'). Independently re-verified live: the generative-credits-faq.html comparison table carries two rows for Firefly Standard -- 'Standard features' = 'Unlimited access / Does not deduct credits', 'Premium features' = 'Deducts credits'. Adobe's own document structure, not either coder's characterisation, draws the principal(standard)/secondary(premium) line, using the word 'features' -- the same word rule 4 uses. Firefly Image 5 (10 credits/generation) and Firefly Image 4 Ultra (20 credits/generation) sit in the premium-features rate table, i.e. the secondary category; the plan's principal, headline-advertised image output (standard/unlimited generation -- 'Unlimited access to standard image features like Generative Fill' on the plans page itself) carries no credit rate at all because none applies to it on a paid Firefly plan. A rate is published for a secondary feature-tier within the principal output TYPE (image), not for that output's own default/principal form -- rule 4's case. Prior values: pass1=yes (read the premium-model rate as satisfying 'a rate for image' without weighing that standard/default image generation carries no rate at all), pass2=partial (reached the same value, on materially the same reasoning, from the per-feature rate table alone -- without the comparison table's explicit 'features' framing this adjudicator additionally verified)." }
+  credit_rate_location: { value: "docs_help_center", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "AGREED. The credit-to-output conversion table (both the premium-features rate table and the Free/Standard/Pro/Pro Plus/Premium comparison table) lives on the helpx generative-credits-faq.html help-center page. The pricing page states only total monthly allowances ('2,000 per month' etc.), not the per-output conversion rate. Unaffected by this adjudication's credit_to_output_rate_published change -- this variable asks only WHERE a published rate lives, not whether it covers the principal output." }
+
+  # ---- Domain 6: computability of cost per output ----
+
+  cost_per_output_unit: { value: "per_image", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Assigned category is AI image generator; image is the principal output followed throughout domain 6, consistent with credit_to_output_rate_published. (Firefly as currently sold is multi-modal -- image, video, audio, vector -- noted for context, not scored; pass 2's coder_note flags an alternative per_seat_month reading as a judgment call, but the two passes AGREE on per_image, so it is not before this adjudication and is carried through unchanged.)" }
+  cost_per_output_computable: { value: "partial", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "ADJUDICATED 2026-08-16 -- a THIRD value, not either prior coder's. Codebook Domain 6 `cost_per_output_computable` rule 5 directly parallels credit_to_output_rate_published rule 4 immediately above: 'If the calculation is possible for a secondary output but not the principal one, code partial... name the output in computation_assumptions.' A $/image figure IS computable, using only published figures and no usage assumption, for the SECONDARY (premium-model) path: entry tier $9.99/mo, 2,000 credits/month (both already monthly), Firefly Image 5 at 10 credits/generation -> 9.99/2000=0.004995/credit x10=~$0.05/generation. It is NOT computable for the PRINCIPAL, default, headline-advertised path (unlimited standard image generation), which the vendor's own comparison table states plainly 'Does not deduct credits' -- no rate applies, so no figure can be derived for it without inventing one, which rule 7 bars. Both a `yes` and a `no` reading have some textual footing (the codebook's own worked examples for this rule-pair mostly involve different output TYPES, e.g. video vs image, not tiers of the same type); what settles it toward `partial` is Adobe's own table using the word 'features' for exactly this split (matching rule 4's own wording) and explicitly placing the numerically-rated premium image models inside that secondary bucket -- vendor-authored structure, not either coder's gloss. Pass 1 performed the identical arithmetic correctly and its own coder_note already flagged the qualification that supports partial ('this $0.05 figure applies specifically to premium-model (Image 5) generation, not to every image a Firefly Standard subscriber can produce') but filed the categorical value as yes. Pass 2 correctly identified the principal-path gap but over-corrected to no, discounting the fully-computable secondary-output figure rule 5 credits. Prior values: pass1=yes, pass2=no." }
+  computation_assumptions: { value: "Firefly Standard entry tier, $9.99/mo, 2,000 generative credits/month, both already monthly (no period conversion needed). Vendor's own Standard/Premium-features comparison table (generative-credits-faq.html) states standard (principal) image generation 'Does not deduct credits' on Firefly Standard -- no rate applies, so no figure is computable for the plan's principal output. A rate IS published for the secondary/premium path: Firefly Image 5 model, 10 credits/generation (premium-features rate table). 9.99/2000=0.004995 USD/credit; x10=0.04995, approximately $0.05 per Firefly Image 5 (premium-model) generation. Does not represent standard/unlimited generation, which the entry tier is actually sold on and for which no credit rate exists.", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "ADJUDICATED 2026-08-16, follows from cost_per_output_computable=partial above. Pass 1's original arithmetic is correct and is carried through with its output (Firefly Image 5) explicitly named, per the `partial` rule's own requirement -- only the categorical value on cost_per_output_computable changed, not the math. Prior values: pass1 filed the same arithmetic under a `yes` value; pass2='not_applicable' (performed no computation, having concluded none was possible under its own `no`)." }
+
+  # ---- Domain 7-8: rollover and failed generations ----
+
+  credit_rollover_policy: { value: "expires_at_period_end", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "AGREED. Generative-credits FAQ: 'No, generative credits do not roll over to the next month. Your generative credit balance will reset to your allocated amount on a monthly basis.' Independently confirmed by the Subscription and Cancellation Terms: 'Unused generative credits do not rollover.'" }
+  failed_generation_charge_policy: { value: "unknown", source: "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html", evidence: "AGREED. No document read (pricing page, generative-credits FAQ, General Terms, Subscription and Cancellation Terms, Gen AI Product Specific Terms) states what happens to credit consumption when a generation fails, errors, or produces nothing usable. Silent throughout." }
+
+  # ---- Domain 9: auto-renewal ----
+
+  auto_renewal_default: { value: "on", source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "ADJUDICATED 2026-08-16 under the variable's own value table (codebook Domain 9): the only permitted values are on / off / no_recurring_billing / unknown / conflicting -- 'yes' is not among them. Both passes read the identical clause and agree on the underlying fact; re-confirmed live and unchanged 2026-08-16 via full DOM textContent: 'Your subscription will automatically renew each month without notice until you cancel... We will automatically charge you the then-current rate for your plan, plus applicable taxes, every month upon renewal until you cancel.' A vocabulary correction, not a substantive dispute. Prior values: pass1='yes' (not a valid value on this variable's own table), pass2='on'." }
+  auto_renewal_disclosure_location: { value: "purchase_terms_doc", source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "ADJUDICATED 2026-08-16 under the variable's own value table, which lists `terms_only` (stated in the terms of service, i.e. Adobe's General Terms of Use) and `purchase_terms_doc` (stated on a dedicated billing or subscription policy page) as separate values -- protocol 6.2's authority-tier language ('terms of service OR the dedicated policy page') ranks the two together for AUTHORITY, but this disclosure-location variable still asks which class actually states it. The renewal statement lives only on the dedicated 'Adobe Subscription and Cancellation Terms' page (/legal/subscription-terms.html), which the General Terms of Use itself names as a separate document merely incorporated by reference ('If you have agreed to the Subscription and Cancellation Terms..., then such terms are also considered part of the Terms'). Independently re-verified live 2026-08-16: full-text search of the General Terms of Use for 'renew'/'automat' returns only an unrelated passing mention of a 'renewal date' (License, 3.1), and its Fees and Payment section (7.2) refers OUT to 'your Subscription and Cancellation Terms' rather than stating anything itself -- no affirmative renewal statement exists there, ruling out terms_only. Also re-confirmed absent from the fully-expanded pricing-page FAQ and from the help-center cancellation article (fetched live), ruling out pricing_page / help_center_only / multiple. Sole qualifying class = purchase_terms_doc. Prior values: pass1='terms_only' (used 'terms-class' to mean protocol 6.2's authority tier, conflating it with this variable's own terms_only/purchase_terms_doc distinction), pass2='purchase_terms_doc'." }
+  renewal_notice_commitment: { value: "no_notice_stated", source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "AGREED (pass 2's evidence text is more precise and is the wording carried through here). Month-to-month Subscription Terms state renewal happens 'without notice'; the document's only advance-notice commitment ('We may change your plan's rate each monthly renewal term, and we will notify you of any rate change with the option to cancel') is specific to RATE CHANGES, not a general pre-renewal-charge notice. No document commits to notifying the buyer before an ordinary same-rate renewal charge. Re-confirmed live 2026-08-16, unchanged." }
+
+  # ---- Domain 10: refund and cancellation terms ----
+
+  refund_policy_exists: { value: "yes", source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "AGREED. Month-to-month Cancellation Terms: 'If you cancel within 14 days of your initial order, you'll be fully refunded.' Independently confirmed by the help-center article 'Cancel Adobe trial or subscription', re-fetched live by this adjudicator 2026-08-16." }
+  refund_window_days: { value: 14, source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "AGREED. 'If you cancel within 14 days of your initial order, you'll be fully refunded.' Same figure independently stated in the help-center cancellation article." }
+  refund_conditions: { value: "unconditional", source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "AGREED. 'If you cancel within 14 days of your initial order, you'll be fully refunded.' No usage threshold, stated reason, or approval step is attached beyond cancelling within the window." }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "AGREED. 'You can cancel your subscription anytime via your Adobe Account or by contacting Customer Support.' Self-serve is explicitly documented; corroborated with concrete steps by the help-center cancellation article." }
+  refund_policy_location: { value: "multiple", source: "https://www.adobe.com/legal/subscription-terms.html", evidence: "ADJUDICATED 2026-08-16 -- combines coverage rather than picking a side. Under the variable's own rule ('multiple is for agreement across two or more classes'): the dedicated Subscription and Cancellation Terms page (a distinct document from the General Terms of Use, correctly classed dedicated_refund_page by pass 2) states the 14-day full-refund position, AND the official help-center article 'Cancel Adobe trial or subscription' independently states the SAME position in agreement: 'Cancellation fee and refunds: A refund depends on when you cancel and the type of subscription you purchased. For most plans, you get a full refund if you cancel within 14 days of your initial purchase.' Re-fetched live by this adjudicator 2026-08-16 -- verbatim match to pass 1's quote, current and unchanged. Two classes (dedicated_refund_page + help_center) in agreement = multiple, per the rule's own text. Pass 2 never opened this help-center URL -- it is absent from pass 2's `sources` list entirely -- and so classified from the one document it read; pass 1 found this second, corroborating official document but filed subscription-terms.html under an imprecise internal label ('terms-class') rather than the variable's own dedicated_refund_page value. Pass 1's final coded value (multiple) is nonetheless correct once the right two classes are named. Prior values: pass1='multiple', pass2='dedicated_refund_page'." }
+
+  # ---- Domain 11: commercial-use rights ----
+
+  commercial_use_lowest_tier: { value: "free", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Plans-page FAQ (readable once fully expanded -- pass 2 and this adjudicator both confirm): 'Are Adobe Firefly outputs safe for commercial use? ... Outputs generated with Adobe Firefly AI models can be used for commercial purposes.' Not conditioned on any paid tier. Independently corroborated by the generative-credits FAQ: 'For features without the beta label, you can use Adobe Firefly-generated outputs in your commercial projects.' (Pass 1 sourced the same finding from Adobe Express's pricing-page FAQ because Firefly's own FAQ accordion would not expand in that session -- a tooling gap, not a document gap; both land on the same value.)" }
+  watermark_removal_tier: { value: "unknown", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. No document read states which tier(s), if any, apply or remove a watermark on Firefly outputs; neither the plans-page feature grid nor the help-center comparison table carries a watermark row for any tier. The Gen AI Product Specific Terms bar removing watermarks 'that MAY be generated' -- conditional wording, not a statement of when or for whom they are generated." }
+  output_ownership_statement: { value: "user_owns", source: "https://www.adobe.com/legal/terms.html", evidence: "AGREED. General Terms of Use sec. 4.2: 'you... retain all rights and ownership of your Content. We do not claim any ownership rights to your Content.' The Gen AI Product Specific Terms sec. 1 ties this directly to Firefly: 'The Input and Output are your Content... and all provisions governing Content in the Terms apply to the Input and Output.' See conflict_note re: a superseded (2024-06-04) version's broader free-user license clause, absent from the version in effect at both collection dates and confirmed still absent today." }
+
+  # ---- Domain 12: undisclosed or unverifiable limits ----
+
+  usage_cap_quantified: { value: "some_quantified", source: "https://www.adobe.com/products/firefly/plans.html", evidence: "AGREED. Firefly Standard's numbered limits: '2,000 [credits] per month', 'Up to 20' 5-second videos/month, 'Up to 6 minutes' translation/month, 'Up to 200' sound effects/month -- all quantified rates. Against these, 'Unlimited access to standard image features' is itself qualified by a discretionary, unquantified clause elsewhere (see unquantified_limit_clause), so per rule 3 it does not count as quantified. At least one of each = some_quantified." }
+  unquantified_limit_clause: { value: "present", source: "https://www.adobe.com/go/adobe-gen-ai-addl-terms", evidence: "AGREED. Gen AI Product Specific Terms (current, 2026-04-23 version, confirmed still in effect): 'Adobe reserves the right to throttle, limit, disable, suspend, or terminate your right to use or access the generative AI features at any time in our sole discretion without prior notice to you.' A discretionary, no-figure standard qualifying the advertised-unlimited standard-feature benefit -- read in full, not found via keyword search alone." }
+
+coder_note: |
+  ADJUDICATION SUMMARY (2026-08-16). tools/disagreements.py adobe-firefly finds 7 substantive
+  disagreements (free_plan_cap_value, trial_length_days, credit_to_output_rate_published,
+  cost_per_output_computable, auto_renewal_default, auto_renewal_disclosure_location,
+  refund_policy_location) plus 1 flagged-but-non-substantive prose mismatch
+  (computation_assumptions -- different wording tracking cost_per_output_computable, not an
+  independent disagreement). All 8 fields resolved by applying the codebook's own decision rule to
+  the evidence; 0 required step 5's "documents do not determine the answer" treatment. One of the
+  seven (free_plan_cap_value) resolves TO the token `unknown` because the variable's own format rule
+  requires it once nothing is quantified -- that is a rule-driven answer, not an unresolved
+  disagreement.
+
+  REGISTER EVENTS (checked before classifying anything, per assignment brief). pass1.yaml carries 3
+  register_events: one `display_variant` (the Turkey geo-interstitial, present on first load of the
+  plans page and the legal pages alike) and two `data_quality_note` entries (the plans-page FAQ
+  accordion not expanding; Pro Plus/Premium price digits not rendering as extractable text).
+  pass2.yaml carries 0. No `vendor_edit` entry exists for this product in either record, so **no
+  disagreement qualifies for date_explained (7.4.1)** regardless of the 8-day collection gap
+  (2026-08-06 to 2026-08-14) -- confirmed personally, not merely inferred from the absent register
+  entry: every disputed figure (the auto-renewal clause, the refund clause, the credits comparison
+  table, the TRIAL_7_DAY commerce-JSON string) reads identically live today, 2026-08-16, to how both
+  passes recorded it. Nothing moved in the window or since. **No disagreement qualifies for
+  variant_explained (7.4.2) either**: the one logged `display_variant` (the geo-interstitial) was
+  independently observed and identically resolved -- dismissed, US/USD content served -- by both
+  passes and this adjudicator; it is not a divergent DEFAULT state of any document the seven disputed
+  variables were coded from, and no two archive snapshots show two different states of any of those
+  documents. All 7 substantive disagreements (+1 prose) are ordinary disagreements resolved by rule.
+
+  A TOOLING FAILURE IS A MISREAD, NOT A DISPLAY VARIANT (the one place this applied here):
+  trial_length_days. Pass 1's own register_events already document that session's difficulties
+  reading this same plans page (FAQ accordion, price-digit rendering) but never logged an inspection
+  of the page's embedded commerce JSON or network payloads; pass 1 coded unknown from what a
+  text/accessibility-tree read showed, which is silent on trial length. Pass 2 found the vendor's own
+  TRIAL_7_DAY commerce-JSON string. This adjudicator went one step further than trusting either
+  coder's account: opened the live plans page, located the rendered 'Free trial - Firefly Standard'
+  control in the DOM, read its data-wcs-osi attribute, and matched that exact id to a live network
+  response from adobe.com's own commerce API reading pricePoint:'TRIAL_7_DAY_TWP_...FFST' --
+  independent, first-party confirmation via a different verification path than pass 2's own capture
+  used. Adobe's plan data, not a third party's, in a documentary (rendered-read) representation
+  deviations-for-coders.md already rules in-scope. Resolved 7.
+
+  THE STANDARD/PREMIUM SPLIT DROVE TWO RELATED DISAGREEMENTS, AND PRODUCED THIS ADJUDICATION'S ONE
+  THIRD-VALUE FINDING. credit_to_output_rate_published and cost_per_output_computable both turn on
+  the same underlying vendor fact: Adobe's own generative-credits-faq.html comparison table splits
+  'Standard features' (unlimited, does-not-deduct-credits, on every PAID Firefly plan) from 'Premium
+  features' (deducts credits) -- and the numerically-rated Firefly Image 5 / Image 4 Ultra models sit
+  in the premium bucket, not the standard one. Neither prior coder quoted this table in full (both
+  worked from the separate per-feature rate table and from FAQ prose); this adjudicator extracted it
+  live via DOM textContent (see sources note) because plain-text extraction of this specific table
+  renders as an unlabeled stacked grid that is easy to walk past. Applied consistently under the
+  codebook's own parallel rules (Domain 5 rule 4 / Domain 6 rule 5, both keyed to the word
+  'features'/'secondary output'): credit_to_output_rate_published=partial (pass 2 already reached
+  this, now on fuller evidence) and cost_per_output_computable=partial -- a value NEITHER prior coder
+  chose (pass1=yes, pass2=no). This is the "both prior coders can be wrong" case flagged in my
+  assignment brief: pass 1's arithmetic was correct but filed under the wrong categorical value (its
+  own coder_note already states the qualification that partial exists for); pass 2's `no` discarded a
+  genuinely, fully computable secondary-output figure that rule 5 credits. Full reasoning, including
+  the textual tension in the codebook's own worked examples (which lean toward different output
+  TYPES, e.g. video vs image, rather than feature TIERS of the same type) and why the vendor's own
+  'features' terminology is what resolves it, is in cost_per_output_computable's evidence field above
+  -- not asserted here without it.
+
+  TWO DISAGREEMENTS WERE VOCABULARY, NOT SUBSTANCE. auto_renewal_default: pass 1 wrote 'yes' where
+  the codebook's own value table for this variable defines on/off/no_recurring_billing -- both passes
+  agree on the underlying fact (quote re-verified live, unchanged). auto_renewal_disclosure_location:
+  pass 1 wrote 'terms_only' by reading protocol 6.2's authority-tier phrase ('terms of service or the
+  dedicated policy page') as if it were this variable's own value vocabulary; the variable's actual
+  table splits `terms_only` (the General Terms of Use) from `purchase_terms_doc` (a dedicated
+  subscription/billing page) as distinct values, and the renewal clause lives only on the latter --
+  confirmed by an independent full-text search of the General Terms of Use for 'renew'/'automat',
+  which turns up no affirmative statement there at all.
+
+  refund_policy_location IS THE COVERAGE-COMBINATION CASE. Pass 2 correctly classified
+  subscription-terms.html as `dedicated_refund_page` (a document distinct from the General Terms of
+  Use) but never opened helpx.adobe.com's 'Cancel Adobe trial or subscription' article -- absent from
+  its own `sources` list -- so it saw only one qualifying class. Pass 1 opened that second document
+  and quoted its independent, agreeing 14-day-refund statement, but filed the FIRST document under an
+  imprecise internal label ('terms-class'). Re-fetched both documents live 2026-08-16: pass 1's quote
+  from the help-center article is verbatim current. Two classes, in agreement = multiple, per the
+  rule's own text -- pass 1's coded value was right; pass 2's was well-classified but incomplete.
+
+  CONFLICT_NOTE CARRIED FORWARD, NOT RE-OPENED. My assignment brief flagged, for scope rather than
+  for a value change: pass 2 logged a conflict between the pricing page's 'free daily generations...
+  refresh every day' framing of the free tier and the help-center FAQ's 'allocated upon first use...
+  expire one month from allocation' cadence for the same tier's generative credits. Neither
+  free_plan_duration nor free_plan_cap_documented is a disagreement between the two passes (both
+  agree perpetual / none_quantified), and protocol 6.2 ranks the live pricing page first for
+  pricing-class variables (free-tier limits) regardless of which description reads as more precise --
+  pass 2 already applied this correctly and said so in its own conflict_note. Carried forward below
+  essentially unchanged, because 6.2 requires the divergence to stay recorded even where the
+  hierarchy settles the coded value cleanly; both underlying values are unaffected by this
+  adjudication.
+
+  ENTRY-TIER LOSING CANDIDATES (codebook 5, entry_tier_name evidence; AGREED both passes): Firefly Pro
+  $19.99/mo -> $239.88/yr annual-equivalent. Firefly Pro Plus -- requires an extra dropdown selection
+  to view (not a default card slot) -- $34.97/mo promo (list $49.99/mo, 30% off first 12 months) ->
+  $419.64/yr promo, $599.88/yr list; pass 1's session could not read this figure at all (price digits
+  did not render across three attempts, logged in its own register_events) and pass 2's fuller figure
+  is carried through here. Firefly Premium, same dropdown gate, $139.91/mo promo (list $199.99/mo) ->
+  $1,678.92/yr promo, $2,399.88/yr list. None is cheaper than Firefly Standard's $119.88/yr under any
+  reading. Business/Team-tab variants (commitment:YEAR) are excluded -- reaching them requires
+  clicking the 'Business' tab, an interaction beyond the page's default load state.
+
+  SOURCES RE-READ FOR THIS ADJUDICATION: both records in full; pass 1's adobe-firefly-sources/
+  (d009-reread-2026-08-10.md); pass 2's adobe-firefly-sources/ (all three local captures, including
+  the full rendered-page extraction and embedded-JSON dump); the live vendor pricing page, Subscription
+  and Cancellation Terms, General Terms of Use, generative-credits FAQ, and the
+  cancel-adobe-subscription.html help-center article, all re-fetched 2026-08-16 (geo-interstitial
+  declined each time); live network-request inspection of the plans page's embedded commerce API,
+  correlated to specific on-page controls via their data-wcs-osi attributes. No new archive.org
+  snapshot was submitted -- pass 1's 2026-08-06 public capture of the plans page is confirmed still
+  representative by this adjudicator's own live re-read, and every other cited document's existing
+  archive (pass 1's or pass 2's) was independently spot-checked against the live page rather than
+  assumed current.
+
+  ALSO READ: codebook-v1.md in full (domains 1, 3, 4, 5, 6, 9, 10, 11, 12, plus sections 1-6);
+  protocol-v1.md sections 6.2, 6.3, 6.4, 6.6, 6.8, 7.4, 7.4.1, 7.4.2; sampling-rules.md section 7.2;
+  deviations-for-coders.md in full; record-template.yaml; orchestrator/deviations-log.md D-005 (and
+  its remediation note). NOT read: orchestrator/interim-signals.md, any other product's record or
+  -sources/, aitoolspolice.com, site/content/reviews/.
+
+  blindness/scope attestation: no other product's record was opened, and no repository history
+  command (git log/show/diff/blame) was run.
+
+conflict_note: |
+  Free-plan refresh cadence (protocol 6.2; logged by pass 2, carried forward unchanged in substance).
+  The live pricing page (https://www.adobe.com/products/firefly/plans.html) frames the free tier as
+  "free daily generations... Limits refresh every day" (no mention of "credits" for free users). The
+  official help-center page (https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html)
+  states "For free plans, generative credits are allocated upon first use of a Firefly feature...
+  These credits expire one month from allocation" -- a monthly, credit-based cadence, not a daily one.
+  Both descriptions are of an ongoing, renewing arrangement; they diverge only on cadence, not on
+  whether the free tier persists. Protocol 6.2 ranks the live pricing page first for free-tier
+  (pricing-class) variables, so free_plan_duration and free_plan_cap_documented are coded from it --
+  this adjudication applies that ranking rather than judging which description sounds more precise,
+  per the assignment brief's own instruction, and reaches the same values both passes already held.
+
+  Output ownership / free-user license (logged by pass 2). The Gen AI Product Specific Terms version
+  actually in effect at all three collection dates (2026-04-23,
+  https://www.adobe.com/go/adobe-gen-ai-addl-terms) contains no equivalent of a prior 2024-06-04
+  version's clause granting Adobe a broad perpetual/worldwide license over free (non-paying) users'
+  text-based Input+Output "for any purpose" unless the user purchased a paid subscription. That clause
+  is absent from the current document, re-confirmed still absent by this adjudicator 2026-08-16.
+  output_ownership_statement is coded user_owns from the General Terms of Use sec. 4.2, qualified only
+  by the still-current Firefly Gallery license (Gen AI terms sec. 4: submitting Output to an
+  Adobe-hosted gallery grants Adobe a marketing/reuse license over that specific submission, all tiers
+  alike).
+
+register_events:
+  - { type: display_variant, detail: "Geo-mismatch interstitial (Turkey network origin) shown on first load of both the Firefly plans page and the adobe.com/legal pages; dismissed each time (declining relocation, not an account action) without affecting content -- pages continued serving US/USD pricing and content throughout. Logged by pass 1, independently encountered and identically resolved by pass 2 and this adjudicator on 2026-08-16. Does not bear on any coded value: no document's DEFAULT state differs across the three reads once the interstitial is dismissed.", urls: ["https://www.adobe.com/products/firefly/plans.html", "https://www.adobe.com/legal/subscription-terms.html"] }
+
+status: complete

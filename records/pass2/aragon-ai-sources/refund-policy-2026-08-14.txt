@@ -1,0 +1,36 @@
+URL: https://www.aragon.ai/refund-policy
+Accessed: 2026-08-14
+Method: WebFetch (full-page verbatim extraction requested)
+
+=== Headshot Refund Policy ("The Aragon Guarantee") ===
+"Although close to 99% of our customers are satisfied with their AI headshots, there may be instances where your photos don't accurately represent you" — complimentary redo or full refund offered.
+
+What doesn't qualify:
+- Upload instructions weren't followed
+- "downloading your photos is considered as using your product"
+- Requests arrive after "14 calendar days of purchase"
+- Team plan accounts: partial refunds for unused credits only
+
+=== Subscription Refund Policy ===
+"Monthly plans: Refund requests must be submitted within 14 calendar days of the charge"
+"Annual plans: Refund requests must be submitted within 14 calendar days of the charge"
+"The refund applies to your most recent payment only"
+"Refunds will only be granted if no credits have been used during the billing period"
+No refunds for recurring charges if subscription wasn't canceled before renewal.
+
+=== Duplicate Charges & Unauthorized Transactions ===
+Duplicate charges: full refund after verification. "Verified unauthorized charges will be refunded in full following investigation."
+
+=== Subscription Cancellation (on this page) ===
+"All subscription plans renew automatically unless canceled before the renewal date." Cancellations take effect end-of-cycle; unused portions not refunded.
+
+=== How To Request a Refund ===
+Contact support via "support@aragon.ai or using our chatbox."
+
+=== How Long Do Refunds Take ===
+"We will review and respond to refund requests within 1-3 business days. If approved, funds will be returned to your original payment method within 5-10 business days."
+
+=== Disputes & Chargebacks ===
+Resolve with support first. "Fraudulent or unjustified chargebacks may result in account suspension."
+
+NOTE: This page's refund grant (conditional 14-day money-back guarantee) is NOT cross-referenced anywhere in the ToS's own refund clause (ToS only carves out "as required by law" + pro-rata for Aragon-initiated no-cause termination — see terms-of-service source file). Both pages are official, equal-rank contractual sources (protocol 6.2). Recorded as a conflict — see conflict_note in record.

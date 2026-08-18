@@ -1,0 +1,88 @@
+SOURCE: https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ
+ACCESS DATE: 2026-08-07
+ARCHIVE STATUS: archive_failed twice (web.archive.org/save returned HTTP 520/429 on colossyan.zendesk.com domain) -> local_copy_only per protocol-v1.md section 6.4
+TITLE: Pricing & Packaging FAQ 💳 – Colossyan
+PAGE "Updated" LABEL AT ACCESS TIME: "1 year ago Updated"
+
+--- VISIBLE MAIN-CONTENT TEXT AS READ ---
+Colossyan
+ Account & Payments
+ARTICLES IN THIS SECTION
+Pricing & Packaging FAQ 💳
+1 year ago Updated
+Can I pay monthly?
+
+Yes, we do have monthly plans for the Starter and Business plans.
+
+Can I cancel my monthly plan at any time?
+
+Yes, you can cancel your monthly subscription at any time. Your cancellation will take effect and will stop the automatic renewal at the end of the current paid term.
+
+Can I cancel my yearly plan at any time?
+
+Yes, but please note yearly plans are paid upfront for the entire year, so you won't be refunded for the unused months or minutes.
+
+How do you calculate pricing?
+
+Our pricing is based on video generation minutes, editor seats and access to features. For more information please see the comparison table on the pricing page.
+
+Am I charged per minute?
+
+You are charged based on your plan, which has an allowance of video generation minutes. Generated videos count towards your allowance, including videos with a voice-over.
+
+While you are editing a video, you can check the estimated time of it at the bottom of the page. With this, you can calculate how many minutes the project would count.
+
+Which plan can I create a custom avatar on?
+
+You can create at least one Instant Avatar with any of our plans! (Quantity depends on your plan)
+
+Studio Avatars can only be created with annual plans. (Comparison between these avatar types is available here.)
+
+Our pricing page lists the differences between plans and the amount of avatars that can be created.
+
+Do my unused minutes carry over to the next month?
+
+In the case of a monthly subscription, your minutes expire at the end of every month.
+
+If you have an annual subscription, your annual video generation minutes will be available in bulk (for example 12*40=480 minutes in the case of an annual Pro subscription) and expire at the end of the year.
+
+Can I purchase additional minutes?
+
+Unfortunately, there is no way to purchase additional minutes. To be able to generate more videos, you can upgrade your subscription.
+
+What is the difference between Drafts and videos?
+
+You can go back and edit your Drafts at any time, whereas generated videos are the final rendered version of your Drafts.
+
+These cannot be edited without first editing the Draft and generating a new video.
+
+Do my Drafts count toward my minute allowance?
+
+No. You can create as many Drafts as you like. Only generated videos count towards your allowance.
+
+Can I edit a generated video?
+
+A generated video is an .mp4 file, you cannot edit that. Only drafts can be edited.
+
+Whenever you click on Generate we deduct the full length of the video of your video generation minutes regardless of if you generated that video before or not.
+
+Do I use up my minutes when I preview my drafts?
+
+No, using Preview mode won't take away any minutes from your video generation allowance. Generating the video will deduct the full length of your video from your total video generation minutes each time you click the Generate button.
+
+Can I go over my minute allowance?
+
+No, it's not possible to go over your allowance - you will have to upgrade to a plan with more generation minutes to generate more videos.
+
+What happens to my account after the 14-day free trial?
+
+You won't be able to generate videos unless you upgrade to a paid plan, but your drafts and generated videos will remain intact on your account.
+
+Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Return to top
+
+NOTE: This article uses plan names ("Starter and Business plans", "annual Pro subscription" at 40 min/mo) that do not match the
+current live pricing page (Starter=free, Professional=entry paid at 30 min/mo NEO, Enterprise). Treated as a stale/lower-authority
+help-center source relative to the live pricing page per codebook-v1.md section 3; discrepancies logged in conflict_note.

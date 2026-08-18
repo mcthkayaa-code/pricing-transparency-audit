@@ -1,0 +1,196 @@
+product_id: openai-sora
+product_name: OpenAI Sora
+category: AI video generator
+product_status: "discontinued"
+paid_submission: "no"
+entry_tier_name: "unknown"
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-10
+recheck_date: not_applicable
+primary_source_url: https://sora.com
+archive_url: "local copy: openai-sora-sources/sora-com-live-state-rendered.txt (web.archive.org /save/ attempted twice, both HTTP 520; nearest pre-existing non-same-day IA snapshot: http://web.archive.org/web/20260708232650/https://sora.com/)"
+archive_status: local_copy_only
+default_display_state: >
+  sora.com (the frame's vendor_home_url) redirects to sora.chatgpt.com and shows only a
+  shutdown notice as of 2026-08-10: "Sora is no longer available. You can export your data at
+  any time." No pricing UI, no billing toggle, no currency figure is present in the current
+  default state. Product re-checked as discontinued at collection (see coder_note); entry-tier
+  and pricing variables below are coded from the last reachable pre-shutdown archived materials
+  (web.archive.org captures dated 2026-04-20, six days before the vendor's stated 2026-04-26
+  shutdown date) where such materials existed and were retrievable, per the discontinued-stratum
+  procedure; where no such material could be retrieved, values are coded unknown.
+
+sources:
+  - { url: "https://sora.com", kind: pricing, accessed: "2026-08-10", archive: local_copy_only, note: "vendor_home_url per frozen frame; redirects to sora.chatgpt.com; live page shows only a shutdown notice, no pricing content; archive.org /save/ attempted twice (HTTP 520 both times); local rendered copy saved" }
+  - { url: "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation", kind: other, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260729125259/https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation", note: "archive.org /save/ returned HTTP 200 today; closest confirmed-available snapshot at time of writing is 2026-07-29 (not exact same-day, cited alongside local copy); establishes the discontinuation dates coded into product_status and coder_note" }
+  - { url: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", kind: pricing, accessed: "2026-08-10", archive: archive_failed, note: "live page is HTTP 404 (deleted); archived capture (2026-06-13) is an empty client-rendered app shell with no article text; this is the single document most likely to have defined credits/entry-tier pricing and it could not be recovered within the 2-attempt cap" }
+  - { url: "https://chatgpt.com/pricing", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260420102953/https://chatgpt.com/pricing/", note: "read via pre-existing archive.org capture dated 2026-04-20 (6 days pre-shutdown); live version returns HTTP 403 and by collection date no longer concerns Sora; Sora is not named in any plan card or the full feature-comparison grid in this capture" }
+  - { url: "https://openai.com/sora/", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260420042312/https://openai.com/sora/", note: "read via pre-existing archive.org capture dated 2026-04-20; pure capability marketing, no pricing/plan/credit content of any kind; links only to Login (sora.chatgpt.com) and a research post" }
+  - { url: "https://openai.com/index/sora-2/", kind: other, accessed: "2026-08-10", archive: archive_failed, note: "linked from the Sora marketing page as 'Read the research'; nearest archive.org capture (2026-04-23) is a Cloudflare bot-challenge page, not article content; not usable as evidence" }
+  - { url: "https://openai.com/policies/terms-of-use/", kind: tos, accessed: "2026-08-10", archive: local_copy_only, note: "read via the page's own language selector to /en-US/ after default geo-redirect served /tr-TR/ (Turkey egress); archive.org /save/ attempted twice (HTTP 520 both times); governs the contractual variables since Sora carried no separate terms of service and its own marketing page links to this exact URL" }
+  - { url: "https://help.openai.com/en/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription", kind: refund, accessed: "2026-08-10", archive: local_copy_only, note: "archive.org /save/ attempted twice (HTTP 520 both times); nearest pre-existing snapshot 2026-07-15 (not same-day, cited only as corroboration); explicitly pointed to by the Sora discontinuation article as the refund path; conflicts with the Terms of Use non-refundable clause, see conflict_note" }
+  - { url: "https://developers.openai.com/api/docs/models/sora-2", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/save/https://developers.openai.com/api/docs/models/sora-2 (HTTP 200)", note: "developer API pricing page (platform.openai.com/docs/models/sora-2 redirect target); background context only per assignment instruction, not used as the source of any coded variable" }
+
+variables:
+  headline_price_usd: { value: "unknown", source: "https://sora.com", evidence: "Live page: 'Sora is no longer available.' No dedicated Sora price was found on sora.com, on openai.com/sora/, or in the last pre-shutdown archived ChatGPT plans page (2026-04-20); the one document most likely to state it, the Sora Billing & Credits FAQ, could not be recovered. See coder_note for the full three-surface search." }
+  headline_billing_basis: { value: "unknown", source: "https://sora.com", evidence: "No headline figure was located on any checked surface, so no billing basis could be read; see headline_price_usd." }
+  first_charge_amount_usd: { value: "unknown", source: "https://sora.com", evidence: "No pricing page or billing document stating a first-charge amount could be located or recovered." }
+  mandatory_addon_present: { value: "unknown", source: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", evidence: "The billing/credits documentation that would address a required add-on charge returns HTTP 404 live and is an empty archived app shell; per codebook rule 5, unknown is for documentation that could not be located at all." }
+  annual_condition_disclosure: { value: "unknown", source: "https://web.archive.org/web/20260420102953/https://chatgpt.com/pricing/", evidence: "No headline figure exists to attach an annual-prepayment condition to; the last reachable pre-shutdown ChatGPT pricing capture does not mention Sora at all." }
+  annual_default_toggle: { value: "unknown", source: "https://sora.com", evidence: "Current live page carries no billing toggle (shutdown notice only); the last reachable pre-shutdown archived Sora surfaces (openai.com/sora/, chatgpt.com/pricing) likewise show no Sora-specific billing toggle." }
+  free_plan_exists: { value: "unknown", source: "https://sora.com", evidence: "No official document states either that a no-cost Sora plan existed or that none did; a documented credit-purchase mechanism existed (see credit_system_present) but its relationship to a possible free baseline is not stated anywhere reachable." }
+  free_plan_cap_documented: { value: "unknown", source: "https://sora.com", evidence: "Follows free_plan_exists = unknown; no document describes free-plan limits." }
+  free_plan_cap_value: { value: "unknown", source: "https://sora.com", evidence: "No quantified free-plan limits located." }
+  free_plan_watermark: { value: "unknown", source: "https://sora.com", evidence: "No document addresses watermarking of any Sora output tier." }
+  free_plan_duration: { value: "unknown", source: "https://sora.com", evidence: "No document addresses whether a no-cost tier, if any, was perpetual or time-limited." }
+  trial_exists: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "Full-text search of the Terms of Use (the only one of the three prioritized document classes for this pricing-class variable that was reachable) found no mention of a free trial anywhere; the live pricing page and product documentation classes, which rank above the terms for this variable, could not be reached for Sora, so the rule's 'pricing page and documentation mention no trial' test for coding no is not met." }
+  trial_card_required: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "No trial mechanism was confirmed to exist (see trial_exists); no statement on card requirements was found." }
+  trial_length_days: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "No trial length stated in any reachable document." }
+  trial_auto_converts: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "No trial conversion behavior stated in any reachable document." }
+  credit_system_present: { value: "yes", source: "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation", evidence: "'Note that any purchased ChatGPT/Sora credits can still be used for Codex, if you so choose.' Corroborated by the Terms of Use: 'Service credits. You can pay for some Services in advance by purchasing service credits.'" }
+  credit_unit_defined: { value: "unknown", source: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", evidence: "The Sora Billing & Credits FAQ, the document that would define what one credit equals in output terms, returns HTTP 404 live; its only recoverable archive.org capture is an empty app shell with no article text." }
+  credit_to_output_rate_published: { value: "unknown", source: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", evidence: "Same unrecoverable-document reasoning as credit_unit_defined." }
+  credit_rate_location: { value: "unknown", source: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", evidence: "The document most likely to carry a published rate could not be located/read; no rate was found on any surface that was reachable." }
+  cost_per_output_unit: { value: "per_video_minute", source: "https://web.archive.org/web/20260420042312/https://openai.com/sora/", evidence: "'Turn your ideas into videos with hyperreal motion and sound.' Principal output is generated video; per_video_minute is the closest fit among the fixed value list (see coder_note on why 'other' was not used)." }
+  cost_per_output_computable: { value: "unknown", source: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", evidence: "The entry-tier price, credit allowance, and credit-to-output rate are all unknown because the document that would state them could not be recovered; no calculation can be attempted." }
+  computation_assumptions: { value: "not_applicable", source: "not_applicable", evidence: "No computation was performed because cost_per_output_computable is unknown, not yes/partial." }
+  credit_rollover_policy: { value: "unknown", source: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", evidence: "No rollover/expiry statement for Sora credits was found in any reachable document." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", evidence: "No statement on whether failed generations consume credits was found in any reachable document." }
+  auto_renewal_default: { value: "on", source: "https://openai.com/policies/terms-of-use/", evidence: "'For paid subscriptions, we will automatically charge your payment method on each agreed-upon periodic renewal until you cancel.'" }
+  auto_renewal_disclosure_location: { value: "terms_only", source: "https://openai.com/policies/terms-of-use/", evidence: "Auto-renewal is stated in the Terms of Use; no Sora-specific pricing page or product documentation was reachable to check for a repeated disclosure." }
+  renewal_notice_commitment: { value: "advance_notice_stated", source: "https://openai.com/policies/terms-of-use/", evidence: "'If we materially increase our subscription prices, we will give you at least 30 days' notice and any price increase will take effect on your next renewal so that you can cancel if you do not agree to the price increase.' Note: this commitment is conditional on a price increase, not a blanket notice before every ordinary renewal charge; scope preserved verbatim so it is not overstated." }
+  refund_policy_exists: { value: "no_refunds_stated", source: "https://openai.com/policies/terms-of-use/", evidence: "'Payments are non-refundable, except where required by law.' Terms of Use ranks first for contractual variables; conflicts with the ChatGPT billing help center, see conflict_note." }
+  refund_window_days: { value: "0", source: "https://openai.com/policies/terms-of-use/", evidence: "Coded from the governing Terms of Use ('non-refundable except where required by law'); the ChatGPT billing help center states a practical 14-day (7-day Korea) window instead — see conflict_note for both figures and both URLs." }
+  refund_conditions: { value: "not_applicable", source: "https://openai.com/policies/terms-of-use/", evidence: "No refund is available under the governing (Terms of Use) policy, so no qualifying conditions apply." }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://openai.com/policies/terms-of-use/", evidence: "'Cancellation. You can cancel (opens in a new window) your paid subscription at any time,' linking directly to https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-plus-subscription." }
+  refund_policy_location: { value: "terms", source: "https://openai.com/policies/terms-of-use/", evidence: "Governing refund position is stated in the Terms of Use; see conflict_note for the help-center document that also addresses it with a different practical figure." }
+  commercial_use_lowest_tier: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "Full-text keyword search ('commercial', 'business purpose', 'monetiz', 'resell') of the Terms of Use found no clause addressing commercial use of Output; no Sora-specific documentation was reachable to check further." }
+  watermark_removal_tier: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "No mention of 'watermark' anywhere in the Terms of Use; no Sora product documentation was reachable to check further." }
+  output_ownership_statement: { value: "user_owns", source: "https://openai.com/policies/terms-of-use/", evidence: "'...you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output.'" }
+  usage_cap_quantified: { value: "unknown", source: "https://sora.com", evidence: "The entry paid tier itself could not be identified (see headline_price_usd/coder_note), so its usage limits cannot be assessed." }
+  unquantified_limit_clause: { value: "present", source: "https://openai.com/policies/terms-of-use/", evidence: "'Interfere with or disrupt our Services, including circumvent any rate limits or restrictions or bypass any protective measures or safety mitigations we put on our Services.' References unquantified rate limits/restrictions as a live enforcement mechanism with no figure given in this document. The separate, linked Usage Policies document (openai.com/policies/usage-policies/) was not independently read in full within this session's effort budget; this coding rests on the Terms of Use clause alone." }
+
+coder_note: |
+  ENTRY TIER: no eligible entry-tier candidate could be identified. Three official surfaces
+  were checked and each was rejected as a source for headline_price_usd/entry_tier_name:
+  (1) sora.com / sora.chatgpt.com, the product's own domain (vendor_home_url) -- never
+  displayed a public pricing/plan table; the app itself is login-gated and no crawled
+  archive.org snapshot pre-dating the post-shutdown state shows anything but the app shell.
+  (2) chatgpt.com/pricing, archived 2026-04-20 (6 days pre-shutdown) -- does not list
+  Sora/video generation as a feature of any plan (Free/Go/Plus/Pro/Business/Enterprise) in
+  either the plan cards or the full feature-comparison grid. "Sora" appears once only, as an
+  unrelated footer nav link to a separate product section.
+  (3) openai.com/sora/, the product's own marketing page, archived 2026-04-20 -- pure
+  capability marketing (video realism, Characters, remix, sound), zero pricing/plan/credit
+  content, no pricing link; only CTAs are "Login" (sora.chatgpt.com) and a research-post link.
+  The one document that most plausibly would have stated entry-tier terms, help.openai.com's
+  "Sora - Billing FAQ" (found via WebSearch as a discovery lead only, title "Sora - Billing FAQ
+  | OpenAI Help Center"), returns HTTP 404 live and its only recoverable archive.org capture
+  (2026-06-13) is an empty client-rendered app shell with no article text -- unrecoverable
+  within this session's 2-attempt effort cap.
+  Given none of the three eligible-candidate-determining surfaces publish a plan/price, and the
+  document that would define the credit-based access mechanism cannot be read, the entry-tier
+  variables (headline_price_usd, entry_tier_name, headline_billing_basis,
+  first_charge_amount_usd, mandatory_addon_present, usage_cap_quantified,
+  cost_per_output_computable, trial_length_days, refund_window_days-as-entry-tier-figure) are
+  coded per the reasoning in each variable rather than left silently blank. No candidate plan
+  is recorded as "losing" because none could be identified as eligible in the first place
+  (sampling-rules.md 7.2 default is to list losing candidates; here zero were identifiable, so
+  that requirement is satisfied by this statement).
+  credit_system_present is coded "yes" on positive evidence (Sora discontinuation FAQ:
+  "purchased ChatGPT/Sora credits can still be used for Codex"; corroborated by the Terms of
+  Use "Service credits" clause), which is why entry_tier_name/headline_price_usd are coded
+  "unknown" rather than "not_applicable": a paid access mechanism is documented to have
+  existed; its structure and price are simply not published in any document this session
+  could reach.
+
+  API PRICING (context only, per assignment instruction -- NOT used as headline_price_usd):
+  OpenAI's developer API prices the Sora 2 model at $0.10/sec (Sora 2 Pro $0.30/sec) at
+  720x1280/1280x720, confirmed directly at https://developers.openai.com/api/docs/models/sora-2
+  (official first-party source, not the earlier third-party estimate). This is a separate
+  developer/B2B surface outside this study's individual/small-team consumer frame
+  (sampling-rules.md section 4, I2), and it was not the only generally-available purchase path
+  even before the consumer shutdown, since the consumer app had its own separate (if
+  undocumented) credit mechanism running in parallel. Not used for headline_price_usd.
+
+  PRODUCT STATUS RE-CHECK (codebook section 6: product_status is "re-checked at collection"):
+  this record codes product_status = discontinued, NOT the "active" value carried in the
+  frozen frame row (frame-frozen-2026-08-04.csv, frozen 2026-08-04). Two independent official
+  first-party sources, both read today, agree: (a) sora.com itself, the frame's own
+  vendor_home_url, currently reads only "Sora is no longer available. You can export your data
+  at any time."; (b) OpenAI Help Center, "What to know about the Sora discontinuation": "The
+  Sora web and app experiences were discontinued on April 26, 2026. The Sora API will be
+  discontinued on September 24, 2026." Coded per protocol section 6.2's explicit rule for
+  exactly this situation: "A product discovered to have shut down during the window is moved
+  to discontinued and the move is dated." recheck_date is left not_applicable because that
+  field is reserved for protocol section 6.6's later final-day mid-window re-check mechanism, a
+  different step than this initial discovery; this note plus the two source citations are the
+  record of the discovery and its date (2026-08-10), for the responsible human to action the
+  frame-file update under sampling-rules.md section 10 item 3. All entry-tier and pricing
+  variables are coded from archived materials reflecting Sora's last reachable pre-shutdown
+  state, per the discontinued-stratum procedure, not from a current offering that no longer
+  exists.
+
+  THIRD-PARTY LEADS NOT USED AS EVIDENCE: early WebSearch results (SEO/blog aggregator sites --
+  laozhang.ai, eesel.ai, glbgpt.com, aipricing.guru) claimed "ChatGPT Plus subscribers get Sora
+  access with monthly limits" and gave mutually inconsistent discontinuation narratives. These
+  were used only to locate official URLs and as a rough magnitude check on the API rate, never
+  to justify a coded value, per protocol section 6.3(7). The chatgpt.com/pricing archived
+  capture directly contradicts the "bundled into Plus" claim for the last pre-shutdown state,
+  which is exactly why third-party pages are treated as discovery aids only.
+
+  LOCALE OBSERVATION: our network egresses from Turkey. openai.com/policies/terms-of-use/
+  auto-redirected to /tr-TR/ (Turkish) by default; read instead via the page's own language
+  selector to /en-US/, a same-document, permitted action (equivalent to switching a billing
+  toggle). help.openai.com article "Updated" timestamps rendered in Turkish ("... once"). The
+  D-003 currency check was not triggered because no USD or non-USD price figure was ever
+  located on any surface for this product to compare across locales -- headline_price_usd is
+  "unknown" outright, not "non_usd", so there is no currency figure for D-003 to check.
+
+  UNIT NOTE: cost_per_output_unit is coded per_video_minute as the closest fit among the fixed
+  value list for a video-generation product; Sora's actual metering (credits per generation,
+  duration/resolution-dependent per the discontinuation FAQ and Terms of Use "service credits"
+  clause) does not cleanly reduce to a minute rate on the evidence available, but no other
+  listed unit fits better and "other" would discard the category information the fixed list
+  exists to carry.
+
+  A-012: not applicable to this record. No official document found described a paid,
+  time-limited introductory price for Sora (e.g. a low-cost N-day intro that auto-converts to a
+  higher recurring rate); the documented credit-purchase mechanism is not described as
+  time-limited or introductory in any recoverable source.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 re-read 2026-08-10 (discontinued-stratum procedure: confirm against the archived
+  materials already cited, do not hunt a live page): re-fetched both archive.org captures this
+  record's entry-tier variables rest on. chatgpt.com/pricing (2026-04-20 capture): "Sora"
+  confirmed to appear exactly once, only as a footer nav link, in a fresh read today. openai.com/
+  sora/ (2026-04-20 capture): confirmed zero "$" characters and zero pricing/plan/credit keywords
+  anywhere in its 976-character body, in a fresh read today. Both reproduce the original coder's
+  finding independently. A one-shot status probe of the previously-404 Sora Billing & Credits FAQ
+  now returns HTTP 403 rather than 404 (likely a bot-protection artifact of a headerless request,
+  not the article reappearing); noted for transparency only, not acted on, per the instruction
+  not to hunt a live page for this product. Evidence saved to
+  openai-sora-sources/d009-second-representation-2026-08-10.txt. No correction; all four scoped
+  values (entry_tier_name, headline_price_usd, headline_billing_basis,
+  first_charge_amount_usd, all `unknown`) confirmed as the correct reading.
+
+conflict_note: >
+  Refund position conflicts between two official sources of unequal rank for the contractual
+  class (Terms of Use ranks first, help center second, per protocol section 6.2). Terms of Use
+  (https://openai.com/policies/terms-of-use/): "Payments are non-refundable, except where
+  required by law." ChatGPT billing help center
+  (https://help.openai.com/en/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription),
+  which OpenAI's own Sora discontinuation FAQ explicitly points buyers to for refund questions:
+  "Accidental purchases are generally eligible for a refund if you contact us within 14 days of
+  the charge," plus stated regional rights ("If you live in the EU, UK, or Turkey, you are
+  eligible for a prorated refund if you cancel your subscription within 14 days of purchase";
+  Korea: full refund within 7 days). Coded from the higher-ranked Terms of Use per codebook
+  section 2.1 step 3 (refund_policy_exists = no_refunds_stated, refund_window_days = 0); the
+  help-center figures are what would apply in practice for most buyers and are preserved here
+  in full so the disagreement is not lost.
+
+register_events: []
+
+status: complete

@@ -1,0 +1,47 @@
+SOURCE: https://colossyan.zendesk.com/hc/en-us/articles/49110667231761-Cora-usage-limitations
+ACCESS DATE: 2026-08-07
+ARCHIVE STATUS: archive_failed twice (web.archive.org/save returned HTTP 520 on colossyan.zendesk.com domain) -> local_copy_only per protocol-v1.md section 6.4
+TITLE: Cora usage limitations – Colossyan
+PAGE "Updated" LABEL AT ACCESS TIME: "13 days ago Updated"
+
+--- VISIBLE MAIN-CONTENT TEXT AS READ ---
+Colossyan
+ Account & Payments
+ARTICLES IN THIS SECTION
+Cora usage limitations
+13 days ago Updated
+
+The AI Video Generator is currently available to all customers in a research preview state. As we roll this out at scale, we've put usage limits in place per plan type. These are short-term measures, and we may introduce other ways for you to track your usage in future.
+
+There are two kinds of limits, and both reset monthly:
+
+The number of storyboards you create with the AI Video Generator and open as a draft
+A fair use limit
+
+Storyboard limits by plan
+Customer type / Storyboard limit
+Free / 1 per month
+Trial / 2 during the trial
+Professional / 10 per month
+Enterprise / 40 per month
+
+Fair use limit
+
+Our fair use policy is based on data gathered during early access testing, and is designed to be enough for most customers to create their full monthly allocation of storyboards. However, if you use a large number of turns while speaking with Cora during editing, this can affect how many storyboards you're able to create that month.
+
+A turn happens each time you speak to Cora, whether you're asking it to generate a storyboard or make an edit. Very long storyboards, or a single storyboard with many turns of agentic editing, will use up your fair use limit faster.
+
+Note: Both limits are tracked separately, but heavy use of Cora's editing turns can stop you reaching your full storyboard limit for the month.
+
+Getting the most from your limit
+
+We recommend keeping storyboards to a short or medium length, up to around 15 scenes, and saving smaller edits and tweaks for once you've opened the storyboard as a draft. Simple changes, such as updating a text colour or background, are often quicker to make directly in the draft editor.
+
+Cora is best used for the things that would otherwise take longer manually, such as creating new scenes or making larger layout changes.
+
+Tip: Save Cora for structural work like adding scenes or reworking layouts, and switch to the draft editor for quick, small edits.
+
+Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Return to top

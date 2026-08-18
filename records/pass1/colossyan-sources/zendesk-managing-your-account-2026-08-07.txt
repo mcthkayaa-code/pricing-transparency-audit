@@ -1,0 +1,67 @@
+SOURCE: https://colossyan.zendesk.com/hc/en-us/articles/31601591090065-Managing-your-account
+ACCESS DATE: 2026-08-07
+ARCHIVE STATUS: archive_failed twice (web.archive.org/save returned HTTP 520/429 on colossyan.zendesk.com domain) -> local_copy_only per protocol-v1.md section 6.4
+TITLE: Managing your account 🪪 – Colossyan
+PAGE "Updated" LABEL AT ACCESS TIME: "1 year ago Updated"
+
+--- VISIBLE MAIN-CONTENT TEXT AS READ ---
+Colossyan
+ Account & Payments
+ARTICLES IN THIS SECTION
+Managing your account 🪪
+1 year ago Updated
+Upgrade from free to paid
+
+Click "Upgrade" on the left-side menu
+Review pieces for monthly and annual payment plans by toggling the button in the top-right corner.
+Select the plan and monthly video minutes that you need
+Click the black Upgrade to button
+
+Upgrade between paid plans
+
+You can upgrade a paid plan to a different paid plan to have more minutes or more features.
+In this case, we only charge your payment method with the difference between the higher plan and the remaining amount of the current plan - to put it simply: we pro-rate the amount.
+Upon renewal, we will process a transaction for the full price of the new plan.
+
+Click on your plan in the left menu
+Review pieces for monthly and annual payment plans with the toggle button in the top-right corner. The minutes will also reflect this change.
+Select the plan and the amount of seats that you need.
+Click the "Upgrade" button
+
+Access your invoice history
+
+Click on your initials in the lower-left corner, and select "Payment & billing".
+Scroll down to access previous invoices.
+Alternatively, click on your plan on the left menu, and select the "Manage" button under your current plan.
+
+Adding team members to your account
+
+Check the How do I invite team members? section of the Workspaces article.
+
+Change your account email address
+
+Currently, it is not possible to change your email address directly from your account. If you wish to change the email please contact us at support@colossyan.com
+
+Downgrade from paid to free
+Click on your plan in the left menu
+Scroll down in the pop-up window (Change the browser's Zoom option, if it is not visible)
+In the bottom-right corner, click the black button under the Free plan
+
+Cancel your subscription
+Click on your plan in the left menu.
+Click on the "Monthly - Yearly" toggle in the top right corner of the window (To select your current type of subscription)
+Select Cancel subscription under your current plan
+
+Your cancellation will take effect and will stop the automatic renewal at the end of the current paid term.
+When your current billing cycle ends your account will be downgraded to a free plan.
+Your drafts and generated videos will remain intact on your account, however, you'll lose access to the editor.
+
+Delete your account
+
+To delete your account, please send us a message at support@colossyan.com
+Important: If you really do wish to delete an account, please make sure to cancel your subscription first. Deleting an account doesn't cancel your subscription.
+
+Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Return to top

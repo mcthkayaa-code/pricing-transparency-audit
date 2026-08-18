@@ -1,0 +1,30 @@
+SOURCE: https://help.originality.ai/en/article/how-many-words-does-a-credit-scan-1uwp6dq/
+DATE ACCESSED: 2026-08-10
+METHOD: WebFetch (text extraction/summarization). Official Originality.ai help-center
+        subdomain (help.originality.ai), second-ranked source class for pricing variables per
+        protocol Sec 6.2.
+
+=== OPERATIVE CONTENT (as summarized by fetch, consistent with the pricing-page FAQ) ===
+"Both Features (AI Detection + Plagiarism): Each credit will scan up to 50 words."
+"Single Feature (AI Detection OR Plagiarism only): Each credit will scan up to 100 words."
+Also notes per-scan technical maxima: AI Detection up to 10,000 words per scan; Plagiarism up
+to 50,000 words per scan (not itself a coded variable; noted for completeness).
+Article does not address Grammar Checker, Readability Checker, or Fact Checker credit costs.
+
+=== USE ===
+Agrees with (does not conflict with) the pricing-page FAQ's "1 credit = 100 words" (AI-only)
+and "2 credits per 100 words" (AI+Plagiarism combined) figures -- same rates, restated. This is
+why credit_rate_location is coded `multiple` (pricing page + help center both publish the same
+rate) rather than `conflicting`.
+
+Confirms the rate is NOT published (in either document class found) for Grammar Checker,
+Readability Checker, or Fact Checking Aid specifically -- noted in coder_note as the basis for
+flagging credit_to_output_rate_published as a close call between `yes` and `partial` (coded
+`yes` because the principal output, AI detection, has a clean non-range published rate and the
+codebook's numbered decision rule has no step that downgrades on secondary-feature gaps; see
+codebook Sec 7 domain 5, credit_to_output_rate_published rule 4, which only downgrades when the
+PRINCIPAL output's rate is missing).
+
+Also checked and found NOT to state a credit-per-word rate for Fact Checker specifically:
+https://help.originality.ai/en/article/fact-checker-dqwo21/ (WebFetch, 2026-08-10) -- article
+explains how to use the Fact Checker tool but states no credit cost.

@@ -1,0 +1,18 @@
+HTTP/2 520 
+server: nginx
+date: Fri, 14 Aug 2026 17:53:36 GMT
+content-type: text/html
+cache-control: no-cache
+x-app-server: wwwb-app55-dc6
+x-ts: 520
+x-tr: 6041
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-save-SERVER=wwwb-app55; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+x-nid: Superonline Iletisim Hizmetleri A.S.
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

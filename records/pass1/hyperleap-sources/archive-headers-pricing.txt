@@ -1,0 +1,66 @@
+HTTP/2 302 
+server: nginx
+date: Sun, 09 Aug 2026 15:49:36 GMT
+content-type: text/html; charset=utf-8
+content-length: 302
+location: https://web.archive.org/web/20260809154923/https://hyperleap.ai/pricing
+x-app-server: wwwb-app223-dc8
+x-ts: 302
+x-tr: 18155
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-save-SERVER=wwwb-app223; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Superonline Iletisim Hizmetleri A.S.
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Sun, 09 Aug 2026 15:49:37 GMT
+content-type: text/html; charset=utf-8
+x-archive-orig-age: 0
+x-archive-orig-cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+x-archive-orig-content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.google-analytics.com https://*.clarity.ms https://*.licdn.com https://vercel.live https://*.vercel-scripts.com https://cal.com https://*.cal.com https://*.supademo.com https://*.jsdelivr.net https://*.hyperleap.ai https://*.facebook.net https://*.posthog.com https://*.ahrefs.com https://workroom.one; style-src 'self' 'unsafe-inline' https://*.googleapis.com; img-src 'self' data: blob: https: http:; font-src 'self' data: https://*.gstatic.com; connect-src 'self' https://*.google-analytics.com https://*.google.com https://*.clarity.ms https://*.linkedin.com https://*.vercel-insights.com https://hyperleapai.com https://*.hyperleapai.com https://*.hyperleap.ai https://cal.com https://*.cal.com https://*.supademo.com wss://*.supademo.com https://*.doubleclick.net https://*.supabase.co https://*.facebook.com https://*.facebook.net https://*.posthog.com https://*.ahrefs.com https://workroom.one; frame-src 'self' https://*.googletagmanager.com https://cal.com https://*.cal.com https://*.supademo.com https://*.doubleclick.net https://*.hyperleap.ai https://www.youtube.com; worker-src 'self' blob:; child-src 'self' blob:; media-src 'self' blob: https:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests
+x-archive-orig-date: Sun, 09 Aug 2026 15:49:23 GMT
+x-archive-orig-link: </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+x-archive-orig-permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
+x-archive-orig-referrer-policy: strict-origin-when-cross-origin
+x-archive-orig-server: Vercel
+x-archive-orig-set-cookie: hl-region=global; Path=/; Expires=Tue, 08 Sep 2026 15:49:23 GMT; Max-Age=2592000; SameSite=lax
+x-archive-orig-set-cookie: hl-consent-region=opt-out; Path=/; Expires=Tue, 08 Sep 2026 15:49:23 GMT; Max-Age=2592000; SameSite=lax
+x-archive-orig-strict-transport-security: max-age=31536000; includeSubDomains
+x-archive-orig-vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-archive-orig-x-content-type-options: nosniff
+x-archive-orig-x-frame-options: DENY
+x-archive-orig-x-matched-path: /pricing
+x-archive-orig-x-powered-by: Next.js
+x-archive-orig-x-vercel-cache: MISS
+x-archive-orig-x-vercel-id: sfo1::iad1::r6brl-1786290563322-f6eb75a281cf
+x-archive-orig-transfer-encoding: chunked
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+x-archive-orig-content-encoding: gzip
+memento-datetime: Sun, 09 Aug 2026 15:49:23 GMT
+link: <https://hyperleap.ai/pricing>; rel="original", <https://web.archive.org/web/timemap/link/https://hyperleap.ai/pricing>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://hyperleap.ai/pricing>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: spn2-20260809153921-wwwb-spn16.us.archive.org-8002.warc.gz
+server-timing: captures_list;dur=0.612007, exclusion.robots;dur=0.057796, exclusion.robots.policy;dur=0.042485, esindex;dur=0.014191, cdx.remote;dur=77.922409, LoadShardBlock;dur=89.594189, PetaboxLoader3.datanode;dur=62.618927, PetaboxLoader3.resolve;dur=23.062003, load_resource;dur=28.529317
+x-app-server: wwwb-app233-dc8
+x-ts: 200
+x-tr: 395
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app233; path=/
+x-location: All
+x-as: 34984
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Superonline Iletisim Hizmetleri A.S.
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

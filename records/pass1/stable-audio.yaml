@@ -1,0 +1,112 @@
+product_id: stable-audio
+product_name: Stable Audio
+category: AI music generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Pro
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-12
+recheck_date: not_applicable
+primary_source_url: https://stableaudio.com/pricing
+archive_url: https://web.archive.org/web/20260812103119/https://stableaudio.com/pricing
+archive_status: archived
+default_display_state: "USD $ figures shown directly (Pro $11.99, Studio $29.99, Max $89.99, each 'a month'); no monthly/annual toggle present on page (site text: 'Our monthly subscriptions'), so no_toggle; non-essential cookies declined before reading; 'excluding VAT/sales taxes' note shown under each paid price."
+
+sources:
+  - { url: https://stableaudio.com/pricing, kind: pricing, accessed: 2026-08-12, archive: "https://web.archive.org/web/20260812103119/https://stableaudio.com/pricing", note: "vendor pricing page; rendered (client-side) content confirmed via DOM read after WebFetch static fetch returned no pricing content (D-005 rendered-read path); includes 7-item FAQ accordion and license-matrix table read via forced accordion expansion" }
+  - { url: https://stableaudio.com/terms, kind: tos, accessed: 2026-08-12, archive: "https://web.archive.org/web/20260812105301/https://stableaudio.com/terms", note: "pointer page only - states current terms are the consolidated Stability AI ToS effective 2025-07-31; links to superseded per-product ToS versions (30-01-2024, 12-09-2023, not used)" }
+  - { url: https://stability.ai/terms-of-service, kind: tos, accessed: 2026-08-12, archive: "https://web.archive.org/web/20260812104522/https://stability.ai/terms-of-service", note: "current Terms of Service effective 2025-07-31; explicitly names Stable Audio as a covered Service; primary source for contractual variables" }
+  - { url: https://stability.ai/use-policy, kind: tos, accessed: 2026-08-12, archive: "https://web.archive.org/web/20260811204617/https://stability.ai/use-policy", note: "Acceptable Use Policy effective 2025-07-31, referenced by the ToS ('These Terms include our Acceptable Use Policy'); Stable Audio listed under APPLICATIONS in footer; read in full for unquantified_limit_clause" }
+  - { url: https://stableaudio.com/faqs, kind: docs, accessed: 2026-08-12, archive: "https://web.archive.org/web/20260812105325/https://stableaudio.com/faqs", note: "dedicated FAQs page, superset of the 7 questions embedded on the pricing page (answers rendered directly in DOM, no accordion-click needed)" }
+  - { url: https://stableaudio.com/user-guide, kind: docs, accessed: 2026-08-12, archive: "https://web.archive.org/web/20260812105348/https://stableaudio.com/user-guide", note: "short landing page (972 chars); checked for watermark/failed-generation/trial/credit mentions, none found" }
+
+variables:
+  headline_price_usd: { value: "11.99", source: "https://stableaudio.com/pricing", evidence: "Pro: '$11.99 a month'" }
+  headline_billing_basis: { value: "per_month_billed_monthly", source: "https://stableaudio.com/pricing", evidence: "'Our monthly subscriptions and licensing options.'; no annual toggle found; price shown as '$11.99 a month'" }
+  first_charge_amount_usd: { value: "11.99", source: "https://stableaudio.com/pricing", evidence: "Default state is monthly billing (no annual toggle/prepayment exists), so the first charge equals the displayed monthly figure '$11.99 a month' for Pro; no mandatory add-on found (see mandatory_addon_present); taxes ('excluding VAT/sales taxes') excluded per rule 5." }
+  mandatory_addon_present: { value: "no", source: "https://stableaudio.com/pricing", evidence: "Checked pricing page feature list and documentation (dedicated FAQs, User Guide, ToS) for any required separate charge, minimum credit purchase, platform fee, or onboarding fee for the Pro tier's advertised features; none found." }
+  annual_condition_disclosure: { value: "not_applicable", source: "https://stableaudio.com/pricing", evidence: "Page offers only monthly billing; no annual-prepayment option exists for the headline figure to depend on." }
+  annual_default_toggle: { value: "no_toggle", source: "https://stableaudio.com/pricing", evidence: "No monthly/annual switch present anywhere on the pricing page DOM; page text states 'Our monthly subscriptions and licensing options.'" }
+  free_plan_exists: { value: "yes", source: "https://stableaudio.com/pricing", evidence: "'Free — It's free. Get started!' plan card shown alongside paid tiers, no expiry stated." }
+  free_plan_cap_documented: { value: "all_quantified", source: "https://stableaudio.com/pricing", evidence: "Free plan card: 'Monthly track generations 10', 'Track duration Up to 6 minutes', 'Monthly upload amount 6 minutes, Cropped at 30 secs' — every stated limit carries a number and dimension (rate limits carry the 'monthly' period)." }
+  free_plan_cap_value: { value: "10 track generations per month | up to 6 minutes track duration | 6 minutes monthly upload amount | cropped at 30 seconds", source: "https://stableaudio.com/pricing", evidence: "Free plan card figures, verbatim in structure." }
+  free_plan_duration: { value: "perpetual", source: "https://stableaudio.com/pricing", evidence: "Free plan presented as a standing tier alongside paid tiers; no expiry stated anywhere on page." }
+  free_plan_watermark: { value: "unknown", source: "https://stableaudio.com/pricing", evidence: "No 'watermark' feature row on the pricing grid; word 'watermark' absent from pricing page, ToS, Acceptable Use Policy, dedicated FAQs page, and User Guide (all checked)." }
+  trial_exists: { value: "no", source: "https://stableaudio.com/faqs", evidence: "No mention of a time-limited trial anywhere on pricing page, dedicated FAQs page, ToS, or Acceptable Use Policy; only a perpetual Free plan and paid tiers are described." }
+  trial_card_required: { value: "not_applicable", source: "https://stableaudio.com/faqs", evidence: "No trial exists." }
+  trial_length_days: { value: "not_applicable", source: "https://stableaudio.com/faqs", evidence: "No trial exists." }
+  trial_auto_converts: { value: "not_applicable", source: "https://stableaudio.com/faqs", evidence: "No trial exists." }
+  credit_system_present: { value: "no", source: "https://stableaudio.com/pricing", evidence: "Plan allowances stated directly in output units: 'Monthly track generations 10/250/750/2.500' and 'Monthly upload amount' in minutes - no intermediate currency (no 'credits', 'tokens', 'points', or 'coins' mentioned anywhere across pricing page, FAQs, ToS, or AUP)." }
+  credit_unit_defined: { value: "not_applicable", source: "https://stableaudio.com/pricing", evidence: "No credit system." }
+  credit_to_output_rate_published: { value: "not_applicable", source: "https://stableaudio.com/pricing", evidence: "No credit system." }
+  credit_rate_location: { value: "not_applicable", source: "https://stableaudio.com/pricing", evidence: "No credit system." }
+  cost_per_output_unit: { value: "other", source: "https://stableaudio.com/pricing", evidence: "Allowance denominated as 'Monthly track generations' (a count of generated tracks/generations), not minutes, images, words, or seats; named 'per track generation' in coder_note." }
+  cost_per_output_computable: { value: "yes", source: "https://stableaudio.com/pricing", evidence: "Pro tier (entry paid tier, default monthly display state): '$11.99 a month' and 'Monthly track generations 250 with Stable Audio 2.5' - both published, same period, no assumption needed." }
+  computation_assumptions: { value: "Pro tier, $11.99/mo per default display state (monthly-only billing, no toggle), 250 track generations/mo included per pricing page; 11.99/250=0.048 USD per track generation.", source: "https://stableaudio.com/pricing", evidence: "n/a - coder arithmetic" }
+  credit_rollover_policy: { value: "not_applicable", source: "https://stableaudio.com/pricing", evidence: "No credit system (see credit_system_present); construct is specifically about credits, and this product meters direct generation counts, not credits." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://stableaudio.com/faqs", evidence: "No document addresses what happens when a generation fails, errors, or produces nothing usable; checked pricing page, dedicated FAQs, ToS, AUP, User Guide." }
+  auto_renewal_default: { value: "on", source: "https://stability.ai/terms-of-service", evidence: "'Automatic renewal. If you sign up for a paid subscription, we will automatically charge your payment method on each agreed-upon periodic renewal date until you cancel.' (ToS Section 7c); agrees with FAQs: 'All paid subscriptions renew automatically on the same day of the month and time of day you subscribed.'" }
+  auto_renewal_disclosure_location: { value: "multiple", source: "https://stability.ai/terms-of-service", evidence: "Stated in terms (Section 7c) and in docs/FAQs (both stableaudio.com/faqs and the pricing-page FAQ) in agreement." }
+  renewal_notice_commitment: { value: "unknown", source: "https://stability.ai/terms-of-service", evidence: "ToS commits to advance notice only for FEE INCREASES ('We may increase fees... with advance notice', Section 7b/7c); no document states whether notice is given before each routine automatic renewal charge itself." }
+  refund_policy_exists: { value: "no_refunds_stated", source: "https://stability.ai/terms-of-service", evidence: "'All payments are non-refundable, except where required by law.' (Section 7a) - ToS ranks first for contractual variables and this overrides the conflicting FAQ position; see conflict_note." }
+  refund_window_days: { value: "0", source: "https://stability.ai/terms-of-service", evidence: "Governing source (ToS) states payments are non-refundable except where required by law, i.e. no window; conflicts with FAQ's stated 48-hour discretionary window, see conflict_note." }
+  refund_conditions: { value: "not_applicable", source: "https://stability.ai/terms-of-service", evidence: "No refund available under the governing (ToS) position." }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://stability.ai/terms-of-service", evidence: "ToS: 'Cancellation. You may cancel your subscription at any time by going here.' (Section 7c, self-serve link, no contact required); FAQs detail the same self-serve route: log in, avatar menu, 'Manage payments', Stripe portal." }
+  refund_policy_location: { value: "terms", source: "https://stability.ai/terms-of-service", evidence: "Governing refund position (no_refunds_stated) is carried by the Terms of Service; a conflicting discretionary policy is separately published in docs/pricing-page FAQ, see conflict_note." }
+  commercial_use_lowest_tier: { value: "lowest_paid", source: "https://stableaudio.com/pricing", evidence: "License grid: 'In commercial projects' and 'In commercial music releases' show a cross (not permitted) under Personal license (Free plan) and a check (permitted) under Creator license, held by Pro/Studio/Max (all paid tiers, Pro being entry paid tier); dedicated FAQs confirms: 'Can I use the music in commercial projects? Yes, if you're on the Pro subscription tier.'" }
+  watermark_removal_tier: { value: "unknown", source: "https://stableaudio.com/pricing", evidence: "Word 'watermark' absent from every official document checked (pricing page, ToS, AUP, dedicated FAQs, User Guide)." }
+  output_ownership_statement: { value: "user_owns", source: "https://stability.ai/terms-of-service", evidence: "'we assign to you all of our right, title, and interest (if any) in the Outputs. So as between Stability and you, you own the Output (to the extent permitted by applicable law).' (Section 4a)" }
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://stableaudio.com/pricing", evidence: "Pro tier (entry paid tier) card: 'Monthly track generations 250 with Stable Audio 2.5', 'Track duration Up to 6 minutes', 'Monthly upload amount 30 minutes', 'Cropped at 6 minutes' - every stated limit carries a number and dimension, with a period on the rate-type limits." }
+  unquantified_limit_clause: { value: "absent", source: "https://stability.ai/terms-of-service", evidence: "Read ToS Section 3 (Use Restrictions) and the full Acceptable Use Policy to the end; both list prohibited CONDUCT only (illegal use, IP infringement, CSAM, harmful/deceptive content, safeguard circumvention) with no discretionary volume/rate/intensity-of-use clause (no 'fair use', 'excessive use', 'reasonable use', or usage-based throttling language found)." }
+
+coder_note: |
+  Entry paid tier selection (sampling-rules 7.2): eligible candidates are Pro ($11.99/mo),
+  Studio ($29.99/mo), Max ($89.99/mo) - all generally available, self-serve, standing plans,
+  not seat-scaled. Annual-equivalent: Pro 11.99*12=143.88 (LOWEST, selected), Studio
+  29.99*12=359.88 (losing candidate), Max 89.99*12=1079.88 (losing candidate). Free plan is
+  not a paid tier and is not a candidate for entry_tier_name.
+  Rendered-read method: WebFetch on https://stableaudio.com/pricing returned only the page
+  title with no pricing content (client-side-rendered SPA). Used browser tools (rendered DOM
+  read) per protocol D-005. Confirmed price figures in a second representation: raw
+  document.body.innerHTML around each price shows plain text e.g.
+  '<span class="text-xl font-bold">$11.99</span> a month' - no superscript-cents markup, no
+  discrepancy with rendered innerText.
+  No embedded __NEXT_DATA__ or script-tag JSON payload found containing price figures (checked
+  and confirmed absent - prices are server-rendered directly into HTML, not injected from a JS
+  data blob).
+  FAQ accordion on the pricing page only keeps one item open at a time and renders answer text
+  into the DOM asynchronously after click (React state update); read by clicking each question
+  via dispatched click() and reading after a short delay.
+
+  Domain 5-8 (credit/cost/rollover/failed-gen): product meters "track generations" and upload
+  "minutes" directly (not an abstracted credit/token currency), so credit_system_present=no per
+  rule 1 and C1/C2/C4 are not_applicable. Bonus non-coded finding: FAQs explicitly state
+  "No, your unused generations don't roll over" (monthly reset) - not coded to
+  credit_rollover_policy because that variable's construct is specifically "credits" and this
+  product has no credit system, but recorded here so the finding is not lost. Also found:
+  uploaded audio that fails a copyright scan is deleted and its duration IS deducted from the
+  monthly upload allowance regardless - this is about upload-allowance consumption on
+  copyright grounds, not about a failed/erroring GENERATION, so not coded to
+  failed_generation_charge_policy (which stays unknown; no document addresses generation
+  failure/error specifically).
+
+  Domain 11 nuance (commercial_use_lowest_tier=lowest_paid): the license grid grants "In
+  commercial projects" and "In commercial music releases" from Creator license (Pro/Studio/Max)
+  upward, but reserves "In commercial products above 100,000 MAU", "Film, TV, advertisement",
+  and "Apps & games" for Enterprise license only (sales-gated, excluded from entry-tier
+  eligibility). Personal license (Free plan) is crossed out on every commercial row without
+  exception. Recorded as lowest_paid because some commercial right is granted starting at the
+  entry paid tier; the narrower Enterprise-only carve-outs are this note, not a separate coded
+  value (no "conditional" option exists on this variable).
+
+  Domain 10 refund conflict: see conflict_note for the full disagreement between the governing
+  ToS (no refunds stated) and the pricing-page/FAQs discretionary refund policy. This is the
+  record's single most consequential finding and is why refund_policy_exists,
+  refund_window_days, refund_conditions, and refund_policy_location are all coded from the ToS
+  side of that conflict rather than the FAQ side.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Contractual-class hierarchy conflict on refund policy (protocol 6.2 / codebook 2.1 step 3), resolved in favor of the higher-ranked source: stability.ai/terms-of-service (Section 7a, 'Fees and billing') states 'All payments are non-refundable, except where required by law.' - a general no-refunds position matching the codebook's own no_refunds_stated example verbatim. Stable Audio's own pricing-page FAQ and dedicated FAQs page (https://stableaudio.com/pricing and https://stableaudio.com/faqs, identical text) instead publish a discretionary refund PROCESS: 'Stable Audio may give refunds on subscription charges in our discretion, depending on the circumstances below. If a purchase is accidentally made by a friend or family member. If you find a stable Audio subscription charge on your card... that you didn't make... Your refund request is made within submitted within 48 hours of the subscription charge and your usage is below 2% of the allotted monthly generations.' with a stated 2-3 business day response time and Stripe-mediated 5-10 business day credit. These two official documents state incompatible refund positions. Per codebook section 3 / protocol 6.2, the terms of service ranks first for contractual variables (refund is explicitly listed), above the pricing page and above documentation/help center, so refund_policy_exists, refund_window_days, refund_conditions, and refund_policy_location are all coded from the ToS side (no_refunds_stated / 0 / not_applicable / terms). Noted for adjudication: ToS section 12c states supplemental/product-specific terms posted on a Service govern that Service where they conflict with the general Terms ('If those supplemental terms conflict with these Terms, the supplemental terms will govern the applicable Service.') - if the FAQ's refund process is judged to be such a supplemental term, the resolution above would reverse; this coder applied the codebook's document-CLASS hierarchy (ToS above pricing-page/FAQ) mechanically rather than adjudicating that clause, per the instrument's design ('the codebook decides, not the coder's judgment')."
+register_events: []
+status: complete

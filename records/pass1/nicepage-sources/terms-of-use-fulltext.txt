@@ -1,0 +1,42 @@
+SOURCE: https://nicepage.com/terms
+DATE ACCESSED: 2026-08-10
+METHOD: Static curl fetch, header "Accept-Language: en-US,en;q=0.9" (D-003 US-locale
+check), standard desktop User-Agent. HTTP 200, 47703 bytes. Page is fully server-rendered
+(no JS-injected text), tags stripped for the excerpt below; full text was read to the end
+for the unquantified_limit_clause / usage-restriction check.
+ARCHIVE: https://web.archive.org/web/20260810063021/https://nicepage.com/terms
+(1 attempt, succeeded, verified HTTP 200)
+
+RELEVANT EXCERPTS (verbatim, tags stripped):
+
+[Intellectual Property] "All materials (including the organization and presentation of
+such material) on this Website (the 'Content') is the property of Nicepage.com... Content
+may only be used or copied for your own non-commercial, personal, or educational
+purposes..." [this section is about NICEPAGE'S OWN site content/materials, not about
+ownership of a user's built websites.]
+
+[Redistribution] "You may not create or resell modified or unmodified templates
+available for download from any website. You may not redistribute or resell the
+templates in any form. Only the final work, i.e. websites, are allowed to sell to
+third-party customers. You may not provide direct links to the template download files.
+Only links to Nicepage.com pages with templates are allowed to be used."
+
+[Restrictions and Termination] "Nicepage.com may block, restrict, disable, suspend or
+terminate your access to all or part of the Website and Content at any time at
+Nicepage.com's discretion, without prior notice or liability." [General discretionary
+termination clause; not tied to a volume/intensity-of-use standard - read in full,
+no "fair use" / "reasonable use" / "excessive use" / throttling-by-volume clause found
+anywhere else in this document.]
+
+[Refund Policy] "We strive to offer high-quality products and support, and we understand
+that there are rare circumstances when you may request a refund. We always offer a 7-day
+(seven-day) Free Trial from the date of the purchase with full features and unlimited
+Free Starter Edition, during which you can try Nicepage's functionality and features
+before the purchase. You can request a refund within 14 days of the purchase date.
+Please be prepared to describe why you requested a refund via Microsoft Teams or phone
+and explain the actual reasons, and we will review your request."
+
+No mention anywhere in this document of: "auto-renew", "auto-renewal", "renew", "renewal"
+(grepped case-insensitively, zero hits) - ToS is silent on renewal behavior.
+No explicit statement of who owns a user's generated/published website (output
+ownership) was found anywhere in this document.

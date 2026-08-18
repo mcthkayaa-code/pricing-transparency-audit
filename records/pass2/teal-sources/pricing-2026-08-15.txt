@@ -1,0 +1,42 @@
+SOURCE: https://www.tealhq.com/pricing
+TITLE: "Teal+ Pricing | Premium Features to Level Up Your Career"
+ACCESSED: 2026-08-15 (pass-2 collection)
+METHOD: Browser render (static WebFetch returned HTTP 403 Forbidden on this domain — confirms D-005 rendered-read requirement)
+ARCHIVE.ORG: SUCCESS on first attempt. Snapshot: https://web.archive.org/web/20260815132203/https://www.tealhq.com/pricing
+
+=== VERBATIM PAGE TEXT (as rendered, default state, no interaction) ===
+
+Free tier column ("Free Forever") vs Teal+ column, feature grid:
+- Unlimited Resumes: both tiers
+- Unlimited Job Tracking: both tiers
+- Resume Templates: "10" (free) / "Unlimited Templates" (Teal+)  [NOTE: this "10" templates figure differs from the help-center "Teal vs Teal+" article's "10 free templates" — consistent, not a conflict]
+- Job Description Keyword Matching: "Top 5" (free) / "Unlimited" (Teal+)
+- Analysis Mode: "Basic" (free) / "Unlimited" (Teal+)
+- Email Templates per Job Stage: "1" (free) / "Unlimited" (Teal+)
+- Design Mode: "Basic Settings" (free) / "Advanced Settings" (Teal+)
+- AI Credits – Resume Bullets: "10 Credits" (free) / "Unlimited" (Teal+)
+- AI Credits – Professional Summary: "2 Credits" (free) / "Unlimited" (Teal+)
+- AI Credits – Cover Letter: "2 Credits" (free) / "Unlimited" (Teal+)
+
+Teal+ price cards (static, shown simultaneously, no toggle, no annual/monthly switch control found in the accessibility tree):
+"$13 / Every 7 Days ($1.85 a day)"
+"$29 / Every 30 days ($0.96 a day)"
+"$79 / Every 90 days ($0.87 a day)"
+"No credit card required to start." / "Upgrade or downgrade your plan or cancel at any time."
+
+FAQ section on this page:
+Q: "Is there a return or refund policy?"
+A: "If you are not satisfied with your purchase, you may request a refund by contacting our team at membersupport@tealhq.com with the following information: Reason for cancellation; Email associated with the account where the payment was made. Refund requests will only be considered if they are submitted within your plan's eligibility timeframe. Outside of these periods, your purchase would be ineligible for a refund. Review our full cancellation and refund policy to see what applies to your plan."
+
+Q: "Are there any hidden fees or charges?"
+A: "Teal offers clear, transparent pricing with no hidden fees or unexpected charges. While most of Teal's tools are available for free, we offer Teal+ for job seekers who want to take their job search to the next level and unlock the full functionality of our Resume Builder."
+
+Q: "How can I cancel my subscription once I've landed a job?"
+A: "To cancel your subscription, head to your account settings and click on Teal+ Subscription... Once you cancel your recurring subscription, you won't be charged for future subscriptions. You can submit your cancellation at any time, however the cancellation will take affect at the end of your current billing period... if your subscription is cancelled, you will see a red banner underneath your current plan with a date that shows when your subscription will be cancelled, upon which your account will revert back to the free plan."
+
+No cookie-consent banner encountered on load. No watermark mention anywhere on this page. No commercial-use-of-output mention anywhere on this page. No mandatory add-on/extra fee mentioned (FAQ explicitly denies hidden fees).
+
+ENTRY-TIER CALCULATION (sampling-rules.md 7.2): all three Teal+ cadences are generally available, no-sales-contact, standing (non-promotional) — all eligible candidates. Annual-equivalent cost (365/period_days x price), since none of the three matches the codebook's literal monthly/annual worked cases:
+- Weekly $13 x 365/7 = $677.86/yr
+- "Monthly"(30-day) $29 x 365/30 = $352.83/yr
+- "Quarterly"(90-day) $79 x 365/90 = $320.39/yr  <- LOWEST, selected as entry tier

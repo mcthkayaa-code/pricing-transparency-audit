@@ -1,0 +1,19 @@
+URL: https://support.picsart.com/hc/en-us/articles/360002231957-How-to-cancel-your-Picsart-subscription
+Accessed: 2026-08-10
+Method: rendered read via browser (Claude_Browser javascript_tool, document.querySelector('.article-body').innerText)
+Public archive attempt: web.archive.org/save/ returned HTTP 429 then HTTP 520 on 2 attempts (2026-08-10) - archive_failed for public archive; this file is the local copy per protocol 6.4.
+---
+
+Web: How do I cancel my Picsart subscription on the website?
+Visit www.picsart.com and log in.
+Click on your profile photo.
+Select Settings.
+Navigate to Billing & Subscriptions and click on Cancel subscription.
+Choose Downgrade to free plan
+
+IMPORTANT: Downgrade to Free Plan means the same as Cancel Subscription. Once you downgrade, your subscription will be canceled and your account will continue on the free plan.
+
+Windows: How can I cancel my Picsart subscription through the Microsoft Store?
+To cancel your Picsart subscription on Windows, follow the steps provided by the Microsoft Store when managing subscriptions.
+
+IMPORTANT (mobile, from top of article not fully captured): Ensure you are logged into the app store account (Google Play or App Store) that was used to purchase the subscription. This ensures the subscription appears in your active subscriptions.

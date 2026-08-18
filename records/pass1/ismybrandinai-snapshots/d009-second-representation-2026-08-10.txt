@@ -1,0 +1,23 @@
+URLs: https://ismybrandinai.com/pricing ; https://ismybrandinai.com/plans ; https://ismybrandinai.com/checkout ; https://ismybrandinai.com/tools/ai-bot-checker
+Date: 2026-08-10
+Method: D-009 re-read. (1) Bash curl HTTP-status check on three candidate pricing-surface paths
+(a different tool from both the original coder's fetch and today's browser render). (2) Live
+rendered browser session (mcp__Claude_Browser) on the tool page, with a structural DOM query for
+the "really free" FAQ answer, independent of the innerText transcript.
+
+What it shows:
+1. curl -o /dev/null -w "HTTP %{http_code}": /pricing -> 404, /plans -> 404, /checkout -> 404.
+   Confirms no pricing/plans/checkout surface exists on this domain, via a representation
+   (raw HTTP status) independent of any page-content reading at all.
+
+2. https://ismybrandinai.com/tools/ai-bot-checker re-read live: 0 occurrences of "$" anywhere in
+   document.body.innerText (checked via regex /\$\d/g -> zero matches). The free-tool FAQ answer
+   is unchanged and confirmed structurally, not just in the innerText transcript:
+   <p><strong>Is this tool really free?</strong><br>Yes. It reads a public text file and
+   analyzes it in your browser. No signup, no account, nothing stored.</p>
+
+Conclusion: this is a genuine free-only product with no paid tier and no pricing surface, exactly
+as originally coded. All four scoped values (entry_tier_name, headline_price_usd,
+headline_billing_basis, first_charge_amount_usd, all `not_applicable`) re-confirmed as the
+correct reading, via a representation independent of the original coding (raw HTTP status codes
+plus a fresh structural DOM read). No correction.

@@ -1,0 +1,231 @@
+product_id: anomaly-ai
+product_name: Anomaly AI
+category: AI data analysis
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Pro"
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-16
+recheck_date: not_applicable
+primary_source_url: https://www.findanomaly.ai/pricing
+archive_url: https://web.archive.org/web/20260806194233/https://www.findanomaly.ai/pricing
+archive_status: archived
+
+default_display_state: |
+  Pricing page (https://www.findanomaly.ai/pricing) loads with the "Monthly" billing toggle
+  pre-selected (styled active/dark; "Yearly" unselected, "Save 20%" badge beside it). Prices in
+  this state: Free $0/month, Pro $25/month, Analyst $90/month, Team $45/seat/month (minimum 2
+  seats, i.e. $90/month minimum). No currency/country selector or geo variant on this page.
+  Confirmed on FOUR independent reads that all agree: pass 1 (2026-08-06, static SSR HTML + live
+  JS-hydrated screenshot, cookies declined); pass 2 (2026-08-14, DOM class inspection, cookies
+  declined); this adjudicator's re-read of pass 2's own cited archive URL, which resolves via a
+  302 to the 2026-08-06 capture (see coder_note, ARCHIVE VERIFICATION); and this adjudicator's own
+  fresh archive.org submission, timestamp 20260816115104, plus a direct live fetch, both
+  2026-08-16. No coder ever reloaded to hunt for a preferred state.
+
+sources:
+  - { url: "https://www.findanomaly.ai/pricing", kind: pricing, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260816115104/https://www.findanomaly.ai/pricing", note: "ADJUDICATOR FRESH CAPTURE. Astro-island props JSON, schema.org JSON-LD, and rendered text all re-verified identical in substance to pass 1's 2026-08-06 capture (archive https://web.archive.org/web/20260806194233/https://www.findanomaly.ai/pricing and https://web.archive.org/web/20260806194425/https://www.findanomaly.ai/pricing). No vendor edit occurred between 2026-08-06 and 2026-08-16." }
+  - { url: "https://www.findanomaly.ai/terms", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814172543/https://www.findanomaly.ai/terms", note: "Read in full by both passes; entity Mindlake Ltd t/a Anomaly AI, England & Wales Co No. 14894347. This adjudicator re-swept pass 1's local raw-HTML capture for watermark-adjacent synonyms (brand, logo, powered by, attribution, white-label) beyond the literal keyword; zero hits beyond the site's own schema.org Organization/logo metadata." }
+  - { url: "https://www.findanomaly.ai/privacy", kind: other, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806194437/https://www.findanomaly.ai/privacy", note: "Checked by both passes for refund/renewal/watermark/ownership language; none found." }
+  - { url: "https://www.findanomaly.ai/security", kind: other, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806194505/https://www.findanomaly.ai/security", note: "Data Ownership and Lifecycle section -- customer INPUT-data ownership statement, not output ownership." }
+  - { url: "https://www.findanomaly.ai/ai-for-large-datasets", kind: other, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806194550/https://www.findanomaly.ai/ai-for-large-datasets", note: "Confirms output artifact types: Dashboard, Excel report, PDF, Slides, Scheduled email -- load-bearing for the watermark cluster below." }
+  - { url: "https://www.findanomaly.ai/", kind: other, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806194641/https://www.findanomaly.ai/", note: "Nav/footer inventory, company identity confirmation." }
+  - { url: "https://www.findanomaly.ai/capabilities", kind: other, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806194723/https://www.findanomaly.ai/capabilities", note: "No pricing/contractual content beyond marketing copy." }
+  - { url: "https://www.findanomaly.ai/contact", kind: other, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806194808/https://www.findanomaly.ai/contact", note: "Contact form only." }
+  - { url: "https://www.findanomaly.ai/ai-data-analysis-code-first-philosophy", kind: other, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806194854/https://www.findanomaly.ai/ai-data-analysis-code-first-philosophy", note: "No pricing/contractual content." }
+  - { url: "https://www.findanomaly.ai/solutions", kind: other, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806194935/https://www.findanomaly.ai/solutions", note: "No pricing/contractual content." }
+  - { url: "https://www.findanomaly.ai/sitemap.xml", kind: other, accessed: "2026-08-14", archive: "not_archived_not_a_coding_source", note: "Pass 2's full enumeration (~130 URLs, all marketing/blog/glossary) used to confirm no dedicated help/billing/refund page exists anywhere on the domain; corroborates pass 1's independent subdomain-probe method (help./docs./support. all Cloudflare 526; /docs /help /support /faq /billing /refund /cancel all 404)." }
+
+variables:
+  # --- Domain 1 ---
+  headline_price_usd: { value: 25.00, source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. Pro card, default Monthly state: \"$25\" \"/month\", matching the page's own schema.org Offer (\"price\":\"25\") and Astro-island props (\"price\":\"$25\"). Re-verified in this adjudicator's fresh 2026-08-16 capture, unchanged." }
+  headline_billing_basis: { value: "per_month_billed_monthly", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. \"$25\" qualified by \"/month\" under the pre-selected \"Monthly\" toggle, not \"billed annually\"; Pro carries no per-seat qualifier (only Team is \"/seat/month\")." }
+  first_charge_amount_usd: { value: 25.00, source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. Default state is Monthly, no annual prepayment applies, so first charge equals the displayed monthly figure. Directly read, no arithmetic (headline x 1 = first charge, both $25.00 -- consistent, see tools/check_price_arithmetic.py)." }
+  mandatory_addon_present: { value: "no", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. Pro's full feature list and the Terms of Service's Subscription and Billing clause were both read in full; no required additional charge, minimum credit purchase, platform fee, or onboarding fee is documented anywhere for Pro." }
+  annual_condition_disclosure: { value: "not_applicable", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. The headline figure is read under the Monthly default and does not depend on annual prepayment; an annual option exists but is not the default/headline figure, so the construct does not attach here." }
+  annual_default_toggle: { value: "monthly_preselected", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. \"Monthly\" carries the active/selected style on load, before any interaction, on every read (pass 1 static SSR + live screenshot; pass 2 DOM class inspection; this adjudicator's 2026-08-16 fresh capture). \"Yearly\" is never the observed default." }
+
+  # --- Domain 3 ---
+  free_plan_exists: { value: "yes", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. \"Free\" card, \"$0\"/\"/month\", presented as a standing tier alongside the paid tiers, no expiry stated." }
+  free_plan_cap_documented: { value: "none_quantified", source: "https://www.findanomaly.ai/pricing", evidence: "ADJUDICATED 2026-08-16 under codebook 5.1's quantified-limit test. The Free plan's only stated limit is credits, and across FOUR independent reads of this exact page (pass 1's 2026-08-06 capture; pass 2's own cited archive URL, which this adjudicator confirmed by direct request is a 302 to the 2026-08-06 capture, not a distinct 2026-08-14 snapshot -- Wayback CDX for this URL lists no capture between 2026-08-06 and this adjudicator's own 2026-08-16 submission; the live page fetched 2026-08-16; and this adjudicator's fresh 2026-08-16 archive.org capture) the Free plan's own Astro-island props object reads identically every time: \"credits\":\"Included credits\",\"creditDetail\":\"\",\"effectiveRate\":\"Enough to try core analysis and dashboard workflows.\" -- a label and an empty string, never a number. Pro/Analyst/Team all carry an explicit numeric credits/month figure by contrast. One limit listed, zero quantified. Pass 2's all_quantified rested on a quoted figure (\"15 free credits\") that does not appear anywhere in pass 2's own cited source, in pass 1's capture, or in the live page as read on any date this study covers -- see coder_note, ARCHIVE VERIFICATION. Prior values: pass1=none_quantified, pass2=all_quantified." }
+  free_plan_cap_value: { value: "unknown", source: "https://www.findanomaly.ai/pricing", evidence: "ADJUDICATED 2026-08-16 under this variable's own Format rule: the only permitted shapes are a properly formatted quantified figure, or the literal token unknown / not_applicable / conflicting -- \"Do not paraphrase an unquantified limit into a number.\" free_plan_cap_documented=none_quantified (above) leaves nothing quantified to transcribe, so unknown is the format-conforming value. This is an INSTRUMENT GAP, not vendor silence: the vendor did publish a qualitative description of the Free allowance (\"Included credits\" / \"Enough to try core analysis and dashboard workflows\"), it simply never attaches a number, and this variable's value list has no third option between a formatted figure and unknown for a limit that is documented-but-unquantified. Same gap independently flagged by pass 1 on a different product in this study (aragon-ai coder_note, pre-adjudication) and resolved the same way in the adobe-firefly adjudicated record, which this adjudication follows for cross-record consistency. Prior values: pass1=a non-conforming free-text sentence (\"none -- free-plan allowance is described only as...\"), which states the correct finding but not in the field's own format; pass2=\"15 credits\", a figure unsupported by any source (see free_plan_cap_documented)." }
+  free_plan_watermark: { value: "unknown", source: "https://www.findanomaly.ai/pricing | https://www.findanomaly.ai/terms", evidence: "ADJUDICATED 2026-08-16 under domain-3's decision rule (\"a silent pricing table is unknown\") and domain-11 rule 3, which free_plan_watermark's own not_applicable row imports (\"the output type cannot carry a watermark\"). \"Watermark\" and its plausible synonyms (brand, logo used as output-branding, powered by, attribution, white-label) appear on zero of the 10 official pages checked -- re-swept by this adjudicator beyond pass 1's literal-keyword grep, only hits are the vendor's own schema.org Organization/logo metadata, unrelated to output branding. This is a genuinely silent set of documents, completed reads not failed searches (see coder_note, VENDOR-SILENCE CONFIRMATION). Rule 3's not_applicable carve-out is for a principal output that is \"not a media artifact a watermark could mark, for example a detection score or an analysis table\" -- Anomaly AI's documented output roster (shareable dashboards, PDF, Slides, Excel reports, scheduled email per ai-for-large-datasets) is not that: it explicitly includes Slides/presentation exports, and this study's own gamma.yaml record shows presentation output is a live watermark construct in this exact instrument (Gamma: free_plan_watermark=yes, \"Remove Gamma branding\" a paid feature). Every other product in this dataset whose principal output is a visual/document artifact (10web's generated website, aragon's headshot photo, canva's exported designs, faceless's video, jobscan/resume.io's PDF resumes, leonardo's images, speechify's audio) is coded unknown on documented silence, never not_applicable; not_applicable in this dataset is reserved for a bare score/report/plain-text-rewrite output (sapling, originality, copyleaks, gowinston, humanizemy's detector, ismybrandinai). Anomaly AI's dashboards/PDF/Slides sit with the first group, not the second. Prior values: pass1=unknown, pass2=not_applicable (over-applied the codebook's illustrative \"analysis table\" example to an output roster the example does not describe -- see coder_note)." }
+  free_plan_duration: { value: "perpetual", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. Free is a standing card alongside the paid tiers, \"Try the product and get to first value fast\" describes purpose not a time limit, and no document anywhere states the Free plan expires." }
+
+  # --- Domain 4 ---
+  trial_exists: { value: "no", source: "https://www.findanomaly.ai/pricing | https://www.findanomaly.ai/terms", evidence: "AGREED. \"Trial\" (case-insensitive) found on zero of the 10 official pages, including a full raw-HTML grep of the pricing page and the Terms of Service; the product offers a perpetual Free plan instead of a time-limited trial." }
+  trial_card_required: { value: "not_applicable", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. trial_exists = no." }
+  trial_length_days: { value: "not_applicable", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. trial_exists = no." }
+  trial_auto_converts: { value: "not_applicable", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. trial_exists = no." }
+
+  # --- Domain 5 ---
+  credit_system_present: { value: "yes", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. \"Credits\" is the named intermediate metering unit throughout (\"1,000 credits/month\", \"2,000 credits/seat/month, pooled\", \"0.5 credits\"), converting into agent actions/outputs rather than a plan allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED under domain-5 rule 3. \"How credits work\": \"Most steps the AI agent takes cost 0.5 credits -- running a query, transforming data, building a chart or KPI, or regenerating a dashboard card. Heavier steps... cost 1 credit each.\" Ties the unit to recognizable actions; rule 3 makes this yes even though the tied action is not the principal output -- that distinction belongs to credit_to_output_rate_published alone (rule 4)." }
+  credit_to_output_rate_published: { value: "partial", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED under domain-5 rule 4 (\"rates published for secondary features but not the principal output are partial\"). An exact rate is published for component actions (0.5 credits/query-transform-chart-dashboard-card-regen; 1 credit/Python-script-run or Excel-workbook-validation). The principal outputs the page frames the product around -- \"insights with charts\" and \"dashboards\" -- carry only an approximate, hedged aggregate (\"~600 insights... or ~200 dashboards per month\" for 1,000 credits), never an exact \"N credits = 1 dashboard\" rate." }
+  credit_rate_location: { value: "pricing_page", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. \"How credits work\" lives on the pricing page only; zero hits in the Terms of Service, Privacy Policy, Security page, or any other checked official page." }
+  cost_per_output_unit: { value: "other", source: "https://www.findanomaly.ai/pricing | https://www.findanomaly.ai/ai-for-large-datasets", evidence: "AGREED under domain-6 rule 3. Principal output framed as \"insights with charts\" or \"dashboards\"; ai-for-large-datasets lists Dashboard/Excel report/PDF/Slides/Scheduled email. None of the enumerated units fits, and the product is metered (not unmetered per-seat software), so per_seat_month does not apply either.", coder_note: "principal-output unit named by the vendor: dashboard / insight (recurring business report)" }
+  cost_per_output_computable: { value: "partial", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED under domain-6 rule 5 and its \"secondary output only\" worked example. Computable for a secondary unit (a 0.5-credit step, e.g. one chart) using only published figures; not computable for the principal output (a dashboard or insight) because the only stated conversion is an approximate, hedged monthly aggregate not tied to a published steps-per-dashboard figure. See computation_assumptions." }
+  computation_assumptions: { value: "Entry tier Pro, Monthly billing per default display state, $25/month, 1,000 credits/month included (findanomaly.ai/pricing). Secondary-unit rate is exact: 0.5 credits per query/chart-or-KPI-build/dashboard-card-regen step (\"How credits work\"). 1,000/0.5=2,000 actions/month; 25/2,000=$0.0125/action -- computable, but a component step, not the principal output. Principal output (dashboard/insight) has NO published exact rate: only the hedged aggregate \"~600 insights with charts or ~200 dashboards per month\" for the same 1,000 credits -- an approximation the vendor states, not a rate a reader can invert without assuming a steps-per-dashboard count the documents never publish. Per codebook domain 6 rule 5's own worked example (\"Vendor N... secondary output only\"), this is partial for the secondary-output reason, and cost_per_output_value_usd (derived) = not_computable, not a figure read off the approximate aggregate.", source: "https://www.findanomaly.ai/pricing", evidence: "RECONCILED 2026-08-16 under domain-6 rule 5 and the domain-8 derived-variable rule (\"where partial [is reached for] the secondary-output case... publishing [an approximate figure] as this product's cost per output would misstate what was computed\"). Pass 1's arithmetic and framing (secondary-unit rate exact and computable, principal output not_computable) matches this rule exactly and is preserved as the primary computation. Pass 2 additionally computed 25/200=0.125/dashboard and 25/600=0.042/insight directly off the vendor's own hedged \"~\" aggregate; that arithmetic is accurate as arithmetic and is kept below as supporting color (a consistent implied ~5 credits per dashboard-equivalent across all three paid tiers: 1000/200=4000/800=2000/400=5), but it answers a different question than the codebook asks here -- rule 5 does not let an approximate vendor aggregate stand in for a published exact rate merely because it can be divided, and the derived-variable rule (section 8) explicitly bars publishing that quotient as this product's cost_per_output_value_usd. Cross-tier check (pass 2's finding, verified): Pro 1,000cr/~200 dash=5, Analyst 4,000cr/~800 dash=5, Team 2,000cr/seat//~400 dash/seat=5 -- consistent but still vendor-hedged (\"~\"), never stated as a fixed rate, so it does not upgrade partial to yes." }
+
+  # --- Domain 7-9 ---
+  credit_rollover_policy: { value: "unknown", source: "https://www.findanomaly.ai/pricing | https://www.findanomaly.ai/terms", evidence: "AGREED. No \"rollover\", \"roll over\", \"reset\", \"expire\", or \"unused\" language on the pricing page or in the Terms of Service (raw-HTML grep, case-insensitive, zero hits both). What happens to unused credits at period end is not addressed anywhere." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://www.findanomaly.ai/pricing | https://www.findanomaly.ai/terms", evidence: "AGREED. No \"fail\", \"unsuccessful\", or \"deduct\" language addressing whether a failed/errored step still consumes credits, on the pricing page or in the Terms of Service. The product clearly meters generation, so this is silence, not absence of a metered step (not_applicable does not fit)." }
+  auto_renewal_default: { value: "unknown", source: "https://www.findanomaly.ai/terms", evidence: "AGREED (vendor silence, confirmed by a completed read -- see coder_note). \"Subscription and Billing\": fees are charged \"in accordance with the pricing and billing terms presented at the time of purchase\" -- does not state renewal is automatic, does not state it is not. \"Renew\"/\"auto-renew\" absent from the full Terms of Service; the only near-match (\"recurring business reports\") describes the product's use case, not billing. Not coded from the word \"subscription\" alone, per the no-inference rule." }
+  auto_renewal_disclosure_location: { value: "absent", source: "https://www.findanomaly.ai/pricing | https://www.findanomaly.ai/terms", evidence: "AGREED. All four document classes checked (pricing page, Terms of Service, help center -- none exists, docs./help./support. all Cloudflare 526, /docs /help /support /faq /billing all 404 -- and other official pages); none discloses an auto-renewal position. A documented finding of silence across a complete sweep, not a location failure, hence absent rather than unknown." }
+  renewal_notice_commitment: { value: "unknown", source: "https://www.findanomaly.ai/terms | https://www.findanomaly.ai/pricing", evidence: "AGREED (vendor silence, confirmed by a completed read). No commitment to notify before a renewal charge in any document checked. The Terms' 30-days'-notice commitment covers \"material changes to these Terms\" generally, not renewal-charge notice specifically, so it does not satisfy this construct." }
+  refund_policy_exists: { value: "unknown", source: "https://www.findanomaly.ai/terms | https://www.findanomaly.ai/pricing", evidence: "AGREED (vendor silence, confirmed by a completed read -- see coder_note). \"Refund\" found on zero of the 10 official pages, including a full grep of the Terms of Service; /refund /refund-policy /cancellation-policy /cancel all 404; no help center exists to check. Documents are silent, not stating a position either way." }
+  refund_window_days: { value: "unknown", source: "https://www.findanomaly.ai/terms", evidence: "AGREED. refund_policy_exists = unknown, so no window figure is stated anywhere to record." }
+  refund_conditions: { value: "unknown", source: "https://www.findanomaly.ai/terms", evidence: "AGREED. refund_policy_exists = unknown, so no conditions are stated anywhere to record." }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://www.findanomaly.ai/terms", evidence: "AGREED. Terms of Service, Termination clause: \"You may terminate your account at any time by contacting us or using the account deletion feature.\" Explicitly names a self-serve account-deletion route as one of two available methods, sufficient to document acting without contacting anyone." }
+  refund_policy_location: { value: "absent", source: "https://www.findanomaly.ai/pricing | https://www.findanomaly.ai/terms", evidence: "AGREED. Pricing page, Terms of Service, and every other checked official page were read; none states a refund position. Documents were locatable and read (absent), not unreachable (unknown), consistent with refund_policy_exists=unknown being a silence finding." }
+
+  # --- Domain 11 ---
+  commercial_use_lowest_tier: { value: "unknown", source: "https://www.findanomaly.ai/terms | https://www.findanomaly.ai/pricing", evidence: "AGREED. No feature-grid row or clause addresses commercial-use rights in outputs, on the pricing page or in the Terms of Service. The \"recurring business reports\" tagline describes the intended use case, not a stated grant or restriction for any specific tier; coding a tier from marketing framing would be exactly the inference section 6.3 forbids." }
+  watermark_removal_tier: { value: "unknown", source: "https://www.findanomaly.ai/pricing | https://www.findanomaly.ai/terms", evidence: "ADJUDICATED 2026-08-16, same basis as free_plan_watermark above -- domain-11 rule 3's not_applicable carve-out (\"a detection score or an analysis table\") does not describe Anomaly AI's documented output roster (shareable dashboards, PDF, Slides, Excel reports, scheduled email), which explicitly includes presentation-format exports this exact study elsewhere confirms is a watermark-relevant construct (gamma.yaml: Slides output, free_plan_watermark=yes, watermark_removal_tier=lowest_paid). No document states any tier's watermark/branding status (re-swept for synonyms, see coder_note). Documented silence on a watermark-capable output type is unknown, not not_applicable. Prior values: pass1=unknown, pass2=not_applicable (same over-applied worked-example reasoning as free_plan_watermark)." }
+  output_ownership_statement: { value: "unknown", source: "https://www.findanomaly.ai/terms | https://www.findanomaly.ai/security", evidence: "AGREED. Terms of Service (\"You retain all rights to the data you upload or connect to the platform. We do not claim ownership of your data.\") and the Security page (\"Customers retain full ownership of all data uploaded to or processed by Anomaly AI.\") both address INPUT data ownership only; pass 2 additionally confirms a separate \"AI-Generated Content Disclaimer\" clause treats AI-generated outputs (queries, analyses, visualisations, dashboards, insights) as its own category addressing only accuracy/liability, never ownership. A genuine construct gap -- the two documents agree with each other on data ownership and are both silent on output ownership specifically -- coded unknown rather than extending \"your data\" to generated deliverables by inference." }
+
+  # --- Domain 12 ---
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://www.findanomaly.ai/pricing", evidence: "AGREED. Entry tier (Pro) lists exactly one limit: \"1,000 credits/month\" / \"1,000 credits per month\" -- number, dimension, period, all present. No other limit (seats, storage, resolution, request rate) is stated for Pro anywhere." }
+  unquantified_limit_clause: { value: "absent", source: "https://www.findanomaly.ai/terms", evidence: "AGREED. Terms of Service read in full (rendered text plus raw-HTML grep for fair use/reasonable/discretion/throttl/excessive/abus[e/ive]/suspend/restrict/limit). Matches found concern the vendor modifying the product, security/breach response, or breach of Terms -- none is a discretionary volume/intensity-of-use clause. The Prohibited Activities list covers conduct (unauthorised access, reverse engineering, scraping), not a usage-volume standard. A documented finding of no clause (full read, nothing there), not a location failure -- scores full points on item F2 per codebook 2.2's stated exception for this variable." }
+
+coder_note: |
+  ADJUDICATION SUMMARY (2026-08-16). tools/disagreements.py anomaly-ai finds 4 substantive
+  disagreements (free_plan_cap_documented, free_plan_cap_value, free_plan_watermark,
+  watermark_removal_tier) plus 1 non-substantive prose mismatch (computation_assumptions -- both
+  passes agree cost_per_output_computable=partial but wrote different arithmetic). All 4 resolved
+  by rule; 0 became unknown as a NEW adjudicated value beyond what the rule already required; 0
+  date_explained; 0 variant_explained. One of the 4 (free_plan_cap_value) resolves to a value
+  NEITHER coder wrote verbatim (see below) -- consistent with this phase's standing finding that
+  agreement is not evidence of correctness and that the adjudicator's job is the rule applied to
+  the evidence, not a pick between two options.
+
+  VENDOR DOMAIN CHECK (done first, per assignment instructions). frame-for-pass2.csv row 11:
+  `anomaly-ai,Anomaly AI,https://www.findanomaly.ai,AI data analysis,active,no` -- confirmed by
+  direct read of that file. Both passes independently caught and corrected the same defect
+  (orchestrator/deviations-log.md D-015: the assignment brief typed `anomaly.io` / `tryanomaly.ai`,
+  a different, unrelated company in both cases) and coded exclusively from www.findanomaly.ai
+  throughout. This record does the same; no variable below is sourced from either wrong domain.
+
+  REGISTER EVENTS. Both pass1.yaml and pass2.yaml carry `register_events: []`. Per this
+  adjudication's own instructions: a vendor_edit entry is required for date_explained (7.4.1) and
+  none exists; variant_explained (7.4.2) needs two archive snapshots of two DIFFERENT default
+  states and this record found only one state, ever (see ARCHIVE VERIFICATION below). All 4
+  disagreements are ordinary disagreements resolved on the documents, not date or display effects.
+
+  ARCHIVE VERIFICATION -- the finding that resolves 2 of the 4 disagreements
+  (free_plan_cap_documented, free_plan_cap_value). Pass 2 cited
+  https://web.archive.org/web/20260814171921/https://www.findanomaly.ai/pricing for its
+  "15 free credits" quote. Requesting that exact URL returns HTTP 302 with header
+  `x-archive-redirect-reason: found capture at 20260806194425` and `memento-datetime: Thu, 06 Aug
+  2026 19:44:25 GMT` -- it is not a distinct 2026-08-14 capture, it silently resolves to pass 1's
+  own 2026-08-06 archive. The Wayback CDX index for this exact URL (`cdx/search/cdx?
+  url=findanomaly.ai/pricing`) lists captures only at 20260806194233, 20260806194425, and (this
+  adjudicator's own submission) 20260816115104 -- nothing between 2026-08-06 and 2026-08-16. This
+  adjudicator independently verified the Free plan's content on ALL of: pass 1's saved
+  pricing-raw.html (2026-08-06), the resolved target of pass 2's own citation (also 2026-08-06),
+  a direct live fetch (2026-08-16), and a fresh archive.org submission (2026-08-16,
+  20260816115104). All four show the identical Astro-island props object for the Free plan --
+  `"credits":"Included credits","creditDetail":""` -- and the string "15" does not occur adjacent
+  to "credit" or "free" in any of them. Pass 2's quoted figure is not supported by pass 2's own
+  cited source, by pass 1's source, or by the live product at any point this study covers. This is
+  a misread (deviations-for-coders.md's principle that a coder-tooling failure is never a display
+  variant applies with equal force to a citation that does not verify), not a vendor edit and not
+  a display variant, so free_plan_cap_documented and free_plan_cap_value are decided on the
+  documents actually shown above, not split between the two coders' values.
+
+  FREE-PLAN CREDIT CLUSTER, resolution. free_plan_cap_documented=none_quantified (pass 1's value,
+  independently re-confirmed). free_plan_cap_value=unknown -- NEITHER coder's literal value:
+  pass 1 wrote a non-conforming free-text sentence explaining the same finding, pass 2 wrote an
+  unsupported figure. This variable's own Format rule permits exactly a formatted quantified
+  figure or the tokens unknown/not_applicable/conflicting, and the adobe-firefly adjudicated
+  record already established (2026-08-16, same instrument) that a prose paraphrase of "nothing is
+  quantified" is normalized to the literal token unknown rather than published as free text. This
+  is an INSTRUMENT GAP, not vendor silence: the vendor affirmatively describes the Free allowance
+  ("Included credits... Enough to try core analysis and dashboard workflows"), it just never
+  attaches a number, and the value list has no slot for "documented but unquantified" distinct
+  from unknown. Folding this into "vendor silence" would blame the vendor for a gap in our own
+  enum; it is recorded here as its own kind.
+
+  WATERMARK CLUSTER (free_plan_watermark, watermark_removal_tier), resolution. Both resolve to
+  unknown (pass 1's value). Pass 2's not_applicable rested on codebook domain 11's watermark_
+  removal_tier rule 3, which reads in full: "not_applicable where the principal output is not a
+  media artifact a watermark could mark, for example a detection score or an analysis table." That
+  "for example" is part of the operative test, not a separate illustration, so this is not simply
+  the standing "read the table before the example" failure mode -- but pass 2 still applied it past
+  its own boundary: Anomaly AI's documented output roster is "Dashboard, Excel report, PDF, Slides,
+  Scheduled email" (ai-for-large-datasets) and "shareable dashboards" (pricing page) -- shareable,
+  chart-bearing, presentation-format deliverables, not a bare score or a data table. This exact
+  instrument already draws that line elsewhere in the dataset: gamma.yaml (Slides output) codes
+  free_plan_watermark=yes and watermark_removal_tier=lowest_paid ("Remove Gamma branding" is a paid
+  feature), proving presentation-format output is a live watermark construct under this codebook,
+  not a not_applicable case. Every other visual/document-output product in this dataset (10web
+  website, aragon headshot photo, canva designs, faceless video, jobscan/resume.io PDF resumes,
+  leonardo images, speechify audio) is coded unknown on documented silence, never not_applicable;
+  not_applicable in this dataset is reserved for bare score/report/plain-text-rewrite tools
+  (sapling, originality, copyleaks, gowinston, humanizemy's detector, ismybrandinai). Anomaly AI's
+  dashboards/PDF/Slides sit with the first group. Silence itself is real and thoroughly confirmed
+  (see VENDOR-SILENCE CONFIRMATION below), so the documented finding is unknown, not not_applicable.
+
+  VENDOR-SILENCE CONFIRMATION, general note (covers the AGREED unknowns above too, per this
+  adjudication's instructions on distinguishing kinds of unknown). auto_renewal_default,
+  renewal_notice_commitment, refund_policy_exists, refund_window_days, and refund_conditions are
+  all agreed unknown by both passes. This is vendor silence CONFIRMED BY A COMPLETED READ, not an
+  unknown left after a failed search: pass 1 checked all 10 official pages by direct grep and
+  probed help./docs./support. subdomains (Cloudflare 526, no origin configured) and a list of
+  likely paths (all 404); pass 2 independently confirmed the same absence via a full sitemap.xml
+  enumeration (~130 URLs, all marketing/blog/glossary) plus a web search for a Crisp-hosted help
+  widget, finding nothing product-specific. Two independent methods, same conclusion, both
+  completed rather than abandoned. This is a stronger finding than an unknown left after a failed
+  search, and is reported here as that specific kind.
+
+  COMPUTATION_ASSUMPTIONS RECONCILIATION. Not a coded disagreement (cost_per_output_computable is
+  agreed partial), but the underlying arithmetic differed and needed reconciling per
+  tools/disagreements.py's own instruction. Domain 6 rule 5 and its "secondary output only" worked
+  example are directly on point: an exact rate is published for a secondary/component unit (0.5
+  credits per step) and only an approximate, hedged aggregate for the principal output (dashboard/
+  insight). Per the domain-8 derived-variable rule, that makes cost_per_output_value_usd (derived,
+  not a field this record codes directly) not_computable -- publishing pass 2's 25/200=0.125 or
+  25/600=0.042 as "this product's cost per output" would misstate what was actually computed, since
+  those numbers invert the vendor's own hedged "~" aggregate rather than an exact published rate.
+  Pass 1's arithmetic and framing is kept as the primary computation; pass 2's cross-tier
+  consistency check (~5 credits per dashboard-equivalent, stable across Pro/Analyst/Team) is kept
+  as supporting color in the field, correctly computed but answering a different question than
+  domain 6 rule 5 asks.
+
+  ENTRY-TIER LOSING CANDIDATES (codebook 5.2, sampling-rules.md 7.2; AGREED identically by both
+  passes, independently re-verified here): Analyst $90/mo -> annual-equivalent $1,080.00; Team
+  nominal $45/seat/mo, but the card states "minimum 2 seats ($90/month)" so a seat cannot be bought
+  alone -- minimum-block annual-equivalent $1,080.00 (ties Analyst; the nominal single-seat
+  $540.00/yr figure is reference only, not used, per price-basis rule 3). Both lose to Pro's
+  $300.00. Enterprise excluded as sales-gated ("Custom"/"Contact Sales"), not a losing candidate.
+  Free excluded as $0, not a paid tier.
+
+  SOURCES RE-READ FOR THIS ADJUDICATION: both records in full; pass 1's -sources/ directory in
+  full, including pricing-raw.html, pricing-text-lines.txt, and terms-raw.html (pass 2's
+  -sources/ directory is empty -- no local captures were saved by that pass); the vendor's live
+  pricing page and Terms of Service, fetched directly, 2026-08-16; pass 2's own cited archive URL,
+  fetched directly to inspect its redirect behavior, 2026-08-16; the Wayback CDX index for
+  findanomaly.ai/pricing, full history; a fresh archive.org capture of the pricing page submitted
+  by this adjudicator, 2026-08-16 (20260816115104).
+
+  ALSO READ: codebook-v1.md in full (domains 1, 3, 5, 6, 7, 8, 9, 10, 11, 12, plus sections 1-5, 8,
+  9); protocol-v1.md sections 6.2, 6.3, 6.4, 6.6, 6.8, 7.4, 7.4.1, 7.4.2; sampling-rules.md section
+  7.2; record-template.yaml; orchestrator/deviations-log.md (D-015 and the D-010/D-015-addendum
+  template-drift entries); records/adjudicated/aragon-ai.yaml and adobe-firefly.yaml as style/
+  precedent references for already-decided instrument-consistency questions (free_plan_cap_value
+  format; watermark not_applicable boundary via gamma.yaml, cross-checked directly). NOT read:
+  orchestrator/interim-signals.md, any other product's pass1/pass2/-sources material beyond the
+  two adjudicated records cited above for precedent only, aitoolspolice.com, site/content/reviews/.
+
+  blindness/scope attestation: no other product's pass1 or pass2 record was opened beyond
+  anomaly-ai's own; the two already-published adjudicated records cited above (aragon-ai,
+  adobe-firefly) were read only for their own resolved, published reasoning on directly analogous
+  instrument questions, which protocol makes available to an adjudicator by virtue of being
+  published, not pass-2 material; gamma.yaml (pass 1, published-dataset-eligible pricing/output
+  facts only, read solely to confirm this instrument's own treatment of presentation-format
+  watermarking) was opened for the same reason. No repository history command (git log/show/diff/
+  blame) was run.
+conflict_note: "not_applicable -- no two official sources of equal authority state incompatible values for any variable in this record. output_ownership_statement's two sources (terms, security) agree with each other (both address input-data ownership only); that is a scope gap, not a conflict."
+register_events: []
+status: complete

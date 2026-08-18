@@ -1,0 +1,14 @@
+URL: https://help.elevenlabs.io/hc/en-us/articles/14315426883345-What-is-your-refund-policy
+Accessed: 2026-08-14 (rendered browser read; web.archive.org/save returned HTTP 520 on both attempts, recorded local_copy_only per binding rule)
+Title: What is your refund policy? – ElevenLabs
+
+Verbatim visible text (main content):
+---
+ElevenLabs
+ Account
+ Cancelation & Refunds
+What is your refund policy?
+
+You are eligible for a refund if a request is filed within 14 days of payment and no credit quota was used in the period for which you are seeking the refund.
+
+For details on how to request a refund, see How can I request a refund?

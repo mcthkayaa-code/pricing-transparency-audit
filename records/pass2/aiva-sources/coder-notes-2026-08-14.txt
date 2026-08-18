@@ -1,0 +1,104 @@
+AIVA (aiva.ai) — pass-2 blind coding — source notes and verbatim quotes
+Coder access date: 2026-08-14. All URLs are official aiva.ai / aiva.crisp.help pages.
+
+=== 1. PRICING PAGE (https://www.aiva.ai/, single-page site; nav "Pricing" and /pricing both resolve here) ===
+Rendered via browser (desktop viewport 1440x900), read_page + get_page_text + raw DOM (javascript_tool).
+
+Tabs at top of pricing section: "For Individuals" (default active) | "Students & Schools" | "For Enterprises"
+Note under grid: "For Student & School discounts, please reach out with our contact form or using the live chat."
+-> Students & Schools and Enterprise are sales/contact-gated, excluded from entry-tier eligibility (sampling-rules 7.2 rule 2).
+
+Billing toggle: "Billed monthly" / "Billed yearly". DOM query on both labels:
+  <div class="slider-difficulty-title">Billed monthly</div>
+  <div class="slider-difficulty-title selected-slider-difficulty-title">Billed yearly</div>
+-> "Billed yearly" carries the "selected-" class. Default state = annual_preselected. Established from DOM class, not from which figure the extractor printed first.
+
+Three cards (default annual state), verbatim get_page_text:
+  "Free, Forever / €0 / No credit card required / ... / Copyright owned by AIVA / No monetization / Credit must be given to AIVA / 3 downloads per month / Track durations up to 3 minutes / Download MP3 & MIDI formats"
+  "Standard Annually / €11 / month+ VAT / Billed Annually / 26% OFF! / ... / Copyright owned by AIVA / Limited monetization / No need to credit AIVA / 15 downloads per month / Track durations up to 5 minutes / Download MP3 & MIDI formats"
+  "Pro Annually / €33 / month+ VAT / Billed Annually / 33% OFF! / ... / Copyright owned by YOU / Full monetization / No need to credit AIVA / 300 downloads per month / Durations up to 5 mins 30 secs / Download ALL file formats / Export high quality WAV files"
+
+Raw DOM (second representation) around each price, confirms plain digits, no superscript-cents trick:
+  <div id="option-price">€0</div>
+  <div id="option-price">€11 / month</div><div id="option-price-subtitle">+ VAT</div>
+  <div id="option-price">€33 / month</div><div id="option-price-subtitle">+ VAT</div>
+
+Raw DOM around the annual-billing disclosure (adjacency check):
+  <div class="option-price-subtitle-billing-cycle" id="option-price-subtitle"> Billed Annually </div><div class="option-discount-header-standard" id="option-discount-header">
+  <div class="option-price-subtitle-billing-cycle" id="option-price-subtitle"> Billed Annually </div><div class="option-discount-header-pro" id="option-discount-header"> 33%
+-> "Billed Annually" is styled/classed as the price's own subtitle, inside the same card as the figure. annual_condition_disclosure = adjacent.
+
+No currency selector, no country/locale selector found:
+  document.querySelectorAll('select, [class*="currency"], [id*="currency"], [class*="locale"], [class*="country"]') -> 0 results
+No "USD" or "$" mentions anywhere in page text.
+
+Footer: "Copyright © 2016-2026 Aiva Technologies SARL. All rights reserved."
+
+=== 2. CURRENCY CHECK (deviation D-003 / deviations-for-coders.md) ===
+Arm 1 (vendor currency disclosure): none found — no selector, no explicit currency statement in EULA or help docs beyond "+VAT" (a tax label, not a currency statement), no documented currency URL param.
+Arm 2 (US-crawled archive capture): triggered a fresh web.archive.org/save/ capture of https://www.aiva.ai/ on 2026-08-14 (Internet Archive's Save-Page-Now infrastructure runs from Internet Archive's own US datacenters, not from this coder's network). Downloaded the resulting capture (web.archive.org/web/20260814172042/https://www.aiva.ai/) and grepped it directly:
+  € figures found: €0 (x1), €11 (x1), €33 (x1)
+  USD / $-prefixed figures found: 0
+-> The US-crawled capture shows the SAME EUR prices, not USD. This is positive evidence the vendor serves EUR (not USD) to a US reader too, not just to this Turkey-based session. Per deviations-for-coders.md arm 3, this justifies `non_usd` rather than `unknown`.
+Local copy of that capture saved as pricing-homepage-archive-capture-2026-08-14.html in this folder.
+
+=== 3. END USER LICENSE AGREEMENT (https://www.aiva.ai/legal/1) ===
+Confirmed server-rendered (raw curl, no JS execution, already contains full EULA text — not a CSR-only shell).
+Local raw copy saved as legal-eula-raw-2026-08-14.html in this folder.
+
+Key verbatim clauses:
+§2 Licensing Process: "Individuals are elligible for the Free, Standard Monthly, Standard Annually, Pro Monthly and Pro Annually plans that are shown on the Pricing section of the website (www.aiva.ai). If you are an Enterprise, please contact us at contact@aiva.ai in order to establish a custom plan based on your needs and usage."
+
+§3 Types of Licenses:
+  "Non-Commercial License: ... non-exclusive, non-transferrable and non-commercial license to use, modify and distribute the MIDI and Audio Composition..."
+  "Limited Commercial License: ... non-exclusive, non-transferable and commercial license to monetize the MIDI and Audio Composition on a limited set of third-party websites: Youtube, Twitch, Tik Tok and Instagram."
+  "Full Copyright: Licensor hereby assigns, grants and conveys all copyrights of the MIDI and/or Audio Composition to Licensee"
+
+§6 Technology & Limitations (quantified rate limits, apply account-wide, not stated as tier-specific):
+  "A single user cannot create more than 5 Compositions at one time. This quota resets everytime a Composition has been fully generated."
+  "A single user cannot create more than 100 Compositions per hour"
+  "A single user cannot create more than 400 Compositions every 24 hours"
+  "A single user cannot store more than 4,000 Compositions at one time in their account."
+  No discretionary/fair-use/"excessive use" unquantified clause found anywhere in the document (read in full, all 12 sections + preamble).
+
+§8 Payment of local taxes: "it is the responsability of Licensee to provide their correct billing address and pay any applicable local VAT or sales tax." (tax responsibility statement, not a currency-policy statement)
+
+§9 Refunds: "Customers are elligible for refunds if, and only if, they have not used any of the premium features of the plan they subscribed to. If Licensee has already started using premium features, Licensee understands that they are no longer elligible for a refund, and the sole act of using premium features will act as a waiver of Licensee's withdrawal right. Licensee shall use the Free plan in order to evaluate whether the paid offerings are suitable for them or not.
+In addition, Licensee is responsible for downgrading to the free plan and / or disabling auto-renewal of their subscription when Licensee no longer wishes to continue paying for the Services. No refund will be made if Licensee forgets to cancel their subscription."
+-> No specific day-count window stated anywhere (eligibility is usage-conditioned, not time-windowed). Auto-renewal existence implied by "disabling auto-renewal of their subscription" (must be actively disabled -> on by default).
+
+§12 Governing Laws: "the laws of Luxembourg ... exclusive jurisdiction of the competent courts of the city of Luxembourg." / "© AIVA Technologies Sàrl, Luxembourg"
+
+No mention of "trial" or "free trial" anywhere in the EULA.
+No mention of "watermark" anywhere in the EULA.
+
+=== 4. HELP CENTER (aiva.crisp.help, aka "AIVA Helpdesk") ===
+Officiality check: aiva.ai's own page source embeds (currently HTML-commented-out) a Crisp chat snippet:
+  window.CRISP_WEBSITE_ID="85513d63-7524-4812-bf51-ffd3ef7ac5ed"
+Independently, WebFetch of the AIVA-branded article listing returned article URLs mapped onto the aiva.ai domain itself (https://aiva.ai/en/article/...), i.e. AIVA has custom-domain-mapped this Crisp help center as its own. Treated as an official AIVA documentation/help-center source per protocol 6.2.
+
+FAQ category (https://aiva.crisp.help/en/category/frequently-asked-questions-1hnn93r/) lists exactly 8 articles (confirmed complete list, no pagination observed): terms-of-license explainer, text-prompt best practices, download formats, "will AIVA create the same track twice", downgrade/cancel, copyright on upgrade/downgrade/cancel, upgrade billing math, password reset. No dedicated "refund policy", "trial", "currency", or "watermark" article exists among them.
+
+Article "How can I downgrade/cancel my subscription?" (https://aiva.crisp.help/en/article/how-can-i-downgradecancel-my-subscription-1crq9uf/), verbatim:
+  "To downgrade, go to https://creators.aiva.ai/billing, and then click on \"Downgrade\" under the plan you want to downgrade to. You can downgrade to a free plan at any time. Any costs already paid out (for a yearly or monthly membership) will not be refunded. You will be able to enjoy your membership until it runs out, and will then be automatically converted to a free user. Please note, that in case of downgrading prior to current plan's expiration date no refund will be possible."
+-> Self-serve cancellation confirmed (account billing page, no contact/ticket/email needed). No "renew"/"auto-renew" wording in this article itself.
+
+Article "I don't understand the terms of License" (https://aiva.crisp.help/en/article/i-dont-understand-the-terms-of-license-1wqvh5v/), verbatim (per-tier ownership):
+  "Under a Free Plan ... The copyright of the tracks you create is owned by AIVA ... You MUST give credit to AIVA when using the track."
+  "Under a Standard Plan ... The copyright of the tracks you create is owned by AIVA. You DO NOT need to give credit to AIVA when using the track." [commercial use restricted to YouTube/Twitch/TikTok/Instagram per EULA §3]
+  "Under a Pro Plan ... The copyright of the tracks you created is owned by YOU. ... When you upgrade to Pro Monthly or Pro Annually, you will own the copyright of all of the compositions created before your subscription started AND during your subscription. If you decide to cancel your Pro subscription, you will retain the copyright of the compositions you already owned before cancelling."
+Updated on: 22/02/2021 (per article footer)
+No mention of "watermark" anywhere in this article.
+
+Article "General User Manual" (https://aiva.crisp.help/en/article/general-user-manual-44klp4/) — full product manual read in full. Relevant section:
+  "Using the Billing page: Terms — See the Terms by going to the Billing page and clicking on Terms of License button. / Payment Method — ... Card / PayPal / Apple Pay. / Subscribing — Subscribe by clicking on the Subscription Plans button on top of the Billing page and then selecting between Monthly and Annual plans. ... Cancel your subscription by clicking on the Downgrade button."
+Updated on: 24/09/2025. No "watermark" mention, no "trial" mention, no explicit renewal-notice commitment, no currency statement anywhere in this document.
+
+=== 5. WATERMARK — EXPLICITLY CHECKED, NOT CONFIRMED BY ANY OFFICIAL DOCUMENT ===
+Third-party review pages (NOT used as coded-value evidence, discovery only) claim AIVA's free-plan downloads carry "a subtle 3-second audio watermark" and low-bitrate MP3s. No official aiva.ai / aiva.crisp.help page located in this session states this. Pricing page's free-tier row instead documents an ATTRIBUTION requirement ("Credit must be given to AIVA") which is a usage condition, not a stated property of the output file. Coded free_plan_watermark = unknown and watermark_removal_tier = unknown on that basis; the third-party claim is recorded here for audit trail only, per protocol — never as the value's justification.
+
+=== 6. TRIAL — EXPLICITLY CHECKED, NOT FOUND ===
+No "trial" wording anywhere in pricing page, EULA, or the 8 FAQ articles / user manual. WebSearch for site:aiva.ai / site:aiva.crisp.help "trial" returned no official page containing trial terms either. trial_exists = no.
+
+=== 7. LOGIN-GATED PAGE NOTED, NOT OPENED ===
+https://creators.aiva.ai/billing (referenced by the downgrade FAQ) requires an authenticated account. Not opened — documents-only rule, prohibition #2 (no sign-in). Any billing-page-only detail (e.g. a possible currency toggle behind login) is therefore outside what this study can determine and is not counted as a checked-and-silent source.

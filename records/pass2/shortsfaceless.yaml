@@ -1,0 +1,108 @@
+product_id: shortsfaceless
+product_name: ShortsFaceless
+category: Faceless video
+product_status: active
+paid_submission: "no"
+entry_tier_name: Essential
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-15
+recheck_date: not_applicable
+primary_source_url: https://www.shortsfaceless.com/
+archive_url: https://web.archive.org/web/20260815131907/https://www.shortsfaceless.com/
+archive_status: archived
+default_display_state: "USD, no billing-period toggle (monthly-only pricing, no annual option exists), no currency/country selector encountered, no cookie-consent banner shown, system/light theme on load (a theme toggle exists but was not used)."
+
+sources:
+  - { url: "https://www.shortsfaceless.com/", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815131907/https://www.shortsfaceless.com/", note: "Homepage carries the #pricing section (Essential/Professional cards) and an on-page FAQ accordion; no separate pricing route exists." }
+  - { url: "https://www.shortsfaceless.com/tos", kind: tos, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815131927/https://www.shortsfaceless.com/tos", note: "Terms of Service. Contains the only statement of the credit mechanism; silent on refunds, cancellation, and auto-renewal." }
+  - { url: "https://www.shortsfaceless.com/deal", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815131946/https://www.shortsfaceless.com/deal", note: "Promotional landing page ('Special deal' in footer): first-month $9 offer off the $19 Essential plan, and the only page on the site stating a refund position." }
+  - { url: "https://www.shortsfaceless.com/privacy-policy", kind: other, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815132006/https://www.shortsfaceless.com/privacy-policy", note: "Checked for billing/refund/renewal content; contains none." }
+
+variables:
+  headline_price_usd: { value: 19.00, source: "https://www.shortsfaceless.com/", evidence: "Essential plan card: \"$19\" \"/month\", 'Generate up to 30 videos'" }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://www.shortsfaceless.com/", evidence: "\"$19 /month\" with no annual toggle and no per-seat qualifier anywhere on the pricing section" }
+  first_charge_amount_usd: { value: 19.00, source: "https://www.shortsfaceless.com/", evidence: "Only a flat \"$19 /month\" figure is published for Essential; no annual prepayment or other first-charge component is stated" }
+  mandatory_addon_present: { value: "no", source: "https://www.shortsfaceless.com/tos", evidence: "Pricing card lists 40+ voices, 10+ languages, no watermark, YouTube publish/schedule, HD download and unlimited regenerations as included in the $19 price; ToS names no further required charge" }
+  annual_condition_disclosure: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "No annual billing option exists on the pricing page for the headline figure to depend on" }
+  annual_default_toggle: { value: no_toggle, source: "https://www.shortsfaceless.com/", evidence: "Pricing section renders exactly two monthly-priced cards (Essential $19, Professional $29) with no monthly/annual switch control" }
+  free_plan_exists: { value: "no", source: "https://www.shortsfaceless.com/", evidence: "\"Simple & transparent pricing\" section lists exactly two plans, Essential and Professional, both paid (Subscribe); no free plan appears on the pricing page, in the on-page FAQ, or in the Terms of Service" }
+  free_plan_cap_documented: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "" }
+  free_plan_cap_value: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "" }
+  free_plan_watermark: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "" }
+  free_plan_duration: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "" }
+  trial_exists: { value: "no", source: "https://www.shortsfaceless.com/", evidence: "No free trial is stated on the pricing page, in the on-page FAQ, or in the Terms of Service. A paid (non-free) first-month intro offer exists instead — see coder_note, token A-012." }
+  trial_card_required: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "" }
+  trial_length_days: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "" }
+  trial_auto_converts: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "" }
+  credit_system_present: { value: "yes", source: "https://www.shortsfaceless.com/tos", evidence: "\"Upon purchasing a package, users receive a number of credits per month, where each credit allows for the generation of one video.\" The pricing page itself displays the allowance only in plain video counts (\"up to 30 videos\"); the ToS is the document that reveals credits are the underlying metering unit." }
+  credit_unit_defined: { value: "yes", source: "https://www.shortsfaceless.com/tos", evidence: "\"each credit allows for the generation of one video\"" }
+  credit_to_output_rate_published: { value: "yes", source: "https://www.shortsfaceless.com/tos", evidence: "\"each credit allows for the generation of one video\" — rate is published for the principal (and only) output type, video" }
+  credit_rate_location: { value: terms, source: "https://www.shortsfaceless.com/tos", evidence: "The credit-to-video rate appears only in the Terms of Service; the pricing page and on-page FAQ state the allowance in videos and never use the word \"credit\"" }
+  cost_per_output_unit: { value: other, source: "https://www.shortsfaceless.com/", evidence: "" }
+  cost_per_output_computable: { value: "yes", source: "https://www.shortsfaceless.com/", evidence: "\"$19\" \"/month\", \"Generate up to 30 videos\" — both published, no assumption about typical use needed" }
+  computation_assumptions: { value: "Essential (entry tier), $19/mo, monthly billing (no annual option) per default state; pricing page: 30 videos/mo included; ToS: 1 credit=1 video. Price and allowance already monthly, no conversion needed. 19/30=0.63 USD/video.", source: "https://www.shortsfaceless.com/", evidence: "" }
+  credit_rollover_policy: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "" }
+  failed_generation_charge_policy: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "" }
+  auto_renewal_default: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "" }
+  auto_renewal_disclosure_location: { value: absent, source: "https://www.shortsfaceless.com/tos", evidence: "" }
+  renewal_notice_commitment: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "" }
+  refund_policy_exists: { value: "yes", source: "https://www.shortsfaceless.com/deal", evidence: "\"100% money-back guarantee.\"" }
+  refund_window_days: { value: unknown, source: "https://www.shortsfaceless.com/deal", evidence: "" }
+  refund_conditions: { value: unconditional, source: "https://www.shortsfaceless.com/deal", evidence: "\"100% money-back guarantee.\" — no usage threshold, stated reason, or approval step is attached" }
+  cancellation_self_serve: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "" }
+  refund_policy_location: { value: pricing_page, source: "https://www.shortsfaceless.com/deal", evidence: "" }
+  commercial_use_lowest_tier: { value: lowest_paid, source: "https://www.shortsfaceless.com/", evidence: "On-page FAQ: \"Who maintains ownership of the videos I generate? You do... You can use it for whatever you want, including for commercial purposes.\" Not gated by tier; both published plans grant it." }
+  watermark_removal_tier: { value: no_watermark, source: "https://www.shortsfaceless.com/", evidence: "\"No watermark\" listed as an included feature on both the Essential and Professional plan cards" }
+  output_ownership_statement: { value: user_owns, source: "https://www.shortsfaceless.com/", evidence: "On-page FAQ: \"Who maintains ownership of the videos I generate? You do. Once you generate a video, you own it.\"" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.shortsfaceless.com/", evidence: "\"Generate up to 30 videos\" (quantified rate, 30/month) plus \"Regenerate images/script/voice as many times as you want\" (explicit unlimited, unqualified by any discretionary clause found in the Terms)" }
+  unquantified_limit_clause: { value: absent, source: "https://www.shortsfaceless.com/tos", evidence: "" }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): two standing, generally-available, no-sales-contact
+  plans found -- Essential $19/mo (annual-equiv $228.00) and Professional $29/mo (annual-equiv
+  $348.00, badged "Most popular"). Essential selected as entry tier (lower annual-equivalent).
+  Professional is the sole losing candidate. No per-seat pricing, no student/nonprofit-restricted
+  tier, no usage-based-only pricing.
+
+  A-012: vendor sells a paid, non-free, time-limited intro period. /deal (footer "Special deal")
+  offers the Essential plan's first month for $9 instead of $19 ("50% OFF FIRST MONTH", described
+  as a "one-time offer"), same 30-videos/40+voices/no-watermark feature set. No document states
+  the post-month-one rate explicitly; framing implies reversion to the standard $19/mo but this is
+  not stated outright. trial_exists coded "no" because this is not a FREE trial;
+  trial_card_required/trial_length_days/trial_auto_converts coded not_applicable accordingly.
+
+  credit_system_present/credit_unit_defined/credit_to_output_rate_published coded "yes" on
+  Terms-of-Service evidence alone ("each credit allows for the generation of one video") even
+  though the pricing page itself never uses the word "credit" and displays the allowance only as
+  a video count ("up to 30 videos"). This is a documentary reading of the ToS, not an inference --
+  flagging it because a coder who read only the pricing page could reasonably reach "no" instead.
+
+  cost_per_output_unit coded "other": principal output is a discrete short-form video, and the
+  allowance is stated as a video COUNT per month, not a duration; the closest enumerated value,
+  per_video_minute, would misstate this as duration-based metering, which the product does not use.
+
+  refund_policy_location coded pricing_page: the only refund statement found ("100% money-back
+  guarantee") sits on /deal, a promotional sub-page structured like a pricing page (states a
+  price, has a Buy Now CTA), not on the main #pricing section or a dedicated refund policy page.
+  No closer-fitting value exists in the list. Same guarantee carries no stated day-window, hence
+  refund_window_days=unknown.
+
+  Site structure note: /pricing is not a real route on this site (nor are /refund,
+  /refund-policy, /cancellation, /billing, /help, /faq, /docs, /terms -- all fall back to a
+  generic "Sign in to ShortsFaceless" catch-all, confirmed by title-tag comparison across
+  candidate paths). The only real official document pages found: homepage (with #pricing and
+  #faq anchors), /tos, /privacy-policy, /google-api-disclosure (not used -- irrelevant to
+  pricing/terms), and /deal.
+
+  Third-party aggregator pages found during discovery search (not used as sources) publish
+  inconsistent, apparently stale pricing for this product -- noted only as a caution that
+  third-party listings should not be trusted, consistent with the discovery-aid-only rule.
+
+  blindness: no other product's record was opened (no pass-1 record or -sources directory, no
+  other pass-2 record, no aitoolspolice.com page, no site/content/reviews file). No repository
+  history was read -- only `git add` and `git commit` were run this session, never `git log`,
+  `git show`, `git diff`, or `git blame`.
+conflict_note: "ToS ('Ownership and Rights') states only that the user retains ownership of input content and grants a processing license over it; it never states who owns generated output or whether commercial use is permitted. Only the on-page FAQ states this ('You do [own it]... including for commercial purposes'). output_ownership_statement and commercial_use_lowest_tier are coded from the FAQ since the higher-ranked ToS is silent rather than contradictory. URLs: https://www.shortsfaceless.com/tos ; https://www.shortsfaceless.com/"
+register_events: []
+status: complete

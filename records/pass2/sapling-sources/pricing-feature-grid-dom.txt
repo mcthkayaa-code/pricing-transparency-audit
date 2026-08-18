@@ -1,0 +1,55 @@
+Source: https://sapling.ai/pricing
+Accessed: 2026-08-15
+Method: DOM inspection (javascript_tool querySelector on the "Compare Side by Side" table),
+because the FREE/PRO/ENTERPRISE grid draws check/cross marks as FontAwesome <i> icons
+(<i class="fas fa-check">), which text-extraction alone does not resolve to which column
+is marked. Extracted row-by-row: [FREE, PRO, ENTERPRISE] mark for each feature row.
+
+FEATURE => [FREE, PRO, ENTERPRISE]
+Basic suggestions => ["fas fa-check","fas fa-check","fas fa-check"]
+Use on free domains => ["fas fa-check","fas fa-check","fas fa-check"]
+AES-256 and TLS (HTTPS) encryption => ["fas fa-check","fas fa-check","fas fa-check"]
+Snippets => ["20","Unlimited","Unlimited"]
+Advanced premium suggestions => ["EMPTY","fas fa-check","fas fa-check"]
+Autocomplete Everywhere => ["EMPTY","fas fa-check","fas fa-check"]
+Rephrase => ["EMPTY","fas fa-check","fas fa-check"]
+Unlimited use on premium domains => ["EMPTY","fas fa-check","fas fa-check"]
+Email & ticket support => ["EMPTY","fas fa-check","fas fa-check"]
+AI detector (longer queries) => ["EMPTY","fas fa-check","fas fa-check"]
+Chat assist (Suggest) => ["EMPTY","EMPTY","fas fa-check"]
+Conversational insights => ["EMPTY","EMPTY","fas fa-check"]
+Domain administration => ["EMPTY","EMPTY","fas fa-check"]
+Team analytics => ["EMPTY","EMPTY","fas fa-check"]
+Dedicated support contact => ["EMPTY","EMPTY","fas fa-check"]
+Bulk user provisioning => ["EMPTY","EMPTY","fas fa-check"]
+Advanced security options => ["EMPTY","EMPTY","fas fa-check"]
+Self-hosted => ["EMPTY","EMPTY","fas fa-check"]
+Custom integrations => ["EMPTY","EMPTY","fas fa-check"]
+Single Sign-On / SCIM => ["EMPTY","EMPTY","fas fa-check"]
+API => ["fa-solid fa-xmark"]  (API is a separate usage-based plan, not part of this grid)
+
+Raw outerHTML of the "AI detector" row (the row this product's access is gated by):
+<tr>
+      <th><a href="/ai-content-detector">AI detector</a> (longer queries)</th>
+      <td></td>
+      <td><i class="fas fa-check"></i></td>
+      <td><i class="fas fa-check"></i></td>
+    </tr>
+
+Reading: FREE column is an empty <td></td> (no icon) -- the free tool exists but is not
+listed as a Pro/Enterprise-style "feature" here because it is presented as a separate free
+tool (see ai-content-detector page), not as a checked line item on this comparison grid.
+PRO and ENTERPRISE both carry a check for "longer queries" specifically.
+
+Plan headline prices as loaded (default state, no toggle interaction):
+FREE: $0 / mo
+PRO: $25 / month ; separate action button "Annual ($12 / mon)" ; "Try it free" link
+ENTERPRISE: Contact Us ; "Starts at 10 seats, $15/seat/month" ; CTA "Get started Contact Us"
+API: Metered, usage-based, one-time $5 minimum ; CTA "Subscribe" / "Pricing" / "Docs"
+
+No billing-period toggle input element found in the DOM (checked input[type=checkbox],
+input[type=radio], [class*="toggle"], [class*="switch"] -- none control monthly/annual).
+The "Annual ($12/mon)" is a separate button/link, not a pre-flipped state of a toggle.
+No currency/country selector found. No non-USD currency symbols found in page HTML.
+"renew" and "auto-renew" do not appear anywhere in the /pricing page HTML (checked via
+regex over document.documentElement.outerHTML).

@@ -1,0 +1,167 @@
+product_id: murf-ai
+product_name: Murf AI
+category: AI voice
+product_status: active
+paid_submission: "no"
+entry_tier_name: Creator
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://murf.ai/pricing
+archive_url: https://web.archive.org/web/20260809192800/https://murf.ai/pricing
+archive_status: archived
+default_display_state: >
+  USD, no currency selector present. Billing toggle defaults to ANNUAL ("Billed Yearly"):
+  DOM class check on load showed "Billed Monthly" carrying class "opacity-50" (dimmed/inactive)
+  while "Billed Yearly" carried "text-violet6 font-weight-600" (brand-accent color, bold, no
+  dimming) = active/preselected, read before any interaction. Product-line sub-tab defaulted to
+  "Studio" (of Studio | Dub | API tabs) -- Studio is Murf's core TTS/voiceover product, matching
+  this review's category. No cookie-consent banner blocked content on this load; no region
+  selector observed.
+
+sources:
+  - { url: "https://murf.ai/pricing", kind: pricing, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809192800/https://murf.ai/pricing", note: "rendered read required (D-005): static WebFetch showed no price figures at all (JS-rendered app shell); browser render via Claude_Browser tab showed all figures. FAQ accordion on same page expanded via click (permitted, protocol 6.3) for free-plan/trial/refund/renewal/licensing answers." }
+  - { url: "https://murf.ai/legal/terms-of-service", kind: tos, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194005/https://murf.ai/legal/terms-of-service", note: "Main User Agreement, dated Dec 19, 2024 per page body. Also reachable via redirecting alias https://murf.ai/resources/terms_of_service/. Read in full (all 13 sections) for contractual variables and for the unquantified_limit_clause full-document-read requirement." }
+  - { url: "https://help.murf.ai/cancelling-a-murf-subscription", kind: refund, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194025/https://help.murf.ai/cancelling-a-murf-subscription", note: "This is the 301 redirect target of https://murf.ai/faq/what-is-your-refund-policy/ -- both URLs serve identical content. Documents self-serve cancellation; links to ToS section 2.5 for refund terms rather than restating them (text-fragment href to '2.5 Refunds')." }
+  - { url: "https://help.murf.ai/subscription-autorenewal", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194051/https://help.murf.ai/subscription-autorenewal" }
+  - { url: "https://help.murf.ai/why-did-my-plan-automatically-renew", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194111/https://help.murf.ai/why-did-my-plan-automatically-renew", note: "explicitly cites 'section 2.3.3 of our Terms of Service' for the auto-renewal mechanism." }
+  - { url: "https://help.murf.ai/how-long-does-the-free-trial-last", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194141/https://help.murf.ai/how-long-does-the-free-trial-last" }
+  - { url: "https://help.murf.ai/is-murf-free-to-use", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194201/https://help.murf.ai/is-murf-free-to-use", note: "200 OK but renders as the 'Free Trial Features' article (slug/title mismatch in vendor's help CMS)." }
+  - { url: "https://help.murf.ai/what-is-murf-voice-cloning", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194220/https://help.murf.ai/what-is-murf-voice-cloning", note: "confirms voice cloning is Enterprise-only / not self-served; consent terms governed by ToS 4.2 instead (see below)." }
+  - { url: "https://help.murf.ai/what-does-failed-to-synthesize-mean", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194241/https://help.murf.ai/what-does-failed-to-synthesize-mean" }
+  - { url: "https://help.murf.ai/what-is-voice-generation-time-vgt", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194301/https://help.murf.ai/what-is-voice-generation-time-vgt" }
+  - { url: "https://help.murf.ai/vgt-validity", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194451/https://help.murf.ai/vgt-validity", note: "documents VGT (voice-generation-time) rollover mechanics in detail; supplementary context only -- does not feed a scored variable since credit_system_present=no routes credit_rollover_policy to not_applicable." }
+  - { url: "https://murf.ai/legal/product-specific-terms", kind: tos, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809194321/https://murf.ai/legal/product-specific-terms", note: "Murf API / Murf Dub / Service Credits specific terms, dated Dec 3, 2024. Entry tier under study is Studio (Creator plan), so this is supplementary/contrast context only (cited in coder_note re: output ownership), not the primary source for any Studio-tier coded value." }
+
+variables:
+  headline_price_usd: { value: 19.00, source: "https://murf.ai/pricing", evidence: "Creator card: \"$19 / month\" shown as the largest, most prominent figure in the default (annual-preselected) display state." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://murf.ai/pricing", evidence: "\"$19 / month\" with \"$228 Billed Annually\" printed directly beneath it in the same card; annual toggle preselected on load." }
+  first_charge_amount_usd: { value: 228.00, source: "https://murf.ai/pricing", evidence: "\"$228 Billed Annually\" stated directly on the Creator card (default annual state) -- read directly, not computed. ToS 2.3.3 confirms annual Subscriptions are charged once \"at the start of each Subscription period\", i.e. one annual lump sum, not 12 monthly installments." }
+  mandatory_addon_present: { value: "no", source: "https://murf.ai/pricing", evidence: "Full comparison table read for the Creator column: no separate required charge, minimum credit purchase, platform fee, or onboarding fee attaches to any feature Creator advertises. \"Custom Voice Clones (Add-on)\" and other Add-on-labelled rows apply to Enterprise only, not to Creator's feature set." }
+  annual_condition_disclosure: { value: adjacent, source: "https://murf.ai/pricing", evidence: "\"$228 Billed Annually\" is printed inside the same Creator plan card, directly beneath \"$19 / month\"." }
+  annual_default_toggle: { value: annual_preselected, source: "https://murf.ai/pricing", evidence: "DOM class check before any interaction: \"Billed Yearly\" carried active styling (text-violet6, font-weight-600); \"Billed Monthly\" carried \"opacity-50\" (dimmed)." }
+  free_plan_exists: { value: "yes", source: "https://murf.ai/pricing", evidence: "\"Free ... Get started. No Credit Card required ... $0 / month\"." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://murf.ai/pricing", evidence: "\"10 Projects\", \"10 minutes of Voice Generation\", \"1 Editor\" -- each carries a number and its counted dimension; the two project/editor limits are standing limits (no period needed) and the 10-minute allowance is confirmed a non-renewing standing total, not a rate (see free_plan_duration)." }
+  free_plan_cap_value: { value: "10 Projects | 10 minutes of Voice Generation | 1 Editor", source: "https://murf.ai/pricing", evidence: "Free plan card bullet list, default display state." }
+  free_plan_watermark: { value: unknown, source: "none official located", evidence: "The word \"watermark\" does not appear on the pricing page, in the Terms of Service, or in the help-center \"Free Trial Features\" article; official sources describe the free tier as having \"No Downloads\" rather than watermarked downloads. Third-party review sites claim free-tier downloads are watermarked, but protocol 6.2/codebook section 1.6 bar coding a value from third-party sources, and those claims are also in tension with the official \"No Downloads\" statement -- not used to justify a value." }
+  free_plan_duration: { value: perpetual, source: "https://murf.ai/pricing", evidence: "FAQ accordion: \"There is no time limit to the free plan. You can use it until you exhaust your voice generation time limit of 10 mins.\"" }
+  trial_exists: { value: "no", source: "https://help.murf.ai/how-long-does-the-free-trial-last", evidence: "\"There is no validity or end date to the free trial. The trial will expire once the entire 10 minutes of voice generation and transcription time have been exhausted.\" This is usage-capped, not time-limited (the defining trait codebook Domain 4 requires), and is numerically and functionally identical to the pricing page's \"Free\" plan (also 10 minutes, also \"no time limit\", automatically assigned at signup). Coded per codebook rule \"a free plan is not a trial\"; see coder_note." }
+  trial_card_required: { value: not_applicable, source: "https://help.murf.ai/how-long-does-the-free-trial-last", evidence: "no trial exists under the codebook's definition (see trial_exists)." }
+  trial_length_days: { value: not_applicable, source: "https://help.murf.ai/how-long-does-the-free-trial-last", evidence: "no trial exists under the codebook's definition (see trial_exists)." }
+  trial_auto_converts: { value: not_applicable, source: "https://help.murf.ai/how-long-does-the-free-trial-last", evidence: "no trial exists under the codebook's definition (see trial_exists)." }
+  credit_system_present: { value: "no", source: "https://help.murf.ai/what-is-voice-generation-time-vgt", evidence: "Plan allowances are stated directly in the output unit (\"24 hrs/Year of Voice Generation\"). Voice Generation Time (VGT) is a direct 1:1 measure of generated-audio duration with no conversion table (\"the voice generation time consumed to convert text to speech will equal the length of a particular text block\"); help center calls it colloquially \"Studio credits\" but publishes no credits-to-output exchange rate. Codebook rule 1 (\"a plan allowance stated directly in output units... is not a credit system\") governs over the colloquial label." }
+  credit_unit_defined: { value: not_applicable, source: "https://help.murf.ai/what-is-voice-generation-time-vgt", evidence: "no credit system (see credit_system_present)." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://help.murf.ai/what-is-voice-generation-time-vgt", evidence: "no credit system (see credit_system_present)." }
+  credit_rate_location: { value: not_applicable, source: "https://help.murf.ai/what-is-voice-generation-time-vgt", evidence: "no credit system (see credit_system_present)." }
+  cost_per_output_unit: { value: per_audio_minute, source: "https://murf.ai/pricing", evidence: "product is sold as text-to-speech / voiceover generation, metered and advertised in minutes/hours of voice generation." }
+  cost_per_output_computable: { value: "yes", source: "https://murf.ai/pricing", evidence: "Creator: $19/mo ($228/yr) and 24 hrs/Year of Voice Generation are both published on the same default-state page; no assumption about typical use is needed. See computation_assumptions." }
+  computation_assumptions: { value: "Creator tier, default annual display state: $19/mo = $228/yr (murf.ai/pricing). Allowance: 24 hrs/yr VGT = 1,440 min/yr (pricing-page FAQ: yearly plans carry no separate monthly cap). Both already same-period (annual): 228/1440 = $0.1583/min. Cross-check on monthly basis: 19 / (1440/12=120 min) = $0.1583/min. Reported as ~$0.16 per audio minute.", source: "https://murf.ai/pricing", evidence: "not_applicable" }
+  credit_rollover_policy: { value: not_applicable, source: "https://help.murf.ai/what-is-voice-generation-time-vgt", evidence: "no credit system (see credit_system_present). Note: VGT itself (the direct output-unit allowance, not a credit) does have a documented rollover/validity policy -- help.murf.ai/vgt-validity -- carried in coder_note as supplementary context since this variable's gate routes it to not_applicable." }
+  failed_generation_charge_policy: { value: unknown, source: "https://help.murf.ai/what-does-failed-to-synthesize-mean", evidence: "Article (read in full) lists causes of a failed synthesis (VGT exhausted, payment failed and plan not renewed, invalid IPA, unrecognized character) but never states whether a failed attempt consumes Voice Generation Time." }
+  auto_renewal_default: { value: "on", source: "https://murf.ai/legal/terms-of-service", evidence: "ToS 2.3.3: \"your payment method automatically will be charged at the start of each Subscription period for the fees and taxes applicable to that period.\" Confirmed by help.murf.ai/why-did-my-plan-automatically-renew: \"Your subscription automatically renews monthly or annually unless canceled before the renewal date.\"" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://murf.ai/legal/terms-of-service", evidence: "Stated in both the Terms of Service (2.3.3) and two Help Center articles (subscription-autorenewal; why-did-my-plan-automatically-renew), in agreement -- the help articles explicitly cite ToS 2.3.3." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://help.murf.ai/subscription-autorenewal", evidence: "Both dedicated renewal articles (subscription-autorenewal; why-did-my-plan-automatically-renew), read in full, place the burden on the user to check \"the Billing & Payments tab in Workspace Settings for the date\" and state no proactive pre-charge reminder commitment. ToS 2.4's 30-day notice applies to price/plan changes, not routine renewal charges." }
+  refund_policy_exists: { value: "yes", source: "https://murf.ai/legal/terms-of-service", evidence: "ToS 2.5.3: \"If you have bought a Subscription or a one-time pack within the last 24 hours and your account usage is less than 10 minutes of voice generation time, you can write to us with a refund request at support@murf.ai.\"" }
+  refund_window_days: { value: 1, source: "https://murf.ai/legal/terms-of-service", evidence: "ToS 2.5.3: refund request window is \"within the last 24 hours\" of purchase = 1 day (7 days/week, 30 days/month conversion basis)." }
+  refund_conditions: { value: conditional, source: "https://murf.ai/legal/terms-of-service", evidence: "ToS 2.5.3: eligibility requires BOTH purchase within 24 hours AND account usage under 10 minutes of voice generation; ToS 2.5.1: \"fees paid are non-refundable unless otherwise provided in this section.\"" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://help.murf.ai/cancelling-a-murf-subscription", evidence: "\"Murf provides users the option to cancel their subscription upon demand directly from the Workspace Settings interface\" -- Workspace Settings > Subscription > Cancel Plan > Continue to cancel." }
+  refund_policy_location: { value: terms, source: "https://murf.ai/legal/terms-of-service", evidence: "The operative refund terms are stated in ToS section 2.5 (Refunds); the Help Center cancellation article links to that section (\"Here are our refund terms and conditions\") rather than restating the terms itself." }
+  commercial_use_lowest_tier: { value: free, source: "https://murf.ai/legal/terms-of-service", evidence: "ToS 5.1: \"You can use Murf created voices for commercial purposes\" -- stated as a general grant to \"You\" under the User Agreement, with no tier qualification. Per codebook rule (\"where the terms grant commercial use generally and the grid restricts it to a tier, code from the terms and record the disagreement\"); see conflict_note for the pricing-page tier gate this conflicts with." }
+  watermark_removal_tier: { value: unknown, source: "none official located", evidence: "No official document states that any tier's outputs do or do not carry a watermark (see free_plan_watermark)." }
+  output_ownership_statement: { value: unknown, source: "https://murf.ai/legal/terms-of-service", evidence: "ToS 3.1 defines \"Content\" narrowly as \"the content and information that you submit to the Services\" and states the user owns and licenses THAT to Murf -- this addresses user-submitted input (scripts, cloning training audio), not the AI-generated voiceover output. No clause in the ToS or in Product-Specific Terms addresses who owns the generated audio output for the Studio product specifically (contrast: Product-Specific Terms 9.1.2(a) grants Murf API customers a license -- not ownership -- to \"Generated Content\", but that clause is scoped to the API product line, a different product from Studio/Creator)." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://murf.ai/pricing", evidence: "Creator tier: \"100 Projects\", \"24 hrs/Year of Voice Generation\", \"1 Editor\" (all number+dimension[+period for the rate]); \"Unlimited Downloads\" counts as quantified per rule 3 since no fair-use/discretionary clause qualifies it anywhere in the Terms of Service (see unquantified_limit_clause)." }
+  unquantified_limit_clause: { value: absent, source: "https://murf.ai/legal/terms-of-service", evidence: "Terms of Service read in full, including section 3.4 (\"Limits\": account restriction/suspension is tied to breach of the Agreement or \"misusing the Services\", a conduct standard, not a usage-volume standard) and section 11 (Do's and Don'ts, e.g. 11.2.19 bars placing \"an unreasonable load\" via spam/DoS/gaming-algorithm abuse -- a conduct/abuse prohibition, not a routine fair-use throttle on ordinary volume). No fair-use, reasonable-use, or discretionary-throttling clause tied to normal usage volume was found in the Terms of Service or the Product-Specific Terms." }
+
+coder_note: |
+  Entry-tier selection (sampling-rules.md 7.2): eligible paid candidates were Creator ($19/mo,
+  $228/yr annual-equivalent) and Business ($66/mo, $792/yr annual-equivalent); Business LOST on
+  annual-equivalent cost. Enterprise was NOT an eligible candidate (rule 2: "Contact Sales", no
+  self-serve purchase). Free ($0/mo) is not a paid-tier candidate at all; it is coded entirely
+  under the free_plan_* variables instead. One pricing-page FAQ item ("I am a registered
+  Business. Can I use Murf's creator Plan?") answers "it is ideal to opt for the Business Plan"
+  -- an advisory recommendation, not a stated restriction/prohibition -- so Creator remains
+  "generally available to any buyer" under eligibility rule 1 and stands as the entry tier.
+
+  trial_exists=no is a deliberate, well-evidenced call, not a default: Murf's help center labels
+  a "Free Trial" throughout its nav, and the pricing page says "Try Business Plan for free", but
+  the vendor's OWN dedicated FAQ ("How long does the free trial last?") states in full: "There
+  is no validity or end date to the free trial. The trial will expire once the entire 10 minutes
+  of voice generation and transcription time have been exhausted." -- word-for-word parallel to
+  the pricing page's "How long can I use the free plan for?" answer ("There is no time limit to
+  the free plan... 10 mins"). Both describe the SAME 10-minute, non-time-boxed allowance,
+  automatically assigned to all first-time signups (help.murf.ai/is-murf-free-to-use: "All
+  first-time users/signups are automatically assigned a Free Trial"). Since the codebook's trial
+  construct requires TIME-limitation and Murf explicitly disclaims one, this is coded as the free
+  plan under Domain 3, not a Domain 4 trial, despite the vendor's marketing label.
+
+  credit_system_present=no despite help.murf.ai/what-is-voice-generation-time-vgt calling VGT
+  "Studio credits" colloquially: VGT is a direct, undiscounted 1:1 measure of output (1 minute of
+  VGT = 1 minute of generated audio, explained with a worked example), with no published
+  conversion/exchange rate -- codebook rule 1 (plan allowance stated directly in output units)
+  governs over the vendor's colloquial word choice.
+
+  commercial_use_lowest_tier=free (from ToS 5.1's untiered general grant) conflicts with the
+  pricing page's explicit "No Commercial Rights" callout and crossed-out Commercial Rights cell
+  for the Free plan; both applied per codebook's explicit terms-vs-grid rule; see conflict_note.
+
+  output_ownership_statement=unknown: ToS 3.1 ("Content" = user-submitted material only) never
+  addresses the generated voiceover output itself for Studio. Product-Specific Terms 9.1.2(a)
+  shows Murf's API product line uses a vendor-retains/customer-licenses model for "Generated
+  Content", but that clause is scoped to Murf API, a distinct product line from Studio/Creator
+  (the entry tier under study), so it was not used to code Studio's value -- noted as contrast
+  only, per the assignment's instruction to record which document governs which variable.
+
+  Taxes are confirmed excluded from first_charge_amount_usd: pricing-page FAQ "Do you charge
+  sales or consumption taxes?" states applicable sales/VAT/GST tax is shown separately "after the
+  billing step and before checkout is complete."
+
+  Scope note: Murf sells three product lines from one pricing page (Studio | Dub | API tabs).
+  This record codes Studio (the default tab, and the voiceover-generation product matching this
+  review's "AI voice" category); Murf Dub and Murf API have their own plans/terms
+  (Product-Specific Terms sections 9.1-9.2) not coded here. The Enterprise-only "Master Service
+  Agreement" (a negotiated contract vehicle, itself listed as an Enterprise plan feature) was not
+  separately fetched since it does not govern the Creator entry tier.
+
+  Voice cloning (per assignment note on split documents): consent/authorization terms live in
+  ToS section 4.2 (Consenting Speaker definition, mandatory written consent, prohibition on
+  submitting unauthorized third-party voice recordings) -- this is the "voice/cloning policy"
+  document. help.murf.ai/what-is-murf-voice-cloning (docs) confirms voice cloning is Enterprise
+  add-on only / "We do not currently provide self-served Voice Cloning solutions" -- it is not
+  part of the Creator entry tier's advertised feature set at all, so it does not affect any
+  entry-tier variable above. The pricing-page "Personal vs Business License" FAQ item serves as
+  the licensing FAQ for commercial_use_lowest_tier context.
+
+  ToS 10.7 contains generic SaaS boilerplate ("Murf may offer optional trials and betas...") --
+  a hypothetical-future-offering disclaimer, not a statement that a specific time-limited
+  paid-tier trial is currently offered; does not change trial_exists.
+
+  D-003 currency check performed mechanically: curl with default and with `Accept-Language:
+  en-US,en;q=0.9` both returned only the unrendered JS-shell (6-8 KB, no price text either way,
+  consistent behavior regardless of locale header) since murf.ai/pricing is a client-rendered
+  SPA; the fresh web.archive.org/save capture is likewise an unrendered shell. The rendered
+  browser read itself (method of record, D-005) showed clean USD figures ($0, $19, $66, $228,
+  $792) with no currency selector and no non-USD symbols anywhere in ~10,861 chars of rendered
+  text, so no non_usd coding was at issue and no display_variant register event was warranted
+  (no divergent state was actually observed).
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 re-read 2026-08-10: re-opened https://murf.ai/pricing live and confirmed entry_tier_name
+  (Creator), headline_price_usd ($19), headline_billing_basis (per_month_billed_annually) and
+  first_charge_amount_usd ($228) in a SECOND representation independent of the original
+  innerText transcript: direct DOM/class lookup on the toggle labels and on the isolated <p>
+  price nodes. Confirmed "Billed Yearly" still carries the active class
+  (text-violet6/font-weight-600) and "Billed Monthly" the inactive class (opacity-50) before any
+  interaction. Confirmed the Creator card's own two price tags read "$19 / month" and "$228
+  Billed Annually" directly (first_charge is a direct read, not a computation). Confirmed 0
+  <sup>/<sub> elements exist anywhere on the page. Page body length (10,861 chars) matched the
+  original coder's D-003 note exactly, indicating no page change since original collection.
+  Evidence saved to murf-ai-sources/d009-second-representation-2026-08-10.txt. No correction;
+  all four scoped values confirmed as coded.
+
+conflict_note: "commercial_use_lowest_tier: ToS 5.1 grants commercial use generally ('You can use Murf created voices for commercial purposes', no tier qualifier) [https://murf.ai/legal/terms-of-service], while the pricing page marks the Free plan 'No Commercial Rights' and shows a cross for Free in the Commercial Rights comparison row (checks start at Creator) [https://murf.ai/pricing]. Coded from ToS (higher authority for this contractual variable) per codebook rule; pricing-page restriction not applied to the value. Separately, refund_policy_exists: the pricing-page FAQ states starkly 'Payments already made against monthly or annual subscriptions would not be eligible for a refund' with no mention of any conditional window [https://murf.ai/pricing], while ToS 2.5.3 documents a specific conditional refund path (purchase <24h ago AND usage <10 min) [https://murf.ai/legal/terms-of-service]. Coded from ToS (higher authority, contractual); a buyer reading only the pricing page would not learn of the conditional refund path."
+
+register_events: []
+
+status: complete

@@ -1,0 +1,122 @@
+product_id: recraft
+product_name: Recraft AI
+category: AI image generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Basic
+coder_pass: 1
+coder_role: primary
+collection_date: "2026-08-10"
+recheck_date: not_applicable
+primary_source_url: https://www.recraft.ai/pricing
+archive_url: https://web.archive.org/web/20260810111536/https://www.recraft.ai/pricing
+archive_status: archived
+default_display_state: "USD ($) prices rendered directly, no currency selector encountered; billing toggle default = annual (DOM aria-checked=true/data-state=checked on the 'Pay annually' side); non-essential cookies declined (Reject All) before reading; session from Turkey network, no localized-currency redirect observed."
+
+sources:
+  - { url: "https://www.recraft.ai/pricing", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810111536/https://www.recraft.ai/pricing", note: "static WebFetch showed no plan prices (D-005); rendered read used, see recraft-sources/pricing-rendered-2026-08-10.txt" }
+  - { url: "https://recraft.ai/terms", kind: tos, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810112947/https://www.recraft.ai/legal/terms", note: "canonical redirects to www.recraft.ai/legal/terms; last updated / effective March 23, 2026 per page" }
+  - { url: "https://www.recraft.ai/docs/plans-and-billing/billing", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810113008/https://www.recraft.ai/docs/plans-and-billing/billing", note: "billing/cancellation/refund help article" }
+  - { url: "https://www.recraft.ai/docs/plans-and-billing/credits", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810113033/https://www.recraft.ai/docs/plans-and-billing/credits", note: "current operation-to-credit-cost table; see recraft-sources/credits-docs-rendered-2026-08-10.txt" }
+  - { url: "https://www.recraft.ai/docs/recraft-models/external-models", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810113120/https://www.recraft.ai/docs/recraft-models/external-models", note: "external-model credit ranges" }
+  - { url: "https://www.recraft.ai/docs/api-reference/pricing", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810113141/https://www.recraft.ai/docs/api-reference/pricing", note: "separate API Unit metering system, USD; shows vector consistently priced above raster per model" }
+  - { url: "https://www.recraft.ai/docs/plans-and-billing/free-plan", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810113202/https://www.recraft.ai/docs/plans-and-billing/free-plan", note: "checked for free-tier watermark/limit statements; no watermark statement found" }
+  - { url: "https://www.recraft.ai/blog/pricing-update", kind: other, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810113405/https://www.recraft.ai/blog/pricing-update", note: "dated 2024-09-09, describes a superseded Free/Basic/Advanced/Pro lineup (no Teams tier) with a different raster=1/vector=2 credit split than the current docs table; NOT used to code any value, kept for conflict_note only, see recraft-sources/recraft-blog-pricing-update-2024-STALE.txt" }
+  - { url: "https://www.recraft.ai/docs/trust-and-security/legal-and-policy-documents", kind: other, accessed: "2026-08-10", archive: archive_failed, note: "confirms recraft.ai/terms is the sole dedicated legal/policy document; no separate refund policy page exists. Not itself cited for a coded value." }
+
+variables:
+  headline_price_usd: { value: "10.00", source: "https://www.recraft.ai/pricing", evidence: "Basic: $10 / per month / billed annually $120 (annual toggle preselected)" }
+  headline_billing_basis: { value: "per_month_billed_annually", source: "https://www.recraft.ai/pricing", evidence: "$10 per month, billed annually $120" }
+  first_charge_amount_usd: { value: "120.00", source: "https://www.recraft.ai/pricing", evidence: "billed annually $120 (stated directly, not computed; consistent with 10 x 12)" }
+  mandatory_addon_present: { value: "no", source: "https://www.recraft.ai/pricing", evidence: "Basic's advertised feature set carries no required further charge; 'Credit top-ups' listed as an optional purchase, not a requirement to use the plan as advertised" }
+  annual_condition_disclosure: { value: "adjacent", source: "https://www.recraft.ai/pricing", evidence: "'billed annually $120' printed directly beneath the '$10 per month' headline figure, inside the same plan card" }
+  annual_default_toggle: { value: "annual_preselected", source: "https://www.recraft.ai/pricing", evidence: "toggle button aria-checked=true / data-state=checked on load, corresponding to the emphasized 'Pay annually (save 20%)' label" }
+  free_plan_exists: { value: "yes", source: "https://www.recraft.ai/pricing", evidence: "Free / $0 / 'Limited free credits' listed as a standing plan alongside the paid tiers" }
+  free_plan_cap_documented: { value: "all_quantified", source: "https://www.recraft.ai/pricing", evidence: "3 generations per style per day; 3 image uploads daily; Up to 2 images per generation" }
+  free_plan_cap_value: { value: "3 generations per style per day | 3 image uploads per day | 2 images per generation", source: "https://www.recraft.ai/pricing", evidence: "verbatim bullet list under the Free plan card" }
+  free_plan_watermark: { value: "unknown", source: "https://www.recraft.ai/pricing", evidence: "no watermark/branding statement found on the pricing page, credits docs, free-plan docs, or terms for free-tier outputs specifically" }
+  free_plan_duration: { value: "perpetual", source: "https://recraft.ai/terms", evidence: "'Free Tier' is an ongoing membership status alongside the paid subscription; no expiry stated in any document read" }
+  trial_exists: { value: "no", source: "https://www.recraft.ai/pricing", evidence: "no trial mentioned in the pricing page FAQ, terms, billing docs, or credits docs; only a perpetual free plan and paid subscriptions exist" }
+  trial_card_required: { value: "not_applicable", source: "https://www.recraft.ai/pricing", evidence: "no trial exists" }
+  trial_length_days: { value: "not_applicable", source: "https://www.recraft.ai/pricing", evidence: "no trial exists" }
+  trial_auto_converts: { value: "not_applicable", source: "https://www.recraft.ai/pricing", evidence: "no trial exists" }
+  credit_system_present: { value: "yes", source: "https://www.recraft.ai/docs/plans-and-billing/credits", evidence: "'Recraft uses credits to power all image generation and editing operations'; plans state e.g. '1,000 credits per month'" }
+  credit_unit_defined: { value: "yes", source: "https://www.recraft.ai/docs/plans-and-billing/credits", evidence: "operation-to-credit table ties credits to named outputs, e.g. 'Vectorization | 1', 'Remove background | 1', 'Creative upscale | 20', 'Generate a mockup | 2'" }
+  credit_to_output_rate_published: { value: "partial", source: "https://www.recraft.ai/docs/plans-and-billing/credits", evidence: "principal output 'Generate image from prompt' published only as '1* equals the model price' with the multiplier itself not tabulated; secondary outputs (mockup=2, vectorization=1) are flat published numbers; external models published only as ranges e.g. '2-30 credits'" }
+  credit_rate_location: { value: "docs_help_center", source: "https://www.recraft.ai/docs/plans-and-billing/credits", evidence: "full rate table lives under recraft.ai/docs/...; pricing page FAQ only says 'see the External Models pricing' without giving figures itself" }
+  cost_per_output_unit: { value: "per_image", source: "https://www.recraft.ai/pricing", evidence: "product sold to produce images (raster and vector); category = AI image generator" }
+  cost_per_output_computable: { value: "partial", source: "https://www.recraft.ai/docs/plans-and-billing/credits", evidence: "mockup generation (2 credits flat, a secondary output) is computable for the Basic tier; the principal image-generation output is not, because its 'model price' multiplier is unpublished for Studio credits" }
+  computation_assumptions: { value: "Basic tier, $10/mo billed annually (default display state), 1,000 credits/mo. Secondary output mockup=2 credits flat; 1000/2=500 mockups/mo, 10/500=0.02/mockup. Principal image-gen rate = 1x unpublished model-price multiplier, not computable.", source: "https://www.recraft.ai/docs/plans-and-billing/credits", evidence: "see cost_per_output_computable" }
+  credit_rollover_policy: { value: "expires_at_period_end", source: "https://www.recraft.ai/pricing", evidence: "'Subscription credits are included in your plan and reset at the start of each billing cycle - unused credits don't roll over'" }
+  failed_generation_charge_policy: { value: "unknown", source: "https://www.recraft.ai/docs/plans-and-billing/credits", evidence: "credits doc read in full (full operation table plus 'Credit types and expiration' section) and pricing FAQ read in full; neither states whether a failed/errored generation consumes a credit" }
+  auto_renewal_default: { value: "on", source: "https://recraft.ai/terms", evidence: "'a monthly subscription ... that will automatically renew on a monthly basis, or ... a yearly subscription ... that will automatically renew on a yearly basis'" }
+  auto_renewal_disclosure_location: { value: "multiple", source: "https://recraft.ai/terms", evidence: "stated in terms ('will automatically renew...') and in billing docs ('your plan will renew on a monthly basis' after a cycle switch), in agreement" }
+  renewal_notice_commitment: { value: "no_notice_stated", source: "https://recraft.ai/terms", evidence: "terms and billing docs read in full; the only advance-notice commitment found is for price changes ('thirty (30) days after our notice'), not for routine renewal charges" }
+  refund_policy_exists: { value: "no_refunds_stated", source: "https://recraft.ai/terms", evidence: "'If you cancel your subscription ... you will not receive a refund or credit for any amounts that have already been billed or paid'" }
+  refund_window_days: { value: "0", source: "https://recraft.ai/terms", evidence: "matches the governing no-refund position; see conflict_note for the documented 30-day conditional exception in billing docs / pricing FAQ" }
+  refund_conditions: { value: "not_applicable", source: "https://recraft.ai/terms", evidence: "governing source states no refund is available on cancellation; see conflict_note" }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://www.recraft.ai/pricing", evidence: "'Click your profile in the upper right and select \"Manage subscription\" - Click \"Cancel plan\" and confirm'" }
+  refund_policy_location: { value: "terms", source: "https://recraft.ai/terms", evidence: "governing refund position stated in the 'Fees and Payments' section of the terms; also discussed, differently, in billing docs and the pricing FAQ - see conflict_note" }
+  commercial_use_lowest_tier: { value: "lowest_paid", source: "https://www.recraft.ai/pricing", evidence: "Basic tier feature list: 'Commercial rights and private generations'; Free tier: 'No commercial use'" }
+  watermark_removal_tier: { value: "unknown", source: "https://www.recraft.ai/pricing", evidence: "no watermark statement found for any tier in the pricing page, credits/free-plan docs, or terms" }
+  output_ownership_statement: { value: "conditional", source: "https://recraft.ai/terms", evidence: "paid: 'You own all Assets you create with the Services...'; free: 'Free Tier Assets are owned by Recraft and may not be sold, licensed or transferred'" }
+  usage_cap_quantified: { value: "some_quantified", source: "https://www.recraft.ai/pricing", evidence: "'1,000 credits per month', 'Up to 4 images per generation', 'Up to 5 parallel generations' are quantified; 'Unlimited image uploads' and 'Unlimited styles usage' are qualified by the terms' unquantified discretionary-limits clause (see unquantified_limit_clause) and so do not count as quantified per codebook 5.1/usage_cap_quantified rule 3" }
+  unquantified_limit_clause: { value: "present", source: "https://recraft.ai/terms", evidence: "'We may also impose limits on certain features and services or restrict your access to parts or all of the Services without notice or liability'; also 'take any action that imposes or may impose an unreasonable or disproportionately large load on Recraft's ... infrastructure' (Restrictions clause i)" }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): eligible candidates were Basic, Pro, and Teams
+  (single-seat). Annual-equivalent costs from the default (annual-preselected) display state:
+  Basic = 10 x 12 = 120.00 (WINNER, lowest); Pro = 16 x 12 = 192.00 (losing candidate); Teams
+  = 18 x 12 = 211.00 per seat, minimum 3 paid seats per terms' "Group Workspace Subscription"
+  clause (losing candidate, also not single-seat-purchasable below 3 seats, recorded regardless
+  per the price-only comparison rule). Free ($0) is not a paid-tier candidate.
+
+  Price read twice in two representations per binding rule: (1) rendered document.body.innerText,
+  (2) raw DOM query for text nodes matching /\$\d/, which returned single un-split "$10"/"$16"/
+  "$18"/"$0" spans (class text-headline-1) - no superscript-cents split found. Magnitudes sane
+  against tier names and per-month billing basis. See recraft-sources/pricing-rendered-2026-08-10.txt.
+
+  D-005: initial static WebFetch of the pricing page returned no plan prices; rendered read
+  (browser render) used instead per binding rule, non-essential cookies declined first.
+
+  D-003/D-007: session network location is Turkey. The vendor's own page (arm 1) rendered
+  readable USD ($) figures directly with no currency selector, no country picker, and no
+  redirect to a localized-price variant - stopped at arm 1, no non_usd concern arises, nothing
+  coded non_usd or unknown-for-currency on this record. Pricing page footnote "prices displayed
+  are exclusive of Value Added Tax (VAT)" is a tax-exclusion note, not a non-USD currency signal;
+  first_charge_amount_usd excludes tax per codebook rule 5, consistent with the vendor's own
+  VAT-exclusive framing.
+
+  free_plan_cap_documented judgment call: the Free card also lists "No commercial use" and "No
+  parallel generation" among its bullets. Neither was counted toward the quantified/unquantified
+  cap tally: "No commercial use" is a rights restriction (coded under commercial_use_lowest_tier,
+  domain 11), not a usage-volume cap; "No parallel generation" carries no printed number and does
+  not fit the codebook 5.1 outputs/minutes/exports/seats/storage/resolution/queue-priority list
+  of limit dimensions, so it was treated as a feature-availability statement rather than a cap
+  to be scored quantified/unquantified. A different reading that treats it as an implicit "0
+  concurrent generations" standing limit would not change free_plan_cap_documented (already
+  all_quantified via the other three caps) but is flagged here for reproducibility.
+
+  credit_to_output_rate_published / cost_per_output_computable: the current docs table
+  (recraft.ai/docs/plans-and-billing/credits) gives "Generate image from prompt: 1* equals the
+  model price" with no public table resolving "the model price" for Studio's native V2-V4.1
+  models (only external third-party models get a published range, e.g. "OpenAI 2-30 credits",
+  and even those say "exact number ... displayed in the product"). This differs from the
+  2024-09-09 blog post (recraft.ai/blog/pricing-update, STALE - superseded plan lineup, see
+  sources note), which stated a flat "raster image = 1 credit, vector image = 2 credits" split.
+  Coded from the current, higher-ranked docs page per protocol 6.2 (documentation outranks a
+  blog post; the blog is also dated and describes a discontinued plan structure). The API
+  pricing page (docs/api-reference/pricing) is a SEPARATE metering system (API Units, USD,
+  prepaid) from Studio "credits" and was not mixed into the Studio-credit computation; it is
+  cited only as corroborating evidence that Recraft does price vector output above raster
+  output where a resolved number is published at all (consistently ~2x-2.3x per model tier).
+
+  usage_cap_quantified for Basic: "Unlimited image uploads" / "Unlimited styles usage" treated
+  as NOT quantified because the terms' discretionary limits clause ("we may impose limits ...
+  without notice") qualifies an unlimited claim per codebook 5.1's unlimited carve-out
+  (usage_cap_quantified rule 3), matching the codebook's own Vendor U worked example.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Refund position: terms of service (https://recraft.ai/terms, 'Fees and Payments') states 'If you cancel your subscription ... you will not receive a refund or credit for any amounts that have already been billed or paid' (no stated exception). Billing docs (https://www.recraft.ai/docs/plans-and-billing/billing) and the pricing-page FAQ (https://www.recraft.ai/pricing) both state 'If you have used fewer than 30 credits over the lifetime of your account and your most recent payment was made within the past 30 days, you may request a refund.' Coded refund_policy_exists / refund_window_days / refund_conditions / refund_policy_location from the terms per protocol 6.2 (terms rank first for contractual variables); the documented conditional exception is real and reproducible but sits in a lower-ranked document class. Separately: credit-rate figures conflict between the current docs table (recraft.ai/docs/plans-and-billing/credits, 'Generate image from prompt: 1x model price', no raster/vector split at that table) and the dated 2024-09-09 blog post (recraft.ai/blog/pricing-update, 'raster=1 credit, vector=2 credits') describing a since-superseded plan lineup; coded from the current docs page as the higher-ranked, current source, per codebook credit_to_output_rate_published / cost_per_output_computable notes above."
+register_events: []
+status: complete

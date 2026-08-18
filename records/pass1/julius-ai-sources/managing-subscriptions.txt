@@ -1,0 +1,82 @@
+SOURCE: https://julius.ai/docs/account/managing-subscriptions
+ACCESS DATE: 2026-08-09
+METHOD: Rendered read via browser automation (Mintlify docs page). archive.org/save/
+  succeeded on first attempt:
+  https://web.archive.org/web/20260809172142/https://julius.ai/docs/account/managing-subscriptions
+  archive_status = archived.
+KIND: docs
+
+=== PAGE BODY TEXT (full) ===
+Managing Your Account / Managing Your Plan
+Manage your Julius subscription: change plan, update payment methods, cancel, and manage
+team workspaces.
+Julius offers a Free plan as well as several paid plans. You can compare plans and see
+current prices at julius.ai/pricing.
+
+Upgrading Your Subscription
+Navigate to the Subscription page. Click Upgrade under the plan you wish to upgrade to.
+Complete your purchase on the Stripe checkout screen.
+Upgrades take effect immediately, and your billing cycle resets to the upgrade date. If
+you have credits remaining from your previous plan, they stack with your new plan's
+credits. Existing credits keep their original expiration date — the end of the billing
+period in which they were granted.
+
+Downgrading Your Subscription
+Navigate to the Subscription page. Click Downgrade under the plan you wish to switch to.
+Confirm the change.
+Downgrades take effect at the end of your current billing period. You'll keep access to
+your current plan's features and credits until then, and your new plan begins on your
+next billing date. Any unused portion of your current plan is automatically applied as a
+credit toward your next invoice — no separate refund is issued.
+
+Switching Between Monthly and Annual Billing
+You can switch your billing cadence from the Subscription page.
+Monthly to Annual: Takes effect immediately. Your billing cycle resets to the switch
+date.
+Annual to Monthly: Takes effect at the end of your current annual billing period.
+Need to switch from annual to monthly immediately? Reach out to team@julius.ai and we'll
+process it for you.
+[This is the operative statement that an annual plan is its own discrete billing period
+/ cycle, i.e. charged once for that period, used for first_charge_amount_usd's x12
+computation together with credits-overview's more explicit "Annual plans are billed once
+per year at a discounted rate, with all credits granted upfront."]
+
+Canceling Your Subscription
+Navigate to the Subscription page. Click Invoices and Payment Methods to open your
+billing portal. Click Cancel plan.
+If eligible, you can select End subscription immediately and receive a refund.
+After canceling, your plan stays active until the end of your current billing period.
+For information on refunds, see our Refund Policy.
+Subscribed through the App Store or Google Play? You must cancel through Apple or Google
+directly — canceling on the website won't stop those charges. See our full cancel guide
+for step-by-step instructions.
+[Operative for cancellation_self_serve = self_serve_documented: cancellation is
+described as an in-account self-service flow via the Subscription page / billing
+portal.]
+
+Canceling a Team Workspace
+If you have a Business or Enterprise plan with a team workspace and want to remove it:
+Navigate to the Subscription page. Navigate to the Teams tab. Scroll down to the Delete
+Team section.
+
+Managing Payment Methods and Billing Information
+Navigate to the Subscription page. Click Invoices & Payment Methods. Click Add payment
+method to change your current payment method. Click Update information to update your
+billing information (e.g. name, address, company, VAT info).
+
+Subscription Renewals
+"Your subscription will auto-renew monthly or annually, depending on the type of
+subscription you've purchased."
+[Operative quote for auto_renewal_default = on. This is the ONLY place across pricing
+page + ToS + refund policy + credits-overview + FAQs where automatic renewal is stated
+explicitly — hence auto_renewal_disclosure_location = help_center_only.]
+"Canceling the subscription yourself will keep the subscription active until the end of
+your billing period."
+"Subscribed through the App Store or Play Store? All plan changes — upgrades,
+downgrades, and cancellations — must be made through Apple or Google directly."
+Reach out to team@julius.ai for support or to ask questions not answered in our
+documentation.
+
+No advance-notice-before-renewal-charge commitment appears anywhere on this page (checked
+in full) — supports renewal_notice_commitment = unknown (silent, neither promised nor
+disclaimed).

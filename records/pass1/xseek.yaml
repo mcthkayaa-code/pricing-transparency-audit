@@ -1,0 +1,163 @@
+product_id: xseek
+product_name: xSeek
+category: AI bot checker
+product_status: active
+paid_submission: "no"
+entry_tier_name: Starter
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://www.xseek.io/pricing
+archive_url: "https://web.archive.org/web/20260813142059/https://www.xseek.io/en/pricing"
+archive_status: archived
+default_display_state: >
+  Read 2026-08-13 from a Turkey-egress network. Currency toggle present (USD/CAD only, no TRY
+  or other option); USD is selected by default (aria-pressed="true" on the USD button in both
+  the static server-rendered HTML and a live DOM query; every price card prints "USD" beside
+  its figure) -- this is a genuine vendor-served USD default, not a localization artifact.
+  No monthly/annual billing-period toggle is rendered anywhere in the DOM or accessibility
+  tree; the page shows fixed text "Billed monthly - cancel anytime" only. State was consistent
+  across repeated loads in this session. No cookie-consent banner was encountered. See
+  conflict_note for embedded-JSON evidence (untranslated i18n keys "yearly"/"save20") that the
+  app supports an annual toggle not exposed on this read, alongside the ToS's mention of
+  annual billing.
+
+sources:
+  - { url: "https://www.xseek.io", kind: other, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813142034/https://www.xseek.io/en", note: "vendor home page" }
+  - { url: "https://www.xseek.io/pricing", kind: pricing, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813142059/https://www.xseek.io/en/pricing", note: "live pricing page; archive verified to contain the $249.99/$499.99 figures, not a pre-hydration shell" }
+  - { url: "https://www.xseek.io/terms", kind: tos, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813142123/https://www.xseek.io/terms", note: "terms of service" }
+  - { url: "https://www.xseek.io/privacy", kind: other, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813142147/https://www.xseek.io/privacy", note: "privacy policy" }
+  - { url: "https://www.xseek.io/docs", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813142209/https://www.xseek.io/docs", note: "documentation" }
+  - { url: "https://www.xseek.io/en/how-it-works", kind: other, accessed: "2026-08-13", archive: local_copy_only, note: "product-mechanics page; local capture only, not attempted on archive.org (discovery/corroboration source, not itself a coded-value source)" }
+
+variables:
+  headline_price_usd: { value: 249.99, source: "https://www.xseek.io/pricing", evidence: "Starter card: \"$249.99\" \"/mo\" \"USD\" -- confirmed in accessibility tree, live DOM innerText regex, and static (unrendered) HTML fetch; USD confirmed default via aria-pressed=\"true\"" }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://www.xseek.io/pricing", evidence: "\"$249.99 /mo\" with page-wide banner \"BILLED MONTHLY - CANCEL ANYTIME\"; no annual toggle rendered on this read" }
+  first_charge_amount_usd: { value: 249.99, source: "https://www.xseek.io/pricing", evidence: "Default display state is monthly (not annual), so the first charge is the displayed monthly figure itself; no multiplication performed" }
+  mandatory_addon_present: { value: "no", source: "https://www.xseek.io/pricing", evidence: "Pricing page, docs (getting-started/key-features/how-it-works/guides/integrations) and ToS reviewed in full; no separate required charge, minimum credit purchase, platform fee, or onboarding fee found for Starter. Onboarding is explicitly bundled: \"Strategic onboarding included - cancel anytime\" / \"Every plan includes a strategic onboarding session.\"" }
+  annual_condition_disclosure: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "Headline figure is billed monthly, not annually, on this read -- no annual-prepayment condition for it to disclose. See conflict_note: the ToS and an embedded (unrendered) i18n string set both reference an annual option not shown on this page load." }
+  annual_default_toggle: { value: no_toggle, source: "https://www.xseek.io/pricing", evidence: "Only interactive toggle in the accessibility tree is the Currency group (buttons \"USD\"/\"CAD\"); no monthly/yearly control exists in the rendered DOM. Static banner reads \"Billed monthly - cancel anytime\"." }
+  free_plan_exists: { value: "no", source: "https://www.xseek.io/pricing", evidence: "Pricing page lists exactly three paid tiers (Starter $249.99/mo, Growth $499.99/mo, Scale Custom) and no free/zero-cost column. See coder_note: separate no-account \"Free Tools\" utilities exist but are explicitly framed by the vendor as distinct from the priced product, not a tier of it." }
+  free_plan_cap_documented: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No free plan (see free_plan_exists)" }
+  free_plan_cap_value: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No free plan" }
+  free_plan_watermark: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No free plan" }
+  free_plan_duration: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No free plan" }
+  trial_exists: { value: "no", source: "https://www.xseek.io/pricing", evidence: "Pricing-page FAQ, verbatim, answering \"Can I try your app for free?\": \"We prefer an advice-first approach: book a 30-minute call with a strategist. We look at your AI profile live and tell you honestly whether xSeek is for you. No generic demo.\" Trial terms are a pricing-class variable (protocol 6.2), so the pricing page outranks the ToS here. See conflict_note: the ToS's Terms of Service page states elsewhere \"We offer a 7-day free trial... No credit card is required\", which conflicts and is logged rather than coded." }
+  trial_card_required: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No trial (per trial_exists, coded from the higher-ranked pricing page)" }
+  trial_length_days: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No trial" }
+  trial_auto_converts: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No trial" }
+  credit_system_present: { value: "no", source: "https://www.xseek.io/pricing", evidence: "Allowances are stated directly in output/capacity units -- \"50 prompts tracked\", \"10 opportunities\", \"1 website\" -- with no intermediate credit/token/point currency anywhere on the pricing page, docs, or ToS." }
+  credit_unit_defined: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No credit system" }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No credit system" }
+  credit_rate_location: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No credit system" }
+  cost_per_output_unit: { value: other, source: "https://www.xseek.io/pricing", evidence: "Flat monthly platform-access fee tiered by tracked-prompt allowance (50/150/500 prompts tracked on Starter/Growth/Scale); not per-seat (\"users\" is unlimited on every tier) and not sold as a per-artifact rate. Named here rather than forced into a listed unit; see coder_note." }
+  cost_per_output_computable: { value: "no", source: "https://www.xseek.io/pricing", evidence: "No per-unit rate is published anywhere (no $-per-tracked-prompt, $-per-article, or overage rate found on the pricing page or in /docs), so no cost-per-output figure can be derived from published numbers alone." }
+  computation_assumptions: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No computation performed: first_charge_amount_usd was read directly (default state is monthly, equal to the headline figure, no multiplication), and cost_per_output_computable is no." }
+  credit_rollover_policy: { value: not_applicable, source: "https://www.xseek.io/pricing", evidence: "No credit system" }
+  failed_generation_charge_policy: { value: not_applicable, source: "https://www.xseek.io/terms", evidence: "ToS and docs read in full; no credit/token-metered generation construct exists to fail against -- the product is a flat-fee ongoing subscription (tracking + dashboard + content-drafting features), not a per-generation billing model." }
+  auto_renewal_default: { value: unknown, source: "https://www.xseek.io/terms", evidence: "ToS \"Subscription and Billing\": \"Paid plans are billed monthly or annually as selected\" / \"You can cancel your subscription at any time\" / \"Access continues until the end of your billing period.\" Recurring billing is documented but no clause states the subscription renews automatically -- the word \"renew\" does not appear anywhere in the ToS (confirmed by full-text search of the raw document)." }
+  auto_renewal_disclosure_location: { value: absent, source: "https://www.xseek.io/terms", evidence: "All four document classes read (pricing page, ToS, docs, privacy policy) and none states an automatic-renewal mechanic explicitly." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://www.xseek.io/terms", evidence: "ToS states \"We may change pricing with 30 days notice\", which is a commitment about price CHANGES, not about notice before a renewal charge specifically; no renewal-charge notice commitment found anywhere." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://www.xseek.io/terms", evidence: "\"All fees are non-refundable unless otherwise stated\"" }
+  refund_window_days: { value: 0, source: "https://www.xseek.io/terms", evidence: "\"All fees are non-refundable unless otherwise stated\" -- no refund window exists" }
+  refund_conditions: { value: not_applicable, source: "https://www.xseek.io/terms", evidence: "No refund is available for conditions to attach to (no_refunds_stated)" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.xseek.io/terms", evidence: "Termination clause: \"You may terminate your account at any time by contacting us or through your account settings.\"" }
+  refund_policy_location: { value: terms, source: "https://www.xseek.io/terms", evidence: "Refund position (\"non-refundable unless otherwise stated\") appears only in the Terms of Service; not restated on the pricing page, in /docs, or in the privacy policy." }
+  commercial_use_lowest_tier: { value: unknown, source: "https://www.xseek.io/terms", evidence: "ToS \"Intellectual Property\" section: \"The Service...is owned by xSeek...You retain ownership of any data you provide to the Service. We do not claim ownership of your content.\" This addresses ownership of data/content the CUSTOMER supplies as input, not commercial-use rights over the AI-generated visibility reports, action plans, or articles xSeek produces. No document (ToS, pricing page, docs) grants or restricts commercial use of those generated outputs. See coder_note on why not_applicable was rejected here." }
+  watermark_removal_tier: { value: unknown, source: "https://www.xseek.io/terms", evidence: "No document mentions a watermark, branding mark, or attribution requirement on any generated report, dashboard export, or drafted article, at any tier. See coder_note: this product generates publishable article content (Content Studio / xSeek Desktop), not only a score/dashboard, so the codebook's detection-score not_applicable reasoning was checked and rejected rather than assumed." }
+  output_ownership_statement: { value: unknown, source: "https://www.xseek.io/terms", evidence: "ToS's only ownership statement (\"You retain ownership of any data you provide...We do not claim ownership of your content\") covers customer-supplied input data. No document states who owns the AI-generated visibility reports, action plans, or drafted articles the service produces." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.xseek.io/pricing", evidence: "Starter (entry tier) lists: \"50 prompts tracked\", \"10\" \"OPPORTUNITIES\", \"1\" \"WEBSITES\", \"unlimited USERS\" (infinity symbol) -- every stated limit carries a number and its dimension; the unlimited-users claim is unqualified by any fair-use clause (see unquantified_limit_clause)." }
+  unquantified_limit_clause: { value: absent, source: "https://www.xseek.io/terms", evidence: "Terms of Service read in full end to end. \"Acceptable Use\" lists only conduct prohibitions (unlawful use, unauthorized access, scraping, reselling) -- not a volume/intensity throttle. \"Termination\" allows suspension \"for violation of these terms or for any other reason at our discretion\", which is an at-will termination right, not a discretionary usage-volume clause (fair use, reasonable use, excessive use, abuse threshold). No such clause found in the ToS, the pricing page, or /docs." }
+
+coder_note: |
+  ENTRY TIER SELECTION (sampling-rules 7.2). Eligible candidates: Starter ($249.99/mo, annual-
+  equivalent $2,999.88) and Growth ($499.99/mo, annual-equivalent $5,999.88) -- both generally
+  available, purchasable without contacting sales, standing (non-promotional) plans, not seat-
+  scaled (unlimited users on every tier). Starter wins on lowest annual-equivalent cost; Growth
+  is the losing candidate, recorded here with its figure. Scale is NOT an eligible candidate:
+  its price is "Custom" and its only call to action is "Book a 30-min call", failing eligibility
+  criterion 2 (purchasable without contacting sales). An unrendered embedded string elsewhere on
+  the site ("agencyNote":"For agencies managing multiple clients, ask about our Agency Partner
+  pricing -- starting at $250/month") was found in the page's JSON payload but never displayed
+  on this read and is sales-gated ("ask about"); it was not treated as a pricing-page figure and
+  did not enter the entry-tier comparison.
+
+  FREE-TOOLS-VS-FREE-PLAN JUDGMENT CALL. xSeek publishes a set of separate, no-account utilities
+  ("Agent-Ready Scan", "AI Robots.txt Checker", "AI LLMs.txt Generator", a page-weight checker)
+  explicitly labelled "Free tools - no account" and explicitly contrasted against the priced
+  product on the tools index page itself: "These tools scratch the surface. xSeek gives you
+  Share of Voice, content gaps, competitor tracking, and a clear action plan -- continuously"
+  [paid]. They are one-shot diagnostics ("paste a URL, get a file... run them, copy the output,
+  close the tab"), not an ongoing-allowance tier of the priced tracking/content product, so they
+  were not coded as a free plan of THIS product (free_plan_exists = no, coded from the pricing
+  page, which lists three paid tiers only). "xSeek Desktop" is also not a free plan: its own docs
+  page states a prerequisite of "An xSeek account with an active plan -- Starter, Growth, or
+  Scale. Desktop is free with any tier", i.e. it requires an existing paid subscription. A one-
+  time "Run a free analysis of your AI visibility" lead-magnet CTA on the AI-visibility-tracking
+  landing page was treated the same way (a one-off freebie, not an ongoing plan or a trial of a
+  paid tier). Recorded as a judgment call per the agent brief's instruction to write uncertainty
+  into coder_note rather than resolve it silently.
+
+  E1/E2/E3 (commercial_use_lowest_tier, watermark_removal_tier, output_ownership_statement) --
+  NOT_APPLICABLE WAS CHECKED AND REJECTED, NOT ASSUMED. The task brief flagged that a sibling
+  detector-type product coded all three not_applicable because its output is a score rather than
+  a media artifact, and asked whether the same reasoning holds here from xSeek's own documents.
+  It does not, cleanly. xSeek's pricing tiers are framed around tracking capacity (prompts
+  tracked / websites / opportunities), which reads like the "detection score / analysis table"
+  case -- but the vendor's own how-it-works page and its xSeek Desktop page document a real,
+  separate content-generation feature ("Content Studio", "AI content generation -- articles from
+  real visibility data + your brand voice... You review, you publish", a demo draft shown as
+  "1,240 words... Publish"). That is a genuine publishable text artifact the codebook's
+  not_applicable test ("no output [a right] could attach to") does not cleanly cover, since an
+  output plainly exists. No official document (ToS, pricing page, docs, privacy policy) states
+  who owns that generated content, whether commercial use of it is granted, or whether it (or
+  any dashboard/report export) carries a watermark or attribution mark at any tier -- so all
+  three are coded unknown (a real disclosure gap, evidenced by silence on a construct that does
+  apply) rather than not_applicable (which requires positive evidence the construct does not
+  exist, per codebook 2.2, and no such evidence was found).
+
+  No frame-row correction needed: vendor_home_url resolved cleanly, and "AI bot checker" as a
+  category fits -- the vendor's own free-tools suite includes an "AI Robots.txt Checker" for AI
+  crawler access, alongside the priced AI-visibility/citation-tracking product.
+
+  Second representation checks performed per the two-representation rule: headline and first-
+  charge figures were confirmed in (1) the accessibility tree, (2) a live DOM innerText regex
+  query showing aria-pressed="true" on the USD toggle, and (3) the static (unrendered, curl-
+  fetched) HTML body text, which already contained "$249.99" and "$499.99" in plain text -- this
+  page is server-rendered, so no D-005 rendered-read escalation was strictly required, though a
+  full browser render was performed anyway and matched exactly.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: >
+  Three related disagreements between the live pricing page (highest authority for pricing-class
+  variables: trial terms, free-tier limits, plan composition, per protocol 6.2) and the Terms of
+  Service (https://www.xseek.io/terms, "Last updated: January 31, 2026"), all coded from the
+  pricing page per the hierarchy, with the ToS's conflicting language recorded here rather than
+  silently discarded:
+  (1) TRIAL. Pricing-page FAQ (https://www.xseek.io/pricing): "We prefer an advice-first
+  approach: book a 30-minute call with a strategist... No generic demo" -- no self-serve trial.
+  ToS: "We offer a 7-day free trial with full access to all features. No credit card is required
+  to start your trial. At the end of the trial, you may choose to subscribe to a paid plan or
+  your account will be limited to free tier features." Coded trial_exists = no from the pricing
+  page (higher authority for trial terms); the ToS's 7-day-trial language is not reflected in any
+  sub-variable.
+  (2) FREE TIER. Same ToS trial clause also references "free tier features" as a fallback state,
+  which the pricing page's three-paid-tiers-only display does not show anywhere. Coded
+  free_plan_exists = no from the pricing page; the ToS mention is logged, not coded.
+  (3) ANNUAL BILLING. ToS: "Paid plans are billed monthly or annually as selected." The live
+  pricing page shows no annual option and no billing-period toggle at all -- "Billed monthly -
+  cancel anytime" only, confirmed across repeated loads. Corroborating (not decisive) evidence:
+  the page's own embedded JSON payload contains an untranslated i18n string set --
+  "monthly":"Monthly","yearly":"Yearly","save20":"Save 20%","year":"year","month":"month" --
+  indicating the pricing component supports a yearly/save-20% toggle that was not rendered on
+  this read. Coded annual_default_toggle = no_toggle and annual_condition_disclosure =
+  not_applicable from the observed (rendered) state per protocol 6.8, which fixes the coded value
+  to what a real visitor was shown, not to unrendered code.
+  All three read as one underlying pattern: a ToS that describes a self-serve, trial-then-
+  freemium-or-paid signup flow with a monthly/annual choice, against a current live pricing page
+  built around a sales-assisted, monthly-only, three-tier model with no self-serve trial -- i.e.
+  documents that look like they belong to two different go-to-market motions from the same
+  vendor. Both URLs are archived (see sources) so this is independently checkable.
+register_events: []
+status: complete

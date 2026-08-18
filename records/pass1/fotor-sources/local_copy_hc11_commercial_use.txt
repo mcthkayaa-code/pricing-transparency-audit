@@ -1,0 +1,14 @@
+URL: https://support.fotor.com/hc/en-us/articles/900006654446-Commercial-Use
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save blocked (Cloudflare/Zendesk); local evidentiary copy per protocol section 6.4.
+---
+Title: Commercial Use – Fotor Help Center
+Fotor Help Center > Account Settings > Terms of Service
+Nora, 3 years ago Updated
+
+If you are currently a free user and you can use the free material, but only for personal use, not for commercial use. If you need to use it commercially, please subscribe to Pro or Pro+.
+
+Pro subscribers can commercialize free material and material marked as Pro, while Pro+ subscribers can commercialize all materials (free + paid).
+
+For AI image generator, the AI generated images can be used for both personal and commercial purposes. You can share them on social media platforms, use them for marketing campaigns, or sell them. You are the copyright owner of your creations and you will be responsible for any output that you generates using AIGC Related Service.
+
+According to our Terms of Service, currently the Company does not make any copyright claim over the output that User generates and does not have the ability to license or release the use of that output to User. Please note that this situation may change as the development of copyright laws in various jurisdictions.

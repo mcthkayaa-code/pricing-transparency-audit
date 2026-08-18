@@ -1,0 +1,432 @@
+# Pricing Transparency Audit -- coded record
+# codebook-v1.md / protocol-v1.md / sampling-rules.md (all v1.2)
+product_id: beautiful-ai
+product_name: Beautiful.ai
+vendor_home_url: https://www.beautiful.ai
+category: AI presentation
+product_status: active
+paid_submission: "yes"
+coder_role: primary
+coder_pass: 1
+collection_date: "2026-08-07"
+recheck_date: not_applicable
+entry_tier_name: Pro
+primary_source_url: https://www.beautiful.ai/pricing
+archive_url: https://web.archive.org/web/20260806235127/https://www.beautiful.ai/pricing
+archive_status: archived
+
+source_urls: https://www.beautiful.ai/pricing | https://www.beautiful.ai/terms-of-service | https://support.beautiful.ai/hc/en-us/articles/360030719012-What-is-your-refund-policy | https://support.beautiful.ai/hc/en-us/articles/360030985471-How-do-I-cancel-my-subscription-Trial-or-Pro | https://support.beautiful.ai/hc/en-us/articles/360028561851-Delete-Account | https://support.beautiful.ai/hc/en-us/articles/360031086751-What-happens-if-I-hit-my-slide-limit-in-Basic | https://support.beautiful.ai/hc/en-us/articles/360030940931-What-happens-when-I-downgrade-my-account | https://support.beautiful.ai/hc/en-us/articles/38727200731405-Guest-Workspaces | https://support.beautiful.ai/hc/en-us/articles/360029498072-Player-Settings-Pro-Tier | https://support.beautiful.ai/hc/en-us/articles/26598025191565-Customizing-Beautiful-ai-Player-Links | https://support.beautiful.ai/hc/en-us/articles/43596247933581-How-do-I-cancel-my-subscription-Team
+
+sources:
+  - id: s1
+    url: https://www.beautiful.ai/pricing
+    document_class: pricing_page
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260806235127/https://www.beautiful.ai/pricing
+    archive_status: archived
+  - id: s2
+    url: https://www.beautiful.ai/terms-of-service
+    document_class: terms_of_service
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260806235421/https://www.beautiful.ai/terms-of-service
+    archive_status: archived
+    note: "Last revised on August 22, 2025 per the document's own header. Full text read start to end (~53,700 chars)."
+  - id: s3
+    url: https://support.beautiful.ai/hc/en-us/articles/360030719012-What-is-your-refund-policy
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: records/pass1/beautiful-ai-sources/local-refund-policy.html
+    archive_status: local_copy_only
+    note: "web.archive.org/save returned HTTP 520 (5 attempts across 2 rounds, exceeds the 2-retry rule); curl direct fetch returned HTTP 403 (Cloudflare 'Just a moment...' JS challenge). Local copy captured via authenticated browser session that passed the challenge. Article last updated 2026-04-29 per its own byline."
+  - id: s4
+    url: https://support.beautiful.ai/hc/en-us/articles/360030985471-How-do-I-cancel-my-subscription-Trial-or-Pro
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: records/pass1/beautiful-ai-sources/local-cancel-trial-or-pro.html
+    archive_status: local_copy_only
+    note: "Same Cloudflare block as s3; local copy taken."
+  - id: s5
+    url: https://support.beautiful.ai/hc/en-us/articles/360028561851-Delete-Account
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: records/pass1/beautiful-ai-sources/local-delete-account.html
+    archive_status: local_copy_only
+    note: "Same Cloudflare block as s3; local copy taken."
+  - id: s6
+    url: https://support.beautiful.ai/hc/en-us/articles/360031086751-What-happens-if-I-hit-my-slide-limit-in-Basic
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: records/pass1/beautiful-ai-sources/local-basic-slide-limit.html
+    archive_status: local_copy_only
+    note: "Same Cloudflare block as s3; local copy taken."
+  - id: s7
+    url: https://support.beautiful.ai/hc/en-us/articles/360030940931-What-happens-when-I-downgrade-my-account
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: records/pass1/beautiful-ai-sources/local-basic-downgrade.html
+    archive_status: local_copy_only
+    note: "Same Cloudflare block as s3; local copy taken."
+  - id: s8
+    url: https://support.beautiful.ai/hc/en-us/articles/38727200731405-Guest-Workspaces
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: records/pass1/beautiful-ai-sources/local-guest-workspaces.html
+    archive_status: local_copy_only
+    note: "Same Cloudflare block as s3; local copy taken. Corroborating source only (does not by itself carry a coded value); its comments section contains non-staff spam and was excluded, only the staff-authored article body was used."
+  - id: s9
+    url: https://support.beautiful.ai/hc/en-us/articles/360029498072-Player-Settings-Pro-Tier
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: records/pass1/beautiful-ai-sources/local-player-settings-pro-tier.html
+    archive_status: local_copy_only
+    note: "Same Cloudflare block as s3; local copy taken."
+  - id: s10
+    url: https://support.beautiful.ai/hc/en-us/articles/26598025191565-Customizing-Beautiful-ai-Player-Links
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: records/pass1/beautiful-ai-sources/local-player-links-customizing.html
+    archive_status: local_copy_only
+    note: "Same Cloudflare block as s3; local copy taken."
+  - id: s11
+    url: https://support.beautiful.ai/hc/en-us/articles/43596247933581-How-do-I-cancel-my-subscription-Team
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: records/pass1/beautiful-ai-sources/local-cancel-team.html
+    archive_status: local_copy_only
+    note: "Same Cloudflare block as s3; local copy taken. Corroborating source only -- entry tier is Pro, not Team."
+
+default_display_state:
+  billing_toggle: "Pro plan card shows a fixed '$12 /MO' with 'Billed annually' printed beneath it and NO monthly/annual toggle control. The Teams card shows an explicit two-button toggle ('Billed monthly' / 'Billed annually') with 'Billed annually' preselected/highlighted. Both observed identically across 3 independent fresh loads of https://www.beautiful.ai/pricing in this pass (before any interaction, each time)."
+  cookie_consent: "Non-essential cookies were declined: opened the Preferences dialog; Marketing/Personalization/Analytics checkboxes were left unchecked (their pre-existing default state); clicked 'Save preferences' and, on a later load, 'Reject all cookies'. The banner UI did not visibly dismiss after these clicks (tool/rendering issue, logged), but no non-essential category was ever enabled, and the substantive reads used for coding (get_page_text, the price-card screenshot) were captured on the initial page load, before any interaction with the banner."
+  currency: "USD throughout; no non_usd values in this record."
+
+variables:
+  headline_price_usd:
+    value: "12.00"
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "Pro card: '$12' large figure with '/MO' beside it and 'Billed annually' beneath, in the page's default (only observed) display state."
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "Qualifier printed with the figure is '/MO' only (no '/user' or '/seat' suffix on the Pro card itself, unlike the Teams card which prints '/MO/USER'); 'Billed annually' printed beneath. Per decision rule 1 (read the qualifier as printed)."
+  first_charge_amount_usd:
+    value: "144.00"
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "Computed: pricing page shows Pro at '$12/mo, Billed annually' (default state, no monthly figure alternative shown for Pro); ToS section 2.1 states the Subscription Term is the period selected (e.g. monthly or annually) and 'automatically renews for successive periods equal to the initial Subscription Term' -- i.e. choosing annual buys a 1-year term billed as that term. 12 x 12 = 144.00. See computation_assumptions."
+  mandatory_addon_present:
+    value: "no"
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "Full Pro feature list (pricing page) and ToS section 4 (Fees & Payment Terms) read; no required charge beyond the plan price is stated for any Pro feature. The only priced add-on-shaped item found (the '$45 ad hoc / single presentation' offer) is an alternative plan/billing option, not a required addition to the $12/mo plan."
+
+  annual_condition_disclosure:
+    value: adjacent
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "'Billed annually' is printed directly beneath the '$12 /MO' figure inside the same Pro price card -- same visual block as the headline figure."
+  annual_default_toggle:
+    value: annual_preselected
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "Teams card's explicit toggle loads with 'Billed annually' highlighted/selected; Pro card shows only the annual state (no toggle). Consistent across 3 fresh loads. See register_events for a DOM-level pricing-experiment finding on the Pro figure that does not change this coding."
+
+  free_plan_exists:
+    value: "yes"
+    source: s4; s6; s7
+    access_date: "2026-08-07"
+    evidence: "The live pricing page (rank-1 source for this variable class) does not list a free/'Basic' tier among its Pro/Team/Enterprise cards and never uses the words 'Basic' or 'free plan' (confirmed by full-text search of the rendered page). The Help Center (rank-2 source), however, documents an ongoing zero-cost 'Basic' plan in detail: the Pro-cancellation article states cancelling 'downgrad[es] your account to our Basic plan' (s4); a dedicated article states 'The Basic plan has a limit of 100 slides' (s6); another states what changes 'once you downgrade to Basic' (s7). This is a determinate value from an official document, not a conflict (the pricing page is silent, not contradictory), so it is coded from the Help Center per codebook-v1.md section 2.1 step 2. Noted, not a not_applicable/no case."
+  free_plan_cap_documented:
+    value: all_quantified
+    source: s6
+    access_date: "2026-08-07"
+    evidence: "'The Basic plan has a limit of 100 slides' -- a quantified standing limit (number + dimension, no period needed). This is the only limit the documents attribute to Basic; the other consequences of being on Basic (s7: loss of Analytics/Revision History/Desktop Player, folders removed, Secured Sharing reverts to Public, custom fonts revert to default) are feature-availability statements, not capped quantities, so they are not limits under section 5.1's test."
+  free_plan_cap_value:
+    value: "100 slides"
+    source: s6
+    access_date: "2026-08-07"
+    evidence: "'The Basic plan has a limit of 100 slides.'"
+  free_plan_watermark:
+    value: "yes"
+    source: s7
+    access_date: "2026-08-07"
+    evidence: "'During playback, sharing, and exporting your presentation, it will now show Beautiful.ai branding on the page and ending slide' -- stated as a consequence of downgrading to Basic (the word 'now' marks the before/after contrast against the paid state)."
+  free_plan_duration:
+    value: perpetual
+    source: s4; s6; s7
+    access_date: "2026-08-07"
+    evidence: "Basic is documented as the standing account state a Pro subscription downgrades to, usable on an ongoing basis (slide-count is trackable and resettable by deleting slides, per s6); no document states an expiry or time limit on Basic itself."
+
+  trial_exists:
+    value: "yes"
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "'Does Beautiful.ai offer a free trial? You can try out Pro or Team plan features with a 14-day free trial...' (pricing-page FAQ)."
+  trial_card_required:
+    value: "yes"
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "'A free trial requires a credit card to get started, which will be charged in full if you don't cancel your trial before the trial period ends.' Also: 'A credit card is required for the 14-day Pro trial.'"
+  trial_length_days:
+    value: 14
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "Pricing-page FAQ states '14-day free trial' / '14 days'. ToS section 2.3 independently states the trial license is granted 'for a period of fourteen (14) days'. Both agree."
+  trial_auto_converts:
+    value: "yes"
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "'After your trial expires, your credit card on file will be charged automatically unless you cancel your Pro subscription before the 14 days are up. Your billing cycle will begin at the end of your trial.'"
+
+  credit_system_present:
+    value: "no"
+    source: s1; s2; s6
+    access_date: "2026-08-07"
+    evidence: "Pro's AI generation is advertised as 'Unlimited AI content generation' (a feature flag, not a metered allowance). Full-text search of the pricing page for 'credit'/'token' finds only 'credit card' (payment method). The one quantified plan allowance found anywhere in the documents, Basic's '100 slides' (s6), is stated directly in the output unit (slides), which codebook-v1.md section 5 domain 5 rule 1 defines as NOT a credit system. ToS contains no credits/tokens/points concept."
+  credit_unit_defined:
+    value: not_applicable
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "No credit system (credit_system_present = no; see that variable's evidence)."
+  credit_to_output_rate_published:
+    value: not_applicable
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "No credit system (credit_system_present = no; see that variable's evidence)."
+  credit_rate_location:
+    value: not_applicable
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "No credit system (credit_system_present = no; see that variable's evidence)."
+
+  cost_per_output_unit:
+    value: per_seat_month
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "Pro sells unmetered access to the software (unlimited AI generation, unlimited use of Smart Slides etc.) at a flat price per individual seat per month -- codebook-v1.md domain 6 rule 2 ('unmetered access to software rather than a countable artifact')."
+  cost_per_output_computable:
+    value: "yes"
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "See computation_assumptions."
+  computation_assumptions:
+    value: "Entry tier Pro, $12.00/mo billed annually per default display state (annual, the only state Pro's card shows). Unit = per_seat_month (unmetered software; domain 6 rule 2), so the included allowance IS the seat-month itself -- no separate credit/output allowance to convert. Cost per seat-month = the published price directly = 12.00; both price and unit are already on a monthly basis so no period conversion is needed under rule 3."
+    source: s1
+
+  credit_rollover_policy:
+    value: not_applicable
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "No credit system (credit_system_present = no; see that variable's evidence)."
+
+  failed_generation_charge_policy:
+    value: not_applicable
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "Pro has no metered generation step to fail against -- AI generation is flat/unlimited, not consumed from an allowance (credit_system_present = no; no per-generation accounting found in pricing page, ToS, or Help Center)."
+
+  auto_renewal_default:
+    value: "on"
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "ToS section 2.1: 'The Subscription Term shall automatically renew for successive periods equal to the initial Subscription Term, unless Customer provides us with written notice of non-renewal or termination prior to the expiration of Customer's then-current Subscription Term.'"
+  auto_renewal_disclosure_location:
+    value: terms_only
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "The explicit 'automatically renew' statement is found only in the ToS (section 2.1). The pricing-page refund FAQ presupposes recurring 'renewal' events but never itself states that renewal is automatic/opt-out; the Help Center cancellation articles describe how to stop a renewal but likewise never state in so many words that renewal is automatic by default."
+  renewal_notice_commitment:
+    value: unknown
+    source: s1; s2; s3; s4; s5; s6; s7; s9; s10; s11
+    access_date: "2026-08-07"
+    evidence: "No document read (pricing page, ToS, or the nine Help Center articles) commits to notifying the customer in advance of a renewal charge. ToS section 14.3 addresses general notice mechanics (email or in-product posting) but not a pre-renewal-charge commitment specifically."
+
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "ToS section 4.2: 'All fees are non-refundable and non-cancellable.' ToS ranks first for contractual variables (protocol-v1.md section 6.2). See conflict_note: the Help Center and the pricing page both describe a conditional partial-refund policy that disagrees with this."
+  refund_window_days:
+    value: 0
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "Governed by refund_policy_exists = no_refunds_stated (ToS section 4.2), which codebook-v1.md domain 10 pairs with a 0 window. See conflict_note for the lower-ranked sources' stated 24-hour window for annual plans."
+  refund_conditions:
+    value: not_applicable
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "'No refund available' per the governing ToS position (section 4.2: fees non-refundable). See conflict_note."
+  cancellation_self_serve:
+    value: contact_required
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "ToS section 6.2(a): 'Customer may terminate this Agreement and its Account, at any time, by submitting its request to Beautiful.ai by contacting us at: support@beautiful.ai.' ToS ranks first for contractual variables. See conflict_note: the Help Center and pricing page both describe a fully self-serve billing-settings cancellation flow instead."
+  refund_policy_location:
+    value: terms
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "The governing refund position is carried in the ToS (section 4.2). The topic is also addressed, differently, on the pricing page and in a dedicated Help Center article -- see conflict_note; 'multiple' is not used because that value is reserved for agreement across classes, and these classes disagree in substance."
+
+  commercial_use_lowest_tier:
+    value: unknown
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "No 'commercial use' row appears anywhere in the pricing page's compare-plans table (verified by extracting every row of all 6 table sections, and by a full-text search of the rendered page for 'commercial', both with zero matches). ToS section 2.2 licenses use of Beautiful.ai Materials 'solely for Customer's internal business or personal, non-commercial purposes', which is genuinely ambiguous between (a) business use is permitted generally with only personal use required to be non-commercial, and (b) all use must be non-commercial -- and in any case addresses the license to use Beautiful.ai's own template/materials assets in the product, not a stated right/restriction on commercial use of the customer's own output. No document settles this determinately."
+  watermark_removal_tier:
+    value: lowest_paid
+    source: s7
+    access_date: "2026-08-07"
+    evidence: "'Once you downgrade to Basic... During playback, sharing, and exporting your presentation, it will now show Beautiful.ai branding on the page and ending slide' -- stated as a change caused BY downgrading away from the paid (Pro) tier, i.e. Pro itself does not show this branding. Pro is the lowest paid tier. NOTE: the pricing-page compare-table's 'Player branding' row (Pro=no, Team/Enterprise=yes) was investigated as a possible watermark signal but ruled out -- a dedicated Help Center article (s10) shows 'Player branding' actually means custom-domain URLs for the share link ('Plan Availability: Team and Enterprise... you might want to add your own branding... to the player page'), a distinct feature from output watermarking, so it was not used as the basis for this value."
+  output_ownership_statement:
+    value: conditional
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "ToS section 5.2: Customer retains rights in Customer Content/Output based on Customer Content, but 'Any Output based on Beautiful.ai Materials shall be deemed \"Beautiful.ai Materials\"' and is only licensed to Customer ('a limited, non-exclusive, personal, perpetual, and irrevocable... license'), not owned outright -- rights depend on whether the output incorporates Beautiful.ai's own template/design materials."
+
+  usage_cap_quantified:
+    value: some_quantified
+    source: s1; s2
+    access_date: "2026-08-07"
+    evidence: "Pro's compare-table row 'Members' = 1 (quantified standing limit, single seat). Pro also advertises 'Unlimited AI content generation'; per section 5.1's unlimited carve-out this counts as quantified only if no clause elsewhere qualifies it -- ToS section 2.9(b)(iii) lets Beautiful.ai suspend/limit access at its discretion where use 'will interfere materially with the proper continued operation of the Beautiful.ai Services', an unquantified qualifier on the unlimited claim (see unquantified_limit_clause). One quantified limit (Members=1) + one unlimited claim rendered not-quantified by that clause = some_quantified."
+  unquantified_limit_clause:
+    value: present
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "ToS section 2.9(b)(iii): Beautiful.ai may suspend/deny access where, in its 'good faith and reasonable discretion', a customer's 'access and use... will interfere materially with the proper continued operation of the Beautiful.ai Services' -- an unquantified, discretion-based usage standard with no stated number. (ToS section 2.9(c)'s 'in its sole discretion... deems unacceptable' clause was considered but concerns content/conduct, not volume of use, per the codebook's explicit carve-out, so it was not used as the citation.)"
+
+conflict_note: |
+  Two contractual disagreements found between the ToS (rank-1 source for contractual
+  variables per protocol-v1.md section 6.2) and lower-ranked official documents. Both
+  coded from the ToS per the hierarchy; both disagreements are real findings, not noise.
+
+  (1) REFUND POLICY. ToS section 4.2 (https://www.beautiful.ai/terms-of-service): "All
+  fees are non-refundable and non-cancellable." Contradicted by the Help Center article
+  "What is your refund policy?" (https://support.beautiful.ai/hc/en-us/articles/360030719012-What-is-your-refund-policy,
+  rank-2) and the pricing-page FAQ of the same title (https://www.beautiful.ai/pricing,
+  rank-3), which agree with each other: "Annual subscribers may be able to receive a
+  partial refund** if you submit a request within 24 hours of your initial purchase or
+  renewal of your subscription... Monthly subscriptions are not refundable... **All
+  refunds are subject to a processing fee." Coded refund_policy_exists / refund_window_days
+  / refund_conditions / refund_policy_location from the ToS (no_refunds_stated / 0 /
+  not_applicable / terms) per the hierarchy; a buyer relying on the pricing page or Help
+  Center instead would expect a 24-hour annual refund window that the ToS says does not
+  exist.
+
+  (2) CANCELLATION ROUTE. ToS section 6.2(a) (https://www.beautiful.ai/terms-of-service):
+  "Customer may terminate this Agreement and its Account, at any time, by submitting its
+  request to Beautiful.ai by contacting us at: support@beautiful.ai." Contradicted by the
+  Help Center article "How do I cancel my subscription (Trial or Pro)?"
+  (https://support.beautiful.ai/hc/en-us/articles/360030985471-How-do-I-cancel-my-subscription-Trial-or-Pro,
+  rank-2) and the pricing-page FAQ (rank-3), which both describe a fully self-serve flow
+  (Profile icon > Manage Account > Billing tab > Manage Plan > cancel), with no mention of
+  contacting anyone. Coded cancellation_self_serve = contact_required from the ToS per the
+  hierarchy. Noted for a future reader/adjudicator: the Help Center's separate "Delete
+  Account" article (https://support.beautiful.ai/hc/en-us/articles/360028561851-Delete-Account),
+  which is the closer analogue to the ToS's "terminate this Agreement and its Account", is
+  ALSO fully self-serve (Profile > Manage Account > My Profile tab > Delete My Account,
+  type your email, confirm) with no contact step -- so the ToS's contact-required framing
+  does not clearly match either the "cancel subscription" action or the "delete account"
+  action as the product's own Help Center describes them today. This weakens, without
+  resolving, the case for mechanically preferring the ToS reading here; flagged rather than
+  silently resolved, per protocol-v1.md section 3.
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules.md section 7.2). Winner: Pro, $12.00/mo billed
+  annually, single seat ("INDIVIDUAL" badge), generally available, no sales contact
+  required -> annual-equivalent $144.00/yr. Losing candidates:
+  - Teams: $40/mo/user billed annually, but requires a minimum of 2 seats ("2-20 SEATS"
+    badge). Per-seat annualized = $480.00/yr; as a minimum-purchase block (2 seats, the
+    least a buyer can actually buy) = $960.00/yr. Excluded either way (higher than Pro).
+  - Enterprise: "Custom" / "Contact sales for pricing" -- excluded, fails eligibility
+    criterion 2 (not purchasable without contacting sales); this is the product's
+    no_public_price case but it does not govern entry_tier_name since an eligible
+    self-serve candidate (Pro) exists.
+  - "$45 ad hoc / single presentation" card ("Everything in Pro plan (billed monthly)...
+    For ad hoc projects"): ambiguous framing -- labelled both "one-off single
+    presentation" (pricing FAQ) and "(billed monthly)" / "Cancel anytime" (the card
+    itself), i.e. it is unclear whether this is a true one-time purchase or Pro's
+    monthly-billing alternative. If treated as recurring: annualized = $540.00/yr.
+    Excluded either way (higher than Pro; and if genuinely one-time/non-recurring it is
+    not a "standing plan" comparable on an annual-equivalent basis under eligibility
+    criterion 3).
+  - "SMB plan" (linked from the Enterprise card, "flat rates for smaller teams" ->
+    https://www.beautiful.ai/teams#explore / https://www.beautiful.ai/teams): no
+    self-serve price published on that landing page; only "Schedule a demo" / "Explore
+    the SMB plan" CTAs. Excluded for lack of a published price to compare (and likely
+    fails eligibility criterion 2 as well). Not archived as a formal source since no
+    coded value rests on it.
+  Only Pro was eligible with a directly comparable, clearly lower annual-equivalent cost.
+
+  PRICING-EXPERIMENT FINDING (protocol-v1.md section 6.8 / limitations item 13). DOM
+  inspection of the Pro price element on https://www.beautiful.ai/pricing found:
+  data-pricing-exp="true" data-pricing-exp-false="$12" data-pricing-exp-true="$14.50" on
+  the div rendering the headline figure, with the visible/rendered text = "$12" (the
+  "false" branch) on every one of this pass's page loads. This is direct evidence the
+  vendor runs an active A/B price test on the Pro headline figure, with $14.50 as the
+  (unobserved, in this pass) alternate. The coded headline_price_usd rests on the $12
+  state actually rendered and screenshotted/archived in this pass, per section 6.8 rule 1;
+  the alternate figure was never visually served to this coder and so is not treated as an
+  observed display_variant under rule 3 -- it is logged as its own register_events entry
+  instead, distinct from a rule-3 variant, and the coded value is unchanged. No reload was
+  performed to chase either state (rule 4).
+
+  FREE PLAN / "Basic" ("no free plan" would have been the wrong call here). The pricing
+  page's marketed cards are Pro/Team/Enterprise only and never use the words "Basic" or
+  "free"/"$0" outside of "free trial" -- a coder who stopped at the pricing page would
+  code free_plan_exists = no. The Help Center, however, documents an ongoing zero-cost
+  "Basic" plan in real detail across at least 3 independent articles (the account you land
+  on after cancelling Pro; a 100-slide cap; loss of Analytics/Revision History/Desktop
+  Player + forced Beautiful.ai branding on export/playback). Coded free_plan_exists = yes
+  from the Help Center (pricing page is silent, not contradictory, so this is not a
+  hierarchy conflict). See the free_plan_* variables' evidence fields for the specific
+  citations.
+
+  ARCHIVING. web.archive.org/save succeeded immediately for the two beautiful.ai (root
+  domain) pages. All 9 support.beautiful.ai (Zendesk help-center) URLs failed public
+  archiving: web.archive.org/save returned HTTP 520 on every attempt (1 scripted pass of 3
+  attempts per URL, then 2 further manual retries on one URL to confirm it was not
+  transient -- 5 attempts total, exceeding the 2-retry rule); a direct curl fetch of the
+  same URLs returned HTTP 403 with a Cloudflare "Just a moment..." JS-challenge page, which
+  explains the 520s (archive.org's crawler is being challenge-blocked by Zendesk's
+  Cloudflare in front of support.beautiful.ai). All 9 pages WERE successfully read and
+  verified through the authenticated browser session, which passed the same Cloudflare
+  challenge (a real browser executes the JS challenge; curl cannot). Per protocol-v1.md
+  section 6.4, a local HTML copy of each was saved under
+  records/pass1/beautiful-ai-sources/ (files prefixed local-) and archive_status is coded
+  local_copy_only for those 9 sources; nothing was coded from an unsnapshotted page.
+
+  WATERMARK / "Player branding" investigation. The pricing-page compare-table row "Player
+  branding" (Pro=not included, Team/Enterprise=included) looked at first like a plausible
+  watermark signal, but a dedicated Help Center article
+  (https://support.beautiful.ai/hc/en-us/articles/26598025191565-Customizing-Beautiful-ai-Player-Links,
+  "Plan Availability: Team and Enterprise") clarifies it is about using a CUSTOM DOMAIN URL
+  for the share/player link ("you might prefer that your customers see your company URL...
+  or you might want to add your own branding or CTAs to the player page") -- a distinct
+  feature from whether the output itself carries a Beautiful.ai watermark. The actual
+  watermark_removal_tier citation instead comes from the Basic-downgrade article's explicit
+  branding-appears-when-you-downgrade statement (see that variable's evidence). Recorded
+  here so a second coder does not have to rediscover this distinction from scratch.
+
+  COOKIE CONSENT. See default_display_state.cookie_consent.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+register_events:
+  - type: pricing_experiment_detected
+    variable: headline_price_usd
+    detected_via: dom_attribute_inspection
+    description: >
+      Pro price element carries data-pricing-exp="true", data-pricing-exp-false="$12",
+      data-pricing-exp-true="$14.50". Rendered/visible value in every load this pass was
+      "$12" (the false branch). The $14.50 branch was never visually rendered to this
+      coder. Coded value unchanged (rests on the observed $12 state); logged per
+      protocol-v1.md section 6.8 / limitations item 13 for study awareness. Not classified
+      as a rule-3 "visibly loaded in a different state" display_variant, since only one
+      state was ever actually rendered in this pass -- distinguished from that case
+      deliberately.
+    source_url: https://www.beautiful.ai/pricing
+    access_date: "2026-08-07"
+
+status: complete

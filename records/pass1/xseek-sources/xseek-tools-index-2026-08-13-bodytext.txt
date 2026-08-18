@@ -1,0 +1,109 @@
+How it works
+Pricing
+About
+Contact
+Blog
+FR
+Sign in
+Try for free
+→
+Free tools · no account
+AI visibility tools
+for the curious.
+Quick, self-serve utilities to check your AI readiness and prep your site for ChatGPT, Claude, Perplexity, and Gemini. No login, no data retention — run them, copy the output, close the tab.
+Self-serve
+Free tools.
+Open, in seconds.
+Paste a URL, get a file. That's the whole UX.
+Diagnostic
+Is my site
+readable by AI?
+AI crawlers do not run JavaScript. Paste a URL and see the page exactly as they fetch it — server-rendered content, or an empty shell your visitors never notice.
+Test my site
+→
+Diagnostic
+Agent-ready
+scan.
+Scan any URL against the discovery and access protocols AI agents look for in 2026 — robots.txt, Content Signals, Link headers, API catalog, MCP card, OAuth, and more.
+Scan a site
+→
+Diagnostic
+Robots.txt
+checker.
+Paste a URL, see which AI crawlers (GPTBot, ClaudeBot, PerplexityBot…) are allowed or blocked by your robots.txt.
+Check a site
+→
+Config
+llms.txt
+generator.
+Generate a standards-compliant llms.txt for your domain. Download it, drop it at your site root.
+Generate a file
+→
+Diagnostic
+Is my page too big
+for crawlers?
+Google crawls the first 2MB of a file. Measure your HTML against that, and see how much of it is real content rather than markup and inline script.
+Weigh a page
+→
+Go deeper
+Full xSeek surfaces
+for continuous work.
+When the one-shot tools aren't enough — track visibility, generate content, ship from a terminal.
+Native app
+xSeek
+Desktop.
+Native macOS and Windows app. Track visibility, generate content, and review drafts — no terminal required.
+See the desktop app
+↗
+Claude Code
+GEO/SEO
+Skills.
+Claude Code skills for AEO audits, content optimization, and AI visibility tracking — built to run on any site.
+See how it works
+↗
+Beyond the tools
+Ready for the
+full picture?
+These tools scratch the surface. xSeek gives you Share of Voice, content gaps, competitor tracking, and a clear action plan — continuously.
+See pricing
+→
+Book a call
+Product
+AI Visibility Tracking
+Generative Engine Optimization
+Answer Engine Optimization
+ChatGPT SEO
+AI Search Optimization
+AI Content Optimization
+AI Backlinks
+For Agencies
+How it works
+Pricing
+Free Tools
+Agent-Ready Scan
+AI Robots.txt Checker
+AI LLMs.txt Generator
+xSeek Desktop
+All Tools
+Resources
+AI Search Visibility Strategies
+SEO vs AEO Guide
+LLMs.txt Explained
+AI Source Radar
+All Articles
+Company
+About
+Blog
+Documentation
+Contact
+Privacy Policy
+Terms of Service
+© 2026 xseek. All rights reserved.
+xSeek Reviews
+xSeek Reviews
+xSeek Reviews
+Featured on
+tool
+chase
+🇨🇦
+Proudly Canadian

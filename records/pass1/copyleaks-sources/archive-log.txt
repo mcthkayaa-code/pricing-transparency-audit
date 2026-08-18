@@ -1,0 +1,1 @@
+archive_failed reason: web.archive.org/save returned HTTP 520 (Cloudflare origin error) on 6 consecutive attempts over ~5 min; local raw-HTML fallback saved per protocol 6.4

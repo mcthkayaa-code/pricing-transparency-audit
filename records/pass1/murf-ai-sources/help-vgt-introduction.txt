@@ -1,0 +1,94 @@
+SOURCE: https://help.murf.ai/what-is-voice-generation-time-vgt
+DATE ACCESSED: 2026-08-09
+METHOD: curl static fetch (server-rendered help/legal page, not a JS app-shell)
+ARCHIVE: https://web.archive.org/web/20260809194301/https://help.murf.ai/what-is-voice-generation-time-vgt
+PAGE TITLE: Introduction to Voice Generation Time (VGT)
+NETWORK NOTE: collection environment egresses from Turkey; this page's substantive text
+  (ToS/help-center prose) is not price-bearing in a way current-affected -- D-003 currency
+  check applies to the pricing page specifically (see pricing-rendered.txt).
+=== EXTRACTED TEXT (nav/boilerplate stripped where noted) ===
+Introduction to Voice Generation Time (VGT)
+Skip to content
+English
+Show submenu for translations
+Open main navigation
+Close main navigation
+English
+Show submenu for translations
+Open Studio
+Open Studio
+How can we help you today?
+There are no suggestions because the search field is empty.
+Help Center
+Voice Generation Time (VGT)
+Introduction to Voice Generation Time (VGT)
+Voice generation time (VGT) is calculated as the sum of the generated speech lengths for every sub-block. It can be considered as Studio credits.
+VGT is consumed whenever you  render a newly created sub-block or modify text in an existing sub-block using any of the three generate (play button) options available in the Studio (block, sub-block, and project level).
+However,  modifying the generated speech using a different voice actor, style, pitch, speed, pause, emphasis, pronunciation, punctuation, and volume for the same text will not consume any voice generation time.
+The voice generation time consumed to convert text to speech will equal the length of a particular text block. When text is added or modified in a sub-block, speech is generated for the entire sub-block again.
+Example: Consider that you have 10 minutes of VGT in your account and enter a 500-word script into the Studio. The generated audio file is 4:34 minutes; then, 4:34 minutes are deducted from your total VGT. Now, if you go back and edit (add or delete content) any of the text in the above script and render again, then only the audio duration for that particular sub-block will be deducted.
+⌛ Estimating Voice Generation Requirement
+A 1,000-word English script would consume ~ 6 minutes of VGT without accounting for the text changes. (This is an approximate value and will vary based on the script, voice selected, and speed of the voiceover.) Based on this, you can estimate how much voice generation time your project might need and opt for the right plan.
+You can track your voice generation time on the tracker on the top panel of your project.
+This interactive tutorial will show you how your VGT gets consumed upon voice generation:
+New to Murf
+Intro to Murf AI
+Setup and Onboarding
+Managing Your Account
+Free Trial
+Getting Started
+Script Import and Structuring
+Finding the Right Voice & Settings
+Adding Media Files
+Frequently Asked Questions
+New to Murf
+Working with the Studio
+Payment and Billing
+Workspaces and Account Management
+Voice Cloning
+Commercial Rights
+Working with the Studio
+Studio Elements
+Voices and Languages
+Voice Settings
+Working with Imports
+Timeline and Project Settings
+Exports
+Collaboration
+Gen2 Voice Model
+HTML Embed
+Audio to Text
+AI Dubbing
+Introduction
+Murf Dub Project
+Dubbing Credits
+Pricing and Plans
+Editing Dub
+Workspaces
+Introduction
+Types of User Roles
+Invite Team Members
+Managing Projects and Folders
+Permissions and Privacy
+Voice Generation Time (VGT)
+Tracking VGT Consumption
+Payments and Billing
+Managing Payments and Billing
+Frequently Asked Questions/ Troubleshooting
+Taxes
+YouTube Codes
+Adding YouTube Codes
+Introduction to YouTube Codes
+Content ID Claims
+API
+Introduction
+Generating Speech
+API Pricing and Plans
+Integrations & Add Ons
+PowerPoint Plugin
+Windows Voices Installer
+Canva
+Voice Cloning
+Introduction
+Help Center
+Copyright © 2026, Murf Inc.

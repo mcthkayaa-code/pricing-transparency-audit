@@ -1,0 +1,101 @@
+product_id: humanizemy
+product_name: HumanizeMyAI
+category: AI humanizer
+product_status: active
+paid_submission: "no"
+entry_tier_name: Basic
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://humanizemy.ai/pricing
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "USD (page states 'All prices are in US dollars (USD)'); billing toggle defaults to Yearly/annual on load ('Yearly' pill active/black, 'Monthly' inactive/white, badge 'up to 4 mo free'), screenshot-confirmed before any interaction; no geo/currency redirect observed despite Turkey-egress network; non-essential-cookies consent banner present on load, declined (Decline clicked) before reading remaining content, per protocol 6.8 rule 5."
+
+sources:
+  - { url: https://humanizemy.ai/pricing, kind: pricing, accessed: 2026-08-09, archive: local_copy_only, note: "web.archive.org save attempted 3x (2x curl to /save/, 1x browser navigation), all failed to produce a retrievable snapshot; CDX search confirms no capture exists for this URL. Local evidence: humanizemy-sources/pricing-page.txt (full rendered document.body.innerText + FAQ <details> textContent + screenshot description) and humanizemy-sources/pricing-page-local-copy.html (raw HTTP GET, 200, 101255 bytes)." }
+  - { url: https://humanizemy.ai/terms, kind: tos, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809145312/https://humanizemy.ai/terms", note: "Last updated: July 29, 2026 per page. Full text saved to humanizemy-sources/terms.txt." }
+  - { url: https://humanizemy.ai/refund-policy, kind: refund, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809145438/https://humanizemy.ai/refund-policy", note: "Last updated: July 29, 2026 per page. Full text saved to humanizemy-sources/refund-policy.txt." }
+  - { url: https://humanizemy.ai/, kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260726175859/https://humanizemy.ai/", note: "Supplementary read only (docs/help-center class): FAQ accordion identical to pricing page; site-wide keyword sweep for trial/watermark/commercial/credit/addon/throttle terms, all silent except two irrelevant hits (detailed in humanizemy-sources/homepage-keyword-sweep.txt). Archive reference is a pre-existing 2026-07-26 capture (found via CDX); a fresh same-day save attempt returned no response and is not used as the archive reference for this row." }
+  - { url: https://humanizemy.ai/sitemap.xml, kind: other, accessed: 2026-08-09, archive: not_applicable, note: "Used only to confirm no separate help-center/docs/FAQ/billing-support page exists beyond pricing, terms, refund-policy, privacy, cookies, contact. /api-docs listed but redirects to homepage on load (no reachable content)." }
+
+variables:
+  headline_price_usd: { value: 12.00, source: https://humanizemy.ai/pricing, evidence: "Basic plan (entry tier): '$12 /mo' — the largest, most prominent figure in the plan card, read in the page's default Yearly-preselected display state." }
+  headline_billing_basis: { value: per_month_billed_annually, source: https://humanizemy.ai/pricing, evidence: "'$12 /mo' headline paired with '$144 billed yearly' printed beneath it, under the page's default Yearly-preselected toggle." }
+  first_charge_amount_usd: { value: 144.00, source: https://humanizemy.ai/pricing, evidence: "Basic card: '$144 billed yearly' and 'Renews automatically at $144 USD every 12 months until cancelled.' Figure read directly, not computed (12x multiplication not needed)." }
+  mandatory_addon_present: { value: "no", source: https://humanizemy.ai/pricing, evidence: "Basic card's full feature list (80 requests/month, access to enhanced model, AI detection checks, up to 1,000 words/request, priority support) names no separate required charge. Terms of Service (all 14 sections) and Refund & Cancellation Policy were also read in full and name no mandatory add-on, module, or platform fee." }
+  annual_condition_disclosure: { value: adjacent, source: https://humanizemy.ai/pricing, evidence: "'$144 billed yearly' / 'Save $72/yr' printed directly beneath the '$12 /mo' headline figure, inside the same Basic plan card (same visual price block)." }
+  annual_default_toggle: { value: annual_preselected, source: https://humanizemy.ai/pricing, evidence: "Screenshot taken on load, before any interaction: 'Yearly' toggle pill rendered active (black background) with badge 'up to 4 mo free'; 'Monthly' pill rendered inactive (white background)." }
+  free_plan_exists: { value: "yes", source: https://humanizemy.ai/pricing, evidence: "FAQ accordion: 'Is the free tier really free? Yes — 4 humanizations per day, up to 125 words per run, no signup, no credit card.'" }
+  free_plan_cap_documented: { value: all_quantified, source: https://humanizemy.ai/pricing, evidence: "Every stated free-plan limit carries a number and dimension (plus a period for rate-type limits): '4 humanizations per day' (rate), 'up to 125 words per run' (standing), and the IP backstop '50 humanizations per day' (rate)." }
+  free_plan_cap_value: { value: "4 humanizations per day | 125 words per run | 50 humanizations per day per IP", source: https://humanizemy.ai/pricing, evidence: "FAQ: '4 humanizations per day, up to 125 words per run... We also cap by IP at 50 humanizations per day so the free tier survives.'" }
+  free_plan_watermark: { value: not_applicable, source: https://humanizemy.ai/pricing, evidence: "Product's documented output is rewritten prose/text (a humanized version of submitted text), not an image/video/audio export a watermark could mark. 'Watermark' does not appear anywhere in pricing, terms, refund-policy, or homepage text (site-wide keyword sweep, humanizemy-sources/homepage-keyword-sweep.txt). not_applicable applies per this variable's own carve-out for output types that cannot carry a watermark." }
+  free_plan_duration: { value: perpetual, source: https://humanizemy.ai/pricing, evidence: "FAQ: 'The free quota resets at midnight UTC' — presented as a standing daily allowance; no expiry or end date stated anywhere in the documents." }
+  trial_exists: { value: "no", source: https://humanizemy.ai/refund-policy, evidence: "'Free evaluation — HumanizeMyAI offers a free tier that does not require a payment card. Customers can evaluate the core service before purchasing a subscription.' No time-limited trial of a paid tier is named anywhere on pricing, terms, refund-policy, or homepage (site-wide sweep); paid-plan buttons go straight to checkout, not a trial start." }
+  trial_card_required: { value: not_applicable, source: https://humanizemy.ai/refund-policy, evidence: "not_applicable: no trial exists (trial_exists = no)." }
+  trial_length_days: { value: not_applicable, source: https://humanizemy.ai/refund-policy, evidence: "not_applicable: no trial exists (trial_exists = no)." }
+  trial_auto_converts: { value: not_applicable, source: https://humanizemy.ai/refund-policy, evidence: "not_applicable: no trial exists (trial_exists = no)." }
+  credit_system_present: { value: "no", source: https://humanizemy.ai/pricing, evidence: "Plan allowances are stated directly in output units — '80 requests / month' (Basic), '200 requests / month' (Pro), '250 requests / month' (Ultra) — with no intermediate currency (credits/tokens/points/coins) named anywhere on pricing, terms, refund-policy, or homepage (site-wide sweep: 'credit' and 'token' both absent). Per codebook rule 1, an allowance stated directly in output units is not a credit system." }
+  credit_unit_defined: { value: not_applicable, source: https://humanizemy.ai/pricing, evidence: "not_applicable: no credit system exists (credit_system_present = no)." }
+  credit_to_output_rate_published: { value: not_applicable, source: https://humanizemy.ai/pricing, evidence: "not_applicable: no credit system exists (credit_system_present = no)." }
+  credit_rate_location: { value: not_applicable, source: https://humanizemy.ai/pricing, evidence: "not_applicable: no credit system exists (credit_system_present = no)." }
+  cost_per_output_unit: { value: other, source: https://humanizemy.ai/pricing, evidence: "Principal output is one humanized rewrite per 'request' (vendor's own metering term); none of the listed enumerated units fits, so 'other' is coded and the unit is named in coder_note as 'per humanization request'." }
+  cost_per_output_computable: { value: "yes", source: https://humanizemy.ai/pricing, evidence: "Basic (entry) tier: $12/mo in the default annual-toggle display state, 80 requests/month included, 1 request = 1 output with no separate per-word metering inside the per-request word cap. 12 / 80 = 0.15 USD per request; no typical-use assumption needed." }
+  computation_assumptions: { value: "Basic tier, $12/mo per default annual-toggle display state ($144 billed yearly); 80 requests/month included; 1 request=1 output, no separate per-word metering within the per-request cap. 12/80=0.15 USD/request. Price & allowance already share the monthly period; no conversion needed.", source: https://humanizemy.ai/pricing, evidence: "Arithmetic per codebook §7 cost_per_output_computable rule 9." }
+  credit_rollover_policy: { value: not_applicable, source: https://humanizemy.ai/pricing, evidence: "not_applicable: no credit system exists (credit_system_present = no)." }
+  failed_generation_charge_policy: { value: unknown, source: https://humanizemy.ai/terms, evidence: "Product has a metered generation step (requests/month), so not_applicable does not apply. Terms of Service read in full (all 14 sections), Refund & Cancellation Policy, pricing page, and homepage are silent on whether a failed/errored humanization consumes the request allowance; the only 'fails' hit site-wide is unrelated corpus quality control ('any essay that fails the quality floor is pulled from the corpus')." }
+  auto_renewal_default: { value: "on", source: https://humanizemy.ai/terms, evidence: "Terms §3: 'Choosing a monthly plan authorises us to charge that amount every month, and an annual plan every twelve months, automatically at the start of each new period, until you cancel.' Consistent with pricing page ('Renews automatically at $144 USD every 12 months until cancelled.'); no conflict." }
+  auto_renewal_disclosure_location: { value: multiple, source: https://humanizemy.ai/terms, evidence: "Stated in agreement on two classes: the pricing page (hero disclaimer plus each plan card's 'Renews automatically at $X USD every 12 months until cancelled.' line, https://humanizemy.ai/pricing) and Terms of Service §3 (this source URL)." }
+  renewal_notice_commitment: { value: no_notice_stated, source: https://humanizemy.ai/terms, evidence: "Terms §3: 'The renewal amount is the plan price shown at checkout; we will email you before any price change takes effect.' This commits to notice only before a PRICE CHANGE, not before an ordinary same-price renewal charge; no document commits to advance notice of a routine renewal." }
+  refund_policy_exists: { value: "yes", source: https://humanizemy.ai/refund-policy, evidence: "'We will issue or consider a refund when required by applicable law, when a duplicate or incorrect charge occurred, or when a documented material service failure prevented access to the paid service.' A refund is available under stated, if conditional, terms." }
+  refund_window_days: { value: unknown, source: https://humanizemy.ai/refund-policy, evidence: "No day-count window is stated anywhere for how long after purchase a refund may be requested; refund availability is condition-triggered (legal requirement / duplicate-or-incorrect charge / documented material service failure), not window-triggered. The only day figure present, 'respond within 14 days', is the vendor's own response SLA, not a request deadline." }
+  refund_conditions: { value: conditional, source: https://humanizemy.ai/refund-policy, evidence: "Refund requires one of three stated conditions (legal requirement, duplicate/incorrect charge, documented material service failure) plus a request/review step, not unconditional availability within a window." }
+  cancellation_self_serve: { value: self_serve_documented, source: https://humanizemy.ai/refund-policy, evidence: "'You may cancel a subscription at any time from your account.' Email to hello@humanizemy.ai is offered only as a fallback 'if self-service cancellation is unavailable'." }
+  refund_policy_location: { value: multiple, source: https://humanizemy.ai/refund-policy, evidence: "Refund position is stated in agreement on the dedicated Refund & Cancellation Policy page (this source URL) and in Terms of Service §4 (https://humanizemy.ai/terms)." }
+  commercial_use_lowest_tier: { value: unknown, source: https://humanizemy.ai/terms, evidence: "No document (pricing feature grid, Terms of Service, Refund & Cancellation Policy, homepage) contains a commercial-use grant or restriction clause for outputs. Terms §5 restricts only reselling/redistributing Service output 'as a competing service without written permission' — a distinct construct from ordinary commercial use of the humanized text. Site-wide sweep found 'commercial' only in an unrelated self-description ('the comparison pages are commercially independent')." }
+  watermark_removal_tier: { value: not_applicable, source: https://humanizemy.ai/pricing, evidence: "Same basis as free_plan_watermark: the documented principal output is rewritten text/prose, not a media artifact a watermark could mark; 'watermark' is absent from every document read (pricing, terms, refund-policy, homepage — site-wide sweep)." }
+  output_ownership_statement: { value: user_owns, source: https://humanizemy.ai/terms, evidence: "Terms §6 Intellectual property: 'You retain ownership of all text you submit to the Service. We claim no ownership over your inputs or outputs.'" }
+  usage_cap_quantified: { value: all_caps_quantified, source: https://humanizemy.ai/pricing, evidence: "Basic (entry) tier limits: '80 requests / month' (quantified rate) and 'Up to 1,000 words per request' (quantified standing limit). Every stated limit for this tier carries a number and dimension." }
+  unquantified_limit_clause: { value: absent, source: https://humanizemy.ai/terms, evidence: "Terms of Service §5 'Acceptable use' read in full end-to-end: lists five specific prohibited uses (academic-integrity violation, infringing/illegal content, scraping/reverse-engineering/bypassing quota controls, reselling output as a competing service, automating free-tier abuse across IPs/accounts) with no discretionary fair-use/reasonable-use/excessive-use/throttle-at-our-discretion clause. Refund & Cancellation Policy also read in full, same result. Site-wide keyword sweep for 'throttle', 'fair use', 'reasonable use', 'excessive' all negative." }
+
+coder_note: |
+  Entry-tier selection (sampling-rules.md §7.2): three eligible candidates (Basic, Pro, Ultra —
+  all generally available, no sales contact, standing plans, single flat-rate tiers, not
+  seat-scaled, not usage-based-only). Annual-equivalent single-seat cost: Basic $144/yr (WINNER,
+  = entry_tier_name), Pro $216/yr (lost), Ultra $432/yr (lost). Free tier excluded from this
+  comparison as $0/not a paid tier.
+  Judgment calls made:
+  - cost_per_output_unit coded `other`: the product meters by "requests" (vendor's own term,
+    1 request = 1 humanized output), which fits none of the enumerated units cleanly; named as
+    "per humanization request" rather than force-fit to per_document or per_1k_words.
+  - free_plan_watermark and watermark_removal_tier both coded `not_applicable`: the documented
+    principal output is rewritten text/prose, not an image/video/audio export; each variable's
+    own value table carves out "output type cannot carry a watermark", and "watermark" does not
+    appear anywhere across pricing, terms, refund-policy, or homepage (site-wide sweep).
+  - credit_system_present coded `no`, not `unknown`: documents affirmatively state usage is
+    metered directly in output units ("80 requests / month" etc.), which is documentary evidence
+    of the metering mechanism itself (codebook §Domain 5 rule 1), distinct from the silent-vendor
+    trap codebook §2.2 warns against (silence alone would require `unknown`, not `no`).
+  - renewal_notice_commitment coded `no_notice_stated`: Terms §3's only notice commitment is
+    scoped to price CHANGES ("we will email you before any price change takes effect"), not to
+    ordinary same-price renewal charges, so it does not satisfy this variable's construct.
+  - commercial_use_lowest_tier coded `unknown` despite output_ownership_statement = user_owns:
+    kept as a distinct construct per instructions not to infer; no document anywhere uses the
+    words "commercial use" or grants/restricts commercial exploitation of outputs specifically.
+  No correction to the frozen frame row was needed (product_name, category, product_status,
+  paid_submission all matched the live site at read time).
+  Archival: web.archive.org saves succeeded for terms and refund-policy (both within 2 attempts)
+  but failed for the pricing page after 3 attempts (2x curl to /save/, 1x browser navigation;
+  CDX search confirms no capture exists) and for a fresh homepage save (used a pre-existing
+  2026-07-26 capture instead); archive_status = local_copy_only for the pricing page, with a
+  full rendered-text copy and a raw-HTML copy saved under humanizemy-sources/.
+  D-003 currency check: not triggered — the vendor's own rendered pricing page displayed USD
+  figures directly on every read from this Turkey-egress network, with no currency redirect or
+  localization observed, and the page's own boilerplate states "All prices are in US dollars
+  (USD)" as vendor-authored copy independent of visitor geography. No non_usd value was coded on
+  this record, so no display_variant register event applies.
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "none found — pricing page, Terms of Service, and Refund & Cancellation Policy agreed wherever more than one source spoke to the same variable (auto-renewal, refund position, cancellation route, disclosure locations)."
+register_events: []
+status: complete

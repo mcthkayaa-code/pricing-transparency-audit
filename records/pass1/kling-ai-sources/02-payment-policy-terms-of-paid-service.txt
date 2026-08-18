@@ -1,0 +1,283 @@
+URL: https://klingai.com/global/docs/payment-policy
+Title: Kling AI Terms of Paid Service (Including Automatic Renewal Service Rules) -- Release/Effective Date printed on page: 2026/04/21
+Accessed: 2026-08-09 (UTC ~17:20)
+Method: Static fetch (curl -s -L -H 'Accept-Language: en-US,en;q=0.9' -A <Chrome UA>), server-rendered legal text extracted from raw HTML by stripping <script>/<style> and tags. No JS rendering was needed -- this document class loads its full text without client-side rendering.
+Network note: Collection network egresses from Turkey. Static fetch with US-locale Accept-Language header returned this English-language document with no non-USD figures present anywhere in the text (this doc contains no price figures at all, only policy terms).
+Archive attempt: https://web.archive.org/save/https://klingai.com/global/docs/payment-policy -> HTTP 302 -> https://web.archive.org/web/20260809173018/https://kling.ai/docs/payment-policy (verified reachable, HTTP 200).
+
+===== EXTRACTED TEXT (tags stripped from server-rendered HTML) =====
+
+Kling AI: Next-Gen AI Video & Image Generator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Terms of Service Privacy Policy Terms of Paid Service Credits Policy Community Guidelines Copyright Complaint Policy Cookie Policy Release Date: 2026/04/21
+Effective Date: 2026/04/21
+Kling AI Terms of Paid Service (Including Automatic Renewal Service Rules) Thank you for using the paid services of Kling AI!
+
+These Terms of Paid Service, which is incorporated herein by reference (together, these "Terms" or this "Agreement"), and is an important document that you should read, is a legally binding contract between you and Kling AI Pte. Ltd. and its affiliates (collectively, "Kling AI", "Company", "us", "we", or "our") regarding your use of the paid services of Kling AI and associated software applications and websites (collectively, "Services", "Kling AI"). References to "User", "you", and "your" refer to the individual accepting this Agreement.
+
+In order to use the Paid Services and related functions, you should read and comply with Agreement, Kling AI Terms of Service , Kling AI Privacy Policy , and other terms, agreements, rules, guidelines, policies, notices and instructions pertaining to the use and/or access of our Website/APP, the Paid Services and related promotions and other activities, as well as any amendments to the foregoing, issued by us from time to time (hereinafter collectively referred to as the "Service Agreements and Rules"). This Agreement is a supplemental agreement to the Kling AI Terms of Service and Kling AI Privacy Policy , and is incorporated in each of them, which collectively constitutes an agreement binding upon you. In case of any conflict or inconsistency between this Agreement and the Kling AI Terms of Service or Kling AI Privacy Policy , this Agreement shall prevail to the extent of such inconsistency. For matters not stipulated in this Agreement, the Kling AI Terms of Service and the Kling AI Private Policy shall apply.
+
+YOU MUST CAREFULLY READ AND FULLY UNDERSTAND THESE TERMS, INCLUDING ANY TERMS THAT MAY EXEMPT OR RESTRICT THE COMPANY'S LIABILITIES AND/OR RESPONSIBILITIES AND ANY TERMS THAT MAY RESTRICT AND/OR CONSTITUTE A WAIVER OF YOUR RIGHTS, AS THEY APPLY TO YOUR USE OF THE SERVICES. YOUR USE OF THE SERVICES IS CONDITIONAL ON YOUR ACCEPTANCE OF THESE TERMS. IF YOU DO NOT AGREE WITH OR ACCEPT THESE TERMS, YOU SHALL NOT USE ANY PAID SERVICES OF Kling AI OR ANY OF OUR OTHER SERVICES.
+ALL DISCLAIMERS, INDEMNITIES AND EXCLUSIONS IN THIS AGREEMENT SHALL SURVIVE TERMINATION OF THIS AGREEMENT BETWEEN US FOR ANY REASON.
+
+Anyone below the age of 13 or other minimum age as defined under the applicable laws of your jurisdiction ("Minimum Age") shall not use the Paid Services. If you have reached the Minimum Age but are under the age of majority as defined under the applicable laws of your jurisdiction ("Majority Age"), you may only use the Paid Service through the representation of your parent or legal guardian, and your parent or legal guardian hereby represents you and accepts these Terms.
+
+We reserve the right to amend, replace and/or otherwise update these Terms from time to time. We will use reasonable endeavors to notify you of any material changes to these Terms.
+Every time you wish to use our Paid Services, please check these Terms to ensure you understand the Terms that apply at that time. You may determine if any such update has taken place by referring to the date on which these Terms were last updated. Your continued use of our Website/APP and the Paid Services constitutes your acknowledgement and acceptance of such changes.
+
+1. Definitions
+1.1 "Paid Services" refers to the specific benefits or services to be provided to you by Kling AI upon payment of certain fees or your obtaining of certain specific qualifications, hereinafter referred to as the "Kling AI Paid Service", or "the Service", or "the Paid Service".
+1.2 "Membership Service" refers to the membership service provided by Kling AI to you, as described in Article 3 of these Terms. The specific membership benefits and privileges are subject to all announcements and notices in relation to membership benefits that are published on the Website/APP from time to time, in-site messages that we may send to you from time to time, and the prevailing service benefits displayed on the Website/APP at the time of your actual purchase.
+1.3 "Credit" refers to the virtual tools that we provide to you to redeem and obtain certain services on Kling AI and our other platforms of. For the avoidance of doubt, any use of the Credit does not constitute a payment service, and the Credit is not a token, virtual currency or prepaid voucher, and does not have a monetary value or prepaid value. The specific content and benefits of Credit are subject to all announcements published on the Website/APP from time to time at the time of your actual purchase.
+1.4 "User Account" refers to the account that users themselves register, log in, and use for Kling AI. The types of user accounts include "Member Account" and "Regular Account". Users can use their "User Account" to activate and purchase one or multiple Paid Services offered by Kling AI.
+1.5 "Member Account" refers to the user account that is bound to the Membership Service subscribed by the User. You become a Member User after you successfully subscribed to the Membership Service.
+1.6 "Regular Account" refers to a user account that is not a Member Account.
+1.7 "Service Fee" refers to the fee actually paid by the user for the purchase of one or multiple Paid Services. The service fee charging scheme is subject to the announcement on the front-end interface of the relevant paid service product.
+1.8 "Validity Period"/"Subscription Period" refers to the validity period for the use of the Paid service and related benefits or privileges that the User can obtain after purchasing one or more Paid Services, subject to the validity period shown on the relevant page of the Website/APP in relation to the corresponding Paid Service that was purchased by the User.
+
+2. Subscription and use of Paid Services
+2.1 You must register or log in to your Kling AI account before you can continue to purchase and use any Paid Service.
+2.2 Before you subscribe or use any Paid Services, please be sure to read and fully understand these Terms especially the rules of use of the specific Paid Services to which you intend to subscribe, as well as the terms and conditions that we will bring to your attention in a reasonable manner such as boldface, etc. (including, but not limited to, the rules governing payment and unsubscribing, the rules governing the use of the benefits associated with the Paid Services, the exemption or limitation of liability).
+2.3 If you do not agree with any or all of the terms and conditions of these Terms, please do not confirm (such confirmation include but is not limited to checking the box to agree to these Terms, clicking on the buy now option, making payment for the Paid Services) your agreement to carry out the next step or your use of any of the Paid Service. Your confirmation of the next operation or the use of any of the Paid Services means you have read and agree to sign all the contents of this Terms.
+2.4 You will be able to access the Membership Service and/or other services that enable you to purchase credits and the corresponding privileges or benefits after you complete the steps to obtain the Membership Service in accordance with the relevant pages of the Website/APP and after successful payment of the service fee is confirmed.
+2.5 Please note that the validity period of the above benefits you have obtained and the scope of benefits included shall be subject to all announcements in relation to benefits that are posted on the relevant pages of the Website/APP from time to time.
+2.6 Please be aware that we may limit the maximum number of devices that can be logged in to the Website/APP using the same Member Account and the number of devices that can be online simultaneously under the same Member Account. The specific rules are subject to the notices displayed on the relevant pages of the Website/APP. If you exceed the above limits, the Company will notify you in an appropriate manner. The Company has the right to take measures such as restricting login, restricting use, suspending or terminating your use of the Services based on your excessive usage.
+2.7 If you are unable to use the purchased Paid Services due to any changes in applicable laws and regulations, government actions, changes in circumstances, or other factors, we will notify you in an appropriate manner, but we will not be liable for any losses incurred by you as a result. If you have any questions about this, you can contact us at our contact details set out in the "Contact Us" section below.
+2.8 Please note that we may send you information such as recommended content, paid user benefits, promotional activities, etc., through the email address with your User Account, or via in-site messages and announcements. If you do not wish to receive such information, you can unsubscribe or turn off the notifications at any time by following the steps to unsubscribe or selecting the turn-off options provided on the relevant pages of the Website/APP.
+
+3. Membership Services
+3.1 Membership Services
+3.1.1 Membership Grade
+The Company offers membership packages with different grades of membership benefits, "Standard Membership", "Pro Membership" and "Premier Membership", "Ultra Membership", "Team Membership", "Enterprise Membership".
+The specific membership package and its corresponding membership benefits are subject to announcements made on the relevant pages of the Website/APP from time to time and the service benefits expressly specified on the Website/APP at the time of your actual subscription.
+3.1.2 Benefits
+After you have subscribed to the Membership Service, you will be entitled to the following membership benefits according to the membership package you have purchased during the Validity Period of your Membership Service:
+· Monthly Credit (such Credit can be used during the Validity Period for specific services including video generation and other functions, please refer to Article 4 of these Terms for further details. The amount of Credit granted differs with the different grades of membership, subject to announcements made on the relevant pages of the Website/APP from time to time and the membership benefits specified on the relevant pages of the Website/APP.);
+· Fast-track generation;
+· Professional mode for videos;
+· Watermark removal;
+· Video extension;
+· Image upscaling;
+· Priority access to new features;
+· KLING AI members' use of the Output for commercial purposes is not restricted.You are permitted to use, reproduce, distribute, make modifications to, and create derivative works of, the Output for any commercial purpose(except for the purposes of developing or offering competitive products or services of KLING AI).
+· Unlimited multi-track generation;
+· Other membership service benefits that may be updated from time to time.
+In addition, we would like to remind you that the specific Membership benefits you can enjoy is subject to terms set out on the relevant pages of the Website/APP in relation to membership benefits, as updated by us from time to time, and the prevailing membership benefits displayed on the Website/APP at the time of your actual purchase.
+3.1.3 Subscription
+You may choose continuous subscription to membership services and activate the function of automatic renewal for membership. Currently, continuous membership subscriptions includes "Monthly Subscription" and "Yearly Subscription".
+The specific Subscription and its corresponding membership benefits are subject to announcements made on the relevant pages of the Website/APP from time to time and the service benefits expressly specified on the Website/APP at the time of your actual subscription.
+Refer to the appendix herewith Automatic Renewal Service Rules for relevant automatic renewal rules.
+The Company may add or adjust the aforesaid types of continuous subscription and relevant benefits of the automatic renewal service at any time based on business development and the changes in users' demands. Please read carefully the publicity and actual displayed rules and instructions at that time when choosing the continuous subscription services.
+3.1.4 Changes in benefits
+Please understand that in order to improve the user experience and service content, the Company may from time to time update and optimize its Membership Services, functions, credit purchase features, member subscription programs or upgrade any of its programs and user benefits, etc. The process of updating and optimizing may involve adjusting them of some of the functions and benefits that have already been made available online.
+3.1.5 Period of validity of benefits
+During the Validity Period of the Paid Services that you have subscribed for, the category of the User Account with which you enjoy the aforementioned membership benefits shall be your Member Account, and you are required to log in to your Member Account in order to use such membership benefits.
+The Validity Period of the Membership Service that you subscribed for is subject to the validity period stated on the relevant page of the Website/APP for the corresponding category of membership service on the Website/APP. After the expiration of the Validity Period of the Membership Service you have subscribed for, your Member Account will be restored to a Regular Account if you do not renew or continue to purchase other Membership Services, and you will not be able to continue to have the corresponding membership benefits.
+The Company would like to remind you that, as the expiration date and other rules of use would impact your rights to access the Membership Services, please be sure to carefully review the purchase webpage of the relevant Membership Services and the description of the different Membership Services published on the relevant page of the Website/APP, and fully understand the contents of these Terms, the purchase webpage and the details of all announcements made in relation to the Membership Service from time to time, in order to ensure that you have a clear understanding of the terms applicable to the purchased Membership Services, and the corresponding benefits of members.
+3.1.6 Expiry date inquiry
+After you purchase and activate the Membership Service, you can log in to your Member Account to check your payment information (such as the subscribed benefits, validity period, etc.). The query path for checking such payment information is to access [Membership Center] in the top navigation bar of the Website/APP.
+3.2 Changes in Membership Services
+You may update your membership grade based on your current grade in certain circumstances. The related rules, including whether the membership grade can be altered, the payment rules, and the order in which membership benefits are applied, etc., are published on the membership subscription pages.
+
+4. Credit Services
+4.1 Benefits of Credit
+4.1.1 "Credit" refers to the virtual tools that we provide to you to redeem and obtain certain services on Kling AI and our other platforms. The specific content and benefits of Credit is subject to the announcements and notices in respect of credits posted on the relevant pages of the Website/APP at the time of your actual purchase.
+4.1.2 For the avoidance of doubt, the Credit service is not a service of payment, and the Credit is not a token, virtual currency or prepaid voucher, and does not have a monetary value or prepaid value.
+4.1.3 Credit can only be used to redeem the products or services offered on the Website/APP and as agreed upon in these Terms, and cannot be converted to any currencies.
+4.1.4 You may not acquire/use the Credit for any non-personal use such as for profit, or acquiring/disposing the Credit by gifting, lending, transferring, selling, mortgaging, or licensing the Credit to third parties.
+4.2 How Credit is obtained and its validity period
+4.2.1 Purchase Credit
+All Users may purchase Credit in accordance with these Terms and other relevant rules in relation to Credit that are set out on the relevant pages of the Website/APP from time to time. The service fees payable by Users for Credits will be paid to us or a payment service provider designated by the Company.
+The payment service provider of each payment collection method may impose a handling fee for each payment method according to its policies and collect such fee when the User purchases any Credits. Therefore, if you intend to top up to purchase Credits, please be sure to pay attention to the handling fees of the payment service provider of each payment collection method and choose the payment collection method according to your own needs.
+You acknowledge and agree that the validity period of Credit purchased is 2 years.
+4.2.2 As a form of membership benefit
+Once the subscription to membership benefits takes effect, the Membership's Subscription Credits will be distributed monthly within the Subscription Period. As at the date of these Terms, the validity period of such Credit is 1 month from the date of distribution of the Credit to your account.
+In the event of a change in membership benefits, the date of distribution of the Membership's Subscription Credits will also change accordingly. The validity period of the Credit is 1 month from the updated date of distribution by the system. The Credit that was already distributed before any changes to membership benefits are made will not be affected.
+The applicable rules for the validity period of points may change due to the adjustment of the service platform's terms, the final terms in this section shall be subject to all announcements in relation to benefits that are posted on the relevant pages of the Website/APP from time to time and the membership benefits specified on the relevant page of the Website/APP at the time of your actual subscription.
+4.2.3 As Activity Rewards
+We may give Credit as rewards to User Accounts (including Member Accounts and Regular Accounts) during certain activities.
+The specific policies and rules in respect of activities, which applies to the validity period and the scope of use of the complimentary Credit shall be subject to the rules on the relevant page on the Website/APP in relation to activities, so please read, understand and comply with them carefully.
+4.3 Rules for the use of Credit
+4.3.1 Once the Credit is successfully distributed, it cannot be exchanged for membership. Credit cannot be transferred, gifted, or otherwise manipulated between different Users, between different accounts controlled by the same User, or between different spaces owned by the same User (e.g., personal, team, or enterprise spaces). Refunds or reverse exchanges for cash withdrawals are not supported.
+For Team Memberships, the Team Owner and Administrators may manage Credits within the Team Space, including recharging and allocating Credits. If you are an enterprise, organization, or other legal entity and have activated enterprise platform services (an “Enterprise User”), Enterprise Administrators and Project Administrators may allocate and transfer assets among members within the same project in accordance with applicable platform rules.
+4.3.2 Credit can only be redeemed for the use of specific functions or value-added services offered on the Website/APP.
+4.3.3 Additionally, please note that the "Membership Service" is an exclusive service for members (Please refer to Article 3 "Membership Services" for details), and it cannot be obtained through the redemption of Credit.
+4.3.4 Credit have an expiration date, and you should use them within the validity period.
+4.3.5 Special Note: The expiration dates for the different categories of Credits, i.e., Credits under your membership benefits, Credits purchased, and Credits obtained as gifts, may all differ. Please carefully read the rules and explanations in relation to the expiration dates on the relevant pages of the Website/APP.
+4.3.6 The priority of the consumption of different Credits is that Credits with a shorter remaining validity period will take precedence over those with a longer remaining validity period.
+4.3.7 Please be aware that, for the purposes of improving user experience and enhancing our services content, we may periodically update, optimize, or adjust various services, functions, pricing schemes, and User rights in relation to Credit. This may involve the discontinuation or modification of some existing functions or rights.
+4.3.8 You can view your Credit balance, remaining validity period, Credit acquisition and consumption records, and other details by accessing ["Credit Details"] in the top navigation bar of Kling AI. This record will serve as a valid basis for your Credit usage. If you wish to report any discrepancies with your Credit records, you can contact us at the contact information specified in Article 11 of these Terms. Upon investigation and verification, if we find any errors, we will make the necessary corrections.
+
+5. Separately Purchased Services
+5.1 Benefits of Separately Purchased Services
+5.1.1 In addition to Membership Services and Credit Services, we offer certain features of specific products as Separately Purchased Services. Services eligible for separate purchase will be clearly indicated.
+5.1.2 The specific benefits of each service are subject to the rules displayed in the product interface. Please read the relevant information carefully and decide whether to purchase.
+5.1.3 To improve user experience and service quality, we may update or optimize the content, functions, pricing, and user rights of Separately Purchased Services from time to time. Such updates may include discontinuation or modification of existing functions or benefits. We will make reasonable efforts to protect your legitimate rights and interests.
+5.2 Rules for Using Separately Purchased Services
+5.2.1 Separately Purchased Services cannot be exchanged for membership or cedits. Separately Purchased Services and the associated benefits cannot be transferred, gifted, or otherwise manipulated between different Users, between different accounts controlled by the same User, or between different spaces owned by the same User (e.g., personal, team, or enterprise spaces). Refunds or reverse exchanges for cash withdrawals are not supported.
+5.2.2 Separately Purchased Services can only be redeemed for the specific functions or value-added services designated on the platform.
+5.2.3 Separately Purchased Services have a validity period and must be used within that period. Please read the relevant product page carefully before purchasing.
+5.2.4 Important Notice: Please note that the validity periods of Separately Purchased Services may vary depending on the platform or feature through which they are purchased. You should carefully review the rules and information provided on the relevant service pages.
+5.2.5 Important Notice: Please be aware and acknowledge that Separately Purchased Services are provided based on specific product features and are inherently tied to those features. If such product features are discontinued, deactivated, or no longer available due to business adjustments, technical upgrades, or other reasons, the corresponding Separately Purchased Services will terminate immediately, and any remaining unused period will not be extended. The platform is not obligated to provide compensation for any unused portion. At its sole discretion, the platform may, for reasons of user experience or business considerations, offer alternative services, convert rights, or provide other forms of compensation; however, any such actions do not constitute an obligation of the platform.
+5.2.6 When consuming Credits, those with the earliest expiration date shall be applied before those expiring later.
+5.2.7 You may review the usage balance, remaining validity period, acquisition, and consumption records of your Separately Purchased Services on the relevant product pages. Such records shall serve as valid evidence of your use of the Separately Purchased Services. The specific access paths are as follows:
+● Web: User avatar in the left sidebar-Profile-Plans-Purchase Records
+● App: Homepage top-left navigation-Manage your plan
+If you believe there is an error in your service records, you may contact us through the communication channels provided in this agreement. Verified errors will be corrected.
+
+6. Fees and Unsubscribing
+6.1 Fee Standards
+6.1.1 Fee Standards
+Please note that the Company reserves the right to set its own pricing for the Paid Services offered by Kling AI. Different Paid Services are subject to different payment models. Kindly read these Terms and the relevant rules applicable to the specific Paid Service you intend to purchase on the specific payment page of the relevant Paid Service carefully. The Company may adjust the payment models based on various marketing strategies and the specific circumstances of the Paid Services. The actual payment models and related rules displayed on the function page in relation to the relevant Paid Service shall prevail over these Terms in the event of any inconsistency.
+6.1.2 Changes to Payment Methods
+Please understand that due to market and business development, operational needs, and rights adjustments, the pricing schemes for various Paid Services or the specific rights, payment models, validity periods, and complimentary rights (if any) included under the Paid Services may be adjusted from time to time. Adjustments to the pricing schemes will take effect from the date on which an announcement is published on the Website/APP. Your rights to use the Paid Services purchased before such adjustments take effect will not be affected. However, if you need to purchase additional Paid Services after any changes to the pricing scheme have taken effect, the updated pricing scheme will apply. You understand and agree to purchase the corresponding services according to the latest published pricing scheme.
+By continuing your actions (including but not limited to clicking "Agree", continuing to purchase, completing payment, or continuing to use our Paid Services), you acknowledge and agree to the revised payment methods and standards.
+6.2 Purchases and payments
+6.2.1 Please note that the purchase of each Paid Service under this Agreement must be operated after you log in to your Kling AI User Account, and if you do not log in to your User Account, you will not be able to purchase the Paid Services or make payments.
+6.2.2 Please make sure to use the official payment method specified on the Website/APP to make payment for Credits. The payment methods supported by different payment service providers may be different, so please follow the instructions on the payment page to complete the payment. If you use a payment method other than the one specified by Kling AI or an illegal method to make payment, the Company does not guarantee that the payment will be completed smoothly or correctly, and other risks may be caused, and if you or any third party's rights and interests are harmed as a result of such payment, you shall be solely responsible for resolving any related disputes and shall bear full and sole liability for all losses and risks incurred by you, any third party or the Company as a result of or in connection with, and the Company will not be bound to assist you or to make any compensation or indemnification. Meanwhile, the Company reserves the right at any time to suspend part or all of your rights, freeze your Credit balance, implement a short-term or permanent ban on your account and/or prohibit you from using the Paid Services.
+6.2.3 If you are an enterprise, organization, or other legal entity and have activated enterprise platform services (an “Enterprise User”), you may procure relevant resources or services through the enterprise platform. You may make such purchases via prepaid top-ups.
+● Prepaid Top-Up: You may prepay funds to Kling AI via offline corporate bank transfer. Upon receipt of the payment, Kling AI will credit the corresponding amount to the Enterprise User’s enterprise platform account, and the account balance will be increased accordingly. You may use the account balance to purchase applicable resources or services.
+Please ensure that the payment information is accurate when making a transfer. You shall bear all responsibility for any failure of funds to be credited due to incorrect payment details or other reasons attributable to you.
+6.2.4 Rules for Unsubscribing
+As the Paid Services and associated benefits are virtual consumer products, the service fee will be the price of the online product corresponding to the Paid Service you purchased, and is not deemed to be a prepayment, deposit, earnest money, savings card, or any similar item. Once the Paid Service (including any Membership Service and Credit service) is activated, the fee paid for the Paid Service is non-refundable.
+Before purchasing the corresponding Paid Service, please carefully check the service and benefit information, price, usage period, and relevant rules governing your use of the Paid Services as set out herein as set out in these Terms, and pay attention to the verification of the User Account information for the Paid Service that you are purchasing.
+
+7. Instructions of Conduct
+7.1 When using the Paid Services, you should abide by the INSTRUCTIONS OF CONDUCT section stipulated in the Kling AI Terms of Service .
+7.2 Please note that each member holds exclusive rights and interests of removing brand watermarks from their generated images, videos and other content. If you are an user who is a non-member, unless you obtain our written permission to do otherwise, you shall label all content generated on the Website/APP with the brand and logo involved (including but not limited to "Kling AI", "Kling AI 1.0/1.5", "Kling", "KELING"/"keling", "Kling"/"kling", "KLINGAI"/"klingai", "Kling AI+", other brands or logos centered on or derived from the aforementioned brands or logos, and a combination of the aforementioned brands or logos with others). In the event that the Content generated by Kling are not affixed with any brand mark in the process of use due to any objective reasons, you shall prominently indicate that the outcome is generated by "Kling AI" in the use scenarios of the generated content (including but not limited to adding the aforesaid brand logo with "Kling" or other relevant brand or logo in the interface of the generated content or marking the brand or logo in the title or other prominent positions).
+7.3 You must not, and must not permit or cause any third party to, engage in any of the following acts in the course of using the Paid Services:
+7.3.1 Theft, exploitation of system loopholes (including but not limited to using robot software, spider software, crawler software, screen-scraping software, etc.), and causing defects or errors in rules/system settings, or obtaining the use of any one or more Paid Services and any other rights and interests through any non-official or authorised channels, ways and means (including but not limited to purchase, rental, borrowing, sharing, assignment, etc.), causing malicious use or damage to any of the Paid Services, and rights and interests through any non-official or authorised channel or mean;
+7.3.2 Save as expressly permitted under these Terms, use any one or more paid services and rights for profit or illegal gain, sell, transfer, license or transfer any one or more paid services or paid rights you enjoy in various ways, or lend the service or paid rights to others for use;
+7.3.3 Modify the service content, Validity Period, consumption record, transaction status, etc. of any or more Paid Services purchased under the User's account by illegal means, or using any one or more of the purchased Paid Services in an unlawful manner or for illegal purposes;
+7.3.4 Break, alter, reverse engineer, tamper with, or otherwise damage any of the Company's security measures used to protect the Paid Services and the associated rights, or assist others to do so;
+7.3.5 The use of any one or more of the Paid Services and the associated rights and interests to infringe upon the Company's and any third party's intellectual property rights, property rights, rights of reputation, and other lawful rights and interests;
+7.3.6 The use of any one or more of the Paid Services and rights and interests against or suspected of endangering minors;
+7.3.7 Other violations of applicable laws and regulations or regulatory policies, infringement of the lawful rights and interests of third parties or us, as well as any violations of these Terms, the Service Agreements and Rules and any relevant platform rules implemented from time to time.
+7.4 Kling AI respects and protects the legitimate rights and interests of users and others. You are reminded that if you provide as Input on the Website/APP, or receive as Output from the Website/APP, sensitive information involving personal information or confidential information when using the Website/APP, you should strictly comply with the applicable laws and regulations, including obtaining legal and valid consent from the affected individual. You shall ensure that the original contents such as videos, images, photos and other materials and information (hereinafter referred to as "Content") that you upload, input, or publish on the Website/APP or receive in the form of Output when using the functions and services of Kling AI are compliant with all applicable laws and do not infringe the legal rights of any third party (including, but not limited to portrait right, personality right, copyright and the related or neighbouring right of copyright, patent right, trademark right, right of reputation, right of honour, property right, rights in relation to personal information, confidential information, etc.).
+7.5 If you violate the above requirements, you shall be solely responsible for resolving any related disputes and bear full and sole liability for all losses and risks incurred as a result of or in connection with the foregoing. Additionally, we reserve the right to, upon receiving and verifying complaints from relevant right owners in accordance with the applicable laws and the Service Agreements and Rules, and any other platform rules implemented from time to time, remove such infringing content at our discretion or take measures within the scope of applicable laws to prohibit you from continuing to use such content and you shall bear all losses or adverse consequences. Our provision of Services to you does not constitute any recognition of the legality, compliance, or non-infringement of the Content you upload and publish on the Website/APP. If any losses are caused to the Company due to the Content, the Company reserves the right to claim compensation from you and take relevant measures in accordance with the applicable laws and Kling AI Terms of Service as appropriate.
+
+8. Suspension and Termination of Services
+8.1 The Paid Services you have purchased may be suspended or termination in the following situations:
+8.1.1 Active suspension or termination by you, including but not limited to suspending or terminating the purchased Paid Services, failure to renew upon expiration of the service period, or cancellation of your User Account;
+8.1.2 Active suspension or termination of the corresponding Paid Services by us due to your breach of these Terms, any of the Service Agreements and Rules or any other relevant terms and rules implemented by us from time to time;
+8.1.3 Suspension or termination of the Paid Services by us due to applicable legal and regulatory requirements or force majeure events;
+8.1.4 Other situations where the Paid Services should be suspended or terminated in accordance with applicable laws and regulations.
+8.2 After the suspension or termination of the Paid Services, we will provide you a with reminder or notice.
+8.3 If you are unable to use the Paid Services as a result of the foregoing, you can contact us with any questions you may have at the contact information specified in Article 11 of these Terms.
+8.4 In the event of suspension or termination on any grounds under Article 8.1:
+8.4.1 To the extent permitted under applicable law, the Company shall not be liable to you or any third party for any claims, refunds, damages, or losses whatsoever;
+8.4.2 Fees collected are non-refundable unless specifically agreed upon in these Terms;
+8.4.3 The Company has the right, but not the obligation, to ensure that you retain information about your subscriber data in relation to the relevant Paid Services.
+8.5 When the termination of the Paid Services you purchased occurs as mentioned above, you have no right to request the Company to continue to provide you with the corresponding Paid Services, user rights and interests, or to request the Company to fulfill any other obligations related to the termination of the Paid Services, but this does not affect the rights and obligations arising from the Terms between you and the Company prior to termination. You shall indemnify the Company for all losses and/or expenses incurred by the Company (including legal fees on an indemnity basis) in relation to any claims of third parties and any penalties imposed by any governmental, regulatory or statutory bodies, arising out of or in connection with the termination or suspension of the Paid Services you purchased. You shall indemnify the Company for any losses and/or expenses incurred by the Company as a result.
+
+9. Risks and Liabilities
+9.1 Please understand that in order to improve the user experience and service, the Company may from time to time update and optimize its offering of Paid Services, functions, purchase programs, membership subscription programs or upgrade programs and user rights and interests, etc., and that the process of updating and optimizing may involve the downgrading or adjusting of some of the on-line functions and rights and interests, and that the Company will use commercially reasonable endeavors to protect your legitimate rights and interests.
+9.2 When purchasing, it is your responsibility to confirm that the information of purchase equipment, the amount which you intend to purchase, the account under which you intend to purchase, your E-mail as associated with your account, purchase demand, operating system and channel are accurate before each payment transaction is made. You should follow the guidelines on the relevant function page on the Website/APP to complete the purchase. If your rights and interests are damaged for any reason, whether due to the wrong account number, wrong amount that you paid, wrong type of purchase, wrong User Account number, wrong amount of money, improper operation, or lack of understanding of billing method, or otherwise, you are fully responsible for the losses and damages incurred and will not be compensated or indemnified.
+9.3 Please note that each Paid Service and the corresponding paid rights and interests are limited to your own use through your registered User Account. Without the written consent of the Company, each User is prohibited from granting, borrowing, renting, transferring, selling or otherwise licensing the use of the User Account and the Paid Services and all rights and interests in relation to the User Account to others in any form. If the Company finds or has reasonable grounds to believe that the actual user is not the owner of the User Account, in order to protect the User Account and the security of user rights and interests, the Company has the right to immediately suspend or terminate the provision of the corresponding services or rights and interests to the User Account. You should correctly use and properly store your User Account credentials and maintain the confidentiality of your User Account and password, so as to prevent any leakage, loss, theft and any other unauthorised actions.
+9.4 After you subscribe to and purchase the Paid Services, you can use them at any time within the Validity Period as needed. The Company hereby reminds you that since the terms herein, including those in relation to the Validity Period, are relevant to your own rights and interests in respect of your User Account, please be sure to carefully review the purchase page of the relevant Paid Services on the Website/APP and the detailed page description of the services before purchasing the Paid Services. Please ensure that you fully understand the contents of these Terms, the purchase page of the relevant Paid Services, and the detailed page description to ensure that you have a clear understanding and awareness of the Paid Services you purchased, the corresponding rights and benefits you will enjoy, and the rules governing your use of the Paid Services as set out in these Terms.
+
+10. Exclusion of Liability
+10.1 Please understand that there may be certain risks in any payment transactions you make through various payment channels for the purchase of the Paid Services (including, but not limited to, threat actors stealing user accounts or bank information to carry out illegal activities, threat actors committing fraud to deceive the User to payments, etc.), and such risks may cause corresponding economic losses to you. The Company has no control over the above risks and has no legal obligation to pursue legal liability from the wrongdoers or compensate you for your losses. The Company will provide you with assistance within the scope permitted by laws and regulations to minimize your losses, but any assistance provided by the Company shall not be evidence or basis for the Company to assume legal responsibility.
+10.2 Please understand that the Company cannot at all times foresee and prevent technical and other risks, including but not limited to force majeure, governmental actions, network reasons, system or equipment failure (including but not limited to server downtime/crash, system instability/failure, database failure), power failures, third-party service defects, hacking, computer viruses / Trojan horses / malicious programs and other circumstances beyond its control or circumstances that are not reasonably foreseeable, such as service interruptions and losses to the user's personal data and information. The Company shall not be liable for any loss, damage or refund of any fees arising out of any interruption of services, loss of User's personal data and information caused by any system or equipment failure (including but not limited to server downtime/crash, system stability/failure, database failure.), power failures, third party service defects, hacking, computer viruses / Trojan horses / malicious programs and other circumstances beyond the Company's control or circumstances that are not reasonably foreseeable.
+10.3 You understand and agree that if the Paid Services purchased by you or the related rights and interests are interrupted or unavailable due to the Company's fault, the Company will take measures to restore your rights and interests as soon as possible and at its sole discretion, compensate you according to the actual situation (such as, by extending the corresponding Validity Period, giving away part of the free experience rights and benefits, etc., whichever is actually provided), and that the Company will do its best to protect your rights and interests.
+10.4 Please understand that the Company may determine whether to continue to provide you with the existing Paid Services and related user rights and benefits, or to modify or adjust the existing Paid Services and related user rights and benefits based on a multitude of factors including but not limited to operational planning, market environment, Company operations, policy changes, etc. The Paid Services and related user rights and benefits that you enjoy is subject to the description of the Paid Services on the relevant page of the Website/APP, at the time of your purchase of the Paid Services, and the Company will do its best to ensure your rights and benefits.
+10.5 The Company shall not be liable for any loss or liability arising from the Company's inability to provide the Paid Services or any error in the provision of the Paid Services due to your own reasons, for which you are solely responsible, including but not limited to:
+10.5.1 Your account being invalidated, lost, or suspended;
+10.5.2 Losses or liabilities caused by third-party payment institutions, banks and other accounts you are bound to for whatsoever reasons, including the reasons of your use of unauthenticated accounts or use of accounts that are not your own, your account being frozen or seized, and so on;
+10.5.3 Losses due to your disclosure of your password to others;
+10.5.4 Property damage caused by your personal willfulness or gross negligence.
+10.6 If the payment process involves related services provided by a third party, in addition to complying with these Terms, you also need to agree to and comply with the terms and related rules of such third parties governing such services. In the event of any disputes between you and the third party arising out of the related services provided by such third party, you acknowledge that you will be fully responsible for resolving such dispute and the Company is under no obligation to assume any responsibility to you or to the third party.
+
+11. Terms of Service for Minors
+Anyone below the age of 13 or other minimum age as defined under applicable laws of your jurisdiction ("Minimum Age") shall not use the Services.
+If you have reached the Minimum Age but are under the age of majority as defined under applicable laws of your jurisdiction ("Majority Age"), you may only use Paid Services through the representation of your parent or legal guardian and that they abide by the stipulation of Kling AI Terms of Service and Kling AI Privacy Policy .
+
+12. Contact Us
+If you have any complaints, suggestions or other questions about these Terms, please contact us:
+a) through email at support@kling.ai ;
+b) by accessing [Kling AI Customer Support] at the bottom right corner of the Website;
+c) by clicking on the [ top left menu] - [Contact Us] in Kling AI APP.
+
+We will review your feedback as soon as possible and reply to you in a timely manner after verifying your identity.
+
+Appendix: Automatic Renewal Service Rules Automatic Renewal Service Rules
+This Automatic Renewal Service Rules (hereinafter referred to as "the Rules") shall be deemed as a supplementary agreement of the "Kling AI Terms of Paid Service" and shall be an integral part of the Kling AI Terms of Paid Service. If there is any conflict between the Rules and the Kling AI Terms of Paid Service, the Rules shall prevail.
+When purchasing paid services of Kling AI, if you confirm that you have selected " Monthly Subscription" or " Yearly Subscription" and agreed to Kling AI Terms of Paid Service by checking the box or continue to operate (including but not limited to clicking to agree, or continue to purchase, or complete the payment, or use of paid service), you shall be deemed to agree to this Rules.
+
+You understand and agree that:
+
+1. This Automatic Renewal Service is based on your need for automatic renewal. Under the premise of your subscription of Kling AI membership, the Automatic Renewal Service is a service launched to prevent any loss due to your negligence or failure to renew the membership service in time for any other reasons. If you choose to use the Automatic Renewal Service, you authorize the Company, when the automatic renewal billing cycle for the Paid Service subscribed is about to expire, to authorize the payment channel (such as Stripe) to deduct the Service Fee for the next billing cycle from the balance of your payment account bound with your User Account for purchase of Paid Service. You acknowledge that the billing cycle may be determined by the payment channel at its sole discretion in accordance with the actual situation. Once the automatic payment is successfully made, your subscription for Paid Service is continuous until you cancel the automatic renewal service or such the subscription service is suspended, discontinued or terminated in accordance with the Kling AI Terms of Use.
+
+2. Type of Automatic Renewal Service
+2.1 Currently, continuous membership subscriptions includes "Monthly Subscription" and " Yearly Subscription".
+The specific Subscription and its corresponding membership benefits are subject to announcements made on the relevant pages of the Website/APP from time to time and the service benefits expressly specified on the Website/APP at the time of your actual subscription.
+2.2 The Company may add and adjust types of Automatic Renewal Service and contents of benefits of Automatic Renewal Service according to business development and changes in users' demands. Please refer to the contents and detailed description displayed on the specific interface when subscribe the Paid Service.
+
+3. Automatic Renewal Service Billing Rules
+3.1 If you choose the Automatic Renewal Service, you agree that the payment channel may automatically deduct the Service Fees of the next billing cycle from the payment account bound with your User Account, without verifying the password of Kling AI Member Account, password of payment account, payment password or any other information;
+3.2 Unless you cancel the Automatic Renewal Service voluntarily or the Company cancels the Automatic Renewal Service on its own initiative, the Automatic Renewal Service will be renewed and deducted automatically without any limit on the times;
+3.3 If you fail to cancel the Automatic Renewal Service, you shall be deemed to have agreed that the Company may automatically deduct the service fees within a certain period after the expiry of the corresponding Automatic Renewal billing cycle in accordance with the rules or policies of the payment channel.
+3.4 Upon successful completion of the automatic renewal payment, the Company will automatically extend your subscription to the Paid Service by the billing cycle you selected when activating the automatic renewal service. In the event that the fees cannot be deducted normally due to force majeure (e.g., network disruption or other unforeseen circumstances) prior to the end of the previous billing cycle, the deduction will be postponed until successful completion.
+Please ensure your payment account has sufficient balance. You are responsible for any risks and/or losses resulting from renewal failure due to issues with your payment account or insufficient funds.
+
+4. Automatic Renewal Notice
+In order for you to know the situation of Automatic Renewal, we and the payment channels will send to you an Automatic Renewal Notice or other methods prior to the expiration date of the Automatic Renewal Service you have selected (the notice from the payment channel shall be subject to the actual implementation by the operator of the payment channel).
+
+5. Please note that the Company reserves the right to adjust the prices of Automatic Renewal Service. During the term of your Automatic Renewal Service, if the Company adjusts the price of paid service corresponding to your Automatic Renewal Service, the Company will notify you thereof by reasonable methods product interface publication, platform announcement or in-site messages. The adjusted price will take effect on the date of the adjustment or as otherwise notified by the Company. If you disagree with the price adjustment, you may choose to cancel the Automatic Renewal Service in accordance with the Rules, and your Paid Service subscription will expire at the end of the current billing cycle. Importantly, to ensure your continued membership benefits, the Company will not revoke the automatic deduction authorization with the payment channel until you explicitly cancel the Automatic Renewal Service.
+
+6. You shall have the right to choose whether to continue to use or cancel the Automatic Renewal Service. If you choose to cancel the Automatic Renewal Service, you shall cancel the subscription prior to the expiration date of the Automatic Renewal billing cycle you select. The specific requirements for the cancellation date shall be determined by, and subject to, the information provided via the product interface, platform announcements, in-app notifications, email notifications, or other communications from the Company.After the cancellation, the term of the Paid Service you subscribe will expire from the expiration date of the current billing cycle. If you fail to cancel the subscription in a timely manner, the payment channel will continue to deduct the service fee for the next and the subsequent billing cycle, and the term of the Paid Services will be postponed to the expiration date of the next billing cycle. Please note that the cancellation date may be subject to the rules of certain payment channels. For example, if you cancel within one (1) day prior to the end of the current billing cycle for an Automatic Renewal Service, such payment channels may have already processed the deduction for the service fee for the next billing cycle. Where such deduction has been successfully completed, the paid service you have purchased will remain available until the end of that next billing cycle.
+
+7. Unsubscription
+You can unsubscribe in the following way:
+For Stripe subscription payments
+[Manage my subscription - Cancel subscription - Go to Stripe to manage ].
+For iOS subscription payments:
+iOS 12 and above:
+Open the Settings app → Tap your Name → Select Subscriptions → Choose the relevant subscription → Tap Cancel Subscription.
+Alternatively:
+Open the App Store → Tap the Apple account profile icon in the top-right corner → [Account] → Tap Purchase History → Select KLING AI and cancel the subscription.
+iOS 11 and below:
+Open Settings app → Navigate to [iTunes Store & App Store] → Tap your Apple ID to view account settings → Go to [Subscriptions] → Select KLING AI and cancel the subscription.
+For Google Play subscription payments:
+On your Android device, go to subscriptions in Google Play→Select the subscription you want to cancel.→Tap Cancel subscription.→Follow the instructions.
+
+8. The Company shall have the right to stop providing you with the Automatic Renewal Service based on its operation strategy, and shall send notice to you by platform publication, in-site messages and other methods prior to the termination of such Automatic Renewal Service. The term of the Paid Service you subscribe shall expire from the expiration date of the current Automatic Renewal billing cycle.
+
+
+
+
+
+
+

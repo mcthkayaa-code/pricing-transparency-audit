@@ -1,0 +1,93 @@
+SOURCE: https://originality.ai/pricing
+DATE ACCESSED: 2026-08-10
+METHOD: Rendered browser read (mcp Claude_Browser), non-essential cookies declined via
+        shadow-DOM "Reject" control before reading. Desktop viewport 1280x900.
+NETWORK NOTE: Collection network egresses from Turkey. Page rendered with "All prices are in
+        USD" stated explicitly on-page and priceCurrency:"USD" in embedded JSON-LD for every
+        offer (see below) -- vendor's own currency disclosure, arm 1 of the D-003 currency
+        check. No non-USD figure was served at any point in this session.
+DEFAULT DISPLAY STATE: Loads with the "Annual (Save up to 23%)" toggle pre-selected/highlighted
+        (purple pill), "Monthly" plain/unselected. Two plan cards visible: Pro and Enterprise.
+        No region/country selector present.
+
+=== VISIBLE CARD TEXT (as loaded, before any interaction) ===
+Pro [Most popular] — For individuals and small teams.
+$12.95/month
+"You are saving $24"
+[Get Started]
+2,000 credits per month
+1 month expiry - renews monthly
+1 credit equals 100 words
+Standard support
+File upload (docx, pdf, doc)
+Full site scans
+Team management
+Tag scans
+Access to future features
+Chrome extension
+Additional team seats: $8.62/month
+
+Enterprise — Ideal for agencies & publishers.
+$136.58/month
+"You are saving $509"
+[Get Started]
+Everything in Pro
+15,000 credits per month
+1 month expiry - renews monthly
+1 credit equals 100 words
+Dedicated Customer Success Manager
+Priority support
+365 days scan history
+API access
+Additional team seats: $19.04/month
+
+Compare-features grid (Yearly/Monthly toggle, same default=Yearly):
+Scan History: Pro 30 days / Enterprise 365 days
+Customer support: Pro Standard / Enterprise Priority
+"Buy additional credits" listed as a shared row (tooltip: "Get 2,000 credits per month. Need
+more? It's easy to top up and buy additional credits as needed.")
+
+Header line: "All prices are in USD"    "Cancel anytime (i)"
+Tooltip on "Cancel anytime": "You may cancel your subscription anytime."
+
+=== HIDDEN TOOLTIP TEXT (revealed on hover of the "you are saving $X" line; inside the same
+     price card => annual_condition_disclosure = adjacent) ===
+Pro tooltip: "You will be billed yearly for an amount of: $155.4 ($12.95 x 12 months) instead
+  of $179.4 ($14.95 x 12 months). You save $24..."
+Enterprise tooltip: "You will be billed yearly for an amount of: $1638.96 ($136.58 x 12 months)
+  instead of $2148 ($179 x 12 months). You save $509 on yearly plans."
+Credit-expiry tooltip (compare grid): "'Pay As You Go' credits are purchased via a one-time
+  payment and expire 2 years after the purchase date (if unused). 'Pro' & 'Enterprise' credits
+  are available via a monthly subscription and expire at the end of each month."
+
+=== EMBEDDED JSON-LD (schema.org), SECOND REPRESENTATION CONFIRMING PRICES ===
+Offers array (WebApplication "Originality.AI - Pricing Page"):
+  { name: "Pay-as-you-go (3000 credits)", price: "30", priceCurrency: "USD",
+    description: "One-time purchase of 3,000 credits (credits expire after 2 years if unused)." }
+  { name: "Pro Plan (Monthly)", price: "14.95", priceCurrency: "USD" }
+  { name: "Pro Plan (Annual)", price: "155.40", priceCurrency: "USD",
+    description: "Annual subscription: includes 2,000 credits/month. Save $24/year vs monthly." }
+  { name: "Enterprise Plan (Monthly)", price: "179", priceCurrency: "USD" }
+  { name: "Enterprise Plan (Annual)", price: "1638.96", priceCurrency: "USD" }
+
+=== FAQPage JSON-LD on same page (also visible on-page as an expandable FAQ accordion) ===
+Q: "If I purchase credits separately when will they expire?"
+A: "If you purchase additional credits separately, they will expire 2 years from the date of
+    purchase (if unused). If you have both subscription credits and purchased credits, the
+    subscription credits will be used first."
+Q: "How many credits are used if I scan 100 words for AI & plagiarism?"
+A: "2 credits are used for a 100-word scan that checks both AI and plagiarism."
+Q: "How many credits are used if I scan 100 words for AI?"
+A: "1 credit is used for a 100-word scan for AI detection only."
+Q: "How many credits does the SEO Content Optimizer use?"
+A: "1 credit is used for 100 words of content scanned with the SEO Content Optimizer."
+
+=== VISIBLE FAQ ACCORDION TEXT (also on-page, get_page_text confirms it renders) ===
+"Why should I purchase Originality.ai?" / "Can I try & test Originality.ai before I decide to
+purchase? ... Try and test Originality.ai tools for free by clicking 'Features'... these tools
+may offer limited versions. Sign up to access the full suite of tools."
+"How many credits are used if I scan 100 words for AI & plagiarism? 2 credits are used for 100
+word checks of AI and Plagiarism."
+"How many credits are used if I scan 100 words for AI? 1 credit is used for 100 word AI checks."
+
+Nav confirms canonical path: <a href="/pricing">Pricing</a> from https://originality.ai/ .

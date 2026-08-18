@@ -1,0 +1,145 @@
+URL: https://plusai.com/pricing
+Accessed: 2026-08-10
+Method: Rendered read (headless browser render), document.body.innerText, after declining
+  non-essential cookies were not prompted; no interaction before capture.
+Network note: Static WebFetch (HTML->markdown, first pass) already returned readable price
+  figures matching this rendered read exactly (two representations cross-checked per the
+  "read a price twice" rule: WebFetch text-extraction vs live rendered innerText). No
+  superscript-cents artefact; figures are round numbers consistent with tier ordering
+  (Basic $10 < Pro $20 < Team $30 < Max $200), so no magnitude-error flag.
+Public archive: web.archive.org /save/ attempted twice (2026-08-10); both attempts returned
+  an existing 2026-06-07 capture (pre-hydration shell, ~13KB, no price text) rather than a
+  fresh same-day capture. archive_status = local_copy_only; this file is the evidentiary
+  local copy for values read from this page.
+
+=== document.body.innerText (full, as rendered) ===
+Skip to content
+Start for free with a 7-day trial
+
+All plans start with a 7-day free trial with 1,000 AI credits. Includes both Google Slides and Powerpoint.
+
+Sign up with Google
+Sign up with Microsoft
+
+Plans and pricing
+
+Plans and pricing
+
+All paid plans start with a 7-day free trial. Prices shown per user/month, billed annually.
+
+Basic
+
+$10
+
+per user/month, billed annually. $15/user billed monthly.
+
+Best for individuals who need to create basic presentations.
+
+Start free trial
+
+AI FEATURES
+
+Create AI presentations in Google Slides and PowerPoint
+1,500 AI credits per month
+Insert single slides
+Rewrite and remix slides with AI
+Pro
+Most popular
+
+$20
+
+per user/month, billed annually. $25/user billed monthly.
+
+Best for individuals and teams who need advanced AI features.
+
+Start free trial
+
+AI FEATURES
+
+Everything in the Basic plan
+3,000 AI credits per month
+Document uploads (PDF, docx, txt)
+100K+ character prompts
+Generate AI images
+
+COLLABORATION
+
+Unlimited team members
+Team
+
+$30
+
+per user/month, billed annually. $40/user billed monthly.
+
+Best for individuals and teams who need to stay on brand.
+
+Start free trial
+
+AI FEATURES
+
+Everything in the Pro plan
+6,000 AI credits per month
+Customize branding (logo, colors, and fonts)
+Use advanced AI image models
+Save presets and custom AI instructions
+
+COLLABORATION
+
+Unlimited team members
+Team-wide custom branding and templates
+Shared preset library
+Max
+
+$200
+
+per user/month, billed annually. $240/user billed monthly.
+
+Best for power users and teams who use the AI Agent every day.
+
+Start free trial
+
+AI FEATURES
+
+Everything in the Team plan
+Unlimited AI credits
+Priority email support
+
+COLLABORATION
+
+Unlimited team members
+Team-wide custom branding and templates
+Shared preset library
+
+Plus AI for Enterprise
+
+AI slides to make the whole team look good
+
+Everything your team needs to create polished, on-brand presentations at scale. Custom templates, integrated asset libraries, and automated workflows - all powered by Plus AI. Includes SSO, user management, and white-glove onboarding to customize everything for your organization.
+
+Advanced templates
+
+Support for unlimited slides and specialized designs like case studies and diagrams
+
+Asset libraries
+
+Plus AI can pull from your existing resource slides, pre-approved image and icons, and more
+
+Works where you do
+
+Works within PowerPoint and Google Slides — no new apps to install or tools to learn
+
+Get a demo
+Frequently asked questions
+[11 FAQ items, see faq-full-text.json in this directory for full Q&A text]
+Start with a 7-day free trial. Cancel any time.
+
+=== DOM check: billing toggle ===
+No interactive monthly/annual toggle control exists (queried buttons, [role=switch],
+[role=tab], input[type=checkbox], [aria-checked], [aria-selected], [class*=toggle],
+[class*=switch], [class*=billing]). The only "toggle" class element found is `nav__toggle`,
+the mobile hamburger nav button, unrelated to billing. Each plan card carries a
+`.tier__billing` paragraph showing the annual per-month figure as the headline number and
+the monthly-billed figure as a secondary sentence in the same paragraph, e.g.
+"per user/month, billed annually. $15/user billed monthly." This is the page's only,
+non-interactive display state -> coded annual_preselected (the page loads showing annual
+pricing as the headline figure; there is no alternate state to switch to).

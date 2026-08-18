@@ -1,0 +1,22 @@
+URL: https://support.fotor.com/hc/en-us/articles/900006589106-How-to-Cancel-the-Subscription
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save blocked (Cloudflare/Zendesk); local evidentiary copy per protocol section 6.4.
+---
+Title: How to Cancel the Subscription? – Fotor Help Center
+Nora, 21 days ago Updated
+
+If you no longer need to renew your subscription, you can cancel it yourself.
+
+If your subscription was purchased on the Fotor website:
+1. Go to "Account Setting" and choose "Subscription".
+2. Click "Manage Plan". On the Available actions page, select Cancel your subscription.
+3. On the confirmation page, click Downgrade to free plan to complete the cancellation.
+
+If your subscription was purchased on an Android device (Google Play): go to Google Play Store's "Subscription Management" and cancel the Fotor/Goart subscription.
+
+If your subscription was purchased on an iOS/Mac device: go to App Store -> Personal info (Avatar) -> subscription management -> Fotor/Goart - Photo Editor, Designor to cancel your subscription renewal.
+
+Once canceled, you can still enjoy your package until the end of your current subscription period, and no more recurring payments will be made. If the subscription renewal is not canceled in time, the system will automatically renew your subscription and deduct the corresponding subscription fee.
+
+Warning: If the deduction fails, the system will try to deduct the payment several times until the deduction is successful. During this period, if you successfully cancel the subscription, then what you cancel is the next subscription renewal, and the system will continue to charge the fee for the failed deduction.
+
+If the above still does not solve your problem, please contact us.

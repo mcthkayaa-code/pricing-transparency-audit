@@ -1,0 +1,19 @@
+URL: https://help.openai.com/en/articles/10245774-sora-billing-credits-faq
+Accessed: 2026-08-10
+Method: rendered read via browser tool (static WebFetch returned HTTP 403 for this domain)
+
+--- body innerText ---
+Language
+English
+Login
+UH OH. THAT PAGE DOESN'T EXIST.
+Try searching for your answer or just send us a message.
+Go back home
+Have an account? Try logging in.
+ChatGPT
+API
+Service Status
+Cookie Preferences
+--- end ---
+
+Coder note: this page is gone (404) as of the collection date. It was found via WebSearch (title "Sora - Billing FAQ | OpenAI Help Center") which indicates it existed historically. Per the discontinued-stratum procedure, an archived (web.archive.org) capture of this URL from before 2026-04-26 is being sought separately; see wayback-lookups.txt.

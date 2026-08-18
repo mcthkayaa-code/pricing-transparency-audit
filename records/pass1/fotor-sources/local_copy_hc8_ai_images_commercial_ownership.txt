@@ -1,0 +1,10 @@
+URL: https://support.fotor.com/hc/en-us/articles/17767970123417-Are-the-AI-generated-images-commercially-available-Do-I-have-ownership-of-them
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save blocked (Cloudflare/Zendesk); local evidentiary copy per protocol section 6.4.
+---
+Title: Are the AI-generated images commercially available? Do I have ownership of them? – Fotor Help Center
+Fotor Help Center > AI Tools > AIGC (AI Image Generator)
+Nora, 3 years ago Updated
+
+Yes, the AI generated images can be used for both personal and commercial purposes. You can share them on social media platforms, use them for marketing campaigns, or sell them. You are the copyright owner of your creations and you will be responsible for any output that you generates using AIGC Related Service.
+
+According to our Terms of Service, currently the Company does not make any copyright claim over the output that User generates and does not have the ability to license or release the use of that output to User. Please note that this situation may change as the development of copyright laws in various jurisdictions.

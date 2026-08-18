@@ -1,0 +1,39 @@
+URL: https://www.myperfectresume.com/pricing
+Date: 2026-08-10
+Method: D-009 re-read. Live rendered browser session (mcp__Claude_Browser). Second
+representation obtained via structural DOM query (direct element/outerHTML search for the
+"95.40" and "1-Year Premium Access" text, not the innerText transcript the original 2026-08-09
+coding used).
+
+What it shows:
+1. Card container structure, confirming entry_tier_name maps to the correct card:
+   <div class="wp-block-group pricing-col ..."><h2 class="wp-block-heading"><mark ...>1-Year
+   </mark> Premium Access</h2><p class="free-title package-price">$7.95<sup>/month</sup></p>
+   <p class="package-price-text">Pay $95.40 up-front and save 69%. Automatically renews each
+   year. <strong>Cancel anytime.</strong></p>...
+
+2. IMPORTANT FINDING, investigated per the D-009 superscript check: this page DOES use a <sup>
+   tag near the headline price -- <p class="free-title package-price">$7.95<sup>/month</sup></p>
+   -- but unlike the nicepage failure class, the superscript wraps the "/month" UNIT LABEL, not
+   any digit of the price. The number itself, "$7.95", is one plain, unsplit text node with no
+   markup inside it. A text extractor reading this paragraph produces "$7.95/month" correctly
+   either way; there is no magnitude-corruption risk here. (A second, unrelated <sup> on the same
+   page wraps a "§" footnote marker on an unrelated social-proof sentence, not a price at all.)
+   Flagging this explicitly because the assignment's whole premise is that superscript markup
+   near a price deserves a second look -- this one checks out clean on inspection.
+
+3. first_charge_amount_usd (95.40): confirmed as a DIRECT vendor statement, not a coder
+   computation -- the exact phrase "Pay $95.40 up-front and save 69%. Automatically renews each
+   year." is present verbatim in the <p class="package-price-text"> node, unchanged from the
+   original coding. Per the coordinator's D-009 provenance-check addendum: this value's
+   provenance is READ DIRECTLY off the vendor's own page, not derived via a $7.95 x 12
+   computation (7.95 x 12 = 95.40 would coincidentally match, but the record does not rely on
+   that arithmetic -- the vendor prints the annual total in its own words). Rule 2/3's
+   once-for-twelve-months requirement is not in play here since no multiplication was performed.
+
+Conclusion: all four scoped values (entry_tier_name="1-Year Premium Access",
+headline_price_usd=7.95, headline_billing_basis=per_month_billed_annually,
+first_charge_amount_usd=95.40) confirmed in a second representation. This re-read does not
+revisit the original coder's flagged entry-tier SELECTION judgment call (1-Year Premium Access
+vs. the 14-Day Premium Access candidate) -- it confirms only that the figures printed on the
+selected card are read correctly. No correction.

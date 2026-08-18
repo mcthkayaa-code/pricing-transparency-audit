@@ -1,0 +1,118 @@
+product_id: aiva
+product_name: AIVA
+category: AI music generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Standard Annually"
+coder_pass: 2
+coder_role: second
+collection_date: "2026-08-14"
+recheck_date: not_applicable
+primary_source_url: https://www.aiva.ai/
+archive_url: https://web.archive.org/web/20260814172042/https://www.aiva.ai/
+archive_status: archived
+default_display_state: "EUR pricing shown, no currency/country selector present; billing toggle preselected on BILLED YEARLY (DOM class selected-slider-difficulty-title on the 'Billed yearly' label, not inferred from which figure loaded first); 'For Individuals' tab active by default (vs Students & Schools / For Enterprises tabs); no cookie-consent banner encountered on load."
+
+sources:
+  - { url: "https://www.aiva.ai/", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814172042/https://www.aiva.ai/", note: "Single-page site; nav 'Pricing' link and https://www.aiva.ai/pricing both resolve to this same URL/DOM. Local capture saved as aiva-sources/pricing-homepage-archive-capture-2026-08-14.html." }
+  - { url: "https://www.aiva.ai/legal/1", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814172222/https://www.aiva.ai/legal/1", note: "End User License Agreement (server-rendered, confirmed via raw curl). Covers licensing/commercial-use terms, usage limits, refunds, auto-renewal implication, governing law. Local capture saved as aiva-sources/legal-eula-raw-2026-08-14.html." }
+  - { url: "https://aiva.crisp.help/en/category/frequently-asked-questions-1hnn93r/", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814172325/https://aiva.crisp.help/en/category/frequently-asked-questions-1hnn93r/", note: "Official AIVA Helpdesk (Crisp-powered; CRISP_WEBSITE_ID embedded in aiva.ai page source; articles also custom-domain-mapped at aiva.ai/en/... ). Complete FAQ index, 8 articles, no pagination." }
+  - { url: "https://aiva.crisp.help/en/article/i-dont-understand-the-terms-of-license-1wqvh5v/", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260806132404/https://aiva.crisp.help/en/article/i-dont-understand-the-terms-of-license-1wqvh5v/", note: "Per-tier licensing/copyright/commercial-use explainer. Archive was deduped by Wayback to its existing 2026-08-06 capture (unchanged content)." }
+  - { url: "https://aiva.crisp.help/en/article/how-can-i-downgradecancel-my-subscription-1crq9uf/", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814172448/https://aiva.crisp.help/en/article/how-can-i-downgradecancel-my-subscription-1crq9uf/", note: "Self-serve downgrade/cancellation instructions; refund-ineligibility for downgrades." }
+  - { url: "https://aiva.crisp.help/en/article/general-user-manual-44klp4/", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814172519/https://aiva.crisp.help/en/article/general-user-manual-44klp4/", note: "Full product manual incl. Billing page section (payment methods, Monthly/Annual subscribing, Downgrade button)." }
+
+variables:
+  headline_price_usd: { value: non_usd, source: "https://www.aiva.ai/", evidence: "Standard Annually card: '€11 / month+ VAT', 'Billed Annually'. No USD figure published anywhere on the pricing page; confirmed no currency selector exists (0 matches for select/currency/locale/country selectors in page DOM)." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://www.aiva.ai/", evidence: "'€11 / month' shown with 'Billed Annually' label styled as the price's own subtitle (div.option-price-subtitle-billing-cycle) in the default (annual-preselected) display state." }
+  first_charge_amount_usd: { value: non_usd, source: "https://www.aiva.ai/", evidence: "'Billed Annually' states the billing frequency is once per 12 months; documents do not publish a separate annual total figure, so 11 x 12 = 132.00 EUR was computed per rule 2 (see computation_assumptions). VAT excluded per rule 5 (tax, not part of price)." }
+  mandatory_addon_present: { value: "no", source: "https://www.aiva.ai/legal/1", evidence: "Pricing page and EULA list plan features (downloads/month, track duration, formats, licensing) with no separate required charge beyond the plan price. VAT ('+ VAT') is a tax, excluded per codebook rule 3, not a mandatory add-on." }
+  annual_condition_disclosure: { value: adjacent, source: "https://www.aiva.ai/", evidence: "'Billed Annually' renders in <div class=\"option-price-subtitle-billing-cycle\" id=\"option-price-subtitle\">, the same card/DOM node family as the price figure itself, directly beneath '€11 / month+ VAT'." }
+  annual_default_toggle: { value: annual_preselected, source: "https://www.aiva.ai/", evidence: "DOM: <div class=\"slider-difficulty-title selected-slider-difficulty-title\">Billed yearly</div> vs plain 'slider-difficulty-title' (no selected- prefix) on 'Billed monthly'. Default state established from the toggle's own CSS class, not from which number the page rendered first." }
+  free_plan_exists: { value: "yes", source: "https://www.aiva.ai/", evidence: "'Free, Forever' card, '€0', 'No credit card required'." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://www.aiva.ai/", evidence: "'3 downloads per month' (quantified rate) and 'Track durations up to 3 minutes' (quantified standing limit). Format restriction 'MP3 & MIDI formats' is a feature restriction, not a numeric cap, and is not counted either way." }
+  free_plan_cap_value: { value: "3 downloads per month | 3 minutes max track duration", source: "https://www.aiva.ai/", evidence: "'3 downloads per month', 'Track durations up to 3 minutes' on the Free, Forever card." }
+  free_plan_watermark: { value: unknown, source: "https://www.aiva.ai/", evidence: "No document states free-plan outputs are watermarked or branded, nor that they are not. Free tier documents only an ATTRIBUTION/crediting requirement ('Credit must be given to AIVA'), a usage condition, not a stated property of the downloaded file. Checked: pricing page, EULA (legal/1, full text), all 8 help-center FAQ articles, General User Manual - none use the word 'watermark'. (Third-party review pages claim a 3-second audio watermark on free downloads; not used as evidence per protocol - no official AIVA document confirms it.)" }
+  free_plan_duration: { value: perpetual, source: "https://www.aiva.ai/", evidence: "'Free, Forever' - presented as a standing tier alongside paid tiers with no expiry stated in any document." }
+  trial_exists: { value: "no", source: "https://www.aiva.ai/legal/1", evidence: "Pricing page offers only Free (perpetual, €0), Standard, and Pro (both immediate paid subscriptions); EULA §2 names exactly five plans (Free, Standard Monthly, Standard Annually, Pro Monthly, Pro Annually) with no time-limited trial of a paid tier. No document, including all 8 help-center articles and the General User Manual, uses the word 'trial'." }
+  trial_card_required: { value: not_applicable, source: "https://www.aiva.ai/legal/1", evidence: "No trial exists (trial_exists = no)." }
+  trial_length_days: { value: not_applicable, source: "https://www.aiva.ai/legal/1", evidence: "No trial exists (trial_exists = no)." }
+  trial_auto_converts: { value: not_applicable, source: "https://www.aiva.ai/legal/1", evidence: "No trial exists (trial_exists = no)." }
+  credit_system_present: { value: "no", source: "https://www.aiva.ai/", evidence: "Plan allowances are stated directly in output units ('3 / 15 / 300 downloads per month'), not in an intermediate currency. The only use of the word 'credit' on AIVA's official pages is the attribution sense ('Credit must be given to AIVA' / 'No need to credit AIVA'), unrelated to a metering currency." }
+  credit_unit_defined: { value: not_applicable, source: "https://www.aiva.ai/", evidence: "No credit system (credit_system_present = no)." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://www.aiva.ai/", evidence: "No credit system (credit_system_present = no)." }
+  credit_rate_location: { value: not_applicable, source: "https://www.aiva.ai/", evidence: "No credit system (credit_system_present = no)." }
+  cost_per_output_unit: { value: other, source: "https://www.aiva.ai/", evidence: "Product is sold to produce music compositions/tracks; the metered unit is a whole 'download' of a track (capped by max duration, e.g. 'up to 5 minutes'), not a per-minute or per-second audio rate and not a seat/API-call unit. None of the enumerated units fits; named unit is 'per track download' (coder_note)." }
+  cost_per_output_computable: { value: "yes", source: "https://www.aiva.ai/", evidence: "Entry tier (Standard Annually) publishes both required figures on the same page in the same default display state: '€11 / month+ VAT' and '15 downloads per month'. No assumption about typical use is needed; see computation_assumptions." }
+  computation_assumptions: { value: "Standard Annually (entry tier). EUR11/mo+VAT billed annually (annual toggle default, DOM-confirmed). First charge 11x12=132.00 EUR (VAT excl.). Cost/output: 15 downloads/mo incl.; 11/15=0.73 EUR per track download.", source: "https://www.aiva.ai/", evidence: "" }
+  credit_rollover_policy: { value: not_applicable, source: "https://www.aiva.ai/", evidence: "No credit system (credit_system_present = no)." }
+  failed_generation_charge_policy: { value: unknown, source: "https://www.aiva.ai/legal/1", evidence: "EULA §6 states generation-rate limits ('cannot create more than 100 Compositions per hour', '400 ... every 24 hours', '5 Compositions at one time, quota resets everytime a Composition has been fully generated') but does not state whether a failed/errored generation consumes the monthly download allowance or the hourly/daily generation quota. No document (EULA, pricing page, 8 FAQ articles, General User Manual) addresses generation failure outcomes." }
+  auto_renewal_default: { value: "on", source: "https://www.aiva.ai/legal/1", evidence: "EULA §9: 'Licensee is responsible for downgrading to the free plan and / or disabling auto-renewal of their subscription when Licensee no longer wishes to continue paying for the Services. No refund will be made if Licensee forgets to cancel their subscription.' The requirement to actively disable auto-renewal / cancel establishes renewal is automatic by default." }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://www.aiva.ai/legal/1", evidence: "Only the EULA (§9) references auto-renewal ('disabling auto-renewal of their subscription'). The pricing page states 'Billed Annually'/'Billed Monthly' but not renewal behavior; the downgrade/cancel FAQ describes what happens after cancelling but never uses the words 'renew' or 'auto-renew'." }
+  renewal_notice_commitment: { value: unknown, source: "https://www.aiva.ai/legal/1", evidence: "EULA and help-center documents were checked; none commit to advance notice before a renewal charge, and none explicitly disclaim it either." }
+  refund_policy_exists: { value: "yes", source: "https://www.aiva.ai/legal/1", evidence: "EULA §9: 'Customers are elligible for refunds if, and only if, they have not used any of the premium features of the plan they subscribed to.'" }
+  refund_window_days: { value: unknown, source: "https://www.aiva.ai/legal/1", evidence: "EULA §9 conditions refund eligibility on USAGE ('have not used any of the premium features'), not on a stated number of days; no document states a day-count window." }
+  refund_conditions: { value: conditional, source: "https://www.aiva.ai/legal/1", evidence: "EULA §9: 'Customers are elligible for refunds if, and only if, they have not used any of the premium features of the plan they subscribed to. If Licensee has already started using premium features, Licensee understands that they are no longer elligible for a refund...'" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://aiva.crisp.help/en/article/how-can-i-downgradecancel-my-subscription-1crq9uf/", evidence: "'To downgrade, go to https://creators.aiva.ai/billing, and then click on \"Downgrade\" under the plan you want to downgrade to. You can downgrade to a free plan at any time.' No email/ticket/contact step described." }
+  refund_policy_location: { value: multiple, source: "https://www.aiva.ai/legal/1", evidence: "Stated in the EULA/terms (dedicated §9 'Refunds') AND in the help-center downgrade/cancel FAQ ('Any costs already paid out ... will not be refunded' / 'no refund will be possible'). Both agree in substance: refunds are narrowly conditional / generally unavailable once used or once downgraded early." }
+  commercial_use_lowest_tier: { value: lowest_paid, source: "https://www.aiva.ai/legal/1", evidence: "EULA §3: Standard plan grants a 'Limited Commercial License ... to monetize the MIDI and Audio Composition on a limited set of third-party websites: Youtube, Twitch, Tik Tok and Instagram.' Pricing card for Standard (entry paid tier) lists 'Limited monetization'; Free card lists 'No monetization'." }
+  watermark_removal_tier: { value: unknown, source: "https://www.aiva.ai/", evidence: "No document (pricing page, EULA, 8 FAQ articles, General User Manual) uses the word 'watermark' for any tier, so neither a watermark's existence nor its removal tier can be determined from official sources. See free_plan_watermark for the same finding." }
+  output_ownership_statement: { value: conditional, source: "https://www.aiva.ai/legal/1", evidence: "EULA §3 / FAQ 'I don't understand the terms of License': Free and Standard plans - 'The copyright of the tracks you create is owned by AIVA'; Pro plan - 'The copyright of the tracks you created is owned by YOU', and on cancelling Pro, the user 'will retain the copyright of the compositions you already owned before cancelling' (i.e. tied to tier and to the subscription being active when a given composition was created)." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.aiva.ai/", evidence: "Standard (entry) tier: '15 downloads per month' (quantified rate) and 'Track durations up to 5 minutes' (quantified standing limit). EULA §6 adds account-wide quantified rate limits (100 Compositions/hour, 400/24h, 5 at once, 4,000 stored). No unlimited or unquantified claim attaches to the entry tier." }
+  unquantified_limit_clause: { value: absent, source: "https://www.aiva.ai/legal/1", evidence: "EULA (all 12 sections + preamble) and the pricing/plan documentation were read in full. §6 lists only numbered thresholds (5 at once, 100/hour, 400/24h, 4,000 stored) - each quantified, so none trigger this clause. No fair-use, reasonable-use, excessive-use, or vendor-discretion throttling clause without a number was found anywhere. §10's 'sole discretion to modify, discontinue or terminate the Services' concerns the Service itself, not a volume/intensity-of-use limit, and §6/§7's compliance-based termination is conduct-based, not a usage-volume clause." }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): eligible paid candidates were Standard Annually
+  (EUR11/mo, annual-equivalent EUR132.00) and Pro Annually (EUR33/mo, annual-equivalent
+  EUR396.00, LOSING candidate). Free (EUR0) is not a paid candidate. Excluded as ineligible:
+  Enterprise tier (sales-gated, "please contact us... to establish a custom plan", EULA §2) and
+  the Students & Schools tier (named-program, contact/live-chat only, per pricing page note).
+  Standard Annually wins on lowest annual-equivalent single-seat cost, read in the default
+  (annual-preselected) display state.
+
+  Currency (deviation D-003): no vendor currency selector or explicit currency statement found
+  (arm 1 empty). Triggered a fresh web.archive.org/save/ capture of the pricing page on
+  2026-08-14; Internet Archive's Save-Page-Now crawl runs from Internet Archive's own US
+  infrastructure, independent of this coder's network. That capture shows the same EUR0/EUR11/EUR33
+  figures and zero USD/$ mentions (grepped directly, see aiva-sources/pricing-homepage-archive-
+  capture-2026-08-14.html) - arm 2 evidence that the vendor serves EUR, not USD, to a US reader
+  too. Coded non_usd on that basis, not merely because this session runs from Turkey.
+
+  cost_per_output_unit named "per track download" (coder_note per codebook rule 3): AIVA doesn't
+  sell per-minute or per-second audio pricing; the metered unit is one whole composition download,
+  capped by a max duration per tier.
+
+  Money-value second-representation check (binding rule): headline/first-charge EUR figures were
+  confirmed in raw DOM/HTML (div#option-price) matching the rendered text exactly - no superscript-
+  cents or formatting artifact. Confirmed a second time in the archive.org capture's raw HTML.
+
+  free_plan_watermark / watermark_removal_tier: explicitly checked pricing page, EULA (legal/1,
+  full text), all 8 help-center FAQ articles, and the General User Manual - none use the word
+  "watermark". Third-party review sites claim a 3-second audio watermark on free downloads; per
+  protocol this cannot justify a coded value, so both variables are unknown despite that claim.
+
+  trial_exists = no: explicitly checked for "trial" wording across every located official
+  document (pricing page, EULA, 8 FAQ articles, user manual) plus WebSearch site: queries; none
+  found. No A-012 (paid time-limited intro period) applies - AIVA has no intro-then-converts offer.
+
+  refund_conditions / refund_window_days: EULA §9's refund eligibility is usage-conditioned ("have
+  not used any of the premium features"), not time-windowed, so no day count exists to record;
+  this is distinct from - and not in conflict with - the help-center downgrade FAQ's statement
+  that paid amounts already used are non-refundable. Both are official AIVA sources describing
+  different scenarios (pre-use withdrawal vs. post-use/downgrade), not incompatible positions on
+  the same question, so no conflict_note entry was warranted.
+
+  creators.aiva.ai/billing (referenced by the downgrade FAQ) requires login and was not opened,
+  per the documents-only prohibition on signing in; any detail visible only behind that login
+  (e.g. a possible in-account currency setting) is outside what this study can determine.
+
+  blindness: no other record, no review page, no pass-1 material was opened. Disclosure: while
+  reading sampling-rules.md section 7 (entry paid tier, as instructed), a single Read call's
+  line-limit overshot into the start of section 8 ("Double-coded subsample" - target/selection-
+  algorithm text only, e.g. "select the 1st, 5th, 9th, and every fourth product thereafter" per
+  category). This is general published methodology with no product-specific content; it does not
+  name which products (including AIVA) are in the reliability sample, and `double-coded-
+  selection.csv` itself was never opened, so AIVA's sample membership was not determined or seen.
+  Flagged per instructions rather than left unstated.
+conflict_note: ""
+register_events: []
+status: complete

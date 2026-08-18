@@ -1,0 +1,281 @@
+LOCAL CAPTURES — 10Web Help Center (help.10web.io)
+ACCESSED: 2026-08-14
+METHOD: Rendered browser read (Claude_Browser). help.10web.io sits behind a Cloudflare "Just a
+moment..." bot-check page ("Just a moment..." title, noindex/nofollow meta) that blocked both
+WebFetch (403) and curl (200 but Cloudflare-challenge HTML body, no real content) — a real
+rendered browser session passed the check and returned genuine content. Two archive.org save
+attempts per URL (the cap this study allows) both failed (HTTP 520 or 429 from web.archive.org),
+so these are archive_status: local_copy_only per protocol. Article URLs were resolved from the
+help center's own on-site search-result links (Zendesk tracked-click redirects, base64-decoded
+to their plain hc/en-us/articles/... destinations, then navigated to directly).
+
+================================================================================
+ARTICLE 1
+URL: https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan
+TITLE: AI Starter Plan
+CATEGORY PATH: Getting Started > Business Plans
+================================================================================
+Best for
+
+The AI Starter plan is designed for individuals, small businesses, startups, and website owners
+who need one professional WordPress website with AI-powered website creation, managed hosting,
+speed optimization, and essential website management tools.
+
+This plan is a good fit if you want to create and manage a single website with 10Web's Agentic
+Website Builder, use 10Web Premium Hosting, and access the main tools needed to launch, edit,
+optimize, and maintain your site.
+
+What's included
+
+1. High-performance WordPress hosting
+Managed WordPress hosting: Fast and reliable 10Web Premium Hosting for 1 website.
+99.99% uptime.
+Monthly visitors: The plan supports up to 10,000 visitors per month. For every 10K extra
+visitors, you'll be charged an extra $2 at the end of the billing month. Visits are measured by
+the total monthly traffic, based on unique IPs, to your site.
+SSD storage: Includes 10GB scalable storage with fees for overages if you exceed the limit.
+You'll be charged an extra $2 at the end of the billing month for each extra 5GB used.
+Free SSL certificate.
+Free custom domain: The AI Starter plan includes a free custom domain for 1 year, up to $30.
+Bot and DDoS protection.
+Access to website files and database (SSH, SFTP, MySQL).
+Hosting usage analytics.
+Staging test environment.
+Automated 1-click migration.
+Multisite support.
+
+2. Agentic Website Builder
+Agentic Website Builder: Create a production-ready WordPress website with AI agents.
+AI credits: The AI Starter plan includes 100 AI credits per month. These credits are used for
+AI-powered website generation and editing actions available in the platform.
+Prompt-to-website generation.
+Redesign agent, Cloning agent, Figma agent.
+Advanced AI Editor.
+Mobile optimized, custom domain integration, Full WordPress CMS.
+
+3. Ecommerce dashboard — product/order management, 10Web Payments, analytics, checkout, tax
+setup, product filter, customer accounts.
+
+4. Website speed optimization — full optimization, 90+ PageSpeed score, Core Web Vitals, SEO
+foundations, image optimization, full page caching, dynamic ecommerce caching.
+
+5. 24/7 customer support — email + chat.
+
+6. Collaboration and automated website maintenance — user/team management, automated WP/plugin
+updates, automated daily backups, activity log, up-to-date PHP/MySQL.
+
+What's not included
+Cloudflare CDN: Access to Cloudflare Enterprise CDN requires an additional purchase (Website
+Booster tab > Cloudflare CDN > Buy Now).
+White Label for WordPress: Available only with Agency plans.
+VIP priority support: Available only with Agency plans.
+
+Price and billing cycle
+"For pricing details about the AI Starter plan, please visit this page [pricing page]. You have
+the option to choose between monthly, annual, and longer-term billing cycles when available."
+"Longer billing cycles may be more cost-effective than monthly billing. Please check the pricing
+page or your checkout screen for the current billing options and savings."
+
+Upgrade options
+Adding more websites: additional-website pricing may vary by billing cycle, shown at checkout.
+Upgrading to a higher plan: via Subscription Plan page > Upgrade.
+
+Upgrade limitations
+"You will have limitations if: Your current plan, including add-ons such as additional websites
+and CDN, has a higher monthly or annual price than the plan you want to upgrade to. Your current
+plan's storage and visitor limits, including add-ons, are higher than the plan you want to
+upgrade to." Contact support for assistance in these cases.
+
+Downgrading to a lower plan
+"Downgrading is a manual process handled by our Billing Team, as it cannot be performed directly
+through your account." Requires contacting Customer Care.
+
+================================================================================
+ARTICLE 2
+URL: https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor
+TITLE: 10Web AI Editor
+CATEGORY PATH: Getting Started > AI Builder > Create/Generate With AI
+================================================================================
+[Excerpt — full article is a UI walkthrough; only the credit-relevant passage is reproduced in
+full below, the rest (editor modes, theme settings, chat, history, publishing) was read but is
+not needed for any coded value]
+
+"Note: AI editing requests sent through the AI chat, use AI credits from your subscription plan."
+
+"Website menu ... AI credit usage: The AI credit usage section shows how many AI credits have
+been used from your subscription plan. **Each AI request costs 1 credit.**"
+
+(No statement anywhere in this article about credit rollover, credit expiry, or what happens to
+a credit when an AI request fails/errors.)
+
+================================================================================
+ARTICLE 3
+URL: https://help.10web.io/hc/en-us/articles/5867566723986-Visitors-and-Storage-Overages
+TITLE: Visitors and Storage Overages
+CATEGORY PATH: Getting Started > Account & Payment > Subscription & Plan Management
+================================================================================
+"Your plan includes a preset number of visitors and storage space. Since 10Web's AI-powered
+platform provides elastic scalability, your website is always available to visitors, even if you
+go over the number of included visitors in your plan or need more storage space."
+"This process is entirely automated, so you only pay for extra visitors or storage space as
+needed."
+"Important: Additional fees for overages cannot be charged via Paypal. If you're using Paypal as
+your main payment method, you can add a credit card as your default payment method for additional
+fees."
+
+Visitor overages
+"All plans include a specified number of website visitors for each month."
+"If you go over your plan's limit, there is a $2 automated charge for each additional 10,000
+website visitors."
+"Each unique IP address that visits your website in a 24-hour period represents a visitor."
+
+Storage overages
+"All plans include a specific amount of SSD storage space for your website's files and database."
+"Note: Backups are not using the SSD storage. They are stored separately."
+"If you exceed your plan's SSD storage space, we automatically add any additional storage space
+needed to ensure your website remains up and running."
+"Extra storage space is $2 for each additional 5GB of SSD storage."
+
+When are overage charges due?
+"Overages are billed at the end of each monthly billing period." Example given: usage in the
+month of a May 5th payment is billed on the June 5th invoice.
+
+================================================================================
+ARTICLE 4
+URL: https://help.10web.io/hc/en-us/articles/5315648905234-Canceling-Downgrading-or-Changing-10Web-Subscriptions
+TITLE: Canceling, Downgrading, or Changing 10Web Subscriptions
+CATEGORY PATH: Getting Started > Account & Payment > Subscription & Plan Management
+================================================================================
+"Note: Only Workspace owners can request to cancel, downgrade, or change a subscription plan."
+
+Canceling your plan
+"Upon canceling your plan, the scheduled subscription payments will cease, but you will retain
+access to the platform until the end of the current billing period. Once the billing period
+concludes, your plan will expire, and you will no longer be able to access your account. To
+initiate the cancellation of your plan, please visit the Subscription plan page."
+"Important: Upon the expiration of your plan, please remember that all websites and data will be
+permanently deleted. Protect your data by backing it up and downloading the .zip backup file to
+retain a secure copy."
+
+Downgrading your plan
+"You can downgrade your plan to a lower plan at any time. If you have already been charged for
+your plan, we'll extend your plan accordingly." "Please reach out to customer care for help with
+downgrading your plan."
+
+Changing your payment schedule
+"You can also switch to an annual or monthly payment schedule..." "Please reach out to customer
+care for help with changing your plan's payment schedule."
+
+Potential charges to be aware of
+"Please consider canceling a few days before your plan's scheduled renewal date. Automatic credit
+card payments are processed every day at 12:00 UTC. PayPal payments typically process between
+10:00 and 14:00 UTC. Because of the potential differences between time zones, waiting until your
+plan's last day to cancel may be too late to prevent an automatic renewal charge."
+"Important: The time zone must be set correctly for cancellations or changes to your plan to
+reflect the account holder's time zone accurately."
+"You are responsible for any overage charges or additional fees such as extra storage or support
+for more visitors during high-traffic periods."
+
+================================================================================
+ARTICLE 5
+URL: https://help.10web.io/hc/en-us/articles/6136064762770-Why-Have-I-Been-Charged
+TITLE: Why Have I Been Charged?
+CATEGORY PATH: Getting Started > Account & Payment > Payment & Billing Information
+================================================================================
+Common charges — Subscription renewal
+"10Web charges subscription plan fees automatically upon renewal. There are two models: Monthly
+subscription: Charged monthly on the same date as your initial payment. Annual subscription: Paid
+upfront for a year and automatically renewed annually on the same date."
+"You can switch to an annual or monthly payment schedule at any time by contacting customer
+support."
+
+Free trial expiration
+"We provide a 7-day free trial to help you evaluate our services without any charges. You can
+freely cancel your subscription during this trial period from your Subscription Plan tab in your
+10Web Workspace."
+"**The 7-day free trial automatically upgrades to a paid subscription unless cancelled within the
+trial period.**"
+"Modifying any paid plan features/inclusions during your free trial (e.g. disabling 'Site Lock'
+and/or obtaining a domain, Websites, CDN, etc), ends the trial immediately, upgrading to a paid
+plan and charging your payment method."
+"Important: 7-day trial is only available for platform plans. Speed Booster offers a freemium
+version, requiring immediate payment for upgrades."
+
+Add-ons
+"Additional features, such as extra hosted site slots or Cloudflare Enterprise CDNs, are billed
+as add-ons to your plan. Review these in your Workspace Subscription Plan tab. To remove add-ons
+you purchased earlier, contact Customer Care."
+
+Plan resource overages
+"Charges may apply for exceeding resource limits (e.g., visitors, CDN bandwidth, storage)
+included in your plan. For more details, refer to the dedicated overages article."
+
+Timeframe of the charges
+"Credit card payments: Processed at 12:00 UTC. PayPal payments: Processed between 10:00 and 14:00
+UTC. Time zone differences might cause a one-day discrepancy in your statement."
+
+================================================================================
+ARTICLE 6
+URL: https://help.10web.io/hc/en-us/articles/360030873012-What-Happens-if-I-Fail-to-Upgrade-My-Plan-Before-the-Free-Trial-Ends
+TITLE: What Happens if I Fail to Upgrade My Plan Before the Free Trial Ends?
+CATEGORY PATH: Getting Started > Automated WP Platform > FAQ
+================================================================================
+Full article text (this is the entire article, it is a single short Q&A with no other sections):
+
+"If you don't upgrade before the free trial ends, your website will be deleted after the trial
+expires. However, there is room for recovering your website once you upgrade."
+
+NOTE ON CONFLICT: this directly conflicts with Article 5 above ("Why Have I Been Charged?"),
+which states the trial "automatically upgrades to a paid subscription unless cancelled within the
+trial period" (i.e. non-action -> auto-charge), and with the Terms of Service SUBSCRIPTION/REFUND
+sections (auto-renewal + "Pre-Charge Notifications... 24 hours prior to first charge"). This
+article instead frames non-action as leading to the website being deleted, without mentioning
+that a charge occurs. Both this article and Article 5 are the same document class (help-center),
+equal authority — coded as `conflicting` for trial_auto_converts, both URLs recorded.
+
+================================================================================
+ARTICLE 7
+URL: https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web
+TITLE: Get Started for Free on 10Web
+CATEGORY PATH: Getting Started > Getting Started: 10Web Platform
+================================================================================
+"Starting for free on 10Web gives you access to powerful tools like the AI Website Builder,
+Automated WordPress Hosting, Website Booster, and User Management."
+
+How to get started for free -> Go to 10Web.io and select "Get started for Free" -> Create a new
+website with AI (walkthrough for both "online store" and "informational website" flows: pick
+business type, enter description, pick/skip theme, create an account, generate. Both flows then
+state, verbatim):
+
+Online-store flow: "If you're unsatisfied with the initial design, you can Regenerate the website
+or make quick customizations to fonts and colors. **To unlock full editing capabilities, start a
+7-day free trial of the Pro version by attaching your credit card.** Note: Your card will not be
+charged during the trial unless you perform restricted actions (e.g., disabling site lock), which
+may trigger charges. You can cancel the trial anytime within the 7 days to avoid charges."
+
+Informational-website flow: "You also have the option to Regenerate the website or make quick
+adjustments to fonts and colors. **To make detailed edits, activate a 7-day free trial of the Pro
+version by adding your credit card information.** Note: Your card will not be charged during the
+trial unless you disable site lock or perform other restricted actions. You may cancel the trial
+within 7 days to prevent charges."
+
+The 7-day free trial (dedicated subsection)
+"The free trial period offers access to all 10Web Pro features. You can cancel anytime during the
+trial without incurring charges."
+"Important: SSH and SFTP credentials are not available on free plans, and attempting to enable
+these may result in charges."
+
+AI Website Builder (dedicated subsection)
+"With 10Web AI Builder, you can easily create or recreate websites by: Generating a brand-new
+page... Using the AI Recreation Tool to recreate unlimited existing web pages."
+"Note: **Free platform users are limited to generating one website, and full editing requires
+enabling the 7-day free trial.**"
+
+NOTE ON USE: this article is the source for (a) trial_card_required = yes (explicit "by attaching
+your credit card" / "by adding your credit card information" — a direct statement, not an
+inference from the existence of a charge), and (b) free_plan_exists = yes (the "free platform
+users" / "free plans" language describes an ongoing capability distinct from, and prior to, the
+card-gated 7-day trial: generate 1 website, light font/color customization, no card required).
+It conflicts with ToS clause "To be able to use the Platform and its Services you have to have an
+active subscription" (SUBSCRIPTION section is silent on this pre-trial free state; PLATFORM USE
+AND YOUR CONDUCT section states the active-subscription requirement) — recorded in conflict_note.

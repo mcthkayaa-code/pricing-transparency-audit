@@ -1,0 +1,47 @@
+Source: https://www.magnific.com/legal/acceptable-use-policy
+Accessed: 2026-08-07
+Archive attempt: web.archive.org/save returned HTTP 520 twice (archive_failed after 2 attempts); local copy saved per protocol-v1.md 6.4.
+---
+Acceptable Use Policy
+April 2026
+
+While we foster the creativity of our users, designing products and tools that help them express the power of their ideas and achieve great designs, faster, there are some activities that are incompatible with Magnific's mission. This Acceptable Use Policy ("AUP") describes activities that are prohibited in connection with your use of the Products, as defined below. All Magnific users must comply with Magnific's AUP.
+
+We may provide translations of this AUP into various languages merely for informative purposes. However, the English version is the only legally binding version. In the event of any discrepancy between the English version and a translated version, the English version shall prevail.
+
+This AUP places certain restrictions on the use you can make, the content you can upload, the designs you create using our tools and products including, without limitation, Magnific, Flaticon, Slidesgo, Wepik, Storyset, Magnific Editors and any AI Products, (collectively, the "Products"). Some of the Products may include additional usage restrictions. In such a case, this Acceptable Use Policy shall apply in conjunction with such additional usage restrictions.
+
+This AUP may be updated from time to time. By continuing to use the Products or access your account after a revised version of the AUP has been posted, you agree to comply with the latest version of the AUP.
+
+We may, at any time and without notice, remove any content and/or materials, and suspend or terminate your account or your access to the Products if you engage in activities that violate this AUP, including activities outside of your use of the Products.
+
+Magnific has the right, but not the obligation, to monitor or investigate your use of the Products at any time for compliance with this AUP and each Products Terms of Service, or any other agreement between you and Magnific governing your use of the Products. Likewise, In the event we detect any breach of this AUP that is alleged to be unlawful or otherwise, Magnific may disclose such content to law enforcement or other governmental authorities, or in response to a court order.
+
+Our determination of whether a violation of this AUP has occurred will be final and binding, and any action taken with respect to enforcing this AUP, including taking no action at all, will be at our sole discretion.
+
+If you think that any user of the Products has violated this AUP, please contact us at https://www.magnific.com/profile/support
+
+Non-acceptable Usage of the Products
+
+You agree not to upload content, create designs, or use the Products, directly or indirectly, in any manner that:
+
+Promotes or creates a risk of physical or mental harm, emotional distress, death, disability, or disfigurement to yourself, any person, or animal;
+Promotes or creates a risk of harm, loss, or damage to any property;
+Seeks to harm, abuse or exploit minors;
+Is harassing, abusive, hateful, racially or ethnically offensive, defamatory, invasive of personal privacy or publicity rights, libelous, or threatening;
+Discriminates, incites, or promotes discrimination against others based on race, religion, sex, sexual orientation, age, disability, ancestry, national origin, or any other basis;
+Involves the sale or promotion of illegal activities, products, or services;
+Violates any law, is fraudulent or promotes illegal or fraudulent activities;
+Violates the rights of any individual or third party, including their intellectual property and data privacy rights;
+Contains any information or content (including personal data) that you do not have a right to make available under any law or due to confidentiality, contractual, or fiduciary duties;
+Contains any information or disinformation that is false, deceptive, or misleading or otherwise promotes, endorses, encourages, or facilitates the spread of false information;
+Violates any applicable law or promotes activities that are illegal in nature;
+Threatens or undermines democratic processes or institutions.
+
+Fair Use
+
+Magnific's Products, including any AI-powered tools or features, are intended for personal, human use only. Each subscription or account is strictly personal and may only be used by the individual user to whom it has been assigned.
+
+You may not share, sell, resell, sublicense or otherwise grant access to your account or any of its features to third parties. Likewise, you must not use the Products through any form of automation, bots, or external tools. Any form of mass generation, scraping, or automated generation or extraction of content or metadata, or any other technique intended to artificially increase usage, output or circumvent technical or contractual limits is strictly prohibited.
+
+Magnific reserves the right to monitor usage patterns to ensure compliance with this Fair Use Policy, and may temporarily restrict, suspend, or disable access to certain features or accounts where abnormal, excessive, or automated activity is detected. Such actions will be proportionate, and you will be notified of the reason for the restriction and provided with a contact channel to request review at https://www.magnific.com/profile/support from one of our Magnific Support Team Members.

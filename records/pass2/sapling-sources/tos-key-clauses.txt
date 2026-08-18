@@ -1,0 +1,75 @@
+Source: https://sapling.ai/tos ("Sapling Terms of Service", Last Updated on: July 18, 2023)
+Accessed: 2026-08-15
+Archive: https://web.archive.org/web/20260812203156/https://sapling.ai/tos
+(Note: two separate https://web.archive.org/save/ submissions on 2026-08-15 both returned
+this same 2026-08-12 memento rather than a fresh same-day capture -- treated as an
+"archived" state per the deviations-doc archive rate-limit note, not archive_failed, since
+a working public snapshot link was returned both times.)
+
+Full document read to the end (~31,810 characters). Clauses relevant to coded variables:
+
+REFUND (refund_policy_exists, refund_window_days, refund_conditions):
+"Fees and Payments... All fees are in U.S. Dollars and are non-refundable, and Sapling
+will not prorate any fees paid for a subscription that is terminated before the end of
+its term."
+
+AUTO-RENEWAL (auto_renewal_default):
+"Subscription Service. The Service may include automatically recurring payments for
+periodic charges ("Subscription Service"). If you activate a Subscription Service, you
+authorize Sapling to periodically charge, on a going-forward basis and until
+cancellation of either the recurring payments or your account, all accrued sums... Your
+account will be charged automatically on the Subscription Billing Date all applicable
+fees for the next subscription period. The subscription will continue unless and until
+you cancel your subscription or we terminate it. You must cancel your subscription
+before it renews in order to avoid billing of the next periodic subscription fee to
+your account."
+
+CANCELLATION ROUTE (cancellation_self_serve):
+"You may cancel the Subscription Service by contacting us at: support@sapling.ai"
+-- No self-serve account-settings cancellation path is mentioned anywhere in the ToS.
+-- CONFLICTS with billing_faq (see billing-faq-full.txt), which tells users to cancel
+   via a self-serve "Manage billing" dashboard. ToS ranks first for contractual
+   variables per protocol/codebook section 6.2 / section 3, so cancellation_self_serve
+   is coded from the ToS ("contact_required"), and the disagreement is logged in
+   conflict_note per codebook section 2.1 step 3 / protocol section 6.2.
+
+RENEWAL NOTICE (renewal_notice_commitment): no clause found anywhere in the document
+committing to notify the buyer in advance of a renewal charge. The only "notice" clause
+found concerns changes to the Terms themselves ("Changes... effective upon the earlier
+of thirty (30) calendar days following our dispatch of an e-mail notice... or thirty (30)
+calendar days following our posting of notice"), which is not a renewal-billing notice.
+
+OWNERSHIP / IP (output_ownership_statement, commercial_use_lowest_tier,
+watermark_removal_tier): the ONLY ownership/IP clauses in the document are:
+1) "Ownership. Excluding any User Content that you may provide, you acknowledge that
+   all the intellectual property rights... in the Service and its content are owned by
+   Sapling or Sapling's suppliers." (about the SERVICE/software itself, not about
+   detection results generated for the user)
+2) "User Content" is defined as "any and all information and content that a user
+   submits to, or uses with, the Service (e.g., text or other content you provide that
+   is analyzed by the Service)" -- i.e. the INPUT text the user pastes in, not the
+   detector's output/score.
+3) User Content License: "You hereby grant... to Sapling an irrevocable, nonexclusive,
+   royalty-free and fully paid, worldwide license to reproduce, distribute, prepare
+   derivative works of... your User Content... solely for the purposes of providing the
+   Service..." -- again about the user's INPUT, not the score/report the tool returns.
+No clause anywhere addresses ownership of, or a commercial-use license for, the
+detection score / per-sentence report / share certificate the AI Detector generates.
+No watermark clause of any kind appears in the document.
+Combined with the ai-content-detector page's own description of its output as a
+probability score (see ai-content-detector-page-excerpts.txt), this supports coding
+commercial_use_lowest_tier, watermark_removal_tier and output_ownership_statement as
+not_applicable (no output these constructs could attach to) rather than unknown (which
+would be the code if the product generated an artifact and the documents were merely
+silent about it -- codebook section 2.2's own distinction).
+
+ACCEPTABLE USE / DISCRETIONARY QUERY LIMIT (usage_cap_quantified,
+unquantified_limit_clause):
+"Acceptable Use Policy... you agree not to: (i) submit or generate more than a
+reasonable number of searches, requests, or queries, determined in Sapling's sole
+discretion, and in no event more than the number allowed under your subscribed level of
+Service..."
+-- states a volume ceiling with NO number attached ("reasonable number... sole
+discretion"), tied explicitly to "your subscribed level of Service" (i.e. it applies at
+every tier, including the entry paid tier, Pro, on top of the tier's quantified
+100,000-character-per-check cap documented on the ai-content-detector page).

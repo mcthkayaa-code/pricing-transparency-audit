@@ -1,0 +1,63 @@
+SOURCE: https://julius.ai/docs/account/refund-policy
+ACCESS DATE: 2026-08-09
+METHOD: Rendered read via browser automation (Mintlify docs page). Two automated
+  web.archive.org/save/ submission attempts both returned HTTP 520 (archive.org-side
+  gateway error) — protocol 6.4 archive_status = local_copy_only.
+KIND: refund
+
+=== PAGE BODY TEXT (full) ===
+Payments & Billing / Refund Policy
+At Julius AI, we strive to provide the highest level of customer satisfaction for our
+data analysis services.
+
+Credits and Credit Based Usage
+Credits granted through a subscription or the Free plan have no cash value and cannot be
+redeemed for cash. All credits are non-refundable, whether they come from a paid
+subscription, the Free plan, or a promotional grant, except where required by applicable
+law. Credits are tied to your account and cannot be transferred to another account.
+Unused credits expire at the end of each billing cycle and do not carry over. If your
+subscription is set to cancel, you can continue using your credits until the end of the
+current billing period, after which any remaining credits are forfeited.
+If a payment is reversed through a chargeback or dispute, credits associated with that
+payment will be revoked. If we determine that you have breached our Terms of Service, we
+reserve the right to expire your plan and forfeit any remaining credits at our discretion.
+
+Refund Requests
+Refunds are not automatically granted and are reviewed on a case-by-case basis. If you
+believe you are entitled to a refund, please contact us at team@julius.ai or via the
+support widget on the website.
+
+Customer Responsibility
+Before completing checkout, it is your responsibility to carefully review the
+subscription you are purchasing, including the selected plan, billing interval, pricing,
+renewal terms, and included features.
+You are also responsible for managing your subscription, including canceling it before
+renewal if you do not wish to continue. Subscription details and billing settings can be
+managed through your account settings where applicable.
+
+How to Contact Us
+If you are requesting refund review, please reach out to team@julius.ai and include your
+full name, the email address used for the purchase, your receipt number, and the reason
+for your request. Our team will review your request as quickly as possible.
+
+Reservation of Rights
+We reserve the right to deny refund requests where permitted by law, including in cases
+involving misuse of the service, violations of our Terms of Service, or other
+circumstances indicating bad faith or abuse.
+
+Processing Approved Refunds
+Refunds are processed through the original mode of payment. If you made your purchase
+with a credit card, the refund will be issued to the same card. Please note that it can
+take up to 10 business days for the refund to appear on your statement, depending on your
+bank's processing times.
+
+Changes to Our Refund Policy
+Julius AI reserves the right to modify this refund policy at any time. Any changes will
+be posted on this page, so please check back regularly for updates.
+
+NOTE: This document nowhere states a specific refund window in days (no "14 days", "30
+days" or similar figure appears anywhere on this page). A third-party aggregator
+(Postclic, "How to Cancel Julius Ai Subscription") surfaced in WebSearch results claimed
+"Julius AI's 14-day refund policy applies at the point of purchase" — that figure does
+NOT appear in this official document and per protocol 6.3 prohibition 7 / 6.2 is
+disregarded entirely; only this live page governs the coded value.

@@ -1,0 +1,89 @@
+URL: https://humanizemy.ai/terms
+Accessed: 2026-08-09
+Method: rendered read (mcp__Claude_Browser__javascript_tool, document.body.innerText), Chrome-based preview browser
+Page states "Last updated: July 29, 2026"
+
+=== FULL RENDERED TEXT (document.body.innerText, in two slices, concatenated) ===
+HumanizeMyAI
+Tools
+Compare
+Guides
+Pricing
+Blog
+Research
+Sign in
+Get started
+Home›Terms
+Terms of Service
+
+Last updated: July 29, 2026
+
+By accessing or using HumanizeMyAI (humanizemy.ai, the "Service"), you agree to these Terms. If you do not agree, do not use the Service. The Service is operated by Mihci AI Studios LLC, a limited liability company registered in Wyoming, USA (30 N Gould St Ste R, Sheridan, WY 82801), founded and solely owned by Mehmet Fırat Mıhcı.
+
+1. Eligibility
+
+You must be at least 13 years old to use the Service, and at least 18 to purchase a paid plan. If you use the Service on behalf of an organisation, you confirm you have authority to bind that organisation.
+
+2. Accounts
+
+Account creation is optional for free use (4 humanizations / day without signup). For paid plans, you must provide an accurate email. You are responsible for keeping your password confidential. Notify us at hello@humanizemy.ai if you suspect unauthorised access.
+
+3. Payments and billing
+
+The Service is provided and operated by Mihci AI Studios LLC. Checkout is handled by Stripe under Stripe Managed Payments: for those transactions Stripe is the seller of record and is responsible for taking the payment, for any sales tax or VAT it is able to assume liability for, and for processing refunds and card disputes. Your contract for the Service itself, and all support for it, remains with us. All prices are quoted and charged in US dollars (USD) and are listed on the pricing page. If your card is issued in another currency, your bank converts the amount at its own rate and may add a foreign-transaction fee that we neither set nor receive.
+
+Subscriptions are recurring. Choosing a monthly plan authorises us to charge that amount every month, and an annual plan every twelve months, automatically at the start of each new period, until you cancel. The renewal amount is the plan price shown at checkout; we will email you before any price change takes effect. You can cancel at any time from your account page, and cancellation stops all future charges while leaving your access intact until the end of the period you already paid for.
+
+4. Refunds
+
+The Service has a free tier — 4 humanizations per day, no card required — so you can fully evaluate it before paying. For that reason, paid subscriptions are generally non-refundable. We will process any refund required by law, or granted at our discretion for a documented service failure — email hello@humanizemy.ai and we'll review your request. Full cancellation, refund and delivery terms are set out in the Refund & Cancellation Policy. You can cancel anytime from your account to stop future renewals; cancellation keeps your access until the end of the current billing period.
+
+5. Acceptable use
+
+You agree not to use the Service to:
+
+Generate or rewrite content that violates academic-integrity policies you are bound by. The Service is for AI-assisted writing improvement, not for misrepresenting authorship.
+Process content that infringes third-party copyright, contains illegal material, or violates applicable law.
+Scrape, reverse-engineer, or attempt to bypass quota controls.
+Resell or redistribute Service output as a competing service without written permission.
+Use automation to abuse free-tier quotas across multiple IP addresses or accounts.
+
+We may suspend or terminate accounts that violate these rules. We may also refuse service to any request we believe is in bad faith.
+
+6. Intellectual property
+
+You retain ownership of all text you submit to the Service. We claim no ownership over your inputs or outputs. The Service itself — including the model prompts, the retrieval corpus, and the proprietary detection model behind /detect — is the property of Mihci AI Studios LLC. The 2,590-essay corpus is licensed; redistribution is prohibited.
+
+7. No warranty on detector results
+
+No AI humanizer can guarantee a 100% pass rate on every input. Detector vendors update their models continuously. The Service is provided "as is" without warranty that any specific detector will report your output as human on any given day.
+
+8. Limitation of liability
+
+To the maximum extent permitted by law, HumanizeMyAI is not liable for indirect, consequential, or punitive damages. Our total liability is limited to the amount you paid for the Service in the 12 months preceding the claim.
+
+9. Termination
+
+You can cancel any time from your account page. We may suspend accounts that violate these Terms, with notice except in cases of imminent abuse risk.
+
+10. Payment and data security
+
+The entire site is served over TLS (HTTPS). Card payments are handled by a PCI-DSS Level 1 certified payment provider: card details are entered directly into the provider's hosted, encrypted fields and are never transmitted to, processed by, or stored on our servers. We retain only a payment reference, the last four digits, and the plan record needed for billing and support. Passwords are stored as salted hashes. See the Privacy Policy for how account and usage data is handled.
+
+11. Export controls and sanctions
+
+The Service is a software subscription supplied electronically from the United States; there is no physical shipment and no export licence is required for ordinary use. You may not access or pay for the Service if you are located in, ordinarily resident in, or acting on behalf of a person or territory subject to comprehensive US sanctions administered by OFAC, or if you appear on any US, UK, or EU restricted-party list. By purchasing, you confirm that none of these apply to you. We may refuse or reverse any transaction that would breach applicable sanctions or export-control law.
+
+12. Governing law
+
+These Terms are governed by the laws of the State of Wyoming and the federal laws of the United States, without regard to conflict of law rules, and the state and federal courts located in Wyoming have exclusive jurisdiction. Nothing here removes the mandatory consumer-protection rights of the country you live in — where the law of your residence (for example in the EU, UK, or Türkiye) grants you stronger rights or a local forum, those rights and that forum continue to apply.
+
+13. Changes
+
+We will post material changes here. Continued use after changes take effect constitutes acceptance.
+
+14. Contact
+
+Mihci AI Studios LLC · 30 N Gould St Ste R, Sheridan, WY 82801, USA · hello@humanizemy.ai · +1 (307) 218-6489. We answer support and billing email within one business day. See also Privacy and Cookies.
+
+[footer nav omitted, identical to pricing page footer]

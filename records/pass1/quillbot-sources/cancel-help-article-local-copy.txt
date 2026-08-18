@@ -1,0 +1,39 @@
+URL: https://help.quillbot.com/hc/en-us/articles/360056300334-How-do-I-cancel-my-Premium-subscription
+Accessed: 2026-08-10
+Method: rendered read via browser (document.body.innerText) — help.quillbot.com returns HTTP 403 to
+non-browser fetchers (curl, WebFetch), so this rendered read is the only capture obtained.
+Archival: web.archive.org/save/ attempted twice (HTTP 520 both times) -> archive_failed; this file is
+the local copy per protocol 6.4.
+
+--- BEGIN RENDERED TEXT ---
+Skip to main content
+How can we help?
+Search
+Quillbot Help Center  Account, Subscription & Billing  Premium & Pricing
+How do I cancel my Premium subscription?
+2 months ago Updated
+
+You can cancel your Quillbot Premium subscription at any time. There are two ways to do this: through your Account page or by contacting our support team.
+
+Option 1: Cancel via your Account page
+Go to your Account page by clicking your profile icon (your initial) in the top-right corner of the Quillbot website and selecting Account Details.
+
+Click on the Your Plan tab.
+
+Select Cancel subscription.
+Option 2: Contact our support team
+
+You can also cancel your subscription by visiting our Contact Support page and submitting a ticket.
+
+Our support team will review your request and assist you further.
+
+Refund policy reminder
+
+You can cancel your subscription at any time by turning off auto renewal. However, as outlined in our Terms of Service, refunds are issued only if required by law.
+
+If you purchased your subscription through the Apple App Store or Google Play Store, contact Apple or Google to request a refund.
+
+Was this article helpful?
+Yes No
+55 out of 163 found this helpful
+--- END RENDERED TEXT ---

@@ -1,0 +1,269 @@
+Local evidentiary copy — supplements public archive per protocol-v1.md §6.4/§6.8
+URL read: https://www.framer.com/pricing
+Access date: 2026-08-07
+Coder: framer pass-1 primary
+
+WHY THIS LOCAL COPY EXISTS
+The live read of this page rendered in TRY (Turkish Lira), driven by the browsing
+session's locale (navigator.language = "tr", navigator.languages = ["tr","tr-TR"]).
+No on-page currency/region selector was present (checked via full read_page scan —
+none found). Section 6.8 forbids reloading/reconfiguring to hunt for a different
+(e.g. USD) state, so the TRY state is what this record codes from.
+The public web.archive.org save of this same URL
+(https://web.archive.org/web/20260807050212/https://www.framer.com/pricing)
+resolved on fetch to a pre-existing 2026-08-05 08:28 UTC capture that shows USD
+figures ($10, $20, $30, $40, $50 visible in its payload) rather than the TRY figures
+this coder observed live on 2026-08-07 — almost certainly because the archive
+crawler does not carry a tr-TR Accept-Language/locale signal. That snapshot does
+NOT prove the TRY state this record uses, so this local copy is the operative
+evidence for the observed default display state, per the local-copy fallback in
+protocol-v1.md §6.4. This is logged as a register_event (type: display_variant)
+in framer.yaml.
+
+navigator.language / navigator.languages at read time:
+{"lang":"tr","langs":["tr","tr-TR"]}
+
+window.location.href at read time: https://www.framer.com/pricing
+
+BILLING TOGGLE STATE (read before any interaction)
+DOM inspection of the "Yearly billing" control shows a toggle switch component
+with data-framer-name="On" and variant="On" (blue pill, knob at "on" position) —
+i.e. the page loaded with the annual/"Yearly billing" toggle already ON. No
+"Monthly billing" text node exists elsewhere on the page (searched full body text
+nodes), so no separate monthly-billing display state was available to read without
+interacting with the toggle.
+
+FULL PAGE TEXT (get_page_text, verbatim, before any click/toggle interaction) ---
+
+Framer
+
+Log in
+
+Sign up
+
+Start free, then scale your site
+
+Yearly billing
+
+Free
+
+Try for free
+
+TRY 0
+
+500 credits to try
+
+Free Framer domain
+
+1 GB bandwidth
+
+Design pages
+
+Start for Free
+
+Basic
+
+Creative personal sites
+
+TRY 231
+
+per month
+
+1,000 credits / month
+2,000 credits / month
+3,000 credits / month
+5,000 credits / month
+8,000 credits / month
+10,000 credits / month
+15,000 credits / month
+
+Free custom domain
+
+2 CMS collections
+
+50 GB bandwidth
+
+Built-in SEO
+
+Localization (add-on)
+
+Start with Basic
+
+Pro
+
+Growing professional sites
+
+TRY 693
+
+per month
+
+3,000 credits / month
+5,000 credits / month
+10,000 credits / month
+20,000 credits / month
+30,000 credits / month
+50,000 credits / month
+100,000 credits / month
+
+Free custom domain
+
+10 CMS collections
+
+100 GB bandwidth
+
+Site redirects
+
+Staging environment
+
+Branching with previews
+
+Advanced hosting (add-on)
+
+A/B testing (add-on)
+
+Start with Pro
+
+Enterprise
+
+Mission critical sites
+
+Custom
+
+Credits with volume discounts
+
+Custom limits
+
+Unlimited editors
+
+Enterprise-grade security
+
+Uptime guarantee
+
+SCIM
+
+SSO
+
+Request Trial
+
+Additional editors are
+
+TRY 462
+
+/ month,
+
+and viewers are free. Learn more
+
+[... plan comparison grid: Custom domain, Limits, Site pages 30 (Basic) / CMS
+collections 2 (Basic) / CMS items 1,000 (Basic) / Bandwidth 50 GB (Basic) /
+Hosting 20 locations / Analytics history 30 days / Password protect / Site
+search / Site redirects / Static files / Branching / Staging environment ...]
+
+Agents
+
+Credits: Agents and other AI features consume credits — 1,000 per month, add
+credits anytime
+
+External agents — PREVIEW — Connect your own tools with Framer — Free during
+preview
+
+Pro Experts save 50% on agent credits.
+
+Live collaboration
+
+Workspace owner: One user who manages editors, projects, and billing — Free
+
+Viewers: View and add comments on pages and designs — Free
+
+Additional editors: Design, edit content, and publish your site — TRY 462 per
+editor
+
+Content editors: Update CMS, localization, and use on-page editing — TRY 231 per
+editor
+
+Seats: The maximum number of users with edit access
+
+Add-ons
+
+Locales: Translate your site into multiple languages with AI — Up to 20 — TRY 462
+per locale
+
+Convert: A/B testing, Funnels, and customization with Triggers
+
+Advanced hosting: Multiple sites and custom headers under one domain — Start with
+Basic
+
+All prices are monthly and billed according to the billing cycle selected at
+checkout. Any applicable sales tax will be added at checkout based on your
+location.
+
+FAQ
+
+What are credits?
+Every plan includes monthly credits that power Agents, Localization, and other AI
+features. Credits are shared across your entire workspace and its editors.
+Running low? Upgrade a site or add an add-on for more.
+¹ On the free plan, when your workspace has no active subscriptions, you receive
+500 credits to try Agents. Upgrade any of your sites to unlock more.
+
+What's included in the Free plan?
+Projects on the Free plan include access to 10 CMS collections, 1,000 pages, 5 MB
+file uploads, and one free locale to try. This makes it easy to explore Framer,
+use it as a design tool, or create templates. To connect a custom domain, you'll
+need to upgrade to a paid plan. Workspaces without a subscription also support
+collaboration with up to three editors.
+
+Which plan is right for me?
+Our Free plan is ideal for non-commercial use. The Basic plan caters to students,
+freelancers, and small studios. The Pro plan is designed for teams at agencies,
+startups, and scale-ups who run their full marketing stack on Framer. The
+Enterprise plan is tailored towards teams that need custom limits, annual
+billing, and dedicated support.
+
+How are extra editors billed?
+Editors are billed per seat and can be added to your workspace or projects at any
+time. We will notify you when an editor is added to your billing, and you will be
+charged within 24 hours.
+
+What happens if I go over a limit?
+When you reach certain limits, we will ask you to upgrade your plan in Framer.
+For other limits, like bandwidth, we allow you to exceed your limit for one
+month. You'll receive a notification via email so you can upgrade your plan
+accordingly.
+
+How many add-ons can you purchase on the Pro plan?
+With add-ons you can have up to 40,000 CMS items, 40 CMS collections, 2 TB of
+bandwidth, 700 pages, and 1.5M events on the Pro plan.
+
+How are events billed for the Convert add-on?
+You will be billed based on the number of analytics events your site generates
+each month. An event can be a page view, a click on a tracked link, or a
+submission through a tracked form. With the add-on, you can also run up to 5 A/B
+tests. The add-on is billed as part of the billing cycle for the associated plan.
+
+What's included in the Advanced Hosting add-on?
+With the Advanced Hosting add-on, you can add up to 6 rewrites and set custom
+values for the Permissions-Policy, Referrer-Policy, and X-Frame-Options headers.
+You can also upload up to 50 static files.
+
+What if my open-source or side project receives a lot of traffic?
+We can be flexible with our limits for open-source or non-revenue-based side
+projects. Please contact us to discuss the options.
+
+What payment methods do you offer?
+You can pay for your Framer subscription with a credit card or, in some regions,
+via PayPal. Alternatively, we offer custom billing options, including credit
+cards or bank transfers, for Enterprise plans.
+
+What is your refund policy?
+If you live in the EU or Turkey, you are legally eligible for a refund if your
+subscription was purchased within the last 14 days. To claim your refund, please
+contact our Support team; they will cancel your subscription and process the
+refund.
+
+Explore our help section for all articles related to accounts and billing.
+
+--- END PAGE TEXT ---
+
+No credit-card / "no card required" language appears anywhere on this page (no
+trial section at all — Framer's paid tiers have no free trial, only a perpetual
+Free plan; see credit_system_present / trial_exists coding in framer.yaml).

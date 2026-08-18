@@ -1,0 +1,53 @@
+SOURCE: https://originality.ai/refund-policy
+DATE ACCESSED: 2026-08-10
+METHOD: Rendered browser read (get_page_text), full document. Date of Last Amendment printed
+        on page: July 16, 2025.
+
+=== FULL OPERATIVE TEXT ===
+"Originality.ai Inc. provides refunds, upon request and at our own discretion, which are
+applicable to the following pricing options: Pay as you go (one-time payment); Pro (monthly or
+annual payment); Enterprise (monthly or annual payment)."
+-> confirms the three purchase paths (subscription x2 + PAYG); refund_policy_exists = yes
+
+"If a refund is processed for any of the above-noted pricing plans, all remaining credits in
+the associated account will automatically expire and be invalid."
+
+"Subscription Terms -- By purchasing a Pro or Enterprise subscription to Originality.ai, you
+agree to recurring billing at the interval you selected (e.g., monthly, annually) until you
+cancel. By making a purchase through the Pay as You Go plan, you agree to a one-time payment
+processed on the date of purchase."
+-> second (equal-authority, "dedicated policy page") statement of auto-renewal, in agreement
+   with ToS Sec 7 -> auto_renewal_disclosure_location = multiple; also confirms PAYG is a
+   genuine one-time, non-recurring purchase (relevant to the entry-tier discussion in
+   coder_note).
+
+"Cancel at Any Time -- You may cancel your Originality.ai subscription at any time. Once you
+cancel, your monthly credits and features will be available until the end of the current
+subscription."
+
+"Credit Expiry -- 'Pay As You Go' credits are purchased via a one-time payment and expire 2
+years after the purchase date (if unused). 'Pro' & 'Enterprise' credits are available via a
+monthly subscription and expire at the end of your monthly billing cycle."
+-> credit_rollover_policy (Pro, entry tier) = expires_at_period_end; PAYG's distinct
+   partial-rollover-like (2-year) expiry noted in coder_note only, since PAYG is not the coded
+   entry tier.
+
+"Refund Eligibility -- Refunds are reviewed on a case-by-case basis, and a partial or full
+refund may be granted at our discretion for the following reasons: Service disruptions;
+Billing errors; Any other reason we see fit."
+-> refund_conditions = conditional
+
+"How to Request a Refund -- Step 1: Submit a refund request by contacting support... Step 2:
+After reviewing your refund request, the refund will be processed and applied to the original
+payment method."
+-> No day-count window stated for WHEN a refund may be requested (no "within N days of
+   purchase" language anywhere on this page).
+
+"Is your refund late or missing? ... If you haven't received the refund within 30 days after
+our support team has applied it to your account, please contact us."
+-> This "30 days" governs how long an ALREADY-APPROVED refund may take to appear, not a
+   request-eligibility window. Does not satisfy refund_window_days (a request window). ->
+   refund_window_days = unknown.
+
+-> refund_policy_location = multiple (this dedicated page + ToS Sec 7.2, which explicitly
+   cross-references "a supplemental refund policy").

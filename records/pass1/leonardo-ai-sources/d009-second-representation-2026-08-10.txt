@@ -1,0 +1,43 @@
+URL: https://leonardo.ai/pricing
+Date: 2026-08-10
+Method: D-009 re-read. Live rendered browser session (mcp__Claude_Browser). Second
+representation obtained via structural DOM query on .o-pricing-cards__card containers
+(card.textContent per card, walking the DOM tree directly), independent of the original
+2026-08-09 coding's innerText transcript.
+
+What it shows:
+1. Toggle default state, read from button classes before any interaction: "Pay Monthly" button
+   carries class "...bg-white text-black" (active); "Pay Yearly" button carries "...bg-transparent
+   text-white/70" (inactive). Matches the original coding's monthly_preselected state.
+
+2. Full card-by-card text dump, in DOM order:
+     0 FREE      : $0 /month
+     1 Essential : $12 /month        <- entry tier
+     2 Premium   : $30 /month
+     3 Ultimate  : $60 /month
+     4 Starter (Team)  : $72 /month ($24/seat), 3-seat minimum implied by seat price
+     5 Growth (Team)   : $144 /month ($48/seat)
+     6 "Need a custom plan?" -> Contact us (sales-gated, excluded)
+     7 "Pay as you go" (usage-based, excluded)
+     8 "API Custom" -> Contact us (sales-gated, excluded)
+   Confirms entry_tier_name=Essential pairs correctly with headline_price_usd=$12 (Essential is
+   card index 1, not shifted), and confirms every losing-candidate figure in the original
+   record's coder_note (Premium $30, Ultimate $60, Starter $72, Growth $144).
+
+3. Superscript/subscript check: 0 <sup>/<sub> elements found anywhere on the page (same query
+   used across this sweep) -- ruling out a nicepage-class misread. The $12 figure and the word
+   "month" are separate DOM nodes ("$12 /month"), but both are plain, adjacent, same-size text
+   with no cents-splitting markup.
+
+4. A secondary, differently-structured section of the same page -- a <table> feature-comparison
+   grid further down (class PricingTables-module) -- independently names the same four
+   individual-tier columns (FREE / ESSENTIAL / PREMIUM / ULTIMATE) in the same order, a second
+   confirmation of the tier-name set from a structurally unrelated part of the page.
+
+5. Default state is Pay Monthly (not annual), so first_charge_amount_usd = the same $12 monthly
+   figure with no computation required; the card text carries no "billed annually"/prepayment
+   qualifier for the Essential tier, consistent with the original coding.
+
+Conclusion: all four scoped values (entry_tier_name=Essential, headline_price_usd=12.00,
+headline_billing_basis=per_month_billed_monthly, first_charge_amount_usd=12.00) confirmed in a
+second representation. No correction.

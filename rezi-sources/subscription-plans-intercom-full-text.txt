@@ -1,0 +1,53 @@
+SOURCE: https://intercom.help/rezihelp/en/articles/8383549-subscription-plans
+ACCESSED: 2026-08-12
+METHOD: rendered browser read, full page text (get_page_text)
+DOC CLASS: official product documentation / help center (Rezi User Guides, Intercom-hosted; found via
+the "Plans & Billing" collection, which contains exactly this one article)
+
+Title: Subscription Plans | Rezi User Guides
+"Learn about Rezi's Free, Pro, and Lifetime plans, what's included with each, and where to find the
+latest pricing and feature details."
+Updated over 2 weeks ago
+
+Free
+"Getting started with Rezi is completely free, no payment required."
+- Create 1 resume
+- Download your resume as a PDF up to 3 times
+- Access selected AI-powered features and advanced resume tools
+- Build your resume using the Rezi Standard Template
+
+Pro
+"Our Pro plan gives you unlimited access to Rezi's complete suite of AI-powered career tools..."
+"Plans start at:
+Monthly: $29/month
+Quarterly: $19/month (billed quarterly)"
+
+Lifetime
+"With a Lifetime plan, you'll receive permanent access to all current Lifetime features with a single
+one-time payment—no recurring subscription and no interruptions to your job search."
+"One-time payment: $149"
+"Monthly Rezi Resume Review is NOT INCLUDED with Rezi Lifetime Plan."
+
+"Pricing May Vary by Region
+The prices shown above are our standard rates. Depending on your country or region, you may see
+different pricing or special offers.
+To view the exact price available to you:
+1. Open Rezi.
+2. Click Upgrade.
+3. The pricing window will display the plans and pricing available for your location.
+We always recommend checking the Upgrade page in your account for the most accurate and up-to-date
+pricing."
+
+CRITICAL FINDING: this is the ONLY document found (across pricing page, terms, and both help-doc sources)
+that states a Quarterly price figure: "$19/month (billed quarterly)". This is NOT shown anywhere on the
+public https://www.rezi.ai/pricing marketing page (no toggle exists there at all - only one Pro card,
+$29/month, no period switcher). This help article also discloses that actual pricing may vary by region
+and is only definitively shown inside the logged-in app's Upgrade flow, which the documents-only rule
+prohibits accessing (would require login).
+
+Annualized comparison (coder's arithmetic, kept here not in the record's computation_assumptions since
+this is about entry-tier SELECTION, not a coded cost-per-output computation):
+- Monthly: $29/mo x 12 = $348/yr equivalent
+- Quarterly: $19/mo x 12 = $228/yr equivalent (cheaper, but never appears on the pricing page in any
+  display state - see coder_note in the record for the reasoning on why Monthly was still selected as
+  entry_tier_name)

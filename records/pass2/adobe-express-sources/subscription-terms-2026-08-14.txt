@@ -1,0 +1,47 @@
+LOCAL CAPTURE (verbatim, rendered read) - Adobe Subscription and Cancellation Terms
+URL: https://www.adobe.com/legal/subscription-terms.html  (confirmed "for United States" heading;
+a geo-mismatch modal offered "Turkiye" (highlighted) or "United States" - selected United States
+to match the currency/locale used for entry-tier variables)
+Accessed: 2026-08-14
+Effective Date printed on page: August 1st, 2026
+Section expanded: "Creative Cloud for Individuals" > "Month to month" (matches Acrobat Express's
+billing basis: no annual commitment, billed monthly). Page heading covers "CREATIVE CLOUD,
+DOCUMENT CLOUD, FIREFLY, ACROBAT & FRAME for United States" - i.e. this governs Acrobat
+Express/Adobe Express as part of the Creative Cloud individual family.
+
+=== Subscription Terms (verbatim) ===
+"Your subscription begins as soon as your initial payment is processed. Your subscription will
+automatically renew each month without notice until you cancel. You authorize us to store your
+payment method(s) and to automatically charge your payment method(s) every month until you
+cancel. We will automatically charge you the then-current rate for your plan, plus applicable
+taxes, every month upon renewal until you cancel.
+
+We may change your plan's rate each monthly renewal term, and we will notify you of any rate
+change with the option to cancel.
+
+If your primary payment method fails, you authorize us to charge any other payment method in
+your account. If you have not provided us a backup payment method(s) and you fail to provide
+payment, or if all payment methods in your account fail, we may suspend your subscription. You
+can edit your payment information anytime in your Adobe Account.
+
+Your subscription may include generative AI features which may require generative credits.
+Generative credits allow you to generate outputs based on the inputs you provide to certain
+generative AI features. The number of credits required will vary based on the type of generative
+feature used and the type or number of outputs that are generated. The number of generative
+credits reflected in the subscription you have purchased expire each month. Each month, your
+account will be reset at the same number of generative credits for the duration of your
+subscription. Unused generative credits do not rollover."
+
+=== Cancellation Terms (verbatim) ===
+"You can cancel your subscription anytime via your Adobe Account or by contacting Customer
+Support. If you cancel within 14 days of your initial order, you'll be fully refunded. Should you
+cancel after 14 days, your payment is non-refundable, and your service will continue until the
+end of that month's billing period."
+
+=== Notes ===
+No explicit statement in THIS accordion section about free-trial card requirement. A separate
+"Free Trials" top-level TOC section exists further down the page (with sub-items "Free Trial with
+purchase, month to month, with rollover" etc.) but its context (rollover, credit/asset purchases)
+places it under the "Adobe Stock" category in the table of contents, not Creative Cloud
+Individuals - did not find an explicit Creative-Cloud/Express trial-card clause on this page.
+No statement here about failed/errored generations and credit consumption.

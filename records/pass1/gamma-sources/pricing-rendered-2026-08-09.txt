@@ -1,0 +1,157 @@
+URL: https://gamma.app/pricing
+Capture date: 2026-08-09
+Method: ordinary browser page load (Claude_Browser preview tool), Cloudflare "Just a moment..." JS
+  interstitial auto-resolved after ~5s with no interaction from the coder (no CAPTCHA click,
+  no bot-detection bypass attempted or needed), then document.body.innerText read from the live
+  DOM after client-side hydration. Non-essential cookies declined (banner closed via the X
+  control, ACCEPT not clicked), per protocol 6.8 rule 5.
+Network: this collection environment egresses from Turkey.
+
+D-005 finding confirmed: a static fetch of this URL (WebFetch/curl) returns an HTTP 403
+Cloudflare bot-management challenge, and even a successful web.archive.org capture
+(20260804092026, tested again today, same result) is a pre-hydration Next.js shell with no
+price figures. An ORDINARY BROWSER RENDER clears the challenge automatically (no interaction)
+and the page's own client-side script then injects all price figures, exactly as a human
+visitor's browser would show them. This is documentary reading, not bot-detection bypass.
+
+Observation 1 (TRUE first-load default state, before any coder interaction):
+  Loading https://gamma.app/pricing from this network auto-redirected to
+  https://gamma.app/tr/pricing (page rendered in Turkish; title "Planlar ve fiyatlandırma |
+  Gamma"). This is a locale redirect keyed to network geography, not a currency change: all
+  price figures rendered with a literal "$" sign (USD), only the surrounding UI copy and
+  Turkish thousands-separator numeral formatting (e.g. "$1.080" = $1,080) were localized.
+  DOM-verified via aria-pressed: the "Yıllık ödeme" (Pay annually) toggle carries
+  aria-pressed="true"; "Aylık ödeme" (Pay monthly) carries aria-pressed="false". Annual is the
+  preselected default.
+
+  Full rendered text (Individual tab, FAQ accordions expanded for reading), Turkish default state:
+
+Sizin için doğru olan planı seçin
+Bireysel
+Takım
+
+Yıllık faturalandırma ile %28'a kadar tasarruf edin
+
+Aylık ödeme
+Yıllık ödeme
+Kredi kartı gerekmez
+Free
+
+Basit projeler ve tanışma için Gamma
+
+$0
+
+
+
+Ücretsiz başlayın
+
+Ücretsiz içerir:
+
+400 kayıt sırasında kredi
+Her komut için en fazla 10 slayt oluşturun
+Basit sunumlar, dokümanlar, web siteleri, sosyal medya ve görseller
+PDF ve PPTX'ten içe aktarma
+PDF, PPTX, PNG ve Google Slides'a dışa aktarma
+Plus
+
+Ekstra yapay zeka gücü ve Gamma markasını kaldırmak için
+
+$9
+
+/ koltuk / ay
+
+$108 koltuk başına, yıllık faturalandırılır
+
+Başlayın
+
+Her şey Free adresinde ve:
+
+1.000 aylık krediler
+Her komut için en fazla 75 slayt oluşturun
+Gamma markasını kaldırın
+Gelişmiş yapay zeka görüntü modelleri
+En popüler
+Pro
+
+Premium yapay zeka modelleri, API ve daha fazla özelleştirme için
+
+$18
+
+/ koltuk / ay
+
+$216 koltuk başına, yıllık faturalandırılır
+
+Başlayın
+
+Her şey Plus adresinde ve:
+
+4.000 aylık krediler
+Premium AI görüntü modelleri
+Özel markalama ve yazı tipleri
+Detaylı analitik ve gelişmiş paylaşım
+10 özel alan adlarına kadar yayınlayın
+API erişimi
+Çalışma alanı şablonları
+Ultra
+
+20x daha fazla yapay zeka kullanımı ve en gelişmiş modellere erişimin kilidini açmak için
+
+$90
+
+/ koltuk / ay
+
+$1.080 koltuk başına, yıllık faturalandırılır
+
+Başlayın
+
+Her şey Pro adresinde ve:
+
+20.000 aylık krediler
+En gelişmiş yapay zeka modellerine erişim (metin, görüntü, video)
+100 özel alan adlarına kadar yayınlayın
+Yeni özelliklere erken erişim
+
+Ekibiniz için Gamma adresini mi değerlendiriyorsunuz? İletişim satış
+
+Biz SOC 2 Tip II uyumlu bir kuruluşuz.
+
+Güven Merkezimizde daha fazla bilgi edinin
+
+Sıkça sorulan sorular
+Gamma hangi yapay zeka modellerini kullanıyor?
+Yapay zeka kredileri nedir?
+Nasıl daha fazla yapay zeka kredisi alabilirim?
+Gamma adresini PowerPoint ile kullanabilir miyim?
+Yıllık faturalandırmada indirim var mı?
+Planımı istediğim zaman değiştirebilir veya iptal edebilir miyim?
+Hangi ödeme yöntemleri kabul ediliyor?
+Çalışma alanıma bir üye eklerken nasıl ücretlendirilirim?
+Aboneliğimi düşürür veya iptal edersem içeriğime ne olur?
+Gamma adresinde kendi şirket markalı temamı oluşturabilir miyim?
+Genel API nedir?
+
+[footer nav omitted]
+
+© 2026 Gamma Tech, Inc.
+
+---
+
+Observation 2 (English cross-check, coder-initiated navigation to /en/pricing to verify
+translation accuracy of the Turkish text above -- NOT the default state, a deliberate
+verification step):
+
+All figures identical to Observation 1: Free $0; Plus $9/seat/month, $108/seat billed
+annually; Pro $18/seat/month, $216/seat billed annually ("Most popular"); Ultra $90/seat/month,
+$1.080/seat billed annually (Gamma's own front-end prints a period as the thousands separator
+here even on the English-locale page -- a vendor display quirk, confirmed = $1,080.00 by
+90 x 12 = 1080). "Pay annually" confirmed visually highlighted/selected. Free plan feature list
+confirms "400 credits at signup" (not a recurring monthly rate -- no "monthly" qualifier, unlike
+Plus/Pro/Ultra which each explicitly say "X monthly credits"). Screenshot taken confirming all
+figures legible and rendered (not skeleton/placeholder state).
+
+Team tab (https://gamma.app/en/pricing, Team sub-tab): Team $20/seat/month, $240/seat billed
+annually, seat-count input defaults to "2"; Business $40/seat/month, $480/seat billed annually,
+seat-count input defaults to "10" (confirmed via input.value DOM read, not just visual). Matches
+prior collection's help-center-sourced figures exactly; carried forward as losing entry-tier
+candidates even at their minimum seat block (Team $480/yr min, Business $4,800/yr min, both
+above Plus's $108/yr).

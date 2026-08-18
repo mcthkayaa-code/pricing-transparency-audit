@@ -1,0 +1,519 @@
+product_id: google-veo
+product_name: Google Veo
+category: AI video generator
+product_status: active
+paid_submission: "no"
+status: complete
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+recheck_date: not_applicable
+entry_tier_name: Google AI Plus
+primary_source_url: https://one.google.com/about/plans
+archive_url: https://web.archive.org/web/20260807100413/https://one.google.com/about/plans
+archive_status: archived
+default_display_state: >
+  one.google.com/about/plans loads with the Monthly billing toggle preselected
+  (tab labels "Aylik"/"Yillik", i.e. Monthly/Annual; Monthly is active on load,
+  Annual shows "save up to 17%"). Non-essential cookie notice dismissed via
+  Google's single "Anladim" (Got it) acknowledgement button -- no granular
+  accept/decline choice is offered on this notice. Read live from this
+  collection's Turkey network location, the page renders prices in TRY. Per
+  protocol deviation D-003, an Accept-Language:en-US curl of the same URL and
+  a US-crawled web.archive.org capture (2026-08-01, 6 days prior) of the same
+  URL both show the vendor's own USD figures; those USD figures are coded
+  (see register_events). A second official page, one.google.com/intl/en_us/
+  about/google-ai-plans/, is explicitly US-locale (no toggle observed; shows
+  monthly-only USD figures) and is used as a second independent pricing
+  source; it names the entry tier "Google AI Plus" at a different price than
+  one.google.com/about/plans -- both are recorded, see conflict_note.
+sources:
+  - { url: "https://deepmind.google/models/veo", kind: other, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807100340/https://deepmind.google/models/veo/", note: "Frame's vendor_home_url. Live, current. Product-info page only, no pricing; links to Gemini app, Google Flow, Vertex AI/Gemini API as access points." }
+  - { url: "https://one.google.com/about/plans", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807100413/https://one.google.com/about/plans", note: "Primary live pricing page (Google One plan selector). Read live from Turkey (TRY); USD confirmed via embedded schema.org offers and via the archived US capture below." }
+  - { url: "https://web.archive.org/web/20260801092350/https://one.google.com/about/plans", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260801092350/https://one.google.com/about/plans", note: "D-003 currency check: US-crawled archive.org capture of the same URL, 6 days before collection. Shows data-formatted-price in USD ($1.99 / $9.99 / $19.99) for the same three SKUs, confirming the currency check." }
+  - { url: "https://one.google.com/intl/en_us/about/google-ai-plans/", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807100513/https://one.google.com/intl/en_us/about/google-ai-plans/", note: "Second official live pricing/comparison page, explicit US locale, dedicated to the Google AI Plus/Pro/Ultra lineup (the tier family that includes Google Flow/Veo). Disagrees with about/plans on the Google AI Plus price -- see conflict_note." }
+  - { url: "https://one.google.com/terms-of-service", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807100850/https://one.google.com/terms-of-service", note: "Google One Additional Terms of Service. Auto-renewal, cancellation, refund-policy pointer." }
+  - { url: "https://support.google.com/googleone/answer/2736362?hl=en", kind: refund, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807100944/https://support.google.com/googleone/answer/2736362?hl=en", note: "Google One 'Purchase, cancellation & refund policies' dedicated help page." }
+  - { url: "https://policies.google.com/terms?hl=en-US", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807101022/https://policies.google.com/terms?hl=en-US", note: "Google general Terms of Service. Contains the 'Content in Google services' clause on generated-content ownership." }
+  - { url: "https://support.google.com/gemini/answer/16625148?hl=en", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807101309/https://support.google.com/gemini/answer/16625148?hl=en", note: "Generative AI Prohibited Use Policy (summary page). Lists prohibited uses only; no watermark/commercial-use/limit language." }
+  - { url: "https://policies.google.com/terms/generative-ai/use-policy", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807101337/https://policies.google.com/terms/generative-ai/use-policy", note: "Full Generative AI Prohibited Use Policy linked from the above." }
+  - { url: "https://support.google.com/flow/answer/16353333?hl=en", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807101438/https://support.google.com/flow/answer/16353333?hl=en", note: "'Get started with Google Flow' help article. Access requirements, watermark FAQ, commercial-use FAQ, rate-limit/abuse clause." }
+  - { url: "https://support.google.com/flow/answer/16526234?hl=en", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807101506/https://support.google.com/flow/answer/16526234?hl=en", note: "'Manage your Google Flow credits' help article. Free daily-credit tier, per-tier monthly allocations, per-model credit costs, rollover policy." }
+  - { url: "https://support.google.com/googleone/answer/16476811?hl=en", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807101616/https://support.google.com/googleone/answer/16476811?hl=en", note: "'Get a Google AI Pro membership' help article. Confirms a trial exists for Pro (length not stated); contrast case for the entry-tier (Plus) trial finding." }
+  - { url: "https://support.google.com/googleone/answer/16548195?hl=en", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807101648/https://support.google.com/googleone/answer/16548195?hl=en", note: "'Get a Google AI Plus membership' help article -- the entry tier's own signup doc. No mention of a trial anywhere on the page (checked raw HTML, not just rendered summary)." }
+variables:
+  headline_price_usd:
+    value: conflicting
+    source: "https://one.google.com/about/plans | https://one.google.com/intl/en_us/about/google-ai-plans/"
+    evidence: >
+      Entry tier is Google AI Plus (cheapest Veo-inclusive plan; see
+      coder_note). one.google.com/about/plans (US-crawled archive capture,
+      2026-08-01): plan card "Google AI Plus (2 TB)", data-formatted-price
+      "$9.99 / month" (sku g1.2tb). one.google.com/intl/en_us/about/
+      google-ai-plans/ (live, 2026-08-07, explicit US locale): plan card
+      "Google AI Plus1 $4.99/mo 400 GB storage". Same vendor, same plan name,
+      two live official pages, incompatible prices -- both rank as "live
+      pricing page" (protocol 6.2), hierarchy does not resolve which
+      governs, coded conflicting per codebook 2.1 step 3.
+  headline_billing_basis:
+    value: per_month_billed_monthly
+    source: "https://one.google.com/about/plans"
+    evidence: >
+      Both candidate prices ($9.99 and $4.99) are quoted "/ month" /"/mo" as
+      recurring monthly charges in the page's default (Monthly-preselected)
+      state; neither requires annual prepayment to show. Not per-seat
+      (Google One is account-level, shareable with up to 5 people at no
+      extra charge, not sold by seat count).
+  first_charge_amount_usd:
+    value: conflicting
+    source: "https://one.google.com/about/plans | https://one.google.com/intl/en_us/about/google-ai-plans/"
+    evidence: >
+      Default display state is Monthly (not annual), so per codebook rule 3
+      no annualization is performed; first charge = the displayed monthly
+      figure itself. Inherits the same $9.99 vs $4.99 disagreement as
+      headline_price_usd, for the same two URLs.
+  mandatory_addon_present:
+    value: "no"
+    source: "https://one.google.com/about/plans"
+    evidence: >
+      Reviewed the Google AI Plus plan card/feature list (both pricing
+      pages), the Flow credits help article, and the Flow get-started FAQ:
+      no required separate charge, minimum credit purchase, platform fee,
+      or onboarding fee is documented to use Google AI Plus (incl. Flow) as
+      advertised. Additional AI-credit purchases exist but are optional
+      top-ups, not mandatory.
+  annual_condition_disclosure:
+    value: not_applicable
+    source: "https://one.google.com/about/plans"
+    evidence: >
+      The headline figure is read in the Monthly default state and does not
+      depend on annual prepayment (an annual toggle exists and shows a
+      discount, but it is not the state being coded), so per rule 1 this
+      variable is not_applicable.
+  annual_default_toggle:
+    value: monthly_preselected
+    source: "https://one.google.com/about/plans"
+    evidence: >
+      Page loads with the "Aylik" (Monthly) tab active/highlighted and
+      "Yillik" (Annual) "%17 oranina varan indirim" (up to 17% off) shown as
+      the unselected alternative. Recorded before any interaction, then the
+      toggle was read (not clicked) for this determination.
+  free_plan_exists:
+    value: "yes"
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      "About free-of-charge Google Flow credits -- Who can receive
+      free-of-charge Google Flow credits: All users who are not Google AI
+      Plus, Pro, or Ultra subscribers receive 50 Google Flow credits per day
+      free of charge to try Google Flow." Recurring daily allowance, no
+      subscription and no time limit stated (distinct from the Google
+      Account's free 15GB storage tier, which has no Veo/Flow access at
+      all and so does not itself satisfy this variable).
+  free_plan_cap_documented:
+    value: all_quantified
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      The one limit documented for the free (no-subscription) allowance,
+      "50 Google Flow credits per day," carries a number, a dimension
+      (Flow credits), and a period (per day) -- a quantified rate per
+      codebook 5.1. No other free-tier-specific limit is stated in
+      unquantified terms.
+  free_plan_cap_value:
+    value: "50 Google Flow credits per day"
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: "Same quote as free_plan_cap_documented."
+  free_plan_watermark:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16353333?hl=en"
+    evidence: >
+      The only official watermark statement found is tier-agnostic: "All
+      outputs generated in Google Flow using Veo, Omni, or Nano Banana
+      include invisible SynthID watermarks... a visible watermark can be
+      added to generated images and videos. You can control this with the
+      'Visible watermarking' toggle... A visible watermark will be applied
+      automatically if you reside in India, South Korea, or Vietnam." This
+      ties visible-watermark behavior to a user toggle and to residence,
+      not explicitly to free vs. paid status, and the free (no-subscription)
+      allowance is not called out separately anywhere in this FAQ. Cannot
+      determine the free tier's specific watermark default from documents.
+  free_plan_duration:
+    value: perpetual
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      The free 50-credits/day allowance is documented as an ongoing,
+      recurring daily grant for "all users who are not ... subscribers,"
+      with no stated end date or expiry -- a standing offer, not a
+      time-limited trial (trials are coded separately under domain 4).
+  trial_exists:
+    value: "no"
+    source: "https://support.google.com/googleone/answer/16548195?hl=en"
+    evidence: >
+      Entry tier is Google AI Plus. Its dedicated official sign-up article,
+      "Get a Google AI Plus membership," contains zero mentions of "trial"
+      anywhere in its full text (checked raw HTML, not just a rendered
+      summary). Both AI Plus plan cards on the two pricing pages use a plain
+      "Get started"/"Get Plus" call to action, not trial language. This
+      contrasts with the parallel Pro-tier article (support.google.com/
+      googleone/answer/16476811), which explicitly refers to "the free
+      trial of Google AI Pro or AI Pro Student" -- confirming trials are
+      documented where they exist and their absence for Plus is a
+      documented gap, not an unchecked one.
+  trial_card_required:
+    value: not_applicable
+    source: "https://support.google.com/googleone/answer/16548195?hl=en"
+    evidence: "No trial exists for the entry tier (trial_exists = no)."
+  trial_length_days:
+    value: not_applicable
+    source: "https://support.google.com/googleone/answer/16548195?hl=en"
+    evidence: "No trial exists for the entry tier (trial_exists = no)."
+  trial_auto_converts:
+    value: not_applicable
+    source: "https://support.google.com/googleone/answer/16548195?hl=en"
+    evidence: "No trial exists for the entry tier (trial_exists = no)."
+  credit_system_present:
+    value: "yes"
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      Output is metered through "Google Flow credits," an intermediate unit
+      that converts into video (and image/music) generations at published
+      per-model rates -- not an allowance stated directly in output units.
+  credit_unit_defined:
+    value: "yes"
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      Official per-model credit costs are published, e.g. "Veo 3.1 Fast: 20"
+      credits per generation (non-Ultra), "10" for Ultra subscribers; "Veo
+      3.1 Lite: 10" (non-Ultra) / "5" (Ultra); "Veo 3.1 Quality: 100" for
+      all users. Each ties the credit unit to a specific video-generation
+      output, satisfying credit_unit_defined regardless of tier.
+  credit_to_output_rate_published:
+    value: "yes"
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      Video is the principal output (Google Veo is a video generator).
+      Exact credit costs are published per model for video generation
+      (Veo 3.1 Lite/Fast/Quality, see credit_unit_defined evidence) -- not a
+      range and not limited to a secondary output.
+  credit_rate_location:
+    value: docs_help_center
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      Per-model credit costs appear on this Google Flow help-center article;
+      not stated on either pricing page (which show only the monthly credit
+      allowance per plan, not the per-generation conversion rate).
+  cost_per_output_unit:
+    value: other
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      Veo generations are sold as discrete, fixed-length clips (8-second
+      generations per the product's own marketing copy), charged per
+      generation/model, not as a continuous per-minute rate a buyer could
+      purchase a custom duration of -- so none of the listed units fits
+      cleanly; coded other. Unit name for coder_note: "per video generation
+      (fixed-length clip, e.g. 8 seconds), billed in Google Flow credits."
+  cost_per_output_computable:
+    value: conflicting
+    source: "https://one.google.com/about/plans | https://one.google.com/intl/en_us/about/google-ai-plans/"
+    evidence: >
+      The required price input (entry tier's price in the default display
+      state) is itself conflicting between two official sources ($9.99 vs
+      $4.99, see headline_price_usd) while the allowance (200 Flow
+      credits/month) and the per-generation rate (20 credits for Veo 3.1
+      Fast, non-Ultra) are both published and agree across sources. Because
+      the price input has two incompatible published figures, the computed
+      cost-per-output likewise has two incompatible values -- codebook's own
+      definition of conflicting for this variable ("two official sources...
+      publish incompatible figures among the calculation's inputs").
+  computation_assumptions:
+    value: not_applicable
+    source: "https://one.google.com/about/plans"
+    evidence: >
+      Per codebook 2.3, this field is required only when
+      cost_per_output_computable is yes or partial; the coded value here is
+      conflicting, so the field is not_applicable. The arithmetic attempted
+      under both price readings is preserved in coder_note for a reader who
+      wants to see the calculation.
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      "Google Flow credits for your Google AI Plus, Pro, or Ultra plan
+      refresh at the start of your billing cycle. Unused monthly Google
+      Flow credits do not roll over to the next month." (The free
+      no-subscription daily credits also "don't roll over," same policy
+      shape at a daily period.)
+  failed_generation_charge_policy:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      Reviewed the Flow credits help article and the Flow get-started FAQ
+      in full; neither states whether a failed, errored, or empty
+      generation consumes credits. Documented silence, per codebook's own
+      note that this variable is "silent often."
+  auto_renewal_default:
+    value: "on"
+    source: "https://one.google.com/terms-of-service"
+    evidence: >
+      Google One Terms of Service, Section 2: "Google One subscriptions are
+      for an indefinite term, and you'll be charged at the beginning of each
+      billing cycle according to your subscription terms... unless you
+      unsubscribe." Section 3: "...you will be automatically charged the
+      price of the subscription each billing period if you provided a valid
+      form of payment... and will continue to be charged until you cancel
+      your subscription."
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: "https://one.google.com/terms-of-service | https://support.google.com/googleone/answer/2736362?hl=en"
+    evidence: >
+      Stated in the Terms of Service (quoted above) and, in agreement, on
+      the dedicated purchase/cancellation/refund policy help page: "By
+      default, your storage purchase is set to automatically renew at the
+      end of your subscription." Two document classes (terms +
+      purchase_terms_doc) agree, so coded multiple per decision rule. The
+      pricing pages themselves only say "you can cancel anytime," which
+      implies but does not state auto-renewal explicitly.
+  renewal_notice_commitment:
+    value: unknown
+    source: "https://one.google.com/terms-of-service"
+    evidence: >
+      Reviewed the Terms of Service and the purchase/cancellation/refund
+      help page; neither states a commitment to notify the buyer in advance
+      of a renewal charge (only that charging is automatic and that receipts
+      /charges occur at the start of each cycle).
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: "https://support.google.com/googleone/answer/2736362?hl=en"
+    evidence: >
+      "In most countries or regions, Google storage plan purchases are
+      non-refundable." A narrow jurisdiction-specific carve-out exists
+      (Israel: immediate-effect cancellation with a prorated partial refund;
+      one-time AI credit purchases refundable within 14 days for Israel) --
+      analogous to codebook's "non-refundable except where required by law"
+      example, coded no_refunds_stated with the exception in coder_note.
+  refund_window_days:
+    value: 0
+    source: "https://support.google.com/googleone/answer/2736362?hl=en"
+    evidence: "No refunds given in most countries/regions (see refund_policy_exists); Israel-only exception noted in coder_note."
+  refund_conditions:
+    value: not_applicable
+    source: "https://support.google.com/googleone/answer/2736362?hl=en"
+    evidence: "No refund is generally available (refund_policy_exists = no_refunds_stated), so no conditions attach in the general case; the narrow Israel exception is noted in coder_note."
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: "https://support.google.com/googleone/answer/2736362?hl=en"
+    evidence: >
+      "Go to www.google.com/settings/storage" and "click Cancel" under the
+      plan, then "Confirm by clicking Cancel plan" -- documented as
+      account-settings self-service, no contact/ticket required.
+  refund_policy_location:
+    value: multiple
+    source: "https://support.google.com/googleone/answer/2736362?hl=en | https://one.google.com/terms-of-service"
+    evidence: >
+      Refund position is stated on a page dedicated to purchase/
+      cancellation/refund policy, and the Terms of Service Section 4 also
+      points to it: "If you purchased a Google One subscription or AI
+      credits, the refund policy will apply. You will need to contact the
+      seller..." -- two document classes in agreement, coded multiple.
+  commercial_use_lowest_tier:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16353333?hl=en"
+    evidence: >
+      The Flow FAQ directly poses the question -- "Can I use outputs of
+      these tools for commercial purposes?" -- and answers only: "The Terms
+      of Service govern how these tools may be used, and must be consulted
+      and followed in their entirety. Per those terms: Some of our services
+      allow you to generate original content. Google won't claim ownership
+      over that content." This is a non-committal deflection (explicitly
+      "consult in their entirety") that quotes the ownership clause, not an
+      explicit commercial-use grant or denial; ownership and commercial-use
+      permission are distinct constructs (the codebook scores them as
+      separate items, E1 vs E3). No document found states commercial use is
+      permitted, restricted to a tier, or prohibited. Coded unknown rather
+      than inferring permission from the adjacent ownership statement.
+  watermark_removal_tier:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16353333?hl=en"
+    evidence: >
+      Same source as free_plan_watermark: the visible-watermark toggle is
+      described tier-agnostically ("You can control this with the 'Visible
+      watermarking' toggle," forced on only for residents of India, South
+      Korea, or Vietnam). No tier is named as the lowest one at which a
+      buyer can suppress the visible watermark, and no document confirms
+      whether the free (no-subscription) allowance carries the same toggle.
+  output_ownership_statement:
+    value: user_owns
+    source: "https://policies.google.com/terms?hl=en-US"
+    evidence: >
+      Google Terms of Service, "Content in Google services" > "Your
+      content": "Some of our services allow you to generate original
+      content. Google won't claim ownership over that content." Directly
+      on point (unlike the commercial-use question above) and not
+      tier-gated in the text.
+  usage_cap_quantified:
+    value: some_quantified
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://one.google.com/intl/en_us/about/google-ai-plans/"
+    evidence: >
+      Entry tier (Google AI Plus) limits found: "200 Google Flow credits
+      each month" (quantified rate: number + dimension + period) and
+      storage ("2 TB" or "400 GB" depending on source, but quantified
+      either way -- a standing limit). Against this, the Gemini text-model
+      allowance is described only relatively -- "2x daha fazla kullanim
+      sinirlarina sahip" / "2x access" compared to non-AI subscribers, with
+      no absolute number given -- which does not meet the quantified test
+      (5.1: a multiplier against an unstated baseline is not "a number and
+      the dimension it counts"). At least one quantified and one
+      unquantified limit -> some_quantified.
+  unquantified_limit_clause:
+    value: present
+    source: "https://support.google.com/flow/answer/16353333?hl=en"
+    evidence: >
+      "Why do I see 'You're requesting generations too quickly'? To balance
+      the available resources for all users and prevent abuse of our
+      platform, we may rate-limit the number of generations you can make,
+      particularly for zero-credit models." A discretionary throttle keyed
+      to "balance resources" / "abuse," with no number given -- present.
+conflict_note: >
+  Two live, official Google pages disagree on the price of the entry tier
+  ("Google AI Plus"), the plan that includes Google Flow/Veo access at the
+  lowest cost. one.google.com/about/plans (Google One's classic plan
+  selector; verified both live from Turkey with USD figures in its embedded
+  schema.org offers, and via a US-crawled web.archive.org capture dated
+  2026-08-01) shows "Google AI Plus (2 TB)" at $9.99/month. one.google.com/
+  intl/en_us/about/google-ai-plans/ (a dedicated, explicitly US-locale
+  Google AI plans marketing/comparison page, live 2026-08-07, carrying a
+  schema.org dateModified of 2026-03-06 on one of its components) shows
+  "Google AI Plus" at $4.99/month with 400 GB storage. Both pages agree
+  exactly on Google AI Pro ($19.99/month, both sources) and on Google Flow
+  credit allocations per tier (200/mo Plus, 1,000/mo Pro, 10,000/mo and
+  25,000/mo for the two Ultra tiers -- corroborated independently by the
+  Flow credits help article). Only the AI Plus price/storage figure
+  disagrees. Both pages are "live pricing page" class (protocol 6.2 top
+  rank for pricing variables); the hierarchy does not distinguish between
+  two pages of the same class, so headline_price_usd, first_charge_amount_
+  usd, and cost_per_output_computable are coded conflicting rather than
+  picking one page unilaterally. Separately (not a coded-variable conflict,
+  noted for the record only): the about/plans page's own embedded
+  schema.org description text for its "Google AI Pro" offer still calls the
+  $9.99 tier "Google One Premium" (a superseded name) and states the Pro
+  tier's storage as "2 TB," while the same page's visible, rendered card
+  title reads "Google AI Pro (5 TB)" -- the visible UI and the page's own
+  invisible SEO metadata disagree with each other on Pro's storage figure.
+  This does not affect any coded variable (storage is not itself coded) but
+  is documented here as it may be relevant to adjudication or to a reader
+  auditing this record.
+coder_note: |
+  COST_PER_OUTPUT_UNIT NAMED (codebook 7, rule 3, since none of the listed
+  units fit and "other" was coded): unit is "per video generation
+  (fixed-length clip, e.g. 8 seconds), billed in Google Flow credits" --
+  Veo/Flow sells discrete per-generation credit costs by model, not a
+  continuous per-minute rate.
+
+  ENTRY TIER SELECTION (sampling-rules.md 7.2, per the orchestrator's
+  product-specific framing: cheapest generally-available consumer plan
+  that includes Veo generation). Candidates considered, all read in each
+  page's Monthly-default display state, annualized at x12:
+    - Google One "Basic" (100 GB), $1.99/mo, annual-equiv $23.88 --
+      EXCLUDED as a candidate: no Gemini/Flow/Veo access documented on
+      either pricing page (pure storage tier).
+    - Google AI Plus (Veo via Google Flow, 200 Flow credits/mo), CONFLICTING
+      price: $9.99/mo (annual-equiv $119.88, one.google.com/about/plans) vs
+      $4.99/mo (annual-equiv $59.88, one.google.com/intl/en_us/about/
+      google-ai-plans/). WINNER under either reading -- cheapest
+      Veo-inclusive plan by a wide margin either way.
+    - Google AI Pro (Veo via Flow, 1,000 Flow credits/mo), $19.99/mo,
+      annual-equiv $239.88 (both sources agree) -- loses on price.
+    - Google AI Ultra "5x" (10,000 Flow credits/mo), from $99.99/mo,
+      annual-equiv $1,199.88 -- loses on price.
+    - Google AI Ultra "20x" (25,000 Flow credits/mo), $199.99/mo,
+      annual-equiv $2,399.88 -- loses on price.
+  All four paid AI tiers and the free (no-subscription) allowance are
+  purchasable/accessible without contacting sales; no sales-gated case
+  applies (codebook 5.2 not triggered).
+
+  DEVELOPER/API PRICING NOT CODED AS CONSUMER ENTRY TIER, per orchestrator
+  instruction. Google Veo is also sold usage-based, per-second, to
+  developers via Vertex AI and the Gemini API (outside Google One/Gemini
+  app consumer plans). Not verified in depth for this record since it is
+  out of scope for entry-tier coding; noted here only as context that a
+  second, non-consumer pricing surface exists for this model family.
+
+  COST-PER-OUTPUT ARITHMETIC (see cost_per_output_computable = conflicting;
+  computation_assumptions is not_applicable per field rule, so the
+  arithmetic is recorded here instead). Using the entry tier's 200 Flow
+  credits/month and Veo 3.1 Fast's published non-Ultra rate of 20 credits
+  per (8-second) generation: 200/20 = 10 generations/month. At $9.99/mo:
+  9.99/10 = $0.999 per generation. At $4.99/mo: 4.99/10 = $0.499 per
+  generation. Both figures are for one specific model tier (Veo 3.1 Fast);
+  Google Flow also separately publishes Veo 3.1 Lite (10 credits
+  non-Ultra) and Veo 3.1 Quality (100 credits, all tiers) as alternative,
+  exactly-published per-generation costs a buyer could choose instead --
+  a further reason (beyond the price conflict) a single clean cost-per-
+  output figure is not achievable from these documents without the reader
+  first choosing a model.
+
+  REFUND EXCEPTION (see refund_policy_exists/refund_window_days, general
+  case coded for the non-refundable majority of countries/regions per
+  support.google.com/googleone/answer/2736362): Israel-resident buyers may
+  cancel with immediate effect and receive a prorated partial refund; a
+  separate one-time AI-credit purchase is refundable within 14 days for
+  Israel specifically. Neither figure was substituted for the general
+  refund_window_days value.
+
+  D-009 re-read 2026-08-10: not a numeric-arithmetic case (headline_price_usd and
+  first_charge_amount_usd are both coded `conflicting`, which check_price_arithmetic.py skips --
+  it only flags records with two money values). Re-confirmed entry_tier_name/headline_price_usd/
+  headline_billing_basis/first_charge_amount_usd by independently re-reading both conflicting
+  sources today, each in two representations, to establish whether the conflict is a genuine
+  vendor inconsistency (as coded) or a coder misread on one side that would resolve it.
+  Source A, https://one.google.com/about/plans (live session still geo-redirects Turkey egress to
+  TRY, `₺359,99/ay` for "Google AI Plus (2 TB)" -- same obstruction as original collection, so
+  fell to the same US-crawled archive fallback the original record used). Fresh curl fetch today
+  of the exact cited snapshot, https://web.archive.org/web/20260807100413/https://one.google.com/about/plans
+  (the interactive browser's navigate tool refused web.archive.org, as it did for godaddy earlier
+  in this pass; curl reached it, HTTP 200): representation 1, embedded schema.org JSON-LD --
+  `{"@type":"Offer","price":"9.99","priceCurrency":"USD"}` paired via context with sku g1.2tb;
+  representation 2, a `data-formatted-price="$9.99 / month" data-sku-id="g1.2tb"` attribute on the
+  plan element; representation 3 (bonus), the rendered span itself -- `<div class="F173Pc"><div
+  class="BQxAac "><span>$9.99/mo</span></div></div>` immediately after a "(2 TB)" label. All three
+  agree: $9.99/mo, USD, for the plan labeled "Google AI Plus (2 TB)". Source B,
+  https://one.google.com/intl/en_us/about/google-ai-plans/ (live today, explicit US-locale path,
+  reachable directly without redirect): representation 1, live rendered text -- "Google AI Plus1
+  $4.99/mo 400 GB storage"; representation 2, raw HTML around the number -- `<g1-localized-price
+  variant="PRICE_GEN_AI_PLUS_MONTHLY" country="US">$4.99</g1-localized-price>/mo` inside
+  `class="planCardPrice_mKmrs priceText_iIhJ7..."` -- a semantic custom element carrying its own
+  variant/country attributes, unambiguous, no concatenation risk. Both figures reproduce exactly
+  today, each independently confirmed in 2+ representations: $9.99 (source A) and $4.99 (source B)
+  for a plan both pages call "Google AI Plus". NEW OBSERVATION, not in the original record: the two
+  pages also disagree on STORAGE for this plan -- source A's $9.99 card is labeled "(2 TB)", source
+  B's $4.99 card states "400 GB storage" -- a further divergence between the two pages beyond price
+  alone, which supports (does not undermine) the `conflicting` determination: this is not a
+  borderline rounding difference between two readings of the same fact, it is two official pages
+  stating substantively different terms for a plan of the same name. NO CORRECTION. Neither figure
+  is a misread -- both are exactly and reproducibly what their respective page states, so
+  `conflicting` stands on headline_price_usd, first_charge_amount_usd, and headline_billing_basis
+  (per_month_billed_monthly, uncontested -- both pages quote a monthly, not annual, figure).
+  entry_tier_name="Google AI Plus" CONFIRMED -- both pages use that name (page A appends "(2 TB)",
+  page B appends a footnote marker "1", neither changes the base name). Evidence saved to
+  google-veo-sources/d009-reread-2026-08-10.md (a source directory for this product did not
+  previously exist; created now).
+
+  blindness: no other record, no review page, no pass-2 material was
+  opened. This record was produced from the official Google sources listed
+  under sources: only (plus WebSearch used solely to locate official URLs,
+  per protocol 6.3 -- no coded value rests on a third-party page).
+register_events:
+  - type: display_variant
+    detail: >
+      D-003 currency check. This collection runs from a Turkey network
+      location; one.google.com/about/plans, read live, renders prices in
+      TRY (Basic 100GB TRY84.99/mo, "Google AI Plus (2 TB)" TRY359.99/mo,
+      "Google AI Pro (5 TB)" TRY869.99/mo). An Accept-Language:en-US curl of
+      the same URL and a US-crawled web.archive.org capture (2026-08-01) of
+      the same URL both show the vendor's own USD figures for the same
+      three SKUs ($1.99 / $9.99 / $19.99) via visible data-formatted-price
+      text and embedded schema.org offers. Per D-003, the USD figures are
+      coded and this TRY sighting is logged as the locally observed
+      display variant rather than coded.
+    urls:
+      - "https://one.google.com/about/plans"
+      - "https://web.archive.org/web/20260801092350/https://one.google.com/about/plans"

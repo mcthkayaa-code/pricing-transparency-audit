@@ -1,0 +1,118 @@
+Source: https://humanizemy.ai/terms
+Accessed: 2026-08-14 (rendered read, Claude Browser tool)
+Archive: https://web.archive.org/web/20260814181250/https://humanizemy.ai/terms
+
+Full text (Last updated: July 29, 2026):
+
+By accessing or using HumanizeMyAI (humanizemy.ai, the "Service"), you agree to these Terms. If
+you do not agree, do not use the Service. The Service is operated by Mihci AI Studios LLC, a
+limited liability company registered in Wyoming, USA (30 N Gould St Ste R, Sheridan, WY 82801),
+founded and solely owned by Mehmet Fırat Mıhcı.
+
+1. Eligibility
+You must be at least 13 years old to use the Service, and at least 18 to purchase a paid plan...
+
+2. Accounts
+Account creation is optional for free use (4 humanizations / day without signup). For paid plans,
+you must provide an accurate email...
+
+3. Payments and billing
+The Service is provided and operated by Mihci AI Studios LLC. Checkout is handled by Stripe under
+Stripe Managed Payments: for those transactions Stripe is the seller of record and is responsible
+for taking the payment, for any sales tax or VAT it is able to assume liability for, and for
+processing refunds and card disputes. Your contract for the Service itself, and all support for
+it, remains with us. All prices are quoted and charged in US dollars (USD) and are listed on the
+pricing page. If your card is issued in another currency, your bank converts the amount at its own
+rate and may add a foreign-transaction fee that we neither set nor receive.
+Subscriptions are recurring. Choosing a monthly plan authorises us to charge that amount every
+month, and an annual plan every twelve months, automatically at the start of each new period, until
+you cancel. The renewal amount is the plan price shown at checkout; we will email you before any
+price change takes effect. You can cancel at any time from your account page, and cancellation
+stops all future charges while leaving your access intact until the end of the period you already
+paid for.
+
+4. Refunds
+The Service has a free tier — 4 humanizations per day, no card required — so you can fully evaluate
+it before paying. For that reason, paid subscriptions are generally non-refundable. We will process
+any refund required by law, or granted at our discretion for a documented service failure — email
+hello@humanizemy.ai and we'll review your request. Full cancellation, refund and delivery terms are
+set out in the Refund & Cancellation Policy. You can cancel anytime from your account to stop
+future renewals; cancellation keeps your access until the end of the current billing period.
+
+5. Acceptable use
+You agree not to use the Service to:
+- Generate or rewrite content that violates academic-integrity policies you are bound by. The
+  Service is for AI-assisted writing improvement, not for misrepresenting authorship.
+- Process content that infringes third-party copyright, contains illegal material, or violates
+  applicable law.
+- Scrape, reverse-engineer, or attempt to bypass quota controls.
+- Resell or redistribute Service output as a competing service without written permission.
+- Use automation to abuse free-tier quotas across multiple IP addresses or accounts.
+We may suspend or terminate accounts that violate these rules. We may also refuse service to any
+request we believe is in bad faith.
+[NB coder: read in full for unquantified_limit_clause — no fair-use / reasonable-use / excessive-use
+/ discretionary-throttling clause tied to a volume standard found anywhere in this document. This
+section is conduct/anti-abuse (academic integrity, copyright, anti-scraping, anti-resale, anti
+multi-IP quota-farming of the FREE tier), not a discretionary cap on paid-tier usage volume.]
+
+6. Intellectual property
+You retain ownership of all text you submit to the Service. We claim no ownership over your inputs
+or outputs. The Service itself — including the model prompts, the retrieval corpus, and the
+proprietary detection model behind /detect — is the property of Mihci AI Studios LLC. The
+2,590-essay corpus is licensed; redistribution is prohibited.
+
+7. No warranty on detector results
+No AI humanizer can guarantee a 100% pass rate on every input. Detector vendors update their
+models continuously. The Service is provided "as is" without warranty that any specific detector
+will report your output as human on any given day.
+
+8. Limitation of liability
+...total liability is limited to the amount you paid for the Service in the 12 months preceding the
+claim.
+
+9. Termination
+You can cancel any time from your account page. We may suspend accounts that violate these Terms,
+with notice except in cases of imminent abuse risk.
+
+10. Payment and data security
+The entire site is served over TLS (HTTPS). Card payments are handled by a PCI-DSS Level 1
+certified payment provider: card details are entered directly into the provider's hosted, encrypted
+fields and are never transmitted to, processed by, or stored on our servers...
+
+11. Export controls and sanctions
+The Service is a software subscription supplied electronically from the United States...
+
+12. Governing law
+These Terms are governed by the laws of the State of Wyoming and the federal laws of the United
+States... Nothing here removes the mandatory consumer-protection rights of the country you live in
+(for example in the EU, UK, or Türkiye)...
+
+13. Changes
+We will post material changes here. Continued use after changes take effect constitutes acceptance.
+
+14. Contact
+Mihci AI Studios LLC · 30 N Gould St Ste R, Sheridan, WY 82801, USA · hello@humanizemy.ai ·
++1 (307) 218-6489. We answer support and billing email within one business day.
+
+=== Notes for coding ===
+- auto_renewal_default = on: "Subscriptions are recurring... automatically at the start of each new
+  period, until you cancel."
+- renewal_notice_commitment: only a conditional commitment found ("we will email you before any
+  price change takes effect") — this covers notice of a PRICE CHANGE, not a general reminder before
+  each ordinary renewal charge at the same price. Coded no_notice_stated on that basis; the
+  price-change carve-out is quoted in the variable's evidence field.
+- cancellation_self_serve = self_serve_documented: "You can cancel at any time from your account
+  page" (section 3), repeated in section 9.
+- output_ownership_statement = user_owns: "You retain ownership of all text you submit to the
+  Service. We claim no ownership over your inputs or outputs." (section 6)
+- refund_policy_exists: "generally non-refundable" + refund "required by law" or "at our discretion
+  for a documented service failure" — same shape as the codebook's own worked example ("non-
+  refundable except where required by law" -> no_refunds_stated), so coded no_refunds_stated here
+  too; the discretionary service-failure exception is quoted in evidence/coder_note. Cross-checked
+  against the dedicated Refund & Cancellation Policy page (see refund-cancellation-policy-rendered
+  file) as the higher-ranked source for this variable class.
+- No trial (free or paid-intro) mentioned anywhere in this document.
+- No credit/token/point vocabulary anywhere in this document.
+- No commercial-use-rights clause found in this document (checked docs/FAQ separately).
+- currency: "All prices are quoted and charged in US dollars (USD)" — explicit USD statement,
+  positive evidence against non_usd per the currency-check arm 1 (vendor's own currency disclosure).

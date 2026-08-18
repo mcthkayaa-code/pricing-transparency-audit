@@ -1,0 +1,57 @@
+SOURCE: https://invideo.io/help/billing/video-model-pricing/
+ACCESSED: 2026-08-09
+METHOD: Rendered read via headless browser, document.body.innerText. This is the rate table for the
+  product's PRINCIPAL output (video) — InVideo AI is sold as an AI video generator.
+ARCHIVE: https://web.archive.org/web/20260809164314/https://invideo.io/help/billing/video-model-pricing/
+
+=== RENDERED TEXT (verbatim, header + representative rows; full table has ~65 models) ===
+AI Video Generation Credits & Usage
+Video credits scale with resolution, duration, audio, and mode. Each row below shows the total
+credits range from the cheapest tier at the shortest supported duration to the most expensive tier
+at the longest supported duration.
+
+MODEL                RESOLUTION      LENGTH        CREDITS
+Seedance 2.5          480p-720p       4s-30s        0.59-39.90
+Seedance 2.0          480p-4k         4s-15s        1.28-67.20
+MiniMax-H3             2k             5s-15s        3.12-9.36
+Gemini Omni Flash      720p           3s-10s        1.20-40.00
+Kling 3.0 Video        720p-4k        3s-15s        1.01-25.20
+Kling 3.0 Turbo        720p-1080p     3s-15s        1.35-8.40
+Kling V3 Omni Video    720p-4k        3s-15s        0.50-25.20
+Luma Ray 3.2           540p-1080p     per second    0.29-20.74
+VEO 3.1 Fast           720p-4k        4s-8s         1.28-9.60
+VEO 3.1                720p-4k        4s-8s         3.20-19.20
+VEO 3.1 Lite           720p-1080p     4s-8s         0.48-2.56
+Pixverse V6            360p-1080p     1s-15s        0.08-5.55
+... (approximately 55 further models, each a distinct credits range denominated in either a fixed
+duration band ["Ns-Ms"] or "per second"; full model roster spans 60+ third-party AI models with no
+single platform-wide rate)
+
+Model & agent prices are subject to change. We update pricing as underlying models change; current
+prices are always shown in the app before you confirm a generation.
+
+How the range works
+Each model shows a credits range spanning its cheapest tier (e.g. lowest resolution, no audio,
+shortest duration) to its most expensive tier (e.g. highest resolution, with audio, longest
+duration). You'll see the exact cost for your chosen configuration before you confirm.
+
+Tips for controlling video spend
+Pick the lowest resolution that matches your output need — 720p is fine for most social formats.
+Shorter clips cost proportionally fewer credits...
+
+=== CODING NOTES ===
+- credit_to_output_rate_published: rates ARE published for the principal output (video), across
+  every model the platform offers, satisfying the "published" test — but every single model's rate
+  is stated ONLY as a range (min-max spanning its resolution/duration/audio tiers), with no formula
+  resolving which exact figure applies to a given configuration beyond "you'll see the exact cost
+  ...in the app before you confirm" (i.e. the exact figure lives behind product use, not in a
+  document). This matches the codebook's `partial` definition verbatim: "Rates are published for
+  the principal output ... or only as a range."
+- cost_per_output_computable: computing a single "cost per video minute" figure for the entry tier
+  requires first choosing WHICH of the 60+ models a "typical" buyer would use — the range spans
+  roughly 0.02 to 67+ credits per generation across the full roster, so no single model can be
+  picked without an assumption about typical use. Per codebook rule 7 ("If it needs an assumption
+  about how a typical buyer uses the product, code no"), this is coded `no`, not `partial` — the
+  ambiguity here is not "one output, one range" (the codebook's worked examples) but "one output
+  category standing in for 60+ separately-priced sub-products", which is a materially different
+  and more severe disclosure gap than a single bounded range.

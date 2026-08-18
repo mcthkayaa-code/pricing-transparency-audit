@@ -1,0 +1,165 @@
+product_id: vidnoz
+product_name: Vidnoz
+category: AI avatar
+product_status: active
+paid_submission: "no"
+entry_tier_name: Starter
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://www.vidnoz.com/pricing.html
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "USD; billing toggle preselects Yearly/annual (DOM class 'Yearly type active', 25% Off badge); Starter credit-slider defaults to 450 credits/mo, Business to 900 credits/mo; read from Turkey network location, desktop 1280x720; no consent-wall blocked pricing.html content"
+
+sources:
+  - { url: "https://www.vidnoz.com/pricing.html", kind: pricing, accessed: "2026-08-13", archive: local_copy_only, note: "main AI avatar/video pricing page; JS-rendered (D-005), read via rendered browser + DOM inspection; local capture vidnoz-sources/pricing-capture-2026-08-13.txt; static curl returned HTTP 000" }
+  - { url: "https://www.vidnoz.com/terms.html", kind: tos, accessed: "2026-08-13", archive: local_copy_only, note: "general site Terms of Service, Last Update July 2026; local capture vidnoz-sources/terms-raw-2026-08-13.html" }
+  - { url: "https://www.vidnoz.com/ai-terms-of-service.html", kind: tos, accessed: "2026-08-13", archive: local_copy_only, note: "second, separate ToS document, app/iOS-in-app-purchase oriented (Apple ID, App Store refund flow), copyright-dated 2024; local capture vidnoz-sources/ai-terms-of-service-raw-2026-08-13.html" }
+  - { url: "https://www.vidnoz.com/refundpolicy.html", kind: refund, accessed: "2026-08-13", archive: local_copy_only, note: "dedicated refund/cancellation policy, Last Updated Feb 24 2025; local capture vidnoz-sources/refundpolicy-raw-2026-08-13.html" }
+
+variables:
+  headline_price_usd: { value: "19.99", source: "https://www.vidnoz.com/pricing.html", evidence: "Starter card: old-price $26.99 struck through, then '$19.99 /mo' '$0.04/credit'; sticky compare table confirms 'Starter $19.99/mo Billed yearly' (id=tableStarer)" }
+  headline_billing_basis: { value: "per_month_billed_annually", source: "https://www.vidnoz.com/pricing.html", evidence: "figure carries '/mo' qualifier; compare-table span.tableType reads 'Billed yearly'; default toggle DOM class 'Yearly type active'. No 'per user/per seat' wording appears at the price itself, so rule 2 (per_seat_per_month) does not trigger despite Starter being a 1-seat plan." }
+  first_charge_amount_usd: { value: "239.88", source: "https://www.vidnoz.com/pricing.html", evidence: "19.99 x 12 = 239.88. Multiplication licensed by refundpolicy.html: 'We provide 1-month (monthly deduction) and 1-year (yearly deduction) subscription plans' (single yearly deduction) and its partial-refund clause returning 'unused subscription months' from that one charge; pricing FAQ: subscription 'continues until the same date on the following month/year'." }
+  mandatory_addon_present: { value: "no", source: "https://www.vidnoz.com/pricing.html", evidence: "Feature grid: 'Voice Clone' = 'Paid Add-on' and 'Avatar Pro' = 'Paid Add-on' for Starter -- both optional enhancements, not required to use the plan's advertised core features (avatars, video generation, templates, voices)." }
+  annual_condition_disclosure: { value: "adjacent", source: "https://www.vidnoz.com/pricing.html", evidence: "Shared Monthly/Yearly toggle sits directly above the price cards and governs the displayed figure; its label reads 'Yearly' + '25% Off' badge (DOM: span.Yearly.type.active). The word 'annually' is not printed inside the Starter card's own price block itself; the more explicit phrase 'Billed yearly' appears only in a secondary sticky compare-table widget lower on the same page. Coded adjacent per the toggle-label clause; see coder_note for the alternate same_page_secondary reading." }
+  annual_default_toggle: { value: "annual_preselected", source: "https://www.vidnoz.com/pricing.html", evidence: "DOM: '<span class=\"Yearly type active\"><span>Yearly</span> <span class=\"off\">25% Off</span></span>' active on load; Monthly sibling carries no 'active' class." }
+  free_plan_exists: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "FAQ 'Is Vidnoz AI free to use?': 'Yes, we offer a free plan for creating AI videos.' Free column shown as a standing tier alongside paid tiers with recurring daily/monthly allowances, not a time-limited trial." }
+  free_plan_cap_documented: { value: "all_quantified", source: "https://www.vidnoz.com/pricing.html", evidence: "Free tier lists: '8 credits/day (=16 secs)', 'Max 3 mins/video', '2 photo avatars/day', '2,000 characters/scene', 'Expressive avatars (1 use)' -- every stated limit carries a number, a dimension, and a period where it is a rate." }
+  free_plan_cap_value: { value: "8 credits/day | max 3 min per video | 2 photo avatars/day | 2000 characters per scene | 1 expressive avatar use", source: "https://www.vidnoz.com/pricing.html", evidence: "" }
+  free_plan_watermark: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "Feature grid row 'Remove Vidnoz Watermark': cross icon (span.wrong) under Free, check icon (span.have) under Starter/Business/Enterprise. Row 'Full Commercial License' reads literal text 'With Vidnoz watermark' under Free (vs check icons for paid tiers)." }
+  free_plan_duration: { value: "perpetual", source: "https://www.vidnoz.com/pricing.html", evidence: "Free is presented as a permanent column in the plan grid and compare table (daily/monthly recurring allowances, e.g. '8 credits/day'), not described anywhere as free 'to start' or for a stated introductory period." }
+  trial_exists: { value: "no", source: "https://www.vidnoz.com/pricing.html", evidence: "Pricing page (incl. all FAQ items) mentions only the perpetual Free plan and paid subscriptions; no time-limited trial of a paid tier is named anywhere on the page. Also silent in terms.html, ai-terms-of-service.html, and refundpolicy.html, each read in full." }
+  trial_card_required: { value: "not_applicable", source: "https://www.vidnoz.com/pricing.html", evidence: "No trial exists (trial_exists=no)." }
+  trial_length_days: { value: "not_applicable", source: "https://www.vidnoz.com/pricing.html", evidence: "No trial exists." }
+  trial_auto_converts: { value: "not_applicable", source: "https://www.vidnoz.com/pricing.html", evidence: "No trial exists." }
+  credit_system_present: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "FAQ 'What do the credits mean?': 'the credits in your subscription refer to the total amount of video content you can create during the subscription period' -- an intermediate currency converting into outputs at stated per-feature rates, not a direct output-unit allowance." }
+  credit_unit_defined: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "Credit-conversion table (opened from the FAQ): 'Video Generation | 0.5 credits per 1s | min cost 1 credit', plus 9 further named conversions (Expressive Avatar, Product Avatar, AI Photo Avatar, etc.)." }
+  credit_to_output_rate_published: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "Same credit-conversion table publishes a specific rate for the principal output (Video Generation, 0.5 credits/1s) and for every other advertised output type (Expressive/Product Avatar, AI Photo Avatar, Portrait Effects, AI Image generator, Product Background, AI Script Assistant, Text-to-video scene/animatic) -- no output type is left as a vague range." }
+  credit_rate_location: { value: "pricing_page", source: "https://www.vidnoz.com/pricing.html", evidence: "Conversion table lives inside the pricing page's FAQ accordion ('Here's how different features consume credits'). Help-center duplication not exhaustively searched within budget; not found elsewhere in documents opened for this record." }
+  cost_per_output_unit: { value: "per_video_minute", source: "https://www.vidnoz.com/pricing.html", evidence: "Plans are framed around video output capped in minutes ('Max 60 mins/video'); credits convert to seconds/minutes of generated video via the conversion table." }
+  cost_per_output_computable: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "Starter (entry tier): $19.99/mo default display, 450 credits/mo, base Video Generation rate 0.5 credits/s (=30 credits/min). 450/30=15 min/mo; 19.99/15=1.33/min. All figures published, no typical-use assumption needed. See coder_note on the choice of the base rate over the pricier named avatar-style rates." }
+  computation_assumptions: { value: "Starter, $19.99/mo per default (Yearly) display state, 450 credits/mo included. Video Generation = 0.5 credits/s = 30 credits/min (base rate). 450/30=15 min/mo. 19.99/15=1.33 usd/video-minute.", source: "https://www.vidnoz.com/pricing.html", evidence: "" }
+  credit_rollover_policy: { value: "expires_at_period_end", source: "https://www.vidnoz.com/pricing.html", evidence: "FAQ 'Do unused credits carry over into the next billing period?': 'No, the unused credits do not carry over to the next billing period.'" }
+  failed_generation_charge_policy: { value: "unknown", source: "https://www.vidnoz.com/pricing.html", evidence: "Not addressed in pricing.html (incl. FAQ), terms.html, ai-terms-of-service.html, or refundpolicy.html, each read in full. Silence, not a located statement." }
+  auto_renewal_default: { value: "on", source: "https://www.vidnoz.com/terms.html", evidence: "'For paid subscriptions, we will automatically charge your payment method on each agreed-upon periodic renewal until you cancel.' Agrees with ai-terms-of-service.html: 'YOUR SUBSCRIPTION WILL RENEW AT THE END OF THE PERIOD, UNLESS YOU CANCEL, AT Vidnoz AI'S THEN-CURRENT PRICE.'" }
+  auto_renewal_disclosure_location: { value: "terms_only", source: "https://www.vidnoz.com/terms.html", evidence: "Stated explicitly in terms.html and ai-terms-of-service.html (both 'terms' class). refundpolicy.html describes fee changes taking effect 'at the end of your then-current Billing Cycle' -- consistent with, but not an explicit statement of, automatic renewal. Not stated on pricing.html." }
+  renewal_notice_commitment: { value: "advance_notice_stated", source: "https://www.vidnoz.com/terms.html", evidence: "'If we increase our subscription prices, we will give you at least 7 days' notice and any price increase will take effect on your next renewal.' Scoped to price INCREASES specifically, not a general pre-renewal reminder; ai-terms-of-service.html agrees ('You will be given notice of changes in the pricing... and an opportunity to cancel')." }
+  refund_policy_exists: { value: "conflicting", source: "https://www.vidnoz.com/refundpolicy.html", evidence: "refundpolicy.html: 'We provide 7-day full Money Back Guarantee for 1-year subscription.' vs terms.html: 'Payments are non-refundable, except where required by law.' vs ai-terms-of-service.html: 'Generally, all charges for purchases are non-refundable, and there are no refunds or credits for partially used periods.' Three rank-1 contractual documents, three different commitments; see conflict_note." }
+  refund_window_days: { value: "7", source: "https://www.vidnoz.com/refundpolicy.html", evidence: "'We provide 7-day full Money Back Guarantee for 1-year subscription. Refund requests for a 1-month subscription will not be accepted.' Window stated only for the annual/yearly-billed plan (our default display state); monthly billing carries 0/no window per the same document. terms.html states no specific day-count." }
+  refund_conditions: { value: "conditional", source: "https://www.vidnoz.com/refundpolicy.html", evidence: "Refund only 'if the refund request is submitted within the subscription's specified money-back-guarantee period' (7 days, annual only); not available at all for monthly. Conditional under either co-equal document's framing (refundpolicy.html's window, or terms.html's 'except where required by law')." }
+  cancellation_self_serve: { value: "conflicting", source: "https://www.vidnoz.com/terms.html", evidence: "terms.html: 'You can cancel your paid subscription at any time in your Vidnoz account.' ai-terms-of-service.html agrees: 'you may cancel or change your Payment Method via the payment settings option under your profile.' refundpolicy.html disagrees: 'How to cancel and refund... please email us at support@vidnoz.com.' Pricing-page FAQ (lower rank) agrees with refundpolicy.html ('by contacting our support'). See conflict_note." }
+  refund_policy_location: { value: "conflicting", source: "https://www.vidnoz.com/refundpolicy.html", evidence: "Stated in terms (terms.html), dedicated_refund_page (refundpolicy.html), and pricing_page (FAQ) -- three classes, but disagreeing in substance (see refund_policy_exists), which per codebook leaves the governing class undeterminable rather than reinforced." }
+  commercial_use_lowest_tier: { value: "free", source: "https://www.vidnoz.com/pricing.html", evidence: "Feature grid row 'Full Commercial License': text 'With Vidnoz watermark' under Free (right granted, watermark caveat -- see free_plan_watermark), check icon under Starter/Business/Enterprise. Neither terms.html nor ai-terms-of-service.html contains a competing commercial-use clause, so the pricing page (rank 3, uncontested) governs." }
+  watermark_removal_tier: { value: "lowest_paid", source: "https://www.vidnoz.com/pricing.html", evidence: "Feature grid row 'Remove Vidnoz Watermark': cross under Free, check from Starter upward (Starter is the entry paid tier)." }
+  output_ownership_statement: { value: "user_owns", source: "https://www.vidnoz.com/terms.html", evidence: "'Ownership of content. As between you and Vidnoz... you... own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output.' Stated generally, not tier-restricted. ai-terms-of-service.html's IP clause concerns Vidnoz's own site/software content, not generated Output, so it does not compete with this statement." }
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://www.vidnoz.com/pricing.html", evidence: "Starter (entry tier) limits: '450 credits/month' (rate), 'Max 60 mins/video' (standing), '100 photo avatars/day' (rate), '15,000 characters/scene' (standing), 'User Seats: 1' (standing) -- every stated limit carries a number and dimension, plus a period where it is a rate." }
+  unquantified_limit_clause: { value: "absent", source: "https://www.vidnoz.com/terms.html", evidence: "terms.html and ai-terms-of-service.html both read in full end-to-end; neither contains a fair-use/reasonable-use/excessive-use/discretionary-throttling clause. The only 'rate limit' hit is a user-conduct prohibition ('Interfere with or disrupt our Services, including circumvent any rate limits...'), not a vendor-side discretionary usage cap." }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): eligible paid candidates were Starter
+  ($19.99/mo x12 = $239.88/yr-equiv) and Business ($56.99/mo x12 = $683.88/yr-equiv);
+  Starter is lower and is entry_tier_name. Business is the only losing eligible
+  candidate. Free ($0) is not a paid tier. Enterprise is sales-gated ("Let's Talk" /
+  "Book a Demo"), ineligible under sampling-rules 7.2 rule 2 (no sales contact).
+
+  Credit-slider note: each paid card also carries an interactive credit-quantity
+  slider (Starter ticks 300/450/900/1800; Business 900/1800/2700) that changes the
+  displayed price when dragged. Per protocol 6.8's anti-cherry-picking principle
+  (applied here to the slider by the same logic as the billing toggle), it was
+  read but NOT interacted with for pricing purposes -- the DEFAULT handle position
+  (450 for Starter, 900 for Business, confirmed via DOM class "m-active") is what
+  was coded. A cheaper Starter price likely exists at the 300-credit slider
+  position but was deliberately not read, so it is not reported as a losing
+  entry-tier candidate figure (unread, not merely lower).
+
+  annual_condition_disclosure judgment call: coded adjacent because the Yearly/
+  25%-Off toggle sits directly above and governs the price cards (codebook's
+  "label of the toggle attached to it" clause). A stricter reader could instead
+  call this same_page_secondary, since "annually"/"billed yearly" is not printed
+  inside the Starter card's own price block -- only in the toggle label ("Yearly")
+  and in a separate sticky compare-table widget lower on the page. Flagging for
+  adjudicator attention. Separately, DOM contains a hidden (style="display:none")
+  "25% OFF / First Month" badge next to "Starter" under the Yearly toggle; not
+  visible to a reader at 1280x720 and not corroborated by any "then $X" / "after
+  first month" / "renew" language found anywhere on the page (confirmed via
+  full-body keyword search under both toggle states) -- treated as inert/unused
+  markup, not coded as a value.
+
+  A-012 considered and NOT applied: no document states a specific, distinctly
+  time-boxed low intro window (e.g. "$X for N days") before a rate change; the
+  discounts found (25% Off for annual vs monthly billing; "50% OFF" on the two
+  add-ons) read as ordinary billing-frequency/sale discounts, structurally
+  parallel to the plan pricing's own confirmed monthly-vs-annual mechanism (see
+  next paragraph), not a confirmed first-term-only promo that steps up later.
+
+  Custom-avatar add-on question: "Avatar Pro" ("Create your own custom AI Avatar
+  to serve as your digital twin") is a PAID ADD-ON at every tier including
+  Business -- never bundled free into any paid plan. Priced $299/yr (promo, was
+  $598/yr, "50% OFF", billed yearly); the non-promotional/list renewal rate for
+  this add-on is NOT published anywhere in the documents read -- that gap is
+  itself the finding. Coded mandatory_addon_present=no because Starter/Business
+  are fully usable (with their large included stock-avatar libraries) without
+  ever buying Avatar Pro. Voice Clone is a second, separately optional paid
+  add-on ($9.99/mo promo, was $19.99/mo, "50% OFF").
+
+  Promo-vs-renewal gap on the base plans: verified by toggling Monthly/Yearly
+  (permitted post-default-state-recording) that $26.99/mo (Starter) and $74.99/mo
+  (Business) are the plain monthly-billing list prices, and $19.99/mo / $56.99/mo
+  are the annual-billed monthly-equivalent (a ~25% discount for prepaying a
+  year) -- a normal, disclosed mechanism, not a hidden renewal jump. No document
+  anywhere states the year-2+ renewal rate differs from the year-1 rate for
+  annual plans; taken at face value (whatever "billed yearly" charges this year
+  is assumed to recur), since no evidence suggests otherwise.
+
+  cost_per_output_computable: the credit table gives THREE different per-second
+  avatar/video rates -- "Video Generation" 0.5 credits/s (used for the
+  computation, as the generic/base rate) vs "Expressive Avatar" and "Product
+  Avatar" both 2 credits/s (4x). All three are named categories with exact
+  published rates, not a vague range, so this was coded yes rather than partial;
+  but the choice of which row is "the" principal output is a judgment call an
+  adjudicator may revisit.
+
+  ai-terms-of-service.html vs terms.html: the site publishes two ToS-class
+  documents. terms.html is dated "Last Update: July 2026", uses "Vidnoz"
+  branding, and covers the general web Services. ai-terms-of-service.html is
+  copyright-dated 2024, uses "Vidnoz AI" branding (matching this product's own
+  name), and is written around Apple ID / iOS App Store in-app purchases
+  specifically ("every Apple ID can make a purchase only once", refund
+  instructions via iTunes). Both were treated as co-equal "terms of service"
+  class sources per protocol 6.2's literal wording, since no cross-reference in
+  either document states that one supersedes or is scoped narrower than the
+  other for a web-pricing-page buyer -- this drives the conflicting codings in
+  conflict_note.
+
+  Excluded from this record: https://www.vidnoz.com/get-started/how-does-vidnoz-
+  ai-studio-billing-work.html is a billing help article about "Vidnoz AI Studio",
+  a different product in the vendor's portfolio (image/video enhancer, per its
+  sidebar links), not our target avatar/video-generation product. A third-party
+  web-search summary of it described credits that "accumulate" and cited
+  200/1,500 monthly/yearly credit figures inconsistent with Vidnoz AI's actual
+  450/900 credits -- confirming the different-product read and validating why it
+  was NOT used to code credit_rollover_policy. A second help article,
+  https://www.vidnoz.com/settings/manage-subscriptions.html, was opened to look
+  for corroborating self-serve-cancellation evidence but its main article body
+  did not render through the extraction tools used within budget; not cited as a
+  source, not used to code any value.
+
+  renewal_notice_commitment: the only stated notice commitment (>=7 days) is
+  scoped to PRICE INCREASES specifically, not a general pre-every-renewal
+  reminder; flagged so the coded value is not read as broader than the documents
+  support.
+
+  Archival: web.archive.org returned no response (HTTP 000) via both a WebFetch
+  attempt and a curl attempt across two different source URLs on 2026-08-13,
+  consistent with deviation D-012. All four sources coded local_copy_only; dated
+  verbatim captures saved under vidnoz-sources/ (three raw-HTML curls verified by
+  grep to contain the exact quoted operative phrases used as evidence above, one
+  rendered-DOM text capture for the JS-driven pricing.html, per D-005).
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Three-way conflict on refund/cancellation (domain 10), all rank-1 contractual sources under protocol 6.2 ('terms of service OR the dedicated policy page'): (1) refundpolicy.html: '7-day full Money Back Guarantee for 1-year subscription... Refund requests for a 1-month subscription will not be accepted' and, to cancel, 'please email us at support@vidnoz.com'. (2) terms.html: 'Payments are non-refundable, except where required by law' and 'You can cancel your paid subscription at any time in your Vidnoz account' (self-serve). (3) ai-terms-of-service.html: 'all charges for purchases are non-refundable, and there are no refunds or credits for partially used periods' and cancel 'via the payment settings option under your profile' (self-serve, agrees with terms.html against refundpolicy.html on method, but disagrees with BOTH other documents on whether/how much is refundable). Coded refund_policy_exists=conflicting, cancellation_self_serve=conflicting, refund_policy_location=conflicting; refund_window_days=7 taken from refundpolicy.html as the only document publishing a specific number, restricted to annual billing (our default display state)."
+register_events: []
+status: complete

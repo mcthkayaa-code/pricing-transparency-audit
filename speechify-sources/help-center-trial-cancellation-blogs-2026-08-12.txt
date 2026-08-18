@@ -1,0 +1,31 @@
+URLs (official Speechify blog / help articles -- qualify as vendor documentation per codebook-v1.md section 4):
+  1. https://speechify.com/blog/how-do-i-cancel-my-premium-or-trial-subscription/
+     Archive: https://web.archive.org/web/20260812083817/https://speechify.com/blog/how-do-i-cancel-my-premium-or-trial-subscription/
+  2. https://speechify.com/blog/how-do-i-cancel-my-premium-subscription-on-ios/
+     Archive: https://web.archive.org/web/20260812084158/https://speechify.com/blog/how-do-i-cancel-my-premium-subscription-on-ios/
+Accessed: 2026-08-12 (WebFetch)
+Method: WebFetch (targeted extraction prompt on trial length, card requirement, conversion, cancellation route)
+---
+
+Article 1 ("...Premium or Trial subscription?") confirms:
+  - Title/scope explicitly covers a "Trial" subscription state as distinct from ordinary Premium, i.e. Speechify's
+    own support content treats "Trial" as a real, currently-supported account state (corroborates trial_exists,
+    independent of the Terms of Service).
+  - "Canceling before your free trial ends will prevent any future charges." -> corroborates trial_auto_converts
+    (auto-converts to paid unless canceled), independently of ToS 2.3(a)(iii).
+  - "After you cancel, you'll keep Speechify Premium features until your trial period is over." -> further
+    corroborates an active trial construct tied to Premium specifically (not Studio).
+  - Cancellation route: log in at app.speechify.com -> profile photo -> Settings -> "Cancel Subscription".
+  - Does NOT state trial length in days or whether a card is required at signup -- those specifics are sourced
+    from the Terms of Service only (see terms-of-service-full-text file), not from this article.
+
+Article 2 ("...Premium Subscription on iOS?") confirms:
+  - Same auto-convert language repeated ("Canceling before your free trial ends will prevent any future
+    charges"; "If you're on a free trial, you'll keep Premium features until your trial period is over.")
+  - iOS-specific cancellation route: Apple's standard "Manage Subscriptions" flow in Apple ID account settings
+    (Speechify does not administer iOS cancellations directly -- matches ToS 2.3(f)).
+  - Does not state trial length or card requirement either.
+
+Neither article was used to code trial_length_days or trial_card_required (no operative wording present); both
+corroborate trial_exists=yes and trial_auto_converts=yes as a second, independent document class agreeing with
+the Terms of Service (relevant to auto_renewal/trial-adjacent disclosure-location reasoning in coder_note).

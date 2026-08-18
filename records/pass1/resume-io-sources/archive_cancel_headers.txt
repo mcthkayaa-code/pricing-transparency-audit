@@ -1,0 +1,68 @@
+HTTP/2 302 
+server: nginx
+date: Wed, 12 Aug 2026 06:59:56 GMT
+content-type: text/html; charset=utf-8
+content-length: 336
+location: https://web.archive.org/web/20260812065941/https://resume.io/contact/cancel-subscription
+x-app-server: wwwb-app55-dc6
+x-ts: 302
+x-tr: 18080
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=2
+set-cookie: wb-save-SERVER=wwwb-app55; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Wed, 12 Aug 2026 06:59:56 GMT
+content-type: text/html; charset=utf-8
+x-archive-orig-transfer-encoding: chunked
+x-archive-orig-connection: keep-alive
+x-archive-orig-date: Wed, 12 Aug 2026 06:59:42 GMT
+x-archive-orig-etag: W/"7064d016587a5044e6c1324ecde586ba"
+x-archive-orig-x-frame-options: SAMEORIGIN
+x-archive-orig-x-xss-protection: 0
+x-archive-orig-x-content-type-options: nosniff
+x-archive-orig-x-permitted-cross-domain-policies: none
+x-archive-orig-referrer-policy: strict-origin-when-cross-origin
+x-archive-orig-link: </assets/css/landing-e4072f07.css>; rel=preload; as=style; nopush
+x-archive-orig-cache-control: max-age=0, private, must-revalidate
+x-archive-orig-content-security-policy: default-src 'self' * data: blob:; connect-src 'self' * data: blob: webpack:; img-src 'self' * 'unsafe-inline' data: blob:; script-src 'self' * 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' * 'unsafe-inline' data: blob:; object-src 'none'; worker-src 'self' data: blob: career.io *.career.io careerio.careerminds.com *.careerio.careerminds.com careerio.topcv.com *.careerio.topcv.com careerio.topresume.com *.careerio.topresume.com careers.chegg.com *.careers.chegg.com careers.coursereport.com *.careers.coursereport.com careers.nscs.org *.careers.nscs.org cv.dk *.cv.dk cvapp.ar *.cvapp.ar cvapp.bg *.cvapp.bg cvapp.cl *.cvapp.cl cvapp.cz *.cvapp.cz cvapp.de *.cvapp.de cvapp.es *.cvapp.es cvapp.fi *.cvapp.fi cvapp.fr *.cvapp.fr cvapp.gr *.cvapp.gr cvapp.hu *.cvapp.hu cvapp.ie *.cvapp.ie cvapp.it *.cvapp.it cvapp.mx *.cvapp.mx cvapp.no *.cvapp.no cvapp.nz *.cvapp.nz cvapp.ro *.cvapp.ro cvapp.rs *.cvapp.rs cvapp.vn *.cvapp.vn cveasy.pl *.cveasy.pl cvkungen.se *.cvkungen.se cvster.nl *.cvster.nl lebenslaufapp.at *.lebenslaufapp.at lebenslaufapp.ch *.lebenslaufapp.ch onlinecurriculo.com.br *.onlinecurriculo.com.br onlinecurriculo.pt *.onlinecurriculo.pt app.resume.ai *.app.resume.ai resume.ai *.resume.ai resume.io *.resume.io resumeapp.co.kr *.resumeapp.co.kr rirekisho.jp *.rirekisho.jp ust.stape.io *.ust.stape.io learning.career.io *.learning.career.io learning.careerio.careerminds.com *.learning.careerio.careerminds.com learning.careerio.topcv.com *.learning.careerio.topcv.com learning.careerio.topresume.com *.learning.careerio.topresume.com learning.coursereport.com *.learning.coursereport.com learning.resume.io *.learning.resume.io directory.futurelearn.com *.directory.futurelearn.com; frame-src https:; frame-ancestors 'self' vwo.com *.vwo.com
+x-archive-orig-set-cookie: _session_id=c0a79a46c8425c8a79c04971bc935905; path=/; expires=Sat, 12 Sep 2026 06:59:42 GMT; secure; httponly; samesite=lax
+x-archive-orig-x-request-id: 6362aee2-8157-4a05-bc4e-0cff34b318ef
+x-archive-orig-x-runtime: 0.421269
+x-archive-orig-strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-archive-orig-vary: Accept-Encoding
+x-archive-orig-x-cache: Miss from cloudfront
+x-archive-orig-via: 1.1 c94daf6ef25778b7e876d6630698640e.cloudfront.net (CloudFront)
+x-archive-orig-x-amz-cf-pop: SLC52-P1
+x-archive-orig-x-amz-cf-id: NqGQaYwO4dxMur5vIcDVHHPwd6ny0gP1TqXNHTkc0tET02NFXSoaSg==
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+x-archive-orig-content-encoding: gzip
+memento-datetime: Wed, 12 Aug 2026 06:59:41 GMT
+link: <https://resume.io/contact/cancel-subscription>; rel="original", <https://web.archive.org/web/timemap/link/https://resume.io/contact/cancel-subscription>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://resume.io/contact/cancel-subscription>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: spn2-20260812062538-wwwb-spn35.us.archive.org-8001.warc.gz
+server-timing: captures_list;dur=0.563709, exclusion.robots;dur=0.054513, exclusion.robots.policy;dur=0.041274, esindex;dur=0.008834, cdx.remote;dur=97.170309, LoadShardBlock;dur=202.214045, PetaboxLoader3.datanode;dur=42.495605, PetaboxLoader3.resolve;dur=130.148810, load_resource;dur=50.520020
+x-app-server: wwwb-app221-dc8
+x-ts: 200
+x-tr: 446
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=3
+set-cookie: wb-p-SERVER=wwwb-app221; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

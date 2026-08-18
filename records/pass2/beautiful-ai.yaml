@@ -1,0 +1,130 @@
+product_id: beautiful-ai
+product_name: Beautiful.ai
+category: AI presentation
+product_status: active
+paid_submission: "no"
+entry_tier_name: Pro
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-14
+recheck_date: not_applicable
+primary_source_url: https://www.beautiful.ai/pricing
+archive_url: https://web.archive.org/web/20260814175159/https://www.beautiful.ai/pricing
+archive_status: archived
+default_display_state: "USD throughout, no country/currency selector observed. Cookies: declined non-essential (\"Reject all cookies\"). Pro (entry) card carries no monthly/annual toggle of its own and shows \"Billed annually\" as a static label -- but the price figure itself is live A/B tested (Optibase script): this read rendered $14.50/mo. Team card has a real monthly/annual toggle that defaults to annual ($40, not $50). See register_events for the pricing variant."
+
+sources:
+  - { url: "https://www.beautiful.ai/pricing", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814175159/https://www.beautiful.ai/pricing", note: "vendor live pricing page; read via rendered browser after declining non-essential cookies; also carries the FAQ block used for trial/refund/cancellation evidence" }
+  - { url: "https://www.beautiful.ai/terms-of-service", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814175228/https://www.beautiful.ai/terms-of-service", note: "vendor terms of service (SaaS subscription agreement); ranks first for contractual variables" }
+  - { url: "https://support.beautiful.ai/hc/en-us/articles/360030719012-What-is-your-refund-policy", kind: refund, accessed: "2026-08-14", archive: archive_failed, note: "dedicated help-center refund article; server returns a Cloudflare JS challenge to both curl and archive.org's crawler (2 attempts each), so not readable as its own document. Its content is duplicated verbatim in the pricing-page FAQ, which IS archived and was used for coding instead." }
+  - { url: "https://support.beautiful.ai/hc/en-us/articles/43596247933581-How-do-I-cancel-my-subscription-Team", kind: docs, accessed: "2026-08-14", archive: archive_failed, note: "dedicated help-center cancellation article; same Cloudflare block as the refund article (2 attempts). Cancellation content corroborated instead via the pricing-page FAQ, which is archived." }
+  - { url: "https://www.beautiful.ai/terms-of-service-ai", kind: other, accessed: "2026-08-14", archive: archive_failed, note: "linked from search results as an AI-specific terms page; static fetch returned only CSS/nav boilerplate with no readable body text (JS-rendered page, not rendered for this record). Not used as a coding source; main ToS section 5.2 already documents the AI-output ownership clause." }
+
+variables:
+  headline_price_usd: { value: 14.50, source: "https://www.beautiful.ai/pricing", evidence: "Pro card, rendered: \"$14.50 /MO\" / \"Billed annually\" (this read's observed default display state; DOM also carries a data-pricing-exp-true=\"$14.50\" attribute on the same element -- see coder_note)" }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://www.beautiful.ai/pricing", evidence: "\"$14.50 /MO\" with \"Billed annually\" printed directly beneath, in the same card; no \"/user\" or \"per seat\" qualifier on the Pro card (unlike Team's \"/MO/USER\")" }
+  first_charge_amount_usd: { value: 174.00, source: "https://www.beautiful.ai/pricing", evidence: "computed: $14.50/mo x 12, supported by ToS 4.1/4.2 (see computation_assumptions)" }
+  mandatory_addon_present: { value: "no", source: "https://www.beautiful.ai/pricing", evidence: "Pro feature list (AI content generation, AI image generation, AI writing assistant, AI language translation, Smart Slides, branding, PDF/PPT export) carries no separate required charge; ToS 4.1(c) frames extra \"features or products\" as something Customer optionally \"subscribes to\"" }
+  annual_condition_disclosure: { value: adjacent, source: "https://www.beautiful.ai/pricing", evidence: "\"Billed annually\" printed directly beneath \"$14.50 /MO\" inside the same price card (confirmed by screenshot of the rendered card)" }
+  annual_default_toggle: { value: annual_preselected, source: "https://www.beautiful.ai/pricing", evidence: "Team's monthly/annual toggle renders showing \"$40\" (the price-duration=\"yearly\" span), not \"$50\" (price-duration=\"monthly\"), before any interaction; Pro's card shows only the annually-billed figure with no toggle" }
+  free_plan_exists: { value: "no", source: "https://www.beautiful.ai/pricing", evidence: "pricing grid lists only Pro, Teams, and Enterprise (plus a paid single-presentation option); every \"free\" mention on the page is either the 14-day trial or a time-limited, .edu-restricted student discount, not a standing no-cost plan" }
+  free_plan_cap_documented: { value: not_applicable, source: "https://www.beautiful.ai/pricing", evidence: "no free plan documented" }
+  free_plan_cap_value: { value: not_applicable, source: "https://www.beautiful.ai/pricing", evidence: "no free plan documented" }
+  free_plan_watermark: { value: not_applicable, source: "https://www.beautiful.ai/pricing", evidence: "no free plan documented" }
+  free_plan_duration: { value: not_applicable, source: "https://www.beautiful.ai/pricing", evidence: "no free plan documented" }
+  trial_exists: { value: "yes", source: "https://www.beautiful.ai/pricing", evidence: "\"Try free for 14 days\"; FAQ: \"You can try out Pro or Team plan features with a 14-day free trial\"" }
+  trial_card_required: { value: "yes", source: "https://www.beautiful.ai/pricing", evidence: "FAQ: \"A credit card is required for the 14-day Pro trial.\"" }
+  trial_length_days: { value: 14, source: "https://www.beautiful.ai/pricing", evidence: "\"Try free for 14 days\"; \"the 14-day Pro trial\"" }
+  trial_auto_converts: { value: "yes", source: "https://www.beautiful.ai/pricing", evidence: "FAQ: \"After your trial expires, your credit card on file will be charged automatically unless you cancel your Pro subscription before the 14 days are up.\"" }
+  credit_system_present: { value: "no", source: "https://www.beautiful.ai/pricing", evidence: "product is sold as \"Unlimited AI content generation\" on a per-seat plan; every \"credit\" occurrence on the pricing page and in the ToS refers to a payment credit/debit card, never a usage-metering unit" }
+  credit_unit_defined: { value: not_applicable, source: "https://www.beautiful.ai/pricing", evidence: "no credit system" }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://www.beautiful.ai/pricing", evidence: "no credit system" }
+  credit_rate_location: { value: not_applicable, source: "https://www.beautiful.ai/pricing", evidence: "no credit system" }
+  cost_per_output_unit: { value: per_seat_month, source: "https://www.beautiful.ai/pricing", evidence: "flat per-seat monthly pricing with unlimited AI generation; no countable-artifact metering" }
+  cost_per_output_computable: { value: "yes", source: "https://www.beautiful.ai/pricing", evidence: "unit is per_seat_month and the plan price ($14.50/mo, default display state) is itself the cost per seat-month; no further published figures needed" }
+  computation_assumptions: { value: "Entry tier Pro: $14.50/mo billed annually (this read's rendered default state; see coder_note on pricing A/B variant). Unmetered per-seat access, no credits -> cost/seat-month = $14.50. First charge: ToS 4.1/4.2 state annual plans bill once/yr in advance; 14.50x12=174.00.", source: "https://www.beautiful.ai/pricing | https://www.beautiful.ai/terms-of-service", evidence: "ToS 4.1: \"for annual Subscription Plans, prior to the start of the next year\"; ToS 4.2: \"All fees are due and payable by Customer in advance\"" }
+  credit_rollover_policy: { value: not_applicable, source: "https://www.beautiful.ai/pricing", evidence: "no credit system" }
+  failed_generation_charge_policy: { value: not_applicable, source: "https://www.beautiful.ai/pricing", evidence: "flat-rate seat-based product with no per-output accounting step to fail against" }
+  auto_renewal_default: { value: "on", source: "https://www.beautiful.ai/terms-of-service", evidence: "\"The Subscription Term shall automatically renew for successive periods equal to the initial Subscription Term, unless Customer provides us with written notice of non-renewal or termination prior to the expiration of Customer's then-current Subscription Term.\"" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://www.beautiful.ai/terms-of-service", evidence: "general subscription auto-renewal is stated only in the ToS; the pricing-page FAQ discusses automatic charging only in the context of trial-to-paid conversion, not ongoing renewal" }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://www.beautiful.ai/terms-of-service", evidence: "ToS commits to advance notice for material service changes (\"Beautiful.ai will notify Customer of any material change...by email\") and for agreement changes (\"reasonable prior notice... by sending a notification\"), but full-text review finds no commitment to notify Customer before a renewal charge specifically" }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://www.beautiful.ai/terms-of-service", evidence: "\"All fees are non-refundable and non-cancellable.\" (ToS Fees & Payment Terms; terms of service ranks first for contractual variables per protocol 6.2 -- see conflict_note for the pricing-page FAQ's contrary refund language)" }
+  refund_window_days: { value: 0, source: "https://www.beautiful.ai/terms-of-service", evidence: "\"All fees are non-refundable and non-cancellable\" -- governing (terms) source states no refund window; see conflict_note for the FAQ's 24-hour figure" }
+  refund_conditions: { value: not_applicable, source: "https://www.beautiful.ai/terms-of-service", evidence: "no refund available per the governing terms-of-service position" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.beautiful.ai/pricing", evidence: "FAQ: \"You may cancel your Beautiful.ai subscription on the Billing section of your Profile.\" (see conflict_note re: ToS 6.2(a), which covers full Account/Agreement termination via contacting support, a broader and distinct action from subscription cancellation per the FAQ's own structure)" }
+  refund_policy_location: { value: terms, source: "https://www.beautiful.ai/terms-of-service", evidence: "terms of service is the governing (highest-ranked) source for the coded refund_policy_exists position; see conflict_note" }
+  commercial_use_lowest_tier: { value: not_granted, source: "https://www.beautiful.ai/terms-of-service", evidence: "ToS 2.2 License: use of the Application, the Service, and \"the text, graphics, images, music, audio, video, content, slides, templates, and/or materials made available by Beautiful.ai\" is granted \"solely to create presentations through the Platform, in each of the foregoing cases, solely for Customer's internal business or personal, non-commercial purposes\"" }
+  watermark_removal_tier: { value: unknown, source: "https://www.beautiful.ai/pricing", evidence: "neither \"watermark\" nor an equivalent term appears on the pricing page or in the ToS; the compare-plan grid's \"Player branding\" row (absent on Pro, present on Team/Enterprise) is not explicitly tied to watermarking and was not treated as equivalent to it" }
+  output_ownership_statement: { value: conditional, source: "https://www.beautiful.ai/terms-of-service", evidence: "ToS 5.2: Customer retains rights in Customer Content and \"Output based specifically on Customer Content\", but \"Any Output based on Beautiful.ai Materials shall be deemed 'Beautiful.ai Materials'\" and is only licensed (not owned) to Customer" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.beautiful.ai/pricing", evidence: "Pro row in compare grid: \"Members: 1\" (quantified standing limit); \"Unlimited AI content generation\" is an explicit no-limit statement with no qualifying clause found (see unquantified_limit_clause)" }
+  unquantified_limit_clause: { value: absent, source: "https://www.beautiful.ai/terms-of-service", evidence: "full-text keyword sweep of the ToS (fair use, reasonable use, excessive, abuse, throttl*, sole discretion, rate limit) found only conduct/content-moderation and breach-termination discretion clauses, none conditioning the VOLUME of use on an unquantified standard" }
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2). Eligible candidates and annual-equivalent cost,
+  computed in the pricing page's default display state:
+    - Pro, billed annually: $14.50/mo x 12 = $174.00/yr -- WINNER (lowest annual-equivalent,
+      single seat, generally available, no sales contact).
+    - Team, 2-seat minimum (cannot buy 1 seat): $40/user/mo billed-annually (default toggle
+      state) x 2 seats x 12 = $960.00/yr for the minimum purchasable block -- loses.
+    - Pro, billed monthly (marketed separately on the same page as "Need to create a single
+      presentation? ... Our monthly option... Cancel anytime. Everything in Pro plan (billed
+      monthly) $45"): $45/mo x 12 = $540.00/yr -- loses. Confirmed via rendered read + raw DOM
+      that this is a recurring monthly charge, not a one-time fee (page text: "Cancel anytime").
+    - Enterprise: excluded, sales-gated ("Contact sales for pricing"), fails eligibility rule 2.
+    - Education (year free for .edu students): excluded, restricted to a named/verified program,
+      fails eligibility rule 1; also time-limited (one year), not a standing plan.
+  entry_tier_name = Pro.
+
+  PRICING DISPLAY VARIANT (protocol 6.8; binding deviation D-005 territory). The Pro card's price
+  element carries three DOM attributes on the same node: data-pricing-exp-false="$12",
+  data-pricing-exp="true", data-pricing-exp-true="$14.50". The vendor runs a live client-side
+  pricing experiment via Optibase (script tag app.optibase.io/script.js, a Webflow A/B/personalization
+  tool). Evidence gathered, in order:
+    1. Raw static HTML (curl, no JS) renders the Pro price node's TEXT CONTENT as "$12" -- this is
+       the pre-experiment / "false"-variant default.
+    2. A live rendered browser read (JS executed), after declining non-essential cookies and before
+       any other interaction, displayed "$14.50 /MO" / "Billed annually" in the Pro card -- confirmed
+       independently via get_page_text extraction AND a screenshot of the rendered card.
+    3. The SAME rendered page's own FAQ prose ("How much does Beautiful.ai cost?") was NOT updated by
+       the experiment script and still reads "Pro for individual users at $12/month (billed
+       annually)" -- an internal inconsistency on one document, caused by the experiment only
+       targeting the price-card DOM node.
+  Per protocol 6.8 rule 1, this record codes the state THIS READ observed ($14.50) and archives the
+  page in that state (https://web.archive.org/web/20260814175159/https://www.beautiful.ai/pricing).
+  This is coded as a genuine vendor-side display variant, NOT a coder-tooling misread: the magnitude
+  is plausible either way (no order-of-magnitude error), and DOM evidence (the data-pricing-exp-*
+  attributes) independently confirms both figures are legitimately vendor-served under different
+  conditions, per the deviations-log guidance distinguishing real variants from misreads. Logged as
+  a register_event (type display_variant) below. A first pass or later re-check landing on $12 would
+  be explained by this same mechanism, not by coder error on either side.
+
+  JUDGMENT CALLS.
+  - renewal_notice_commitment coded no_notice_stated rather than unknown: the ToS was read in full
+    (full-text keyword sweep) and contains advance-notice commitments for OTHER triggers (service
+    changes, agreement changes) but none for a renewal charge specifically -- treated as a checked,
+    documented absence by analogy with the absent/unknown split used elsewhere in the instrument
+    (e.g. annual_condition_disclosure), since this variable's own rule does not spell out the
+    silence case. Flagging this reasoning in case a different reading is preferred on review.
+  - cancellation_self_serve coded from the pricing-page FAQ ("Billing section of your Profile")
+    rather than from ToS 6.2(a) ("by contacting us at support@beautiful.ai"), on the reading that
+    ToS 6.2(a) governs terminating the Agreement/Account entirely (a broader, different action),
+    while the FAQ directly and specifically answers "How do I cancel my subscription?" and itself
+    distinguishes cancellation from full account deletion ("To delete your account entirely, visit
+    our FAQ page here."). See conflict_note; a stricter reading could instead code contact_required
+    from the ToS as the higher-ranked contractual source.
+  - watermark_removal_tier coded unknown rather than inferring from the "Player branding" compare-grid
+    row (present on Team/Enterprise, absent on Pro): that label is never tied explicitly to
+    watermarking, and inventing that equivalence was judged too speculative per the instrument's
+    caution against invented structure.
+
+  Two help-center URLs (refund policy, cancellation) returned a Cloudflare JS challenge to both a
+  static fetch and to archive.org's crawler (2 attempts each) and were not used as coding sources;
+  their content is duplicated on the pricing-page FAQ, which was used instead and is fully archived.
+  https://www.beautiful.ai/terms-of-service-ai was fetched but returned no readable body text
+  statically (not rendered); not used as a source.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "REFUND POLICY: ToS (https://www.beautiful.ai/terms-of-service, contractual class, ranks first) states \"All fees are non-refundable and non-cancellable.\" The pricing-page FAQ (https://www.beautiful.ai/pricing, same content as the Cloudflare-blocked help-center refund article) states \"Annual subscriptions may be eligible for a partial refund if a request is submitted within 24 hours of the initial purchase or renewal... Monthly subscriptions are non-refundable... subject to a processing fee.\" Coded refund_policy_exists/refund_window_days/refund_conditions from the higher-ranked ToS per protocol 6.2. CANCELLATION MECHANISM: ToS 6.2(a) (https://www.beautiful.ai/terms-of-service) states Customer terminates \"this Agreement and its Account... by contacting us at: support@beautiful.ai\", while the pricing-page FAQ (https://www.beautiful.ai/pricing) states \"You may cancel your Beautiful.ai subscription on the Billing section of your Profile\" and separately references contacting support only for full account deletion. Coded cancellation_self_serve from the FAQ as the source directly on point for subscription cancellation specifically; see coder_note for the reasoning and an alternative reading."
+register_events:
+  - { type: display_variant, detail: "Pro tier headline price is live A/B tested (Optibase script, app.optibase.io/script.js): DOM node carries data-pricing-exp-false=\"$12\" and data-pricing-exp-true=\"$14.50\" on the same element. This read's rendered browser load (JS executed, non-essential cookies declined) displayed $14.50/mo billed annually, confirmed by get_page_text and a screenshot; a non-JS static fetch of the identical URL renders the pre-experiment default \"$12\"; the same rendered page's own FAQ prose independently still reads \"$12/month (billed annually)\", not updated by the experiment script. Coded headline_price_usd/first_charge_amount_usd from this read's observed state ($14.50 / $174.00) per protocol 6.8 rule 1; the page was archived in that state.", urls: ["https://www.beautiful.ai/pricing", "https://web.archive.org/web/20260814175159/https://www.beautiful.ai/pricing"] }
+status: complete

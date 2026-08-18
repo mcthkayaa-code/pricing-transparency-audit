@@ -1,0 +1,151 @@
+product_id: undetectable-ai
+product_name: Undetectable AI
+category: AI humanizer
+product_status: active
+paid_submission: "no"
+entry_tier_name: 10K words/month
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://undetectable.ai/pricing
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "Billing toggle defaults to Yearly (raw server-rendered HTML confirms the Yearly button carries active classes \"bg-blue-700 !text-white\" vs Monthly's \"bg-transparent text-gray-800\", plus a \"50% off\" badge); prices in USD; page carries data-attribute \"pricing page variation-a-v1\" (see coder_note); no blocking cookie-consent banner presented on load (iubenda widget present but not shown); a promotional interstitial modal (\"Sign up for a FREE 3-day trial!\") overlaid the page on first load and was dismissed via its close control to read the page beneath."
+
+sources:
+  - { url: "https://undetectable.ai/pricing", kind: pricing, accessed: "2026-08-13", archive: local_copy_only, note: "web.archive.org/save timed out twice (WebFetch tool-level failure, then curl exit 28 timeout) - D-012 pattern. Local verbatim capture saved to undetectable-ai-sources/2026-08-13-pricing-static.html. Static curl fetch (en-US UA/Accept-Language) confirmed identical price figures to the rendered read: prices and the JSON-LD schema (incl. an on-page FAQPage block) are server-rendered, not script-injected." }
+  - { url: "https://undetectable.ai/terms", kind: tos, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813113816/https://undetectable.ai/terms", note: "Save succeeded on retry (redirect Location header confirmed). Local verbatim capture also saved to undetectable-ai-sources/2026-08-13-terms-static.html. Read in full for the F2 unquantified-limit-clause check." }
+  - { url: "https://undetectable.ai/help", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813114220/https://undetectable.ai/help", note: "Save succeeded on 2nd attempt (redirect Location header confirmed). Local verbatim capture saved to undetectable-ai-sources/2026-08-13-help-static.html." }
+
+variables:
+  headline_price_usd: { value: 5.00, source: "https://undetectable.ai/pricing", evidence: "10K words/month card, Yearly (default) state: \"$9.99\" struck through, \"$5.00\" shown large/bold/green as the active figure, \"/mo\" suffix." }
+  headline_billing_basis: { value: "per_month_billed_annually", source: "https://undetectable.ai/pricing", evidence: "\"$5.00/mo\" with \"Charged annually $60.00\" printed directly beneath it in the same card." }
+  first_charge_amount_usd: { value: 60.00, source: "https://undetectable.ai/pricing", evidence: "\"Charged annually $60.00\" - a direct read, not a computed multiplication (matches 5.00 x 12 as a sanity check)." }
+  mandatory_addon_present: { value: "no", source: "https://undetectable.ai/pricing", evidence: "Entry-tier feature list bundles \"Unlimited AI Detecting\" and \"Unlimited Human Auto Typer\" with no separate charge; Terms \"5. PURCHASES AND PAYMENT\" and \"6. CANCELLATION\" sections were also read and state no required add-on fee for this tier." }
+  annual_condition_disclosure: { value: "adjacent", source: "https://undetectable.ai/pricing", evidence: "\"Charged annually $60.00\" sits inside the same visual price card as \"$5.00/mo\", directly beneath it." }
+  annual_default_toggle: { value: "annual_preselected", source: "https://undetectable.ai/pricing", evidence: "Server-rendered (non-JS) HTML: Yearly button class includes \"bg-blue-700 !text-white\" (active/filled) and carries the \"50% off\" badge; Monthly button class is \"bg-transparent text-gray-800\" (inactive)." }
+  free_plan_exists: { value: "no", source: "https://undetectable.ai/pricing", evidence: "Pricing page lists paid tiers only (10K/20K/35K/50K+/Business); the sole no-cost offering is branded \"Free Trial\" throughout (\"Free Trial is limited to 250 words\"), which codebook domain 4 routes to trial_exists, not free_plan_exists." }
+  free_plan_cap_documented: { value: "not_applicable", source: "https://undetectable.ai/pricing", evidence: "No free plan (see free_plan_exists)." }
+  free_plan_cap_value: { value: "not_applicable", source: "https://undetectable.ai/pricing" }
+  free_plan_watermark: { value: "not_applicable", source: "https://undetectable.ai/pricing" }
+  free_plan_duration: { value: "not_applicable", source: "https://undetectable.ai/pricing" }
+  trial_exists: { value: "yes", source: "https://undetectable.ai/pricing", evidence: "\"Free Trial is limited to 250 words. Additional usage requires paid plan activation.\"; FAQ (JSON-LD on same page): \"Yes, we offer a free trial...\"" }
+  trial_card_required: { value: "no", source: "https://undetectable.ai/pricing", evidence: "FAQ (JSON-LD): \"No credit card required to start.\"" }
+  trial_length_days: { value: "unknown", source: "https://undetectable.ai/pricing", evidence: "Two incompatible-unit length claims on the same official surface, neither resolving to a reliable day-count for the trial mechanic actually described on the page itself; see coder_note." }
+  trial_auto_converts: { value: "no", source: "https://undetectable.ai/pricing", evidence: "\"Additional usage requires paid plan activation\" - an affirmative step, not an automatic charge." }
+  credit_system_present: { value: "no", source: "https://undetectable.ai/pricing", evidence: "Plans are denominated directly in output units: \"10K words/month\", \"20K words/month\", etc., with no intermediate currency or conversion rate ever published; an internal top-up prompt also frames purchase directly in words (\"Buy 10,000 words for $9.99\"), not an abstract credit count." }
+  credit_unit_defined: { value: "not_applicable", source: "https://undetectable.ai/pricing", evidence: "No credit system (see credit_system_present)." }
+  credit_to_output_rate_published: { value: "not_applicable", source: "https://undetectable.ai/pricing" }
+  credit_rate_location: { value: "not_applicable", source: "https://undetectable.ai/pricing" }
+  cost_per_output_unit: { value: "per_1k_words", source: "https://undetectable.ai/pricing", evidence: "Principal output (humanized text) is sold and metered in words/month." }
+  cost_per_output_computable: { value: "yes", source: "https://undetectable.ai/pricing", evidence: "Entry tier: $5.00/mo for 10,000 words/month, both already on a monthly basis; no assumption about typical use required." }
+  computation_assumptions: { value: "10K words/month tier, $5.00/mo billed annually per default (Yearly) display state; 10,000 words/month included, same page. Price and allowance already monthly - no conversion needed. 5.00/10=0.50 USD per 1,000 words.", source: "https://undetectable.ai/pricing" }
+  credit_rollover_policy: { value: "not_applicable", source: "https://undetectable.ai/pricing", evidence: "No credit system (see credit_system_present)." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://undetectable.ai/terms", evidence: "Terms and Help were both read in full; neither states whether a technically failed/empty humanization attempt consumes the word allowance. The refund clause covers post-hoc AI-detector flagging of a delivered output, not a processing failure." }
+  auto_renewal_default: { value: "on", source: "https://undetectable.ai/terms", evidence: "\"6.5 AUTOMATIC RENEWAL COMPLIANCE - By subscribing, you expressly consent to recurring billing at the disclosed price and frequency until you cancel...\"" }
+  auto_renewal_disclosure_location: { value: "multiple", source: "https://undetectable.ai/terms", evidence: "Terms 6.5 (explicit, \"recurring billing\"); pricing-page FAQ (JSON-LD) also touches it on the price page itself: \"...your access will continue until the end of your current billing period, and you won't be charged again\" (implies recurrence absent cancellation)." }
+  renewal_notice_commitment: { value: "no_notice_stated", source: "https://undetectable.ai/terms", evidence: "Terms 6.5 lists exactly what is disclosed (existence of recurring charges, amount/frequency, how to cancel before being charged again) with no commitment to notify before each renewal charge." }
+  refund_policy_exists: { value: "yes", source: "https://undetectable.ai/terms", evidence: "\"27. REFUNDS - ...Refund of credits is only available if a submission provably flags as less than 75% human on a reputable AI detector.\"" }
+  refund_window_days: { value: 30, source: "https://undetectable.ai/terms", evidence: "\"Refund of credit or payment requests must be made within 30 days of incident.\" (window runs from the incident, not from purchase date - see coder_note)." }
+  refund_conditions: { value: "conditional", source: "https://undetectable.ai/terms", evidence: "\"...only available if a submission provably flags as less than 75% human on a reputable AI detector.\"" }
+  cancellation_self_serve: { value: "contact_required", source: "https://undetectable.ai/terms", evidence: "\"All other users may cancel by emailing us at contact@undetectable.ai.\" (the general/default rule; California and New York residents get a dashboard self-serve carve-out - see coder_note)." }
+  refund_policy_location: { value: "multiple", source: "https://undetectable.ai/terms", evidence: "Refund position appears in Terms (dedicated sections 6.1 and 27), in the Help FAQ (\"What is the UNDETECTABLE guarantee?\"), and on the pricing page (banner + FAQ) - three document classes." }
+  commercial_use_lowest_tier: { value: "unknown", source: "https://undetectable.ai/terms", evidence: "Terms' IP section addresses only the site's own Content/Marks (\"personal, non-commercial use... of the Services\"), not the user's humanized output; no feature-grid \"commercial use\" row was found for the entry tier." }
+  watermark_removal_tier: { value: "unknown", source: "https://undetectable.ai/pricing", evidence: "Every paid tier's feature list repeats the identical bullet \"Watermark and future proof\", which does not unambiguously state either that outputs carry a watermark or that they are watermark-free." }
+  output_ownership_statement: { value: "unknown", source: "https://undetectable.ai/terms", evidence: "Terms defines ownership only for the site's own Content/Marks and for forum-style \"Contributions\"; no clause was found addressing who holds rights in the humanized text output returned to the user." }
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://undetectable.ai/pricing", evidence: "\"10K words/month\" (quantified rate); \"Unlimited Human Auto Typer\" and \"Unlimited AI Detecting\" (explicit unlimited claims, unqualified by any fair-use clause per the F2 read of Terms - counts as quantified under the rule 3 carve-out)." }
+  unquantified_limit_clause: { value: "absent", source: "https://undetectable.ai/terms", evidence: "Terms of Service read in full; no fair-use, reasonable-use, or discretionary-throttling clause found. \"Excessive use\" appears only re: capital letters/spam in PROHIBITED ACTIVITIES, not a usage-volume limiter." }
+
+coder_note: |
+  ENTRY-TIER CANDIDATES (sampling-rules 7.2, default Yearly display state):
+  10K words/month = $5.00/mo, billed annually $60.00/yr -> lowest annual-equivalent, SELECTED.
+  20K words/month = $9.50/mo, billed annually $114.00/yr -> losing candidate.
+  35K words/month = $15.75/mo, billed annually $189.00/yr -> losing candidate.
+  50K-380K words/month (slider tier) = $21.25/mo base, annual total not printed on-page -> losing
+  candidate regardless (base already exceeds the 10K tier's annual-equivalent).
+  Business/Enterprise tier = sales-gated ("Contact Us"), excluded from candidacy under eligibility
+  rule 2 (not purchasable without contacting sales).
+
+  MONTHLY vs YEARLY TIER ASYMMETRY: switching the toggle to Monthly (done only after recording the
+  default state, permitted under protocol 6.3/6.8) shows a DIFFERENT tier ladder - 20K/$19.00,
+  35K/$31.00, 50K/$42.00, 80K-unlimited/$64.00 - with NO 10K option at all under monthly billing.
+  The 10K-words/mo tier exists exclusively under annual billing. Recorded as a product
+  characteristic (both states reached by deliberately toggling one control on one load), not a
+  section-6.8 display_variant (that classification requires two DIFFERENT DEFAULT states across
+  two separate page loads, which was not observed here).
+
+  BUNDLE: every paid humanizer tier's feature list includes "Unlimited AI Detecting" - the tier
+  coded here is a HUMANIZER+DETECTOR BUNDLE in the vendor's own wording, not a humanizer-only plan.
+
+  A-012: not applicable to this record. No paid time-limited intro period was found; the trial is
+  free (not a low-cost paid tier), so the literal token is deliberately omitted.
+
+  REFUND - FOUR DIFFERENT STATEMENTS ACROSS THREE OFFICIAL DOCUMENT CLASSES, reading the whole
+  pricing page including its embedded FAQ per instructions:
+  (1) Terms 6.1 AND Terms 27 (internally consistent with each other, contractual class, ranks
+  highest): "Refund of credits is only available if a submission provably flags as less than 75%
+  human on a reputable AI detector. Refund of credit or payment requests must be made within 30
+  days of incident." -> CODED (refund_conditions=conditional, refund_window_days=30).
+  (2) Pricing-page top banner (marketing, same kind/quality condition as Terms but no window
+  stated): "Money back guarantee. If anything we produce is flagged as not human, we will refund
+  the cost of humanization."
+  (3) Pricing-page FAQ, JSON-LD, same page as (2) but a different condition/window: "We offer a
+  satisfaction guarantee. If you're not happy with our service within the first 7 days, contact
+  our support team for a full refund." 7 days, general dissatisfaction - NOT the 30-day
+  AI-detection-threshold condition Terms states, and not resolved by picking one; recorded as a
+  disagreement since pricing page ranks below Terms for this contractual variable class.
+  (4) Help center FAQ ("What is the UNDETECTABLE guarantee?"): "If anything we generate is
+  detected by any AI detector... we will refund the cost of the generation, no questions asked."
+  No window stated; "no questions asked" sits in tension with Terms' "provably flags" (which
+  implies a proof burden).
+  Per protocol 6.2/codebook 2.1 step 3, Terms outranks both the pricing page and the help center
+  for contractual variables, so (1) is coded and (2)-(4) are recorded here as the disagreement
+  rather than picked from. refund_policy_exists=yes and refund_conditions=conditional are stable
+  across all four statements (all agree some condition applies); only the window and the exact
+  condition wording move.
+
+  CANCELLATION - jurisdiction split in Terms 6.3/6.4: non-California/non-New-York residents (the
+  general/default case) must cancel by email ("All other users may cancel by emailing us");
+  California and New York residents get a self-serve account-dashboard option instead. Coded
+  contact_required as the general/default rule; the regional carve-out is not a separate coded
+  value the instrument provides for.
+
+  TRIAL LENGTH - the pricing page's own persistent (non-popup) footnote states a USAGE cap only:
+  "Free Trial is limited to 250 words," no day-count given. A separate interstitial popup shown on
+  page load (same domain, dismissed via its close control before reading the cards beneath) says
+  "Sign up for a FREE 3-day trial!" - a DAY-based claim in a different unit, not corroborated by
+  the FAQ, Terms, or Help. Codebook's trial_length_days conflicting rule contemplates two
+  incompatible figures in the SAME unit (e.g. 7 days vs 14 days); a word-cap and a day-count are
+  not directly comparable, so conflicting was not used - coded unknown instead with both claims
+  recorded here per the instruction that the gap itself is the finding.
+
+  WATERMARK - "Watermark and future proof" is printed identically on every paid tier's feature
+  list. Grammatically ambiguous: could mean "watermark-free and future-proof" (a dropped word) or
+  could mean outputs DO carry a watermark. The vendor separately sells an unrelated "AI Text
+  Watermark Remover" product (for OTHER tools' AI-provenance watermarks per nav), which makes a
+  "watermark-free" reading plausible but that is cross-referencing a sibling product to fill a gap,
+  which the protocol's no-inference rule bars - coded unknown rather than resolved by inference.
+
+  OUTPUT RIGHTS - Business/Enterprise tier's exclusive feature "Redistribution & white labeling"
+  implies (but nowhere states) that the entry tier lacks that specific right; Help FAQ says the
+  vendor serves clients "in a wide range of industries, including... finance, legal, and
+  marketing" (descriptive marketing, not a rights grant). Neither is a direct statement answering
+  commercial_use_lowest_tier or output_ownership_statement, so both stayed unknown.
+
+  PRICING PAGE FRAMING - the "50% off"/"SALE" badge is the page's standing, everyday annual-vs-
+  monthly pricing structure (present on every read, no stated expiry/end date), not a limited-time
+  promotional plan under sampling-rules 7.2 eligibility rule 3.
+
+  A/B-TEST SIGNAL - the pricing page's root container carries data-attribute value "pricing page
+  variation-a-v1". This suggests the vendor may run pricing-page layout variants, but only one
+  state was actually observed on this pass (one load, confirmed consistent across a static curl
+  fetch and a rendered browser read), so this was NOT logged as a section-6.8 display_variant
+  register event, which requires witnessing two different states. Flagged here per protocol
+  section 9 item 13 (a variant a coder is never served cannot be detected by a documents-only
+  study) so a reader knows the exposure exists even though it wasn't triggered.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Terms (governs, contractual class): refund window 30 days of incident, condition = AI-detector flags submission <75% human. Pricing-page FAQ (same page, ranks lower): 7 days, general dissatisfaction. Pricing banner + Help FAQ: no window stated, 'detected by any AI detector, no questions asked'. Full breakdown in coder_note."
+register_events: []
+status: complete

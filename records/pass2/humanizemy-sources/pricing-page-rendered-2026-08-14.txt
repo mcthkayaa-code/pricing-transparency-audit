@@ -1,0 +1,110 @@
+Source: https://humanizemy.ai/pricing
+Accessed: 2026-08-14 (rendered read, Claude Browser tool, cookies declined per protocol 6.8.5)
+Method: rendered DOM read (get_page_text) + accessibility tree (read_page) + embedded ld+json
+structured data (javascript_tool inspection) + screenshots, as a second representation of every
+money figure per the binding "read a price twice" rule.
+
+=== DEFAULT DISPLAY STATE (page load, before any interaction) ===
+Billing toggle: "Yearly" is the active/selected pill on load.
+DOM evidence: Yearly button className = "px-5 py-2 rounded-full text-sm font-medium
+transition-colors inline-flex items-center gap-2 bg-charcoal-900 text-white" (filled/dark = active).
+Monthly button className = "px-5 py-2 rounded-full text-sm font-medium transition-colors
+text-charcoal-500 hover:text-charcoal-900" (no fill = inactive).
+Corroborating evidence: "Get Basic" CTA href = "/api/checkout?plan=basic&billing=yearly" (link only
+read, never followed/clicked — no checkout was opened) — the query string itself defaults to
+billing=yearly.
+Screenshot confirms: Basic card shows large "$12" "/mo" with "$144 billed yearly" / "Save $72/yr"
+directly beneath, in the same card.
+=> annual_default_toggle = annual_preselected.
+
+=== RENDERED TEXT, DEFAULT (YEARLY) STATE ===
+"Pricing that grows with you
+All prices are in US dollars (USD). Plans renew automatically — monthly plans every month, annual
+plans every 12 months — until you cancel, and you can cancel anytime from your account. Sold by
+Mihci AI Studios LLC (Wyoming, USA).
+...
+Every plan includes the full humanizer. Upgrade, downgrade, or cancel anytime.
+Monthly / Yearly (up to 4 mo free)
+
+Basic — Best for light users
+$12 /mo
+$144 billed yearly
+Save $72/yr
+- 80 requests / month
+- Access to enhanced model
+- AI detection checks
+- Up to 1,000 words per request
+- Priority support
+Get Basic | Cancel anytime
+Renews automatically at $144 USD every 12 months until cancelled.
+
+Pro — MOST POPULAR — Best for most users
+$18 /mo
+$216 billed yearly
+Save $108/yr
+- 200 requests / month
+- Access to enhanced model
+- AI detection checks
+- Up to 1,200 words per request
+- Priority support
+Get Pro | Cancel anytime
+Renews automatically at $216 USD every 12 months until cancelled.
+
+Ultra — Best for power users
+$36 /mo
+$432 billed yearly
+Save $144/yr
+- 250 requests / month
+- 300,000 words / month
+- Access to enhanced model
+- AI detection checks
+- Up to 3,000 words per request
+- Priority support
+Get Ultra | Cancel anytime
+Renews automatically at $432 USD every 12 months until cancelled."
+
+FAQ accordion on this same page, expanded: "Is the free tier really free?"
+"Yes — 4 humanizations per day, up to 125 words per run, no signup, no credit card. The free quota
+resets at midnight UTC. We also cap by IP at 50 humanizations per day so the free tier survives. If
+you need higher limits or longer documents, paid plans start at $12/mo (yearly) or $18/mo (monthly)."
+
+=== RENDERED TEXT, MONTHLY TOGGLE (clicked AFTER default state was recorded/archived — permitted
+per protocol 6.7 rule 3, for reading other variables only; NOT used as the headline/default value) ===
+Basic: $18/mo billed monthly, "Renews automatically at $18 USD every month until cancelled."
+Pro: $27/mo billed monthly, "Renews automatically at $27 USD every month until cancelled."
+Ultra: $48/mo billed monthly, "Renews automatically at $48 USD every month until cancelled."
+(Confirms the FAQ line above: true monthly billing is $18/mo for Basic; the "$12/mo" figure shown
+in the default annual state is the annual price's monthly-equivalent, not a standalone monthly
+price. Toggled back to Yearly afterward to leave the page in its default state.)
+
+=== EMBEDDED STRUCTURED DATA (ld+json, second representation of every money value) ===
+Organization: legalName "Mihci AI Studios LLC", email hello@humanizemy.ai
+WebSite description: "Humanize AI text in one click. Trained on 2,590 real student essays, not a
+black box. Built for students and non-native writers whose own work gets flagged. Free 4 runs/day,
+no signup."
+
+Product "HumanizeMy.ai — Basic": description "80 humanizations / month — 1,000 words per run"
+  Offer 1: price "18.00" USD, eligibleQuantity {value:1, unitText:"MONTH"}
+  Offer 2: price "144.00" USD, eligibleQuantity {value:12, unitText:"MONTH"}
+Product "HumanizeMy.ai — Pro": description "200 humanizations / month — 1,200 words per run"
+  Offer 1: price "27.00" USD, eligibleQuantity {value:1, unitText:"MONTH"}
+  Offer 2: price "216.00" USD, eligibleQuantity {value:12, unitText:"MONTH"}
+Product "HumanizeMy.ai — Ultra": description "250 humanizations / month — 300,000 words — 3,000
+words per run"
+  Offer 1: price "48.00" USD, eligibleQuantity {value:1, unitText:"MONTH"}
+  Offer 2: price "432.00" USD, eligibleQuantity {value:12, unitText:"MONTH"}
+
+All figures above (12/144/18/216/36/432/18/27/48) are confirmed identically across three
+representations: rendered visible text, accessibility tree, and ld+json structured data. No
+superscript/formatting discrepancy found. Magnitude is sane for an AI humanizer entry tier.
+
+No explicit "Free" plan card in the pricing grid; free tier is documented only via the FAQ
+accordion on this page and the WebSite ld+json description ("Free 4 runs/day, no signup").
+
+No mandatory add-on charge is stated on this page for any tier. "AI detection checks" appears as
+an included checklist line on all three tiers (Basic/Pro/Ultra alike), not a separate purchase.
+
+No credit/token/point vocabulary anywhere on this page. Allowances are stated directly in output
+units: "80/200/250 requests / month" (ld+json calls the same thing "humanizations / month").
+
+Vendor legal note on page: "Sold by Mihci AI Studios LLC (Wyoming, USA)."

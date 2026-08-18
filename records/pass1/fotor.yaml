@@ -1,0 +1,584 @@
+product_id: fotor
+product_name: Fotor
+category: AI image generator
+product_status: active
+paid_submission: "no"
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+recheck_date: not_applicable
+
+sources:
+  - label: "Pricing page"
+    url: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807045552/https://www.fotor.com/pricing/
+    archive_status: archived
+    role: primary_source
+  - label: "Terms of Service"
+    url: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807045614/https://www.fotor.com/termsofservice
+    archive_status: archived
+    role: contractual_primary
+    note: "Everimaging d/b/a Fotor. Last Updated 17 July 2025 per the document itself."
+  - label: "Help Center: How to Start and Cancel the Free Trial?"
+    url: https://support.fotor.com/hc/en-us/articles/4404154276121-How-to-Start-and-Cancel-the-Free-Trial
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc1_free_trial.txt
+    role: docs_help_center
+    note: "web.archive.org/save returns HTTP 520/429 (Cloudflare/Zendesk bot protection blocks the archive.org crawler) -- confirmed across archive-log.txt (3 attempts), archive-log2.txt (3 more attempts) from a prior salvage run, and one fresh attempt today (archive-log3.txt, 520). Content captured via browser render (get_page_text), which passes Cloudflare's transparent JS check as an ordinary page load; saved locally."
+  - label: "Help Center: What are Credits?"
+    url: https://support.fotor.com/hc/en-us/articles/15793375212441-What-are-Credits
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc2_what_are_credits.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+  - label: "Help Center: How many credits do Pro members have per month? Do the credits stack up?"
+    url: https://support.fotor.com/hc/en-us/articles/17765370790297-How-many-credits-do-Pro-members-have-per-month-Do-the-credits-stack-up
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc3_pro_credits_per_month.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+  - label: "Help Center: What are the Differences Between the Fotor Pro Plan and the Credits Plan?"
+    url: https://support.fotor.com/hc/en-us/articles/19128854460953-What-are-the-Differences-Between-the-Fotor-Pro-Plan-and-the-Credits-Plan-Can-I-Use-Fotor-Pro-Features-with-Credits
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc4_pro_vs_credits_plan.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+  - label: "Help Center: How to Cancel the Subscription?"
+    url: https://support.fotor.com/hc/en-us/articles/900006589106-How-to-Cancel-the-Subscription
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc5_cancel_subscription.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+  - label: "Help Center: How to Get a Refund?"
+    url: https://support.fotor.com/hc/en-us/articles/900006595146-How-to-Get-a-Refund
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc6_get_a_refund.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+  - label: "Help Center: When Will I Be Charged Automatically?"
+    url: https://support.fotor.com/hc/en-us/articles/900007630843-When-Will-I-Be-Charged-Automatically
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc7_charged_automatically.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+  - label: "Help Center: Are the AI-generated images commercially available? Do I have ownership of them?"
+    url: https://support.fotor.com/hc/en-us/articles/17767970123417-Are-the-AI-generated-images-commercially-available-Do-I-have-ownership-of-them
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc8_ai_images_commercial_ownership.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+  - label: "Help Center: Why is the AI generated image not approved? What are the offensive words? Does it consume credit?"
+    url: https://support.fotor.com/hc/en-us/articles/17764598361369-Why-is-the-AI-generated-image-not-approved-What-are-the-offensive-words-Does-it-consume-credit
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc9_not_approved_credit.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+  - label: "Help Center: How Credits are Consumed? How Many Credits Do I Cost to Generate One AI Image?"
+    url: https://support.fotor.com/hc/en-us/articles/17765519966745-How-Credits-are-Consumed-How-Many-Credits-Do-I-Cost-to-Generate-One-AI-Image
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc10_credits_per_image.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+  - label: "Help Center: Commercial Use"
+    url: https://support.fotor.com/hc/en-us/articles/900006654446-Commercial-Use
+    access_date: 2026-08-07
+    archive_url: archive_failed
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/fotor-sources/local_copy_hc11_commercial_use.txt
+    role: docs_help_center
+    note: "web.archive.org/save blocked (Cloudflare/Zendesk), see hc1 note. Content captured via browser render, saved locally."
+
+source_urls: "https://www.fotor.com/pricing/ | https://www.fotor.com/termsofservice | https://support.fotor.com/hc/en-us/articles/4404154276121-How-to-Start-and-Cancel-the-Free-Trial | https://support.fotor.com/hc/en-us/articles/15793375212441-What-are-Credits | https://support.fotor.com/hc/en-us/articles/17765370790297-How-many-credits-do-Pro-members-have-per-month-Do-the-credits-stack-up | https://support.fotor.com/hc/en-us/articles/19128854460953-What-are-the-Differences-Between-the-Fotor-Pro-Plan-and-the-Credits-Plan-Can-I-Use-Fotor-Pro-Features-with-Credits | https://support.fotor.com/hc/en-us/articles/900006589106-How-to-Cancel-the-Subscription | https://support.fotor.com/hc/en-us/articles/900006595146-How-to-Get-a-Refund | https://support.fotor.com/hc/en-us/articles/900007630843-When-Will-I-Be-Charged-Automatically | https://support.fotor.com/hc/en-us/articles/17767970123417-Are-the-AI-generated-images-commercially-available-Do-I-have-ownership-of-them | https://support.fotor.com/hc/en-us/articles/17764598361369-Why-is-the-AI-generated-image-not-approved-What-are-the-offensive-words-Does-it-consume-credit | https://support.fotor.com/hc/en-us/articles/17765519966745-How-Credits-are-Consumed-How-Many-Credits-Do-I-Cost-to-Generate-One-AI-Image | https://support.fotor.com/hc/en-us/articles/900006654446-Commercial-Use"
+
+primary_source_url: https://www.fotor.com/pricing/
+archive_url: https://web.archive.org/web/20260807045552/https://www.fotor.com/pricing/
+archive_status: archived
+
+entry_tier_name: Fotor Pro
+
+default_display_state: >
+  Pricing page https://www.fotor.com/pricing/ (canonicalizes to https://fotor.com) loaded with
+  the "Yearly" billing toggle pre-selected (white/active background vs. greyed-out "Monthly"),
+  confirmed via screenshot before any interaction. The cookie-consent banner ("We use cookies to
+  provide you with better experience...") offered only an "Accept" button and a close (X) icon,
+  no granular decline control; it was dismissed via the X (declining non-essential cookies)
+  before other variables were read. USD currency shown by default; no geo/currency switcher was
+  used. On the Fotor Max card, a credit-package slider defaulted to its lowest option
+  ("1000 Credits", leftmost) with higher options unselected; this did not affect entry-tier
+  selection (Fotor Pro, which carries no such selector). This state was archived (see sources).
+  A later technical page reload (while attempting a viewport resize) reproduced the identical
+  default state (Yearly pre-selected, same prices) before any variable was read from it, so no
+  display_variant register event applies.
+
+variables:
+  # --- Domain 1: Headline price vs price actually charged ---
+  headline_price_usd:
+    value: 3.33
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      Entry paid tier "Fotor Pro" card shows "US$3.33" in large digits with "/ Month" beside it
+      as the largest, most prominent price figure, in the page's default (Yearly-preselected)
+      display state. No strikethrough/original price shown for this plan (unlike Pro+ and Max,
+      which show a discounted figure next to a struck-through original).
+
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      Fotor Pro card reads "US$3.33 / Month" with "US$39.99 billed yearly." printed beneath it.
+      No "per seat"/"per user" qualifier appears anywhere on the pricing page; Fotor is sold as a
+      single-user subscription with no seat scaling.
+
+  first_charge_amount_usd:
+    value: 39.99
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      Default state is Yearly and the headline is a monthly figure; the annual total is stated
+      directly beneath it ("US$39.99 billed yearly."), so it is read, not computed.
+
+  mandatory_addon_present:
+    value: "no"
+    source: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    evidence: >
+      ToS section 6 (Billing for Paid Service) describes only the Subscription fee for Fotor
+      Pro/Pro+ (6.1) and separate optional "Retail Tokens" credit top-ups (6.2, not required --
+      Pro's own 100 credits/month allowance, per the Help Center, already covers the AI
+      Image Generator feature the plan advertises). No required minimum credit purchase,
+      platform fee, or onboarding fee is stated anywhere in the Pro card's feature list or the
+      ToS.
+
+  # --- Domain 2: Visibility of the annual-billing condition ---
+  annual_condition_disclosure:
+    value: adjacent
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      "US$39.99 billed yearly." sits directly beneath "US$3.33 / Month" inside the same Fotor Pro
+      plan card/price block.
+
+  annual_default_toggle:
+    value: annual_preselected
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      "Yearly" pill is the active/highlighted control (white background, black text) on page
+      load, before any interaction; "Monthly" is greyed out/unselected. Confirmed via screenshot.
+
+  # --- Domain 3: Real usability of the free plan ---
+  free_plan_exists:
+    value: "yes"
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      "Fotor Basic" card: "US$0", "Free forever", CTA "Get Started" -- a no-cost plan with no
+      time limit, standing alongside the paid tiers on the same pricing grid.
+
+  free_plan_cap_documented:
+    value: some_quantified
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      Fotor Basic's listed limits split between quantified and not. Quantified (standing, no
+      period needed): "1 concurrent generation"; "30-Day Creation Storage Duration"; "512MB Cloud
+      Storage & Device Sync". Not quantified: "Limited Free credits" (no number at all); "2 chats
+      with AI Agent" and "1 AI Agent task" (bare action counts with no period stated anywhere in
+      the docs for the free tier -- the same construction as the codebook's own "100 generations"
+      does-not-qualify example, since these are consumable actions, not fixed ceilings like
+      concurrency or storage); "Basic editing tools", "Basic templates & collage", "Limited
+      effects, fonts, elements" (no numbers). At least one quantified and at least one not.
+
+  free_plan_cap_value:
+    value: "1 concurrent generation | 30 days creation storage duration | 512MB cloud storage"
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: "Only the quantified free-plan limits, verbatim in structure; see free_plan_cap_documented."
+
+  free_plan_watermark:
+    value: "yes"
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      Fotor Basic's key features list "Watermarked JPG, PNG & PDF Exports". Corroborated by the
+      Help Center "Differences" article: Pro/Pro+ subscribers get "downloading watermark-free
+      images" as a stated membership benefit, implying Basic/free exports are not watermark-free.
+
+  free_plan_duration:
+    value: perpetual
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      "Free forever" stated directly on the Fotor Basic card; it is presented as a standing tier
+      alongside the paid tiers, with no expiry stated anywhere in the pricing page, ToS, or the
+      Help Center articles read.
+
+  # --- Domain 4: Whether a trial requires a payment card ---
+  trial_exists:
+    value: "yes"
+    source: https://support.fotor.com/hc/en-us/articles/4404154276121-How-to-Start-and-Cancel-the-Free-Trial
+    access_date: 2026-08-07
+    evidence: >
+      "Recently, Fotor provides a 7-day free trial for new registrants. You can unlock all Fotor
+      Pro premium privileges for free..." -- distinct from the perpetual free Basic plan (Domain
+      3); this is a time-limited unlock of the entry paid tier (Pro).
+
+  trial_card_required:
+    value: unknown
+    source: https://support.fotor.com/hc/en-us/articles/4404154276121-How-to-Start-and-Cancel-the-Free-Trial
+    access_date: 2026-08-07
+    evidence: >
+      No document (pricing page, this article, ToS) states whether payment details are required
+      to START the trial. The article states "You will be charged after the 7-day free trial"
+      and instructs cancelling in advance to avoid the charge, which implies stored payment
+      details, but implication is not a statement (per codebook's own worked example on this
+      exact pattern). Not inferred from the signup flow, which was not opened.
+
+  trial_length_days:
+    value: 7
+    source: https://support.fotor.com/hc/en-us/articles/4404154276121-How-to-Start-and-Cancel-the-Free-Trial
+    access_date: 2026-08-07
+    evidence: '"Fotor provides a 7-day free trial" -- stated directly, unlocking Fotor Pro (entry tier).'
+
+  trial_auto_converts:
+    value: "yes"
+    source: https://support.fotor.com/hc/en-us/articles/4404154276121-How-to-Start-and-Cancel-the-Free-Trial
+    access_date: 2026-08-07
+    evidence: >
+      "When will I be charged after starting the free trial? You will be charged after the 7-day
+      free trial." Charging happens automatically unless the user cancels beforehand -- a direct
+      statement that the trial converts to paid.
+
+  # --- Domain 5: Comprehensibility of the credit system ---
+  credit_system_present:
+    value: "yes"
+    source: https://support.fotor.com/hc/en-us/articles/15793375212441-What-are-Credits
+    access_date: 2026-08-07
+    evidence: >
+      "Credits are a form of virtual tokens that you can purchase with real money and can be used
+      for some generative AI features..." -- an intermediate currency converting into outputs
+      (images, video seconds, etc.), not an output-unit allowance stated directly. Pricing page
+      itself shows plan allowances in credits (e.g. "1200 credits/year").
+
+  credit_unit_defined:
+    value: "yes"
+    source: https://support.fotor.com/hc/en-us/articles/17765519966745-How-Credits-are-Consumed-How-Many-Credits-Do-I-Cost-to-Generate-One-AI-Image
+    access_date: 2026-08-07
+    evidence: >
+      "Currently, one credit is consumed for each AI image generated in Fotor." Ties the unit
+      directly to a recognizable output. The companion "What are Credits?" article also tables
+      per-feature costs (e.g. "2 credits per image" for AI Baby Generator, "10 credits" per
+      360P/4s AI video), independently satisfying the "any output unit" test.
+
+  credit_to_output_rate_published:
+    value: "yes"
+    source: https://support.fotor.com/hc/en-us/articles/17765519966745-How-Credits-are-Consumed-How-Many-Credits-Do-I-Cost-to-Generate-One-AI-Image
+    access_date: 2026-08-07
+    evidence: >
+      Principal output = AI-generated image (product category "AI image generator"). This
+      dedicated article gives a firm, unqualified rate for it: "one credit is consumed for each
+      AI image generated". The other clearly distinct output types the plan advertises also
+      carry firm published rates per the "What are Credits?" table: AI video (10/20/50/40
+      credits by resolution and duration), AI Slides/presentations (10 credits), face-swap/
+      mimic/baby/hairstyle/age-changer/watermark-remover (2-5 credits each). Note: the "What are
+      Credits?" table's own summary row hedges "AI Image Generator" (grouped with 4 sibling
+      tools -- Logo/Sticker/Background Generator/Filters) as "1 credit starts at a base amount";
+      the dedicated article resolves this to a firm number for the principal output specifically,
+      and the sibling tools grouped in that hedge are not the principal output. See conflict_note.
+
+  credit_rate_location:
+    value: docs_help_center
+    source: https://support.fotor.com/hc/en-us/articles/17765519966745-How-Credits-are-Consumed-How-Many-Credits-Do-I-Cost-to-Generate-One-AI-Image
+    access_date: 2026-08-07
+    evidence: >
+      The credit-to-image rate is published only on the Zendesk help center
+      (support.fotor.com); it is not stated on the pricing page itself or in the ToS.
+
+  # --- Domain 6: Computability of cost per output ---
+  cost_per_output_unit:
+    value: per_image
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      Fotor's product category and its AIGC-specific documentation frame the principal output as
+      a generated image (category = "AI image generator"; AI Image Generator is the flagship
+      credit-metered feature).
+
+  cost_per_output_computable:
+    value: "yes"
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      Entry tier Fotor Pro: $39.99/yr billed yearly (default display state) = $3.33/mo included
+      allowance 100 credits/mo (Help Center: "Members who subscribe to the Pro plan receive a
+      monthly credits of 100"; matches 1200 credits/year on the pricing page ÷ 12). Rate: 1
+      credit = 1 AI image (Help Center, firm/unqualified). 100 credits/mo ÷ 1 = 100 images/mo;
+      3.33/100 = 0.03 per image. See computation_assumptions.
+
+  computation_assumptions:
+    value: >
+      Pro tier: $39.99/yr billed yearly (default state) = $3.33/mo. Allowance 100 credits/mo
+      (HC3; =1200/yr on pricing page ÷12). Rate: 1 credit=1 AI image (HC10). 100/1=100 images/mo.
+      3.33/100=0.03/image (39.99/1200=0.03 annual, same).
+    source: not_applicable
+    evidence: "Coder's own arithmetic; see cost_per_output_computable."
+
+  # --- Domain 7: Rollover of unused credits ---
+  credit_rollover_policy:
+    value: partial_rollover
+    source: https://support.fotor.com/hc/en-us/articles/17765370790297-How-many-credits-do-Pro-members-have-per-month-Do-the-credits-stack-up
+    access_date: 2026-08-07
+    evidence: >
+      "Unused credits are carried forward to the following month, but can be accumulated for a
+      maximum period of five months" -- stated specifically for Pro/Pro+/Max. Matches the pricing
+      page's own credit-purchase section ("Unused credits will roll over as long as you're
+      subscribed, up to 5 months of accumulation") and the "What are Credits?" validity table
+      (subscription credits: "accumulated for a maximum of 5 months as long as you're
+      subscribed; if subscription canceled, all credits will expire on the subscription
+      expiration date").
+
+  # --- Domain 8: Charging for failed generations ---
+  failed_generation_charge_policy:
+    value: not_charged
+    source: https://support.fotor.com/hc/en-us/articles/17764598361369-Why-is-the-AI-generated-image-not-approved-What-are-the-offensive-words-Does-it-consume-credit
+    access_date: 2026-08-07
+    evidence: >
+      "Does it consume credit when the generated image is not approved? No, your credits will
+      not be consumed when a generated image is not approved. You will only be charged credits
+      when an image is generated and approved successfully." A direct, general statement that a
+      generation that does not produce an approved/usable output consumes nothing.
+
+  # --- Domain 9: Auto-renewal ---
+  auto_renewal_default:
+    value: "on"
+    source: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    evidence: >
+      ToS 6.1.8.1: "the Subscription operates with automatic renewal with Recurring Billings.
+      Accordingly, where applicable, Fotor will attempt to automatically renew the applicable
+      Service... and automatically charge User the applicable subscription fees..." ToS ranks
+      first for this contractual variable. Corroborated by Help Center "When Will I Be Charged
+      Automatically?": "Fotor will charge you at the end of each subscription period
+      automatically."
+
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    evidence: >
+      Stated in the Terms of Service (6.1.8.1) and in the dedicated Help Center article "When
+      Will I Be Charged Automatically?" -- two of the four document classes, in agreement. The
+      pricing page itself contains no "renew"/"auto-renew"/"recurring" wording anywhere (checked
+      directly against the page's rendered text and raw source).
+
+  renewal_notice_commitment:
+    value: no_notice_stated
+    source: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    evidence: >
+      ToS 6.1.1 commits only to notice of a subscription-fee *change* ("Fotor reserves the right
+      to change its Subscription fees at any time, upon notice to User if such change may affect
+      User's existing Subscription"), not advance notice of each ordinary renewal charge. ToS
+      6.1.8.1 states a failed-payment downgrade happens "without further notice." No document
+      read (ToS, pricing page, or the Help Center articles on billing/cancellation/trial)
+      commits to notifying the buyer in advance of a routine upcoming renewal charge.
+
+  # --- Domain 10: Refund and cancellation terms ---
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    evidence: >
+      ToS 6.1.2 (Refund Policy): "As Fotor Service is presented and delivered to User instantly
+      once User's payment has been confirmed, User agrees that Subscription fees paid by User are
+      NOT REFUNDABLE." No jurisdictional/statutory-exception carve-out is stated. Retail Tokens
+      (credits) are separately stated non-refundable at 6.2.4. Corroborated by Help Center "How
+      to Get a Refund?": "Normally, Fotor does not offer refunds for already paid fees," and by
+      the free-trial article's charge-after-trial note.
+
+  refund_window_days:
+    value: 0
+    source: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    evidence: "No refunds are given per ToS 6.1.2 (see refund_policy_exists)."
+
+  refund_conditions:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No refund is available (refund_policy_exists = no_refunds_stated)."
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://support.fotor.com/hc/en-us/articles/900006589106-How-to-Cancel-the-Subscription
+    access_date: 2026-08-07
+    evidence: >
+      "Go to 'Account Setting' and choose 'Subscription'. Click 'Manage Plan'... select Cancel
+      your subscription... click Downgrade to free plan to complete the cancellation" -- fully
+      self-serve via account settings for web purchases, with equivalent self-serve routes
+      documented for the Google Play / App Store purchase channels. Corroborated by ToS 6.1.8.2
+      and the free-trial article's identical instructions.
+
+  refund_policy_location:
+    value: multiple
+    source: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    evidence: >
+      The no-refunds position is stated directly in the Terms of Service (6.1.2, 6.2.4) and
+      restated in the dedicated Help Center article "How to Get a Refund?" (which also cites back
+      to the ToS articles) -- two classes, in agreement.
+
+  # --- Domain 11: Commercial-use rights ---
+  commercial_use_lowest_tier:
+    value: free
+    source: https://support.fotor.com/hc/en-us/articles/900006654446-Commercial-Use
+    access_date: 2026-08-07
+    evidence: >
+      "For AI image generator, the AI generated images can be used for both personal and
+      commercial purposes. You can share them on social media platforms, use them for marketing
+      campaigns, or sell them." -- stated with no subscription/tier gate, in explicit contrast
+      (same document, preceding paragraph) to Fotor's separate Design-Template/Creative-Image
+      commercial-use rule, which IS tier-gated ("If you are currently a free user... only for
+      personal use, not for commercial use. If you need to use it commercially, please subscribe
+      to Pro or Pro+"; matches ToS 4.2.2.1's Free=Prohibited/Pro=most/Pro+=all table for Design
+      Resource). Corroborated by the dedicated AIGC article "Are the AI-generated images
+      commercially available?" (identical wording). The principal output for this "AI image
+      generator" record is the AI-generated image, for which no tier gate is documented, so
+      commercial use is available on the free plan.
+
+  watermark_removal_tier:
+    value: lowest_paid
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      Fotor Basic (free) card lists "Watermarked JPG, PNG & PDF Exports"; Fotor Pro (entry paid
+      tier) card lists "HD & Transparent PNG, Watermark-Free" among its key features. Corroborated
+      by the Help Center "Differences" article: Pro/Pro+ membership includes "downloading
+      watermark-free images."
+
+  output_ownership_statement:
+    value: user_owns
+    source: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    evidence: >
+      ToS 3.4.3: "Currently the Company does not make any copyright claim over the output Content
+      that User generates and does not have the ability to license or release the use of that
+      output Content to User." The Help Center states this affirmatively: "You are the copyright
+      owner of your creations" (articles "Are the AI-generated images commercially available?"
+      and "Commercial Use"). Both sources point the same direction (Fotor disclaims any rights in
+      AIGC output); coded from the ToS position (ranks first for contractual variables) as
+      clarified by the Help Center's plain-language restatement -- not a conflict.
+
+  # --- Domain 12: Undisclosed or unverifiable limits ---
+  usage_cap_quantified:
+    value: some_quantified
+    source: https://www.fotor.com/pricing/
+    access_date: 2026-08-07
+    evidence: >
+      Entry tier Fotor Pro's documented limits mix quantified and unquantified. Quantified:
+      "1200 credits/year" (rate; Help Center confirms 100 credits issued monthly), "10 concurrent
+      generations" (standing), "2GB Cloud Storage & Device Sync" (standing), "Unlimited Creation
+      Storage Duration" (explicit no-limit statement; no fair-use/discretionary clause qualifies
+      it anywhere in the ToS, so it counts as quantified per rule 3). Not quantified: "1,000
+      chats with AI Agent" and "2 AI Agent tasks" (bare action counts -- no period is stated for
+      either, anywhere on the plan card or the page's own detailed feature-comparison table).
+      "100+ Editing Tools", "20+ AI Portrait Retouch", "100,000+ Templates & Assets", "1,000+
+      Premium Effects & Fonts" are feature-breadth marketing counts, not usage limits, and are
+      excluded from this list. At least one quantified and at least one not.
+
+  unquantified_limit_clause:
+    value: absent
+    source: https://www.fotor.com/termsofservice
+    access_date: 2026-08-07
+    evidence: >
+      The Terms of Service was read in full, start to finish (through section 10.2.3), and
+      contains no fair-use, reasonable-use, excessive-use, or discretionary-throttling clause.
+      Section 5.3.4 ("Adjustment of Quota... determined by Fotor, at its sole discretion... may
+      change") reserves the right to change a currently-numeric quota (Creative Image credits,
+      already stated as 30/month Pro, 50/month Pro+ at 5.3.1) rather than imposing an unquantified
+      standard on use, so it does not trigger this clause. None of the 11 Help Center articles
+      read (trial, credits, subscription, billing, cancellation, refund, commercial use,
+      ownership, moderation) state such a clause either.
+
+coder_note: >
+  Entry tier = Fotor Pro (annual-equivalent $39.99, no promo badge). Losing eligible candidates:
+  Fotor Pro+ $62.99 ann-equiv (shown as $5.24/mo against a struck-through $7.49/mo, "30% OFF"
+  badge); Fotor Max $134.32 ann-equiv (shown as $11.19/mo against a struck-through $15.99/mo,
+  "30% OFF" badge, at its default 1000-credit slider position). Fotor Basic excluded: $0, a free
+  plan, not a paid candidate. Also considered and excluded, as distinct purchase mechanisms
+  rather than the product's standing entry paid tier: one-time "AI Headshot" image packages
+  ($19.99-$39.99 one-time, "no subscription or hidden fees," a separate narrow feature) and
+  one-time "Retail" credit top-up packs ($69.99-$1999.99, an add-on to any tier). vendor_home_url
+  in the frozen frame CSV was corrupted for this row (read as "https://schema.org/
+  SoftwareApplication", a schema.org type URI, not a reachable vendor page); the official domain
+  was located independently and used throughout this record: https://www.fotor.com (operated by
+  Everimaging, d/b/a Fotor, per its own Terms of Service).
+
+  D-009 re-read 2026-08-10: not arithmetic-flagged (3.33 x 12 = 39.96, within tolerance of 39.99).
+  This page turned out to need the two-representation rule more than most: a first live-DOM pass
+  today (javascript_tool, origin confirmed https://fotor.com) found NO leaf node matching the
+  price at all -- Fotor Pro's current price is rendered by a "ScrollNumber" odometer/slot-counter
+  React component (class ScrollNumber_digitList__3TySW) whose DOM contains all ten digits 0-9 for
+  EVERY digit position as sibling spans, with CSS transform:translateY() clipping all but one into
+  view. Plain text extraction (innerText/body text) over this component returns the nonsense
+  string "0123456789.0123456789 0123456789 / Month" -- exactly the class of failure the
+  two-representation rule exists to catch, just a different technical mechanism (odometer widget)
+  than the superscript-cents bug that prompted the rule. Representation 1 (CSS transform decode,
+  today): read each digitList's inline `style="transform: translateY(-N%)"` and computed the
+  visible digit as `digits[round(-N/10)]` (10 stacked digit items, each 10% of the list's own
+  height) -- decoded Fotor Basic=0, Fotor Pro=3.33, Fotor Pro+=5.24, Fotor Max=11.19, in that DOM
+  order, confirming both the figure and the plan-grid row mapping (Fotor Pro is the second card,
+  the cheapest paid one). Representation 2 (plain text, reliable here because this specific string
+  is NOT part of the animated widget): the "billed yearly" captions extracted cleanly via
+  innerText -- "US$39.99 billed yearly." immediately follows the Fotor Pro digit block, "US$62.99
+  billed yearly." follows Pro+, "US$134.32 billed yearly." follows Max. Both representations agree
+  with each other (3.33 x 12 = 39.96 =~ 39.99) and with the coded values. The Yearly toggle carries
+  class "...PricingToggle_active__ih9zs" (vs. Monthly's plain class), confirming the annual default
+  from the DOM's own active-state class, matching the coded default_display_state. Today's figures
+  match the original 2026-08-07 collection exactly -- no final-day change. NO CORRECTION. All four
+  target variables CONFIRMED, values unchanged. Evidence saved to fotor-sources/d009-reread-2026-
+  08-10.md, including the raw decode script output.
+
+conflict_note: >
+  No incompatible values found between two official sources of equal authority on any coded
+  variable. One near-miss, not coded as conflicting: the "What are Credits?" article's summary
+  table hedges the AI Image Generator's rate as "1 credit starts at a base amount" (grouping it
+  with 4 sibling tools -- Logo/Sticker/Background Generator/Filters), while the dedicated "How
+  Credits are Consumed" article gives a firm, unqualified "one credit is consumed for each AI
+  image generated" for the principal output specifically. Not a numeric conflict (the summary
+  table states no incompatible figure, only a vaguer framing for a 5-tool group); coded from the
+  dedicated article. See credit_to_output_rate_published.
+
+register_events: []
+# No display_variant observed: the only repeat load of the pricing page (a technical reload while
+# attempting a viewport resize, not preference-hunting) reproduced the identical default state
+# (Yearly pre-selected, same prices) before any variable was read from it. Nothing to log under
+# protocol section 6.8 rule 3 / section 6.6.
+
+blindness: no other record, no review page, no pass-2 material was opened.
+
+status: complete

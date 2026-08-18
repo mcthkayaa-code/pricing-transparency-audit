@@ -1,0 +1,258 @@
+product_id: canva
+coder_pass: 1
+collection_date: 2026-08-09
+
+# Administrative fields canonicalised to top level (D-019). This record stored
+# them inside variables{} in {value: ...} wrapper form, so a build reading the
+# documented top-level location found nothing. The nested maps are left in
+# place untouched — product_status, entry_tier_name and archive_status carry
+# source/evidence prose there, including archive_status's account of why the
+# price content is local-only — so nothing is deleted and the values below are
+# lifted copies.
+product_name: Canva
+category: AI design
+product_status: active
+paid_submission: "no"
+entry_tier_name: Pro
+coder_role: primary
+recheck_date: not_applicable
+primary_source_url: https://www.canva.com/pricing/
+archive_url: https://web.archive.org/web/20260805125923/https://www.canva.com/pricing/
+archive_status: archived
+
+default_display_state: |
+  D-005 re-collection. Live canva.com remains Cloudflare-bot-walled to static fetchers (prior
+  pass confirmed WebFetch bare HTTP 403 and curl HTTP 403-with-JS-challenge-body; not
+  re-tested exhaustively this pass). The A-domain in this record is coded from an
+  orchestrator-captured ORDINARY-BROWSER rendered read of https://www.canva.com/pricing/ taken
+  2026-08-08 (local file: canva-sources/pricing-rendered-2026-08-08.txt) - deviation D-005: a
+  page load that lets the vendor's own scripts render is reading a document, not prohibited
+  conduct (no account, no login, no checkout, no trial). The collection host for that read
+  egresses from Turkey; Canva's locale/currency selection is IP-based, not path-based
+  (requesting /en_us/pricing/ served the identical tr-TR page, redirected to
+  /tr_tr/ucretlendirme/, html lang="tr-TR"). Default (pre-interaction) state observed: TRY
+  currency, four plan cards (Free / Pro / Business / Enterprise) on the default "Individual and
+  Corporate Use" tab (a separate "Egitim"/Education tab exists but was not the tab shown), each
+  paid card showing ONE price captioned as an annual, per-person figure, plus a monthly/annual
+  toggle ("Aylik | Yillik, %16 tasarruf et") whose annual side is what the caption reflects.
+  Free = 0 TRY; Pro = 1.920 TRY ("Bir kisi icin yillik fiyat"); Business = 3.400 TRY ("Kisi
+  basi yillik fiyat"); Enterprise = sales-gated ("Bize ulasin"), no published price. D-003
+  currency check (protocol 6.5): two curl attempts against web.archive.org US-crawled captures
+  of this same URL (2026-08-09) found no USD figure in either state reachable - see coder_note
+  for the full log. All non-price contractual/feature content (free-plan caps, AI-allowance
+  table, fair-use footnote, Terms of Use, Content License Agreement, AI Pass help article) is
+  coded from this record's existing same-window English-locale archive.org snapshots
+  (2026-08-04/05/06), each re-opened and re-quoted fresh this pass directly from its embedded
+  JSON content blob (Canva ships this copy as an escaped JSON object inside one large <script>
+  tag, not as plain DOM text). Those snapshots' server-rendered HTML still contains zero price
+  digits anywhere, in any currency - unchanged from the prior pass, and exactly why the
+  orchestrator's rendered capture was necessary for the A-domain. Cookies/consent: not
+  observable in any source read (no consent-banner markup present in any capture).
+sources:
+  - { url: "https://www.canva.com/pricing/", kind: pricing, accessed: 2026-08-08, archive: local_copy_only, note: "PRIMARY A-DOMAIN SOURCE, deviation D-005. Orchestrator-captured ordinary-browser rendered read (document.body.innerText excerpt covering the plan cards), no account/login/checkout. Turkey-egressing network; served tr-TR content even when /en_us/pricing/ was requested (locale is IP-based, not path-based). Shows Free=0 TRY, Pro=1.920 TRY/yr per person, Business=3.400 TRY/yr per person, Enterprise=sales-gated. Not independently web-archived: this exact rendered/priced state has no public web.archive.org snapshot (archive.org's own crawler does not execute the client-side price widget - confirmed again this pass, see coder_note D-003 log); local file retained as the citable copy per protocol-v1.md 6.4's local-copy fallback. Local path: records/pass1/canva-sources/pricing-rendered-2026-08-08.txt." }
+  - { url: "https://www.canva.com/pricing/", kind: pricing, accessed: 2026-08-05, archive: "https://web.archive.org/web/20260805125923/https://www.canva.com/pricing/", note: "SECONDARY source: free/Pro/Business/Enterprise feature bullets, storage quotas, Brand Kit counts, the AI-allowance table, and the fair-use footnote - re-extracted and re-quoted fresh this pass (2026-08-09) directly from the page's embedded JSON state blob. Also independently re-fetched this pass as this record's D-003 currency-check attempt 2 (143,221 bytes, real content confirmed, zero '$' anywhere except one unrelated Cloudflare JS variable name). Contains NO price digits anywhere in either pass; this is why the A-domain is coded from the rendered capture above instead." }
+  - { url: "https://www.canva.com/", kind: other, accessed: 2026-08-04, archive: "https://web.archive.org/web/20260804232540/https://www.canva.com/", note: "Home page. Reused from the prior pass; not cited for any coded value and not re-verified this pass." }
+  - { url: "https://www.canva.com/policies/terms-of-use/", kind: tos, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806100846/https://www.canva.com/policies/terms-of-use/", note: "Terms of Use. Top-ranked contractual source. Re-verified fresh this pass (2026-08-09) by direct extraction of the embedded JSON content blob: Subscriptions and Renewals, Cancellation, and the refund-exclusion clause all reconfirmed verbatim." }
+  - { url: "https://www.canva.com/policies/content-license-agreement/", kind: docs, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806101435/https://www.canva.com/policies/content-license-agreement/", note: "Content License Agreement. Re-verified fresh this pass (2026-08-09): the section-5 permitted-uses clause (Free or Pro content) and the license-retained/'reserve all rights' clause both reconfirmed verbatim." }
+  - { url: "https://www.canva.com/help/ai-pass/", kind: docs, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806093834/https://www.canva.com/help/ai-pass/", note: "Help Center: 'Understanding AI Pass'. Re-verified fresh this pass (2026-08-09): 'optional add-on', 'USD $100 globally per person, per month' (a genuine vendor-published USD figure, but for the AI Pass add-on, not the Pro/Business base plan), the auto-renewing-base-plan eligibility statement, and the AI-tools fair-use carve-out all reconfirmed verbatim." }
+  - { url: "https://web.archive.org/web/2026/https://www.canva.com/pricing/", kind: other, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260805141457/https://www.canva.com/pricing/", note: "D-003 currency-check attempt 1 (this coder's brief step 3, the literal specified command). Redirected to a DIFFERENT same-day snapshot than the one already on file (20260805141457 vs 20260805125923) that itself captured Canva's own bot-block interstitial ('Unsupported client - Canva', 10,794 bytes) rather than the real page - archive.org's own crawler was blocked too. Zero '$'/'US$'. Not used to code any value; logged for audit of the D-003 check." }
+  - { url: "https://www.canva.com/help/pay-credit-debit-card/", kind: docs, accessed: 2026-08-10, archive: not_applicable, note: "D-007 re-check ONLY. Official Help Center article, rendered and read directly (its URL was located via web search of the canva.com help domain; the page itself is the evidence, not the search result). States: 'If your local currency isn't available, you'll be charged in US dollars using your bank's conversion rate.' Amended-rule Arm 1 documentary currency-policy statement. See canva-sources/d007-currency-recheck-2026-08-10.txt." }
+  - { url: "https://www.canva.com/en/pricing/", kind: pricing, accessed: 2026-08-10, archive: "https://web.archive.org/web/20260708062709/https://www.canva.com/pricing/", note: "D-007 re-check ONLY. Second, previously-untried locale-path variant of the pricing page (rendered read). Renders English UI copy but prices remain TRY (Pro 1,920/yr) - corroborates language/currency independence. The cited archive snapshot redirects to Canva's own 'Unsupported client' bot-block interstitial (321 bytes, no price content), the same failure mode as the primary pricing URL's captures; not usable as an Arm-2 read." }
+variables:
+  # --- administrative (codebook section 6) ---
+  product_name: { value: "Canva" }
+  category: { value: "AI design" }
+  product_status: { value: active, source: "https://www.canva.com/pricing/", evidence: "Pricing page (both the rendered TR read and the archived EN snapshot) and home page all live and serving real content with active plan cards, prices, and sign-up CTAs; re-checked 2026-08-09." }
+  paid_submission: { value: "no" }
+  entry_tier_name: { value: "Pro", source: "https://www.canva.com/pricing/", evidence: "Eligible candidates per sampling-rules.md 7.2: Free is 0 TRY / not a paid tier; Enterprise fails eligibility criterion 2 (sales-gated only - 'Bize ulasin'/'Contact Sales'/'Book a demo', no self-serve purchase path); a separate 'Egitim' (Education) pricing tab exists but is a restricted/named-program option under criterion 1 regardless, and was not the default tab shown. Pro and Business are the two eligible, generally-available, self-serve, standing, single-seat candidates. Default display state (D-005 rendered read, 2026-08-08) shows both already as annual, per-person totals, so rule 2's annualize step needs no multiplication: Pro = 1.920 TRY/yr, Business = 3.400 TRY/yr. Pro is lower; Business recorded as the losing candidate in coder_note per 7.2's instruction." }
+  coder_role: { value: primary }
+  recheck_date: { value: not_applicable }
+  primary_source_url: { value: "https://www.canva.com/pricing/" }
+  archive_url: { value: "https://web.archive.org/web/20260805125923/https://www.canva.com/pricing/" }
+  archive_status: { value: archived, source: "https://www.canva.com/pricing/", evidence: "A working, public archive.org snapshot of the primary source URL exists and is cited (archive_url), re-confirmed reachable this pass (2026-08-09, 143,221 bytes, real content). It carries the feature/cap content but no price. The price content is separately coded from a local-only rendered capture per deviation D-005 (see the two 'pricing' entries in sources[] and default_display_state); that capture cannot be web-archived because archive.org's own crawler does not execute the client-side price widget (confirmed this pass via the D-003 check, see coder_note) - so 'archived' here describes the primary_source_url's status, not every individual value's provenance." }
+  source_urls: { value: "https://www.canva.com/pricing/ | https://www.canva.com/ | https://www.canva.com/policies/terms-of-use/ | https://www.canva.com/policies/content-license-agreement/ | https://www.canva.com/help/ai-pass/" }
+  # --- coded variables (codebook section 10 column order) ---
+  headline_price_usd: { value: unknown, source: "https://www.canva.com/pricing/", evidence: "CHANGED AGAIN under a 2026-08-10 re-examination -- see coder_note ('canva re-examination under corrected wording') and d007-recheck-report.md for the full reasoning; canva-sources/d007-currency-recheck-2026-08-10.txt carries the underlying Arm 1/Arm 2 fact-finding, unchanged. Entry paid tier is Pro. Orchestrator-captured rendered read (D-005, 2026-08-08) shows the Pro card's sole price as '1.920 TRY' captioned 'Bir kisi icin yillik fiyat' (annual price for one person). The D-007 re-check's Arm 1 evidence stands unchanged (help article https://www.canva.com/help/pay-credit-debit-card/: 'If your local currency isn't available, you'll be charged in US dollars using your bank's conversion rate'), but the FIRST D-007 pass misread which reader that clause has to be evaluated against: the authoritative test (deviations-log.md D-007) asks whether 'a US reader' is served a non-USD price, not whether this study's Turkey-egressing reader is. Read against a US reader, USD is that reader's own local currency and is obviously available to them, so the same clause puts a US reader in the ORDINARY case (billed in their available local currency, USD), not the fallback case -- meaning the vendor does not publish only a non-USD price, and a US reader is not served one. Both conditions non_usd requires now fail. Arm 2 still returns nothing readable (US-crawled archive captures of both pricing URLs redirect to Canva's own bot-block interstitial), so no actual USD figure is in hand to code as money either. unknown is the value for 'a real currency fact points away from non_usd, but no figure was recovered' -- the same resolution already reached for gptzero and phrasly earlier in this sweep. TRY 1,920/yr is logged as the locally-served display_variant (see register_events)." }
+  headline_billing_basis: { value: unknown, source: "https://www.canva.com/pricing/", evidence: "The qualifier printed with the Pro card's price is 'Bir kisi icin yillik fiyat' ('annual price for one person') - the figure IS the annual total itself, not a monthly rate. None of this variable's four recurring-basis values fit: per_month_billed_annually and per_seat_per_month both require the DISPLAYED figure to be a monthly amount (this variable's own worked example, Vendor B, shows '$12 per user/month' - a monthly-denominated figure - even though billed annually); per_month_billed_monthly and one_time plainly do not apply either. The page's own monthly/annual toggle ('Aylik | Yillik, %16 tasarruf et') confirms a monthly alternative exists, so the annual denomination is a real, read fact, not an omission - but the instrument's value list has no 'annual total, per seat, billed annually' option. Coded unknown rather than stretching a mismatched category; flagged in coder_note as an instrument-observation." }
+  first_charge_amount_usd: { value: unknown, source: "https://www.canva.com/pricing/", evidence: "CHANGED AGAIN under the 2026-08-10 re-examination -- same basis as headline_price_usd (see that field, coder_note's 'canva re-examination under corrected wording', and d007-recheck-report.md). Rule 2 would apply directly if a USD figure existed (the default state already shows an ANNUAL figure, so no x12 needed) -- TRY 1,920/yr for Pro is the figure this study's own network observes, but under the corrected 'US reader' test, Canva's own stated policy (local currency by default, USD only where the reader's local currency is unavailable) implies a US reader is billed in USD, their own available local currency, not shown TRY at all. No document states what that USD annual figure is, and Arm 2 returns nothing readable. unknown, not non_usd -- no arm supplies a figure to annualize, and the evidence that exists argues against a clean non-USD publication." }
+  mandatory_addon_present: { value: "no", source: "https://www.canva.com/help/ai-pass/", evidence: "AI Pass ('AI Pass is an optional add-on ... AI Pass is USD $100 globally per person, per month', re-verified verbatim this pass) and AI top-ups ('a one-time purchase for Business users who subscribe online ... valid for 30 days', re-verified verbatim this pass) are the only priced extras documented anywhere, and both are explicitly optional (rule 3: 'Optional add-ons are not mandatory add-ons'). The Content License Agreement confirms Pro Content is included 'at no additional cost if you have a valid Canva subscription'. No other required charge, minimum purchase, platform fee, or onboarding fee is documented in Terms of Use, the CLA, the pricing page, or the AI Pass article for the Pro tier." }
+  annual_condition_disclosure: { value: adjacent, source: "https://www.canva.com/pricing/", evidence: "The Pro card's price block reads '1.920 TRY - Bir kisi icin yillik fiyat' (annual price for one person) in the D-005 rendered capture (2026-08-08): the annual-prepayment condition is disclosed directly beneath/with the figure, inside the same card. Matches the adjacent definition ('directly beneath the figure') exactly - contrast with the superseded record, where this was unknown because no price block had been observed at all." }
+  annual_default_toggle: { value: annual_preselected, source: "https://www.canva.com/pricing/", evidence: "The default (pre-interaction) state captured by the D-005 rendered read shows the price explicitly captioned as the annual figure for both Pro and Business, with a monthly alternative also offered via the 'Aylik | Yillik' toggle. Since the annual figure is what loaded before any interaction, annual was the preselected state on this read. No variant of the toggle STATE itself was observed in this pass (the archived English snapshot shows no price/toggle content at all, per default_display_state, so there is nothing to compare as a second observed toggle state); the separate TRY-vs-no-price difference across sources is logged as its own display_variant register event." }
+  free_plan_exists: { value: "yes", source: "https://www.canva.com/pricing/", evidence: "Re-verified this pass from the archived snapshot's embedded JSON: the free plan card's own object carries plan name 'Free' and CTA 'Get started' - not a trial-style CTA (contrast Pro/Business's 'Start a free trial'). The D-005 rendered TR capture cross-confirms independently: 'Bireysel Kullanim - Ucretsiz' (Individual Use - Free) with CTA 'Baslayin' (Get started), again distinct from Pro/Business's 'Ucretsiz denemeyi baslatin' (Start a free trial). Corroborated by the pricing FAQ: 'Canva Free is available to anyone.'" }
+  free_plan_cap_documented: { value: some_quantified, source: "https://www.canva.com/pricing/", evidence: "Re-extracted this pass from the archived snapshot's embedded JSON. Quantified standing limits: '1 Brand Kit (3 colors only)', '5GB of cloud storage'. Quantified rate: the AI-allowance intro states 'AI usage is pooled across all AI tools listed below, and resets monthly', and the Free row reads 'Up to 200 uses of Standard AI tools, or up to 20 uses of Premium AI tools. No access to Ultra AI tools.' Unquantified: 'Ad insights and AI ad creation^' and 'Access to Affinity^' both carry the (^) footnote 'Included based on your plan and don't count toward your shared monthly AI allowance. Subject to fair use limits' - no number given. At least one quantified and at least one not => some_quantified." }
+  free_plan_cap_value: { value: "5GB cloud storage | 1 Brand Kit (3 colors only) | up to 200 Standard AI uses per month | up to 20 Premium AI uses per month", source: "https://www.canva.com/pricing/", evidence: "The quantified free-plan limits re-confirmed this pass (see free_plan_cap_documented). The two AI-allowance figures are alternate ceilings of one pooled/shared monthly allowance (Standard-only use yields up to 200; Premium-only use yields up to 20), not additive; both recorded per section 5.1 since both are independently quantified statements the vendor publishes. The unquantified fair-use-limited items are excluded." }
+  free_plan_watermark: { value: unknown, source: "https://www.canva.com/pricing/", evidence: "Re-confirmed this pass: zero occurrences of 'watermark' in the pricing page, Terms of Use, Content License Agreement, or AI Pass help article (fresh full-text search of all four this pass). The dedicated Help Center article ('Watermarks or Canva logos are on my design') was not re-attempted this pass, which is scoped to the entry tier and currency; the prior pass's 2-3 archival attempts for it (beyond this study's 2-retry cap) already failed. Free-plan output could plainly carry a watermark (not a not_applicable case), so documented silence plus an unreachable dedicated article codes unknown, unchanged from the superseded record." }
+  free_plan_duration: { value: perpetual, source: "https://www.canva.com/pricing/", evidence: "Free is presented as a standing card alongside the paid tiers, CTA 'Get started'/'Baslayin' (not a trial-style CTA), no expiry stated anywhere in any of the four documents read this pass. FAQ: 'Canva Free is available to anyone' - a standing, ongoing option, not a countdown." }
+  trial_exists: { value: "yes", source: "https://www.canva.com/pricing/", evidence: "Both the Pro and Business cards carry a 'Start a free trial' CTA ('Ucretsiz denemeyi baslatin' in the D-005 TR render), re-confirmed this pass from both sources. Corroborated by Terms of Use ('At the end of your free trial, Canva will charge the relevant subscription fee for the next billing cycle ...') and the Content License Agreement ('free trials of Canva Business'), both re-quoted verbatim this pass." }
+  trial_card_required: { value: unknown, source: "https://www.canva.com/policies/terms-of-use/", evidence: "Terms of Use states the trial auto-converts by charging 'your nominated payment method' at the end of the trial unless canceled first, implying a payment method is already on file - but none of the four documents read this pass explicitly states a card must be entered to START the trial. The pricing FAQ adds one non-conclusive data point re-found this pass ('You won't be billed at all during your trial period', re: Business team invites) that also does not state a card requirement. Matches this codebook's own worked example (Vendor I: conversion implies stored payment details, but implication is not a statement -> unknown); same reasoning, unchanged from the superseded record." }
+  trial_length_days: { value: unknown, source: "https://www.canva.com/pricing/", evidence: "Fresh day-count search this pass across all four documents (pricing FAQ, Terms of Use, Content License Agreement, AI Pass article) finds no day/week/month figure for the actual Pro or Business trial length. The only day-figures present anywhere are unrelated: AI top-ups 'valid for 30 days' (a top-up expiry, not a trial length) and the AI Pass article's list of prepaid-plan durations ('1-day, 1-week, 1-month, or 1-year prepaid plan', an eligibility exclusion, not a trial length). True for both Pro and Business alike." }
+  trial_auto_converts: { value: "yes", source: "https://www.canva.com/policies/terms-of-use/", evidence: "Terms of Use, Subscriptions and Renewals, re-quoted verbatim this pass: 'At the end of your free trial, Canva will charge the relevant subscription fee for the next billing cycle to your nominated payment method, unless you cancel your subscription prior to the end of the free trial.' Matches the rule exactly." }
+  credit_system_present: { value: "yes", source: "https://www.canva.com/pricing/", evidence: "Product-level finding (not one of the six entry-tier-scoped variables per codebook-v1.md 5.2). Re-confirmed this pass: the AI-allowance table states usage 'is pooled across all AI tools listed below, and resets monthly', then gives THREE PARALLEL maximum-use ceilings per plan depending on which AI-tool tier is drawn from exclusively (e.g. Pro: 'Up to 2,000 uses of Standard AI tools, or up to 200 uses of Premium AI tools, or up to 20 uses of Ultra AI tools'). Three ceilings for one underlying monthly allowance is the signature of an intermediate currency converting into outputs (rule 2), not a single output-unit allowance (rule 1). The word 'credit' itself is never used for this system in any of the four documents read this pass (zero occurrences after excluding 'credit card'); Canva calls it an 'AI allowance', but section 5's definition scores the construct 'whatever the vendor calls it'." }
+  credit_unit_defined: { value: "no", source: "https://www.canva.com/pricing/", evidence: "Fresh full-text search this pass (pricing page, Terms of Use, Content License Agreement, AI Pass article) finds no sentence defining what one unit of the pooled AI allowance equals - no 'AI credit'/'AI point' term, no 'X units = 1 output' conversion. What is published is three parallel per-plan ceiling figures (e.g. Pro's 2,000/200/20 Standard/Premium/Ultra), which lets a reader back-calculate an implied ratio but is not a stated unit definition - the same distinction rule 5 draws for a bare 'plan includes N credits' statement." }
+  credit_to_output_rate_published: { value: "no", source: "https://www.canva.com/pricing/", evidence: "Follows from credit_unit_defined=no: with no named underlying unit, there is no stated credits-per-output conversion rate for the principal output either - only the parallel per-tool-tier ceiling figures, which the documents present as maximums, not a rate formula. No rate is published for any output, principal or secondary, in any of the four documents read this pass." }
+  credit_rate_location: { value: absent, source: "https://www.canva.com/pricing/", evidence: "credit_to_output_rate_published = no; no credit-to-output rate is published anywhere to have a location. (The AI-allowance ceiling table itself IS published and lives on the pricing page, cross-referenced by URL from the AI Pass article - but per credit_to_output_rate_published this table is not a credits-to-output rate, so its location is not recorded here.)" }
+  cost_per_output_unit: { value: per_seat_month, source: "https://www.canva.com/pricing/", evidence: "Canva's principal offering, as its own pricing page frames it, is unmetered access to a design platform sold per person: the Pro card is scoped 'For one person' ('Bireysel Kullanim' in the TR render) and the Business card 'For your team'. Core design features carry no usage ceiling anywhere in the documents read - only the secondary AI-generation feature set is allowance-metered (see credit_system_present). Matches codebook rule 2 and its own worked example (Vendor L, flat monthly price per user -> per_seat_month) precisely." }
+  cost_per_output_computable: { value: "yes", source: "https://www.canva.com/pricing/", evidence: "CHANGED from the superseded record's no, which was coded solely because no price had been located at all. Principal output unit is per_seat_month (unmetered seat access). The entry tier's price is now known: Pro, 1.920 TRY annual total per person, in the pricing page's default display state (D-005 rendered read, 2026-08-08). Rule 3: converting the annual price to a month (1.920 / 12 = 160.00 TRY/month) puts price and the implicit '1 seat' allowance on the same period; no additional unpublished figure or usage assumption is needed for a per_seat_month unit - the monthly-equivalent price IS the cost per output unit. See computation_assumptions." }
+  computation_assumptions: { value: "Pro tier, 1.920 TRY billed annually per default display state (rendered capture, 2026-08-08) = 160.00 TRY/month. per_seat_month output = monthly price directly; no separate allowance to convert. TRY is the figure this study's network observed; headline_price_usd is unknown as of the 2026-08-10 re-examination (was non_usd, briefly) -- no USD figure exists in any document to substitute, and this variable's rule does not gate on headline_price_usd's specific value, so the TRY-denominated computation itself is unaffected. See headline_price_usd.", source: "https://www.canva.com/pricing/", evidence: "Arithmetic per cost_per_output_computable rule 3; not a vendor statement. Cross-reference corrected 2026-08-10; see coder_note." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://www.canva.com/pricing/", evidence: "Re-quoted verbatim this pass from the pricing page's AI-allowance table: 'AI usage is pooled across all AI tools listed below, and resets monthly.' Matches the rule's own example wording ('Credits reset monthly' -> expires_at_period_end)." }
+  failed_generation_charge_policy: { value: unknown, source: "https://www.canva.com/pricing/", evidence: "Fresh full-text search this pass of all four documents (pricing page, Terms of Use, Content License Agreement, AI Pass article) for 'fail'/'error'/'unsuccessful' finds only unrelated matches: ToS compliance-failure and service-failure/liability clauses, a CLA license-termination-for-failure-to-comply clause, and an AI-Pass-article URL-slug 'failed-payments' (routing metadata, not prose) - none address whether a technical failure or empty AI-generation result consumes allowance. Silence is unknown per the rule, which itself notes 'this variable is silent often. That is the finding.'" }
+  auto_renewal_default: { value: "on", source: "https://www.canva.com/policies/terms-of-use/", evidence: "Terms of Use, Subscriptions and Renewals, re-quoted verbatim this pass: 'If you're subscribing to a paid plan your subscription (excluding any one-time payments) will automatically renew each billing cycle, for example, on a monthly or annual basis as applicable. We'll notify you before auto-renewal of your subscription. You can cancel your subscription at any time, subject to section (d) below.' Top-ranked contractual source states this directly and unambiguously." }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://www.canva.com/policies/terms-of-use/", evidence: "Stated in the terms_only-class document directly (quoted above) AND in a docs_help_center-class document, re-confirmed this pass: the AI Pass article's eligibility section states 'You can purchase AI Pass on a monthly or yearly auto-renewing Canva Pro, Canva Teams, Canva Business, or Canva for Nonprofits plan' - itself a statement that the base plans are auto-renewing. Not found on the pricing page (its FAQ, re-searched this pass, does not mention auto-renewal). Two of the four document classes state it in agreement, so multiple." }
+  renewal_notice_commitment: { value: advance_notice_stated, source: "https://www.canva.com/policies/terms-of-use/", evidence: "Terms of Use, same clause as auto_renewal_default: 'We'll notify you before auto-renewal of your subscription.' A stated advance-notice commitment (no specific day-count given, but the rule only requires a stated commitment, 'ideally with a period')." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://www.canva.com/policies/terms-of-use/", evidence: "Terms of Use, Cancellation, re-quoted verbatim this pass: 'If you cancel your subscription and/or Add-Ons, your subscription and/or Add-Ons will be cancelled at the end of your then-current billing cycle and you will not be entitled to a refund of any fees already paid (except where required by law) and any outstanding fees will become immediately due and payable.' Matches this codebook's own worked example almost verbatim (Vendor Q -> no_refunds_stated, exception noted)." }
+  refund_window_days: { value: 0, source: "https://www.canva.com/policies/terms-of-use/", evidence: "refund_policy_exists=no_refunds_stated with no day-count window published anywhere in the four documents read this pass for the general position (matches the value list: '0 where no refunds are given'). This is an entry-tier-scoped variable (codebook 5.2) but the ToS position is stated generally, not per-plan, so it holds for Pro directly. The dedicated 'Refunds for Canva subscriptions' help article remains unread this pass (not re-attempted; out of this pass's entry-tier/currency scope, and the prior pass's retry cap was already exceeded on it)." }
+  refund_conditions: { value: conditional, source: "https://www.canva.com/policies/terms-of-use/", evidence: "The general position is non-refundable, but Terms of Use states a condition under which a refund IS given: '(except where required by law)'. A stated condition rather than an unconditional flat position, so conditional." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.canva.com/policies/terms-of-use/", evidence: "Terms of Use, Cancellation, re-quoted verbatim this pass: 'You can stop using the Service and/or cancel your subscription and/or Add-Ons at any time via your account settings.' No email/ticket/call is described as required." }
+  refund_policy_location: { value: terms, source: "https://www.canva.com/policies/terms-of-use/", evidence: "Among the documents read this pass, a refund position is stated only in Terms of Use. The pricing page's FAQ (re-searched this pass) does not address refunds. The dedicated Help Center refund article was not re-attempted this pass (see refund_window_days), so it does not count toward this determination, unchanged from the superseded record." }
+  commercial_use_lowest_tier: { value: free, source: "https://www.canva.com/policies/content-license-agreement/", evidence: "Content License Agreement, section 5, re-quoted verbatim this pass: permitted uses of 'Canva Designs that contain Content (Free or Pro)' include 'invitations, advertising and promotional projects, including printed materials, product packaging, presentations, film and video presentations, commercials, catalogues, brochures, greeting cards and postcards for promotion and/or resale, without any reproduction quantity limit'. Explicitly scoped to designs containing 'Free or Pro' content, so commercial/promotional/resale use is granted starting from the free tier." }
+  watermark_removal_tier: { value: unknown, source: "https://www.canva.com/pricing/", evidence: "Same search and same result as free_plan_watermark, re-confirmed this pass: zero occurrences of 'watermark' in any of the four documents read. The dedicated Help Center article ('Watermarks or Canva logos are on my design') was not re-attempted this pass. Principal output (exported designs/images) plainly could carry a watermark, so not_applicable does not fit; documented silence plus an unreached dedicated article codes unknown, unchanged from the superseded record." }
+  output_ownership_statement: { value: conditional, source: "https://www.canva.com/policies/terms-of-use/", evidence: "Terms of Use states two positions depending on content type, re-quoted verbatim this pass. User-uploaded content: 'As between you and Canva, you own all right, title and interest in and to your User Content.' Designs incorporating Canva's own Licensed Content: 'While you retain ownership of your User Content, any use of Designs containing Licensed Content are subject to the applicable terms of the Content License Agreement', which in turn states 'Canva and its contributors reserve all rights that aren't explicitly given to you under this license.' Rights depend on content type, matching conditional." }
+  usage_cap_quantified: { value: some_quantified, source: "https://www.canva.com/pricing/", evidence: "Entry-tier variable, now resolved to Pro specifically (the superseded record hedged across Pro and Business). Re-extracted this pass from the archived snapshot's embedded JSON: Pro's card lists quantified standing limits '5 Brand Kits' and '100GB of cloud storage', plus a quantified rate ('Up to 2,000 uses of Standard AI tools, or up to 200 uses of Premium AI tools, or up to 20 uses of Ultra AI tools', resets monthly) - but 'Ad insights and AI ad creation^' and 'Access to Affinity with AI^' both carry the fair-use footnote with no number given, which is unquantified. At least one quantified and at least one not => some_quantified." }
+  unquantified_limit_clause: { value: present, source: "https://www.canva.com/pricing/", evidence: "The pricing page's footnote system ties 'Ad insights and AI ad creation' and 'Access to Affinity'/'Access to Affinity with AI' - across the Free, Pro, Business, and Enterprise cards alike - to a (^) footnote, re-quoted verbatim this pass: 'Included based on your plan and don't count toward your shared monthly AI allowance. Subject to fair use limits. See FAQ for more details.' No figure defines the fair-use threshold. Terms of Use was searched in full this pass for 'fair use'/'excessive'/'throttl'/'discretion' language specifically for this variable: zero hits for 'fair use' or 'excessive'; the only 'reasonable discretion' language found concerns domain-name removal and content-moderation/ToU-violation actions, which rule 3 excludes ('A prohibition on illegal or abusive content is not a usage limit'). No separate Acceptable Use Policy document exists. The finding rests on the pricing-page footnotes, which are official documents in their own right." }
+coder_note: |
+  D-005 RE-COLLECTION of a stalled prior attempt. This record replaces the previous canva.yaml
+  in full. Nothing from the superseded record was carried over without re-verifying it against
+  a source myself this pass: pricing-archived.html, terms-of-use-archived.html,
+  content-license-archived.html, and ai-pass-archived.html were each re-opened and every quote
+  used above was re-extracted fresh from the page's embedded JSON content blob (Canva ships
+  this copy as an escaped JSON object inside one large <script> tag rather than as plain DOM
+  text - decoding it was necessary to read anything at all from these files).
+  WHAT CHANGED VS THE SUPERSEDED RECORD: entry_tier_name = Pro (was unknown - flagged as an
+  instrument-gap case, both Pro and Business unpriced); headline_price_usd = non_usd, TRY 1920
+  (was unknown); first_charge_amount_usd = non_usd, TRY 1920 (was unknown); annual_default_toggle
+  = annual_preselected (was unknown); annual_condition_disclosure = adjacent (was unknown);
+  cost_per_output_computable = yes (was no - a price now exists, and because the principal
+  output is per_seat_month, the monthly-equivalent price itself is the computable figure, so
+  computation_assumptions is now a real value rather than not_applicable). headline_billing_basis
+  remains unknown, but for a different reason than before (see the instrument-gap flag below,
+  not "no price block observed at all"). Every other variable is unchanged in value from the
+  superseded record; each was independently re-verified against its source this pass rather
+  than copied.
+  ENTRY TIER (sampling-rules.md 7.2): eligible candidates are Pro and Business (Free is 0 TRY /
+  not paid; Enterprise is sales-gated only - "Bize ulasin"/"Contact Sales"/"Book a demo", no
+  self-serve path, fails eligibility criterion 2; a separate "Egitim" pricing tab exists but is
+  a restricted/named program under criterion 1 regardless and was not the default tab shown).
+  The default display state already presents both candidates as annual, per-person totals, so
+  rule 2's annualize step needs no multiplication: Pro = 1.920 TRY (winner), Business = 3.400
+  TRY (LOSING CANDIDATE, recorded here per 7.2's instruction).
+  A-DOMAIN SOURCE (deviation D-005): coded from an orchestrator-captured ORDINARY-BROWSER
+  rendered read of https://www.canva.com/pricing/, 2026-08-08 (local file:
+  canva-sources/pricing-rendered-2026-08-08.txt) - a documentary page load (no account, no
+  login, no checkout), per this study's D-005 rule that letting a public page's own scripts
+  render is reading a document, not prohibited conduct. The collection host for that read
+  egresses from Turkey; Canva's locale/currency selection is IP-based, not path-based
+  (/en_us/pricing/ served the identical tr-TR page). This is also why the archived
+  English-locale pricing snapshot this record already held never showed a price at all, in
+  either pass: it is a non-JS-executing archive.org crawl of a client-side-rendered price
+  widget, and would show no price in ANY currency, not specifically a missing-USD one.
+  CURRENCY (D-003): headline_price_usd and first_charge_amount_usd both coded non_usd. Verbatim
+  published figures: Pro "1.920 TRY" captioned "Bir kisi icin yillik fiyat" (annual price for
+  one person); Business "3.400 TRY" captioned "Kisi basi yillik fiyat"; Free "0 TRY". Two curl
+  attempts against web.archive.org US-crawled captures of this exact URL, run 2026-08-09: (1)
+  `curl -m 45 -sL "https://web.archive.org/web/2026/https://www.canva.com/pricing/"` redirected
+  to a snapshot (20260805141457) that itself captured Canva's own bot-block page ("Unsupported
+  client - Canva", 10,794 bytes) - archive.org's own crawler was blocked too; zero "$"/"US$".
+  (2) a direct curl of the specific snapshot already cited in this record's sources
+  (20260805125923, 143,221 bytes, confirmed real page content, title "Canva Pricing: Compare
+  Free, Pro, Business and Enterprise plans") - zero "$" anywhere except one unrelated Cloudflare
+  JS variable name ("__CF$cv$params"). A USD figure could not be verified from this network in
+  either attempt; non_usd stands per this coder's brief.
+  NON-BASE-PLAN USD DATA POINT (not used to code headline_price_usd - it is a different,
+  optional add-on): the AI Pass help article states "AI Pass is USD $100 globally per person,
+  per month" (re-verified verbatim this pass). Canva does publish a flat global USD figure for
+  this specific add-on - informative context that the vendor has USD-publishing capability, it
+  simply doesn't use it for the Pro/Business base-plan price shown on the pricing page, which is
+  region/currency-adaptive.
+  HEADLINE_BILLING_BASIS INSTRUMENT-GAP FLAG: the Pro/Business price is captioned as an ANNUAL
+  total per seat ("yillik fiyat"), not as a monthly figure - unlike this variable's own worked
+  example (Vendor B: "$12 per user/month", billed annually, coded per_seat_per_month because the
+  DISPLAYED figure is itself monthly). None of headline_billing_basis's four recurring values
+  (per_month_billed_annually, per_month_billed_monthly, per_seat_per_month, one_time) describe an
+  annual total shown directly as such. Coded unknown rather than stretching a mismatched
+  category; flagged here in case a future codebook revision wants to add an annual-total value.
+  ARCHIVAL: live canva.com remains Cloudflare-bot-walled to static fetchers (the prior pass's
+  finding - WebFetch bare 403, curl 403-with-challenge-body - was not re-tested exhaustively
+  this pass, since the orchestrator's rendered capture made a fresh live-page attempt
+  unnecessary for the A-domain). The five official documents the prior pass archived (pricing,
+  home, Terms of Use, Content License Agreement, AI Pass help article) were re-read from their
+  existing local/web.archive.org copies this pass, decoded, and re-quoted directly from each
+  page's embedded JSON blob. The three help-center articles the prior pass could never fetch
+  (cancel-canva-plan, subscription-refunds, watermarks-design) were not re-attempted this pass,
+  which is scoped to the entry tier and currency; refund_policy_location, free_plan_watermark,
+  and watermark_removal_tier remain terms/unknown/unknown for the same reason as the superseded
+  record (note: refund_policy_location is corrected to the value "terms" in this record - the
+  superseded record had miscoded it "terms_only", a value that belongs to the different
+  auto_renewal_disclosure_location list, not to this variable's own list). The five "-raw.html"/"-raw2.html" salvage pairs in canva-sources/ were independently
+  spot-checked again this pass (title tags, cf_chl_opt markers) and reconfirmed to be Cloudflare
+  challenge interstitials, not usable content; not cited.
+  blindness: no other record, no review page, no pass-2 material was opened.
+  D-007 re-check 2026-08-10: this record was one of six flagged for re-verification
+  under the amended currency rule (deviations-log.md D-007), which supersedes D-003's
+  Accept-Language/archive-only check this record originally rested on. Arms attempted,
+  in order: (1) vendor's own currency disclosure -- rendered DOM scan for a currency/
+  country selector on both /pricing/ (TR locale) and a second, previously-untried
+  /en/pricing/ locale path (0 matches on either; a footer "Turkce" control found is a
+  language switcher, not a currency selector, and even the English-UI /en/pricing/
+  page still prices in TRY); a ?currency=USD URL parameter (dropped/ignored, TRY
+  unchanged); and a full-text read of the official help article
+  https://www.canva.com/help/pay-credit-debit-card/ (located via web search of
+  canva.com's own help domain, then read directly), which states "If your local
+  currency isn't available, you'll be charged in US dollars using your bank's
+  conversion rate" -- positive documentary evidence that USD is a fallback only
+  where local currency is unsupported, and TRY is demonstrably supported/active for
+  this reader (real TRY prices render consistently across two locale-path variants).
+  (2) A US-crawled archive capture that actually contains price figures -- both
+  https://web.archive.org/web/2026/https://www.canva.com/pricing/ and the
+  /en/pricing/ equivalent still redirect to Canva's own "Unsupported client"
+  bot-block interstitial (321 bytes, no price content) -- returned nothing readable.
+  Full log: canva-sources/d007-currency-recheck-2026-08-10.txt. Outcome (AS FIRST
+  WRITTEN, later corrected below): value UNCHANGED. headline_price_usd and
+  first_charge_amount_usd both remain non_usd (Pro, TRY 1,920/yr), now resting on
+  Arm 1's positive documentary evidence rather than on the original absence-only
+  Accept-Language/archive check. No dependent variable required updating:
+  cost_per_output_computable's arithmetic is already denominated in TRY per
+  protocol-v1.md 6.5 (no exchange rate invented), and is unaffected.
+
+  CANVA RE-EXAMINATION UNDER CORRECTED WORDING, 2026-08-10 (same day, second
+  pass, ordered by the study coordinator after finding the agent brief and
+  deviations-log.md D-007 disagreed on the test's wording): the D-007 pass above
+  read the amended currency rule's Arm 1 test as asking whether a non-USD price
+  is served "to the reader" -- and applied that to THIS study's own
+  Turkey-egressing reader, for whom TRY is confirmed available, concluding
+  non_usd. The authoritative text, deviations-log.md D-007, actually asks
+  whether "a US reader" is served one, which is a different question and the one
+  D-003 was written to answer in the first place (D-003 exists because a
+  Turkey-rendered page "may be measuring us rather than the vendor"). The
+  reasoning does not change: Canva's own help article
+  (https://www.canva.com/help/pay-credit-debit-card/) states local currency is
+  used by default, with USD only where the reader's local currency is
+  UNAVAILABLE. What changes is which reader that clause is evaluated against.
+  For a US reader, local currency is USD, which is obviously available (Canva
+  plainly serves USD to US customers), so the SAME clause puts a US reader in
+  the ordinary case -- billed in their own available local currency, USD -- not
+  the fallback case. Under the corrected test this means the vendor does NOT
+  publish only a non-USD price, and a US reader is NOT served one: neither
+  condition non_usd requires is met. Arm 2 (US-crawled archive captures) still
+  returns nothing readable (unchanged from the finding above), so no actual USD
+  figure is in hand.
+  VALUES, BEFORE AND AFTER THIS RE-EXAMINATION (2026-08-10): headline_price_usd
+  non_usd -> unknown; first_charge_amount_usd non_usd -> unknown. Both were
+  briefly re-confirmed non_usd earlier the same day (see the outcome paragraph
+  directly above, now superseded) before this correction. cost_per_output_computable
+  is unaffected (stays yes, TRY-denominated arithmetic unchanged -- that
+  variable's rule does not gate on headline_price_usd's coded value); only a
+  stale cross-reference in its computation_assumptions text is corrected. A new
+  register_events entry logs the TRY figure as the locally-served display
+  variant under this reading. This makes canva's resolution consistent with how
+  gptzero and phrasly were coded earlier in this same sweep: a real, documented
+  currency fact that argues against non_usd, without a recovered figure to code
+  as money, resolves to unknown. Full reasoning also recorded in
+  d007-recheck-report.md under "canva re-examination under corrected wording."
+  This coder reached the same conclusion the coordinator proposed after
+  independently re-deriving it from the two texts and the evidence already on
+  file; it is not a value changed merely to match an instruction.
+conflict_note: "not_applicable"
+register_events:
+  - { type: display_variant, detail: "Same pricing-page URL served two materially different states across this study's collection. An English-locale, server-rendered archive.org capture (2026-08-05, US/English render context per its own embedded page-state object) shows zero price digits anywhere - prices are injected client-side post-hydration. An orchestrator-captured ordinary-browser rendered read from a Turkey-egressing network (2026-08-08) shows full TRY pricing (Free 0 TRY, Pro 1.920 TRY/yr, Business 3.400 TRY/yr) with tr-TR locale copy, and this state persisted even when the /en_us/ path was requested. protocol-v1.md 6.8 geography case: locale/currency is IP-based, not URL-based. D-003 checks (2026-08-09) against web.archive.org's own US-crawled captures of this URL found no USD price in any state reachable from this collection network.", urls: ["https://www.canva.com/pricing/", "https://web.archive.org/web/20260805125923/https://www.canva.com/pricing/", "https://web.archive.org/web/20260805141457/https://www.canva.com/pricing/"] }
+  - { type: display_variant, detail: "2026-08-10 re-examination addendum (deviations-log.md D-007, corrected wording). Canva's own help article (https://www.canva.com/help/pay-credit-debit-card/) states its billing policy is local-currency-by-default with USD used only where the reader's local currency is unavailable. Evaluated against a US reader specifically -- USD is that reader's own local currency and is plainly available to them -- this policy implies a US reader is billed in USD as their ordinary available local currency, not shown TRY. The TRY 1,920/yr this study's own Turkey-egressing network observed is therefore logged here as the locally-served display variant from the presumed USD state a US reader would see, per protocol-v1.md 6.8, rather than treated as evidence of the vendor's general publication practice. No document available to this study states the actual USD figure a US reader would be shown (Arm 2 returned no readable US-crawled capture), so headline_price_usd/first_charge_amount_usd are coded unknown rather than a money value or non_usd.", urls: ["https://www.canva.com/pricing/", "https://www.canva.com/help/pay-credit-debit-card/"] }
+status: complete

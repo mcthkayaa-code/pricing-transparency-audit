@@ -1,0 +1,346 @@
+product_id: 10web
+product_name: 10Web
+category: AI website builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: AI Starter
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-16
+recheck_date: not_applicable
+primary_source_url: https://10web.io/pricing-platform/
+archive_url: "https://web.archive.org/web/20260814161729/https://10web.io/pricing-platform/"
+archive_status: archived
+
+default_display_state: |
+  AGREED by both passes, re-confirmed live 2026-08-16 (see coder_note). Pricing page (canonical
+  URL https://10web.io/pricing-platform/) loads with the "Business" top-level tab active and the
+  "Annually"/"12 months" billing-period tab active (50% off badge), server-rendered (pass 1
+  confirmed via no-JS curl fetch, not merely client-injected). No cookie-consent banner, no
+  currency/country selector observed by either pass. AI Starter/Premium/Ultimate show $10 / $15 /
+  $22.5 (pass 2) or $23 (pass 1's first read, later corrected to $22.5 on re-check) per mo in this
+  state -- not outcome-determinative for entry_tier_name either way. AI Starter is the entry tier.
+
+sources:
+  - { url: "https://10web.io/pricing-platform/", kind: pricing, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806082017/https://10web.io/pricing-platform/", note: "PRIMARY SOURCE. Independently re-accessed by pass 2 on 2026-08-14 (archive: https://web.archive.org/web/20260814161729/https://10web.io/pricing-platform/) with identical default display state. https://10web.io/pricing/ 301-redirects here." }
+  - { url: "https://10web.io/", kind: other, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806083850/https://10web.io/", note: "Home page. Nav/document discovery; H1 'Start free. Scale with every site.'" }
+  - { url: "https://10web.io/legal/terms-of-service/", kind: tos, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806083719/https://10web.io/legal/terms-of-service/", note: "Terms of Service, 'Date last updated: 30/03/2026'. Top-ranked contractual source. Independently re-accessed by pass 2 on 2026-08-14 (archive: https://web.archive.org/web/20260814161749/https://10web.io/legal/terms-of-service/) and by this adjudicator live on 2026-08-16 via WebFetch -- all three reads identical, same 30/03/2026 update date, confirming the ToS did not change across the collection window or since. Full text read end to end each time." }
+  - { url: "https://10web.io/legal/prohibited-use-policy-pup/", kind: tos, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806083744/https://10web.io/legal/prohibited-use-policy-pup/", note: "Prohibited Use Policy, incorporated into the ToS by reference. Independently re-read by pass 2 on 2026-08-14 (archive_failed after 2 retries on archive.org's own endpoints; local capture saved). Read in full both times for unquantified_limit_clause." }
+  - { url: "https://10web.io/coupons/", kind: other, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806083806/https://10web.io/coupons/", note: "Official marketing/FAQ page, linked from the pricing page's own FAQ. States a '30-day money-back guarantee', conflicting with the ToS refund position -- see conflict_note." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360027773851-10Web-s-Refund-Policy", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "10Web's dedicated Refund Policy article. Tied at rank 1 with the ToS for contractual variables (protocol 6.2). Re-verified live by this adjudicator 2026-08-16 via the Zendesk public API (help.10web.io/api/v2/help_center/en-us/articles/360027773851.json): identical content, updated_at still 2026-06-18T10:54:21Z, 'does not offer refunds' confirmed unchanged. Only in pass 1's source set -- pass 2 did not locate this article (see refund_policy_location adjudication)." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360027492652-How-Can-I-Cancel-My-10Web-Subscription", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Step-by-step self-serve cancellation procedure." }
+  - { url: "https://help.10web.io/hc/en-us/articles/5315648905234-Canceling-Downgrading-or-Changing-10Web-Subscriptions", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Cancellation/downgrade mechanics, renewal-timing warning. Independently re-read by pass 2 on 2026-08-14." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360030873012-What-Happens-if-I-Fail-to-Upgrade-My-Plan-Before-the-Free-Trial-Ends", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "States TRIAL non-action leads to website deletion -- about the card-gated 7-day Pro trial specifically, not the base free plan. Independently re-read by pass 2 on 2026-08-14; re-verified by this adjudicator 2026-08-16, content unchanged." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360021395600-How-to-Upgrade-to-10Web-Pro-Plans", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Part of the trial_auto_converts conflict (agreed by both passes)." }
+  - { url: "https://help.10web.io/hc/en-us/articles/6136064762770-Why-Have-I-Been-Charged", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Part of the trial_auto_converts conflict. Independently re-read by pass 2 on 2026-08-14." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Primary source for free_plan_exists/cap/duration: distinguishes the base free plan (1 website, no SSH/SFTP) from the separate 7-day card-gated Pro trial. Independently re-read by pass 2 on 2026-08-14 AND re-verified by this adjudicator 2026-08-16 via the Zendesk API: updated_at unchanged at 2024-11-15T04:56:21Z, all quoted sentences identical." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360018862340-Free-Plan-How-to-Convert-Recreate-a-Website-With-AI", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "States 'up to 10 pages for free users' (updated 2025-01-23, not marked outdated). Conflicts with the next source on the page-count figure -- see free_plan_cap_value adjudication and conflict_note. Only in pass 1's source set; this adjudicator's live re-check attempt via the Zendesk API returned HTTP 401 twice (transient, not a login wall) so the finding rests on pass 1's saved capture, read in full directly from the JSON by this adjudicator." }
+  - { url: "https://help.10web.io/hc/en-us/articles/7952757255186-AI-Website-Builder-Fully-Automated-WordPress-Website-Creation-in-a-Few-Minutes", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "States 'The free plan is limited to 5 pages only' (updated 2024-11-01, not marked outdated) -- same-rank, same-topic conflict with the source above. Only in pass 1's source set. Re-verified live by this adjudicator 2026-08-16 via the Zendesk API: identical text, updated_at unchanged." }
+  - { url: "https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Dedicated entry-tier plan doc, full itemized limit list. Independently re-read by pass 2 on 2026-08-14." }
+  - { url: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Source for 'Each AI request costs 1 credit'. Independently re-read by pass 2 on 2026-08-14." }
+  - { url: "https://help.10web.io/hc/en-us/articles/5867566723986-Visitors-and-Storage-Overages", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Overage mechanics/rates. Independently re-read by pass 2 on 2026-08-14." }
+  - { url: "https://help.10web.io/hc/en-us/articles/36515422635922-How-to-Generate-a-Website-with-10Web-s-Agentic-Website-Builder", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Confirms the 1-website free-generation limit. Only in pass 1's source set." }
+  - { url: "https://help.10web.io/hc/en-us/articles/24481232927634-Workspace-Settings-Subscription-Plan-Page", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Dashboard-mechanics doc corroborating trial/cancellation/auto-renewal UI flow. Only in pass 1's source set." }
+
+variables:
+  headline_price_usd: { value: "10.00", source: "https://10web.io/pricing-platform/", evidence: "AGREED by both passes. AI Starter card, default display state (Business/Annually): '$10 /mo'. Re-confirmed by pass 1's own D-009 second-representation re-read and by pass 2's raw-outerHTML second representation." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://10web.io/pricing-platform/", evidence: "AGREED by both passes. Default toggle is 'Annually'/'12 months' (50% off badge); $10/mo is the monthly-equivalent figure under a 12-month prepaid commitment, per the same card's own 'Get 12 months for $120 (regular price $240).'" }
+  first_charge_amount_usd: { value: "120.00", source: "https://10web.io/pricing-platform/", evidence: "AGREED by both passes. Read directly from the AI Starter card: 'Get 12 months for $120 (regular price $240).' Vendor-stated, not a coder multiplication." }
+  mandatory_addon_present: { value: "no", source: "https://10web.io/pricing-platform/", evidence: "AGREED by both passes. No required additional charge for the AI Starter plan as advertised; additional websites, CDN, and usage overages are optional/usage-conditional upsells (pass 2 corroborates from the 'Why Have I Been Charged' article: extra site slots and CDN are billed as add-ons, not required to use the plan)." }
+  annual_condition_disclosure: { value: adjacent, source: "https://10web.io/pricing-platform/", evidence: "AGREED by both passes. The annual-prepayment condition is disclosed in the same visual price card as the $10/mo headline: the billing-toggle's own '12 months'/'Annually' + '50% off' label, and the card's own 'Get 12 months for $120 (regular price $240).' line." }
+  annual_default_toggle: { value: annual_preselected, source: "https://10web.io/pricing-platform/", evidence: "AGREED by both passes. DOM class 'tab 12 active'/'period-item 12 selected' on the Annually control; 'Monthly' carries no active class. Pass 1 confirmed this is server-rendered (no-JS curl fetch), not a client-side/geo/cookie variant; no register_event logged by either pass." }
+  free_plan_exists: { value: "yes", source: "https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web", evidence: "AGREED by both passes. 'Free platform users are limited to generating one website, and full editing requires enabling the 7-day free trial.' Corroborated by the pricing page's own H1 'Start free. Scale with every site.' and every plan card's 'Get started for free' CTA. Pass 2 flagged a tension against ToS 'To be able to use the Platform... you have to have an active subscription' and correctly resolved it: free-tier variables are pricing-class, where docs/pricing rank above the ToS (protocol 6.2), and multiple pricing/help-center sources specifically describe free access. Carried into conflict_note below since a contract sentence that reads as contradicting the free plan's own existence is a gap worth preserving even though the hierarchy settles it cleanly." }
+  free_plan_cap_documented:
+    value: all_quantified
+    source: "https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web"
+    evidence: >-
+      DISPUTED, resolved by rule. Codebook 5.1's quantified-limit test and its own enumerated
+      dimensions (outputs, minutes, exports, seats, storage, resolution, queue priority) are all
+      volume/capacity dimensions with a number that could attach to them, contrasted against vague
+      adjectives (limited, basic, reduced...) that soften an otherwise-numeric dimension. The free
+      plan's only two documented limits of THAT kind are '1 website' (standing limit, agreed by
+      both passes and by the Agentic Website Builder doc) and a page-recreation cap stated as
+      quantified in BOTH of two conflicting official docs (10 pages per one article, 5 per another
+      -- see free_plan_cap_value; both numbers are quantified regardless of which governs, so this
+      variable is unaffected by which figure wins). Pass 2's two additional citations -- 'full
+      editing requires enabling the 7-day free trial' and 'SSH and SFTP credentials are not
+      available on free plans' -- are feature-availability gates, not limits with a quantifiable
+      dimension: there is no number 'SSH access' or 'full editing' could carry, unlike a softened
+      volume word such as 'limited resolution'. They describe the boundary between the free plan and
+      the separate, already-domain-4-coded Pro trial (auto_renewal/trial_* variables), not an
+      unquantified CAP on the free plan's own allowance. Notably, pass 1's own record quotes both
+      of these same two facts almost verbatim in its free_plan_exists and free_plan_duration
+      evidence fields, so this is a considered exclusion, not a coverage miss. Since both dimensions
+      that ARE volume-type limits are quantified numbers, all_quantified holds. Prior values: pass 1
+      = all_quantified; pass 2 = some_quantified (counted the two feature gates as unquantified
+      limits).
+  free_plan_cap_value:
+    value: "conflicting"
+    source: "https://help.10web.io/hc/en-us/articles/360018862340-Free-Plan-How-to-Convert-Recreate-a-Website-With-AI | https://help.10web.io/hc/en-us/articles/7952757255186-AI-Website-Builder-Fully-Automated-WordPress-Website-Creation-in-a-Few-Minutes"
+    evidence: >-
+      DISPUTED, resolved by rule -- and reached a value neither pass coded. This variable's own
+      decision rule is explicit and was not discretionary: 'Where two official sources of equal
+      authority publish incompatible caps, code conflicting and record both figures with both URLs
+      in conflict_note.' Two DIFFERENT official help-center articles (same rank: docs/help-center
+      class, protocol 6.2), both live and neither marked outdated by Zendesk's own metadata, state
+      incompatible page-recreation caps for free users: 'up to 10 pages for free users'
+      (360018862340, updated 2025-01-23) versus 'The free plan is limited to 5 pages only'
+      (7952757255186, updated 2024-11-01). Both re-verified unchanged live by this adjudicator on
+      2026-08-16 (the 5-page article via the Zendesk API; the 10-page article's live re-check
+      returned a transient 401 twice, so it rests on pass 1's saved capture, read directly from the
+      JSON by this adjudicator). The '1 website' figure is NOT in dispute -- both docs and both
+      passes agree on it -- only the page-count sub-figure conflicts; the instrument's format has no
+      clean way to mark one sub-figure of a compound cap conflicting while stating the rest (pass 1
+      flagged this exact instrument gap in its own coder_note), so per the rule's literal
+      instruction the field is coded conflicting and both page-count figures plus the undisputed
+      website figure are preserved in conflict_note with all URLs and quotes. Prior values: pass 1 =
+      "1 website | 10 pages" (identified the conflict but picked the newer article's figure rather
+      than coding the field conflicting -- an inference the rule does not authorize, since nothing
+      in this instrument treats a more-recent update date as a tiebreaker between two live,
+      contemporaneously-published, equal-rank documents); pass 2 = "1 website" (did not locate
+      either page-count article -- a coverage gap, not a considered exclusion).
+  free_plan_watermark: { value: unknown, source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. 'watermark' does not appear anywhere in the ToS, PUP, pricing page, or the free-plan help articles in the sense of vendor branding on outputs. Principal output (a website) plainly could carry a footer badge, so not_applicable does not fit; documented silence codes unknown." }
+  free_plan_duration:
+    value: perpetual
+    source: "https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web"
+    evidence: >-
+      DISPUTED, resolved by rule. This variable's own decision rule, not merely its value-table
+      wording, is the operative test: 'A plan the pricing page presents as a standing tier alongside
+      paid tiers, with no expiry stated anywhere in the documents, is perpetual.' That is a
+      deliberate, variable-specific exception to the instrument's general silence-equals-unknown
+      default (parallel to usage_cap_quantified rule 3's unlimited carve-out), and it is satisfied
+      here: the pricing page frames free access as a standing, ongoing entry point ('Start free.
+      Scale with every site.'; every plan card's own CTA is 'Get started for free', not a
+      time-boxed promo), and no document -- across either pass's full-text search of the entire
+      help-center corpus -- states an expiry, countdown, or end date for the base free-generation
+      capability. The one document that describes deletion, 'What Happens if I Fail to Upgrade My
+      Plan Before the Free Trial Ends', is titled and worded entirely around the separate,
+      card-gated 7-day Pro TRIAL ('If you don't upgrade before the free trial ends, your website
+      will be deleted after the trial expires') -- domain 4's construct, not the base free plan a
+      user who never starts a trial occupies. Pass 2's own coder_note already draws this same
+      distinction ('describes deletion tied to trial usage specifically, not to the never-trialed
+      free path') but then still coded unknown, applying the instrument's general default rather
+      than this variable's own stated silence-plus-standing-tier exception. Re-verified live by this
+      adjudicator 2026-08-16: source content unchanged. Prior values: pass 1 = perpetual; pass 2 =
+      unknown.
+  trial_exists: { value: "yes", source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. ToS REFUND section: '1. Free 7-Day Trial: We provide a 7-day free trial* to help you evaluate our services without any charges.'" }
+  trial_card_required: { value: "yes", source: "https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web", evidence: "AGREED by both passes. 'To unlock full editing capabilities, start a 7-day free trial of the Pro version by attaching your credit card.'" }
+  trial_length_days: { value: "7", source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. 'We provide a 7-day free trial', stated identically across ToS, the dedicated Refund Policy article, and two other help-center articles." }
+  trial_auto_converts: { value: conflicting, source: "https://help.10web.io/hc/en-us/articles/6136064762770-Why-Have-I-Been-Charged", evidence: "AGREED by both passes -- genuinely two (in fact three) equal-authority help-center articles in conflict, per this study's own scope note for this construct. FOR auto-charge: 'Why Have I Been Charged?' ('automatically upgrades to a paid subscription unless cancelled') and 'How to Upgrade to 10Web Pro Plans' ('you will be charged for the chosen platform plan'); also ToS ('your trial will end immediately and you will be upgraded to the paid plan'). AGAINST (deletion, not a charge): 'What Happens if I Fail to Upgrade My Plan Before the Free Trial Ends' ('your website will be deleted after the trial expires'). All docs/help-center class, equal rank; the source hierarchy does not resolve which governs. This is exactly the case where two rank-1 (equal-authority) sources genuinely disagree and conflicting is the designed value, not a failure to choose -- confirmed rather than re-litigated by this adjudicator." }
+  credit_system_present: { value: "yes", source: "https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan", evidence: "AGREED by both passes. 'The AI Starter plan includes 100 AI credits per month.' Also shown on the pricing page itself ('AI Credits: 100/mo')." }
+  credit_unit_defined: { value: "yes", source: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", evidence: "AGREED by both passes. 'Each AI request costs 1 credit' ties the credit unit to a recognizable action." }
+  credit_to_output_rate_published: { value: partial, source: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", evidence: "AGREED by both passes. 'Each AI request costs 1 credit' is stated specifically for AI-chat editing requests inside the post-generation editor; no document states the credit cost of the initial website-GENERATION action (the principal output), and the same doc's 'Regenerate website' action is described with no credit cost at all." }
+  credit_rate_location: { value: docs_help_center, source: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", evidence: "AGREED by both passes. The '1 credit = 1 AI request' rate appears only in the AI Editor help article; the pricing page states only the monthly credit allowance, never the per-action rate." }
+  cost_per_output_unit: { value: other, source: "https://10web.io/pricing-platform/", evidence: "AGREED by both passes. The pricing page frames and prices the product primarily by number of websites (1/2/4 across tiers), with a per-website unit figure on each card ('$10 per website'). No enumerated codebook unit matches; coded other, named 'per_website'." }
+  cost_per_output_computable: { value: "yes", source: "https://10web.io/pricing-platform/", evidence: "AGREED by both passes. Entry-tier price ($10.00/mo) and website allowance (1 website) are both directly published, non-credit-mediated figures; the vendor's own card even states '$10 per website' directly." }
+  computation_assumptions:
+    value: "AI Starter (entry tier), default display state (Business tab / Annually toggle): $10.00/mo includes 1 website, both already on a monthly basis so no period conversion is needed. 10.00 / 1 = 10.00 per website per month, matching the vendor's own card text '$10 per website'. First charge $120.00/yr is the vendor's own stated annual total ('Get 12 months for $120'), not a coder multiplication (it happens to equal 10 x 12). AI Credits (100/mo) are a separate, secondary in-product resource, not the unit this computation uses."
+    source: "https://10web.io/pricing-platform/"
+    evidence: "PROSE, not a measurement (disagreements.py tag) -- not adjudicated as a disagreement. Both passes independently reached the identical arithmetic (10.00/1=10.00 per website/month) from the same entry-tier price and website allowance; this is a light synthesis of both passes' wording, not a reconciliation of conflicting figures."
+  credit_rollover_policy: { value: unknown, source: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", evidence: "AGREED by both passes. No document among those read states whether unused AI Credits roll over, expire, or cap-and-expire; both passes searched the help center directly for rollover/expire language near 'credit' and found nothing." }
+  failed_generation_charge_policy: { value: unknown, source: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", evidence: "AGREED by both passes. No document states whether a failed or errored AI request still consumes its 1 credit." }
+  auto_renewal_default: { value: "on", source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. ToS SUBSCRIPTION section: 'Subscription fees are charged/automatically renewed at the beginning of each billing cycle without notifications to you.'" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. Stated in the ToS (terms class) AND in at least two Zendesk help-center articles ('Why Have I Been Charged?', 'Canceling, Downgrading, or Changing 10Web Subscriptions') -- agreement across two document classes, not found on the pricing page itself." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. ToS: 'automatically renewed at the beginning of each billing cycle without notifications to you' governs ongoing renewals. Two narrower, different-purpose notices exist (72-hour notice for fee-AMOUNT changes; 24-hour notice before the FIRST charge/trial conversion) and do not extend to ordinary per-renewal notice; both passes recorded this distinction in coder_note rather than treating it as a conflict." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. ToS REFUND section: 'At 10Web we do not offer refunds for Platform subscriptions. All payments are final.' ToS ranks first for this contractual variable per protocol 6.2. Conflicts with the pricing page's '30-day money back guarantee' badge and the coupons page's restatement of it; per this study's scope note for this construct, protocol 6.2's authority hierarchy for contractual variables governs over which claim is more prominent, and the hierarchy resolves cleanly to the ToS/dedicated-refund-page position -- see conflict_note." }
+  refund_window_days: { value: "0", source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. No refunds are given per the governing (rank-1) sources, coded 0 per the variable's own 'or 0 where no refunds are given' option." }
+  refund_conditions: { value: not_applicable, source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. No refund is available under the governing sources, so no qualifying-conditions construct applies." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://help.10web.io/hc/en-us/articles/360027492652-How-Can-I-Cancel-My-10Web-Subscription", evidence: "AGREED by both passes. Complete self-serve procedure documented entirely within the dashboard/account settings; both passes note a ToS carve-out ('In some cases... we may ask You to contact us to cancel') but treat it as a documented caveat on the general self-serve rule, not a second equal-authority source stating a different rule." }
+  refund_policy_location:
+    value: multiple
+    source: "https://10web.io/legal/terms-of-service/ | https://help.10web.io/hc/en-us/articles/360027773851-10Web-s-Refund-Policy"
+    evidence: >-
+      DISPUTED, resolved by rule -- and reached a value neither pass's own REASONING supports,
+      though it matches pass 1's coded value. This variable's decision rule is explicit: 'multiple
+      is for agreement across two or more classes.' Pass 2 correctly identified that test (rejecting
+      pass 1's broader 'any class that mentions refunds counts, agreeing or not' reading, under
+      which the conflicting pricing-page/coupons claims would wrongly count as additional
+      locations) but applied it to an incomplete source set: pass 2's sources never include 10Web's
+      dedicated 'Refund Policy' Zendesk article (360027773851), a page solely about refunds --
+      tied at rank 1 with the ToS for contractual variables under protocol 6.2 -- which
+      independently states '10Web does not offer refunds', the SAME governing position as the ToS
+      REFUND section, quoted in pass 1's own record and re-verified unchanged by this adjudicator
+      live on 2026-08-16. Two different, equal-rank classes (terms and dedicated_refund_page)
+      therefore DO agree with each other on the governing position, which is exactly what
+      'agreement across two or more classes' requires. The pricing page and the coupons page state
+      a DIFFERENT, conflicting, lower-rank position (30-day money back) and correctly do not count
+      as agreeing classes under pass 2's own (correct) test -- they remain in conflict_note per
+      protocol 6.2's instruction to report a marketing/contract gap even where the hierarchy
+      settles the coded value. Prior values: pass 1 = multiple (right value, wrong test -- counted
+      disagreeing classes too); pass 2 = terms (right test, incomplete source coverage -- never
+      located the dedicated refund-policy article).
+  commercial_use_lowest_tier:
+    value: unknown
+    source: "https://10web.io/legal/terms-of-service/"
+    evidence: >-
+      DISPUTED, resolved by rule. This variable's definition asks specifically whether documents
+      grant 'the right to use outputs commercially' -- a construct the codebook keeps distinct from
+      output_ownership_statement ('what the documents say about who holds rights in generated
+      outputs', agreed by both passes as user_owns from the same clause). The word 'commercial' does
+      not appear anywhere in 10Web's ToS, its Prohibited Use Policy, its pricing page, or (per a
+      full-text search of the entire ~836-article help-center corpus, run by pass 1 and
+      re-confirmed by this adjudicator) any help-center article, in the sense of a commercial-use
+      permission or restriction -- pass 1's own evidence field says as much ('No separate
+      "commercial use" restriction... was found anywhere; full-text search for "commercial"...
+      returned no tier-gating result'). The only clause either pass found is the general ownership
+      disclaimer: 'if you choose to use, publish or display an Output in any manner, it shall be
+      considered Your Content. 10Web does not claim any ownership in the Output...' -- 'in any
+      manner' modifies HOW the output is used (published, displayed, modified), not FOR WHAT PURPOSE
+      (personal versus commercial/business), and the clause never addresses purpose or context of
+      use at all. Pass 1 coded free by inferring a commercial-use grant from this ownership-only
+      clause, despite its own evidence field documenting that no commercial-specific language
+      exists -- exactly the kind of inference the codebook's separate E1/E3 variables are built to
+      avoid collapsing into each other. Re-verified live 2026-08-16: ToS content unchanged, still no
+      occurrence of 'commercial'. Codebook 2.1 step 2 fails (no document states a determinate
+      value for THIS construct); step 4 applies: unknown. Prior values: pass 1 = free; pass 2 =
+      unknown.
+  watermark_removal_tier: { value: unknown, source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. No document states whether any tier's generated websites carry, or are free of, 10Web branding. Principal output could plainly carry such branding, so not_applicable does not fit; documented silence codes unknown." }
+  output_ownership_statement: { value: user_owns, source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. ToS 10WEB AI Builder Service section: '10Web does not claim any ownership in the Output, so long as the Output does not contain 10Web intellectual property.' Content section: 'You retain all the rights to Your Content or intellectual property.' No tier- or subscription-status-dependent qualifier found; the 'so long as...' clause is a standard carve-out excluding 10Web's own platform IP, not a conditional-use trigger of the kind `conditional` is defined for." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan", evidence: "AGREED by both passes. Every limit documented for the entry tier (AI Starter) carries a number and dimension, with a period where it is a rate: 1 website (standing), 10,000 visitors/month + quantified overage (rate), 10GB storage + quantified overage (standing), 100 AI credits/month (rate). No unquantified or bare-word limit found for this tier." }
+  unquantified_limit_clause: { value: absent, source: "https://10web.io/legal/terms-of-service/", evidence: "AGREED by both passes. ToS and the Prohibited Use Policy (incorporated by reference) were both read in full end to end by both passes. No fair-use/reasonable-use/excessive-use discretionary clause conditioning ordinary usage volume was found; the PUP's 'excessive API requests, brute-force attacks' language sits under network-abuse/security prohibitions (conduct, not a volume throttle on legitimate use), and the visitor/storage overage system is explicitly automated and quantified ($2 per unit), not discretionary." }
+
+coder_note: |
+  ADJUDICATION, 2026-08-16 (protocol 7.4, codebook-v1.md). Work-list from
+  tools/disagreements.py 10web: 5 substantive disagreements (free_plan_cap_documented,
+  free_plan_cap_value, free_plan_duration, refund_policy_location,
+  commercial_use_lowest_tier) plus computation_assumptions (tagged PROSE -- not a
+  measurement, not adjudicated as a disagreement; both passes' arithmetic agreed
+  in substance, synthesized above). All other 31 coded variables were confirmed
+  identical (canonicalised) between passes and pass through unchanged.
+
+  RESOLVED BY RULE (5 of 5): free_plan_cap_documented -> all_quantified (pass 1's
+  value; pass 2's two extra citations are feature gates, not quantifiable limits --
+  codebook 5.1). free_plan_cap_value -> conflicting (a THIRD value neither pass
+  coded; the variable's own decision rule mandates conflicting on an equal-authority
+  same-rank figure conflict this adjudicator located in full using pass 1's own
+  saved sources -- both docs already in pass 1's source set, re-verified live
+  2026-08-16). free_plan_duration -> perpetual (pass 1's value; this variable's
+  decision rule treats silence-on-expiry plus standing-tier framing as
+  determinate, an explicit exception to the instrument's general default that
+  pass 2 did not apply). refund_policy_location -> multiple (pass 1's coded
+  value, but reached by the CORRECT test pass 2 introduced -- 'agreement across
+  classes' -- applied to a source pass 2's own set lacked: the dedicated Refund
+  Policy article, tied at rank 1 with the ToS, independently agrees with it).
+  commercial_use_lowest_tier -> unknown (pass 2's value; pass 1 inferred a
+  commercial-use grant from a general ownership-disclaimer clause that never
+  addresses purpose of use, which the codebook's separate ownership/commercial-use
+  variables are built not to collapse into each other).
+
+  ZERO became unknown-for-unresolvability (§7.4 step 5) among the 5 disputed
+  variables -- the rule settled all five, in three cases to a value neither pass
+  chose. commercial_use_lowest_tier's unknown is pass 2's own value, reached by
+  applying the rule to genuine documentary silence on the specific construct, not
+  an adjudicator's failure to choose.
+
+  REGISTER EVENTS CHECKED (per this adjudication's brief, before classifying):
+  both pass 1 and pass 2's `register_events` are empty arrays. No vendor_edit or
+  display_variant entry exists for 10web in either record, so NONE of the 5
+  disagreements qualifies for date_explained (7.4.1, requires a vendor_edit entry)
+  or variant_explained (7.4.2, requires two archive snapshots of two states) --
+  all five are ordinary disagreements, resolved on the documents' own terms. This
+  adjudicator's own live re-checks on 2026-08-16 (ToS, the two conflicting
+  page-count articles, the Get-Started-for-Free article, the dedicated Refund
+  Policy article) found every one content-unchanged since collection, consistent
+  with the empty registers -- no new register_event is logged.
+
+  LOGIN-GATED SOURCE CHECK: per this adjudication's brief, checked both records
+  for a help article that redirects to a login page and was correctly left
+  unread. Neither pass's coder_note or sources list documents one for 10web, and
+  none of the 5 disputed variables rests on such a page. Not applicable to this
+  record; noted so the check is visibly done rather than silently skipped.
+
+  SCOPE NOTES applied: (1) the refund conflict (money-back badge vs. "all
+  payments are final") is resolved by protocol 6.2's source-authority hierarchy
+  for contractual variables (ToS/dedicated policy page rank first), not by which
+  claim is more prominent on the page -- both passes already applied this
+  correctly for refund_policy_exists/refund_window_days/refund_conditions
+  (agreed, unchanged above); it only remained open for refund_policy_location,
+  resolved above. (2) trial_auto_converts's two-article conflict (auto-upgrade
+  vs. deletion) is genuinely two rank-1 (equal-authority) help-center sources in
+  disagreement -- conflicting is the designed value, confirmed rather than
+  re-opened.
+
+  ARCHIVAL: no new archive submission was made by this adjudicator; the archive_url
+  above is pass 2's 2026-08-14 snapshot (the later of the two passes' own
+  snapshots of the same URL). Live content re-checks used WebFetch and the
+  Zendesk help-center public API (help.10web.io/api/v2/help_center/en-us/articles/<id>.json),
+  the same documents-only method pass 1 used and the task briefing pre-authorized;
+  one endpoint (article 360018862340, the 10-page source) returned a transient
+  HTTP 401 on two attempts and was not pursued further or worked around --
+  pass 1's saved capture, read directly from its JSON file by this adjudicator,
+  stands as the evidence instead.
+
+  blindness: not applicable to this role (protocol 7.4/the agent brief permit an
+  adjudicator to read both prior records and both source sets). No other
+  product's record was opened for the reasoning above; codebook-v1.md,
+  protocol-v1.md and record-template.yaml were the only instrument documents
+  consulted.
+
+conflict_note: |
+  FOUR conflicts stand in the record, three carried from the two passes (partly
+  re-scoped above) and one newly documented by this adjudication:
+
+  (1) refund_policy_exists / refund_window_days / refund_conditions /
+  refund_policy_location -- RESOLVED BY HIERARCHY (protocol 6.2). Rank-1
+  contractual sources agree with each other: ToS REFUND section
+  (https://10web.io/legal/terms-of-service/) -- "At 10Web we do not offer
+  refunds for Platform subscriptions. All payments are final." Dedicated Refund
+  Policy article (https://help.10web.io/hc/en-us/articles/360027773851-10Web-s-Refund-Policy)
+  -- "10Web does not offer refunds." Against this, two lower-ranked official
+  sources state the opposite: the pricing page
+  (https://10web.io/pricing-platform/) -- "30-day money back guarantee",
+  "Cancel anytime", per-card "The 30-day money-back guarantee applies until you
+  claim your free domain."; and https://10web.io/coupons/ -- "every plan
+  carries a 30-day money-back guarantee...request a refund within 30 days."
+  Per protocol 6.2 and codebook 2.1 step 3, the rank-1 sources govern the coded
+  values (no_refunds_stated / 0 / not_applicable), and the same two rank-1
+  sources' AGREEMENT with each other is what makes refund_policy_location
+  "multiple" (terms + dedicated_refund_page), not "terms" alone. Recorded per
+  the rule that a marketing-vs-contract gap is reported even where the hierarchy
+  settles the coded value cleanly.
+
+  (2) trial_auto_converts -- UNRESOLVED, coded conflicting (agreed by both
+  passes; confirmed on adjudication, not re-opened). "Why Have I Been Charged?"
+  (https://help.10web.io/hc/en-us/articles/6136064762770-Why-Have-I-Been-Charged)
+  -- "The 7-day free trial automatically upgrades to a paid subscription unless
+  cancelled within the trial period." "How to Upgrade to 10Web Pro Plans"
+  (https://help.10web.io/hc/en-us/articles/360021395600-How-to-Upgrade-to-10Web-Pro-Plans)
+  -- "If you do not cancel when the 7 day free trial expires, you will be
+  charged for the chosen platform plan." Against this, "What Happens if I Fail
+  to Upgrade My Plan Before the Free Trial Ends?"
+  (https://help.10web.io/hc/en-us/articles/360030873012-What-Happens-if-I-Fail-to-Upgrade-My-Plan-Before-the-Free-Trial-Ends)
+  -- "If you don't upgrade before the free trial ends, your website will be
+  deleted after the trial expires" -- deletion, not a charge. All three
+  docs/help-center class (equal rank); hierarchy does not resolve which
+  governs.
+
+  (3) free_plan_cap_value (page-count sub-figure) -- UNRESOLVED, coded
+  conflicting on adjudication (neither pass's coded value). "Free Plan: How to
+  Convert/Recreate a Website With AI" (updated 2025-01-23, not marked outdated;
+  https://help.10web.io/hc/en-us/articles/360018862340-Free-Plan-How-to-Convert-Recreate-a-Website-With-AI)
+  -- "up to 10 pages for free users." "AI Website Builder: Fully Automated
+  WordPress Website Creation in a Few Minutes" (updated 2024-11-01, not marked
+  outdated; https://help.10web.io/hc/en-us/articles/7952757255186-AI-Website-Builder-Fully-Automated-WordPress-Website-Creation-in-a-Few-Minutes)
+  -- "The free plan is limited to 5 pages only." Both docs/help-center class,
+  equal rank, both live and re-verified unchanged by this adjudicator on
+  2026-08-16 (5-page article; the 10-page article's live recheck hit a
+  transient 401, so rests on pass 1's saved capture). The undisputed "1
+  website" figure is not affected. This variable's own decision rule requires
+  coding conflicting on an equal-authority incompatible-cap disagreement; pass
+  1 identified the conflict but selected the newer article's figure rather than
+  coding it, which is not an option the rule provides for two live,
+  contemporaneous, equal-rank documents.
+
+  (4) free_plan_exists -- tension noted by pass 2, resolved by hierarchy, not a
+  disagreement (both passes coded yes). ToS: "To be able to use the Platform
+  and its Services you have to have an active subscription"
+  (https://10web.io/legal/terms-of-service/) reads, in isolation, as if it
+  contradicts free access. Multiple pricing-class sources specifically and
+  repeatedly describe free access (pricing page H1 "Start free. Scale with
+  every site."; https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web
+  -- "Free platform users are limited to generating one website"), and
+  pricing/docs sources rank above the ToS for pricing-class variables (protocol
+  6.2). Recorded for completeness rather than left implicit in a passed-through
+  agreed value.
+register_events: []
+status: complete

@@ -1,0 +1,73 @@
+SOURCE: https://www.adobe.com/go/adobe-gen-ai-addl-terms
+  (redirects to: https://www.adobe.com/cc-shared/assets/pdf/legal/servicetou/adobe-generative-ai-product-specific-terms-en-us-20260423.pdf)
+ACCESSED: 2026-08-14
+METHOD: curl download (WebFetch timed out repeatedly on adobe.com PDFs) + Read tool PDF extraction.
+DOCUMENT: "Adobe Generative AI Product Specific Terms", Effective as of April 23, 2026 (current live version
+at time of read -- confirmed current via WebSearch, which only surfaced this and older dated versions from
+2024/2025; footer of doc reads "Adobe-Generative-AI-Product-Specific-Terms-en_US-20260423").
+Incorporated by reference into the Adobe General Terms of Use (www.adobe.com/go/terms).
+
+FULL TEXT (all 8 sections, verbatim, reformatted from PDF):
+
+1. Generating Content. Input (audio/video/document/image/text incl. output params) is used to generate
+   Output. "The Input and Output are your Content ... and all provisions governing Content in the Terms
+   apply to the Input and Output." Adobe reserves the right to throttle, limit, disable, suspend, or
+   terminate the right to use generative AI features at any time in its sole discretion without prior
+   notice.
+
+2. Input. User solely responsible for Input; must not submit IP-infringing, personal-data-noncompliant,
+   illegal, or Terms-violating Input. Adobe may auto-block Input in its sole discretion.
+
+3. Output.
+   3.1 User responsible for Output; Adobe may screen/block Output before delivery. Adobe disclaims all
+       warranties on Output. User MUST NOT remove or alter watermarks or Content Authenticity Initiative
+       metadata (Content Credentials) generated with Output, or otherwise mislead about Output's origin.
+   3.2 Output may be non-unique / not IP-protectable.
+   3.3 No AI/ML training: user must not use Output/Input to train ML models.
+
+4. Firefly Gallery License. Submitting Output to an Adobe-hosted gallery (e.g. Firefly gallery) grants
+   Adobe a non-exclusive, perpetual, irrevocable, worldwide, royalty-free license over that Output+Input
+   for marketing purposes and to let other Adobe users generate their own Output from it.
+
+   >>> NOTE: the PRIOR version of this document (effective 2024-06-04, also read, see companion source
+   file generative-ai-additional-terms-20240604.txt) contained a section "4.1 Text-based Inputs by Free
+   Users" granting Adobe a broad perpetual/worldwide/royalty-free license over free (non-paying) users'
+   text-based Input+Output "for any purpose" (e.g. making them public for other users to reuse), with the
+   explicit sentence "If you do not want to grant us this license, you should purchase a paid
+   subscription." THIS CLAUSE DOES NOT APPEAR in the current 2026-04-23 version -- the free-user-specific
+   broad license section is gone; only the Firefly-gallery-submission license (section 4, applies to all
+   users regardless of tier) remains. Logged as a register_event (vendor_edit, contractual document, this
+   is exactly the kind of mid-window/version-to-version rights change protocol 6.6 cares about) and in
+   conflict_note for output_ownership_statement / commercial_use_lowest_tier, since third-party sources
+   discussing Firefly's free-tier terms may still describe the old (pre-2026-04-23) rule.
+
+5. Creative Cloud Generative Credit Add-on Subscription. Applies ONLY to Creative Cloud customers with a
+   separate "Gen AI Add-on Subscription" purchased through VIP / VIP Marketplace / VIP Custom (enterprise
+   volume licensing channels) -- NOT the individual consumer Firefly Standard/Pro/Pro Plus/Premium plans
+   this record's entry tier is drawn from. "During your Gen AI Add-on Subscription, the number of
+   generative credits ... expire on a monthly cadence that aligns to your Anniversary Date. Each month,
+   your account will be reset at the same number of generative credits ... Unused generative credits do
+   not rollover." (Confirms credit_rollover_policy = expires_at_period_end, consistent with the pricing-
+   page FAQ's identical statement for the base individual plans: "Adobe Firefly plans include a monthly
+   allocation of generative credits that reset each billing cycle and do not roll over.")
+
+6. AI Assistant for Acrobat Add-on Subscription. Not applicable to Firefly.
+
+7. In-App Use of Non-Adobe Models. Third-party/partner AI models (e.g. Google, ElevenLabs per the pricing
+   page) governed by General Terms section 3.12. Must be 18+ to use a Non-Adobe Model.
+
+8. Firefly Output Indemnification. Applies ONLY to Creative Cloud for teams/enterprise customers on a
+   "Creative Cloud Pro Plus" or "Creative Cloud, Edition 4" plan. Adobe indemnifies against third-party
+   IP/publicity/privacy infringement claims arising from "Indemnified Firefly Output," capped at US$10,000
+   per Output or per Infringement Claim, subject to numerous conditions/exclusions (modified Output,
+   combined Output, non-text-Input-based Output, etc.). NOT available to the individual/entry-tier plans.
+   Not directly relevant to any coded variable (no index item covers vendor indemnification), noted for
+   completeness only.
+
+No explicit clause found in this document on: auto-renewal, cancellation, refund windows, or a general
+(non-gallery) output-ownership statement -- this document explicitly defers those to "all provisions
+governing Content in the Terms" i.e. the Adobe General Terms of Use (see companion source file
+general-terms-of-use-*.txt). No watermark-by-TIER statement (watermark clause in 3.1 is a "you may not
+remove watermarks Adobe adds" prohibition, not a statement of which tiers get watermarked output at all --
+see pricing-page FAQ instead, which does not mention watermarks either; free-plan watermarking specifically
+is coded from the Firefly Product Description page, see companion source file).

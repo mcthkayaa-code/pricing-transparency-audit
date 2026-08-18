@@ -1,0 +1,30 @@
+# does plus ai have a free plan separate from the free trial
+
+No — **Plus AI doesn’t have a free plan separate from the free trial**.
+
+* **To use Plus AI, you need a paid plan.** New customers can start a **7-day free trial** (requires a credit card; you can cancel anytime during the trial). After the trial, you’re charged for the plan you selected.\
+  See [Plans and billing](/plus-ai/plans-and-billing.md).
+* There *is* a **free plan**, but it’s for **Snapshots** (different feature), with limits like **5 Snapshots per organization**.\
+  See [Free and paid plans](/other/live-snapshots/free-and-paid-plans.md).
+
+# Suggested Follow-up Questions:
+
+If you need more information, consider asking one of these follow-up questions by performing an HTTP GET request on the URL:
+
+- [Is there a free Snapshots limit on free plan?](https://guide.plusai.com?ask=Is%20there%20a%20free%20Snapshots%20limit%20on%20free%20plan%3F)
+- [What happens after trial ends auto-charge?](https://guide.plusai.com?ask=What%20happens%20after%20trial%20ends%20auto-charge%3F)
+- [How do I cancel before trial ends?](https://guide.plusai.com?ask=How%20do%20I%20cancel%20before%20trial%20ends%3F)
+
+# Sources:
+
+- [Plans and billing](https://guide.plusai.com/plus-ai/plans-and-billing.md)
+- [Free and paid plans](https://guide.plusai.com/other/live-snapshots/free-and-paid-plans.md)
+- [Install in Google Slides](https://guide.plusai.com/plus-ai/install-in-google-slides.md)
+- [Install in PowerPoint](https://guide.plusai.com/plus-ai/install-in-powerpoint.md)
+- [Generate a new document](https://guide.plusai.com/ai-for-google-docs/generate-a-new-document.md)
+- [Snapshot FAQs](https://guide.plusai.com/other/live-snapshots/snapshot-faqs.md)
+- [Plus AI changelog](https://guide.plusai.com/help/plus-ai-changelog.md)
+- [Welcome to Plus AI](https://guide.plusai.com/welcome-to-plus-ai.md)
+- [AI Agent](https://guide.plusai.com/ai-for-presentations/ai-agent.md)
+- [Live Snapshots](https://guide.plusai.com/other/live-snapshots.md)
+

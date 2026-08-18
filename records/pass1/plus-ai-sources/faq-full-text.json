@@ -1,0 +1,19 @@
+{
+  "url": "https://plusai.com/pricing",
+  "accessed": "2026-08-10",
+  "method": "DOM textContent extraction of collapsed <details class=faq-item> elements (innerText returns empty for collapsed <details>; textContent does not)",
+  "items": [
+    {"q": "Why should I use Plus AI?", "a": "Plus AI is the top-rated AI presentation tool for professional presentation makers, particularly for people who want to use AI in their existing presentations apps (PowerPoint and Google Slides).We focus on creating professional slides that look great at work or school. Try it out and you'll see for yourself!"},
+    {"q": "Can I use Plus with a custom presentation template?", "a": "Yes. We have multiple options to customize your Plus AI slides.Custom branding allows you to set the style, colors, fonts, and logo on your slides. You can try custom branding by signing up for the Team plan on Google Slides or PowerPoint.Custom templates allow you to create slides using your organization's actual slides and slide masters. To set up Plus AI with your custom template contact us about an Enterprise plan."},
+    {"q": "I need help getting started with Plus AI.", "a": "Check out our Help Center to get help with setting up Plus AI and to learn more about our features, like generating presentations, remix and rewrite, and using a custom template."},
+    {"q": "Do you have an affiliate program?", "a": "Yes! Get in touch here."},
+    {"q": "Can I invite my team?", "a": "You can invite team members to your organization.If you're on a paid plan, everyone in your organization will have access to premium features."},
+    {"q": "How does the 7 day free trial work?", "a": "Once you install Plus AI, you'll have the option to try one of our paid plans for free for 7 days. A credit card is required to start the trial.During the trial, you'll get 1,000 AI credits and full access to your chosen plan's features. When your trial ends, your card will be charged automatically and you'll receive your plan's full monthly credits."},
+    {"q": "What limitations are there for the free trial?", "a": "All free trials include 1,000 AI credits, regardless of which plan you select. You'll have full access to all features included in your chosen plan. If you use all your trial credits before the 7 days are up, you can upgrade to a paid plan to get more credits.Only new Plus AI customers are eligible for the free trial. If you previously signed up for the Plus free plan or upgraded to a paid plan, you will not be able to start a new free trial."},
+    {"q": "How do I cancel my trial or subscription?", "a": "Go to our Help Center to learn how to manage or cancel your paid subscription (and more)."},
+    {"q": "Does Plus AI work with PowerPoint or Google Slides?", "a": "Yes, your Plus AI subscription includes access to the Plus AI extension in both Google Slides and PowerPoint."},
+    {"q": "Can I use Plus AI through an API?", "a": "Yes, the Plus AI API allows you to create native PowerPoint slides using an API. You can also use Plus AI through Zapier or an MCP server."},
+    {"q": "How does Plus handle security?", "a": "Security is a priority for us. We encrypt all sensitive data on your computer before it is sent to our servers, your data is encrypted in transit and at rest.Plus has attained SOC2 Type II compliance. You can request a copy of our report and learn more on our security page."}
+  ],
+  "note": "The trial-limitations answer references 'the Plus free plan' in a backward-looking exclusion clause ('If you previously signed up for the Plus free plan... you will not be able to start a new free trial'). This does not affirmatively claim a free plan currently exists; see coder_note in the record for how this was resolved against guide.plusai.com/plus-ai/plans-and-billing's current, present-tense 'You need a paid plan to use Plus AI.'"
+}

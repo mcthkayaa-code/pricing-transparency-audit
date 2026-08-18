@@ -1,0 +1,41 @@
+Original URL: https://openai.com/sora/ (live fetch blocked HTTP 403 on 2026-08-10; by collection date this URL had already been taken down / no longer represents Sora since the product is discontinued)
+Cited via pre-existing Internet Archive capture: https://web.archive.org/web/20260420042312/https://openai.com/sora/
+Snapshot date: 2026-04-20 (6 days pre-shutdown)
+Accessed (by coder): 2026-08-10, via mcp Browser tool navigate to wayback shorthand URL + javascript_tool innerText read.
+Archive status: this URL IS the archive record (pre-existing web.archive.org capture).
+
+--- document.body.innerText, full page ---
+Sora 2
+Turn your ideas into videos with hyperreal motion and sound.
+Read the research
+From words to worlds
+Start with a prompt or upload an image to create videos with unprecedented realism in any style: cinematic, animated, photorealistic, or surreal.
+Create a funny video | a retro futuristic world |
+You're the star
+Cast yourself and your friends in videos as characters. You control how or when your character is used.
+Learn more about Characters
+Remix everything
+Take someone else's creation and put your spin on it. Swap characters, change the vibe, add new scenes, or extend the story.
+[example prompt text]
+Cue the sound
+Music, sound effects, and dialogue are automatically included in videos to make every scene complete.
+[sound demo buttons]
+OpenAI (c) 2015-2026
+Manage Cookies
+Terms of use
+Privacy policy
+English
+United States
+--- end ---
+
+Links on this page (via document.querySelectorAll('a')):
+Overview -> https://openai.com/sora/
+Characters -> https://openai.com/sora/characters/
+Login -> https://sora.chatgpt.com/
+Read the research -> https://openai.com/index/sora-2/
+Terms of use -> https://openai.com/policies/terms-of-use/
+Privacy policy -> https://openai.com/policies/privacy-policy/
+
+FINDING: this is OpenAI's dedicated Sora marketing/landing page. It contains pure capability marketing copy (video realism, "Characters"/cameos, remixing, automatic sound) and zero pricing, plan, credit, or subscription content of any kind. There is no pricing link, no "Get started"/"Subscribe" CTA with a price — the only calls to action are "Login" (straight to the app, sora.chatgpt.com) and a link to a research/technical announcement post. This is affirmative documentary evidence that OpenAI's own Sora marketing surface disclosed no price for the product.
+
+Attempted follow-up: "Read the research" -> https://openai.com/index/sora-2/ was checked via the same wayback method; the crawler's own capture of that URL at the nearest available timestamp (20260423200625) is a Cloudflare bot-challenge page (openai.com's own anti-bot system blocked the Internet Archive's crawler), not real page content. No usable pricing information could be recovered from that page within this session's effort cap.

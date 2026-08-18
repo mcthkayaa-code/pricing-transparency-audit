@@ -1,0 +1,140 @@
+product_id: gptzero
+product_name: GPTZero
+category: "AI detector"
+product_status: active
+paid_submission: "no"
+entry_tier_name: Premium
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-17
+recheck_date: not_applicable
+primary_source_url: "https://gptzero.me/pricing"
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "TRY currency (collection host geolocated to Turkey); no currency/country selector on page; Annual billing preselected (Premium TRY 549/mo, billed annually); state per rendered capture dated 2026-08-08."
+for_cause: true
+for_cause_reason: "Ordered under deviation D-004: the pass-1 coder self-disclosed a blindness breach (opened a sibling record to see its schema), and D-004 promised this for-cause blind second coding, whose agreement is reported separately from the pre-registered 26-product reliability sample."
+
+sources:
+  - { url: "https://gptzero.me/pricing", kind: pricing, accessed: "2026-08-08", archive: "https://web.archive.org/web/20260807100537/https://gptzero.me/pricing", note: "Rendered read (document.body.innerText after full page load). Public archive of this URL returns a pre-hydration shell with $0 placeholders only (known D-005 vendor pattern: prices inject client-side at runtime) -- the local rendered-text capture is the operative evidence for the TRY figures, so archive_status is local_copy_only for this source." }
+  - { url: "https://gptzero.me/pricing", kind: pricing, accessed: "2026-08-08", archive: local_copy_only, note: "Static/raw HTML fetch of the same URL plus its embedded JS bundles (Turbopack chunks), read for embedded JSON payload per deviations-for-coders.md: FAQ strings (free-plan word cap), a full tier feature-comparison table (free/essential/premium/professional/...), and subscription-fetch logic. Files: pricing-raw.html, 3sm69kou41dgv.js (feature table), 2l662ycq6ykma.js (plan-fetch + growthbook pricing-experiment logic), 0im5-ip1nb7-x.js (cookie-consent banner script, not price-relevant)." }
+  - { url: "https://gptzero.me/terms-of-use.html", kind: tos, accessed: "2026-08-08", archive: local_copy_only, note: "Full text read, all 28 sections (terms-of-use-visible-text.txt, terms-of-use-raw.html). URL reconstructed from the sibling gptzero.me/privacy-policy.html pattern found inside the document; the capture carried no canonical tag of its own." }
+  - { url: "https://gptzero.me", kind: other, accessed: "2026-08-08", archive: local_copy_only, note: "Homepage; embedded JSON strings used for free-plan FAQ context and an educator-program dollar figure (see coder_note). Not used as a pricing-page source." }
+  - { url: "https://web.archive.org/web/20260718180121/https://gptzero.me/pricing", kind: pricing, accessed: "2026-08-08", archive: "https://web.archive.org/web/20260718180121/https://gptzero.me/pricing", note: "Archival cross-check capture (wayback-pricing-20260718.html). Pre-hydration shell, no readable TRY/USD prices -- consistent with the 20260807 snapshot." }
+  - { url: "https://gptzero.me/pricing", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260807100537/https://gptzero.me/pricing", note: "D-007 currency re-check evidence (d007-currency-recheck-2026-08-10.txt): rendered DOM query for currency/country selector elements (0 matches), a ?currency=USD parameter test (no effect on displayed figure), a re-read of ToS Sec.5, and a Wayback CDX query for a later snapshot (timed out twice, capped at 2 attempts). I independently re-derived the currency conclusion from these underlying facts rather than adopting the file's stated value changes -- see coder_note." }
+
+variables:
+  headline_price_usd: { value: "unknown", source: "https://gptzero.me/pricing", evidence: "Rendered plan card: 'TRY 549/ month, billed annually' for Premium (entry tier). No USD figure appears anywhere in the pricing page, its embedded JSON payload, the raw HTML, or either archive capture (both pre-hydration shells). ToS Sec.5 states 'All payments shall be in U.S. dollars' but supplies no number -- currency named, no figure. Neither arm of the currency check returns a readable price; per the amended rule this is unknown, not non_usd." }
+  headline_billing_basis: { value: "per_month_billed_annually", source: "https://gptzero.me/pricing", evidence: "'TRY 549/ month, billed annually'" }
+  first_charge_amount_usd: { value: "unknown", source: "https://gptzero.me/pricing", evidence: "No USD figure is published anywhere (see headline_price_usd). Independently, no document states the annual plan is charged once for twelve months -- only the 'billed annually' qualifier appears; ToS Sec.5 states only generic recurring-billing consent language." }
+  mandatory_addon_present: { value: "no", source: "https://gptzero.me/terms-of-use.html", evidence: "Premium's advertised features (Advanced AI Scan, Multilingual AI detection, Download AI reports, Chrome Extension AI highlights) carry no separate charge in the ToS or the pricing page's feature table; no required add-on, minimum credit purchase, platform fee, or onboarding fee is stated anywhere in the capture set." }
+  annual_condition_disclosure: { value: "adjacent", source: "https://gptzero.me/pricing", evidence: "'TRY 549/ month, billed annually' -- the annual-billing condition sits on the same line as the price figure, inside the same plan card." }
+  annual_default_toggle: { value: "annual_preselected", source: "https://gptzero.me/pricing", evidence: "Rendered capture's displayed price carries the 'billed annually' qualifier. Raw HTML: the toggle's 'Annual (Save 45%)' pill carries class bg-black/5, the only visually distinguishing background against the white track (class bg-white on the outer container); 'Monthly' carries bg-white, identical to the track, i.e. no visible highlight. Both signals agree Annual is the loaded default." }
+  free_plan_exists: { value: "yes", source: "https://gptzero.me/pricing", evidence: "Embedded JSON FAQ strings on the pricing-page bundle: 'GPTZero offers a free plan that covers up to 10,000 words per month. If you need more, you can upgrade to a paid subscription for higher limits.' and 'GPTZero offers a free plan built for education, allowing you to scan up to 10,000 words a month and use our Chrome Extension.' Confirmed by the tier feature-comparison table, which carries a 'free' column throughout." }
+  free_plan_cap_documented: { value: "all_quantified", source: "https://gptzero.me/pricing", evidence: "Feature-comparison table (embedded JS payload), free-tier column: 'Words per month'=10,000; 'Character limit per scan'=10,000; 'Advanced AI scan'='5 Free'. Every limit found carries a number and a named dimension; no free-plan limit was found stated without a number." }
+  free_plan_cap_value: { value: "10000 words per month | 10000 characters per scan | 5 advanced AI scans", source: "https://gptzero.me/pricing", evidence: "Feature-comparison table, 'free' tier column, rows 'Words per month', 'Character limit per scan', 'Advanced AI scan'." }
+  free_plan_watermark: { value: "not_applicable", source: "https://gptzero.me/pricing", evidence: "Principal output is an AI-detection score/report ('GPTZero will suggest what percentage of your text is likely to be AI-generated and highlight the specific phrases it has detected'), matching the codebook's own not_applicable paradigm for this variable's twin, 'a detection score or an analysis table'. The string 'watermark' does not appear anywhere in the 11-file capture set (verified by direct search)." }
+  free_plan_duration: { value: "perpetual", source: "https://gptzero.me/pricing", evidence: "'a free plan that covers up to 10,000 words per month' is described as an ongoing monthly allowance with no expiry stated. Distinct from the separate 7-day paid-tier trial in ToS Sec.6 (domain 4, not domain 3)." }
+  trial_exists: { value: "yes", source: "https://gptzero.me/terms-of-use.html", evidence: "'We offer an optional 7-day free trial to new users who register with the Site.'" }
+  trial_card_required: { value: "unknown", source: "https://gptzero.me/terms-of-use.html", evidence: "No statement either way in any captured document. ToS: 'If the user initiates a free trial, the account will be charged according to the user's chosen subscription at the end of the free trial' -- implies stored payment details but does not state a card is required to START the trial (matches the codebook's own Vendor I worked example exactly)." }
+  trial_length_days: { value: 7, source: "https://gptzero.me/terms-of-use.html", evidence: "'an optional 7-day free trial'" }
+  trial_auto_converts: { value: "yes", source: "https://gptzero.me/terms-of-use.html", evidence: "'If the user initiates a free trial, the account will be charged according to the user's chosen subscription at the end of the free trial.'" }
+  credit_system_present: { value: "no", source: "https://gptzero.me/pricing", evidence: "Both self-serve paid tiers meter usage directly in output units -- 'Words per month': premium=300,000, professional=500,000 in the feature table, matching the rendered page's '300,000 words per month' / '500,000 words per month'. Rule 1's explicit not-a-credit-system case. The only 'credit' string anywhere in the 11-file set is the unexplained marketing bullet 'Shared team credits' attached to the sales-gated Enterprise/Team tier; see coder_note for why this was not treated as establishing a credit system." }
+  credit_unit_defined: { value: "not_applicable", source: "https://gptzero.me/pricing", evidence: "No credit system (see credit_system_present)." }
+  credit_to_output_rate_published: { value: "not_applicable", source: "https://gptzero.me/pricing", evidence: "No credit system." }
+  credit_rate_location: { value: "not_applicable", source: "https://gptzero.me/pricing", evidence: "No credit system." }
+  cost_per_output_unit: { value: "per_1k_words", source: "https://gptzero.me/pricing", evidence: "Every tier in the feature-comparison table (free through professional) is denominated by the row 'Words per month'; this is the pricing page's own primary metering axis for the product." }
+  cost_per_output_computable: { value: "yes", source: "https://gptzero.me/pricing", evidence: "Premium (entry tier): TRY 549/mo billed annually and 300,000 words/mo included are both published in the default display state; the calculation needs no assumption about typical use." }
+  computation_assumptions: { value: "Premium (entry tier), TRY 549/mo billed annually per default display state, 300,000 words/mo included (rendered page + feature table). 549/300=1.83 TRY per 1,000 words. TRY-denominated; no USD figure published anywhere.", source: "https://gptzero.me/pricing", evidence: "Arithmetic from the rendered plan card ('TRY 549/ month, billed annually') and the feature-comparison table ('Words per month' premium=300,000)." }
+  credit_rollover_policy: { value: "not_applicable", source: "https://gptzero.me/pricing", evidence: "No credit system." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://gptzero.me/terms-of-use.html", evidence: "The product meters usage (words/month, with a stated overage allowance on Professional), but no document in the capture set -- ToS, pricing page, or its embedded JSON -- states what happens to the allowance when a scan fails, errors, or returns nothing usable." }
+  auto_renewal_default: { value: "on", source: "https://gptzero.me/terms-of-use.html", evidence: "'If your purchase is subject to recurring charges, then you consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until you notify us of your cancellation.'" }
+  auto_renewal_disclosure_location: { value: "terms_only", source: "https://gptzero.me/terms-of-use.html", evidence: "Recurring-billing consent language appears only in ToS Sec.5. No 'renew' string appears anywhere in the pricing page, its raw HTML, or its embedded JS payload (directly searched)." }
+  renewal_notice_commitment: { value: "unknown", source: "https://gptzero.me/terms-of-use.html", evidence: "ToS states recurring charges continue 'until you notify us of your cancellation' but neither commits to, nor denies, advance notice before a renewal charge is made." }
+  refund_policy_exists: { value: "no_refunds_stated", source: "https://gptzero.me/terms-of-use.html", evidence: "'All purchases are non-refundable.'" }
+  refund_window_days: { value: 0, source: "https://gptzero.me/terms-of-use.html", evidence: "'All purchases are non-refundable.'" }
+  refund_conditions: { value: "not_applicable", source: "https://gptzero.me/terms-of-use.html", evidence: "No refund is available to attach a condition to: 'All purchases are non-refundable.'" }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://gptzero.me/terms-of-use.html", evidence: "'You can cancel your subscription at any time by logging into your account.'" }
+  refund_policy_location: { value: "terms", source: "https://gptzero.me/terms-of-use.html", evidence: "Found only in ToS Sec.7 'CANCELLATION'. No refund/cancellation language appears on the pricing page or homepage (directly searched); no separate help-center capture exists in the evidence set." }
+  commercial_use_lowest_tier: { value: "unknown", source: "https://gptzero.me/terms-of-use.html", evidence: "The product generates a downloadable artifact ('Download AI reports' is a listed Premium/Professional feature). No document addresses commercial use of that output. ToS Sec.2 (Intellectual Property) covers only the Site's own content; the sole 'commercial' string elsewhere is the marketing claim 'most accurate commercial AI detector', not a customer-rights statement." }
+  watermark_removal_tier: { value: "not_applicable", source: "https://gptzero.me/pricing", evidence: "Principal output is a detection score/report, the codebook's own worked not_applicable example for this variable ('a detection score or an analysis table'). 'watermark' does not appear anywhere in the 11-file capture set (pricing, homepage, ToS, or the three JS bundles)." }
+  output_ownership_statement: { value: "unknown", source: "https://gptzero.me/terms-of-use.html", evidence: "ToS Sec.10 addresses only user-submitted 'Contributions' ('We do not assert any ownership over your Contributions... You retain full ownership...'), i.e. the INPUT text a user pastes in -- not the AI-generated detection report the tool produces. No document addresses ownership of that generated output." }
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://gptzero.me/pricing", evidence: "Premium (entry tier): 'Up to 300,000 words per month' (rendered page) and 'Character limit per scan'=50,000 (feature table). No unquantified limit was found for this tier. One further dimension, 'Batch upload file limit', references a named-but-unresolved constant (O.BatchFilesByPlan.premium) not defined within the captured JS chunks -- see coder_note." }
+  unquantified_limit_clause: { value: "present", source: "https://gptzero.me/terms-of-use.html", evidence: "ToS Sec.14(4), Site Management: 'in our sole discretion and without limitation, notice, or liability, to remove from the Site or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems.' An unquantified, discretionary standard on volume/intensity of use ('excessive', 'burdensome'), matching the codebook's 'excessive use' example category. Full text of the terms (all 28 sections) was read for this variable." }
+
+coder_note: |
+  DESIGN LIMITATION (per task instructions): this evidence base is the capture set pass 1
+  chose to save (records/pass1/gptzero-sources/, 11 files). This coding is blind to pass 1's
+  VALUES and REASONING but not to its DOCUMENT SELECTION -- it tests whether two readers of
+  the same documents reach the same values, not whether the right documents were chosen.
+
+  D-007 FILE HANDLING: the sources directory contains d007-currency-recheck-2026-08-10.txt, an
+  analysis document (not a vendor source) that states pass-1's own stated value changes for
+  headline_price_usd and first_charge_amount_usd. I treated the FACTS it reports (DOM
+  currency-selector query = 0 matches, ?currency=USD parameter test = no effect, ToS Sec.5
+  wording, archive-shell content) as legitimate evidence -- consistent with this task's framing
+  of the whole sources directory as "your evidence base" -- but independently re-applied the
+  CURRENT currency rule (deviations-for-coders.md) to those facts myself rather than adopting
+  the file's stated conclusion. I reached the same value (unknown, not non_usd) by that
+  independent route; recorded here so the overlap is visible rather than silently assumed.
+
+  ENTRY TIER: candidates were the two plans shown as purchasable on the rendered pricing page.
+  Premium: TRY 549/mo billed annually, annual-equivalent TRY 6,588 -- WINNER (lower). Professional
+  (losing candidate): TRY 1,049/mo billed annually, annual-equivalent TRY 12,588. "Enterprise and
+  Team Plans" excluded on eligibility grounds (sales-gated, "Contact Sales"). A "Premium for
+  Students" page title string exists in the embedded JSON with no associated price captured
+  anywhere in the evidence set, so it does not change the selection.
+
+  MAJOR FINDING -- an "Essential" tier exists in the vendor's own tier data and was NOT shown
+  as purchasable in my one observed rendered state. The embedded feature-comparison table
+  (3sm69kou41dgv.js) lists tiers free/essential/premium/professional/writer/reviewer/pro/
+  educator/api throughout, with essential="150,000" words/month (between free's 10,000 and
+  premium's 300,000) -- but no plan card for it appeared in the rendered capture (only Premium
+  and Professional cards rendered), and no price for it was found anywhere in the 11 files. The
+  same JS bundle references a live experiment: getFeatureValue(GROWTH_BOOK_FEATURES.
+  PRICING_EXPERIMENT_V3,"no-essential-no-quarterly") and code that filters plans where
+  tier==="essential". This is directly relevant to protocol limitation 13 (a pricing page may
+  not have one default display state) -- but I personally observed only ONE rendered state, so
+  per protocol 6.8 rule 3 I have not logged a register_events display_variant entry (that
+  requires the coder to have observed two states within the same pass). Coded entry_tier_name
+  and all entry-tier variables from the state actually observed (Premium/Professional only).
+  Flagging prominently per this task's request for anything the capture set left incomplete.
+
+  CREDIT_SYSTEM_PRESENT judgment call: the only "credit" string in the whole 11-file set is the
+  marketing bullet "Shared team credits" (one of three feature bullets for the sales-gated
+  Enterprise/Team plan: "Everything you get with a Professional plan, for everyone." / "Shared
+  team credits" / "Unified billing"). Checked the JS bundles for any further definition, balance
+  API, or exchange rate tied to this term -- found none. Both self-serve paid tiers (the only
+  ones with a documented price) meter directly in words, the codebook's explicit not-a-
+  credit-system case. Read this as pooled/shared word-allowance language for team billing, not a
+  distinct credit currency, and coded credit_system_present=no. This is a judgment call on thin,
+  ambiguous evidence and is flagged for review given it gates three index items (C1/C2/C4).
+
+  USAGE_CAP_QUANTIFIED gap: "Batch upload file limit" is a real row in the feature-comparison
+  table but its values are unresolved JS constants (O.BatchFilesByPlan.{free,essential,premium,
+  professional}) not defined in any of the three captured JS chunks -- an access limitation on
+  my end, not a vendor non-disclosure I can confirm either way, so it was not counted toward or
+  against "all_caps_quantified" (which rests on the two limits I could read directly: words/month
+  and characters/scan, both quantified).
+
+  ANCILLARY, NOT USED FOR CODING: homepage embedded JSON describes an educator ambassador
+  program offering "GPTZero premium for life (valued at $288/year)" -- a promotional valuation
+  on an unrelated referral-program page, not a price on the pricing page, and not a currency
+  disclosure under the Arm-1 test (no currency statement, just an incidental dollar figure). Not
+  used to code headline_price_usd; noted for completeness only.
+
+  A-012: not applicable to this product. GPTZero's trial (ToS Sec.6) is a genuine zero-cost
+  7-day free trial, not a cheap non-zero paid intro period, so the open question does not apply.
+
+  blindness: did not open records/pass1/gptzero.yaml (the record under review), not once, not
+  for structure or source list. Did not open any other product's record in any pass. Did not
+  open orchestrator/, aitoolspolice.com, or site/content/reviews/. Did not run git log, git
+  show, git diff, or git blame -- no repository history was read. Did open
+  records/pass1/gptzero-sources/ in full, exactly as this task's instructions designate it as
+  "your evidence base" for this for-cause coding.
+
+conflict_note: "Tension (not a value conflict under codebook 2.1, since neither source states a competing NUMBER): the pricing page (https://gptzero.me/pricing) displays only TRY figures with no currency selector ('TRY 549/ month, billed annually'), while the ToS (https://gptzero.me/terms-of-use.html) Sec.5 states 'All payments shall be in U.S. dollars'. Neither supplies a USD figure. This tension is why headline_price_usd/first_charge_amount_usd are coded unknown rather than non_usd -- see variable evidence and coder_note."
+
+register_events: []
+
+status: complete

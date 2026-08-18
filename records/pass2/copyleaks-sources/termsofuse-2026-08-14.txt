@@ -1,0 +1,93 @@
+LOCAL CAPTURE (archive.org save failed twice, systemic "Job failed" — rate-limited; local_copy_only per deviations-for-coders.md)
+URL: https://copyleaks.com/termsofuse
+Accessed: 2026-08-14
+Method: rendered browser read (Claude_Browser); verbatim slices pulled via document.body.innerText
+"Last revised September 9, 2025"
+Full document length read: 50,547 characters. Verbatim contiguous read covered roughly sections 1-9 and 13-15.1;
+remaining sections covered by a full-text keyword sweep (all terms below checked against the complete
+50,547-char string, not a sample) for: fair use, throttl(e), discretion, abnormal, unusual, excessive, abuse,
+irregular, reasonable use, typical use, normal use, rate limit, too many requests, overload, watermark, trial,
+free plan, no cost, commercial, refund, cancel, renew, ownership, suspend.
+
+=== SELECTED VERBATIM CLAUSES ===
+
+2.1 Guest Users. [...] Guest Users are forbidden from using the Services for any commercial purpose.
+
+4.1 License Granted to You. [...] we hereby grant you a limited, revocable, worldwide, non-exclusive,
+non-transferable license to use and access the Services and the Site for your non-commercial use as
+assessment tool for content integrity only. [...] Except for this license granted to you, we and our
+licensors retain all right, title and interest in and to the Services, including all related intellectual
+property rights.
+
+7.1 Copyleaks Intellectual Property. Copyleaks reserves all rights, title and interest in and to the Site,
+Service Content and the Services and all products of the Services, including, but not limited to, the
+detection reports and other assessments reports produced by the Services, and to all related software and
+technology [...] No rights are granted to you hereunder, whether by implied license, estoppel, operation of
+law or otherwise, other than the limited license expressly set forth above.
+
+7.5 Your Intellectual Property. Subject to the license granted by you to Copyleaks [...] you and your End
+Users [...] retain all intellectual property rights in the User Content, unless otherwise expressly stated
+in this Agreement. [NOTE: this is about the content YOU UPLOAD to scan, not the detection report output —
+7.1 above governs the report/output.]
+
+7.6 Disclosure of Reports. In the event you choose to share, disclose, or otherwise make available any
+detection or assessment report generated through your use of the Services to any third party, you shall
+bear full responsibility and liability for such disclosure.
+
+8.1 Credits. [...] Each Credit can be used for a single page (containing up to 250 words). [...] Copyleaks
+offer you the possibility of a "refill option", allowing you an automatic refill of the exact amount of
+Credits you purchased, at the same price as the primary Credits you purchased.
+
+8.2 Annual Account. You can subscribe for an annual account for the Services through the Site. Your Account
+will be loaded with the number of Credits you purchased and will be valid for a 12-months period. [...]
+
+8.3 Monthly Account. [...] Your Account will run from month to month ("Monthly Account") with the same
+number of Credits you selected to begin with. If you select a Monthly Account, you will have the same number
+of Credits each month, without the possibility of accumulating unused Credits of the previous month, and any
+such unused Credits shall be cancelled at the end of each month. Copyleaks will not refund any unused
+Credits that were cancelled.
+
+9.1 Payment Terms. [...] Unless otherwise stated on an Order Form, fees for an Annual Account shall be
+prepaid in full immediately upon creating an Annual Account, and the fees for a Monthly Account shall be
+charged monthly, each month in advance.
+
+9.2 Billing. Copyleaks outsources all online payment processing to Stripe [...]
+
+14.1 Term. [...] You will be charged for your subscription at the beginning of each billing cycle, according
+to the subscription plan chosen by you. The term of subscription purchased through the Site shall
+automatically renew for successive subscription terms of equal length, unless either party notifies the
+other party in writing of its intent not to renew the subscription term (as applicable), not less than
+fourteen (14) days prior to the expiration of the subscription Term. Upon renewal the payment method you
+provided to us will be automatically charged for additional term as specified in the subscription plan and
+will only be refunded according to our refund policy below.
+
+14.2 Termination. The Agreement or any part of the Services may be suspended or terminated, effective
+immediately: (a) by Copyleaks, at any time and for any reason, at its sole discretion [...] Copyleaks shall
+take reasonable efforts to notify you prior to termination or suspension or immediately following such
+action. [...] If you purchased a subscription through the Site you can terminate it at any time through your
+account or by contacting our Customer Support team. Your subscription will be terminated at the end of your
+current subscription billing term, and you will not be charged after that time.
+
+14.4 Effect of Termination. [...] All payments are completely non-refundable. If Copyleaks terminates and/or
+shut down (temporarily or permanently) parts or all of the Services, you will not receive any refund or
+partial refund for any charges already billed to your account.
+
+14.5 Refunds. Refunds will only be provided if you have submitted a refund request, not scanned any pages or
+used any Credits from your Account and only within the first 10 days of the billing cycle. Payment
+processing fees will not be deducted from the original price if the refund request has been submitted within
+24 hours of the payment date. The refund will only cover the most recent subscription cycle.
+
+3.4 Report of Abuse. You agree to immediately notify Copyleaks of any unauthorized use of your Account or
+any other breach of security related to your Account [...] [context: account-security abuse reporting, NOT
+a usage-volume/fair-use throttling clause]
+
+=== KEYWORD SWEEP RESULTS (full 50,547-char document, indexOf, -1 = not found) ===
+abnormal: -1 | unusual: -1 | excessive: -1 | irregular: -1 | reasonable use: -1 | typical use: -1
+normal use: -1 | rate limit: -1 | too many requests: -1 | overload: -1 | watermark: -1 | trial: -1
+free plan: -1 | no cost: -1 | fair use: -1 | throttl: -1
+abuse: found once (3.4 Report of Abuse, account-security context only, see above)
+discretion: found at two points — 5. Restrictions breach-suspension ("at the sole discretion of the
+Company" re: content-restriction breaches) and 14.2 termination-for-any-reason. Neither ties a discretionary
+standard to USAGE VOLUME/INTENSITY; both are conduct/termination clauses, not fair-use throttling clauses.
+commercial: 3 occurrences — 2.1 (Guest Users), 4.1 (general license grant), and "commercially reasonable
+efforts" (boilerplate, section 5) — no tier-based commercial-use carve-out found anywhere in the document.

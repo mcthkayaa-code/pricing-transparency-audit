@@ -1,0 +1,77 @@
+HTTP/2 302 
+server: nginx
+date: Wed, 12 Aug 2026 07:01:21 GMT
+content-type: text/html; charset=utf-8
+content-length: 330
+location: https://web.archive.org/web/20260812070106/https://help.resume.io/en/articles/3785088
+x-app-server: wwwb-app55-dc6
+x-ts: 302
+x-tr: 18073
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-save-SERVER=wwwb-app55; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 302 
+server: nginx
+date: Wed, 12 Aug 2026 07:01:21 GMT
+content-type: text/plain; charset=utf-8
+content-length: 0
+x-archive-redirect-reason: found capture at 20260606100733
+location: https://web.archive.org/web/20260606100733/https://help.resume.io/en/articles/3785088
+server-timing: captures_list;dur=0.459606, exclusion.robots;dur=0.048487, exclusion.robots.policy;dur=0.036080, esindex;dur=0.013779, cdx.remote;dur=12.378771, LoadShardBlock;dur=77.198338, PetaboxLoader3.datanode;dur=74.261307
+x-app-server: wwwb-app241-dc8
+x-ts: 302
+x-tr: 109
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-p-SERVER=wwwb-app241; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Wed, 12 Aug 2026 07:01:22 GMT
+content-type: text/html
+x-archive-orig-etag: "8dbf29f865d8ae9f13759e09e92ae4f2"
+x-archive-orig-age: 179642
+x-archive-orig-cache-control: no-cache, must-revalidate
+x-archive-orig-date: Thu, 04 Jun 2026 08:13:33 GMT
+x-archive-orig-last-modified: Fri, 29 May 2026 13:25:28 GMT
+x-archive-orig-accept-ranges: bytes
+x-archive-orig-x-served-by: cache-iad-kjyo7100087-IAD
+x-archive-orig-content-length: 86966
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+memento-datetime: Sat, 06 Jun 2026 10:07:33 GMT
+link: <https://help.resume.io/en/articles/3785088>; rel="original", <https://web.archive.org/web/timemap/link/https://help.resume.io/en/articles/3785088>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://help.resume.io/en/articles/3785088>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: CC-MAIN-2026-25-1780687572135.55-0000/CC-MAIN-20260606095603-20260606125603-00014.warc.gz
+server-timing: captures_list;dur=0.346716, exclusion.robots;dur=0.035074, exclusion.robots.policy;dur=0.026863, esindex;dur=0.006381, cdx.remote;dur=49.712302, LoadShardBlock;dur=154.921707, PetaboxLoader3.datanode;dur=142.291949, PetaboxLoader3.resolve;dur=149.183708, load_resource;dur=192.501707
+x-app-server: wwwb-app263-dc8
+x-ts: 200
+x-tr: 428
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app263; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

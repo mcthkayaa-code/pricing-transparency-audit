@@ -1,0 +1,67 @@
+URL: https://quillbot.com/premium
+Accessed: 2026-08-10
+Methods used (two representations, per binding rule "Read a price twice"):
+  (1) curl raw HTML (saved as quillbot-premium-raw.html in this dir) -> contains an embedded
+      <script type="application/json" data-for="route-props"> SSR payload with exact price objects.
+  (2) Browser render (mcp Claude_Browser, tab navigated to quillbot.com/premium) -> document.body.innerText
+      and targeted DOM queries for toggle/tab elements.
+Network note: fetched from the session's Turkey network location. The embedded SSR JSON explicitly
+carries "countryCode":"TR" for this request AND "currency":"USD" on every price object, with
+"priceVariants":[] (empty - no region-specific price override served). No non-USD currency symbols
+(checked for EUR/GBP/TRY literal signs) found anywhere on the page. This is treated as Arm-1-strength
+vendor evidence that USD is what a reader gets here, per the currency-check rule (D-003/D-007):
+the vendor's own page data explicitly labels the served prices USD despite geolocating the request
+to Turkey, so "unknown"/"non_usd" is not warranted for the currency dimension of this reading.
+
+--- SSR JSON price payload (verbatim excerpt from quillbot-premium-raw.html) ---
+"prices":[{},
+  {"title":"Monthly","duration":1,"price":9.95,"country":1,"featured":false,"id":1,"currency":"USD"},
+  {"title":"Semi-Annual","price":39.95,"monthlyPrice":6.66,"saving":33,"duration":6,"country":1,"featured":false,"id":2,"currency":"USD"},
+  {"title":"Quarterly","price":19.95,"monthlyPrice":6.65,"duration":3,"country":1,"saving":33,"featured":false,"id":4,"currency":"USD"},
+  {"title":"Annual","price":49.95,"monthlyPrice":4.17,"duration":12,"country":1,"saving":58,"featured":true,"id":3,"currency":"USD"}
+],"pricesFetchFail":false,"countryCode":"TR","priceVariants":[]
+
+--- document.body.innerText (rendered page, first ~4000 chars, default load state, no interaction) ---
+Quillbot Premium
+Empower your writing with Premium
+Achieve new heights when you write without limits
+All Premium plans include: Paraphraser / Grammar Checker / Plagiarism Checker / AI Detector /
+AI Humanizer / Summarizer / Apps / Browser Extensions / Much more
+
+Free
+Fix errors, strengthen your work, and get help brainstorming
+$0 USD Per month
+Sign up
+Features you'll love: Paraphrase up to 125 words / Paraphrase in 2 modes / Fix basic grammar
+errors / Humanize up to 125 words, 6 uses/day / Generate basic summaries / Access AI Detector (limited)
+
+Most popular
+Premium
+Feel confident your writing is clear, impactful, and flawless
+$4.17 USD Per month, billed annually
+Upgrade
+Everything in a free plan, plus: Full access to paraphrasing / Paraphrase in unlimited modes /
+Get advanced grammar recommendations / Full access to humanizing / Create custom summaries /
+Full access to AI Detector / Prevent accidental plagiarism
+
+Team Plan
+Empower your organization to write with clarity and confidence
+Explore Team Plan
+Everything in Premium plan, plus: Team usage metrics / User management dashboard / Centralized
+billing / Data control / Priority assistance & account management support
+*Limits may vary across platforms
+
+--- DOM toggle investigation (no interaction performed before recording) ---
+- document.body.innerHTML contains NO occurrences of "Monthly", "Quarterly", or "Semi-Annual" as
+  rendered/visible text anywhere on this page. Those labels exist ONLY inside the embedded SSR JSON
+  data blob (a data payload, not rendered UI on this page).
+- The only role="tab"/MuiTabs structure on the page is an unrelated testimonial/feature carousel
+  ("Efficiency / Flexibility / Creativity / Integrity / Inspiration / Confidence"), confirmed by
+  aria-selected="true" on exactly one such tab ("Efficiency") -- NOT a billing-period control.
+- No element with class/role suggesting a monthly<->annual billing switch exists in the rendered DOM.
+- Conclusion: this pricing page presents exactly ONE billing configuration for Premium (the Annual
+  plan's monthly-equivalent figure, $4.17, "billed annually"), with no visible/interactive toggle to
+  view a true monthly-billed price. The Monthly/Quarterly/Semi-Annual options recorded in the SSR JSON
+  are not exposed as a choice on this page; they most likely surface only in the Chargebee-hosted
+  checkout flow reached via "Upgrade" (payments-page ssrProps, PUBLIC__CHARGEBEE_* keys present in the
+  same JSON blob) -- a checkout flow this study does not open (protocol 6.3 prohibits starting checkout).

@@ -1,0 +1,24 @@
+URL: https://picsart.com/genaitermsofuse/
+Last updated (per page): April 30, 2026
+Accessed: 2026-08-10
+Method: RENDERED read (same SPA pattern as terms-of-use). document.body.textContent captured in full (16116 chars).
+Public archive: web.archive.org/save/ succeeded -> https://web.archive.org/web/20260810105524/https://picsart.com/genaitermsofuse/
+---
+
+Generative AI Additional Terms of Use ("GenAI Terms") - supplement to Picsart's Terms of Use, govern use of the "Picsart AI Platform".
+
+Your ownership rights:
+"You are responsible for any text you type into, or content you upload or otherwise input to, the Picsart AI Platform ("Input")... You are also responsible for any content that is generated when you use the Picsart AI Platform ("Output")... As between you and Picsart, YOU OWN your Input and the corresponding Output, in each case to the extent allowable by law."
+
+Your use of Output:
+"You may use the Output for ANY LEGAL PURPOSE, but you are solely responsible for your use of the Output. Picsart provides no warranties that you will be able to claim copyright ownership of any Output or that the Output will not infringe on any third-party intellectual property rights."
+[No tier qualifier attached to this grant - applies to any user of the AI Platform, not gated to a named paid plan in this document.]
+
+Your license to Picsart:
+"By using the Picsart AI Platform, you grant Picsart a perpetual, worldwide, royalty-free, sub-licensable, irrevocable, and non-exclusive right to (a) store, copy, use, modify, reproduce, sublicense and distribute the Input... and (b) host, use, reproduce, create derivative works of, publicly display, sublicense, distribute, and modify the Output... If you use our AI Image Generator text-to-image feature, we may allow others to use and Remix your images and prompts. By DEFAULT, your Input and Output MAY BE PUBLICLY VIEWABLE AND REMIXABLE."
+
+No warranties: "Many of the tools in the Picsart AI Platform utilize third-party AI models to generate the Output... provided "as is"... Picsart does not warrant that the Output is accurate, reliable, correct, non-infringing, or fit for any particular purpose."
+
+Biometric data section: consent/retention provisions for face-derived biometric data (AI Avatar etc.); 18+ age requirement for biometric features. Not directly codebook-relevant.
+
+No mention of "watermark" anywhere in this document. No fair-use/throttling/rate-limit clause.

@@ -1,0 +1,555 @@
+product_id: elevenlabs
+product_name: ElevenLabs
+category: AI voice
+product_status: active
+paid_submission: "no"
+entry_tier_name: Starter
+
+coder_pass: 3
+coder_role: adjudicated
+collection_date: "2026-08-16"
+recheck_date: not_applicable
+primary_source_url: https://elevenlabs.io/pricing
+archive_url: https://web.archive.org/web/20260816102944/https://elevenlabs.io/pricing
+archive_status: archived
+
+default_display_state: >
+  Monthly billing preselected on load, confirmed independently and identically in three
+  reads: pass 1 (2026-08-06, live browser + accessibility-tree read, combobox
+  value="monthly" selected), pass 2 (2026-08-14, server-rendered HTML <option value="monthly"
+  selected> plus client DOM combobox), and this adjudication's own fresh re-check
+  (2026-08-16, live WebFetch plus a freshly submitted archive snapshot verified to contain
+  "Starter $6 (30,000 credits)" and "(10,000 credits)" for Free). USD throughout, no
+  currency selector, no cookie-consent gate blocked any read. All three reads show the same
+  headline figures ($0 Free / $6 Starter / $22-with-"First month 50% off"-$11 Creator / $99
+  Pro / $299 Scale / $990 Business) and the same per-request-credit-cap FAQ text with no
+  number attached to it on the pricing page itself. No vendor edit and no display variant
+  found on any variable in this record -- see coder_note.
+
+sources:
+  - { url: "https://elevenlabs.io/pricing", kind: pricing, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260816102944/https://elevenlabs.io/pricing", note: "This adjudication's own fresh submission, verified by direct curl of the archived capture to contain the same Starter/Free credit figures as both passes. Also read live via WebFetch 2026-08-16, confirming the Starter default price, the Free plan figures, the unnumbered per-request-cap FAQ line, and the Creator first-month promo are all unchanged from both prior passes." }
+  - { url: "https://elevenlabs.io/pricing", kind: pricing, accessed: "2026-08-06", archive: "local_copy:records/pass1/elevenlabs-sources/pricing.html; live-observed 2026-08-06", note: "Pass 1's read. web.archive.org/save returned HTTP 520 on repeated attempts; local copy used per protocol 6.4 fallback, cross-checked against this adjudication's fresh public snapshot -- both show identical Starter/Free credit figures." }
+  - { url: "https://elevenlabs.io/pricing", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814160128/https://elevenlabs.io/pricing", note: "Pass 2's read." }
+  - { url: "https://elevenlabs.io/terms-of-use", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814160915/https://elevenlabs.io/terms-of-use", note: "Pass 2's read; non-EEA Terms of Service, full text extracted and read end to end. This adjudication verified the refund clause (section 6(e)) verbatim against pass 2's own extracted-text file: 'All sales are final. We may offer refunds at our sole discretion,' identical to pass 1's independent quote of the same clause 8 days earlier -- confirms the clause is stable, not a mid-window edit." }
+  - { url: "https://elevenlabs.io/terms-of-use", kind: tos, accessed: "2026-08-06", archive: "local_copy:records/pass1/elevenlabs-sources/terms-of-use.html", note: "Pass 1's read, same non-EEA document. web.archive.org/save returned HTTP 520 on repeated attempts; local copy used." }
+  - { url: "https://elevenlabs.io/use-policy", kind: other, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814160954/https://elevenlabs.io/use-policy", note: "Prohibited Use Policy, read in full by both passes independently (pass 1 archive: https://web.archive.org/web/20260806073204/https://elevenlabs.io/use-policy); both agree unquantified_limit_clause = absent." }
+  - { url: "https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans", kind: docs, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806073242/https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans", note: "Pass 1 only -- absent from pass 2's own source list (confirmed by grep of records/pass2/elevenlabs-sources/, zero hits for its distinctive text). States 'Annual plans are billed on an annual cycle and will renew automatically unless cancelled.' Verified verbatim against pass 1's local capture AND re-fetched live for this adjudication on 2026-08-16 -- identical text, page still live and unchanged." }
+  - { url: "https://elevenlabs.io/docs/help-center/account/general/is-there-a-limit-to-how-many-credits-i-can-use-at-once", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814162150/https://elevenlabs.io/docs/help-center/account/general/is-there-a-limit-to-how-many-credits-i-can-use-at-once", note: "Pass 2 only -- absent from pass 1's own source list. States 'This limit is twice the usual monthly quota for your subscription plan.' Verified verbatim against pass 2's saved local text file." }
+  - { url: "https://elevenlabs.io/docs/help-center/account/general/how-many-voice-slots-do-i-get-per-tier-and-how-can-i-increase-it", kind: docs, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806073441/https://elevenlabs.io/docs/help-center/account/general/how-many-voice-slots-do-i-get-per-tier-and-how-can-i-increase-it", note: "Pass 1 only -- absent from pass 2's own source list. Per-tier table: 'Free: 3' custom voice slots, 'Free: 55' monthly voice operations (resets each billing cycle); 'Starter: 10' / 'Starter: 65'. Verified verbatim against pass 1's local capture." }
+  - { url: "https://elevenlabs.io/docs/help-center/account/cancellation-refunds/what-is-your-refund-policy", kind: refund, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806073816/https://elevenlabs.io/docs/help-center/account/cancellation-refunds/what-is-your-refund-policy", note: "Pass 1's docs-mirror read of the refund policy: 'You are eligible for a refund if a request is filed within 14 days of payment and no credit quota was used in the period for which you are seeking the refund.'" }
+  - { url: "https://help.elevenlabs.io/hc/en-us/articles/14315426883345-What-is-your-refund-policy", kind: refund, accessed: "2026-08-14", archive: local_copy_only, note: "Pass 2's Zendesk-subdomain read of the identical policy (web.archive.org/save HTTP 520 both attempts, local copy used). Verbatim match to pass 1's docs-mirror version 8 days apart -- same document, two mirrors, unedited. This adjudication's own live re-fetch attempt of this specific URL returned HTTP 403 (Cloudflare); relied on both passes' independently-saved, mutually-consistent captures instead." }
+  - { url: "https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-do-i-cancel-my-subscription", kind: docs, accessed: "2026-08-06", archive: "https://web.archive.org/web/20260806073303/https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-do-i-cancel-my-subscription", note: "Pass 1; both passes agree cancellation_self_serve = self_serve_documented." }
+  - { note: "Full per-pass source lists (12 URLs, pass 1; 8 URLs, pass 2) are preserved in records/pass1/elevenlabs.yaml and records/pass2/elevenlabs.yaml. This list carries only the sources this adjudication cites directly." }
+
+variables:
+  headline_price_usd:
+    value: 6.00
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree, and this adjudication independently reconfirms live and in a fresh
+      archive snapshot dated 2026-08-16: Starter card reads "$6 per month" in the page's
+      default (Monthly billing) display state. Free ($0/mo) is not a paid tier.
+
+  headline_billing_basis:
+    value: per_month_billed_monthly
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. Default display state is "Monthly billing"; Starter shows "$6 per
+      month" with no "billed annually" qualifier in this state.
+
+  first_charge_amount_usd:
+    value: 6.00
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. Default state is monthly, not annual, so the first charge equals the
+      displayed monthly figure; no mandatory add-on. Confirmed arithmetic-consistent by
+      tools/check_price_arithmetic.py (6.00 x 1 = 6.00, basis per_month_billed_monthly).
+
+  mandatory_addon_present:
+    value: "no"
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. Starter's advertised features carry no separate required charge in
+      the pricing page or documentation; usage-based Pay-As-You-Go top-ups are optional
+      overage, not a mandatory addition, per rule 3.
+
+  annual_condition_disclosure:
+    value: not_applicable
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. The coded headline figure ($6/mo Starter) does not depend on annual
+      prepayment -- the default display state is monthly billing -- so the disclosure-proximity
+      question does not arise for the state actually read (rule 1).
+
+  annual_default_toggle:
+    value: monthly_preselected
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree, and this adjudication's own 2026-08-16 read confirms the same state a
+      third time. Live/server-rendered read before any interaction shows the billing combobox
+      selected on "Monthly billing" in all three independent reads across ten days -- not a
+      display variant (protocol 6.8): the same state was served every time.
+
+  free_plan_exists:
+    value: "yes"
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. Standing "Free" plan card, "$0 per month", listed alongside paid
+      tiers with no expiry; not a time-limited trial.
+
+  free_plan_cap_documented:
+    value: all_quantified
+    source: "https://elevenlabs.io/pricing | https://elevenlabs.io/docs/help-center/account/general/is-there-a-limit-to-how-many-credits-i-can-use-at-once"
+    evidence: >
+      RESOLVED by codebook 5.1's number-and-dimension test, applied to every official document
+      on the free plan's limits rather than to whichever subset either pass individually found.
+      Not date_explained or variant_explained -- see coder_note; this is an ordinary
+      disagreement resolved by rule. Every free-plan limit named across BOTH passes'
+      independently-verified sources is quantified: "10,000 credits" per month (rate); "3
+      Projects in Studio" (standing); "3" custom voice slots and "55" monthly voice operations
+      (voice-slots-article, standing + rate, pass 1 only, verified verbatim -- see sources);
+      "128 kbps" maximum audio bitrate at Free/Starter, escalating at higher tiers (standing,
+      matches the codebook's own "720p maximum resolution" example exactly). The one item
+      either pass read as unquantified -- the pricing page FAQ's per-request credit cap, which
+      states a limit exists ("depends on whether you are on the Free tier or a paid
+      subscription") with no number on that page -- is itself quantified in a second official
+      document pass 2 found: "This limit is twice the usual monthly quota for your subscription
+      plan" (help-center article, verified verbatim). "Twice" is a
+      number; "your monthly quota" is a dimension already established elsewhere as an exact
+      figure (10,000 credits/mo for Free, itself agreed by both passes) -- so the per-request
+      cap resolves to an exact, arithmetic-derivable figure (20,000 credits/request for Free)
+      requiring no reader-side assumption, the same standard the instrument applies to
+      cost_per_output_computable's own arithmetic. Pass 1 coded some_quantified because its own
+      12-URL source list never included this help-center article (confirmed absent). Rule 1
+      requires listing every limit "the documents" (plural, all official documents) attribute
+      to the free plan, not only the ones one coder's search happened to reach.
+
+  free_plan_cap_value:
+    value: "10000 credits per month | 3 voice slots | 55 voice operations per month | 3 Projects in Studio | 128 kbps maximum audio bitrate | 20000 credits per single generation request"
+    source: "https://elevenlabs.io/pricing | https://elevenlabs.io/docs/help-center/account/general/how-many-voice-slots-do-i-get-per-tier-and-how-can-i-increase-it | https://elevenlabs.io/docs/help-center/account/general/is-there-a-limit-to-how-many-credits-i-can-use-at-once"
+    evidence: >
+      Follows free_plan_cap_documented = all_quantified. Combines what each pass independently
+      verified correctly and neither pass alone recorded in full: pass 1's voice-slot/voice-
+      operation/audio-quality figures (confirmed verbatim against the source article by this
+      adjudication) plus the per-request cap pass 2 located and quantified via the help-center
+      formula (10,000 x 2 = 20,000, this adjudication's own arithmetic per
+      free_plan_cap_documented's resolution). Per-output-type minute breakdowns (10 min TTS, 5
+      min Music, 250 sec Sound Effects) are the same 10,000-credit pool re-expressed in other
+      units and are not listed separately, per both passes' own reasoning, to avoid
+      double-counting one limit.
+
+  free_plan_watermark:
+    value: "yes"
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. Compare-plans grid tooltip: "Free plan users receive video dubs with
+      a watermark; paid plans do not." Scoped specifically to Dubbing/video output; no
+      equivalent statement found for plain Text-to-Speech audio in either pass's search.
+
+  free_plan_duration:
+    value: perpetual
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. Free is a standing plan card alongside paid tiers with no expiry
+      stated anywhere in either pass's reviewed documents.
+
+  trial_exists:
+    value: "no"
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Both passes agree. No time-limited trial of a paid tier is described anywhere in the
+      pricing page, ToS, or documentation; the only "trial" occurrences are jury-trial-waiver
+      boilerplate and a reservation-of-rights clause describing no current, standing offer.
+      Not an A-012 case for the entry tier: Starter itself carries no paid intro-then-converts
+      promotion (see coder_note on Creator's promo, which is on a non-entry tier and is left to
+      the open A-012 queue item rather than resolved here).
+
+  trial_card_required:
+    value: not_applicable
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: "Both passes agree. No trial exists (trial_exists = no)."
+
+  trial_length_days:
+    value: not_applicable
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: "Both passes agree. No trial exists."
+
+  trial_auto_converts:
+    value: not_applicable
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: "Both passes agree. No trial exists."
+
+  credit_system_present:
+    value: "yes"
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. Credits are an intermediate currency shared across all products and
+      converted into outputs at published per-product rates -- an intermediate-currency credit
+      system, rule 2.
+
+  credit_unit_defined:
+    value: "yes"
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. Pricing-page FAQ: "For V2 Multilingual models, 1 text character equals
+      1 credit" -- ties the unit to a recognizable output, satisfying rule 3.
+
+  credit_to_output_rate_published:
+    value: partial
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      RESOLVED against pass 1's yes, in favor of pass 2's partial, on direct verification of the
+      vendor's own page content (not merely the coders' quotations). This adjudication located
+      the compare-plans grid's actual DOM values, not just its labels: Starter's row reads
+      "~30" minutes included and "~$0.20" extra minute -- both prefixed with a literal tilde
+      character in the vendor's own markup, i.e. the vendor itself marks these figures as
+      approximate. The only EXACT, unhedged rate published anywhere is per CHARACTER ("On our
+      highest quality models, 1 character costs 1 credit" -- no hedge); the conversion to the
+      principal output unit, audio MINUTES (cost_per_output_unit, agreed by both passes), is
+      given only as "One minute of audio costs approximately 1000 characters" -- the word
+      "approximately" is the vendor's own, not a coder's characterization, and is consistent
+      with why per-minute duration necessarily varies by text content (punctuation, syllable
+      count, pacing). Codebook rule 4 marks a rate published for a different unit than the
+      principal output as partial; this is that pattern -- exact for characters, approximate
+      for the principal per-minute output -- matching the codebook's own worked Vendor J2 /
+      Vendor N examples (credit_unit_defined, cost_per_output_computable) where an exact
+      secondary-unit rate does not carry full credit for the principal output. Not in tension
+      with cost_per_output_computable = yes (unaffected, still agreed): that variable only
+      requires a vendor-published number sufficient for arithmetic, which the "~$0.20"
+      approximate figure supplies directly with no reader-side assumption -- a different, lower
+      bar than credit_to_output_rate_published's requirement of an EXACT rate for the principal
+      output specifically.
+
+  credit_rate_location:
+    value: pricing_page
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. All credit-to-output rates (character rate, per-product credit costs,
+      approximate per-minute figures) are on the pricing page's own FAQ/compare-grid data; the
+      docs help-center article on credits explicitly defers to the pricing page rather than
+      restating rates.
+
+  cost_per_output_unit:
+    value: per_audio_minute
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. ElevenLabs is sold principally as a text-to-speech / AI voice
+      generator; the pricing page's own "Calculate your costs" tool takes minutes of generated
+      audio per month as its input.
+
+  cost_per_output_computable:
+    value: "yes"
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. The compare-plans grid states "~30" minutes included and "~$0.20"
+      extra minute directly for Starter -- a vendor-published number sufficient for arithmetic
+      with no reader-side usage assumption, even though (per credit_to_output_rate_published
+      above) it is only approximate rather than an exact derived rate. 6.00 / 30 = 0.20, and
+      this matches the vendor's own stated approximate per-minute figure.
+
+  computation_assumptions:
+    value: >
+      Starter $6.00/mo billed monthly, 30,000 credits/mo (default state). Compare-plans grid:
+      "~30" min included, "~$0.20" extra minute (vendor-labeled approx). 6.00/30=0.20. Exact
+      rate is 1 credit=1 character; char-to-minute is only "approximately" 1000/min, hence
+      C2=partial.
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Free-prose field, disagrees by construction (tools/disagreements.py PROSE set) -- not
+      independently adjudicated as a disagreement. Restated to match the resolved
+      credit_to_output_rate_published = partial / cost_per_output_computable = yes pair above,
+      using the vendor's own directly-published approximate per-minute figures (pass 2's route)
+      rather than the character-to-minute approximation restated as if exact (pass 1's route);
+      both arrive at the identical 0.20 figure.
+
+  credit_rollover_policy:
+    value: partial_rollover
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. "Unused credits roll over for up to two months -- up to 2x your
+      monthly quota... as long as you maintain an active paid subscription." Capped, stated
+      rollover; does not apply to the Free plan.
+
+  failed_generation_charge_policy:
+    value: unknown
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. The pricing-page FAQ addresses buyer dissatisfaction with an output
+      (limited free regenerations), not a technical failure or empty result, which the codebook
+      distinguishes explicitly; no document states what happens to credits on a technical
+      failure. Silence, per the codebook's own worked example for this exact variable.
+
+  auto_renewal_default:
+    value: "on"
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Both passes agree. ToS section 6(a) and the opening banner: "Your Recurring Subscription
+      will automatically renew until you cancel it... THEN YOUR SUBSCRIPTION WILL BE
+      AUTOMATICALLY RENEWED FOR ADDITIONAL PERIODS OF THE SAME DURATION AS THE INITIAL TERM."
+
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: "https://elevenlabs.io/terms-of-use | https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans"
+    evidence: >
+      RESOLVED against pass 2's terms_only, in favor of pass 1's multiple, on independent
+      verification that the second document genuinely exists, is official, and is still live
+      and unchanged. codebook's rule requires checking all four possible document classes
+      before coding; the ToS states auto-renewal (agreed by both passes, see
+      auto_renewal_default), and a docs help-center article -- "Do you offer annual or
+      quarterly plans?" -- independently states "Annual plans are billed on an annual cycle and
+      will renew automatically unless cancelled." This adjudication verified that sentence
+      verbatim against pass 1's local capture AND re-fetched the live URL on 2026-08-16: same
+      text, page unchanged. Grep of pass 2's own saved source directory confirms this URL was
+      never fetched in that pass -- pass 2's terms_only reflects an incomplete document sweep,
+      not a genuine conflict between documents (pass 2 never disputes what this article says;
+      it simply never opened it). Two document classes (terms, docs_help_center)
+      affirmatively state the fact in agreement, which the rule's own text says is what
+      "multiple" measures: "repetition is the strongest form" of proximity to the price.
+
+  renewal_notice_commitment:
+    value: unknown
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Both passes agree, from the identical clause. ToS 6(a)'s 7-day notice commitment covers a
+      PRICE CHANGE specifically ("you must cancel... at least 7 days before the changes take
+      effect"), not a commitment to notify before an ordinary renewal charge. No document states
+      or disclaims advance renewal notice -- genuinely silent, so unknown rather than an
+      inferred no_notice_stated.
+
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      RESOLVED against pass 2's yes, in favor of pass 1's no_refunds_stated, by direct
+      application of protocol 6.2's source hierarchy rather than by judging which document
+      reads more definitive (per this adjudication's brief). Both passes read the identical two
+      documents and quote them identically -- confirmed verbatim by this adjudication against
+      both passes' own saved captures, 8 days apart, byte-for-byte the same text in both: ToS
+      6(e), "All sales are final. We may offer refunds at our sole discretion" (a blanket denial
+      plus a non-binding, vendor-optional carve-out with no buyer-facing condition) against the
+      Help Center, "You are eligible for a refund if a request is filed within 14 days of
+      payment and no credit quota was used" (an affirmative, conditional ENTITLEMENT). These are
+      genuinely incompatible positions on whether a buyer has a right -- not, as pass 2 read it,
+      one document elaborating the other's exercise of discretion. Codebook 2.1 step 3: where
+      the hierarchy ranks one source above the other for the variable class, code from the
+      higher source. Protocol 6.2's contractual-variable table ranks the Terms of Service first
+      and the Help Center second for refund variables, unconditionally -- it does not ask
+      whether the two readings can be reconciled, only which source governs when they conflict.
+      Coded from the ToS per the hierarchy; see conflict_note.
+
+  refund_window_days:
+    value: 0
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Follows refund_policy_exists = no_refunds_stated per protocol 6.2's hierarchy (see that
+      variable's evidence and conflict_note). "0 where no refunds are given" per the variable's
+      own value table.
+
+  refund_conditions:
+    value: not_applicable
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Follows refund_policy_exists = no_refunds_stated. "No refund available" per the governing
+      ToS position -- refunds are discretionary only, with no buyer-facing condition stated in
+      the governing document. See conflict_note.
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Both passes agree. ToS 6(a): "You may cancel your subscription through your account,"
+      consistent with the Help Center's step-by-step self-serve flow. No conflict on this
+      variable -- both document classes agree, unlike the refund position above.
+
+  refund_policy_location:
+    value: terms
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Follows refund_policy_exists's hierarchy resolution. codebook's rule for this variable:
+      "multiple is for agreement across classes... conflicting is for disagreement between two
+      of equal authority" -- neither applies here, because the ToS and Help Center DISAGREE
+      (ruling out multiple, which requires agreement) and are NOT equal authority for this
+      variable class (ruling out conflicting, which is reserved for equal-authority disputes).
+      Coded terms to match the source that governs refund_policy_exists, the same construction
+      pass 1 applied; pass 2's multiple would only be correct if the two sources agreed.
+
+  commercial_use_lowest_tier:
+    value: lowest_paid
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Both passes agree. ToS section 1(c): any paid subscription (Paid User) may use the
+      Services for commercial purposes, with no higher-tier gate; confirmed by the pricing
+      page's "Commercial License" row included from Starter.
+
+  watermark_removal_tier:
+    value: lowest_paid
+    source: "https://elevenlabs.io/pricing"
+    evidence: >
+      Both passes agree. "Free plan users receive video dubs with a watermark; paid plans do
+      not" -- unqualified "paid plans" includes Starter, the lowest paid tier. Scoped
+      specifically to Dubbing/video output in both passes' reading.
+
+  output_ownership_statement:
+    value: user_owns
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Both passes agree. ToS 4(c)(ii): "you retain all rights in and to your Output," not
+      conditioned on tier; a separate license clause (4(d)) grants ElevenLabs a right to use
+      the content but does not transfer ownership.
+
+  usage_cap_quantified:
+    value: all_caps_quantified
+    source: "https://elevenlabs.io/pricing | https://elevenlabs.io/docs/help-center/account/general/is-there-a-limit-to-how-many-credits-i-can-use-at-once"
+    evidence: >
+      RESOLVED on the identical basis as free_plan_cap_documented above -- codebook 5.1 states
+      "there is one test, not two" for this shared construct. Every Starter-tier limit either
+      pass named is quantified (30,000 credits/month; 20 Projects in Studio; 10 voice slots and
+      65 monthly voice operations per the voice-slots article, pass 1 only). The one item pass 1
+      read as unquantified -- the same per-request cap -- resolves via the same help-center
+      formula pass 2 located ("twice the usual monthly quota"): 30,000 x 2 = 60,000
+      credits/request for Starter, an exact, arithmetic-derivable figure requiring no
+      assumption. See free_plan_cap_documented's evidence for the full reasoning on why this
+      satisfies the quantified test; not repeated here.
+
+  unquantified_limit_clause:
+    value: absent
+    source: "https://elevenlabs.io/terms-of-use"
+    evidence: >
+      Both passes agree, each independently reading the Terms of Service and the Prohibited Use
+      Policy in full. No fair-use, reasonable-use, excessive-use, or discretionary-throttling
+      clause conditioning the VOLUME of use was found by either pass; the Use Policy's "abuse"
+      language concerns prohibited content/conduct, which the codebook explicitly excludes from
+      this variable. Determinate absence, scoring full points on item F2 per protocol rule G0.
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-16 (protocol 7.4). 9 substantive disagreements plus 1 prose
+  disagreement (computation_assumptions, which disagrees by construction and is not itself a
+  measurement -- tools/disagreements.py PROSE set) reviewed against protocol 7.4/7.4.1/7.4.2,
+  codebook sections 2-12, and both full source sets, plus this adjudication's own direct
+  verification of every disputed quote against the underlying saved documents (never trusting
+  either coder's account) and a fresh live re-check of the pricing page and the two
+  single-pass help-center articles that drove three of the disagreements.
+
+  DISPOSITION. All 9 resolved by rule; zero coded unknown; zero coded conflicting.
+  - 3 resolved by combining BOTH passes' independently-correct-but-incomplete document
+    coverage under codebook 5.1's number-and-dimension test (free_plan_cap_documented,
+    free_plan_cap_value, usage_cap_quantified): pass 1 alone had the voice-slot/voice-
+    operation/audio-quality figures (a help-center article pass 2 never fetched); pass 2
+    alone had the per-request-cap formula ("twice the usual monthly quota," a different
+    help-center article pass 1 never fetched). Neither pass's source list was wrong where it
+    reached; each was simply short one document the other pass happened to find. Combined,
+    every named limit is quantified.
+  - 1 resolved to pass 2's value on this adjudication's own direct inspection of the pricing
+    page's DOM (credit_to_output_rate_published = partial): the vendor's compare-plans grid
+    literally prefixes its per-minute figures with a tilde ("~30", "~$0.20"), which neither
+    pass's evidence field quoted precisely -- the exact rate is per character, the principal
+    output (audio minutes) conversion is vendor-labeled approximate.
+  - 1 resolved to pass 1's value on independent verification that a second document (docs
+    help-center, "Do you offer annual or quarterly plans?") genuinely exists, is current, and
+    states auto-renewal -- pass 2 never fetched it (confirmed by grep of its own source
+    directory), so terms_only reflects an incomplete sweep, not a real document conflict
+    (auto_renewal_disclosure_location = multiple).
+  - 4 resolved to pass 1's value by direct application of protocol 6.2's source hierarchy,
+    per this adjudication's explicit brief to apply the hierarchy rather than to judge which
+    document reads more definitive (refund_policy_exists, refund_window_days,
+    refund_conditions, refund_policy_location). Both passes read and quoted the SAME two
+    documents identically -- ToS "all sales are final... sole discretion" vs. Help Center "You
+    are eligible for a refund if... within 14 days" -- and this adjudication confirms both
+    quotes verbatim, unchanged 8 days apart. Pass 2 treated the Help Center as operationalizing
+    the ToS's discretion rather than conflicting with it; that is a legal-interpretation
+    judgment call the codebook's decision procedure does not ask a coder to make. Protocol 6.2
+    ranks the Terms of Service first and the Help Center second for refund (a contractual
+    variable class), unconditionally, when the two disagree -- and a blanket "all sales are
+    final, discretion only" position is incompatible with a stated buyer ENTITLEMENT under
+    conditions, not a compatible elaboration of it. Coded from the ToS; the Help Center's
+    contrary text is preserved in conflict_note as a real disclosure gap regardless.
+
+  A-012 (SCOPE NOTE, not resolved here). Both passes independently observed that Creator
+  ($22/mo standing) carries "First month 50% off" -> $11 for the first month, a paid,
+  non-zero, time-limited intro period -- an A-012-shaped pattern per orchestrator/
+  adjudication-queue.md's open sweep item. Starter, the entry tier, carries no such promo,
+  so none of this record's trial_* variables are affected: trial_exists = no and
+  trial_card_required/trial_length_days/trial_auto_converts = not_applicable stand exactly as
+  both passes coded them, under the frozen codebook's literal trial_exists definition (a
+  free trial), applied to the entry tier. The open question of how a paid intro period on a
+  NON-entry tier should be treated study-wide is left to the A-012 sweep queue rather than
+  decided on this record, per this adjudication's brief.
+
+  DATE-DRIFT CHECK (7.4.1) and DISPLAY-VARIANT CHECK (7.4.2), done BEFORE classifying anything,
+  per this adjudicator's brief. Both records' register_events are empty lists -- no vendor_edit
+  entry exists anywhere for this product, so date_explained is unreachable for any of the 9
+  disagreements regardless of how the two collection dates (2026-08-06, 2026-08-14) might
+  otherwise be read. Independently confirmed rather than assumed: every disputed quote was
+  checked directly against both passes' saved captures and, where practical, against a live
+  2026-08-16 re-fetch (the pricing page; the annual-renewal help-center article) -- all
+  identical across all reads spanning ten days. This also rules out variant_explained on
+  annual_default_toggle or any price/allowance figure: both passes' default_display_state
+  fields show the SAME state (Monthly billing preselected), corroborated by this adjudication's
+  own third read, so no snapshot pair shows two different states as 7.4.2 requires. None of the
+  9 disagreements is a display-variant case either -- the refund and auto-renewal disagreements
+  involve two DIFFERENT documents (ToS vs. Help Center; ToS vs. docs help-center), each
+  internally stable across dates, not one URL loading differently. Every disagreement is
+  ordinary and resolved on codebook rule and source-hierarchy grounds alone.
+
+  ENTRY-TIER SELECTION (unaffected by any resolution above; both passes and this adjudication
+  agree). Eligible candidates by annual-equivalent cost in the default monthly display state:
+  Starter $6/mo -> $72.00 (WINNER); Creator standing rate $22/mo -> $264.00 (lost; the
+  first-month $11 promotional price is not used for this comparison, consistent with both
+  passes, since it is not the standing rate); Pro $99/mo -> $1,188.00 (lost); Scale $299/mo,
+  3-seat bundle -> $3,588.00 (lost); Business $990/mo, 10-seat bundle -> $11,880.00 (lost).
+  Enterprise excluded, sales-gated ("Contact us"), not an eligible candidate.
+
+  METHOD. Read .claude/agents/research-adjudicator.md in full, then protocol-v1.md section 7.4
+  in full including 7.4.1 and 7.4.2, before opening either record. Ran
+  tools/disagreements.py elevenlabs for the work-list (9 substantive + 1 prose, matching an
+  independent full 37-variable diff run for this adjudication using the same canonicalisation
+  as tools/agreement.py). Read both records/pass1/elevenlabs.yaml and
+  records/pass2/elevenlabs.yaml in full, and both elevenlabs-sources/ directories. Verified
+  every disputed quote directly against the underlying saved source file rather than trusting
+  either coder's quotation, including: voice-slots-article.md (pass 1), the per-request-limit
+  docs page (pass 2), the annual-renewal docs page (pass 1 only -- also re-fetched live), the
+  refund-policy article in both its docs-mirror (pass 1) and Zendesk (pass 2) forms, and the
+  ToS refund clause in both passes' independently-saved captures. Located the pricing page's
+  actual compare-plans-grid DOM values (not just the coders' paraphrases) to resolve
+  credit_to_output_rate_published. Fetched the live pricing page and the live annual-renewal
+  help-center page for this adjudication (2026-08-16) and submitted + verified a fresh public
+  archive snapshot of the pricing page, confirming no drift from either pass. Read
+  codebook-v1.md sections 2, 3, 5.1, 5.2, and every domain covering a disputed variable;
+  protocol-v1.md section 6.2 (source hierarchy) and 6.6/6.8 (change register, display state);
+  record-template.yaml; tools/disagreements.py, tools/validate_records.py,
+  tools/check_price_arithmetic.py; and orchestrator/deviations-log.md's D-009 (confirms this
+  product's A-domain money variables were independently re-read and confirmed on 2026-08-10,
+  no correction), D-010 (confirms this product carries the computation_assumptions
+  template-drift, both shapes present in pass 1, consistent with what was found here), and
+  D-014/D-014-amended (confirms elevenlabs sat in Tier B of the blindness-exposure audit --
+  named for pass-1 status only, no coded value exposed -- and that its pass-2 record is the
+  clean, corrected-reading-list version, not one of the five quarantined pass2-contaminated
+  records). Grepped orchestrator/adjudication-queue.md for the open A-012 item and left it to
+  the queue per this adjudication's brief. Did not read orchestrator/interim-signals.md, any
+  other product's record, aitoolspolice.com, or site/content/reviews/, per this agent's own
+  scope.
+
+  blindness: no other product's record, review page, or pass-2 material was opened. Not blind
+  by design -- adjudicator per protocol 7.4.
+
+conflict_note: >
+  REFUND POLICY. Terms of Service (https://elevenlabs.io/terms-of-use), section "6.
+  Subscription Services; Payment", (e) Refunds and Exchanges: "All sales are final. We may
+  offer refunds at our sole discretion." Contradicted by the Help Center
+  (https://elevenlabs.io/docs/help-center/account/cancellation-refunds/what-is-your-refund-policy
+  and its Zendesk mirror
+  https://help.elevenlabs.io/hc/en-us/articles/14315426883345-What-is-your-refund-policy):
+  "You are eligible for a refund if a request is filed within 14 days of payment and no
+  credit quota was used in the period for which you are seeking the refund." Both quotes
+  verified verbatim by this adjudication against both passes' independently-saved captures,
+  8 days apart, unchanged. Per protocol 6.2, the Terms of Service ranks first for contractual
+  variables (refund is named explicitly); refund_policy_exists / refund_window_days /
+  refund_conditions / refund_policy_location are coded from the Terms of Service accordingly.
+  A buyer relying on the Help Center rather than the Terms of Service would expect a standing
+  14-day conditional refund right the governing contract does not grant as a matter of right
+  -- recorded here as a finding in its own right per codebook section 3, independent of how
+  the hierarchy resolves the coded value.
+
+register_events: []
+
+status: complete

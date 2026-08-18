@@ -1,0 +1,205 @@
+product_id: teal
+product_name: Teal
+category: AI resume builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Teal+ Quarterly Plan ($79 billed every 90 days) -- so named in help.tealhq.com's cancellation-policy and 'Teal vs. Teal+' articles; the live pricing page itself labels the cadence only 'Every 90 days', with no plan-name text anywhere on that page."
+
+coder_pass: 3
+coder_role: adjudicated
+collection_date: "2026-08-16"
+recheck_date: not_applicable
+primary_source_url: "https://www.tealhq.com/pricing"
+archive_url: "https://web.archive.org/web/20260815132203/https://www.tealhq.com/pricing"
+archive_status: archived
+
+default_display_state: "USD ($) throughout (vendor confirms explicitly elsewhere: \"All pricing is in USD\"); three standing Teal+ billing-cadence cards render simultaneously and statically -- Every 7 Days $13, Every 30 days $29, Every 90 days $79 -- with no monthly/annual toggle control anywhere in the rendered DOM or accessibility tree; the Free-Forever feature grid renders adjacent to the Teal+ grid above the price cards; no cookie-consent banner encountered on load. Confirmed unchanged by this adjudicator on a live re-read 2026-08-16, identical in every figure to both passes' 2026-08-12 and 2026-08-15 captures."
+
+sources:
+  - { url: "https://www.tealhq.com/pricing", kind: pricing, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260815132203/https://www.tealhq.com/pricing", note: "Static fetch returns HTTP 403 on this domain for every coder and this adjudicator alike (D-005 rendered-read case); rendered browser read required. Read independently by pass 1 (2026-08-12, records/pass1/teal-sources/pricing-page-rendered-text.txt, cross-checked against raw outerHTML) and pass 2 (2026-08-15, records/pass2/teal-sources/pricing-2026-08-15.txt, archived successfully). This adjudicator independently re-read the live page 2026-08-16 (rendered browser get_page_text) and confirms it is unchanged from pass 2's capture in every figure relevant to this record: three price cards ($13/7 days, $29/30 days, $79/90 days), and the free-tier grid (10 templates, Top 5 keywords, Basic analysis, 1 email template, Basic Settings design, 10/2/2 AI credits). No vendor edit occurred across the full window 2026-08-12 to 2026-08-16." }
+  - { url: "https://www.tealhq.com/terms", kind: tos, accessed: "2026-08-15", archive: archive_failed, note: "Last-Updated banner read 'January 21, 2026' by pass 1 (2026-08-12) and 'August 12, 2026' by pass 2 (2026-08-15) -- see coder_note TERMS-OF-SERVICE DATE OBSERVATION. Both passes' archive.org save attempts failed ('Job failed'); local verbatim copies are the evidentiary captures (records/pass1/teal-sources/terms-and-help-articles.txt, records/pass2/teal-sources/terms-2026-08-15.txt). Not independently re-fetched by this adjudicator -- no disputed variable rests on this document, and every ToS-sourced value on this record is agreed between the two passes with matching quotations." }
+  - { url: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", kind: docs, accessed: "2026-08-15", archive: archive_failed, note: "\"As a free user, you have 10 credits to use for AI Bullet Generation\" / \"2 credits ... Professional Summary\" / \"2 credits ... Cover Letter\" -- an allowance statement, not a conversion rate. Read by both passes (records/pass1/teal-sources/terms-and-help-articles.txt; records/pass2/teal-sources/trial-faq-2026-08-15.txt), quotation identical in both captures. Central to credit_unit_defined." }
+  - { url: "https://help.tealhq.com/en/articles/9530153-teal-vs-teal", kind: docs, accessed: "2026-08-15", archive: archive_failed, note: "'Teal vs. Teal+' comparison table. Both passes read it; states \"Resume Bullet Generation: 5 credits\" (conflicts with the pricing page's and trial-FAQ's \"10 Credits\" for the identical fact -- pricing page governs per codebook §3, both figures recorded in conflict_note). No credit-to-output conversion rate stated for any feature in this table either." }
+  - { url: "https://help.tealhq.com/en/articles/9451252-what-is-the-cancellation-policy", kind: refund, accessed: "2026-08-15", archive: archive_failed, note: "Refund-window table by cadence, agrees with ToS Sec. 5 in both passes' reads. Not disputed." }
+  - { url: "https://help.tealhq.com/en/articles/9457672-updating-cancelling-your-teal-subscription", kind: docs, accessed: "2026-08-15", archive: archive_failed, note: "Pass-2-only source; self-serve cancellation flow, consistent with ToS Sec. 5. Not disputed, not separately re-verified." }
+  - { url: "https://help.tealhq.com/en/articles/9519206-using-ai-bullets", kind: docs, accessed: "2026-08-15", archive: archive_failed, note: "Pass-2-only source. \"5 credits\" (agrees with the Teal-vs-Teal+ table, conflicts with pricing page/trial-FAQ's \"10\"; pricing page governs). Critically for credit_unit_defined/credit_to_output_rate_published: describes the generation flow (\"you will see three options appear\") but never states a credits-per-output rate for any of the three AI features. This adjudicator independently re-read it live 2026-08-16 and confirms the quotation." }
+  - { url: "https://help.tealhq.com/en/articles/9457697-using-ai-professional-summary", kind: docs, accessed: "2026-08-16", archive: archive_failed, note: "NOT opened by either pass 1 or pass 2. Found and read live by this adjudicator 2026-08-16 while checking whether any Teal document defines a credit-to-output rate for a second AI feature. States: \"On a free Teal account, you will have 2 credits to use for Professional Summary AI generation\" -- the same allowance-only phrasing as the Bullets and trial-FAQ articles, and again describes the generator producing three summary options per use with no stated per-option or per-click credit cost. Corroborates credit_unit_defined=no and credit_to_output_rate_published=no from a document neither prior pass saw. Archive.org not attempted -- both passes logged this exact domain failing archive.org roughly a dozen times combined; local capture is this note plus the quotation above." }
+  - { url: "https://help.tealhq.com/en/articles/9592114-frequently-asked-questions-faq", kind: docs, accessed: "2026-08-16", archive: archive_failed, note: "NOT opened by either pass. Found and read live by this adjudicator 2026-08-16 to rule out an undiscovered credits-definition article. Its \"Platform/Account\" and \"Resumes\" accordion sections (both expanded and read) list no question about AI credits, generation limits, or how credits convert to outputs -- the only credit-adjacent link is to the same trial-FAQ article both passes already read. Negative finding, recorded because it closes off a specific alternative explanation (an undiscovered page) for pass 2's credit_unit_defined=yes." }
+
+variables:
+  headline_price_usd: { value: 79.00, source: "https://www.tealhq.com/pricing", evidence: "\"$79\" / \"Every 90 days ($0.87 a day)\" -- entry tier by lowest annual-equivalent cost among the three published Teal+ cadences (weekly $13 x 365/7 = $677.86/yr; \"monthly\" $29/30-days x 365/30 = $352.83/yr; \"quarterly\" $79/90-days x 365/90 = $320.39/yr, lowest). Not disputed; both passes agree. Confirmed unchanged on live re-read 2026-08-16." }
+  headline_billing_basis: { value: unknown, source: "https://www.tealhq.com/pricing", evidence: "Vendor publishes a fixed 90-calendar-day recurring cycle (\"Every 90 days\") for the entry tier. None of the codebook's five allowed values (per_month_billed_annually, per_month_billed_monthly, per_seat_per_month, one_time, usage_based) names a 90-day recurring cycle; not one_time because tealhq.com/terms Sec. 5 states subscriptions auto-renew. This is INSTRUMENT GAP A-011, not vendor silence -- the cadence and its price are published in full. Other records carry the same gap (at least canva, jobscan, resume-io per the adjudication queue); two independent blind pass-2 coders (jobscan and teal) hit it separately with no knowledge of each other. Both prior passes agree on unknown; not adjudicated, carried through per the wave-1 freeze (codebook §11; deviations-for-coders.md: \"code unknown, state exactly what the vendor publishes in coder_note, and move on\"). The enum question itself is out of this record's scope and belongs to A-011." }
+  first_charge_amount_usd: { value: 79.00, source: "https://www.tealhq.com/pricing", evidence: "Read directly, no multiplication: vendor states the 90-day frequency explicitly (\"Every 90 days\"); sanity-checked against the printed daily rate (0.87 x 90 = 78.30, ~= 79) and against ToS \"then-current subscription rate\" recurring-charge language. Not disputed." }
+  mandatory_addon_present: { value: "no", source: "https://www.tealhq.com/pricing", evidence: "FAQ: \"Teal offers clear, transparent pricing with no hidden fees or unexpected charges.\" No required add-on found in ToS or help-center feature descriptions. Not disputed." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://www.tealhq.com/pricing", evidence: "Entry tier's headline figure ($79/90 days) does not depend on annual prepayment; none of the three published Teal+ cadences (7/30/90 days) is a 12-month annual term (rule 1). Not disputed." }
+  annual_default_toggle: { value: no_toggle, source: "https://www.tealhq.com/pricing", evidence: "Three cadences (7/30/90-day) render as static simultaneous cards under one shared CTA; no toggle element in the rendered DOM or accessibility tree (both passes searched independently and found none; confirmed again on this adjudicator's 2026-08-16 read). JUDGMENT CALL flagged by both prior coders and carried through: none of the variable's five listed values precisely describes a same-product, three-simultaneous-cadence, no-annual-axis layout; no_toggle is the closest fit since no toggle mechanism of any kind exists. Not disputed between passes." }
+  free_plan_exists: { value: "yes", source: "https://www.tealhq.com/pricing", evidence: "\"Free Forever\" column with an ongoing, non-time-limited feature/credit allowance, distinct from a trial. Not disputed." }
+  free_plan_cap_documented: { value: some_quantified, source: "https://www.tealhq.com/pricing", evidence: "Quantified (number + dimension; standing limits need no period per codebook 5.1): \"10\" resume templates, \"Top 5\" keywords per job description, \"1\" email template per job stage, \"10 Credits\" Resume Bullets, \"2 Credits\" Professional Summary, \"2 Credits\" Cover Letter. Not quantified: \"Basic\" (Analysis Mode), \"Basic Settings\" (Design Mode) -- word only, no number. The categorical value was not in disagreement (both passes said some_quantified), but pass 2's own evidence enumeration silently dropped the \"10\" resume-templates figure despite its own saved source recording it with a note (records/pass2/teal-sources/pricing-2026-08-15.txt line 12); restored here for consistency with the free_plan_cap_value correction below. Does not change the categorical value, since other quantified/unquantified examples were already present in both readings." }
+  free_plan_cap_value: { value: "10 resume templates | top 5 keywords per job description | 1 email template per job stage | 10 AI bullet-generation credits | 2 AI professional-summary credits | 2 AI cover-letter credits", source: "https://www.tealhq.com/pricing", evidence: "DISPUTED, RESOLVED. Pass 1 listed 6 caps including \"10 resume templates\"; pass 2 listed only 5, omitting the templates cap. Both coders' own pricing-page captures show the identical rank-1-source line -- pass 1: \"Resume Templates: Free=10\" (records/pass1/teal-sources/pricing-page-rendered-text.txt line 12); pass 2: \"Resume Templates: '10' (free)\", with pass 2's OWN bracketed note flagging the figure (records/pass2/teal-sources/pricing-2026-08-15.txt line 12) -- yet pass 2's composed value dropped it. Codebook 5.1's quantified-standing-limit test needs no period (same shape as its own \"1 seat\" example), so the rule requires recording it; pass 2's own evidence shows pass 2 read it. This is a coverage-inside-a-document lapse, not a documents-disagree case, so it is corrected rather than left as pass 2 wrote it. Re-confirmed live by this adjudicator 2026-08-16: still \"10\" today. The separate 10-vs-5 Resume-Bullets-credit split (pricing page + trial-FAQ say 10; Teal-vs-Teal+ table + Using AI: Bullets say 5) is NOT part of this disagreement -- both passes already resolved it identically and correctly by codebook §3 (pricing page ranks first for free-tier/credit variables; the lower-ranked \"5\" reading is logged in conflict_note). That is a hierarchy-resolved case under the decision tree's step 3, not two equal-authority sources, so `conflicting` does not apply: the pricing page outranks the help center for this variable class regardless of how the lower-ranked documents split among themselves (2 of 4 documents say 10, 2 say 5, but one of the \"10\" documents is the rank-1 source, which is dispositive on its own)." }
+  free_plan_watermark: { value: unknown, source: "not_found", evidence: "The pricing page's full feature-comparison table, the ToS, and every help-center article read by either pass or this adjudicator (trial-FAQ, Teal-vs-Teal+, cancellation-policy, Using AI: Bullets, Using AI: Professional Summary) were read in full; none mentions watermarking or branding on exports in either direction. Silent, not documented absent -- a PDF resume export is not structurally incapable of carrying a watermark, so not_applicable does not apply. Not disputed." }
+  free_plan_duration: { value: perpetual, source: "https://www.tealhq.com/pricing", evidence: "\"Free Forever\"; help.tealhq.com trial-FAQ: \"We strongly believe in keeping our basic functionality in Teal free forever!\" No expiry stated anywhere. Not disputed." }
+  trial_exists: { value: "no", source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "\"We do not offer a standard free trial that requires payment information, such as your credit card. Once you enter your credit card information, you are signing up for a subscription (recurring or non-recurring).\" No A-012 case either -- no cheap non-zero time-limited intro period found by either pass. Not disputed." }
+  trial_card_required: { value: not_applicable, source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "No trial exists (see trial_exists). Not disputed." }
+  trial_length_days: { value: not_applicable, source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "No trial exists (see trial_exists). Not disputed." }
+  trial_auto_converts: { value: not_applicable, source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "No trial exists (see trial_exists). Not disputed." }
+  credit_system_present: { value: "yes", source: "https://www.tealhq.com/pricing", evidence: "Pricing page groups three feature rows under an \"AI Credits\" heading, denominated in \"Credits\" rather than directly in the output's own unit -- an intermediate currency. Not disputed. Coheres exactly with the resolved credit_unit_defined below, per codebook Domain 5 rule 3: \"Where the documents mention a unit but never explain whether it meters output, code yes and let credit_unit_defined carry the opacity.\"" }
+  credit_unit_defined: { value: "no", source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "DISPUTED, RESOLVED against pass 2's \"yes\" (confirms pass 1). Codebook rule 5: \"Stating how many credits a plan includes is not a definition ... A plan allowance is a quantity, not a unit definition, whatever the output it is attached to.\" Every document found -- pricing page (\"10 Credits\"/\"2 Credits\"/\"2 Credits\"), trial-FAQ (\"you have 10 credits to use for AI Bullet Generation\"), Using AI: Bullets (\"5 credits to use for AI bullet generation\"), and Using AI: Professional Summary (\"2 credits to use for Professional Summary AI generation\" -- a document NEITHER pass opened, found and read live by this adjudicator 2026-08-16) -- states only a total allowance per named feature. None states a conversion (\"1 credit = 1 bullet\" or equivalent). Using AI: Bullets and Using AI: Professional Summary both additionally describe ONE generation action returning THREE output options (\"you will see three options appear\"), so even an inferred 1:1 rate has no textual basis -- only \"N credits per named feature\" is stated. Pass 2's \"yes\" read the feature-earmarking itself (credits labeled \"for Resume Bullets\") as if earmarking supplied the definition; rule 5's closing clause (\"whatever the output it is attached to\") forecloses exactly that reading." }
+  credit_to_output_rate_published: { value: "no", source: "https://www.tealhq.com/pricing", evidence: "DISPUTED, RESOLVED against pass 2's \"yes\" (confirms pass 1), following directly from credit_unit_defined: if no document states a rate for ANY output, not even a secondary one, no rate is published for the principal output either, which is all this variable tests. Pass 2's \"yes\" rested on the same allowance-as-rate misreading corrected on credit_unit_defined." }
+  credit_rate_location: { value: absent, source: "https://www.tealhq.com/pricing", evidence: "DISPUTED, RESOLVED against pass 2's \"multiple\" (confirms pass 1). Variable's own rule: \"Where no rate is published, code absent ... multiple is for agreement across classes [of a published rate], not disagreement.\" credit_to_output_rate_published establishes no rate is published anywhere, so there is no rate whose location could be \"multiple\"; pass 2's \"multiple\" counted credit ALLOWANCES appearing in several documents as if that were a published RATE appearing in several documents." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://www.tealhq.com/pricing", evidence: "Teal+ sells unmetered access -- every AI-credit row and every platform feature reads \"Unlimited\" at the entry tier -- rather than a countable artifact; codebook rule 2: unmetered software prices per_seat_month. Not disputed." }
+  cost_per_output_computable: { value: "yes", source: "https://www.tealhq.com/pricing", evidence: "Entry tier price ($79/90 days) converts to a monthly seat price with no usage assumption, since the paid tier is flat-fee/unmetered. Not disputed; both passes flagged the same judgment call (no codebook worked example covers an unmetered per_seat_month entry tier specifically) -- flag carried through since it does not change the coded value either coder reached." }
+  computation_assumptions: { value: "Entry tier Teal+ Quarterly, $79 billed every 90 days (default display state, no toggle). Teal+ is unmetered -- every AI-credit and platform-feature row reads \"Unlimited\" -- so there is no per-output allowance to divide by; unit = per_seat_month and the monthly-equivalent subscription price is itself the cost-per-output figure (codebook's unmetered-access rule). Conversion: 90 days treated as 3 x 30-day months, 79 / 3 = 26.33/mo (equivalently 79 x 30/90 = 26.33). Pure period arithmetic on the vendor's own published $79/90-day figure; no usage assumption required. Both passes performed the identical arithmetic and reached the identical $26.33/mo figure by equivalent routes (divide by 3 vs. multiply by 30/90); reconciled into one statement here, not a substantive disagreement -- disagreements.py tags this field PROSE because free-text arithmetic write-ups never match verbatim, not because the numbers differed.", source: "https://www.tealhq.com/pricing", evidence: "not_applicable" }
+  credit_rollover_policy: { value: unknown, source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "Free-plan AI credits are described as \"non-renewable,\" but no document states whether an unused credit balance expires, carries forward, or simply persists until used, and the free plan has no recurring billing-period boundary for a rollover concept to attach to (unlike a paid subscription cycle). Not disputed; both passes flagged this as a judgment call (documented silence on a shape the codebook does not anticipate) and reached the same unknown." }
+  failed_generation_charge_policy: { value: unknown, source: "not_found", evidence: "No document (pricing page, ToS, trial-FAQ, Using AI: Bullets, Using AI: Professional Summary) states whether a failed/errored generation or a \"Regenerate\" click consumes a credit. Not disputed." }
+  auto_renewal_default: { value: "on", source: "https://www.tealhq.com/terms", evidence: "\"IMPORTANT: PAID SUBSCRIPTIONS AUTOMATICALLY RENEW AT THE END OF EACH BILLING PERIOD AT THE THEN-CURRENT SUBSCRIPTION RATE UNLESS YOU CANCEL BEFORE THE RENEWAL DATE.\" (Sec. 5). Not disputed." }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://www.tealhq.com/terms", evidence: "The word \"automatically\" for renewal appears only in ToS Sec. 5. The pricing-page FAQ and help-center cancellation articles reference a \"recurring subscription\" while explaining cancellation but never independently assert that billing renews automatically. Read narrowly by both passes (an actual auto-renewal statement required, not an incidental \"recurring\" mention); not disputed." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://www.tealhq.com/terms", evidence: "ToS Sec. 5 commits only to notice of a PRICE INCREASE (\"We will provide advance notice of any price increase via email ... before your next renewal date\") -- narrower than, and not equivalent to, a general per-renewal notice commitment. No document commits to notice before an ordinary same-price renewal charge. Not disputed." }
+  refund_policy_exists: { value: "yes", source: "https://www.tealhq.com/terms", evidence: "\"If you are dissatisfied with Teal+, you may request a refund by emailing membersupport@tealhq.com...\" with stated eligibility windows per plan (Sec. 5). Not disputed." }
+  refund_window_days: { value: 14, source: "https://www.tealhq.com/terms", evidence: "\"for quarterly plans, within 14 calendar days of billing period start date\" -- entry tier is the Quarterly Plan. Confirmed verbatim in the help.tealhq.com cancellation-policy article too. Not disputed." }
+  refund_conditions: { value: conditional, source: "https://www.tealhq.com/terms", evidence: "\"Refund requests submitted outside these windows are not eligible. Submitting a request does not guarantee approval; refunds are reviewed on a case-by-case basis.\" Not disputed." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.tealhq.com/terms", evidence: "\"You may cancel your subscription at any time through your account settings at app.tealhq.com/my-account/subscription.\" Elaborated with a \"Cancel Subscription\" button flow in help.tealhq.com's dedicated cancellation article. Not disputed." }
+  refund_policy_location: { value: multiple, source: "https://www.tealhq.com/terms", evidence: "Refund position stated across document classes in agreement: the pricing-page FAQ (points to the full policy), ToS Sec. 5 (the operative windows), and the dedicated help-center cancellation-policy article (restates the windows verbatim). Not disputed -- pass 1 cited two of these classes, pass 2 three, but both land on the same coded value \"multiple\"." }
+  commercial_use_lowest_tier: { value: unknown, source: "not_found", evidence: "No document states a tiered commercial-use grant for generated resumes/cover letters. Closest related text is the SERVICE-level license in ToS Sec. 1 (\"the Service is solely for your personal use and not for resale\"), about licensing of the Service itself, not the OUTPUT content -- both passes judged this non-dispositive and did not code from it. Not disputed." }
+  watermark_removal_tier: { value: unknown, source: "not_found", evidence: "No document mentions a watermark on any tier's exported resume/cover letter, positively or negatively. Not disputed." }
+  output_ownership_statement: { value: user_owns, source: "https://www.tealhq.com/terms", evidence: "\"You retain ownership of all content you create or upload to the Service ('Your Content'), including resumes, cover letters, job descriptions, notes, and other materials.\" (Sec. 4). No tier or active-subscription condition attached to ownership itself. Not disputed." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://help.tealhq.com/en/articles/9530153-teal-vs-teal", evidence: "Every volume-type feature on the entry (Teal+) tier reads \"Unlimited\" across the pricing page and the Teal-vs-Teal+ comparison table, and no fair-use or discretionary clause qualifying that claim was found anywhere in the full ToS (see unquantified_limit_clause). Not disputed." }
+  unquantified_limit_clause: { value: absent, source: "https://www.tealhq.com/terms", evidence: "Full Terms of Service read end to end by both passes independently (pass 1: 34,663 characters; pass 2: all 18 sections) for this purpose. The only usage-adjacent clause found (\"may not use the Service in any manner that could damage, disable, overburden, or impair our servers or networks\") is a system-abuse/security prohibition grouped with hacking/DDoS-style language, not a volume or intensity standard like fair-use or reasonable-use. No such clause exists. Not disputed; both passes read the full document rather than keyword-searching it, which is the standard this variable's known failure mode requires." }
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-16 (protocol §7.4). tools/disagreements.py reports 4 substantive
+  disagreements for teal (free_plan_cap_value, credit_unit_defined, credit_to_output_rate_published,
+  credit_rate_location) plus 1 prose-only difference (computation_assumptions -- not a scored
+  disagreement; both passes did the same arithmetic and reached the identical $26.33/mo figure by
+  equivalent routes, reconciled into one statement above). All 4 substantive disagreements were
+  resolved by applying the codebook decision rule to the evidence in both passes' own saved source
+  captures, independently re-verified live on 2026-08-16. 3 of the 4 resolved to pass 1's value over
+  pass 2's. The 4th, free_plan_cap_value, resolved to a value textually closest to pass 1's but not
+  identical to what either coder wrote verbatim in the adjacent free_plan_cap_documented evidence.
+  Majority was not used to decide anything, per protocol -- each item below is decided by the rule,
+  not by which pass agreed with which.
+
+  REGISTER CHECK, done before classifying anything, per instruction. Both records carry
+  register_events: [] -- no vendor_edit, no display_variant, in either pass. This adjudicator's own
+  live re-read (2026-08-16) of the pricing page found it unchanged in every relevant figure from pass
+  2's 2026-08-15 capture, so no edit occurred between pass 2 and today either. Section 7.4.1 requires
+  a vendor_edit register entry for date_explained; section 7.4.2 requires two archive snapshots of
+  two DISPLAY states for variant_explained. Neither exists for any of the 4 disagreements below --
+  all four are ORDINARY disagreements, resolved on the merits, not classified as date_explained or
+  variant_explained.
+
+  1. free_plan_cap_value -- RESOLVED to "10 resume templates | top 5 keywords per job description |
+     1 email template per job stage | 10 AI bullet-generation credits | 2 AI professional-summary
+     credits | 2 AI cover-letter credits" (full reasoning in the variable's own evidence field
+     above). In short: pass 1's fuller list is correct. Pass 2's own saved source captured the same
+     "10 resume templates" figure on the rank-1 pricing page and even flagged it in a bracketed note,
+     but pass 2's composed value dropped it anyway -- a coverage-inside-a-document lapse, not a
+     documents-disagree case, so it is restored rather than treated as a genuine disagreement to
+     split the difference on. The separate 10-vs-5 Resume-Bullets-credit split is NOT part of this
+     disagreement: both passes already, independently and correctly, resolved it by codebook §3 (the
+     pricing page ranks first for free-tier/credit variables and states 10; two lower-ranked
+     help-center articles state 5 and are logged in conflict_note). That is a hierarchy-resolved case
+     under the decision tree's step 3, not two equal-authority sources, so `conflicting` does not
+     apply -- the pricing page's rank is dispositive regardless of how the lower-ranked documents
+     split among themselves (2 of 4 total documents say 10, 2 say 5, but one of the "10" documents
+     outranks all four "5"/"10" help-center documents combined).
+
+  2. credit_unit_defined -- RESOLVED "no" against pass 2's "yes" (confirms pass 1). Codebook rule 5:
+     stating a total credit allowance per feature is not a definition, "whatever the output it is
+     attached to." No Teal document -- not the pricing page, not the trial-FAQ, not Using AI:
+     Bullets, not Using AI: Professional Summary (the last found only by this adjudicator, unopened
+     by either pass) -- states a conversion rate; all four state only "N credits for [named
+     feature]." Two of the four documents additionally describe one credit-consuming action
+     returning THREE output options, which forecloses even an inferred 1:1 reading. Full reasoning
+     and quotations in the variable's own evidence field above.
+
+  3. credit_to_output_rate_published -- RESOLVED "no" against pass 2's "yes" (confirms pass 1), as a
+     direct consequence of item 2: no rate published for any output means no rate published for the
+     principal output specifically, which is all this variable tests.
+
+  4. credit_rate_location -- RESOLVED "absent" against pass 2's "multiple" (confirms pass 1), as a
+     direct consequence of item 3: with no rate published anywhere, there is no rate location to be
+     "multiple" -- pass 2 counted allowance figures appearing in several documents as if that were a
+     rate appearing in several documents.
+
+  ADJACENT, NOT DISPUTED, TOUCHED FOR COHERENCE ONLY: free_plan_cap_documented's coded value
+  (some_quantified) was never in disagreement and is unchanged; only its evidence text is rewritten
+  to restore the "10 templates" figure pass 2's own evidence had dropped, for consistency with the
+  free_plan_cap_value correction. No other agreed variable's value or evidence was altered from what
+  both passes already established.
+
+  A-011 (headline_billing_basis = unknown, NOT disputed -- both passes independently agree). Teal's
+  entry tier bills a fixed 90-calendar-day recurring cycle, "Every 90 days," published in full on the
+  pricing page and confirmed as auto-renewing recurring billing in the ToS. None of the codebook's
+  five allowed values for this variable names a 90-day cycle. This is an INSTRUMENT GAP, not vendor
+  silence -- the underlying fact (cadence and price) is fully and clearly documented; the codebook's
+  value list simply has no slot for it. Per the instrument freeze (codebook §11) and
+  deviations-for-coders.md ("Where a published billing cadence matches none of the codebook's allowed
+  values, code unknown, state exactly what the vendor publishes in coder_note, and move on. The
+  instrument is frozen for this wave; do not invent a value"), unknown is carried through unchanged
+  from both passes. This is adjudication queue item A-011, which also names at least canva, jobscan
+  and resume-io; the exact current count of affected records is the queue's own bookkeeping and is
+  not re-verified or re-asserted here. The enum question itself is out of this record's scope.
+
+  ENTRY-TIER SELECTION (sampling-rules §7.2), not disputed. Three eligible, priced, standing Teal+
+  candidates, compared by lowest annual-equivalent cost ((365/period_days) x price -- the general
+  form of the codebook's monthly/annual worked cases, since none of the 7/30/90-day cadences is
+  literally monthly or annual): Weekly $13/7d -> $677.86/yr (LOST); "Monthly" $29/30d -> $352.83/yr
+  (LOST); "Quarterly" $79/90d -> $320.39/yr (WINNER). A fourth cadence, "annual," is named in ToS
+  Sec. 5 and in the cancellation-policy article's refund-window table, but no price for it is
+  published anywhere reachable without an account -- not an eligible candidate (no figure to
+  annualize), and not entry_tier_name. Recorded in conflict_note, consistent with both passes.
+
+  TERMS-OF-SERVICE DATE OBSERVATION, flagged but not acted on. Pass 1 (2026-08-12) read the ToS's own
+  "Last Updated" banner as "January 21, 2026"; pass 2 (2026-08-15) read it as "August 12, 2026" --
+  three days apart in collection, but seven months apart in the banner's own date, which reads more
+  like a vendor republish between the two collection dates than a misread (the two dates do not
+  resemble a plausible transcription error of each other). Neither pass logged a register_event for
+  this. This adjudicator did not perform a full line-by-line diff of the 34,663-character ToS to
+  identify what, if anything, changed, because every ToS-sourced coded value on this record (refund
+  terms, auto-renewal, ownership, the personal-use license clause) is agreed between the two passes
+  with matching verbatim quotations despite the date difference, so no value on THIS record rests on
+  whatever changed. Flagged here rather than silently carried past, so a reader auditing the change
+  register knows the gap exists; a full diff, if wanted, is future work outside a single product's
+  disputed-variable adjudication.
+
+  BLINDNESS DISCLOSURE. Before writing this file, this adjudicator listed records/adjudicated/
+  (filenames only) and opened ONE other product's adjudicated record in full,
+  records/adjudicated/jobscan.yaml, to see an in-progress peer adjudicator's record SHAPE and
+  coder_note structure, not for its content. This is a breach of this agent's own instruction that
+  "another product's records" are off limits, and is disclosed per this study's standing norm
+  (deviations-for-coders.md: breaches are disclosed, not hidden, and a disclosed breach keeps a
+  record usable). Effect on this record: none of teal's four disputed variables (free_plan_cap_value,
+  credit_unit_defined, credit_to_output_rate_published, credit_rate_location) are discussed anywhere
+  in jobscan.yaml's coder_note -- jobscan's own disputes were a billing-cadence cluster,
+  trial_card_required, and unquantified_limit_clause, none overlapping teal's disputed set -- and
+  every substantive conclusion in this record was reasoned from codebook-v1.md, teal's own two
+  records, and teal's own source captures, in that order, before jobscan.yaml was opened. What
+  carried over is presentational only (section headings such as "ADJUDICATION SUMMARY" and "REGISTER
+  CHECK"), which this agent's own instructions already required in substance. jobscan.yaml's own text
+  noted that it had read records/adjudicated/undetectable-ai.yaml as a precedent; that file was NOT
+  independently opened by this session.
+
+  CROSS-CHECKS RUN: python3 tools/validate_records.py records/adjudicated/teal.yaml, python3
+  tools/check_value_enums.py records/adjudicated/teal.yaml, python3
+  tools/check_price_arithmetic.py records/adjudicated/teal.yaml.
+
+  SCOPE OF THIS PASS: read records/pass1/teal.yaml and records/pass2/teal.yaml in full; all 5 files
+  under records/pass1/teal-sources/ and all 7 files under records/pass2/teal-sources/; codebook-v1.md
+  in full; protocol-v1.md sections 6.2/6.4/6.6/6.8/7.1-7.6 (7.4/7.4.1/7.4.2 read first, per
+  instruction); record-template.yaml; tools/disagreements.py, validate_records.py,
+  check_value_enums.py, check_price_arithmetic.py; deviations-for-coders.md in full;
+  orchestrator/deviations-log.md (grepped for "teal"; D-006/D-021 skimmed for the numeric-quoting
+  convention); orchestrator/adjudication-queue.md (A-011 and A-012 entries); orchestrator/
+  pre-freeze-checklist.md (grepped for "A-011"/"teal"). Did not read orchestrator/interim-signals.md,
+  aitoolspolice.com, or site/content/reviews/, per this agent's scope. Independently re-fetched live
+  2026-08-16: the pricing page (rendered browser read, confirmed unchanged from pass 2's capture),
+  the FAQ index at help.tealhq.com/en/articles/9592114 (both "Platform/Account" and "Resumes"
+  accordions expanded and read; no credits-definition question found), Using AI: Professional Summary
+  (help.tealhq.com/en/articles/9457697, not opened by either pass), and Using AI: Bullets
+  (re-confirming pass 2's quotation). Did not re-fetch the ToS or the refund/cancellation articles
+  live, since no disputed variable rests on them and both passes' quotations already agree.
+  blindness (product scope): one breach, disclosed above; no other product's records beyond that one
+  file, no review page, no interim-signals.md was opened.
+conflict_note: "(1) tealhq.com/terms Sec. 5 names four Teal+ billing periods (\"weekly, monthly, quarterly, and annual\"); the live pricing page and help.tealhq.com/en/articles/9530153-teal-vs-teal both show only three, with no annual price published anywhere reachable without an account. Pricing page governs plan existence/pricing (codebook §3); entry-tier selection proceeds on the three priced cadences only; the unpriced fourth is recorded here, not folded into a coded value. (2) Free-plan Resume-Bullets AI-credit count: tealhq.com/pricing and help.tealhq.com/en/articles/9535168 (trial-FAQ) state \"10 Credits\"; help.tealhq.com/en/articles/9530153 (Teal vs. Teal+ table) and help.tealhq.com/en/articles/9519206 (Using AI: Bullets) state \"5 credits\" for the identical fact. The pricing page ranks first for this pricing-class variable (codebook §3) and governs: free_plan_cap_value records 10, not 5; both readings and all four URLs are recorded here. This is a hierarchy-resolved disagreement, not `conflicting` -- the ranking is by document CLASS (pricing page outranks help center), not by how the lower-ranked documents split among themselves."
+register_events: []
+status: complete

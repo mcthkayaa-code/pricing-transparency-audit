@@ -1,0 +1,43 @@
+URL: https://julius.ai/pricing
+Date: 2026-08-10
+Method: D-009 re-read. Live rendered browser session (mcp__Claude_Browser). Second
+representation obtained via structural DOM query on div.pricing-card containers (card-by-card
+extraction of plan name + .yearly-price / .monthly-price divs), independent of the original
+2026-08-09 coding's innerText transcript.
+
+What it shows:
+1. Toggle default state, read from the DOM before any interaction: input#pricing-yearly
+   .checked === true, input#pricing-monthly .checked === false. Matches the original coding's
+   "annual_preselected" / default Yearly display state.
+
+2. Full card-by-card mapping (index, plan name from firstFewTexts, yearly-price div text,
+   monthly-price div text), in actual DOM/page order:
+     0 Free   : yearly $0/month   monthly $0/month
+     1 Plus   : yearly $16/month  monthly $20/month   <- entry tier
+     2 Pro    : yearly $37/month  monthly $45/month
+     3 Max    : yearly $166/month monthly $200/month
+     4 Ultra  : yearly $416/month monthly $500/month
+     5 Business: yearly $375/month monthly $450/month
+   Confirms entry_tier_name=Plus pairs correctly with headline_price_usd=$16 (yearly/default
+   state), not a shifted row. Note: actual page order is Free/Plus/Pro/Max/Ultra/Business (Ultra
+   before Business), differing from the ORDER the original coder's prose listed them in
+   (Plus/Pro/Max/Business/Ultra), but the coder's NAME-TO-PRICE pairings were exactly correct
+   (Business=$375, Ultra=$416 either way) -- this only affects narrative listing order, not any
+   coded value, and does not change the entry-tier winner (Plus at $16 is lowest by a wide
+   margin regardless of ordering).
+
+3. Superscript/subscript check: 0 <sup>/<sub> elements found via the same query used on other
+   records in this sweep; all prices render as plain whole-dollar text (no cents shown anywhere
+   on this page), ruling out a nicepage-class misread.
+
+4. first_charge_amount_usd (192.00 = 16 x 12, per codebook rule requiring an explicit "billed
+   once for N months" statement before multiplying): re-read https://julius.ai/docs/billing/
+   credits-overview live. innerText still states verbatim "Annual plans are billed once per
+   year at a discounted rate, with all credits granted upfront." Also confirmed in a second,
+   independent representation: the same sentence is present in the page's embedded Next.js RSC
+   streaming payload (a <script> tag carrying self.__next_f.push([...]) with the raw MDX source
+   for the doc), i.e. it is source content the page ships, not an artifact of text-extraction.
+
+Conclusion: all four scoped values (entry_tier_name=Plus, headline_price_usd=16.00,
+headline_billing_basis=per_month_billed_annually, first_charge_amount_usd=192.00) confirmed in
+a second representation. No correction.

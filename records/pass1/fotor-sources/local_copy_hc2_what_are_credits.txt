@@ -1,0 +1,25 @@
+URL: https://support.fotor.com/hc/en-us/articles/15793375212441-What-are-Credits
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save returned HTTP 520/429 on repeated attempts (Cloudflare/Zendesk bot protection); local evidentiary copy per protocol section 6.4.
+---
+Title: What are Credits? – Fotor Help Center
+Nora, 2 months ago Updated
+
+Credits are a form of virtual tokens that you can purchase with real money and can be used for some generative AI features on Fotor's website and applications.
+
+Which features consume credits, and how many?
+- AI Image Generator / AI Logo Generator / AI Sticker Generator / AI Background Generator / AI Filters: 1 credit starts at a base amount
+- AI Baby Generator / AI Hairstyle Changer / AI Clothes Changer / AI Age Changer: 2 credits per image
+- Watermark Remover (Advanced Model): 4 credits per removing
+- Face Mimic: 5 credits per image
+- Face Swap: Single-person face swapping: 2 credits per swap. Multi-person: first face costs 2 credits, each additional face adds 1 credit, up to 5 faces.
+- AI Video Generator: 360P x 4S: 10 credits; 720P x 4S: 20 credits; 1080P x 4S: 50 credits; 720P x 8S: 40 credits per video generation
+- AI Video BG Remover / AI Video Object Remover: 20 credits per video processing
+- AI Video Enhancer: see separate article
+- AI Slides: 10 credits per presentation generation; 1 credit per use for "AI Write" or "Image Generate" features
+
+Please be aware that the credits are currently used for AI image and AI video creation. To access other premium features and download HD images, you'll need to subscribe to our Pro or Pro+ plan.
+
+What is the validity period of the credits?
+- Credits included in the Fotor Pro/Pro+/Max or Credits auto-renewing subscription plan: Can be accumulated for a maximum of 5 months as long as you're subscribed. If subscription canceled, all credits will expire on the subscription expiration date.
+- Credits for one-time purchase: 2 years after purchase.
+- Credits earned by activity: Usually 1 day.

@@ -1,0 +1,42 @@
+URLs (the two archive.org captures the record already cites, re-fetched fresh; plus one live
+status re-check of the previously-unrecoverable FAQ):
+  https://web.archive.org/web/20260420102953/https://chatgpt.com/pricing/
+  https://web.archive.org/web/20260420042312/https://openai.com/sora/
+  https://help.openai.com/en/articles/10245774-sora-billing-credits-faq (status re-check only)
+Date: 2026-08-10
+Method: D-009 re-read for a `discontinued`-stratum product per the assignment's instruction:
+confirm the `unknown` values are still the right reading from the archived materials the record
+already cites; do not hunt a live page. Both archive.org captures were re-opened fresh in a
+rendered browser session (mcp__Claude_Browser); this is a representation independent of the
+original coder's own read of the same captures (fresh fetch, fresh extraction, same day).
+
+What it shows:
+1. chatgpt.com/pricing archive (2026-04-20 capture), re-read fresh: "Sora" appears exactly ONCE
+   in the entire 8,004-character body text, and only as a footer navigation link ("OpenAI /
+   Research / Safety / API / Sora / News / Terms & Policies..."), not inside any plan card or
+   the feature-comparison grid. No dollar figure on the page is associated with Sora. This
+   independently reproduces the original coder's finding.
+
+2. openai.com/sora/ archive (2026-04-20 capture), re-read fresh: 976-character body, ZERO "$"
+   characters anywhere (regex /\$\d/g -> no matches), and ZERO occurrences of
+   pricing/price/plan/subscri/credit (case-insensitive) anywhere in the text. Pure capability
+   marketing ("Sora 2 — Turn your ideas into videos with hyperreal motion and sound..."),
+   confirming no pricing/plan/credit content of any kind exists on this page, exactly as
+   originally coded.
+
+3. Status re-check of the one source most likely to have carried entry-tier pricing, the Sora
+   Billing & Credits FAQ (help.openai.com/en/articles/10245774): a plain curl request today
+   returns HTTP 403, versus the HTTP 404 the original coder recorded. This is most likely a
+   tooling artifact (a bare curl request without browser headers being challenged by Zendesk/
+   Cloudflare bot protection, rather than the underlying article materializing) since a 403 is
+   not a status that could ever surface price content to this check either. Noted for
+   transparency, not treated as a live-page hunt or as grounds to alter the discontinued-stratum
+   coding: the assignment's instruction not to hunt a live page for this product is followed --
+   this was a one-shot status probe of an already-cited dead URL, not a search for new pricing
+   surfaces, and it changes nothing about the archived evidence above.
+
+Conclusion: neither of the two archived captures this record's entry-tier variables rest on
+contains any Sora price, plan, or credit-rate content, confirmed fresh today in a representation
+independent of the original coding. All four scoped values (entry_tier_name,
+headline_price_usd, headline_billing_basis, first_charge_amount_usd, all `unknown`) re-confirmed
+as the correct reading. No correction.

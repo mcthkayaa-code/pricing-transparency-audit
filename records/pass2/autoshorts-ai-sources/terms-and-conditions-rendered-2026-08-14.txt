@@ -1,0 +1,73 @@
+SOURCE: https://autoshorts.ai/terms
+ACCESSED: 2026-08-14 (rendered read, full page text)
+Title: "Terms & Conditions | AutoShorts.ai"
+Last updated (per page): October 15th, 2025
+
+FULL TEXT (verbatim, as rendered):
+
+Welcome to AutoShorts.ai!
+
+These terms and conditions outline the rules and regulations for the use of AutoShorts.ai's Website,
+located at https://autoshorts.ai.
+
+By accessing this website we assume you accept these terms and conditions. Do not continue to use
+AutoShorts.ai if you do not agree to take all of the terms and conditions stated on this page.
+
+Images uploaded to AutoShorts.ai are not added to the AutoShorts.ai database nor are they made
+accessible to any other users. Copyright for all images submitted to AutoShorts.ai remains with the
+original owner/author.
+
+AutoShorts.ai search results link to third party websites that are not owned or controlled by
+AutoShorts.ai. AutoShorts.ai assumes no responsibility for the content, privacy policies or practices
+of any third party websites.
+
+Additionally, AutoShorts.ai utilizes YouTube API Services. AutoShorts.ai Users are agreeing to be bound
+by the YouTube Terms of Service as specified here: https://www.youtube.com/t/terms and the Google
+Privacy Policy as specified here: https://www.google.com/policies/privacy.
+
+Disclaimer of Any Warranty
+WE NOT REPRESENT OR WARRANT THAT AutoShorts.ai IS FREE OF INACCURACIES, ERRORS, BUGS, OR
+INTERRUPTIONS, OR IS RELIABLE, ACCURATE, COMPLETE, OR OTHERWISE VALID. [...disclaimer boilerplate...]
+
+Limitation of Liability
+WE SHALL NOT, UNDER ANY CIRCUMSTANCES, BE LIABLE TO YOU FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL,
+SPECIAL OR EXEMPLARY DAMAGES [...boilerplate...]
+
+Cookies
+We employ the use of cookies. [...]
+
+No use of AutoShorts.ai's logo or other artwork will be allowed for linking absent a trademark license
+agreement.
+
+iFrames
+Without prior approval and written permission, you may not create frames around our Webpages [...]
+
+Content Liability
+We shall not be held responsible for any content the appears in videos created using AutoShorts.ai, or
+to the websites, channels, or accounts where the videos are used. You agree to protect and defend us
+against all claims that related to the content.
+
+Reservation of Rights
+We reserve the right to request that you remove all links or any particular link to our Website. [...]
+
+Removal of links from our website
+If you find any link on our Website that is offensive for any reason [...]
+
+Disclaimer
+To the maximum extent permitted by applicable law, we exclude all representations, warranties and
+conditions relating to our website and the use of this website. [...]
+
+As long as the website and the information and services on the website are provided free of charge, we
+will not be liable for any loss or damage of any nature.
+
+Contact Us
+If you have any questions, do not hesitate to contact us or email us at autoshortsai@gmail.com.
+
+=== CODING-RELEVANT OBSERVATION ===
+This document is a generic/boilerplate website ToS. It does NOT mention: subscriptions, billing,
+auto-renewal, refunds, cancellation, credits, watermark, commercial-use rights, or ownership of
+AI-GENERATED video output (only addresses copyright of images a user UPLOADS, which is a different
+thing). All billing/refund/cancellation/ownership terms found for this product live in the FAQ
+(https://autoshorts.ai/faq) instead - see faq-rendered-2026-08-14.txt. This absence is itself coded
+per codebook (silence = unknown for auto-renewal / advance-notice; FAQ is used as the next-ranked
+source for refund/cancellation/ownership since ToS is silent, not conflicting).

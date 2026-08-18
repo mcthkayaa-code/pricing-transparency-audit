@@ -1,0 +1,146 @@
+product_id: runway
+product_name: Runway
+category: AI video generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Standard
+coder_pass: 1
+coder_role: primary
+collection_date: "2026-08-12"
+recheck_date: not_applicable
+primary_source_url: https://runway.com/pricing
+archive_url: https://web.archive.org/web/20260812075302/https://runway.com/pricing
+archive_status: archived
+default_display_state: >
+  USD ($) prices shown directly, no currency selector/localization observed on this
+  Turkey-egress read (D-003/D-007 currency check considered and not triggered — see
+  coder_note); billing toggle defaulted to Yearly/annual on load, confirmed from DOM class
+  (active "Yearly-20% off" button carries selected-style class bg-offBlack text-white,
+  "Monthly" carries only a hover-state class), not from text-extractor ordering; product-family
+  selector defaulted to "Runway Creative" (consumer tools, matches our frame category) over
+  "Runway Dev" (separate API/developer pricing, out of scope).
+
+sources:
+  - { url: "https://runway.com/pricing", kind: pricing, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812075302/https://runway.com/pricing", note: "vendor URL runwayml.com/pricing 308-redirects here; local copy runway-sources/pricing-archive-raw.html + pricing-rendered-extraction.txt" }
+  - { url: "https://runway.com/terms-of-use", kind: tos, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812075319/https://runway.com/terms-of-use", note: "vendor URL runwayml.com/terms-of-use 308-redirects here; local copy runway-sources/terms-archive-raw.html + terms-of-use-extraction.txt; covers refund (8.5), renewal/cancellation (8.4), price changes (8.1), ownership/license/commercial-use (4.4)" }
+  - { url: "https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details", kind: docs, accessed: "2026-08-12", archive: archive_failed, note: "403 direct fetch, 520 from archive.org save, no prior wayback capture; NOT used to code any value, see help-center-blocked-leads.txt" }
+  - { url: "https://help.runwayml.com/hc/en-us/articles/32880432736659-Why-am-I-receiving-errors-when-trying-to-generate", kind: docs, accessed: "2026-08-12", archive: archive_failed, note: "403 direct fetch, 520 from archive.org save; NOT used to code any value, see help-center-blocked-leads.txt" }
+  - { url: "https://help.runwayml.com/hc/en-us/articles/24343363554067-Requesting-a-refund-for-your-plan-or-payment", kind: docs, accessed: "2026-08-12", archive: archive_failed, note: "403 direct fetch, 520 from archive.org save; NOT used to code any value, cited only in conflict_note as an unverified lead, see help-center-blocked-leads.txt" }
+
+variables:
+  headline_price_usd: { value: 12.00, source: "https://runway.com/pricing", evidence: "Standard: $15 (struck through) $12 /month, shown large/non-struck in default (Yearly) display state; entry tier per sampling-rules 7.2, see coder_note for losing candidates" }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://runway.com/pricing", evidence: "$12 /month ... Billed annually. Save $36/year." }
+  first_charge_amount_usd: { value: 144.00, source: "https://runway.com/pricing", evidence: "Billed annually. Save $36/year. (computed 12 x 12 = 144; see computation_assumptions)" }
+  mandatory_addon_present: { value: "no", source: "https://runway.com/pricing", evidence: "Standard tier's advertised features (all models, 4K upscaling, no watermarks, 625 credits/mo) carry no separate stated charge; no mandatory add-on found in pricing page or docs read" }
+  annual_condition_disclosure: { value: adjacent, source: "https://runway.com/pricing", evidence: "\"Billed annually. Save $36/year.\" printed directly inside the Standard plan card, immediately above the $15/$12 price line" }
+  annual_default_toggle: { value: annual_preselected, source: "https://runway.com/pricing", evidence: "Yearly-20% off toggle carries active/selected class (bg-offBlack text-white) on fresh page load, before any click; Monthly carries only a hover-state class; see runway-sources/pricing-rendered-extraction.txt DOM check" }
+  free_plan_exists: { value: "yes", source: "https://runway.com/pricing", evidence: "Free / Free forever. / For individuals looking to explore Runway's AI Tools. / $0 /month / 125 credits" }
+  free_plan_cap_documented: { value: all_quantified, source: "https://runway.com/pricing", evidence: "Includes 125 credits (one time); 5GB asset storage" }
+  free_plan_cap_value: { value: "125 credits (one time) | 5GB asset storage", source: "https://runway.com/pricing", evidence: "Includes 125 credits (one time) / 5GB asset storage" }
+  free_plan_watermark: { value: unknown, source: "https://runway.com/pricing", evidence: "Free plan's feature list (125 credits, model selection, 5GB storage) states nothing about watermarks either way; \"No watermarks\" is listed only under Standard's feature list, which documents the paid tiers, not the free column, per the codebook's silent-pricing-table rule" }
+  free_plan_duration: { value: perpetual, source: "https://runway.com/pricing", evidence: "Free forever." }
+  trial_exists: { value: "no", source: "https://runway.com/terms-of-use", evidence: "No trial CTA anywhere on the pricing page (cards read Start Free / Upgrade to X / Contact Sales, never \"start trial\"); ToS 8.4 only reserves a hypothetical future mechanism (\"we may offer trial, discounted, or other promotional subscription fees ... Only one trial or promotional membership is available per user\"), not a statement that a trial currently exists" }
+  trial_card_required: { value: not_applicable, source: "https://runway.com/terms-of-use", evidence: "trial_exists = no; impossible-pair rule, protocol 8.3.3 B3" }
+  trial_length_days: { value: not_applicable, source: "https://runway.com/terms-of-use", evidence: "trial_exists = no; impossible-pair rule, protocol 8.3.3 B3" }
+  trial_auto_converts: { value: not_applicable, source: "https://runway.com/terms-of-use", evidence: "trial_exists = no" }
+  credit_system_present: { value: "yes", source: "https://runway.com/pricing", evidence: "Credits are the unit you spend to generate images, video, and audio on Runway." }
+  credit_unit_defined: { value: "yes", source: "https://runway.com/pricing", evidence: "Gen-4.5 uses 12 credits per second of generated video." }
+  credit_to_output_rate_published: { value: "yes", source: "https://runway.com/pricing", evidence: "\"Compare models across plans\" table: Gen-4.5 60 credits/5s, Aleph 2.0 140 credits/5s, Seedance 2.0 Pro 1080p 160 credits/4s, Seedance 2.0 Fast 116 credits/4s -- published for the principal output (video) across every model the entry tier advertises, not just a range with no rule; see coder_note for why this is not reduced to one figure" }
+  credit_rate_location: { value: pricing_page, source: "https://runway.com/pricing", evidence: "rate table and the 12-credits/sec FAQ line both live on runway.com/pricing itself" }
+  cost_per_output_unit: { value: per_video_minute, source: "https://runway.com/pricing", evidence: "principal output is generated video; vendor's own units are seconds, converted to the codebook's per-minute unit" }
+  cost_per_output_computable: { value: partial, source: "https://runway.com/pricing", evidence: "computable per named model, not as one figure for \"video\" in general -- picking a model is an assumption about use; see computation_assumptions and coder_note for the per-model figures" }
+  computation_assumptions: { value: "First charge $144=$12/mo x12, per 'Billed annually'. Cost/output: Standard tier, Yearly default, 625 credits/mo; Gen-4.5 12cr/s->$13.82/min; other advertised models run 28-40cr/s->$32-46/min (full per-model table in coder_note) -- rate varies by model chosen, so partial not yes.", source: "https://runway.com/pricing", evidence: "coder arithmetic, not a vendor statement; see codebook 2.3 exception register" }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://runway.com/pricing", evidence: "On the Standard and Pro plans, monthly credits don't roll over -- they reset within 24 hours of your billing date each cycle. (entry tier = Standard; Max plan differs, see coder_note)" }
+  failed_generation_charge_policy: { value: unknown, source: "https://runway.com/pricing", evidence: "Neither the pricing page nor the archived Terms of Use states what happens to credits on a failed/errored generation; a help-center article appears to address this directly but could not be fetched or archived within budget (403 / 520, see runway-sources/help-center-blocked-leads.txt) so is not used to code this value" }
+  auto_renewal_default: { value: "on", source: "https://runway.com/terms-of-use", evidence: "your subscription will automatically commence on the first day following the end of such period and continue for an additional equivalent period, at Company's then-current price" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://runway.com/terms-of-use", evidence: "renewal stated in ToS 8.4; pricing page's own FAQ (upgrade/downgrade/credits) is silent on renewal; help center billing articles could not be fetched or archived within budget so multiple cannot be confirmed, see coder_note" }
+  renewal_notice_commitment: { value: unknown, source: "https://runway.com/terms-of-use", evidence: "ToS commits to notice of a FEE/FEATURE CHANGE (\"either immediately upon posting on the Services or by email delivery to you\") but no sentence found committing to advance notice before an ordinary renewal charge at an unchanged price" }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://runway.com/terms-of-use", evidence: "8.5 Refunds. Except as stated in these Terms of Use or as required by applicable law, all fees for the Services are non-refundable ... In our discretion, we may provide a refund upon request." }
+  refund_window_days: { value: "0", source: "https://runway.com/terms-of-use", evidence: "all fees for the Services are non-refundable (governing value per no_refunds_stated); see conflict_note for a help-center-documented 30-day discretionary window that could not be independently verified" }
+  refund_conditions: { value: not_applicable, source: "https://runway.com/terms-of-use", evidence: "no refund available under the governing (ToS) refund position" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://runway.com/terms-of-use", evidence: "You may cancel or change your subscription by logging into your Account and going to the \"Plans & Billing\" page." }
+  refund_policy_location: { value: terms, source: "https://runway.com/terms-of-use", evidence: "refund position stated in ToS Section 8.5; no standalone dedicated refund page found" }
+  commercial_use_lowest_tier: { value: free, source: "https://runway.com/terms-of-use", evidence: "Subject to your compliance with the Agreement, the Company does not restrict your commercial use of your Outputs. (Section 4.4, no tier carve-out stated, applies to the Agreement generally including the Free plan)" }
+  watermark_removal_tier: { value: lowest_paid, source: "https://runway.com/pricing", evidence: "\"No watermarks\" listed as a Standard-tier feature; Standard is the entry paid tier. Free tier's own watermark status is unknown (see free_plan_watermark) but does not change which tier is the lowest documented watermark-free one." }
+  output_ownership_statement: { value: user_owns, source: "https://runway.com/terms-of-use", evidence: "The Company does not claim ownership of any of your Inputs or Outputs. (Section 4.4; a broad license IS granted back to the Company for model training, noted in coder_note, but that is a license, not an ownership claim)" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://runway.com/pricing", evidence: "625 credits monthly (entry tier Standard); no other limit type (storage, resolution, seats) is stated for Standard specifically in the vendor's plan-card text, so the one stated limit is fully quantified" }
+  unquantified_limit_clause: { value: absent, source: "https://runway.com/terms-of-use", evidence: "full-text search of the complete archived Terms of Use found no fair-use/reasonable-use/excessive-use/discretionary-throttling clause tied to the product's own usage volume; the sole \"throttle\" hit governs third-party \"Non-Runway Services\" integrations only" }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): candidates were Standard, Pro, Max (Free excluded,
+  not a paid tier; Enterprise excluded, sales-gated / "Contact Us", ineligible per rule 2).
+  Annual-equivalent single-seat cost in the default (Yearly) display state: Standard $12/mo x
+  12 = $144.00/yr (WINNER, lowest); Pro $28/mo x 12 = $336.00/yr (lost); Max $76/mo x 12 =
+  $912.00/yr (lost). Product also offers a separate "Runway Dev" API/usage-based pricing
+  surface (docs.dev.runwayml.com/guides/pricing) behind a product-family selector that defaults
+  to "Runway Creative" (the consumer tool coded here, matching our frame category "AI video
+  generator"); Dev pricing was not coded as it is a distinct product surface, not a candidate
+  tier of the product under study.
+
+  Credit-to-output rate detail (task brief: record what the vendor publishes rather than
+  reducing it to one number). Runway's "Compare models across plans" table on the pricing page
+  publishes an exact rate per model, not one product-wide rate: Gen-4.5 60 credits/5s (=12
+  cr/s), Aleph 2.0 140 credits/5s (=28 cr/s), Seedance 2.0 Pro 1080p 160 credits/4s (=40 cr/s),
+  Seedance 2.0 Fast 116 credits/4s (=29 cr/s) -- a 3.3x spread. At the Standard entry tier
+  ($12/mo default-annual, 625 credits/mo) this yields, per model: Gen-4.5 $13.82/min, Aleph 2.0
+  $32.26/min, Seedance 2.0 Pro 1080p $46.08/min, Seedance 2.0 Fast $33.41/min. Coded
+  credit_to_output_rate_published = yes (the rate is precisely published for every model the
+  entry tier advertises, nothing is vague or left as an open range) but cost_per_output_computable
+  = partial (no single figure represents "the" cost per video minute without assuming which
+  model the buyer uses, which the codebook's cost_per_output_computable decision rule -- "the
+  reader's job is arithmetic, not estimation" -- does not allow).
+
+  Free-plan watermark (free_plan_watermark = unknown): the live pricing page's Free-tier card
+  lists only "125 credits (one time)", "a selection of generative creative models", and "5GB
+  asset storage" -- it does not say outputs are or are not watermarked. "No watermarks" appears
+  only in Standard's own feature list. Per the codebook's own worked rule ("A silent pricing
+  table is unknown"), this reads unknown from the pricing page alone. A help-center article
+  (help.runwayml.com .../Free-plan-details) appears to state plainly that Free-plan outputs are
+  watermarked, surfaced via WebSearch, but could not be fetched (403 twice) or archived (520
+  from archive.org's save endpoint, no prior capture found) within budget, so it is NOT used to
+  code the value -- see runway-sources/help-center-blocked-leads.txt. This does not affect
+  watermark_removal_tier, which is independently well-evidenced from the archived pricing page:
+  Standard (lowest_paid) is confirmed watermark-free regardless of what Free's status turns out
+  to be.
+
+  Credit rollover varies by tier (credit_rollover_policy is coded for the Standard entry tier,
+  by analogy to how usage_cap_quantified is scoped, since the codebook does not name this
+  variable's scope explicitly): Standard & Pro reset within 24h of billing date
+  (expires_at_period_end, the coded value); Max rolls over up to 1 month of unused credits
+  (partial_rollover); Free's one-time 125 credits "doesn't expire" but also never renews (not a
+  rollover scenario, a standing non-renewing grant).
+
+  Ownership/license nuance: ToS 4.4 states the Company does not claim ownership of Inputs or
+  Outputs (coded user_owns) AND separately requires the user to grant the Company a broad
+  perpetual/irrevocable/worldwide license to use Inputs and Outputs for model training and
+  related purposes. Both are true simultaneously; the license grant is noted here because a
+  buyer should know it, but it does not change the ownership-statement coding, which is a
+  distinct construct from a license grant.
+
+  Currency check (binding instructions, D-003/D-007): performed and NOT triggered. Every price
+  read on this Turkey-egress session displayed in plain "$" figures with no currency selector,
+  no forced local-currency conversion, and no non-USD symbol observed anywhere on the pricing
+  page, in the archived capture, or in the Terms of Use. This is the ordinary USD case, not a
+  non_usd case requiring the fallback-arm procedure; no ambiguity to resolve.
+
+  Two-representation price check (binding instructions): headline/entry-tier figures were
+  confirmed identically across three independent reads -- WebFetch text extraction, a live
+  rendered-DOM javascript_tool read (fresh tab, origin verified before and after), and the
+  Wayback-archived HTML snapshot (grepped directly for $ figures) -- all agreeing on Standard
+  $15->$12, Pro $35->$28, Max $95->$76 and the $36/$84/$228 annual savings figures. No
+  superscript-cents or plan-grid row-mapping error found.
+
+  Shared-browser-tool note: the Browser pane in this environment is shared across concurrent
+  sibling coders working other products in this same study window (observed tabs cycling
+  through resume.io, sapling.ai, speechify.com content under tab IDs I had just navigated
+  myself). Every browser-sourced fact in this record was re-verified by checking
+  location.href/document.title in the SAME javascript_tool call that extracted the data (not a
+  prior or subsequent call), to rule out cross-tab contamination; two tab attempts were
+  discarded after the origin check showed contamination before any data was taken from them.
+
+  Refund note: see conflict_note for the ToS-vs-help-center refund gap.
+
+  blindness: no other product's record, no review page, no pass-2 material was opened.
+conflict_note: "ToS (higher-ranked source for refund variables, protocol 6.2) Section 8.5 frames fees as non-refundable with only ad hoc discretion (\"we may provide a refund upon request\"), coded as no_refunds_stated / 0 days / not_applicable conditions. A help-center article, \"Requesting a refund for your plan or payment\" (https://help.runwayml.com/hc/en-us/articles/24343363554067-Requesting-a-refund-for-your-plan-or-payment), surfaced via WebSearch, appears to document a concrete conditional policy -- refundable within 30 days of purchase/renewal if the subscription or credits are unused or close to unused -- which is more specific and more generous than the ToS framing suggests. This lower-ranked source could not be independently fetched (403) or archived (520) within budget, so it was NOT used to override the ToS-coded value, per protocol's hierarchy rule and its instruction that a gap between sources is reported even where the hierarchy settles the coded value cleanly. Both URLs: https://runway.com/terms-of-use ; https://help.runwayml.com/hc/en-us/articles/24343363554067-Requesting-a-refund-for-your-plan-or-payment. A future coder with access to the help-center domain should re-verify this article directly and, if confirmed, take it to adjudication."
+register_events: []
+status: complete

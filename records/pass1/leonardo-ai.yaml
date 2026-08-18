@@ -1,0 +1,141 @@
+product_id: leonardo-ai
+product_name: Leonardo AI
+category: AI image generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Essential
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://leonardo.ai/pricing
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: >
+  Pay Monthly preselected on load (DOM-confirmed: "Pay Monthly" button class includes
+  "bg-white text-black" [active style]; "Pay Yearly" button class includes
+  "bg-transparent text-white/70" [inactive style]). Prices shown in USD with "ex. tax."
+  suffix. No region/currency selector or consent banner appeared on this read. No
+  geo-redirect (URL stayed https://leonardo.ai/pricing).
+
+sources:
+  - { url: https://leonardo.ai/pricing, kind: pricing, accessed: 2026-08-09, archive: local_copy_only, note: "static curl (incl. Accept-Language en-US) returned HTTP 403 Cloudflare challenge; rendered via browser tool; archive.org submission failed twice, HTTP 520 both attempts; local rendered copy saved" }
+  - { url: https://leonardo.ai/terms-of-service, kind: tos, accessed: 2026-08-09, archive: local_copy_only, note: "same Cloudflare/520 pattern as pricing page; rendered via browser tool; last updated 19 Jan 2026 per document; entity Leonardo Interactive Pty Ltd (ACN 662 209 485)" }
+  - { url: https://leonardo.ai/refund-policy, kind: refund, accessed: 2026-08-09, archive: local_copy_only, note: "dedicated refund policy page; same Cloudflare/520 pattern; rendered via browser tool" }
+  - { url: https://intercom.help/leonardo-ai/en/articles/8044033-token-usage, kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809175405/https://intercom.help/leonardo-ai/en/articles/8044033-token-usage", note: "official Leonardo.Ai Help Center; token-to-output rate table" }
+  - { url: https://intercom.help/leonardo-ai/en/articles/9560707-token-rollover, kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809175422/https://intercom.help/leonardo-ai/en/articles/9560707-token-rollover", note: "official Help Center; Rollover/Token Bank policy" }
+  - { url: https://intercom.help/leonardo-ai/en/articles/9035057-how-can-i-cancel-my-account-unsubscribe, kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809175441/https://intercom.help/leonardo-ai/en/articles/9035057-how-can-i-cancel-my-account-unsubscribe", note: "official Help Center; cancellation steps" }
+  - { url: https://intercom.help/leonardo-ai/en/articles/8044018-commercial-usage, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "official Help Center; archive.org HTTP 429 both attempts (rate-limited); full verbatim local copy saved" }
+  - { url: https://intercom.help/leonardo-ai/en/articles/7051613-frequently-asked-questions, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "official Help Center general FAQ; archive.org HTTP 429 both attempts; full verbatim local copy saved; contains the trial-existence statement" }
+  - { url: https://intercom.help/leonardo-ai/en/articles/9044700-tokens-frequently-asked-questions, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "official Help Center; archive.org HTTP 000 then 429; checked for failed-generation and watermark statements, silent on both" }
+  - { url: https://docs.leonardo.ai/docs/pricing-and-plans-faq, kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809175532/https://docs.leonardo.ai/docs/pricing-and-plans-faq", note: "official docs site; covers mainly the API Pay-As-You-Go product" }
+
+variables:
+  headline_price_usd: { value: "12.00", source: https://leonardo.ai/pricing, evidence: "ESSENTIAL / $12 /month / ex. tax. -- shown under the default Pay Monthly display state" }
+  headline_billing_basis: { value: per_month_billed_monthly, source: https://leonardo.ai/pricing, evidence: "'Pay Monthly' toggle is the active/default state (DOM class bg-white text-black); figure is a flat monthly charge, not a 'billed annually' monthly-equivalent" }
+  first_charge_amount_usd: { value: "12.00", source: https://leonardo.ai/pricing, evidence: "Default state is monthly billing, so the first (and every) charge is the displayed $12/month figure; no annualization applies because the default toggle is not annual" }
+  mandatory_addon_present: { value: "no", source: https://leonardo.ai/pricing, evidence: "'Top-up Tokens' is listed as an available feature (optional purchase, not a required charge); no required minimum spend, platform fee, or onboarding fee found in pricing page or docs" }
+  annual_condition_disclosure: { value: not_applicable, source: https://leonardo.ai/pricing, evidence: "Headline figure read is the Pay-Monthly price, which does not depend on annual prepayment (rule 1: figure does not depend on annual prepayment -> not_applicable)" }
+  annual_default_toggle: { value: monthly_preselected, source: https://leonardo.ai/pricing, evidence: "DOM inspection: 'Pay Monthly' button class='...bg-white text-black' (active); 'Pay Yearly' button class='...bg-transparent text-white/70' (inactive)" }
+
+  free_plan_exists: { value: "yes", source: https://leonardo.ai/pricing, evidence: "FREE / $0 /month / 'Perfect for casual creators who want to explore AI art' -- standing tier alongside paid tiers, no expiry stated" }
+  free_plan_cap_documented: { value: some_quantified, source: https://leonardo.ai/pricing, evidence: "Quantified: 'Fast Tokens 150 / day' (rate), 'Token Bank 150' (standing), 'Personal collections 1' (standing). Unquantified: 'Quality settings: Basic' carries no number -- structurally the codebook 5.1 'does not qualify' example 'basic storage' (label, no number+dimension)" }
+  free_plan_cap_value: { value: "150 Fast Tokens per day | 150 Token Bank | 1 Personal collection", source: https://leonardo.ai/pricing, evidence: "only quantified limits recorded; 'Quality settings: Basic' excluded as unquantified per rule" }
+  free_plan_watermark: { value: unknown, source: https://leonardo.ai/pricing, evidence: "Checked pricing page, Terms of Service (full text + full HTML string search), Refund Policy, Token Usage article, Token Rollover article, Commercial Usage article, general FAQ, Tokens FAQ -- 'watermark' does not appear in any of them" }
+  free_plan_duration: { value: perpetual, source: https://leonardo.ai/pricing, evidence: "FREE presented as a standing plan alongside Essential/Premium/Ultimate with no expiry stated anywhere in the documents read" }
+
+  trial_exists: { value: "no", source: https://intercom.help/leonardo-ai/en/articles/7051613-frequently-asked-questions, evidence: "'Do you offer a free trial on consumer subscription plans? Unfortunately, we currently do not provide free trials for consumer plans.' (Essential/Solo is a consumer plan; Team plans separately state a discretionary case-by-case trial via sales, not a standing published trial)" }
+  trial_card_required: { value: not_applicable, source: https://intercom.help/leonardo-ai/en/articles/7051613-frequently-asked-questions, evidence: "no trial exists for the entry (consumer) tier" }
+  trial_length_days: { value: not_applicable, source: https://intercom.help/leonardo-ai/en/articles/7051613-frequently-asked-questions, evidence: "no trial exists for the entry (consumer) tier" }
+  trial_auto_converts: { value: not_applicable, source: https://intercom.help/leonardo-ai/en/articles/7051613-frequently-asked-questions, evidence: "no trial exists for the entry (consumer) tier" }
+
+  credit_system_present: { value: "yes", source: https://leonardo.ai/pricing, evidence: "'Fast Tokens' / 'Token Bank' is an intermediate currency that converts into outputs at published per-feature rates (Token Usage article), not a plan allowance stated directly in output units" }
+  credit_unit_defined: { value: "yes", source: https://intercom.help/leonardo-ai/en/articles/8044033-token-usage, evidence: "'Default Image (768x768)' costs '1 Token' (single) -- ties the unit to a recognizable output" }
+  credit_to_output_rate_published: { value: "yes", source: https://intercom.help/leonardo-ai/en/articles/8044033-token-usage, evidence: "Rate published for the principal output (image): 'Default Image (768x768): 1 Token'; further per-feature rates also published (Canvas 1, Elements 1/4, Prompt Magic V2 2/8, Remove Background 5, Upscalers 5, Alchemy 8-18, Full 3D Texture 30)" }
+  credit_rate_location: { value: docs_help_center, source: https://intercom.help/leonardo-ai/en/articles/8044033-token-usage, evidence: "Rate table lives only in the Help Center Token Usage article; the pricing page shows quota totals (Fast Tokens/month, Token Bank) but no token-to-output conversion" }
+  cost_per_output_unit: { value: per_image, source: https://leonardo.ai/pricing, evidence: "Product category is AI image generator (frame); pricing page frames output across image/video/design/motion but the Token Usage rate table's base unit is the 'Default Image' generation" }
+  cost_per_output_computable: { value: "yes", source: https://leonardo.ai/pricing, evidence: "Essential tier $12.00/mo (default display state) + 8,500 Fast Tokens/mo (pricing page) + 1 Token = 1 Default Image 768x768 (Token Usage article) = fully computable using published figures only, no assumption about typical use required" }
+  computation_assumptions: { value: "Essential tier, $12.00/mo per default (Pay Monthly) display state; 8,500 Fast Tokens/mo included; 1 Token=1 Default Image 768x768 per Token Usage help article; price & allowance both already monthly, no period conversion; 8500 images/mo; 12/8500=0.0014 USD/image.", source: "https://leonardo.ai/pricing | https://intercom.help/leonardo-ai/en/articles/8044033-token-usage", evidence: "arithmetic per codebook 7 domain 6 rule 3-4" }
+  credit_rollover_policy: { value: partial_rollover, source: https://intercom.help/leonardo-ai/en/articles/9560707-token-rollover, evidence: "'The Rollover Bank accumulates up to 3 months worth of tokens.' Caps match pricing-page 'Token Bank' figures exactly (Essential 25,500 = 3x8,500/mo). 'If you cancel your Premium plan, any unused tokens in your Rollover bank will be cancelled'; downgrade: 'Any tokens above this limit will expire.'" }
+  failed_generation_charge_policy: { value: unknown, source: https://intercom.help/leonardo-ai/en/articles/9044700-tokens-frequently-asked-questions, evidence: "Checked Token Usage, Token Rollover, and Tokens FAQ (official Help Center) plus the Terms of Service -- none states what happens to tokens when a generation fails or errors" }
+
+  auto_renewal_default: { value: "on", source: https://leonardo.ai/terms-of-service, evidence: "Clause 4.7: 'Your Subscription continues for the Subscription Period, and at the end of each Subscription Period, provided you have paid all Subscription Fees owing, your Subscription will be automatically renewed for the same Subscription Period.'" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://leonardo.ai/terms-of-service | https://intercom.help/leonardo-ai/en/articles/9035057-how-can-i-cancel-my-account-unsubscribe", evidence: "Stated in Terms clause 4.7 (explicit 'automatically renewed') and in the official Cancel/Unsubscribe help article ('Your subscription remains active until your next renewal date... your subscription will not be renewed going forward' -- confirms renewal is the default absent cancellation), in agreement" }
+  renewal_notice_commitment: { value: no_notice_stated, source: https://leonardo.ai/terms-of-service, evidence: "Terms clause 1.3 commits to notice only for Terms amendments, not renewal billing; no advance-notice-before-charge clause found in Terms or the general/cancellation Help Center articles (checked, silent)" }
+  refund_policy_exists: { value: "yes", source: https://leonardo.ai/refund-policy, evidence: "'As a consumer, you will be entitled to a refund under the following circumstances: Major Faults... Misleading Description... Unfit for Intended Purpose... Technical Issues... Non-Delivery of Tokens... Defective Digital Goods'" }
+  refund_window_days: { value: unknown, source: https://leonardo.ai/refund-policy, evidence: "No day-count window is stated anywhere in the dedicated Refund Policy or the Terms; eligibility is fault/consumer-guarantee-triggered (see refund_conditions), not a 'within N days' window" }
+  refund_conditions: { value: conditional, source: https://leonardo.ai/refund-policy, evidence: "Refund requires one of six stated fault circumstances; explicitly excludes 'You simply changed your mind', misuse, unclear requirements, or problems 'completely beyond our control'" }
+  cancellation_self_serve: { value: self_serve_documented, source: https://intercom.help/leonardo-ai/en/articles/9035057-how-can-i-cancel-my-account-unsubscribe, evidence: "'Click the Settings icon... Under Workspace Settings, Click Subscription and Billing... Under Your Plan, click Cancel Plan... Click Proceed with Cancellation to finalise' -- no support contact required; also confirmed in Terms 4.7 ('you may do so through your Account')" }
+  refund_policy_location: { value: multiple, source: "https://leonardo.ai/refund-policy | https://leonardo.ai/terms-of-service", evidence: "Dedicated refund-policy page states the general consumer-guarantee refund position; Terms clauses 1.3(b)/2.4/14.4(b) additionally state pro-rata refund positions for Terms-change disagreement, service discontinuation, and uncured vendor breach -- complementary, not contradictory" }
+  commercial_use_lowest_tier: { value: free, source: https://intercom.help/leonardo-ai/en/articles/7051613-frequently-asked-questions, evidence: "'Can I use the images I generate on the platform for commercial purposes? Yes, you can use the images you generate on the platform for commercial purposes. This applies for free users too.' Corroborated by the Commercial Usage article's worked example (free-plan user Jason): 'Jason and Jane can download their own generations for commercial usage.'" }
+  watermark_removal_tier: { value: unknown, source: https://leonardo.ai/pricing, evidence: "No watermark policy of any kind is documented (see free_plan_watermark); a removal tier cannot be determined for a policy that is never stated. Not not_applicable: image output is a media artifact that could carry a watermark." }
+  output_ownership_statement: { value: conditional, source: https://leonardo.ai/terms-of-service, evidence: "Clause 8.3 (paid, private): ownership 'will vest in you upon creation'. Clause 8.7 (free): ownership 'will vest in us [Leonardo] upon creation... you hereby assign your right, title and interest'. Clause 8.6 (any public content, incl. all free-tier output): grants Leonardo a broad perpetual license regardless of who owns title. Rights depend on tier and on public/private status." }
+
+  usage_cap_quantified: { value: some_quantified, source: https://leonardo.ai/pricing, evidence: "Essential tier limits: 'Fast Tokens 8,500/month' (rate, quantified), 'Token Bank 25,500' (standing, quantified), 'Personal collections Unlimited' (quantified per rule 3, no qualifying clause found for this item), 'Personal AI models 10' (standing, quantified), 'Max Simultaneous Generations 2' (standing, quantified). 'Quality settings: Enhanced' carries no number -- same 'does not qualify' pattern as free_plan_cap_documented." }
+  unquantified_limit_clause: { value: present, source: https://leonardo.ai/terms-of-service, evidence: "Clause 5.3: 'if, in our sole determination, we identify excessive, unreasonable, or abusive product or feature usage patterns, we may impose reasonable limits (e.g. throttling or queuing) to ensure fair and equitable access and stability for other users.' No figure defines excessive/unreasonable. Reinforced by the pricing-page footnote on 'Unlimited' relaxed generations: 'may be slowed from time to time based on demand to ensure fair and equitable access...'" }
+
+coder_note: |
+  All 37 coded variables complete.
+
+  Acquisition relationship (per assignment note): Leonardo AI was acquired by Canva (2024).
+  As of this collection (2026-08-09), Leonardo continues to operate its own official
+  documents under its own entity, Leonardo Interactive Pty Ltd (ACN 662 209 485) -- the
+  Terms of Service (last updated 19 Jan 2026) and the dedicated Refund Policy are both
+  branded to Leonardo Interactive Pty Ltd, not Canva Pty Ltd. No Canva-operated terms or
+  billing page was found governing the Solo/Essential consumer plan coded here; the only
+  Canva touchpoint found is a cross-sell note on the pricing page ("Included with Canva
+  Business") granting Canva Business/Enterprise subscribers free Essential-tier access,
+  which does not change which document governs the Essential tier itself. Coded from
+  Leonardo's own ToS/refund-policy/help-center throughout, per the assignment instruction
+  to use whichever official document actually governs the product.
+
+  Entry-tier selection (sampling-rules.md 7.2), default Pay-Monthly display state,
+  annual-equivalent cost: Essential $12/mo x12 = $144.00/yr (WINNER, lowest) | Premium
+  $30/mo x12 = $360.00/yr | Ultimate $60/mo x12 = $720.00/yr | Team Starter -- seat-stepper
+  input has min="3" (verified via DOM, Number-of-seats field), i.e. Team plans sell a
+  3-seat MINIMUM BLOCK, not a free per-seat purchase, so the minimum block's total is
+  annualized per sampling-rules.md 7.2 rule 3: $72/mo (3 seats) x12 = $864.00/yr | Team
+  Growth, same 3-seat minimum: $144/mo x12 = $1,728.00/yr. Excluded from comparison: FREE
+  ($0, not a paid tier, scored under domain 3);
+  Team "Custom" and "API Custom" (sales-gated, no published price); API Pay-As-You-Go
+  (usage-based only, starts with a one-time non-expiring $5 credit, no recurring
+  seat/annual-equivalent subscription figure to compare against the seat-priced plans --
+  excluded as non-comparable rather than treated as a losing numeric candidate).
+
+  Judgment call, flagged for reviewer: "Quality settings: Basic" (free plan) / "Quality
+  settings: Enhanced" (Essential/Premium/Ultimate) is treated as an unquantified limit
+  (affecting free_plan_cap_documented = some_quantified and usage_cap_quantified =
+  some_quantified, rather than all_quantified/all_caps_quantified), on the analogy that
+  codebook-v1.md section 5.1's own "does not qualify" example "basic storage" is
+  structurally identical (a quality/capacity label with no number+dimension). No official
+  document was found that quantifies what "Basic" vs "Enhanced" quality concretely means
+  (resolution, model access, etc.). If a reviewer judges "Quality settings" to be a
+  feature-access label rather than a limit (like the excluded "Creations access:
+  Public/Private" toggle), both variables would instead read all_quantified /
+  all_caps_quantified -- this is the only variable in this record I would flag as
+  genuinely contestable.
+
+  cost_per_output_unit coded as per_image on the frame's fixed category ("AI image
+  generator") and on the Token Usage rate table's base unit ("Default Image"); the
+  vendor's own pricing page frames output more broadly across image/video/design/motion
+  and does not itself rank one as principal, so this is a category-driven tie-break, not a
+  vendor statement, and is noted here rather than in the variable's evidence field.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 re-read 2026-08-10: re-opened https://leonardo.ai/pricing live and confirmed
+  entry_tier_name (Essential), headline_price_usd ($12), headline_billing_basis
+  (per_month_billed_monthly) and first_charge_amount_usd ($12) in a SECOND representation
+  independent of the original innerText transcript: a card-by-card structural DOM query on
+  .o-pricing-cards__card containers, reading each card's own textContent directly. Confirmed the
+  "Pay Monthly" toggle button carries the active style class before interaction. Confirmed every
+  losing-candidate figure the original coder_note lists (Premium $30, Ultimate $60, Team Starter
+  $72, Team Growth $144) still matches. A structurally separate feature-comparison table further
+  down the same page independently names the same four tier columns (FREE/ESSENTIAL/PREMIUM/
+  ULTIMATE), a second confirmation of the tier-name set. Confirmed 0 <sup>/<sub> elements exist
+  anywhere on the page. Evidence saved to
+  leonardo-ai-sources/d009-second-representation-2026-08-10.txt. No correction; all four scoped
+  values confirmed as coded.
+conflict_note: ""
+register_events: []
+status: complete

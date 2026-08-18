@@ -1,0 +1,156 @@
+product_id: krea-ai
+product_name: Krea AI
+category: AI image generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Basic
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://www.krea.ai/pricing
+archive_url: https://web.archive.org/web/20260809175002/https://www.krea.ai/pricing
+archive_status: archived
+default_display_state: "USD throughout; billing toggle preselected to Yearly/annual (aria-checked=true on the 'Use annual billing' switch and on the 'Yearly' segmented control; 'Save 40% on yearly plans' badge shown); no cookie-consent banner appeared; page served directly at www.krea.ai/pricing, no geographic redirect. Collection network egresses from Turkey; D-003 check performed (curl with Accept-Language: en-US,en;q=0.9) and confirmed the vendor's own default is USD, not a US-only display. A separate full browser render (no forced locale header) showed identical USD prices; the only locale-conditional difference observed was cosmetic period-vs-comma thousands-separators on the unit-allowance numbers (e.g. '5.000 units' vs '5,000 units', same value), logged as a display_variant register event, not a currency or price difference."
+
+sources:
+  - { url: "https://www.krea.ai/pricing", kind: pricing, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809175002/https://www.krea.ai/pricing", note: "SvelteKit app; SSR HTML + embedded plansAndPrices JSON payload carry exact figures (D-005 documentary embedded-JSON); also fully rendered in-browser to confirm hydrated on-screen digits and DOM structure." }
+  - { url: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", kind: tos, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809175507/https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", note: "Discovered via footer link https://www.krea.ai/terms, which 302-redirects here. 'Last updated: May 20, 2024.' Hosted on Notion." }
+  - { url: "https://www.krea.ai/docs/user-guide/help-and-support/compute-units", kind: docs, accessed: "2026-08-09", archive: local_copy_only, note: "Defines compute units conceptually; rollover and troubleshooting FAQ. web.archive.org/save returned a 302 twice (attempted at collection time and again on recheck) but the resulting snapshot URL 404s both times; local copy saved at krea-ai-sources/docs-compute-units-2026-08-09.md." }
+  - { url: "https://www.krea.ai/docs/user-guide/help-and-support/manage-subscriptions", kind: docs, accessed: "2026-08-09", archive: local_copy_only, note: "Cancellation steps, auto-renewal statement; contains STALE plan figures ($10/mo, 20% annual discount, Basic 4000/mo) that conflict with the live pricing page -- see conflict_note. web.archive.org/save returned a 302 twice but the snapshot 404s both times; local copy saved at krea-ai-sources/docs-manage-subscriptions-2026-08-09.md." }
+  - { url: "https://www.krea.ai/docs/user-guide/help-and-support/refunds-and-billing", kind: docs, accessed: "2026-08-09", archive: local_copy_only, note: "Describes a conditional refund-eligibility program that conflicts with the Terms' 'no refunds' clause -- see conflict_note. web.archive.org/save returned a 302 twice but the snapshot 404s both times; local copy saved at krea-ai-sources/docs-refunds-and-billing-2026-08-09.md." }
+  - { url: "https://www.krea.ai/docs/user-guide/features/model-overview", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809180406/https://www.krea.ai/docs/user-guide/features/model-overview", note: "Per-image-model credit-cost table (principal output)." }
+  - { url: "https://www.krea.ai/docs/user-guide/features/video", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809180426/https://www.krea.ai/docs/user-guide/features/video", note: "Per-video-model credit-cost table (secondary output type advertised on every plan card)." }
+  - { url: "https://www.krea.ai/docs/developers/job-lifecycle", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809180525/https://www.krea.ai/docs/developers/job-lifecycle", note: "States failed/cancelled generation jobs are not billed; API-reference section but describes the same job/credit system referenced by the consumer compute-units guide." }
+  - { url: "https://www.krea.ai/docs/llms.txt", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809180813/https://www.krea.ai/docs/llms.txt", note: "Full site index (~170 pages, title+description each); used for an exhaustive keyword search (watermark, trial, fail/error) across the documentation site rather than as the source of any single coded value." }
+
+variables:
+  headline_price_usd: { value: 5.00, source: "https://www.krea.ai/pricing", evidence: "Basic plan card, default (Yearly) toggle state: fully-hydrated on-screen digit reads '$5' + '/month' suffix, fraction slot empty (no cents rendered). SSR aria-label / screen-reader text says '$5.25/mo' but that is not the rendered digit a sighted visitor sees; see coder_note." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://www.krea.ai/pricing", evidence: "'Yearly' toggle preselected (aria-checked=true); Basic card shows '$5/month' beside a struck-through '$9' (the monthly-billing price); page banner reads 'Save 40% on yearly plans'." }
+  first_charge_amount_usd: { value: 63.00, source: "https://www.krea.ai/pricing", evidence: "Page's own served hydration-state JSON: plansAndPrices.creator_basic.yearly={amount:63,currency:\"usd\"} -- the annual total charged for Basic under the default annual toggle (D-005 embedded-JSON documentary source)." }
+  mandatory_addon_present: { value: "no", source: "https://www.krea.ai/pricing", evidence: "'Need More Compute?' one-time compute packs are framed as optional top-ups ('to get more credits out of your purchase, consider upgrading your plan'); docs FAQ frames packs as usable 'without needing to upgrade your plan' -- an optional alternative, not a charge required to use Basic as advertised." }
+  annual_condition_disclosure: { value: adjacent, source: "https://www.krea.ai/pricing", evidence: "Billing toggle reads 'Yearly' (selected, aria-label 'Use annual billing') directly above the four plan cards, with an adjacent badge 'Save 40% on yearly plans' -- the toggle attached to the price, per codebook section 5's adjacent test." }
+  annual_default_toggle: { value: annual_preselected, source: "https://www.krea.ai/pricing", evidence: "aria-checked=\"true\" on both the 'Yearly' segmented-control button and the 'Use annual billing' switch on page load, before any interaction; confirmed both in the SSR HTML and in the fully-hydrated browser render." }
+  free_plan_exists: { value: "yes", source: "https://www.krea.ai/pricing", evidence: "'Free' column shown as a standing plan alongside Basic/Pro/Max/Business/Enterprise, priced '$0/month', no time limit stated." }
+  free_plan_cap_documented: { value: some_quantified, source: "https://www.krea.ai/pricing", evidence: "Quantified: '100 units /day' (rate), 'Image concurrency 1', 'Video concurrency 0', 'Images per LoRA 50' (standing), 'Upscale images up to 2K resolution' (standing). Not quantified: 'Limited LoRA training' carries no number anywhere in the documents." }
+  free_plan_cap_value: { value: "100 units per day | 1 image concurrency | 0 video concurrency | 50 images per LoRA | 2K max image upscale resolution", source: "https://www.krea.ai/pricing", evidence: "Free plan card figures, default display state." }
+  free_plan_watermark: { value: unknown, source: "https://www.krea.ai/pricing", evidence: "'watermark' has zero occurrences on the pricing page, zero in the full Terms of Use text (45,338 chars, programmatically verified), and zero across the ~170-page documentation-site index (docs-site-index-llms-txt); no official document addresses free-plan watermarking either way." }
+  free_plan_duration: { value: perpetual, source: "https://www.krea.ai/pricing", evidence: "Free presented as a standing tier in the plan grid alongside the paid tiers; no expiry, end date, or 'first month only' language anywhere in the pricing page, Terms of Use, or documentation." }
+  trial_exists: { value: "no", source: "https://www.krea.ai/pricing", evidence: "Zero occurrences of 'trial' on the pricing page and zero across the ~170-page documentation index; the only 'trial' text anywhere in the official documents is the Terms of Use's generic 'Free Trials and Other Promotions' boilerplate clause, which does not name or describe any currently-offered trial of a Krea plan." }
+  trial_card_required: { value: not_applicable, source: "https://www.krea.ai/pricing", evidence: "No trial exists (trial_exists=no)." }
+  trial_length_days: { value: not_applicable, source: "https://www.krea.ai/pricing", evidence: "No trial exists (trial_exists=no)." }
+  trial_auto_converts: { value: not_applicable, source: "https://www.krea.ai/pricing", evidence: "No trial exists (trial_exists=no)." }
+  credit_system_present: { value: "yes", source: "https://www.krea.ai/docs/user-guide/help-and-support/compute-units", evidence: "'Compute units are the currency of computational resources on Krea. They measure the processing power required for: Image generation, Video creation, Image enhancement, Editing operations, AI model training.' An intermediate currency, not a plan allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: "https://www.krea.ai/docs/user-guide/features/model-overview", evidence: "Per-image-model credit-cost table converts credits into a named output directly, e.g. 'Z Image ... 3' credits per generation, 'Krea 1 ... 6' credits per generation (dozens of models listed, most with exact figures, some approximate ('~')." }
+  credit_to_output_rate_published: { value: "yes", source: "https://www.krea.ai/pricing", evidence: "Pricing page states, for the principal output (image), '5,000 units /month' together with '64 Nano Banana 2 generations' for Basic (and the analogous pair for every other tier) -- a stated conversion. Docs separately publish an explicit per-model rate table for image and video; the two sources' implied rates for Nano Banana 2 conflict -- see conflict_note; credit_rate_location coded from the pricing page per the pricing-class hierarchy." }
+  credit_rate_location: { value: pricing_page, source: "https://www.krea.ai/pricing", evidence: "Hierarchy-governing source for a pricing-class variable (credit rates); docs (model-overview.md, video.md) also publish an explicit, conflicting rate table -- see conflict_note." }
+  cost_per_output_unit: { value: per_image, source: "https://www.krea.ai/pricing", evidence: "Category = AI image generator; every plan card leads with an image-generation-model equivalence ('N Nano Banana 2 generations') ahead of the video-generation figure." }
+  cost_per_output_computable: { value: "yes", source: "https://www.krea.ai/pricing", evidence: "Basic tier's own published price ($63/yr default annual state) and published allowance (5,000 units/mo = 64 Nano Banana 2 generations/mo, the principal output) are both stated figures; dividing needs no assumption about typical use. See computation_assumptions." }
+  computation_assumptions: { value: "Basic, annual billing (default): $63/yr=$5.25/mo per page JSON (displayed digit shows $5/mo, see headline_price_usd). Page: 5,000 units/mo=64 Nano Banana 2 gens/mo (principal output). 5.25/64=0.082 USD/image. Docs conflict: ~50 credits/gen; see conflict_note.", source: "https://www.krea.ai/pricing", evidence: "not_applicable (this field records the coder's own arithmetic)." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://www.krea.ai/docs/user-guide/help-and-support/compute-units", evidence: "'Compute units currently do not roll over for individual plans' (docs FAQ), consistent with the pricing-page FAQ: 'unused units expire at the end of each billing cycle.' Business/Enterprise plans DO roll over per the same doc -- not applicable to the Basic entry tier; see coder_note." }
+  failed_generation_charge_policy: { value: not_charged, source: "https://www.krea.ai/docs/developers/job-lifecycle", evidence: "'Important: Failed and cancelled jobs are not billed. You only pay for completed jobs.' Found in the API/developer reference section but describes the same job-state and compute-unit system referenced platform-wide (consistent 'jobs'/'compute units' terminology with the consumer compute-units.md guide); see coder_note." }
+  auto_renewal_default: { value: "on", source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "'Unless you opt out of auto-renewal, which can be done through your account settings, any Paid Services you have signed up for will be automatically extended for successive renewal periods of the same duration as the subscription term originally selected...' Confirmed independently by docs: 'All paid subscriptions auto-renew by default' and 'All paid subscriptions are set to auto-renew by default.'" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "Stated in the Terms of Use ('Auto-Renewal for Paid Services' clause), in docs/manage-subscriptions.md ('Auto-Renewal Management' section), and in docs/refunds-and-billing.md ('Auto-Renewal Information' section) -- three official documents in agreement." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "Terms commit to notice only 'if the amount to be charged...varies from the amount you preauthorized' (a price-change notice, not a renewal reminder); ordinary renewals charge 'WITHOUT FURTHER AUTHORIZATION.' Docs: 'You'll receive an email receipt AFTER each charge' and advise the customer to 'Set Calendar Reminders' themselves -- no proactive advance notice is promised by Krea." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "'PAID SERVICES CANNOT BE TERMINATED BEFORE THE END OF THE PERIOD FOR WHICH YOU HAVE ALREADY PAID, AND EXCEPT AS EXPRESSLY PROVIDED IN THESE TERMS, KREA WILL NOT REFUND ANY FEES THAT YOU HAVE ALREADY PAID.' Conflicts with docs/refunds-and-billing.md's stated refund-eligibility program; resolved to the Terms per the contractual-class source hierarchy -- see conflict_note." }
+  refund_window_days: { value: 0, source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "No refund window is stated; the governing (Terms) source states fees already paid will not be refunded (see refund_policy_exists)." }
+  refund_conditions: { value: not_applicable, source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "No refund is available under the governing (Terms) source, so no conditions attach; see conflict_note for the docs page's contrary eligibility criteria." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "Terms: 'To change or resign your Paid Services at any time, go to account settings.' Docs: 'Go to the Billing page...Click the \"Manage Subscription\" button to open the Stripe customer portal...choose to cancel your subscription.' Both agree: self-serve, no contact required." }
+  refund_policy_location: { value: terms, source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "Hierarchy-governing document class for this contractual variable; docs/refunds-and-billing.md also addresses refunds but conflicts in substance -- see conflict_note." }
+  commercial_use_lowest_tier: { value: lowest_paid, source: "https://www.krea.ai/pricing", evidence: "FAQ: 'Yes, Basic, Pro, Max, Business, and Enterprise plans include a commercial license...' -- Free is excluded (matches the feature-grid cross under Free / check under Basic in the default display state). Terms: 'Krea may allow you to commercialize certain Content..., subject to...any other restrictions or requirements...imposed by Krea' -- explicitly defers to the plan-based grid rather than contradicting it, so this is not coded as a conflict." }
+  watermark_removal_tier: { value: unknown, source: "https://www.krea.ai/pricing", evidence: "'watermark' has zero occurrences on the pricing page, zero in the full Terms of Use text, and zero across the ~170-page documentation index; no official document states whether any tier's outputs are watermarked." }
+  output_ownership_statement: { value: conditional, source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "'we grant each user of the Services a worldwide, non-exclusive, non-sublicensable and non-transferable license to access, use...content generated from using the Services. Your rights to use, reproduce, modify, distribute, or store of any Content may be dependent on specific purchases or plans you have to the Services.' A license grant, not an ownership statement, and explicitly plan-dependent." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.krea.ai/pricing", evidence: "Every limit stated for the Basic entry tier carries a number: '5,000 units /month' (rate), 'Image concurrency 4', 'Video concurrency 2', 'Images per LoRA 50' (standing limits). No unquantified limit is stated for Basic specifically; the plain feature checkmark 'LoRA training' (access flag, not a graduated limit) carries no figure but is not itself a usage cap." }
+  unquantified_limit_clause: { value: present, source: "https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c", evidence: "Terms prohibit conduct that 'interfere[s] with the proper working of the Services (including by placing an unreasonable load on the Services' infrastructure)' -- no figure anywhere in the Terms or the documentation defines 'unreasonable load'; Terms read in full for this variable per the codebook's instruction." }
+coder_note: |
+  Entry-tier selection (sampling-rules.md 7.2), annual-equivalent cost of eligible candidates in the
+  pricing page's default (Yearly) display state: Basic $63.00/yr (WINNER) | Pro $252.00/yr | Max
+  $756.00/yr at its default slider position (creator_max_2 of 4 selectable compute levels 40k/60k/
+  80k/100k; even the cheapest Max level, creator_max_1, is $504.00/yr, still far above Basic) |
+  Business $1,920.00/yr at its default slider position (business_3 of 10 levels; Business is a flat
+  team price for "up to 50 seats included...at no extra cost per seat", not per-seat scaling, so the
+  whole flat price is the comparable figure) | Enterprise excluded, sales-gated, no published price |
+  Free excluded, $0, not a paid tier. Basic wins uncontested (next-cheapest is 4x higher).
+
+  Judgment calls: (1) headline_price_usd coded as the fully-hydrated ON-SCREEN DIGIT ($5, no cents
+  shown) rather than the SSR-only aria-label/screen-reader text ($5.25/mo) -- both are part of the
+  same served document, but $5 is what a sighted visitor with JS enabled (virtually every real buyer)
+  actually reads as the prominent figure; DOM-inspected via the <number-flow-svelte> shadow root,
+  confirming the fraction slot renders empty. first_charge_amount_usd and computation_assumptions use
+  the precise $63/yr and $5.25/mo figures (also directly stated in the page's own served JSON), since
+  those variables ask what is actually charged / computable, not what is displayed most prominently.
+  This $5-vs-$5.25 gap is itself a small transparency artifact worth flagging even though no single
+  variable name captures it directly. (2) annual_condition_disclosure coded adjacent on the "toggle
+  attached to it" clause: Krea's Yearly/Monthly toggle sits directly above the plan grid (not inside
+  each card) but is the toggle governing every displayed price, with "Save 40% on yearly plans" beside
+  it, visible in the same viewport with no scrolling. (3) credit_rollover_policy coded from the
+  Basic/Pro/Max ("do not roll over") behavior since that is what the entry tier itself gets; Business
+  and Enterprise plans roll over unused credits per the same source -- a genuine tier-based difference,
+  not a source conflict. (4) failed_generation_charge_policy's only source is in the API/developer
+  documentation section (job-lifecycle.md) rather than a consumer-facing help article; coded anyway
+  because it is an official Krea document describing the same job-state/compute-unit system the
+  consumer compute-units.md guide references, and no other official document addresses the question
+  at all. (5) credit_to_output_rate_published and credit_rate_location coded from the pricing page
+  per the pricing-class source hierarchy even though the docs site publishes a more granular explicit
+  per-model rate table, because the two numerically conflict for the one overlapping model (Nano
+  Banana 2) -- see conflict_note for both figures and both URLs.
+
+  Frame check: frame row's vendor_home_url (https://www.krea.ai) resolved correctly to the live
+  product; no correction needed.
+
+  D-009 re-read 2026-08-10: this record is one of the four coded before the two-representation
+  rule was formalized, and was also the arithmetic-flagged case (headline 5.00 x 12 = 60.00 vs
+  first charge 63.00). Re-confirmed entry_tier_name, headline_price_usd, headline_billing_basis
+  and first_charge_amount_usd independently via a fresh live browser session (separate from the
+  2026-08-09 collection), in two further representations: (1) a fresh same-origin fetch of the
+  page's embedded SvelteKit JS data payload reproduced plansAndPrices.creator_basic.yearly =
+  {amount:63,currency:"usd"} byte-for-byte, confirming first_charge_amount_usd=63.00 and that
+  63/12=5.25 exactly; (2) a screenshot of the rendered price card, taken after confirming the
+  Yearly/annual toggle carries aria-checked="true" (the default state) via the DOM, shows the
+  Basic card's on-screen digit as "$9" struck through "$5" "/month" -- no cents rendered -- as
+  the most prominent figure, with Free/Basic/Pro/Max in that left-to-right order and no
+  duplicated or mis-mapped row. Both representations match the 2026-08-09 original reading
+  exactly. Verdict: CONFIRMED, no correction. This is the "legitimate vendor rounding" case
+  named in the D-009 assignment, not a misread: the vendor's own rendered card genuinely shows
+  the rounded digit $5 while its own served data genuinely states the true annual charge is
+  $63.00 (=$5.25/mo). The check_price_arithmetic.py flag stands and will keep flagging this
+  record; it is a correct flag pointing at a real but non-erroneous vendor display quirk, per
+  the screen's own documented purpose ("a mismatch is a place to look", not a verdict). Evidence
+  saved to krea-ai-sources/d009-reread-2026-08-10.md. Blindness maintained: no other product's
+  record was opened during this re-read.
+
+  D-009 re-read 2026-08-10 (addendum, second pass): the coordinator separately flagged an
+  apparent self-contradiction between headline_price_usd (5.0) and this record's own
+  computation_assumptions text ("$63/yr=$5.25/mo per page JSON"), asking which is right and
+  naming this the likely real misread behind the arithmetic screen's flag on this record.
+  Re-examined with the most rigorous check in this entire sweep: a raw shadow-DOM inspection
+  of the Basic card's price component's internal digit-slot structure (not text serialization).
+  Finding: the component's fraction section is `<span part="fraction" ...></span>` -- a
+  completely empty element, zero child nodes -- while the integer section's one non-inert
+  digit node reads "5". The component's template supports a fraction slot (used elsewhere on
+  the page for prices that do carry one), but this price was handed no fraction value to
+  render at all: there is no hidden or superscript ".25" a text extractor could have missed,
+  which rules out the nicepage/pixlr/pika failure mode specifically. Re-reading
+  computation_assumptions in full (not in isolation) shows it already draws this exact
+  distinction -- "per page JSON" ($5.25, the precise annual/12 figure, used only for the
+  cost-per-output arithmetic) versus "displayed digit" ($5, explicitly cross-referenced to
+  headline_price_usd) -- both independently correct for what each represents, not a
+  contradiction. Verdict unchanged: headline_price_usd CONFIRMED at 5.00, now in three
+  independent representations (embedded JS payload, screenshot, raw shadow-DOM digit-slot
+  structure). This re-examination respectfully disagrees that krea-ai is the arithmetic
+  screen's "real misread" -- the flag is fully explained by the vendor's own rounded-display-
+  vs-precise-charge gap. Full detail in krea-ai-sources/d009-reread-2026-08-10.md addendum.
+
+  Archival: 6 of 9 sources archived cleanly on web.archive.org (pricing, terms, model-overview,
+  video, job-lifecycle, llms.txt -- the latter three redirect to a snapshot a few days older than
+  the save request but the content is reachable and unchanged). 3 sources under
+  /docs/user-guide/help-and-support/ (compute-units, manage-subscriptions, refunds-and-billing)
+  returned a 302 from web.archive.org/save on both attempts but the resulting snapshot URL 404s;
+  coded per protocol 6.4 as archive: local_copy_only, with the full page text saved under
+  krea-ai-sources/. This does not block coding from them (a same-day local copy exists).
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "REFUND: Terms of Use ('KREA WILL NOT REFUND ANY FEES', https://krea-ai.notion.site/Terms-of-Use-4e1e697fb25f491d81e751e74f5fab1c) vs docs/refunds-and-billing.md ('eligible for a refund...below 650 compute units and...less than 20 generations', https://www.krea.ai/docs/user-guide/help-and-support/refunds-and-billing) -- coded from Terms per contractual hierarchy. PRICING: live pricing page (Basic $9/mo|$63/yr, 5,000 units/mo, https://www.krea.ai/pricing) vs docs/manage-subscriptions.md (stale: 'Starting at $10/month', '20% off for annual', Basic '4000/mo', also internally inconsistent free-tier figure '50/day' vs its own '100/day', https://www.krea.ai/docs/user-guide/help-and-support/manage-subscriptions) -- coded from the pricing page per pricing-class hierarchy. CREDIT RATE: pricing page implies ~78 credits per Nano Banana 2 image (5000/64) vs docs/model-overview.md stating Nano Banana 2 = '~50' credits (https://www.krea.ai/docs/user-guide/features/model-overview) -- coded from the pricing page per hierarchy."
+register_events:
+  - { type: display_variant, detail: "Full browser render (no forced locale header, Turkey-egressing network) showed unit-allowance figures with a period thousands-separator ('5.000 units /month', '1.028 Nano Banana 2 generations'); an explicit en-US Accept-Language curl fetch of the identical URL/document showed the same values with a comma thousands-separator ('5,000 units /month', '1,028 Nano Banana 2 generations'). Same numeric values in both reads; currency stayed USD in both; only the digit-grouping convention differed. D-003's US-locale check confirms USD is the vendor's own default rather than a currency artifact of our network.", urls: ["https://www.krea.ai/pricing"] }
+status: complete

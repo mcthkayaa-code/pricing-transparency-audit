@@ -1,0 +1,77 @@
+SOURCE: https://invideo.io/terms-and-conditions/
+ACCESSED: 2026-08-09
+METHOD: Rendered read via headless browser, document.body.innerText, full-document keyword scan
+  performed against the complete innerText (26505 chars) — equivalent to a full read for the
+  full-text-required variables (unquantified_limit_clause).
+NETWORK NOTE: Collection egresses from Turkey. Page rendered in English with no currency/locale
+  content relevant to this document (contractual, not pricing).
+ARCHIVE: https://web.archive.org/web/20260809164206/https://invideo.io/terms-and-conditions/
+
+=== SECTION 3. Plans, Subscriptions and Payments (verbatim) ===
+a. Plans. We offer a free tier with limited features ("Free Plan") and various paid subscription
+plans ("Paid Plans"). The features and usage limits of each plan are described at the point of
+sign-up.
+
+b. Billing. If you subscribe to a Paid Plan directly through Invideo:
+i. fees are billed in advance on a monthly or annual basis, as selected by you;
+ii. your plan will automatically renew at the end of each billing period unless you cancel before
+renewal through your account settings or any other cancellation method, we make available; and
+iii. if you live in a jurisdiction that requires advance notice of automatic renewal, we will send
+you a reminder by email before each renewal as required by applicable law.
+If you purchase through an app store or third-party distributor, that distributor's billing,
+cancellation and refund terms apply in addition to ours.
+
+c. Price changes. We may change subscription prices from time to time. Any price change takes
+effect from the next renewal period after we give you reasonable advance notice. If you do not
+agree with a price change, you should cancel before it takes effect.
+
+d. Refunds. All fees are non-refundable for the billing period purchased. As an exception, you may
+request a refund within seven (7) days of an initial purchase or renewal, or such longer period as
+required by applicable law in your jurisdiction, provided you have not used any credits or premium
+features during that period. We do not offer pro-rata or partial refunds for unused portions of a
+subscription period. Credits, whether free or paid, are non-refundable, non-redeemable and
+non-transferable.
+
+e. Failed payments. We reserve the right to suspend or downgrade your access to Paid Plan features
+if a payment fails or is delayed. We will not do so without first giving you reasonable notice and
+an opportunity to update your payment details.
+
+=== SECTION 4. Your Content and Outputs (verbatim, relevant sub-clauses) ===
+a. Definitions ... iii. "Output/Outputs" means any content the Services generate in response to
+your Inputs or interactions, including AI-generated video, images, audio and text.
+
+b. Your ownership and responsibility. You retain ownership of your User Content and, subject
+always to these Terms, applicable law and third-party rights, of Outputs and Designs you create.
+You are solely responsible for your User Content and for the consequences of uploading, using or
+distributing it.
+
+h. Licence Invideo grants to you. Subject to these Terms, we grant you a limited, non-exclusive,
+non-transferable, revocable licence to access and use the Services during your active subscription.
+We also grant you a perpetual, irrevocable, worldwide, royalty-free, non-exclusive licence to use,
+reproduce, modify, distribute, perform, display and commercialise Outputs you generate through the
+Services. This licence survives any cancellation or termination of your subscription, and your
+right to use Outputs you have already created and exported is preserved.
+As between you and Invideo, we assign to you all of our right, title and interest, if any, in
+Outputs you generate, to the extent we are able.
+Your rights in Outputs that incorporates Licensed Content are subject to the licence terms
+applicable to that Licensed Content. We do not grant you exclusivity over any Licensed Content or
+AI-generated variants of it.
+You must not: (i) use the Services to build a competing product; or (ii) circumvent any usage
+limits or access controls.
+
+=== FULL-DOCUMENT KEYWORD SCAN (indexOf against complete innerText, not just visible viewport) ===
+"fair use"          -> NOT FOUND
+"reasonable use"     -> NOT FOUND
+"excessive"          -> NOT FOUND
+"abuse"              -> NOT FOUND (in this document; found in usage-policy.txt, content-conduct
+                        context only, see that file)
+"throttl"            -> NOT FOUND (in this document; throttle power is in the AUP, see
+                        usage-policy.txt)
+"rate limit"         -> NOT FOUND
+"trial" (as in free trial of a paid tier) -> NOT FOUND. Only match in the whole document is
+  "jury trial" inside the dispute-resolution/arbitration clause (Section on India/US users waiving
+  right to "class, collective or representative proceedings and to jury trial"). No free-trial-of-
+  paid-tier language anywhere in this document.
+"Acceptable Use Policy" -> found: document incorporates by reference "our Acceptable Use Policy
+  ("AUP"), which sets out what you may and may not do with the Services" -> followed to
+  https://invideo.io/usage-policy/, see usage-policy.txt.

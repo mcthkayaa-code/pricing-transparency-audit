@@ -1,0 +1,111 @@
+SOURCE: https://www.revid.ai/pricing
+ACCESSED: 2026-08-13 (rendered read, JS-hydrated Next.js app)
+CAPTURE METHOD: Local verbatim capture (get_page_text rendered text + raw DOM outerHTML cross-check via javascript_tool)
+
+=== RENDERED TEXT (get_page_text) ===
+Title: Revid AI Pricing: Plans, Credits & Features
+URL: https://revid.ai
+Source element: <main>
+---
+Pricing
+One membership. The whole growth loop.
+
+Create, publish, learn, repeat. Every plan includes the full engine: rendering, publishing, performance stats, Auto-Mode, and agent access. Cancel anytime.
+
+Creators publish 30,000+ videos a month with Revid
+Monthly
+Annually
+HOBBY
+€39
+/month
+Create from text, links or recordings
+3M+ viral videos to remix
+Editable short-form videos
+Select Plan
+cancel anytime • 100% content ownership
+Best Value
+GROWTH
+€99
+€39
+/month
+Discount locked in forever
+Publish to TikTok, Instagram & YouTube
+Performance stats & one-click remix
+3 Auto-Mode Workers
+Latest AI video models
+100+ AI video tools
+3M+ viral videos to remix
+70+ language voiceovers
+Hooks, scripts & rewrites
+Create from text, links or recordings
+AI avatars, face swaps & podcasts
+Full access to API, MCP and CLI
+2,000 AI credits / month
+Select Plan
+cancel anytime • 100% content ownership
+ULTRA
+€199
+/month
+Credits/month
+12,000
+12k
+30k
+50k
+100k
+200k
+Everything in Growth
+Create & clone voices
+10 Auto-Mode Workers
+12,000 AI credits / month
+Scale brands, niches or clients
+Select Plan
+cancel anytime • 100% content ownership
+TRUSTED WORLDWIDE
+Create a finished video without a production team.
+
+Script, visuals, voice, captions, editing, and export in one workflow.
+
+USED BY THE BEST CREATORS OUT THERE...
+And loved by 14,258+ users
+Customer Stories
+Experts trust us
+
+See why leading creators choose revid.ai
+
+=== TOGGLE DEFAULT-STATE CHECK (raw DOM classes, read BEFORE any click) ===
+"Monthly" div's parent classList: "px-2 py-1 cursor-pointer bg-white/15 rounded-l-full rounded-lg text-white font-medium"
+  -> highlighted background (bg-white/15), white text, font-medium = ACTIVE/SELECTED
+"Annually" div's parent classList: "px-2 py-1 cursor-pointer text-neutral-dark"
+  -> no highlight background, muted text color, regular weight = INACTIVE
+CONCLUSION: default display state on load = MONTHLY billing selected.
+
+=== SECOND-REPRESENTATION PRICE CHECK (raw outerHTML via JS, D-009 rule) ===
+Hobby price node: <div class="w-full my-5 mb-2 flex items-end gap-2 text-white font-euclid text-3xl sm:text-4xl font-bold"><span>€39</span><small class="text-neutral-dark text-sm -ml-1.5 font-normal">/month</small></div>
+Growth price node: <span class="flex gap-1 items-end"><span class="text-3xl! sm:text-4xl! font-normal opacity-50 relative after:...(strikethrough style)...">€99</span>€39</span>
+Ultra price node: <div class="w-full my-5 mb-2 flex items-end gap-2 text-white font-euclid text-3xl sm:text-4xl font-bold"><span>€199</span><small class="text-neutral-dark text-sm -ml-1.5 font-normal">/month</small></div>
+CONCLUSION: figures confirmed as whole-euro amounts 39 / 99(struck)->39 / 199. No superscript-cents artifact. Rendered text and raw DOM agree exactly.
+
+=== CURRENCY CHECK (D-003/D-007 protocol) ===
+- No currency selector, no "USD"/"$"/"currency" token anywhere in rendered body text (checked via
+  document.body.innerText regex scan).
+- Network request observed: GET https://www.revid.ai/api/stripe/checkout-currency -> 200
+  Response body (fetched in-page via same-origin fetch): {"currency":"eur"}
+  This is a server-computed (Stripe-backed) currency-detection endpoint, consistent with
+  geolocation-driven localization (protocol D-003's core concern: collection egresses from
+  Turkey, so a served EUR price may be measuring our network, not a stated vendor policy).
+- No vendor-supported currency URL parameter found/tested (none advertised on page).
+- Next.js __NEXT_DATA__ JSON payload inspected: only i18n UI-copy strings; no plan/price/currency
+  fields embedded statically (plan prices + currency are fetched dynamically, not present in
+  the static payload).
+
+=== CREDIT SLIDER (Ultra tier) ===
+Interactive range input "Select Ultra monthly credits", default position 12,000 (labelled steps:
+12k / 30k / 50k / 100k / 200k). Not moved (no interaction beyond default read), since Ultra is not
+the entry tier candidate at default annual-equivalent comparison.
+
+=== FOOTER LINKS OF RECORD (for further source location) ===
+Terms of Service -> /terms
+Privacy Policy -> /policy
+Pricing -> /pricing
+API docs -> https://www.revid.ai/docs
+"Start for free" / "Create your first video" CTA -> /login ("No credit card required")

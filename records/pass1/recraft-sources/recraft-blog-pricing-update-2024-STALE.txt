@@ -1,0 +1,43 @@
+URL: https://www.recraft.ai/blog/pricing-update
+Date accessed: 2026-08-10
+Method: Rendered read.
+STATUS: This official blog post is dated September 9, 2024 and describes a SUPERSEDED plan
+structure (it names a "Free / Basic / Advanced / Pro" lineup; the live pricing page on the
+access date above shows "Free / Basic / Pro / Teams" — "Advanced" no longer exists and "Teams"
+is not mentioned in the post). Kept only as background for coder_note / conflict_note; NOT used
+to code any current-state variable. The current docs.recraft.ai/plans-and-billing/credits page
+(see credits-docs-rendered-2026-08-10.txt) is the governing source (official documentation
+ranks above "other official vendor pages" such as a blog post, per protocol §6.2, and is not
+dated/stale).
+
+--- excerpt, verbatim ---
+"Recraft's pricing update: credit-based subscriptions"
+September 9, 2024
+...
+How do credits work?
+Credits are spent every time you produce an image in Recraft. An image is produced by
+generating one from scratch or by modifying it using a tool like Modify Region or Remove
+Background. Producing a single raster image uses 1 credit, and producing a single vector
+image uses 2. Creating or converting an image into a mockup also uses 2 credits, while the
+Creative Upscale tool uses 20.
+
+Operation | Credits
+Raster image - Generation of one raster image | 1
+Raster image - Modify region | 1
+Raster image - Crisp upscale | 1
+Raster image - Erase region | 1
+Raster image - Vectorization | 1
+Raster image - Remove background | 1
+Raster image - Replace background | 1
+Vector image - Generation of one vector image | 2
+Vector image - Modify region | 2
+Vector image - Erase region | 2
+Vector image - Remove background | 2
+Vector image - Replace background | 2
+Mockup - Convert image to mockup | 2
+Mockup - Generate mockup image | 2
+Creative upscale - Creative upscale | 20
+
+What happens to unused credits?
+Credits are reset daily for free users and monthly for subscribers. Top-up credits do not
+expire. Top-up credit prices and conditions are experimental and subject to change.

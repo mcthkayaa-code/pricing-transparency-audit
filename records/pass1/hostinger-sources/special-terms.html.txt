@@ -1,0 +1,253 @@
+Hostinger Horizons special terms
+Pricing
+Products
+Products
+AI and automation
+Hosting
+Domains
+Create a website
+Sell online
+Email and marketing
+For agencies
+Automate and deploy
+Hostinger Agents
+New
+Ready-to-use AI team for daily business tasks.
+OpenClaw
+Personal, always-on AI assistant for everyday automation.
+Hermes Agent
+New
+Persistent, context-aware AI agent for continuous automations.
+Self-hosted n8n
+Custom, node-based AI workflows with full control.
+Hostinger Connector
+New
+Build sites and manage hosting with your AI coding assistant.
+Agentic Mail
+New
+Email infrastructure designed for AI agents.
+Create and grow
+Vibe code your site
+Free trial
+Create a business ready website by chatting with AI.
+Email marketing
+Create and send AI powered email campaigns.
+Hermes Agent
+New
+Stop doing the same tasks twice
+Describe your workflow. Hermes takes it from there and keeps going.
+Meet Hermes Agent
+Resources
+About
+Blog
+Expert tips, product updates, and customer stories.
+Product updates
+Latest releases and upcoming features.
+Our story
+Meet the people and platform behind your success.
+Contact
+How to reach us.
+Guidance
+Knowledge Base
+Help articles and guides for every Hostinger service.
+Tutorials
+Articles to help you achieve your online success story.
+Hostinger Academy
+Practical video guides to help you build and grow online.
+Learning lab
+Guided paths to build, launch, and grow online.
+Newsroom
+Official Hostinger news and press releases.
+Learning lab
+Find the right learning path for you
+Choose your goal, learn your way, and keep building with confidence.
+Go to Learning lab
+EN
+Hostinger Horizons special terms
+Please read this agreement carefully, as it contains important information regarding your legal rights and remedies.
+Hostinger accessibility statement
+Information security policy
+Privacy policy
+Registrar information
+Terms of service
+Agreements
+Affiliate program agreement
+Change of registrant agreement
+Data processing addendum
+Domain name registration agreement
+Domain name transfer agreement
+Domain registrant agreement
+Hosting agreement
+Hostinger Horizons special terms
+Referral program agreement
+Reseller master agreement
+Policies
+Abuse handling policy
+Brand guidelines and permissions
+Cookie policy
+Customer service policy
+Domain name dispute resolution
+Expired registration recovery policy
+Hostinger responsible disclosure policy and bug reward program
+Non-public registrant data (NPRD) request policy
+Refund policy
+TLD registry policies
+Trademark/copyright
+Company’s policies
+DSA Transparency Report
+Third party code of conduct
+The English version of legal agreements and policies is considered as the only current and valid version of this document. Any translated version is provided for your convenience only, to facilitate reading and understanding of the English version. Any translated versions are not legally binding and cannot replace the English versions. In the event of disagreement or conflict, the English language legal agreements and policies shall prevail.
+Hostinger Horizons special terms
+Hostinger accessibility statement
+Information security policy
+Privacy policy
+Registrar information
+Terms of service
+Agreements
+Affiliate program agreement
+Change of registrant agreement
+Data processing addendum
+Domain name registration agreement
+Domain name transfer agreement
+Domain registrant agreement
+Hosting agreement
+Hostinger Horizons special terms
+Referral program agreement
+Reseller master agreement
+Policies
+Abuse handling policy
+Brand guidelines and permissions
+Cookie policy
+Customer service policy
+Domain name dispute resolution
+Expired registration recovery policy
+Hostinger responsible disclosure policy and bug reward program
+Non-public registrant data (NPRD) request policy
+Refund policy
+TLD registry policies
+Trademark/copyright
+Company’s policies
+DSA Transparency Report
+Third party code of conduct
+Last revised: 2025-11-05 08:24:45
+1. OVERVIEW
+These Hostinger Horizons Special Terms (“
+Special Terms
+”) govern your use of Hostinger Horizons, an artificial intelligence (“
+AI
+”) powered tool designed and provided by Hostinger (“
+Service
+”). These Special Terms are incorporated into the
+Hostinger Universal Terms of Service Agreement
+(“
+Agreement
+”).
+These Special Terms are entered into by and between the applicable Hostinger group entity, as determined under the Agreement, and you. By using the Service, you acknowledge and agree to be bound by these Special Terms, the Agreement, and any other agreements or policies expressly incorporated herein. In case of conflict, these Special Terms prevail. If any provision of these Special Terms is deemed invalid or unenforceable, the remaining provisions shall continue in full force and effect.
+All capitalized terms used herein but not defined shall have the meanings assigned to them in the Agreement.
+Hostinger may change or modify these Special Terms, or any limitations or restrictions on the Service, at any time, as outlined in the Agreement, with such changes or modifications effective immediately upon posting to the Site.
+2. DESCRIPTION OF SERVICES
+The Service is an AI-driven tool that empowers Customers to create websites, applications, and other digital content without requiring technical expertise in coding or programming. This tool streamlines the development process by allowing Customers to provide textual, visual input or any other content, which is then processed by AI to generate structured, functional, and aesthetically optimized digital assets.
+The Service offers different subscription plans with varying features and usage limits, including limits on the amount of Input allowed per day. The specific features and limitations of each plan are detailed on the Site and within your account dashboard.
+While the Service is in the development stage (marked as “Beta”), the terms and conditions outlined in Section 5 “Availability of Site and Services, Beta Services” of the Agreement regarding “Beta Services” apply to your use of the Service.
+The Service has various functionalities, including automated website and application generation, AI-assisted content structuring, real-time design adaptation, and integrated deployment solutions. Users can leverage such functionalities to build and refine digital content according to their specific needs.
+The accuracy, availability, and overall performance of the Services may fluctuate due to system constraints, AI model updates, or evolving technical limitations. Hostinger reserves the right to introduce reasonable usage restrictions to maintain system stability and ensure a high-quality Customer experience. Such limitations may include but are not limited to, usage quotas, processing speed adjustments, and access to specific features based on demand and Service optimization needs.
+3. OWNERSHIP OF AI-GENERATED CONTENT
+You acknowledge that the Services generates content based on AI models that operate using both Customer-provided Input and machine-generated logic.
+For sake of clarity, “Input” refers to any text, data, or information you provide to the Services for processing, and “Output” refers to the content, designs, or other assets generated by the Service in response to your Input.
+As stated in the
+Agreement, the Input submitted by you and the Output generated through the Service are considered Customer Content. Except for Hostinger Content, as stated in the Agreement, you retain ownership rights to your Input and the Output, to the extent permitted by applicable laws. However, you understand and agree that Hostinger does not guarantee that the generated Output will be unique, original, or free from third-party intellectual property claims. Also note that due to the nature of AI-generated content, similar or identical outputs may be generated for multiple Customers. As a result, Hostinger does not guarantee exclusivity or uniqueness of any Output.
+As the Input and the Output are considered Customer Content, Hostinger may process such Content in accordance with Section 8 of the Agreement. This includes the ability to use, analyze, store, and process such content in accordance with Hostinger’s policies and applicable agreements.
+4. CUSTOMER RESPONSIBILITIES AND RESTRICTIONS
+You acknowledge and agree that you are solely responsible for ensuring that any AI-generated content complies with applicable laws, including any intellectual property and privacy laws. You are fully responsible for the Inputs you provide to the Service, the Outputs generated by it, and any actions taken based on those Outputs. You understand the nature and limitations of AI-generated Outputs and assume all risks associated with using the Service. Hostinger makes no representations or warranties regarding the legality, originality, accuracy, or non-infringement of any AI-generated content. you should conduct an independent review and due diligence before using, distributing, or commercializing any AI-generated content.
+You bear full responsibility for ensuring that the Input and Output does not infringe upon any intellectual property rights, privacy rights, or other applicable laws. You must ensure compliance with all applicable laws and regulations when using the Service. If the Input or Output include personal data, you are solely responsible for determining the legal basis for processing such data and ensuring compliance with all applicable data protection laws and any other relevant obligations. Hostinger does not assume any responsibility for verifying the lawfulness, accuracy, or appropriateness of such processing.
+You may not use the Service to generate, disseminate, or facilitate content that is illegal, promotes illegal activity, promotes harmful or deceptive activities, or otherwise violates any of the provisions outlined in the Agreement. This includes content that involves child sexual abuse material, terrorism, illegal drugs, human trafficking, weapons, fraud, identity theft, phishing, scams, harassment, bullying, self-harm, hate speech, defamation, malware, spyware, ransomware, DDoS attacks, or any other activity that Hostinger deems inappropriate or harmful.
+You acknowledge and agree that certain features of the Service, which may be free or paid, may allow you to share, enable, distribute, or otherwise make your Customer Content available to other Customers and/or third parties, as well as to access, copy, or utilize content made available by other Customers. By making your Customer Content available through such features, you grant other Customers a non-exclusive, worldwide, royalty-free license to use, reproduce, copy, modify and irrevocable, where applicable, commercialize such Customer Content, solely within and in accordance with the functionality of the Service. You remain solely responsible for ensuring that any Customer Content you choose to make available through such features complies with applicable laws and third party rights.
+We reserve the right to suspend or terminate your access to the Service if your use of the Services violates any of the restrictions stated in the Special Terms or the Agreement.
+5. LIMITATIONS OF LIABILITY AND DISCLAIMER OF WARRANTIES
+You acknowledge and agree that the Service is an AI-powered tool that operates based on probabilistic models and may not always produce accurate, complete, reliable, or error-free outputs. Due to the inherent limitations of AI technology, the generated content may contain inaccuracies, omissions, or unintended consequences. You are solely responsible for independently reviewing, verifying, and assessing the suitability of any AI-generated content before relying on or using it for any purpose. You assume full responsibility for any actions taken based on AI-generated Outputs and acknowledge that such content should not be considered professional, legal, financial, or business advice.
+To the fullest extent permitted by law, Hostinger makes no representations, warranties, or guarantees, express or implied, and disclaims liability regarding the accuracy, completeness, originality, reliability, legality, security, or fitness for a particular purpose of any AI-generated content. All content generated through the Service is provided strictly “AS IS” and “AS AVAILABLE”, without warranties of any kind, including but not limited to merchantability, fitness for a particular purpose, or non-infringement.
+Furthermore, while Hostinger implements commercially reasonable security measures, it does not warrant or guarantee that AI-generated content, tools, or websites will be free from vulnerabilities, exploits, security risks, or compliance deficiencies. Customers are responsible for conducting independent security assessments, implementing necessary safeguards, and ensuring compliance with all applicable laws and regulations before deploying or utilizing any AI-generated content.
+Hostinger makes no representations or warranties with respect to any Customer Content shared, distributed, enabled, or otherwise made available by Customers through the Service, including but not limited to its accuracy, legality, originality, quality or fitness for a particular purpose. Hostinger does not undertake to review, verify, or approve such Customer Content and expressly disclaims any responsibility or liability arising from its availability, use, modification or distribution by you or any third party.
+In addition, the limitations of liability and disclaimers of warranties as outlined in the Agreement also apply to your use of the Service under these Special Terms.
+By using the Service, you expressly acknowledge and accept these limitations and agree to assume all risks associated with the use of Services.
+Hostinger
+Hostinger Horizons special terms
+Hosting
+Web hosting
+Hosting for WordPress
+VPS hosting
+Self-hosted n8n
+Business email
+Cloud hosting
+Hosting for WooCommerce
+Hosting for agencies
+Minecraft hosting
+Hermes Agent VPS
+OpenClaw
+Paperclip VPS
+Google Workspace
+Domain
+Domain name search
+Buy a domain
+Cheap domain names
+Free domain
+WHOIS Lookup
+Free SSL certificate
+Domain transfer
+Domain extensions
+Personal domain name
+Premium domains
+Tools
+Hostinger Horizons
+Website Builder
+AI Website Builder
+Ecommerce Website Builder
+Templates
+Domain Name Generator
+Print on Demand
+Link in Bio
+Business Name Generator
+AI Newsletter Generator
+AI Logo Generator
+Migrate to Hostinger
+Hostinger API
+Information
+Pricing
+Reviews
+Affiliate program
+Educational partnership
+Referral program
+Agency directory
+Roadmap
+System status
+Trust center
+Sitemap
+Company
+About Hostinger
+Our technology
+Newsroom
+Career
+Blog
+Student discount
+Sustainability
+Principles
+Support
+Tutorials
+Knowledge Base
+Hostinger Academy
+Contact us
+Report abuse
+NPRD request policy
+Privacy policy
+Refund policy
+Terms of service
+and more
+© 2004-2026 Hostinger – Launch, grow, and succeed online, supported by AI that puts the power in your hands.
+Prices are listed without VAT
+We care about your privacy
+This website uses cookies that are needed for the site to work properly and to get data on how you interact with it, as well as for marketing purposes. By accepting, you agree to store cookies on your device for ad targeting, personalization, and analytics as described in our
+Cookie policy
+.
+Accept all
+Reject all
+Cookie settings

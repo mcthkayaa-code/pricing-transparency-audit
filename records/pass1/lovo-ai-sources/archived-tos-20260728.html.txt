@@ -1,0 +1,189 @@
+Terms of Service | LOVO AI
+🎉
+NEW RELEASE
+Pro V2 Voices
+Truly Directable, Expressive AI Voice Generator
+Learn more about what Pro V2 can do
+Features
+Resources
+Use cases
+close
+menu button
+Terms of Service
+Last updated: September 26
+th
+, 2024
+Please read these Terms of Service (“Terms”, “Terms of Service”, “ToS”) carefully before using or accessing any part of
+https://www.lovo.ai
+,
+https://www.genny.ai
+, or other affiliated websites (collectively, “Websites”) and other LOVO-related sites, apps, emails, social media pages, and other products and Services (collectively, “Services”) that state they are affiliated with LOVO, Inc. (collectively, “LOVO”, “Us”, “We”, or “Our”) or are being provided under these Terms of Service
+1. Introduction
+1.1. Agreement
+Your access to and use of the Services is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Services.
+By accessing or using the Services you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Services.
+You also agree that: (a) you must be the “Minimum Age” (described below) or older; (b) you will only have one account per each Service, which must be in your real name; and (c) you are not already restricted by LOVO from using the Services. Creating an account with false information or creating multiple/duplicate accounts is a violation of our terms, including accounts registered on behalf of others or persons under the Minimum Age.
+“Minimum Age” means 16 years old. However, if the law where you reside requires that you must be older in order for LOVO to lawfully provide the Services to you without parental consent (including use of your personal data) then the Minimum Age is such age as designated by law.
+1.2 Additional Definition
+“Customer” is the organization that you represent in agreeing to the Terms. If the Service is being set up by someone who is not formally affiliated with an organization, Customer is the individual setting them up. If you signed up for a plan using your corporate email domain, your organization is Customer, and Customer can modify and re-assign roles for your Service (including your role) and otherwise exercise its rights under the Terms. If Customer elects to replace you as the representative with ultimate authority for the Service, we will provide you with notice following such election, and you agree to take any actions reasonably requested by us or Customer to facilitate the transfer of authority to a new representative of Customer.
+1.3 Links to Other Websites
+Our Services may contain links to third-party websites or Services that are not owned or controlled by us, including but not limited to Facebook and Gmail.
+We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or Services.
+You further acknowledge and agree that we shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or Services available on or through any such websites or Services.
+We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or Services that you visit.
+1.4 Termination
+We may terminate or suspend access to our Services immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
+All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
+Upon termination, your right to use the Services will immediately cease. If you wish to terminate your account, you may simply discontinue using the Services.
+All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+1.5 Changes
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+By continuing to access or use our Services after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Services.
+2. Obligation
+2.1 Accounts
+When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Services.
+You are responsible for safeguarding the password that you use to access the Services and for any activities or actions under your password, whether your password is with our Services or a third-party Services. You are responsible for anything that happens through your account unless you close it or immediately report misuse by contacting us at contact@lovo.ai.
+You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
+2.2 Payment
+If you buy any of our paid Services (“Subscription”), you agree to pay us the applicable fees, taxes, and additional terms specific to the Subscription. Failure to pay these fees will result in the termination of your Subscription. Also, you agree that:
+Your purchase may be subject to foreign exchange fees or price differences based on location (e.g., exchange rates).
+Our payment processor may store and continue billing your payment method (e.g. credit card) even after it has expired, to avoid interruptions in your Services and to use to pay for other Services you may buy.
+If you purchase a Subscription, your payment method will automatically be charged at either the start or end of each Subscription period for the fees and taxes applicable to that period. To avoid future charges, cancel before the renewal date.
+We may calculate taxes payable by you based on the billing information that you provide us at the time of purchase.
+2.3 Cancellation & Refund Policy
+You can cancel your Subscription at any time to stop the auto renewal of your Subscription.
+If you decide to cancel your Subscription, you will still have access to your Subscription until the day of expiration and will be charged accordingly. You can also reconvene the auto renewal of your Subscription anytime before the Subscription expires.
+Due to the nature of our Services, we will not be providing refunds once you have confirmed payment of your purchase and 24 hours have passed.
+LOVO is not responsible for any bank charges, commissions, or overdrafts. The only way to remove these charges is through direct negotiation with your bank.
+If you update your Subscription at any time, your existing Subscription will be canceled, and the new Subscription, with all its Services capabilities and duration, will go into effect immediately upon payment confirmation unless otherwise instructed.
+3. Rights & Limits
+3.1 Your License to the Services
+As between you and LOVO, you own the content and information that you submit to the Services, and you are only granting LOVO and our affiliates the following non-exclusive license:
+A worldwide, transferable, and sublicensable right to use, copy, modify, distribute, publish, and process information and content that you provide through our Services and the Services of others without any further consent, notice, or compensation to you or others. These rights are limited in the following ways:
+This license is for the purpose of operating, developing, providing, promoting, and improving the Services and researching and developing new ones. This license includes a right for us to make your information and content available to, and pass these rights along to, Services providers with whom we have contractual relationships related to the provision of the Services (“Third Parties”), solely for the purpose of providing such Services. Your content and information are made available to Third Parties only for processing and not storage.
+You can end this license for specific content by deleting such content from the Services or generally by terminating your account, except (i) to the extent you shared it with others as part of the Services and they copied, re-shared it, or stored it, and (ii) for the reasonable time it takes to remove from backup and other systems.
+While we may edit and make format changes to your content (such as translating or transcribing it, modifying the size, layout, file type, or removing metadata), we will not modify the meaning of your expression.
+Because you own your content and information and we only have non-exclusive rights to it, you may choose to make it available to others, including under the terms of a Creative Commons license.
+You and LOVO agree that we may access, store, process, and use any information and personal data that you provide in accordance with the terms of the Privacy Policy and your choices (including settings).
+By submitting suggestions or other feedback regarding our Services to LOVO, you agree that LOVO can use and share (but does not have to) such feedback for any purpose without compensation to you.
+You agree only to provide content or information that does not violate the law nor anyone’s rights (including intellectual property rights). You also agree that your profile information will be truthful.
+3.2 Services Availability
+We will not materially decrease the functionality of the Services during your Subscription period and will continue to provide the Services till the end of your Subscription period. We may change, suspend, or discontinue our Services; however, this will not affect any ongoing Subscriptions, and we will continue to provide the same level of Services till the end of your Subscription period. LOVO will use commercially reasonable efforts to provide you with the Services.
+We don’t promise to store or keep showing any information and content that you’ve posted. LOVO is not a storage Services. You agree that we have no obligation to store, maintain or provide you a copy of any content or information that you or others provide, except to the extent required by applicable law and as noted in our Privacy Policy.
+3.3 Limits
+LOVO reserves the right to restrict, suspend, or terminate your account if you breach this User Agreement or the law or misuse the Services.
+3.4 Intellectual Property Rights
+LOVO reserves all of its intellectual property rights in the Services. Trademarks and logos used in connection with the Services are the trademarks of their respective owners.
+3.5 Use Rights, Commercial Rights & Resell Rights
+During the term of your Subscription, you may use our Services for the usages permitted by your Subscription unless otherwise specified. The foregoing rights and licenses are conditioned upon your strict adherence to the terms and conditions hereof and any other applicable terms and conditions that LOVO may present.
+“Commercial” means any monetized, business-related uses such as videos, audiobooks, advertising, promotion, web page vlogging, or product integration.
+Commercial rights do not include reselling or white labeling access to the Services to obtain re-sale or re-license to your customer or other third parties.
+If you want to white label our Services to your customers, please contact us separately.
+Some examples of use cases that require separately authorized resell rights not included in any of the Subscription include web and mobile applications that resemble, access or provide a gateway to LOVO’s core functionality for re-sale by you to third parties.
+You may not use the Services for any illegal, immoral, or defamatory purposes.
+4. Custom Voice Cloning
+Among other Services, we provide a Voice Designing (Cloning) Service that allows you to use our technology, Services, or Website to synthesize voice recordings that sound like a Speaker by typing new words (“Cloned Voice”). A “Speaker” is a person (including you) who has given the necessary licenses, rights, consents, releases, and permissions to use recordings of their voice to train the Cloning AI and to synthesize and otherwise use their voice for the purposes of synthesizing speech.
+To avoid any doubt, by uploading files directly to our Services and Website or recording on our Services and Website (“Submitted Files”), you confirm that:
+You are the creator and owner of the Submitted Files, or you have the necessary licenses, rights, consents, releases, and permissions to use and authorize us to use your Submitted Files in any manner contemplated by our Services, including for the purposes of Voice Designing (Cloning), and these terms;
+You have the written consent, release, and/or permission of each and every identifiable individual person in your Submitted Files to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Submitted Files in any manner contemplated by our Services, including for purposes of Voice Designing (Cloning), and these terms; and,
+You are solely responsible for Content Generated using Submitted Files you do not own or do not have permission to use.
+US Specific
+If you are a US resident and you believe you can identify material hosted on our Services that infringes upon your Intellectual Property Rights or the rights of a person you represent, please notify us using the contact information provided below. A copy of your notification will be sent to the person who generated the material in question. If you are not sure whether this material is hosted on our Services or whether it violates your intellectual property or privacy rights, you should consider contacting an attorney first.
+Regarding Copyright specifically, if you believe that any material available on or through the Website infringes upon any Copyright you own or control, please immediately notify us by submitting a takedown notice containing the information below to
+contact@lovo.ai
+:
+A physical or electronic signature of a person authorized to act on behalf of the owner of the Copyright;
+Identification of the Copyrighted work or works claimed to have been infringed;
+Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information sufficient to permit us to identify and locate the material;
+Your contact information, including your name, address, phone number, and/or email address;
+A statement that you have a good faith belief that the use of the material you have identified is not authorized by the Copyright owner, its agent, or the law; and,
+A statement that this information you have provided is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of the Copyrighted work you allege has been infringed.
+By using Custom Voice Designing (Cloning) Services offered by LOVO, you grant permission to LOVO and its affiliates to use the data you provided for research and development purposes to further improve the technology, products, and Services they offer. Any data, including sensitive personal information, will not be shared with 3rd parties unless for the purposes of research, development, and enhancement of technology and Services offered by LOVO and its affiliates.
+5. Miscellaneous
+5.1 Governing Law and Jurisdiction
+These Terms shall be governed and construed in accordance with the laws of Delaware, without regard to its conflict of law provisions.
+5.2 Severability
+If a particular provision of this Agreement is found to be invalid or unenforceable, it shall not affect its other provisions and this Agreement shall be construed in all respects as if such invalid or unenforceable provision had been omitted.
+5.3 Waiver
+If we don’t act to enforce a breach of these Terms, that does not mean that LOVO has waived its right to enforce these Terms or our Agreement with you. You may not assign or transfer (or your membership or use of Services) to anyone without our consent. However, you agree that LOVO may assign these Terms and our Agreement with you to its affiliates or a party that buys it without your consent. There are no third-party beneficiaries to these Terms.
+5.4 Publicity
+Customer permits LOVO to use Customer’s name and logo to identify Customer as a customer on LOVO’s website and in other public or private communications with our existing or potential customers, subject to Customer’s standard trademark usage guidelines as provided to LOVO from time to time or when they are provided. Customer may send an email to
+hello@lovo.ai
+stating that Customer does not wish to be used as a reference. Customer also permits LOVO to issue a press release announcing Customer as a customer, provided LOVO obtains Customer’s approval of the text of any such press release prior to publication. Following an agreed-upon press release, LOVO may use the content of the press release on LOVO’s website and in marketing materials.
+5.5 No Warranty
+LOVO and its affiliates make no representation or warranty about the services, including any representation that the services will be uninterrupted or error-free, and provide the services (including content and information) on an “as is” and “as available” basis. To the fullest extent permitted under applicable law, LOVO and its affiliates disclaim any implied or statutory warranty, including any implied warranty of title, accuracy of data, non-infringement, merchantability, or fitness for a particular purpose.
+5.6 Limitations on Liability
+LOVO shall not be liable for any indirect, incidental, special, punitive, or consequential damages or any loss of revenue or profits (excluding fees under this agreement), data, or data use arising in connection with your use or inability to use the services.
+LOVO’s maximum liability for any and all damages arising out of or related to this agreement, the services, or your subscription, whether in contract or tort, or otherwise, shall not exceed, in the aggregate, the total amounts actually paid to LOVO for the services in the three (3) month period immediately preceding the event giving rise to such claim less any refunds or credits received by you from LOVO under such subscription.
+5.7
+Notices
+You agree that the only way to provide us legal notice is at contact@lovo.ai
+5.8 Entire Agreement
+These Terms (including additional terms that may be provided by us when you engage with a feature of the Services) is the only agreement between us regarding the Services and supersedes all prior agreements for the Services.
+6. “Dos and Don’ts”
+6.1. Dos
+You agree that you will:
+Comply with all applicable laws, including, without limitation, privacy laws, intellectual property laws, anti-spam laws, export control laws, tax laws, and regulatory requirements;
+Provide accurate information to us and keep it updated;
+Use your real name on your profile;
+Use the Services in a professional manner and
+Agree and adhere to the Terms of Service.
+6.2. Don’ts
+You agree that you will not:
+Create a false identity on LOVO, misrepresent your identity, create a profile for anyone other than yourself (a real person), or use or attempt to use another’s account;
+Develop, support, or use software, devices, scripts, robots, or any other means or processes (including crawlers, browser plugins, add-ons, or any other technology) to scrape the Services or otherwise copy profiles and other data from the Services;
+Override any security feature or bypass or circumvent any access controls or use limits of the Service;
+Copy, use, disclose, or distribute any information obtained from the Services, whether directly or through third parties (such as search engines), without the consent of LOVO;
+Disclose information that you do not have consent to disclose (such as confidential information of others (including your employer));
+Violate the intellectual property rights of others, including copyrights, patents, trademarks, trade secrets or other proprietary rights;
+Violate the intellectual property or other rights of LOVO, including, without limitation, (i) copying or distributing our technology, unless it is released under open source licenses; (ii) using the word “LOVO” or our logos in any business name, email, or URL without our express consent in writing;
+Post anything that contains software viruses, worms, or any other harmful code;
+Reverse engineer, decompile, disassemble, decipher, or otherwise attempt to derive the source code for the Services or any related technology that is not open source;
+Use bots or other automated methods to access the Services;
+Stalk, intimidate, threaten, or otherwise harass or cause discomfort to other users;
+Publish, post, upload, distribute, disseminate, or submit material through the Services that is unlawful, profane, non-consensual, obscene, defamatory, indecent, libelous, threatening, pornographic, harassing, hateful, racially or ethnically offensive, or encourages conduct that would be considered a criminal offense, give rise to civil liability, violate any law, or is otherwise inappropriate;
+Publish, post, upload, distribute, or disseminate any indecent or unlawful topic, name, material, or information;
+Send, distribute, or post spam, unsolicited or bulk commercial electronic communications, chain letters, or pyramid schemes;
+Harvest or otherwise collect or disclose information about other users without their consent;
+Monitor the Services’ availability, performance, or functionality for any competitive purpose;
+Engage in “framing,” “mirroring,” or otherwise simulating the appearance or function of the Services;
+Overlay or otherwise modify the Services or their appearance (such as by inserting elements into the Services or removing, covering, or obscuring an advertisement included on the Services); or
+Interfere with the operation of, or place an unreasonable load on, the Services (e.g., spam, denial of service attack, viruses, gaming algorithms).
+7. Contact Us
+You may contact us at
+contact@lovo.ai
+for all legal inquiries relating to the terms of service.
+hello@lovo.ai
+SkyDeck 2150 Shattuck Ave, Penthouse, Suite 1300 Berkeley, CA 94704-1347
+LOVO 2023
+Terms of Service
+Privacy Policy
+English
+Features
+Genny
+Text to Speech
+Auto Subtitle Generator
+Voice Cloning
+Online Video Editor
+AI Writer
+AI Art Generator
+LOVO Studio
+LOVO API
+Resources
+Tutorials
+Blogs
+Affiliate Program
+FAQ
+Contact us
+Use cases
+Advertisements
+Education
+Explainer
+YouTube
+Corporate Training
+Audiobooks
+Podcasts
+Social Media
+Product Demos
+Customer Service - IVR

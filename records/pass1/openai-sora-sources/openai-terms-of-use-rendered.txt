@@ -1,0 +1,40 @@
+URL: https://openai.com/policies/terms-of-use/ (read via https://openai.com/en-US/policies/terms-of-use/ after using the page's own language selector; default geo-redirect served /tr-TR/ "Kullanım Şartları" from our Turkey-egress network — reading the English/US version via the on-page language switcher is a same-document permitted action, not a new page/account action)
+Accessed: 2026-08-10
+Method: rendered read via browser tool (curl with Accept-Language: en-US header returned HTTP 403 "cf-mitigated: challenge" — Cloudflare bot block, not a locale effect)
+Archival: web.archive.org/save/ attempted twice (HTTP 520 both times) -> archive_failed for a same-day snapshot. Local copy only (this file). No pre-existing same-day IA snapshot found via availability API (closest not checked further after 2 failed attempts, per effort cap).
+
+--- Selected verbatim excerpts (full page is 22,555 characters; these are the passages the codebook's variables key on, extracted by keyword search against the rendered document.body.innerText) ---
+
+On billing/renewal:
+"...you will provide complete and accurate billing information, including a valid payment method. For paid subscriptions, we will automatically charge your payment method on each agreed-upon periodic renewal until you cancel. You're responsible for all applicable taxes, and we'll charge tax when required. If your payment cannot be completed, we may downgrade your account or suspend your access to our Services until payment is received."
+
+On service credits:
+"Service credits. You can pay for some Services in advance by purchasing service credits. All service credits are subject to our Service Credit Terms." [link: https://openai.com/policies/service-credit-terms/]
+
+On cancellation:
+"Cancellation. You can cancel (opens in a new window) [link: https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-plus-subscription] your paid subscription at any time. Payments are non-refundable, except where required by law. These Terms do not override any mandatory local laws regarding your cancellation rights."
+
+On price increases:
+"If we materially increase our subscription prices, we will give you at least 30 days' notice and any price increase will take effect on your next renewal so that you can cancel if you do not agree to the price increase."
+
+On discontinuation of Services (directly relevant given Sora's actual fate):
+"Discontinuation of Services. We may decide to discontinue our Services, but if we do, we will give you advance notice and a refund for any prepaid, unused Services."
+
+On output ownership:
+"...you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output."
+"Similarity of content. Due to the nature of our Services and artificial intelligence generally, output may not be unique and other users may receive similar output from our Services."
+
+On rate limits (relevant to unquantified_limit_clause):
+"Interfere with or disrupt our Services, including circumvent any rate limits or restrictions or bypass any protective measures or safety mitigations we put on our Services." (listed under "What you cannot do")
+
+On commercial use: searched the full rendered text for "commercial", "business purpose", "monetiz", "resell" — no explicit clause addressing commercial use of Output was found anywhere in this document.
+On watermark: searched for "watermark" — no match anywhere in this document.
+On free trial: searched for "free trial" and "trial" — no free-trial mechanism mentioned; the only "trial" matches are unrelated legal-jury-trial-waiver boilerplate.
+
+Links captured from this page relevant to this record:
+- Cancellation how-to: https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-plus-subscription
+- Service Credit Terms: https://openai.com/policies/service-credit-terms/
+- Usage Policies: https://openai.com/policies/usage-policies/
+- Business Terms: https://openai.com/policies/business-terms/
+
+Coder note: this is OpenAI's general Terms of Use, not a Sora-specific document. It is the correct governing contractual document for Sora because the Sora marketing page (openai.com/sora/, archived capture in this same sources folder) itself links to this exact URL as "Terms of use" and Sora required an OpenAI/ChatGPT account, which is governed by this ToS. No Sora-specific terms of service was found to exist separately.

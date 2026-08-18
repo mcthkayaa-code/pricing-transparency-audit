@@ -1,0 +1,119 @@
+ADJUDICATOR SOURCE VERIFICATION MANIFEST — openai-sora
+Adjudication date: 2026-08-17
+Purpose: per protocol §7.4 and the adjudicator brief's "verify a cited capture exists" duty, every
+archive capture the post-window-retrieval sweeps (1/2/3) quoted for openai-sora and that this
+adjudication relies on was RE-FETCHED INDEPENDENTLY by this adjudicator (not copy-pasted from a
+sweep file) via curl against web.archive.org, decompressed (archive.org's `id_` raw modifier
+returns gzip), and stripped of markup to plain text. All quotations used in the adjudicated record
+were located by string search in these independently-fetched files, not trusted from a sweep's
+prose.
+
+All fetches used a standard desktop User-Agent, no account/login/consent/checkout per protocol §6.3.
+archive.org's replay path returned HTTP 503 intermittently throughout (consistent with sweeps 1-3's
+own infrastructure notes); each URL below required between 1 and 9 retry attempts before a 200.
+
+============================================================================
+OUT OF SCOPE documents (vendor's own text: "the following experience only applies to Sora 1 on
+Web. It does not apply to the Sora app or Sora 2 on web.") — see coder_note in openai-sora.yaml
+for why these are not used to code the Sora-app/Sora-2 product this record measures.
+============================================================================
+
+1. sora-1-web-billing-faq-20260201-OUTOFSCOPE-vendor-text.txt
+   URL fetched: https://web.archive.org/web/20260201090715id_/https://help.openai.com/en/articles/10245774-sora-billing-credits-faq
+   Result: HTTP 200. Gzip payload decompressed to 54,229 bytes (sweep 1 reported 54,221; within
+   normal capture-read variance). Extracted visible text: 4,710 chars (sweep 1 reported 4,706).
+   Canonical title/slug per collection enumeration: "Sora - Billing FAQ" / 10245774-sora-billing-faq.
+   "Updated: 4 days ago" per the page's own stamp (i.e. ~2026-01-28), closest pre-shutdown capture
+   read. Confirms sweep 1/2/3's quotations verbatim.
+
+2. sora-1-web-billing-faq-20251124-OUTOFSCOPE-vendor-text.txt
+   URL fetched: https://web.archive.org/web/20251124172907id_/https://help.openai.com/en/articles/10245774-sora-billing-credits-faq
+   Result: HTTP 200. Decompressed to 51,172 bytes (matches sweep 1 exactly). Earlier capture, read
+   for corroboration only.
+
+3. sora-1-web-generating-videos-on-sora-20260414-OUTOFSCOPE-vendor-text.txt
+   URL fetched: https://web.archive.org/web/20260414100838id_/https://help.openai.com/en/articles/9957612-generating-videos-on-sora
+   Result: HTTP 200. Decompressed 66,641 bytes; extracted text 8,474 chars. "Updated: 6 hours ago"
+   stamp, last pre-shutdown capture (shutdown was 2026-04-26). CONFIRMS sweep 3's finding
+   independently: this capture's tier-eligibility sentence reads "Currently ChatGPT Enterprise and
+   Edu accounts are not eligible for Sora access" — "Free" is absent from this sentence, unlike the
+   2026-02-01 Billing FAQ capture above, which read "...ChatGPT Free, Enterprise, and Edu accounts
+   are not eligible...". Both documents carry the identical scope disclaimer excluding "the Sora app
+   or Sora 2 on web."
+
+============================================================================
+IN SCOPE documents (no "Sora 1 on Web only" disclaimer; explicitly discuss "Sora 2", "the Sora
+app", or sora.com's iOS/web app — the product surface matching this record's own
+primary_source_url, https://sora.com, and its state at shutdown).
+============================================================================
+
+4. sora-app-creating-videos-with-sora-20260329-INSCOPE-vendor-text.txt
+   URL fetched: https://web.archive.org/web/20260329180344id_/https://help.openai.com/en/articles/12460853-creating-videos-with-sora
+   Result: HTTP 200. Decompressed 61,222 bytes; extracted text 7,504 chars. "Updated: 8 days ago"
+   (~2026-03-21). No Sora-1-only disclaimer (checked by string search). Contains "Sora 2" x1,
+   explicitly states "In Sora 1 and Sora 2, ChatGPT Pro users can download videos without a
+   watermark when..." — a rule the document states covers BOTH generations. Source of the
+   usage-limit mechanism, the watermark-trigger list, and the "You've already generated X videos"
+   quote.
+
+5. sora-app-getting-started-20260407-INSCOPE-vendor-text.txt
+   URL fetched: https://web.archive.org/web/20260407214549id_/https://help.openai.com/en/articles/12456897-getting-started-with-the-sora-app
+   Result: HTTP 200. Decompressed 54,280 bytes; extracted text 6,692 chars. "Updated: 2 months ago"
+   stamp on this capture (content dated ~early Feb 2026). No Sora-1-only disclaimer. Contains
+   "Sora 2" x13. States base Sora/Sora 2 access is invite/rollout-gated ("Access starts with
+   invite-only iOS users beginning September 30, 2025, then expands"), not gated to a specific paid
+   ChatGPT tier; only "Sora 2 Pro" is stated to require ChatGPT Pro. States unconditionally "At
+   launch, all Sora videos include a visible moving watermark."
+
+6. chatgpt-using-credits-flexible-usage-20260328-INSCOPE-vendor-text.txt
+   URL fetched: https://web.archive.org/web/20260328012520id_/https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro
+   Result: HTTP 200. Decompressed 55,095 bytes; extracted text 5,031 chars. "Updated: 17 days ago"
+   (~2026-03-11). ChatGPT-collection article (not Sora-collection), title "Using Credits for
+   Flexible Usage in ChatGPT (Free/Go/Plus/Pro) & Sora". No Sora-1-only disclaimer. Contains the
+   Sora 2 / Sora 2 Pro credit rate card, the "pay-as-you-go add-on... nothing about your plan
+   changes" language, the 12-month credit expiry statement, and "Currently, this includes Codex for
+   Plus/Pro subscribers and Sora for all users."
+
+7. sora-release-notes-20260327-INSCOPE-vendor-text.txt
+   URL fetched: https://web.archive.org/web/20260327070818id_/https://help.openai.com/en/articles/12593142-sora-release-notes
+   Result: HTTP 200. Decompressed 57,284 bytes; extracted text 8,507 chars (sweep 3 reported 8,498;
+   normal variance). "Updated: 6 days ago". No Sora-1-only disclaimer. Confirms independently the
+   October 30, 2025 entry: "Today we're introducing ways to purchase additional usage in products
+   like Codex and Sora. If you hit your included limits, you can seamlessly buy more credits right
+   in the Codex dashboard or buy more video generations in the Sora app to keep going. Learn more in
+   our article: Using Credits for Flexible Usage in ChatGPT (Free/Go/Plus/Pro) & Sora." — this is
+   the first-party link from the Sora product's own release history into document 6, establishing
+   provenance for why an ordinary reader following the Sora collection would reach the credits
+   article. Also confirms a February 9, 2026 entry: "Rolling out today on the Sora iOS app and
+   Sora.com to all users, everywhere Sora is available."
+
+8. sora-help-collection-20260331-raw.html (decompressed raw HTML, not text-stripped)
+   URL fetched: https://web.archive.org/web/20260331195237id_/https://help.openai.com/en/collections/11106745-sora
+   Result: HTTP 200 (after 3 retries). Decompressed 33,241 bytes. Used to enumerate the exact
+   article IDs/slugs for the 13-article Sora help collection (confirms sweep 1's count and list),
+   from which the URLs for documents 3-5 above were read directly rather than guessed:
+     10245774-sora-billing-faq · 10249777-sora-data-controls-faq · 10250692-sora-supported-countries
+     10877094-creating-images-on-sora · 12435986-generating-content-with-characters
+     12456897-getting-started-with-the-sora-app · 12460853-creating-videos-with-sora
+     12461081-data-controls-and-privacy-on-the-sora-app · 12461090-blocking-and-reporting-on-the-sora-app
+     12461125-sending-messages-in-the-sora-app · 12461230-sora-app-and-sora-2-supported-countries
+     12593142-sora-release-notes · 9957612-generating-videos-on-sora
+
+============================================================================
+Cross-document keyword scan run independently by this adjudicator (matches sweep 3's reported
+counts on the two documents sweep 3 scanned, and extends the scan to the four additional
+documents this adjudicator fetched):
+============================================================================
+term          | doc4 | doc5 | doc6 | doc7 | doc1(2026-02-01) | doc2(2025-11-24) | doc3
+trial           0      0      0      0      0                  0                  0
+free plan       0      0      0      0      0                  0                  0
+free tier       0      0      0      0      0                  0                  0
+$               0      0      0      0      0                  0                  0
+fail            0      0      0      0      0                  0                  0
+deduct          0      0      0      0      0                  0                  0
+unsuccessful    0      0      0      0      0                  0                  0
+"ChatGPT Free" (substantive, i.e. outside the credits-article's own title) — 0 in every document.
+
+This scan independently reproduces D-075's finding on failed_generation_charge_policy and
+annual_default_toggle (not revisited here; already settled) across a document set twice the size
+of the one D-075's release note describes, with the same result.

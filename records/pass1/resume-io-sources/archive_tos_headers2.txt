@@ -1,0 +1,91 @@
+HTTP/2 302 
+server: nginx
+date: Wed, 12 Aug 2026 06:57:36 GMT
+content-type: text/html; charset=utf-8
+content-length: 288
+location: https://web.archive.org/web/20260812065722/https://resume.io/tos
+x-app-server: wwwb-app223-dc8
+x-ts: 302
+x-tr: 18075
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-save-SERVER=wwwb-app223; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 302 
+server: nginx
+date: Wed, 12 Aug 2026 06:57:36 GMT
+content-type: text/plain; charset=utf-8
+content-length: 0
+x-archive-redirect-reason: found capture at 20260202010730
+location: https://web.archive.org/web/20260202010730/https://resume.io/tos
+server-timing: captures_list;dur=0.327862, exclusion.robots;dur=0.025903, exclusion.robots.policy;dur=0.019079, esindex;dur=0.006905, cdx.remote;dur=15.162662, LoadShardBlock;dur=214.925231, PetaboxLoader3.datanode;dur=46.730201
+x-app-server: wwwb-app219-dc8
+x-ts: 302
+x-tr: 248
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-p-SERVER=wwwb-app219; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Wed, 12 Aug 2026 06:57:37 GMT
+content-type: text/html; charset=utf-8
+x-archive-orig-date: Mon, 02 Feb 2026 01:07:30 GMT
+x-archive-orig-content-length: 134793
+x-archive-orig-connection: keep-alive
+x-archive-orig-x-frame-options: SAMEORIGIN
+x-archive-orig-x-xss-protection: 0
+x-archive-orig-x-content-type-options: nosniff
+x-archive-orig-x-permitted-cross-domain-policies: none
+x-archive-orig-referrer-policy: strict-origin-when-cross-origin
+x-archive-orig-link: </assets/css/landing-11b0b16c4b9f8d0efc70d909ea151cfacdf1b1c679d05722cc377a73a36e5826.css>; rel=preload; as=style; nopush
+x-archive-orig-etag: W/"c58bd1c808ba6cfe20db44708145e5ad"
+x-archive-orig-cache-control: max-age=0, private, must-revalidate
+x-archive-orig-content-security-policy: default-src 'self' * data: blob:; img-src 'self' * 'unsafe-inline' data: blob:; script-src 'self' * 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' * 'unsafe-inline' data:; object-src 'none'; worker-src 'self' data: blob: career.io *.career.io careerio.careerminds.com *.careerio.careerminds.com careerio.topcv.com *.careerio.topcv.com careerio.topresume.com *.careerio.topresume.com careers.coursereport.com *.careers.coursereport.com careers.jetrecruits.com *.careers.jetrecruits.com careers.nscs.org *.careers.nscs.org cv.dk *.cv.dk cvapp.ar *.cvapp.ar cvapp.bg *.cvapp.bg cvapp.cl *.cvapp.cl cvapp.cz *.cvapp.cz cvapp.de *.cvapp.de cvapp.es *.cvapp.es cvapp.fi *.cvapp.fi cvapp.fr *.cvapp.fr cvapp.gr *.cvapp.gr cvapp.hu *.cvapp.hu cvapp.ie *.cvapp.ie cvapp.it *.cvapp.it cvapp.mx *.cvapp.mx cvapp.no *.cvapp.no cvapp.nz *.cvapp.nz cvapp.ro *.cvapp.ro cvapp.rs *.cvapp.rs cvapp.vn *.cvapp.vn cveasy.pl *.cveasy.pl cvkungen.se *.cvkungen.se cvster.nl *.cvster.nl lebenslaufapp.at *.lebenslaufapp.at lebenslaufapp.ch *.lebenslaufapp.ch onlinecurriculo.com.br *.onlinecurriculo.com.br onlinecurriculo.pt *.onlinecurriculo.pt app.resume.ai *.app.resume.ai resume.ai *.resume.ai resume.io *.resume.io resumeapp.co.kr *.resumeapp.co.kr rirekisho.jp *.rirekisho.jp widget.resume.io *.widget.resume.io ust.stape.io *.ust.stape.io learning.career.io *.learning.career.io learning.careerio.careerminds.com *.learning.careerio.careerminds.com learning.careerio.topcv.com *.learning.careerio.topcv.com learning.careerio.topresume.com *.learning.careerio.topresume.com learning.coursereport.com *.learning.coursereport.com learning.resume.io *.learning.resume.io; frame-src https:; frame-ancestors 'self' vwo.com *.vwo.com
+x-archive-orig-strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-archive-orig-x-request-id: 382283dc-efea-43ae-bf5a-13a25b1420de
+x-archive-orig-x-runtime: 0.496860
+x-archive-orig-vary: Accept, Origin
+x-archive-orig-cf-cache-status: DYNAMIC
+x-archive-orig-set-cookie: _session_id=d90d7385bef5c4fbbe95863a8ecb0bd4; path=/; expires=Mon, 02 Mar 2026 01:07:30 GMT; HttpOnly; SameSite=Lax
+x-archive-orig-set-cookie: __cf_bm=v_0iSJZfxK_jGzaqTfMCIYmIC9xtTND36FyuPpqdiFo-1769994450.4300137-1.0.1.1-lDmh5tx1RmpKW6ieMZlp.Ulq7maxuXoNvFZ7ZQz4Qo6YPC4cjBT8nysa2nw2PvH1sJO_N6brzPT.Hm3qNVwVcjhb7eCqI4hvrE2VRSSdNoZWLKnZ9caX2JJHEWuaikB1; HttpOnly; Secure; Path=/; Domain=resume.io; Expires=Mon, 02 Feb 2026 01:37:30 GMT
+x-archive-orig-server: cloudflare
+x-archive-orig-cf-ray: 9c75cac329efd28c-FRA
+x-archive-orig-alt-svc: h3=":443"; ma=86400
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+memento-datetime: Mon, 02 Feb 2026 01:07:30 GMT
+link: <https://resume.io/tos>; rel="original", <https://web.archive.org/web/timemap/link/https://resume.io/tos>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://resume.io/tos>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: archiveteam_urls_20260202010807_9a99f1af/urls_20260202010807_9a99f1af.1762161290.megawarc.warc.zst
+server-timing: captures_list;dur=0.349845, exclusion.robots;dur=0.031610, exclusion.robots.policy;dur=0.022089, esindex;dur=0.007610, cdx.remote;dur=10.175296, LoadShardBlock;dur=87.207331, PetaboxLoader3.datanode;dur=75.667361, PetaboxLoader3.resolve;dur=189.974841, load_resource;dur=357.048500, loaddict;dur=188.616465
+x-app-server: wwwb-app263-dc8
+x-ts: 200
+x-tr: 519
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-p-SERVER=wwwb-app263; path=/
+x-location: All
+x-as: 47331
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

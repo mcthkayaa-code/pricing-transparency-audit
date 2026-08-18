@@ -1,0 +1,27 @@
+LOCAL CAPTURE (excerpts, verbatim) - Adobe General Terms of Use
+URL: https://www.adobe.com/legal/terms.html
+Accessed: 2026-08-14
+Published/Effective: October 3, 2025 (per page header, "replace and supersede all prior versions")
+Method: get_page_text (full page, 50KB) -> grepped for ownership/content/generative-AI sections.
+Full raw dump also preserved in this session's scratchpad (not committed - see excerpts below,
+which are the only parts relied on for coded values).
+
+=== Section 4.2 Ownership (verbatim) ===
+"As between you and Adobe, you (as a Business User or a Personal User, as applicable) retain all
+rights and ownership of your Content. We do not claim any ownership rights to your Content."
+Section 4 header/summary line: "Your content is your content — you own it, and we don't."
+
+=== Section 4.1 definition cross-reference ===
+"Content" governs what a "Personal User" (an individual/non-Business subscriber, which is what an
+Acrobat Express individual subscriber is) owns per 4.2.
+
+=== Product Specific Terms links found in the TOC (relevant ones) ===
+"Adobe Express" -> https://www.adobe.com/go/creativecloudexpressterms (redirects to
+Adobe-Express-Product-Specific-Terms-en_US-20241007.pdf - see companion file)
+"Adobe Generative AI" -> https://www.adobe.com/go/adobe-gen-ai-addl-terms (redirects to
+adobe-generative-ai-product-specific-terms-en-us-20260423.pdf - see companion file)
+Per this page: "If there is any conflict between the terms in the General Terms and the Product
+Specific Terms, then the Product Specific Terms govern in relation to those Services or Software."
+
+No mention of "watermark" anywhere in this document (confirmed via full-text grep of the 50KB
+capture - zero hits).

@@ -1,0 +1,131 @@
+D-007 CURRENCY RE-CHECK — framer — 2026-08-10
+Method: rendered reads (mcp browser tools) for Arm 1; a raw HTTP fetch of the
+already-cited web.archive.org capture for Arm 2's second-representation check.
+Purpose: apply the amended currency-check rule (deviations-log.md D-007), which
+supersedes D-003's Accept-Language/local-network reasoning this record originally
+rested on.
+
+RESULT UP FRONT: this re-check CHANGES the coded value. Framer publishes a real,
+readable USD price to a US-crawled reader, and the amended rule requires coding it.
+
+ARM 1 — vendor's own currency disclosure
+----------------------------------------------------------------------------
+1a. Currency/country selector on the live pricing page (rendered DOM inspection,
+    2026-08-10, https://www.framer.com/pricing, still serving TRY 231 for Basic --
+    unchanged from the original 2026-08-07 read).
+    Query: select, [class*="currency" i], [class*="country" i], [id*="currency" i],
+    [id*="country" i], [aria-label*="currency" i], [aria-label*="country" i].
+    Result: 2 matches, both <select class="framer-form-input"> elements -- these are
+    the page's CREDIT-TIER pickers ("1,000 credits/month", "2,000 credits/month",
+    ...), matched only because the query's bare `select` tag is broad. Confirmed by
+    reading their option lists directly: no currency/country content in either.
+    No true currency/country selector exists. (Matches the original pass's own
+    full-DOM-scan finding.)
+
+1b. Vendor-supported currency URL parameter.
+    Tried: https://www.framer.com/pricing?currency=USD , rendered 2026-08-10.
+    Result: no effect, page still shows "TRY 231" for Basic. Not a supported
+    mechanism.
+
+1c. Explicit currency statement in billing/help documentation or the terms.
+    Checked: https://www.framer.com/help/articles/subscriptions-and-charges/
+    (the record's own top contractual source for billing mechanics), rendered
+    2026-08-10, full-text regex search for currency/USD/US$/dollar: 0 hits.
+    Not re-checked beyond this one article (effort cap); the original pass's ToS
+    and AUP reads (already in this record, contractual-class documents) are not
+    re-opened here since this task is scoped to the currency variables, not a full
+    re-collection.
+
+ARM 1 CONCLUSION: no selector, no working URL parameter, no currency statement
+found. Arm 1 returns nothing -- proceed to Arm 2.
+
+ARM 2 — US-crawled archive capture that actually contains price figures
+----------------------------------------------------------------------------
+This record's OWN sources[] and register_events already identify a specific
+capture: https://web.archive.org/web/20260805085223/https://www.framer.com/pricing
+(2026-08-05, two days before this record's 2026-08-07 live TRY read), which the
+original coder found "renders USD figures ($10/$20/$30/$40/$50 in payload)" but
+did not use, because D-003's then-current rule required treating the live,
+same-network read as authoritative and archives as unable to "prove" a state.
+D-007 changes which arm leads. This capture is re-opened and read in full,
+2026-08-10:
+
+RENDERED READ (document.body.innerText, 7,844 characters -- a real, content-rich
+page, NOT a pre-hydration shell):
+  "...Yearly billing / Free / Try for free / $0 / 500 credits to try / ... /
+  Basic / Creative personal sites / $10 / per month / 1,000 credits / month /
+  2,000 credits / month / 3,000 credits / month / 5,000 credits / month / 8,000
+  credits / month / 10,000 credits / month / 15,000 credits / month / ... / Start
+  with Basic / Pro / Growing professional sites / $30 / per month / 3,000 credits
+  / month / ... / Additional editors are / $20 / month, and viewers are free..."
+hasDollar=true, hasTRY=false throughout the full capture.
+
+STRUCTURAL CROSS-CHECK against this record's own local copy of the live TRY read
+(framer-sources/pricing-page-local-copy-2026-08-07.txt, lines 64-78 and 148-181):
+the TRY page shows the IDENTICAL structure in the IDENTICAL order -- "Basic /
+Creative personal sites / TRY 231 / per month / 1,000 credits / month / 2,000
+credits / month / ..." and "Additional editors are / TRY 462 / month". This proves
+the archived $10/$30/$20 figures sit at exactly the same DOM position, same credit
+-tier default (1,000/month for Basic, 3,000/month for Pro -- confirmed separately
+by inspecting the live page's <select> elements, whose first/default <option> is
+1,000 credits/month for Basic and 3,000 credits/month for Pro), and same billing
+toggle state ("Yearly billing", confirmed ON by default in both reads) as the TRY
+figures this record originally coded. They are not a different plan, a different
+credit tier, or a stale/unrelated price set.
+
+ARITHMETIC CROSS-CHECK: TRY231/$10=23.10; TRY693/$30=23.10; TRY462/$20=23.10. The
+same 23.10 multiplier holds exactly across all three independent figures (Basic,
+Pro, additional editor), which is the signature of one underlying USD price
+localized to TRY at a fixed rate, not a coincidence or a mismatch between two
+unrelated data sets.
+
+SECOND REPRESENTATION (binding agent rule -- confirm a price in a second
+representation before coding it): the capture's raw HTML was fetched directly
+(curl, since browser navigation to web.archive.org was intermittently failing at
+the time of this check; a supplementary raw-HTML pull of an already browser-read
+archived page, not a substitute for rendering the live vendor page) and searched
+for the literal figures. Found as plain, single text nodes (not superscript-split,
+e.g. not "$1"+"0"):
+  <p ...>$10</p>                          (Basic; appears twice)
+  <p ...>$10 per editor</p>               (Content editors; appears 3x)
+  <p ...>$30</p>                          (Pro; appears twice)
+  <p ...>$20</p>, "$20 per editor", "$20 per locale"   (additional editors/locale
+                                                          add-on)
+  A client-side NumberFormat cache object embedded in the page's own JS state:
+  {"432902300":"$10","1786764435":"$40","2647331497":"$20","2932734695":"$200",
+   "3440503601":"$50","3888447595":"$0","3993527635":"$30"} -- the same figures
+  the rendered read shows, confirmed independently from the page's own formatter
+  cache, not just from extracted visible text.
+Both representations agree. Not a text-extraction artifact.
+
+OUTCOME
+----------------------------------------------------------------------------
+Arm 1 returns nothing. Arm 2 returns a readable, content-rich, US-crawled capture
+containing a genuine USD price for the entry tier, structurally and arithmetically
+verified against this record's own TRY evidence, confirmed in two representations.
+Per the amended rule ("if the vendor offers USD, the USD figure is the published
+price") and D-007's own statement that non_usd requires positive evidence "that
+the vendor publishes only a non-USD price, OR THAT A US READER IS SERVED ONE" --
+here a US-crawled reader IS served a USD price, so the USD figure is coded.
+
+VALUE CHANGES:
+- headline_price_usd: non_usd -> 10.00 (Basic, per month, billed annually per the
+  "Yearly billing" default toggle state -- same billing-basis logic already coded,
+  headline_billing_basis is unaffected and unchanged).
+- first_charge_amount_usd: non_usd -> 120.00 (10 x 12; same computation basis
+  already on file -- help/articles/subscriptions-and-charges/'s "billed upfront for
+  the entire year" language, which is currency-independent and unaffected by this
+  re-check).
+- cost_per_output_computable stays "yes" (unaffected as a value), but its
+  computation_assumptions figure changes from a TRY-denominated to a USD
+  -denominated figure, since cost_per_output_unit = per_seat_month means the
+  per-unit cost IS the plan price itself: $10.00, not TRY 231.
+- The existing register_events display_variant entry for this URL is UPDATED
+  (not replaced) to record the amended-rule decision: the CODED state is now the
+  USD state (per Arm 2), and the TRY state this coder's live 2026-08-07 read
+  observed is the locally-served display variant, logged per protocol-v1.md 6.8
+  as the rule requires when a USD figure is coded over a locally-served
+  alternate currency. The original observation fields (what was seen, when, and
+  the original coder's own reasoning) are preserved unedited; only the
+  coder_action field is updated to reflect the new decision, with the change
+  dated and attributed to this D-007 re-check.

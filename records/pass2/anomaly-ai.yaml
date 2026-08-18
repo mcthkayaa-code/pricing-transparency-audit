@@ -1,0 +1,142 @@
+product_id: anomaly-ai
+product_name: Anomaly AI
+category: AI data analysis
+product_status: active
+paid_submission: "no"
+entry_tier_name: Pro
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-14
+recheck_date: not_applicable
+primary_source_url: https://www.findanomaly.ai/pricing
+archive_url: https://web.archive.org/web/20260814171921/https://www.findanomaly.ai/pricing
+archive_status: archived
+default_display_state: "USD; billing toggle defaults to Monthly (confirmed from DOM: the Monthly button carries the active/selected style class bg-[#333333] text-white font-semibold, Yearly carries plain unselected text styling); no currency/country selector or geo variant observed; read after declining non-essential cookies (Reject non-essential)."
+
+sources:
+  - { url: https://www.findanomaly.ai/pricing, kind: pricing, accessed: "2026-08-14", archive: https://web.archive.org/web/20260814171921/https://www.findanomaly.ai/pricing, note: "rendered read; default toggle Monthly; archive snapshot confirmed to contain price figures as static text (not empty pre-hydration markup)" }
+  - { url: https://www.findanomaly.ai/terms, kind: tos, accessed: "2026-08-14", archive: https://web.archive.org/web/20260814172543/https://www.findanomaly.ai/terms, note: "read in full; entity Mindlake Ltd t/a Anomaly AI, England and Wales Co No. 14894347" }
+  - { url: https://www.findanomaly.ai/privacy, kind: other, accessed: "2026-08-14", archive: https://web.archive.org/web/20260806194437/https://www.findanomaly.ai/privacy, note: "read in full to check for refund/renewal/ownership content beyond ToS; added nothing new. Archive.org returned an existing 2026-08-06 capture on both allowed save attempts rather than a fresh same-day one; no coded value below is sourced from this page, so protocol 6.4's same-day rule is not triggered, but flagged for transparency." }
+
+variables:
+  headline_price_usd: { value: 25.00, source: https://www.findanomaly.ai/pricing, evidence: "Pro card: \"$25 /month\" (Monthly toggle default; DOM-confirmed second representation via raw outerHTML, not just innerText)" }
+  headline_billing_basis: { value: "per_month_billed_monthly", source: https://www.findanomaly.ai/pricing, evidence: "\"$25 /month\" with no \"billed annually\" qualifier and no \"/seat\" suffix under the default Monthly toggle" }
+  first_charge_amount_usd: { value: 25.00, source: https://www.findanomaly.ai/pricing, evidence: "Matches headline; default state is Monthly (not an annual commitment), so no annualization applies" }
+  mandatory_addon_present: { value: "no", source: https://www.findanomaly.ai/pricing, evidence: "Pricing page and terms (incl. #credit-usage section) read; no required additional charge, module, or platform fee documented for Pro" }
+  annual_condition_disclosure: { value: "not_applicable", source: https://www.findanomaly.ai/pricing, evidence: "Headline figure is read under the Monthly default toggle and does not depend on annual prepayment; annual billing is an optional alternative reached only by switching the toggle" }
+  annual_default_toggle: { value: "monthly_preselected", source: https://www.findanomaly.ai/pricing, evidence: "DOM: Monthly button class=\"...bg-[#333333] text-white...font-semibold\" (active); Yearly button carries plain unselected text styling only" }
+  free_plan_exists: { value: "yes", source: https://www.findanomaly.ai/pricing, evidence: "\"Free $0 /month — Try the product and get to first value fast\", a standing tier alongside the paid tiers with no stated expiry" }
+  free_plan_cap_documented: { value: "all_quantified", source: https://www.findanomaly.ai/pricing, evidence: "\"15 free credits\" is the only limit stated for Free (a quantified standing allotment); \"All data sources supported\", \"Core analysis features\", \"Live chat support\" are capabilities, not limits" }
+  free_plan_cap_value: { value: "15 credits", source: https://www.findanomaly.ai/pricing, evidence: "\"15 free credits to get started\"" }
+  free_plan_watermark: { value: "not_applicable", source: https://www.findanomaly.ai/pricing, evidence: "No document mentions watermarking; principal output is dashboards/reports/analysis tables from business data — see coder_note for the output-type basis" }
+  free_plan_duration: { value: "perpetual", source: https://www.findanomaly.ai/pricing, evidence: "Standing $0/month tier listed alongside paid tiers; no expiry stated anywhere in the documents" }
+  trial_exists: { value: "no", source: https://www.findanomaly.ai/pricing, evidence: "Pricing page and terms of service, both read in full, mention no time-limited trial of a paid tier; no dedicated trial-landing or FAQ page exists on the domain (sitemap checked)" }
+  trial_card_required: { value: "not_applicable", source: https://www.findanomaly.ai/pricing, evidence: "trial_exists = no" }
+  trial_length_days: { value: "not_applicable", source: https://www.findanomaly.ai/pricing, evidence: "trial_exists = no" }
+  trial_auto_converts: { value: "not_applicable", source: https://www.findanomaly.ai/pricing, evidence: "trial_exists = no" }
+  credit_system_present: { value: "yes", source: https://www.findanomaly.ai/pricing, evidence: "\"credits\" is an intermediate currency (e.g. \"1,000 credits/month\") that converts into agent steps and, approximately, into dashboards/insights — not a direct output-unit allowance" }
+  credit_unit_defined: { value: "yes", source: https://www.findanomaly.ai/pricing, evidence: "\"Most steps the AI agent takes cost 0.5 credits — running a query, transforming data, building a chart or KPI, or regenerating a dashboard card. Heavier steps — running a Python script or validating an Excel workbook — cost 1 credit each.\"" }
+  credit_to_output_rate_published: { value: "partial", source: https://www.findanomaly.ai/pricing, evidence: "Principal output (dashboards) conversion given only as approximate: \"~600 insights with charts or ~200 dashboards per month\" for 1,000 credits — see coder_note for the cross-tier arithmetic" }
+  credit_rate_location: { value: "pricing_page", source: https://www.findanomaly.ai/pricing, evidence: "\"How credits work\" section lives on the pricing page (#credit-usage); not restated in terms of service or privacy policy" }
+  cost_per_output_unit: { value: "other", source: https://www.findanomaly.ai/pricing, evidence: "No codebook-enumerated unit fits a business \"dashboard\" or \"insight/report\" — see coder_note" }
+  cost_per_output_computable: { value: "partial", source: https://www.findanomaly.ai/pricing, evidence: "Entry-tier price and allowance are published, but the credits-to-dashboard conversion is only an approximate (\"~\") vendor estimate, not an exact rate" }
+  computation_assumptions: { value: "Pro tier, $25/mo (Monthly default), 1,000 credits/mo included. Pricing page: ~200 dashboards/mo or ~600 insights/mo for that allowance (both approximate, '~'). 25/200=0.125/dashboard; 25/600=0.042/insight — approximate, so partial not yes.", source: https://www.findanomaly.ai/pricing, evidence: "see quoted card text under credit_to_output_rate_published" }
+  credit_rollover_policy: { value: "unknown", source: https://www.findanomaly.ai/pricing, evidence: "No statement found in pricing page or terms of service about what happens to unused credits at period end" }
+  failed_generation_charge_policy: { value: "unknown", source: https://www.findanomaly.ai/pricing, evidence: "\"How credits work\" defines cost by step type but never addresses a failed, erroring, or empty-result step" }
+  auto_renewal_default: { value: "unknown", source: https://www.findanomaly.ai/terms, evidence: "\"Subscription and Billing\" states fees are charged \"in accordance with the pricing and billing terms presented at the time of purchase\" but never states whether subscriptions renew automatically" }
+  auto_renewal_disclosure_location: { value: "absent", source: https://www.findanomaly.ai/terms, evidence: "Pricing page, terms of service, and privacy policy read in full; no help-center or dedicated billing/subscription page exists on this domain (sitemap.xml enumerated; 404 on /faq /help /billing /subscription; 526/unconfigured on help. and docs. subdomains) — none of the existing official pages discloses renewal behaviour" }
+  renewal_notice_commitment: { value: "unknown", source: https://www.findanomaly.ai/terms, evidence: "No stated commitment to notify before a renewal charge found in any document read" }
+  refund_policy_exists: { value: "unknown", source: https://www.findanomaly.ai/terms, evidence: "Terms of service (read in full) and pricing page never mention refunds; no dedicated refund page exists (404; absent from sitemap.xml)" }
+  refund_window_days: { value: "unknown", source: https://www.findanomaly.ai/terms, evidence: "refund_policy_exists = unknown; no window stated anywhere" }
+  refund_conditions: { value: "unknown", source: https://www.findanomaly.ai/terms, evidence: "refund_policy_exists = unknown; no conditions stated anywhere" }
+  cancellation_self_serve: { value: "self_serve_documented", source: https://www.findanomaly.ai/terms, evidence: "\"You may terminate your account at any time by contacting us or using the account deletion feature.\"" }
+  refund_policy_location: { value: "absent", source: https://www.findanomaly.ai/terms, evidence: "Same document sweep as auto_renewal_disclosure_location: all existing official pages read, none states a refund position" }
+  commercial_use_lowest_tier: { value: "unknown", source: https://www.findanomaly.ai/terms, evidence: "The only IP/commercial clause (\"Content is provided for personal or internal business use only; commercial redistribution requires our written consent\") governs the vendor's own service content, not user-generated outputs; no pricing-grid row addresses commercial use of outputs" }
+  watermark_removal_tier: { value: "not_applicable", source: https://www.findanomaly.ai/pricing, evidence: "Same output-type basis as free_plan_watermark — see coder_note" }
+  output_ownership_statement: { value: "unknown", source: https://www.findanomaly.ai/terms, evidence: "\"You retain all rights to the data you upload or connect to the platform\" covers INPUT data; the separate \"AI-Generated Content Disclaimer\" clause treats \"AI-generated outputs — including queries, analyses, visualisations, dashboards, and insights\" as its own category addressing only accuracy/liability, never ownership" }
+  usage_cap_quantified: { value: "all_caps_quantified", source: https://www.findanomaly.ai/pricing, evidence: "Pro's only stated limit is \"1,000 credits per month\" (number + dimension + period); no other, unquantified limit is stated for Pro" }
+  unquantified_limit_clause: { value: "absent", source: https://www.findanomaly.ai/terms, evidence: "Terms of service read in full, including \"Prohibited Activities\" (the acceptable-use equivalent); no fair-use/reasonable-use/excessive-use/discretionary-throttling clause found — the prohibited-activities list covers conduct (security, legality, scraping), not volume or intensity of use" }
+
+coder_note: |
+  VENDOR URL CORRECTION. The assignment brief supplied vendor_home_url = https://anomaly.io.
+  I checked that domain in my first tool calls, before coding anything, and found it resolves
+  to a DIFFERENT product ("Anomaly" / Anomaly.io) — a metrics anomaly-detection and
+  server-monitoring tool for DevOps (email/SMS/PagerDuty alerts, Grafana integration), no AI
+  branding, no relation to "AI data analysis". frame-for-pass2.csv row 11 (the authoritative
+  source per this agent's own instructions) gives vendor_home_url = https://www.findanomaly.ai
+  for product_id anomaly-ai, category "AI data analysis" — that domain matches the product
+  exactly: an AI platform (Mindlake Ltd, trading as Anomaly AI, England & Wales Co No.
+  14894347) turning spreadsheets/GA4/ad-platform/database data into dashboards, insights, and
+  refreshable reports. The coordinator separately flagged the same brief-vs-frame mismatch
+  mid-task; by that point I had already resolved it. I coded EXCLUSIVELY from
+  https://www.findanomaly.ai and its subpages throughout. anomaly.io was fetched exactly once,
+  solely to compare it against findanomaly.ai and identify which was correct; no variable
+  below is sourced from it, and it was not opened again afterward.
+
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2). Eligible paid candidates — Enterprise
+  excluded (sales-gated, "Contact Sales", no public price); Free excluded ($0, not a paid
+  tier): Pro $25/mo -> annual-equivalent $300.00 (WINNER, lowest); Analyst $90/mo ->
+  $1,080.00; Team $45/seat/mo but the card states "minimum 2 seats ($90/month)" — a buyer
+  cannot buy 1 seat, so per price-basis rule 3 the MINIMUM BLOCK is annualized: $90/mo x 12 =
+  $1,080.00 (ties Analyst; both lose to Pro regardless). All figures read under the page's
+  default Monthly toggle state; the annual toggle was viewed afterward only for descriptive
+  context (Pro $20/mo billed $240/yr, Analyst $72/mo billed $864/yr, Team $36/seat/mo billed
+  $432/seat/yr — each exactly the monthly total x0.8, i.e. the stated "Save 20%"), never to
+  pick the entry tier.
+
+  JUDGMENT CALLS, documented for adjudication:
+  1. free_plan_cap_value "15 credits" coded as a quantified STANDING (one-time) limit, not a
+     rate: the Free card reads "15 free credits" with no "/month" suffix, unlike Pro/Analyst/
+     Team which all explicitly say ".../month" or "/seat/month" — the vendor could have
+     written "/month" here and did not.
+  2. free_plan_watermark = not_applicable and watermark_removal_tier = not_applicable: no
+     document anywhere mentions watermarking. Principal output is dashboards/reports/analysis
+     tables from business data. codebook-v1.md's own worked example for watermark_removal_
+     tier's not_applicable case names "an analysis table" as a non-watermarkable output type;
+     applied that same output-type test here rather than coding unknown for silence, since the
+     basis is the output type itself, not merely vendor silence.
+  3. output_ownership_statement = unknown, deliberately NOT user_owns: the terms' "You retain
+     all rights to the data you upload or connect to the platform" is an INPUT-data clause. A
+     separate "AI-Generated Content Disclaimer" clause treats "AI-generated outputs —
+     including queries, analyses, visualisations, dashboards, and insights" as its own
+     category, addressing only accuracy/liability, never ownership. Not inferring one clause
+     covers the other since the vendor's own terms keep them distinct.
+  4. commercial_use_lowest_tier = unknown: the only IP/commercial clause ("Content is provided
+     for personal or internal business use only; commercial redistribution requires our
+     written consent") governs the vendor's own service content (software/design/trademarks),
+     not user-generated outputs; no pricing-grid row addresses commercial use of outputs.
+  5. credit_to_output_rate_published = partial and cost_per_output_computable = partial: the
+     only exact, non-hedged conversion published is at sub-output "step" level (0.5 credit for
+     query/transform/chart-or-KPI-build/dashboard-card-regen; 1 credit for Python-script-run/
+     Excel-workbook-validation). Dashboard/insight-level figures are always prefixed "~"
+     (approximate) — e.g. Pro: "1,000 credits/month; ~600 insights with charts or ~200
+     dashboards per month" — a consistent ~5 credits/dashboard across all 3 paid tiers
+     (1000/200 = 4000/800 = 2000/400 = 5) but never stated as an exact/guaranteed rate.
+     Treated as a vendor-published approximation, not a firm rate: 25/200≈0.125/dashboard,
+     25/600≈0.042/insight, both approximate, hence partial not yes.
+  6. cost_per_output_unit = other: no codebook-enumerated unit fits "dashboard" or "insight/
+     report"; the vendor uses both terms without naming a single principal output.
+  7. auto_renewal_disclosure_location = absent and refund_policy_location = absent (not
+     unknown): confirmed via sitemap.xml (full page list retrieved, ~130 URLs, all marketing/
+     blog/glossary content beyond the policy pages) plus 404 on /faq /help /refund
+     /refund-policy /billing /subscription and 526/unconfigured on help.findanomaly.ai and
+     docs.findanomaly.ai, and a web search for a Crisp-hosted help center turned up nothing
+     product-specific — no help-center or dedicated billing/refund page exists for this
+     vendor. Pricing page, terms of service, and privacy policy were each read in full; none
+     discloses auto-renewal behaviour or any refund position.
+
+  A-012: not applicable to this vendor. The Free tier is $0 (not a cheap non-zero paid intro
+  period) and no separate time-limited discounted trial of a paid tier exists.
+
+  SOURCES NOTE: Privacy Policy (https://www.findanomaly.ai/privacy) was read in full to check
+  for refund/renewal/ownership content beyond the terms of service; it added nothing new
+  (confirms Stripe as billing processor, data retention tied to account deletion only). No
+  coded value above is sourced from it. Its archive.org capture returned an existing
+  2026-08-06 snapshot on both allowed save attempts (2 of 2 used) rather than a fresh
+  same-day one; flagged for transparency, though protocol 6.4's same-day rule is not
+  triggered since no value relies on this page.
+
+  blindness: no other record, no review page, no pass-1 material was opened.
+conflict_note: ""
+register_events: []
+status: complete

@@ -1,0 +1,73 @@
+SOURCE (archive, US-crawled): https://web.archive.org/web/20260813150947/https://www.revid.ai/pricing
+Triggered by this coder via https://web.archive.org/save/https://www.revid.ai/pricing, succeeded on
+first attempt (browser navigation channel; a prior attempt via the WebFetch tool failed with a
+tool-level error "Claude Code is unable to fetch from web.archive.org" -- that is a WebFetch-tool
+restriction on the web.archive.org subdomain, not a D-012 rate-limit; the browser tool reached the
+domain fine both for reading an old capture and for triggering this new save).
+ACCESSED: 2026-08-13 15:09:47 UTC (per the resulting snapshot timestamp 20260813150947)
+
+=== WHY THIS CAPTURE MATTERS (D-003/D-007 currency check, arm 2) ===
+My own live read of https://www.revid.ai/pricing (from this collection environment, egressing from
+Turkey) rendered prices in EUR: Hobby EUR39, Growth EUR99->EUR39, Ultra EUR199, via a
+same-origin fetch of /api/stripe/checkout-currency returning {"currency":"eur"}, i.e. server-side
+geolocation-driven currency selection.
+
+This same-day archive.org capture -- crawled from archive.org's own (US) infrastructure just
+seconds after my live read -- shows the IDENTICAL plan structure and headline copy ("One
+membership. The whole growth loop.", same feature bullets, same "14,258+ users") but with the
+prices rendered in USD: Hobby $39, Growth $99 struck through -> $39, Ultra $199. This is positive
+documentary evidence that the vendor serves USD pricing to a US-geolocated reader, i.e. the vendor
+publishes a USD price; the EUR state I personally observed is a geolocation-driven display variant
+of MY read, not a vendor policy of "no USD". Per D-003/D-007, the USD figure is coded as the
+value and the EUR observation is logged as a register_events display_variant entry.
+
+=== RENDERED TEXT OF THE ARCHIVE CAPTURE (get_page_text) ===
+Title: Revid AI Pricing: Plans, Credits & Features
+Showcase / Features / AI Video Tools / Music Video Creation / Pricing / Sign in
+Pricing
+One membership. The whole growth loop.
+Create, publish, learn, repeat. Every plan includes the full engine: rendering, publishing,
+performance stats, Auto-Mode, and agent access. Cancel anytime.
+Creators publish 30,000+ videos a month with Revid
+Monthly | Annually
+HOBBY
+$39 /month
+Create from text, links or recordings
+3M+ viral videos to remix
+Editable short-form videos
+Select Plan
+cancel anytime • 100% content ownership
+Best Value
+GROWTH
+$99 $39 /month
+Discount locked in forever
+Publish to TikTok, Instagram & YouTube
+Performance stats & one-click remix
+3 Auto-Mode Workers
+Latest AI video models
+100+ AI video tools
+3M+ viral videos to remix
+70+ language voiceovers
+Hooks, scripts & rewrites
+Create from text, links or recordings
+AI avatars, face swaps & podcasts
+Full access to API, MCP and CLI
+2,000 AI credits / month
+Select Plan
+cancel anytime • 100% content ownership
+ULTRA
+$199 /month
+Credits/month 12,000 (12k/30k/50k/100k/200k)
+Everything in Growth
+Create & clone voices
+10 Auto-Mode Workers
+12,000 AI credits / month
+Scale brands, niches or clients
+Select Plan
+cancel anytime • 100% content ownership
+
+=== CORROBORATING PRIOR CAPTURE (independent, pre-dates this window's D-012 archival problems) ===
+https://web.archive.org/web/20260807215513/https://www.revid.ai/pricing (2026-08-07, found via the
+Wayback availability API, http://archive.org/wayback/available?url=revid.ai/pricing) shows the same
+$39 / $99->$39 / $199 USD figures under an older hero headline ("Choose your plan / Replace 8+
+tools with a simple AI workflow"), confirming the USD pricing is not a one-off crawl artifact.

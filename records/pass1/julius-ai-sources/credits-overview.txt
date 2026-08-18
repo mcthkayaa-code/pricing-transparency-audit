@@ -1,0 +1,115 @@
+SOURCE: https://julius.ai/docs/billing/credits-overview
+ACCESS DATE: 2026-08-09
+METHOD: Rendered read via browser automation (Mintlify docs page). Two automated
+  web.archive.org/save/ submission attempts both returned HTTP 520 (archive.org-side
+  gateway error) — protocol 6.4 archive_status = local_copy_only.
+KIND: docs
+
+=== PAGE BODY TEXT ===
+Payments & Billing / Understanding credits
+Learn how credits work in Julius, how they're consumed, and how many you get with each plan.
+
+What are credits?
+Instead of counting messages, Julius now measures usage in credits. Different tasks cost
+different amounts of credits depending on the compute involved. A simple message costs
+less than running a full analysis or executing code.
+This change lets us give you access to frontier AI models, larger context windows, and
+better compute environments without raising prices. In our testing, Julius is up to 7x
+more capable on complex, multi-step tasks under the new credit system. For most users
+(roughly 95%), day-to-day usage feels the same — just with noticeably better results.
+
+Credits by plan
+Plan | Monthly credits
+Free | 25 welcome bonus + 25 daily credits
+Plus | 2,000
+Pro | 5,000
+Max ($200) | 25,000
+Max ($500) | 70,000
+Business ($450) | 60,000
+Business ($750) | 100,000
+Business ($1,400) | 200,000
+Business ($2,500) | 400,000
+Max comes at two levels and Business at four: the higher price unlocks more monthly
+credits. Paid-plan credits renew each billing cycle. The Free plan's 25 welcome bonus
+credits are a one-time grant and don't renew.
+Annual plans are billed once per year at a discounted rate, with all credits granted
+upfront. See julius.ai/pricing for current pricing.
+
+How credits are consumed
+Not every action costs the same number of credits. A few things affect the cost:
+- Action type — a simple message costs less than running a full analysis or executing code
+- AI model — more capable models use more credits
+- Complexity — longer outputs, bigger datasets, and multi-step tasks add up faster
+You can track your credit usage in real time on the Usage page.
+
+=== FAQ ACCORDION CONTENT (expanded via DOM read of <details>/<summary>, not visible in
+    default collapsed rendering — content is present in DOM, just visually hidden) ===
+
+Q: How many credits does a single message cost?
+A: There's no single answer — cost depends on the message complexity and which tools are
+   invoked (e.g., web search, slides, financial APIs). A quick question will cost far less
+   than a multi-step analysis that pulls data, runs code, and generates a deliverable.
+
+Q: Does model selection affect credit usage?
+A: Yes — model choice is one of the biggest drivers of credit consumption. Faster models
+   like Julius 1.2 Lite and Claude Sonnet 5 consume credits far more slowly than frontier
+   models like Julius 1.2 Max, Claude Opus 5, Claude Fable 5, Grok 4.5, GPT-5.6, and Muse
+   Spark 1.1. If you want to stretch your credits further on simpler tasks, pick a lighter
+   model.
+
+Q: How do I check my credit balance?
+A: You can view your current balance, credit grants, and usage history at any time on the
+   Usage page.
+
+Q: What happens to my existing coupons or discounts?
+A: Any coupons attached to your subscription will continue to be honored under the new
+   credit system. Your pricing and discounts carry over unchanged.
+
+Q: When are credits granted?
+A: Monthly subscribers get their credits when their subscription starts, and again each
+   time their billing cycle renews. Annual subscribers receive all their credits upfront
+   when their subscription starts or renews. Free plan users receive a one-time grant of
+   100 credits when they sign up; these credits don't renew.
+   [NOTE: this directly conflicts with the "Credits by plan" table above, which states
+   Free = "25 welcome bonus + 25 daily credits" (implying a recurring daily grant, not a
+   single one-time 100-credit grant). Both statements are on this same official document.
+   See conflict_note in the record.]
+
+Q: Do unused credits roll over?
+A: No. Unused credits expire at the end of your billing cycle and don't carry over.
+
+Q: Can I buy more credits?
+A: At the moment, purchasing additional credits or topping up your balance is not
+   supported. If you need more usage right away, you may consider upgrading your plan
+   here: julius.ai/settings/subscription
+
+Q: How do credits work on annual plans?
+A: Annual plan subscribers receive all their credits upfront when their subscription
+   starts or renews. For example, a Pro annual subscriber gets all 50,000 credits for the
+   year on day one. Your billing cycle and pricing stay the same.
+   [NOTE: this "50,000" figure for Pro's annual total is itself inconsistent with the
+   "Credits by plan" table (Pro = 5,000/month x 12 = 60,000/year) and with the pricing
+   page ("60,000 credits per year" stated directly on the Pro card). Not coded against
+   any variable for this record since Pro is not the entry tier, but noted here as
+   corroborating evidence that this vendor's credit figures are internally inconsistent
+   across its own documentation.]
+
+Q: What does this change mean for my plan?
+A: For most users, nothing changes except that Julius gets a lot better. Based on our
+   data, fewer than 5% of users will exceed their monthly credit limits under normal
+   usage. Most will see the same or more capacity than before, paired with noticeably
+   better results.
+
+Q: Do I need to do anything?
+A: No action required. Existing paid users will be automatically moved to the
+   credit-based system before their next billing cycle. Your plan and price stay exactly
+   the same.
+
+Q: What is the credit refund policy?
+A: Credits are non-refundable, whether you bought them as a top-up or received them
+   through your subscription. Credits are also non-transferable between accounts and are
+   forfeited at the end of your billing period if your subscription is cancelled. This
+   applies unless otherwise required by law. For full details, see the Refund Policy.
+
+Q: Can I transfer credits to another account?
+A: No. Credits are non-transferable and are tied to the account they were granted to.

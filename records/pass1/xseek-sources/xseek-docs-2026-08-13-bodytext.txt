@@ -1,0 +1,218 @@
+xSeek
+/
+Docs
+⌘K
+Documentation
+Getting started
+Key features
+How it works
+Guides
+Generating prompts
+AI robots.txt guide
+ChatGPT ads & ranking
+Integrations
+All integrations
+User agents
+OpenAI
+Claude
+Perplexity
+Mistral
+Bing AI
+Llama
+Baidu ERNIE
+Kimi
+Qwen
+DeepSeek
+Doubao
+Documentation
+Get your brand cited
+by AI.
+xSeek is the AI visibility platform that helps you optimize your site for AI search engines and large language models. Start here.
+Updated Apr 2026
+~12 min read
+For owners & marketers
+01
+Getting started
+→
+Create your account, add a site, set tracked keywords in 5 steps.
+02
+Key features
+→
+LLM tracking, AI insights, competitor analysis, optimization.
+03
+How it works
+→
+Data collection, analysis, recommendations, and monitoring.
+Getting started
+5 steps · 10 min
+Welcome to xSeek. This walkthrough takes you from signup to your first dashboard of real visibility data.
+01
+Create an account
+Sign up by visiting the signup page. Choose the plan that fits your needs and complete registration.
+i
+Tip.
+Compare plans to find the best fit — Starter for solo operators, Growth for teams, Scale for agencies.
+02
+Add your website
+From the dashboard, add your website URL. We verify ownership through Google Search Console integration or a meta-tag check. Takes under a minute.
+03
+Set up your first keywords
+Add keywords relevant to your business. We'll start monitoring your rankings across ChatGPT, Claude, Perplexity, and other LLMs.
+!
+Note.
+Tracked keywords depend on your plan — from 3 on Starter to unlimited on Scale.
+04
+Review your dashboard
+Your dashboard populates with initial data right away. Full baseline metrics across all engines take 24–48 hours to settle.
+05
+Create AI agents with
+MCP.
+Set up automated AI agents using our Model Context Protocol integration. Configure Claude Code or other assistants to continuously monitor and optimize your AI search performance — on autopilot.
+i
+Install the xSeek CLI with
+curl -fsSL https://cli.xseek.io/install.sh | sh
+to register it as an MCP server with Claude Code: 19 tools, 8 resources, ready in one curl.
+Key features
+4 pillars
+xSeek offers a comprehensive suite of tools to monitor and improve your website's performance in AI search results.
+LLM real-time tracking
+Monitor your website's ranking across ChatGPT, Claude, Perplexity, Gemini, and more — with real-time data, not weekly snapshots.
+AI-powered
+insights
+Receive intelligent recommendations to optimize your content for better performance in AI search — prioritized by visibility lift.
+Competitor analysis
+Compare your AEO performance against competitors. See exactly where they rank, what they're cited for, and where you can take share.
+Content optimization
+Specific, page-level recommendations for improving visibility in AI search results — what to write, what to restructure, what to retire.
+How it works
+Pipeline
+xSeek uses advanced technology to track and analyze your website's performance in AI search engines. Four stages, fully automated.
+1
+Data collection
+We query LLMs with your target keywords and analyze where your site appears — mentions, rankings, and surrounding context.
+2
+Analysis
+Our AI identifies patterns, opportunities, and issues affecting your performance in AI search results.
+3
+Recommendations
+You get actionable recommendations to improve content, structure, and AI ranking strategy. Prioritized, not dumped.
+4
+Monitoring
+Continuous monitoring with regular reports and alerts — so you know the moment something moves.
+Featured
+guides.
+All guides →
+Optimization
+Featured
+Generating prompts for xSeek tracking.
+Create effective prompts that optimize your content for different LLMs — Claude, OpenAI, xAI, Llama, and more.
+Read guide
+→
+6 min · Updated Mar 2026
+Reference
+Complete AI robots.txt guide.
+Every AI crawler and user agent from major companies, with copy-paste configurations for your
+robots.txt
+.
+Read guide
+→
+12 min · Updated Apr 2026
+Playbook
+ChatGPT ads & ranking playbook.
+How ChatGPT cites sources, what makes a page rankable, and the six-step playbook for earning citations in generative answers.
+Read guide
+→
+10 min · Updated Mar 2026
+User agents
+11 engines · 30+ agents
+Reference pages for every AI crawler we track. Each lists the exact user-agent strings, crawl behavior, and
+robots.txt
+examples.
+OA
+OpenAI
+GPTBot · OAI-SearchBot
+AN
+Claude
+ClaudeBot · anthropic-ai
+PX
+Perplexity
+PerplexityBot
+MS
+Mistral AI
+MistralAI-User
+BI
+Bing AI
+bingbot · BingPreview
+LL
+Llama
+Meta-ExternalAgent
+BD
+Baidu ERNIE
+Baiduspider
+KM
+Kimi
+Moonshotbot
+QW
+Qwen
+Alibaba-AIBot
+DS
+DeepSeek
+DeepSeekBot
+DB
+Doubao
+Bytespider
++
+All integrations
+View full list →
+Need more help?
+Our support team is
+here.
+Answers in under 6 hours on business days.
+Contact support
+→
+Book a call
+On this page
+Getting started
+Key features
+How it works
+Featured guides
+User agents
+Product
+AI Visibility Tracking
+Generative Engine Optimization
+Answer Engine Optimization
+ChatGPT SEO
+AI Search Optimization
+AI Content Optimization
+AI Backlinks
+For Agencies
+How it works
+Pricing
+Free Tools
+Agent-Ready Scan
+AI Robots.txt Checker
+AI LLMs.txt Generator
+xSeek Desktop
+All Tools
+Resources
+AI Search Visibility Strategies
+SEO vs AEO Guide
+LLMs.txt Explained
+AI Source Radar
+All Articles
+Company
+About
+Blog
+Documentation
+Contact
+Privacy Policy
+Terms of Service
+© 2026 xseek. All rights reserved.
+xSeek Reviews
+xSeek Reviews
+xSeek Reviews
+Featured on
+tool
+chase
+🇨🇦
+Proudly Canadian

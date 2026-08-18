@@ -1,0 +1,78 @@
+LOCAL CAPTURE (archive.org save not attempted for this exact state — country selector overwrote
+URL to ?country=us before a save attempt could target the plain URL; this text was captured live
+via get_page_text at first page load, before any interaction, and is the DEFAULT display state
+this collector's network location (Turkey) was served) — verbatim
+URL as loaded: https://www.adobe.com/express/pricing  (no query string; geo-served)
+Accessed: 2026-08-14, first load, before any click/interaction (protocol 6.8 default state)
+Method: get_page_text (rendered DOM text extraction), immediately after navigate + first screenshot
+
+=== get_page_text rendered output (full) ===
+Title: Pricing: Compare Free & Premium Plans | Adobe Express
+URL: https://www.adobe.com/express/pricing
+
+Stand out with Adobe Express. Pick your plan.
+Individuals [tab, selected by default] | Businesses | Students | Educators
+
+Adobe Express Free
+TRY 0,00 incl. KDV
+For individuals who want basic content creation tools, limited generative AI credits and assets.
+Free to use. No credit card required.
+Get free plan
+
+Adobe Express Premium
+TRY 238,80/mo incl. KDV
+Includes all Free plan features, and more.
+Generative AI: 250 generative credits per month per user, designed to be commercially safe.
+Templates: access to all premium static and video templates
+Assets: 200M+ royalty-free Adobe Stock assets
+Fonts: complete Adobe Fonts collection, 30,000+ fonts
+Content scheduling: 3 accounts per social network
+Version history: 30 days
+Storage: 100GB
+For individuals who want millions of premium templates and assets, more generative AI credits,
+and time saving features.
+No annual commitment, billed monthly.[1]
+Start 30-day free trial
+
+Adobe Firefly Pro
+TRY 478,80/mo incl. KDV
+Includes all Premium plan features, and more (except the 250 credits).
+Generative AI for video and audio: 4,000 monthly generative credits.
+Text to Video: up to 40 five-second videos. Third-party models (Google, OpenAI, Flux, etc).
+Translation up to 13 min video/audio. 400 sound effects. Firefly Boards. Adobe Photoshop on web
+and mobile (full access).
+No annual commitment, billed monthly.[1]
+Start 7-day free trial
+
+Footnote 1 (as it appears on THIS default/TR view): "If you have signed up for a free trial,
+billing begins when free trial ends. Cancel before free trial ends and you won't be charged.
+Subscription automatically renews until you cancel."
+
+Footer of page carries a country/currency selector reading "Türkiye - ₺" (checked/selected) next
+to a language selector reading "English (US)" — this is the vendor's own currency disclosure
+control; opening it and searching confirms "United States - USD $" is an explicit, separately
+selectable option (screenshot evidence + this collector's own navigation to
+?country=us captured in the companion file pricing-us-country-param-2026-08-14.txt).
+
+KEY DISPLAY-VARIANT FINDING (default geo-served state vs explicit US/USD state), logged as a
+register_event and in coder_note/conflict_note:
+ - Currency: TRY (KDV-inclusive) here vs USD on the US view. Same underlying price point
+   (238.80 TRY / mo ~ equivalent order of magnitude to 10.99 USD/mo at prevailing TRY/USD rates).
+ - Tier NAME differs: "Adobe Express Premium" (this TR view) vs "Acrobat Express" (US view) for
+   what appears to be the same $10.99-equivalent price point and the same 250 credits/mo figure.
+ - Tier COMPOSITION differs: the US-named "Acrobat Express" additionally lists Acrobat Reader,
+   Acrobat AI Assistant, podcast generation, PDF Spaces, and "Generate presentations" — none of
+   which appear in this TR view's "Adobe Express Premium" feature list.
+ - Trial length differs for the equivalent-price tier: 30-day free trial (TR view, "Adobe Express
+   Premium") vs 7-day free trial (US view, "Acrobat Express" at the equivalent price point).
+   NOTE: the TR view's own THIRD card, "Adobe Firefly Pro" (a higher, non-entry tier), also
+   carries a 7-day trial — so 7 days is not itself unusual for this vendor, but it is a change
+   for the entry-price tier specifically between the two geo states.
+ - Card SET differs: TR view shows 3 purchasable cards (Free, Premium, Firefly Pro) under
+   Individuals; US view shows 2 (Free, Acrobat Express) — Firefly Pro appears on the US view only
+   as a non-purchasable descriptive blurb with no price/CTA.
+This is coded as a display_variant per protocol 6.8 (page varies by inferred geography), not a
+vendor_edit (no evidence either document was edited between reads; both reads happened within
+minutes of each other in this same session). Entry-tier variables are coded from the US/USD view
+per the currency-check protocol's arm-1 instruction ("If the vendor offers USD, the USD figure is
+the published price; log the locally served currency as a display_variant register event").

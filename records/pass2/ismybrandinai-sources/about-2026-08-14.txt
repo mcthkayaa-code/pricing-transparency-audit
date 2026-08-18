@@ -1,0 +1,28 @@
+SOURCE: https://ismybrandinai.com/about
+ACCESSED: 2026-08-14 (browser rendered read, tab-18)
+CAPTURE METHOD: mcp__Claude_Browser__get_page_text (rendered DOM text)
+
+Title: About | Is My Brand in AI
+Home · About
+
+About
+Who runs it
+Minel Gunesoglu
+FOUNDER, IS MY BRAND IN AI
+Founder of Is My Brand in AI. Runs every study by hand across ChatGPT, Perplexity, Gemini and Google's AI Overview — then publishes the raw runs, the dates and the gaps, not just the percentages.
+· minel@ismybrandinai.com
+
+Collaborations
+Alanya Kent Konseyi (Alanya City Council). A volunteer collaboration to strengthen the city's visibility in AI search — applying the same methods, this time for my hometown.
+
+How I work
+Sourced, not hyped. Every claim points to its evidence, and I flag what's still unproven instead of guessing.
+Tested on real pages. I run each move on this site first and report what actually moved the answer.
+Free tools, no signup. The tools here run in your browser, free, with nothing to install.
+Updated as the evidence changes. AI search moves fast; I revise rather than leave stale advice up.
+
+Get in touch
+Prefer a form? Use the contact page. Want to see whether the engines cite you? Start with the guide to measuring AI search visibility, or generate a valid llms.txt file for your site.
+
+--- Operative phrase for headline_price_usd / auto_renewal_default: "Free tools, no signup. The
+tools here run in your browser, free, with nothing to install." ---

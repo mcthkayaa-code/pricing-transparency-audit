@@ -1,0 +1,23 @@
+HTTP/2 200 
+date: Sun, 09 Aug 2026 16:31:40 GMT
+content-type: text/html; charset=utf-8
+cf-ray: a28827018b649271-FRA
+cf-cache-status: DYNAMIC
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+link: </pro-landing-pages-assets/_next/static/media/051742360c26797e-s.p.0f97p8c3305p~.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </pro-landing-pages-assets/_next/static/media/5e5dfa9e86f764b8-s.p.0o9~3wzuvo.a_.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </pro-landing-pages-assets/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </pro-landing-pages-assets/_next/static/media/8c2eb9ceedecfc8e-s.p.0oeo8epbafgia.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </pro-landing-pages-assets/_next/static/chunks/13dy5gtwnurr7.css>; rel=preload; as="style", </pro-landing-pages-assets/_next/static/chunks/0fr1ax0jz2kn5.css>; rel=preload; as="style", </pro-landing-pages-assets/_next/static/chunks/0dx6~phem33jx.css>; rel=preload; as="style", </pro-landing-pages-assets/_next/static/chunks/0xj398a.5mp8t.css>; rel=preload; as="style", </pro-landing-pages-assets/_next/static/chunks/0sxdg5qb2kvj4.css>; rel=preload; as="style"
+server: cloudflare
+set-cookie: __cf_geo=TR; Domain=.invideo.io; Path=/; SameSite=Lax
+set-cookie: __cf_geo_region=07; Domain=.invideo.io; Path=/; SameSite=Lax
+strict-transport-security: max-age=1000
+vary: Accept-Encoding
+via: 1.1 827d4b9f3280fc9410e1e1ce54fbedda.cloudfront.net (CloudFront)
+content-security-policy: upgrade-insecure-requests; frame-ancestors https://www.reutersconnect.com
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-amz-cf-id: XDfVQR_mY6MioiYWeinlnnzUDvoXdstRAoJgQ0d4pzzD_wneiMfkVQ==
+x-amz-cf-pop: FRA56-P9
+x-cache: Miss from cloudfront
+x-middleware-rewrite: /en/pricing/
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dPYkxyVYG9DPUJsHyUpa8LjSATV2O5Z75dHtVaM8aUspbFV%2B71rPWYD9h%2FiuM3DSrLJKsFVDATUnHZ4qF4Yr4Av0dKoecIbqmZij8g3EQNwEZqMS70IMmpgjkog%3D"}]}
+

@@ -1,0 +1,23 @@
+SOURCE EVIDENCE FILE (embedded JSON payload excerpt)
+URL: https://www.krea.ai/pricing
+Accessed: 2026-08-09
+Method: curl static fetch (same document as pricing-static-fetch-2026-08-09.html); this file isolates the SvelteKit `plansAndPrices` state object that the page embeds in its own served HTML (inside a <script> hydration payload). Per protocol/D-005, an embedded JSON payload in a page's own served document is documentary evidence, on the same footing as the visible DOM.
+Archive: https://web.archive.org/web/20260809175002/https://www.krea.ai/pricing
+
+Relevant fields (verbatim, only individual-tier and free entries shown; business_* entries omitted here as out of scope for the entry-tier record but present in the full static-fetch file):
+
+free: {monthly:null, yearly:null, yearlyDiscountPercent:0, tier:"free"}
+creator_basic: {monthly:{amount:9,currency:"usd"}, yearly:{amount:63,currency:"usd",coupon:"S7vd5tcX"}, yearlyDiscountPercent:40, tier:"creator_basic", originalMonthly:{amount:9,currency:"usd"}, originalYearly:{amount:84,currency:"usd"}}
+creator_pro: {monthly:{amount:35,currency:"usd"}, yearly:{amount:252,currency:"usd",coupon:"S7vd5tcX"}, yearlyDiscountPercent:40, tier:"creator_pro"}
+creator_max_1: {monthly:{amount:70,currency:"usd"}, yearly:{amount:504,...}, level:1, tier:"creator_max"}
+creator_max_2: {monthly:{amount:105,currency:"usd"}, yearly:{amount:756,...}, level:2, tier:"creator_max"}   <- this is the level the live page defaults its "Max" slider to (matches displayed $63/mo = 756/12)
+creator_max_3: {monthly:{amount:135,...}, yearly:{amount:972,...}, level:3}
+creator_max_4: {monthly:{amount:165,...}, yearly:{amount:1188,...}, level:4}
+
+Derivation for Basic (the entry paid tier, see coder_note in record for eligibility/ranking):
+- Annual billing (default toggle state): yearly.amount = 63 USD -> this is the first-charge total for a new annual subscriber.
+- 63 / 12 = 5.25 USD/month exactly. The page's own SSR aria-label reads "$5.25/mo" / "$5.25/month" (see pricing-static-fetch-2026-08-09.html, aria-label attributes), but after client-side hydration the animated on-screen digit widget settles to display only the integer part, "$5" with an empty fraction slot (confirmed via DOM inspection of the <number-flow-svelte> shadow-root: part="integer" digit --current:5, part="fraction" is an empty <span>). A sighted visitor with JS enabled therefore reads "$5/month" as the prominent headline figure, not "$5.25".
+- Monthly billing alternative (non-default): monthly.amount = 9 USD/month.
+- originalYearly (84) and yearlyDiscountPercent (40) appear to be pricing-history/comparison fields, not a displayed figure; 63 is 25% below 84, not 40% -- the 40% figure is calculated against originalMonthly*12 (9*12=108; 108*0.6=64.8, close to 63 but not exact either). This internal inconsistency is not a coded variable and is not resolved here; the number actually charged and actually displayed is 63/yr = 5.25/mo (SSR) / $5 (hydrated display).
+
+JSON-LD Product schema (separate, SEO-only metadata block, also in the same served document) lists MONTHLY list prices only: Free $0, "Individual Basic" $9, "Individual Pro" $35, "Individual Max" $70 (mapped to creator_max_1, NOT the creator_max_2 level the live slider defaults to), "Business" $200 (mapped to business_3). This block is not visually rendered to a user (schema.org markup consumed by crawlers) and is not used as the coded value's source; noted here only because it corroborates the Basic monthly price ($9) independently of the plansAndPrices blob.

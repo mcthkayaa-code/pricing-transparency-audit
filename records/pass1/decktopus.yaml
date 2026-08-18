@@ -1,0 +1,376 @@
+# Pricing Transparency Audit -- coded record
+# codebook-v1.md / protocol-v1.md / sampling-rules.md (all v1.2)
+product_id: decktopus
+product_name: Decktopus
+vendor_home_url: https://www.decktopus.com
+category: AI presentation
+product_status: active
+paid_submission: "no"
+coder_role: primary
+coder_pass: 1
+collection_date: "2026-08-07"
+recheck_date: not_applicable
+entry_tier_name: Pro
+primary_source_url: https://www.decktopus.com/pricing
+archive_url: https://web.archive.org/web/20260807033353/https://www.decktopus.com/pricing
+archive_status: archived
+
+source_urls: https://www.decktopus.com/pricing | https://www.decktopus.com/terms | https://help.decktopus.com/en/articles/56-can-i-use-decktopus-without-a-subscription | https://help.decktopus.com/en/articles/57-does-decktopus-provide-a-free-trial | https://help.decktopus.com/en/articles/58-what-are-ai-credits-in-decktopus | https://help.decktopus.com/en/articles/60-how-many-presentations-can-i-create-with-a-one-month-subscription | https://help.decktopus.com/en/articles/61-do-my-ai-credits-carry-overtransfer-to-the-next-month | https://help.decktopus.com/en/articles/63-how-can-i-cancel-my-subscription | https://help.decktopus.com/en/articles/66-does-my-pro-subscription-renew-automatically-each-month | https://help.decktopus.com/en/articles/70-does-my-business-subscription-renew-automatically-each-month | https://help.decktopus.com/en/articles/2-decktopus-ai-refund-policy | https://help.decktopus.com/en/articles/5-how-decktopus-ai-credits-work | https://help.decktopus.com/en/articles/1-decktopus-ai-pro-vs-business-plan-what-s-the-difference
+
+sources:
+  - id: s1
+    url: https://www.decktopus.com/pricing
+    document_class: pricing_page
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807033353/https://www.decktopus.com/pricing
+    archive_status: archived
+  - id: s2
+    url: https://www.decktopus.com/terms
+    document_class: terms_of_service
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807034633/https://www.decktopus.com/terms
+    archive_status: archived
+    note: "Effective Date: December, 2024 per the document's own header. Full text read start to end (43,499 chars) via document.body.textContent; keyword-searched for renew/trial/refund/cancel/credit/watermark/commercial/ownership/discretion/limit and every hit's surrounding context reviewed."
+  - id: s3
+    url: https://help.decktopus.com/en/articles/56-can-i-use-decktopus-without-a-subscription
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807034852/https://help.decktopus.com/en/articles/56-can-i-use-decktopus-without-a-subscription
+    archive_status: archived
+  - id: s4
+    url: https://help.decktopus.com/en/articles/57-does-decktopus-provide-a-free-trial
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807034920/https://help.decktopus.com/en/articles/57-does-decktopus-provide-a-free-trial
+    archive_status: archived
+    note: "Titled 'free trial' but its own content never states a time limit -- see coder_note."
+  - id: s5
+    url: https://help.decktopus.com/en/articles/58-what-are-ai-credits-in-decktopus
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807034939/https://help.decktopus.com/en/articles/58-what-are-ai-credits-in-decktopus
+    archive_status: archived
+  - id: s6
+    url: https://help.decktopus.com/en/articles/60-how-many-presentations-can-i-create-with-a-one-month-subscription
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807035002/https://help.decktopus.com/en/articles/60-how-many-presentations-can-i-create-with-a-one-month-subscription
+    archive_status: archived
+  - id: s7
+    url: https://help.decktopus.com/en/articles/61-do-my-ai-credits-carry-overtransfer-to-the-next-month
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807035032/https://help.decktopus.com/en/articles/61-do-my-ai-credits-carry-overtransfer-to-the-next-month
+    archive_status: archived
+  - id: s8
+    url: https://help.decktopus.com/en/articles/63-how-can-i-cancel-my-subscription
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807035134/https://help.decktopus.com/en/articles/63-how-can-i-cancel-my-subscription
+    archive_status: archived
+  - id: s9
+    url: https://help.decktopus.com/en/articles/66-does-my-pro-subscription-renew-automatically-each-month
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807035154/https://help.decktopus.com/en/articles/66-does-my-pro-subscription-renew-automatically-each-month
+    archive_status: archived
+  - id: s10
+    url: https://help.decktopus.com/en/articles/70-does-my-business-subscription-renew-automatically-each-month
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807035214/https://help.decktopus.com/en/articles/70-does-my-business-subscription-renew-automatically-each-month
+    archive_status: archived
+  - id: s11
+    url: https://help.decktopus.com/en/articles/2-decktopus-ai-refund-policy
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807035234/https://help.decktopus.com/en/articles/2-decktopus-ai-refund-policy
+    archive_status: archived
+  - id: s12
+    url: https://help.decktopus.com/en/articles/5-how-decktopus-ai-credits-work
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807035254/https://help.decktopus.com/en/articles/5-how-decktopus-ai-credits-work
+    archive_status: archived
+  - id: s13
+    url: https://help.decktopus.com/en/articles/1-decktopus-ai-pro-vs-business-plan-what-s-the-difference
+    document_class: help_center
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807035314/https://help.decktopus.com/en/articles/1-decktopus-ai-pro-vs-business-plan-what-s-the-difference
+    archive_status: archived
+    note: "Corroborating source for the entry-tier comparison (coder_note); no minimum-seat count stated for Business."
+
+default_display_state:
+  billing_toggle: "The Pro/Business segmented control at the top of the pricing card defaults to 'Pro' (dark/active) on every fresh load; Business requires a click. Within the selected tier's card, THREE billing-period options -- 'Annual' (Best Value, dark-highlighted, largest figure), '3-Month', and 'Monthly' -- are simultaneously present in the DOM and page flow (confirmed via getBoundingClientRect: all three headings report real, positive, visible dimensions at increasing Y-offsets in one continuous scroll), not behind a click-to-switch toggle. 'Annual' is first/topmost and the only one styled with a dark gradient card, a 'Best Value' badge and a 'Save $X/yr' badge; '3-Month' and 'Monthly' sit below it in the normal page flow without equivalent emphasis. No billing-period toggle was clicked; the Pro/Business tier control was clicked once (after recording Pro's default state) solely to read Business's figures for the entry-tier comparison required by sampling-rules.md 7.2, per protocol-v1.md 6.3's allowance to switch a display toggle after recording the default state."
+  cookie_consent: "No cookie-consent banner appeared on https://www.decktopus.com or https://www.decktopus.com/pricing at any point in this pass; nothing was clicked or accepted."
+  currency: "USD throughout; no non_usd values in this record."
+
+variables:
+  headline_price_usd:
+    value: "9.99"
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "Pro tier, 'Annual' card (first/topmost, dark-highlighted, 'Best Value'): large figure '$9.99' with '/mo' beside it, '$24.99' shown struck through, in the page's default (only observed) display state."
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "Qualifier printed with the figure is '/mo'; 'billed $119.88/year' printed beneath in the same card. Per decision rule 1 (read the qualifier as printed)."
+  first_charge_amount_usd:
+    value: "119.88"
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "Read directly, not computed: the Pro Annual card itself prints 'billed $119.88/year' beneath the '$9.99/mo' figure, in the default display state. (9.99 x 12 = 119.88, consistent.)"
+  mandatory_addon_present:
+    value: "no"
+    source: s1; s2; s12
+    access_date: "2026-08-07"
+    evidence: "Full Pro feature list (pricing page: 750 AI credits/mo, presentations & carousels, PDF/PPT/PNG export, one-click sharing, Loop, version history, mobile access) and ToS section 3.1 (general add-on clause, conditional on 'if your order includes additional add-on packages') read; no required charge beyond the plan price is stated for any advertised Pro feature. Loop is explicitly bundled ('Included on Pro and above -- Studio -> Loop is the full workflow, not two separate purchases', s1). The only priced extras found ('Top-Up Credits Packages', s12) are explicitly optional, purchased only if a subscriber exceeds the included 750/mo credits -- an overage/optional add-on excluded by decision rule 3, not a required charge."
+
+  annual_condition_disclosure:
+    value: adjacent
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "'billed $119.88/year' is printed directly beneath the '$9.99/mo' figure inside the same Annual price card -- same visual block as the headline figure."
+  annual_default_toggle:
+    value: annual_preselected
+    source: s1
+    access_date: "2026-08-07"
+    evidence: "There is no click-to-switch monthly/annual toggle on this page (see default_display_state.billing_toggle) -- Annual, 3-Month and Monthly are three permanently co-present cards in one scroll. Coded annual_preselected because Annual functions as the page's default/featured billing period exactly as that value is meant to capture: it is first in reading order, the only one visually distinguished (dark gradient card vs the plain page background), and carries 'Best Value' + 'Save $180/yr' badges -- i.e. it is what a reader sees and is steered toward without clicking anything, which is the same state of affairs annual_preselected exists to record on vendors that use a literal toggle. Logged as a UI-pattern departure from the variable's literal 'toggle' framing rather than silently forced into no_toggle, whose own definition ('the page offers one billing period only') does not fit a page offering three."
+
+  free_plan_exists:
+    value: "yes"
+    source: s3; s4
+    access_date: "2026-08-07"
+    evidence: "Help Center article 56, titled 'Can I use Decktopus without a subscription?', subtitled 'An overview of how subscriptions AND THE FREE VERSION operate': 'Yes, you can use Decktopus for free. Your first deck is free... You can create decks from scratch using various layouts and design elements.' The vendor's own subtitle names this 'the free version' as a standing counterpart to paid subscriptions, not a countdown. See coder_note for a documentation ambiguity: a sibling article (s4) badges the identical mechanic 'free trial' -- resolved against the codebook's own operative test (time-limited or not), not the vendor's label."
+  free_plan_cap_documented:
+    value: none_quantified
+    source: s3; s4
+    access_date: "2026-08-07"
+    evidence: "The two restrictions the documents actually state are unquantified feature-gates, not numbers: 'you can't export' and 'your slides will have a Decktopus watermark' (s3, s4). The only number present, 'your FIRST deck is free' (singular), is not treated as a reliable quantified cap because the very next sentence in the SAME article (s4) contradicts strict single-deck framing by calling them 'free DECKS' (plural), and no document anywhere states the actual starting AI-credit balance a new/no-subscription user holds (s4 only says referrals 'earn 30 AI credits', not what the base balance is). Given that internal inconsistency and the missing base number, 'first deck' is read as onboarding phrasing, not a documented ceiling."
+  free_plan_cap_value:
+    value: "none quantified -- documented restrictions are unquantified (no export; Decktopus watermark on output); see free_plan_cap_documented"
+    source: s3; s4
+    access_date: "2026-08-07"
+    evidence: "No quantified limit exists to record under section 5.1's test; see free_plan_cap_documented."
+  free_plan_watermark:
+    value: "yes"
+    source: s3; s4
+    access_date: "2026-08-07"
+    evidence: "'Free decks have two limitations: you can't export and your slides will have a Decktopus watermark.' (s4, corroborated verbatim in substance by s3)."
+  free_plan_duration:
+    value: perpetual
+    source: s3; s4
+    access_date: "2026-08-07"
+    evidence: "No document states an expiry, a day count, or an end date for the no-subscription/free mode of use; it is described as a standing way the product 'operates' (s3's own subtitle) alongside paid plans, not a countdown. No time limit is stated anywhere in either article or in the ToS (zero matches for 'trial' in the full ToS text)."
+
+  trial_exists:
+    value: "no"
+    source: s2; s3; s4
+    access_date: "2026-08-07"
+    evidence: "trial_exists specifically requires a TIME-LIMITED trial (codebook domain 4 definition). No document states any time limit (no day/week count anywhere): the ToS contains zero matches for the word 'trial' across its full 43,499-character text; the two Help Center articles that discuss free usage (s3, s4) describe only feature restrictions (no export, watermark) with no stated expiry. The mechanic documented is a feature-gated free plan (domain 3), not a time-boxed trial of a paid tier -- see coder_note for the vendor's own inconsistent 'free trial' vs 'free version' labeling of this identical mechanic."
+  trial_card_required:
+    value: not_applicable
+    source: s2; s3; s4
+    access_date: "2026-08-07"
+    evidence: "No trial exists (trial_exists = no)."
+  trial_length_days:
+    value: not_applicable
+    source: s2; s3; s4
+    access_date: "2026-08-07"
+    evidence: "No trial exists (trial_exists = no)."
+  trial_auto_converts:
+    value: not_applicable
+    source: s2; s3; s4
+    access_date: "2026-08-07"
+    evidence: "No trial exists (trial_exists = no)."
+
+  credit_system_present:
+    value: "yes"
+    source: s5; s12
+    access_date: "2026-08-07"
+    evidence: "'In Decktopus, you can use AI features with THE CREDIT SYSTEM. Pro subscribers get 750 credits per month, Business subscribers get 1,000.' (s5) An intermediate currency (credits) that converts into outputs (slides), not an allowance stated directly in output units -- codebook domain 5 rule 2."
+  credit_unit_defined:
+    value: "yes"
+    source: s12
+    access_date: "2026-08-07"
+    evidence: "'How credits are used: Generating 1 slide costs 5 credits.' (s12, 'How Decktopus AI Credits Work') -- ties the unit to a recognizable output (a slide)."
+  credit_to_output_rate_published:
+    value: "yes"
+    source: s12; s1
+    access_date: "2026-08-07"
+    evidence: "Principal output is the slide (see cost_per_output_unit / coder_note for why slide rather than 'presentation' is coded as principal). The rate for it is published precisely and without qualification: 'Generating 1 slide costs 5 credits' (s12). Cross-corroborated by the pricing page's own allowance annotation, '750 AI credits / month (~150 slides)' (s1) -- 750/5=150, matching exactly."
+  credit_rate_location:
+    value: multiple
+    source: s1; s12; s6
+    access_date: "2026-08-07"
+    evidence: "The rate is stated on the pricing page as an approximation ('~150 slides', s1) and stated precisely twice in the Help Center ('5 credits' per slide, s12; restated s6: 'generating a slide costs 5 credits')."
+
+  cost_per_output_unit:
+    value: other
+    source: s1; s12; s6
+    access_date: "2026-08-07"
+    evidence: "Coded 'other', naming the unit per_slide in this field per decision rule 3 (no listed enum value is 'per_slide'; 'per_presentation' was considered and rejected -- see coder_note for the full reasoning, which follows the codebook's own worked video-generator example of coding the granular METERED sub-unit, here the slide, as principal rather than the variable-length whole deliverable)."
+  cost_per_output_computable:
+    value: "yes"
+    source: s1; s5; s12
+    access_date: "2026-08-07"
+    evidence: "See computation_assumptions."
+  computation_assumptions:
+    value: "Pro tier, $9.99/mo billed annually (default display state). Included allowance 750 AI credits/mo (s1,s5). Rate 5 credits/slide (s12): 750/5=150 slides/mo. Price & allowance already monthly, no period conversion needed (rule 3). 9.99/150=0.0666 -> $0.07/slide."
+    source: s1; s5; s12
+    access_date: "2026-08-07"
+
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: s5; s7
+    access_date: "2026-08-07"
+    evidence: "'Credits refresh every month and don't roll over.' (s5) 'Since the credits are automatically renewed every month, your credits are not transferred to the next month.' (s7, dedicated article)."
+
+  failed_generation_charge_policy:
+    value: unknown
+    source: s2; s5; s12
+    access_date: "2026-08-07"
+    evidence: "No document read (ToS, the credits FAQ, or the dedicated 'How Decktopus AI Credits Work' article) states what happens to credits when a generation fails, errors, or produces nothing usable. s12 states credit COSTS ('generating 1 slide costs 5 credits', 'editing... costs 5 credits per edit') but never addresses the failure case."
+
+  auto_renewal_default:
+    value: "on"
+    source: s9; s10
+    access_date: "2026-08-07"
+    evidence: "'Yes, all subscriptions are automatically renewed. If you have a monthly subscription, it will automatically renew unless you cancel it. When you purchase an annual subscription, you complete the payment when you first confirm your subscription, and it will automatically renew after one year unless you cancel it.' (s9, Pro; identical wording in s10, Business). ToS is silent on renewal (zero matches for 'renew' in the full ToS text) -- not a conflict, since silence at the higher-ranked source does not contradict a lower-ranked source that states a determinate value (codebook section 2.1 step 2)."
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: s1; s9; s10
+    access_date: "2026-08-07"
+    evidence: "Stated in the Help Center (s9 Pro, s10 Business, both explicit) AND implied determinately on the pricing page's own cancellation FAQ: 'You'll keep full access until the end of your current billing period, then your plan won't renew' (s1) -- logically equivalent to the codebook's own 'renews unless canceled' example for auto_renewal_default = on, so counted as a pricing-page disclosure too. Two document classes agree -> multiple, not terms_only (ToS itself never uses the word 'renew')."
+  renewal_notice_commitment:
+    value: unknown
+    source: s1; s2; s9; s10
+    access_date: "2026-08-07"
+    evidence: "No document read (pricing page, ToS, or the two dedicated renewal Help Center articles) commits to notifying the customer in advance of a renewal charge; all four only state that renewal happens automatically unless canceled, with no advance-notice commitment."
+
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: s2; s11
+    access_date: "2026-08-07"
+    evidence: "ToS section 3.4 'No Refunds': 'refunds are not available for both monthly and annual subscriptions.' Corroborated in full agreement by the dedicated Help Center 'Decktopus AI Refund Policy' article (s11): 'we do not offer refunds for any subscriptions or plans... the no-refund policy applies uniformly across all subscriptions and plans.'"
+  refund_window_days:
+    value: 0
+    source: s2; s11
+    access_date: "2026-08-07"
+    evidence: "Governed by refund_policy_exists = no_refunds_stated, which codebook domain 10 pairs with a 0 window."
+  refund_conditions:
+    value: not_applicable
+    source: s2; s11
+    access_date: "2026-08-07"
+    evidence: "No refund available under the governing (and here unanimous) position; see refund_policy_exists."
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: s8; s1
+    access_date: "2026-08-07"
+    evidence: "'You can cancel your subscription by following these steps: Click on your avatar to navigate to the Subscription panel... choose \"Cancel Subscription.\" After that, you will be directed to the Stripe page to cancel your subscription.' (s8) Matches the pricing-page FAQ: 'Cancel anytime from your account settings -- no cancellation fees.' (s1) No contact step in either."
+  refund_policy_location:
+    value: multiple
+    source: s2; s11
+    access_date: "2026-08-07"
+    evidence: "Stated in agreement in both the ToS (section 3.4) and a dedicated Help Center refund-policy article (s11), which itself links back to the ToS and pricing page."
+
+  commercial_use_lowest_tier:
+    value: unknown
+    source: s2; s1
+    access_date: "2026-08-07"
+    evidence: "No document addresses commercial use of a user's OWN generated output. ToS 'commercial' hits are all about (a) users not sending unsolicited commercial communications and (b) users not infringing others' commercial rights -- never about whether the customer may use their own Decktopus-made deck commercially. The pricing page's full compare-plans table (Deck Creation / Presentation Management / Branding & Team / Enterprise Features rows) contains no 'commercial use' row."
+  watermark_removal_tier:
+    value: lowest_paid
+    source: s4
+    access_date: "2026-08-07"
+    evidence: "'Free decks have two limitations: you can't export and your slides will have a Decktopus watermark. To remove these, you'll need to subscribe.' (s4) The lowest tier reached by subscribing is Pro. No compare-table row or other document adds nuance beyond this statement."
+  output_ownership_statement:
+    value: unknown
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "ToS section 5 ('Intellectual Property Ownership') addresses only DECKTOPUS's own platform/software IP, not user-generated output. Section 7.1.1 ('Terms on Creating and Sharing Content') states 'Decktopus is not a party of the Content creating and sharing activities in any way' -- a liability/responsibility disclaimer (who is answerable for the content), not an ownership grant either direction. No document states the customer owns outputs, nor that Decktopus retains a license to them."
+
+  usage_cap_quantified:
+    value: some_quantified
+    source: s1; s5; s2
+    access_date: "2026-08-07"
+    evidence: "Pro's stated limits: '750 AI credits/month' (s1, s5) is a quantified rate (number + dimension 'credits' + period 'month'). Pro's compare-table 'Storage' = 'Unlimited' (s1); per section 5.1's unlimited carve-out this counts as quantified only if no clause elsewhere qualifies it -- ToS section 2.5 lets Decktopus 'impose limits on your use and STORAGE of the User Content at our sole discretion at any time without prior notice', an unquantified qualifier naming storage specifically (see unquantified_limit_clause). One quantified limit (750 credits/mo) + one unlimited claim rendered not-quantified by that clause = some_quantified."
+  unquantified_limit_clause:
+    value: present
+    source: s2
+    access_date: "2026-08-07"
+    evidence: "ToS section 2.5: 'We also retain the right to impose limits on your use and storage of the User Content at our sole discretion at any time without prior notice to you.' -- an unquantified, discretion-based usage/storage standard with no stated number."
+
+conflict_note: not_applicable
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules.md section 7.2). Winner: Pro, Annual sub-option,
+  $9.99/mo, billed $119.88/year (the default-display-state figure -- Annual is the
+  topmost/only visually-emphasized of the three simultaneously-shown billing options on
+  Pro's own card; see default_display_state and annual_default_toggle evidence), single
+  user, generally available, purchasable without contacting sales -> annual-equivalent
+  $119.88/yr. Losing candidates:
+  - Business: per-seat pricing, Annual sub-option $19.99/mo/seat, billed
+    $239.88/seat/year -> annual-equivalent $239.88/seat/yr (single-seat variant per
+    eligibility rule 4). No minimum-seat count is stated anywhere found (pricing page,
+    the Pro-vs-Business Help Center article, or the Business-collaboration article) --
+    unlike some competitors' team tiers, Business appears purchasable from 1 seat.
+    Excluded either way: higher annual-equivalent than Pro regardless of any minimum.
+  - Enterprise: "For organizations deploying Decktopus company-wide" / "Let's Talk" ->
+    links to a Brevo meeting-scheduler, no published price. Excluded, fails eligibility
+    criterion 2 (not purchasable without contacting sales); this is the product's
+    no_public_price case but does not govern entry_tier_name since an eligible
+    self-serve candidate (Pro) exists.
+  - Pro's OWN 3-Month ($19.99/mo, billed $59.97/3mo -> annualized $239.88/yr) and Monthly
+    ($24.99/mo, billed $24.99/mo -> annualized $299.88/yr) sub-options were read (all
+    three sub-options sit on the one card, see default_display_state) but are not the
+    default-display-state figure and are not used for the price-basis comparison, per
+    sampling-rules.md 7.2 rule 1.
+  Only Pro-Annual was the default-state figure for the cheapest eligible tier; Business's
+  own default-state (Annual) figure was read for comparison only, per protocol-v1.md 6.3's
+  allowance to switch a display toggle after recording the default state.
+
+  FREE-PLAN vs FREE-TRIAL LABELING AMBIGUITY. Decktopus's own Help Center is internally
+  inconsistent about what to call its no-subscription usage mode. Article 56
+  (https://help.decktopus.com/en/articles/56-can-i-use-decktopus-without-a-subscription),
+  subtitled "An overview of how subscriptions and THE FREE VERSION operate," and article
+  57 (https://help.decktopus.com/en/articles/57-does-decktopus-provide-a-free-trial),
+  titled "Does Decktopus provide A FREE TRIAL?", describe the IDENTICAL mechanic in nearly
+  identical prose ("Your first deck is free... you can't export and your slides will have
+  a Decktopus watermark... subscribe" to remove) -- one calling it a "free version," the
+  sibling literally titled "free trial." Neither article, nor the ToS (zero matches for
+  "trial" across its full text), states any time limit. Coded per the codebook's own
+  operative test (time-limited = domain 4 trial; zero-cost/no-time-limit = domain 3 free
+  plan), not the vendor's inconsistent label: free_plan_exists = yes, trial_exists = no.
+  Flagged for a second coder/adjudicator to independently weigh, since this is exactly the
+  kind of vendor self-contradiction the study is designed to surface.
+
+  cost_per_output_unit REASONING (slide vs. presentation). Decktopus's product category is
+  "AI presentation," and cost_per_output_unit's enum lists per_presentation as a
+  first-class option -- the more obvious-looking fit. Coded "other" (per_slide) instead,
+  for two reasons: (1) the vendor's OWN documents never publish a credits-per-presentation
+  rate, and explicitly say one cannot exist because presentations vary in length --
+  "how far your credits go depends on how many slides you create" (article 60); only a
+  credits-PER-SLIDE rate (5 credits) is fixed and published. (2) This follows the
+  codebook's own worked example for an analogous case: a video generator is coded
+  per_video_minute (the granular metered sub-unit), not "per video" (the variable-length
+  whole deliverable) -- codebook-v1.md section 7 domain 6, Vendor M example. Slide is to
+  presentation what minute is to video here. Naming it "other" rather than forcing
+  per_presentation avoids overstating computability: had per_presentation been coded, the
+  correct value of credit_to_output_rate_published / cost_per_output_computable would
+  instead have been "partial" (rate/computation possible only for the slide sub-unit, not
+  the variable-length principal "presentation"), per rule 5. A second coder who reads this
+  differently should get partial on both instead of yes -- flagged so that disagreement is
+  legible rather than silent.
+
+  ARCHIVING. All 13 sources submitted to web.archive.org/save (curl) same day as access;
+  all 13 succeeded (some only after a retry -- the service was intermittently slow/hanging
+  for a period during this pass, which resolved on retry within the 2-attempt allowance;
+  no source required a local-copy fallback).
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+register_events: []
+
+status: complete

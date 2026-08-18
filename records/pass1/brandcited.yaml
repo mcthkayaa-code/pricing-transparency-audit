@@ -1,0 +1,571 @@
+# Pricing Transparency Audit — pass-1 (primary) coding record
+# Instrument: codebook-v1.md v1.2 / protocol-v1.md / sampling-rules.md
+product_id: brandcited
+product_name: BrandCited
+category: AI bot checker
+product_status: active
+paid_submission: "no"
+vendor_home_url: https://www.brandcited.ai
+entry_tier_name: Starter
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+recheck_date: not_applicable
+default_display_state: monthly_preselected
+status: complete
+
+# --- sources + archival (checkpoint group 1) ---
+primary_source_url: https://www.brandcited.ai/pricing
+archive_url: https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing
+archive_status: archived
+source_urls: "https://www.brandcited.ai/pricing | https://www.brandcited.ai/terms | https://www.brandcited.ai/refund | https://www.brandcited.ai/faq"
+
+sources:
+  - url: https://www.brandcited.ai/pricing
+    doc_class: pricing_page
+    authority_rank: "pricing-class: 1st (leads) | contractual-class: 3rd"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing
+    archive_status: archived
+    notes: >
+      Live pricing page. Default display state on load: Monthly billing toggle
+      preselected (confirmed visually and via DOM: Monthly radio aria-checked=true,
+      Annual radio aria-checked=false). Contains plan cards (Free/Starter/Pro/Business/Agency),
+      full feature-comparison grid, an 11-question inline FAQ accordion (expanded and
+      read in full), and a competitor comparison table. Toggle was never clicked before
+      recording any value.
+  - url: https://www.brandcited.ai/terms
+    doc_class: terms_of_service
+    authority_rank: "contractual-class: 1st (ties with dedicated refund page) | pricing-class: 3rd"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms
+    archive_status: archived
+    notes: "Read in full, all 16 sections (Last updated: April 2026)."
+  - url: https://www.brandcited.ai/refund
+    doc_class: dedicated_refund_policy_page
+    authority_rank: "contractual-class: 1st (ties with terms)"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807003754/https://www.brandcited.ai/refund
+    archive_status: archived
+    notes: "Read in full via DOM innerText (Last updated 2026-04-19)."
+  - url: https://www.brandcited.ai/faq
+    doc_class: docs_help_center
+    authority_rank: "pricing-class: 2nd | contractual-class: 2nd"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807003818/https://www.brandcited.ai/faq
+    archive_status: archived
+    notes: >
+      Dedicated FAQ / help-center page, 56 questions across 8 categories. All 7
+      "Pricing & plans" questions expanded and read, plus "Can I try BrandCited
+      for free?", "Can I export my scan data and reports?", "Can I use BrandCited
+      for my clients as an agency?", "How many brands can I manage on one account?",
+      "How do I position BrandCited's output to my clients?", "Do you offer discounts
+      for startups or nonprofits?", "Can I track multiple brands or clients?" (used
+      site search box to locate; archived snapshot reflects the page's default
+      collapsed-accordion state, same underlying DOM text).
+
+variables:
+
+  # --- Domain 1-2 / index A1-A3 (checkpoint group: A-domain) ---
+
+  headline_price_usd:
+    value: 29.00
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      Starter plan card shows "$29 /mo" as the most prominent figure while the
+      Monthly toggle is preselected (default state). Entry tier = Starter, selected
+      under sampling-rules.md 7.2 (see coder_note for losing candidates).
+
+  headline_billing_basis:
+    value: per_month_billed_monthly
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      "$29 /mo" printed under Starter with the Monthly radio active on load; no
+      per-seat qualifier is attached to the figure itself (team-seat count is a
+      separate feature-grid line, not part of the price qualifier).
+
+  first_charge_amount_usd:
+    value: 29.00
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      Default display state is Monthly (not annual), so the displayed "$29/mo" is
+      itself the first-charge amount; no annualization arithmetic applies (rule 2
+      only converts when the default is annual). Corroborated by ToS §4: "Billing
+      occurs at the start of each billing period ... Monthly plans renew
+      automatically each month unless you cancel."
+
+  mandatory_addon_present:
+    value: "no"
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    evidence: >
+      Pricing page lists Starter's features as fully inclusive at $29/mo; ToS §4-7
+      and the dedicated FAQ's "Pricing & plans" section describe no required
+      minimum-credit purchase, platform fee, or onboarding fee. Refund Policy page
+      mentions optional one-time "custom audits or white-label report packs" —
+      explicitly optional add-ons, not required to use Starter as advertised, so
+      they do not trigger yes_amount_stated per rule 3.
+
+  annual_condition_disclosure:
+    value: not_applicable
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      headline_price_usd ($29/mo Starter) is read in the Monthly default display
+      state and does not depend on annual prepayment, so rule 1 ("If it does not
+      [depend on annual prepayment], code not_applicable") applies directly. The
+      annual-savings condition exists on this page but attaches to a different
+      (unselected) toggle state, not to the coded headline figure.
+
+  annual_default_toggle:
+    value: monthly_preselected
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      Page loads with the "Monthly" pill visually active and "Annual" inactive.
+      Confirmed programmatically before any click: document.querySelectorAll
+      ('[role="radio"]') returned Monthly aria-checked="true", Annual
+      aria-checked="false". Toggle was never clicked prior to this reading.
+
+  # --- Domain 3 / index B1-B2 (checkpoint group: free-tier) ---
+
+  free_plan_exists:
+    value: "yes"
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      "FOREVER FREE / Free / $0" plan card, badge "No credit card for Free".
+      Dedicated FAQ (docs) corroborates: "Is there a free plan? Yes. The Free tier
+      is permanent — no credit card required, no expiry."
+
+  free_plan_cap_documented:
+    value: all_quantified
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      Free-plan limits found: "1 brand tracked" (standing), "0" competitors
+      tracked (feature-comparison grid row "Competitors tracked: Free=0",
+      standing), "Daily automated scan" (rate, 1/day). All carry a number and
+      dimension (plus period for the rate). See conflict_note: the dedicated FAQ
+      page states the free plan is "one brand scan per month" / "one monthly
+      scan" instead of daily — a lower-ranked (docs, rank 2) source contradicting
+      the higher-ranked pricing page (rank 1) for this variable class; coded from
+      the pricing page per the hierarchy.
+
+  free_plan_cap_value:
+    value: "1 brand | 0 competitors | 1 scan per day"
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: "Free plan card + feature-comparison grid rows (Brands monitored, Competitors tracked, Scan frequency)."
+
+  free_plan_watermark:
+    value: not_applicable
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      BrandCited's outputs are an "AI Search Health score", audit/technical-signal
+      reports, and a shareable score report — analysis scores and tables, not
+      media artifacts. Matches codebook's own not_applicable example verbatim
+      ("a detection score or an analysis table"). No feature-grid row or document
+      addresses watermarking/branding of outputs at any tier.
+
+  free_plan_duration:
+    value: perpetual
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      Card labeled "FOREVER FREE"; page footer CTA: "Free forever, no credit
+      card, no expiry." Dedicated FAQ corroborates: "The Free tier is permanent
+      ... no expiry."
+
+  # --- Domain 4 / index B3 (checkpoint group: trial) ---
+
+  trial_exists:
+    value: "no"
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      Coded from the pricing page (ranks 1st for trial terms, a pricing-class
+      variable per protocol-v1.md 6.2; the dedicated FAQ/docs class ranks 2nd).
+      The pricing page comprehensively and repeatedly describes the entire
+      try-before-committing story as a paid-then-refund mechanism, never a
+      trial: "100% RISK-FREE / Try BrandCited risk-free. If it doesn't move your
+      AI visibility, we refund every cent"; its own 11-question FAQ answers "Is
+      there a free plan?" with a permanent $0 tier (not a trial) and never uses
+      the word trial; every paid-tier button reads "Get Started →" (direct
+      signup/purchase, not "Start trial"). ToS §4 and the Refund Policy page
+      (both rank-1 contractual sources) likewise describe only "purchase",
+      "initial charge", and "renewal" — no trial-to-paid conversion mechanic
+      anywhere in either. See conflict_note: the dedicated FAQ page (rank 2)
+      contains one contradicting line claiming "all plans come with a free
+      trial period" — hierarchy resolves in favor of the pricing page per
+      codebook-v1.md 2.1 step 3, and the disagreement is logged there in full
+      rather than silently dropped.
+  trial_card_required:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No trial exists (trial_exists = no); see that entry and conflict_note."
+  trial_length_days:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No trial exists (trial_exists = no); see that entry and conflict_note."
+  trial_auto_converts:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No trial exists (trial_exists = no); see that entry and conflict_note."
+
+  # --- Domain 5-8 / index C1-C5 (checkpoint group: credit) ---
+
+  credit_system_present:
+    value: "no"
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      No mention of credits, tokens, points, coins, or generations anywhere in
+      the pricing page, ToS, Refund Policy, or dedicated FAQ. Plan allowances
+      are stated directly in output/usage units ("1 brand tracked", "3 brands",
+      "1 competitor tracked", "Daily automated scan"), which rule 1 explicitly
+      excludes from being a credit system.
+  credit_unit_defined:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = no)."
+  credit_to_output_rate_published:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = no)."
+  credit_rate_location:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = no)."
+
+  cost_per_output_unit:
+    value: other
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      coder_note: unit named as "brand tracked per month". None of the
+      enumerated units fit (not a video/image/word/audio/page/headshot/
+      document/presentation artifact, not a per-API-call product). Every plan
+      card frames its allowance as "N brand(s) · daily auto-scans across all 9
+      engines" directly under the price, and the comparison grid's tier-defining
+      row is "Brands monitored" (1/1/3/5/5-100) — this is the dimension the
+      vendor's own pricing page uses to differentiate and price tiers, more
+      specific than the generic per_seat_month bucket (team seats are a
+      secondary axis: Starter=1 seat is not stated on its own card, only in the
+      full feature grid, and does not vary the price the way brand count does
+      on Pro/Business/Agency).
+
+  cost_per_output_computable:
+    value: "yes"
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      cost_per_output_value_usd = 29.00. Starter (entry tier) = $29/mo (default
+      Monthly state) ÷ 1 brand included = $29.00 per brand-month. Both figures
+      published on the same plan card; no unit conversion needed (both already
+      monthly); no assumption about typical use required.
+
+  credit_rollover_policy:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = no)."
+
+  failed_generation_charge_policy:
+    value: unknown
+    source: {url: "https://www.brandcited.ai/faq", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003818/https://www.brandcited.ai/faq"}
+    evidence: >
+      Product has a metered generation-like step (the daily automated scan;
+      "What is a scan?" FAQ: "One scan = one billable unit on metered plans"),
+      so not_applicable (no metered generation step at all) does not apply.
+      No document (pricing page, ToS, Refund Policy, or the 56-question
+      dedicated FAQ, including its "What is a scan?" and "How does BrandCited
+      track AI visibility?" answers) states what happens to the allowance when
+      a scan fails, times out, or an AI platform is unreachable. Silent, per
+      rule 3 ("this variable is silent often — that is the finding").
+
+  # --- Domain 9-11 / index D1-D4, E1-E3 (checkpoint group: contractual) ---
+
+  auto_renewal_default:
+    value: "on"
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    evidence: >
+      ToS §4: "Monthly plans renew automatically each month unless you cancel."
+      Corroborated by Refund Policy page: "Cancellation stops future renewals"
+      and "within 14 days of purchase or renewal" (both presuppose renewal
+      occurs automatically absent cancellation).
+
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    evidence: >
+      Stated in terms (ToS §4, explicit: "renew automatically ... unless you
+      cancel") and in the dedicated refund/policy page (Refund Policy:
+      "Cancellation stops future renewals"; "purchase or renewal"). Two
+      document classes in agreement, so `multiple` per the repetition rule.
+      Pricing page does not explicitly state the renewal mechanism (only
+      cancellation and annual-savings language), so not counted as a third
+      class here.
+
+  renewal_notice_commitment:
+    value: unknown
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    evidence: >
+      No document commits to notifying the buyer before a routine renewal
+      charge. ToS §14 commits to 30 days' notice, but only for vendor-initiated
+      *price changes* at next renewal ("We'll notify you at least 30 days
+      before your plan price changes") — a different commitment from advance
+      notice of each recurring charge at the existing price, so it does not
+      satisfy advance_notice_stated. No other document addresses renewal
+      notice.
+
+  refund_policy_exists:
+    value: conflicting
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    evidence: >
+      Two rank-1-equal contractual sources (protocol-v1.md 6.2 names "terms of
+      service OR the dedicated policy page" jointly as the top rank) state
+      incompatible refund positions for the entry tier's observed billing
+      state (Starter, monthly). ToS §4: "We don't prorate partial periods or
+      issue refunds for unused time on monthly plans." Refund Policy page:
+      "Monthly plans (Starter, Growth, Pro, Agency) are refundable in full if
+      requested within 14 days of the initial charge." One says no refund for
+      monthly, the other says yes. See conflict_note for full detail
+      (including a third, lower-ranked pricing-page FAQ statement).
+    second_source: {url: "https://www.brandcited.ai/refund", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003754/https://www.brandcited.ai/refund"}
+
+  refund_window_days:
+    value: conflicting
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    second_source: {url: "https://www.brandcited.ai/refund", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003754/https://www.brandcited.ai/refund"}
+    evidence: >
+      ToS implies 0 days for the monthly entry tier ("don't ... issue refunds
+      for unused time on monthly plans"). Refund Policy page states 14 days
+      for the same monthly entry tier ("refundable in full if requested within
+      14 days of the initial charge"). Equal-authority sources, incompatible
+      figures (0 vs 14).
+
+  refund_conditions:
+    value: conflicting
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    second_source: {url: "https://www.brandcited.ai/refund", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003754/https://www.brandcited.ai/refund"}
+    evidence: >
+      ToS: monthly plans get no refund at all (conditions moot / closest to
+      not_applicable under that document alone); annual gets a "case by case"
+      discretionary review — conditional. Refund Policy page: 14-day window is
+      "no questions asked" — unconditional. Equal-authority sources,
+      incompatible characterizations.
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    evidence: >
+      ToS §13: "You can cancel your account at any time from the Settings
+      page." Corroborated by pricing-page FAQ ("Cancel from your dashboard at
+      any moment") and Refund Policy page ("cancel at any time from the
+      dashboard billing settings"). Three sources agree; no conflict.
+
+  refund_policy_location:
+    value: conflicting
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    second_source: {url: "https://www.brandcited.ai/refund", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003754/https://www.brandcited.ai/refund"}
+    evidence: >
+      The refund position is stated in both `terms` and `dedicated_refund_page`,
+      but the two classes disagree substantively (see refund_policy_exists),
+      not merely repeat each other, so `multiple` does not apply; per its own
+      rule, disagreement between two equal-authority classes leaves the
+      governing class undeterminable, coded `conflicting`.
+
+  commercial_use_lowest_tier:
+    value: highest_tier
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    evidence: >
+      No feature-grid "commercial license" row exists; the only documented
+      tier-gated commercial-use right is client-facing use of outputs. ToS §8:
+      "You're granted a license to use your reports internally, share them
+      with your team, and present them to clients (on Agency plans)." Agency
+      card tagline: "White-label, API access, and dedicated support at any
+      scale." Dedicated FAQ corroborates (rank 2, agrees, not conflicting):
+      "Can I use BrandCited for my clients as an agency? ... Many agencies use
+      BrandCited to offer GEO audits and AI visibility monitoring as a
+      standalone service line." Agency is the highest generally-available
+      (non-sales-gated) tier. Interpretive note in coder_note: this variable's
+      grid-row test (codebook rule 2) does not have a clean hook for this
+      product category; `highest_tier` rests on the ToS §8 parenthetical +
+      corroborating FAQ/tagline rather than a labeled grid row.
+
+  watermark_removal_tier:
+    value: not_applicable
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      Same basis as free_plan_watermark: principal output is an AI-visibility
+      score / audit report, not a media artifact a watermark could mark
+      (codebook's own not_applicable example: "a detection score or an
+      analysis table").
+
+  output_ownership_statement:
+    value: vendor_license_retained
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    evidence: >
+      ToS §8: "We own the BrandCited platform, its algorithms, scanning
+      methodologies, scoring models, UI, and any reports or outputs generated
+      by our system. You're granted a license to use your reports internally
+      [...]" — direct match to vendor_license_retained's definition. (Input
+      data ownership is separate and unambiguous: "You own the data you bring
+      to BrandCited" — not in tension with output ownership.)
+
+  # --- Domain 12 / index F1-F2 (checkpoint group: caps) ---
+
+  usage_cap_quantified:
+    value: all_caps_quantified
+    source: {url: "https://www.brandcited.ai/pricing", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003621/https://www.brandcited.ai/pricing"}
+    evidence: >
+      Every limit documented for Starter (entry tier) carries a number: "1
+      brand tracked" (standing), "1 competitor tracked" (standing), "1" team
+      seat (feature-comparison grid row "Team seats: Starter=1", standing),
+      "Daily automated scan" (rate, 1/day). No vague/unquantified cap found for
+      this tier. See conflict_note: the dedicated FAQ ("Can I try BrandCited
+      for free?") states paid plans get "unlimited scans" — a lower-ranked
+      (docs, rank 2) source contradicting the higher-ranked pricing page's
+      specific "Daily" cadence; coded from the pricing page per hierarchy.
+
+  unquantified_limit_clause:
+    value: absent
+    source: {url: "https://www.brandcited.ai/terms", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807003729/https://www.brandcited.ai/terms"}
+    evidence: >
+      ToS read in full (all 16 sections), including §6 "Acceptable use" and §7
+      "API access" (the closest thing to an acceptable-use policy; no separate
+      AUP document is published). No fair-use, reasonable-use, excessive-use,
+      abuse-threshold, or vendor-discretion throttling clause found. §6 lists
+      prohibited *conduct* (reverse-engineering, reselling, scanning without
+      permission) which per rule 3 does not trigger `present`. §13's
+      termination-for-harm clause is conduct-based, not a volume/intensity-of-
+      use clause. §7's "rate limits specified in your plan documentation" only
+      applies to API access, which is Agency-only and not part of the entry
+      tier, and states limits are specified (quantified) elsewhere rather than
+      left to discretion.
+
+coder_note: >
+  Entry-tier selection (sampling-rules.md 7.2): eligible paid candidates and
+  their annual-equivalent single-seat cost, all read in the Monthly default
+  display state and annualized ×12 — Starter $29/mo = $348.00/yr (WINNER,
+  lowest); Pro $79/mo = $948.00/yr; Business $149/mo = $1,788.00/yr; Agency
+  $199/mo (base 5-brand self-serve rate; "Custom" >100 brands is sales-gated
+  via a mailto link but the named Agency tier itself is not) = $2,388.00/yr.
+  "FOR SOLO FOUNDERS" on the Starter card is audience-framing marketing copy,
+  not a verification-gated restriction (no proof of status required, unlike
+  the codebook's own "verified students" example), so Starter stayed
+  eligible. Free ($0) is not a paid-tier candidate.
+
+  Assignment/frame discrepancy: this task's assignment string gave
+  vendor_home_url = https://brandcited.com. That domain resolves to a GoDaddy
+  "domain for sale" parking page (title: "brandcited.com is for sale — Buy
+  for 2.960,00 $, Lease, or Offer"), unrelated to the product. The frozen
+  frame (frame-frozen-2026-08-04.csv, the authoritative source under
+  sampling-rules.md §3) lists vendor_home_url = https://www.brandcited.ai for
+  product_id brandcited — confirmed via web search as the actual live
+  BrandCited product (title "BrandCited — AI Visibility Intelligence for
+  Growth Teams"). All coding in this record uses brandcited.ai per the frame;
+  brandcited.com was never used as a source.
+
+  Vendor documentation inconsistency (not itself a coded variable): the
+  Refund Policy page's "Monthly plans" section names the four paid tiers as
+  "Starter, Growth, Pro, Agency" — but the live pricing page's third paid
+  tier is named "Business", not "Growth". Reads as a stale rename not fully
+  propagated to the refund page. Does not block coding since all four
+  current paid tiers are still covered by "every paid plan" / the named list
+  either way.
+
+  Annual-discount percentage is stated inconsistently across the vendor's own
+  copy (not a coded variable in this instrument, noted for completeness
+  only): pricing-page per-card labels say "save ~17%" and the top banner says
+  "save 2 months" (2/12 = 16.7%, consistent with each other); the dedicated
+  FAQ agrees ("two months free"); but the pricing page's own inline FAQ
+  answer says annual billing "saves you around 20%" — arithmetically not the
+  same figure as 2 months free.
+
+  Two variables required coder judgment beyond a clean grid-row/explicit-
+  statement lookup, flagged for reviewer attention (full reasoning inline on
+  each variable): cost_per_output_unit = other ("brand tracked per month",
+  no codebook-enumerated unit fits this product category); and
+  commercial_use_lowest_tier = highest_tier (rests on a ToS §8 parenthetical
+  tying client-facing report use to Agency plans, plus corroborating FAQ/
+  tagline language, rather than a labeled "commercial license" grid row).
+
+conflict_note:
+  - id: trial_exists_vs_faq
+    variables_affected: [trial_exists]
+    summary: >
+      Dedicated FAQ page (docs, rank 2 for trial terms) states: "How much does
+      BrandCited cost? ... all plans come with a free trial period so you can
+      see results before paying." No other document corroborates a trial:
+      the pricing page (rank 1, higher authority for trial terms per
+      protocol-v1.md 6.2) exhaustively describes try-before-committing via a
+      money-back guarantee instead ("100% RISK-FREE / Try BrandCited
+      risk-free ... we refund every cent"), a permanent free plan, and direct
+      "Get Started" purchase CTAs — never mentioning a trial. ToS §4 and the
+      Refund Policy page describe only "purchase", "initial charge", and
+      "renewal", with no trial-to-paid conversion mechanic. Coded
+      trial_exists = no from the higher-ranked pricing page per
+      codebook-v1.md 2.1 step 3 (hierarchy resolves in favor of the higher
+      source when ranks are unequal); this note preserves the contradicting
+      claim rather than silently discarding it.
+    urls:
+      - https://www.brandcited.ai/pricing
+      - https://www.brandcited.ai/faq
+
+  - id: free_plan_scan_frequency
+    variables_affected: [free_plan_cap_documented, free_plan_cap_value]
+    summary: >
+      Pricing page (rank 1) states, repeatedly (hero stat block, Free plan
+      card, and feature-comparison grid row "Scan frequency: Free=Daily"),
+      that the Free plan runs a "Daily automated scan". The dedicated FAQ
+      page (docs, rank 2) states twice, independently, that the free plan is
+      "one monthly scan" / "one brand scan per month". Coded from the
+      pricing page (daily) per hierarchy; both figures preserved here.
+    urls:
+      - https://www.brandcited.ai/pricing
+      - https://www.brandcited.ai/faq
+
+  - id: paid_tier_scan_cap_language
+    variables_affected: [usage_cap_quantified]
+    summary: >
+      Pricing page (rank 1) states Starter (entry tier) runs a "Daily
+      automated scan" — a quantified rate (1/day). Dedicated FAQ (docs, rank
+      2), answering "Can I try BrandCited for free?", states "Paid plans
+      unlock unlimited scans" — an unquantified characterization for the same
+      tiers. Coded from the pricing page (daily, quantified) per hierarchy.
+    urls:
+      - https://www.brandcited.ai/pricing
+      - https://www.brandcited.ai/faq
+
+  - id: refund_policy_three_way
+    variables_affected: [refund_policy_exists, refund_window_days, refund_conditions, refund_policy_location]
+    summary: >
+      Three official documents state three different refund positions for
+      the entry tier's observed billing state (Starter, monthly, default
+      display state). (1) ToS §4 (rank 1, contractual): "We don't prorate
+      partial periods or issue refunds for unused time on monthly plans. For
+      annual plans cancelled within 14 days of initial purchase, contact
+      hello@brandcited.ai for a pro-rated refund — this is evaluated case by
+      case." — i.e. no refund for monthly; case-by-case pro-rated refund for
+      annual only. (2) Dedicated Refund Policy page (rank 1, tied with ToS):
+      "Monthly plans (Starter, Growth, Pro, Agency) are refundable in full if
+      requested within 14 days of the initial charge ... no questions asked."
+      Annual: "the same 14-day no-questions refund. After 14 days, annual
+      plans are refundable on a prorated basis minus a 10% administrative
+      fee." — i.e. yes, 14 days, unconditional, on every plan including
+      monthly. (3) Pricing-page FAQ (rank 3, lower authority, included for
+      completeness though not part of the equal-rank determination): "Do you
+      offer refunds? Yes. Try BrandCited risk-free — if it does not move your
+      AI visibility in the first month, email hello@brandcited.ai and we
+      refund every cent." — a ~30-day, performance-conditional framing
+      matching neither of the other two. Sources (1) and (2) are of equal
+      authority (protocol-v1.md 6.2 names "terms of service OR the dedicated
+      policy page" jointly as contractual rank 1) and directly conflict on
+      whether a monthly-billed entry-tier buyer gets any refund at all (no
+      vs. yes-14-days), so codebook-v1.md 2.1 step 3's equal-rank branch
+      applies: coded `conflicting` on refund_policy_exists, refund_window_days
+      (0 vs 14), refund_conditions (conditional/none vs. unconditional), and
+      refund_policy_location (terms vs. dedicated_refund_page).
+    urls:
+      - https://www.brandcited.ai/terms
+      - https://www.brandcited.ai/refund
+      - https://www.brandcited.ai/pricing
+
+computation_assumptions: >
+  Starter (entry tier): $29/mo, Monthly default display state (toggle
+  preselected, confirmed aria-checked). Allowance: 1 brand tracked (same
+  pricing-page source). Same period, no conversion needed. 29.00 / 1 = 29.00
+  USD per brand-month (unit=other: brand tracked per month).
+
+register_events: []
+blindness: "no other record, no review page, no pass-2 material was opened."

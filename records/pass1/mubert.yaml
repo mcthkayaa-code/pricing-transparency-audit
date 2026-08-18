@@ -1,0 +1,151 @@
+product_id: mubert
+product_name: Mubert
+category: AI music generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Creator
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://mubert.com/render/pricing
+archive_url: https://web.archive.org/web/20260809193548/https://mubert.com/render/pricing
+archive_status: archived
+default_display_state: "USD throughout; billing toggle = Annual (pre-selected, react-switch-selector-option-selected on 'Annual'); 'Subscription' tab active (vs 'Perpetual License' tab, not the default); cookie-consent banner present on load, dismissed via its close(X) control (only OK/X offered, no explicit decline option); read from a Turkey-egressing network but no non-USD figures appeared at any point -- see D-003 note in coder_note."
+
+sources:
+  - { url: "https://mubert.com/render/pricing", kind: pricing, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809193548/https://mubert.com/render/pricing", note: "Live pricing page. React SPA: static curl fetch (with Accept-Language: en-US,en;q=0.9) returned 0 price figures (empty app shell), so a rendered read was performed per D-005 (Claude Browser preview pane, document.body.innerText + DOM class inspection). The public web.archive.org snapshot itself also only captured the pre-render shell (no prices visible in the archived HTML, same SPA limitation) -- the rendered state is separately evidenced by the local file mubert-sources/pricing-rendered.txt (full innerText transcript + DOM toggle/tab class dump), captured same day." }
+  - { url: "https://mubert.com/render/faq", kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809193607/https://mubert.com/render/faq", note: "Official FAQ / help center for the Render product. All 51 question/answer pairs were extracted from the page's embedded JSON payload (present in the static HTML, hydrates the accordion UI) -- a legitimate documentary source per assignment guidance, saved verbatim to mubert-sources/render-faq-qa.txt. This is the fuller and more reliable capture: it includes every answer regardless of which accordion panel a live render happened to have expanded." }
+  - { url: "https://mubert.com/render/license", kind: other, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809193625/https://mubert.com/render/license", note: "Dedicated Render licensing/output-rights page (self-titled 'Mubert Music License -- Terms of Use for AI-Generated Content'). This, not the general website ToU, is the document that addresses output ownership and commercial-use rights for the Render product -- see coder_note. Statically fetched (Framer-hosted page pre-renders its text into the served HTML); saved to mubert-sources/render-license-text.txt." }
+  - { url: "https://mubert.com/docs/tou", kind: tos, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809193645/https://mubert.com/docs/tou", note: "General Mubert WEBSITE Terms of Use (also fetched as the vendor's own downloadable PDF, https://mubert.com/documents/mubert_website_tou.pdf, byte-identical in substance, 3 pages, checked as a second attempt to find renewal/refund/ownership language). States explicitly that 'Mubert's various services and products (Mubert Render, Mubert API) may be subject to separate agreements ... please follow the rules relating to those products and services.' Read in full (15 numbered sections): silent on subscription billing, auto-renewal, refunds, and output ownership for Render -- confirms /render/license and /render/faq, not this document, govern those points for the product being coded. Saved to mubert-sources/docs-tou-text.txt." }
+
+variables:
+  headline_price_usd: { value: 11.69, source: "https://mubert.com/render/pricing", evidence: "Creator card, rendered default (Annual) state: '$14' struck through above, '$11.69/mo' in large bold type below it, 'Billed annually' beneath that. $11.69 is the prominent, non-struck-through, currently-effective figure." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://mubert.com/render/pricing", evidence: "'$11.69/mo' paired with the qualifier 'Billed annually' inside the same card; DOM confirms Annual toggle is the pre-selected default (react-switch-selector-option-selected)." }
+  first_charge_amount_usd: { value: unknown, source: "https://mubert.com/render/pricing | https://mubert.com/render/faq", evidence: "Pricing page states only 'Billed annually' next to the per-month figure, never an annual total or a 'charged once for N months' statement. The one document that addresses payment cadence, the FAQ ('Which payment options are available?'), says: 'You can choose to pay in either monthly or annual installments' -- 'installments' does not confirm a single upfront annual charge versus the annual plan itself being billed in monthly installments. No official document states the billing frequency determinately enough to compute a first-charge figure, so per codebook rule 3 (domain 1, first_charge_amount_usd) this is coded unknown rather than assumed as 11.69 x 12." }
+  mandatory_addon_present: { value: "no", source: "https://mubert.com/render/pricing | https://mubert.com/render/faq | https://mubert.com/render/license | https://mubert.com/docs/tou", evidence: "All four documents read in full for the Creator tier's feature set; no separate required module, minimum credit purchase, platform fee, or onboarding fee is mentioned anywhere." }
+  annual_condition_disclosure: { value: adjacent, source: "https://mubert.com/render/pricing", evidence: "DOM: div.pricing-card__billed ('Billed annually') is a direct sibling of div.pricing-card__price within the same div.pricing-card__inner-content block as the Creator card's price figure -- inside the same visual price block." }
+  annual_default_toggle: { value: annual_preselected, source: "https://mubert.com/render/pricing", evidence: "DOM on load: 'Annual' option carries class react-switch-selector-option-selected; 'Monthly' option carries react-switch-selector-option-unselected. Not clicked/changed before reading." }
+  free_plan_exists: { value: "yes", source: "https://mubert.com/render/pricing", evidence: "'Ambassador' card, price 'free', standing tier alongside the paid cards (not a time-limited trial): 'Try it free -- MP3 with obligatory attribution'." }
+  free_plan_cap_documented: { value: some_quantified, source: "https://mubert.com/render/pricing", evidence: "Ambassador card lists '25 generations / month' and '5 MP3 downloads / month' (quantified rates: number + dimension + period) and 'Fixed track duration' (no number given for what the fixed duration is -- unquantified, parallel to the codebook's own 'limited resolution' example)." }
+  free_plan_cap_value: { value: "25 generations per month | 5 MP3 downloads per month", source: "https://mubert.com/render/pricing", evidence: "Only the two quantified limits are recorded, per section 5.1; 'Fixed track duration' is not paraphrased into a number." }
+  free_plan_watermark: { value: unknown, source: "https://mubert.com/render/pricing | https://mubert.com/render/faq", evidence: "DOM: the Ambassador card's div.pricing-card__features is completely empty -- no watermark row at all, checked or crossed (contrast: Creator/Pro/Business each show an explicitly checked 'No audible watermark' row, accent-color fill icon, non-disabled span). Pricing table is silent for the free tier specifically, which the codebook's own rule reads as unknown, not a documented cross. The FAQ ('How to remove the watermark?') states generically 'Mubert watermark is added to prevent fraudulent activity. The watermark will be deleted once you download the track to your device' -- this is not scoped to a tier and does not determinately settle whether Ambassador's own downloads carry one, so it does not override the pricing page's silence." }
+  free_plan_duration: { value: perpetual, source: "https://mubert.com/render/pricing", evidence: "Ambassador is presented as a standing card alongside the paid tiers; no expiry, end date, or 'first month only' language anywhere in the documents." }
+  trial_exists: { value: "no", source: "https://mubert.com/render/pricing | https://mubert.com/render/faq | https://mubert.com/render/license | https://mubert.com/docs/tou", evidence: "No time-limited trial of a paid Render tier is mentioned anywhere in the pricing page, the 51-item FAQ, the license page, or the ToU. The word 'Trial' appears exactly once site-wide, in the FAQ answer 'How do I get API access?' ('please purchase the Trial Plan'), which is the separate Mubert API product, not the Render subscription being coded." }
+  trial_card_required: { value: not_applicable, source: "https://mubert.com/render/faq", evidence: "not_applicable because trial_exists = no." }
+  trial_length_days: { value: not_applicable, source: "https://mubert.com/render/faq", evidence: "not_applicable because trial_exists = no." }
+  trial_auto_converts: { value: not_applicable, source: "https://mubert.com/render/faq", evidence: "not_applicable because trial_exists = no." }
+  credit_system_present: { value: "no", source: "https://mubert.com/render/pricing", evidence: "Plan allowances are stated directly in output units -- 'track generations / month', 'MP3 downloads / month' -- with no intermediate currency (no 'credits', 'tokens', 'points', or 'coins' mentioned anywhere in pricing, FAQ, license, or ToU)." }
+  credit_unit_defined: { value: not_applicable, source: "https://mubert.com/render/pricing", evidence: "not_applicable because credit_system_present = no." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://mubert.com/render/pricing", evidence: "not_applicable because credit_system_present = no." }
+  credit_rate_location: { value: not_applicable, source: "https://mubert.com/render/pricing", evidence: "not_applicable because credit_system_present = no." }
+  cost_per_output_unit: { value: other, source: "https://mubert.com/render/pricing", evidence: "The product meters and prices by discrete 'track generations' (a generated-song count), not by minutes/images/words/pages/etc.; none of the enumerated units fits. Named in coder_note as 'per track generation'." }
+  cost_per_output_computable: { value: "yes", source: "https://mubert.com/render/pricing", evidence: "Creator (entry tier): $11.69/mo (default annual display state) and 500 track generations/month, already on the same (monthly) period, no conversion needed, no unpublished figure or usage assumption required. 11.69 / 500 = 0.02338." }
+  computation_assumptions: { value: "Creator tier, $11.69/mo billed annually per default display state; 500 track generations/mo included; both already monthly, no period conversion needed. 11.69/500=0.02338 -> ~$0.02 per track generation.", source: "https://mubert.com/render/pricing", evidence: "" }
+  credit_rollover_policy: { value: not_applicable, source: "https://mubert.com/render/pricing", evidence: "not_applicable because credit_system_present = no." }
+  failed_generation_charge_policy: { value: unknown, source: "https://mubert.com/render/faq | https://mubert.com/docs/tou", evidence: "No document -- FAQ, pricing page, ToU, or license page -- addresses what happens to the monthly generation allowance when a generation fails, errors, or produces nothing usable. Silent." }
+  auto_renewal_default: { value: unknown, source: "https://mubert.com/render/faq | https://mubert.com/docs/tou", evidence: "No document uses the words 'renew' or 'automatically' about the subscription (grepped across all fetched documents: zero matches for 'renew'). The FAQ describes a self-serve cancel flow ('What happens if I cancel the Subscription?'; 'How do I cancel my subscription? -- You can cancel your subscription in My Profile section.'), which implies an ongoing recurring arrangement exists, but implication is not a statement (same standard the codebook itself applies to trial_card_required's Vendor I example), so this is coded unknown rather than 'on'." }
+  auto_renewal_disclosure_location: { value: absent, source: "https://mubert.com/render/pricing | https://mubert.com/render/faq | https://mubert.com/docs/tou", evidence: "All four document classes checked: pricing page (silent), a dedicated billing/subscription policy page (none exists -- confirmed via sitemap-mubert-app.xml and direct URL probing, no such page is published), help center/FAQ (silent on the word renew), terms of use (silent; explicitly defers Render-specific terms elsewhere). None states automatic renewal." }
+  renewal_notice_commitment: { value: unknown, source: "https://mubert.com/render/faq | https://mubert.com/docs/tou", evidence: "No commitment to notify before a renewal charge, and no denial of one, appears in any document." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://mubert.com/render/pricing | https://mubert.com/render/faq", evidence: "Pricing page disclaimer: 'Purchases are non-refundable due to instant digital access.' FAQ (troubleshooting): '...we have a zero-refund policy.' Both agree on the general rule. Narrow exception noted in coder_note." }
+  refund_window_days: { value: 0, source: "https://mubert.com/render/pricing | https://mubert.com/render/faq", evidence: "Consistent with the general no_refunds_stated position." }
+  refund_conditions: { value: not_applicable, source: "https://mubert.com/render/faq", evidence: "not_applicable: no refund is available under the documented general policy (no_refunds_stated); the narrow discretionary exception is recorded in coder_note rather than treated as a determinate 'conditional' refund offer." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://mubert.com/render/faq", evidence: "'How do I cancel my subscription? -- You can cancel your subscription in My Profile section.'" }
+  refund_policy_location: { value: multiple, source: "https://mubert.com/render/pricing | https://mubert.com/render/faq", evidence: "Stated in agreement on both the pricing page (disclaimer banner) and the help center (FAQ)." }
+  commercial_use_lowest_tier: { value: mid_tier, source: "https://mubert.com/render/pricing | https://mubert.com/render/faq", evidence: "DOM-verified per-tier feature checkmarks: Creator (entry tier) shows 'Monetization', 'Client work / agency use', and 'Apps & games' all CROSSED (var(--border-color) icon fill, span.pricing-card__feature_disabled) -- matches its 'Non-commercial only' label. Pro shows 'Monetization' CHECKED but 'Client work / agency use' and 'Apps & games' still CROSSED -- matches its 'Limited commercial use' label. Business shows all three CHECKED -- matches 'Commercial use'. Lowest tier granting any commercial right = Pro, which sits above the entry tier (Creator) and below the highest generally-available tier (Business) = mid_tier. FAQ corroborates: 'in order to use Mubert music for commercial content and/or monetize posts -- a Pro or Business Plan will fit.'" }
+  watermark_removal_tier: { value: lowest_paid, source: "https://mubert.com/render/pricing", evidence: "DOM-verified: 'No audible watermark' is shown CHECKED (accent-color icon, non-disabled span) starting at Creator, the entry paid tier, and remains checked at Pro and Business. The free (Ambassador) tier's features list is empty (see free_plan_watermark); documents do not state no-watermark for it, so the lowest tier AT WHICH the documents affirmatively state no-watermark is the entry paid tier." }
+  output_ownership_statement: { value: vendor_license_retained, source: "https://mubert.com/render/license | https://mubert.com/render/faq", evidence: "License page: 'Mubert owns all the rights to the tracks generated. Our Sync License allows you to use music in videos, podcasts, apps and games.' FAQ: 'Do I own the rights to music created with Mubert? -- All the copyright is owned by Mubert Inc. We license tracks for different use cases.' Both official documents agree: Mubert retains ownership/copyright and grants the buyer a license. Governing document is /render/license, not the general /docs/tou -- see coder_note." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://mubert.com/render/pricing", evidence: "Creator (entry tier) limits: '500 track generations / month' (quantified rate). 'Unlimited downloads / month' and 'No daily limit' are explicit no-limit statements; per rule 3 these count as quantified because no discretionary/fair-use clause anywhere in the documents qualifies them (see unquantified_limit_clause)." }
+  unquantified_limit_clause: { value: absent, source: "https://mubert.com/docs/tou | https://mubert.com/render/faq | https://mubert.com/render/license", evidence: "Terms of Use read in full (15 sections) plus FAQ and license page: no fair-use, reasonable-use, excessive-use, or throttling-at-discretion clause tied to usage VOLUME exists. ToU section 7 ('We can remove any of the content for any reason at our discretion') governs content moderation, and section 10 ('We may block you... or refuse to process a payment... if we reasonably believe there is a risk...') governs fraud/legal risk and account blocking -- neither is a volume/intensity-of-use clause, so neither triggers 'present' per the rule's own conduct-vs-volume carve-out." }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): three eligible paid candidates on the default
+  (Annual-toggle, Subscription-tab) display state -- Creator $11.69/mo x12 = 140.28
+  annual-equivalent (WINNER, lowest); Pro $32.49/mo x12 = 389.88 (lost); Business $149.29/mo
+  x12 = 1791.48 (lost). Ambassador is the free plan, not a paid candidate. All three paid
+  plans are generally available, self-serve ("Get Plan" buttons, no sales contact), standing
+  (not time-limited promos), not seat-scaled, not usage-based-only, so all three qualify as
+  candidates under section 7.2's eligibility test.
+
+  Governing document for output_ownership_statement and commercial_use_lowest_tier (per
+  assignment note on music products splitting licensing terms from the ToS): the general
+  website Terms of Use (docs/tou) explicitly disclaims coverage of Render specifically --
+  "Mubert's various services and products (Mubert Render, Mubert API) may be subject to
+  separate agreements ... please follow the rules relating to those products and services."
+  The document that actually carries Render's output-rights/commercial-use terms is the
+  dedicated page at /render/license (self-titled "Mubert Music License -- Terms of Use for
+  AI-Generated Content"), corroborated by the FAQ's "Licensing & Subscription" section. Both
+  were read and coded from accordingly; docs/tou was confirmed silent on these points rather
+  than assumed silent. No "broadcast" tier or personal/commercial/broadcast three-way split
+  exists in Mubert's documents -- checked for it specifically per the assignment note and
+  found only the four-rung ladder Ambassador (non-commercial, free) / Creator (non-commercial,
+  entry paid) / Pro (limited commercial) / Business (commercial), consistent across the
+  pricing page's DOM-verified checkmarks and the FAQ's prose answers.
+
+  D-003 currency check: no non_usd figure ever arose (all documents and the rendered pricing
+  page showed USD throughout), so there is nothing to override, but the check was still run
+  mechanically. Two methods attempted: (1) curl with `-H "Accept-Language: en-US,en;q=0.9"`
+  against the live pricing page -- returned USD-only static shell, 0 price figures (SPA, see
+  sources note), no non-USD currency markers. (2) web.archive.org: the availability API
+  (`archive.org/wayback/available`) returned HTTP 429 (rate-limited) on 2 attempts and was not
+  retried further per the two-attempt cap; the direct Save-Page-Now submission for each of the
+  4 source URLs succeeded on the first attempt (see sources[].archive) and those snapshots
+  were fetched back and confirmed to load. No discrepancy between the Turkey-egressing render
+  and the en-US check was observed on any variable, so no display_variant register event was
+  needed for currency specifically.
+
+  Judgment calls / places a different reading was possible: (a) first_charge_amount_usd coded
+  unknown rather than 140.28 (11.69x12) because no document states the annual plan is "charged
+  once for twelve months" -- "Billed annually" states the cadence label but not the lump-sum
+  mechanic, and the FAQ's "monthly or annual installments" phrasing does not resolve it either
+  way; this mirrors the codebook's own worked example, which requires an explicit
+  once-for-twelve-months statement before multiplying, not just an adjacent "billed annually"
+  label. (b) free_plan_watermark coded unknown rather than "yes" despite the FAQ's watermark
+  answer, because that answer is not scoped to a tier and the pricing page's free-tier feature
+  list is silent (empty), not a documented cross -- see full reasoning in the variable's own
+  evidence field. (c) refund_conditions coded not_applicable (not "conditional") for
+  consistency with refund_policy_exists = no_refunds_stated: the FAQ's narrow exception --
+  "I accidentally chose the wrong plan. How can I upgrade? -- Please reach us our directly, so
+  we could refund the previous payment in case you want to upgrade the plan. However, please
+  note, that in all other cases we have a zero-refund policy." -- is a discretionary,
+  contact-required carve-out for one specific mistake, not a general conditional-refund
+  policy; recorded here in full rather than dropped. (d) cost_per_output_unit coded "other"
+  and named "per track generation" -- the product meters by discrete generation count, not by
+  audio minutes, so per_audio_minute was rejected as a mis-fit despite being the closest-sounding
+  listed option.
+
+  Scope note: the pricing page also offers a "Perpetual License" tab (one-time-purchase
+  alternative to the default "Subscription" tab) and a "Monthly" billing-toggle option. Per
+  sampling-rules 7.2 and protocol 6.8, only the page's default display state (Subscription tab,
+  Annual toggle) governs entry-tier selection and headline pricing, so the Perpetual License
+  tab's terms were not part of this record's scope. Its content was not read: repeated attempts
+  to switch tabs/toggle via the browser tool's click and via dispatched DOM events did not
+  change the rendered React state (component appears to require a pointer-event sequence the
+  available tooling could not produce), and the codebook explicitly forbids switching state
+  before recording the default read in any case, so no further attempts were made once the
+  default state was captured. This does not affect any coded value.
+
+  Vendor home URL (https://mubert.com, from the frozen frame) resolved correctly; no frame
+  correction needed.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 re-read 2026-08-10: re-opened https://mubert.com/render/pricing live and confirmed
+  entry_tier_name (Creator), headline_price_usd ($11.69) and headline_billing_basis
+  (per_month_billed_annually) in a SECOND representation independent of the original innerText
+  transcript: a card-by-card structural DOM query on [class*="pricing-card__inner-content"]
+  containers. Confirmed the Annual toggle carries the "-selected" class before interaction, and
+  confirmed the Creator card's $11.69 is correctly paired with the Creator name (not shifted).
+  Confirmed 0 <sup>/<sub> elements exist anywhere on the pricing page. Separately re-fetched
+  https://mubert.com/render/faq via a static curl (a different tool/representation from the
+  browser render used for the pricing page) and confirmed the "payment options" FAQ answer is
+  unchanged and still does not state the annual plan is charged as a single lump sum; a full-text
+  search of the FAQ's embedded JSON for "once for"/"upfront"/"lump sum"/"charged once"/"billed
+  once" found zero matches anywhere in the document. first_charge_amount_usd=unknown is
+  re-confirmed as the correct reading, not an unread gap. Evidence saved to
+  mubert-sources/d009-second-representation-2026-08-10.txt. No correction; all four scoped
+  values confirmed as coded.
+conflict_note: ""
+register_events: []
+status: complete
+

@@ -1,0 +1,45 @@
+Sources:
+- https://sapling.ai/ (homepage) -- accessed 2026-08-15
+  archive: https://web.archive.org/web/20260815125326/https://sapling.ai/
+- https://sapling.ai/billing_faq -- accessed 2026-08-15
+  archive: https://web.archive.org/web/20260815125246/https://sapling.ai/billing_faq
+- https://sapling.ai/pricing FAQ accordion (Bootstrap .collapse, answer text present in DOM
+  but visually hidden until clicked -- read via DOM, not by creating an account)
+
+HOMEPAGE trial mention (trial_exists, trial_card_required, trial_length_days):
+"Ready to try Sapling for free? No card required, cancel anytime. Start with the API, or
+install the extension and see suggestions in the tools you already use."
+/pricing page: "Haven't yet registered? Just sign up (no credit card required) to start a
+free 1-month trial of Sapling Pro."
+
+PRICING PAGE FAQ ACCORDION (hidden answer text, extracted from DOM):
+Q: "Do you offer a free trial?"
+A: "Yes, for individuals. Once you register and confirm your email, you'll automatically
+be enrolled in a free trial."
+
+BILLING FAQ (trial_auto_converts, cancellation_self_serve):
+Q: "Why was I automatically started on a subscription when signing up?"
+A: "While you may have been started on a free trial, you were not subscribed. You are
+only subscribed when you provide payment information at https://sapling.ai/plans. The
+free trial automatically cancels if no payment method is added."
+-- Read as: the trial does NOT auto-convert into a paid subscription; by default (no
+card added) it lapses/cancels on its own. Becoming a paying subscriber requires the
+user's own action of adding payment info, not passive/automatic conversion.
+
+Q: "Where can I update my payment information or cancel my plan?"
+A: "Please sign in and visit https://sapling.ai/dashboard-billing and click Manage
+billing. There you can manage your billing information and subscription. Please note
+that you must have subscribed using the same email address you used to sign up for
+Sapling."
+-- This describes a SELF-SERVE cancellation route (a billing dashboard), which conflicts
+with the Terms of Service's "cancel by contacting support@sapling.ai" (see
+tos-key-clauses.txt). See conflict_note in the record; coded from the ToS per the
+protocol's source-authority hierarchy for contractual variables.
+
+Q: "How are API subscriptions billed?"
+A: "API subscriptions are billed based on usage at the rates listed on the API pricing
+page. For API subscriptions started on or after June 12, 2026, there is a one-time $5
+minimum: it is charged immediately when you subscribe and applied to your account as a
+credit toward usage. There is no recurring monthly minimum..."
+(Corroborates the API pricing docs; used only as context for why the metered API was
+excluded as an entry-tier candidate -- see coder_note in the record.)

@@ -1,0 +1,169 @@
+LOCAL CAPTURE (excerpt, verbatim) - Adobe generative credits FAQ
+URL: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+Accessed: 2026-08-14 (curl fetch, HTML tags stripped with a Python regex to plain text;
+full page is 500KB+ with heavy nav boilerplate, this is the relevant excerpt range)
+Page states "Last updated on Aug 5, 2026"
+
+ Creative Cloud desktop app crashes on launch 
+ Generative credits FAQ
+ Last updated on 
+ Aug 5, 2026 
+ Wondering what generative credits are, how many you have in your account, and how you can use them? We've got you covered.
+ Review a list of recent updates to this page.
+ Frequently asked questions 
+ Generative credit basics 
+ What are generative credits? 
+ What is the purpose of generative credits? 
+ How do I get generative credits? 
+ Are there different types of generative credits? 
+ How are generative credits consumed? 
+ When do my generative credits renew? 
+ Do generative credits roll over month to month? 
+ Are Adobe Stock credits and generative credits the same thing? 
+ Are premium generative AI features the same as Adobe Express premium features?  
+ Generative feature types 
+ What are standard and premium generative AI features?  
+ Do all plans include access to standard and premium generative features? 
+ Why are there two types of generative features? 
+ Which generative AI features use generative credits? 
+ Which generative AI features do not use generative credits? 
+ How many generative credits do premium features use? 
+ How many generative credits do Firefly Graph features use? 
+ Why do some operations in Firefly Graph have costs that can’t be calculated in advance? 
+ Is there an additional cost to using partner models in Adobe products? 
+ Generative credits by plan 
+ How many monthly generative credits do I get in my plan? 
+ If I am on a plan that does not have access to premium generative features, can I try them out? 
+ What are Adobe Firefly Standard, Firefly Pro, and Firefly Premium plans? 
+ If I have multiple subscriptions, do my generative credits stack? 
+ How do I check how many generative credits I have remaining? 
+ What happens if I use all my generative credits?   
+ What if I have the Adobe Firefly (Legacy) and Adobe Firefly Generative credits add-on plans? 
+ What does “unlimited access” mean if that's included in my plan? 
+ What does it mean if I am able to queue beyond my credit limit? 
+ Are generative credits pooled in Creative Cloud for teams or enterprise plans? 
+ Can I use Adobe Firefly-generated outputs commercially? 
+ How do Firefly generative credits work in higher education? 
+ Generative credit basics
+ What are generative credits?
+...
+ 250
+ *Acrobat AI Assistant Plus can be purchased in addition to Acrobat Pro and or Acrobat Standard. User is required to be licensed for Acrobat Pro or Acrobat Standard. 
+ Document Cloud for teams plans 
+ Plan 
+ Generative AI feature type access 
+ Monthly generative credits 
+ Acrobat Studio
+ Acrobat Studio HED Student 
+ Acrobat Studio Faculty and Staff
+ Standard and Premium
+ 250
+ Acrobat Express
+ Standard and Premium
+ 250
+ Document Cloud for enterprise and higher education: VIP and VIP Marketplace  
+ Plan 
+ Generative AI feature type access 
+ Monthly generative credits 
+ Acrobat Studio
+ Acrobat Studio HED Student
+ Acrobat  Studio Faculty and Staff
+ Standard and Premium
+ 250
+ Document Cloud for enterprise and higher education: Enterprise Term License Agreement (ETLA) 
+ Plan 
+ Generative AI feature type access 
+ Monthly generative credits 
+ Acrobat Studio
+ Acrobat Studio HED Student
+ Acrobat Studio Faculty and Staff
+ Standard and Premium
+ 250
+ Acrobat Express
+ Acrobat Express for EDU-HED Student
+ Standard and Premium
+ 250
+ Generative AI access for free users without a plan 
+ Free users of Adobe Firefly, Adobe Express, Adobe Stock, Photoshop on the web, Acrobat, and Adobe mobile apps get a limited number of free daily generations across all generative AI features, available on a curated set of models. These limits refresh each day so you can continue to explore, experiment, and create. For additional creation with the full set of models and expanded capabilities, subscribe to an Adobe plan. The number of generations, features, and models are subject to change.
+ If I am on a plan that does not have access to premium generative features, can I try them out?
+ Yes. For the Creative Cloud plans that do not have access to premium generative features, Adobe is currently providing complimentary generations of these features for you to try them out. For example, you can currently get 2 free video generations and 40 seconds of video and audio clip translation. 
+ To generate more than what is currently included, beyond complimentary generations, you can add a Firefly Standard, Pro, or Premium plan or upgrade to Creative Cloud Pro. More info  here . 
+ What are the Adobe Firefly Standard, Firefly Pro, and Firefly Premium plans?
+ Adobe Firefly plans unlock access to premium features for creating with advanced generative AI features in creativity and video applications (such as the Firefly web app or Premiere). This includes access to premium video and audio generative AI features such as   Generative Extend in Premiere and   Translate Video or Translate Audio  in Adobe Firefly. Additionally, subscribers with a paid Firefly plan will receive unlimited access to standard image and vector generations, such as  Generative Fill  in Photoshop, where credits will not be deducted.
+ Firefly Free 
+ Firefly Standard 
+ Firefly Pro 
+ Firefly Pro Plus 
+ Firefly Premium 
+ Apps Included 
+ Adobe Firefly
+ Adobe Firefly
+ Adobe Firefly, Adobe Express Premium, Photoshop web and mobile
+ Adobe Firefly, Adobe Express Premium, Photoshop web and mobile 
+ Adobe Firefly, Adobe Express Premium, Photoshop web and mobile 
+ Generative credits 
+ Limited 
+ 2,000 credits per month
+ 4,000 credits per month
+ 10,000 credits per month
+ 50,000 credits per month
+ Standard features 
+ Deducts credits
+ Unlimited access
+ Does not deduct credits
+ Unlimited access
+ Does not deduct credits
+ Unlimited access
+ Does not deduct credits
+ Unlimited access
+ Does not deduct credits
+ Premium features 
+ Limited complimentary generations
+ Deducts credits
+ Deducts credits
+ Deducts credits
+ Deducts credits
+ If I have multiple subscriptions, do my generative credits stack?
+ If you have multiple subscriptions, the total number of generative credits available is the aggregate of what is included in each plan. For example, if you subscribe to both Adobe Illustrator and Adobe Photoshop single app, you can use your generative credits for generative AI features in either application and even in Adobe Express or the Firefly web app. Your monthly generative credit allocation is the sum of each subscription’s allocation.
+ How do I check how many generative credits I have remaining?
+ You can view your generative credit count in your  Account menu . A counter will show the number of monthly generative credits allocated to your account and the number of generative credits you have used in this cycle.
+ Go to your Adobe Account page.
+ Select your profile avatar image located in the upper-right corner of the page.
+ Select your profile icon on the Adobe Account page to check your generative credit count. 
+ A. Number of generative credits left in the current billing cycle  B. Number of generative credits included in your plan 
+ Select your profile icon on the Adobe Account page to check your generative credit count. 
+ In the Photoshop Desktop app, you can use the new Generative Credits Usage      panel, our new centralized in-app destination to check generative credit balance and learn more about generative AI features and costs. 
+ You can access Generative Credits usage from multiple places within the Photoshop app. Just look for the icon:
+ In the Photoshop editing space, in the top right section next to the Workspace selector. 
+ In the contextual task bar, when Generative AI features are active.
+ In the Properties panel, when a Generative AI layer is selected.
+ In the dialogs, under Generative AI features (for example, Generative Upscale , AI Sharpen , AI Denoise ).
+ What happens if I use all my generative credits? 
+ For paid plans, generative credit counts reset each month based on the billing date of your plan. 
+ If you reach your plan-specific generative credit limit during a month, what happens next depends on your plan type:
+ Paid Creative Cloud plan users may purchase a Firefly plan for additional  credits to use on premium generative features . Firefly plans will also unlock unlimited access to standard generative features.
+ Adobe Firefly Standard users may upgrade to Firefly Pro or Firefly Premium, or choose to buy an additional credit add-on plan for increased capacity. 
+ Creative Cloud, Adobe Firefly, and Adobe Express free users can  subscribe to a new paid plan  to continue creating Firefly-powered assets.
+ For business plans, reach out to your Account Manager or Partner.
+ In Photoshop, you can purchase additional credits through the Generative Credits Usage panel.
+ What if I have the Adobe Firefly (Legacy) and Adobe Firefly Generative credits add-on plans?
+ As of February 12, 2025, the Firefly (Legacy) and Firefly Generative credits add-on plans will no longer be available for new purchases. Existing customers can continue to use and renew their current plans, with the monthly renewal day based on your original purchase date. 
+ Adobe Firefly (Legacy) and Adobe Firefly Generative credits add-on users will retain access to the monthly generative credits that come with their plan and can use them on standard generative AI features. To access premium video and audio generative AI features, users can upgrade to a new Firefly Standard, Pro, or Premium plan or purchase an Adobe Firefly credit add-on plan for 2,000, 4,000, 7,000, or 50,000 credits.
+  What does “unlimited access” mean if that’s included in my plan?
+ With unlimited access, you can use generative AI features as often as you like. Generative credits won’t be used or deducted, so you don't have to worry about running out.
+ That said, to keep things running smoothly for everyone, we have guardrails in place to help prevent misuse like automatic scripting, account sharing, and reselling. More information can be found in our Terms of Use. 
+ These protections help ensure against excessive generation requests and slower processing speeds. In rare cases, if usage patterns trigger those safeguards, you might see a temporary restriction on your use of generative AI features. We’ll inform you when this happens in-app. If you think there was a mistake, you can reach out to our support team .
+ What does it mean if I am able to queue beyond my credit limit? 
+ If you are a Firefly Premium user and exhaust your allotted credits, your video generations using the  Text to video  or  Image to video  features in Firefly are queued and processed in the background with an unspecified completion time. In this state, you can continue generating videos, which will be available after a delayed timeframe.
+ You can queue up to 20 video generations at a time. If you attempt to generate a 21st video, you will receive an error message indicating that you have reached the limit. You will need to wait until one or more of your queued video generations are completed before trying again.
+ Are generative credits pooled in Creative Cloud for teams or enterprise plans?
+ Generative credits are not pooled or shared across users in Creative Cloud for teams or enterprise plans. However, ETLA customers on Creative Cloud for enterprise Edition 5, Edition 4, and Edition 4 with Premium Stock can purchase Shared Credits. Assigned users will automatically draw from this pool once their individual monthly credits are exhausted. Learn more about  Shared Credits  and contact your Adobe account team for details.
+ Can I use Adobe Firefly-generated outputs commercially?
+ For features without the beta label, you can use Adobe Firefly-generated outputs in your commercial projects. 
+ For features that are in beta, you can use the Adobe Firefly-generated outputs for your commercial projects unless explicitly stated otherwise in the product. However, for eligible teams and enterprise customers, beta outputs are not indemnified. Learn more about  indemnification . 
+ How do Firefly generative credits work in higher education?
+ Because Firefly features rely on substantial computing power, access is managed through generative credits. These credits function like tokens and are used whenever you access generative AI features within Adobe applications.
+ Firefly Credits for higher education users 
+ Firefly Credits give higher education users access to additional monthly generative AI capacity when their standard plan allotment isn’t enough. These optional addon credits are available in three tiers and support both standard and premium Firefly features.
+ Key points: 
+ Assigned per user: Firefly Credits are tied to individual users and cannot be pooled or shared institution-wide. 

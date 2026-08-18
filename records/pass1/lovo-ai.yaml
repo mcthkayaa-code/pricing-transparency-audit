@@ -1,0 +1,181 @@
+# RECORD — lovo-ai — pass 1 primary coder. Complete.
+product_id: lovo-ai
+product_name: LOVO AI
+category: AI voice
+product_status: discontinued  # corrected from `active` by the D-008 sweep, 2026-08-10; see d008-status-sweep.md and deviations-log D-008. Coded values below are unchanged and stand as collected from archived materials, which is what sampling-rules 6.2 asks of a discontinued product. The record now enters the discontinued stratum and no aggregate or index figure.
+paid_submission: "no"
+entry_tier_name: Basic
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://lovo.ai/pricing
+archive_url: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing
+archive_status: archived
+default_display_state: |
+  LIVE-SITE OUTAGE ON ACCESS DATE: https://lovo.ai/pricing and https://lovo.ai/tos both
+  returned HTTP 402 with header x-vercel-error: DEPLOYMENT_DISABLED on 2026-08-09, confirmed
+  independently via curl (Accept-Language en-US) and via WebFetch (separate egress). Entire
+  lovo.ai apex domain down (same 402 on https://lovo.ai/), not a geo/network artifact of our
+  Turkey egress. Two web.archive.org/save/ re-archival attempts per URL both returned HTTP 520
+  (archive_failed for the live re-snapshot). Coded pricing-class values instead from the most
+  recent pre-outage public archive.org capture: pricing page captured 2026-04-03T15:43:36Z
+  (http://web.archive.org/web/20260403154336/https://lovo.ai/pricing), which is itself a stable
+  public archive snapshot and stands as source+archive together. Contractual (ToS) values from
+  a much fresher capture, 2026-07-28T01:54:01Z, showing "Last updated: September 26th, 2024"
+  (unchanged), so no material staleness risk for ToS.
+  Currency: USD confirmed directly from the page's own config ("currency":"US$",
+  "monetary_unit":"USD") plus $ figures throughout; no non_usd value coded anywhere in this
+  record, so protocol D-003's US-locale cross-check is not triggered (nothing to check against).
+  Billing toggle default: YEARLY (annual) preselected. Evidence from archived page's raw markup:
+  the "Yearly" toggle button carries the active/selected color class
+  (css-1gkq9oo -> chakra-colors-blue-600) while "Monthly" carries the inactive/placeholder
+  color class (css-1g8vuqz -> chakra-colors-grayscale-500), and the sliding selection
+  indicator (class "chakra-slide") is transform:translateX(100%), i.e. slid under the second
+  (Yearly) button. All three headline prices on the card read "$X per user/month" with
+  "Billed US$Y annually" printed in the same card, consistent with annual being the
+  preselected/rendered state.
+  Region/geo variant: none detected; single capture, not re-loaded to hunt for a different
+  state (protocol 6.8 rule 4).
+  Cookie-consent: not applicable to a historical archive.org crawl (no consent banner
+  interaction was needed or performed by us).
+
+sources:
+  - { url: https://lovo.ai/pricing, kind: pricing, accessed: 2026-08-09, archive: archive_failed, note: "LIVE page returned HTTP 402 DEPLOYMENT_DISABLED on access date; 2 archive.org save-API re-attempts also failed (HTTP 520). Superseded as evidentiary source by the pre-existing archive.org capture below." }
+  - { url: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, kind: pricing, accessed: 2026-08-09, archive: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, note: "Pre-existing public archive.org capture of the pricing page, dated 2026-04-03; used as the actual evidentiary source for all pricing-class variables because the live page was down on access date. Local copy also saved to lovo-ai-sources/archived-pricing-20260403.html" }
+  - { url: https://lovo.ai/tos, kind: tos, accessed: 2026-08-09, archive: archive_failed, note: "LIVE page returned HTTP 402 DEPLOYMENT_DISABLED on access date; 2 archive.org save-API re-attempts also failed (HTTP 520). Superseded as evidentiary source by the pre-existing archive.org capture below." }
+  - { url: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, kind: tos, accessed: 2026-08-09, archive: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, note: "Pre-existing public archive.org capture of the ToS, dated 2026-07-28 (shows 'Last updated: September 26th, 2024', i.e. unchanged since); used as the actual evidentiary source for contractual variables. Local copy also saved to lovo-ai-sources/archived-tos-20260728.html" }
+  - { url: "https://help.lovo.ai/hc/en-us/articles/25794407382937-What-is-the-free-trial-and-what-does-it-include", kind: docs, accessed: 2026-08-09, archive: "http://web.archive.org/web/20250811013818/https://help.lovo.ai/hc/en-us/articles/25794407382937-What-is-the-free-trial-and-what-does-it-include", note: "Live help.lovo.ai blocked by a Cloudflare managed JS challenge (HTTP 403, 'Just a moment...') on direct fetch; not bypassed (no challenge was solved/clicked). Coded from pre-existing archive.org capture dated 2025-08-11 instead." }
+  - { url: "https://help.lovo.ai/hc/en-us/articles/22141504705049-Can-I-get-a-refund-after-subscribing", kind: refund, accessed: 2026-08-09, archive: "http://web.archive.org/web/20250912065421/https://help.lovo.ai/hc/en-us/articles/22141504705049-Can-I-get-a-refund-after-subscribing", note: "Live blocked by Cloudflare challenge (see above). Coded from archive.org capture dated 2025-09-12. Article body defers to ToS for the refund figure itself; used here only for auto-renewal/cancellation corroboration." }
+  - { url: "https://help.lovo.ai/hc/en-us/articles/22141381084697-Can-I-cancel-my-subscription", kind: refund, accessed: 2026-08-09, archive: "http://web.archive.org/web/20251012203945/https://help.lovo.ai/hc/en-us/articles/22141381084697-Can-I-cancel-my-subscription", note: "Live blocked by Cloudflare challenge (see above). Coded from archive.org capture dated 2025-10-12." }
+  - { url: "https://help.lovo.ai/hc/en-us/sections/21880935798425-Pricing-and-Subscriptions", kind: docs, accessed: 2026-08-09, archive: archive_failed, note: "Live blocked by Cloudflare managed challenge (HTTP 403); no usable archive.org capture pursued further given effort cap - pricing-page embedded JSON already gave comprehensive plan data, so this was not load-bearing for any coded value." }
+  - { url: "https://help.lovo.ai/hc/en-us/sections/21880949692825-Payment-and-Billing", kind: docs, accessed: 2026-08-09, archive: archive_failed, note: "FAQ article titled 'What happens if I hit my credit limit?' seen only as a related-article link title within this section (exact article URL/slug not resolved; not opened - live Cloudflare-blocked, no archive fetch attempted given effort budget). Not load-bearing: credit_system_present coded 'no' from comprehensive direct-unit plan JSON on the pricing page itself, independent of this article." }
+  - { url: https://lovo.ai/faq, kind: docs, accessed: 2026-08-09, archive: "http://web.archive.org/web/20221206094537/https://www.lovo.ai/faq", note: "Only archive.org capture available is from 2022-12, too stale to use. Superseded: the FAQ content actually needed (e.g. 'Do I own the rights to content created?') was found embedded directly in the 2026-04-03 pricing-page capture's own JSON data instead." }
+
+variables:
+  headline_price_usd: { value: 24.00, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "Basic card: \"$24 per user /month\", \"Billed US$288 annually\" (entry tier = Basic; see entry-tier selection and tie-break in coder_note)" }
+  headline_billing_basis: { value: per_seat_per_month, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "\"$24 per user /month\" with annual toggle preselected (per sampling-rules 7.2 / codebook Vendor B pattern)" }
+  first_charge_amount_usd: { value: 288.00, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "\"Billed US$288 annually\" stated directly beneath the Basic card's $24/mo figure - a direct read, not a x12 computation" }
+  mandatory_addon_present: { value: "no", source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "Full Basic feature-bullet list (Natural Language Pro V2 Voices, 2 Hr Voice Generation/mo, 500+ AI Voices, 5 Voice Clones, Auto Subtitle Generator, Full HD 1080p Export, Unlimited Downloads, Commercial Rights) plus full ToS read; no required extra charge stated for any advertised Basic feature" }
+  annual_condition_disclosure: { value: adjacent, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "\"Billed US$288 annually\" printed directly inside the same Basic price card/block as the \"$24\" figure" }
+  annual_default_toggle: { value: annual_preselected, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "Raw markup: \"Yearly\" button has active color class css-1gkq9oo/chakra-colors-blue-600, \"Monthly\" has inactive class css-1g8vuqz/chakra-colors-grayscale-500; sliding indicator div transform:translateX(100%) sits under \"Yearly\" (see default_display_state for full detail)" }
+
+  free_plan_exists: { value: "yes", source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "Pricing page's own plan config: plan.free.title=\"Free\", pay_description=\"No credit card required.\"; corroborated by help center: \"you will automatically become a free user\" and \"your account will turn into a free plan account that can be used indefinitely\"" }
+  free_plan_cap_documented: { value: all_quantified, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "FREE tier featurePolicy JSON: voice-generation:\"5 Mins / mo\", voice-cloning:\"5 Voices\", storage:\"1 GB\", project-limit:5, simple-mode-one-time-generation-limit:\"500 Chars / Generation\", auto-subtitles:\"5 Mins / mo\"; sharing:\"Unlimited\" with no qualifying fair-use/discretionary clause found anywhere in full ToS read (see unquantified_limit_clause=absent)" }
+  free_plan_cap_value: { value: "5 mins voice generation per month | 5 voice clones | 1 GB storage | 5 projects | 500 chars per generation | 5 mins auto-subtitles per month", source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "FREE tier featurePolicy JSON (see free_plan_cap_documented evidence)" }
+  free_plan_watermark: { value: "yes", source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "FREE plan config: export_video title=\"Video With Watermark\", description=\"Export video with watermark\"; featurePolicy \"remove-watermark\":false for FREE tier (vs. true for Basic/Pro/Pro+)" }
+  free_plan_duration: { value: perpetual, source: "https://help.lovo.ai/hc/en-us/articles/22141504705049-Can-I-get-a-refund-after-subscribing", evidence: "\"Once your subscription expires, your account will turn into a free plan account that can be used indefinitely.\" (help center, archive.org 2025-09-12); corroborated by trial article: \"When your trial ends, you will automatically become a free user\"" }
+
+  trial_exists: { value: "yes", source: "https://help.lovo.ai/hc/en-us/articles/25794407382937-What-is-the-free-trial-and-what-does-it-include", evidence: "\"The free trial is a 14-day trial of our Pro subscription, which requires no payment or card details.\"" }
+  trial_card_required: { value: "no", source: "https://help.lovo.ai/hc/en-us/articles/25794407382937-What-is-the-free-trial-and-what-does-it-include", evidence: "\"...which requires no payment or card details.\" - corroborated by pricing page's own plan.free.pay_description = \"No credit card required.\"" }
+  trial_length_days: { value: 14, source: "https://help.lovo.ai/hc/en-us/articles/25794407382937-What-is-the-free-trial-and-what-does-it-include", evidence: "\"The free trial is a 14-day trial of our Pro subscription\"; pricing page also shows \"First 14 Days Free Trial of Pro\"" }
+  trial_auto_converts: { value: "no", source: "https://help.lovo.ai/hc/en-us/articles/25794407382937-What-is-the-free-trial-and-what-does-it-include", evidence: "\"What happens when my trial ends? When your trial ends, you will automatically become a free user...\" - explicitly becomes a FREE user, not a paid subscriber; no card was ever collected to charge" }
+
+  credit_system_present: { value: "no", source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "Every plan's featurePolicy meters allowance directly in output units: FREE \"voice-generation\":\"5 Mins / mo\", Basic \"2 Hrs / mo\", Pro \"5 Hrs / mo\", Pro+ \"20 Hrs / mo\" - no abstracted credit/token/point currency anywhere in the plan schema (codebook rule 1: direct output-unit allowance is not a credit system)" }
+  credit_unit_defined: { value: not_applicable, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "not_applicable per credit_system_present=no" }
+  credit_to_output_rate_published: { value: not_applicable, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "not_applicable per credit_system_present=no" }
+  credit_rate_location: { value: not_applicable, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "not_applicable per credit_system_present=no" }
+  cost_per_output_unit: { value: per_audio_minute, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "Product sold and metered as \"Voice Generation Hours/Mins\" throughout (Genny text-to-speech/voice generator); principal output is synthesized audio" }
+  cost_per_output_computable: { value: "yes", source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "Basic (entry tier) featurePolicy \"voice-generation\":\"2 Hrs / mo\" = 120 min/mo, against $24/mo default-display price; both already monthly, no conversion needed" }
+  computation_assumptions: { value: "Basic tier (entry paid tier), default display=annual, $24/mo ($288/yr) per pricing page; includes 2 Hrs (120 min) Voice Generation/mo per featurePolicy; both already monthly basis. 24/120=0.20 USD per audio minute.", source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "" }
+  credit_rollover_policy: { value: not_applicable, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "not_applicable per credit_system_present=no" }
+  failed_generation_charge_policy: { value: unknown, source: "http://web.archive.org/web/20260728015401/https://lovo.ai/tos", evidence: "Checked: full ToS read (archived 2026-07-28) and pricing page (archived 2026-04-03) - neither states what happens to allowance on a failed/errored generation. Help center Payment-and-Billing section could not be reached (Cloudflare-blocked live; no archive.org capture pursued given the effort cap). Codebook: \"this variable is silent often. That is the finding.\"" }
+
+  auto_renewal_default: { value: "on", source: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, evidence: "ToS 2.2: \"your payment method will automatically be charged at either the start or end of each Subscription period... To avoid future charges, cancel before the renewal date.\"; ToS 2.3: \"You can cancel your Subscription at any time to stop the auto renewal of your Subscription.\"" }
+  auto_renewal_disclosure_location: { value: multiple, source: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, evidence: "Stated in ToS section 2.2/2.3 (terms) AND independently in help center: \"You can cancel your subscription at any time to stop the auto-renewal of your subscription.\" (Can-I-get-a-refund-after-subscribing article, archive.org 2025-09-12) - two document classes in agreement" }
+  renewal_notice_commitment: { value: unknown, source: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, evidence: "Full ToS read plus the three fetched help-center articles: no statement of any advance-notice commitment before a renewal charge was found (silence, not an explicit \"no notice\" statement, so coded unknown per the codebook's general silence convention rather than the explicit-absence value)" }
+
+  refund_policy_exists: { value: "yes", source: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, evidence: "ToS 2.3: \"Due to the nature of our Services, we will not be providing refunds once you have confirmed payment of your purchase and 24 hours have passed.\" - implies a refund is available within the 24-hour window" }
+  refund_window_days: { value: 1, source: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, evidence: "\"...once you have confirmed payment of your purchase and 24 hours have passed.\" - 24 hours converted to 1 day (codebook gives week/month conversions only; hours-to-days is a mechanical 24h=1d conversion, noted as a coder judgment call)" }
+  refund_conditions: { value: unconditional, source: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, evidence: "ToS states only the 24-hour cutoff; no additional condition (usage threshold, stated reason, approval step) is attached within that window in the ToS or in the help center refund article, which defers to the ToS for details" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://help.lovo.ai/hc/en-us/articles/22141381084697-Can-I-cancel-my-subscription", evidence: "\"You can cancel your subscription anytime in Genny under the 'Subscription' tab. You will have access to your subscription until the end of that billing cycle.\" - self-serve in-app route, no contact required" }
+  refund_policy_location: { value: terms, source: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, evidence: "24-hour refund position stated in ToS 2.3 only; the dedicated help-center article titled \"Can I get a refund after subscribing?\" does not restate the figure and instead says \"Please see our terms of service for more info.\" - so terms is the sole governing document, not multiple" }
+
+  commercial_use_lowest_tier: { value: lowest_paid, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "FREE tier featurePolicy \"commercial-rights\":false (1 GB storage tier); Basic/Pro/Pro+ featurePolicy \"commercial-rights\":true; Basic pricing card also lists \"Commercial Rights\" as an included bullet. See conflict_note re: the general FAQ blurb's unqualified \"including commercial rights\" wording." }
+  watermark_removal_tier: { value: lowest_paid, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "FREE tier featurePolicy \"remove-watermark\":false (plus explicit \"Video With Watermark\" plan-list entry); Basic/Pro/Pro+ featurePolicy \"remove-watermark\":true" }
+  output_ownership_statement: { value: user_owns, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "Pricing-page FAQ JSON: own_content_created.answer = \"You own all rights to the content created via LOVO, in perpetuity, including commercial rights.\" ToS 3.1 separately covers only content YOU SUBMIT (inputs), not generated outputs, so this FAQ statement is the only source that speaks to output ownership specifically - see coder_note on document-split per voice-product norms." }
+
+  usage_cap_quantified: { value: all_caps_quantified, source: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing, evidence: "Basic (entry tier, Yearly/default) featurePolicy: voice-generation \"2 Hrs / mo\", voice-cloning \"5 Voices\", simple-mode-one-time-generation-limit \"2k Chars / Generation\", storage \"30 GB\", auto-subtitles \"120 Mins / mo\", project-limit 10, export-quality \"1080p\"; sharing/downloads \"Unlimited\" with no qualifying discretionary clause found in full ToS read (see unquantified_limit_clause)" }
+  unquantified_limit_clause: { value: absent, source: http://web.archive.org/web/20260728015401/https://lovo.ai/tos, evidence: "Full ToS read to the end, including section 3.3 \"Limits\" (\"LOVO reserves the right to restrict, suspend, or terminate your account if you breach this User Agreement or the law or misuse the Services\" - a conduct/breach clause, not a volume/intensity-of-use clause per codebook rule 3) and section 6 \"Dos and Don'ts\" (serves as the acceptable-use content; no separate AUP document found). No fair-use, reasonable-use, excessive-use, or discretionary-throttling clause found anywhere." }
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules 7.2): Eligible candidates were Basic, Pro, Pro+
+  (all generally available, purchasable without sales contact, standing plans). Enterprise
+  EXCLUDED (fails eligibility rule 2: "Contact Sales", no purchasable-without-sales price).
+  Annual-equivalent costs in the page's default (Yearly) display state: Basic $288.00/yr
+  (direct read: "Billed US$288 annually"); Pro $288.00/yr (also directly stated "Billed
+  US$288 annually" - its displayed $24/mo is a "1st Year 50% OFF" promotional price off a
+  $48/mo standing rate, but rule 2 of headline_price_usd uses the most-prominently-displayed
+  figure regardless, so the promo price is what's compared); Pro+ $900.00/yr (not competitive).
+  Basic and Pro TIE at $288.00/yr. Tie-break per sampling-rules 7.2: neither card carries a
+  "first paid step" badge (Pro carries "Most Popular", a different marketing signal, not a
+  first-step designation), so the tie falls to the second rule, leftmost/topmost on the page:
+  Basic is the first (leftmost) card in both the plan-card row and the feature-comparison
+  table's column order (Basic, Pro, Pro+, Enterprise throughout). Basic wins -> entry_tier_name
+  = Basic. Pro ($288.00/yr, lost on position tie-break) and Pro+ ($900.00/yr, lost on price)
+  both recorded per sampling-rules 7.2.
+
+  NOT USED AS A CANDIDATE: the pricing page's embedded JSON also contains a "Subtitles
+  (Yearly)" price object (~US$12/mo, 30 Voice Generation Minutes/mo) that is not rendered as
+  a selectable card anywhere in the visible page (only Basic/Pro/Pro+/Enterprise are offered
+  as choices). Treated as a non-displayed/legacy SKU, not a published entry-tier candidate,
+  per the same "what a buyer can actually determine from the page" standard the whole
+  instrument applies. Noted here for transparency only.
+
+  RENEWAL-PRICE CAVEAT (not a coded variable, flagged for context only): Basic's own Stripe-
+  style coupon object in the pricing-page JSON shows the 17.24%-off discount on its $348.00/yr
+  underlying price has duration:"once", i.e. first-year only, same mechanic as Pro/Pro+'s
+  explicit "1st Year 50% OFF" badge - but Basic's card shows no such badge on-page. This does
+  not change first_charge_amount_usd (correctly the first-year figure, $288.00), but a buyer
+  reading only the Basic card has no on-page signal that year two likely renews higher (~$348).
+  No codebook variable captures this specifically; flagged as an observation only.
+
+  INTERNAL TENSION FLAGGED (see conflict_note): pricing-page general FAQ states unqualified
+  "You own all rights to the content created via LOVO, in perpetuity, including commercial
+  rights", while the same page's structured per-plan data shows commercial-rights:false on
+  the FREE tier specifically. Coded output_ownership_statement from the FAQ (on-point for
+  ownership) and commercial_use_lowest_tier from the tier-differentiated plan data (on-point
+  for tier-gating), per codebook's per-variable specificity; the gap itself is the finding.
+
+  DOCUMENT-SPLIT PER PRODUCT NOTE (voice product): output/commercial-rights terms split
+  across the pricing page's own FAQ (ownership, "own_content_created") + structured plan data
+  (commercial-rights flag per tier) rather than the ToS, which addresses only user-SUBMITTED
+  content (3.1) and general commercial/resale use rights (3.5), not generated-output ownership.
+  Voice-cloning CONSENT terms live in ToS section 4 "Custom Voice Cloning" specifically (not
+  coded to any single variable here, since no codebook variable targets cloning-consent text
+  directly, but recorded per the task note: ToS 4 requires "written consent, release, and/or
+  permission of each and every identifiable individual person" in files submitted for voice
+  cloning - this governs voice-cloning consent; ToS 3.1/3.5 governs input-content licensing and
+  commercial/resale use; the pricing-page FAQ governs output ownership; ToS 2.2/2.3 governs
+  billing/renewal/refund/cancellation).
+
+  METHOD NOTE: credit-system determination (credit_system_present=no) rests on the pricing
+  page's own featurePolicy JSON showing every plan (Free/Basic/Pro/Pro+) metering allowance
+  directly in Hrs/Mins of Voice Generation, not an abstracted credit currency. A help-center
+  FAQ article title, "What happens if I hit my credit limit?", uses the word "credit"
+  colloquially; its body was not accessed (Cloudflare-blocked live, no archive fetched given
+  the effort cap) since the structural evidence across all four tiers was already conclusive
+  and consistent; noted for auditability, not treated as contradicting evidence.
+
+  D-003 currency check: not triggered. USD confirmed directly from the vendor's own page
+  config ("currency":"US$","monetary_unit":"USD") plus $ figures throughout; no variable in
+  this record was coded non_usd, so there is nothing for the US-locale cross-check to test
+  against.
+
+  D-005 rendered-read note: the pricing page's price/plan/feature data was NOT missing due to
+  client-side rendering (a browser render would not have helped) - the entire lovo.ai domain
+  returned HTTP 402 DEPLOYMENT_DISABLED at the infrastructure level (Vercel deployment
+  disabled), confirmed via two independent fetch paths (curl, WebFetch). This is a genuine
+  vendor-side outage a real visitor would also have met, not a "fetcher couldn't see it" gap,
+  so no browser-render attempt was made against the live 402 response; archived captures of
+  the previously-live, fully-rendered page were used instead (themselves already-rendered
+  documentary HTML/JSON, satisfying D-005's underlying concern).
+
+  Cloudflare note: help.lovo.ai's live pages returned a Cloudflare managed JS challenge
+  ("Just a moment...", HTTP 403). No challenge was solved, clicked, or otherwise completed;
+  archive.org captures were used instead in every case that mattered to a coded value.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Internal tension on the SAME page (lovo.ai/pricing, archived 2026-04-03), not a cross-document conflict: the general-purpose FAQ entry 'own_content_created' states unqualified \"You own all rights to the content created via LOVO, in perpetuity, including commercial rights\" (no tier qualifier), while the structured per-plan featurePolicy data on the identical page states \"commercial-rights\":false for the FREE tier and true from Basic upward. Not coded as `conflicting` (codebook reserves that for two SEPARATE official sources of equal authority; this is one page, two sections of differing specificity) - resolved by using the more specific, tier-differentiated data for commercial_use_lowest_tier and the ownership-specific FAQ line for output_ownership_statement. Both URLs are the same: http://web.archive.org/web/20260403154336/https://lovo.ai/pricing."
+register_events: []
+status: complete

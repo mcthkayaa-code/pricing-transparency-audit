@@ -1,0 +1,160 @@
+product_id: undetectable-ai
+product_name: Undetectable AI
+category: AI humanizer
+product_status: active
+paid_submission: "no"
+entry_tier_name: "10K words/month"
+coder_pass: 2
+coder_role: second
+collection_date: "2026-08-15"
+recheck_date: not_applicable
+primary_source_url: https://undetectable.ai/pricing
+archive_url: https://web.archive.org/web/20260815134758/https://undetectable.ai/pricing
+archive_status: archived
+default_display_state: "USD; Yearly/annual billing toggle preselected on load, confirmed via DOM active-state classes (Yearly button carries bg-blue-700/!text-white; Monthly carries bg-transparent/text-gray-800), not from which figure a text extractor printed first; no region/country selector present on page; no cookie-consent interaction altered pricing."
+
+sources:
+  - { url: https://undetectable.ai/pricing, kind: pricing, accessed: "2026-08-15", archive: https://web.archive.org/web/20260815134758/https://undetectable.ai/pricing, note: "JS-rendered SPA; Wayback capture may not preserve hydrated price text per D-005, local verbatim capture retained in -sources/pricing-page-2026-08-15.txt" }
+  - { url: https://undetectable.ai/terms, kind: tos, accessed: "2026-08-15", archive: https://web.archive.org/web/20260815135121/https://undetectable.ai/terms, note: "Full 28-section ToS read in full; local capture in -sources/terms-2026-08-15.txt" }
+  - { url: https://undetectable.ai/help, kind: docs, accessed: "2026-08-15", archive: https://web.archive.org/web/20260815140059/https://undetectable.ai/help, note: "Help/FAQ page" }
+  - { url: https://undetectable.ai/ai-humanizer, kind: docs, accessed: "2026-08-15", archive: https://web.archive.org/web/20260815140252/https://undetectable.ai/ai-humanizer, note: "Product page; establishes free/basic tier vs word-limited free-trial distinction" }
+  - { url: https://undetectable.ai/ethics, kind: other, accessed: "2026-08-15", archive: https://web.archive.org/web/20260815140320/https://undetectable.ai/ethics, note: "Checked for commercial-use/output-ownership language; found only an ethical-use policy, no legal rights statement" }
+
+variables:
+  headline_price_usd: { value: 5.00, source: https://undetectable.ai/pricing, evidence: "10K words/month card, default annual view: '$9.99' struck through, '$5.00 /mo' shown prominently in green; most prominent non-struck figure for the entry tier" }
+  headline_billing_basis: { value: per_month_billed_annually, source: https://undetectable.ai/pricing, evidence: "'$5.00/mo' shown with 'Charged annually $60.00' beneath, under the Yearly (preselected) toggle" }
+  first_charge_amount_usd: { value: 60.00, source: https://undetectable.ai/pricing, evidence: "'Charged annually $60.00' printed directly beneath the $5.00/mo figure on the 10K words/month card; directly published, not computed" }
+  mandatory_addon_present: { value: "no", source: https://undetectable.ai/pricing, evidence: "Entry tier's 'Quick look at features' list, cross-checked against terms and help/FAQ, shows no required additional charge beyond the plan price" }
+  annual_condition_disclosure: { value: adjacent, source: https://undetectable.ai/pricing, evidence: "'Charged annually $60.00' printed directly beneath the $5.00/mo price inside the same plan card; 'Yearly / 50% off' toggle label adjacent as well" }
+  annual_default_toggle: { value: annual_preselected, source: https://undetectable.ai/pricing, evidence: "DOM: 'Yearly' button class includes 'bg-blue-700 !text-white' (active styling); 'Monthly' button class includes 'bg-transparent text-gray-800' (inactive styling), read on fresh page load before any interaction" }
+  free_plan_exists: { value: "yes", source: https://undetectable.ai/ai-humanizer, evidence: "'Is the AI Humanizer Free? Yes. There's a free version, but it uses a basic model and may be flagged by detectors.' Page itself titled 'Free AI Humanizer (Unlimited, No Signup)'; tool widget defaults to a 'Basic' mode tab requiring no signup." }
+  free_plan_cap_documented: { value: none_quantified, source: https://undetectable.ai/ai-humanizer, evidence: "Free/'Basic' tier described only qualitatively ('uses a basic model and may be flagged by detectors'); the word 'Unlimited' appears only in the page's <title> tag, not restated with a number in visible body/FAQ copy, so no clean quantified figure is confirmed" }
+  free_plan_cap_value: { value: unknown, source: https://undetectable.ai/ai-humanizer, evidence: "No free-plan-specific quantified figure is published to record; see free_plan_cap_documented note" }
+  free_plan_watermark: { value: unknown, source: https://undetectable.ai/ai-humanizer, evidence: "Checked /ai-humanizer and /pricing; neither states whether free/Basic-tier output carries vendor branding or a watermark" }
+  free_plan_duration: { value: perpetual, source: https://undetectable.ai/ai-humanizer, evidence: "Presented as a standing, no-signup, always-available tier ('Free AI Humanizer... No Signup'); no expiry stated anywhere" }
+  trial_exists: { value: "yes", source: https://undetectable.ai/pricing, evidence: "'Start FREE Trial' on every paid plan card; 'Free Trial is limited to 250 words. Additional usage requires paid plan activation.' Corroborated by /ai-humanizer FAQ: 'Sign up for a free trial to bypass detectors with 99% confidence and use the Undetectable model.'" }
+  trial_card_required: { value: unknown, source: https://undetectable.ai/pricing, evidence: "Checked /pricing and /help; neither states whether payment details are required to start the trial" }
+  trial_length_days: { value: unknown, source: https://undetectable.ai/pricing, evidence: "Trial is bounded by a WORD count (250 words), not a day count; no day-based length is published anywhere. See coder_note for the actual published limit." }
+  trial_auto_converts: { value: "no", source: https://undetectable.ai/pricing, evidence: "'Additional usage requires paid plan activation' -- read as requiring an affirmative user action to begin paying rather than an automatic silent conversion/charge. Judgment call, flagged in coder_note." }
+  credit_system_present: { value: "no", source: https://undetectable.ai/pricing, evidence: "Plan allowances are stated directly in the principal output unit ('10K words/month', '20K words/month', '35K words/month', '50K words/month'), not through an intermediate currency of credits/tokens/points, per codebook rule 1. (Business/enterprise tier uses the word 'credits' casually for the same word-based quota; see coder_note.)" }
+  credit_unit_defined: { value: not_applicable, source: "", evidence: "No credit system" }
+  credit_to_output_rate_published: { value: not_applicable, source: "", evidence: "No credit system" }
+  credit_rate_location: { value: not_applicable, source: "", evidence: "No credit system" }
+  cost_per_output_unit: { value: per_1k_words, source: https://undetectable.ai/pricing, evidence: "Principal output is humanized text, sold and metered in words ('10K words/month' etc.)" }
+  cost_per_output_computable: { value: "yes", source: https://undetectable.ai/pricing, evidence: "$5.00/mo and 10,000 words/mo both published for the entry tier in the default annual display state; no assumption about typical use is needed" }
+  computation_assumptions: { value: "10K words/month tier, $5.00/mo billed annually ($60.00/yr) per default display state; 10,000 words/mo included. Price & allowance already monthly, no conversion needed. 10000/1000=10 (1k-word units); 5.00/10=0.50 => $0.50 per 1k words.", source: https://undetectable.ai/pricing, evidence: "" }
+  credit_rollover_policy: { value: not_applicable, source: "", evidence: "No credit system" }
+  failed_generation_charge_policy: { value: unknown, source: https://undetectable.ai/terms, evidence: "Checked terms and help/FAQ in full; neither states whether a failed/erroring humanization attempt consumes the word allowance" }
+  auto_renewal_default: { value: "on", source: https://undetectable.ai/terms, evidence: "'If your order is subject to recurring charges, then you consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until such time as you cancel' (Sec 5); 'By subscribing, you expressly consent to recurring billing at the disclosed price and frequency until you cancel' (Sec 6.5)" }
+  auto_renewal_disclosure_location: { value: terms_only, source: https://undetectable.ai/terms, evidence: "Found only in the Terms of Service (Sections 5 and 6.5); the pricing page states billing amounts/frequency ('Charged annually $X', 'Cancel Anytime') but does not itself use renewal/auto-charge language, and the Help/FAQ page does not address it either" }
+  renewal_notice_commitment: { value: no_notice_stated, source: https://undetectable.ai/terms, evidence: "ToS Sec 6.5 discloses the existence, amount and frequency of recurring charges and how to cancel 'before being charged again', but makes no commitment to an advance notification before each renewal charge" }
+  refund_policy_exists: { value: "yes", source: https://undetectable.ai/terms, evidence: "'A refund of credits is only available if a submission provably flags as less than 75% human on a reputable AI detector. Refunds of credit or payment requests must be made within 30 days of the incident.' (ToS Sec 6.1, restated Sec 27)" }
+  refund_window_days: { value: 30, source: https://undetectable.ai/terms, evidence: "'must be made within 30 days of the incident' -- window runs from the flagged incident, not from the purchase date; see coder_note" }
+  refund_conditions: { value: conditional, source: https://undetectable.ai/terms, evidence: "Refund conditioned on a submission 'provably flag[ging] as less than 75% human on a reputable AI detector' and on requesting within 30 days of that incident" }
+  cancellation_self_serve: { value: contact_required, source: https://undetectable.ai/terms, evidence: "'All other users may cancel by emailing us at contact@undetectable.ai' -- the general/default route for users outside California and New York. CA/NY residents get a self-serve dashboard route instead; see coder_note for the jurisdiction split." }
+  refund_policy_location: { value: multiple, source: https://undetectable.ai/terms, evidence: "Appears on the pricing/home banner ('Money back guarantee. If anything we produce is flagged as not human, we will refund the cost of humanization.'), the Help/FAQ ('...we will refund the cost of the generation, no questions asked.'), and the Terms of Service (Sec 6.1 and 27, with the specific condition and window)" }
+  commercial_use_lowest_tier: { value: unknown, source: https://undetectable.ai/terms, evidence: "Checked terms (IP section) and the ethics page; neither grants or denies commercial-use rights over the humanized output text at any tier. The ethics page lists 'To create marketing content' as an ethically acceptable use case, but this is an ethical-use policy, not a legal rights/license statement, so it was not used to code a determinate tier." }
+  watermark_removal_tier: { value: unknown, source: https://undetectable.ai/pricing, evidence: "Pricing page lists 'Watermark and future proof' as an included paid-tier feature, but no document (checked pricing + terms) states whether this concerns vendor branding on output (the codebook's construct) or removal of AI-model-embedded detection watermarks (the vendor separately sells an 'AI Text Watermark Remover' product, suggesting the latter reading). Ambiguous phrase, not resolved by any document; see coder_note." }
+  output_ownership_statement: { value: unknown, source: https://undetectable.ai/terms, evidence: "ToS Section 2 addresses ownership of the vendor's own site/software content; Sections 8-9 address user-posted community 'Contributions'. Neither addresses ownership of the humanized TEXT OUTPUT the tool generates from a user's input." }
+  usage_cap_quantified: { value: some_quantified, source: https://undetectable.ai/pricing, evidence: "'10K words/month' is a fully quantified rate (number+dimension+period). 'Unlimited Human Auto Typer' and 'Unlimited AI Detecting' are advertised as unlimited but that claim is arguably qualified by ToS Sec 12 item 4's discretionary clause (see unquantified_limit_clause); judgment call, flagged in coder_note." }
+  unquantified_limit_clause: { value: present, source: https://undetectable.ai/terms, evidence: "'...in our sole discretion and without limitation, notice, or liability, to remove from the Services or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems...' (ToS Sec 12, item 4) -- the only discretionary/unquantified-standard clause found after reading the terms in full" }
+
+coder_note: |
+  ENTRY TIER SELECTION (sampling-rules 7.2). Eligible candidates (generally available, no sales
+  contact, standing plans): 10K words/month, 20K words/month, 35K words/month, 50K words/month
+  (slider 50,000-380,000 words). "Business / For Business" is INELIGIBLE (CTA "Contact Us",
+  "Custom Pricing & Plans" -- fails "purchasable without contacting sales"). Annual-equivalent
+  cost of each eligible candidate, read in the default (Yearly) display state:
+    10K words/month: $60.00/yr (directly published "Charged annually $60.00") -- WINNER, lowest.
+    20K words/month: $114.00/yr (directly published "Charged annually $114.00") -- losing.
+    35K words/month: $189.00/yr (directly published "Charged annually $189.00") -- losing.
+    50K words/month (slider): $21.25/mo shown at slider minimum; unlike the other three cards,
+      no "Charged annually $X" figure is printed for this tier. Annual-equivalent computed
+      (not directly published) as 21.25 x 12 = $255.00 -- losing either way.
+  Entry tier = "10K words/month", $60.00/yr, matching FAQPage JSON-LD on the same page
+  ("$5/month (billed annually at $60)").
+
+  TOGGLE / TIER-SET CHECK (per assignment instructions). Default toggle state established from
+  DOM classes (Yearly = active bg-blue-700/!text-white; Monthly = inactive bg-transparent/
+  text-gray-800), not from extractor output order. Checked whether the toggle changes the SET of
+  tiers, not just prices: an initial static WebFetch pass (before browser rendering) returned
+  BOTH the monthly figure ($9.99) and the yearly figure ($5.00/mo, $60.00/yr) for all four named
+  tiers in a single pass, indicating the same four tiers + Business exist under both bases and
+  only the displayed price changes. No case found where the cheapest tier exists on one basis and
+  not the other; both ladders match in tier names, only prices differ (2x monthly vs annual-per-
+  month, consistent with the "50% off" yearly toggle label).
+
+  BUNDLE DISCLOSURE (per assignment instructions). The coded "10K words/month" tier bundles AI
+  humanization (metered at 10,000 words/month) together with "Unlimited AI Detecting" and
+  "Unlimited Human Auto Typer" as included features, per the plan's own "Quick look at features"
+  list on https://undetectable.ai/pricing. This is a single unified subscription surface -- AI
+  Detector functionality is not sold separately from AI Humanizer functionality at this tier, in
+  the vendor's own wording ("Unlimited AI Detecting" is listed directly inside the humanizer-
+  metered plan card; no separate detector-only pricing tier exists). The sales-gated Business tier
+  additionally bundles "Access to Smart Job Applier", an unrelated product, but that tier is not
+  the coded entry tier.
+
+  FREE PLAN vs FREE TRIAL (two distinct constructs, both documented). (1) An ongoing, no-signup
+  "free version" / "Basic" model, coded as free_plan_exists=yes ("Is the AI Humanizer Free? Yes.
+  There's a free version, but it uses a basic model and may be flagged by detectors." --
+  /ai-humanizer). (2) A separate sign-up-gated "Free Trial" of the better "Undetectable" model,
+  explicitly limited to 250 WORDS, not a day count ("Free Trial is limited to 250 words.
+  Additional usage requires paid plan activation." -- /pricing), coded under domain 4. Because
+  trial_length_days is defined in DAYS and no day-based figure is published anywhere (only the
+  250-word usage cap), trial_length_days is coded unknown; the actual published limit (250 words,
+  one-time) is recorded here for transparency rather than invented into the days field.
+
+  JUDGMENT CALLS FLAGGED FOR ADJUDICATION:
+  1. trial_auto_converts=no is read from "Additional usage requires paid plan activation" as
+     requiring an affirmative user action (paying) rather than an automatic silent charge. This
+     is an interpretation of wording, not an explicit "does not auto-renew" statement; a reader
+     coding this "unknown" instead would also be defensible.
+  2. usage_cap_quantified=some_quantified / unquantified_limit_clause=present both rest on reading
+     ToS Sec 12 item 4 ("...remove...all files and content that are excessive in size or are in
+     any way burdensome to our systems...") as the kind of vendor-discretion/unquantified-standard
+     clause the codebook's F1/F2 rules describe. This clause is framed around file/content removal
+     for system protection, not explicitly labeled a "fair use policy for all plans" the way the
+     codebook's own worked example is; it is the only such clause found after reading the ToS in
+     full. If adjudication reads it as out of scope for F1/F2, usage_cap_quantified would move to
+     all_caps_quantified and unquantified_limit_clause to absent.
+  3. cancellation_self_serve=contact_required codes the GENERAL/default route the ToS states for
+     users outside California and New York ("All other users may cancel by emailing us"). CA/NY
+     residents get a documented self-serve dashboard route instead (ToS 6.4). The codebook has no
+     value for a jurisdiction-split policy; contact_required was chosen as the default/general
+     case, analogous to how refund_policy_exists rule 3 treats a jurisdiction-restricted right.
+  4. free_plan_cap_documented=none_quantified: the free/"Basic" tool's page <title> reads "Free AI
+     Humanizer (Unlimited, No Signup)", but the word "Unlimited" is not repeated with a number in
+     the visible body/FAQ copy, and a general product-description sentence elsewhere on the same
+     page ("it can handle up to 10,000 characters in one go") is not clearly attributed to the
+     free tier specifically (it reads as a general tool description). Neither figure was counted
+     as a confirmed free-plan-specific quantified cap.
+  5. watermark_removal_tier=unknown despite the pricing page listing "Watermark and future proof"
+     as an entry-tier feature: this vendor sells a separate "AI Text Watermark Remover" product
+     (footer link), suggesting "watermark" here means AI-model detection watermarks being removed
+     from input text, not the vendor adding its own branding/watermark to output -- the opposite
+     of the codebook's construct. No document resolves this explicitly either way, so coded
+     unknown rather than guessed.
+
+  MINOR OBSERVATION (not coded as a value or a formal conflict): the pricing page's own embedded
+  FAQPage JSON-LD contains "...the monthly plan is $19/month..." in the same answer that correctly
+  states "$5/month (billed annually at $60)" for the 10K tier. $19/month matches the 20K tier's own
+  monthly card price, not the 10K tier's ($9.99/mo). Read as internally inconsistent/stale
+  marketing copy on the SAME page rather than a second official source in disagreement; the entry
+  tier's own plan-card figures (which match the JSON-LD's $5/$60 exactly) were coded, so this does
+  not affect any coded value.
+
+  credit_system_present=no is coded from the four standard tiers' direct word-count denomination.
+  The sales-gated Business tier uses the word "credits" once ("Non-expiring credits") for what
+  appears to be the same word-based quota at a different (unpublished) scale; this is the only
+  place "credits" appears as a noun for the allowance, and it is not accompanied by a conversion
+  rate or unit definition, so it was not read as establishing a separate intermediate currency for
+  the product as a whole.
+
+  Privacy Policy (/privacy) was not read in full: it is a data-handling document, not a pricing,
+  billing, or IP/output-rights document, and nothing in any other source pointed to it as relevant
+  to a coded variable.
+
+  blindness: no other record, no review page, no pass-1 material was opened.
+conflict_note: "Refund guarantee wording gap: the pricing-page banner and the Help/FAQ page describe the guarantee in unconditional-sounding marketing language ('Money back guarantee. If anything we produce is flagged as not human, we will refund the cost of humanization.' -- https://undetectable.ai/pricing; 'we will refund the cost of the generation, no questions asked.' -- https://undetectable.ai/help), while the Terms of Service -- the higher-authority source for this contractual variable per protocol 6.2 -- states an actual condition and window ('A refund of credits is only available if a submission provably flags as less than 75% human on a reputable AI detector. Refunds of credit or payment requests must be made within 30 days of the incident.' -- https://undetectable.ai/terms, Sec 6.1 and 27). refund_conditions and refund_policy_exists were coded from the Terms per the source hierarchy; this divergence is recorded per protocol's marketing-vs-contract rule even though the hierarchy resolves the coded value cleanly."
+register_events: []
+status: complete

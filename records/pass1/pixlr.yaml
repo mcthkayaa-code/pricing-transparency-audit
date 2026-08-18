@@ -1,0 +1,144 @@
+product_id: pixlr
+product_name: Pixlr
+category: AI image generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Plus
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-10
+recheck_date: not_applicable
+primary_source_url: https://pixlr.com/pricing/
+archive_url: https://web.archive.org/web/20260810104412/https://pixlr.com/pricing/
+archive_status: archived
+default_display_state: "Monthly billing preselected by default (raw HTML: toggle checkbox `checked` attribute + CSS pairs `:checked` with the highlighted Monthly tab + plan-grid container class is `pricing-grid monthley`, not yearly — this contradicted an initial WebFetch rendered-summary claim of annual-default, corrected via mechanical DOM/CSS evidence; see coder_note). Currency USD throughout (ToS: 'All Fees are quoted in United States Dollar (USD)'); no country/currency selector encountered on any page; no interactive cookie-consent dialog was engaged by the fetch methods used (static curl / WebFetch), so no non-essential-cookie decision was made."
+
+sources:
+  - { url: "https://pixlr.com/pricing/", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810104412/https://pixlr.com/pricing/", note: "Plan cards, on-page FAQ accordion, credit-to-output estimate panel, billing toggle markup" }
+  - { url: "https://pixlr.com/terms-of-use/", kind: tos, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260808170642/https://pixlr.com/terms-of-use/", note: "Auto-renewal, cancellation, refund, credit rollover, fair-use/discretionary clause, USD currency statement" }
+  - { url: "https://pixlr.com/license-and-services-agreement/", kind: tos, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810104456/https://pixlr.com/license-and-services-agreement/", note: "AI Input/Output rights, commercial-use grant" }
+  - { url: "https://pixlr.com/editor/", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260809150451/https://pixlr.com/editor/", note: "Free-plan (Pixlr E) confirmation" }
+  - { url: "https://pixlr.com/express/", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810104816/https://pixlr.com/express/", note: "Free-plan (Pixlr X) confirmation" }
+  - { url: "https://pixlr.com/ai/ai-image-generator/", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260512174902/https://pixlr.com/ai/ai-image-generator/", note: "AI generator FAQ (commercial use, trial credit figure); archive.org returned an existing May-2026 capture on retry rather than a fresh one" }
+
+variables:
+  headline_price_usd: { value: 2.49, source: "https://pixlr.com/pricing/", evidence: "Plus card, monthly (default) state: aria-valuemax=2.49, \"$2.49\" \"per month\"" }
+  headline_billing_basis: { value: "per_month_billed_monthly", source: "https://pixlr.com/pricing/", evidence: "monthly toggle checked by default (server-rendered `checked` attribute); price labeled \"per month\"" }
+  first_charge_amount_usd: { value: 2.49, source: "https://pixlr.com/pricing/", evidence: "default state is monthly billing, so first charge equals the stated monthly figure; no annualization applies" }
+  mandatory_addon_present: { value: "no", source: "https://pixlr.com/pricing/", evidence: "Plus feature list (Ad-Free, Unlimited saves, 1 concurrent AI generation, 80 monthly AI Credits) is self-contained; the only other paid item, \"AI Credit Pack\" top-ups, is described as optional (\"Top off your account\")" }
+  annual_condition_disclosure: { value: "not_applicable", source: "https://pixlr.com/pricing/", evidence: "headline figure is the monthly (non-annual) price, so it does not depend on annual prepayment (codebook rule 1)" }
+  annual_default_toggle: { value: "monthly_preselected", source: "https://pixlr.com/pricing/", evidence: "`<input type=\"checkbox\" class=\"toggle-check\" id=\"payment-interval\" checked>` with CSS `:checked` mapped to `.switch-interval-monthly`; container `<div id=\"pricing-plans\" class=\"pricing-grid monthley\">`" }
+  free_plan_exists: { value: "yes", source: "https://pixlr.com/editor/", evidence: "\"free advanced photo editor\", \"Start editing\" with no paywall on basic access; corroborated by https://pixlr.com/express/ (\"free modern AI powered photo editor by Pixlr\")" }
+  free_plan_cap_documented: { value: "none_quantified", source: "https://pixlr.com/pricing/", evidence: "\"Snap! You have used all of your daily free saves!\" / \"daily free save!\" — a daily save cap is referenced repeatedly but no numeric figure was found in any official document" }
+  free_plan_cap_value: { value: "unknown", source: "https://pixlr.com/pricing/", evidence: "no limit cleared the quantification bar (see free_plan_cap_documented); coded unknown to mean \"no quantified figure exists to record,\" not \"unclear whether a cap exists\" — see coder_note" }
+  free_plan_watermark: { value: "unknown", source: "https://pixlr.com/editor/", evidence: "no watermark statement found on /editor/ or /express/; the only site-wide \"no watermarks\" statements found are for unrelated file-converter utilities and a generic, unscoped privacy line — not used as evidence" }
+  free_plan_duration: { value: "perpetual", source: "https://pixlr.com/editor/", evidence: "presented as a standing product alongside paid tiers with no expiry stated anywhere, distinct from the time-limited Premium trial" }
+  trial_exists: { value: "yes", source: "https://pixlr.com/pricing/", evidence: "\"metaDescriptionFreeTrial\":\"Try Pixlr Premium free for 7 days...\"; \"free7DayTrial\":\"FREE 7-DAY TRIAL\"" }
+  trial_card_required: { value: "unknown", source: "https://pixlr.com/pricing/", evidence: "no explicit card-required or no-card-required statement found anywhere in official documents; checkout-flow-adjacent UI strings exist but inference from flow design is barred by the codebook" }
+  trial_length_days: { value: 7, source: "https://pixlr.com/pricing/", evidence: "\"Try Pixlr Premium free for 7 days\"; \"Start your 7 days trial now\" — see coder_note on the entry-tier/B3 impossible-pair reasoning for why not_applicable was not used" }
+  trial_auto_converts: { value: "yes", source: "https://pixlr.com/pricing/", evidence: "\"Cancel anytime\" (metaDescriptionFreeTrial) plus cancel-flow warning strings \"Your free trial access to Pixlr will end\" / \"You'll lose access to Pixlr Premium features and credit[s]\", and \"cancelAnytimeOrAutoRenewalForAmount\":\"Cancel at any time or auto-renewal %s for %s\"" }
+  credit_system_present: { value: "yes", source: "https://pixlr.com/pricing/", evidence: "\"AI Credits\" is an intermediate currency metering image/video/edit generation, distinct from ordinary (non-AI) editing" }
+  credit_unit_defined: { value: "yes", source: "https://pixlr.com/pricing/", evidence: "per-plan \"Estimated monthly usage\" panel ties the credit allowance to recognizable outputs, e.g. Plus: \"~80\" credits => \"~80 AI images (fast)\", \"~16 AI images (pro)\", \"~80 AI edits (fast)\", \"~4 AI videos (fast)\"" }
+  credit_to_output_rate_published: { value: "partial", source: "https://pixlr.com/pricing/", evidence: "rates for the principal output (image) are published only as \"~\" approximations across three quality tiers (fast/pro/ultra), never as one exact stated rate; treated as equivalent to a published range" }
+  credit_rate_location: { value: "pricing_page", source: "https://pixlr.com/pricing/", evidence: "\"Estimated monthly usage\" panel is part of each plan card" }
+  cost_per_output_unit: { value: "per_image", source: "https://pixlr.com/pricing/", evidence: "product sold and categorized as an AI image generator; \"AI images (fast/pro/ultra)\" is the primary line item in the credit-usage panel" }
+  cost_per_output_computable: { value: "partial", source: "https://pixlr.com/pricing/", evidence: "computable only as an approximation for the \"fast\" image tier (see computation_assumptions); pro/ultra image, edit, and video rates are not published as exact figures" }
+  computation_assumptions: { value: "Plus (entry tier): $2.49/mo, monthly default state, 80 AI credits/mo incl (same period as price, no conversion needed). Page's own estimate: ~80 fast images per 80 credits => ~1 credit/fast image (vendor's approx, not exact). 2.49/80=$0.031/fast image. Pro/ultra/video rates not exact figures.", source: "https://pixlr.com/pricing/", evidence: "not_applicable — this field records the coder's own arithmetic, not a vendor statement (codebook section 2.3)" }
+  credit_rollover_policy: { value: "expires_at_period_end", source: "https://pixlr.com/terms-of-use/", evidence: "\"Any unused Credits at the end of the relevant month shall automatically expire and will not roll over, accumulate, or be carried forward to any subsequent month.\"" }
+  failed_generation_charge_policy: { value: "unknown", source: "https://pixlr.com/terms-of-use/", evidence: "no statement found addressing technical failures or empty results specifically, in either the Terms of Use or the License and Services Agreement" }
+  auto_renewal_default: { value: "on", source: "https://pixlr.com/terms-of-use/", evidence: "\"The subscription to the Paid Services is based on an auto-renewal basis whereby it will automatically be renewed upon the end of the application subscription period (i.e. monthly basis or annual basis)...\"" }
+  auto_renewal_disclosure_location: { value: "terms_only", source: "https://pixlr.com/terms-of-use/", evidence: "auto-renewal clause quoted above found only in the Terms of Use; the pricing page's own copy (\"Pay monthly or yearly. Cancel whenever you feel like it\") does not use the words \"renew\" or \"automatic\"" }
+  renewal_notice_commitment: { value: "unknown", source: "https://pixlr.com/terms-of-use/", evidence: "no clause specifically commits to (or disclaims) advance notice before a renewal charge; the nearest clause (\"change... price, package and/or features... at any time, with or without notice\") is about plan/price changes, not renewal-charge notice, and was not used to code no_notice_stated — see coder_note" }
+  refund_policy_exists: { value: "no_refunds_stated", source: "https://pixlr.com/terms-of-use/", evidence: "\"payments are non-refundable, and we do not provide refunds for any unused Paid Services\"; corroborated on https://pixlr.com/pricing/ FAQ A9: \"Pixlr is unable to process any refunds for your subscription once your payment has been processed.\"" }
+  refund_window_days: { value: 0, source: "https://pixlr.com/terms-of-use/", evidence: "derived from no_refunds_stated (codebook: integer, or 0 where no refunds are given)" }
+  refund_conditions: { value: "not_applicable", source: "https://pixlr.com/terms-of-use/", evidence: "no refund is available for conditions to attach to" }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://pixlr.com/terms-of-use/", evidence: "\"You may cancel Your subscription by going to “My Account” and following the instructions as stated therein.\"; corroborated on https://pixlr.com/pricing/ FAQ A8: \"You can cancel at any time in your Subscriptions page.\"" }
+  refund_policy_location: { value: "multiple", source: "https://pixlr.com/terms-of-use/", evidence: "stated in agreement in both the Terms of Use and the pricing page's own FAQ (A9)" }
+  commercial_use_lowest_tier: { value: "free", source: "https://pixlr.com/license-and-services-agreement/", evidence: "\"Subject to the Agreements, You may use AI Content for personal and commercial purposes.\" — stated without any tier qualifier anywhere in either legal document; see coder_note for the residual tier-availability caveat" }
+  watermark_removal_tier: { value: "unknown", source: "https://pixlr.com/terms-of-use/", evidence: "zero hits for \"watermark\" in either the Terms of Use or the License and Services Agreement; no tier-by-tier watermark statement found on the pricing page" }
+  output_ownership_statement: { value: "unknown", source: "https://pixlr.com/terms-of-use/", evidence: "extensive AI Input/Output license language exists (see license-and-services-agreement) but no document makes an affirmative ownership/title statement about generated output specifically; the one ownership/title clause found (\"no ownership rights are being conveyed to You... Pixlr retains all right, title and interest... in and to the Services\") is scoped to the software/platform, not output, and was not used as evidence here" }
+  usage_cap_quantified: { value: "some_quantified", source: "https://pixlr.com/pricing/", evidence: "Plus: \"1 concurrent AI generation\" and \"80 monthly AI Credits\" are quantified; \"Unlimited saves\" is qualified (not quantified) by the Terms of Use fair-use clause, which applies to \"unlimited\" claims on \"any subscription plan\"" }
+  unquantified_limit_clause: { value: "present", source: "https://pixlr.com/terms-of-use/", evidence: "\"AI Services may be subject to fair-use limits, including but not limited to rate limits, daily usage caps, and cooldown periods... Pixlr reserves the right to adjust these limits at any time. Features described as “unlimited” in any subscription plan are subject to fair-use policies and reasonable usage limits.\"" }
+
+coder_note: |
+  Entry-tier candidates (sampling-rules.md 7.2), all standing / generally-available / single-
+  seat, compared at lowest annual-equivalent cost in the pricing page's TRUE default display
+  state (monthly — see DEFAULT-STATE CORRECTION below): Plus $2.49/mo => $29.88/yr (WINNER,
+  entry_tier_name=Plus); Premium $9.99/mo => $119.88/yr (lost); Ultra $24.99/mo =>
+  $299.88/yr (lost); Ultra MAX $49.99/mo => $599.88/yr (lost). A third-party aggregator
+  (not an official source, not used for coding) also named a "Team" plan at $12.99/mo for
+  5 seats; not found on the official pricing page after two independent representations
+  (WebFetch + raw HTML), so not incorporated anywhere in this record.
+
+  DEFAULT-STATE CORRECTION (binding "read a price twice, in two representations" rule): the
+  first WebFetch pass on /pricing/ reported "Annual selected by default," which would have
+  produced headline=$1.99, basis=per_month_billed_annually, first_charge=$23.88. A raw curl
+  of the same URL shows three independent, mutually agreeing, mechanical signals for MONTHLY
+  as the true default instead: the toggle checkbox carries a `checked` attribute in the
+  server-rendered HTML, the page's own CSS rule pairs `:checked` with the highlighted/active
+  Monthly tab styling, and the plan-grid container's own class is "pricing-grid monthley"
+  (not "yearly"). Trusted the raw HTML/CSS over the WebFetch summary and coded
+  headline_price_usd=2.49, headline_billing_basis=per_month_billed_monthly,
+  first_charge_amount_usd=2.49, annual_default_toggle=monthly_preselected, and
+  annual_condition_disclosure=not_applicable accordingly. This is a coder-tooling misread,
+  not a vendor-served variant, so per the binding instruction it is NOT logged as a
+  display_variant register_event — documented here instead. Full detail in
+  pixlr-sources/pricing-page-2026-08-10.md.
+
+  Browser rendering was attempted for DOM/check-icon inspection per operational guidance
+  (mcp__Claude_Browser__preview_start, then tabs_create) but the shared browser pane was at
+  its tab cap from concurrent sibling coder sessions (nicepage/originality.ai/phrasly/
+  picsart/framer tabs observed) on both attempts, so no tab could be opened. Proceeded on
+  raw HTML/CSS forensics instead, which for the default-toggle-state question is arguably
+  stronger evidence than a single screenshot would have been (mechanical checked-attribute +
+  CSS-selector + container-class agreement vs. one visual snapshot).
+
+  JUDGMENT CALLS flagged for adjudication:
+  - trial_length_days=7: the only documented trial is Premium's ("Try Pixlr Premium free for
+    7 days"); no source ties a trial to Plus specifically. Coded 7 anyway because protocol
+    8.3.3's B3 matrix marks trial_exists=yes plus trial_length_days=not_applicable an
+    "impossible pair" returned for re-coding, so not_applicable was unavailable; used the
+    only stated trial length in the documents.
+  - commercial_use_lowest_tier=free: the License Agreement's commercial-use grant carries no
+    tier qualifier anywhere in either legal document, so coded on the text as written.
+    Caveat: whether a true non-paying user can generate ANY AI Content on a standing basis
+    (as opposed to the one-time "20 credits new user" perk / 7-day Premium trial, neither of
+    which was counted as a standing free-plan feature for free_plan_cap_documented) is not
+    itself stated anywhere found. Flagging the tension between these two codings for the
+    adjudicator rather than silently picking a resolution.
+  - output_ownership_statement=unknown: both legal documents describe an extensive AI
+    Input/Output LICENSE (user grants Pixlr broad rights), but neither makes an affirmative
+    OWNERSHIP/TITLE statement about generated output specifically.
+  - renewal_notice_commitment=unknown, not no_notice_stated: the nearest Terms of Use clause
+    reserves the right to change "price, package and/or features... at any time, with or
+    without notice," but that is about plan/price changes generally, not specifically about
+    notice before a renewal charge; treated as adjacent rather than on-point to avoid
+    over-reading a different clause.
+  - free_plan_cap_value=unknown: free_plan_cap_documented=none_quantified because the only
+    identified free-plan limit ("daily free saves," referenced repeatedly in bounce/upsell
+    copy) never carries a number in any official document found. unknown here means "no
+    quantified figure exists to record," not "unclear whether a cap exists."
+  - credit_to_output_rate_published=partial / cost_per_output_computable=partial: the
+    pricing page's own "Estimated monthly usage" panel gives credit-to-output figures only
+    as "~" approximations across three image-quality tiers (fast/pro/ultra), with no single
+    stated exact rate for the principal output (image). Treated the vendor's own
+    approximation as equivalent in kind to a published range under the codebook's range rule
+    (cost_per_output_computable rule 8 / credit_to_output_rate_published's range clause).
+  - Two "new user" credit mentions ("enjoy the freedom of generating 20 images using 20
+    credits" as a new-user perk, separately "our free trial to experience 250 credits") were
+    read as one-time/promotional offers rather than a standing free-plan feature or the
+    entry tier's own trial, and excluded from free_plan_cap_documented and from
+    usage_cap_quantified accordingly.
+
+  Currency (D-003/D-007): Terms of Use states "All Fees are quoted in United States Dollar
+  (USD) unless otherwise specified by Pixlr" — the vendor's own currency disclosure, the
+  strongest arm in the currency-check hierarchy. No currency selector, country picker, or
+  non-USD figure was encountered on any official page fetched. All money values in this
+  record are coded as plain USD figures; none is `non_usd`. Accept-Language was not used as
+  a locale signal for this determination, per the D-007 rule.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+conflict_note: ""
+register_events: []
+status: complete

@@ -1,0 +1,29 @@
+SOURCE: https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal
+("How to Cancel Auto-Renewal - Nicepage Help Center")
+DATE ACCESSED: 2026-08-10
+METHOD: Static curl fetch, header "Accept-Language: en-US,en;q=0.9" (D-003 US-locale
+check), standard desktop User-Agent. HTTP 200, 58711 bytes. Fully server-rendered help
+center article; kind = docs (official documentation/help center, rank 2 of 4 for
+contractual-class variables, above the pricing page).
+ARCHIVE: https://web.archive.org/web/20260810063100/https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal
+(1 attempt, succeeded, verified HTTP 200)
+
+FULL RELEVANT TEXT (verbatim, tags stripped):
+
+"Buy Without Auto-Renewal
+You can buy a Subscription without Auto-Renewal. Clicking the Buy button, you get to the
+Checkout page. On the Checkout page, you click the Auto-renewal link. After clicking the
+link, you will see the dialog on which you can click the Switch to Manual Renewal link.
+
+Cancel Auto-Renewal At Any Time
+You can cancel the auto-renewal of your Premium Plan at any time by following the steps.
+Open the Licences and Subscription page from your user Profile. Click the Unsubscribe
+link to cancel Auto-renewal."
+
+READING: at checkout, Auto-Renewal is presented as the default state on the "Auto-renewal
+link" - the buyer must take an affirmative extra step ("Switch to Manual Renewal") to opt
+out. This is the basis for auto_renewal_default = "on", sourced from this document
+(higher-ranked than the pricing page for this variable class). Also confirms
+cancellation_self_serve = self_serve_documented (Profile > Licenses and Subscriptions >
+Unsubscribe link; no contact/ticket/email required), consistent with the pricing-page
+FAQ's answer to "Can I cancel my Premium Plan at any time?".

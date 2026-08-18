@@ -1,0 +1,34 @@
+URL: https://support.picsart.com/hc/en-us/articles/360002231937-Refund-Policy
+Accessed: 2026-08-10
+Method: rendered read via browser (Claude_Browser javascript_tool, document.body.innerText) after Cloudflare interstitial cleared
+Network note: collection environment egresses from Turkey; page content itself is not currency/price-bearing, so no currency issue for this page
+Public archive attempt: web.archive.org/save/ returned HTTP 520 (Cloudflare origin error) on 2 attempts (2026-08-10) - archive_failed for public archive; this file is the local copy per protocol 6.4.
+---
+
+Skip to main content
+Submit a request
+English (United States)
+Log in
+Picsart Help Center
+[nav omitted]
+Refund Policy
+
+If you subscribed via the Picsart mobile app, you can request a refund from the respective app store. They'll process your request based on their refund policies.
+
+App Store
+Google Play
+
+If you subscribed via the Picsart.com website, you can submit a request here.
+
+For more information, check out our Terms of Use.
+
+You can also cancel your subscription at any time. Once you cancel, you'll still be able to access paid features until the end of your subscription.
+
+To identify the platform your subscription was purchased from, please check this article.
+
+Related articles
+How to cancel your Picsart subscription
+How to find my Picsart invoices?
+Deleting your account
+What types of subscriptions does Picsart offer?
+How can I request to own an archived Space?

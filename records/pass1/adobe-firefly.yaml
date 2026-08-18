@@ -1,0 +1,672 @@
+# Pricing Transparency Audit — coded record
+# product_id: adobe-firefly | pass 1, primary coder
+# Codebook v1.2 / Protocol v1.2 / Sampling rules v1.2
+
+product_id: adobe-firefly
+product_name: Adobe Firefly
+category: AI image generator
+product_status: active
+paid_submission: "no"
+vendor_home_url: https://www.adobe.com/products/firefly.html
+
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-06
+recheck_date: not_applicable
+
+entry_tier_name: Firefly Standard
+
+primary_source_url: https://www.adobe.com/products/firefly/plans.html
+archive_url: https://web.archive.org/web/20260806112138/https://www.adobe.com/products/firefly/plans.html
+archive_status: archived
+
+source_urls:
+  - https://www.adobe.com/products/firefly/plans.html
+  - https://www.adobe.com/products/firefly.html
+  - https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+  - https://www.adobe.com/legal/subscription-terms.html
+  - https://www.adobe.com/legal/terms.html
+  - https://wwwimages2.adobe.com/content/dam/cc/en/legal/servicetou/adobe-generative-ai-product-specific-terms-en-us-20250617.pdf
+  - https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html
+  - https://helpx.adobe.com/manage-account/using/creative-cloud-subscription-terms.html
+  - https://www.adobe.com/express/pricing
+
+sources:
+  - url: https://www.adobe.com/products/firefly/plans.html
+    role: "Primary pricing source (pricing-class, rank 1). Firefly individual/business plan cards, prices, credit allowances, feature grid, promotional banner, FAQ question list."
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806112138/https://www.adobe.com/products/firefly/plans.html
+    archive_status: archived
+  - url: https://www.adobe.com/products/firefly.html
+    role: "Vendor home URL (assignment-given). Product overview / category framing."
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806121117/https://www.adobe.com/products/firefly.html
+    archive_status: archived
+  - url: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    role: "Official credit-rate document (pricing-class, rank 2 / docs-help-center). Credit definitions, per-feature credit rates (image/video/audio), rollover policy, per-plan monthly credit allocation table for Firefly Standard/Pro/Pro Plus/Premium."
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806113534/https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    archive_status: archived
+  - url: https://www.adobe.com/legal/subscription-terms.html
+    role: "Adobe Subscription and Cancellation Terms — dedicated policy page (contractual-class, rank 1). Covers Creative Cloud, Document Cloud, Firefly, Acrobat & Frame for United States, organized by billing type. Firefly Standard/Pro bill month-to-month, so the 'Creative Cloud for Individuals > Month to month' clause governs. Read via an archived raw-HTML snapshot after the in-page accordion could not be expanded through the browser automation (logged in register_events)."
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806112851/https://www.adobe.com/legal/subscription-terms.html
+    archive_status: archived
+    note: "Effective Date printed on page: August 1st, 2026. Text also independently retrieved via a raw-HTML fetch of the archive.org snapshot to read the collapsed 'Month to month' accordion (same snapshot, same access date)."
+  - url: https://www.adobe.com/legal/terms.html
+    role: "Adobe General Terms of Use (contractual-class, rank 1 for output-ownership where no product-specific term overrides it). Section 4.2 'Ownership' and section 4.1 'Content' definition."
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806120414/https://www.adobe.com/legal/terms.html
+    archive_status: archived
+    note: "Published/effective October 3, 2025 per the page itself."
+  - url: https://wwwimages2.adobe.com/content/dam/cc/en/legal/servicetou/adobe-generative-ai-product-specific-terms-en-us-20250617.pdf
+    role: "Adobe Generative AI Product Specific Terms (contractual-class, rank 1, product-specific — overrides General Terms per General Terms section 1.2). Confirms Input/Output are 'Content' under the General Terms, no-AI-training pledge, Firefly Output indemnification for eligible team/enterprise plans, watermark/Content-Credentials non-removal obligation."
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806121407/https://wwwimages2.adobe.com/content/dam/cc/en/legal/servicetou/adobe-generative-ai-product-specific-terms-en-us-20250617.pdf
+    archive_status: archived
+    note: "Document is dated effective June 17, 2025. The live redirect page https://www.adobe.com/go/adobe-gen-ai-addl-terms (title observed via search: 'Adobe Generative AI Product Specific Terms Effective as of April 23, 2026') indicates a newer version exists; that newer version could not be directly retrieved (browser automation treated it as a file download and aborted; direct curl to www.adobe.com times out from this environment; no 2026-dated filename could be located on Adobe's asset CDN or on archive.org's CDX index as of the access date). This 2025-06-17 version is the most recent version this coder could verify and read in full; used with this caveat disclosed."
+  - url: https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html
+    role: "Official help-center article (contractual-class, rank 2). Self-serve cancellation route; states the 14-day full-refund default; billing-period-end access retention."
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806121228/https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html
+    archive_status: archived
+    note: "Page shows 'Last updated on Jul 24, 2026'."
+  - url: https://helpx.adobe.com/manage-account/using/creative-cloud-subscription-terms.html
+    role: "Official help-center article (contractual-class, rank 2), titled 'Cancellation details for common Adobe plans'. Splits cancellation terms by plan type (Annual paid-monthly / Annual prepaid / Month-to-month); the Month-to-month section confirms downgrade-to-free on cancel with no early-termination fee (that fee is annual-contract-only)."
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806121207/https://helpx.adobe.com/account/individual/terms-policies-and-regulations/adobe-subscription-terms.html
+    archive_status: archived
+    note: "URL requested redirected (canonical) to https://helpx.adobe.com/account/individual/terms-policies-and-regulations/adobe-subscription-terms.html; archived under the resolved URL. Page shows 'Last updated on Jan 27, 2026'."
+  - url: https://www.adobe.com/express/pricing
+    role: "Adobe Express pricing page FAQ (pricing-class page, other-official-vendor-page tier for the commercial-use finding). Used ONLY for its FAQ answer 'Can customers make commercial use of the images generated with AI tools powered by Firefly?', which is an official Adobe statement specifically about Firefly-powered outputs even though hosted on a sibling product's pricing page. See coder_note: Firefly's own plans-page FAQ accordion with the equivalent question ('Are Adobe Firefly outputs safe for commercial use?') could not be expanded/read despite repeated attempts."
+    access_date: 2026-08-06
+    archive_url: https://web.archive.org/web/20260806111951/https://www.adobe.com/express/pricing
+    archive_status: archived
+
+default_display_state: >
+  Navigated directly to https://www.adobe.com/products/firefly/plans.html (no prior cookies/session).
+  Page first showed a geography-based site-mismatch interstitial ("Bu Adobe sitesi, konumunuzla
+  eşleşmiyor" / "This Adobe site doesn't match your location") offering "Türkiye" (navigates to
+  /tr/products/firefly/plans.html) or "United States" (dismisses in place, href="#", no navigation) —
+  this is a full-page gate that precedes any pricing content, not a same-URL toggle. "United States"
+  was selected explicitly, to reach the canonical page matching the assigned vendor_home_url domain
+  (no /tr/ path) and the study's USD reporting basis (protocol-v1.md 6.5); this is logged as a
+  register event, not treated as "switching a toggle to find a cheaper price," since no price had
+  yet been displayed. No separate cookie-consent banner was shown or interacted with. After the
+  interstitial, the page loaded with the "Individuals" tab active by default (vs "Students and
+  teachers" / "Business"), a limited-time-offer promotional banner ("Save on our biggest Firefly
+  plans until Aug 26 ... unlimited generations ... for the first year"), and four plan cards side by
+  side (Firefly Standard, Firefly Pro, Firefly Pro Plus, Firefly Premium) each showing a single
+  billing mode labelled "Monthly" — no monthly/annual toggle control exists anywhere on the
+  Individuals tab (confirmed via full accessibility-tree read; only the Individuals/Students/Business
+  tab-switch and a mobile "compare 2 plans" dropdown pair were interactive, no billing-period
+  control). Prices observed: Firefly Standard "US$9.99/mo", Firefly Pro "US$19.99/mo" (both
+  reproduced identically across three independent fresh loads). Firefly Pro Plus and Firefly Premium
+  carried "Limited-time offer" badges (regularly-priced vs. discounted "Alternatively at" figures,
+  "Save 30%. First year only. Ends Aug 26."); Premium's figures partially rendered as "US$199.../mo"
+  regular and "US$139.../mo" promotional (exact cents not legible); Firefly Pro Plus's price digits
+  did not render as accessible/extractable text in any of three attempts (see register_events).
+
+conflict_note: not_applicable
+
+register_events:
+  - type: display_variant
+    description: >
+      Geography-based site interstitial (Türkiye vs United States) encountered on first load of
+      the Firefly plans page, before any pricing was visible. Not a same-URL A/B or cookie-keyed
+      billing-toggle variant of pricing content itself — it is a hard locale gate. Resolved by
+      explicitly choosing "United States" once, on the first load; not reloaded afterward. See
+      default_display_state for full detail and rationale.
+  - type: data_quality_note
+    description: >
+      Firefly Pro Plus's price figures (both "Regularly at US$.../mo" and "Alternatively at
+      US$.../mo") rendered as empty digit nodes in the accessibility tree on three independent
+      fresh page loads (Firefly Standard and Firefly Pro's prices rendered correctly and
+      identically each time; Firefly Premium's rendered partially — whole-dollar digits only,
+      "199" and "139", no cents). Does not affect entry-tier selection (Firefly Standard is
+      unambiguously the lowest-cost eligible candidate regardless of Pro Plus's exact figure).
+      Logged for reproducibility per protocol-v1.md 6.8's spirit of recording what a read did and
+      did not show.
+  - type: data_quality_note
+    description: >
+      The Firefly plans page's own FAQ accordion (questions "How much does Adobe Firefly cost?",
+      "Are Adobe Firefly outputs safe for commercial use?", "What does 'commercial use' mean?",
+      and others) rendered only as collapsed question text; the answer content did not expand
+      through repeated browser-automation click attempts on the accordion control (same behavior
+      observed on the "Month to month" accordion of the Subscription and Cancellation Terms page,
+      resolved there only by fetching an archived raw-HTML snapshot). Where an equivalent official
+      statement could be sourced from elsewhere (e.g. Adobe Express's pricing-page FAQ explicitly
+      discussing Firefly-powered outputs), it is used and the substitution is disclosed in that
+      variable's evidence and in coder_note. Where no substitute was found, the variable is coded
+      unknown.
+
+variables:
+
+  # ---- Domain 1: headline price vs price actually charged ----
+
+  headline_price_usd:
+    value: 9.99
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      Individuals tab, default load. Firefly Standard card reads "US$9.99/mo" with qualifier
+      "Monthly" beneath it; this is the largest/most prominent price figure for Firefly Standard,
+      the entry paid tier (see entry_tier_name / coder_note for the candidate comparison).
+
+  headline_billing_basis:
+    value: per_month_billed_monthly
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      Price card shows "US$9.99/mo" with the qualifier "Monthly" directly beneath the figure (not
+      "billed annually"). No per-seat language is used on the Individuals tab (contrast the
+      Business tab, which explicitly reads "per license"). Confirmed as a recurring monthly charge,
+      not a one-time or usage-based figure, by the Subscription and Cancellation Terms "Month to
+      month" clause: "Your subscription will automatically renew each month ... We will
+      automatically charge you the then-current rate for your plan ... every month upon renewal."
+      (https://www.adobe.com/legal/subscription-terms.html)
+
+  first_charge_amount_usd:
+    value: 9.99
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      Default state shows monthly billing only (no annual toggle/option exists for Firefly
+      individual plans — confirmed via full accessibility-tree read of the Individuals tab; see
+      default_display_state). The Subscription and Cancellation Terms "Month to month" clause
+      states the subscription "begins as soon as your initial payment is processed" and charges
+      "the then-current rate for your plan ... every month," i.e. the first charge equals the
+      published monthly headline figure. No mandatory add-on identified (see
+      mandatory_addon_present). Taxes and usage overages excluded per rule.
+    computation_note: "No arithmetic needed: documents confirm monthly billing at the headline figure, so first charge = headline_price_usd. computation_assumptions is not_applicable for this variable (nothing was calculated)."
+
+  mandatory_addon_present:
+    value: "no"
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      Reviewed the Firefly Standard feature list on the plans page (generative credits, unlimited
+      standard image features, premium-feature access via credits, video/audio generation
+      allowances, Firefly Boards) and the Creative Cloud generative credits FAQ
+      (https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html).
+      No required separate charge, minimum credit purchase, platform fee, or onboarding fee was
+      found to use the plan as advertised. "Firefly credit add-on plans" exist (additional 2,000 /
+      4,000 / 7,000 / 10,000 / 50,000-credit packs) but are optional, for buyers who exceed their
+      plan's included monthly allowance — not required to use Firefly Standard as advertised, per
+      decision rule 3 ("Optional add-ons are not mandatory add-ons").
+
+  # ---- Domain 2: visibility of the annual-billing condition ----
+
+  annual_condition_disclosure:
+    value: not_applicable
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      The headline figure does not depend on annual prepayment: no annual billing option exists
+      for Firefly individual plans (Standard/Pro/Pro Plus/Premium all show "Monthly" only, no
+      toggle). Per decision rule 1, where the headline figure does not depend on annual
+      prepayment, code not_applicable.
+
+  annual_default_toggle:
+    value: no_toggle
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      Full accessibility-tree read of the Individuals-tab pricing table (three independent loads)
+      shows no monthly/annual switch control anywhere; the only interactive controls beyond the
+      Individuals/Students-and-teachers/Business tab-switch are two <select> comboboxes that pick
+      which two of the four plans populate a mobile "compare 2 plans" widget — not a billing-period
+      toggle. Every plan card reads "/mo" + "Monthly" with no alternate annual figure shown or
+      reachable. The Business tab (a different segment, not the default view) separately shows
+      "Annual, billed monthly" per-license team pricing, but that does not create a toggle on the
+      default Individuals tab.
+
+  # ---- Domain 3: real usability of the free plan ----
+
+  free_plan_exists:
+    value: "yes"
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      Plans page: "Not ready to buy a plan? Start creating for free. You don't need a plan to get
+      free daily generations across image, video, and audio, with access to popular models like
+      Nano Banana and Luma Ray3.14. Limits refresh every day, so you can keep exploring,
+      experimenting, and creating." This is a no-cost, ongoing (not time-boxed trial) usage
+      option, distinct from the paid-tier free trials in Domain 4.
+
+  free_plan_cap_documented:
+    value: none_quantified
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      Two official sources describe the free tier's limits without a number. Plans page: "free
+      daily generations ... Limits refresh every day" (no figure). Generative credits FAQ,
+      "Generative AI access for free users without a plan": "Free users of Adobe Firefly, Adobe
+      Express, Adobe Stock, Photoshop on the web, Acrobat, and Adobe mobile apps get a limited
+      number of free daily generations across all generative AI features, available on a curated
+      set of models. These limits refresh each day ... The number of generations, features, and
+      models are subject to change." No quantity, per decision rule step 2/4: limits are described
+      without numbers.
+
+  free_plan_cap_value:
+    value: unknown
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      No quantified limit exists to record verbatim; both sources read for free_plan_cap_documented
+      describe the free tier qualitatively ("a limited number of free daily generations") with no
+      number, so there is nothing quantified to transcribe.
+
+  free_plan_watermark:
+    value: unknown
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      The plans page's paid-tier feature-comparison table (Creative AI / Adobe apps and perks rows:
+      generative credits, unlimited standard image features, premium-feature access, AI-model
+      access, video generation, audio translation, sound-effect generation, Firefly Boards, Firefly
+      web/mobile, Adobe Express Premium, Photoshop web/mobile, Adobe Fonts) contains no row
+      addressing watermarking or branding of outputs for any tier. Silent.
+
+  free_plan_duration:
+    value: perpetual
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      The free option is presented as a standing, ongoing offering ("You don't need a plan to get
+      free daily generations ... Limits refresh every day, so you can keep exploring") with no
+      expiry date or "for your first X" language anywhere in the documents read. No time limit
+      stated.
+
+  # ---- Domain 4: whether a trial requires a payment card ----
+
+  trial_exists:
+    value: "yes"
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      Firefly Standard and Firefly Pro cards (the entry paid tier and its immediate neighbor) each
+      show a "Free trial" link/button (href pattern commerce.adobe.com/store/commitment?...)
+      alongside "Buy now", for the entry paid tier.
+
+  trial_card_required:
+    value: unknown
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      No "no credit card required" (or equivalent) statement appears next to the "Free trial"
+      control on the plans page. The general Terms of Use section 3.7 ("Free Memberships,
+      Complimentary Services, Offers, and Trials") describes trial mechanics generally but does not
+      state whether payment details are required to start one. No trial-specific landing page or
+      billing-FAQ statement on this point was located for Firefly specifically (the Subscription
+      and Cancellation Terms "Month to month" clause governing Firefly Standard/Pro has no "Free
+      Trial Terms" subsection at all — see coder_note). Silent; not inferred from the signup link.
+
+  trial_length_days:
+    value: unknown
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      No day-count is shown on the "Free trial" control for Firefly Standard/Pro on the plans page
+      (contrast Adobe Express's own pricing page, which explicitly reads "Start 7-day free trial" —
+      that figure is for a different product and is not used here). The Firefly plans page's own
+      FAQ list includes no directly-titled trial-length question, and the FAQ answer content could
+      not be read (see register_events: FAQ accordion would not expand). No official document
+      located states Firefly's trial length in days.
+
+  trial_auto_converts:
+    value: unknown
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      The Subscription and Cancellation Terms document's "Creative Cloud for Individuals > Month to
+      month" clause — which governs Firefly Standard/Pro, since both bill month-to-month — has no
+      "Free Trial Terms" subsection at all (unlike the document's "Annual contract, billed monthly"
+      clause, which explicitly states a free trial converts to a paid subscription automatically).
+      The general Terms of Use section 3.7 states only that "After the free ... or trial access
+      period expires, you may continue using the Services or Software in a paid subscription, if
+      available" — permissive/available-to-you phrasing, not an explicit "converts automatically
+      unless canceled" statement. Adobe states automatic trial-to-paid conversion explicitly
+      elsewhere for other offerings (e.g. the same Subscription Terms document's Adobe-Stock-specific
+      "Free Trial with purchase" clauses, and Adobe Express's own pricing-page footnote), but none of
+      those clauses is Firefly's or Creative-Cloud-individual-month-to-month's own clause, and the
+      codebook decision rule requires reading "the trial terms and the billing FAQ" for this specific
+      product rather than inferring from a sibling product's or sibling plan-type's clause. Coded
+      unknown; this asymmetry (prominent "Free trial" call-to-action, but no product-matching
+      contractual conversion clause) is itself a notable determinability gap, recorded in coder_note.
+
+  # ---- Domain 5: comprehensibility of the credit system ----
+
+  credit_system_present:
+    value: "yes"
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      "Generative credits are like tokens you can use to generate high-quality image, vector,
+      video, and audio outputs." This is an intermediate currency that converts into multiple
+      output types (not a plan allowance stated directly in one output unit), and the plans page
+      itself sells access in units of "generative credits per month" (2,000 / 4,000 / 10,000 /
+      50,000 across Standard/Pro/Pro Plus/Premium) rather than in a single output unit.
+
+  credit_unit_defined:
+    value: "yes"
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      "Most standard generative features use 1 credit per generation." A detailed table converts
+      credits into specific output units, e.g.: "Firefly Image 5 | N/A | 10 credits per
+      generation"; "Firefly Image 4 Ultra model | N/A | 20 credits per generation, 1 image per
+      generation"; "Generate Video | 1080p at 24 FPS | 100 credits per second"; "Translate Video
+      and Translate Audio | Varies | 5 credits per second"; "Generate Sound Effects | 48 kHz | 10
+      credits per generation". A document defines the unit against a recognizable output, which is
+      all this variable requires (the principal-output test belongs to credit_to_output_rate_published
+      only, per decision rule 4).
+
+  credit_to_output_rate_published:
+    value: "yes"
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      Principal output for this product's assigned category (AI image generator) is image. A
+      specific numeric rate is published for image generation: "Firefly Image 5 | 10 credits per
+      generation" and "Firefly Image 4 Ultra model | 20 credits per generation, 1 image per
+      generation" (both named, specific models with fixed per-generation rates, not a "3 to 12
+      credits" style unresolvable range). Rates are also published for the other output types the
+      Firefly plans advertise: video ("Generate Video | 1080p at 24 FPS | 100 credits per second |
+      720p at 24 FPS | 50 credits per second | 540p at 24 FPS | 20 credits per second") and audio
+      ("Translate Video and Translate Audio | 5 credits per second"; "Generate Sound Effects | 48
+      kHz | 10 credits per generation"; "Generate Speech | 10 credits per 1000 characters with
+      Firefly Speech"). Note (see cost_per_output_computable and coder_note): the same FAQ and the
+      plans page also state that "standard" image features (e.g. Generative Fill) are unlimited /
+      not credit-metered on paid Firefly plans — a genuine two-tier structure (free/unlimited
+      standard tier plus metered premium-model tier for image), but both tiers are numerically
+      documented (unlimited-with-a-caveat is its own finding, handled under usage_cap_quantified /
+      unquantified_limit_clause), not left vague, so this is coded yes rather than partial.
+
+  credit_rate_location:
+    value: docs_help_center
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      The credit-to-output conversion table lives on the helpx documentation/help-center page. The
+      plans page itself states only the total monthly credit allowance per plan ("2,000 per
+      month", etc.), not the per-output conversion rate, so the rate is not duplicated on the
+      pricing page.
+
+  # ---- Domain 6: computability of cost per output ----
+
+  cost_per_output_unit:
+    value: per_image
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      Assigned category is AI image generator; image is the principal output this coding follows,
+      consistent with cost_per_output_computable and credit_to_output_rate_published below. (Firefly
+      as currently sold is multi-modal — image, video, audio, vector — which is itself worth noting;
+      see coder_note.)
+
+  cost_per_output_computable:
+    value: "yes"
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      Entry tier (Firefly Standard) price and allowance are both published and already on the same
+      (monthly) period, so no conversion is needed. A specific, named-model image-generation credit
+      rate is published (Firefly Image 5: 10 credits per generation). No assumption about typical
+      use is required beyond selecting which of Adobe's two disclosed, explicitly-numbered image
+      models to compute for; both figures used are vendor-published, not estimated. See
+      computation_assumptions for the arithmetic.
+
+  computation_assumptions:
+    value: >
+      Firefly Standard tier (entry paid tier), $9.99/mo per plans page default display state
+      (monthly billing basis; no annual option exists for this product). Included allowance: 2,000
+      generative credits/month (plans page and generative-credits FAQ agree). Both price and
+      allowance are already monthly, so no period conversion is required (rule 3 is a no-op here).
+      Firefly Image 5 model costs 10 credits per generation per the generative-credits FAQ's
+      premium-features table. Arithmetic: 9.99 / 2000 = 0.004995 USD/credit; 0.004995 x 10 =
+      0.04995, i.e. approximately $0.05 per image generated with the Firefly Image 5 model. Note:
+      Adobe's "standard" image features (e.g. Generative Fill) are documented as unlimited and not
+      credit-metered on any paid Firefly plan, so this $0.05 figure applies specifically to
+      premium-model (Image 5) generation, not to every image a Firefly Standard subscriber can
+      produce — that nuance is recorded here rather than folded into a single number the documents
+      do not themselves collapse into one.
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+
+  # ---- Domain 7: rollover of unused credits ----
+
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      Generative credits FAQ, "Do generative credits roll over month to month?": "No, generative
+      credits do not roll over to the next month. Your generative credit balance will reset to your
+      allocated amount on a monthly basis." Independently confirmed by the Subscription and
+      Cancellation Terms "Month to month" clause (contractual-class document):  "The number of
+      generative credits reflected in the subscription you have purchased expire each month. Each
+      month, your account will be reset at the same number of generative credits for the duration
+      of your subscription. Unused generative credits do not rollover."
+      (https://www.adobe.com/legal/subscription-terms.html) — two independent official sources
+      agree, no conflict.
+
+  # ---- Domain 8: charging for failed generations ----
+
+  failed_generation_charge_policy:
+    value: unknown
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      The generative-credits FAQ and the plans page describe credit consumption "upon generation"
+      / per completed output, but neither states what happens to the credit charge if a generation
+      fails, errors, or produces nothing usable. Silent on this point in every document read.
+
+  # ---- Domain 9: auto-renewal ----
+
+  auto_renewal_default:
+    value: "on"
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      Subscription and Cancellation Terms (terms-of-service-class document, ranks first for this
+      variable), "Creative Cloud for Individuals > Month to month" clause — the clause governing
+      Firefly Standard/Pro, both of which bill month-to-month per the plans page: "Your
+      subscription begins as soon as your initial payment is processed. Your subscription will
+      automatically renew each month without notice until you cancel. You authorize us to store
+      your payment method(s) and to automatically charge your payment method(s) every month until
+      you cancel."
+
+  auto_renewal_disclosure_location:
+    value: terms_only
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      The explicit "automatically renew ... until you cancel" statement was found only in the
+      dedicated Subscription and Cancellation Terms legal document. It was not found stated on the
+      Firefly plans page itself (no renewal language appears near the price cards or "Buy now" /
+      "Free trial" controls in what could be read there — the page's own FAQ that might restate it,
+      "How much does Adobe Firefly cost?", could not be expanded/read; see register_events), nor in
+      the help-center cancellation articles read (those describe what happens when you cancel /
+      reactivate, not an affirmative "renews automatically" statement in those specific words).
+
+  renewal_notice_commitment:
+    value: no_notice_stated
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      Same "Month to month" clause, verbatim: subscription "will automatically renew each month
+      WITHOUT NOTICE until you cancel" (emphasis reflects the document's own wording, not the
+      coder's). This is an explicit, determinate statement that no advance notice is given for
+      monthly renewals — contrast the document's separate annual-plan clauses, which read "Renewal
+      notice will be provided where required by applicable law." The month-to-month clause carries
+      no such qualifier.
+
+  # ---- Domain 10: refund and cancellation terms ----
+
+  refund_policy_exists:
+    value: "yes"
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      Subscription and Cancellation Terms, "Month to month" Cancellation Terms: "If you cancel
+      within 14 days of your initial order, you'll be fully refunded." Independently confirmed by
+      the help-center article "Cancel Adobe trial or subscription": "Cancellation fee and refunds:
+      A refund depends on when you cancel and the type of subscription you purchased. For most
+      plans, you get a full refund if you cancel within 14 days of your initial purchase."
+      (https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html)
+
+  refund_window_days:
+    value: 14
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      "If you cancel within 14 days of your initial order, you'll be fully refunded." Same figure
+      independently stated in the helpx cancellation article cited above.
+
+  refund_conditions:
+    value: unconditional
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      "If you cancel within 14 days of your initial order, you'll be fully refunded." No usage
+      threshold, stated reason, or approval step is attached beyond cancelling within the window —
+      matches "no condition beyond the request."
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      "You can cancel your subscription anytime via your Adobe Account or by contacting Customer
+      Support." Self-serve is explicitly documented as available (the "or by contacting Customer
+      Support" alternative does not negate the self-serve route). Independently confirmed with
+      concrete steps by the help-center article "Cancel Adobe trial or subscription": "You can
+      cancel your subscription directly from your Adobe account if you purchased it from Adobe ...
+      In the Plans and payment window, select Manage plan for the plan you want to cancel ...
+      Select Cancel your plan."
+
+  refund_policy_location:
+    value: multiple
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      Stated in agreement in two document classes: the dedicated Subscription and Cancellation
+      Terms legal page (terms-class) and the official help-center article "Cancel Adobe trial or
+      subscription" (docs/help-center class), both giving the same 14-day full-refund position.
+
+  # ---- Domain 11: commercial-use rights ----
+
+  commercial_use_lowest_tier:
+    value: free
+    source: https://www.adobe.com/express/pricing
+    evidence: >
+      Official Adobe FAQ, addressing Firefly-powered outputs specifically (found on Adobe Express's
+      pricing page, an official Adobe domain, since the equivalent question on Firefly's own plans
+      page could not be expanded/read — see register_events and coder_note): "Can customers make
+      commercial use of the images generated with AI tools powered by Firefly? In general, you may
+      use outputs from generative AI features commercially. However, if Adobe designates in the
+      product or elsewhere that a beta version of a generative AI feature cannot be used
+      commercially, then the generated outputs from that beta feature are for personal use only and
+      cannot be used commercially." This statement is general — not conditioned on any paid tier —
+      so commercial use is granted starting from the free plan, except for features Adobe
+      specifically labels beta. No terms-of-service-class statement restricting commercial use to a
+      specific paid tier was found to outrank or narrow this.
+
+  watermark_removal_tier:
+    value: unknown
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      No document read states which tier(s), if any, apply a visible watermark or branding to
+      Firefly outputs, or that no tier does. The Generative AI Product Specific Terms discuss only
+      Content Credentials / Content Authenticity Initiative *metadata* ("you must not remove or
+      alter any watermarks or Content Authenticity Initiative metadata ... that may be generated
+      with the Output"), which is an invisible-attribution/provenance mechanism the user must not
+      strip — not a statement about a visible watermark varying by tier. Silent on tier-based visible
+      watermarking.
+
+  output_ownership_statement:
+    value: user_owns
+    source: https://www.adobe.com/legal/terms.html
+    evidence: >
+      General Terms of Use, section 4.2 "Ownership": "As between you and Adobe, you (as a Business
+      User or a Personal User, as applicable) retain all rights and ownership of your Content. We
+      do not claim any ownership rights to your Content." Section 4.1 defines "Content" broadly
+      enough to include generated material ("any text, information, communication, or material,
+      such as audio files, video files, electronic documents, or images, that you upload, import
+      into, embed for use by, or create using the Services and Software"). This is confirmed to
+      apply to Firefly's generated Output specifically by the Adobe Generative AI Product Specific
+      Terms, section 1 "Generating Content": "The Input and Output are your Content (and are not
+      Content Files or Sample Files) and all provisions governing Content in the Terms apply to the
+      Input and Output."
+      (https://wwwimages2.adobe.com/content/dam/cc/en/legal/servicetou/adobe-generative-ai-product-specific-terms-en-us-20250617.pdf)
+      Two product-specific caveats are worth recording but do not change the coded value: (1) "The
+      Output may not be protectable by Intellectual Property Rights" (a statement about copyright
+      law's limits on AI-generated works, not a contractual ownership retraction); (2) submitting
+      Output to an Adobe-hosted gallery (e.g. the Firefly gallery) grants Adobe a broad marketing
+      license to that specific submitted Output/Input — an opt-in exception, not the default state.
+
+  # ---- Domain 12: undisclosed or unverifiable limits ----
+
+  usage_cap_quantified:
+    value: some_quantified
+    source: https://www.adobe.com/products/firefly/plans.html
+    evidence: >
+      Firefly Standard (entry paid tier) limits per the plans page: "2,000 [credits] per month"
+      (quantified rate), "Up to 20" five-second video generations per month (quantified rate),
+      "Up to 6 minutes" audio/video translation per month (quantified rate), "Up to 200" sound
+      effects per month (quantified rate) — all carry a number, a dimension, and a monthly period.
+      Against these, "Unlimited access to standard image features like Generative Fill" is also
+      advertised; per decision rule 3, an "unlimited" claim counts as quantified only where no
+      clause elsewhere qualifies it without a number. The generative-credits FAQ's "What does
+      'unlimited access' mean" answer supplies exactly such a qualifying, unquantified clause (see
+      unquantified_limit_clause). So at least one limit is quantified (the numbered allowances
+      above) and at least one is not (the qualified "unlimited" standard-feature claim) =
+      some_quantified.
+
+  unquantified_limit_clause:
+    value: present
+    source: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    evidence: >
+      Generative credits FAQ, "What does 'unlimited access' mean if that's included in my plan?":
+      "With unlimited access, you can use generative AI features as often as you like ... That
+      said, to keep things running smoothly for everyone, we have guardrails in place to help
+      prevent misuse like automatic scripting, account sharing, and reselling ... These protections
+      help ensure against excessive generation requests and slower processing speeds. In rare
+      cases, if usage patterns trigger those safeguards, you might see a temporary restriction on
+      your use of generative AI features." No number defines "excessive" — a discretionary,
+      unquantified standard conditioning the advertised-unlimited "standard image features"
+      benefit, read in full from the terms/FAQ documentation.
+
+coder_note: >
+  Entry-tier selection (sampling-rules.md 7.2): four individual-tier candidates appear on the
+  Firefly plans page Individuals tab, all generally available, purchasable without contacting
+  sales, and standing (non-promotional) plans except where flagged. Annual-equivalent cost of each,
+  computed from the default display state (all are billed monthly, so annual-equivalent = monthly
+  price x 12): Firefly Standard $9.99/mo x 12 = $119.88/yr (WINNER — lowest); Firefly Pro $19.99/mo
+  x 12 = $239.88/yr (loses); Firefly Pro Plus — carries a "Limited-time offer" badge itself (30%
+  off first year), and its price digits ("Regularly at US$.../mo" / "Alternatively at
+  US$.../mo") did not render as extractable text across three independent page loads despite
+  repeated attempts (see register_events) — its exact annual-equivalent could not be confirmed, but
+  it is self-evidently priced above Firefly Pro (positioned as the third of four ascending tiers,
+  and above Pro's $19.99/mo card in the page's left-to-right ordering) and so loses regardless;
+  Firefly Premium likewise carries a "Limited-time offer" badge and its price rendered only as
+  partial digits, "US$199.../mo" regularly / "US$139.../mo" alternatively (whole-dollar digits
+  legible, cents not), annual-equivalent on the order of $2,390-$2,399/yr regular even before
+  considering the promotional figure — loses by a wide margin regardless of the unconfirmed cents.
+  Firefly Standard is the entry paid tier under every plausible reading of the two illegible
+  figures, so the digit-rendering gap does not create genuine uncertainty about entry_tier_name
+  itself, only about the exact coder_note figures for the losing Pro Plus/Premium candidates, which
+  is disclosed above rather than papered over with an invented number.
+
+  Data-collection limitations disclosed: (1) The Firefly plans page's own FAQ accordion — including
+  the questions most on-point for this study ("How much does Adobe Firefly cost?", "Are Adobe
+  Firefly outputs safe for commercial use?", "What does 'commercial use' mean?", "What happens when
+  I run out of generative credits on my Adobe Firefly plan?") — rendered only collapsed question
+  text; the answer content did not expand through repeated browser-automation attempts. Where this
+  affected a coded variable, it is noted in that variable's own evidence field (trial_length_days,
+  trial_card_required, commercial_use_lowest_tier's cross-product sourcing). (2) The Adobe
+  Generative AI Product Specific Terms were read in their June 17, 2025-dated version; the live
+  redirect page indicates an April 23, 2026-dated version exists that this coder could not directly
+  retrieve (see that source's note in `sources`). (3) The Subscription and Cancellation Terms
+  page's "Month to month" accordion would not expand via browser-automation clicks in four attempts;
+  its content was instead read from a raw-HTML fetch of the same page's own web.archive.org
+  snapshot (same URL, same access date), which is why that source lists both an in-browser
+  observation and an archived-HTML-fetch observation.
+
+  Category note (not a coded-value issue, recorded for context only): the frozen frame assigns this
+  product category "AI image generator," but Adobe Firefly's plans page now sells credits spanning
+  image, video, audio, and vector generation as a single bundled product — this coding follows the
+  assigned category (image = principal output) throughout, per instructions, and does not
+  second-guess the frame.
+
+  blindness: no other record, no review page, no pass-2 material was opened. (The frozen frame CSV
+  at Data/seo/research/pricing-transparency/frame-frozen-2026-08-04.csv was read for this product's
+  own administrative row only — product_id, product_name, vendor_home_url, category,
+  product_status, paid_submission — which is explicitly the source codebook-v1.md section 6 states
+  these fields are "copied from"; this is not a review page and not a file under records/.)
+
+  D-009 re-read 2026-08-10: re-confirmed entry_tier_name, headline_price_usd,
+  headline_billing_basis and first_charge_amount_usd via a fresh live browser session. Two
+  representations: (1) `document.body.innerText` reproduced "Firefly Standard / US$9.99/mo /
+  Monthly" verbatim, with no annual toggle anywhere on the Individuals tab; (2) a screenshot
+  shows the same figure as rendered pixels, with the geo-interstitial this record's own
+  default_display_state already documents rendering as an overlay on top of (not blocking) the
+  already-visible plan cards. Plan-grid row mapping confirmed: Firefly Standard is unambiguously
+  the first/leftmost/cheapest of four cards. Provenance check (per coordinator's D-009 addendum):
+  first_charge_amount_usd=9.99 performs no computation -- the record's own computation_note
+  already says so ("first charge = headline_price_usd", monthly billing, no annual option
+  exists) -- confirmed clean, no 12x multiplication anywhere in this record. Verdict: CONFIRMED,
+  no correction on any of the four variables. Evidence saved to
+  adobe-firefly-sources/d009-reread-2026-08-10.md. Blindness maintained: no other product's
+  record was opened during this re-read.
+
+status: complete

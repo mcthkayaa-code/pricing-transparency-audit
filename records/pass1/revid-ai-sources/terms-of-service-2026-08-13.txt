@@ -1,0 +1,67 @@
+SOURCE: https://www.revid.ai/terms
+ACCESSED: 2026-08-13
+CAPTURE METHOD: local verbatim capture (get_page_text, rendered read)
+PAGE'S OWN "Last updated" DATE: Fri, May 31, 2024
+
+=== FULL RENDERED TEXT ===
+Terms of Service
+
+By using the revid.ai ("Service" or "Services"), you are agreeing to be bound by the following terms and conditions ("Terms of Service").
+
+TMAKER ("Company", "we", "us", or "our") reserves the right to update and change these Terms of Service without notice.
+
+These Terms are a binding contract between you and the Company. You must agree to and accept all of the Terms, or you don't have the right to use the Services. Your using the Services in any way means that you agree to all of these Terms, and these Terms will remain in effect while you use the Services. These Terms include the provisions in this document, as well as those in the Privacy Policy.
+
+Violation of any of the terms below may result in the termination of your account.
+
+Account Terms
+As a revid.ai User:
+You are responsible for maintaining the security of your account and password. The Company cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.
+You are responsible for all content posted and activity that occurs under your account (even when content is posted by others who have their own logins under your account).
+You may not use the Service for any illegal purpose or to violate any laws in your jurisdiction (including but not limited to copyright laws).
+You must be a human. Accounts registered by "bots" or other automated methods are not permitted.
+
+Subscription Terms
+You can cancel your subscription at any time. Upon cancellation, you will continue to have access to the Service for the remainder of your billing period. After expiration of your cancellation, your account and projects can still be accessed normally.
+Users 100% own the content they create and can use it however they want even without an active subscription. However, any new export requires an active subscription.
+Credits do not roll over at subscription renewal. When your subscription renews, your credits will be reset to the amount allocated per your subscription plan, regardless of how many credits you had remaining from the previous period.
+For yearly plans, credits will be added to your account on the 1st of each month.
+Subscriptions are generally non-refundable. However, refunds may be granted at our discretion if: (1) less than 10% of the subscription credits have been used, and (2) the payment was made within the last 30 days. If you face bugs or issues with your generations, please reach out to our support team so we can help you.
+For EU consumers: By using revid.ai, you explicitly consent to the immediate performance of the contract and acknowledge that you will lose your right to the 14-day withdrawal period (cooling-off period) provided under EU consumer protection laws once you begin using the Service. This is because revid.ai is digital content that is immediately delivered and consumed upon use.
+
+Your use of the Services is subject to the following additional restrictions
+[... standard acceptable-use list: IP infringement, illegal use, harmful/fraudulent content, account security, password theft attempts, network security violations, spam/auto-responders, crawling/scraping, copying Content, decompiling/reverse engineering ...]
+A violation of any of the foregoing is grounds for termination of your right to use or access the Services.
+
+Copyright and Content Ownership
+The Company does not pre-screen content, but reserves the right (but not the obligation) in their sole discretion to refuse or remove any content that is available via the Service.
+The look and feel of the Service is copyright(c) to the Company. All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML, CSS, JavaScript, or visual design elements without express written permission from the Company.
+
+General Conditions
+Your use of the Service is at your sole risk. The service is provided on an "as is" and "as available" basis.
+Technical support is only provided via the in-app "feedback" button or email.
+[... third-party vendors/hosting, no modify/hack, no false association, no reproduce/resell, content removal discretion, abuse = termination, unencrypted transmission possible ...]
+We reserve the right to temporarily disable your account if your usage significantly exceeds the average usage of other Service customers. Of course, we'll reach out to the account owner before taking any action except in rare cases where the level of use may negatively impact the performance of the Service for other customers.
+[... standard "as is" disclaimer, limitation of liability, entire agreement, changes-by-continued-use clause ...]
+
+Last updated: Fri, May 31, 2024
+
+=== NOTES FOR CODING ===
+- No mention anywhere in this document of: "trial", "commercial use"/"commercial license", explicit
+  "auto-renew"/"automatically renew" wording (renewal is implied structurally: cancel anytime /
+  else subscription continues and credits reset at renewal), advance notice before charging,
+  failed/errored generation credit policy, watermark, or a mandatory add-on charge.
+- Refund: conditional/discretionary -- "may be granted at our discretion if (1) less than 10% of
+  subscription credits used, and (2) payment made within the last 30 days."
+- Credit rollover: explicit "do not roll over ... reset to the amount allocated per plan" =
+  expires_at_period_end.
+- Yearly-plan credit disbursement mechanic: "For yearly plans, credits will be added to your
+  account on the 1st of each month" -- i.e. even an annual subscription is metered/topped-up
+  monthly, not granted as one lump annual credit balance.
+- Output ownership: "Users 100% own the content they create and can use it however they want
+  even without an active subscription" = user_owns, consistent with the pricing page's repeated
+  "100% content ownership" tag under every plan (agreement across two document classes).
+- "reserve the right to temporarily disable your account if your usage significantly exceeds the
+  average usage of other Service customers" -- this is an unquantified, discretionary usage-limit
+  clause with NO number attached (no threshold, no rate) = candidate evidence for
+  unquantified_limit_clause = present.

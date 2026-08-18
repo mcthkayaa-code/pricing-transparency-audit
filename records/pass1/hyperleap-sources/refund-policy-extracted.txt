@@ -1,0 +1,345 @@
+Refund Policy - Hyperleap AI
+Product
+Solutions
+Resources
+Pricing
+Sign In
+Start free trial
+Home
+Refund Policy
+Refund Policy
+Clear and fair refund terms for our services.
+Version 1.1 | Effective date: July 17, 2026
+Key Points
+Generally non-refundable
+Subscriptions are non-refundable once paid
+Exceptions exist
+Legal requirements & billing errors
+10–15 business days
+Approved refunds processed to your original payment method
+Easy request process
+Email support@hyperleap.ai within 30 days of the charge
+1. General Refund Policy
+Overview of our refund terms.
+This Refund Policy applies to all subscription services provided by M/s. Hyperleap Software Technologies Private Limited (&quot;Company&quot;, &quot;We&quot;, &quot;Us&quot;, &quot;Our&quot;) to You (&quot;User&quot;, &quot;Customer&quot;, &quot;You&quot;, &quot;Your&quot;).
+This Refund Policy is incorporated by reference into our
+Terms of Use
+and
+Payment Terms
+.
+Generally, we do not provide refunds for subscription services except as explicitly outlined in this policy or as required by applicable law.
+Digital services — no physical returns:
+Hyperleap AI is a digital software-as-a-service product. No physical goods are sold or shipped, so product returns and exchanges do not apply. The equivalent of a return is cancelling Your subscription — You retain access to paid features until the end of Your current billing period, after which access is restricted.
+2. No Refund Policy
+Standard non-refundable items.
+Standard Policy:
+All subscription fees are non-refundable once paid, except as specifically provided in this policy.
+This no-refund policy applies to:
+×
+Monthly subscription fees
+×
+Annual subscription fees
+×
+One-time setup fees
+×
+Additional feature purchases
+×
+Usage-based charges
+×
+Plan upgrade charges
+Service Until End of Billing Period:
+When You cancel, You keep access to paid features until the end of Your current billing period.
+3. Exceptions to No-Refund Policy
+When refunds may be provided.
+Refund Request Window:
+All refund requests must be submitted within 30 days of the original charge date. Requests submitted after this window are not eligible for review, except where a longer period is required by applicable law.
+Legal Requirements
+We provide pro-rated refunds where required by applicable consumer protection laws:
+•
+European Union consumer rights directives
+•
+Australian Consumer Law
+•
+Canadian Consumer Protection Acts
+•
+US state consumer protection laws
+•
+Indian Consumer Protection Act
+Service Failure
+We may provide refunds at our discretion if:
+✓
+Service unavailable for 48+ consecutive hours due to our technical issues
+✓
+Unable to deliver core functionality as described
+✓
+Material breach of service commitments
+Other Exceptions
+✓
+Billing Errors:
+We will correct and refund any overcharge
+✓
+Fraudulent Charges:
+Refunds upon verification of unauthorized charges
+4. Pro-Rated Refunds
+How refunds are calculated.
+Pro-rated refunds are only provided where legally required. Calculation method:
+(Total paid ÷ Total days) × Remaining days = Refund amount
+•
+Minimum refund:
+$5 USD or equivalent (refunds below this are not processed)
+•
+Processing time:
+10-15 business days after approval
+•
+Refund method:
+Original payment method used
+5. Annual Plans & Downgrades
+Annual Plans
+• Non-refundable except where required by law
+• Converting to monthly reverses annual discount
+• Additional charges may apply for used months
+Plan Downgrades
+• No refund for current billing period
+• Keep access until period ends
+• New pricing on next billing cycle
+6. Free Trial & Third-Party Purchases
+Free Trial
+•
+All plans include a 7-day free trial; no charges during the trial period
+•
+Cancel before the trial ends to avoid being charged
+•
+After the trial, standard subscription billing and refund policies apply
+•
+Upon cancellation, access is restricted at the end of the current billing period (no free plan fallback)
+Third-Party Purchases
+•
+App Store purchases:
+Request refunds directly from platform
+•
+Merchant of Record:
+Their refund policies may also apply
+•
+We cannot override third-party platform decisions
+7. Refund Request Process
+How to request a refund.
+Submit refund requests in writing within 30 days of the original charge date to
+support@hyperleap.ai
+with:
+•
+Account email address
+•
+Subscription details (plan type, billing cycle)
+•
+Reason for refund request
+•
+Documentation supporting legal refund rights (if applicable)
+Review Process
+We respond within 5-7 business days
+Decision
+Based on legal requirements, policy terms, and circumstances
+8. Refund Processing
+How refunds are processed.
+Refund Timeline at a Glance
+1
+Submit Your request
+— email support@hyperleap.ai within 30 days of the charge
+2
+Review & decision
+— we respond within 5-7 business days
+3
+Refund processed
+— approved refunds are issued within 10-15 business days of approval, to the original payment method
+4
+Funds appear
+— depending on Your payment method, allow additional time for the credit to post (see below)
+Time for the refund to appear after processing, by payment method:
+Credit Card
+3-10 business days
+Bank Transfer
+5-15 business days
+Digital Wallet
+1-5 business days
+Processing fees may be deducted. Currency conversion fees are Your responsibility.
+9. Account Termination & Disputes
+Account Termination
+•
+Voluntary:
+No refund for current billing period
+•
+For Cause:
+No refund if terminated for violations
+•
+Service Discontinuation:
+Pro-rated refunds or migration options may be offered
+Dispute Resolution
+Important:
+Initiating a chargeback without first contacting us may result in immediate account termination. Please contact support first.
+10. Changes to Refund Policy
+•
+We may modify this policy with 30 days' prior notice
+•
+Changes don't affect refund rights for charges made before the effective date
+•
+Continued use constitutes acceptance of modified policy
+Refund Questions?
+Contact our billing team for refund requests or questions about this policy.
+Email Support Team
+Contact Support
+Support:
+support@hyperleap.ai
+India Office (Headquarters):
+Hyperleap Software Technologies Private Limited
+T-Hub, Phase 2, Madhapur
+Hyderabad, Telangana 500081, India
+United States Office:
+Hyperleap AI Hub, Inc.
+8 The Green
+Dover, DE 19901, United States
+Explore Hyperleap AI
+AI customer service agents that answer FAQs, capture leads, and book appointments across Website, WhatsApp, Instagram, and Facebook Messenger.
+Solutions
+Conversational AI
+Customer Support Chatbot
+AI Receptionist
+Appointment Scheduling
+Multilingual Chatbot
+Knowledge Base Chatbot
+Instagram Chatbot
+Facebook Messenger Chatbot
+RAG Chatbot
+AI Agent vs Chatbot
+AI Agents by Industry
+For Ecommerce
+For Small Business
+Lead Generation
+No-Code Builder
+Integrations
+All Integrations
+Shopify
+WordPress
+Webflow
+Wix
+Squarespace
+Resources
+Learn
+Blog
+Comparisons
+Case Studies
+Templates
+Free Tools
+Glossary
+Help Center
+Feedback
+API Reference
+AI agents by industry
+Healthcare & wellness
+Dental
+Dentistry
+Dermatology
+Healthcare
+Chiropractic
+Physical Therapy
+Optometry
+Mental Health
+Med Spa
+Massage Therapy
+Pharmacy
+Veterinary
+Senior Living
+Home & field services
+Home Services
+HVAC
+Plumbing
+Electrical
+Roofing
+Cleaning
+Landscaping
+Pest Control
+Moving
+Professional services
+Accounting
+Legal
+Financial Advisors
+Insurance
+IT Services
+Staffing
+Property Management
+Beauty & fitness
+Beauty & Salons
+Nail Salons
+Tattoo Studios
+Fitness
+Yoga Studios
+Dance Studios
+Martial Arts
+Hospitality & events
+Hospitality
+Restaurants
+Catering
+Travel Agencies
+Wedding Venues
+Event Planning
+Photography
+Florists
+Retail, auto & local
+Automotive
+Auto Body
+Bakeries
+Real Estate
+Education
+Tutoring
+Daycare
+Pet Services
+AI agents for small businesses — answer customers, capture leads, and connect customer conversations to the modern AI workflows your team already uses.
+Subscribe to updates
+hello@hyperleap.ai
+Hyderabad, Telangana, India
+Products
+AI Agents
+MCP Server
+Why Hyperleap
+AI Suite
+AI Tools
+AI Assistants
+Prompts API
+Personas API
+Workspaces
+Pricing
+Company
+About Us
+Careers
+Contact Sales
+Request Demo
+Partners
+Roadmap
+Security
+Resources
+Help Center
+Tutorials
+Blog
+Comparisons
+Feedback
+256-bit
+AES Encryption
+99.9%
+Uptime
+2000+
+Active Users
+GDPR
+Compliant
+Meta
+Technology Provider & Business Partner
+Terms of Use
+Privacy Policy
+Payment Terms
+Refund Policy
+Cookie Policy
+DPA
+Data Transfers
+Sub-Processors
+Security
+Cookie Settings
+Hey AI, learn about us
+© 2026 Hyperleap® AI. All rights reserved.
+Hyperleap® is a registered trademark of Hyperleap Software Technologies Private Limited. All other trademarks, logos, and brand names are the property of their respective owners.

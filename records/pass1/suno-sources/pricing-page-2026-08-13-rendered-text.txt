@@ -1,0 +1,123 @@
+SOURCE: https://suno.com/pricing (renders at https://suno.com, SPA route)
+ACCESSED: 2026-08-13
+METHOD: Rendered browser read (Claude Browser tool), desktop viewport 1280x900, Turkey network egress.
+NOTE: UI language auto-localized to Turkish; currency displayed in USD ($) regardless of language.
+DEFAULT DISPLAY STATE (confirmed via DOM inspection of the two toggle <input type="radio"> elements):
+  - input[value="month"].checked === false
+  - input[value="year"].checked === true
+  => Annual billing is PRESELECTED on page load. "SAVE 20%" badge shown next to toggle.
+
+=== FULL RENDERED TEXT (body innerText via get_page_text, after expanding FAQ items 3, 4, 5) ===
+
+Start making music for free
+Plans for every creator
+Monthly
+Annual
+SAVE 20%
+Ücretsiz Plan
+Başlangıç planımız.
+$0
+/ay
+Kaydol
+v4.5-all erişimi
+Her gün yenilenen 50 kredi
+Aylık şarkı indirme yok (9/3/26'dan itibaren)
+Ticari kullanım yok
+Yalnızca standart özellikler
+8 dakikaya kadar ses yükleme
+Ortak üretim kuyruğu
+Ek kredi satın alma yok
+No stem separation
+
+Pro Plan
+EN POPÜLER
+En iyi modellerimize ve düzenleme araçlarımıza erişim.
+$8
+/ay
+Yıllık faturalandırmayla $24 tasarruf!
+Vergiler ödeme sırasında hesaplanır
+Abone ol
+En iyi ve en kişisel v5.5 modeline erişim
+2.500 kredi, her ay yenilenir
+Ayda 20 şarkı indirme (9/3/26'dan itibaren)
+Yeni yapılan şarkılar için ticari kullanım hakları
+Standart + Pro özellikler (Persona'lar ve gelişmiş düzenleme)
+2 stem ayrıştırma türü (Otomatik; Mix'ten ayırma).
+30 dakikaya kadar ses yükleme
+Mevcut şarkılara yeni vokal veya enstrümantal ekleme
+Yeni özelliklere erken erişim
+Ek kredi satın alma imkanı
+Öncelikli kuyruk, aynı anda 10 şarkıya kadar
+Kendi sesinle kaydet, yükle ve üret.
+Kendi sesinle v5.5'in özel sürümlerini ayarla
+
+Premier Plan
+EN AVANTAJLI
+Maksimum kredi ve tüm özelliklerin kilidi açık.
+$24
+/ay
+Yıllık faturalandırmayla $72 tasarruf!
+Vergiler ödeme sırasında hesaplanır
+Abone ol
+Suno Studio erişimi
+En iyi ve en kişisel v5.5 modeline erişim
+10.000 kredi, her ay yenilenir
+Ayda 60 şarkı indirme (9/3/26'dan itibaren)
+Yeni yapılan şarkılar için ticari kullanım hakları
+Standart + Pro özellikler (Persona'lar ve gelişmiş düzenleme)
+3 stem ayrıştırma türü (Otomatik; Mix'ten ayırma ve Gelişmiş ayırma).
+30 dakikaya kadar ses yükleme
+Mevcut şarkılara yeni vokal veya enstrümantal ekleme
+Yeni özelliklere erken erişim
+Ek kredi satın alma imkanı
+Öncelikli kuyruk, aynı anda 10 şarkıya kadar
+Kendi sesinle kaydet, yükle ve üret
+Kendi sesinle v5.5'in özel sürümlerini ayarla
+
+FAQs
+Compare plans
+Need More?
+Credits included in subscriptions do not carry over from day to day or month to month. Purchased top up credits do not expire, but require an active subscription to use. See the terms of service for limitations on commercial use. Email us at billing@suno.com with any questions.
+
+FAQs
+You've got questions. We've got answers.
+
+Model sürümleri arasındaki farklar nelerdir? [not expanded]
+Standart ve Pro özellikleri nelerdir? [not expanded]
+
+Şarkılarım için ticari kullanım hakları alıyor muyum?
+Ücretsiz planlar ticari hakları içermez. Pro veya Premier kullanıyorsan şarkılarını ticari olarak kullanabilirsin; yalnızca paylaştığın her platformun kurallarına uyduğundan emin ol. Üçüncü taraf hizmet şartlarına saygı göstermek senin sorumluluğundadır.
+
+Aylık kredilerimi tüketirsem ne olur?
+Aboneysen ve aylık kredilerini tüketirsen istediğin zaman ek kredi satın alabilirsin. Ayrıca faturalandırma dönemin yenilenene kadar her gün otomatik olarak 50 bonus kredi alırsın.
+
+Planımı yükseltebilir veya düşürebilir miyim?
+Evet, hesap ayarlarından istediğin zaman plan değiştirebilirsin. Yükseltmeler hemen geçerli olur; düşürmeler ise faturalandırma döneminin sonunda uygulanır.
+
+Compare Suno plans
+Free Plan | Pro Plan (EN POPÜLER) | Premier Plan (EN AVANTAJLI)
+ŞARKI ÜRETİMİ (SONG GENERATION)
+Şarkı sayısı: Günde 10 şarkı | Ayda 500 şarkı | Ayda 2000 şarkı
+Kullanılabilir modeller: En iyi ücretsiz model (v4.5-all) | Gelişmiş modeller (v4, v4.5, v4.5+, v5, v5.5) | Gelişmiş modeller (v4, v4.5, v4.5+, v5, v5.5)
+Ticari haklar: [row present in compare table; check/cross icons, no text value extracted]
+Eşzamanlı üretimler: Ortak kuyrukta 4 | Öncelikli kuyrukta 10 | Öncelikli kuyrukta 10
+Ek krediler: Kullanılamaz | Satın alınabilir | Satın alınabilir
+[UI note: "4 in a Shared queue" / "10 in a Priority queue" x2 appears in raw extraction directly under "Ticari haklar" but is judged to belong structurally to "Eşzamanlı üretimler" (concurrent generations) row based on the matching English-language repeat of "Ortak kuyrukta 4 / Öncelikli kuyrukta 10" that follows -- flattened HTML table text order is unreliable here; not coded from this ambiguous row.]
+
+=== DOM CHECK: billing toggle radios ===
+[{"ariaChecked":"false","nearText":"MonthlyAnnualsave 20%","tag":"SPAN"},
+ {"ariaChecked":null,"checked":false,"name":"","nearText":"MonthlyAnnualsave 20%","tag":"INPUT","value":"month"},
+ {"ariaChecked":"true","nearText":"MonthlyAnnualsave 20%","tag":"SPAN"},
+ {"ariaChecked":null,"checked":true,"name":"","nearText":"MonthlyAnnualsave 20%","tag":"INPUT","value":"year"}]
+
+=== ARITHMETIC CROSS-CHECK (coder's own, not a vendor statement) ===
+Pro: displayed $8/mo (annual-preselected state) + "save $24/yr by billing annually" implies
+  monthly-billed price = ($8*12 + $24)/12 = $10.00/mo. ($10-$8)/$10 = 20% = matches "SAVE 20%" badge exactly.
+Premier: displayed $24/mo (annual) + "save $72/yr" implies monthly-billed price =
+  ($24*12+$72)/12 = $30.00/mo. ($30-$24)/$30 = 20% = matches badge exactly.
+This confirms $8 and $24 are the per-month-billed-ANNUALLY figures, not plain monthly prices.
+Attempted to directly click "Monthly" toggle to read $10/$30 as a direct figure for coder_note
+completeness (not needed for headline_price_usd, which is read from the default/annual state per
+sampling-rules 7.2 rule 1). Coordinate clicks (2 attempts) and form_input (1 attempt) on the Monthly
+radio did not change the rendered state in this session; the arithmetic inference above is recorded
+as inference, not a direct read, and is not used to code any variable value.

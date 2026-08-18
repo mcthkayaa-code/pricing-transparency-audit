@@ -1,0 +1,163 @@
+product_id: ismybrandinai
+product_name: Is My Brand In AI
+category: AI bot checker
+product_status: active
+paid_submission: "no"
+entry_tier_name: not_applicable
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-14
+recheck_date: not_applicable
+primary_source_url: https://ismybrandinai.com/tools/ai-bot-checker
+archive_url: https://web.archive.org/web/20260814181655/https://ismybrandinai.com/tools/ai-bot-checker
+archive_status: archived
+default_display_state: >
+  No pricing page exists anywhere on this vendor's domain (confirmed against the full
+  sitemap.xml, 54 URLs, none named pricing/plans/premium/upgrade/subscribe/checkout). The
+  AI Bot Checker tool page loads as a single free, no-signup checker: no billing toggle, no
+  currency figure, no plan selector, no region variant observed. Read 2026-08-14, no
+  consent/cookie banner encountered blocking any content.
+
+sources:
+  - { url: "https://ismybrandinai.com/", kind: other, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814182846/https://ismybrandinai.com/", note: "homepage; confirms no pricing nav item" }
+  - { url: "https://ismybrandinai.com/tools", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814182552/https://ismybrandinai.com/tools", note: "tools listing; 'A small set of free tools ... No signup, nothing stored.'" }
+  - { url: "https://ismybrandinai.com/tools/ai-bot-checker", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814181655/https://ismybrandinai.com/tools/ai-bot-checker", note: "the reviewed tool's own page; used in place of a pricing page since none exists; carries the FAQ 'Is this tool really free? Yes.'" }
+  - { url: "https://ismybrandinai.com/terms", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814182215/https://ismybrandinai.com/terms", note: "entire ToS; read in full; 'Free tools — provided \"as is\"'; no refund/renewal/credit/commercial-use/watermark clause of any kind" }
+  - { url: "https://ismybrandinai.com/about", kind: other, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814182922/https://ismybrandinai.com/about", note: "'Free tools, no signup. The tools here run in your browser, free, with nothing to install.'" }
+
+variables:
+  # Domain 1 — headline price vs. first charge. No paid tier exists anywhere on this vendor's
+  # site (confirmed across ToS, About, Tools listing, and the tool page itself, plus a full
+  # sitemap.xml check for a pricing/plans page). All four Domain-1 variables are not_applicable
+  # together, satisfying the A3 impossible-pair rule (codebook §"first_charge_amount_usd").
+  headline_price_usd: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "\"Free, no signup — the check runs in your browser.\" FAQ: \"Is this tool really free? Yes. It reads a public text file and analyzes it in your browser. No signup, no account, nothing stored.\" No paid tier exists anywhere on the site." }
+  headline_billing_basis: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No paid tier; no billing basis of any kind is published." }
+  first_charge_amount_usd: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No paid tier exists; ToS: \"Free tools — provided \\\"as is\\\".\" Nothing is ever charged." }
+  mandatory_addon_present: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No paid tier exists, paired with first_charge_amount_usd=not_applicable per the impossible-pair rule." }
+
+  # Domain 2 — annual-billing condition. No annual billing (or any billing) exists.
+  annual_condition_disclosure: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No annual billing option exists; product has no paid tier at all." }
+  annual_default_toggle: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No pricing page and no billing toggle of any kind exists on this vendor's site." }
+
+  # Domain 3 — real usability of the free plan. The AI Bot Checker (and the site's other tools)
+  # are documented as free, standing, no-signup offerings.
+  free_plan_exists: { value: "yes", source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "\"Free, no signup — the check runs in your browser.\"; About: \"Free tools, no signup. The tools here run in your browser, free, with nothing to install.\"" }
+  free_plan_cap_documented: { value: unknown, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No document anywhere states a usage limit (quantified or unquantified) on how many checks may be run, nor an explicit 'unlimited' claim. The tool's no-account, client-side design makes a cap technically improbable but that is an inference, not a documented statement, so this is coded unknown rather than all_quantified." }
+  free_plan_cap_value: { value: unknown, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No quantified limit is published; matches free_plan_cap_documented=unknown." }
+  free_plan_watermark: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "Output type cannot carry a watermark: the tool returns a crawler-by-crawler allow/block/partial-limit report on the reader's own robots.txt, not a media artifact. No document mentions watermarking." }
+  free_plan_duration: { value: perpetual, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "Presented as a standing entry on the permanent /tools page, not framed as time-limited anywhere (no 'free for N days' / 'free trial' language); no expiry stated in any document." }
+
+  # Domain 4 — trial. No trial of any kind is documented; the product is simply free, not a
+  # time-limited trial of a paid product.
+  trial_exists: { value: "no", source: "https://ismybrandinai.com/terms", evidence: "No trial mentioned anywhere in the ToS, About, Tools listing, or the tool page itself; the tools are described as free outright, never as a trial." }
+  trial_card_required: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No trial exists." }
+  trial_length_days: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No trial exists." }
+  trial_auto_converts: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No trial exists." }
+
+  # Domain 5 — credit system. No credits/tokens/points/coins/generations metering anywhere;
+  # a single free, unmetered, no-account check.
+  credit_system_present: { value: "no", source: "https://ismybrandinai.com/terms", evidence: "No mention of credits, tokens, points, coins, or generation-metering anywhere on the site; a single free check with no account to meter against." }
+  credit_unit_defined: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No credit system." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No credit system." }
+  credit_rate_location: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No credit system." }
+
+  # Domain 6 — cost per output. Not_applicable is barred on both variables here; the product
+  # has no paid tier, but the vendor explicitly and repeatedly documents the cost as free ($0),
+  # so a reader can determine the cost per principal output without any further published
+  # figure or usage assumption.
+  cost_per_output_unit: { value: other, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "Principal output is one crawler-access report per domain submitted ('Enter your domain and we'll read your robots.txt...'). None of the enumerated units fit a diagnostic report; coded other, named 'per domain / robots.txt check' here since not_applicable is unavailable on this variable." }
+  cost_per_output_computable: { value: "yes", source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "\"Is this tool really free? Yes.\" No paid tier exists anywhere, so the only figure needed (price) is published outright as free/$0, with no usage assumption required." }
+  computation_assumptions: { value: "No paid tier exists (ToS, About, Tools pages all state the tools are free). AI Bot Checker documented free, no signup, nothing stored. Cost per principal output (one robots.txt crawler-access check) = $0.00; no figure beyond the vendor's explicit free statement is needed.", source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "See quotes on cost_per_output_computable and headline_price_usd." }
+
+  # Domain 7 — credit rollover. No credit system.
+  credit_rollover_policy: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No credit system." }
+
+  # Domain 8 — failed-generation charging. No metered generation step of any kind.
+  failed_generation_charge_policy: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "The product has no metered generation step: a free, unmetered robots.txt read-and-compare, not a generation product." }
+
+  # Domain 9 — auto-renewal. not_applicable is barred on auto_renewal_default; the product has
+  # no purchase, no subscription, no billing of any kind, so no_recurring_billing is the closest
+  # available determinate value even though it is literally defined for a one-time-PURCHASE
+  # product and this product is not sold at all. Flagged as a judgment call in coder_note.
+  auto_renewal_default: { value: no_recurring_billing, source: "https://ismybrandinai.com/terms", evidence: "ToS: \"Free tools — provided \\\"as is\\\".\" No subscription, purchase, or billing of any kind is documented anywhere on the site." }
+  auto_renewal_disclosure_location: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "Billing does not recur (no billing exists at all)." }
+  renewal_notice_commitment: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "Billing does not recur; coded not_applicable by consistency with auto_renewal_disclosure_location, though the codebook does not spell out an explicit not_applicable trigger for this specific variable." }
+
+  # Domain 10 — refund and cancellation. No paid tier exists, so nothing to refund or cancel.
+  refund_policy_exists: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "The product has no paid tier and the documents say so, so there is nothing a refund could attach to." }
+  refund_window_days: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No paid tier." }
+  refund_conditions: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "No refund available; no paid tier." }
+  cancellation_self_serve: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "Billing does not recur." }
+  refund_policy_location: { value: not_applicable, source: "https://ismybrandinai.com/terms", evidence: "refund_policy_exists is not_applicable, meaning no paid tier exists." }
+
+  # Domain 11 — commercial-use rights. Established from THIS vendor's own tool description
+  # (not assumed from the category): the AI Bot Checker's output is a crawler-access analysis
+  # report on the reader's own robots.txt, not a generated media artifact. No document anywhere
+  # mentions commercial use, licensing, or ownership of tool output.
+  commercial_use_lowest_tier: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "The product produces no output a commercial-use right could attach to: the output is a per-crawler allow/block/partial-limit report on the reader's own robots.txt, not a content artifact. No document mentions commercial use." }
+  watermark_removal_tier: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "The principal output is not a media artifact a watermark could mark — it is an analysis table (crawler-by-crawler allowed/blocked/partial), matching the codebook's own worked example for this value." }
+  output_ownership_statement: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "The product produces no output ownership could attach to, matching the not_applicable case on commercial_use_lowest_tier. No document addresses ownership of tool output." }
+
+  # Domain 12 — undisclosed or unverifiable limits.
+  usage_cap_quantified: { value: not_applicable, source: "https://ismybrandinai.com/tools/ai-bot-checker", evidence: "No paid tier." }
+  unquantified_limit_clause: { value: absent, source: "https://ismybrandinai.com/terms", evidence: "Terms of Use read in full end to end (the only terms/AUP-equivalent document on the site — no separate acceptable-use policy page exists per sitemap.xml). No fair-use, reasonable-use, excessive-use, abuse-threshold, or discretionary-throttling clause anywhere in it." }
+
+coder_note: |
+  Entry-tier candidates (sampling-rules.md §7.2/§7.3): none eligible. The vendor publishes no
+  paid tier anywhere on ismybrandinai.com — confirmed against the ToS ("Free tools — provided
+  \"as is\""), the About page ("Free tools, no signup. The tools here run in your browser, free,
+  with nothing to install."), the /tools listing ("A small set of free tools ... No signup,
+  nothing stored."), the AI Bot Checker tool page and FAQ ("Is this tool really free? Yes."),
+  and the complete sitemap.xml (54 URLs, none a pricing/plans/premium/upgrade/subscribe page).
+  Per §7.3, entry-tier variables are coded not_applicable and the free-tier variables carry the
+  record.
+
+  Category/output note: the frame category is "AI bot checker", matching one of four free tools
+  this vendor publishes (AI Bot Checker, AI Readiness Checker, AI Prompt Generator, llms.txt
+  Generator). This record codes the AI Bot Checker tool specifically, per that category. Its
+  documented output is a crawler-by-crawler allow/block/partial-limit report on the reader's own
+  robots.txt — a report/analysis table, not a media artifact — which is why
+  commercial_use_lowest_tier, watermark_removal_tier and output_ownership_statement are coded
+  not_applicable, reached from this tool's own description page rather than assumed from the
+  category name. The site's other tool, AI Readiness Checker, was also checked and follows the
+  identical free/no-signup/scored-report pattern, so nothing material would change if the whole
+  site rather than just this one tool were considered.
+
+  A-012 does not apply: this is not a cheap non-zero time-limited intro period, it is a
+  standing, always-free tool with no paid tier at all.
+
+  Judgment calls, flagged for the adjudicator:
+  1. auto_renewal_default=no_recurring_billing: not_applicable is barred on this variable, but
+     that value's own definition is "sold as a one-time purchase," which this product literally
+     is not (it is never sold/charged at all). Coded no_recurring_billing as the closest
+     available determinate value, since no recurring billing exists in any form.
+  2. renewal_notice_commitment and auto_renewal_disclosure_location coded not_applicable by
+     consistency with "billing does not recur," though the codebook states that trigger
+     explicitly only for auto_renewal_disclosure_location, not for renewal_notice_commitment.
+  3. cost_per_output_unit=other: none of the enumerated units fit a diagnostic report; named
+     "per domain / robots.txt check".
+  4. cost_per_output_computable=yes / computation_assumptions=$0.00: codebook rule 1 nominally
+     keys the price input to "the entry paid tier's price" under sampling-rules.md §7.2, which
+     presupposes a priced entry tier. No entry tier exists here; coded yes on the reasoning that
+     the vendor explicitly and repeatedly documents the cost as free, so the figure a reader
+     needs (price=$0) is published without ambiguity or a usage assumption.
+  5. free_plan_cap_documented=unknown rather than all_quantified: no document states a usage
+     limit in either direction (quantified or an explicit "unlimited" claim); the tool's
+     no-account, client-side design makes a cap technically improbable but that is inference,
+     not documentation, so unknown is coded rather than inferring no limit.
+  6. entry_tier_name=not_applicable and the pricing-page-anchored administrative fields
+     (primary_source_url, default_display_state) point at the AI Bot Checker tool's own page in
+     place of a pricing page, since this vendor publishes none; noted explicitly here so a
+     reader is not misled into thinking a pricing page was missed.
+  7. coder_role: the task assignment text said "secondary"; codebook-v1.md §6 defines this
+     variable's value list as primary/second/adjudicated. Coded "second" to match the
+     instrument's defined enum, per the instruction that the codebook is the only authority on
+     what a value means; flagging the discrepancy here rather than silently picking one.
+
+  Frame check: this record's product_id/product_name/category/product_status/paid_submission
+  all match frame-for-pass2.csv row 40 exactly. No discrepancy found.
+
+  blindness: no other record, no review page, no pass-1 material was opened.
+conflict_note: not_applicable
+register_events: []
+status: complete

@@ -1,0 +1,21 @@
+URL: https://www.jobscan.co/cancellation-policy
+Accessed: 2026-08-09
+Method: WebFetch (Anthropic fetcher; static jobscan.co domain is Cloudflare-protected against plain curl/UA, but resolved through WebFetch)
+Network note: collection network egresses from Turkey; this page returned English content with USD figures on this read (no currency/geo localization observed here, unlike the Termly-hosted ToS doc which auto-localized to Turkish and required a direct EN-locale API pull; see tos-en-US-plaintext.txt).
+Archive attempts: 2x https://web.archive.org/save/https://www.jobscan.co/cancellation-policy -> HTTP 000, then HTTP 520 (both failed). archive_status = archive_failed for this URL; this file is the local copy of record.
+
+--- EXTRACTED CONTENT (WebFetch summary of rendered page, key clauses verbatim-quoted by the fetch model) ---
+
+Refund Policy - Window & Conditions:
+"Refunds will only be granted to Jobscan Premium members who refute their charges within 2 calendar days of the billing period start and have not used the service within the said billing period." A processing fee of 3.5% applies.
+
+Cancellation Process - Self-Serve Available:
+Users can cancel through their Account page by following "Cancel Membership instructions within your Account page." No contact required for cancellation itself.
+
+Refund Requests Require Contact:
+To process refunds within the 2-day window, customers must email support@jobscan.co with subject line "Refund Request," including reason and email address. The company states: "We will grant/deny refund requests on a case by case basis."
+
+Auto-Renewal Disclosure:
+"Until you cancel, billing will continue according to the cycle stated at the time of subscription." Additionally: "Jobscan is not responsible for continued subscriptions should a user forget to cancel their account. It is the customer's responsibility to confirm the cancellation."
+
+Upon cancellation: "your account will be downgraded to a Free Membership after your current billing period ends."

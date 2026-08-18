@@ -1,0 +1,124 @@
+product_id: resume-io
+product_name: Resume.io
+category: AI resume builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: Quarterly
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-12
+recheck_date: not_applicable
+primary_source_url: https://resume.io/pricing
+archive_url: https://web.archive.org/web/20260812065300/https://resume.io/pricing
+archive_status: archived
+default_display_state: "USD ($) prices in static HTML (no client-side price injection, confirmed by curl fetch + live browser render + screenshot); no monthly/annual toggle -- 3 static cards ($2.95 7-day Trial paid intro, $49.95 Quarterly, $0.00 free plan); read from Turkey (CloudFront edge IST50-P2) after declining non-essential cookies (Essential only)."
+
+sources:
+  - { url: "https://resume.io/pricing", kind: pricing, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812065300/https://resume.io/pricing", note: "vendor_home_url per frame is https://resume.io; read twice (curl raw HTML + live browser render/screenshot), values agree" }
+  - { url: "https://resume.io/tos", kind: tos, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812065722/https://resume.io/tos", note: "read in full, including EU Residents and US Residents supplemental terms" }
+  - { url: "https://resume.io/right-of-withdrawl", kind: refund, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812065610/https://resume.io/right-of-withdrawl", note: "dedicated Right of Withdrawal page; states a conflicting renewal figure for the non-entry trial-labeled plan, see conflict_note" }
+  - { url: "https://help.resume.io/article/28-how-does-billing-work", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812065752/https://help.resume.io/en/articles/3785664", note: "billing FAQ; mentions '6-Month & Yearly Subscriptions' with no price stated anywhere on this or any other page found -- see coder_note" }
+  - { url: "https://resume.io/contact/cancel-subscription", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812065941/https://resume.io/contact/cancel-subscription", note: "self-serve cancellation flow description (email-only, no login required); page read only, no cancellation submitted" }
+  - { url: "https://help.resume.io/en/categories/669632-billing-accounts", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812070007/https://help.resume.io/en/categories/669632-billing-accounts", note: "billing/accounts help-center category listing; checked for a dedicated yearly/6-month pricing article, none found" }
+  - { url: "https://help.resume.io/en/articles/3785088", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812070106/https://help.resume.io/en/articles/3785088", note: "'How can I use resume.io for free?' article; conflicts with pricing page on free-plan PDF access, see conflict_note" }
+
+variables:
+  headline_price_usd: { value: "49.95", source: "https://resume.io/pricing", evidence: "Entry tier Quarterly card: currency symbol '$' + '49.95', caption 'Quarterly'. Read in raw HTML markup, linearized text, and live browser render/screenshot -- all three agree, no superscript-cents split." }
+  headline_billing_basis: { value: unknown, source: "https://resume.io/pricing", evidence: "Card states 'Auto-renews to $49.95 billed every 3 months' -- a quarterly recurring cadence. The variable's closed value list (per_month_billed_annually/monthly, per_seat_per_month, one_time, usage_based) has no category for a quarterly cadence, so unknown is coded rather than forcing an inaccurate category; true cadence quoted here and in coder_note." }
+  first_charge_amount_usd: { value: "49.95", source: "https://resume.io/pricing", evidence: "Quarterly card's headline figure IS the first charge: no separate intro/discounted first payment is shown for this tier (contrast the losing '7-day Trial' candidate, which does have a distinct $2.95 first charge -- see coder_note). No multiplication performed." }
+  mandatory_addon_present: { value: "no", source: "https://resume.io/pricing", evidence: "Full feature list for Quarterly: 'Unlimited resumes and cover letters', 'All premium templates and colors', 'Unlimited PDF downloads' -- no separate required charge, minimum credit purchase, platform fee, or onboarding fee stated. Corroborated by ToS 'Fees And Payment' clause, which mentions no add-on module." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://resume.io/pricing", evidence: "Entry tier is billed quarterly, not annually; the product publishes no annual-prepayment option at all (only a 4-week-cycle plan and a 3-month/quarterly plan), so no annual-prepayment condition exists for the headline figure to disclose." }
+  annual_default_toggle: { value: no_toggle, source: "https://resume.io/pricing", evidence: "No monthly/annual toggle control exists in the page markup (checked for data-plan/data-price/data-period attributes and any toggle/switch element -- none found). The page instead shows three static side-by-side cards with fixed, non-toggleable cadences." }
+  free_plan_exists: { value: "yes", source: "https://resume.io/pricing", evidence: "Third card: '$0.00', caption 'free plan', features 'Only one resume and cover letter', 'Downloads only in TXT format', 'Limited resume sharing and analytics'. Presented as a standing tier alongside the paid cards, not a time-limited trial." }
+  free_plan_cap_documented: { value: some_quantified, source: "https://resume.io/pricing", evidence: "'Only one resume and cover letter' = quantified standing limit (number + dimension). 'Limited resume sharing and analytics' = not quantified (word 'Limited' with no number, per section 5.1's own example word). 'Downloads only in TXT format' is a format restriction, not counted as a limit (no number/dimension to quantify)." }
+  free_plan_cap_value: { value: "1 resume | 1 cover letter", source: "https://resume.io/pricing", evidence: "Only one resume and cover letter" }
+  free_plan_watermark: { value: unknown, source: "https://resume.io/pricing", evidence: "No mention of 'watermark' or output branding found anywhere in the pricing page, ToS, billing FAQ, or the free-usage help article ('How can I use resume.io for free?')." }
+  free_plan_duration: { value: perpetual, source: "https://resume.io/pricing", evidence: "Free plan shown as a standing tier alongside the paid tiers, with no expiry stated anywhere in the documents read." }
+  trial_exists: { value: "yes", source: "https://resume.io/pricing", evidence: "Card headline caption '7-day Trial'; billing FAQ: 'our 7-day trial is designed for you... With our trial plan, you have 7 days to cancel'; ToS EU Supplemental Terms: 'When entering into a 7-day trial subscription...'. NOTE: this is a PAID trial (first charge $2.95, not $0), so it does not meet the codebook definition's word 'free' literally -- coded yes because the vendor's own documents repeatedly and explicitly call it a 'trial' ('7-day Trial', 'premium trial', '7-day trial subscription') and trial_exists rule 3 keys on whether the documents 'mention a trial'. Token A-012 applies; see coder_note." }
+  trial_card_required: { value: unknown, source: "https://resume.io/pricing", evidence: "No document (pricing page, billing FAQ, ToS, right-of-withdrawal page) states whether payment details/a card are required to start the $2.95 trial. Per instrument rule, inference from the existence of the $2.95 charge itself is barred, so this stays unknown rather than being inferred." }
+  trial_length_days: { value: 7, source: "https://resume.io/pricing", evidence: "ADJUDICATION QUEUE A-012, resolved 2026-08-17 (orchestrator/A-012-resolution.md). WAS not_applicable; corrected to 7. Under the A-012 rule, trial_exists asks whether the vendor documents a time-limited PRE-COMMITMENT period of access to a paid tier, and this vendor's $2.95 / 7-day card is one; so the trial sub-variables take the documented figure rather than not_applicable. The correction is made to remove an INVALID STATE, not to move a score: the record as previously coded held the exact combination protocol section 8.3.3 declares unreachable and returns for re-coding, so it had no valid B3 score at all, and rule G4 taken alone would have scored the not_applicable as determinate and computed the same 3 the corrected record earns. Note the record was also self-contradictory: trial_auto_converts was coded \"yes\" from that same 7-day trial's own billing article while this variable denied the trial applied. Original coder reasoning, preserved: 'trial_length_days is scoped to the ENTRY paid tier (Quarterly) under codebook section 5.2. The Quarterly card, read in full, contains no trial-period language at all (straight $49.95... Auto-renews to $49.95 billed every 3 months, with a money-back guarantee, not a trial). The documented 7-day trial belongs only to the non-entry, losing 7-day Trial candidate.'" }
+  trial_auto_converts: { value: "yes", source: "https://help.resume.io/article/28-how-does-billing-work", evidence: "'If your trial is still active after 7 days and you do not cancel, you will automatically be enrolled in a premium subscription and billed every 4 weeks.' Corroborated by pricing page ('After 7 days, auto-renews to $29.95 billed every 4 weeks') and by help.resume.io/en/articles/3785088 ('After 7 days, the trial subscription automatically renews to a monthly subscription')." }
+  credit_system_present: { value: "no", source: "https://resume.io/pricing", evidence: "Plans are differentiated by unlimited/limited feature access and flat price only. No credits, tokens, points, coins, or generation-count currency mentioned on the pricing page, billing FAQ, or ToS (the one 'credit' hit found is 'credit card companies', a payment-method reference, not a metering unit)." }
+  credit_unit_defined: { value: not_applicable, source: "https://resume.io/pricing", evidence: "No credit system (credit_system_present = no)." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://resume.io/pricing", evidence: "No credit system." }
+  credit_rate_location: { value: not_applicable, source: "https://resume.io/pricing", evidence: "No credit system." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://resume.io/pricing", evidence: "Quarterly card: 'Unlimited resumes and cover letters', 'Unlimited PDF downloads' -- unmetered access to the software rather than a countable per-artifact charge, so per rule 2 the unit is per_seat_month." }
+  cost_per_output_computable: { value: "yes", source: "https://resume.io/pricing", evidence: "Entry tier price ($49.95, default display state) and billing period (every 3 months) are both published, with no per-output quota to estimate around (access is unlimited). See computation_assumptions for the arithmetic." }
+  computation_assumptions: { value: "Quarterly tier, $49.95 billed every 3 months per default display state; unlimited resumes/cover letters (no credit/quota system) = per_seat_month unit; 49.95/3=16.65 per seat per month. first_charge_amount_usd read directly from the headline figure, no multiplication performed (no annual-to-monthly conversion applicable to a quarterly-billed tier).", source: "https://resume.io/pricing", evidence: "" }
+  credit_rollover_policy: { value: not_applicable, source: "https://resume.io/pricing", evidence: "No credit system." }
+  failed_generation_charge_policy: { value: not_applicable, source: "https://resume.io/pricing", evidence: "Flat unlimited feature access with no metered generation step of any kind found in the pricing page, billing FAQ, or ToS -- there is nothing here that could 'fail' and consume an allowance." }
+  auto_renewal_default: { value: "on", source: "https://resume.io/tos", evidence: "'If your purchase is subject to recurring charges, then you consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until you notify us of your cancellation.' Corroborated by pricing page card badges ('Auto-renews to $49.95 billed every 3 months')." }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://resume.io/tos", evidence: "Stated in ToS Fees And Payment clause, on the pricing page (per-card 'Auto-renews to...' badges), in the billing FAQ ('billed every 4 weeks'), and on the Right of Withdrawal page ('automatically renewed for a period of 4 weeks') -- four document classes in agreement." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://resume.io/tos", evidence: "ToS and billing FAQ read in full; no commitment to notify the buyer before a renewal charge was found. Billing FAQ only offers an invoice on request after the fact ('You can request an invoice for your subscription at any time')." }
+  refund_policy_exists: { value: "yes", source: "https://resume.io/tos", evidence: "ToS: 'In general... all purchases... are final and no refunds will be provided. Some of our services may include a specific guarantee -- please see our package descriptions to confirm whether your package includes any guarantee.' The Quarterly (entry-tier) package description on the pricing page states: 'Yes. We offer a good ol' fashioned, no questions asked, 7-day money back guarantee... we'll give you a refund,' and the Quarterly card itself carries a '7-day money back guarantee' badge. See conflict_note for a scope nuance in the dedicated withdrawal page's wording." }
+  refund_window_days: { value: "7", source: "https://resume.io/pricing", evidence: "Quarterly (entry-tier) card badge: '7-day money back guarantee'; pricing-page FAQ: 'a good ol' fashioned, no questions asked, 7-day money back guarantee... within 7 days'." }
+  refund_conditions: { value: unconditional, source: "https://resume.io/pricing", evidence: "'Yes. We offer a good ol' fashioned, no questions asked, 7-day money back guarantee. If you purchase a plan and decide within 7 days that you didn't get your money's worth, we'll give you a refund.' No usage threshold, stated reason, or approval step beyond requesting within the window." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://resume.io/tos", evidence: "'you can cancel your subscription at any time by logging into your account...' Corroborated by the dedicated cancellation page (resume.io/contact/cancel-subscription: cancel using only the registration email, no login/password needed) and the billing FAQ ('Manage your billing settings directly from the resume.io app. Log in and click Account...')." }
+  refund_policy_location: { value: multiple, source: "https://resume.io/tos", evidence: "Stated in the ToS (Cancellation/Refunds clause + EU Supplemental Terms Right of Withdrawal clause), on the dedicated Right of Withdrawal page, and on the pricing page (FAQ + per-card badges) -- three document classes." }
+  commercial_use_lowest_tier: { value: unknown, source: "https://resume.io/tos", evidence: "The output (resume/cover letter) exists and is owned by the user (see output_ownership_statement), but no document addresses whether the user may use it commercially. ToS Intellectual Property Rights clause restricts commercial exploitation of the Platform's own template/software 'Content' and 'Marks' without permission -- that governs the vendor's own IP, not a commercial-use license over the user's finished, user-owned output. Silence on the output itself makes this unknown, not not_applicable." }
+  watermark_removal_tier: { value: unknown, source: "https://resume.io/tos", evidence: "No document (pricing page, ToS, billing FAQ, free-usage help article) mentions watermarking or branding of outputs at any tier. Output format (PDF/TXT) is the kind of artifact that could carry a watermark in principle, so this is not coded not_applicable." }
+  output_ownership_statement: { value: user_owns, source: "https://resume.io/tos", evidence: "'Contributions' are defined to include 'text, writings, resumes, video, audio, photographs, graphics, comments, suggestions, or other material' the user submits/creates. 'We do not assert any ownership right over your Contributions. You retain full ownership of all of your Contributions and any intellectual property rights or other proprietary rights associated with your Contributions.'" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://resume.io/pricing", evidence: "Quarterly (entry tier) states 'Unlimited resumes and cover letters' and 'Unlimited PDF downloads' -- explicit no-limit statements. ToS read in full for a qualifying fair-use/discretionary clause; none found (see unquantified_limit_clause), so both explicit-unlimited statements count as quantified per section 5.1 rule 3." }
+  unquantified_limit_clause: { value: absent, source: "https://resume.io/tos", evidence: "Terms of Use, EU Supplemental Terms, and US Supplemental Terms read in full end to end. No fair-use, reasonable-use, excessive-use, or discretionary-throttling clause tied to volume/intensity of use was found. The only 'excessive use' phrase found ('excessive use of capital letters and spamming') is a conduct prohibition, not a usage-volume limit, and does not trigger present per the variable's own rule 3." }
+
+coder_note: |
+  Third-party search results (PitchMeAI, saasworthy, enhancv, trybeem, pissedconsumer) used
+  only to LOCATE official URLs, never as a coded value's source, per protocol 6.2/6.3.
+  resumeio.com and instaresume.io are DIFFERENT, unrelated domains surfaced by search and are
+  NOT used as sources; vendor_home_url per the frozen frame is https://resume.io.
+
+  ENTRY TIER SELECTION (sampling-rules 7.2): two eligible paid candidates on the pricing page,
+  both generally available, no-sales-contact, standing (not a limited-time promo):
+    - "7-day Trial" ($2.95 first charge) -- LOST. Card discloses its own recurring rate:
+      "After 7 days, auto-renews to $29.95 billed every 4 weeks" (pricing page). Annualizing
+      the disclosed recurring rate (not the $2.95 teaser, which is a one-time 7-day intro
+      charge, not a monthly rate -- multiplying it by 12 would be a reading error): $29.95 x
+      13 (52/4 four-week cycles per year) = $389.35/yr. A conflicting official source (Right of
+      Withdrawal page) states the renewal is $24.95/4wks instead (see conflict_note); even on
+      that lower figure, $24.95 x 13 = $324.35/yr. Either way this candidate's true
+      annual-equivalent cost is far above Quarterly's, so the conflict does not change the
+      entry-tier outcome.
+    - "Quarterly" ($49.95, billed every 3 months, no intro discount) -- WON. Annual-equivalent
+      $49.95 x 4 = $199.80/yr, the lowest of the two eligible candidates by a wide margin
+      (roughly 1.6x-2.0x cheaper than the "7-day Trial" candidate's true annualized cost,
+      depending on which conflicting renewal figure is used).
+  entry_tier_name = Quarterly. This is the exact "cheap non-zero intro period that auto-converts
+  to a much higher recurring rate" pattern flagged for this product family: the $2.95 figure is
+  the most prominent number on the page but is NOT the entry tier under the annual-equivalent
+  rule, because it is not what a buyer actually pays across a year.
+
+  A-012: resume-io sells a cheap non-zero (not free) time-limited intro period ($2.95 for 7
+  days on the non-entry "7-day Trial" card) that auto-converts to a much higher recurring rate.
+  trial_exists/trial_auto_converts were coded "yes" because the vendor's own documents
+  repeatedly call it a "trial" ("7-day Trial", "premium trial", "7-day trial subscription"),
+  even though it is not free; trial_card_required stayed unknown per the no-inference rule.
+
+  UNPRICED PLANS: the billing FAQ (help.resume.io) references "6-Month & Yearly Subscriptions"
+  as an offered option ("Our 6-month or yearly subscriptions offer big savings..."), but no
+  price for either was found on the live pricing page, the billing FAQ itself, the
+  billing/accounts help-center category listing, or any other official page located. Because no
+  official document publishes a price for these, they could not be evaluated as entry-tier
+  candidates under the annual-equivalent rule (no figure to annualize), and
+  headline_price_usd/entry_tier_name are coded from the two candidates that ARE priced. A
+  vendor help article naming subscription options it never prices anywhere findable is itself a
+  transparency finding.
+
+  Free plan: "Downloads only in TXT format" plus "Only one resume and cover letter" (quantified)
+  and "Limited resume sharing and analytics" (unquantified) -- see conflict_note for a PDF-access
+  discrepancy against a help article.
+
+  TOOLING NOTE (check_price_arithmetic.py): running the checker prints "BASIS resume-io: no
+  period defined for 'unknown' (headline 49.95, first 49.95)". Reviewed and not an error:
+  headline_price_usd and first_charge_amount_usd are equal (49.95 = 49.95, ratio 1.00, no gap)
+  because the entry tier's headline figure IS its first charge with no intro discount. The flag
+  fires only because headline_billing_basis=unknown has no entry in the script's period lookup
+  table (it only knows per_month_billed_annually/monthly, per_seat_per_month, per_year,
+  one_time) -- unknown was coded because the tier's actual cadence (quarterly, "billed every 3
+  months") has no matching category in the codebook's closed value list for that variable, per
+  the evidence recorded on headline_billing_basis above. No multiplication was performed and
+  none was needed.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "(1) Renewal price for the non-entry '7-day Trial' plan: pricing page states 'auto-renews to $29.95 billed every 4 weeks' (https://resume.io/pricing) vs Right of Withdrawal page states renewal is '$24.95' for the same 4-week period (https://resume.io/right-of-withdrawl) -- does not affect any coded value since this plan is not the entry tier, recorded per protocol as a finding in its own right even though not decisive. (2) Free-plan download format: pricing page states free-plan downloads are 'Downloads only in TXT format' (https://resume.io/pricing) vs help article states free users can download 'a PDF file with our Vancouver template or as a text file (TXT)' (https://help.resume.io/en/articles/3785088) -- coded free_plan_cap_value/free_plan_cap_documented from the higher-ranked pricing page. (3) Refund-guarantee scope: the dedicated Right of Withdrawal page and the ToS EU Supplemental Terms both word the money-back guarantee specifically around 'a 7-day trial subscription' (https://resume.io/right-of-withdrawl, https://resume.io/tos), while the pricing page displays a '7-day money back guarantee' badge directly on the Quarterly (entry-tier, non-trial) card and the ToS general clause defers to 'package descriptions' for guarantee scope (https://resume.io/pricing) -- coded refund_policy_exists=yes / refund_window_days=7 for the entry tier from the pricing page's direct per-card evidence."
+register_events: []
+status: complete

@@ -1,0 +1,16 @@
+SOURCE: https://help.tealhq.com/en/articles/9519206-using-ai-bullets
+TITLE: "Using AI: Bullets | Teal Knowledge Base"
+ACCESSED: 2026-08-15 (pass-2 collection)
+METHOD: Browser render (static WebFetch returned HTTP 403 Forbidden on this domain)
+ARCHIVE.ORG: not separately attempted, same rate-limit pattern as other help.tealhq.com articles this session; recorded archive_failed. This file is the dated local verbatim capture.
+Page says "Updated over 2 weeks ago"
+
+=== VERBATIM PAGE TEXT (key passages) ===
+
+"Free Teal members will have 5 credits to use for AI bullet generation, and Teal+ members have unlimited generations."
+
+"When you select 'Improve with AI,' our generator will provide you new bullet options based on that existing text. You will see three options appear! If you are not satisfied with the generated results, you can click 'Regenerate' to view three new options."
+
+Full walkthrough of "Write with AI" generation modes: Automatic, Keywords, Job Description, Coach Me, Custom Prompt. No statement anywhere in the article about whether a failed/errored generation or a "Regenerate" click consumes an additional credit — silent on failed_generation_charge_policy. No mention of watermark or commercial use.
+
+NOTE: this article states "5 credits" for free-tier AI bullet generation, agreeing with the "Teal vs. Teal+" comparison article but conflicting with the "10 Credits" stated on tealhq.com/pricing (live pricing page, higher authority for this pricing-class variable) and on the trial-faq help article. See conflict_note in record. Pricing page value (10) is coded per protocol section 6.2 hierarchy.

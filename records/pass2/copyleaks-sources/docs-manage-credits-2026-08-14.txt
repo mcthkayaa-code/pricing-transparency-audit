@@ -1,0 +1,22 @@
+LOCAL CAPTURE (archive.org save not attempted individually — same systemic "Job failed" seen on the two
+higher-priority URLs tried; local_copy_only per deviations-for-coders.md)
+URL: https://docs.copyleaks.com/concepts/management/manage-your-credits/
+Accessed: 2026-08-14
+Method: rendered browser read (Claude_Browser)
+Title: Manage Your Credits - Copyleaks API Docs
+
+Relevant verbatim excerpt (failed-generation charging):
+"Once a scan is completed, Copyleaks sends a Completed Webhook to your application, including details about
+the final cost of the scan. By tracking this information, you can develop insights into your expected
+service costs and optimize your usage accordingly. You are only charged for successfully completed scans.
+If a scan fails due to an error, the credits will be automatically refunded."
+
+Context: this is Copyleaks' API documentation (docs.copyleaks.com), describing the credit-charging mechanism
+of the underlying scan engine that the web-app product (Personal/Pro) also runs on. Cited as official product
+documentation (rank-2 source) for the general credit/failed-scan charging mechanism, not as a claim specific
+to the separately-priced API product line at api.copyleaks.com (which is a different pricing surface, not
+coded in this record).
+
+Also relevant (credit definition/consumption framing, corroborating but not the primary source for the rate):
+"Copyleaks provides a comprehensive suite of content integrity services through a flexible, credit-based
+API." / "You are only charged for successfully completed scans."

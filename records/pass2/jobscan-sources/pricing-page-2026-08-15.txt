@@ -1,0 +1,110 @@
+URL: https://app.jobscan.co/plan
+Accessed: 2026-08-15
+Method: Rendered browser read (static WebFetch returned empty shell only — SPA). Cookies: declined non-essential ("Decline All"). Desktop viewport 1280x900. Read twice (get_page_text + screenshot) to confirm figures in a second representation.
+
+=== RENDERED TEXT (get_page_text) ===
+Choose your plan
+Boost your interview chances. Cancel any time.
+
+Free
+$0
+forever
+Select
+5 Free Resume Scans monthly
+5 ATS & Recruiter Findings
+Job Tracker
+Post Interview Thank You Notes
+Resume Builder
+Resume Manager
+Chrome Extension
+Jobscan Learning Center
+
+Quarterly [column header; card marked "Most popular"]
+$29.98
+per month
+Billed as $89.95 every 3 months
+For 3 months after FREE trial Save 40%
+Try 7 Days Free
+Unlimited Resume Scans
+Unlimited AI Optimizations
+AI Cover Letter Generator
+AI Bullet Point Generator
+Linkedin Optimizer (after trial)
+Unlimited keyword comparisons
+Unlimited ATS & Recruiter Findings
+AI Job Match
+20% off Auto Apply Credits (after trial)
+20% off Interview Practice (after trial)
+AI Keyword Synonym Detector
+Job Tracker
+Post Interview Thank You Notes
+AI Resume Builder
+Resume Manager
+Chrome Extension
+ATS Revealed eBook
+ATS Friendly Resume Templates
+Premium Cover Letter Template
+Jobscan Learning Center
+
+Monthly
+$49.95
+per month
+Billed as $49.95 every month
+Select
+Unlimited Resume Scans
+Unlimited AI Optimizations
+AI Cover Letter Generator
+AI Bullet Point Generator
+Linkedin Optimizer
+Unlimited keyword comparisons
+Unlimited ATS & Recruiter Findings
+AI Job Match
+20% off Auto Apply Credits
+20% off Interview Practice
+AI Keyword Synonym Detector
+Job Tracker
+Post Interview Thank You Notes
+AI Resume Builder
+Resume Manager
+Chrome Extension
+ATS Revealed eBook
+ATS Friendly Resume Templates
+Premium Cover Letter Template
+Jobscan Learning Center
+
+Are you an organization? Sign up here.
+
+FAQs
+How long will my free trial last?
+You will have 7 days from the time you start your trial.
+
+When will I be billed after my free trial?
+Once your trial ends, you will be billed for the next quarter of your subscription if you selected a quarterly plan.
+
+Can I cancel my free trial?
+You may cancel your trial at any time before the end of your trial period. If you cancel on or before your trial expiration date, your account will not be charged for the cost of the plan you selected when you signed up for your trial. There is no trial period if you opted out to gain full access to LinkedIn Optimization or selected a monthly plan. You can cancel your plan directly in Jobscan or contact our support team to help.
+
+Can I cancel any time?
+You may cancel at any time directly in Jobscan or contact our support team to help.
+
+What forms of payment do you accept?
+You can purchase Jobscan with any major credit card.
+
+Will I be charged sales tax?
+Yes. We will apply state and local sales tax based on your billing address.
+
+What is your cancellation policy?
+If you cancel your plan before the next renewal cycle, you will retain access to paid features until the end of your subscription period. When your subscription expires, you will lose access to paid features and all data associated with those features.
+
+Is my data safe and secure?
+We use industry-standard encryption to protect your information. We do not store your credit card information. We regularly back up your data to prevent data loss and aid in recovery to better protect your information.
+
+Start with a free Premium trial for 7 days [CTA: Start free trial]
+
+=== SECOND REPRESENTATION (screenshot, desktop 1280x900, confirms same figures) ===
+Card layout confirmed via screenshot: three columns "Free" / "Quarterly" (ribbon "Most popular", pre-highlighted in the Free/Quarterly/Monthly toggle pills) / "Monthly", all three visible simultaneously without needing to click a toggle. Screenshot shows "$29.98" large bold, "per month" beneath, "Billed as $89.95 every 3 months" beneath that in bold, "For 3 months after FREE trial Save 40%" in green, "Try 7 Days Free" blue CTA button. Matches rendered text exactly. Arithmetic check: 29.98/49.95 = 0.6002 -> 1-0.6002 = 39.98% ~ "Save 40%" -- confirms "Save 40%" = quarterly monthly-equivalent vs monthly-plan price comparison, NOT a temporary/reverting promo rate.
+
+Annual-equivalent computation for entry-tier selection (sampling-rules 7.2):
+- Quarterly: $89.95 x 4 = $359.80/yr (or $29.98 x 12 = $359.76/yr)
+- Monthly: $49.95 x 12 = $599.40/yr
+Both eligible (generally available, no sales contact, standing recurring plans). Quarterly has lower annual-equivalent cost -> entry tier = Quarterly.

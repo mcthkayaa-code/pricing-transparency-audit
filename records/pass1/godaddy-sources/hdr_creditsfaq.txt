@@ -1,0 +1,20 @@
+HTTP/2 302 
+server: nginx
+date: Fri, 07 Aug 2026 08:50:58 GMT
+content-type: text/html; charset=utf-8
+content-length: 370
+location: https://web.archive.org/web/20260807085043/https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828
+x-app-server: wwwb-app223-dc8
+x-ts: 302
+x-tr: 18106
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-save-SERVER=wwwb-app223; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

@@ -1,0 +1,43 @@
+LOCAL CAPTURE (archive.org save not attempted individually for these — same systemic "Job failed" seen on the
+two higher-priority URLs tried; local_copy_only per deviations-for-coders.md)
+Accessed: 2026-08-14
+Method: rendered browser read (Claude_Browser)
+
+=== URL 1: https://help.copyleaks.com/hc/en-us/articles/24287690126349-What-is-the-cancellation-policy-for-Copyleaks ===
+Title: What is the cancellation policy for Copyleaks?
+Category: BILLING
+Answer:
+You can cancel your subscription at any time.
+Refunds will only cover the most recent subscription cycle. To receive a refund, you must submit a refund
+request within the first 10 days of the billing cycle and no credits must have been used during that period.
+Payment processing fees will not be deducted from the original price if the refund request has been
+submitted within 24 hours of the payment date.
+You can review our Cancellation Policy and complete Terms of Use from our page here.
+
+=== URL 2: https://help.copyleaks.com/hc/en-us/articles/23768575396365-How-do-I-cancel-my-subscription ===
+Title: How do I cancel my subscription?
+Category: BILLING / Cancellations
+Answer:
+Cancelling your Copyleaks Subscription
+To cancel your subscription:
+1. Go to Settings and select Billing.
+2. Click the Options dropdown menu in the top right corner and click on Cancel Subscription.
+3. From here you can complete a brief survey and cancel your subscription. You will have access to your
+   account until the end of the billing cycle.
+Please note, you will lose access to your scan history when you cancel your subscription.
+[No mention of contacting support being required — self-service flow described entirely within account
+Settings > Billing.]
+
+=== URL 3: https://help.copyleaks.com/hc/en-us/articles/23768714188173-Do-my-credits-expire-if-I-don-t-use-them-at-the-end-of-each-billing-cycle ===
+Title: Do my credits expire if I don't use them at the end of each billing cycle?
+Category: BILLING / Manage
+Answer:
+Yes, credits expire at the end of each billing cycle.
+For example: if you purchase a 1 month 500 credit plan on April 10th and you only use 400 credits by May 9th,
+the unused 100 credits will not roll over to the next month.
+
+=== NOTE ===
+help.copyleaks.com/hc/en-us/search requires login ("To access this page, you have to log in to Help Center") —
+per documents-only rule, this page was NOT opened for content; search was performed via WebSearch (third-party
+index) to locate article URLs only, then each official article page was read directly and independently as
+above. No login attempted, no account created.

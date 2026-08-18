@@ -1,0 +1,170 @@
+product_id: phrasly
+product_name: Phrasly
+category: AI humanizer
+product_status: active
+paid_submission: "no"
+entry_tier_name: Unlimited
+coder_pass: 1
+coder_role: primary
+collection_date: "2026-08-10"
+recheck_date: not_applicable
+primary_source_url: https://phrasly.ai/pricing
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "Rendered 2026-08-10 from a Turkey-based network egress: currency displayed = TRY (non_usd) on both plan cards; billing toggle default = Annual (switch aria-checked=true); two paid cards shown, 'Start Trial' (3 Day Access, TRY 95.44 then TRY 953.90/mo billed annually) and 'Upgrade Plan' (Unlimited, TRY 524.43/mo billed annually, struck-through reference TRY 1,192.49/mo); no free-tier card appears on this page; header shows a flag icon alt-labelled 'United States' while price renders in TRY (not interacted with, per protocol 6.8 rule 4)."
+
+sources:
+  - { url: "https://phrasly.ai/pricing", kind: pricing, accessed: "2026-08-10", archive: local_copy_only, note: "Static fetch/curl returned Cloudflare 403 'Just a moment' challenge (auto-resolved on render, no CAPTCHA solved); rendered read via headless browser. web.archive.org /save/ endpoint returned HTTP 520 on 2 attempts (systemic outage at access time, confirmed via web.archive.org root=200 but /save/=520); local rendered copy + DOM-HTML second-representation saved to phrasly-sources/pricing-rendered.txt" }
+  - { url: "https://phrasly.ai/terms", kind: tos, accessed: "2026-08-10", archive: local_copy_only, note: "Full document read to end (32 sections). web.archive.org /save/ HTTP 520 on 2 attempts. Local copy: phrasly-sources/terms-of-service.txt" }
+  - { url: "https://phrasly.ai/ai-humanizer", kind: docs, accessed: "2026-08-10", archive: local_copy_only, note: "Official product page; source for free-tier variables (pricing page itself never shows a free tier). Archive not attempted separately after 2 systemic /save/ failures on other URLs same session; local copy: phrasly-sources/ai-humanizer-product-page.txt" }
+  - { url: "http://archive.org/wayback/available?url=phrasly.ai/pricing", kind: other, accessed: "2026-08-10", archive: not_applicable, note: "D-003 currency check tool, not a coded-value source. Full detail in phrasly-sources/currency-check-d003.txt" }
+  - { url: "https://web.archive.org/web/20260810074255/https://phrasly.ai/pricing", kind: other, accessed: "2026-08-10", archive: not_applicable, note: "D-007 re-check ONLY (Arm 2, second attempt beyond the original D-003 check). A same-day capture, newer than any available to the original check -- confirmed via direct fetch to be Cloudflare's 'Just a moment...' bot-challenge page (5,998 bytes), not the pricing page; archive.org's own crawler was blocked too. Not a coded-value source. Full detail in phrasly-sources/d007-currency-recheck-2026-08-10.txt." }
+
+variables:
+  headline_price_usd: { value: 10.99, source: "https://phrasly.ai/pricing", evidence: "ADJUDICATION QUEUE A-020, resolved 2026-08-17 (orchestrator/A-020-A-002-resolution.md). WAS unknown; recoded. The vendor's own pricing page ships a payment-processor price catalogue inline; every countryCodes key in it was enumerated (BR, ZA, IN, MY, PH, ID) and there is NO US key and no TR key, so a US reader falls through to the base price by construction and exactly one USD figure is reachable. Price objects carry vendor timestamps -- created 2024-11-04, last modified 2026-04-24, both pre-window -- which gives vendor-stamped temporal warrant rather than only an FX corroboration. WHY THIS IS NOT AN A-019 BREACH: the adjudicator first reached A-019 on the queue's stated question and held that a processor's price object IS an internal layer, refusing the escape that this payload is live where another's was inert, because the rule tests where data is PRESENT, not whether something consumes it. That did not decide the record. A-019 bars a figure present ONLY in the payload; this price is displayed to every reader (TRY 524.43 here, $10.99 in the US), and the payload supplies not the price but its DENOMINATION -- the exact thing A-013 made vendor-centric. DIRECTION: toward the vendor and against this study's headline. It removes two unknowns and takes APTI component A from 0.35 to 1.00. Not uniformly favourable: it makes the advertised-versus-charged gap computable at 12.0x for the first time. ORIGINAL CODING PRESERVED: CHANGED under D-007 re-check (2026-08-10) -- see coder_note and phrasly-sources/d007-currency-recheck-2026-08-10.txt for the full arm-by-arm log. Unlimited card: 'TRY 524.43' (active price) / 'TRY 1,192.49' (struck-through reference price) / 'per month, billed annually' (re-confirmed live 2026-08-10, minor FX drift to ~TRY524/953 on the trial card, unrelated). Arm 1 of the amended rule found no selector, no working currency URL parameter, but DID re-confirm a real documentary currency statement already flagged in this record's own conflict_note: ToS, 'All payments shall be in US dollars' -- a general clause, not scoped to the trial -- naming a currency but no figure for the Unlimited tier. Arm 2 (this record's own D-003 archive check, re-verified fresh, PLUS a same-day 2026-08-10 capture newer than the original check had) found nothing readable both times: the original capture is a 34,722-byte pre-hydration shell with zero price content in any currency, and the newest capture is Cloudflare's own bot-challenge page (archive.org's crawler blocked too). Per the amended rule, non_usd requires positive evidence the vendor publishes ONLY a non-USD price, and the ToS argues against that framing while no arm supplies a number. unknown is the value for 'no figure could be determined,' not non_usd." }
+  headline_billing_basis: { value: "per_month_billed_annually", source: "https://phrasly.ai/pricing", evidence: "'TRY 524.43 / month' with 'per month, billed annually' printed beneath, annual toggle preselected (aria-checked=true) on load" }
+  first_charge_amount_usd: { value: 131.88, source: "https://phrasly.ai/pricing", evidence: "ADJUDICATION QUEUE A-020, resolved 2026-08-17. WAS unknown; recoded to 131.88 = 10.99 x 12, on the same basis and with the same reasoning as headline_price_usd on this record. The pricing page qualifies the figure billed annually and the ToS section 5 states the yearly subscription is charged once, so the x12 is documented rather than assumed. ORIGINAL CODING PRESERVED: CHANGED under D-007 re-check (2026-08-10) -- same basis as headline_price_usd (see that field and phrasly-sources/d007-currency-recheck-2026-08-10.txt). Computed TRY equivalent would be TRY 6,293.16 = 524.43 x 12 (basis for x12: pricing page 'billed annually' qualifier + ToS section 5, 'the yearly subscription will automatically renew unless cancelled', unchanged reasoning, currency-independent), but with headline_price_usd now unknown rather than a coded non-USD figure, and no document anywhere stating a USD number for the Unlimited tier, no USD first-charge figure can be computed either. unknown, not non_usd, per the amended rule -- no arm returned a readable price to annualize." }
+  mandatory_addon_present: { value: "no", source: "https://phrasly.ai/pricing", evidence: "Unlimited tier's feature list (Plagiarism Check words/mo, Content Generator words/mo, words/process, AI Detection Bypass, watermark-free, Beta access) and the Terms of Service were read in full; no required extra charge, minimum credit purchase, platform fee, or onboarding fee is documented for this tier. The on-page 'content generation credits' (15/month) are presented as included in the plan, not a separate purchase." }
+  annual_condition_disclosure: { value: "adjacent", source: "https://phrasly.ai/pricing", evidence: "'per month, billed annually' is printed directly beneath the TRY 524.43 figure, inside the same price block/card" }
+  annual_default_toggle: { value: "annual_preselected", source: "https://phrasly.ai/pricing", evidence: "Toggle DOM: role=switch aria-checked=\"true\" data-checked, positioned between 'Monthly' and 'Annual' labels, checked side = Annual, on first load before any interaction" }
+  free_plan_exists: { value: "yes", source: "https://phrasly.ai/ai-humanizer", evidence: "FAQ: 'Is Phrasly's AI humanizer free? Yes. Create a free Phrasly account to start humanizing at no cost. The free tier includes three humanization modes and full access to Phrasly's unlimited AI detector.' This free account is distinct from, and not time-limited like, the separately-named $2.00/3-day 'Trial Period' in the Terms of Service." }
+  free_plan_cap_documented: { value: "some_quantified", source: "https://phrasly.ai/ai-humanizer", evidence: "AI detector: 'Completely free, unlimited usage, no caps' (explicit no-limit statement, no qualifying clause found tied to the detector specifically -> quantified via the unlimited carve-out). Free-tier humanizer word allowance: the page's own FAQ 'How many words can I humanize for free?' never states a number -- it redirects to describing the PAID allowance instead -> not quantified. Mix of one quantified and one unquantified limit." }
+  free_plan_cap_value: { value: "unlimited AI detector (no cap stated)", source: "https://phrasly.ai/ai-humanizer", evidence: "'Free and Unlimited...Completely free, unlimited usage, no caps' (detector). Free-tier humanizer word limit: not stated in any document found -- omitted per section 5.1's rule against paraphrasing an unquantified limit into a number." }
+  free_plan_watermark: { value: "no", source: "https://phrasly.ai/pricing", evidence: "FAQ: 'Will my texts be watermarked in the future? No. Here's why: Phrasly has built its own AI models...' Statement is general/unscoped rather than presented as a tier-by-tier comparison grid; coder_note records this scope caveat." }
+  free_plan_duration: { value: "perpetual", source: "https://phrasly.ai/ai-humanizer", evidence: "The free account is presented as a standing, ongoing tier ('Create a free account to start humanizing at no cost') with no expiry stated anywhere, distinct from the explicitly time-boxed, separately-named paid 'Trial Period' (3 days) in the Terms of Service." }
+  trial_exists: { value: "yes", source: "https://phrasly.ai/terms", evidence: "Section 6, 'TRIAL': 'New users who register...are eligible for a 3-day trial (\"Trial Period\").'" }
+  trial_card_required: { value: "unknown", source: "https://phrasly.ai/terms", evidence: "Section 6 states 'users are required to pay a non-refundable fee of $2.00 USD...to start the Trial Period' but never uses the words 'card' or 'payment method' in that clause. Per binding agent guidance, trial_card_required may not be inferred from the mere existence of a charge; no explicit card/payment-method statement was found, so unknown stands despite the practical likelihood." }
+  trial_length_days: { value: 3, source: "https://phrasly.ai/terms", evidence: "'eligible for a 3-day trial (\"Trial Period\")'" }
+  trial_auto_converts: { value: "yes", source: "https://phrasly.ai/terms", evidence: "'If the Trial Period is not canceled before its conclusion, the user's account will automatically be charged the full subscription amount based on the plan and payment terms the user agreed to at the time of initiating the checkout process.'" }
+  credit_system_present: { value: "yes", source: "https://phrasly.ai/pricing", evidence: "On-page FAQ: 'What are content generation credits? You get 15 monthly credits to generate papers, blog posts, or other content that you specify.' An intermediate 'credits' currency is used for this feature (distinct from the word-based allowances stated for humanization/plagiarism-check/content-generator elsewhere on the same cards)." }
+  credit_unit_defined: { value: "yes", source: "https://phrasly.ai/pricing", evidence: "'You get 15 monthly credits to generate papers, blog posts, or other content that you specify...We limit this to 15 generations because scanning the web and verifying sources takes a lot of computing power' -- ties the credit unit to a recognizable output (one generated document/piece of content per credit)." }
+  credit_to_output_rate_published: { value: "partial", source: "https://phrasly.ai/pricing", evidence: "The credit-to-output rate (15 credits = 15 generations) is published only for the secondary 'content generation' feature. The product's principal output (per category: AI humanizer / humanized text) is metered in direct word units, not credits, and no credit rate applies to it." }
+  credit_rate_location: { value: "pricing_page", source: "https://phrasly.ai/pricing", evidence: "'content generation credits' FAQ entry is on the pricing page's own FAQ accordion" }
+  cost_per_output_unit: { value: "per_seat_month", source: "https://phrasly.ai/pricing", evidence: "Unlimited tier sells unmetered flat-rate access ('Unlimited AI Humanizations') per account/month rather than a countable per-unit artifact, matching the per_seat_month case (Vendor L pattern in codebook example)." }
+  cost_per_output_computable: { value: "yes", source: "https://phrasly.ai/pricing", evidence: "Per_seat_month unit: cost per output-unit is the plan price itself, no allowance division required. See computation_assumptions." }
+  computation_assumptions: { value: "Unlimited tier, annual toggle default, TRY524.43/mo billed annually (D-007 re-check 2026-08-10: headline_price_usd=unknown, was non_usd; no USD figure published either way). per_seat_month=unmetered, cost/output=price itself=524.43 TRY. first_charge=524.43x12=6293.16 TRY/yr (TRY-denominated only, first_charge_amount_usd itself is unknown); basis=pricing page 'billed annually' + ToS S5 'yearly subscription will automatically renew'.", source: "https://phrasly.ai/pricing", evidence: "figures underlying this arithmetic are individually sourced in headline_price_usd, first_charge_amount_usd, and cost_per_output_unit above. D-007 re-check: this variable's decision rule does not gate on headline_price_usd's specific value/currency, so the TRY-denominated computation is unaffected in figures; only the stale non_usd cross-reference is corrected. See phrasly-sources/d007-currency-recheck-2026-08-10.txt." }
+  credit_rollover_policy: { value: "unknown", source: "https://phrasly.ai/terms", evidence: "Neither the Terms of Service nor the pricing page's FAQ states what happens to unused monthly content-generation credits at period end; the word 'credit' does not appear in the Terms of Service at all." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://phrasly.ai/terms", evidence: "No document found states whether a failed/errored humanization or content-generation attempt consumes the allowance or credit." }
+  auto_renewal_default: { value: "on", source: "https://phrasly.ai/terms", evidence: "Section 5: 'If your order is subject to recurring charges, then you consent to us charging your payment method on a recurring basis...until such time as you cancel'; also 'the yearly subscription will automatically renew unless cancelled.'" }
+  auto_renewal_disclosure_location: { value: "terms_only", source: "https://phrasly.ai/terms", evidence: "Auto-renewal is stated explicitly in Terms of Service section 5; the pricing page only says 'No hidden fees. Cancel anytime.', which does not itself state that billing recurs automatically." }
+  renewal_notice_commitment: { value: "no_notice_stated", source: "https://phrasly.ai/terms", evidence: "Section 6: 'All billing-related communications, including but not limited to payment receipts and subscription confirmations, are sent by our Merchant of Record, Paddle...' -- these are post-charge receipts/confirmations, not a forward-looking advance-notice commitment; no advance-notice clause was found anywhere in the document." }
+  refund_policy_exists: { value: "yes", source: "https://phrasly.ai/terms", evidence: "Section 29, 'REFUNDS': 'We offer a 14-day refund policy for all purchases.'" }
+  refund_window_days: { value: 14, source: "https://phrasly.ai/terms", evidence: "'We offer a 14-day refund policy for all purchases.'" }
+  refund_conditions: { value: "conditional", source: "https://phrasly.ai/terms", evidence: "'Refunds are only available if there has been absolutely no usage on your account whatsoever...Any usage of our services, at any point, immediately voids refund eligibility...To request a refund within the 14-day window, please contact our customer support team.'" }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://phrasly.ai/terms", evidence: "Section 7/29: '...Cancel immediately through your account dashboard by navigating to the Settings page, proceeding to the Billing section, and pressing the \"Cancel Subscription\" button, which will cancel your subscription immediately.'" }
+  refund_policy_location: { value: "terms", source: "https://phrasly.ai/terms", evidence: "Refund terms are section 29 of the general Terms of Service document; no standalone refund-policy URL exists for the consumer product (a separate refund-policy page exists only on business.phrasly.ai, the distinct Business/API product, not used for this record)." }
+  commercial_use_lowest_tier: { value: "unknown", source: "https://phrasly.ai/terms", evidence: "Terms of Service read in full; intellectual-property sections (2, 9, 10) cover Phrasly's own content/marks and user-submitted forum Contributions, not commercial-use rights in the humanizer's generated output text. The one on-point clause (32.3, Content Ownership) is explicitly scoped to API Licensees, a separate enterprise product, and is not used as evidence here." }
+  watermark_removal_tier: { value: "no_watermark", source: "https://phrasly.ai/pricing", evidence: "FAQ: 'Will my texts be watermarked in the future? No...' plus both plan cards ('3 Day Access' and 'Unlimited') list 'Watermark and future proof' as an included feature; no tier is shown with watermarking applied." }
+  output_ownership_statement: { value: "unknown", source: "https://phrasly.ai/terms", evidence: "No clause found addressing who holds rights in the AI-generated/humanized output text for the standard consumer product; the only ownership clause located (32.3) is explicitly restricted to API Licensees and not used as evidence for this consumer-product record." }
+  usage_cap_quantified: { value: "some_quantified", source: "https://phrasly.ai/pricing", evidence: "Unlimited tier limits: '20,000 Plagiarism Check words/month' and 'Up to 30,000 Content Generator words/month' (quantified rates), '5,000 words per process' (quantified standing limit) -- all quantified. 'Unlimited AI Humanizations' is disqualified from the unlimited carve-out by ToS section 6's clause 'subject to fair use and our Acceptable Use Policy' (no figure given), so it is not quantified. Mix -> some_quantified." }
+  unquantified_limit_clause: { value: "present", source: "https://phrasly.ai/terms", evidence: "Section 6: '...will automatically receive unlimited humanization uses as part of their chosen subscription plan, subject to fair use and our Acceptable Use Policy.' No figure defines 'fair use'; no separately published Acceptable Use Policy document was locatable anywhere on the site (footer legal nav lists only Terms of Service / Privacy Policy / Cookie Policy / Ethics)." }
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules 7.2): the pricing page shows exactly two paid
+  cards in its default (annual-preselected) state: "3 Day Access" (TRY 95.44 upfront,
+  "then TRY 953.90 per month, billed annually") and "Unlimited" (TRY 524.43/mo billed
+  annually, struck-through reference TRY 1,192.49/mo). "3 Day Access" is coded as the
+  product's paid trial mechanism (ToS section 6, "TRIAL", $2.00 USD/3-day, domain-4
+  territory) rather than a competing standing plan, excluded from entry-tier candidacy
+  under 7.2 criterion 3 (time-limited, not a standing plan). "Unlimited" is therefore
+  the only eligible candidate and is entry_tier_name. Robustness check: even under the
+  alternative reading that treats "3 Day Access" as an eligible standing candidate, its
+  own annual-equivalent cost (953.90 x 12 = TRY 11,446.80, using the figure the card
+  itself presents "per month, billed annually") is HIGHER than Unlimited's (524.43 x 12
+  = TRY 6,293.16), so Unlimited still wins on lowest annual-equivalent cost either way.
+  Both readings are recorded here so adjudication can pick either without recoding.
+
+  A-012: Phrasly sells a paid, time-limited intro period ("3 Day Access" / Trial
+  Period): $2.00 USD (ToS section 6, tax inclusive) / TRY 95.44 as locally rendered,
+  for 3 days, auto-converting to TRY 953.90/month billed annually (TRY 11,446.80/yr)
+  if not canceled -- a materially HIGHER recurring rate than the "Unlimited" tier's own
+  direct-purchase price of TRY 524.43/mo (TRY 6,293.16/yr). The vendor discloses the
+  promotional intro figure prominently (pricing page, TOS) but the only "renewal" rate
+  disclosed for the trial path (953.90/mo) is itself higher than what a buyer would pay
+  by skipping the trial and purchasing "Unlimited" directly -- i.e. the cheap-looking
+  entry point leads to a worse recurring price than the direct-purchase alternative
+  shown one card over. This gap (promo-vs-renewal, and trial-path-vs-direct-path) is
+  itself a central finding for this record. trial_exists/trial_length_days/
+  trial_auto_converts are coded yes/3/yes from explicit ToS language; trial_card_required
+  is coded unknown per the non-inference rule (see variable evidence) even though a $2
+  charge is required to start.
+
+  CURRENCY (D-003): full mechanical check in phrasly-sources/currency-check-d003.txt.
+  Neither a curl with Accept-Language:en-US on the live pricing URL (blocked by a
+  Cloudflare bot-check, no content returned) nor the most recent web.archive.org
+  capture (pre-hydration JS shell, no price content of any kind) surfaced a USD figure,
+  so non_usd stands for headline_price_usd/first_charge_amount_usd per protocol. Note
+  ToS section 6 separately states the TRIAL fee explicitly as "$2.00 USD...or the
+  equivalent amount converted to the user's local currency at the time of checkout" --
+  this IS an official-document USD figure, but it prices the trial/3-Day-Access offer,
+  not the Unlimited entry tier, so it does not change headline_price_usd's non_usd
+  coding for Unlimited (no USD figure was found for Unlimited specifically). Logged in
+  conflict_note.
+
+  FREE PLAN: phrasly.ai/pricing (top authority for pricing-class variables) does not
+  display a free-tier card at all -- only the two paid cards above. phrasly.ai/ai-humanizer
+  (official product documentation, second-ranked for this variable class) explicitly
+  markets and FAQs a $0 account tier ("Is Phrasly's AI humanizer free? Yes..."). Per
+  codebook free_plan_exists rule 3, "no free option anywhere in the documents" is the
+  trigger for coding "no" -- since a free option IS documented elsewhere, free_plan_exists
+  = yes, sourced from the product page. The pricing page's omission of its own free tier
+  is itself logged as a transparency finding in conflict_note.
+
+  OUT OF SCOPE, NOTED NOT USED: business.phrasly.ai is a separate Business/API product
+  (enterprise, contact-sales) with its own distinct Privacy Policy and Refund Policy
+  pages (found via search, e.g. business.phrasly.ai/terms/refund-policy, which describes
+  an "unused subscription credits" refund model different from the consumer product's
+  zero-usage/14-day rule). Not used anywhere in this record, which codes only the
+  consumer phrasly.ai product matching the frame's vendor_home_url.
+
+  ARCHIVAL: web.archive.org's /save/ endpoint returned HTTP 520 on every attempt made
+  this session (2 attempts each on the pricing and terms URLs; root web.archive.org
+  itself returned 200, so this reads as a systemic Save-Page-Now outage rather than a
+  per-URL block). archive_status is local_copy_only for all sources; detailed rendered-text
+  and raw-DOM-HTML local copies are retained under phrasly-sources/ for audit.
+
+  FRAME CHECK: frame-frozen-2026-08-04.csv row for phrasly matches what was observed
+  (vendor_home_url https://phrasly.ai, category AI humanizer, product_status active,
+  paid_submission no); no correction needed.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-007 re-check 2026-08-10: this record is one of the two direct triggers for
+  D-007 (with gptzero) -- this record's own honest D-003 check (both arms
+  genuinely failed: the Accept-Language request hit a Cloudflare block, and the
+  most recent archive capture was a pre-hydration shell) is what exposed D-003's
+  closing clause as unsound, since it forced non_usd from a check that had not
+  actually answered the question. This is that record's own re-check under the
+  amended rule. Arms attempted, in order: (1) vendor's own currency disclosure
+  -- re-scanned the live pricing page (still TRY-priced today, minor FX drift
+  from the original reading, unrelated) for a currency/country selector (0
+  matches) and tried a ?currency=USD URL parameter (no effect) -- both
+  negative. Re-confirmed the general ToS clause already flagged in this
+  record's own conflict_note, "All payments shall be in US dollars" -- genuine
+  Arm-1 evidence, but naming a currency, not a figure, for the Unlimited tier.
+  (2) A US-crawled archive capture that actually contains price figures --
+  re-verified the original D-003 finding (34,722-byte pre-hydration shell, zero
+  price content) via a fresh direct fetch, THEN queried the Wayback CDX API for
+  anything newer and found a same-day (2026-08-10) capture the original check
+  never had access to -- fetched it directly and confirmed it is Cloudflare's
+  own bot-challenge page, not the pricing page; archive.org's crawler was
+  blocked too, on the freshest attempt possible. Full log:
+  phrasly-sources/d007-currency-recheck-2026-08-10.txt.
+  OUTCOME: value CHANGED, but not to a money figure, mirroring gptzero's outcome
+  earlier in this same sweep. headline_price_usd moves from non_usd to unknown:
+  the amended rule requires positive evidence the vendor publishes only a
+  non-USD price, and here the vendor's own ToS argues the opposite, while no
+  arm supplies a number for the Unlimited tier specifically (the ToS's only
+  actual USD figure, $2.00, prices the separate "3 Day Access" trial offer, not
+  this entry tier). first_charge_amount_usd moves from non_usd to unknown on
+  the same basis (no figure to annualize). Dependent variable:
+  cost_per_output_computable is unaffected in value ("yes") or in its
+  TRY-denominated arithmetic, since that variable's rule never gated on
+  headline_price_usd's specific value; only its stray cross-reference to the
+  old non_usd value is corrected. No register_events change: this record never
+  had a display_variant entry for currency (correctly -- neither state ever
+  showed a USD figure to log a variant against, under the old rule or the new
+  one).
+conflict_note: "(1) Currency: phrasly.ai/pricing renders both plan cards in TRY only (no USD figure shown, confirmed by the D-003 check); phrasly.ai/terms section 5 states 'All payments shall be in US dollars' as a generic payment clause with no plan-specific digits attached. ORIGINALLY (D-003) coded non_usd per protocol since no document publishes an actual USD number for the Unlimited tier's price (see coder_note for the trial's separate $2.00 USD figure, which prices a different offer). SUPERSEDED under the D-007 re-check (2026-08-10): the amended currency rule holds that a ToS statement like this one is positive evidence AGAINST 'the vendor publishes only a non-USD price' (the necessary condition for coding non_usd), while it supplies no figure to code as money -- so headline_price_usd and first_charge_amount_usd both now read unknown instead of non_usd. Full re-check: phrasly-sources/d007-currency-recheck-2026-08-10.txt. (2) Free-tier disclosure: phrasly.ai/pricing (higher authority for pricing-class variables) shows no free-tier card at all; phrasly.ai/ai-humanizer (product documentation, lower authority for this variable class) explicitly markets and FAQs a free $0 account tier. Coded free_plan_exists=yes per codebook rule (a free option is documented somewhere in the documents), with the dedicated pricing page's non-disclosure of its own free tier recorded here as a transparency finding in its own right."
+register_events: []
+status: complete

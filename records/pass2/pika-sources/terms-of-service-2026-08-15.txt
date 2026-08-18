@@ -1,0 +1,35 @@
+SOURCE: https://pika.art/terms-of-service
+ACCESSED: 2026-08-15 (pass-2 coder)
+CAPTURE METHOD: rendered browser read (claude-in-chrome), full document read to end (~54,800 characters via document.querySelector('main').innerText, read in full via chunked extraction). "Last modified: 02/11/2026" per document header. Below are the operative clauses relevant to coded variables, quoted verbatim; the remainder of the document (arbitration mechanics, DMCA process, warranty disclaimers, liability caps, jurisdiction/severability boilerplate) was read and contains no additional pricing/billing/rights content.
+---
+[Section 4, "Automatic Renewal and Recurring Charges"]
+"Unless stated otherwise, subscriptions automatically renew at the end of each billing cycle (e.g., monthly or annually). By purchasing a Plan, you authorize Pika to charge your selected payment method on a recurring basis at the applicable rate then in effect, plus any applicable taxes, until you cancel. This authorization will remain in effect until you cancel the subscription in accordance with these terms of service. We will provide advance notice of any auto-renewal where required by applicable law."
+
+[Section 4, "Cancellation"]
+"You may cancel your subscription at any time through your account settings or by contacting support@pika.art. Cancellations will take effect at the end of the current billing cycle. You will retain access to the paid features of your Plan through the end of the subscription term."
+
+[Section 4, "No Refunds"]
+"Except as expressly provided in these terms of service or required by law, all subscription payments are non-refundable, and there are no refunds or credits for partially used periods."
+[No other clause anywhere in the document "expressly provides" a refund; this is the only refund-related clause in the ToS.]
+
+[Section 4, "Free and Trial Plans"]
+"We may offer free or trial Plans at our discretion. Each trial will begin on the date you create the trial Account and continue for the duration specified at signup (or, if unspecified, seven days). At the end of the trial period, your Account will automatically convert to a paid subscription, and you authorize us to charge your selected payment method at the then-current subscription rate, unless you cancel before the trial ends."
+[This is discretionary/contingent boilerplate ("we MAY offer... at our discretion") -- no trial is shown or offered anywhere on the live pricing page or FAQ. See coder_note for the trial_exists judgment call.]
+
+[Section 4, "Plan Selection and Subscription Payment"]
+"By selecting a Plan, you agree to pay the applicable fees and any associated taxes in U.S. Dollars, in accordance with the billing terms presented at the time of purchase."
+[Confirms USD billing explicitly -- used for the currency check.]
+
+[Section 5, "Right to Use the Service"]
+"Pika hereby grants you a limited, nonexclusive, nontransferable, nonsublicensable, revocable license to access and use the Service solely for your personal, noncommercial use—except where your subscription Plan expressly permits commercial use."
+[Section 4, "One User Per Account"]
+"The Service is for your personal, non-commercial use only, unless otherwise permitted by your subscription Plan, as described at https://pika.art/pricing."
+[Both defer to the Plan/pricing page for which tier grants commercial use -- consistent with pricing page + FAQ finding of Pro/Fancy = commercial use, Basic/Standard = not.]
+
+[Section 6, "General Practices Regarding Use and Storage"]
+"Pika may establish general practices and limits concerning use of the Service, including limits on storage capacity, data retention periods, and account inactivity. These practices may vary by subscription Plan and may be modified on one or more occasions at Pika's sole discretion."
+[Unquantified, discretionary usage/storage limit clause -- no figures given. Used for unquantified_limit_clause = present.]
+
+[Section 7, "Inputs and Outputs"]
+"Pika does not claim ownership of any Inputs you submit or Outputs generated through your use of the Service. As between you and Pika, you retain all interest in those Outputs. To the extent Pika acquires any interest in the Outputs, we hereby assign all interest to you."
+[Used for output_ownership_statement = user_owns. Unconditional, not tier-gated.]

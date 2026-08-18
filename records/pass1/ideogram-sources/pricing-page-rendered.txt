@@ -1,0 +1,76 @@
+SOURCE: https://ideogram.ai/pricing
+ACCESSED: 2026-08-09
+METHOD: Rendered read via headless browser (mcp Claude_Browser preview_start + javascript_tool),
+        document.body.textContent captured after page load, no interaction before capture
+        (default display state). Static fetch (WebFetch) returned HTTP 403 Forbidden
+        (Cloudflare bot check) — rendered read used per protocol deviation D-005.
+ARCHIVE NOTE: https://web.archive.org/save/https://ideogram.ai/pricing attempted twice
+        (2026-08-09), both returned HTTP 520 from web.archive.org (archive.org could not
+        capture the page, likely the same Cloudflare protection that blocks static fetch).
+        archive_status = local_copy_only; this file is the local copy.
+NETWORK NOTE: Requests originate from a Turkey network egress. Page rendered with all
+        prices in USD ("$15", "$42", "$20") with no currency selector or localization
+        observed; no non_usd coding triggered, so no D-003 secondary check was required.
+DEFAULT DISPLAY STATE: Billing toggle loaded pre-set to "Annually" (dropdown reads
+        "Annually" on load, before any click). Tab "Platform" selected by default
+        (vs. "Ideogram API" tab, a separate usage-based developer pricing surface,
+        not used for entry-tier selection). Screenshot confirms toggle state.
+
+=== FULL RENDERED TEXT (document.body.textContent, whitespace-collapsed) ===
+
+Log inStart for freePlans and pricingPlatformIdeogram APIAnnuallyPlus$15Save 25%per month,
+billed annuallyGet Plus plan1,000 priority credits/mo.Private generationUnlimited slow
+creditsUnlimited character consistencyLarger generation queueQuality exportTop up 150
+priority credits for $4Explore the community galleryPro$42Save 30%per month, billed
+annuallyGet Pro plan3,500 priority credits/mo.The best cost per creditPrivate
+generationUnlimited slow creditsUnlimited character consistencyBatch GenerationQuality
+exportThe largest generation queueTop up 250 priority credits for $4Explore the community
+galleryTeam$20Save 33%per user/month, billed annuallyGet Team plan1,500 priority
+credits/user/mo.Everything in PlusCentral billing and administrationEarly access to
+collaboration featuresTop up 250 priority credits for $4EnterpriseCustomFor orgs needing
+custom solutionsContact salesCustom credit amountEverything in ProPrivate custom models
+trained on your visual dataVolume discounts on the API (billed separately)Priority customer
+supportPowering teams at the world's most innovative companiesUsing your creditsGenerations
+use a different number of credits based on the Model and Rendering settings you
+choose.Model4.0 (2K)3.0**2a2.0**1.0Upscale 1.0RenderingTurboBalancedQualityTurboDefault
+QualityTurboDefaultQualityTurboDefaultQualityTurboDefaultQualityDefault*Credits2 credits / 1
+image4 credits / 1 image6 credits / 1 image2 credits / 4 images4 credits / 4 images6
+credits / 4 images0.5 credits / 4 images1 credit / 4 images1.5 credits / 4 images1 credit /
+4 images2 credits / 4 images3 credits / 4 images1 credit / 4 images1 credit / 4 images1
+credit / 4 images1 credit / 1 image* Only available with paid plans.** Magic Fill only
+supported on 2.0 and 3.0.Frequently askedquestionsWhat are priority credits?Priority credits
+let you generate images instantly. They can only be obtained through paid subscription
+plans and top-up credit purchases.What happens when I run out of priority credits?Once
+you've used all your priority credits, you'll generate images in the slow queue, where wait
+times vary based on server capacity and usage. Note that AI-powered editing features, such
+as Editing with AI and Image Reference, require priority credits and are not available in
+the slow queue.To regain priority access, you can:- Upgrade to a higher-tier plan with more
+priority credits- Purchase top-up credits without changing your plan- Wait for your
+priority credits to reset in the next billing cycleDo my unused priority credits carry over
+to the next monthly period?Unused subscription priority credits expire at the end of each
+billing cycle, so if you don't use them you will lose them. However, top-up credits are
+only used after your subscription credits run out, and will carry over to the next period
+if unused.Can I generate unpublished images?By default, all images on Ideogram are
+published to encourage sharing within the community. However, Ideogram Plus and Pro
+subscribers can generate unpublished images and unpublish previously published images.Can I
+delete my images?Yes, image deletion is available for Ideogram Plus and Ideogram Pro
+subscribers.Can I use generated images for commercial purposes?We do not claim ownership of
+your generated images, and you're free to use them for any purpose, including commercial
+use. For details, see our Terms of Service.How can I update my credit card and billing
+information?Click 'Manage Billing' in the top-right corner to update your payment method,
+download receipts, cancel your plan, or view your subscription renewal date.Can I cancel my
+plan?Yes, you can cancel your monthly or yearly subscription at any time. You'll be able to
+use all the benefits and features of your plan until the end of your billing period and
+won't be charged again after that.How do I upgrade my plan? Will I be double charged?Select
+your desired plan from the list above, ensuring you check the billing frequency. Upgrades
+are automatically prorated—you'll only pay the difference based on the unused portion of
+your current plan.What payment methods do you support?We process all payments through
+Stripe, which accepts credit or debit cards issued by networks like Mastercard, VISA, or
+American Express. PayPal and other digital wallets are not available at this time.Does the
+price include tax?No, prices exclude tax. If applicable, tax is added at checkout based on
+your billing address. Tax-exempt organizations can select "I'm purchasing as a business"
+and enter their details. We don't charge sales tax in some regions but may adjust this
+based on tax obligations. Any changes will apply to future invoices.Do you offer discounts
+or free trials?We don't offer discounts or free trials for subscription plans. However, our
+free tier includes 10 free credits per week.Question not answered here? See our docs or
+contact us.

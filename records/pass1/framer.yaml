@@ -1,0 +1,634 @@
+product_id: framer
+product_name: Framer
+category: AI website builder
+product_status: active
+paid_submission: "no"
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+
+# --- Checkpoint group 1: sources + archival ---
+sources:
+  - url: https://www.framer.com/pricing
+    label: "Pricing page (primary source; live read, default state)"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807050212/https://www.framer.com/pricing
+    archive_status: local_copy_only
+    note: >
+      Save-Page-Now request accepted (302) and returned this timestamp, but
+      fetching it resolves to a pre-existing 2026-08-05T08:28Z capture that
+      renders USD figures ($10/$20/$30/$40/$50 in payload), not the TRY state
+      this record was actually read and coded from (locale/geo display
+      variant — see register_events). The public archive therefore does not
+      prove the observed default state, so the operative evidence for the
+      coded (TRY) values is a local copy plus in-session screenshots:
+      records/pass1/framer-sources/pricing-page-local-copy-2026-08-07.txt
+  - url: https://www.framer.com/legal/terms-of-service
+    label: "Terms of Service, v1.8, effective 2026-06-16 (ranks first for contractual variables)"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807061831/https://www.framer.com/legal/terms-of-service
+    archive_status: archived
+  - url: https://www.framer.com/legal/acceptable-use-policy/
+    label: "Acceptable Use Policy, v2.0, effective 2026-04-09"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807062001/https://www.framer.com/legal/acceptable-use-policy
+    archive_status: archived
+  - url: https://www.framer.com/help/account/
+    label: "Help center - Account category index"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807062224/https://www.framer.com/help/account/
+    archive_status: archived
+  - url: https://www.framer.com/help/articles/refund-policy/
+    label: "Help article: Refund policy (dedicated policy page)"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807062458/https://www.framer.com/help/articles/refund-policy/
+    archive_status: archived
+  - url: https://www.framer.com/help/articles/cancel-your-framer-plan/
+    label: "Help article: Cancel your Framer subscription"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807062642/https://www.framer.com/help/articles/cancel-your-framer-plan/
+    archive_status: archived
+  - url: https://www.framer.com/help/articles/subscriptions-and-charges/
+    label: "Help article: Subscriptions and charges"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807062831/https://www.framer.com/help/articles/subscriptions-and-charges/
+    archive_status: archived
+  - url: https://www.framer.com/help/articles/how-ai-credits-and-agents-pricing-work/
+    label: "Help article: How AI credits and Agent pricing work"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807063332/https://www.framer.com/help/articles/how-ai-credits-and-agents-pricing-work/
+    archive_status: archived
+  - url: https://www.framer.com/enterprise/
+    label: "Enterprise page (checked for trial terms behind the pricing page's Request Trial CTA; none found)"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807063754/https://www.framer.com/enterprise/
+    archive_status: archived
+  - url: https://www.framer.com/help/articles/best-use-cases-for-each-framer-plan/
+    label: "Help article: Best use cases for each Framer plan"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807064005/https://www.framer.com/help/articles/best-use-cases-for-each-framer-plan/
+    archive_status: archived
+  - url: https://www.framer.com/help/articles/site-plans-explained/
+    label: "Help article: Site plans overview"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807064403/https://www.framer.com/help/articles/site-plans-explained/
+    archive_status: archived
+  - url: https://web.archive.org/web/20260805085223/https://www.framer.com/pricing
+    label: "D-007 re-check ONLY (Arm 2). Same capture already cited above via register_events; re-opened and read in full 2026-08-10, both as a rendered read and via a raw-HTML second-representation pull, to apply the amended currency rule. Content-rich (7,844-char body), shows Basic=$10/mo, Pro=$30/mo, additional editor=$20/mo -- now the coded source for headline_price_usd and first_charge_amount_usd. See framer-sources/d007-currency-recheck-2026-08-10.txt and framer-sources/archive-20260805085223-raw-2026-08-10.html."
+    access_date: 2026-08-10
+    archive_url: https://web.archive.org/web/20260805085223/https://www.framer.com/pricing
+    archive_status: archived
+
+source_urls: "https://www.framer.com/pricing | https://www.framer.com/legal/terms-of-service | https://www.framer.com/legal/acceptable-use-policy/ | https://www.framer.com/help/account/ | https://www.framer.com/help/articles/refund-policy/ | https://www.framer.com/help/articles/cancel-your-framer-plan/ | https://www.framer.com/help/articles/subscriptions-and-charges/ | https://www.framer.com/help/articles/how-ai-credits-and-agents-pricing-work/ | https://www.framer.com/enterprise/ | https://www.framer.com/help/articles/best-use-cases-for-each-framer-plan/ | https://www.framer.com/help/articles/site-plans-explained/"
+
+primary_source_url: https://www.framer.com/pricing
+archive_url: https://web.archive.org/web/20260807050212/https://www.framer.com/pricing
+archive_status: local_copy_only
+
+# --- Checkpoint group 2: administrative / default display state ---
+vendor_home_url: https://www.framer.com
+entry_tier_name: Basic
+recheck_date: not_applicable
+
+default_display_state: >
+  Pricing page loaded with the "Yearly billing" toggle already ON (DOM
+  inspection: toggle component data-framer-name="On", variant="On", before
+  any interaction) and no separate "Monthly billing" label exists elsewhere
+  on the page. Currency rendered as TRY (Turkish Lira: "TRY 0" Free / "TRY
+  231" Basic / "TRY 693" Pro / "TRY 462" per additional editor), not USD, with
+  no on-page currency or region selector present anywhere (full DOM scan of
+  interactive and text nodes found none). navigator.language="tr",
+  navigator.languages=["tr","tr-TR"]; archive.org's own save-request response
+  headers show x-nid: "Turk Telekom", confirming the browsing session's
+  network egress geolocates to Turkey. Per protocol-v1.md section 6.8 this is
+  treated as a locale/geography display variant, not a vendor edit: the
+  observed state is recorded and coded from as-is, with no reload/spoof
+  attempted to find a USD state (see register_events). A cookie-consent
+  banner ("We use cookies...") offered only an "Ok" (accept) button, no
+  granular reject control; it was left un-interacted with throughout (per
+  privacy practice of not accepting non-essential-cookie banners without
+  need) and did not block reading any page content via text/DOM extraction.
+
+# --- Checkpoint group 3: A-domain (domains 1-2, items A1/A2/A3) ---
+variables:
+  headline_price_usd:
+    value: 10.00
+    source: https://www.framer.com/pricing
+    evidence: >
+      CHANGED under D-007 re-check (2026-08-10) -- see coder_note and
+      framer-sources/d007-currency-recheck-2026-08-10.txt for the full
+      arm-by-arm log. Live re-read 2026-08-10 confirms the entry paid tier
+      (Basic) still shows "TRY 231" / "per month" on this network, and Arm 1
+      of the amended currency rule again found no selector, no working
+      currency URL parameter, and no currency statement in the one billing
+      help article re-checked. Arm 2 -- the web.archive.org capture
+      already cited in this record's own sources[] and register_events,
+      https://web.archive.org/web/20260805085223/https://www.framer.com/pricing
+      (2026-08-05, US-crawled, content-rich: 7,844-char rendered body, not a
+      pre-hydration shell) -- shows "Basic / Creative personal sites / $10 /
+      per month / 1,000 credits / month / ..." in the identical DOM position,
+      credit-tier default, and "Yearly billing" toggle state as this record's
+      own TRY 231 reading (verified against framer-sources/pricing-page-local
+      -copy-2026-08-07.txt line-for-line), and cross-checked in a second
+      representation (raw HTML text nodes and the page's own client-side
+      NumberFormat cache both show "$10" as a plain, unsplit figure). The
+      TRY/USD ratio (231/10=23.10) holds identically for Pro (693/30=23.10)
+      and for additional editors (462/20=23.10), confirming one underlying
+      USD price localized to TRY, not an unrelated figure. Per the amended
+      rule, a USD figure a US-crawled reader is served is coded as the
+      published price; the TRY state remains logged as the locally-served
+      display_variant (register_events, updated). Verbatim USD figure: $10 /
+      month (Basic, billed annually per the unchanged "Yearly billing"
+      default toggle state).
+
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: https://www.framer.com/pricing
+    evidence: >
+      "TRY 231 / per month" printed under the Basic heading while the
+      "Yearly billing" toggle is ON by default; confirmed by
+      help/articles/subscriptions-and-charges/: "Annual subscriptions are
+      billed upfront for the entire year and automatically renew on their
+      subscription anniversary date."
+
+  first_charge_amount_usd:
+    value: 120.00
+    source: https://www.framer.com/help/articles/subscriptions-and-charges/
+    evidence: >
+      CHANGED under D-007 re-check (2026-08-10) -- same basis as
+      headline_price_usd (see that field and framer-sources/d007-currency
+      -recheck-2026-08-10.txt). Documents state annual plans are "billed
+      upfront for the entire year" (charged once for twelve months) --
+      currency-independent contractual language, unaffected by this
+      re-check -- so rule 2 permits multiplying the displayed monthly
+      figure by 12. With the amended rule now coding the USD figure Arm 2
+      confirmed ($10/mo, see headline_price_usd): $10 x 12 = $120.00.
+      Verbatim USD figure: $120.00/yr. See computation_assumptions.
+
+  mandatory_addon_present:
+    value: "no"
+    source: https://www.framer.com/pricing
+    evidence: >
+      Every feature that carries a separate charge on the Basic card is
+      explicitly labeled "(add-on)" (e.g. "Localization (add-on)") or is an
+      optional extra (additional editors, locales). Nothing required to use
+      Basic as advertised (1 site, included credits, custom domain, CMS,
+      bandwidth) carries a compulsory further charge.
+
+  annual_condition_disclosure:
+    value: adjacent
+    source: https://www.framer.com/pricing
+    evidence: >
+      The "Yearly billing" control is a toggle switch (confirmed via DOM:
+      data-framer-name="On"/variant="On") positioned as the shared header
+      directly above the Free/Basic/Pro price cards and governing all of
+      their displayed figures; its own label states the annual-billing
+      condition, which codebook section 5.1 rule 2 / definition treats as
+      "in the label of the toggle attached to it" = adjacent. Also restated
+      as same-page small print: "All prices are monthly and billed according
+      to the billing cycle selected at checkout."
+
+  annual_default_toggle:
+    value: annual_preselected
+    source: https://www.framer.com/pricing
+    evidence: >
+      DOM inspection before any interaction: the "Yearly billing" toggle
+      component has variant="On" / data-framer-name="On" (blue pill, knob at
+      "on" position) at page load. No "Monthly billing" text node exists
+      anywhere on the page, i.e. there is no visible way to read a
+      monthly-preselected state without clicking the toggle.
+
+  # --- Checkpoint group 4: free tier (domain 3, items B1/B2) ---
+  free_plan_exists:
+    value: "yes"
+    source: https://www.framer.com/pricing
+    evidence: >
+      "Free" plan card, "TRY 0", "Try for free" / "Start for Free", displayed
+      as a standing column alongside the paid tiers with no expiry stated.
+
+  free_plan_cap_documented:
+    value: all_quantified
+    source: https://www.framer.com/pricing
+    evidence: >
+      All stated Free-plan limits carry a number: "500 credits to try"
+      (rate, /month per the credits FAQ), "1 GB bandwidth" (monthly rate per
+      the "Monthly bandwidth" row heading), and from the page's own FAQ
+      ("What's included in the Free plan?"): "access to 10 CMS collections,
+      1,000 pages, 5 MB file uploads, and one free locale", plus "up to three
+      editors". No unquantified free-plan limit language found.
+
+  free_plan_cap_value:
+    value: "500 credits per month | 1 GB bandwidth per month | 10 CMS collections | 1,000 pages | 5 MB file uploads | 1 locale | 3 editors"
+    source: https://www.framer.com/pricing
+    evidence: "Verbatim quantities from the pricing page card and its FAQ section."
+
+  free_plan_watermark:
+    value: "yes"
+    source: https://www.framer.com/help/articles/best-use-cases-for-each-framer-plan/
+    evidence: >
+      "The Free plan ... includes basic tools to create visually appealing
+      sites on a Free Framer domain, with a 'Made in Framer' banner displayed
+      when published."
+
+  free_plan_duration:
+    value: perpetual
+    source: https://www.framer.com/pricing
+    evidence: >
+      Free is shown as a standing plan column alongside paid tiers with no
+      stated expiry or "for your first X" language anywhere in the documents
+      read.
+
+  # --- Checkpoint group 5: trial (domain 4, item B3) ---
+  trial_exists:
+    value: "yes"
+    source: https://www.framer.com/pricing
+    evidence: >
+      The Enterprise card's call-to-action reads "Request Trial". This is the
+      only mention of "trial" found anywhere in the documents read (pricing
+      page, ToS, AUP, help center, and the Enterprise page itself, which was
+      checked specifically for elaboration and contains no occurrence of the
+      word "trial" at all). Basic and Pro (the self-serve, entry-tier-eligible
+      plans) carry no trial mention. See coder_note for why this is coded
+      "yes" rather than "no" despite applying only to the excluded,
+      sales-gated Enterprise tier.
+
+  trial_card_required:
+    value: unknown
+    source: https://www.framer.com/enterprise/
+    evidence: >
+      No document (pricing page, Enterprise page, ToS, AUP, help center)
+      states whether the Enterprise "Request Trial" process requires payment
+      details. It is a contact-sales form with no published terms.
+
+  trial_length_days:
+    value: unknown
+    source: https://www.framer.com/enterprise/
+    evidence: "No document publishes a length for the Enterprise trial; it is negotiated via sales contact, not self-serve."
+
+  trial_auto_converts:
+    value: unknown
+    source: https://www.framer.com/enterprise/
+    evidence: "No document states whether the Enterprise trial converts automatically to a paid subscription."
+
+  # --- Checkpoint group 6: credit system + cost-per-output (domains 5-8, items C1-C5) ---
+  credit_system_present:
+    value: "yes"
+    source: https://www.framer.com/help/articles/how-ai-credits-and-agents-pricing-work/
+    evidence: >
+      "AI credits power Framer's AI features through a shared monthly
+      allowance at the workspace level ... The number of credits a prompt
+      uses depends on the complexity of the request." An intermediate
+      currency (credits) exists and converts into AI-feature usage, even
+      though the core site-building/hosting product itself is flat-rate
+      (see cost_per_output_unit).
+
+  credit_unit_defined:
+    value: "no"
+    source: https://www.framer.com/help/articles/how-ai-credits-and-agents-pricing-work/
+    evidence: >
+      Read in full: the article explicitly states consumption is variable —
+      "The number of credits a prompt uses depends on the complexity of the
+      request and the amount of work required to complete it" — and never
+      states a fixed conversion such as "1 credit = [unit]" for any output.
+      Stating plan allowances (e.g. "2,000 AI credits per month") is not a
+      unit definition per codebook rule 5.
+
+  credit_to_output_rate_published:
+    value: "no"
+    source: https://www.framer.com/help/articles/how-ai-credits-and-agents-pricing-work/
+    evidence: "Same document, read in full: no per-output credit rate (fixed or ranged) is published for any feature; only qualitative complexity-dependence."
+
+  credit_rate_location:
+    value: absent
+    source: https://www.framer.com/help/articles/how-ai-credits-and-agents-pricing-work/
+    evidence: "No rate is published in any document class read (pricing page, this dedicated credits article, ToS, AUP)."
+
+  cost_per_output_unit:
+    value: per_seat_month
+    source: https://www.framer.com/pricing
+    evidence: >
+      Framer's own pricing page frames its principal, sold output as
+      unmetered site-building/hosting access billed per plan (Free/Basic/
+      Pro/Enterprise), not as a countable per-generation artifact. AI credits
+      meter a secondary feature layer (Agents/localization), not the
+      principal output, so the per_seat_month fallback for "unmetered access
+      to software" applies.
+
+  cost_per_output_computable:
+    value: "yes"
+    source: https://www.framer.com/pricing
+    evidence: >
+      For a per_seat_month unit the per-unit cost is the plan price itself:
+      Basic = $10/mo (default display state). CHANGED under D-007 re-check
+      (2026-08-10): the figure is now the USD price Arm 2 confirmed (was
+      TRY 231/mo; see headline_price_usd), still no missing figures and no
+      usage assumption required. See computation_assumptions.
+
+  computation_assumptions:
+    value: >-
+      Basic(entry),$10/mo,Yearly-toggle-ON default,USD (D-007 re-check
+      2026-08-10: web.archive.org Arm-2 capture; was TRY231/mo/non-USD).
+      C3: unit=per_seat_month (flat site plan; credits meter a secondary AI
+      feature, not principal output) so price=per-unit cost, no division.
+      1st charge=10x12=120.00 USD (subs-and-charges: annual billed upfront
+      for the year; was 231x12=2772 TRY).
+    source: "https://www.framer.com/pricing | https://www.framer.com/help/articles/subscriptions-and-charges/"
+    evidence: "Arithmetic and basis as stated; see headline_price_usd, first_charge_amount_usd, cost_per_output_computable, and framer-sources/d007-currency-recheck-2026-08-10.txt for the currency re-check that changed the denomination."
+
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: https://www.framer.com/help/articles/how-ai-credits-and-agents-pricing-work/
+    evidence: >
+      FAQ: "Do unused credits roll over to the next month? No. Your
+      allowance resets on the 1st of each calendar month, and any credits
+      you haven't used don't carry over."
+
+  failed_generation_charge_policy:
+    value: unknown
+    source: https://www.framer.com/help/articles/how-ai-credits-and-agents-pricing-work/
+    evidence: >
+      Document covers complexity-based consumption and limit-reached
+      behavior ("Any prompt that's already running when you reach the limit
+      finishes normally") but never addresses a failed/errored/empty
+      generation specifically.
+
+  # --- Checkpoint group 7: contractual (domains 9-11, items D1-D4, E1-E3) ---
+  auto_renewal_default:
+    value: "on"
+    source: https://www.framer.com/legal/terms-of-service
+    evidence: >
+      ToS 18.1: "Should Customer select an annual Non-Enterprise plan, the
+      Agreement ... automatically renews with subsequent twelve (12) month
+      terms until terminated ... Should Customer select a monthly
+      Non-Enterprise plan, the Agreement ... automatically renews for one
+      (1) month terms until terminated." Corroborated by two help articles
+      ("Framer subscriptions renew automatically unless...").
+
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: "https://www.framer.com/legal/terms-of-service | https://www.framer.com/help/articles/cancel-your-framer-plan/ | https://www.framer.com/help/articles/subscriptions-and-charges/"
+    evidence: >
+      Stated in the ToS (terms, section 18.1) and independently in two
+      help-center articles (cancel-your-framer-plan, subscriptions-and-
+      charges) = two document classes in agreement. Not found stated on the
+      pricing page itself (which only says billing cycle is "selected at
+      checkout").
+
+  renewal_notice_commitment:
+    value: unknown
+    source: https://www.framer.com/legal/terms-of-service
+    evidence: >
+      ToS 18.1's "no notice period shall apply" governs the CUSTOMER's
+      notice to Framer when cancelling (no advance-notice requirement on the
+      customer), not a Framer-to-buyer notice before a renewal charge. No
+      document found commits Framer to notifying the buyer in advance of a
+      renewal charge specifically.
+
+  refund_policy_exists:
+    value: "yes"
+    source: https://www.framer.com/help/articles/refund-policy/
+    evidence: >
+      Dedicated "Refund policy" article: refund window table, "Worldwide:
+      within 7 days of the initial purchase" and "European Union and
+      Turkey: within 14 days". See conflict_note for how this is reconciled
+      against ToS 13.1 and against narrower framing on lower-ranked pages.
+
+  refund_window_days:
+    value: 7
+    source: https://www.framer.com/help/articles/refund-policy/
+    evidence: >
+      Worldwide baseline window from the refund-window table. EU/Turkey
+      residents get an extended 14-day window (see coder_note); entry tier
+      (Basic) carries no plan-specific variant of this window.
+
+  refund_conditions:
+    value: conditional
+    source: https://www.framer.com/help/articles/refund-policy/
+    evidence: >
+      "If you believe you are eligible for a refund, contact the support
+      team through the Contact page. Include details about your subscription
+      and purchase date to help expedite the review process." Refund is not
+      self-serve/automatic on request; it requires contacting support and a
+      review, beyond merely asking within the window.
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://www.framer.com/help/articles/cancel-your-framer-plan/
+    evidence: >
+      Explicit self-serve steps: "Open your workspace settings. Go to the
+      Plans tab. Click the three-dot menu next to the site you want to
+      cancel. Select Cancel Plan. Provide feedback and confirm."
+
+  refund_policy_location:
+    value: dedicated_refund_page
+    source: https://www.framer.com/help/articles/refund-policy/
+    evidence: >
+      A standalone article titled exactly "Refund policy", solely devoted to
+      refund eligibility/terms, which every other document (ToS's "unless
+      otherwise specified", the cancellation article, the subscriptions
+      article) defers/links back to as the authority on this topic.
+
+  commercial_use_lowest_tier:
+    value: unknown
+    source: https://www.framer.com/pricing
+    evidence: >
+      Only soft descriptive marketing language found: pricing-page FAQ
+      "Our Free plan is ideal for non-commercial use. The Basic plan caters
+      to students, freelancers, and small studios" and the best-use-cases
+      article's similar framing. Neither is a stated grant or restriction of
+      a "commercial use" right by tier (no feature-grid "commercial license"
+      row found on the pricing page; ToS and AUP read in full, neither
+      addresses commercial use by tier).
+
+  watermark_removal_tier:
+    value: lowest_paid
+    source: https://www.framer.com/help/articles/site-plans-explained/
+    evidence: >
+      "With a paid Site plan, you can: Connect a custom domain, Publish your
+      site without Framer branding, Access plan-specific features..." Basic
+      is the lowest paid Site plan, so branding/watermark removal begins
+      there. Paired with free_plan_watermark=yes (Free carries the "Made in
+      Framer" banner).
+
+  output_ownership_statement:
+    value: user_owns
+    source: https://www.framer.com/legal/terms-of-service
+    evidence: >
+      ToS 7.3 "What Customer Owns": "Customer retains full ownership of
+      Customer Content, including all Intellectual Property Rights therein
+      and all derivatives thereof" (unconditional; Framer receives only an
+      operating license, not ownership).
+
+  # --- Checkpoint group 8: undisclosed/unverifiable limits (domain 12, items F1/F2) ---
+  usage_cap_quantified:
+    value: all_caps_quantified
+    source: https://www.framer.com/pricing
+    evidence: >
+      Every limit attributed to Basic (entry tier) carries a number: Site
+      pages=30, CMS collections=2, CMS items=1,000, Bandwidth=50 GB
+      (monthly), Analytics history=30 days, Seats=10 (max editors), Credits
+      = 1,000/month (default selection, adjustable up to 15,000/month, all
+      numbered options). No unquantified ("limited", "generous") language
+      attached to any Basic-tier limit.
+
+  unquantified_limit_clause:
+    value: absent
+    source: "https://www.framer.com/legal/terms-of-service | https://www.framer.com/legal/acceptable-use-policy/"
+    evidence: >
+      Terms of Service (full text) and Acceptable Use Policy (full text)
+      both read end-to-end: neither contains a fair-use / reasonable-use /
+      excessive-use / discretionary-throttling clause tied to usage volume.
+      The AUP's restrictions are conduct/content-based (spam, abuse,
+      security, prohibited content), not volume-based. The pricing-page
+      FAQ's "what happens if I go over a limit" answer describes numbered
+      overage handling (bandwidth: exceed for one month, then notified), not
+      an unquantified discretionary clause, and is not itself the terms/AUP
+      this item keys on.
+
+# --- Checkpoint group 9: notes + attestation ---
+coder_note: >-
+  Entry-tier selection (sampling-rules.md 7.2): eligible candidates were
+  Basic (TRY231/mo x12 = TRY2,772 annual-equiv) and Pro (TRY693/mo x12 =
+  TRY8,316 annual-equiv); Basic wins on lowest annual-equivalent cost. Losing
+  candidate: Pro, TRY8,316 annual-equiv. Enterprise excluded as ineligible
+  (sales-gated, "Custom" price, no self-serve purchase path). Free is not a
+  paid-tier candidate. -- trial_exists=yes rests solely on the Enterprise
+  card's "Request Trial" CTA; this is a sales-contact gate with zero
+  published terms (checked the Enterprise page itself specifically; no
+  occurrence of "trial" there at all), not a self-serve trial of Basic/Pro,
+  which carry no trial mention anywhere. Coded literally per the decision
+  rule ("no" requires the documents mention no trial at all) rather than
+  inferred as "no" from the fact that the entry tier itself has none; this
+  is a judgment call flagged for reviewer attention. -- commercial_use_
+  lowest_tier=unknown despite "ideal for non-commercial use" (free) /
+  "freelancers and small studios" (Basic) marketing language on the pricing
+  page and in the best-use-cases help article: this is descriptive framing
+  of intended audience, not a stated commercial-use grant or restriction, so
+  per instructions never to infer from marketing tone it is coded unknown
+  rather than inferred. -- Cookie-consent banner on the pricing page offered
+  only an "Ok" (accept) button with no granular reject control; left
+  un-interacted with throughout per privacy practice (decline non-essential
+  where offered; none was offered here), and this did not block reading any
+  content via text/DOM extraction. -- Currency/locale display variant: see
+  register_events and the sources[] note on the pricing-page entry.
+
+  D-007 re-check 2026-08-10: this record was one of six flagged for
+  re-verification under the amended currency rule (deviations-log.md
+  D-007), which supersedes D-003's Accept-Language/local-network reasoning.
+  Arms attempted, in order: (1) vendor's own currency disclosure --
+  re-scanned the live pricing page (still TRY 231 for Basic today) for a
+  currency/country selector (0 true matches; 2 broad-query hits were the
+  page's own credit-tier <select> pickers, not currency controls), tried a
+  ?currency=USD URL parameter (no effect), and searched
+  help/articles/subscriptions-and-charges/ for a currency statement (0
+  hits) -- returned nothing. (2) A US-crawled archive capture that
+  actually contains price figures -- this record's OWN previously-cited
+  capture, https://web.archive.org/web/20260805085223/https://www.framer.com/pricing,
+  which the original 2026-08-07 pass had already found rendered USD
+  figures but did not use (D-003's then-current rule treated the archive
+  as unable to "prove" a state). Re-opened and read in full this pass: a
+  content-rich 7,844-character body (not a pre-hydration shell) showing
+  "Basic ... $10 ... per month ... 1,000 credits / month ..." at the
+  identical DOM position, credit-tier default, and "Yearly billing" toggle
+  state as this record's own TRY 231 reading (verified line-for-line
+  against framer-sources/pricing-page-local-copy-2026-08-07.txt), with
+  Pro=$30 and additional-editor=$20 holding the same 23.10 TRY/USD ratio as
+  Basic (231/10=693/30=462/20=23.10 exactly) -- not a coincidental or
+  unrelated figure. Confirmed in a second representation (raw HTML text
+  nodes and the page's own client-side NumberFormat cache both show "$10"/
+  "$30"/"$20" as plain, unsplit figures; see
+  framer-sources/archive-20260805085223-raw-2026-08-10.html). Full log:
+  framer-sources/d007-currency-recheck-2026-08-10.txt.
+  OUTCOME: value CHANGED. Arm 2 returned readable, corroborated USD price
+  figures, so per the amended rule's "if the vendor offers USD [to a US
+  reader], the USD figure is the published price" -- headline_price_usd
+  moves from non_usd to 10.00 (Basic, $/mo, billed annually) and
+  first_charge_amount_usd from non_usd to 120.00 (10x12, same "billed
+  upfront for the entire year" basis already on file). Dependent variable
+  updated: cost_per_output_computable stays "yes" but its
+  computation_assumptions figure changes from TRY231/mo to $10.00/mo (the
+  per_seat_month unit's cost is the plan price itself). entry_tier_name
+  (Basic) is unaffected -- Pro remains the losing candidate at the same
+  23.10x ratio in either currency (TRY 8,316/yr or, newly confirmable,
+  USD $360/yr = 30x12), so the entry-tier selection does not change. The
+  existing register_events display_variant entry for this URL is updated
+  in place (its coder_action field only) to record that the CODED state is
+  now USD and the TRY state is the logged local variant, the reverse of
+  the original framing; the original observation fields are preserved
+  unedited, per this study's rule that a correction never deletes prior
+  coder reasoning.
+
+conflict_note: >-
+  Refund position is stated with varying scope across Framer's own official
+  documents. Highest-ranked/most specific: the dedicated Refund Policy help
+  article (https://www.framer.com/help/articles/refund-policy/) states a
+  general "Worldwide: within 7 days of the initial purchase" window plus an
+  extended "European Union and Turkey: within 14 days" window. ToS 13.1
+  (https://www.framer.com/legal/terms-of-service) states "all Fees are
+  non-cancellable and non-refundable" but prefaces this "Unless otherwise
+  specified" -- read as deferring to the dedicated Refund Policy's specific
+  terms rather than conflicting with them. However, two lower-authority
+  pages narrow this further and omit the worldwide window entirely: the
+  pricing-page FAQ (https://www.framer.com/pricing) states only "If you live
+  in the EU or Turkey, you are legally eligible for a refund ... within the
+  last 14 days" with no worldwide provision, and the help article
+  https://www.framer.com/help/articles/subscriptions-and-charges/
+  self-contradicts on this exact point WITHIN one page: its own refund-
+  window table (mid-article) matches the dedicated policy (worldwide 7-day +
+  EU/Turkey 14-day), but a later prose paragraph on the same page says
+  "Refunds are generally not provided, except for users in the EU or
+  Turkey ... within 14 days," dropping the worldwide window it stated
+  earlier. refund_policy_exists / refund_window_days / refund_conditions /
+  refund_policy_location are all coded from the dedicated Refund Policy
+  article per protocol-v1.md section 6.2 (highest-ranked, most specific,
+  single-topic document; every other page defers/links to it).
+
+register_events:
+  - type: display_variant
+    url: https://www.framer.com/pricing
+    variables_affected: "headline_price_usd, headline_billing_basis, first_charge_amount_usd, cost_per_output_computable/computation_assumptions, annual_condition_disclosure (wording)"
+    observed_state: >-
+      Live read on 2026-08-07 rendered in TRY (Turkish Lira): "TRY 0" Free,
+      "TRY 231" Basic, "TRY 693" Pro, "TRY 462" per additional editor.
+      navigator.language="tr", navigator.languages=["tr","tr-TR"]. No
+      on-page currency/region selector exists (confirmed via full DOM text
+      and interactive-element scan). archive.org's own response headers for
+      this session's save request show "x-nid: Turk Telekom", confirming
+      Turkey-geolocated network egress.
+    alternate_state: >-
+      The public archive.org capture reachable at this URL (both the
+      pre-existing 2026-08-05T08:28Z snapshot, and the fresh save triggered
+      2026-08-07 which redirects to it) renders USD figures ($10/$20/$30/
+      $40/$50 present in its payload) -- i.e. the archive crawler was not
+      served the TRY state, almost certainly because it does not carry a
+      tr-TR Accept-Language/locale signal.
+    snapshots: >-
+      TRY state (this record's coded state): no public archive proves it;
+      local copy at records/pass1/framer-sources/pricing-page-local-copy-
+      2026-08-07.txt plus in-session screenshots. USD state (not coded from):
+      https://web.archive.org/web/20260805085223/https://www.framer.com/pricing
+    classification_basis: "protocol-v1.md section 6.8, the 'vary the page by inferred geography/locale' case; not a vendor edit (type=display_variant, not vendor_edit)."
+    coder_action: >-
+      ORIGINAL (2026-08-07, under D-003): coded from the live TRY read per
+      section 6.8 rule 1 (record the state observed; never reconstruct from
+      a different read or reload to hunt for a preferred, e.g. USD, state).
+      SUPERSEDED by the D-007 re-check (2026-08-10): this coder_action field
+      is updated in place -- the observed_state/alternate_state/snapshots
+      fields above are the original, unedited observation and are retained
+      as-is, per this study's rule that a correction record never deletes
+      the original coder reasoning. Under the amended currency rule
+      (deviations-log.md D-007; research-data-collector.md "Currency
+      check"), a US-crawled archive capture that actually contains price
+      figures is Arm 2, and where it shows a USD price, that price is
+      coded as published -- which is exactly what the "alternate_state"
+      USD capture above independently supplies once read in full. The
+      CODED state is therefore now the USD state ($10 Basic / $30 Pro /
+      $20 additional editor, from this same URL's 2026-08-05
+      web.archive.org capture), and the TRY state this coder's own
+      2026-08-07 live read observed is the locally-served display variant
+      being logged, the reverse framing from the original pass. Full
+      arm-by-arm log: framer-sources/d007-currency-recheck-2026-08-10.txt.
+
+blindness: "no other record, no review page, no pass-2 material was opened."
+
+status: complete

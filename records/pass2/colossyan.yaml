@@ -1,0 +1,146 @@
+product_id: colossyan
+product_name: Colossyan
+category: AI avatar
+product_status: active
+paid_submission: "no"
+entry_tier_name: Professional
+coder_pass: 2
+coder_role: second
+collection_date: "2026-08-14"
+recheck_date: not_applicable
+primary_source_url: https://www.colossyan.com/pricing/
+archive_url: https://web.archive.org/web/20260814174854/https://www.colossyan.com/pricing/
+archive_status: archived
+default_display_state: "USD prices shown directly, no currency selector present on the page. Billing toggle preselected to Yearly/annual (DOM aria-checked=true, class is-yearly, -34% badge shown). Professional card's seat selector defaulted to '1 editor'. Read from a Turkey-based network location; non-essential cookies declined via the consent banner's 'Allow selection' (necessary-only)."
+
+sources:
+  - { url: "https://www.colossyan.com/pricing/", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814174854/https://www.colossyan.com/pricing/", note: "vendor pricing page, rendered read + DOM inspection (compare table, toggle state, price classes)" }
+  - { url: "https://www.colossyan.com/terms/", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814174913/https://www.colossyan.com/terms/", note: "vendor Terms of Service, full verbatim text incl. embedded Refund Policy section and Instant Avatar feature-specific terms" }
+  - { url: "https://www.colossyan.com/refund-policy/", kind: refund, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814174955/https://www.colossyan.com/refund-policy/", note: "vendor dedicated refund policy page (same text also embedded in /terms/)" }
+  - { url: "https://www.colossyan.com/acceptable-use/", kind: other, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814175023/https://www.colossyan.com/acceptable-use/", note: "vendor Acceptable Use Policy, full verbatim text" }
+  - { url: "https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ", kind: docs, accessed: "2026-08-14", archive: local_copy_only, note: "vendor help-center FAQ; archive.org save failed twice (HTTP 520/520); dated verbatim local capture saved to colossyan-sources/zendesk-pricing-packaging-faq-2026-08-14.txt" }
+  - { url: "https://lps.colossyan.com/colossyan-vs-synthesia", kind: other, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814180139/https://lps.colossyan.com/colossyan-vs-synthesia", note: "vendor-owned marketing/comparison landing page (lps.colossyan.com subdomain), sole source found for commercial-use rights" }
+
+variables:
+  headline_price_usd: { value: "59.00", source: "https://www.colossyan.com/pricing/", evidence: "Professional card, default (Yearly) display state, class pricing-price-anim__value = \"$59\", unit label \"/mo\". Confirmed in a second DOM representation (compare-cell text extraction, separate from get_page_text) and in the archived snapshot HTML." }
+  headline_billing_basis: { value: per_seat_per_month, source: "https://www.colossyan.com/pricing/", evidence: "\"$59 /mo\" plus \"$30/mo per additional member\" and a 1/2/3-editor seat selector on the same card — a per-seat figure and a per-month figure are both stated (rule 2)." }
+  first_charge_amount_usd: { value: "708.00", source: "https://www.colossyan.com/pricing/", evidence: "Computed: $59/mo (default annual display state, 1 editor) x 12 = $708.00. See computation_assumptions for the twelve-month-charge basis." }
+  mandatory_addon_present: { value: "no", source: "https://www.colossyan.com/pricing/", evidence: "Professional as advertised (1 editor, $59/mo) is a complete usable plan; the only per-unit charge found ($30/mo per additional member) is opt-in, not required to use the tier as advertised. ToS and Acceptable Use Policy read in full, no required onboarding/platform/minimum-purchase fee found." }
+  annual_condition_disclosure: { value: adjacent, source: "https://www.colossyan.com/pricing/", evidence: "The billing toggle carrying the label \"Yearly\" and a \"-34%\" badge sits inside the same bordered price card as the \"$59/mo\" figure — \"in the label of the toggle attached to it\" per the codebook's adjacent definition." }
+  annual_default_toggle: { value: annual_preselected, source: "https://www.colossyan.com/pricing/", evidence: "DOM: button#billing-toggle, role=switch, aria-checked=\"true\", class=\"pricing-billing__switch is-yearly\", read before any interaction. Confirmed present in the archived snapshot HTML." }
+  free_plan_exists: { value: "yes", source: "https://www.colossyan.com/pricing/", evidence: "\"Starter\" card shows \"Free\" as the active price (a struck-through \"$27/mo\" is a value comparison, not a charge), standing tier alongside the paid tiers, no expiry stated." }
+  free_plan_cap_documented: { value: some_quantified, source: "https://www.colossyan.com/pricing/", evidence: "Numeric caps present (20 min/mo NEO, 0.5 min/mo NEO2, 20 min duration, 40 scenes, 15 avatars, 3 voices, 10 interactive videos/mo, 1 editor, 15 translations/mo, 0 SCORM/mo, up to 1080p). \"Unlimited course creation\" and \"Unlimited viewers\" are also attributed to Starter; judged qualified (not quantified) by Acceptable Use Policy §4(f)'s unquantified discretionary clause — see coder_note for the alternate reading." }
+  free_plan_cap_value: { value: "20 min/mo NEO | 0.5 min/mo NEO2 | 20 min duration limit | 40 scenes | 15 custom avatars | 3 cloned voices | 10 interactive videos/mo | 1 editor seat | 15 auto-translations/mo | 0 SCORM exports/mo | up to 1080p resolution", source: "https://www.colossyan.com/pricing/", evidence: "Compare-table row values for the Starter column, extracted from DOM (.compare-row / .compare-cell), cross-checked against the plan-card copy." }
+  free_plan_watermark: { value: "yes", source: "https://www.colossyan.com/pricing/", evidence: "Compare table row \"Watermark removal\": Starter cell is a dash (feature absent); tooltip on the row reads \"Remove the Colossyan branded overlay from your videos.\" Absence of removal on Starter documents the overlay is present on free-plan outputs." }
+  free_plan_duration: { value: perpetual, source: "https://www.colossyan.com/pricing/", evidence: "Starter is presented as a standing tier with no expiry; FAQ distinguishes it from the trial: \"Colossyan has a generous free trial AND a free plan.\"" }
+  trial_exists: { value: "yes", source: "https://www.colossyan.com/pricing/", evidence: "FAQ: \"Can I try Colossyan for free before signing up? Yes. Colossyan has a generous free trial and a free plan...\" Corroborated by ToS §4.5 (\"If Customer registers for a free trial...\")." }
+  trial_card_required: { value: unknown, source: "https://www.colossyan.com/pricing/", evidence: "The \"No credit card required\" note is scoped to the Starter (free-plan) sign-up block, not to the Professional card's \"Try it free\" trial CTA. No document ties a card requirement (or its absence) to the trial specifically." }
+  trial_length_days: { value: "14", source: "https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ", evidence: "\"What happens to my account after the 14-day free trial? You won't be able to generate videos unless you upgrade to a paid plan...\"" }
+  trial_auto_converts: { value: "no", source: "https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ", evidence: "\"You won't be able to generate videos unless you upgrade to a paid plan, but your drafts and generated videos will remain intact on your account.\" No further action = access simply stops; conflicts with ToS §3.4, see conflict_note." }
+  credit_system_present: { value: "no", source: "https://www.colossyan.com/terms/", evidence: "Full-text search of the 56,974-char Terms of Service for \"credit\" returns only \"credit card information\" (§3.2), a payment method, never a metering unit. Pricing page and help-center FAQ meter and allot entirely in \"video minutes\" (a direct output unit), never \"credits\", \"tokens\", \"points\", or \"coins\"." }
+  credit_unit_defined: { value: not_applicable, source: "https://www.colossyan.com/terms/", evidence: "No credit system (see credit_system_present)." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://www.colossyan.com/terms/", evidence: "No credit system." }
+  credit_rate_location: { value: not_applicable, source: "https://www.colossyan.com/terms/", evidence: "No credit system." }
+  cost_per_output_unit: { value: per_video_minute, source: "https://www.colossyan.com/pricing/", evidence: "The product's own framing: pricing page's core metered resource is labelled \"Video Minutes\" throughout (plan cards and compare table); Colossyan is sold as an AI video generator." }
+  cost_per_output_computable: { value: "yes", source: "https://www.colossyan.com/pricing/", evidence: "Professional (entry tier), default annual display state: $59/mo, 30 min/mo included with the NEO model (compare table). Both figures already on the same period (monthly); 59/30=1.97 USD/video-minute. See computation_assumptions and coder_note (NEO vs NEO2 dual-meter judgment call)." }
+  computation_assumptions: { value: "Professional (entry tier), 1 editor, default annual display state: $59/mo. Included allowance: 30 min/mo with the NEO model (pricing-page compare table). Price and allowance already share the monthly period, no conversion needed. 59/30=1.97 USD per video minute (NEO). First charge: $59 x12=$708.00; ToS section 3.3 (\"you pay in advance for each month or year\") plus pricing-page and help-center FAQs (annual plans \"paid upfront for the entire year\") confirm annual is charged once for 12 months.", source: "https://www.colossyan.com/pricing/", evidence: "Arithmetic as stated; see coder_note for the NEO2 alternate rate not used here." }
+  credit_rollover_policy: { value: not_applicable, source: "https://www.colossyan.com/terms/", evidence: "No credit system (see credit_system_present). Colossyan's minutes-rollover statement is recorded in coder_note for transparency even though it does not code onto this credit-scoped variable." }
+  failed_generation_charge_policy: { value: unknown, source: "https://www.colossyan.com/terms/", evidence: "ToS, Acceptable Use Policy, and the Zendesk Pricing & Packaging FAQ were read; all describe successful generation (\"Whenever you click on Generate we deduct the full length of the video... regardless of if you generated that video before or not\") and re-generation of drafts, but none states what happens when a generation technically fails or errors." }
+  auto_renewal_default: { value: "on", source: "https://www.colossyan.com/terms/", evidence: "ToS §14.3: \"Customer acknowledges and agrees that Customer's subscription will automatically be renewed on a monthly or annual basis (depending on the Service Plan Customer selected), for the same subscription period, unless Customer indicates otherwise before the renewal date by cancelling their subscription.\" Corroborated by §3.4." }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://www.colossyan.com/terms/", evidence: "Explicit auto-renewal language found only in the Terms of Service (§3.4 and §14.3). The pricing-page FAQ (\"access to Colossyan requires a recurring subscription\") is consistent with but judged short of an explicit renewal statement — see coder_note." }
+  renewal_notice_commitment: { value: unknown, source: "https://www.colossyan.com/terms/", evidence: "ToS, pricing page and help-center FAQ read in full; no commitment to notify the buyer before a renewal charge found (§4.4's notice commitment covers material price/service changes generally, not each renewal charge)." }
+  refund_policy_exists: { value: "yes", source: "https://www.colossyan.com/refund-policy/", evidence: "\"In case, you purchased a paid Service Plan, you can claim a full refund if the following conditions are met: a) Your refund claim is sent to us within 14 days from your purchase, b) You have generated less than 10 minutes of Customer Created Videos, and c) You are not subscribed to an Enterprise Plan.\"" }
+  refund_window_days: { value: "14", source: "https://www.colossyan.com/refund-policy/", evidence: "\"Your refund claim is sent to us within 14 days from your purchase.\" Applies to the entry tier (Professional is not Enterprise)." }
+  refund_conditions: { value: conditional, source: "https://www.colossyan.com/refund-policy/", evidence: "Full refund requires both the 14-day window AND \"You have generated less than 10 minutes of Customer Created Videos\"; a usage threshold plus a window, not an unconditional refund." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.colossyan.com/terms/", evidence: "ToS §14.4: \"Customer may elect to terminate this Agreement at the end of Customer's then-current subscription period with notice... by logging into Customer's account. There are instructions available for how to cancel on the Help page.\"" }
+  refund_policy_location: { value: multiple, source: "https://www.colossyan.com/refund-policy/", evidence: "Identical refund text is reachable at the dedicated https://www.colossyan.com/refund-policy/ URL and is also rendered within the https://www.colossyan.com/terms/ page load, under its own \"Refund Policy\" heading — see coder_note." }
+  commercial_use_lowest_tier: { value: lowest_paid, source: "https://lps.colossyan.com/colossyan-vs-synthesia", evidence: "\"Colossyan also grants full commercial licensing to videos created by paid subscribers. Synthesia has restrictions - their videos can't be used in ads.\" Verified verbatim in a direct fetch of the page, independent of the summarizing tool. Terms of Service and Acceptable Use Policy are silent on commercial use specifically — see coder_note for the source-tier judgment call." }
+  watermark_removal_tier: { value: lowest_paid, source: "https://www.colossyan.com/pricing/", evidence: "Compare table row \"Watermark removal\": dash under Starter, check under Professional (the entry paid tier) and Enterprise." }
+  output_ownership_statement: { value: vendor_license_retained, source: "https://www.colossyan.com/terms/", evidence: "§5.5: \"Colossyan grants Customer a perpetual, limited, revocable, non-exclusive, worldwide, royalty-free license to use Colossyan Material in that generated video or exported course output...\"; §8.1: \"This Agreement does not grant you any right, title, or interest with respect to the Services or in any Colossyan Intellectual Property Rights, except as expressly set out in this Agreement.\" See coder_note for the vendor_license_retained-vs-conditional judgment call." }
+  usage_cap_quantified: { value: some_quantified, source: "https://www.colossyan.com/pricing/", evidence: "Professional (entry tier) limits: 30 min/mo NEO, 10 min/mo NEO2, 50 min duration, 40 scenes, 20 avatars, 5 voices, 15 interactive videos/mo, 3 max editor seats, 20 translations/mo, 5 SCORM exports/mo, up to 1080p, 360 min/yr API — all numerically quantified. \"Unlimited MP4 video downloads\", \"Unlimited viewers\" and \"Unlimited course creation\" are also attributed to the tier; judged qualified (not quantified) by Acceptable Use Policy §4(f) — see coder_note." }
+  unquantified_limit_clause: { value: present, source: "https://www.colossyan.com/acceptable-use/", evidence: "AUP §4(f): \"excessively or disproportionately use the Services, including but not limited to unusually high-volume requests within short time periods, automated bulk generation, or usage that impacts system performance for other users.\" Corroborated by ToS §2.2: \"Colossyan reserves the right to shut down accounts or introduce account restrictions if usage patterns significantly exceed typical user behaviour.\" Both read in full; no figure attached to either standard." }
+
+coder_note: |
+  Entry-tier candidates (sampling-rules.md 7.2): Starter is $0 (the free plan), not a paid
+  candidate. Enterprise is sales-gated ("Let's talk", contact sales) and fails eligibility
+  rule 2, so it is excluded, not merely outranked. Professional was the only eligible paid
+  candidate; annual-equivalent single-seat cost $59 x12=$708.00. No losing candidate to report
+  beyond the exclusions above.
+
+  A-012 (paid time-limited intro period): does not apply. Colossyan's trial is a zero-cost
+  14-day trial, not a cheap non-zero paid intro period, so this record is not tagged A-012.
+
+  Judgment calls (genuine ambiguity, flagged per instructions rather than resolved silently):
+  1. cost_per_output_computable / computation_assumptions: Professional bundles TWO minute
+     meters at one price - 30 min/mo with the NEO model and 10 min/mo with NEO2 (compare
+     table). Neither is a "range"; both are fully published fixed numbers, so this is not
+     cleanly the codebook's "secondary output" (different output TYPE, e.g. image vs video)
+     or "range" case. I computed using NEO (the larger, first-listed meter, both on the plan
+     card and in the compare table) as the base/principal reading: 59/30=1.97 USD/video-minute.
+     Using NEO2 instead would give 59/10=5.90 USD/video-minute. Coded yes, not partial, since
+     the calculation needs no assumption about typical use, only a choice of which published
+     meter is principal.
+  2. usage_cap_quantified (Professional) / free_plan_cap_documented (Starter): both tiers
+     carry "Unlimited" labels on secondary features (course creation, viewers, MP4 downloads
+     on Professional) alongside numerically capped minutes/avatars/etc. ToS §2.2 ties its
+     "'Unlimited' plans are subject to... fair use guidelines" language to VIDEO GENERATION
+     specifically (a 4-hour/day cap + a fair-use clause), which arguably only reaches an
+     unlimited-MINUTES claim (which Professional/Starter don't make; only Enterprise's minutes
+     are "Unlimited"). I coded some_quantified/some_quantified on the broader ground that AUP
+     §4(f) ("excessively or disproportionately use THE SERVICES", not scoped to generation)
+     is a discretionary, no-figure clause reaching all use of the product, which under
+     usage_cap_quantified rule 3 disqualifies ANY "Unlimited" claim from counting as quantified,
+     including course-creation/viewer/download counts. A stricter reader who scopes both
+     qualifying clauses to video-generation only would code all_caps_quantified / all_quantified
+     instead, since none of Professional's or Starter's OTHER limits are unquantified.
+  3. output_ownership_statement: ToS §5.5 grants a "perpetual, limited, REVOCABLE... license to
+     use Colossyan Material in that generated video", revocable on breach and conditioned on
+     "full payment of fees and compliance with the [AUP]"; §8.1 is a general vendor-retains-IP
+     clause. I coded vendor_license_retained (ownership is never granted to the customer at
+     all, only a license) rather than conditional (which the codebook's own example ties to
+     OWNERSHIP itself being time/status-limited, e.g. "for as long as the subscription remains
+     active"). The Instant Avatar Terms (same page) go further still for that specific feature
+     - "we own all legal rights... in... any output generated by the Instant Avatar" plus a
+     mandatory assignment of any IP that vests in the customer - which is directionally
+     consistent with (and reinforces) vendor_license_retained for the general case, though it
+     was not used as the coded source since it covers a narrower feature.
+  4. commercial_use_lowest_tier: Terms of Service and Acceptable Use Policy (the two
+     highest-authority classes for this contractual variable) are silent on commercial use of
+     outputs generally - the AUP restricts specific content/contexts (no TV advertising, no
+     billion-dollar-revenue international ad campaigns, no political ads) but never makes a
+     general commercial-use grant or denial. The only official statement found anywhere is on
+     a vendor-owned marketing/comparison landing page (lps.colossyan.com, a Colossyan
+     subdomain, "Colossyan vs Synthesia"): "Colossyan also grants full commercial licensing to
+     videos created by paid subscribers." This is a lower-tier "other official vendor page"
+     under protocol 6.2 rather than the ToS/pricing page the decision rule names first, but it
+     is vendor-authored on a vendor domain (not third-party) and states a determinate policy
+     where the higher-tier sources are silent rather than contradicting it, so I coded from it
+     per codebook 2.1 step 2 rather than defaulting to unknown. Coded lowest_paid since the
+     quote says "paid subscribers" generally, not a named higher tier.
+  5. auto_renewal_disclosure_location: coded terms_only. The pricing-page FAQ ("access to
+     Colossyan requires a recurring subscription") is consistent with auto-renewal but was
+     judged short of an explicit renewal statement; a reader who counts it would make this
+     multiple instead.
+  6. refund_policy_location: coded multiple. The refund text is reachable both at the
+     dedicated /refund-policy/ URL and embedded (same wording) within the /terms/ page load
+     under its own "Refund Policy" heading - the site appears to bundle ToS + Refund Policy +
+     Instant Avatar Terms into one legal document reachable from separate footer links/URLs.
+
+  Source-conflict / staleness observation: the Zendesk "Pricing & Packaging FAQ" (marked "1
+  year ago Updated") appears stale against the live pricing page on two points not otherwise
+  used for a coded value: it illustrates "12*40=480 minutes" for an "annual Pro subscription"
+  where the current pricing page shows 30 min/mo NEO for Professional (360/yr), and it states
+  "there is no way to purchase additional minutes" where the current pricing-page FAQ says a
+  Professional-yearly add-on pack (600 NEO2 minutes/$1,500/yr) exists. Neither of these feeds
+  a coded variable directly, but both inform why I preferred the live pricing page over the
+  help center wherever the two disagreed on a figure (see conflict_note for the trial_auto_converts
+  case, which is variable-affecting).
+
+  Currency: page served USD directly from a Turkey-based session; no currency selector, no
+  country/currency URL parameter, no non-USD figure encountered anywhere. Non-essential
+  cookies were declined ("Allow selection", necessary-only) before reading the default state.
+
+  blindness: no other record, no review page, no pass-1 material was opened.
+conflict_note: "1) trial_auto_converts: Zendesk help-center FAQ (https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ) states \"You won't be able to generate videos unless you upgrade to a paid plan\" (no auto-charge implied) vs Terms of Service (https://www.colossyan.com/terms/) §3.4: \"Colossyan may charge automatically at the end of the trial or the renewal, unless you notify us in advance that you want to cancel\" (implies auto-charge). Trial terms are a pricing-class variable under protocol 6.2, where the help center (rank 2) outranks the Terms of Service (rank 3), so trial_auto_converts was coded \"no\" from the help center. 2) Minute allowance for the annual Professional/Pro tier: live pricing page (https://www.colossyan.com/pricing/) compare table shows 30 min/mo with NEO; Zendesk help-center FAQ's worked example says \"12*40=480 minutes in the case of an annual Pro subscription\" (i.e. 40 min/mo). Pricing-class hierarchy ranks the live pricing page above the help center, so the entry-tier allowance used throughout this record (usage_cap_quantified, cost_per_output_computable, computation_assumptions) is the pricing page's 30 min/mo, not the help center's 40. 3) Additional-minutes purchase: live pricing-page FAQ says a Professional-yearly add-on pack exists (\"600 extra NEO2 minutes for $1,500/year\"); Zendesk help-center FAQ says \"there is no way to purchase additional minutes.\" Not tied to a single coded variable; recorded here for completeness since it is a genuine source disagreement discovered during collection."
+register_events: []
+status: complete

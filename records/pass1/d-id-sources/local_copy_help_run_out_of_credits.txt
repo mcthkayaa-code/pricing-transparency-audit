@@ -1,0 +1,17 @@
+LOCAL COPY (archive_status: local_copy_only)
+Source URL: https://help.d-id.com/hc/en-us/articles/31425358108305-What-happens-when-I-run-out-of-credits
+Access date: 2026-08-07
+Retrieval method: rendered page text captured via browser (get_page_text), since the page returns HTTP 403 to scripted curl/WebFetch requests and web.archive.org/save returned HTTP 429/520 on three attempts (bot protection / rate limiting on Zendesk-hosted help center).
+Page title: "What happens when I run out of credits? – D-ID Help Center"
+---
+D-ID Help Center  Account & Billing
+What happens when I run out of credits?
+
+If you run out of credits and try to generate a video in the Studio, you'll see an upgrade popup with options to purchase more credits.
+
+You have a few choices:
+Upgrade your plan to a higher tier directly from the popup
+Visit the Pricing page to explore and upgrade to a higher plan
+Wait for your next billing renewal, when your credit balance will be automatically replenished based on your current subscription
+
+Running low often? Upgrading to a higher plan gives you more monthly credits at a better rate.

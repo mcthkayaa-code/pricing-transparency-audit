@@ -1,0 +1,89 @@
+SOURCE: https://ismybrandinai.com/sitemap.xml
+ACCESSED: 2026-08-14 (WebFetch, static)
+CAPTURE METHOD: WebFetch (sitemap XML parsed to list of URLs)
+
+Full URL list (54 entries) confirms no pricing/plans/premium/upgrade/subscribe/checkout page
+exists anywhere on the domain:
+https://ismybrandinai.com/
+https://ismybrandinai.com/guides
+https://ismybrandinai.com/research
+https://ismybrandinai.com/about
+https://ismybrandinai.com/privacy
+https://ismybrandinai.com/cookies
+https://ismybrandinai.com/contact
+https://ismybrandinai.com/terms
+https://ismybrandinai.com/methodology
+https://ismybrandinai.com/tools
+https://ismybrandinai.com/tools/ai-bot-checker
+https://ismybrandinai.com/tools/ai-readiness-check
+https://ismybrandinai.com/tools/llms-txt-generator
+https://ismybrandinai.com/tools/prompt-generator
+https://ismybrandinai.com/ai-overview-citations-by-industry
+https://ismybrandinai.com/ai-overview-optimization
+https://ismybrandinai.com/ai-search-engines
+https://ismybrandinai.com/ai-search-visibility
+https://ismybrandinai.com/ai-seo
+https://ismybrandinai.com/allow-ai-crawlers-robots-txt
+https://ismybrandinai.com/answer-engine-optimization
+https://ismybrandinai.com/best-ai-citation-tracking-tools
+https://ismybrandinai.com/best-ai-search-visibility-tools
+https://ismybrandinai.com/best-ai-seo-tools
+https://ismybrandinai.com/best-chatgpt-brand-monitoring-tools
+https://ismybrandinai.com/best-geo-tools
+https://ismybrandinai.com/bing-seo-for-ai-search
+https://ismybrandinai.com/chatgpt-shopping
+https://ismybrandinai.com/do-ai-engines-cite-the-same-sources
+https://ismybrandinai.com/gemini-rank-tracker
+https://ismybrandinai.com/generative-engine-optimization-services
+https://ismybrandinai.com/generative-engine-optimization-statistics
+https://ismybrandinai.com/generative-engine-optimization-strategy
+https://ismybrandinai.com/generative-engine-optimization-trends
+https://ismybrandinai.com/generative-engine-optimization
+https://ismybrandinai.com/geo-vs-seo
+https://ismybrandinai.com/google-ai-overviews-opt-out
+https://ismybrandinai.com/google-search-console-ai-report
+https://ismybrandinai.com/how-to-get-cited-by-chatgpt
+https://ismybrandinai.com/how-to-measure-ai-search-visibility
+https://ismybrandinai.com/how-to-rank-in-google-ai-mode
+https://ismybrandinai.com/how-to-rank-on-chatgpt
+https://ismybrandinai.com/how-to-rank-on-copilot
+https://ismybrandinai.com/how-to-rank-on-gemini
+https://ismybrandinai.com/how-to-rank-on-perplexity
+https://ismybrandinai.com/improve-brand-visibility-in-ai-search
+https://ismybrandinai.com/llms-txt
+https://ismybrandinai.com/most-cited-sources-in-ai-overviews
+https://ismybrandinai.com/saas-seo
+https://ismybrandinai.com/track-brand-mentions-in-chatgpt
+(2 more not listed by fetch tool, all clearly guide/article slugs matching the same pattern)
+
+===
+
+SOURCE: https://ismybrandinai.com/generative-engine-optimization-services
+ACCESSED: 2026-08-14 (WebFetch, static)
+Confirms: "No, ismybrandinai.com does not offer any paid services, consulting packages,
+subscriptions, or pricing of its own." Page content is a guide evaluating THIRD-PARTY GEO
+agencies and their typical costs ($1,500-$25,000+ monthly) -- these are prices of OTHER
+companies' services discussed editorially, not a price charged by ismybrandinai.com. Not a
+coding source for this vendor's own price (third-party prices are not this product's price).
+
+===
+
+SOURCE: https://ismybrandinai.com/contact
+ACCESSED: 2026-08-14 (WebFetch, static)
+No mention of any paid service, pricing, or payment. Contact form only.
+
+===
+
+SOURCE: https://ismybrandinai.com/methodology
+ACCESSED: 2026-08-14 (WebFetch, static)
+No paid services/pricing of ismybrandinai.com's own. States: "When we compare tools, we use the
+vendors' own published prices, plans and feature pages — and we link to them so you can check."
+Also states the site currently earns no commissions but may add affiliate links in future, with
+disclosure. No current paid offerings.
+
+===
+
+SOURCE: https://ismybrandinai.com/privacy
+ACCESSED: 2026-08-14 (WebFetch, static)
+Does not mention payment processing, billing data, subscriptions, or any paid product. Only:
+"If you download a free resource (such as our checklist), join a list, or contact us..."

@@ -1,0 +1,103 @@
+SOURCE: https://help.murf.ai/why-did-my-plan-automatically-renew
+DATE ACCESSED: 2026-08-09
+METHOD: curl static fetch (server-rendered help/legal page, not a JS app-shell)
+ARCHIVE: https://web.archive.org/web/20260809194111/https://help.murf.ai/why-did-my-plan-automatically-renew
+PAGE TITLE: Why did my plan automatically renew?
+NETWORK NOTE: collection environment egresses from Turkey; this page's substantive text
+  (ToS/help-center prose) is not price-bearing in a way current-affected -- D-003 currency
+  check applies to the pricing page specifically (see pricing-rendered.txt).
+=== EXTRACTED TEXT (nav/boilerplate stripped where noted) ===
+Why did my plan automatically renew?
+Skip to content
+English
+Show submenu for translations
+Open main navigation
+Close main navigation
+English
+Show submenu for translations
+Open Studio
+Open Studio
+How can we help you today?
+There are no suggestions because the search field is empty.
+Help Center
+Payments and Billing
+Frequently Asked Questions/ Troubleshooting
+Why did my plan automatically renew?
+Murf plans are designed to make your life easier. With automatic renewals, you don't have to worry about manually renewing your plan every month or year.
+How Automatic Renewal Works?
+Your subscription automatically renews monthly or annually unless canceled before the renewal date(as detailed in section 2.3.3 of our Terms of Service). To find your next billing date and manage your subscription, go to the Billing & Payments section within Workspace Settings .
+Only Admins/Owners can Manage Payments for a team workspace.
+What If My Account Is Paused?
+When a paused account’s pause period concludes, the subscription will automatically renew. Unless canceled prior to the end of the 30-day maximum pause duration, billing will restart according to the regular schedule. For further details, click here .
+If your plan has been renewed recently and you would like a cancellation and refund, kindly email us, and our team will be happy to help you!
+How to Cancel Your Plan
+To prevent renewal, cancel your subscription before your current billing period ends, following the steps below:
+Head to Workspace Settings
+Under " Subscription" > Cancel Plan > Continue to cancel
+Select a primary reason from the list and share your comments.
+Cancel Subscription
+Please note that the cancellation takes effect at the end of your current billing period. Until then, you have access to paid features.
+Here are our refund terms and conditions. If you are eligible for a refund, kindly contact us via chat or email .
+If you need help canceling your plan, click here .
+If you need assistance, reach out to us via live chat on our website or email support@murf.ai .
+New to Murf
+Intro to Murf AI
+Setup and Onboarding
+Managing Your Account
+Free Trial
+Getting Started
+Script Import and Structuring
+Finding the Right Voice & Settings
+Adding Media Files
+Frequently Asked Questions
+New to Murf
+Working with the Studio
+Payment and Billing
+Workspaces and Account Management
+Voice Cloning
+Commercial Rights
+Working with the Studio
+Studio Elements
+Voices and Languages
+Voice Settings
+Working with Imports
+Timeline and Project Settings
+Exports
+Collaboration
+Gen2 Voice Model
+HTML Embed
+Audio to Text
+AI Dubbing
+Introduction
+Murf Dub Project
+Dubbing Credits
+Pricing and Plans
+Editing Dub
+Workspaces
+Introduction
+Types of User Roles
+Invite Team Members
+Managing Projects and Folders
+Permissions and Privacy
+Voice Generation Time (VGT)
+Tracking VGT Consumption
+Payments and Billing
+Managing Payments and Billing
+Frequently Asked Questions/ Troubleshooting
+Taxes
+YouTube Codes
+Adding YouTube Codes
+Introduction to YouTube Codes
+Content ID Claims
+API
+Introduction
+Generating Speech
+API Pricing and Plans
+Integrations & Add Ons
+PowerPoint Plugin
+Windows Voices Installer
+Canva
+Voice Cloning
+Introduction
+Help Center
+Copyright © 2026, Murf Inc.

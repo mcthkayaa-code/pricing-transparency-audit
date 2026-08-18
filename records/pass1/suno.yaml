@@ -1,0 +1,169 @@
+product_id: suno
+product_name: Suno
+category: AI music generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Pro Plan"
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://suno.com/pricing
+archive_url: "records/pass1/suno-sources/pricing-page-2026-08-13-rendered-text.txt"
+archive_status: local_copy_only
+default_display_state: "Annual billing preselected on load, DOM-confirmed identically on two independent reads (2026-08-12 and 2026-08-13): input[value=\"year\"].checked=true / aria-checked=\"true\" on the Annual toggle, input[value=\"month\"] false. Pro shows $8/mo, Premier $24/mo in this state. No consent banner blocked reading (cookie banner present but non-blocking)."
+
+sources:
+  - { url: "https://suno.com/pricing", kind: pricing, accessed: 2026-08-12, archive: local_copy_only, note: "static+DOM read; text saved to suno-sources/pricing-page-annual-default-2026-08-12.txt (top-level product dir, prior run)" }
+  - { url: "https://suno.com/pricing", kind: pricing, accessed: 2026-08-13, archive: local_copy_only, note: "rendered browser read, second representation via get_page_text + DOM radio-input check; saved to records/pass1/suno-sources/pricing-page-2026-08-13-rendered-text.txt" }
+  - { url: "https://suno.com", kind: tos, accessed: 2026-08-12, archive: local_copy_only, note: "Terms of Service, dated Last Revision March 26, 2026; captured to 50,000-char tool limit (truncated mid-Arbitration-Procedures section, AFTER all Fees/Renewal/Trial/Refund/Commercial-Use/Content-ownership clauses); saved to suno-sources/tos-full-text-2026-08-12.txt (top-level product dir, prior run)" }
+  - { url: "https://help.suno.com/en/articles/2525441", kind: docs, accessed: 2026-08-13, archive: local_copy_only, note: "\"How many credits do I have left?\"" }
+  - { url: "https://help.suno.com/en/articles/2643713", kind: docs, accessed: 2026-08-13, archive: local_copy_only, note: "\"What happens if I use all of my paid credits?\"" }
+  - { url: "https://help.suno.com/en/articles/2550209", kind: refund, accessed: 2026-08-13, archive: local_copy_only, note: "\"Can I get a refund?\" official refund help article" }
+  - { url: "https://help.suno.com/en/articles/9601601", kind: docs, accessed: 2026-08-13, archive: local_copy_only, note: "\"What rights do I have with the free plan?\"" }
+  - { url: "https://help.suno.com/en/articles/9601665", kind: docs, accessed: 2026-08-13, archive: local_copy_only, note: "\"What rights do I have with a paid subscription?\"" }
+  - { url: "https://help.suno.com/en/articles/2410049", kind: docs, accessed: 2026-08-13, archive: local_copy_only, note: "\"What type of plan do I have?\"" }
+  - { url: "https://help.suno.com/en/articles/2524993", kind: docs, accessed: 2026-08-13, archive: local_copy_only, note: "\"Why did my credits reset?\" -- primary rollover evidence" }
+  - { url: "https://help.suno.com/en/categories/566273", kind: docs, accessed: 2026-08-13, archive: local_copy_only, note: "Troubleshooting category listing, checked for a failed-generation article; none exists" }
+
+variables:
+  headline_price_usd: { value: 8.00, source: "https://suno.com/pricing", evidence: "Pro Plan card, default annual-preselected state: \"$8 /ay\" [/mo]. Confirmed in a second representation (DOM radio-input check + independent 2026-08-13 render) and by arithmetic cross-check: $8x12 + $24-saved = $120... corrected: (8*12+24)/12=$10.00 monthly-billed equivalent, and (10-8)/10=20%, matching the page's own \"SAVE 20%\" badge exactly." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://suno.com/pricing", evidence: "\"$8 /ay\" with \"Yıllık faturalandırmayla $24 tasarruf!\" (save $24 by billing annually) printed directly beneath, inside the same plan card." }
+  first_charge_amount_usd: { value: unknown, source: "https://suno.com/pricing", evidence: "Pricing page shows the annual-billed monthly-equivalent ($8/mo) and a savings badge, but no document opened (pricing page or ToS) states whether the annual plan is charged as one $96 payment or as 12 separate $8 charges. Per codebook 5.2/first_charge_amount_usd rule 3, billing frequency is not stated so no multiplication is applied. This is the codebook's own documented common case (A1 money value with A3 unknown)." }
+  mandatory_addon_present: { value: "no", source: "https://suno.com/pricing", evidence: "Pro Plan feature list includes voice-recording/custom-model features as standard inclusions; the only \"extra\" mentioned, \"Ek kredi satın alma imkanı\" (option to purchase additional credits), is explicitly optional, not required to use the plan as advertised. No hidden mandatory fee found in the ToS Fees section either." }
+  annual_condition_disclosure: { value: adjacent, source: "https://suno.com/pricing", evidence: "\"Yıllık faturalandırmayla $24 tasarruf!\" sits directly beneath the \"$8 /ay\" figure, inside the same plan card -- same visual price block." }
+  annual_default_toggle: { value: annual_preselected, source: "https://suno.com/pricing", evidence: "DOM: input[value=\"year\"].checked=true, aria-checked=\"true\" on the Annual radio; input[value=\"month\"] checked=false. Identical on both the 2026-08-12 and 2026-08-13 reads -- no display variant observed." }
+  free_plan_exists: { value: "yes", source: "https://suno.com/pricing", evidence: "\"Ücretsiz Plan\" (Free Plan) card, \"$0 /ay\", presented as a standing tier alongside Pro and Premier, CTA \"Kaydol\" (Sign up)." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://suno.com/pricing", evidence: "50 credits/day (quantified rate, renewed daily); 8-minute audio upload ceiling (quantified standing limit); 10 songs/day (quantified rate, from the Compare Suno plans table, corroborated by help.suno.com/en/articles/2410049: \"50 credits that replenish daily. This is enough to make 10 songs per day!\"). No unquantified free-tier limit found." }
+  free_plan_cap_value: { value: "50 credits per day | 8 minutes audio upload | 10 songs per day", source: "https://suno.com/pricing", evidence: "Plan card + Compare Suno plans table; corroborated by help.suno.com/en/articles/2410049 and /2524993." }
+  free_plan_watermark: { value: unknown, source: "https://suno.com/pricing", evidence: "No watermark row anywhere in the \"Compare Suno plans\" table (explicitly checked, none found); no mention of watermarking in the ToS or in either free-plan-rights (help.suno.com/en/articles/9601601) or paid-plan-rights (9601665) help article. Documents read and silent, across 4 official sources." }
+  free_plan_duration: { value: perpetual, source: "https://suno.com/pricing", evidence: "Presented as a standing plan alongside the paid tiers on every read; no expiry stated in any document." }
+  trial_exists: { value: "no", source: "https://suno.com/pricing", evidence: "Pricing page shows only \"Kaydol\" (Sign up, Free) and \"Abone ol\" (Subscribe, Pro/Premier) -- no trial CTA or trial mention anywhere on the page. Official help-center documentation (8 articles checked across Accounts & Billing and Rights & Ownership) is likewise silent on any trial. Per codebook trial_exists rule 3 (pricing page + documentation silent = no) and per the pricing-variable source hierarchy (pricing page ranks above ToS for trial terms). See conflict_note: the ToS contains a generic \"Free Trial\" clause that this record does not follow, per hierarchy." }
+  trial_card_required: { value: not_applicable, source: "https://suno.com/pricing", evidence: "No trial exists on the governing (higher-authority) source; see trial_exists." }
+  trial_length_days: { value: not_applicable, source: "https://suno.com/pricing", evidence: "No trial exists on the governing (higher-authority) source; see trial_exists." }
+  trial_auto_converts: { value: not_applicable, source: "https://suno.com/pricing", evidence: "No trial exists on the governing (higher-authority) source; see trial_exists." }
+  credit_system_present: { value: "yes", source: "https://suno.com/pricing", evidence: "All tiers meter usage through \"kredi\"/credits, an intermediate currency (\"2.500 kredi, her ay yenilenir\"), not directly in output units." }
+  credit_unit_defined: { value: "no", source: "https://suno.com/pricing", evidence: "Checked the pricing page, the ToS, and 8 help-center articles across Billing, Accounts, Rights & Ownership and Troubleshooting categories (help.suno.com/en/articles/2525441, 2643713, 2550209, 9601601, 9601665, 2410049, 2524993, and the Troubleshooting category listing 566273). None states what one credit converts to in output terms (no \"1 credit = X\" statement found anywhere)." }
+  credit_to_output_rate_published: { value: "no", source: "https://suno.com/pricing", evidence: "Same document set as credit_unit_defined. No published credits-per-song (or any-output) rate found anywhere, not even as a range. See coder_note for a non-authoritative arithmetic observation not used to code this value." }
+  credit_rate_location: { value: absent, source: "https://suno.com/pricing", evidence: "No rate is published in any document, so there is no location for one." }
+  cost_per_output_unit: { value: other, source: "https://suno.com/pricing", evidence: "The vendor's own \"Compare Suno plans\" table frames the principal output as a count of discrete songs (\"Şarkı sayısı\"/song count: 10/day free, 500/mo Pro, 2000/mo Premier), not as audio-minutes. Named unit: \"per song generation\"." }
+  cost_per_output_computable: { value: "no", source: "https://suno.com/pricing", evidence: "The credits-per-song conversion rate needed to divide the entry tier's monthly price by a monthly song allowance is not published anywhere (see credit_to_output_rate_published=no), so cost per song cannot be computed from published figures alone." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://help.suno.com/en/articles/2524993", evidence: "\"Whether you use 10 credits or all 2500, your next billing cycle will start with 2500 credits\" (help center, title \"Why did my credits reset?\"); corroborated by the pricing page's own Need More section: \"Credits included in subscriptions do not carry over from day to day or month to month.\" Note: purchased top-up credits behave differently and are recorded separately in coder_note." }
+  failed_generation_charge_policy: { value: unknown, source: "https://suno.com", evidence: "No official document addresses failed, errored, or stuck generations and whether they consume credits. Checked the ToS in full through the Arbitration Procedures section, plus the Billing, Accounts, Rights & Ownership, and Troubleshooting help-center categories (10 official documents total for this record) -- silent across all of them." }
+  auto_renewal_default: { value: "on", source: "https://suno.com", evidence: "\"your subscription will automatically renew at the subscription period frequency referenced on your subscription page (or if not designated, then monthly) and at the then-current rates, and your payment method will automatically be charged at the start of each new subscription period\" -- ToS, Subscription Renewals and Cancellations." }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://suno.com", evidence: "Stated in the ToS's \"Subscription Renewals and Cancellations\" clause; not found on the pricing page (checked both reads) or in any of the 8 help-center articles checked." }
+  renewal_notice_commitment: { value: unknown, source: "https://suno.com", evidence: "The ToS commits to 15 days' advance notice for PRICE CHANGES specifically (\"Suno will provide notice of the change... at least fifteen (15) days before the change is to take effect\"), a different construct, and states no commitment to notify before an ordinary recurring renewal charge. Silent on renewal-specific notice." }
+  refund_policy_exists: { value: "yes", source: "https://suno.com", evidence: "ToS: \"Payments made by you hereunder are final and non-refundable, unless otherwise determined by Suno.\" The open-ended carve-out is spelled out with concrete, real categories in the official help article help.suno.com/en/articles/2550209 (service discontinuation = pro-rata; accidental payment; accidental/unattended signup; product malfunction = service credit). CODER JUDGMENT CALL -- see coder_note; this is close to no_refunds_stated and is flagged for adjudicator attention." }
+  refund_window_days: { value: unknown, source: "https://help.suno.com/en/articles/2550209", evidence: "No firm day-count window is published; refunds run case-by-case. The only day-adjacent language is informal and non-binding: \"If it's only been a day or two, give our team a shout... we'll do our best to make it right,\" which is not stated as a formal policy window." }
+  refund_conditions: { value: conditional, source: "https://help.suno.com/en/articles/2550209", evidence: "Specific qualifying scenarios are listed (service discontinuation, accidental payment, accidental/unattended signup, product malfunction), each subject to Suno's discretionary review (\"we're likely to assist,\" \"we'll do our best\"), and explicit non-honored scenarios are also listed (changed your mind; intermittent usage)." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://suno.com", evidence: "\"cancelling your subscription within the account interface of the Site at https://app.suno.ai/account\" is documented as one available cancellation route (an email route is also offered, but self-serve is present)." }
+  refund_policy_location: { value: multiple, source: "https://suno.com", evidence: "Stated in the ToS (\"Refunds and Cancellations\" clause, plus the discontinuation clause under \"Your Registration Obligations\") and elaborated at length in a dedicated official help-center article, help.suno.com/en/articles/2550209." }
+  commercial_use_lowest_tier: { value: lowest_paid, source: "https://suno.com/pricing", evidence: "Pricing-page FAQ: \"Ücretsiz planlar ticari hakları içermez. Pro veya Premier kullanıyorsan şarkılarını ticari olarak kullanabilirsin\" (Free plans do not include commercial rights; using Pro or Premier lets you use your songs commercially). Corroborated by the ToS's Output-assignment clause (Pro/Premier only) and by help.suno.com/en/articles/9601665: \"Songs made while subscribed are granted commercial use rights.\" Pro is the entry paid tier. Three independent official sources agree; no conflict." }
+  watermark_removal_tier: { value: unknown, source: "https://suno.com/pricing", evidence: "Same finding as free_plan_watermark: no watermark row in the Compare Suno plans table, and no mention in the ToS or in any of the 8 help-center articles read." }
+  output_ownership_statement: { value: conditional, source: "https://suno.com", evidence: "ToS: \"if you are a user who has subscribed to the Pro or Premier paid tier of the Service, Suno hereby assigns to you all of its right, title and interest in and to any Output owned by Suno and generated from Submissions made by you through the Service during the term of your paid-tier subscription.\" Free/Basic-tier users instead get only a limited license: \"you covenant and agree that you will only use Outputs... solely for your lawful, internal, personal and non-commercial purposes, provided that you give attribution credit to Suno.\" Ownership is explicitly assigned on paid tiers and explicitly withheld (license only) on the free tier -- rights depend on tier, which is the definition of conditional." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://suno.com/pricing", evidence: "Entry paid tier (Pro): 2,500 credits/month (quantified rate, corroborated by help.suno.com/en/articles/2410049 and /2524993), 20 song downloads/month effective 9/3/26 (quantified rate), 30-minute audio upload (quantified standing limit), priority queue up to 10 concurrent songs (quantified standing limit). No unlimited or unquantified claim found for Pro." }
+  unquantified_limit_clause: { value: present, source: "https://suno.com", evidence: "\"If we believe you are not using the free tier in good faith, we may stop providing access to the Service\" -- an abuse threshold with no number. Also: \"Suno may establish general practices and limits concerning use of the Service... Suno reserves the right to change these general practices and limits at any time, in its sole discretion, with or without notice\" (General Practices Regarding Use and Storage clause)." }
+
+computation_assumptions: "not_applicable -- cost_per_output_computable=no (required credits-per-song rate not published) and first_charge_amount_usd was left unknown rather than calculated (no document states the annual plan's billing frequency), so no arithmetic was performed for either derived figure."
+
+conflict_note: |
+  trial_exists: the ToS (lower authority for trial terms per protocol 6.2's pricing-variable
+  hierarchy: pricing page 1st, documentation 2nd, ToS 3rd) contains a generic "Free Trial"
+  clause -- "You can sign up for a trial for the paid portion of the Service and your trial
+  period starts on the day you sign up... (or if not specified, then 7 days)" -- describing
+  trial mechanics in the abstract. The live pricing page (https://suno.com/pricing, checked
+  twice, 2026-08-12 and 2026-08-13) shows no trial CTA or mention anywhere -- only "Sign up"
+  (free) and "Subscribe" (Pro/Premier) -- and 8 official help-center articles checked are
+  likewise silent on any trial. Coded trial_exists=no from the higher-authority pricing page
+  plus silent documentation, per codebook rule 2.1 step 3 and trial_exists rule 3. Both URLs:
+  https://suno.com/pricing and https://suno.com (ToS). Flagged for adjudicator review since the
+  ToS clause is affirmatively worded ("You can sign up for a trial") rather than clearly
+  legacy/unused boilerplate, though nothing in this documents-only study can settle whether it
+  is currently active (e.g. as a mobile-app-store-specific flow not shown on the web pricing
+  page) without contacting the vendor, which protocol 6.3 prohibits.
+
+coder_note: |
+  BLINDNESS: no other product's record, no review page under site/content/reviews/, and no
+  pass-2 material was opened at any point in this collection. Only the files this agent's
+  instructions permit were read.
+
+  ENTRY TIER: Eligible paid candidates were Pro Plan ($8/mo default annual-preselected state;
+  annual-equivalent 8x12=$96.00/yr) and Premier Plan ($24/mo annual-preselected;
+  annual-equivalent 24x12=$288.00/yr). Free Plan ($0/mo) is not a paid-tier candidate. Pro Plan
+  wins on lowest annual-equivalent cost; Premier Plan is the losing candidate at $288.00/yr.
+
+  SECOND-REPRESENTATION CONFIRMATION: every price figure was checked in at least two
+  representations across two independent reads a day apart (2026-08-12 static+DOM,
+  2026-08-13 rendered text + DOM radio-input query) and cross-validated by arithmetic: the
+  displayed $8/mo and $24/mo annual figures, combined with the page's own "save $24/yr" and
+  "save $72/yr" badges, resolve to exactly $10/mo and $30/mo monthly-billed equivalents, each
+  a precise 20% discount matching the page's "SAVE 20%" badge. No superscript/formatting
+  misread risk found; both reads agree exactly.
+
+  CURRENCY: suno.com/pricing serves USD ($) figures directly regardless of the Turkish-
+  localized UI strings served to this collection's network location; no currency selector or
+  localized-currency figure was observed, so the D-003 currency check resolves trivially --
+  the vendor serves USD directly, arm 1 of the currency-check ladder.
+
+  ARCHIVAL: per this run's instructions and deviation D-012 (Wayback rate-limiting), no
+  web.archive.org saves were attempted this run. All sources are archive_status=local_copy_only
+  with dated verbatim local captures: suno-sources/pricing-page-annual-default-2026-08-12.txt
+  and suno-sources/tos-full-text-2026-08-12.txt (top-level product dir, from an earlier run),
+  plus records/pass1/suno-sources/pricing-page-2026-08-13-rendered-text.txt and
+  records/pass1/suno-sources/help-center-articles-2026-08-13.txt (this run).
+
+  TOS SCOPE: the ToS capture truncates at a 50,000-character tool limit partway through the
+  Arbitration Procedures section. Every commercially-relevant clause (Fees, Subscription
+  Renewals and Cancellations, Free Trial, Payment Processing, Refunds and Cancellations,
+  Commercial Use, Content/Output ownership) was captured in full before that cutoff point;
+  nothing coded here relies on text past the truncation. The ToS page also carries a banner,
+  "Our terms are changing soon. See here to view the new terms," dated Last Revision March 26,
+  2026 -- coded from the currently-live version as read; worth a priority re-check at the
+  mid-window recheck since a replacement is apparently pending.
+
+  TERMINOLOGY: the pricing page names the zero-cost tier "Free Plan" / "Ücretsiz Plan"; the
+  official help center instead calls the same tier "Basic" throughout (e.g. "reverts to the
+  Basic plan," "Basic (free) plan"). Same construct, inconsistent vendor naming across its own
+  document classes -- not coded as a conflict since no VALUE disagrees, only the label.
+
+  REFUND JUDGMENT CALL: refund_policy_exists was coded "yes" rather than "no_refunds_stated"
+  because the ToS's own carve-out ("unless otherwise determined by Suno") is open-ended rather
+  than a narrow statutory exception, and the official help-center article
+  (help.suno.com/en/articles/2550209) spells out real, concrete categories where Suno commits
+  to refunding (pro-rata on discontinuation; accidental payment; accidental/unattended signup;
+  malfunction credit). A stricter reading could code this "no_refunds_stated" with the
+  exceptions folded into refund_conditions instead of refund_policy_exists=yes -- flagged
+  explicitly for the adjudicator; both source URLs and full quotes are in the variable's
+  evidence field and in this repo's help-center-articles-2026-08-13.txt.
+
+  CREDITS -- WHAT SUNO DOES AND DOES NOT DEFINE (per this run's specific brief): checked
+  whether Suno defines what one credit buys (credit_unit_defined) -- it does NOT, across 10
+  official documents (pricing page, ToS, 8 help-center articles). Checked whether credits roll
+  over (credit_rollover_policy) -- they do NOT for the plan-included allotment
+  (expires_at_period_end, help.suno.com/en/articles/2524993 titled "Why did my credits reset?"
+  is explicit and unambiguous), though PURCHASED top-up credits are a separate bucket that
+  "do not expire, but require an active subscription to use" per the pricing page's Need More
+  section -- a meaningful two-tier nuance, not coded as conflicting since the two credit types
+  are distinct constructs, both stated consistently. Checked whether a failed generation
+  consumes credits (failed_generation_charge_policy) -- no official document addresses this at
+  all (unknown); searched the ToS in full plus the Billing, Accounts, Rights & Ownership and
+  Troubleshooting help-center categories specifically for this.
+
+  NON-AUTHORITATIVE ARITHMETIC (explicitly NOT used to code any variable, per this run's
+  fabrication-avoidance instruction): Free tier shows 50 credits/day (pricing page + help
+  center) alongside a separately-listed 10 songs/day cap (Compare Suno plans table); Pro shows
+  2,500 credits/month alongside a separately-listed 500 songs/month cap (same table). Both
+  ratios reduce to 5 credits/song if divided evenly. The vendor never states this connection
+  in any of the 10 documents read -- the two figures live on independent, unconnected rows/
+  sources -- so this is coder inference, not a published rate, and credit_unit_defined /
+  credit_to_output_rate_published are coded "no" rather than "yes"/"partial" on this basis.
+
+  OUTPUT OWNERSHIP: Suno's ToS explicitly defines "Output" as a distinct term ("generate and
+  return audio and visual output... ('Output', and together with the Submissions, 'Content')")
+  and then, unlike the pattern flagged in this run's brief, DOES assign ownership of it --
+  conditionally, to Pro/Premier subscribers only, for Output generated during the paid term.
+  Free/Basic-tier users receive a personal/non-commercial use license only, with no ownership
+  assignment. See output_ownership_statement=conditional and its evidence for exact quotes.
+
+register_events: []
+status: complete

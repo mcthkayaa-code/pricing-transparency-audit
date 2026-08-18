@@ -1,0 +1,574 @@
+product_id: google-veo
+product_name: Google Veo
+category: AI video generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: unknown
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-15
+recheck_date: not_applicable
+primary_source_url: https://deepmind.google/models/veo/
+archive_url: https://web.archive.org/web/20260815115555/https://deepmind.google/models/veo/
+archive_status: archived
+default_display_state: >
+  Google Veo has no dedicated pricing page of its own, which is the finding this record turns on
+  (see coder_note). Two distinct, non-equivalent, official, self-serve, non-sales-gated surfaces
+  exist. Surface A, one.google.com/intl/en_us/about/google-ai-plans/ (US-locale, USD): a
+  Google AI Plus/Pro/Ultra subscription-card ladder, Monthly preselected on load, that bundles
+  storage/Gemini chat/Docs-Gmail AI/YouTube perks/image-music generation/coding agents with shared
+  "Flow credits" partly spendable on Veo generation via the separate Google Flow app. A second
+  official page for the same ladder, one.google.com/about/plans, geo-localizes to TRY by default
+  from a Turkey network location -- a display_variant under D-003, resolved to the page's own USD
+  figures per that rule -- and states a different price for the same-named "Google AI Plus" plan
+  than the /intl/en_us/ page does (see conflict_note). Surface B, ai.google.dev/gemini-api/docs/pricing:
+  the Gemini Developer API's Veo rate card, no monthly/annual toggle, per-second USD metering only,
+  auto-translated UI shell (Turkey geolocation) with prices always printed in USD regardless. Both
+  re-verified live 2026-08-15; both match what pass 1 (2026-08-07) and pass 2 (2026-08-15) recorded,
+  no material vendor change found.
+sources:
+  - { url: "https://deepmind.google/models/veo/", kind: other, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815115555/https://deepmind.google/models/veo/", note: "Vendor's own official product page for Veo (frame vendor_home_url). Re-verified live 2026-08-15: SynthID safety statement unchanged from both passes' captures. No pricing on this page; links out to both candidate surfaces." }
+  - { url: "https://one.google.com/intl/en_us/about/google-ai-plans/", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815115615/https://one.google.com/intl/en_us/about/google-ai-plans/", note: "Surface A (consumer bundle) pricing page, US-locale. Re-verified live 2026-08-15: same four-tier ladder (AI Plus/Pro/Ultra 5x/Ultra 20x) both passes captured." }
+  - { url: "https://one.google.com/about/plans", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807100413/https://one.google.com/about/plans", note: "Second official Surface-A page. States Google AI Plus at $9.99/mo (2 TB) against the /intl/en_us/ page's $4.99/mo (400 GB) for the same plan name -- an internal conflict within Surface A, independent of the entry-tier question. Pass 1's own D-009 re-read (google-veo-sources/d009-reread-2026-08-10.md) reconfirmed both figures in three representations each on 2026-08-10." }
+  - { url: "https://support.google.com/flow/answer/16526234?hl=en", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807101506/https://support.google.com/flow/answer/16526234?hl=en", note: "Surface A: Google Flow credits help article. Free daily allowance, per-tier monthly allocations, per-model credit costs, rollover policy." }
+  - { url: "https://support.google.com/flow/answer/16353333?hl=en", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260807101438/https://support.google.com/flow/answer/16353333?hl=en", note: "Surface A: Flow watermark/rate-limit FAQ. Re-verified live 2026-08-15 -- quotes below match pass 1's 2026-08-07 capture verbatim: invisible SynthID watermark stated unconditionally for all Flow/Veo outputs; a separate, optional, user-controlled 'Visible watermarking' toggle (forced on only for India/South Korea/Vietnam); a discretionary 'we may rate-limit ... to balance the available resources for all users and prevent abuse' clause with no figure." }
+  - { url: "https://one.google.com/terms-of-service", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807100850/https://one.google.com/terms-of-service", note: "Surface A contractual document: Google One Additional ToS. Auto-renewal, cancellation, refund pointer." }
+  - { url: "https://support.google.com/googleone/answer/2736362?hl=en", kind: refund, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807100944/https://support.google.com/googleone/answer/2736362?hl=en", note: "Surface A: Google One purchase/cancellation/refund policy help page." }
+  - { url: "https://policies.google.com/terms?hl=en-US", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807101022/https://policies.google.com/terms?hl=en-US", note: "General Google ToS, 'Content in Google services' ownership clause. Applies regardless of surface." }
+  - { url: "https://ai.google.dev/gemini-api/docs/pricing", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815115708/https://ai.google.dev/gemini-api/docs/pricing", note: "Surface B (developer API) pricing page. Re-verified live 2026-08-15: Veo 3.1 / Fast / Lite per-second USD rates unchanged from pass 2's capture." }
+  - { url: "https://ai.google.dev/gemini-api/docs/billing", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815115748/https://ai.google.dev/gemini-api/docs/billing", note: "Surface B: $10 minimum prepay to reach the paid tier; credit non-refundable/12-month expiry; Tier 1 $250/mo spend cap; self-serve billing setup." }
+  - { url: "https://ai.google.dev/gemini-api/terms", kind: tos, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815115813/https://ai.google.dev/gemini-api/terms", note: "Surface B contractual document: Gemini API Additional ToS, read in full for the discretionary-clause check. Output ownership disclaimer." }
+  - { url: "https://cloud.google.com/terms/", kind: tos, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815115832/https://cloud.google.com/terms/", note: "Surface B: GCP ToS. Fees non-cancellable; refunds for billing inaccuracies issued as credit only." }
+  - note: "Full source lists, including every URL each pass individually opened, are preserved in records/pass1/google-veo.yaml and records/pass2/google-veo.yaml. This list carries only the sources this adjudication cites directly."
+
+variables:
+  headline_price_usd:
+    value: unknown
+    source: "https://one.google.com/intl/en_us/about/google-ai-plans/ | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      TIER-SELECTION UNRESOLVED. Google Veo has no dedicated pricing page of its own. Two distinct,
+      non-equivalent, official, self-serve, non-sales-gated surfaces exist: (A) the Google AI
+      Plus/Pro/Ultra consumer subscription ladder, which bundles storage, Gemini chat, Docs/Gmail AI,
+      YouTube perks, image/music generation, coding agents, and shared "Flow credits" redeemable
+      across several Flow tools including Veo video generation -- entry rung "Google AI Plus" priced
+      $9.99/mo or $4.99/mo depending on which of two live Google pages is read (see conflict_note),
+      annual-equiv $119.88/$59.88; and (B) the Gemini Developer API, which meters Veo generation
+      directly in USD per second with nothing else bundled in -- Veo 3.1 Lite at $0.05/sec (720p) is
+      the lowest published rate. Sampling-rules 7.2 eligibility rules 1-4 (generally available, no
+      sales contact, standing, seat n/a) are satisfied by BOTH surfaces. Rule 5 -- "where the vendor
+      publishes only usage-based pricing, the smallest published package or unit rate [is the
+      candidate]" -- and this variable's own decision rule 6 -- "if usage-based pricing is the only
+      paid option, record the published unit rate" -- both gate usage-based pricing behind an "only
+      paid option" condition that is not met at face value, since Google also publishes the flat AI
+      Plus subscription. Applied literally that selects AI Plus. But 7.2's eligibility test and its
+      worked example (codebook line 234) both assume a product with its own dedicated pricing page of
+      plan cards; Veo has neither candidate cleanly: AI Plus's price is not attributable to Veo
+      specifically -- it prices a Google-wide ecosystem whose own comparison table names a DIFFERENT
+      model, "Omni Flash", not Veo, on its headline video-generation row, and Veo access is reached
+      only indirectly, through Flow, spending credits shared with non-Veo Flow tools -- while the API
+      rate IS Veo-specific and unbundled but is reached only through a developer/billing-account path
+      with no subscription "plan" of its own. Neither surface is "a plan ... for the entry paid tier"
+      in the sense 7.2's worked examples contemplate, and nothing in 7.2, the codebook, or the
+      protocol states whether product-specific attribution or vendor-wide availability governs when
+      the two pull apart. Two careful coders applied the same rule and reasoned in full, on the
+      record, to opposite answers (pass 1 coder_note; pass 2 coder_note) -- itself the diagnosis,
+      under protocol 7.4 step 5, of a rule that does not determine the answer for a product reachable
+      only through a larger platform with no dedicated pricing page of its own. Coded unknown, not
+      conflicting (reserved on this variable's own value table for two sources disagreeing about the
+      SAME tier, which is a separate, secondary issue here -- see conflict_note) and not
+      no_public_price (that requires the price to be unpublished/sales-gated; here two prices are
+      published, the difficulty is choosing between them).
+  headline_billing_basis:
+    value: unknown
+    source: "https://one.google.com/intl/en_us/about/google-ai-plans/ | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Cascades from headline_price_usd (unresolved entry tier). Surface A (Flow/AI-Plus) bills
+      per_month_billed_monthly (both candidate figures quoted "/mo", Monthly preselected on load).
+      Surface B (Gemini API) is usage_based (per-second, no monthly/annual option published anywhere
+      for Veo). Both are correctly documented for their own surface; which one describes "the
+      headline figure" is undetermined because the headline figure itself is.
+  first_charge_amount_usd:
+    value: unknown
+    source: "https://one.google.com/intl/en_us/about/google-ai-plans/ | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Cascades from headline_price_usd. Surface A: first charge = the conflicting $9.99/$4.99 monthly
+      figure itself (Monthly default state, no annualization per rule 3). Surface B: first charge =
+      the documented $10.00 minimum prepay required to reach the paid tier
+      (ai.google.dev/gemini-api/docs/billing: "prepaying at least $10 USD credit" / "minimum purchase
+      amount is $10 USD"), independent of the $0.05/sec headline rate. Both figures are real and
+      well-evidenced for their own surface; which a buyer actually pays first is undetermined because
+      the entry tier is.
+  mandatory_addon_present:
+    value: "no"
+    source: "https://one.google.com/intl/en_us/about/google-ai-plans/ | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Agreed by both passes and robust to the unresolved entry tier: neither candidate documents a
+      required charge beyond its own plan/rate. Surface A: pass 1 reviewed the AI Plus plan card, the
+      Flow credits help article, and the Flow FAQ and found no mandatory separate charge. Surface B:
+      pass 2 found no required charge beyond the per-second rate; the $10 minimum prepay is coded
+      under first_charge_amount_usd, not here, to avoid double-counting the same fact on two
+      variables (pass 2 coder_note). Both surfaces independently -> "no", so this value holds
+      regardless of which is confirmed as the entry tier.
+  annual_condition_disclosure:
+    value: not_applicable
+    source: "https://one.google.com/intl/en_us/about/google-ai-plans/ | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Agreed by both passes and robust to the unresolved entry tier: Surface A's headline figure is
+      read in its Monthly default state and does not depend on annual prepayment (an annual toggle
+      exists but is not the state coded, per rule 1). Surface B is a per-second usage rate with no
+      annual-prepayment option published anywhere for Veo. Neither candidate's headline depends on
+      annual billing, so this is not_applicable under either reading.
+  annual_default_toggle:
+    value: unknown
+    source: "https://one.google.com/about/plans | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Cascades from headline_price_usd: which page counts as "the" pricing page is undetermined.
+      one.google.com/about/plans loads with Monthly preselected (monthly_preselected, pass 1). No
+      Veo pricing surface on ai.google.dev carries a monthly/annual toggle at all -- it is metered
+      per second (no_toggle, pass 2). The two candidate surfaces' own default states genuinely
+      differ in kind, not merely in which is "correct", and neither is confirmed as governing.
+  free_plan_exists:
+    value: "yes"
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      Agreed by both passes, and not entry-tier-dependent (this describes the FREE plan, not the
+      paid tier). "All users who are not Google AI Plus, Pro, or Ultra subscribers receive 50 Google
+      Flow credits per day free of charge to try Google Flow." Recurring daily allowance, no
+      subscription, no stated time limit.
+  free_plan_cap_documented:
+    value: all_quantified
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      Agreed by both passes. The one documented free-allowance limit, "50 Google Flow credits per
+      day," carries a number, a dimension, and a period -- a quantified rate per codebook 5.1. No
+      other free-tier-specific limit is stated in unquantified terms.
+  free_plan_cap_value:
+    value: "50 Google Flow credits per day"
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://labs.google/flow"
+    evidence: >
+      Both passes independently confirm the same underlying fact (pass 1: "50 Google Flow credits
+      per day"; pass 2: "50 credits per day"), so this is a wording disagreement, not a substantive
+      one. Domain-3 format rule: "quantity unit per period". The vendor's own unit name is "Google
+      Flow credits" -- both coders' own quoted source text uses it verbatim ("50 Google Flow credits
+      each month" in the credits article; "50 daily Google Flow credits" on labs.google/flow, pass
+      2's own citation). Adjudicated to the phrasing that carries the vendor's actual unit name,
+      which pass 2's own evidence field contains even though pass 2's typed value shortened it to a
+      generic "credits".
+  free_plan_watermark:
+    value: "yes"
+    source: "https://deepmind.google/models/veo/ | https://support.google.com/flow/answer/16353333?hl=en"
+    evidence: >
+      Resolved on the variable's own definition, re-verified live against both sources 2026-08-15
+      (quotes reproduce pass 1's and pass 2's captures verbatim, no vendor change found).
+      deepmind.google/models/veo/, Safety section: "videos made with Veo will be marked with
+      SynthID, our advanced technology for watermarking and detecting content generated by AI" --
+      unconditional, no tier carve-out, and the free (no-subscription) Flow allowance runs on Veo.
+      support.google.com/flow/answer/16353333 independently confirms: "All outputs generated in
+      Google Flow using Veo, Omni, or Nano Banana include invisible SynthID watermarks" -- again
+      unconditional. free_plan_watermark's definition asks only whether outputs "carry vendor
+      branding or a watermark, as documented" -- it does not require the mark to be visible, and
+      SynthID is explicitly, in the vendor's own words, a watermarking technology. Pass 1's unknown
+      answered a narrower question (whether the OPTIONAL, user-controlled VISIBLE watermark toggle is
+      available to free users specifically) that this variable does not ask; that toggle's
+      tier-applicability is real but bears on watermark_removal_tier, not on whether a watermark
+      exists at all.
+  free_plan_duration:
+    value: perpetual
+    source: "https://support.google.com/flow/answer/16526234?hl=en"
+    evidence: >
+      Agreed by both passes. The free allowance is documented as an ongoing, recurring daily grant
+      for non-subscribers with no stated end date -- a standing offer, not a time-limited trial.
+  trial_exists:
+    value: unknown
+    source: "https://support.google.com/googleone/answer/16548195?hl=en | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Cascades from headline_price_usd: trial_length_days's own rule ties trial terms to "the entry
+      paid tier", which is undetermined. Surface A: pass 1 found a determinate "no" -- Google AI
+      Plus's own dedicated sign-up article contains zero mentions of a trial, contrasted explicitly
+      against Google AI Pro's article, which does mention one, showing the documents distinguish
+      tiers deliberately rather than being silent across the board. Surface B: pass 2 found the
+      documents genuinely silent on a time-limited trial of Veo paid access (only a permanent
+      free/Tier-1/2/3 progression, and a general $300 GCP credit not confirmed to apply to Gemini API
+      paid usage). The two candidates give different answers even taken on their own terms, and which
+      one governs this record is undetermined.
+  trial_card_required:
+    value: unknown
+    source: "https://support.google.com/googleone/answer/16548195?hl=en | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Downstream of trial_exists, now unknown rather than "no". not_applicable would assert the
+      determinate fact that no trial exists, which is no longer established once the entry tier
+      itself is undetermined (Surface B's own trial_exists reading was already unknown, not "no").
+  trial_length_days:
+    value: unknown
+    source: "https://support.google.com/googleone/answer/16548195?hl=en | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Downstream of trial_exists, now unknown. This is an explicit sampling-rules 5.2 entry-tier
+      variable ("record the entry paid tier's trial"); the entry tier is undetermined.
+  trial_auto_converts:
+    value: unknown
+    source: "https://support.google.com/googleone/answer/16548195?hl=en | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Downstream of trial_exists, now unknown, for the same reason as trial_card_required.
+  credit_system_present:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Cascades from headline_price_usd. Surface A: "yes" -- an intermediate "Google Flow credits"
+      currency meters Veo generations, exact per-model conversion rates published. Surface B: "no" --
+      Veo is billed directly in USD per second, no intermediate unit named. Both are accurate,
+      simultaneously-true descriptions of their own path; this is not a vendor inconsistency the
+      source hierarchy can settle (both surfaces are "live pricing page" class, tied), it is a
+      consequence of not knowing which path governs this record. See coder_note for why this is
+      coded unknown rather than conflicting.
+  credit_unit_defined:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Downstream of credit_system_present, now unknown rather than "no". not_applicable would assert
+      the determinate fact of no credit system, which credit_system_present no longer establishes.
+      Surface A alone would score "yes" (per-model credit costs published, e.g. "Veo 3.1 Fast: 20"
+      credits/generation); this figure is preserved in coder_note for a reader auditing the
+      rejected-as-unconfirmed candidate.
+  credit_to_output_rate_published:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: "Downstream of credit_system_present, now unknown, for the same reason as credit_unit_defined."
+  credit_rate_location:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: "Downstream of credit_system_present, now unknown, for the same reason as credit_unit_defined."
+  cost_per_output_unit:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Cascades from headline_price_usd, and the two surfaces' own billing structures genuinely
+      differ, not merely their labels: Surface A sells discrete, fixed-length (e.g. 8-second)
+      generations billed in Google Flow credits, which codebook rule 3 correctly does not fit any
+      listed unit (pass 1: "other", named as "per video generation (fixed-length clip), billed in
+      Google Flow credits"). Surface B meters continuously per second, cleanly expressible as
+      per_video_minute (pass 2). Rule 1 ties this to "the product's OWN pricing page" framing, which
+      is undetermined.
+  cost_per_output_computable:
+    value: unknown
+    source: "https://one.google.com/intl/en_us/about/google-ai-plans/ | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Rule 1 fixes the price input as "the entry paid tier's price... selected under sampling-rules
+      7.2", which is itself unknown (see headline_price_usd). No single calculation can be performed
+      without first knowing which tier's price and allowance govern -- not because a required figure
+      is unpublished (both candidates publish clean, computable figures on their own terms: pass 1's
+      $9.99or4.99 / 10 generations per 200-credit allowance; pass 2's $0.05/sec x 60 = $3.00/minute),
+      but because there are two, and the instrument does not choose between them.
+  computation_assumptions:
+    value: not_applicable
+    source: "https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Required only where cost_per_output_computable is "yes" or "partial" (codebook domain 6); it is
+      "unknown" here, so this field does not apply. Pass 2's arithmetic ("Veo 3.1 Lite, 720p+audio,
+      Gemini API paid tier, default rate: $0.05/sec x 60 sec = $3.00/video-minute") is correct FOR
+      the Surface-B candidate specifically and is preserved here for a reader auditing that candidate,
+      but is not published as the product's cost per output because Surface B is not confirmed as the
+      entry tier.
+  credit_rollover_policy:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Downstream of credit_system_present, now unknown rather than a determinate policy value or
+      not_applicable. Surface A alone documents "Unused monthly Google Flow credits do not roll over
+      to the next month" (expires_at_period_end); Surface B has no credit system to roll over. Which
+      applies depends on the undetermined entry tier.
+  failed_generation_charge_policy:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://ai.google.dev/gemini-api/docs/pricing"
+    evidence: >
+      Cascades from headline_price_usd. Surface A: documents reviewed in full (Flow credits help
+      article, Flow FAQ) are silent on failed-generation charging -- pass 1 itself coded this unknown
+      on Surface A's own terms. Surface B: explicitly documented "not_charged" ("You are only charged
+      if your video is successfully generated", ai.google.dev/gemini-api/docs/pricing). Since one
+      candidate is silent even on its own terms and the other is explicit, and which candidate
+      governs is undetermined, no single value can be published for the record.
+  auto_renewal_default:
+    value: unknown
+    source: "https://one.google.com/terms-of-service | https://cloud.google.com/terms/"
+    evidence: >
+      Cascades from headline_price_usd (rule 1: the terms of service ranks first, and which ToS
+      governs depends on the surface). Surface A: Google One's ToS states indefinite-term
+      subscriptions charged automatically each billing cycle unless canceled ("on", pass 1). Surface
+      B: pass 2 itself found this undetermined even on Surface B's own terms -- Google Cloud's ToS
+      describes continuous per-second metered billing with no discrete renewal event, and no document
+      uses renew/continue/auto-renew language for that arrangement ("unknown", pass 2). Entry tier
+      undetermined, and one candidate's own answer was already unknown.
+  auto_renewal_disclosure_location:
+    value: unknown
+    source: "https://one.google.com/terms-of-service | https://cloud.google.com/terms/"
+    evidence: "Downstream of auto_renewal_default, now unknown, for the same reason."
+  renewal_notice_commitment:
+    value: unknown
+    source: "https://one.google.com/terms-of-service | https://cloud.google.com/terms/"
+    evidence: >
+      Agreed by both passes independent of this adjudication's tier finding: neither Surface A's nor
+      Surface B's documents commit to advance notice before a renewal/charge event.
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: "https://support.google.com/googleone/answer/2736362?hl=en | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Agreed by both passes and robust to the unresolved entry tier. Surface A: "Google storage plan
+      purchases are non-refundable" in most countries/regions (narrow Israel exception noted in
+      coder_note). Surface B: purchased credit "expires within 12 months and is non-refundable",
+      corroborated by Google Cloud's ToS ("Customer's obligation to pay all Fees is non-cancellable";
+      refunds for billing inaccuracies issued as service credit only). Both surfaces -> no general
+      refund, so this holds regardless of which is confirmed as the entry tier.
+  refund_window_days:
+    value: 0
+    source: "https://support.google.com/googleone/answer/2736362?hl=en | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Agreed by both passes and robust to the unresolved entry tier: no refund window is published on
+      either surface in the general case.
+  refund_conditions:
+    value: not_applicable
+    source: "https://support.google.com/googleone/answer/2736362?hl=en | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Agreed by both passes: no refund is generally available on either surface (refund_policy_exists
+      = no_refunds_stated), so no conditions attach in the general case on either reading.
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: "https://support.google.com/googleone/answer/2736362?hl=en | https://docs.cloud.google.com/billing/docs/how-to/modify-project"
+    evidence: >
+      Agreed by both passes and robust to the unresolved entry tier, via different but equivalent
+      self-serve mechanisms: Surface A documents canceling from Google One account settings; Surface
+      B documents disabling billing from the Cloud console project settings. Neither requires
+      contacting anyone, so this holds regardless of which surface governs.
+  refund_policy_location:
+    value: multiple
+    source: "https://support.google.com/googleone/answer/2736362?hl=en | https://one.google.com/terms-of-service | https://ai.google.dev/gemini-api/docs/billing | https://cloud.google.com/terms/"
+    evidence: >
+      Agreed by both passes: each surface independently states its no-general-refund position in two
+      or more document classes in agreement (Surface A: dedicated help page + ToS; Surface B: product
+      docs + Cloud ToS), so both readings land on "multiple" even though the underlying document pairs
+      differ by surface.
+  commercial_use_lowest_tier:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16353333?hl=en | https://ai.google.dev/gemini-api/terms"
+    evidence: >
+      Agreed by both passes independent of this adjudication's tier finding: neither surface's
+      documents state a tiered commercial-use grant or restriction for generated content. Both found
+      only an ownership disclaimer ("Google won't claim ownership over that content"), which is a
+      distinct construct from a commercial-use permission (scored separately as E3), and declined to
+      infer permission from it.
+  watermark_removal_tier:
+    value: never_removed
+    source: "https://deepmind.google/models/veo/ | https://support.google.com/flow/answer/16353333?hl=en"
+    evidence: >
+      Resolved on re-verified evidence (live, 2026-08-15), independent of entry-tier selection:
+      deepmind.google/models/veo/ states unconditionally "videos made with Veo will be marked with
+      SynthID" with no tier exception found by either coder anywhere. Pass 1's unknown was driven by
+      the SEPARATE, OPTIONAL "Visible watermarking" toggle (support.google.com/flow/answer/16353333:
+      "You can control this with the 'Visible watermarking' toggle... forced on only for residents of
+      India, South Korea, or Vietnam"), which controls an additional, user-triggered VISIBLE overlay
+      layered on top of the always-present invisible SynthID mark. That toggle is tied to user choice
+      and residence, not to subscription tier, in both coders' own sources, and neither pass found any
+      document describing a tier at which the underlying watermark is ever removed. codebook rule 2:
+      "never_removed means documents state a watermark applies to every tier" -- which is what
+      deepmind.google states, unqualified.
+  output_ownership_statement:
+    value: user_owns
+    source: "https://policies.google.com/terms?hl=en-US | https://ai.google.dev/gemini-api/terms"
+    evidence: >
+      Agreed by both passes, from different but consistent documents (Surface A: general Google ToS,
+      "Content in Google services" > "Your content"; Surface B: Gemini API terms, "Use of Generated
+      Content"), both stating "Google won't claim ownership over that content." Robust to the
+      unresolved entry tier.
+  usage_cap_quantified:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16526234?hl=en | https://ai.google.dev/gemini-api/docs/billing"
+    evidence: >
+      Explicit sampling-rules 5.2 entry-tier variable; cascades from headline_price_usd. Surface A:
+      "some_quantified" -- 200 Flow credits/month and storage are quantified, but Gemini text-model
+      access is described only relatively ("2x" access with no absolute baseline, which fails the
+      section 5.1 test). Surface B: "all_caps_quantified" -- $250/month billing-account spend cap,
+      video length (4/6/8 sec), output count (max 4/prompt), and resolution options are all stated
+      with numbers. Which tier's limits govern this record is undetermined.
+  unquantified_limit_clause:
+    value: unknown
+    source: "https://support.google.com/flow/answer/16353333?hl=en | https://ai.google.dev/gemini-api/terms"
+    evidence: >
+      Cascades from headline_price_usd (rule 1: read the terms of service and acceptable-use policy,
+      and which one governs depends on the surface). Surface A: support.google.com/flow/answer/16353333,
+      re-verified live 2026-08-15, states "we may rate-limit the number of generations you can
+      make... to balance the available resources for all users and prevent abuse of our platform" --
+      an unquantified discretionary clause ("present", pass 1). Surface B: pass 2 read the Gemini API's
+      own Additional Terms of Service in full and found no such clause, only concrete numeric
+      restrictions ("absent", pass 2). Both findings are accurate for their own path; which governs
+      this record is undetermined, so no single value can be published.
+
+conflict_note: >
+  ENTRY-TIER SURFACE (governs headline_price_usd and the 19 variables that cascade from it -- see
+  coder_note for the full list): two official, equally-authoritative Google surfaces price and
+  describe Veo access incompatibly, and sampling-rules 7.2 does not resolve which governs --
+  Google AI Plus/Pro/Ultra consumer subscription (one.google.com/intl/en_us/about/google-ai-plans/,
+  bundled, not Veo-specific) versus the Gemini Developer API
+  (ai.google.dev/gemini-api/docs/pricing, Veo-specific per-second rate, unbundled). Coded unknown
+  rather than resolved to either; see headline_price_usd evidence for the full reasoning.
+
+  WITHIN THE CONSUMER SURFACE, a second, independent conflict, not dispositive of the above:
+  one.google.com/about/plans states "Google AI Plus (2 TB)" at $9.99/month (USD figures confirmed
+  via embedded schema.org Offer JSON-LD and a data-formatted-price attribute; the page's live TRY
+  rendering from a Turkey network location is a display_variant, not the coded state, per D-003).
+  one.google.com/intl/en_us/about/google-ai-plans/ states "Google AI Plus" at $4.99/month with
+  400 GB storage. Both are "live pricing page" class under protocol 6.2; the hierarchy does not
+  distinguish between two pages of the same class. Pass 1's 2026-08-10 re-read
+  (google-veo-sources/d009-reread-2026-08-10.md) independently reconfirmed both figures in three
+  source representations each and found the pages also disagree on the plan's storage allotment
+  (2 TB vs 400 GB). Preserved here per protocol 6.2's instruction that a vendor-document gap stays
+  in conflict_note even where it does not decide a coded value on its own -- it is internal to the
+  consumer candidate, which this record does not confirm as the entry tier either way.
+
+  CROSS-SURFACE DIVERGENCES underlying the 19 cascading variables: credit metering (Surface A: Flow
+  credits, an intermediate currency; Surface B: direct per-second USD, no credits), trial
+  documentation (Surface A: no trial documented for AI Plus, contrasted against AI Pro which has
+  one; Surface B: silent even on its own terms), auto-renewal (Google One ToS: automatic renewal
+  each billing cycle; Google Cloud ToS: no renewal language for metered billing, undetermined even
+  on pass 2's own reading), and the unquantified discretionary limit clause (Flow help center: "we
+  may rate-limit... to balance available resources... prevent abuse", re-verified 2026-08-15;
+  Gemini API Additional ToS, read in full: no such clause). Each pairing is two accurate,
+  simultaneously-true descriptions of two different official paths, not a vendor inconsistency the
+  source hierarchy can settle -- see coder_note for why these are coded unknown rather than
+  conflicting.
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-15. 23 substantive disagreements plus 1 prose disagreement
+  (computation_assumptions) reviewed against protocol 7.4/7.4.1/7.4.2, sampling-rules 7.2, and the
+  full codebook.
+
+  ROOT CAUSE. Per reliability-result.md's own "outlier" note, independently confirmed by this
+  adjudication rather than deferred to: Google Veo is not sold on a dedicated pricing page of its
+  own. It is reached only through two distinct, non-equivalent, official, self-serve, non-sales-
+  gated surfaces -- a multi-product Google AI Plus/Pro/Ultra consumer subscription whose price is
+  not attributable to Veo specifically, and the Gemini Developer API's per-second Veo rate, which is
+  Veo-specific but usage-metered. Sampling-rules 7.2's eligibility test (rules 1-4) and its
+  usage-based carve-out (rule 5, "where the vendor publishes only usage-based pricing") both assume
+  a product has one dedicated pricing surface; Veo fits neither half of that assumption cleanly.
+  Rule 5 and headline_price_usd's own decision rule 6 gate usage-based pricing behind an "only paid
+  option" condition that is literally unmet here (a flat subscription also exists) -- but 7.2 never
+  states whether that test runs at the vendor-wide level (favoring the subscription) or the
+  product-attributable level (favoring the API, since the subscription prices an ecosystem, not
+  Veo, and its own comparison table names a different model, "Omni Flash", on its video-generation
+  row). Nothing in 7.2, the codebook, or the protocol resolves which axis governs. Two careful
+  coders applied the same rule and reasoned in full, on the record, to opposite answers (pass 1
+  coder_note; pass 2 coder_note) -- itself the diagnosis, per protocol 7.4 step 5, of a rule that
+  does not determine the answer for a platform-embedded product.
+
+  TIER-SELECTION CODING. headline_price_usd and entry_tier_name are coded unknown, not conflicting
+  and not no_public_price. Prices ARE published -- in fact two, well-documented ones, on both
+  surfaces -- so no_public_price (which means sales-gated, price withheld) is factually wrong.
+  conflicting is reserved, on headline_price_usd's own value table, for two sources disagreeing
+  about the SAME tier's price; that also genuinely occurs here, one layer down, within the rejected
+  consumer candidate alone (see conflict_note), but is not what is coded at the top level, because
+  sameness of tier is itself the undetermined question.
+
+  DISPOSITION OF THE 23. Three resolved to a determinate value by applying the codebook rule to
+  evidence that does not turn on tier selection at all, each re-verified against the live vendor
+  source on 2026-08-15: free_plan_cap_value (wording only -- both passes found the same fact),
+  free_plan_watermark (the variable asks whether any watermark is documented, not whether it is
+  visible or removable -- deepmind.google settles it unconditionally), and watermark_removal_tier
+  (no document names any tier at which the SynthID mark is absent). Twenty coded unknown: one is
+  the tier-selection question itself (headline_price_usd, and correspondingly entry_tier_name); the
+  other nineteen are variables defined relative to the entry paid tier, or to a document set that
+  differs by which surface governs -- headline_billing_basis, first_charge_amount_usd,
+  annual_default_toggle, the whole trial cluster (trial_exists, trial_card_required,
+  trial_length_days, trial_auto_converts), the whole credit cluster (credit_system_present,
+  credit_unit_defined, credit_to_output_rate_published, credit_rate_location), cost_per_output_unit,
+  cost_per_output_computable, credit_rollover_policy, failed_generation_charge_policy,
+  auto_renewal_default and its disclosure location, usage_cap_quantified, and
+  unquantified_limit_clause. Each cascades from the same one unresolved antecedent rather than being
+  independently unresolvable in its own right, so this is properly one finding applied nineteen
+  times, not twenty separate irresolvable disputes. The prose field (computation_assumptions)
+  follows cost_per_output_computable to not_applicable under its own field rule. Thirteen of 37
+  variables were already agreed and pass through unchanged (mandatory_addon_present,
+  annual_condition_disclosure, free_plan_exists, free_plan_cap_documented, free_plan_duration,
+  renewal_notice_commitment, refund_policy_exists, refund_window_days, refund_conditions,
+  cancellation_self_serve, refund_policy_location, commercial_use_lowest_tier,
+  output_ownership_statement) -- agreement held exactly where both candidate surfaces happen to
+  state the same fact regardless of which governs, which is itself a useful cross-check on this
+  account: the disagreement is not universal noise, it tracks precisely where the two surfaces'
+  own official documents genuinely diverge and stops precisely where they agree.
+
+  WHY UNKNOWN RATHER THAN CONFLICTING FOR THE CASCADE. Several of the nineteen (credit_system_present,
+  trial_exists, auto_renewal_default, unquantified_limit_clause among them) have value tables whose
+  `conflicting` row is not explicitly restricted to "the same tier" the way headline_price_usd's is,
+  and could be misread as inviting `conflicting` here. Declined, for one consistent reason: `conflicting`
+  in this codebook is for a vendor's own documents failing to agree on ONE fact -- an actual
+  inconsistency needing resolution, like the AI-Plus $9.99-vs-$4.99 clash. Here, "Flow uses credits"
+  and "the API does not" are BOTH true, simultaneously, describing two genuinely different,
+  coexisting, non-contradictory commercial paths -- not a vendor error. The obstacle is prior to any
+  factual clash: the study's instrument does not identify which of two non-contradictory document sets
+  to read. That is unknown's definition ("no official document states a determinate value for this
+  variable" -- where "this variable" is itself scoped to an entry tier that cannot be identified), not
+  conflicting's. Treating some cascading variables as conflicting and others as unknown on subtle
+  per-variable wording differences, when all nineteen share one identical root cause, would be
+  inconsistent and would misrepresent the finding as vendor self-contradiction rather than instrument
+  scope. Applied uniformly.
+
+  DATE-DRIFT / DISPLAY-VARIANCE CHECK (protocol 7.4 steps 7-8, 7.4.1, 7.4.2). Both records carry
+  exactly one register_events entry each, both typed display_variant (pass 1: TRY-vs-USD on
+  one.google.com/about/plans; pass 2: TRY-vs-USD on one.google.com/about/google-ai-plans), both
+  logged under the D-003 currency-check rule, both independently resolved to the vendor's own USD
+  figures by their respective coder without producing any disagreement between the two passes on
+  their own. Neither record carries a vendor_edit entry, so NONE of the 23 disagreements qualifies
+  as date_explained -- 7.4.1 requires a vendor_edit entry in the register, and a display_variant
+  entry never supplies it, regardless of the 8-day gap between collection dates (2026-08-07 vs
+  2026-08-15), which is otherwise wide enough for genuine drift. variant_explained (7.4.2) requires
+  two archive snapshots of the SAME URL showing two default-display states; every disagreement above
+  is between two DIFFERENT URLs / surfaces entirely, not two reads of one page, so 7.4.2's own
+  precondition is not met either, independent of the entry-type question. All 23 disagreements are
+  therefore ordinary disagreements, adjudicated on the merits above -- none is reclassified to
+  improve the reliability figure, per 7.4.1's and 7.4.2's shared instruction that neither
+  classification may be reached for.
+
+  SECONDARY FINDING, carried in conflict_note, not dispositive of the tier-selection coding: even
+  confined to the rejected consumer candidate alone, "Google AI Plus"'s own headline price is
+  internally conflicting between two official, equally-authoritative live Google pages -- $9.99/mo
+  against $4.99/mo -- independently reconfirmed by pass 1's own 2026-08-10 re-read in three source
+  representations per page. Recorded because a reader auditing this record should see it, though it
+  does not change the unknown coding above, which turns on which SURFACE governs rather than on
+  either surface's own internal price accuracy.
+
+  METHOD. Read protocol-v1.md section 7.4 in full (including 7.4.1, 7.4.2), sampling-rules.md
+  section 7.2, and the complete codebook-v1.md (all 37 variable definitions, section 5.1, section
+  5.2) before adjudicating any variable. Read both pass 1 and pass 2 records in full, and pass 1's
+  records/pass1/google-veo-sources/d009-reread-2026-08-10.md (pass 2 has no local sources directory
+  of its own; its evidence rests on the archive/source URLs recorded in its own record, which were
+  opened directly). Re-fetched live on 2026-08-15: deepmind.google/models/veo/,
+  support.google.com/flow/answer/16353333, one.google.com/intl/en_us/about/google-ai-plans/, and
+  ai.google.dev/gemini-api/docs/pricing -- all four match what both passes recorded; no material
+  vendor change found in the 8 days since pass 1's collection. Did not open any other product's
+  pass/adjudicated record, orchestrator/interim-signals.md, aitoolspolice.com, or
+  site/content/reviews/, per this agent's own scope. reliability-result.md's "outlier" note on this
+  product was read (permitted; not interim-signals.md) and is cited above as corroboration of an
+  independently-reached conclusion, not as its source.
+
+register_events:
+  - type: display_variant
+    detail: >
+      Carried forward from pass 1 (2026-08-07). D-003 currency check: from a Turkey network
+      location, one.google.com/about/plans renders live in TRY (Google AI Plus (2 TB) TRY359.99/mo).
+      An Accept-Language:en-US curl of the same URL and a US-crawled web.archive.org capture
+      (2026-08-01) both show the vendor's own USD figures ($9.99) for the same SKU. Per D-003, the
+      USD figures were coded and the TRY sighting logged as a display variant. This variant did not
+      produce any disagreement between the two passes on its own -- both independently resolved to
+      USD -- and is unrelated to the entry-tier disagreement adjudicated above.
+    urls:
+      - "https://one.google.com/about/plans"
+      - "https://web.archive.org/web/20260801092350/https://one.google.com/about/plans"
+  - type: display_variant
+    detail: >
+      Carried forward from pass 2 (2026-08-15). one.google.com/about/google-ai-plans served
+      Turkish-language UI with TRY prices on default geo load from Turkey (Plus TRY 199,99/ay,
+      Pro TRY 869,99/ay); the vendor's own /intl/en_us/ locale path serves the identical plan ladder
+      in USD ($4.99/$19.99/etc). USD figures used per D-003 arm 1. This page's price was never coded
+      as Veo's entry-tier price by pass 2 regardless of the variant (see pass 2 coder_note), and the
+      variant produced no disagreement between the two passes on its own.
+    urls:
+      - "https://one.google.com/about/google-ai-plans"
+      - "https://one.google.com/intl/en_us/about/google-ai-plans/"
+
+status: complete

@@ -1,0 +1,33 @@
+gamma product_id=gamma — local source notes, pass 1, accessed 2026-08-07
+
+Live gamma.app apex domain (pricing/terms/acceptable-use-policy/docs paths) returns HTTP 403
+from Cloudflare bot-management challenge (cf-mitigated: challenge) to both WebFetch and curl,
+regardless of User-Agent/Accept-Language headers. Not bypassed (prohibited). help.gamma.app and
+developers.gamma.app subdomains are NOT behind this challenge and were read live.
+
+url -> archive snapshot used as source (kind, capture timestamp)
+https://gamma.app/pricing -> http://web.archive.org/web/20260804092026/https://gamma.app/pricing
+  (pricing; capture is a pre-hydration Next.js shell — plan names/feature bullets/FAQ questions
+  are static text and readable; $ prices, credit numbers, and toggle default state are injected
+  client-side at runtime and are NOT present in this or any other tested capture)
+https://gamma.app/terms -> http://web.archive.org/web/20260726103226/https://gamma.app/terms
+  (tos; full text readable, effective date 2025-09-09)
+https://gamma.app/acceptable-use-policy -> http://web.archive.org/web/20260709140812/https://gamma.app/acceptable-use-policy
+  (aup/refund; full text readable, effective 2024-07-26)
+https://help.gamma.app/en/articles/11048496-what-is-gamma-s-refund-policy-and-how-do-i-request-a-refund -> http://web.archive.org/web/20260807074349/...
+https://help.gamma.app/en/articles/8568920-how-do-i-manage-or-cancel-my-gamma-subscription -> http://web.archive.org/web/20260807074309/...
+https://help.gamma.app/en/articles/11048064-is-there-a-one-month-subscription-option-available -> http://web.archive.org/web/20260807074422/...
+https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-teams-and-business -> http://web.archive.org/web/20260807074456/...
+https://help.gamma.app/en/articles/11048258-what-does-per-member-billing-mean-in-gamma -> http://web.archive.org/web/20260807074519/...
+https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription -> http://web.archive.org/web/20260807074731/...
+https://developers.gamma.app/get-started/access-and-pricing -> http://web.archive.org/web/20260807074703/...
+https://help.gamma.app/en/ -> http://web.archive.org/web/20260807074214/... (navigation aid only)
+https://help.gamma.app/en/collections/12178939-subscription-billing -> http://web.archive.org/web/20260807074237/... (navigation aid only)
+https://help.gamma.app/en/collections/12271857-pricing-plans -> http://web.archive.org/web/20260807074623/... (navigation aid only)
+
+archive_failed (2 attempts, both blocked by the same Cloudflare challenge reaching archive.org's
+own crawler — HTTP 520 from web.archive.org/save/ both times): not cited for any coded value.
+https://gamma.app/docs/Plans-Pricing-rg4csmxrefhbwkv
+
+Local text extractions of the three curl-fetched archive captures (script/style stripped) saved
+alongside this file: gamma-pricing-text.txt, gamma-terms-text.txt, gamma-aup-text.txt.

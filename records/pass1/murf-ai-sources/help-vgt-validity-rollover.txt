@@ -1,0 +1,99 @@
+SOURCE: https://help.murf.ai/vgt-validity
+DATE ACCESSED: 2026-08-09
+METHOD: curl static fetch (server-rendered help/legal page, not a JS app-shell)
+ARCHIVE: archive_failed (not attempted within cap; documentary text retained locally)
+PAGE TITLE: Validity (VGT rollover)
+NETWORK NOTE: collection environment egresses from Turkey; this page's substantive text
+  (ToS/help-center prose) is not price-bearing in a way current-affected -- D-003 currency
+  check applies to the pricing page specifically (see pricing-rendered.txt).
+=== EXTRACTED TEXT (nav/boilerplate stripped where noted) ===
+Validity
+Skip to content
+English
+Show submenu for translations
+Open main navigation
+Close main navigation
+English
+Show submenu for translations
+Open Studio
+Open Studio
+How can we help you today?
+There are no suggestions because the search field is empty.
+Help Center
+Voice Generation Time (VGT)
+Validity
+Voice generation time is carried forward when your plan auto-renews or is paused.
+Active and paused plan VGT is carried forward to the next billing cycle.
+Monthly plan
+If you have a monthly plan set to auto-renew, any remaining VGT at the end of the month will carry forward to the next month. The carried over VGT will be added as additional VGT for the next cycle, while the VGT gained for the new subscription is referred to as Plan VGT.
+For example, if you purchased a Creator monthly plan on August 3rd and used 1 hour of VGT, your account will receive 2 hours of plan VGT when it auto-renews on September 3rd. The remaining 1 hour of VGT from August to September will also be added as additional VGT.
+The carried over VGT from the last billing cycle will only be carried forward to the following month.
+If carried over VGT from August is unused in September, it will not carry over to October.
+If a subscription is cancelled, the carried over VGT will be lost . However, if the subscription is paused, the carried over VGT will remain.
+Yearly plans
+The same principle applies to yearly subscriptions, where any unused VGT at the end of the subscription period is carried forward to the next annual subscription.
+For instance, suppose you purchased a Creator Yearly plan in January 2026 and utilized 12 hours of VGT out of the allotted 24 hours. When your plan automatically renews in January 2027, your account will receive 24 hours of plan VGT for the new cycle spanning from January 2027 to January 2028, and the remaining 12 hours of VGT from January 2026 to January 2027 will be added as additional VGT.
+The carried over VGT from the previous billing cycle will only be carried forward to the next year.
+If unused VGT from the cycle of January 26' - 27' will not carry over to the January 28' - 29' cycle.
+If a subscription is canceled, the carried over VGT will be lost . However, if the subscription is paused, the carried over VGT will remain.
+New to Murf
+Intro to Murf AI
+Setup and Onboarding
+Managing Your Account
+Free Trial
+Getting Started
+Script Import and Structuring
+Finding the Right Voice & Settings
+Adding Media Files
+Frequently Asked Questions
+New to Murf
+Working with the Studio
+Payment and Billing
+Workspaces and Account Management
+Voice Cloning
+Commercial Rights
+Working with the Studio
+Studio Elements
+Voices and Languages
+Voice Settings
+Working with Imports
+Timeline and Project Settings
+Exports
+Collaboration
+Gen2 Voice Model
+HTML Embed
+Audio to Text
+AI Dubbing
+Introduction
+Murf Dub Project
+Dubbing Credits
+Pricing and Plans
+Editing Dub
+Workspaces
+Introduction
+Types of User Roles
+Invite Team Members
+Managing Projects and Folders
+Permissions and Privacy
+Voice Generation Time (VGT)
+Tracking VGT Consumption
+Payments and Billing
+Managing Payments and Billing
+Frequently Asked Questions/ Troubleshooting
+Taxes
+YouTube Codes
+Adding YouTube Codes
+Introduction to YouTube Codes
+Content ID Claims
+API
+Introduction
+Generating Speech
+API Pricing and Plans
+Integrations & Add Ons
+PowerPoint Plugin
+Windows Voices Installer
+Canva
+Voice Cloning
+Introduction
+Help Center
+Copyright © 2026, Murf Inc.

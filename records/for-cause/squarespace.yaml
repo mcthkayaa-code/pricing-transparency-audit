@@ -1,0 +1,294 @@
+product_id: squarespace
+product_name: Squarespace
+category: AI website builder
+product_status: active
+paid_submission: "no"      # from frame-for-pass2.csv
+entry_tier_name: Basic
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-17
+recheck_date: not_applicable
+primary_source_url: https://www.squarespace.com/pricing
+archive_url: https://web.archive.org/web/20260812101105/https://www.squarespace.com/pricing
+archive_status: archived
+default_display_state: |
+  Archived capture (web.archive.org, snapshot timestamp 20260812101105, i.e. 2026-08-12) of
+  https://www.squarespace.com/pricing. Billing toggle defaults to "Pay annually" -- confirmed
+  from the DOM: the "Pay annually" radio button carries aria-checked="true", "Pay monthly"
+  carries aria-checked="false". Currency/region: the page's embedded ld+json OfferCatalog lists
+  Offers for ~27 regions simultaneously (schema.org catalog, not a single geolocated render);
+  USD is explicitly published for the US region (Basic: $19.00/mo billed annually = $228.00/yr).
+  No live or geolocated read was performed. The visible price-card numerals require client-side
+  hydration that is absent from this static archive capture (the raw HTML shows a
+  "pricing-cards__loading" placeholder), so money figures were read from the embedded ld+json
+  structured data rather than from rendered on-screen text -- see coder_note for the D-005
+  two-representation reasoning.
+
+for_cause: true
+for_cause_reason: >
+  D-011: this is a for-cause blind second coding ordered after the pass-1 coder self-disclosed
+  briefly opening another product's record before coding this one; its agreement is reported
+  separately from the pre-registered 26-product reliability sample, not folded into it.
+
+sources:
+  - { url: "https://www.squarespace.com/pricing", kind: pricing, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260812101105/https://www.squarespace.com/pricing", note: "Not present as a local file in pass-1's squarespace-sources/ directory. Located independently via the Wayback CDX API (window-dated captures exist at 20260806174607, 20260810120031, 20260810211659, 20260812101105); fetched the 2026-08-12 snapshot, closest to the ToS/AUP captures' timestamps. Curl-confirmed resolving. Read via embedded ld+json (OfferCatalog + 4 SoftwareApplication/Offer blocks + FAQPage) since visible text held no dollar figures (script-hydrated price cards, consistent with deviation D-005)." }
+  - { url: "https://www.squarespace.com/terms-of-service", kind: tos, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260812103837/https://www.squarespace.com/terms-of-service", note: "Local capture (terms-of-service.html + terms-of-service.txt) in pass-1's sources dir, read in full end to end. Archive URL independently curl-confirmed resolving today." }
+  - { url: "https://www.squarespace.com/acceptable-use-policy", kind: tos, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260812103841/https://www.squarespace.com/acceptable-use-policy", note: "Not present as a local file in pass-1's sources dir. archive_results.txt (in that dir) logged a successful HTTP 200 save for this URL; fetched that exact archive URL directly, curl-confirmed resolving, read in full." }
+  - { url: "https://support.squarespace.com/hc/en-us/articles/230364668-Automatic-subscription-renewals", kind: docs, accessed: "2026-08-17", archive: "local_copy_only", note: "Local capture (automatic-subscription-renewals.html + renewal.txt). archive_results.txt shows the save attempt returned HTTP 429 (rate-limited); per deviations-for-coders.md this is coded local_copy_only, not archive_failed." }
+  - { url: "https://support.squarespace.com/hc/en-us/articles/46051001586701-Website-refund-policy", kind: refund, accessed: "2026-08-17", archive: "local_copy_only", note: "Local capture (website-refund-policy.html + refund.txt). archive_results.txt shows the save attempt returned HTTP 429 (rate-limited); coded local_copy_only." }
+  - { url: "https://support.squarespace.com/hc/en-us/articles/46668956855053-Use-AI-credits-for-Squarespace-AI-tools", kind: docs, accessed: "2026-08-17", archive: "local_copy_only", note: "Local capture (ai-credits-detail.html). No archive attempt logged for this URL in archive_results.txt; local capture used as evidence per deviations-for-coders.md." }
+  - { url: "https://support.squarespace.com/hc/en-us/articles/16282290976013-Using-Squarespace-AI", kind: docs, accessed: "2026-08-17", archive: "local_copy_only", note: "Local capture (using-squarespace-ai.html). No archive attempt logged in archive_results.txt; local capture used as evidence." }
+  - { url: "https://www.squarespace.com/aiterms", kind: tos, accessed: "2026-08-17", archive: "local_copy_only", note: "Local capture (aiterms.html), Effective Date June 25, 2026, incorporated into the ToS by reference. No archive attempt logged in archive_results.txt; local capture used as evidence." }
+
+variables:
+  headline_price_usd:
+    value: 19.00
+    source: "https://www.squarespace.com/pricing"
+    evidence: "ld+json Offer \"Basic — Annually\": priceCurrency USD, price 228.00, billingDuration P1Y, eligibleRegion US. Default toggle is Pay Annually (DOM aria-checked=true). 228.00/12=19.00, the conventional monthly-styled headline figure for an annual-default toggle (the on-screen card numerals themselves did not hydrate in this static capture)."
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: "https://www.squarespace.com/pricing"
+    evidence: "Default toggle state is \"Pay annually\" (aria-checked=true); ld+json Offer \"Basic — Annually\" carries billingDuration P1Y at 228.00 USD, i.e. a monthly-styled figure charged as one annual payment."
+  first_charge_amount_usd:
+    value: 228.00
+    source: "https://www.squarespace.com/pricing"
+    evidence: "ld+json Offer: {\"name\":\"Basic — Annually\",\"priceCurrency\":\"USD\",\"price\":\"228.00\",\"priceSpecification\":{\"billingDuration\":\"P1Y\"},\"eligibleRegion\":[{\"name\":\"US\"}]}. Direct read, no arithmetic needed."
+  mandatory_addon_present:
+    value: "no"
+    source: "https://www.squarespace.com/pricing"
+    evidence: "Basic's feature-comparison column lists \"Free custom domain*\" as included; FAQ: \"If you purchase an annual plan, you'll receive a free custom domain for one year.\" No required separate charge found among Basic's advertised features; online-store/content transaction fees are usage-contingent, not a mandatory charge to use the plan (codebook rule 3)."
+  annual_condition_disclosure:
+    value: adjacent
+    source: "https://www.squarespace.com/pricing"
+    evidence: "Hero text \"Pay annually to save up to 36%.\" sits directly above/in the same control as the \"Pay annually\" / \"Pay monthly\" radiogroup toggle that determines the displayed price -- the toggle's own label, per the codebook's adjacent definition."
+  annual_default_toggle:
+    value: annual_preselected
+    source: "https://www.squarespace.com/pricing"
+    evidence: "DOM: <button role=\"radio\" aria-checked=\"true\"...>Pay annually</button> ... <button role=\"radio\" aria-checked=\"false\"...>Pay monthly</button>. Default established from the DOM attribute, not from extractor ordering."
+  free_plan_exists:
+    value: "no"
+    source: "https://www.squarespace.com/pricing"
+    evidence: "Pricing-page FAQ (ld+json FAQPage + matching visible text): \"Is there a free Squarespace plan? Squarespace doesn't offer a free plan, but every site starts with a free trial—no credit card required.\""
+  free_plan_cap_documented:
+    value: not_applicable
+    source: "https://www.squarespace.com/pricing"
+    evidence: "free_plan_exists = no (documented absence); B1 matrix's \"no\" row requires not_applicable on this sub-variable."
+  free_plan_cap_value:
+    value: not_applicable
+    source: "https://www.squarespace.com/pricing"
+    evidence: "No free plan exists; nothing to record."
+  free_plan_watermark:
+    value: not_applicable
+    source: "https://www.squarespace.com/pricing"
+    evidence: "No free plan exists, so the construct does not exist for this product."
+  free_plan_duration:
+    value: not_applicable
+    source: "https://www.squarespace.com/pricing"
+    evidence: "No free plan exists, so the construct does not exist for this product."
+  trial_exists:
+    value: "yes"
+    source: "https://www.squarespace.com/pricing"
+    evidence: "Hero text \"Free for 14 days.\"; FAQ \"every site starts with a free trial\"; corroborated by ToS 9.4: \"Some of the Paid Services offer a free trial so you can try out your subscription.\""
+  trial_card_required:
+    value: "no"
+    source: "https://www.squarespace.com/pricing"
+    evidence: "FAQ: \"Squarespace doesn't offer a free plan, but every site starts with a free trial—no credit card required.\" Repeated at the page footer CTA: \"Start your free website trial today ... No credit card required. Cancel anytime.\""
+  trial_length_days:
+    value: 14
+    source: "https://www.squarespace.com/pricing"
+    evidence: "FAQ: \"How long is the Squarespace free trial? Every Squarespace website starts with a 14-day free trial.\""
+  trial_auto_converts:
+    value: unknown
+    source: "https://www.squarespace.com/pricing"
+    evidence: "FAQ describes the trial as something the buyer \"can upgrade to a paid plan at any time during or after your trial\" but no captured document states what happens if the buyer takes no action at trial end (auto-converts to paid vs. simply lapses). Vendor silence -- the topic (the trial) is extensively documented, this specific sub-question is not."
+  credit_system_present:
+    value: "yes"
+    source: "https://support.squarespace.com/hc/en-us/articles/46668956855053-Use-AI-credits-for-Squarespace-AI-tools"
+    evidence: "\"You spend AI credits to use Squarespace's AI features, like the AI Visibility tool. These tools use credits to run prompts on Large Language Models (LLMs) like ChatGPT and Gemini.\""
+  credit_unit_defined:
+    value: "no"
+    source: "https://support.squarespace.com/hc/en-us/articles/46668956855053-Use-AI-credits-for-Squarespace-AI-tools"
+    evidence: "\"The amount of credits needed depends on the AI tool. For example, you can view the amount of credits needed to run a prompt under the Run Cost field in the AI Visibility tool.\" The dedicated, on-point document explicitly delegates the rate to an in-product UI element rather than stating it; no numeric \"1 credit = X\" conversion is published anywhere in the captured evidence."
+  credit_to_output_rate_published:
+    value: "no"
+    source: "https://support.squarespace.com/hc/en-us/articles/46668956855053-Use-AI-credits-for-Squarespace-AI-tools"
+    evidence: "No document publishes a numeric credits-per-output rate for AI Visibility prompts or Image Studio images, for the principal output (per_seat_month website access) or any secondary output; the rate is stated to live only in-product (\"Run Cost field in the AI Visibility tool\"), unreachable under the documents-only rule."
+  credit_rate_location:
+    value: absent
+    source: "https://support.squarespace.com/hc/en-us/articles/46668956855053-Use-AI-credits-for-Squarespace-AI-tools"
+    evidence: "No rate is published in any captured document (see credit_to_output_rate_published)."
+  cost_per_output_unit:
+    value: per_seat_month
+    source: "https://www.squarespace.com/pricing"
+    evidence: "Sold as an unmetered website subscription (ToS 9: \"Paid Services\"; pricing page's 4 plan cards priced per plan per billing period), not as a countable per-generation artifact. The AI-credit system meters a secondary feature, not the principal product."
+  cost_per_output_computable:
+    value: "yes"
+    source: "https://www.squarespace.com/pricing"
+    evidence: "Entry tier (Basic) price is published ($19.00/mo default-annual per ld+json); unit is per_seat_month, so cost/output equals the plan price itself with no further allowance lookup or assumption needed. See computation_assumptions."
+  computation_assumptions:
+    value: "Basic (entry tier), default annual toggle: $228.00/yr=$19.00/mo per ld+json Offer. Unit=per_seat_month (unmetered access); cost/output=plan price itself, no separate allowance to convert."
+    source: "https://www.squarespace.com/pricing"
+    evidence: "Arithmetic: 228.00/12=19.00. No conversion of an allowance was needed since the unit is the seat-month itself."
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: "https://support.squarespace.com/hc/en-us/articles/46668956855053-Use-AI-credits-for-Squarespace-AI-tools"
+    evidence: "\"These AI credits don't roll over, but they reset every month on the same day as your billing cycle.\" (Applies to the recurring monthly AI-credit allotment on Core/Plus/Advanced; the separate one-time 10 starter credits on every site simply do not renew, noted in coder_note.)"
+  failed_generation_charge_policy:
+    value: unknown
+    source: "https://support.squarespace.com/hc/en-us/articles/46668956855053-Use-AI-credits-for-Squarespace-AI-tools"
+    evidence: "Neither the AI-credits article nor the Using-Squarespace-AI article states whether a failed/errored generation still consumes a credit. The latter only says a flagged/failed Image Studio generation can be retried, without addressing credit consumption on failure. Vendor silence."
+  auto_renewal_default:
+    value: "on"
+    source: "https://www.squarespace.com/terms-of-service"
+    evidence: "ToS 9.3: \"To ensure uninterrupted service, we'll automatically bill you for certain Paid Services from the date you submit your initial payment and on each renewal period or amount afterwards until cancellation.\" Corroborated by the Help Center: \"Squarespace subscriptions automatically renew for your convenience and to avoid any interruption of service.\""
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: "https://www.squarespace.com/terms-of-service"
+    evidence: "Stated in ToS section 9.3 (terms) and in the dedicated Help Center article \"Automatic subscription renewals\" (support.squarespace.com/.../230364668) in agreement -- two document classes, repetition per the codebook's multiple rule."
+  renewal_notice_commitment:
+    value: advance_notice_stated
+    source: "https://support.squarespace.com/hc/en-us/articles/230364668-Automatic-subscription-renewals"
+    evidence: "\"You'll receive an email reminder 15 days before annual website subscriptions renew so you'll have time to make any changes, unless you use SEPA. Monthly subscriptions renew automatically without an email reminder.\" Stated commitment with a period (15 days) for annual; the same document explicitly states monthly plans get none -- see coder_note."
+  refund_policy_exists:
+    value: "yes"
+    source: "https://support.squarespace.com/hc/en-us/articles/46051001586701-Website-refund-policy"
+    evidence: "\"You can request a full refund for annual website subscriptions canceled within 14 days of purchase.\""
+  refund_window_days:
+    value: 14
+    source: "https://support.squarespace.com/hc/en-us/articles/46051001586701-Website-refund-policy"
+    evidence: "\"You can request a full refund for annual website subscriptions canceled within 14 days of purchase.\" Entry tier (Basic)'s default display state is annual billing (see annual_default_toggle), so the annual-plan window applies."
+  refund_conditions:
+    value: conditional
+    source: "https://support.squarespace.com/hc/en-us/articles/46051001586701-Website-refund-policy"
+    evidence: "Refund is limited to annual plans, within 14 days: \"We don't offer refunds for: Annual plans canceled after 14 days following the first payment[,] Monthly plans[,] Renewal payments... Lost free domain offers - If you cancel an annual plan within 14 days, the cost of the domain is deducted from your refund.\""
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: "https://www.squarespace.com/terms-of-service"
+    evidence: "ToS 9.1: \"You may cancel Paid Services at any time via the Services.\" Corroborated by the pricing-page FAQ: \"You can upgrade, downgrade, or cancel your plan at any time.\""
+  refund_policy_location:
+    value: multiple
+    source: "https://www.squarespace.com/terms-of-service"
+    evidence: "Addressed in ToS section 9.4 (general \"sole discretion\" framing) and in the dedicated Help Center article \"Website refund policy\" (specific 14-day-annual policy) -- two document classes; see conflict_note for the framing difference between them."
+  commercial_use_lowest_tier:
+    value: unknown
+    source: "https://www.squarespace.com/terms-of-service"
+    evidence: "ToS read in full (contractual variables' top-ranked source) and contains no commercial-use grant or restriction tied to a tier. Also checked and silent: acceptable-use-policy.html, aiterms.html, the pricing page's feature-comparison table and FAQ, ai-credits-detail.html, using-squarespace-ai.html. The pricing page does address ecommerce feature availability by tier, which is a distinct construct (selling products) from a licensed right to commercial USE of outputs. Vendor silence."
+  watermark_removal_tier:
+    value: unknown
+    source: "https://www.squarespace.com/acceptable-use-policy"
+    evidence: "AUP 1.9 mentions \"watermarks\" only inside a generic anti-circumvention clause (\"Don't ... circumvent any technological or other measure (including watermarks) used by Squarespace...\"), not as a tier-differentiated output feature. Also checked and silent: ToS, aiterms.html, the pricing page, ai-credits-detail.html, using-squarespace-ai.html. No document states which tier(s), if any, carry or remove a Squarespace watermark on AI-generated or site output. Vendor silence."
+  output_ownership_statement:
+    value: user_owns
+    source: "https://www.squarespace.com/terms-of-service"
+    evidence: "ToS 2.1: \"Your User Content stays yours, except for the limited rights that enable us to provide, improve, promote and protect the Services as described in this Agreement.\" Corroborated for AI-generated content specifically by AI Terms 1.1.2: \"as between you and Squarespace, you are the owner of all Customer GAI Input and Customer Generated Output.\""
+  usage_cap_quantified:
+    value: some_quantified
+    source: "https://www.squarespace.com/pricing"
+    evidence: "Basic (entry tier) column of the feature-comparison table: \"AI Credits: 10 credits (one-time)\", \"Video hosting & storage: 30 min\", \"Contributors: 2\" are quantified standing limits. \"Unlimited bandwidth\" is listed with no per-plan differentiation, but AUP 1.7's unquantified \"unreasonable load\" clause qualifies it (codebook rule 3), so not every stated limit is quantified."
+  unquantified_limit_clause:
+    value: present
+    source: "https://www.squarespace.com/acceptable-use-policy"
+    evidence: "AUP 1.7: \"Don't take action that imposes an unreasonable load on our infrastructure or our third party providers. We reserve the right to determine what's reasonable.\" Read to the end of both the ToS and the AUP; this is the only such clause found."
+
+conflict_note: >
+  refund_policy_exists / refund_conditions / refund_window_days: ToS 9.4 (higher-ranked source
+  for this contractual variable class per protocol 6.2) frames refunds as fully discretionary --
+  "you won't be issued a refund except in our sole discretion, or if legally required" -- while
+  the dedicated Help Center refund policy (support.squarespace.com/hc/en-us/articles/46051001586701-Website-refund-policy)
+  states a concrete, non-discretionary 14-day-for-annual-plans policy with no mention of
+  discretion. Treated as complementary rather than incompatible (the specific document plausibly
+  describes how the reserved discretion is exercised in practice) and coded from the specific,
+  on-point Help Center policy; flagged here per protocol 6.2's instruction to record a hierarchy
+  gap even where it does not change the coded value. Both URLs: https://www.squarespace.com/terms-of-service ;
+  https://support.squarespace.com/hc/en-us/articles/46051001586701-Website-refund-policy
+
+register_events:
+  - { type: display_variant, detail: "The pricing page's own embedded ld+json OfferCatalog is internally inconsistent: Basic, Core and Advanced each carry ~54 region/currency-specific Offers (full global price list), but Plus carries only 2 Offers (USD, US region only) -- a much thinner data footprint than its siblings, suggesting Plus's structured data may be stale or that the vendor has withdrawn Plus from most non-US markets while the schema still lists it as a catalog item. This does not change entry-tier selection (Basic wins on annual-equivalent price by a wide margin: $228 vs. Plus's $588) and is recorded per instruction to log vendor-data disagreements rather than silently resolve them.", urls: ["https://web.archive.org/web/20260812101105/https://www.squarespace.com/pricing"] }
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2). Four eligible candidates found on the pricing
+  page's own ld+json OfferCatalog, all generally available, no sales contact, standing plans,
+  single-seat pricing. Annual-equivalent USD cost per the ld+json Offer blocks (US region),
+  default display state = annual toggle:
+    - Basic:    $228.00/yr  <- WINNER (entry_tier_name)
+    - Core:     $348.00/yr  (losing candidate)
+    - Plus:     $588.00/yr  (losing candidate; see register_events for a structured-data anomaly
+                on this specific plan, unrelated to its ranking here)
+    - Advanced: $1,188.00/yr (losing candidate)
+  A fifth named plan, "Mobile Start" (mentioned only in the Website-refund-policy Help Center
+  article: "Mobile Start plans are purchased through the Squarespace app, which is managed by
+  Apple"), does not appear anywhere in the pricing page's OfferCatalog and carries no price
+  figure in any captured document. Treated as out of scope for this selection, which is anchored
+  to the pricing page per sampling-rules 7.2, rather than as a ranked/losing candidate.
+
+  CAPTURE-SET LIMITATION (design note required by this assignment). This coding is blind to
+  pass 1's VALUES and REASONING (I did not open records/pass1/squarespace.yaml), but it is not
+  blind to pass 1's DOCUMENT SELECTION: 7 of my 8 sources are the exact local captures pass 1
+  saved to records/pass1/squarespace-sources/, read independently and re-coded from scratch. The
+  8th (the pricing page itself, https://www.squarespace.com/pricing) was NOT among pass 1's
+  local captures -- I located and read a window-dated archive.org snapshot of it independently
+  (CDX search, then curl; see sources[] note). So this test measures whether two readers of
+  substantially the same evidence reach the same values; it is not a fully independent
+  replication of document discovery for the pricing page specifically. Flagging exactly as this
+  assignment's instructions require, since it changes what an agreement/disagreement on this
+  record can be read to mean.
+
+  D-005 / MONEY-VALUE DOUBLE-REPRESENTATION. All money and credit-allowance figures were read
+  from the pricing page's embedded ld+json (OfferCatalog + 4 SoftwareApplication/Offer blocks +
+  FAQPage), parsed with Python's json.loads (a real parser, not brittle text-scraping, so the
+  superscript-cents misread class of error does not apply). The archived capture's visible text
+  and raw surrounding HTML held ZERO dollar figures anywhere (confirmed by direct text search) --
+  the price-card markup was still in a "pricing-cards__loading" placeholder state, i.e. the
+  actual on-screen numerals require client-side JS hydration that this static archive capture
+  never performed. No browser/render tool was available in this working session to force
+  hydration, so the on-screen TYPOGRAPHY of the headline figure ($19/mo vs. some other format)
+  was not independently, visually confirmed -- only the underlying value (from ld+json) was.
+  Magnitude sanity-checked against tier name and billing basis: Basic $19/25 mo, Core $29/39,
+  Plus $49/65, Advanced $99/139 -- an ordinary, internally consistent SaaS website-builder price
+  ladder, no order-of-magnitude anomaly. headline_price_usd's specific $19.00/mo framing (rather
+  than reporting $228.00 as a lump annual figure) follows the monthly-styled-headline-under-
+  annual-toggle convention this codebook's own worked examples use throughout section 7; this is
+  a documented convention-based inference on TYPOGRAPHY only, not on the underlying VALUE, which
+  is a direct machine-read of vendor-published structured data.
+
+  CURRENCY CHECK (deviation D-003). Arm 1 (vendor's own currency disclosure) is satisfied twice
+  over: the site carries a "Currency: Select currency:" selector in its global footer on every
+  captured page, AND the pricing page's own ld+json OfferCatalog explicitly publishes a USD,
+  US-region Offer for every one of the 4 plans with clean, unambiguous figures. Per D-003,
+  "if the vendor offers USD, the USD figure is the published price" -- coded as money values
+  throughout, not non_usd. (An Accept-Language header was not used as a locale test anywhere in
+  this reasoning, per the binding instruction against that.)
+
+  UNKNOWN VALUES (4 of 37), all classified vendor silence -- the relevant document(s) exist,
+  were read in full, and address the surrounding topic without settling this specific construct:
+  trial_auto_converts, failed_generation_charge_policy, commercial_use_lowest_tier,
+  watermark_removal_tier. No access-failure or instrument-gap unknowns remain in this record;
+  the single largest access gap in the evidence I started from (the pricing page was not among
+  pass 1's local captures) was closed by an independent, window-dated archive.org retrieval
+  before it could produce any unknowns.
+
+  RENEWAL NOTICE NUANCE. renewal_notice_commitment is coded advance_notice_stated on the
+  strength of the stated 15-day annual-plan commitment, but the same Help Center document is
+  explicit that MONTHLY subscriptions get no reminder at all ("Monthly subscriptions renew
+  automatically without an email reminder"). This is a real, documented asymmetry, not a
+  qualification I am hiding: a reader relying on this coded value should know it does not mean
+  every renewal is announced in advance.
+
+  CREDIT ALLOWANCE DETAIL (context for credit_rollover_policy and usage_cap_quantified, not a
+  separate coded construct). Per the AI-credits Help Center article: every Squarespace site gets
+  10 one-time starter AI credits that do not renew at all (distinct from "resets monthly"); Basic
+  gets ONLY those 10 and no recurring monthly allotment; Core/Plus/Advanced additionally get a
+  recurring monthly allotment (20/40/120 credits respectively per the pricing page's feature
+  table) that resets monthly and does not roll over.
+
+  A-012: not applicable to this product. The 14-day trial is genuinely free (no charge, no card
+  required); there is no cheap non-zero paid intro period.
+
+  blindness: no other product's record was opened, in any pass. records/pass1/squarespace.yaml
+  (this product's own pass-1 record) was NOT opened, not once, not for structure or the source
+  list. No file under orchestrator/ was opened. aitoolspolice.com and site/content/reviews/ were
+  not opened. I did not glob across the study directory; every study-directory file I read was
+  opened by its exact path from the list this assignment names. I did not run git log, git show,
+  git diff, or git blame, and did not read any other repository history; my only git operations
+  were `git add` and a path-scoped `git commit` on this file alone.
+status: complete

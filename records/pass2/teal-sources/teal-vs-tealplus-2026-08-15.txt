@@ -1,0 +1,31 @@
+SOURCE: https://help.tealhq.com/en/articles/9530153-teal-vs-teal
+TITLE: "Teal vs. Teal+ | Teal Knowledge Base"
+ACCESSED: 2026-08-15 (pass-2 collection)
+METHOD: Browser render (static WebFetch returned HTTP 403 Forbidden on this domain)
+ARCHIVE.ORG: not separately attempted, same rate-limit pattern as other help.tealhq.com articles this session; recorded archive_failed. This file is the dated local verbatim capture.
+Page says "Updated over 2 weeks ago"
+
+=== VERBATIM PAGE TEXT (comparison table + surrounding text) ===
+
+"Note: All pricing is in USD. We accept all major credit cards and Google Pay."
+
+Platform & Trackers table (Teal | Teal+):
+Resume Creation: Unlimited | Unlimited
+Job Tracking: Unlimited | Unlimited
+Resume Templates: 10 free templates | Full template library access
+Job Description Keyword Matching: Top 5 keywords | Full surfaced keywords list & custom keywords
+Resume Analysis: Basic analysis & recommendations | Basic + Advanced analysis & recommendations
+Bullet Analysis: 2 credits | Unlimited
+Email Templates: 1 per job stage | Unlimited
+Resume Designer: Basic settings | Basic + Advanced settings
+
+AI Tools table (Teal | Teal+):
+Resume Bullet Generation: 5 credits | Unlimited
+Professional Summary Generation: 2 credits | Unlimited
+Cover Letter Generation: 2 credits | Unlimited
+AI Interview Practice: 2 practice sessions | Unlimited
+AI Interview Scenarios: 2 practice scenarios | Unlimited
+
+"Interested in purchasing a Teal+ subscription? We offer weekly ($13), monthly ($29), and quarterly ($79) plans!"
+
+NOTE: (1) explicit USD currency statement used as D-003 arm-1 evidence for currency coding. (2) "Resume Bullet Generation: 5 credits" HERE conflicts with "10 Credits" on tealhq.com/pricing and on the trial-faq help article (help.tealhq.com/en/articles/9535168) — see conflict_note. (3) confirms official plan roster = weekly/monthly/quarterly only (three cadences), which conflicts with tealhq.com/terms Section 5's mention of a fourth "annual" cadence with no price ever published for it anywhere found — see conflict_note. (4) No watermark row, no commercial-use row anywhere in this comparison table.

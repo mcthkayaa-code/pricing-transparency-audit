@@ -1,0 +1,18 @@
+Free AI Search Visibility Tools | Is My Brand in AI
+GuidesToolsContact
+Home › Tools
+Free AI Visibility Tools
+A small set of free tools for getting your brand into AI answers — from making sure the crawlers can even reach you, to seeing whether they mention you yet. No signup, nothing stored. Each one is built around the same honest idea: tell you exactly where you stand, not where we wish you stood.
+AI Bot Checker
+Enter your domain to see whether your robots.txt blocks GPTBot, ClaudeBot, PerplexityBot, Google-Extended and other AI crawlers — the most common silent reason a brand never shows up in AI answers.
+AI Readiness Checker
+Paste a page URL and get a 0–100 score for how ready it is to be cited by ChatGPT, Perplexity, Gemini and Google AI Overviews — crawler access, freshness, schema, author and extractable answers, each checked live.
+AI Prompt Generator
+Generate the real buyer prompts people type into ChatGPT and Perplexity for your category, so you know exactly which answers to check yourself against.
+llms.txt Generator
+Build an llms.txt file that points AI assistants at the pages on your site that matter most. Copy, paste, publish at your root.
+Is My Brand in AI — independent research on AI search visibility (GEO). Built on the open record; we cite our sources and update as the evidence changes.
+GuidesAI search visibilityGEO vs SEOGet cited by ChatGPTBest GEO toolsAll guides →
+ToolsAI bot checkerAI readiness checkerllms.txt generatorPrompt generatorAll tools →
+CompanyAboutContactMethodology
+© 2026 Is My Brand in AI. All rights reserved.Privacy·Cookies·Terms

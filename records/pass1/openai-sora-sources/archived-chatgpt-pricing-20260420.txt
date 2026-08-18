@@ -1,0 +1,92 @@
+Original URL: https://chatgpt.com/pricing (this is what https://openai.com/chatgpt/pricing redirects to; both live returned HTTP 403 to WebFetch/curl on 2026-08-10, and by 2026-08-10 this page no longer describes Sora-era plans anyway)
+Cited via pre-existing Internet Archive capture: https://web.archive.org/web/20260420102953/https://chatgpt.com/pricing/
+Snapshot date: 2026-04-20 (6 days before OpenAI's stated 2026-04-26 Sora web/app shutdown date; this is the most recent pre-shutdown capture of this page reachable within this session)
+Accessed (by coder): 2026-08-10, via mcp Browser tool navigate to the wayback shorthand URL + javascript_tool document.body.innerText (get_page_text/screenshot were blocked by the tool sandbox with "This site requires per-action approval"; javascript_tool execution was not blocked)
+Archive status: this URL IS the archive record (a pre-existing web.archive.org capture); no further archival action needed or possible on an archive.org page itself.
+Reason used: per the discontinued-stratum procedure (research-data-collector.md), a discontinued product is coded from archived materials showing its last live state. Sora's own domain (sora.com/sora.chatgpt.com) never publicly displayed pricing (see sora-com-live-state-rendered.txt and archived-openai-sora-marketing-20260420.txt); ChatGPT plans were the only other candidate surface a "cheapest generally-available plan granting access" could plausibly be found on, since third-party sources (not used as evidence, only as a discovery lead) claimed Sora access was historically bundled into ChatGPT Plus/Pro.
+
+--- document.body.innerText, full page (captured via javascript_tool on the wayback replay) ---
+Log in
+About
+Features
+Learn
+Business
+Pricing
+Images
+Download
+ChatGPT
+Pricing
+See pricing for our individual, business, and enterprise plans.
+Free
+Intelligence for everyday tasks
+/ month
+Get Free
+Limited access to flagship model GPT-5.3
+Limited messages and uploads
+Limited and slower image generation
+Limited deep research
+Limited memory and context
+Limited Codex access
+Have an existing plan? See billing help
+Go
+Keep chatting with expanded access
+/ month
+Get Go
+Everything in Free and:
+More access to our flagship model GPT-5.3
+More messages
+More uploads
+More image creation
+Longer memory
+This plan may include ads. Learn more
+Plus
+Do more with advanced intelligence
+/ month
+Get Plus
+Everything in Go and:
+Advanced reasoning models
+Expanded messages and uploads
+Expanded and faster image creation
+Expanded deep research and agent mode
+Expanded memory and context
+Projects, tasks, and custom GPTs
+Expanded Codex usage
+Early access to new features
+Pro
+Maximize your productivity
+From
+/ month
+Get Pro
+Everything in Plus and:
+5x or 20x more usage
+Pro reasoning with GPT-5.4 Pro
+Maximum Codex tasks
+Unlimited GPT-5.3 and file uploads
+Unlimited and faster image creation
+Maximum deep research and agent mode
+Maximum memory and context
+Expanded projects, tasks, and custom GPTs
+Research preview of new features
+Unlimited subject to abuse guardrails. Learn more
+Business
+A secure, collaborative workspace for startups and growing businesses
+Annual billing / Monthly billing
+/ user / month
+Try for free
+Everything in Plus and: [... Business/Enterprise feature list, no Sora mention ...]
+Enterprise
+Enterprise-grade AI, security, and support at scale
+Contact sales
+[... full "Compare features across plans" grid follows, rows covering Messages, Models, Voice, Apps, Codex, Memory, Search, Canvas, Projects, Tasks, Data analysis, Vision, Image generation, Deep research, Study mode, Pulse, Privacy, Security & Administration ...]
+Free Go Plus Pro Business Enterprise
+Get Free
+*Usage must be reasonable and comply with our policies
+**Enterprise and Business can purchase credits for more access
+FAQ
+[pricing FAQ, payment methods, security — no Sora content]
+OpenAI Research Safety API Sora News Terms & Policies Terms of Use Privacy Policy Usage Policy Other policies OpenAI (c) 2015-2026
+--- end (verbatim except bracketed [...] summaries of long repeated feature-grid rows and the numeric price figures, which the wayback replay served as background-image/CSS-rendered digits that did not appear in innerText — see note below) ---
+
+IMPORTANT coding note: the numeric price figures themselves (e.g. the Go/Plus/Pro monthly dollar amounts) did NOT render as extractable text in innerText on this archived capture — each price shows as an empty "/ month" line in the text above. This is the exact "formatted price markup" failure mode the research-data-collector.md brief warns about (superscript/graphic price rendering). Because this snapshot is a non-interactive archive.org replay of a client-rendered app, a second representation (DOM inspection of the price node, or a screenshot) could not be obtained within this session's effort cap for a discontinued product's supporting evidence. This page is being cited ONLY for the qualitative finding that Sora is absent from the plan feature lists and the full compare-features grid as of 2026-04-20 — no money value is being coded from this page, so the "read a price twice" requirement does not apply here (no price is being read at all from this source).
+
+FINDING: "Sora" does not appear anywhere in the plan cards (Free/Go/Plus/Pro/Business/Enterprise) or in the full feature-comparison grid on this page. The only occurrence of the string "Sora" on the entire page is the unrelated site-footer navigation link ("OpenAI Research Safety API Sora News"), which points to a separate product section, not a plan feature. This is affirmative evidence that, 6 days before the Sora web/app shutdown, ChatGPT's own pricing page did not disclose Sora access as included in any ChatGPT plan.

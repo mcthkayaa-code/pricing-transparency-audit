@@ -1,0 +1,39 @@
+SOURCE: https://colossyan.zendesk.com/hc/en-us/articles/31601542272401-Video-generation-minutes
+ACCESS DATE: 2026-08-07
+ARCHIVE STATUS: archive_failed twice (web.archive.org/save returned HTTP 520 on colossyan.zendesk.com domain) -> local_copy_only per protocol-v1.md section 6.4
+TITLE: Video generation minutes ⏰ – Colossyan
+PAGE "Updated" LABEL AT ACCESS TIME: "8 months ago Updated"
+
+--- VISIBLE MAIN-CONTENT TEXT AS READ ---
+Colossyan
+ Getting started
+ARTICLES IN THIS SECTION
+Video generation minutes ⏰
+8 months ago Updated
+
+If you are creating videos using Colossyan, you may be wondering how video generation minutes work. Rest assured, we have you covered!
+
+Preview vs. Generate
+
+With all of our plans, you can preview your video without using your allocated video generation minutes. While you can't control the lip sync of actors, you can still review the text for typos, control the voice, and make other adjustments without consuming your video generation time. This allows you to perfect your video before generating it.
+
+Generating a video
+
+Please keep in mind that whenever you click on the "Generate" button, the length of that video will be deducted from your video generation minutes. Therefore, if you have a 15-minute allowance and generate a 5-minute video, you will only have 10 minutes left for the remainder of your plan period. Please note that we also measure seconds.
+
+The estimated time of your project can be checked at the bottom-left corner of the editor - this is what we use for calculating the length.
+
+Can I edit a generated video?
+
+No, a generated video is a .mp4 file, it cannot be edited within Colossyan. In case you have to change something and generate the video again, the full length of that video will be deducted from your video generation minutes again.
+
+Pro tip: With an annual subscription, you will receive your minutes in bulk and save 30% compared to a monthly payment plan.
+
+Can I roll unused minutes over to next month or year?
+
+Unused minutes do not roll over as video generation minutes reset on the renewal date. Depending on the plan that you have, this is done on a monthly or annual basis.
+
+Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Return to top

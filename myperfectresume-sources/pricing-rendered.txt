@@ -1,0 +1,74 @@
+URL: https://www.myperfectresume.com/pricing
+Accessed: 2026-08-10
+Method: rendered read via mcp__Claude_Browser (Chromium), static curl/WebFetch both failed
+  (WebFetch: 60s timeout; curl HTTP/2: exit 92 connection failure; curl HTTP/1.1: exit 28 timeout)
+  -- per D-005, a rendered read of a public page is a documentary read, not product use.
+Network note: our network egresses from Turkey; page loaded with default geo/locale, no VPN,
+  no Accept-Language override applied at browser level (browser tool does not expose that
+  control the way curl does). Prices displayed in USD ($) at this read -- see currency check
+  note in record for D-003 disposition.
+Cookie consent: "Cookie Settings" opened, all three optional categories (Analytics,
+  Performance and personalization, Advertising) left unchecked/default, "Save Preferences"
+  clicked -- declining non-essential cookies per privacy rule. Necessary cookies only.
+Default display state observed: page loaded directly to /pricing with three plan cards
+  side by side (no monthly/annual toggle control present on this page -- see annual_default_toggle).
+
+=== Page text (visible, via innerText) ===
+MyPerfectResume Pricing
+30% higher chance of getting a job‡
+42% higher response rate from recruiters‡
+1319 people have used 14-Day Premium Access in the past 24 hours§
+
+FREE PLAN
+Basic Access
+Free
+Access our basic features. Start building your professional resume and cover letter today.
+Resume Tools: Resume & Cover Letter Builder / Expert-Written Content Suggestions /
+  Unlimited Downloads in TXT Format / Professionally Designed Templates /
+  Unlimited PDF & Word Downloads / ResumeCheck™ Feedback
+Career Tools: Bold.pro Online Professional Profile / Interview Preparation Tools /
+  Career Development Webinars
+
+MOST POPULAR
+14-Day Premium Access
+$2.95
+"After 14 days, auto-renews at $23.95 billed every 4 weeks. Cancel anytime."
+[same Resume Tools / Career Tools feature list as above]
+
+BEST VALUE (69% SAVINGS)
+1-Year Premium Access
+$7.95/month
+"Pay $95.40 up-front and save 69%. Automatically renews each year. Cancel anytime."
+[same Resume Tools / Career Tools feature list as above]
+
+Money-Back Guarantee: Request a refund within 14 days of subscribing to premium access to
+  qualify.
+
+=== DOM inspection of feature grid (check vs. lock icons; plain-text extraction shows the
+    SAME bullet list under all 3 cards -- only DOM ::before background-image reveals which
+    are locked, per lock.svg vs the check icon) ===
+
+Free ("Basic Access") plan card -- wrapper div carries CSS class "lock-3":
+  UNLOCKED (checkmark, navy #002d6b):
+    - Resume & Cover Letter Builder
+    - Expert-Written Content Suggestions
+    - Unlimited Downloads in TXT Format
+    - Bold.pro Online Professional Profile
+  LOCKED (lock.svg icon, grey #68778b -- background-image url ends
+    ".../wp-content/uploads/2025/04/lock.svg"):
+    - Professionally Designed Templates
+    - Unlimited PDF & Word Downloads
+    - ResumeCheck™ Feedback
+    - Interview Preparation Tools
+    - Career Development Webinars
+
+14-Day Premium Access plan card -- wrapper div class "day14-plan", NO lock-N class:
+  all 9 listed features unlocked (checkmark).
+
+1-Year Premium Access plan card -- wrapper div class "year-plan", NO lock-N class:
+  all 9 listed features unlocked (checkmark).
+
+=== No monthly/annual billing TOGGLE control found on this page ===
+The three cards (Free / 14-Day / 1-Year) are simply displayed side by side; there is no
+interactive toggle switching between a monthly and annual view of the SAME plan. Each card
+has its own fixed price shown. See annual_default_toggle = no_toggle.

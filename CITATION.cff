@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: >-
+  Pricing Transparency and Subscription Friction in Consumer AI
+  Products: A Cross-Sectional Documentation Audit of 76 Products
+message: >-
+  If you use this dataset or the instruments, please cite it. And
+  please read limitations-register.md first — it lists what the
+  numbers cannot support.
+type: dataset
+authors:
+  - family-names: Kaya
+    given-names: Mucahit
+    affiliation: AI Tools Police
+repository-code: 'https://github.com/'
+license: CC-BY-4.0
+date-released: '2026-08-17'
+keywords:
+  - pricing transparency
+  - documentation audit
+  - consumer AI
+  - subscription pricing
+  - pre-registered
+  - open data
+abstract: >-
+  A cross-sectional documentation audit of 76 consumer AI products
+  across 15 categories, coded against a pre-registered 37-variable
+  instrument from official vendor documents only. No product was
+  used, trialled, purchased or operated. The central finding is a
+  contrast rather than a level: these vendors disclose what a buyer
+  needs in order to sign up, and not what a buyer needs in order to
+  budget. 57 of the 64 products with a metered generation step do
+  not document whether the buyer is charged when a generation fails.
+  The release carries the full audit trail, including 78 dated
+  deviations and a note documenting 33 ways a documents-only audit
+  of live web pages goes wrong.

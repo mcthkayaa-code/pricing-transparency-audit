@@ -1,0 +1,41 @@
+SOURCE: https://www.tealhq.com/terms
+ACCESSED: 2026-08-15 (pass-2 collection)
+METHOD: Browser render (static WebFetch returned HTTP 403 Forbidden on this domain)
+ARCHIVE.ORG: two save attempts both returned "Sorry / Job failed" — recorded as archive_failed for web archive; this file is the dated local verbatim capture per D-007/deviations digest.
+Page shows "Last Updated: August 12, 2026"
+
+=== VERBATIM PAGE TEXT (main content) ===
+
+Terms & Conditions
+
+Last Updated: August 12, 2026
+
+Welcome, and thank you for your interest in Teal Labs, Inc. ("Teal," "we," "our," or "us"). These terms of service ("Terms") establish the terms and conditions that apply to you when you use the Service (as defined below).
+
+BY USING THE SERVICE OR BY CLICKING "I AGREE" YOU INDICATE YOUR ACCEPTANCE OF THESE TERMS AND YOUR AGREEMENT TO BE BOUND BY THESE TERMS. YOU MAY NOT USE THE SERVICE IF YOU DO NOT AGREE TO THESE TERMS.
+
+[... full clauses 1-18 as rendered; key operative clauses reproduced below verbatim for coding evidence ...]
+
+1. Use of the Service — License. "Teal hereby grants you a non-exclusive, revocable, non-transferable license to access and use the Service for your personal purposes. Unless otherwise specified in writing, the Service is solely for your personal use and not for resale."
+
+4. Your Data and Account — Your Content. "You retain ownership of all content you create or upload to the Service ('Your Content'), including resumes, cover letters, job descriptions, notes, and other materials. By using the Service, you grant Teal a limited license to use Your Content solely as necessary to provide, maintain, and improve the Service for you."
+
+Data Export. "You may export Your Content at any time using the export features available within the Service. Job tracker data can be exported from the menu within the Job Tracker, and resumes can be exported individually in PDF format."
+
+5. Payment Terms and Subscriptions — Subscription Plans. "Access to premium features of the Service ('Teal+') requires payment of subscription fees. Teal+ is offered in the following billing periods: weekly, monthly, quarterly, and annual. Current pricing is available at tealhq.com/pricing."
+
+Automatic Renewal. "IMPORTANT: PAID SUBSCRIPTIONS AUTOMATICALLY RENEW AT THE END OF EACH BILLING PERIOD AT THE THEN-CURRENT SUBSCRIPTION RATE UNLESS YOU CANCEL BEFORE THE RENEWAL DATE. By subscribing, you authorize Teal to charge your payment method on a recurring basis until you cancel. The renewal charge will occur within 24 hours of the end of your current billing period."
+
+How to Cancel. "You may cancel your subscription at any time through your account settings at app.tealhq.com/my-account/subscription. When you cancel: cancellation takes effect at the end of your current billing period; you retain access to Teal+ features until your billing period ends; no further charges will be made after your current period; you are responsible for confirming your cancellation was processed by checking for the cancellation confirmation banner in your account settings."
+
+Refund Policy. "Cancellation does not automatically entitle you to a refund. If you are dissatisfied with Teal+, you may request a refund by emailing membersupport@tealhq.com with (1) the reason for your request and (2) the email address associated with your account. Refund eligibility is based on when you submit your request relative to your billing period start date: for weekly plans, within 2 calendar days of billing period start; for monthly plans, within 7 calendar days of billing period start; for quarterly plans, within 14 calendar days of billing period start; for annual plans, within 14 calendar days of billing period start. Refund requests submitted outside these windows are not eligible. Submitting a request does not guarantee approval; refunds are reviewed on a case-by-case basis."
+
+Price Changes. "Teal may change subscription prices at any time. We will provide advance notice of any price increase via email to the address associated with your account before your next renewal date. If you do not agree to the new price, you may cancel your subscription before your renewal date."
+
+Payment Processing. "Payments are processed by Stripe, Inc."
+
+No mention anywhere in the document of: watermark, commercial use (of generated resume/cover-letter output specifically), fair-use/reasonable-use/excessive-use throttling clause, or a distinct Acceptable Use Policy page.
+
+Governing Law: Delaware. Arbitration clause (AAA Rules), Miami FL venue. Contact: Teal Labs, Inc., 7800 SW 57th Ave, South Miami, FL 33143, hello@tealhq.com.
+
+[Full section list confirmed present: 1 Use of Service, 2 Registration/Eligibility, 3 AI and Automated Features, 4 Your Data and Account, 5 Payment Terms and Subscriptions, 6 Content Submitted to Service, 7 Third-Party Services, 8 Ownership, 9 DMCA, 10 Term and Termination, 11 Disclaimer of Warranty, 12 Indemnification, 13 Limitation of Liability, 14 Dispute Resolution, 15 Miscellaneous, 16 California Notice, 17 Apple Notice, 18 Contact Us.]

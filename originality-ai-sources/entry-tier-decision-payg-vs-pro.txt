@@ -1,0 +1,45 @@
+ENTRY-TIER SELECTION NOTE (sampling-rules.md Sec 7.2 vs the pay-as-you-go credit pack)
+Product mixes two paid purchase models: recurring subscriptions (Pro, Enterprise) and a
+one-time "Pay-as-you-go" credit pack. Both are documented as generally available, purchasable
+without contacting sales, and standing (not a limited-time promo) -- see refund-policy.txt
+("applicable to... Pay as you go (one-time payment); Pro...; Enterprise...") and
+pricing-page.txt (JSON-LD Offer "Pay-as-you-go (3000 credits)", price 30 USD).
+
+FIGURES:
+- PAYG: $30.00 one-time, 3,000 credits, no recurring charge, credits expire 2 years after
+  purchase if unused (refund-policy.txt, pricing-page.txt JSON-LD).
+- Pro (subscription, default annual display state): $12.95/mo, billed $155.40/yr; monthly-only
+  alternative $14.95/mo ($179.40/yr) -- loses the annual-equivalent comparison under
+  sampling-rules 7.2's own mechanics.
+- Enterprise: $136.58/mo annual ($1,638.96/yr) / $179/mo monthly -- more expensive than Pro on
+  every basis; not a contender for entry tier.
+
+WHY PRO, NOT PAYG, IS CODED AS entry_tier_name / the basis for headline_price_usd etc.:
+sampling-rules.md Sec 7.2's price basis is built specifically for a recurring plan: rule 2
+reads "Annualize whatever that [default] state shows. A monthly figure is multiplied by 12. An
+annual figure is taken as it stands." Both branches presuppose a plan with a monthly or annual
+cadence. PAYG is neither -- it is a single, non-recurring $30 charge. Multiplying it by 12
+would fabricate a $360/yr "cost" no document states (nothing obliges or even suggests a buyer
+repurchases a pack every year); taking $30 "as an annual figure... as it stands" would mislabel
+a one-time charge as an annual one. Neither mechanical branch of the rule fits, so the rule
+provides no way to force PAYG onto the same "annual-equivalent" axis as Pro/Enterprise without
+inventing an assumption the documents do not state -- which the instrument instructs against
+generally (and section 5.2's neighboring sales-gated-tier rule shows the pattern the instrument
+uses when a case falls outside the ordinary mechanics: state the gap, do not invent a fix).
+Pro is therefore selected as entry_tier_name because it is the cheapest candidate for which the
+rule's mechanics actually resolve to a number ($155.40/yr, beating Enterprise's $1,638.96/yr).
+
+TRANSPARENCY: the raw, un-annualized PAYG price ($30) is numerically lower than Pro's
+annual-equivalent cost ($155.40) and even lower than a single month of Pro ($12.95-$14.95). A
+buyer who only needs occasional/one-off scans could spend less via PAYG than via any
+subscription commitment. This is recorded here and in the record's coder_note so a reader who
+disagrees with the selection can see exactly what was rejected and why, per sampling-rules.md
+Sec 7.2 ("Recording the choice").
+
+Also noted for completeness (not scored, since PAYG is not the coded entry tier): the help
+center describes an "Auto Top-Up" feature for credit balances that "should be enabled by
+default", automatically purchasing more credits when a threshold is crossed
+(https://help.originality.ai/en/article/how-can-i-make-sure-that-i-dont-run-out-of-credits-top-up-x8w4cs/,
+https://help.originality.ai/en/article/just-billed-20-heres-what-happened-5zw4a8/, both WebFetch
+2026-08-10). This is a PAYG-specific mechanic, not a Pro/Enterprise subscription term, and does
+not change any Pro-tier coded variable; flagged here in case adjudication weighs it.

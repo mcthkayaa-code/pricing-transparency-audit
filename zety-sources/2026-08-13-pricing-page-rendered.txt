@@ -1,0 +1,85 @@
+Captured via rendered browser read (get_page_text) from https://zety.com/pricing (served as https://zety.com with pricing content — see coder_note on redirect behavior) on 2026-08-13. Cookie consent: non-essential categories left unchecked, "Save Preferences" selected (see coder_note on dialog behavior). Currency observed: USD ($), not localized, despite Turkey-based collection network.
+
+Title: Zety Pricing: Affordable Plans for Professional Resumes
+URL: https://zety.com
+Source element: <body>
+---
+Home – Pricing
+
+Simple pricing with one goal. To get you hired.
+30% higher chance of getting a job 1
+40% higher response rate from recruiters 1
+
+Basic Package
+FREE
+Start building your resume today for free.
+Resume Tools
+Resume Builder
+Resume Templates
+Cover Letter Builder
+Cover Letter Templates
+Download in TXT Format
+Unlimited Downloads, Prints and edits
+Job Tools
+Resume Check
+Instant Job Matches
+Premium Tools
+Bold Pro
+
+MOST POPULAR
+Pro Package
+With a 14 day trial for:
+$1.70
+After 14 days, auto-renews at $23.95 billed every 4 weeks. Cancel anytime.
+Resume Tools
+Resume Builder
+Resume Templates
+Cover Letter Builder
+Cover Letter Templates
+Download in Multiple Formats
+Unlimited Downloads, Prints and edits
+Job Tools
+Resume Check
+Instant Job Matches
+Premium Tools
+Bold Pro
+
+BEST VALUE
+Annual Package
+$5.95/month
+Pay $71.40 at once, save 77%. Auto-renews each year. Cancel anytime.
+Resume Tools
+Resume Builder
+Resume Templates
+Cover Letter Builder
+Cover Letter Templates
+Download in Multiple Formats
+Unlimited Downloads, Prints and edits
+Job Tools
+Resume Check
+Instant Job Matches
+Premium Tools
+Bold Pro
+
+Payment options we support: [logos]
+
+What's included in your plan
+[feature grid repeats the three plans and rows above; per-plan differentiation confirmed via DOM class inspection (check-active / check-inactive) — see coder_note for the JS query results]
+
+Download in Multiple Formats: "PDF, Word and TXT" (general) / Basic = "TXT format only" / Pro = "PDF, Word, and TXT" / Annual = "PDF, Word, and TXT"
+
+DOM verification (javascript_tool, document.querySelectorAll('li') within each plan-card container, className check-active/check-inactive):
+Basic Package: Resume Builder=active, Resume Templates=active, Cover Letter Builder=active, Cover Letter Templates=active, Download in TXT Format=active, Unlimited Downloads/Prints/edits=INACTIVE, Resume Check=INACTIVE, Instant Job Matches=INACTIVE, Bold.Pro=active
+Pro Package: all nine rows = active
+Annual Package: all nine rows = active
+
+Raw innerText confirmation of price figures (document.body.innerText, second representation independent of get_page_text):
+"...Pro Package\n\nWith a 14 day trial for:\n\n$1.70\n\nAfter 14 days, auto-renews at $23.95 billed every 4 weeks. Cancel anytime...."
+"...Premium Tools\nBold.Pro\n\nBEST VALUE\n\nAnnual Package\n\n$5.95/month\n\nPay $71.40 at once, save 77%. Auto-renews each year. Cancel anytime...."
+
+Footer links: About, Pricing, Contact, Editorial Guidelines, Media Mentions, Accessibility, Affiliates, Privacy Policy, Terms of service, Cookies & Tracking Policy.
+Contact: 800-985-7561 / support@zety.com
+© 2026 Works Limited. All Rights Reserved.
+
+No monthly/annual toggle control present — three plan cards (Basic, Pro, Annual) render simultaneously as separate standing columns.
+No embedded __NEXT_DATA__ JSON payload found on this page (checked via javascript_tool); price figures live in server-rendered HTML text nodes, confirmed identical across get_page_text extraction, raw innerText, and DOM class inspection.

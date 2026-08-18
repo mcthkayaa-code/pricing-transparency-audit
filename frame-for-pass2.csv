@@ -1,0 +1,81 @@
+# Pass-2 frame view. Derived from frame-frozen-2026-08-04.csv by dropping `review_url`,
+# `review_published_date`, `in_double_coded_set` and `frame_note`. A second coder must not
+# see our own published review of the product (protocol 7.3), and must not know whether it
+# is in the reliability sample. Identity and administrative fields are unchanged.
+product_id,product_name,vendor_home_url,category,product_status,paid_submission
+10web,10Web,https://10web.io,AI website builder,active,no
+adobe-express,Adobe Express,https://www.adobe.com/express,AI design,active,no
+adobe-firefly,Adobe Firefly,https://www.adobe.com/products/firefly.html,AI image generator,active,no
+aiclicks,AIclicks,https://aiclicks.io,AI bot checker,active,no
+aiva,AIVA,https://www.aiva.ai,AI music generator,active,no
+anomaly-ai,Anomaly AI,https://www.findanomaly.ai,AI data analysis,active,no
+apify-robots-checker,Apify Robots.txt AI Checker,https://apify.com,AI bot checker,active,no
+aragon-ai,Aragon AI,https://www.aragon.ai,AI headshot,active,no
+autoshorts-ai,AutoShorts.ai,https://autoshorts.ai,Faceless video,active,no
+beautiful-ai,Beautiful.ai,https://www.beautiful.ai,AI presentation,active,no
+brandcited,BrandCited,https://www.brandcited.ai,AI bot checker,active,no
+canva,Canva,https://www.canva.com,AI design,active,no
+colossyan,Colossyan,https://www.colossyan.com,AI avatar,active,no
+copyleaks,Copyleaks,https://copyleaks.com,AI detector,active,no
+d-id,D-ID,https://www.d-id.com,AI avatar,active,no
+decktopus,Decktopus,https://www.decktopus.com,AI presentation,active,no
+elevenlabs,ElevenLabs,https://elevenlabs.io,AI voice,active,no
+faceless-so,Faceless.so,https://faceless.so,Faceless video,active,no
+fotor,Fotor,https://www.fotor.com,AI image generator,active,no
+framer,Framer,https://www.framer.com,AI website builder,active,no
+freepik,Freepik,https://www.freepik.com,AI image generator,active,no
+gamma,Gamma,https://gamma.app,AI presentation,active,no
+godaddy,GoDaddy Airo,https://www.godaddy.com,AI website builder,active,no
+google-veo,Google Veo,https://deepmind.google/models/veo,AI video generator,active,no
+gptzero,GPTZero,https://gptzero.me,AI detector,active,no
+hailuo-ai,Hailuo AI,https://hailuoai.video,AI video generator,active,no
+heygen,HeyGen,https://www.heygen.com,AI avatar,active,no
+hostinger,Hostinger Horizons,https://www.hostinger.com,AI website builder,active,no
+humanizemy-ai-detector,HumanizeMyAI Detector,https://humanizemy.ai/detect,AI detector,active,no
+humanizemy,HumanizeMyAI,https://humanizemy.ai,AI humanizer,active,no
+humbot,Humbot,https://humbot.ai,AI humanizer,active,no
+hyperleap,Hyperleap AI,https://hyperleap.ai,AI bot checker,active,no
+ideogram,Ideogram AI,https://ideogram.ai,AI image generator,active,no
+invideo-ai,InVideo AI,https://invideo.io,Faceless video,active,no
+ismybrandinai,Is My Brand In AI,https://ismybrandinai.com,AI bot checker,active,no
+jobscan,Jobscan,https://www.jobscan.co,AI resume builder,active,no
+julius-ai,Julius AI,https://julius.ai,AI data analysis,active,no
+kling-ai,Kling AI,https://klingai.com,AI video generator,active,no
+krea-ai,Krea AI,https://www.krea.ai,AI image generator,active,no
+leonardo-ai,Leonardo AI,https://leonardo.ai,AI image generator,active,no
+lovo-ai,LOVO AI,https://lovo.ai,AI voice,discontinued,no
+midjourney,Midjourney,https://www.midjourney.com,AI image generator,active,no
+mubert,Mubert,https://mubert.com,AI music generator,active,no
+murf-ai,Murf AI,https://murf.ai,AI voice,active,no
+myperfectresume,MyPerfectResume,https://www.myperfectresume.com,AI resume builder,active,no
+nicepage,Nicepage,https://nicepage.com,AI website builder,active,yes
+openai-sora,OpenAI Sora,https://sora.com,AI video generator,discontinued,no
+originality-ai,Originality.ai,https://originality.ai,AI detector,active,no
+phrasly,Phrasly,https://phrasly.ai,AI humanizer,active,no
+picsart,Picsart,https://www.picsart.com,AI design,active,no
+pika,Pika,https://pika.art,AI video generator,active,no
+pixlr,Pixlr,https://pixlr.com,AI image generator,active,no
+playht,PlayHT,https://play.ht,AI voice,discontinued,no
+plus-ai,Plus AI,https://plusai.com,AI presentation,active,no
+quillbot,QuillBot,https://quillbot.com,AI humanizer,active,no
+recraft,Recraft AI,https://www.recraft.ai,AI image generator,active,no
+resume-io,Resume.io,https://resume.io,AI resume builder,active,no
+revid-ai,Revid.ai,https://www.revid.ai,Faceless video,active,no
+rezi,Rezi,https://www.rezi.ai,AI resume builder,active,no
+runway,Runway,https://runwayml.com,AI video generator,active,no
+sapling,Sapling AI Detector,https://sapling.ai,AI detector,active,no
+shortsfaceless,ShortsFaceless,https://www.shortsfaceless.com,Faceless video,active,no
+speechify,Speechify,https://speechify.com,AI voice,active,no
+squarespace,Squarespace,https://www.squarespace.com,AI website builder,active,no
+stable-audio,Stable Audio,https://stableaudio.com,AI music generator,active,no
+suno,Suno,https://suno.com,AI music generator,active,no
+synthesia,Synthesia,https://www.synthesia.io,AI avatar,active,no
+teal,Teal,https://www.tealhq.com,AI resume builder,active,no
+udio,Udio,https://www.udio.com,AI music generator,active,no
+undetectable-ai,Undetectable AI,https://undetectable.ai,AI humanizer,active,no
+vidnoz,Vidnoz,https://vidnoz.com,AI avatar,active,no
+winston-ai,Winston AI,https://gowinston.ai,AI detector,active,no
+wix,Wix,https://www.wix.com,AI website builder,active,no
+writehuman,WriteHuman,https://writehuman.ai,AI humanizer,active,no
+xseek,xSeek,https://www.xseek.io,AI bot checker,active,no
+zety,Zety,https://www.zety.com,AI resume builder,active,no

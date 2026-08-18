@@ -1,0 +1,20 @@
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+x-middleware-rewrite: /en/subscribe
+content-security-policy: frame-ancestors 'self' https://*.xaminim.com https://*.hailuo.ai https://*.hailuoai.video https://x.com https://*.x.com
+alb_receive_time: 1786100364.775
+alb_request_id: a35c803fc2ea3c1e33ab8b1b32b0764c82f6ee83
+x-akamai-transformed: 0 - 0 -
+vary: rsc
+vary: next-router-state-tree
+vary: next-router-prefetch
+vary: next-url
+expires: Fri, 07 Aug 2026 10:59:25 GMT
+cache-control: max-age=0, no-cache, no-store
+pragma: no-cache
+date: Fri, 07 Aug 2026 10:59:25 GMT
+access-control-allow-origin: *
+x-from: ak
+set-cookie: _abck=9592231758C09ACC6D316B13D29AA7D4~-1~YAAQnLCvw01CEZ6fAQAA67bg2xCGQq4RPKlKzgvA6SKrMT3s7TvBC3iGJzFHNc9cxxkMlHRYxpeFu/Q15f4dMSuuSN24ei1pElU2/G/wRTmN4PqVV/2CHMG0A1pQrkc29bCx29VQyDg0fRLbqT1J5YU1Qgwr0QMg4OiSR/bMG+LlXm6FlCX6e4n02vfObBOZa93mT7m91QQLfRhUehnB4KRgHW8dsDEyojy+QeGhhnvcYLoMme/lVnrK14vFlti5IwRnWCebwKiytE3u+iZzi35ez2Wm0wQ0QjOuMB0HI36stdDyWPItET29h4BmlwqPOm9N8dOwgOeg6QUeE+JRKvFdgCEUV2Ifvt5CQ2N5kaaoNx+gNyjKgwNvm8mk5GkzrLGNeqXfsmxr6+adggnBTa5MprpBN+FJ/Ib4AcmWWBtnDxAaN5JCp4y5zq1yM/SWoHfeQ4QuxInkejDe54fP5q0sM8w=~-1~-1~-1~-1~-1; Domain=.hailuoai.video; Path=/; Expires=Sat, 07 Aug 2027 10:59:25 GMT; Max-Age=31536000; SameSite=None; Secure
+set-cookie: bm_sz=4F499318E1818E89A231611F07E749DC~YAAQnLCvw05CEZ6fAQAA7Lbg2wAdku//J1hyCDRPWKlI2NUbbSaSLX5qDh5PEUCLDwCkV9K0P7PY0pZO9mAClFgOmv7j1TPZPY97wKPxIwAQoWGczbYJuHk0rY3z3wAkHvHdZH9Itwk6FU3vIWid197Pz8Na6V/wQ/jRsEl4BriwovndU6lA41IiX30dzgKEdllnnSXjK5zMuQXziURiWqIuHcpIJqv0kh4fQns9/GAwxRTEQhjpEX3RjNFXD7yNr/voBZchbAHfVNL6IneNXBw0Fx8e3Kep5LGbKhxNvZ8n5XitGyEvrq1Y9TqXuXdNccRT1MIirUa/0H8v5mDkBbloPRwV9EpJBbbepafDJAgMxHStofBk2xEr3Q7C16T5hk9z~3159873~4604230; Domain=.hailuoai.video; Path=/; Expires=Fri, 07 Aug 2026 14:59:24 GMT; Max-Age=14399; SameSite=None; Secure
+

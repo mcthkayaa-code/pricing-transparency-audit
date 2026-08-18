@@ -1,0 +1,307 @@
+Payment Terms - Hyperleap AI
+Product
+Solutions
+Resources
+Pricing
+Sign In
+Start free trial
+Home
+Payment Terms
+Payment Terms
+Clear and transparent billing policies for our services.
+Version 1.0 | Effective date: January 1, 2025
+Key Points
+Flexible billing
+Monthly or annual billing cycles
+Secure payments
+Industry-standard encryption
+Multiple currencies
+USD, EUR, GBP, INR & more
+Easy plan changes
+Upgrade or downgrade anytime
+1. General Payment Terms
+Overview of billing obligations.
+These Payment Terms govern all billing and payment obligations for Hyperleap AI services (&quot;Services&quot;) provided by M/s. Hyperleap Software Technologies Private Limited (&quot;Company&quot;, &quot;We&quot;, &quot;Us&quot;, &quot;Our&quot;) to You (&quot;User&quot;, &quot;Customer&quot;, &quot;You&quot;, &quot;Your&quot;).
+These Payment Terms are incorporated by reference into and form part of our
+Terms of Use
+. By subscribing to our Services, You agree to be bound by these Payment Terms.
+All payments are processed in accordance with applicable laws and regulations in the jurisdiction where the payment is processed.
+2. Subscription Plans and Pricing
+Available plans and pricing details.
+We offer the following subscription models:
+Launch Plan
+Basic plan for individual users and small teams
+Scale Plan
+Advanced plan for growing businesses
+Enterprise Plan
+Custom plan for large organizations
+Current pricing is available at
+hyperleap.ai/pricing
+and may be updated with reasonable notice. Pricing may vary based on location, taxes, and currency conversion.
+3. Billing Cycles and Payment Schedule
+When and how you're billed.
+Subscription fees are billed in advance based on Your selected billing cycle:
+Monthly Billing
+Charged monthly on the same calendar date each month
+Annual Billing
+Charged annually on the same calendar date each year
+•
+First billing begins when You subscribe to a paid plan
+•
+Billing dates may be adjusted by up to 3 days for processing requirements
+•
+Usage-based charges (if applicable) are calculated monthly and billed in arrears
+4. Payment Methods and Processing
+Accepted payment methods.
+Accepted Payment Methods
+•
+Credit cards (Visa, Mastercard, American Express)
+•
+Debit cards (where supported)
+•
+Digital wallets (Apple Pay, Google Pay, where available)
+•
+Bank transfers (for Enterprise plans)
+•
+Regional methods (UPI, NEFT, RTGS for Indian customers)
+Payment Partners
+•
+Payment Processors:
+Stripe, Razorpay
+•
+Merchants of Record:
+Paddle, DodoPayments
+When using a merchant of record, the merchant becomes the seller of record for tax and billing purposes, and their terms may also apply.
+5. Taxes and Additional Fees
+Tax responsibilities and additional charges.
+All prices are exclusive of applicable taxes unless otherwise stated. You are responsible for:
+•
+Value Added Tax (VAT)
+•
+Goods and Services Tax (GST)
+•
+Sales tax, Service tax
+•
+Any other local, state, or federal taxes
+Tax calculations are based on the billing address You provide. Payment processing fees, currency conversion fees, or international transaction fees charged by Your financial institution are Your responsibility.
+6. Failed Payments and Account Suspension
+What happens when payments fail.
+If a payment fails, We will:
+•
+Attempt to retry the payment automatically for up to 3 times over 7 days
+•
+Send You email notifications about the failed payment
+•
+Provide You an opportunity to update Your payment method
+If payment is not collected within 7 days:
+Your account may be suspended, access restricted, and data retained for 30 days. A late payment fee of $5 USD may be charged.
+7. Plan Changes and Upgrades
+How to change your subscription.
+You may upgrade or downgrade Your subscription plan at any time through Your account dashboard.
+Upgrades
+• Take effect immediately
+• Prorated charge for remaining period
+• Billing date remains the same
+Downgrades
+• Take effect at end of billing cycle
+• No refund for current period
+• Features restricted after cycle ends
+8. Enterprise Billing
+Special terms for enterprise customers.
+Enterprise customers may be subject to different payment terms. Options include:
+•
+Net 30 payment terms (subject to credit approval)
+•
+Annual prepayment discounts
+•
+Custom billing cycles
+•
+Purchase order processing
+•
+Invoice-based billing
+Contact our sales team at
+support@hyperleap.ai
+for special billing arrangements.
+9. Currency and Regional Pricing
+Supported currencies and regional options.
+Pricing is displayed in USD by default but may be shown in local currency. Supported currencies:
+USD
+EUR
+GBP
+INR
+CAD
+AUD
+Currency conversion rates are determined by our payment processors and may include conversion fees. Regional pricing may apply for fair pricing based on local economic conditions.
+10. Invoicing, Data Retention & Security
+Invoicing
+Invoices and receipts are provided electronically via email and can be accessed from Your account dashboard. Invoice disputes must be raised within 30 days.
+Data Retention
+If suspended for non-payment, Your data is retained for 30 days. You can resolve payment issues, export data, or downgrade to a free plan during this period. After 30 days, data may be permanently deleted.
+Payment Security
+We do not store complete credit card information. All payments use industry-standard security: PCI-compliant processors, SSL/TLS encryption, and tokenization.
+11. Changes to Payment Terms
+We may modify these Payment Terms with 30 days' prior written notice via email, in-app notifications, or updates to this page. Continued use after changes constitutes acceptance.
+If You do not agree, You may cancel Your subscription as outlined in our
+Terms of Use
+.
+Billing Questions?
+Our team is here to help with any billing or payment questions.
+Email Support
+Contact Sales
+Support:
+support@hyperleap.ai
+India Office (Headquarters):
+Hyperleap Software Technologies Private Limited
+T-Hub, Phase 2, Madhapur
+Hyderabad, Telangana 500081, India
+United States Office:
+Hyperleap AI Hub, Inc.
+8 The Green
+Dover, DE 19901, United States
+Explore Hyperleap AI
+AI customer service agents that answer FAQs, capture leads, and book appointments across Website, WhatsApp, Instagram, and Facebook Messenger.
+Solutions
+Conversational AI
+Customer Support Chatbot
+AI Receptionist
+Appointment Scheduling
+Multilingual Chatbot
+Knowledge Base Chatbot
+Instagram Chatbot
+Facebook Messenger Chatbot
+RAG Chatbot
+AI Agent vs Chatbot
+AI Agents by Industry
+For Ecommerce
+For Small Business
+Lead Generation
+No-Code Builder
+Integrations
+All Integrations
+Shopify
+WordPress
+Webflow
+Wix
+Squarespace
+Resources
+Learn
+Blog
+Comparisons
+Case Studies
+Templates
+Free Tools
+Glossary
+Help Center
+Feedback
+API Reference
+AI agents by industry
+Healthcare & wellness
+Dental
+Dentistry
+Dermatology
+Healthcare
+Chiropractic
+Physical Therapy
+Optometry
+Mental Health
+Med Spa
+Massage Therapy
+Pharmacy
+Veterinary
+Senior Living
+Home & field services
+Home Services
+HVAC
+Plumbing
+Electrical
+Roofing
+Cleaning
+Landscaping
+Pest Control
+Moving
+Professional services
+Accounting
+Legal
+Financial Advisors
+Insurance
+IT Services
+Staffing
+Property Management
+Beauty & fitness
+Beauty & Salons
+Nail Salons
+Tattoo Studios
+Fitness
+Yoga Studios
+Dance Studios
+Martial Arts
+Hospitality & events
+Hospitality
+Restaurants
+Catering
+Travel Agencies
+Wedding Venues
+Event Planning
+Photography
+Florists
+Retail, auto & local
+Automotive
+Auto Body
+Bakeries
+Real Estate
+Education
+Tutoring
+Daycare
+Pet Services
+AI agents for small businesses — answer customers, capture leads, and connect customer conversations to the modern AI workflows your team already uses.
+Subscribe to updates
+hello@hyperleap.ai
+Hyderabad, Telangana, India
+Products
+AI Agents
+MCP Server
+Why Hyperleap
+AI Suite
+AI Tools
+AI Assistants
+Prompts API
+Personas API
+Workspaces
+Pricing
+Company
+About Us
+Careers
+Contact Sales
+Request Demo
+Partners
+Roadmap
+Security
+Resources
+Help Center
+Tutorials
+Blog
+Comparisons
+Feedback
+256-bit
+AES Encryption
+99.9%
+Uptime
+2000+
+Active Users
+GDPR
+Compliant
+Meta
+Technology Provider & Business Partner
+Terms of Use
+Privacy Policy
+Payment Terms
+Refund Policy
+Cookie Policy
+DPA
+Data Transfers
+Sub-Processors
+Security
+Cookie Settings
+Hey AI, learn about us
+© 2026 Hyperleap® AI. All rights reserved.
+Hyperleap® is a registered trademark of Hyperleap Software Technologies Private Limited. All other trademarks, logos, and brand names are the property of their respective owners.

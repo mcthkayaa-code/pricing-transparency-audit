@@ -1,0 +1,144 @@
+How it works
+Pricing
+Resources
+Contact
+Sign In
+🇺🇸
+en
+Privacy Policy
+Last updated: February 19, 2026
+What is xSeek?
+xSeek helps businesses understand how AI models discover, crawl, and cite their websites. We track AI bot visits, monitor citations in AI-generated responses, and provide insights into your AI search visibility.
+What We Collect
+Account Information
+Email address and name when you sign up
+Organization name and website URLs you add for tracking
+Website Analytics
+AI bot visit data (bot name, URLs visited, timestamps)
+Citation data from AI model responses
+Prompt configurations you create
+Usage Data
+How you interact with our dashboard
+Feature usage patterns
+How We Use Your Data
+Provide AI visibility tracking and analytics
+Display leaderboards and citation sources
+Improve our service and develop new features
+Send product updates (you can opt out)
+Google User Data
+xSeek integrates with Google APIs to provide search performance insights. This section describes how we handle data received from Google APIs, in accordance with the
+Google API Services User Data Policy
+, including the Limited Use requirements.
+What Google Data We Access
+When you connect your Google account, we request read-only access to:
+Google Search Console data
+— search queries, impressions, clicks, and average position for your verified properties
+Google Analytics data
+— traffic metrics and page-level analytics for your connected properties
+Basic profile information
+— your name and email address, used to identify your account
+How We Use Google Data
+Google user data is used solely to:
+Display your search performance metrics within the xSeek dashboard
+Correlate AI visibility data with organic search performance
+Generate reports that combine AI citation data with search analytics
+Sharing, Transfer & Disclosure of Google Data
+We do
+not
+share, transfer, or disclose Google user data to any third parties, except in the following limited circumstances:
+Infrastructure providers
+— Your data is stored on our hosting and database providers (e.g., Vercel, Neon) solely to operate the service. These providers act as data processors and do not have independent access to your Google data.
+Legal obligations
+— We may disclose data if required by law, regulation, or valid legal process (e.g., a court order or subpoena).
+With your explicit consent
+— We will not share your Google data with any other party unless you explicitly authorize it.
+We do
+not
+sell Google user data. We do
+not
+use Google user data for advertising. We do
+not
+allow humans to read your Google data except where necessary to provide support you requested, to comply with legal obligations, or for security purposes such as investigating abuse.
+Data Storage & Retention
+Google user data is stored securely in our database with the same encryption and security measures applied to all user data. OAuth tokens are stored server-side and never exposed to the client. You can disconnect Google at any time from your Organization Settings, which revokes our access and deletes stored tokens.
+Limited Use Disclosure
+The use of raw or derived user data received from Workspace APIs will adhere to the Google User Data Policy, including the
+Limited Use requirements
+.
+xSeek's use and transfer to any other app of information received from Google APIs will adhere to the
+Google API Services User Data Policy
+, including the Limited Use requirements.
+What We Don't Do
+We don't sell your data
+We don't share individual website analytics with third parties
+We don't use Google user data for advertising or any purpose unrelated to providing xSeek's features
+We don't access your website content beyond what's publicly available
+Data Retention
+Account data: kept while your account is active
+Analytics data: retained for 2 years
+You can request deletion at any time
+Your Rights
+You can:
+Access your data
+Export your data
+Delete your account and associated data
+Opt out of marketing emails
+Security
+We use industry-standard encryption and security practices to protect your data. All data is transmitted over HTTPS and stored securely.
+Cookies
+We use essential cookies to keep you logged in and remember your preferences. We also use analytics cookies to understand how you use xSeek, which helps us improve the product.
+Third-Party Services
+We use the following categories of third-party service providers to operate xSeek. These providers act as data processors and only access data as necessary to perform their services:
+Hosting & infrastructure
+— for running our application and storing data
+Payment processing
+— for handling subscriptions and billing
+Email delivery
+— for transactional and product update emails
+Analytics
+— for understanding aggregate usage patterns
+None of these providers receive your Google user data for their own independent use. Google user data is only processed by infrastructure providers as necessary to store and serve it back to you within xSeek.
+Changes to This Policy
+We may update this policy from time to time. We'll notify you of significant changes via email or through the xSeek dashboard.
+Contact
+Questions about this policy? Email us at
+privacy@xseek.io
+Product
+AI Visibility Tracking
+Generative Engine Optimization
+Answer Engine Optimization
+ChatGPT SEO
+AI Search Optimization
+AI Content Optimization
+AI Backlinks
+For Agencies
+How it works
+Pricing
+Free Tools
+Agent-Ready Scan
+AI Robots.txt Checker
+AI LLMs.txt Generator
+xSeek Desktop
+All Tools
+Resources
+AI Search Visibility Strategies
+SEO vs AEO Guide
+LLMs.txt Explained
+AI Source Radar
+All Articles
+Company
+About
+Blog
+Documentation
+Contact
+Privacy Policy
+Terms of Service
+© 2026 xseek. All rights reserved.
+xSeek Reviews
+xSeek Reviews
+xSeek Reviews
+Featured on
+tool
+chase
+🇨🇦
+Proudly Canadian

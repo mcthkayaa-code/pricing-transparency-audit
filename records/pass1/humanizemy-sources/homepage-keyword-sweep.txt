@@ -1,0 +1,26 @@
+URL: https://humanizemy.ai/
+Accessed: 2026-08-09
+Method: rendered read (mcp__Claude_Browser__javascript_tool, document.body.innerText + document.querySelectorAll('details') for FAQ accordions), Chrome-based preview browser
+Purpose: supplementary check only (docs/help-center class) — confirm the pricing-page FAQ accordion is not a distinct document from the homepage's, and site-wide keyword sweep for constructs the pricing/ToS/refund pages were silent on (trial, watermark, commercial, credit, token, addon, seat, throttle, fair use).
+Nearest public archive of this URL: https://web.archive.org/web/20260726175859/https://humanizemy.ai/ (pre-existing capture from 2026-07-26, found via CDX lookup; a fresh same-day save attempt on 2026-08-09 returned no response (HTTP_CODE:000) and is not used as the archive reference).
+
+=== FINDINGS ===
+document.body.innerText.length = 28908
+FAQ <details> accordion count = 8, text identical to the 8 items captured verbatim in pricing-page.txt (same shared component, confirmed by string comparison of full FAQ text block).
+
+Site-wide (homepage) case-insensitive substring check via innerText.toLowerCase().includes(keyword):
+  trial: false | watermark: false | commercial: true | credit: false | token: false
+  fail: true | error: false | add-on: false | addon: false | seat: false
+  money-back: false | guarantee: false | refund: true | license: true | licence: false
+  throttle: false | fair use: false | fair-use: false | reasonable use: false | excessive: false
+
+Context of the two positive hits (checked with a newline-tolerant regex, +/-80 chars):
+  "commercial" -> "...the comparison pages are commercially independent." (About-the-author disclosure; refers to the site's own editorial independence, NOT a grant/restriction on commercial use of humanizer output. No other occurrence.)
+  "license"    -> "...giving the model explicit license to drop academic-adverb tics..." (describes prompt-engineering permission given to the AI model itself, not a legal license grant to users over outputs. No other occurrence.)
+  "fail"       -> "...any essay that fails the quality floor is pulled from the corpus..." (refers to the training-corpus quality-control process, unrelated to product usage/generation failures.)
+  "refund"     -> footer nav link text "Refund & Cancellation" only.
+
+Conclusion: homepage adds no facts beyond pricing.txt / terms.txt / refund-policy.txt. Used only to corroborate silence on trial, watermark, commercial-use-of-output, credit/token system, mandatory add-on, and discretionary/fair-use throttling clauses.
+
+=== ADDITIONAL DISCOVERY: sitemap.xml ===
+Fetched https://humanizemy.ai/sitemap.xml (2026-08-09) to confirm no separate help-center/docs/FAQ/billing-support page exists outside what was already read. Full URL list reviewed; relevant confirmation: Legal & Administrative pages = privacy, terms, refund-policy, cookies, contact only. "FAQs" footer link resolves to /#faq (anchor into the same homepage/pricing FAQ accordion, not a distinct page). "/api-docs" listed in sitemap but the live URL redirects to the homepage (verified by navigation: location.href after loading /api-docs resolved to https://humanizemy.ai/) — no reachable API/developer docs page, so no separate API-tier pricing or add-on construct exists to code.

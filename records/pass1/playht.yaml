@@ -1,0 +1,152 @@
+product_id: playht
+product_name: PlayHT
+category: AI voice
+product_status: discontinued
+paid_submission: "no"
+entry_tier_name: Creator
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://play.ht/pricing/
+archive_url: https://web.archive.org/web/20250625003728/https://play.ht/pricing/
+archive_status: archived
+default_display_state: >
+  Archived pricing page (capture 20250625003728, i.e. 2025-06-25): USD, no currency
+  selector engaged; billing toggle pre-selected on "Annually" (radio input id="annually"
+  carries checked="" in the raw markup, id="monthly" does not); page served four cards
+  -- Free $0, Creator $31.20/mo ("USD $374.40 billed annually"), Unlimited $49.00/mo
+  struck through from $99 ("USD $588.00 billed annually", badged "Limited time deal!"),
+  Enterprise "Custom pricing / Contact Sales". No region/geo selector observed. This is
+  the archived DOCUMENT's display state at its own 2025-06-25 capture time, not a live
+  read -- no live site exists at collection_date (2026-08-13); play.ht/pricing/ began
+  307-redirecting to the homepage from a 2025-09-27 capture onward, and by the Dec-2025
+  captures the homepage itself shows no "Pricing" nav link and no dollar figures.
+
+sources:
+  - { url: https://play.ht/pricing/, kind: pricing, accessed: "2026-08-13", archive: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", note: "Last capture showing a normally operating pricing page with real figures. Document dated 2025-06-25 (capture timestamp 20250625003728). /pricing/ began 307-redirecting to the homepage from 2025-09-27 onward (checked via CDX, all-status query), well before the Dec-2025 shutdown, so no later capture of a live pricing page exists." }
+  - { url: https://play.ht/terms/, kind: tos, accessed: "2026-08-13", archive: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", note: "Latest available terms capture. Document dated 2025-12-25 (capture timestamp 20251225125707), days before the reported Dec-2025 shutdown." }
+  - { url: https://help.play.ht/en/article/how-to-cancel-subscription-3l85dm/, kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20250515084025/https://help.play.ht/en/article/how-to-cancel-subscription-3l85dm/", note: "Help-center (Play.ht Helpdesk) cancellation walkthrough. Document dated 2025-05-15." }
+  - { url: https://help.play.ht/en/category/billing-zhuwaw/, kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20250325092238/https://help.play.ht/en/category/billing-zhuwaw/", note: "Help-center Billing category index (payment method, billing info, invoices, cancellation). Document dated 2025-03-25. No dedicated refund-policy article found under this domain; refund terms live in the ToS and in the pricing-page FAQ instead (searched: /refund, /refund-policy, /cancellation-policy, /billing paths on play.ht -- zero CDX hits for any of them)." }
+
+variables:
+  headline_price_usd: { value: 31.20, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Creator card: \"$31.20\" large/bold, \"/month\" beneath it -- most prominent figure for the entry tier in the default (annual-preselected) state." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "\"$31.20 /month ... USD $374.40 billed annually\" with the Annually radio pre-checked." }
+  first_charge_amount_usd: { value: 374.40, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "\"USD $374.40 billed annually\" -- annual total stated directly by the document, not computed by the coder." }
+  mandatory_addon_present: { value: "no", source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Creator's full feature list (3M characters/yr, Attribution-Free Use, Multilingual speech models, Advanced audio export, Standard Support) carries no separate required charge; ToS Sections 4 and 6 read in full show none either." }
+  annual_condition_disclosure: { value: adjacent, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "\"USD $374.40 billed annually\" sits directly beneath the $31.20/month figure inside the same Creator price card." }
+  annual_default_toggle: { value: annual_preselected, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Raw markup: <input id=\"annually\" ... checked=\"\"/> vs <input id=\"monthly\" ...> (no checked attribute)." }
+  free_plan_exists: { value: "yes", source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "\"Free Plan / $0 / Get Started\" shown as a standing card alongside the paid tiers." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Free card's only numeric limit is \"1000 characters\" (checked/included); the other free-card rows -- Support, Attribution-Free Use, API -- are feature toggles (crossed), not limits." }
+  free_plan_cap_value: { value: "1000 characters", source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "\"1000 characters\" listed as a checked/included line item on the Free Plan card." }
+  free_plan_watermark: { value: "yes", source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Feature-grid row \"Attribution-Free Use\" -- icon src=close_small_icon.svg (cross) under Free Plan, icon src=check_small.svg (check) under Creator. Read as this audio product's analogue of the codebook's own \"watermark-free exports\" grid example; the literal word \"watermark\" never appears in any PlayHT document read (see coder_note)." }
+  free_plan_duration: { value: perpetual, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Presented as a standing tier alongside the paid tiers with no expiry stated anywhere in the pricing page or the ToS." }
+  trial_exists: { value: unknown, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Pricing-page FAQ: \"Sign up for the free trial and give it a try!\" -- the only occurrence of the word \"trial\" in any document read, with no length, no card requirement, and no separate paid-tier trial mechanic described anywhere in the ToS. Cannot tell whether this names a distinct time-limited construct or is loose marketing language for the perpetual Free Plan." }
+  trial_card_required: { value: unknown, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "ToS read in full; no trial clause of any kind (card requirement or otherwise) appears. Follows trial_exists=unknown: no document identifies a distinct trial to attach a card requirement to." }
+  trial_length_days: { value: unknown, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "Same reason as trial_card_required -- ToS read in full, no trial-length clause found." }
+  trial_auto_converts: { value: unknown, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "Same reason as trial_card_required -- ToS read in full, no trial-conversion clause found." }
+  credit_system_present: { value: "no", source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Plans are allocated and priced directly in \"characters\" (e.g. \"3 million characters per year\"); the words \"credit\", \"token\", \"point\" and \"coin\" never appear in the pricing page, the ToS, or either help article except \"credit card\" as a payment instrument (ToS Section 4.2)." }
+  credit_unit_defined: { value: not_applicable, source: "", evidence: "No credit system (credit_system_present=no)." }
+  credit_to_output_rate_published: { value: not_applicable, source: "", evidence: "No credit system." }
+  credit_rate_location: { value: not_applicable, source: "", evidence: "No credit system." }
+  cost_per_output_unit: { value: other, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Vendor's own native billing/allowance unit is the input character (\"3 million characters per year\"), not audio-minutes and not any other enumerated unit; no characters-to-audio-minutes conversion is published anywhere read. Named unit: per_character (expressed per-1,000-characters in computation_assumptions for readability)." }
+  cost_per_output_computable: { value: "yes", source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Creator: $374.40/yr for 3,000,000 characters/yr, both published on the same page in the same (annual) period -- see computation_assumptions." }
+  computation_assumptions: { value: "Creator tier (entry), default annual state: $374.40/yr ($31.20/mo billed annually) per pricing page; 3,000,000 characters/yr included (=250,000/mo). 374.40/3,000,000=$0.0001248/char = $0.1248 per 1,000 chars. Price+allowance already same period; no conversion needed.", source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "" }
+  credit_rollover_policy: { value: not_applicable, source: "", evidence: "No credit system." }
+  failed_generation_charge_policy: { value: unknown, source: "", evidence: "No document read (pricing page, ToS, or either help article) states what happens to the character allowance when a generation fails or errors." }
+  auto_renewal_default: { value: "on", source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "ToS 4.3: \"...and automatically renews for successive periods of the same duration as the Initial Subscription Period...unless you cancel the Subscription Service or we terminate it.\"" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "Auto-renewal is stated in ToS Section 4.3 only; not present on the pricing page (checked) or in the cancellation help article (checked -- it explains how to cancel but does not itself state that the subscription auto-renews)." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "ToS Section 4.3 (subscription/renewal/billing mechanics, read in full) states no advance-notice commitment before a renewal charge; Section 4.1 promises advance notice only for a fee-amount CHANGE, not for an ordinary renewal at the existing price." }
+  refund_policy_exists: { value: "yes", source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "ToS 5.1 \"All Sales Are Final\" is immediately qualified by 5.4's stated exceptions (24-hour/character-usage exception; UK/EU 14-day cooling-off; fraud-investigation refunds)." }
+  refund_window_days: { value: 1, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "ToS 5.4.1 \"24-Hour Exception: Refunds will be considered if...(ii) You must contact our support team within 24 hours of the transaction.\" (24 hours converted to 1 day; see coder_note for the separate UK/EU 14-day statutory window)." }
+  refund_conditions: { value: conditional, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "ToS 5.4.1: usage for the transaction must be under 5,000 characters AND support must be contacted within 24 hours." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://web.archive.org/web/20250515084025/https://help.play.ht/en/article/how-to-cancel-subscription-3l85dm/", evidence: "\"Click on the Billing button...Click on the Cancel button just beside the active plan...Click on the Confirm Cancelation button and confirm to finish. Your Subscription will now be Cancelled.\" -- fully self-serve, no contact required. Corroborated by ToS 4.3, \"You may cancel...through your account settings.\"" }
+  refund_policy_location: { value: multiple, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "Refund terms appear in the ToS (Section 5, dedicated) AND in the pricing page's own FAQ (\"What is PlayAI's refund policy?\"), i.e. two document classes in agreement." }
+  commercial_use_lowest_tier: { value: free, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "ToS 6.1.1: \"Subject to your compliance with these Terms, PlayAI grants you, solely for your personal or commercial use: (a) ...right to access and use the Service...\" -- granted to \"you\" with no tier qualifier. See conflict_note." }
+  watermark_removal_tier: { value: lowest_paid, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Same \"Attribution-Free Use\" grid row as free_plan_watermark: crossed under Free, checked from Creator (the entry paid tier) upward. Interpretive mapping noted in coder_note." }
+  output_ownership_statement: { value: user_owns, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "ToS 6.1.1(b): \"...all right, title and interest obtained by PlayAI in and to User-Generated Content, subject to any Third Party Terms which may apply to such User-Generated Content.\" \"User-Generated Content\" is ToS-defined (Section 9.1) as content generated FROM a user's submitted text -- i.e. the AI voice output." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://web.archive.org/web/20250625003728/https://play.ht/pricing/", evidence: "Creator's only stated limit, \"3 million characters per year\", carries a number, a dimension, and a period." }
+  unquantified_limit_clause: { value: present, source: "https://web.archive.org/web/20251225125707/https://play.ht/terms/", evidence: "ToS 6.1.2: \"We may set and enforce usage limits (e.g., API request limits) at our sole discretion.\" No figure attached; a separate general reservation of rights alongside Creator's own quantified 3M-character allowance (read in full, Sections 6 and 9)." }
+
+coder_note: |
+  DISCONTINUED PRODUCT (sampling-rules 6.2 / protocol discontinued-product provisions).
+  No live site exists at collection_date 2026-08-13: play.ht has no A record and its
+  nameservers now point at Facebook infrastructure (background from prior verification,
+  used for CONTEXT only, not cited as any coded value's source). All values below are
+  coded from web.archive.org captures of the vendor's own pages, taken while the product
+  was still operating. Access date (today, 2026-08-13) and document date (the capture
+  timestamp) are different and both matter here:
+    - pricing: capture 20250625003728 = document dated 2025-06-25. This is the LATEST
+      capture that still shows a normally operating pricing page with real figures.
+      Checked (CDX, all statuses): play.ht/pricing/ starts 307-redirecting to the
+      homepage from a 2025-09-27 capture onward, continuing through captures dated
+      2025-12-04 and 2026-01-09, i.e. the dedicated pricing page was gone well before
+      the Dec-2025 shutdown. The Dec-2025 homepage captures checked (2025-12-31) show no
+      "Pricing" nav link and no dollar figures anywhere in the rendered HTML, so no later
+      capture of an operating priced offer exists to prefer over 2025-06-25.
+    - terms: capture 20251225125707 = document dated 2025-12-25, the latest available and
+      only days before the reported shutdown.
+    - help-center cancel-subscription article: capture 20250515084025 = 2025-05-15.
+    - help-center billing category: capture 20250325092238 = 2025-03-25.
+  All four fetched via web.archive.org's unmodified-original ("id_") endpoint, one
+  attempt each (no retries needed, nothing failed); no new /save/ requests were made
+  (D-012) -- only existing captures were read. Two representations cross-checked for the
+  headline price per the two-representation rule: the visible rendered text ("$31.20",
+  "/month", "USD $374.40 billed annually") against the raw HTML price-card markup
+  (identical figures, no superscript/split-digit layout), plus the annual/monthly radio
+  button's `checked` attribute in the raw markup confirming the default toggle state
+  independent of the rendered text.
+
+  ENTRY TIER (sampling-rules 7.2): Creator selected, lowest annual-equivalent single-seat
+  cost among eligible candidates at $374.40/yr ($31.20/mo billed annually, the page's
+  default annual-preselected state). Losing candidate: Unlimited, $588.00/yr at its own
+  default-displayed price ($49.00/mo, badged "Limited time deal!" struck through from a
+  $99.00/mo anchor -- the anchor price was not used for the comparison per the "read the
+  page as it loads" rule). Free ($0) is not a paid-tier candidate. Enterprise excluded
+  under eligibility rule 2 (sales-gated, "Contact Sales", no published price).
+
+  JUDGMENT CALLS, flagged rather than hidden:
+  1. free_plan_watermark / watermark_removal_tier: PlayHT's documents never use the word
+     "watermark" (audio product). The feature-grid row "Attribution-Free Use" (crossed
+     for Free, checked from Creator up) is read as this product's equivalent of the
+     codebook's own "watermark-free exports" worked example -- same check/cross-by-tier
+     pattern, different label because the output is audio rather than video/image.
+  2. cost_per_output_unit = other ("per_character"): PlayHT allocates and bills directly
+     in input characters, not audio-minutes; none of the enumerated units fits and no
+     characters-to-audio-minutes rate is published anywhere read, so no conversion to
+     per_audio_minute was attempted. Expressed per-1,000-characters in
+     computation_assumptions for readability ($0.1248/1,000 chars).
+  3. credit_system_present = no: the words "credit"/"token"/"point"/"coin" never appear
+     in any document read except "credit card" as a payment instrument. Characters are a
+     directly-stated allocation unit, not an abstracted intermediate currency.
+  4. trial_exists = unknown rather than no: the ONLY trial-related text found anywhere is
+     the pricing-page FAQ line "Sign up for the free trial and give it a try!", with no
+     supporting length/card/conversion terms in the ToS (read in full) or either help
+     article. Genuinely ambiguous between "a real time-limited trial" and loose marketing
+     language for the perpetual Free Plan, so left unknown rather than resolved by
+     inference, per protocol 6.3's bar on inference.
+  5. refund_window_days = 1 (24 hours, ToS 5.4.1) is the GENERALLY applicable condition.
+     ToS 5.4.3 separately grants UK/EU users an unconditional 14-day cooling-off refund
+     (pro-rata for actual usage) -- a jurisdiction-specific enhancement on top of the
+     general policy, not a conflicting value, so not coded as `conflicting`; recorded
+     here rather than invented into the single-value field.
+  6. Currency: no D-003/D-007 currency check needed. ToS Section 4: "Unless specifically
+     stated otherwise, all fees are in U.S. Dollars" -- vendor's own explicit USD
+     statement; pricing page also shows $ figures directly. headline_price_usd and
+     first_charge_amount_usd coded as ordinary USD money values, not non_usd.
+  7. Front-end marketing on the 2025-06-25 pricing capture is branded "PlayAI"
+     (<title>PlayAI Pricing...</title>, "PlayAI" throughout body copy), while the
+     footer copyright ("(c) 2025 PlayHT") and the help-center ("Play.ht Helpdesk") still
+     use "PlayHT" -- consistent with the frame's product_id/product_name. Noted for a
+     future reader who sees "PlayAI" in the archived screenshots and wonders why it does
+     not match this record's product_name.
+  8. mandatory_addon_present coded from the pricing page + ToS Sections 4 and 6 (read in
+     full); a full crawl of docs.play.ht/API documentation was not performed, so a
+     mandatory add-on documented ONLY there (if any) would not have been found. Given
+     this is a discontinued product coded from archives, no further pages were pulled
+     for a single supporting variable rather than stretch the search.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "commercial_use_lowest_tier: ToS 6.1.1 (\"PlayAI grants you, solely for your personal or commercial use...\") grants commercial use without a tier qualifier -- https://web.archive.org/web/20251225125707/https://play.ht/terms/ -- while the pricing page lists \"Commercial and re-sell rights\" as an Enterprise-only checked feature -- https://web.archive.org/web/20250625003728/https://play.ht/pricing/. Coded from the ToS per protocol 6.2 (contractual variable, ToS ranks first); the pricing-grid line may denote a narrower resale/white-label right rather than ordinary commercial use of outputs, but no document disambiguates this."
+register_events: []
+status: complete

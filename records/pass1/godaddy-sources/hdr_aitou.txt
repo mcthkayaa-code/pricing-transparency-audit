@@ -1,0 +1,20 @@
+HTTP/2 302 
+server: nginx
+date: Fri, 07 Aug 2026 08:49:34 GMT
+content-type: text/html; charset=utf-8
+content-length: 358
+location: https://web.archive.org/web/20260807084920/https://www.godaddy.com/legal/agreements/ai-terms-of-use
+x-app-server: wwwb-app55-dc6
+x-ts: 302
+x-tr: 18075
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-save-SERVER=wwwb-app55; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Turk Telekom
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

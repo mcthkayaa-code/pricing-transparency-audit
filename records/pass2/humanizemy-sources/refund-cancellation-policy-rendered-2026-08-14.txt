@@ -1,0 +1,65 @@
+Source: https://humanizemy.ai/refund-policy
+Accessed: 2026-08-14 (rendered read, Claude Browser tool)
+Archive: https://web.archive.org/web/20260814181444/https://humanizemy.ai/refund-policy
+(Reached via the "Refund & Cancellation Policy" footer link, actual href /refund-policy — the
+literal URL guess /refund 404'd first, noted for the record.)
+
+Full text (Last updated: July 29, 2026):
+
+HumanizeMyAI is a digital subscription service operated by Mihci AI Studios LLC. This policy
+explains when access begins, how to cancel a subscription, and how refund and billing-dispute
+requests are handled.
+
+Digital delivery
+Paid features become available after payment is confirmed. There is no physical product, shipping,
+or delivery charge.
+
+Free evaluation
+HumanizeMyAI offers a free tier that does not require a payment card. Customers can evaluate the
+core service before purchasing a subscription.
+
+Cancellation
+- You may cancel a subscription at any time from your account.
+- Cancellation stops future renewals.
+- Access continues through the end of the already-paid billing period.
+- If self-service cancellation is unavailable, email hello@humanizemy.ai and we will process the
+  request within one business day.
+
+Refund eligibility
+Paid subscription charges are generally non-refundable after digital access is provided. We will
+issue or consider a refund when required by applicable law, when a duplicate or incorrect charge
+occurred, or when a documented material service failure prevented access to the paid service.
+
+How to request a refund or raise a billing dispute
+- Email hello@humanizemy.ai from the address associated with your account.
+- Include the charge date, amount, and a short explanation. Do not send full card details.
+- We will review the request and respond within 14 days.
+- Approved refunds are returned to the original payment method. Bank and card-network processing
+  times may apply.
+
+Contact
+Mihci AI Studios LLC · 30 N Gould St Ste R, Sheridan, WY 82801, USA · hello@humanizemy.ai ·
++1 (307) 218-6489
+
+See also the Terms of Service, Privacy Policy.
+
+=== Notes for coding ===
+- This is the dedicated refund policy page — top-ranked source for contractual variables together
+  with the Terms of Service (protocol 6.2). Confirms and refines ToS section 4.
+- refund_policy_exists: "generally non-refundable... We will issue or consider a refund when
+  required by applicable law, when a duplicate or incorrect charge occurred, or when a documented
+  material service failure prevented access." Same shape as the codebook's own worked example
+  ("non-refundable except where required by law" -> no_refunds_stated); coded no_refunds_stated,
+  full exception list quoted in the variable's evidence.
+- refund_window_days: NO stated day-count for how long after purchase a refund may be requested —
+  the policy is condition-based (legal requirement / duplicate charge / documented service failure),
+  not window-based. The "14 days" figure in this document is how long HumanizeMyAI takes to RESPOND
+  to a submitted refund/dispute request, not a deadline for the buyer to request one — a different
+  quantity that must not be conflated with a refund window. Coded unknown, not 0 and not 14, with
+  this distinction spelled out in evidence.
+- refund_conditions = conditional: reasons required (legal/duplicate-charge/documented service
+  failure) + an approval/review step ("We will review the request").
+- cancellation_self_serve = self_serve_documented, confirmed again here: "You may cancel a
+  subscription at any time from your account."
+- refund_policy_location = multiple: stated in both this dedicated page and in Terms of Service
+  section 4 (in substantive agreement, not conflict).

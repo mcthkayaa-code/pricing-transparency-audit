@@ -1,0 +1,131 @@
+D-007 CURRENCY RE-CHECK — freepik (magnific.com) — 2026-08-10
+Method: rendered reads (mcp browser tools) for Arm 1; a raw HTTP fetch of this
+record's own already-cited web.archive.org capture for Arm 2 (the browser tool
+repeatedly hung/timed out navigating this specific archived URL -- two attempts,
+matching the effort cap -- so a direct HTTP fetch was used instead; this is a
+supplementary retrieval method for an already-identified archive URL, not a
+substitute for rendering the live vendor page, which was rendered normally).
+Purpose: apply the amended currency-check rule (deviations-log.md D-007). The
+original record never ran even the (now-superseded) D-003 Accept-Language check;
+it coded non_usd solely from "no selector found" on the live TRY-rendered page.
+
+RESULT UP FRONT: this re-check CHANGES the coded value. Magnific/Freepik publishes
+a real, readable USD price to a US-crawled reader, and the amended rule requires
+coding it.
+
+ARM 1 — vendor's own currency disclosure
+----------------------------------------------------------------------------
+1a. Currency/country selector on the live pricing page (rendered DOM inspection,
+    2026-08-10, https://www.magnific.com/pricing -- still serving TRY 450/mo for
+    Premium, unchanged from the original 2026-08-07 read).
+    Query: select, [class*="currency" i], [class*="country" i], [id*="currency" i],
+    [id*="country" i], [aria-label*="currency" i], [aria-label*="country" i].
+    Result: 0 matches. No selector exists.
+
+1b. Vendor-supported currency URL parameter.
+    Tried: https://www.magnific.com/pricing?currency=USD , rendered 2026-08-10.
+    Result: no effect, still "TRY 675 / TRY 450 /month billed annually" for
+    Premium. Not a supported mechanism.
+
+1c. Explicit currency statement in billing/help documentation or the terms.
+    - https://www.magnific.com/ai/docs/subscriptions-and-refunds (this record's
+      own top docs source for refund/renewal terms), rendered 2026-08-10,
+      full-text regex search for currency/USD/US$/dollar: 0 hits.
+    - https://www.magnific.com/legal/terms-of-use (147,502-char document, the
+      record's top contractual source), rendered and read directly 2026-08-10,
+      same regex plus Euro/EUR: 13 hits, none an explicit USD-pricing statement.
+      Notable: liability caps are stated in EUROS ("up to TEN THOUSAND EUROS
+      (EUR10,000.00)" for Premium Subscribers, similarly for other tiers) and the
+      contract twice states prices/fees are "in the corresponding currency" /
+      "the relevant currency" without naming one -- consistent with a vendor
+      whose reference currency may be EUR and whose displayed price is
+      locale-dependent, but this is not itself a USD figure or a selector.
+    No document names a fixed billing currency or offers a USD option in text.
+
+ARM 1 CONCLUSION: no selector, no working URL parameter, no explicit currency
+-offering statement (only indirect EUR-denominated liability figures and
+"the corresponding currency" language, neither of which states a price). Arm 1
+returns nothing readable -- proceed to Arm 2.
+
+ARM 2 — US-crawled archive capture that actually contains price figures
+----------------------------------------------------------------------------
+This record's own sources[] already cite a web.archive.org Save-Page-Now capture
+of the pricing page, submitted by the original coder on 2026-08-07:
+https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing
+(archive_status was already "archived", not local_copy_only -- the original coder
+successfully archived it, but never opened the resulting capture to read what it
+actually shows; it was cited only as this record's archive_url for the TRY read).
+Save-Page-Now fetches a submitted URL from archive.org's own (US-based)
+infrastructure, independent of the submitter's network -- this makes the capture
+itself a genuine Arm-2 read, regardless of which network triggered the save.
+
+Browser-tool navigation to this URL hung/timed out twice (once per tab, two
+different tabs); per the two-attempts-per-arm cap, fell back to a direct HTTPS
+fetch of the same archive URL (curl, 2026-08-10), which succeeded (808,514 bytes).
+Stripping script/style/tags leaves 9,047 characters of real page text -- not a
+pre-hydration shell -- including, verbatim:
+  "Premium For individuals exploring AI tools and stock content $20 $14.50
+  /month Billed annually Includes 240K credits/year Access to all image, video &
+  audio models Spaces: shared canvas, built for workflows ... Commercial AI
+  license Magnific image & video upscalers Credits valid for 1 year, no monthly
+  resets ..."
+  "Premium+ Best value ... $45 $33.75 /month Billed annually Includes 600K
+  credits/year ..."
+  "Pro Expert choice ... $280 $210 /month Billed annually Includes ..."
+This is unambiguously the SAME plan grid this record already coded from: same
+tier names (Premium, Premium+, Pro), same tier descriptions ("For individuals
+exploring AI tools and stock content"), same "Billed annually" state, and the
+SAME credit allowance already on file for Premium ("Includes 240K credits/year"
+matches this record's own "TRY450/mo, 240,000 credits/yr" exactly). The
+struck-through/active price PAIR pattern ($20 struck, $14.50 active) mirrors the
+TRY reading's own pattern (TRY 675 struck, TRY 450 active) precisely -- same
+construction, same tier, same position, different currency.
+
+SECOND REPRESENTATION (binding agent rule): checked the raw HTML directly around
+"$14" to rule out a misleading superscript-cents split. Found:
+  <span class="whitespace-nowrap">$14</span><span class="whitespace-nowrap">.50</span>
+Two adjacent spans, but the SECOND span already contains the decimal point
+(".50"), so concatenation in reading order correctly yields "$14.50" -- this is
+NOT the dangerous pattern the binding rule warns about (e.g. "$6"+"75" reading as
+"675"), where the cents span omits the decimal point. The figure is reliable.
+
+CROSS-TIER SANITY CHECK: the discount is not a uniform FX multiplier (Premium:
+675/20=33.75 struck-through ratio, but 450/14.50=31.03 active-price ratio; Pro:
+7,275/280=25.98 struck-through, 7,275/210=34.64 active) -- consistent with
+region/PPP-adjusted local pricing (a common practice among these vendors; compare
+Canva's own confirmed regional discounting found during this same sweep) rather
+than a single currency-conversion rate, but every figure lines up tier-for-tier,
+description-for-description, and credit-allowance-for-credit-allowance with this
+record's existing TRY evidence. Not a stale, unrelated, or mismatched data set.
+
+OUTCOME
+----------------------------------------------------------------------------
+Arm 1 returns nothing. Arm 2 returns a readable, content-rich, US-crawled capture
+(already on file as this record's own archive_url, now actually read for the
+first time) containing a genuine USD price for the entry tier (Premium),
+corroborated across three tiers and confirmed in two representations. Per the
+amended rule, a USD figure a US-crawled reader is served is coded as published.
+
+VALUE CHANGES:
+- headline_price_usd: non_usd -> 14.50 (Premium, per month, billed annually --
+  same billing-basis logic already on file; headline_billing_basis is unaffected).
+- first_charge_amount_usd: non_usd -> 174.00 (14.50 x 12, same rule-2 basis
+  already on file -- "billed annually" as the vendor's standard usage, no
+  explicit "once for twelve months" sentence located, same caveat as the
+  superseded TRY computation, now carried over unchanged in kind).
+- cost_per_output_computable stays "partial" (unaffected as a value -- still a
+  range across models, no default model named), but its computed range changes
+  from a TRY-denominated range to a USD-denominated one: price per credit =
+  14.50/20,000 = $0.000725; range 44-400 credits/image =>
+  44 x 0.000725 = $0.03/image to 400 x 0.000725 = $0.29/image (was
+  TRY0.99-9.00/image).
+- entry_tier_name (Premium) is NOT re-derived in this sweep -- out of scope (a
+  tier-selection judgment, not a currency variable) -- but is very unlikely to
+  change: Premium remains dramatically cheaper than every other candidate in the
+  newly-found USD figures too (Premium $14.50/mo vs Premium+ $33.75/mo vs Pro
+  $210/mo), the same wide margin the original TRY reading showed.
+- A new register_events entry (type: display_variant) is added, per the amended
+  rule's instruction to log the locally-served currency once a USD figure is
+  coded over it. No such event existed in this record before (the original coder
+  never recognized the archive capture as a second currency state, since they
+  never opened it).

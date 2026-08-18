@@ -1,0 +1,84 @@
+URL: https://www.myperfectresume.com/terms-conditions
+Accessed: 2026-08-10
+Method: rendered read via mcp__Claude_Browser (Chromium). Title: "MyPerfectResume Terms & Conditions".
+"Last Updated: April 30, 2026" per page banner. Contracting entity: BOLD LLC (352385),
+Guaynabo, PR, with Auxiliant S.a.r.l as possible merchant of record.
+Full document length (main.innerText): 113,851 characters. Read via full-text extraction
+(first ~30,000 chars, i.e. Terms of Use Highlights + Sections 1-9) plus targeted keyword-swept
+context windows across the ENTIRE remaining text for: refund, renew, commercial, watermark,
+trial, cancel, fair use, reasonable use, excessive, throttle, abuse, discretion, suspend,
+sole discretion, initial period, offer page, 14-day, 2.95, 23.95, unlimited.
+
+=== Key operative excerpts (verbatim) ===
+
+Highlights, "Payments, Subscriptions and Cancellations":
+"You will honor your payment obligations for services you purchase on the Site... Provider
+has the discretion to alter prices of its services at any time. In case there is a price
+change you will be notified in advance and provided a period of time to manage your
+subscription... You may cancel or sometimes suspend your subscription at any time by going to
+the home page under My Accounts and My Settings. Please refer to our Cancellations section for
+more information. Provider does not guarantee refunds."
+
+Section 5, "Your Content and Your License to Us":
+"For clarity, you retain ownership of your User Content at all times." User Content is defined
+to include "your Account information, resume, career history... or any other information you
+provide on or through the Service or that we may create for you." Provider is granted a
+worldwide, perpetual, irrevocable license to use/display/distribute User Content in connection
+with the Service.
+
+Section 9, "Payments and Subscriptions" (full paragraph, this is the section containing the
+auto-renewal clause):
+"There are various services offered by Provider that are free and do not have a payment
+requirement... Some of the free Services include using our resume builder, which offers
+unlimited use of our proprietary content and the ability of downloading a free .txt version of
+your resume... Other additional features may require a payment.
+Once your subscription is active, it will automatically renew as described on the offer page
+until you terminate the contract. The subscription fee is charged in advance, at the end of
+each billing period... When you sign up and purchase a Subscription, you agree to automatic or
+recurring billing."
+-- NOTE: the ToS explicitly defers the SPECIFIC renewal price/cadence to "the offer page" (the
+   pricing page) rather than restating a number. No "14-day", "2.95", or "23.95" string appears
+   anywhere in this ToS (0 hits on full-text search) and the word "trial" never appears in a
+   product-offer sense (only "jury trial" in the arbitration section). The ToS also mentions
+   optional paid add-ons: "Provider may offer certain premium services such as Resume Review,
+   Resume Writing, Premium Career Report and Cover Letter Writing, which may not be included in
+   the cost of Provider's basic subscription services" -- framed as optional upsells, not
+   required to use the advertised entry-tier features.
+
+Section 10, "Cancellations" (full paragraph):
+"You may cancel your subscription anytime by contacting our customer service department or by
+going to the online cancel page under your settings page. Provider will send an email with a
+cancellation number to confirm any cancellation request. If you do not receive this
+confirmation and still wish to cancel, please contact our customer service department directly
+for further assistance. You may request a refund if notice of cancellation of your subscription
+is provided before the end of the initial period, if the initial period is offered."
+
+Section 11, "Our Intellectual Property, Trademarks and Copyrights":
+"Except with respect to your User Content and other Registered Users' Content, you agree
+that... Provider... own[s] all rights, title and interest in the Service and all tools, and all
+related intellectual property rights."
+
+AUP section (system abuse / acceptable use), re: Bold.pro professional profile:
+"...you are obliged to refrain from transmitting any commercial, advertising, or promotional
+materials, or use the digital resume for commercial purposes." -- appears in the context of the
+Bold.pro public-profile acceptable-use rules (anti-spam/anti-advertising via the profile page),
+not a general resume-licensing clause. Not used to code a determinate value on
+commercial_use_lowest_tier; quoted here for audit transparency only.
+
+ExpertApply job-application tool (quantified usage cap on a Premium-tier feature not itemized
+on the pricing-page bullet list but referenced in the FAQ's "What do I get with Full Access"):
+"To ensure fair and equitable use of the ExpertApply tool the Site may limit the number of job
+applications being submitted to 1,000 per month per user. This limit is intended to ensure
+accessibility of the platform to our customers and prevent any abuse of employers' systems."
+
+=== Keyword sweep results (full-text, case-insensitive, first 6 hits each) ===
+"fair use": 0 hits | "reasonable use": 0 hits | "excessive": 0 hits | "throttl(e)": 0 hits
+"abuse": 3 hits (AUP heading "System Abuse"; ExpertApply 1,000/mo clause above) -- none describe
+  an unquantified discretionary cap on the entry tier's core advertised features.
+"discretion" / "sole discretion": several hits, all re: content moderation, account suspension
+  for AUP/IP violations, third-party integration changes, or order-error correction -- none is
+  a volume/intensity usage-limiting clause on the resume-builder features themselves.
+"suspend": re: account suspension for AUP violations, not usage throttling.
+"watermark": 0 hits anywhere in the document.
+No discretionary/unquantified usage-limiting clause (fair-use style) was found anywhere in this
+document after this sweep -- basis for unquantified_limit_clause = absent.

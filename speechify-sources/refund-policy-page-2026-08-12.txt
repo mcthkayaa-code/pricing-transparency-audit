@@ -1,0 +1,42 @@
+URL: https://speechify.com/refund-policy/
+Accessed: 2026-08-12 (rendered browser read + WebFetch cross-check, in agreement)
+Archive: https://web.archive.org/web/20260721182758/https://speechify.com/refund-policy/ -- STALE. Two save
+  attempts (2026-08-12) both returned this 2026-07-21 dedup capture. Recorded archive_status: local_copy_only
+  for this source; this local file is the same-day evidence of record (protocol 6.4).
+Method: mcp__Claude_Browser navigate + get_page_text
+---
+
+Refund Policy for Text to Speech Subscriptions   [<- this is the entry tier's product line]
+Conditions for a Refund
+  Speechify will issue refunds for purchases made in the past 7 days in case of
+  a) if it is determined that your account has been taken over by a third party and used fraudulently, or
+  b) you have been charged by Speechify in error.
+  "You must contact us within 7 days from the date of the subscription (including any trial period) for us to be
+  able to issue a refund."
+Unused subscription
+  "Annual Subscription: If you have used no more than 500 HD words, you must contact us within 7 days of the
+  payment for us to be able to issue a refund."
+When a refund cannot be issued?
+  - "Speechify does not offer partial refunds. If you've used the service for part of the billing cycle and then
+    canceled, you will not be eligible to receive a refund for the charge"
+  - "Any refund request after 7 days from the date of the subscription (including any trial period)."
+  - "Subscriptions purchased on a Monthly, Quarterly, or Discounted basis are non-refundable."
+  - "if you purchase a subscription through the Apple iTunes Store or our iOS application, the sale is final, and
+    we will not provide a refund... subject to Apple's applicable payment policy, which also may not provide for
+    refunds." Same statement for Google Play.
+How to request a refund? help desk request or help@speechify.com
+
+[Refund Policy for AI Studio Subscriptions -- different, out-of-scope product line, kept for contrast only:
+  Annual: refundable if <=2 minutes used within 7 days; Monthly/Quarterly/Discounted non-refundable; same
+  Apple/Google final-sale carve-out; AI Studio Top-ups are always final/non-refundable.]
+
+[Refund Policy for Audiobook Subscriptions -- different, out-of-scope product line, kept for contrast only:
+  Annual: refundable if no Credit used within 7 days; Monthly/Quarterly/Discounted non-refundable; a-la-carte
+  audiobook purchases non-refundable.]
+
+KEY FINDING FOR THIS RECORD'S ENTRY TIER (Premium, TTS Subscriptions, read in the pricing page's default MONTHLY
+billing state): the 7-day/500-HD-word conditional refund right applies ONLY to the ANNUAL configuration of this
+same plan. The record's entry tier as coded (Monthly, the page's default toggle state) is explicitly listed among
+"Monthly, Quarterly, or Discounted basis" = non-refundable. Per codebook-v1.md refund_window_days rule ("Where a
+window is stated only for annual plans, record it and note the restriction"), 7 is recorded as the value with
+this restriction spelled out in the variable's evidence field and in coder_note, rather than recording 0.

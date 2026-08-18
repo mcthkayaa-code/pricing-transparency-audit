@@ -1,0 +1,739 @@
+# Pricing Transparency Audit — coding record
+# Instrument: codebook-v1.md / protocol-v1.md / sampling-rules.md (all v1.2)
+# Coder pass: primary (pass 1)
+
+product_id: elevenlabs
+product_name: ElevenLabs
+category: AI voice
+product_status: active
+paid_submission: 'no'
+entry_tier_name: Starter
+coder_role: primary
+coder_pass: 1
+collection_date: '2026-08-06'
+recheck_date: not_applicable
+
+primary_source_url: https://elevenlabs.io/pricing
+archive_url: "local_copy:Data/seo/research/pricing-transparency/records/pass1/elevenlabs-sources/pricing.html"
+archive_status: local_copy_only
+
+default_display_state: >
+  Pricing page loaded with the "ElevenCreative" product tab active (leftmost of
+  ElevenCreative / ElevenAgents / ElevenAPI) and the billing-period selector on
+  "Monthly billing" (combobox value="monthly", not "yearly"). Confirmed live on
+  2026-08-06 via direct browser load of https://elevenlabs.io/pricing (accessibility
+  tree showed `combobox "Monthly billing" [selected] value="monthly"`; screenshot
+  showed plan cards reading "$0 per month" / "$6 per month" / "$22 ... $11 per month"
+  (Creator first-month promo) / "$99 per month"). No cookie-consent banner blocked
+  the view. Non-essential cookies were not accepted. Page was not reloaded after
+  this observation to hunt for a different state.
+
+source_urls:
+  - https://elevenlabs.io/pricing
+  - https://elevenlabs.io/terms-of-use
+  - https://elevenlabs.io/use-policy
+  - https://elevenlabs.io/docs/overview/administration/billing
+  - https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans
+  - https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-do-i-cancel-my-subscription
+  - https://elevenlabs.io/docs/help-center/account/general/what-happens-to-my-subscription-and-quota-at-the-end-of-the-month
+  - https://elevenlabs.io/docs/help-center/legal/can-i-publish-the-content-i-generate-on-the-platform
+  - https://elevenlabs.io/docs/help-center/account/cancellation-refunds/what-is-your-refund-policy
+  - https://elevenlabs.io/docs/help-center/product/content-production/studio/does-it-cost-credits-to-regenerate-in-studio
+  - https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-can-i-request-a-refund
+  - https://elevenlabs.io/docs/help-center/account/general/how-many-voice-slots-do-i-get-per-tier-and-how-can-i-increase-it
+
+sources:
+  - url: https://elevenlabs.io/pricing
+    class: pricing_page
+    access_date: '2026-08-06'
+    archive_status: local_copy_only
+    archive_url: "local_copy:elevenlabs-sources/pricing.html (also directly observed live in-browser 2026-08-06)"
+    note: >
+      web.archive.org/save returned HTTP 520 on 4 attempts (2 on the resumed pass,
+      2 more today) for this URL specifically; smaller docs pages archived fine in
+      the same run, so this looks like an archive.org-side timeout on a large
+      JS-rendered page rather than a block. Local static HTML copy (SSR'd Next.js
+      payload, contains the FAQPage JSON-LD used for several values below) plus a
+      live browser observation today serve as the evidentiary source per protocol
+      section 6.4's local-copy fallback.
+  - url: https://elevenlabs.io/terms-of-use
+    class: terms
+    access_date: '2026-08-06'
+    archive_status: local_copy_only
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    note: >
+      web.archive.org/save returned HTTP 520 on 3 attempts. Local copy (fetched
+      2026-08-05 by the prior run, content re-read today) used per fallback.
+      Page title/meta confirm this is "ElevenLabs Terms of Service (non-EEA)" —
+      applies to residents outside the EEA/Switzerland/UK; a separate ToS governs
+      those residents and was not fetched (out of scope for this pass). Refund
+      terms in particular may differ under the EEA-specific ToS (statutory
+      withdrawal rights); flagged in coder_note.
+  - url: https://elevenlabs.io/use-policy
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073204/https://elevenlabs.io/use-policy
+  - url: https://elevenlabs.io/docs/overview/administration/billing
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073223/https://elevenlabs.io/docs/overview/administration/billing
+  - url: https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073242/https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans
+  - url: https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-do-i-cancel-my-subscription
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073303/https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-do-i-cancel-my-subscription
+  - url: https://elevenlabs.io/docs/help-center/account/general/what-happens-to-my-subscription-and-quota-at-the-end-of-the-month
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073323/https://elevenlabs.io/docs/help-center/account/general/what-happens-to-my-subscription-and-quota-at-the-end-of-the-month
+  - url: https://elevenlabs.io/docs/help-center/legal/can-i-publish-the-content-i-generate-on-the-platform
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073342/https://elevenlabs.io/docs/help-center/legal/can-i-publish-the-content-i-generate-on-the-platform
+  - url: https://elevenlabs.io/docs/help-center/account/cancellation-refunds/what-is-your-refund-policy
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073816/https://elevenlabs.io/docs/help-center/account/cancellation-refunds/what-is-your-refund-policy
+  - url: https://elevenlabs.io/docs/help-center/product/content-production/studio/does-it-cost-credits-to-regenerate-in-studio
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073402/https://elevenlabs.io/docs/help-center/product/content-production/studio/does-it-cost-credits-to-regenerate-in-studio
+  - url: https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-can-i-request-a-refund
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073422/https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-can-i-request-a-refund
+  - url: https://elevenlabs.io/docs/help-center/account/general/how-many-voice-slots-do-i-get-per-tier-and-how-can-i-increase-it
+    class: docs_help_center
+    access_date: '2026-08-06'
+    archive_status: archived
+    archive_url: https://web.archive.org/web/20260806073441/https://elevenlabs.io/docs/help-center/account/general/how-many-voice-slots-do-i-get-per-tier-and-how-can-i-increase-it
+
+variables:
+  # --- Domain 1: headline price vs price actually charged ---
+  headline_price_usd:
+    value: 6.00
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Entry tier Starter card reads "$6 per month" in the page's default (Monthly
+      billing) display state, confirmed both in the SSR FAQPage data ("Starter $6
+      (30,000 credits)") and live screenshot 2026-08-06. Free ($0/mo) is not a paid
+      tier. Entry-tier selection and losing candidates recorded in coder_note.
+
+  headline_billing_basis:
+    value: per_month_billed_monthly
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Default display state is "Monthly billing" (combobox value="monthly"); Starter
+      card shows "$6 per month" with no "billed annually" qualifier attached in this
+      state. Localization keys confirm the alternate label used only when the
+      annual toggle is active: "per_month_yearly":"per month, billed yearly".
+
+  first_charge_amount_usd:
+    value: 6.00
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Default state is monthly (not annual), so codebook rule 2's annual-multiplication
+      case does not apply; the page states a single monthly figure charged monthly,
+      "$6 per month" for Starter, with no mandatory add-on found (see
+      mandatory_addon_present). No checkout was opened; figure taken from the
+      pricing page and cross-checked against the billing FAQ ("Subscriptions are
+      billed on a monthly or yearly basis starting from the day you subscribe.").
+
+  mandatory_addon_present:
+    value: 'no'
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Starter's advertised features (Commercial License, Instant Voice Cloning, 20
+      Projects in Studio, Dubbing Studio, Music commercial use, Image & Video) carry
+      no separate required charge in the pricing page or docs-billing.md. Voice
+      cloning, which is free-plan-gated on some competitors, is included in the
+      Starter price itself (docs-billing.md: "Cloning is only available on the
+      Starter tier and above" — no extra fee stated). Usage-based billing / Pay As
+      You Go top-ups are optional overage products, not a mandatory addition to use
+      the plan as advertised, per rule 3.
+
+  # --- Domain 2: annual-billing condition visibility ---
+  annual_condition_disclosure:
+    value: not_applicable
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Rule 1: the headline figure coded above ($6/mo, Starter) does not depend on
+      annual prepayment — the page's default display state is monthly billing, a
+      standard month-to-month charge. An annual option exists elsewhere on the page
+      (billing-period dropdown) but the coded headline figure itself carries no
+      annual-prepayment condition, so the disclosure-proximity question this
+      variable measures does not arise for the state actually read.
+
+  annual_default_toggle:
+    value: monthly_preselected
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Live accessibility-tree read of https://elevenlabs.io/pricing on 2026-08-06,
+      before any interaction: `combobox "Monthly billing" [ref_14] / option "Monthly
+      billing" (selected) value="monthly" / option "Yearly billing" value="yearly"`.
+      Screenshot of the same load shows the dropdown reading "Monthly billing" and
+      plan cards in monthly figures ("$6 per month", "$99 per month", etc.). No
+      second read of this URL was taken, so no display-variant comparison applies.
+
+  # --- Domain 3: real usability of the free plan ---
+  free_plan_exists:
+    value: 'yes'
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Standing "Free" plan card, "$0 per month", listed alongside paid tiers with
+      no expiry; docs-billing.md: "When signing up, you will be automatically
+      assigned to the free tier." Not a time-limited trial (see trial_exists).
+
+  free_plan_cap_documented:
+    value: some_quantified
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Quantified: "10,000 credits" per month (FAQ: "Free $0 (10,000 credits)");
+      3 custom voice slots and "55" monthly voice operations
+      (voice-slots-article.md); "3 Projects in Studio"; audio quality "128 kbps,
+      44.1kHz" (standing spec, attributed to Free specifically in the plan-card
+      data). Not quantified: pricing-page FAQ "Is there a limit on how many
+      credits I can use in a single request? Yes... The limit depends on whether
+      you are on the Free tier or a paid subscription" — states a per-request cap
+      exists but gives no number for either tier. At least one quantified and at
+      least one unquantified limit => some_quantified.
+
+  free_plan_cap_value:
+    value: "10000 credits per month | 3 voice slots | 55 voice operations per month | 3 projects in Studio | 128 kbps maximum audio bitrate"
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      See free_plan_cap_documented sources. Voice-slot and voice-operation figures
+      additionally sourced from
+      https://elevenlabs.io/docs/help-center/account/general/how-many-voice-slots-do-i-get-per-tier-and-how-can-i-increase-it
+      ("Free: 3" custom voice slots; monthly voice-operations quota "Free: 55").
+      Per-output-type minute breakdowns (10 min TTS, 5 min Music, 250 sec Sound
+      Effects) are the same 10,000-credit pool re-expressed in other units and are
+      not listed separately to avoid double-counting one limit.
+
+  free_plan_watermark:
+    value: 'yes'
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Pricing-page tooltip data: "Free plan users receive video dubs with a
+      watermark; paid plans do not." A second tooltip on the same page scopes
+      this precisely: "Watermarks are only available for video dubs." Scope note:
+      this documents watermarking on the Dubbing feature's video output for free
+      users; plain Text-to-Speech audio output is not documented as watermarked
+      anywhere in the reviewed sources. Coded 'yes' per the codebook's own
+      pricing-table-row example (a documented watermark on any free-plan output
+      is sufficient), with the Dubbing-specific scope stated here rather than in
+      the value itself.
+
+  free_plan_duration:
+    value: perpetual
+    source: https://elevenlabs.io/docs/overview/administration/billing
+    access_date: '2026-08-06'
+    archive_url: https://web.archive.org/web/20260806073223/https://elevenlabs.io/docs/overview/administration/billing
+    evidence: >
+      "When signing up, you will be automatically assigned to the free tier."
+      Free is presented as a standing tier alongside paid tiers on the pricing
+      page with no expiry stated in any reviewed document; downgrading a paid plan
+      also lands the account on Free indefinitely ("your account will be
+      transferred onto our free plan" on cancellation, docs-billing.md), which is
+      only coherent if Free itself does not expire.
+
+  # --- Domain 4: whether a trial requires a payment card ---
+  trial_exists:
+    value: 'no'
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      No time-limited trial is described anywhere in the pricing page, docs-billing.md,
+      or the help-center articles reviewed; ElevenLabs uses a standing $0 Free plan
+      instead (see free_plan_exists). The only "trial" occurrences in the Terms of
+      Service are jury-trial-waiver/arbitration boilerplate and one general
+      reservation-of-rights clause ("ElevenLabs may issue Prepaid Credits without
+      charge as part of a promotional, marketing, or trial program") that describes
+      no current, standing trial offer with defined terms — it is a permission
+      ElevenLabs reserves, not a documented trial a buyer can rely on today.
+
+  trial_card_required:
+    value: not_applicable
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: "No trial exists (trial_exists = no)."
+
+  trial_length_days:
+    value: not_applicable
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: "No trial exists (trial_exists = no)."
+
+  trial_auto_converts:
+    value: not_applicable
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: "No trial exists (trial_exists = no)."
+
+  # --- Domain 5: comprehensibility of the credit system ---
+  credit_system_present:
+    value: 'yes'
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      "Credits" are an intermediate currency shared across all products and
+      converted into outputs at published per-product rates (see
+      credit_to_output_rate_published): "All products draw from one shared monthly
+      credit pool... Approximate credit costs are: Text to Speech 1 credit per
+      character; Speech to Text 330 credits per minute; Eleven Music 900 credits
+      per minute..." — textbook intermediate-currency credit system, rule 2.
+
+  credit_unit_defined:
+    value: 'yes'
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Pricing-page tooltip: "For V2 Multilingual models, 1 text character equals 1
+      credit." A document ties the unit to a recognizable output (a character of
+      generated text), satisfying rule 3 directly.
+
+  credit_to_output_rate_published:
+    value: 'yes'
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Principal output (Text to Speech, per_audio_minute): "1 credit per
+      character"; page also states "One minute of audio costs approximately 1000
+      characters" (highest-quality/V2 Multilingual model), giving an exact,
+      unambiguous rate for the flagship model. Every other advertised output type
+      also carries a published rate on the same page: "Speech to Text 330 credits
+      per minute; Eleven Music 900 credits per minute; Sound Effects 200 credits
+      per generation; Voice Changer and Voice Isolator 1,000 credits per minute;
+      and Dubbing 2,000 credits per minute (automatic with watermark), 3,000
+      (automatic without watermark), 5,000 (Dubbing Studio with watermark) or
+      10,000 (Dubbing Studio without watermark)." Full coverage across principal
+      and secondary outputs => yes, not partial. (Note: the API-specific
+      Flash/Turbo model rate is separately given as a range, "0.5 and 1 credit per
+      character" — that range applies to a discounted alternate model, not to the
+      flagship rate used here, and does not by itself reduce this to partial since
+      an exact, complete rate is published for the standard model.)
+
+  credit_rate_location:
+    value: pricing_page
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      All credit-to-output rates found (character/minute rates, per-product credit
+      costs) are on the pricing page's FAQ/tooltip data. docs-models.html (the
+      Models documentation page) contains no mention of "credit" at all (checked in
+      full); docs-billing.md describes credits qualitatively without repeating the
+      numeric rates. Rate is therefore published in one class only: pricing_page.
+
+  # --- Domain 6: computability of cost per output ---
+  cost_per_output_unit:
+    value: per_audio_minute
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      ElevenLabs is sold principally as a text-to-speech / AI voice generator
+      (category: AI voice); the pricing page frames Text to Speech as the lead
+      product and counts it in credits-per-character convertible to audio minutes.
+
+  cost_per_output_computable:
+    value: 'yes'
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      All required figures are published for the entry tier and the principal
+      output; see computation_assumptions for the full calculation
+      (result: $0.20 per audio minute).
+
+  computation_assumptions:
+    value: >
+      Entry tier Starter, $6.00/mo billed monthly per default display state
+      (2026-08-06 live read). Included allowance: 30,000 credits/month (pricing
+      page FAQ: "Starter $6 (30,000 credits)"). Conversion: highest-quality model
+      rate is 1 credit = 1 character, and "one minute of audio costs approximately
+      1000 characters" (pricing page tooltip), i.e. ~1,000 credits per audio
+      minute. Price and allowance are already both monthly, so no period
+      conversion is needed (rule 3 n/a). 30000 credits / 1000 credits-per-minute =
+      30 minutes/month — this independently matches the plan's own stated
+      allowance "30 minutes of Text to Speech" for Starter, cross-validating the
+      arithmetic. 6.00 / 30 = 0.20 USD per audio minute.
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: "Coder's own arithmetic; not a vendor statement (section 2.3 exception)."
+
+  # --- Domain 7: rollover of unused credits ---
+  credit_rollover_policy:
+    value: partial_rollover
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      "Unused credits roll over for up to two months — up to 2x your monthly quota
+      — so your balance can reach at most 3x your monthly quota... as long as you
+      maintain an active paid subscription and do not downgrade or cancel."
+      Capped, stated rollover => partial_rollover per the codebook's own "rolls
+      over for up to 3 months" example. Also confirmed in docs-billing.md ("Up to
+      two months' worth of unused credits can roll over to the next month") and
+      end-of-month-article.md. Note: rollover does not apply to the Free plan
+      ("Rollover does not apply to the Free plan").
+
+  # --- Domain 8: charging for failed generations ---
+  failed_generation_charge_policy:
+    value: unknown
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Pricing-page FAQ: "Credits are charged per generation request, not per
+      download. If you are not satisfied with the output, a limited number of
+      free regenerations may be available..." — this addresses a buyer disliking
+      an output (Studio regeneration credits, see regenerate-cost-article.md), not
+      a technical failure or empty result, which the codebook explicitly
+      distinguishes. No reviewed document (pricing page, terms-of-use.html,
+      docs-billing.md) states what happens to credits when a generation
+      technically fails or errors. Searched "fail", "error", "unsuccessful" across
+      all reviewed sources; no on-point statement found. Silence, per the
+      codebook's own worked example for this exact variable.
+
+  # --- Domain 9: auto-renewal ---
+  auto_renewal_default:
+    value: 'on'
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      Terms of Service section "6. Subscription Services; Payment", (a)
+      Subscriptions: "Your Recurring Subscription will automatically renew until
+      you cancel it or your Recurring Subscription is otherwise terminated."
+      Elsewhere in the same section, emphasis-cased: "THEN YOUR SUBSCRIPTION WILL
+      BE AUTOMATICALLY RENEWED FOR ADDITIONAL PERIODS OF THE SAME DURATION AS THE
+      INITIAL TERM." ToS ranks first for this contractual variable per protocol
+      6.2 and is unambiguous; consistent with the help center (annual-plans-article.md:
+      "Annual plans are billed on an annual cycle and will renew automatically
+      unless cancelled").
+
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      Stated explicitly in the Terms of Service (section 6(a), see
+      auto_renewal_default) AND in the official documentation/help center
+      (https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans:
+      "Annual plans are billed on an annual cycle and will renew automatically
+      unless cancelled"; docs-billing.md repeats the same line). Two classes in
+      agreement => multiple. The pricing-page FAQ also references renewal
+      ("When your subscription renews, you receive a new monthly allotment of
+      credits") but never uses the word "automatically", so it is not counted as
+      an independent third disclosure of the *automatic* renewal fact.
+
+  renewal_notice_commitment:
+    value: unknown
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      The clause on point (ToS 6(a)) covers price-change notice, not renewal
+      notice: "If you do not agree to these price changes, you must cancel your
+      Recurring Subscription at least 7 days before the changes take effect."
+      This is the buyer's deadline to act if they disagree with a posted price
+      change, not a vendor commitment to proactively notify before an ordinary
+      renewal charge. No document reviewed (ToS, docs-billing.md, help-center
+      articles) states that ElevenLabs sends advance notice before a renewal
+      charge, and none explicitly disclaims doing so either — genuinely silent,
+      so unknown rather than an inferred no_notice_stated.
+
+  # --- Domain 10: refund and cancellation terms ---
+  # CONFLICT: see conflict_note. Terms of Service (rank 1 for contractual
+  # variables) states a general no-refunds/discretionary position; the Help
+  # Center (rank 2) states a specific 14-day conditional refund policy. Coded
+  # from the Terms of Service per protocol 6.2 / codebook 2.1 step 3.
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      Terms of Service, section "6. Subscription Services; Payment", (e) Refunds
+      and Exchanges: "All sales are final. We may offer refunds at our sole
+      discretion." Read as the codebook's own no_refunds_stated pattern (a
+      blanket final-sale statement plus a non-binding discretionary exception,
+      directly analogous to the codebook's own "non-refundable except where
+      required by law" example). See conflict_note for the Help Center's
+      conflicting 14-day policy and how the hierarchy resolves it.
+
+  refund_window_days:
+    value: 0
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      Follows refund_policy_exists = no_refunds_stated per the governing source
+      (ToS); "0 where no refunds are given" per the variable's value table. See
+      conflict_note: the Help Center states "14 days" for the same construct.
+
+  refund_conditions:
+    value: not_applicable
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      "not_applicable: No refund available" — follows the governing ToS position
+      (all sales final; refunds only at ElevenLabs' sole discretion, not a stated
+      buyer entitlement with conditions). See conflict_note: the Help Center
+      states a specific condition ("no credit quota was used") for the same
+      construct.
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      ToS 6(a): "You may cancel your subscription through your account. You may
+      cancel a Recurring Subscription at any time..." Consistent with the Help
+      Center's step-by-step self-serve flow (Subscription > Billing > Modify Plan
+      > Cancel Plan) in
+      https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-do-i-cancel-my-subscription
+      and docs-billing.md. Both sources agree; no conflict on this variable.
+
+  refund_policy_location:
+    value: terms
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      The governing statement (per protocol 6.2 hierarchy for contractual
+      variables) is in the Terms of Service, section 6(e). Coded 'terms' to match
+      the source that governs refund_policy_exists above, rather than 'multiple'
+      (reserved for classes that agree) or 'conflicting' (reserved for sources of
+      equal authority) — see conflict_note for the Help Center's differing
+      content, which is ranked lower for this variable class.
+
+  # --- Domain 11: commercial-use rights ---
+  commercial_use_lowest_tier:
+    value: lowest_paid
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      ToS section "1. Eligibility and Use Restrictions", (c) Use Restrictions:
+      "...if you access or use our Services free of charge (such a user, a Free
+      User), you may only use the Services for non-commercial purposes; (ii) if
+      you access or use our Services through a paid subscription plan (such a
+      user, a Paid User), you may use the Services for commercial purposes..."
+      Any paid tier (including entry tier Starter) grants commercial use =>
+      lowest_paid. Confirmed by the pricing page (Starter card lists "Commercial
+      License" as included) and docs-billing.md ("When generating content on our
+      paid plans, you get commercial rights to use that content. If you are on
+      the free plan, you can use the content non-commercially with attribution.").
+
+  watermark_removal_tier:
+    value: lowest_paid
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      "Free plan users receive video dubs with a watermark; paid plans do not."
+      States all paid plans (including entry tier Starter) remove the Dubbing
+      watermark, with no higher-tier gate mentioned. Scope note: this is
+      documented specifically for the Dubbing/video output; no watermark
+      construct is documented for plain Text-to-Speech audio in any tier.
+
+  output_ownership_statement:
+    value: user_owns
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      ToS section "4. Content and User Voice Models; Models", (c) Rights to your
+      Content: "(i) Except as expressly set forth herein, as between you and
+      ElevenLabs, you retain all rights in and to your Input." "(ii) ... Except as
+      expressly set forth herein, as between you and ElevenLabs, you retain all
+      rights in and to your Output." Not conditioned on tier in this clause (tier
+      instead gates the separate *commercial-use* right, coded above); a
+      following clause, (d) License to Your Content, grants ElevenLabs an
+      operating license but does not transfer ownership, so this is coded
+      user_owns rather than conditional.
+
+  # --- Domain 12: undisclosed or unverifiable limits (entry tier: Starter) ---
+  usage_cap_quantified:
+    value: some_quantified
+    source: https://elevenlabs.io/pricing
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/pricing.html; live-observed 2026-08-06"
+    evidence: >
+      Starter tier limits, quantified: 30,000 credits/month (pricing FAQ);
+      30 minutes of Text to Speech, 11 minutes of Music, 750 seconds of Sound
+      Effects per month (plan credits_usable data); 20 Projects in Studio
+      (standing); 10 custom voice slots (standing) and 65 monthly voice
+      operations (rate) per voice-slots-article.md; audio quality "128 kbps,
+      44.1kHz" (standing). Not quantified: the same per-request credit cap noted
+      under free_plan_cap_documented is stated to apply to "a paid subscription"
+      too, with no number given for either tier. At least one quantified and one
+      unquantified limit for the entry tier => some_quantified.
+
+  unquantified_limit_clause:
+    value: absent
+    source: https://elevenlabs.io/terms-of-use
+    access_date: '2026-08-06'
+    archive_url: "local_copy:elevenlabs-sources/terms-of-use.html"
+    evidence: >
+      Terms of Service (in full) and the Prohibited Use Policy
+      (https://elevenlabs.io/use-policy, in full) were read for this variable.
+      Searched for and found no discretionary, unquantified usage-volume clause:
+      no "fair use", "reasonable use", "excessive use", "throttl*", "rate limit",
+      or "concurrent" clause tied to usage volume in either document. The Use
+      Policy's "abuse" language concerns prohibited *content/conduct* (e.g. child
+      safety), which the codebook explicitly excludes from this variable ("This
+      variable covers volume and intensity of use, not conduct"). "Sole
+      discretion" appears in the ToS only for unrelated matters (suspending
+      access on payment failure with cause, content moderation, feedback
+      ownership) — none of it a discretionary cap on how much a paying,
+      compliant user may generate. A coder read of both documents to the end
+      found no such clause => absent, which is determinate and scores full
+      points on item F2 (protocol rule G0's stated exception).
+
+
+coder_note: >
+  Entry-tier selection (sampling-rules.md 7.2), all figures read in the default
+  monthly display state, annualized at figure x 12: Free $0/mo is not a paid
+  tier and is not a candidate. Enterprise is excluded from candidacy entirely
+  (sales-gated, fails eligibility rule 2 — "purchasable without contacting
+  sales"; headline_price_usd for Enterprise would be no_public_price if it were
+  the entry tier, but it is not reached since cheaper self-serve tiers exist).
+  Eligible candidates and their annual-equivalent single-seat cost: Starter
+  $6/mo -> 72.00 (WINNER, entry_tier_name); Creator standing rate $22/mo ->
+  264.00 (lost) — Creator's card shows a first-month-only promotional price of
+  $11/mo, which is not used for this comparison since it is not the standing
+  rate; Pro $99/mo -> 1,188.00 (lost); Scale $299/mo -> 3,588.00 (lost; bundles
+  3 workspace seats as its base offering rather than selling a single-seat
+  variant, per sampling-rules 7.2 rule 3, recorded here rather than treated as
+  disqualifying); Business $990/mo -> 11,880.00 (lost; bundles 10 seats,
+  same note).
+
+  Methodology notes for reproduction: (1) Two direct Zendesk help-center fetches
+  saved by the prior run (cancel-subscription.html, refund-policy.html, both
+  under help.elevenlabs.io) returned a Cloudflare "Just a moment..." challenge
+  page with no usable content; not used as sources. The equivalent content was
+  obtained instead from the elevenlabs.io/docs help-center mirror (llms.txt-indexed,
+  same underlying articles, no Cloudflare gate), which is what source_urls
+  reflects. (2) web.archive.org/save returned HTTP 520 on repeated attempts for
+  https://elevenlabs.io/pricing (4 attempts) and https://elevenlabs.io/terms-of-use
+  (3 attempts) specifically, while 10 smaller docs/help-center pages archived
+  successfully in the same run within minutes — consistent with an archive.org-side
+  timeout on large JS-rendered pages rather than a block; local copies used per
+  protocol 6.4 fallback (archive_status: local_copy_only for these two). (3) The
+  Terms of Service reviewed is explicitly the *non-EEA* version
+  ("ElevenLabs Terms of Service (non-EEA)" — "These ElevenLabs Terms of Service
+  apply if you reside outside of the European Economic Area (EEA), Switzerland,
+  or UK. If you live in the EEA, Switzerland, or UK, these other ElevenLabs
+  Terms of Service apply to you."). The EEA/UK/Switzerland-specific ToS was not
+  fetched or reviewed (out of scope for this pass) and may state different
+  refund terms (e.g. statutory withdrawal rights); this record describes only
+  the non-EEA document. (4) docs-models.html was fetched by the prior run but
+  contains no pricing/credit content (checked in full, zero "credit" mentions)
+  and was not used as a source for any coded value.
+
+computation_assumptions: >
+  cost_per_output_computable (C3): Starter tier, $6.00/mo billed monthly per
+  default display state; 30,000 credits/mo included; highest-quality model rate
+  1 credit = 1 character, ~1,000 characters ~= 1 minute of audio (pricing-page
+  tooltip); both price and allowance already monthly, no period conversion
+  needed. 30000 / 1000 = 30 minutes/month (cross-validated against the plan's
+  own stated "30 minutes of Text to Speech" allowance). 6.00 / 30 =
+  cost_per_output_value_usd 0.20 USD per audio minute. Full detail and sources
+  in variables.computation_assumptions above.
+
+conflict_note: >
+  refund_policy_exists / refund_window_days / refund_conditions /
+  refund_policy_location: the Terms of Service (protocol 6.2 rank 1 for
+  contractual variables) and the Help Center (rank 2) state incompatible refund
+  positions for the same Recurring Subscriptions. Terms of Service,
+  https://elevenlabs.io/terms-of-use, section "6. Subscription Services;
+  Payment", (e) Refunds and Exchanges: "All sales are final. We may offer
+  refunds at our sole discretion." — a general no-standing-refund position.
+  Help Center,
+  https://elevenlabs.io/docs/help-center/account/cancellation-refunds/what-is-your-refund-policy
+  and
+  https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-can-i-request-a-refund
+  (both accessed 2026-08-06): "You are eligible for a refund if a request is
+  filed within 14 days of payment and no credit quota was used in the period
+  for which you are seeking the refund." — a specific, actionable 14-day
+  conditional entitlement, request by emailing team@elevenlabs.io. These are not
+  reconcilable readings of the same policy: one is "no standing refund right,
+  discretionary only," the other is "a standing conditional right with a
+  14-day window." Per codebook section 2.1 step 3, the source hierarchy ranks
+  the Terms of Service above the Help Center for this contractual-variable
+  class, so all four variables above are coded from the Terms of Service
+  (no_refunds_stated / 0 / not_applicable / terms) rather than coded
+  'conflicting' (which is reserved for sources of *equal* authority). This
+  disagreement between what ElevenLabs' contract says and what its own support
+  documentation tells buyers is recorded here as a finding in its own right per
+  codebook section 3, independent of how the hierarchy resolves the coded
+  value. No other cross-source conflicts were found in this record (auto-renewal,
+  cancellation self-serve, and commercial-use gating all agree across every
+  document reviewed).
+
+  D-009 re-read 2026-08-10: not arithmetic-flagged (basis is monthly, 6.00 x 1 = 6.00 = first
+  charge, no mismatch). Re-confirmed entry_tier_name/headline_price_usd/headline_billing_basis/
+  first_charge_amount_usd in two representations. Representation 1 (already on file, this
+  record's original source): the saved local copy elevenlabs-sources/pricing.html carries an
+  embedded FAQPage/SSR text block reading "Free $0 (10,000 credits); Starter $6 (30,000 credits);
+  Creator $22 (121,000 credits, $11 for the first month); Pro $99...; Scale $299...", re-grepped
+  fresh today from the saved file rather than just trusted. Representation 2 (fresh live DOM read
+  today, javascript_tool, origin confirmed https://elevenlabs.io): the billing-period control
+  reports value "monthly" (matching the coded default state), and the only "$6" leaf node on the
+  page is a single unified span, `<span class="tw-type-2xl">$6</span>` inside `<div class="tw-flex
+  tw-items-end tw-gap-1"><span class="tw-type-2xl">$6</span><span class="tw-opacity-80
+  tw-type-xs">per month</span></div>`, itself inside a card whose own text starts
+  "Starter$6per month" -- no adjacent cents/superscript node, and only one such node exists on the
+  whole page (no duplicate-row risk). Both representations agree with the coded values and with
+  each other, and today's live figure matches the saved copy exactly (no final-day change). NO
+  CORRECTION. All four target variables CONFIRMED, values unchanged.
+
+register_events: []
+
+status: complete

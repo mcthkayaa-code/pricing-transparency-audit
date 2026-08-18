@@ -1,0 +1,132 @@
+product_id: teal
+product_name: Teal
+category: AI resume builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Teal+ Quarterly Plan (billed Every 90 days / $79) -- vendor names the cadence 'Quarterly Plan' in help.tealhq.com cancellation-policy and 'Teal vs. Teal+' articles; the live pricing page itself labels it only 'Every 90 days'."
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-15
+recheck_date: not_applicable
+primary_source_url: https://www.tealhq.com/pricing
+archive_url: https://web.archive.org/web/20260815132203/https://www.tealhq.com/pricing
+archive_status: archived
+default_display_state: "USD ($) figures throughout (vendor states explicitly elsewhere: 'All pricing is in USD'); three standing Teal+ billing cadences shown simultaneously as static cards with a single shared CTA -- Every 7 Days $13, Every 30 days $29, Every 90 days $79 -- no monthly/annual toggle control exists on this page; free-tier ('Free Forever') feature grid shown adjacent to Teal+ feature grid above the price cards; no cookie-consent banner encountered on load."
+
+sources:
+  - { url: "https://www.tealhq.com/pricing", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815132203/https://www.tealhq.com/pricing", note: "Rendered via browser tool; static WebFetch returned HTTP 403 on this domain (D-005 rendered-read case). Local verbatim copy also saved: teal-sources/pricing-2026-08-15.txt" }
+  - { url: "https://www.tealhq.com/terms", kind: tos, accessed: "2026-08-15", archive: archive_failed, note: "Page states 'Last Updated: August 12, 2026'. Two web.archive.org save attempts both returned 'Sorry / Job failed'. Local verbatim copy: teal-sources/terms-2026-08-15.txt" }
+  - { url: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", kind: docs, accessed: "2026-08-15", archive: archive_failed, note: "Two save attempts stalled/failed. Local verbatim copy: teal-sources/trial-faq-2026-08-15.txt" }
+  - { url: "https://help.tealhq.com/en/articles/9451252-what-is-the-cancellation-policy", kind: refund, accessed: "2026-08-15", archive: archive_failed, note: "Save attempt stalled/failed, same pattern. Local verbatim copy: teal-sources/cancellation-policy-2026-08-15.txt" }
+  - { url: "https://help.tealhq.com/en/articles/9457672-updating-cancelling-your-teal-subscription", kind: docs, accessed: "2026-08-15", archive: archive_failed, note: "Not separately retried after repeated same-domain failures this session. Local verbatim copy: teal-sources/updating-cancelling-subscription-2026-08-15.txt" }
+  - { url: "https://help.tealhq.com/en/articles/9530153-teal-vs-teal", kind: docs, accessed: "2026-08-15", archive: archive_failed, note: "Not separately retried, same pattern. Local verbatim copy: teal-sources/teal-vs-tealplus-2026-08-15.txt" }
+  - { url: "https://help.tealhq.com/en/articles/9519206-using-ai-bullets", kind: docs, accessed: "2026-08-15", archive: archive_failed, note: "Not separately retried, same pattern. Local verbatim copy: teal-sources/using-ai-bullets-2026-08-15.txt" }
+
+variables:
+  headline_price_usd: { value: "79.00", source: "https://www.tealhq.com/pricing", evidence: "\"$79\" / \"Every 90 days ($0.87 a day)\" -- entry tier by lowest annual-equivalent cost among the three published Teal+ cadences (see coder_note for losing candidates)." }
+  headline_billing_basis: { value: unknown, source: "https://www.tealhq.com/pricing", evidence: "Vendor publishes a fixed 90-calendar-day recurring cycle ('Every 90 days'), not a calendar month or a 12-month annual term. None of the codebook's allowed values (per_month_billed_annually / per_month_billed_monthly / per_seat_per_month / one_time / usage_based) matches a 90-day non-monthly, non-annual recurring cycle; not one_time because tealhq.com/terms Sec.5 states subscriptions auto-renew. Coded unknown per instrument-freeze instruction rather than inventing a value." }
+  first_charge_amount_usd: { value: "79.00", source: "https://www.tealhq.com/pricing", evidence: "Read directly, no multiplication: the vendor states the 90-day billing frequency explicitly ('Every 90 days'; help-center calls it the 'Quarterly Plan'), so $79 is the first-transaction charge as published, not a derived figure." }
+  mandatory_addon_present: { value: "no", source: "https://www.tealhq.com/pricing", evidence: "FAQ: \"Teal offers clear, transparent pricing with no hidden fees or unexpected charges.\" No required add-on found in ToS or help-center feature descriptions for the Teal+ feature set." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://www.tealhq.com/pricing", evidence: "Entry tier's headline figure ($79/90 days) does not depend on annual prepayment; none of the three published Teal+ cadences (7/30/90 days) is a 12-month annual term." }
+  annual_default_toggle: { value: no_toggle, source: "https://www.tealhq.com/pricing", evidence: "Page loads showing all three cadences (7/30/90-day) as static side-by-side cards under a single shared 'Land Your Dream Job Faster!' CTA; no interactive monthly/annual toggle element exists in the rendered DOM or accessibility tree. Coded no_toggle as the closest fit -- judgment call flagged in coder_note since none of the listed values precisely describes 'three periods shown at once, none of them annual, no toggle control'." }
+  free_plan_exists: { value: "yes", source: "https://www.tealhq.com/pricing", evidence: "\"Free Forever\" column with an ongoing (non-time-limited) feature/credit allowance, distinct from a trial." }
+  free_plan_cap_documented: { value: some_quantified, source: "https://www.tealhq.com/pricing", evidence: "Quantified: \"10 Credits\" (Resume Bullets), \"2 Credits\" (Professional Summary), \"2 Credits\" (Cover Letter), \"Top 5\" (keyword matching), \"1\" (email templates per job stage). Not quantified: \"Basic\" (Analysis Mode), \"Basic Settings\" (Design Mode) -- no number attached to either." }
+  free_plan_cap_value: { value: "10 credits per Resume Bullets generation (non-renewable) | 2 credits per Professional Summary generation (non-renewable) | 2 credits per Cover Letter generation (non-renewable) | top 5 keywords per job-description match | 1 email template per job stage", source: "https://www.tealhq.com/pricing", evidence: "Credit figures per pricing page (governing source for this pricing-class variable; conflicts with two help-center articles stating 5 credits for Resume Bullets -- see conflict_note). \"Non-renewable\" qualifier per help.tealhq.com trial-FAQ article." }
+  free_plan_watermark: { value: unknown, source: "not_found", evidence: "No document read (pricing page, full ToS, five help-center articles including the Teal-vs-Teal+ feature comparison table) mentions watermarking or branding of exported resumes/cover letters. Silent, not documented absent -- output type (PDF resume) could in principle carry a watermark, so not_applicable does not apply." }
+  free_plan_duration: { value: perpetual, source: "https://www.tealhq.com/pricing", evidence: "Plan labeled \"Free Forever\" on pricing page; help.tealhq.com trial-FAQ: \"We strongly believe in keeping our basic functionality in Teal free forever!\" No expiry stated anywhere." }
+  trial_exists: { value: "no", source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "\"We do not offer a standard free trial that requires payment information, such as your credit card. Once you enter your credit card information, you are signing up for a subscription (recurring or non-recurring).\" The article frames the ongoing free plan, not a time-limited trial, as the way to 'trial' Teal+ features (article title: \"Is There a Teal+ Free Trial?\", answer effectively no)." }
+  trial_card_required: { value: not_applicable, source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "No trial exists (see trial_exists)." }
+  trial_length_days: { value: not_applicable, source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "No trial exists (see trial_exists)." }
+  trial_auto_converts: { value: not_applicable, source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "No trial exists (see trial_exists)." }
+  credit_system_present: { value: "yes", source: "https://www.tealhq.com/pricing", evidence: "Free plan meters AI feature use through a named unit, \"AI Credits\" / \"Credits\" (10 for Resume Bullets, 2 for Professional Summary, 2 for Cover Letter), confirmed and elaborated in help.tealhq.com articles. NOTE: this describes the FREE plan; the entry PAID tier (Teal+) is unmetered/Unlimited on every dimension -- see coder_note." }
+  credit_unit_defined: { value: "yes", source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "\"As a free user, you have 10 credits to use for AI Bullet Generation\" / \"2 credits to use for Professional Summary Generation\" / \"2 credits to use for Cover Letter Generation\" -- each credit pool is defined 1:1 against a specific generation action." }
+  credit_to_output_rate_published: { value: "yes", source: "https://www.tealhq.com/pricing", evidence: "Rate (credits per generation) is published for resume-bullet generation (the principal AI-resume-builder output) and for the other advertised AI outputs (professional summary, cover letter) -- no unpublished principal-output case." }
+  credit_rate_location: { value: multiple, source: "https://www.tealhq.com/pricing", evidence: "Credit figures appear on the live pricing page AND in multiple help.tealhq.com articles (trial-FAQ, Teal-vs-Teal+ comparison, Using AI: Bullets)." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://www.tealhq.com/pricing", evidence: "Entry (paid) tier Teal+ sells unmetered access -- every feature including AI credits reads \"Unlimited\" -- rather than a countable per-artifact allowance, matching the codebook's unmetered-software rule." }
+  cost_per_output_computable: { value: "yes", source: "https://www.tealhq.com/pricing", evidence: "Because the unit is per_seat_month (unmetered access), the cost per unit of output is the subscription price itself, on a common monthly basis, requiring no usage assumption. See computation_assumptions. JUDGMENT CALL flagged in coder_note: the codebook gives no worked example of this rule for an unmetered per_seat_month entry tier specifically." }
+  computation_assumptions: { value: "Entry tier: Teal+ Quarterly Plan, $79 billed every 90 days per default display state (vendor also shows $0.87/day). Teal+ AI generation and all listed features are Unlimited (pricing page; help-center Teal-vs-Teal+ table) -- no numeric allowance to divide by, so unit = per_seat_month and the monthly-equivalent PRICE ITSELF is the cost-per-output figure. Conversion: 79 x (30/90) = 26.33/mo (pure period arithmetic on the vendor's own published $79/90-day figure, no usage assumption).", source: "https://www.tealhq.com/pricing", evidence: "not_applicable" }
+  credit_rollover_policy: { value: unknown, source: "https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial", evidence: "Free-plan AI credits are described as \"non-renewable\" but no document states whether unused credits expire, carry forward, or simply persist until used. The free plan has no recurring billing period for a 'rollover' concept to attach to (unlike a paid subscription cycle), so none of rolls_over/partial_rollover/expires_at_period_end is documented. JUDGMENT CALL noted in coder_note." }
+  failed_generation_charge_policy: { value: unknown, source: "not_found", evidence: "No document (pricing page, ToS, help.tealhq.com \"Using AI: Bullets\" walkthrough of Improve/Regenerate flow, trial-FAQ) states whether a failed/errored generation or a \"Regenerate\" click consumes a credit. Silent, consistent with the codebook's own note that this variable is silent often." }
+  auto_renewal_default: { value: "on", source: "https://www.tealhq.com/terms", evidence: "\"IMPORTANT: PAID SUBSCRIPTIONS AUTOMATICALLY RENEW AT THE END OF EACH BILLING PERIOD AT THE THEN-CURRENT SUBSCRIPTION RATE UNLESS YOU CANCEL BEFORE THE RENEWAL DATE.\" (Sec. 5, Payment Terms and Subscriptions)." }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://www.tealhq.com/terms", evidence: "The word \"automatically\" for renewal appears only in the Terms (Sec. 5). The pricing-page FAQ references a \"recurring subscription\" when describing cancellation but never states the renewal is automatic; help-center cancellation articles similarly describe recurring billing/cancellation mechanics without the word \"automatic.\"" }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://www.tealhq.com/terms", evidence: "No general commitment to notify before an ordinary renewal charge was found. Terms Sec. 5 commits only to notice of a PRICE INCREASE specifically: \"We will provide advance notice of any price increase via email... before your next renewal date\" -- a narrower, conditional commitment, not a per-renewal notice. Coded no_notice_stated; the price-change clause is quoted here as related but non-equivalent context." }
+  refund_policy_exists: { value: "yes", source: "https://www.tealhq.com/terms", evidence: "\"If you are dissatisfied with Teal+, you may request a refund by emailing membersupport@tealhq.com...\" with stated eligibility windows per plan (Sec. 5)." }
+  refund_window_days: { value: "14", source: "https://www.tealhq.com/terms", evidence: "\"for quarterly plans, within 14 calendar days of billing period start\" -- entry tier is the Quarterly Plan ($79/90 days). Confirmed verbatim in help.tealhq.com cancellation-policy article." }
+  refund_conditions: { value: conditional, source: "https://www.tealhq.com/terms", evidence: "\"Refund requests submitted outside these windows are not eligible. Submitting a request does not guarantee approval; refunds are reviewed on a case-by-case basis.\"" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.tealhq.com/terms", evidence: "\"You may cancel your subscription at any time through your account settings at app.tealhq.com/my-account/subscription.\" Fully documented self-serve flow (\"Cancel Subscription\" button) also in help.tealhq.com \"Updating & Cancelling Your Teal+ Subscription.\"" }
+  refund_policy_location: { value: multiple, source: "https://www.tealhq.com/terms", evidence: "Refund position stated in three classes: pricing-page FAQ, terms of service (Sec. 5), and a dedicated help-center article (\"What Is The Cancellation Policy?\")." }
+  commercial_use_lowest_tier: { value: unknown, source: "not_found", evidence: "No document states a tiered commercial-use grant for generated resumes/cover letters (no feature-grid row, no ToS clause on this specific point). Closest related text is the SERVICE-level license in ToS Sec. 1: \"the Service is solely for your personal use and not for resale\" -- about licensing of the Service itself, not a stated commercial-use right/restriction on the OUTPUT content. JUDGMENT CALL on category fit noted in coder_note." }
+  watermark_removal_tier: { value: unknown, source: "not_found", evidence: "No document (pricing page, full ToS, Teal-vs-Teal+ comparison table, or other help articles read) mentions a watermark on any tier's exported resume/cover letter, positively or negatively." }
+  output_ownership_statement: { value: user_owns, source: "https://www.tealhq.com/terms", evidence: "\"You retain ownership of all content you create or upload to the Service ('Your Content'), including resumes, cover letters, job descriptions, notes, and other materials. By using the Service, you grant Teal a limited license to use Your Content solely as necessary to provide, maintain, and improve the Service for you.\" (Sec. 4). No tier or active-subscription condition attached to ownership itself." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.tealhq.com/pricing", evidence: "Every feature attributed to the entry (Teal+) tier is stated as \"Unlimited\" (resumes, job tracking, templates, keyword matching, analysis mode, email templates, AI credits for bullets/summary/cover letter); no qualifying fair-use/discretionary clause found anywhere in the full Terms of Service to un-quantify the \"Unlimited\" claims (section 5.1 carve-out applies)." }
+  unquantified_limit_clause: { value: absent, source: "https://www.tealhq.com/terms", evidence: "Full Terms of Service read end to end (all 18 sections); no separate Acceptable Use Policy found. No fair-use, reasonable-use, excessive-use, or vendor-discretion throttling clause exists anywhere in the document for AI feature usage or general use." }
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2): Teal+ is sold at three simultaneously-displayed
+  standing cadences, all eligible candidates (generally available, no sales contact, non-promotional):
+  Weekly $13 (annual-equiv. 13 x 365/7 = $677.86), "Monthly" $29/30-days (29 x 365/30 = $352.83),
+  "Quarterly" $79/90-days (79 x 365/90 = $320.39 -- LOWEST, selected as entry tier). None of the
+  codebook's worked annualization cases (x12 for monthly, as-is for annual) literally covers a
+  7/30/90-day cadence; annual-equivalent computed by (365/period_days) x price as the general form
+  of the same "lowest annual-equivalent cost" test. Losing candidates: Weekly and "Monthly"(30-day)
+  plans, figures above.
+
+  BUNDLE DISCLOSURE (per assignment instrument note): Teal+ is a BUNDLE in the vendor's own framing.
+  It is a platform subscription covering AI Resume Builder, Job Tracker, Cover Letter Generator,
+  Analysis Mode, Design Mode, LinkedIn tools, Interview Prep, Networking CRM, etc. -- of which the
+  resume builder (this review's category) is one component, not a separate SKU. Coded the Teal+
+  tier because it is what grants unlimited access to the resume-builder-relevant AI features
+  (bullet/summary/cover-letter generation, full Analysis Mode, Design Mode) beyond the free plan's
+  capped allowance.
+
+  BILLING-CADENCE INSTRUMENT GAP (per assignment instrument note): headline_billing_basis coded
+  `unknown` because "Every 90 days" matches none of the codebook's allowed values -- see that
+  variable's evidence for full reasoning. Not treated as one_time because ToS confirms recurring
+  auto-renewal.
+
+  JUDGMENT CALLS flagged for review (documents left genuine ambiguity; coded to best-supported
+  reading per rules, disclosed rather than silently resolved):
+  1. annual_default_toggle=no_toggle -- page shows 3 cadences at once with no toggle UI; none of
+     the five allowed values precisely describes this shape.
+  2. cost_per_output_unit=per_seat_month / cost_per_output_computable=yes -- entry tier is fully
+     unmetered (Unlimited), so no credit/output allowance exists to divide by; treated the
+     per-seat-month price itself (normalized to a common month) as the computable "cost per output"
+     since no usage assumption is required. No codebook worked example covers this exact case.
+  3. credit_rollover_policy=unknown -- free credits called "non-renewable" but no document states
+     expiry/carryover, and the free plan has no billing-period boundary for "rollover" to attach to.
+  4. commercial_use_lowest_tier=unknown -- a resume/cover-letter IS an output a commercial-use
+     right could attach to, but no document states a tiered grant; closest text is a SERVICE-level
+     (not output-level) personal-use/no-resale clause, judged non-dispositive and not coded from.
+
+  MULTI-SOURCE CONFLICTS (both/all URLs; hierarchy applied per protocol 6.2/codebook 2.1):
+  1. Billing-period roster: tealhq.com/terms Sec.5 states "Teal+ is offered in the following
+     billing periods: weekly, monthly, quarterly, and annual" (4 cadences). The live pricing page
+     (tealhq.com/pricing) and help.tealhq.com/en/articles/9530153-teal-vs-teal both show only
+     THREE cadences with prices (weekly $13, monthly $29, quarterly $79) -- no annual price is
+     published anywhere found. Pricing page governs plan existence/pricing (protocol 6.2 pricing-
+     class hierarchy); no numeric candidate for a 4th "annual" tier exists to evaluate, so the
+     3-cadence entry-tier selection above stands. Recorded here per codebook 3's rule that a
+     hierarchy-resolved disagreement is still reported.
+  2. Free-plan "Resume Bullets" AI-credit count: tealhq.com/pricing states "10 Credits"; help
+     .tealhq.com/en/articles/9535168 (trial-FAQ) also states "10 credits." Against these, help
+     .tealhq.com/en/articles/9530153 (Teal vs. Teal+ table) states "Resume Bullet Generation:
+     5 credits," and help.tealhq.com/en/articles/9519206 (Using AI: Bullets) states "5 credits."
+     Split 2-2 across official docs on the identical fact. Pricing page (rank-1 authority for this
+     pricing-class variable) governs -> coded 10 in free_plan_cap_value; both readings recorded here.
+
+  Free plan also grants (undifferentiated from paid, i.e. NOT caps): Unlimited Resumes, Unlimited
+  Job Tracking -- listed for completeness, not included in free_plan_cap_value since they carry no
+  restriction on the free tier.
+
+  Currency: vendor's own explicit disclosure found -- help.tealhq.com "Teal vs. Teal+": "Note: All
+  pricing is in USD. We accept all major credit cards and Google Pay." D-003 arm 1 satisfied
+  directly; no non_usd anywhere.
+
+  No A-012 (paid time-limited intro period) applicable -- Teal sells no discounted trial-length
+  intro period; the free plan is ongoing/perpetual and the paid cadences are standing prices from
+  first charge.
+
+  blindness: no other record, no review page, no pass-1 material was opened. No breach to disclose.
+conflict_note: "See coder_note 'MULTI-SOURCE CONFLICTS' for full detail with quotes. Summary: (1) tealhq.com/terms lists 4 billing periods incl. 'annual' vs pricing page + help.tealhq.com/en/articles/9530153-teal-vs-teal showing only 3 priced cadences, no annual price published anywhere -- pricing page governs, both URLs recorded. (2) Free-plan Resume-Bullets credit count: tealhq.com/pricing + help.tealhq.com/en/articles/9535168 say 10 credits; help.tealhq.com/en/articles/9530153 + help.tealhq.com/en/articles/9519206 say 5 credits -- pricing page (rank-1 authority) governs at 10, all four URLs recorded."
+register_events: []
+status: complete

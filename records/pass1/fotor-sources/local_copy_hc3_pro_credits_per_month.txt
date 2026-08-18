@@ -1,0 +1,13 @@
+URL: https://support.fotor.com/hc/en-us/articles/17765370790297-How-many-credits-do-Pro-members-have-per-month-Do-the-credits-stack-up
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save blocked (Cloudflare/Zendesk); local evidentiary copy per protocol section 6.4.
+---
+Title: How many credits do Pro members have per month? Do the credits stack up? – Fotor Help Center
+Nora, 6 months ago Updated
+
+Members who subscribe to the Pro plan receive a monthly credits of 100, whereas members who opt for the Pro+ plan receive 300 credits every month. The Max package includes 1000 credits per month.
+
+Please note that for the Pro/Pro+/Max annual plans, points are still issued on a monthly basis, not all at once for the year.
+
+Unused credits are carried forward to the following month, but can be accumulated for a maximum period of five months.
+
+For a more detailed comparison of benefits, please refer to this link - Fotor pricing

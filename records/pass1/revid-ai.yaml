@@ -1,0 +1,120 @@
+product_id: revid-ai
+product_name: Revid.ai
+category: Faceless video
+product_status: active
+paid_submission: "no"
+entry_tier_name: Hobby
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://www.revid.ai/pricing
+archive_url: https://web.archive.org/web/20260813150947/https://www.revid.ai/pricing
+archive_status: archived
+default_display_state: "Monthly toggle active on load (bg-white/15 highlighted class, read before any interaction); page served EUR to this Turkey-egress read via /api/stripe/checkout-currency returning {currency:eur} (geolocation-driven); non-essential cookies not accepted; USD figures for the identical page confirmed via a same-day US-crawled archive.org capture (see register_events)."
+
+sources:
+  - { url: https://www.revid.ai/pricing, kind: pricing, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813150947/https://www.revid.ai/pricing, note: "Live read showed EUR (geolocation); this same archive snapshot, crawled from archive.org's US infrastructure seconds later, shows USD for the identical page state -- used as the D-003/D-007 currency-check arm 2 evidence. A prior independent capture from 2026-08-07 (https://web.archive.org/web/20260807215513/https://www.revid.ai/pricing) corroborates the USD figures under an older hero headline." }
+  - { url: https://www.revid.ai/terms, kind: tos, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813151754/https://www.revid.ai/terms, note: "Last updated per the page itself: Fri, May 31, 2024." }
+  - { url: https://www.revid.ai/faq, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813152439/https://www.revid.ai/faq, note: "Official help-center FAQ, labelled 'Last updated: June 2026' on the page. Its plan lineup conflicts with the live pricing page -- see conflict_note." }
+  - { url: https://www.revid.ai/features, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813154544/https://www.revid.ai/features, note: "Official features page with an embedded FAQ block; source of the explicit commercial-use-rights and self-serve-cancellation statements." }
+
+variables:
+  headline_price_usd: { value: 39.00, source: https://www.revid.ai/pricing, evidence: "HOBBY card, EUR39 /month on this live Turkey-egress read; the identical same-day archive.org capture of this URL (US-crawled) shows the same tier as $39 /month. Coded in USD per protocol D-003/D-007 (vendor serves USD to a US-crawled reader); EUR observation logged as a display_variant." }
+  headline_billing_basis: { value: per_month_billed_monthly, source: https://www.revid.ai/pricing, evidence: "Monthly toggle is the active/highlighted default (Annually is present but not selected); figure printed as '/month' with no per-seat qualifier. FAQ corroborates: 'Yearly billing is roughly 17% cheaper', implying monthly is the undiscounted default rate." }
+  first_charge_amount_usd: { value: 39.00, source: https://www.revid.ai/pricing, evidence: "Default display state is Monthly (not annual prepayment), so the first charge equals the displayed monthly figure; no mandatory add-on found. Same USD/EUR basis as headline_price_usd." }
+  mandatory_addon_present: { value: "no", source: https://www.revid.ai/faq, evidence: "Only optional extras found: 'Credit Boost packs of 1,000 ($49), 4,000 ($99), 10,000 ($199), and 100,000 ($1,900) stack on top of plan credits' -- explicitly optional, not required to use Hobby as advertised on its own card." }
+  annual_condition_disclosure: { value: not_applicable, source: https://www.revid.ai/pricing, evidence: "Rule step 1: the coded headline figure was read in the page's default MONTHLY state, so it does not depend on annual prepayment. An annual toggle option exists on the page but is not the state the headline price was coded from." }
+  annual_default_toggle: { value: monthly_preselected, source: https://www.revid.ai/pricing, evidence: "DOM read before any interaction: 'Monthly' div's parent class = 'px-2 py-1 cursor-pointer bg-white/15 rounded-l-full rounded-lg text-white font-medium' (highlighted/active); 'Annually' div's parent class = 'px-2 py-1 cursor-pointer text-neutral-dark' (unhighlighted)." }
+  free_plan_exists: { value: "no", source: https://www.revid.ai/pricing, evidence: "Pricing grid shows three paid tiers only (Hobby/Growth/Ultra), no free tier card anywhere on the page. Corroborated by Terms of Service: 'any new export requires an active subscription.'" }
+  free_plan_cap_documented: { value: not_applicable, source: https://www.revid.ai/pricing, evidence: "No free plan (see free_plan_exists)." }
+  free_plan_cap_value: { value: not_applicable, source: https://www.revid.ai/pricing, evidence: "No free plan." }
+  free_plan_watermark: { value: not_applicable, source: https://www.revid.ai/pricing, evidence: "No free plan." }
+  free_plan_duration: { value: not_applicable, source: https://www.revid.ai/pricing, evidence: "No free plan." }
+  trial_exists: { value: "no", source: https://www.revid.ai/pricing, evidence: "Every plan card reads 'Select Plan' with no trial CTA; the word 'trial' does not appear on the pricing page, in the Terms, in the 26-question FAQ, or on the features page." }
+  trial_card_required: { value: not_applicable, source: https://www.revid.ai/pricing, evidence: "No trial exists." }
+  trial_length_days: { value: not_applicable, source: https://www.revid.ai/pricing, evidence: "No trial exists." }
+  trial_auto_converts: { value: not_applicable, source: https://www.revid.ai/pricing, evidence: "No trial exists." }
+  credit_system_present: { value: "yes", source: https://www.revid.ai/terms, evidence: "'Credits do not roll over at subscription renewal. When your subscription renews, your credits will be reset to the amount allocated per your subscription plan...'" }
+  credit_unit_defined: { value: "yes", source: https://www.revid.ai/faq, evidence: "'AI video per 5 seconds, billed pro rata per second: Base (15 credits), Pro (50), Ultra (100...). AI images per image: Base (1), Pro (4), Ultra (16)... voice 10 credits per 500 characters, avatars 40-200 credits per 500 characters, music generation 20 credits, 4K export 10 credits.'" }
+  credit_to_output_rate_published: { value: partial, source: https://www.revid.ai/faq, evidence: "Exact rates are published per generation component (video per 5s by model tier, images per image, voice/avatar per 500 characters), but the principal finished-video output is given only as an approximate range dependent on unstated composition: 'A typical 30-second video with Pro moving images costs roughly 40-80 credits.'" }
+  credit_rate_location: { value: docs_help_center, source: https://www.revid.ai/faq, evidence: "Rates appear in the FAQ/help-center and the API documentation (both docs-class); not stated on the pricing page and not in the Terms." }
+  cost_per_output_unit: { value: per_video_minute, source: https://www.revid.ai/faq, evidence: "Video generation is billed 'per 5 seconds, billed pro rata per second' -- a duration-based rate. Coder_note records that the exact per-minute figure depends on which of several model tiers is chosen." }
+  cost_per_output_computable: { value: "no", source: https://www.revid.ai/pricing, evidence: "Entry tier (Hobby)'s credit allocation is not published in any official document located: the pricing page's Hobby card states no credit figure at all, and neither the FAQ nor the features page names a 'Hobby' plan (both describe only Growth $39/2,000 credits and Ultra). A required input figure -- the entry tier's own allowance -- is missing." }
+  computation_assumptions: { value: not_applicable, source: https://www.revid.ai/pricing, evidence: "cost_per_output_computable is no; no calculation was performed." }
+  credit_rollover_policy: { value: expires_at_period_end, source: https://www.revid.ai/terms, evidence: "'Credits do not roll over at subscription renewal... will be reset to the amount allocated per your subscription plan, regardless of how many credits you had remaining from the previous period.'" }
+  failed_generation_charge_policy: { value: unknown, source: https://www.revid.ai/terms, evidence: "Not addressed in the Terms, the 26-question FAQ, the features page, or the API documentation. None of the sources checked describe what happens to credits on a failed or errored generation." }
+  auto_renewal_default: { value: "on", source: https://www.revid.ai/terms, evidence: "'You can cancel your subscription at any time. Upon cancellation, you will continue to have access to the Service for the remainder of your billing period.' combined with 'When your subscription renews, your credits will be reset...' -- subscriptions renew unless canceled." }
+  auto_renewal_disclosure_location: { value: terms_only, source: https://www.revid.ai/terms, evidence: "The explicit renewal/credit-reset mechanics appear only in the Terms. The pricing page carries 'cancel anytime' adjacent to every price but does not itself state that the subscription renews." }
+  renewal_notice_commitment: { value: unknown, source: https://www.revid.ai/terms, evidence: "No statement found committing to notify the buyer before a renewal charge, in the Terms, the FAQ, or the features page." }
+  refund_policy_exists: { value: "yes", source: https://www.revid.ai/terms, evidence: "'Subscriptions are generally non-refundable. However, refunds may be granted at our discretion if: (1) less than 10% of the subscription credits have been used, and (2) the payment was made within the last 30 days.'" }
+  refund_window_days: { value: 30, source: https://www.revid.ai/terms, evidence: "'...the payment was made within the last 30 days.'" }
+  refund_conditions: { value: conditional, source: https://www.revid.ai/terms, evidence: "Refund conditioned on less than 10% of subscription credits used AND payment made within the last 30 days, granted at vendor discretion." }
+  cancellation_self_serve: { value: self_serve_documented, source: https://www.revid.ai/features, evidence: "'Can I cancel my subscription at any time? Yes, you can cancel your subscription at any time. You can do so by going to your account settings.'" }
+  refund_policy_location: { value: terms, source: https://www.revid.ai/terms, evidence: "Only the Terms of Service states the refund position; not found on the pricing page, the FAQ, or the features page." }
+  commercial_use_lowest_tier: { value: lowest_paid, source: https://www.revid.ai/features, evidence: "'All plans come with our AI video generation technology, ready to use tools, and commercial usage rights.' No free plan exists, so 'all plans' means every paid tier including the entry tier." }
+  watermark_removal_tier: { value: unknown, source: https://www.revid.ai/terms, evidence: "The word 'watermark' does not appear on the pricing page, in the Terms, in the FAQ, or on the features page." }
+  output_ownership_statement: { value: user_owns, source: https://www.revid.ai/terms, evidence: "'Users 100% own the content they create and can use it however they want even without an active subscription.' Corroborated by the features page ('You own all the content you create with Revid.ai, forever... no hidden clauses or shared ownership') and the pricing page's repeated '100% content ownership' tag under every plan." }
+  usage_cap_quantified: { value: unknown, source: https://www.revid.ai/pricing, evidence: "Hobby's card states no numeric limit of any kind (no credits, no export count, no resolution cap, not even an 'unlimited' claim). The FAQ and features page describe plan credit allocations only for Growth ($39/2,000 credits) and Ultra/Elite, never for a plan named Hobby." }
+  unquantified_limit_clause: { value: present, source: https://www.revid.ai/terms, evidence: "'We reserve the right to temporarily disable your account if your usage significantly exceeds the average usage of other Service customers.' No threshold number is given." }
+
+coder_note: |
+  ENTRY TIER SELECTION (sampling-rules 7.2): three eligible standing, generally-available,
+  sales-ungated, single-seat candidates on the live pricing page's default (Monthly) state --
+  Hobby $39/mo (annual-equiv $468.00), Growth $99->$39/mo "Best Value"/"Discount locked in
+  forever" (annual-equiv $468.00, TIED with Hobby), Ultra $199/mo (annual-equiv $2,388.00,
+  eliminated, highest price). Hobby and Growth are genuinely tied at $39/mo. Neither card is
+  visually marked as "first paid step" specifically (Growth's "Best Value" is a recommendation
+  ribbon, not an entry-tier marker), so the tie goes to the second sampling-rules criterion,
+  leftmost/topmost on the page: Hobby is the first (leftmost) card in both visual layout and DOM
+  order, Growth is the second/middle card. Hobby wins. Growth is recorded here as the losing
+  tied candidate with its annual-equivalent figure per sampling-rules 7.2.
+
+  CURRENCY (protocol D-003/D-007): live read from this Turkey-egress environment served EUR
+  (confirmed via /api/stripe/checkout-currency -> {"currency":"eur"}, i.e. geolocation-driven,
+  not a vendor USD-absence policy). No vendor currency selector or currency statement exists on
+  the pricing page itself (arm 1 empty). Arm 2 (US-crawled archive capture) succeeded clearly:
+  a fresh https://web.archive.org/save/ submission of the live pricing page, made during this
+  session, returned a same-day snapshot (web.archive.org/web/20260813150947) showing the
+  identical plan grid in USD ($39/$99->$39/$199), and an independent prior capture from
+  2026-08-07 shows the same USD figures under an older headline. Per D-003/D-007, the USD figure
+  is coded as headline_price_usd / first_charge_amount_usd, and the EUR state is logged as a
+  display_variant register event, not as non_usd.
+
+  CONFLICT -- see conflict_note for the full comparison. In short: the official FAQ (dated
+  "Last updated: June 2026") names a Growth/Elite/Ultra plan structure with no "Hobby" tier at
+  all, while the live pricing page (accessed 2026-08-13) names a Hobby/Growth/Ultra structure
+  with no "Elite" tier. Growth and Ultra's price/credit figures agree across both documents.
+  Coded from the live pricing page per protocol 6.2 (pricing variables: live page ranks first).
+  One consequence: Hobby's usage allowance is unpublished not just on the pricing page but in
+  every official document located, because the FAQ and the features page's plan descriptions
+  both predate/exclude Hobby entirely -- this is the basis for usage_cap_quantified = unknown
+  and cost_per_output_computable = no on the entry tier.
+
+  TOGGLE INTERACTION LIMIT: the "Annually" pill did not visibly change the active-class
+  highlighting or the displayed prices across three attempted clicks (via ref and via
+  coordinate, including one immediately re-verified with no wait). annual_default_toggle is
+  nonetheless soundly established from the page's LOAD state per protocol 6.8 rule 1 (that is
+  what the variable requires), which does not depend on the toggle being clickable. The FAQ
+  independently states "Yearly billing is roughly 17% cheaper," confirming an annual option
+  exists and is cheaper, even though this coder could not get the live control to visibly
+  respond; not used as a coded figure since it is a docs-class approximation, not the pricing
+  page's own annual-state display.
+
+  BROWSER TAB HYGIENE DISCLOSURE: while looking for a vendor blog post on credit costs, this
+  coder mistakenly issued one `navigate` call against tab-3, a shared-pane tab this coder did
+  not open (it was showing wix.com, presumably another concurrent collector's tab), sending it
+  to https://www.revid.ai/blog. Caught immediately after the one call; tab-3 was not read,
+  clicked, or navigated again, and no value in this record was coded from anything seen in that
+  tab. Disclosed per the instruction to report tab-hygiene incidents plainly. All substantive
+  work used tab-10, opened by this coder via tabs_create.
+
+  Every non-`unknown`, non-`not_applicable` value above traces to an explicit quoted statement
+  in one of the four sources listed. No calculation was performed (cost_per_output_computable
+  is no), so no arithmetic appears here beyond the annual-equivalent tie comparison above.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Official FAQ (https://www.revid.ai/faq, page states 'Last updated: June 2026') vs live pricing page (https://www.revid.ai/pricing, accessed 2026-08-13), both official sources. FAQ: 'Growth: $39/month (2,000 credits) -- the most popular. Elite: $89/month (5,000 credits, voice cloning, 5 Auto-Mode workers). Ultra: $199/month (12,000 credits, 10 Auto-Mode workers).' -- no Hobby tier named anywhere in the FAQ (also references an 'Elite plan' for voice design and '5 on Elite' for Auto-Mode workers, so this is not an isolated typo). Live pricing page: HOBBY $39/mo (credits unstated) + GROWTH $99 struck through to $39/mo, Best Value, Discount locked in forever (2,000 credits) + ULTRA $199/mo (12,000 credits) -- no Elite tier named anywhere. Growth and Ultra figures agree across both documents (same $39/2,000cr and $199/12,000cr respectively); Hobby and Elite each appear in only one of the two documents. Per protocol 6.2, pricing variables are coded from the live pricing page (higher-ranked for this variable class); this record's entry tier (Hobby) and its variables are coded accordingly, and this disagreement is reported per codebook 2.1/section 3 even though the hierarchy resolves it cleanly. The features page (https://www.revid.ai/features) independently restates the Growth figure ('Our most popular plan starts at just $39/month and includes 2,000 credits') without naming Hobby either, consistent with the FAQ side of the conflict but not contradicting the live page's addition of a Hobby tier."
+register_events:
+  - { type: display_variant, detail: "Live pricing page rendered in EUR on this Turkey-egress read (Hobby EUR39, Growth EUR99->EUR39, Ultra EUR199), driven by a same-origin /api/stripe/checkout-currency call returning eur. A same-day US-crawled archive.org capture of the identical URL shows the same three tiers in USD ($39, $99->$39, $199). Coded headline_price_usd and first_charge_amount_usd in USD per protocol D-003/D-007; both figures are the vendor's own published price, not a currency conversion.", urls: [https://www.revid.ai/pricing, https://web.archive.org/web/20260813150947/https://www.revid.ai/pricing] }
+status: complete

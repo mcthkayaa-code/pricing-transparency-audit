@@ -1,0 +1,535 @@
+product_id: undetectable-ai
+product_name: Undetectable AI
+category: AI humanizer
+product_status: active
+paid_submission: "no"
+entry_tier_name: "10K words/month"
+
+coder_pass: 3
+coder_role: adjudicated
+collection_date: "2026-08-16"
+recheck_date: not_applicable
+primary_source_url: "https://undetectable.ai/pricing"
+archive_url: "https://web.archive.org/web/20260815134758/https://undetectable.ai/pricing"
+archive_status: archived
+
+default_display_state: >-
+  USD, no currency/region selector; billing toggle defaults to Yearly (server-rendered/DOM: Yearly
+  button carries active classes "bg-blue-700 !text-white" plus a "50% off" badge, Monthly carries
+  inactive "bg-transparent text-gray-800"); no blocking cookie-consent banner. Confirmed independently
+  by pass 1 (2026-08-13) and pass 2 (2026-08-15), and re-confirmed byte-identical by this adjudicator
+  on a live re-fetch 2026-08-16 -- unchanged across all three dates. Both passes agree.
+
+sources:
+  - { url: "https://undetectable.ai/pricing", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815134758/https://undetectable.ai/pricing", note: "Read independently by pass 1 (2026-08-13, local_copy_only after two failed archive.org saves -- local capture undetectable-ai-sources/2026-08-13-pricing-static.html) and pass 2 (2026-08-15, archived as above, local capture records/pass2/undetectable-ai-sources/pricing-page-2026-08-15.txt). Re-fetched live by this adjudicator 2026-08-16 (saved to scratchpad, not re-archived) specifically to verify the full FAQPage JSON-LD block and the toggle/tier-set question -- see coder_note." }
+  - { url: "https://undetectable.ai/terms", kind: tos, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815135121/https://undetectable.ai/terms", note: "Full ToS read independently by pass 1 (2026-08-13, archived https://web.archive.org/web/20260813113816/https://undetectable.ai/terms, local capture undetectable-ai-sources/2026-08-13-terms-static.html) and pass 2 (2026-08-15, archived as above, local capture records/pass2/undetectable-ai-sources/terms-2026-08-15.txt). Re-fetched live by this adjudicator 2026-08-16 to verify Section 12 item 4 and Sections 5/6.5 verbatim -- confirmed present in pass 1's OWN 08-13 local capture as well as live; see unquantified_limit_clause." }
+  - { url: "https://undetectable.ai/help", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815140059/https://undetectable.ai/help", note: "Read by both passes (pass 1: 2026-08-13, archived https://web.archive.org/web/20260813114220/https://undetectable.ai/help). Re-fetched live by this adjudicator 2026-08-16: contains no renewal/recurring/auto-charge language, confirming both passes' reading for auto_renewal_disclosure_location." }
+  - { url: "https://undetectable.ai/ai-humanizer", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815140252/https://undetectable.ai/ai-humanizer", note: "PASS 2 ONLY -- pass 1 never opened this page, which is the source of five of this record's nine disagreements. Official vendor product page distinguishing an ongoing no-signup 'free version' from the signup-gated word-limited 'Free Trial' already coded under domain 4. Re-fetched live by this adjudicator 2026-08-16; content byte-identical to pass 2's 08-15 capture. See free_plan_exists." }
+  - { url: "https://undetectable.ai/ethics", kind: other, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815140320/https://undetectable.ai/ethics", note: "Pass 2 only. Ethical-use policy, not a legal rights statement; does not settle commercial_use_lowest_tier or output_ownership_statement (both remain unknown, agreed)." }
+
+variables:
+  headline_price_usd:
+    value: 5.00
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      10K words/month card, default Yearly state: "$9.99" struck through, "$5.00 /mo" shown
+      large/bold/green as the active figure. Both passes agree; confirmed unchanged live 2026-08-16.
+
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      "$5.00/mo" with "Charged annually $60.00" printed directly beneath it in the same card, under
+      the Yearly (default) toggle. Both passes agree.
+
+  first_charge_amount_usd:
+    value: 60.00
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      "Charged annually $60.00" -- a direct read, not computed (matches 5.00 x 12 as a sanity check).
+      Both passes agree.
+
+  mandatory_addon_present:
+    value: "no"
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      Entry-tier feature list bundles "Unlimited AI Detecting" and "Unlimited Human Auto Typer" with
+      no separate charge; Terms Sections 5 and 6 state no required add-on fee for this tier. Both
+      passes agree.
+
+  annual_condition_disclosure:
+    value: adjacent
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      "Charged annually $60.00" sits inside the same price card as "$5.00/mo", directly beneath it.
+      Both passes agree.
+
+  annual_default_toggle:
+    value: annual_preselected
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      Server-rendered/DOM: Yearly button carries active classes ("bg-blue-700 !text-white") and the
+      "50% off" badge; Monthly carries inactive classes ("bg-transparent text-gray-800"), read before
+      any interaction. Both passes agree; confirmed unchanged live 2026-08-16. See coder_note for the
+      adjudicated toggle/tier-set finding this default state anchors.
+
+  free_plan_exists:
+    value: "yes"
+    source: "https://undetectable.ai/ai-humanizer"
+    evidence: >-
+      ADJUDICATED. Pass 1: "no" (read only /pricing, /terms, /help; found paid tiers plus a
+      signup-gated "Free Trial", concluded no free plan). Pass 2: "yes", citing /ai-humanizer, a page
+      pass 1 never opened. This adjudicator independently re-fetched /ai-humanizer live on 2026-08-16
+      and confirmed verbatim: "Is the AI Humanizer Free? Yes. There's a free version, but it uses a
+      basic model and may be flagged by detectors. Sign up for a free trial to bypass detectors with
+      99% confidence and use the Undetectable model" -- and the page's own title, "Free AI Humanizer
+      (Unlimited, No Signup)". This states two distinct constructs: (1) an ongoing, no-signup "free
+      version" on "a basic model" (domain 3, this variable), and (2) the already-agreed signup-gated
+      "Free Trial" of the better "Undetectable model" (domain 4, trial_exists, unaffected and
+      unchanged). free_plan_exists decision rule step 3 codes "no" only where no free option exists
+      "anywhere in the documents" -- false here: an official vendor page (source-hierarchy class 4 for
+      pricing variables, protocol 6.2) documents one. Section 2.2 requires positive documentary
+      evidence of absence for a determinate "no"; pass 1's "no" instead reflects an incomplete
+      document set, since it never had the chance to find or exclude this page.
+
+  free_plan_cap_documented:
+    value: none_quantified
+    source: "https://undetectable.ai/ai-humanizer"
+    evidence: >-
+      ADJUDICATED, follows from free_plan_exists=yes. Pass 1: not_applicable (no free plan, now
+      superseded). Pass 2: none_quantified. The free/"Basic" version's only documented restriction is
+      qualitative -- "uses a basic model and may be flagged by detectors" -- carrying no number. The
+      page title's "Unlimited" is never restated with a figure in the visible FAQ/body copy, and even
+      read as an explicit unlimited claim under rule 3, it is qualified by the same discretionary ToS
+      clause (Section 12 item 4) that qualifies the paid entry tier's "Unlimited" claims below, so it
+      would not count as quantified either way. The page's "10,000 characters" line is a general tool
+      description, not attributed to the free tier specifically -- both passes agree it does not
+      count. No quantified free-plan-specific limit exists in any document located.
+
+  free_plan_cap_value:
+    value: unknown
+    source: "https://undetectable.ai/ai-humanizer"
+    evidence: >-
+      ADJUDICATED, follows from free_plan_cap_documented=none_quantified. Pass 1: not_applicable (no
+      free plan, now superseded). Pass 2: unknown. No quantified limit is attributable to the free
+      plan, so there is nothing to record in this field's quantity/unit/period format. "unknown" also
+      matches this study's dominant convention elsewhere for a none_quantified free plan (e.g.
+      adobe-firefly, aragon-ai, invideo-ai, pixlr pass-1 records).
+
+  free_plan_watermark:
+    value: unknown
+    source: "https://undetectable.ai/ai-humanizer"
+    evidence: >-
+      ADJUDICATED, follows from free_plan_exists=yes. Pass 1: not_applicable (no free plan, now
+      superseded). Pass 2: unknown. This adjudicator checked /ai-humanizer, /pricing, and /help live
+      2026-08-16; no document states whether free/Basic-tier output carries vendor branding or a
+      watermark. Silence, not documented absence, so unknown rather than not_applicable or "no".
+
+  free_plan_duration:
+    value: perpetual
+    source: "https://undetectable.ai/ai-humanizer"
+    evidence: >-
+      ADJUDICATED, follows from free_plan_exists=yes. Pass 1: not_applicable (no free plan, now
+      superseded). Pass 2: perpetual. The free/"Basic" version is presented as a standing, ongoing
+      feature of the tool ("Free AI Humanizer... No Signup"; "Use our free AI humanizer to experience
+      professional-quality text transformation at no cost", confirmed live 2026-08-16), with no expiry
+      stated in any document located. Codebook rule: standing availability with no stated expiry is
+      perpetual.
+
+  trial_exists:
+    value: "yes"
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      "Free Trial is limited to 250 words. Additional usage requires paid plan activation."; FAQ
+      (JSON-LD, same page): "Yes, we offer a free trial..."; corroborated by /ai-humanizer's own FAQ
+      ("Sign up for a free trial to bypass detectors with 99% confidence and use the Undetectable
+      model"). Both passes agree; distinct from the free/Basic version coded under free_plan_exists.
+
+  trial_card_required:
+    value: "no"
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      ADJUDICATED. Pass 1: "no", quoting the pricing page's embedded FAQPage JSON-LD: "Yes, we offer a
+      free trial so you can test our AI humanization technology before committing to a paid plan. No
+      credit card required to start." Pass 2: unknown, stating neither /pricing nor /help addresses
+      card requirement. This adjudicator confirmed pass 1's quotation verbatim in pass 1's OWN archived
+      2026-08-13 local capture, and re-fetched the live page 2026-08-16 -- the same five-question
+      FAQPage JSON-LD block is present, byte-identical. Pass 2's own dated local capture
+      (pricing-page-2026-08-15.txt) contains only ONE of the five FAQ question/answer pairs ("What
+      pricing plans are available?"); the other four, including the trial/card-required answer, were
+      not captured -- an extraction gap reading a page both passes flag as JS-rendered, not a vendor
+      change (register_events is empty in both records, and the block is unchanged 08-13 through
+      08-16). Decision rule 2 applies directly: "No credit card required" stated on the trial FAQ is a
+      documented "no".
+
+  trial_length_days:
+    value: unknown
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      Not disputed (both passes coded unknown), evidence merged for completeness. The pricing page's
+      persistent footnote states a USAGE cap only ("Free Trial is limited to 250 words"), no day-count.
+      Pass 1 additionally found a separate on-load interstitial popup claiming "Sign up for a FREE
+      3-day trial!" -- a day-based figure in a different, non-comparable unit, uncorroborated by the
+      FAQ, Terms, Help, or /ai-humanizer. A word-cap and a day-count are not the same-unit conflict the
+      `conflicting` rule contemplates, so unknown is correct with both published figures disclosed here
+      rather than either being invented into a day count.
+
+  trial_auto_converts:
+    value: "no"
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      "Additional usage requires paid plan activation" -- an affirmative step by the buyer, not an
+      automatic silent charge. Both passes agree; pass 2 flagged this as a judgment call, but the
+      quoted wording states a further action is required, which is what "no" requires under this
+      variable's rule. Not a disagreement; value unchanged.
+
+  credit_system_present:
+    value: "no"
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      Plans are denominated directly in output units ("10K words/month", "20K words/month", etc.),
+      with no intermediate currency or conversion rate published for the coded entry tier. Both passes
+      agree; the sales-gated Business tier's one-off use of "credits" for an unpublished-scale
+      word-quota (noted by pass 2) does not change the entry tier's coding.
+
+  credit_unit_defined:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = \"no\"). Both passes agree."
+
+  credit_to_output_rate_published:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = \"no\"). Both passes agree."
+
+  credit_rate_location:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = \"no\"). Both passes agree."
+
+  cost_per_output_unit:
+    value: per_1k_words
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      Principal output (humanized text) is sold and metered directly in words/month. Both passes
+      agree.
+
+  cost_per_output_computable:
+    value: "yes"
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      Entry tier: $5.00/mo for 10,000 words/month, both already on a monthly basis under the default
+      display state; no assumption about typical use required. Both passes agree.
+
+  computation_assumptions:
+    value: >-
+      10K words/month tier, $5.00/mo billed annually ($60.00/yr) per default (Yearly) display state;
+      10,000 words/month included, same page. Price and allowance already monthly, no conversion
+      needed. 10000/1000=10; 5.00/10=0.50 USD per 1,000 words.
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      PROSE field (tools/disagreements.py), not a substantive disagreement -- both passes reached the
+      same tier, same price, same allowance, and the same $0.50-per-1,000-words figure, differing only
+      in how explicitly the unit conversion was written out. Reconciled into one statement carrying
+      pass 2's more explicit 10000/1000 conversion step. cost_per_output_computable="yes" is agreed and
+      unaffected.
+
+  credit_rollover_policy:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No credit system (credit_system_present = \"no\"). Both passes agree."
+
+  failed_generation_charge_policy:
+    value: unknown
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      Terms and Help both read in full by both passes; neither states whether a technically failed or
+      empty humanization attempt consumes the word allowance. The refund clause covers post-hoc
+      AI-detector flagging of a delivered output, not a processing failure. Both passes agree.
+
+  auto_renewal_default:
+    value: "on"
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      Section 6.5, AUTOMATIC RENEWAL COMPLIANCE: "By subscribing, you expressly consent to recurring
+      billing at the disclosed price and frequency until you cancel..."; Section 5: "If your order is
+      subject to recurring charges, then you consent to our charging your payment method on a
+      recurring basis without requiring your prior approval for each recurring charge, until such time
+      as you cancel...". Both passes agree; confirmed verbatim live 2026-08-16.
+
+  auto_renewal_disclosure_location:
+    value: terms_only
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      ADJUDICATED. Pass 1: multiple, adding the pricing page's FAQPage answer to "Can I cancel my
+      subscription at any time?": "Yes, you can cancel your subscription at any time. Your access will
+      continue until the end of your current billing period, and you won't be charged again." Pass 2:
+      terms_only, reading that same line as describing cancellation mechanics, not stating renewal.
+      This adjudicator confirmed the quotation verbatim (live 2026-08-16, unchanged from pass 1's
+      08-13 capture) and reads it as pass 2 did: it states what happens AFTER a buyer cancels, never
+      asserts the subscription renews or is charged automatically absent cancellation, and is equally
+      consistent with an auto-renewing or a manually-renewed billing model -- it does not use "renew",
+      "recurring", or "automatic" anywhere. This codebook's own worked example for the neighboring
+      variable trial_card_required draws exactly this line for exactly this kind of sentence:
+      "Automatic conversion implies stored payment details, but implication is not a statement.
+      unknown." The same principle governs here: an implication is not a disclosure. /help was
+      independently re-checked live 2026-08-16 and contains no renewal/recurring/"charged again"
+      language at all, confirming pass 2's fourth-class check. Only the Terms (Sections 5 and 6.5,
+      confirmed live) explicitly state recurring/automatic billing, so terms_only is the rule-correct
+      value; pass 1's "multiple" credits an implication as if it were a second, independent statement,
+      which -- per the reasoning this variable's own rule gives for why `multiple` matters, proximity
+      to the price and repetition of a genuine disclosure -- would overstate how close to checkout this
+      vendor actually discloses auto-renewal.
+
+  renewal_notice_commitment:
+    value: no_notice_stated
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      Section 6.5 lists exactly what is disclosed (existence of recurring charges, amount/frequency,
+      how to cancel before being charged again) with no commitment to notify before each renewal
+      charge. Both passes agree.
+
+  refund_policy_exists:
+    value: "yes"
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      Section 6.1 / 27: "A refund of credits is only available if a submission provably flags as less
+      than 75% human on a reputable AI detector." Both passes agree.
+
+  refund_window_days:
+    value: 30
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      "Refunds of credit or payment requests must be made within 30 days of the incident" -- window
+      runs from the flagged incident, not the purchase date. Both passes agree.
+
+  refund_conditions:
+    value: conditional
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      Refund conditioned on a submission "provably flag[ging] as less than 75% human on a reputable AI
+      detector" and on requesting within 30 days of that incident. Both passes agree.
+
+  cancellation_self_serve:
+    value: contact_required
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      Section 6.3 (general/default rule, non-California/non-New-York residents): "All other users may
+      cancel by emailing us." Section 6.4 gives California and New York residents a dashboard
+      self-serve route instead; the codebook has no distinct value for a jurisdiction-split policy, so
+      both passes coded the general/default case, consistent with how refund_policy_exists rule 3
+      treats a jurisdiction-restricted right elsewhere in this instrument. Both passes agree; this
+      adjudicator confirms the split verbatim live 2026-08-16 and finds contact_required the correct
+      default-case reading.
+
+  refund_policy_location:
+    value: multiple
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      Refund position appears in the Terms (Sections 6.1 and 27), the Help FAQ ("What is the
+      UNDETECTABLE guarantee?"), and the pricing page (banner + embedded FAQ) -- three document
+      classes. Both passes agree. See conflict_note: the three classes state the guarantee on
+      different terms, which is itself disclosed there per protocol 6.2.
+
+  commercial_use_lowest_tier:
+    value: unknown
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      Terms' IP section addresses only the site's own Content/Marks ("personal, non-commercial use...
+      of the Services"), not the user's humanized output; no feature-grid "commercial use" row exists
+      for the entry tier, and the /ethics page (pass 2) states an ethical-use policy, not a legal
+      rights grant. Both passes agree.
+
+  watermark_removal_tier:
+    value: unknown
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      Every paid tier's feature list repeats "Watermark and future proof", ambiguous between "carries
+      a watermark" and "watermark-free". The vendor separately sells an unrelated "AI Text Watermark
+      Remover" product, which pass 2 notes could mean this phrase concerns removing OTHER tools'
+      AI-detection watermarks rather than the codebook's construct (the vendor's own output branding).
+      No document resolves the ambiguity either way. Both passes agree on unknown.
+
+  output_ownership_statement:
+    value: unknown
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      Terms defines ownership only for the site's own Content/Marks and for forum-style
+      "Contributions"; no clause addresses who holds rights in the humanized text output returned to
+      the user. Both passes agree.
+
+  usage_cap_quantified:
+    value: some_quantified
+    source: "https://undetectable.ai/pricing"
+    evidence: >-
+      ADJUDICATED, follows directly from unquantified_limit_clause=present below. Pass 1:
+      all_caps_quantified (premised on unquantified_limit_clause=absent). Pass 2: some_quantified.
+      Entry tier ("10K words/month", the only candidate that exists under the default annual display
+      state -- see coder_note) limits: "10K words/month" is a quantified rate, agreed by both passes.
+      "Unlimited Human Auto Typer" and "Unlimited AI Detecting" turn on this variable's rule 3:
+      unlimited counts as quantified only where no clause elsewhere qualifies it. Since this
+      adjudicator confirms below that a qualifying discretionary clause IS present in the Terms, and it
+      is a general, platform-wide clause not scoped away from any particular tier or feature, both
+      "Unlimited" claims are qualified and so not quantified. At least one quantified item (the word
+      rate) plus at least one not (the two "Unlimited" claims) = some_quantified. Pass 1's value
+      inherits the same search gap as its unquantified_limit_clause=absent.
+
+  unquantified_limit_clause:
+    value: present
+    source: "https://undetectable.ai/terms"
+    evidence: >-
+      ADJUDICATED. Pass 1: absent, stating the Terms were "read in full" and that "excessive use"
+      appears only in the capital-letters/spam prohibition. Pass 2: present, quoting Terms Section 12
+      item 4. This adjudicator independently re-fetched the live ToS on 2026-08-16 and confirmed pass
+      2's quotation verbatim: "...in our sole discretion and without limitation, notice, or liability,
+      to remove from the Services or otherwise disable all files and content that are excessive in
+      size or are in any way burdensome to our systems..." (Section 12, SERVICES MANAGEMENT, item 4).
+      Critically, this clause is ALSO present in pass 1's OWN archived 2026-08-13 local capture
+      (undetectable-ai-sources/2026-08-13-terms-static.html: the word "excessive" occurs 6 times in
+      that file, including this exact clause) -- confirmed by direct text search of pass 1's own saved
+      source, so pass 1's "absent" is a search gap against its own evidence (it stopped at the
+      capital-letters/spam occurrence), not a document that changed or a defensible alternative
+      reading. The clause squarely matches this variable's `present` definition: vendor "sole
+      discretion", the word "excessive" (one of the definition's own listed examples), and "burdensome
+      to our systems" (a discretionary, unquantified system-load standard, functionally the
+      "throttling at the vendor's discretion" the same definition also lists). Rule 3's conduct
+      carve-out does not apply: the clause sits under "SERVICES MANAGEMENT" item 4, addressing
+      resource size/burden, not under the separate "PROHIBITED ACTIVITIES" conduct list (Section 7)
+      that covers illegal/abusive content; "files and content" is undefined and broader than the
+      separately-defined "Contributions" term used by item 3 of the same section, so it is not limited
+      to community posts. Present, not absent.
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-16 (protocol §7.4). tools/disagreements.py undetectable-ai found 9
+  substantive disagreements plus 1 prose disagreement (computation_assumptions) across the 37 coded
+  variables. All 9 were resolved by applying the codebook decision rule to the evidence, re-verified
+  by this adjudicator against the vendor's live pages (and, for unquantified_limit_clause, against
+  pass 1's OWN archived source) rather than trusted from either coder's transcription. ZERO were coded
+  unknown: every disagreement in this record was rule-resolvable once the missing or misread document
+  was actually read, so step 5's "documents do not determine the answer" finding does not apply to
+  this product.
+
+  REGISTER CHECK, done before classifying anything, per instruction. records/pass1/undetectable-ai.yaml
+  and records/pass2/undetectable-ai.yaml both carry `register_events: []` -- empty in both. Per §7.4.1,
+  date_explained requires an existing vendor_edit entry in the register; per §7.4.2, variant_explained
+  requires two archive snapshots of the same URL showing two display states, with no vendor_edit
+  explaining it. Neither classification is reachable for ANY of the 9 disagreements below, because
+  neither record supplies the register evidence either classification depends on. This adjudicator's
+  own live 2026-08-16 re-checks additionally found every load-bearing passage byte-identical to
+  whichever pass first captured it (pricing FAQPage JSON-LD unchanged 08-13 through 08-16; ToS Section
+  12 item 4 unchanged 08-13 through 08-16; /ai-humanizer unchanged 08-15 to 08-16), so there is
+  affirmative evidence against a vendor edit, not merely an absent register entry. All 9 disagreements
+  below are ordinary disagreements -- misreads or incomplete document sets -- resolved on the merits.
+
+  ENTRY-TIER / TOGGLE STRUCTURAL FACT, resolved first per assignment instructions, because
+  usage_cap_quantified is one of the six entry-tier variables (codebook §5.2) and several other
+  variables anchor to the default display state (protocol §6.8). Both passes independently selected
+  the same entry tier by sampling-rules §7.2: "10K words/month" at $5.00/mo / $60.00/yr, the lowest
+  annual-equivalent cost among eligible candidates in the default (Yearly) display state (losing
+  candidates, both passes agree: 20K/mo $114.00/yr, 35K/mo $189.00/yr, 50K-380K slider tier
+  $255.00/yr-equivalent; Business/Enterprise excluded, sales-gated). This part was never in dispute
+  and is unaffected by anything below.
+
+  What the two passes DISAGREED on, in an uncoded coder_note observation rather than a coded variable,
+  is whether the billing toggle changes the SET of tiers or only their prices. Pass 1 (2026-08-13)
+  actually clicked the Monthly toggle in a rendered browser and read the re-rendered cards: a
+  DIFFERENT ladder -- 20K/$19.00, 35K/$31.00, 50K/$42.00, 80K-unlimited/$64.00 -- with NO 10K option
+  at all under Monthly. Pass 2 (2026-08-15) did not click the toggle; it inferred tier-set equivalence
+  from a static, pre-hydration WebFetch of the page's DEFAULT (annual) render, which happens to embed
+  a struck-through "compare-at" figure ($9.99, $19.00, etc.) inside each annual card for marketing
+  contrast, and read those numbers as proof that "the same four tiers... exist under both bases."
+  This adjudicator did not have interactive browser tooling available and could not re-click the
+  toggle directly; however, pass 2's own method is the less reliable of the two on its own terms --
+  pass 2's sources note independently flags this same page as a "JS-rendered SPA" where a static
+  pre-hydration fetch is unreliable (exactly why pass 2 used a rendered browser read for its PRIMARY
+  capture), yet relied on that same unreliable static method specifically for the toggle check, while
+  pass 1 used the directly-authorized, actually-diagnostic method (protocol §6.3/§7.2 rule 1: switch
+  the toggle after recording the default state, and read what renders). A struck-through "was" price
+  inside one card is marketing contrast copy, not evidence of a selectable alternate tier. This
+  adjudicator credits pass 1's finding: the toggle changes the tier SET, not only prices, and the
+  entry tier "10K words/month" exists only on the annual basis -- the "structural fact about scope"
+  flagged for resolution. It changes no coded value here (entry_tier_name / headline_price_usd /
+  first_charge_amount_usd / annual_default_toggle were already correctly agreed from the default
+  Yearly state alone, which sampling-rules §7.2 rule 1 requires regardless of what any other toggle
+  state shows), but it does settle that "10K words/month" is the sole valid entry-tier candidate with
+  no monthly-basis equivalent, and it corrects pass 2's contradicting coder_note observation for the
+  published record rather than leaving two incompatible uncoded claims standing side by side.
+
+  DISPOSITION. Three clusters plus one isolated item plus the prose field:
+  - FREE-PLAN CLUSTER (5 items: free_plan_exists, free_plan_cap_documented, free_plan_cap_value,
+    free_plan_watermark, free_plan_duration) -- all cascade from one decision, free_plan_exists,
+    adjudicated "yes" because pass 1 never opened https://undetectable.ai/ai-humanizer, an official
+    vendor page pass 2 found that documents a distinct, ongoing, no-signup "free version" separate
+    from the already-agreed word-limited signup-gated "Free Trial". This is the vendor's shared-surface
+    pattern the assignment flagged: one product surface (the humanizer + bundled detector sold via
+    /pricing) documented across multiple official pages, where the free-tier disclosure lives on a
+    page neither the pricing page nor the terms of service is. Not a majority call -- pass 1's chain
+    of not_applicable values rested on an incomplete document set, and once the missing document is
+    read, the codebook's own decision rule (step 3: "no free option anywhere in the documents")
+    mechanically produces pass 2's values.
+  - USAGE-LIMIT CLUSTER (2 items: usage_cap_quantified, unquantified_limit_clause) -- cascade from
+    one decision, unquantified_limit_clause, adjudicated "present" against pass 1's "absent". This is
+    the construct the assignment specifically flagged as the study's highest-disagreement construct,
+    and the cause here matches the flagged pattern exactly: pass 1's own archived 08-13 capture
+    contains the clause verbatim, so this is a search gap (stopped after finding ONE of the source
+    document's six "excessive" occurrences), not a genuine absence or a defensible alternative reading.
+    Full textual analysis of why Section 12 item 4 matches the `present` definition and survives rule
+    3's conduct carve-out is in unquantified_limit_clause's own evidence field above.
+  - RENEWAL-DISCLOSURE ITEM (auto_renewal_disclosure_location) -- adjudicated "terms_only" against
+    pass 1's "multiple", on the codebook's own implication-is-not-a-statement principle (the
+    trial_card_required worked example draws the identical line for the identical kind of sentence).
+    Both /help (independently re-checked) and the Terms confirm the other three document classes as
+    both passes read them; only the pricing-page FAQ's cancellation answer is in dispute, and it
+    describes cancellation mechanics rather than asserting renewal.
+  - TRIAL-CARD ITEM (trial_card_required) -- adjudicated "no" against pass 2's "unknown". Pass 1's
+    quotation is verbatim-correct and stable across three dates; pass 2's own local capture of the
+    same FAQPage JSON-LD block preserved only 1 of its 5 question/answer pairs, missing the one this
+    variable needed. An extraction gap, not a vendor change.
+  - PROSE (computation_assumptions) -- reconciled, not adjudicated as a value dispute: both passes
+    reached the identical substantive figure ($0.50 per 1,000 words) from the identical entry tier and
+    display state; only the arithmetic's write-up differed. One merged statement written above.
+
+  PRESERVED, NOT DISPUTED: trial_length_days's evidence was expanded (value unchanged, "unknown" on
+  both passes) to keep pass 1's on-load-popup "3-day trial" finding in the published record rather
+  than letting it drop out because pass 2's shorter evidence text did not carry it forward.
+
+  CROSS-CHECKS RUN: python3 tools/validate_records.py records/adjudicated/undetectable-ai.yaml and
+  python3 tools/check_price_arithmetic.py records/adjudicated/undetectable-ai.yaml, both after the
+  record was complete.
+
+  SCOPE OF THIS PASS: adjudicator per protocol §7.4, not blind by design. Read
+  records/pass1/undetectable-ai.yaml, records/pass2/undetectable-ai.yaml, pass 1's top-level
+  undetectable-ai-sources/ (all three raw HTML captures, including a direct text search of the
+  archived terms file) and pass 2's records/pass2/undetectable-ai-sources/ (all four local captures),
+  protocol-v1.md sections 6.2/6.3/6.4/6.6/6.8/7.4/7.4.1/7.4.2 in full, the complete codebook-v1.md
+  (sections 1-6, all 37 variable definitions, sections 8-10), sampling-rules.md section 7.2 and 7.1,
+  record-template.yaml, tools/disagreements.py, tools/validate_records.py,
+  tools/check_price_arithmetic.py, orchestrator/deviations-log.md (grepped for "undetectable" --
+  confirms this product was never exposed to either coder via interim-signals.md or any shared file,
+  Tier C / clean in the blinding-exposure audit) and deviations-for-coders.md, plus the existing
+  adjudicated records (recraft.yaml primarily, also aiva.yaml/google-veo.yaml) for shape precedent
+  only, not content. Independently re-fetched https://undetectable.ai/pricing,
+  https://undetectable.ai/terms, https://undetectable.ai/help, and https://undetectable.ai/ai-humanizer
+  live on 2026-08-16 (direct curl, not the WebFetch summarizer, specifically to preserve embedded
+  JSON-LD/script content that an HTML-to-markdown conversion would drop) to verify every load-bearing
+  quotation in this record directly against the primary source. Did not attempt archive.org fetches of
+  either pass's snapshot URLs; verification instead rests on the live 2026-08-16 page plus both
+  passes' own dated local captures, which is disclosed rather than papered over. Did not read
+  orchestrator/interim-signals.md, aitoolspolice.com, site/content/reviews/, or any other product's
+  records, per this agent's scope.
+conflict_note: >-
+  Refund guarantee wording gap, agreed by both passes: the Terms (governing source for this
+  contractual variable, protocol 6.2) state a specific condition and window -- "A refund of credits is
+  only available if a submission provably flags as less than 75% human on a reputable AI detector.
+  Refunds of credit or payment requests must be made within 30 days of the incident" (Sections 6.1 and
+  27) -- while the pricing-page banner states an unconditional-sounding "Money back guarantee. If
+  anything we produce is flagged as not human, we will refund the cost of humanization", the
+  pricing-page embedded FAQ states a 7-day general-dissatisfaction guarantee unrelated to AI-detection
+  ("If you're not happy with our service within the first 7 days, contact our support team for a full
+  refund"), and the Help FAQ states "we will refund the cost of the generation, no questions asked"
+  with no window and no proof burden. refund_policy_exists, refund_window_days, and refund_conditions
+  are coded from the Terms per the source hierarchy; the other three statements are recorded here as
+  the finding rather than resolved away. URLs: https://undetectable.ai/terms ;
+  https://undetectable.ai/pricing ; https://undetectable.ai/help.
+register_events: []
+status: complete

@@ -1,0 +1,168 @@
+product_id: godaddy
+product_name: GoDaddy Airo
+category: AI website builder
+product_status: active
+paid_submission: "no"
+coder_pass: 1
+coder_role: primary
+status: complete
+collection_date: 2026-08-07
+recheck_date: not_applicable
+entry_tier_name: Starter
+primary_source_url: https://www.godaddy.com/airo/ai-builder
+archive_url: https://web.archive.org/web/20260807050414/https://www.godaddy.com/airo/ai-builder
+archive_status: archived
+default_display_state: >
+  Airo Builder plan cards (Free / Starter / Professional / Ultimate) load with the
+  Annual billing state as the primary/default price shown, tagged "Billed annually"
+  in the same price-lockup object; the Monthly figures live only in a separate
+  "priceToggled" field reached by switching billing period. Read via web.archive.org's
+  2026-08-07 crawl because the live vendor domain returned HTTP 403 to this session's
+  direct requests and auto-redirected our browser to a Turkish-locale (tr-tr, TRY)
+  version; see register_events for the D-003 currency check.
+source_urls: https://www.godaddy.com/airo/ai-builder | https://www.godaddy.com/websites/ai-website-builder | https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828 | https://www.godaddy.com/legal/agreements/ai-terms-of-use | https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement | https://www.godaddy.com/legal/agreements/refund-policy | https://www.godaddy.com/pricing
+sources:
+  - { url: "https://www.godaddy.com/airo/ai-builder", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807050414/https://www.godaddy.com/airo/ai-builder", note: "Primary pricing source; Free/Starter/Professional/Ultimate plan cards, FAQPage JSON-LD, credits mechanics." }
+  - { url: "https://www.godaddy.com/websites/ai-website-builder", kind: other, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807091137/https://www.godaddy.com/websites/ai-website-builder", note: "URL named in the frozen frame; live browser load returned only a geo-localized (tr-tr) marketing page with no prices. Archive.org save on this date shows it 302-redirecting to /airo/ai-builder, confirming same product." }
+  - { url: "https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807085043/https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", note: "Official help-center article, 'How do Airo AI Builder AI credits work?'." }
+  - { url: "https://www.godaddy.com/legal/agreements/ai-terms-of-use", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807084920/https://www.godaddy.com/legal/agreements/ai-terms-of-use", note: "Last Revised 4/14/2026. Governs AI Services incl. Airo AI Builder." }
+  - { url: "https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807084742/https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement", note: "Auto-renewal, cancellation route." }
+  - { url: "https://www.godaddy.com/legal/agreements/refund-policy", kind: refund, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807084610/https://www.godaddy.com/legal/agreements/refund-policy", note: "Last Revised 5/27/2026. Contains a 'Special Refund Terms > AI Credits' clause naming Airo AI Builder explicitly." }
+  - { url: "https://www.godaddy.com/pricing", kind: other, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807090835/https://www.godaddy.com/pricing", note: "Used only for the D-003 US-locale/currency check (response cookies market=en-US, currency=USD) and site navigation discovery; no coded value taken from it." }
+variables:
+  headline_price_usd: { value: 9.99, source: "https://www.godaddy.com/airo/ai-builder", evidence: "Starter plan price lockup, default (annual) state: price=\"$9.99\", priceDetail=\"/mo\", items text \"Billed annually\"." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://www.godaddy.com/airo/ai-builder", evidence: "Same price-lockup object: \"$9.99\"/\"/mo\" with attached tag \"Billed annually\"." }
+  first_charge_amount_usd: { value: 119.88, source: "https://www.godaddy.com/airo/ai-builder", evidence: "Computed 9.99 x 12; annual state is the default display and refund policy treats the annual plan as one transaction (see computation_assumptions)." }
+  mandatory_addon_present: { value: "no", source: "https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", evidence: "\"Once you've used all your credits, you'll need to purchase more or wait for your monthly limit to reset\" -- additional credits are optional, not required to use Starter as advertised; no other required charge found in the Starter feature list." }
+  annual_condition_disclosure: { value: adjacent, source: "https://www.godaddy.com/airo/ai-builder", evidence: "\"Billed annually\" text sits inside the same price-lockup JSON object as the \"$9.99\" figure (same card)." }
+  annual_default_toggle: { value: annual_preselected, source: "https://www.godaddy.com/airo/ai-builder", evidence: "Each plan's primary (untoggled) \"price\" field carries the \"Billed annually\" tag and the lower figure ($9.99/$24.99/$99.99); the higher monthly figures ($19.99/$49.99/$199.99) live only in a separate \"priceToggled\" field reached after switching." }
+  free_plan_exists: { value: "yes", source: "https://www.godaddy.com/airo/ai-builder", evidence: "planType=\"Free\" plan card, \"50 AI credits/mo\", CTA \"Start for Free\"; FAQ 'How does pricing work?': \"You can start for free and upgrade as your needs grow.\"" }
+  free_plan_cap_documented: { value: all_quantified, source: "https://www.godaddy.com/airo/ai-builder", evidence: "Free plan's only stated numeric limit is \"50 AI credits/mo\" (number+dimension+period); the other Free-plan feature-grid rows (published app/site, connect domain, download code, share access) are marked as absent (\"No\"), not stated as unquantified numeric limits." }
+  free_plan_cap_value: { value: "50 AI credits per month", source: "https://www.godaddy.com/airo/ai-builder", evidence: "Free plan description fragment: \"50 AI credits/mo\"." }
+  free_plan_watermark: { value: unknown, source: "https://www.godaddy.com/airo/ai-builder", evidence: "Free-plan feature comparison (create unlimited apps/sites, 1 published app/site, connect domain, download code, share access) contains no watermark/branding row; not addressed in the credits FAQ, AI Terms of Use, Universal ToS, or Refund Policy either." }
+  free_plan_duration: { value: perpetual, source: "https://www.godaddy.com/airo/ai-builder", evidence: "\"Free\" is listed as a standing plan tier alongside Starter/Professional/Ultimate with no expiry stated anywhere in the documents read." }
+  trial_exists: { value: "no", source: "https://www.godaddy.com/airo/ai-builder", evidence: "No time-limited trial of a paid tier is mentioned on the pricing page, the credits FAQ, the AI Terms of Use, the Universal ToS, or the Refund Policy; the product's own model is an ongoing \"Start for Free\" tier, not a time-boxed trial (per codebook domain 4 rule 1, a free plan is not a trial)." }
+  trial_card_required: { value: not_applicable, source: "https://www.godaddy.com/airo/ai-builder", evidence: "No trial exists." }
+  trial_length_days: { value: not_applicable, source: "https://www.godaddy.com/airo/ai-builder", evidence: "No trial exists." }
+  trial_auto_converts: { value: not_applicable, source: "https://www.godaddy.com/airo/ai-builder", evidence: "No trial exists." }
+  credit_system_present: { value: "yes", source: "https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", evidence: "\"Credits give you access to the powerful agent features and tools Airo AI Builder has to offer\" -- an intermediate metering unit for agent/build actions, not a plan allowance stated directly in output units." }
+  credit_unit_defined: { value: "no", source: "https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", evidence: "The FAQ states WHEN credits are consumed (\"used when you perform an action that uses Airo AI Builder's agents\") and lists actions that do not use credits (preview, publish, code edits, domain connect, media upload, history restore), but no document states how many credits a given action costs or converts credits into any output unit." }
+  credit_to_output_rate_published: { value: "no", source: "https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", evidence: "No document (pricing page or credits FAQ) publishes a credits-to-output conversion rate for any output, principal or secondary." }
+  credit_rate_location: { value: absent, source: "https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", evidence: "No rate is published in any document class read (pricing page, help center, AI Terms of Use)." }
+  cost_per_output_unit: { value: other, source: "https://www.godaddy.com/airo/ai-builder", evidence: "Pricing page frames tiers by AI-credit allowance/month (150 on Starter) and a published-app/site capacity cap (1 on Starter), not by a countable production artifact; named unit: \"AI credit / published-app capacity, no per-artifact output unit published\" (see coder_note)." }
+  cost_per_output_computable: { value: "no", source: "https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", evidence: "Price ($9.99/mo) and credit allowance (150/mo) are both published, but no document states how many credits (or what output) one build action produces, so no cost-per-output figure can be derived without an assumption about usage (codebook rule 7)." }
+  computation_assumptions: { value: "Entry tier Starter $9.99/mo, annual default ('Billed annually' tag); refund policy treats annual plans as one transaction; first_charge=9.99x12=119.88. No credits-to-output rate published, so cost_per_output was not computed." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", evidence: "\"Credits expire at the end of each billing cycle and do not roll over to the next cycle.\" (Purchased add-on credits are a separate case: \"Purchased credits expire 1 year from the time of purchase.\")" }
+  failed_generation_charge_policy: { value: unknown, source: "https://www.godaddy.com/help/airo-ai-builder-credits-faq-42828", evidence: "No document (pricing page, credits FAQ, AI Terms of Use, Universal ToS, Refund Policy) states whether a failed/errored AI build action consumes a credit." }
+  auto_renewal_default: { value: "on", source: "https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement", evidence: "\"...the Purchased Product will automatically renew at the then-current renewal price until cancelled.\" / \"IF YOU WISH FOR ANY SERVICE TO AUTOMATICALLY RENEW, YOU MAY ELECT TO CANCEL YOUR RENEWAL...\"" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement", evidence: "Auto-renewal is stated in the Universal Terms of Service Agreement; the Airo Builder pricing page carries only a \"Billed annually\" billing-cadence tag (no renewal statement), and no renewal statement was found in the credits FAQ, AI Terms of Use, or Refund Policy text." }
+  renewal_notice_commitment: { value: unknown, source: "https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement", evidence: "No advance-notice-before-renewal-charge commitment found; the ToS's notice clauses cover Agreement amendments and Service end-of-life (discontinuation), not routine renewal charges." }
+  refund_policy_exists: { value: "yes", source: "https://www.godaddy.com/legal/agreements/refund-policy", evidence: "\"Annual Plans that give you AI Credits are refundable within 30 days (720 hours) of the date of transaction... The above refund policy applies to all services which use AI Credits, including but not limited to Airo(TM) AI Builder and other AI Services.\"" }
+  refund_window_days: { value: 30, source: "https://www.godaddy.com/legal/agreements/refund-policy", evidence: "Entry tier Starter is billed annually in the default display state; \"Annual Plans that give you AI Credits are refundable within 30 days (720 hours) of the date of transaction...\" (the Monthly-billing alternative for the same clause is 48 hours, recorded in coder_note)." }
+  refund_conditions: { value: conditional, source: "https://www.godaddy.com/legal/agreements/refund-policy", evidence: "\"...as long as no AI Credits given as part of the plan have been consumed and no AI-generated content has been downloaded or exported, otherwise the subscription becomes non-refundable.\"" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement", evidence: "\"If you wish to cancel the automatic renewal of the Purchased Product, you may do so by turning off auto-renew through your Account or by contacting customer service.\"" }
+  refund_policy_location: { value: dedicated_refund_page, source: "https://www.godaddy.com/legal/agreements/refund-policy", evidence: "Standalone policy page at /legal/agreements/refund-policy, separate from the Universal ToS." }
+  commercial_use_lowest_tier: { value: unknown, source: "https://www.godaddy.com/legal/agreements/ai-terms-of-use", evidence: "AI Terms of Use assigns Output ownership generally, but no document (AI Terms of Use, Universal ToS, pricing page feature grid) states a distinct commercial-use permission or restriction tied to a specific tier." }
+  watermark_removal_tier: { value: unknown, source: "https://www.godaddy.com/airo/ai-builder", evidence: "No document (pricing page feature grid, credits FAQ, AI Terms of Use, Universal ToS, Refund Policy) addresses watermarking or GoDaddy branding on Airo Builder outputs at any tier." }
+  output_ownership_statement: { value: user_owns, source: "https://www.godaddy.com/legal/agreements/ai-terms-of-use", evidence: "\"As between you and GoDaddy... you (a) retain your ownership rights in Input and (b) own the Output. To the extent permitted by applicable law, we hereby assign to you all our right, title, and interest, if any, in and to Output.\" (Corroborated, not contradicted, by the pricing-page FAQ: \"Who owns the code and projects I create? You do.\")" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.godaddy.com/airo/ai-builder", evidence: "Entry tier Starter's stated limits are \"150 AI credits/mo\" (quantified rate) and \"1 published app or site\" (quantified standing limit); no unquantified numeric limit found for this tier (\"Connect a domain\", \"Download your code\", \"Share access\" are boolean feature gates, not numeric limits)." }
+  unquantified_limit_clause: { value: present, source: "https://www.godaddy.com/legal/agreements/ai-terms-of-use", evidence: "\"AI Services may have varying usage limits or restrictions depending on the plan you select... You must comply with any such usage restrictions specified in your plan or on our website. Excessive or abusive use may result in additional charges or suspension.\" No figure defines \"excessive\" or \"abusive\"." }
+coder_note: |
+  Product identification: GoDaddy currently runs two distinct site-builder product
+  lines. (1) "Airo Builder" / "Airo AI Builder" (godaddy.com/airo/ai-builder) -- a
+  conversational/"vibe coding" AI app builder with tiers Free/Starter/Professional/
+  Ultimate and a credits-based meter. (2) "GoDaddy Website Builder" / "Websites +
+  Marketing" (godaddy.com/websites/website-builder) -- the older template-based
+  builder with tiers Basic/Premium/Commerce ($9.99/$14.99/$20.99 per mo billed
+  annually) and no credit system. The frame's product_name "GoDaddy Airo" and
+  category "AI website builder" match product (1). The frame-suggested URL
+  godaddy.com/websites/ai-website-builder now 302-redirects to /airo/ai-builder
+  (confirmed via a fresh web.archive.org save on 2026-08-07), corroborating that
+  (1) is the current canonical page for the reviewed product. This record codes
+  exclusively from product (1); product (2)'s figures were read only to confirm
+  they are a separate line and are not used for any coded value here.
+
+  Entry-tier selection (sampling-rules 7.2): among PAID, standing, sales-contact-free,
+  single-seat candidates, annual-equivalent cost = price/mo (default annual display
+  state) x 12. Starter 9.99x12=119.88 (winner) | Professional 24.99x12=299.88 (lost)
+  | Ultimate 99.99x12=1199.88 (lost). "Free" ($0) is not a paid-tier candidate under
+  7.2 and is coded separately under domain 3 (free_plan_*).
+
+  Refund window, billing-basis alternative: the same "AI Credits" refund clause gives
+  Monthly-billed plans 48 hours (vs. the 30 days / 720 hours coded above for the
+  Starter tier's annual default display state). Recorded here per codebook rule
+  ("where the window varies by plan, record the entry paid tier's window").
+
+  mandatory_addon_present / cost_per_output_computable: no mandatory purchase found
+  beyond the plan price; optional add-on credit packs exist but are explicitly
+  optional ("purchase more or wait for your monthly limit to reset").
+
+  cost_per_output_unit named per codebook rule 3 (no listed unit fits): "AI credit /
+  published-app capacity" -- the product is metered by a credits/mo allowance (150 on
+  Starter) that never converts to a specific output, plus a separate published-app-or-
+  site capacity cap (1 on Starter); neither is a countable production artifact like an
+  image or video minute, so none of the enumerated units apply.
+
+  Live-site access: www.godaddy.com returned HTTP 403 to every direct curl/WebFetch
+  request from this session (all paths tested) and our browser session was
+  geo-redirected to the tr-tr / TRY locale. All coded values instead come from
+  web.archive.org's independent same-day (2026-08-07) crawl of each official page,
+  each fetched via web.archive.org/save/<url> immediately before reading it, per
+  archival policy. See register_events for the D-003 currency-check detail.
+
+  D-009 re-read 2026-08-10: not arithmetic-flagged (9.99 x 12 = 119.88 exact -- this is the
+  coder's own computation, see PROVENANCE below). Re-confirmed entry_tier_name/headline_price_usd/
+  headline_billing_basis in two representations; first_charge_amount_usd's provenance is a
+  disclosed computation, addressed separately below per the orchestrator's added instruction.
+  Live re-access attempted first: www.godaddy.com still geo-redirects this session (Turkey egress)
+  to a Turkish-locale page (TRY currency, no USD figures reachable) -- same obstruction the
+  original coder hit, unchanged. Fell to the same fallback the original coder used:
+  web.archive.org. The interactive Browser pane's navigate tool refused web.archive.org on both
+  attempts ("navigation ... denied or failed"), and WebFetch also could not reach it
+  ("unable to fetch from web.archive.org") -- both attempts logged per the two-attempt cap. Bash
+  curl reached it fine (HTTP 200), so representation 2 below was obtained that way instead.
+  Representation 1 (already on file): the saved local copy godaddy-sources/
+  godaddy-pricing-archive-id.html carries the embedded JSON `"entryTitle":"abn_gdexp_14016 - AAB
+  Price Lockup","align":"start","price":"$9.99","priceDetail":"/mo","items":[{...,"text":"Billed
+  annually"}]`. Representation 2 (fresh independent fetch, today, curl of the same archive.org
+  snapshot URL https://web.archive.org/web/20260807050414/https://www.godaddy.com/airo/ai-builder):
+  byte-identical JSON fragment re-obtained independently -- `"price":"$9.99","priceDetail":"/mo",
+  "items":[{"entryId":"5tBQ4M6GQ3iAeMdJWNbVrT","entryTitle":"Airo Builder Renews Text","text":
+  "Billed annually"}]`. Both reads agree exactly: $9.99/mo, "Billed annually", no adjacent
+  cents/superscript structure (a plain JSON string), confirming this is not a misread. Limitation
+  disclosed: both representations are the same underlying JSON-payload TYPE (archive.org's frozen
+  2026-08-07 snapshot, not a live independent render), because the live DOM route is blocked by
+  the geo-redirect and the interactive browser/WebFetch tools would not reach web.archive.org in
+  this session -- recorded honestly rather than papered over. NO CORRECTION to headline_price_usd/
+  headline_billing_basis/entry_tier_name.
+
+  PROVENANCE of first_charge_amount_usd (per orchestrator request, applies to this record):
+  119.88 is COMPUTED (9.99 x 12), not read off a stated annual total -- no document found in this
+  re-read (pricing page JSON, refund policy, AI Terms of Use, Universal ToS, credits FAQ) states an
+  explicit "$119.88" or "pricePerYear"-style annual total anywhere for Starter; confirmed by a
+  fresh full-text keyword search of every saved source document for "annual", "once a year", "12
+  months", "twelve months" today -- the only hits are the pricing card's own "Billed annually" tag
+  (already coded) and the Refund Policy's "Standard Refund Terms" section, which was NOT quoted in
+  the original record and is added here: "Annual Plans+ - Within 30 days (720 hours) of the date of
+  the transaction. Monthly Plans*+ - Within 48 hours... * Monthly Plans include all plans with less
+  than a 1-year term (e.g., 6 mos., 9 mos., etc.)" (godaddy-sources/godaddy-refund-policy-
+  20260807.html, byte offset ~46195, re-confirmed today). This is the original coder's own stated
+  basis, already disclosed (not silent) via the existing computation_assumptions field ("annual
+  state is the default display and refund policy treats the annual plan as one transaction"). This
+  coder's own assessment: "Billed annually" is a direct billing-frequency statement (distinct from
+  no statement at all, which is what rule 3's "do not assume twelve months" targets), and the
+  Refund Policy's own definition of "Monthly Plans" as "all plans with less than a 1-year term"
+  frames "Annual Plans" as a genuinely different, full-year billing arrangement -- together a
+  reasonable, disclosed basis for the multiplication, though neither document uses codebook rule
+  2's exact "charged once for twelve months" phrasing. This is a codebook-application judgment
+  call, not a confirmed misread: NOT changed to unknown, since the multiplication rests on an
+  actual, quoted billing-frequency statement rather than silence or coder assumption, and this
+  coder cannot certify the ORIGINAL coder's interpretation is wrong, only that it is not
+  air-tight. Flagged here explicitly for adjudicator review, distinct from the three records
+  (hostinger, humbot, humanizemy-ai-detector) the orchestrator separately asked about, where no
+  computation was disclosed at all.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: not_applicable
+register_events:
+  - { type: display_variant, detail: "This session's network (Turkey) caused www.godaddy.com to auto-redirect to the tr-tr locale (Turkish language, TRY-denominated offers, e.g. domain add-ons shown as '0,01 TL'); direct curl/WebFetch to www.godaddy.com returned HTTP 403 on every path tried. D-003 check: web.archive.org's independent 2026-08-07 crawl of godaddy.com/pricing set response cookies market=en-US and currency=USD, and its crawl of the Airo Builder plan page itself displays all four plan prices natively in USD ($0/$9.99/$24.99/$99.99 per mo). All coded monetary values use these USD figures; no non_usd coding was needed.", urls: ["https://www.godaddy.com/pricing", "https://www.godaddy.com/airo/ai-builder"] }

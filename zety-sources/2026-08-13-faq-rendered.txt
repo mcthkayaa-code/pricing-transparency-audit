@@ -1,0 +1,41 @@
+Captured via rendered browser read (get_page_text) from https://zety.com/blog/zety-faq on 2026-08-13.
+Qualifies as an official vendor blog post stating policy (codebook §4 evidence table).
+
+Title: Top FAQs About Zety + Answers
+URL: https://zety.com
+Source element: <main>
+---
+Table of Contents: Introduction / How Can I Download a Free Resume From Zety? / How Can I Change My Resume Template in Zety Builder? / Can I Add Hyperlinks to My Resume in Zety? / Does Zety Make Your Resume Public? / Can I Modify My Resume After Downloading It? / How Do I Reorder Resume Sections in Zety? / Can I Save My Resume While Working on It? / How Can I Change the Page Size in Zety Builder? / What Should I Do If Zety Is Refusing My Payment? / Does Zety Offer Refunds? / Why Is Zety Not Loading? / Is Zety Safe to Use? / Is Zety a Scam, or Is Zety Reliable? / How Do I Cancel My Zety Subscription? / How Do I Delete My Zety Account? / About Zety's Editorial Process / Sources
+
+How Can I Download a Free Resume From Zety?
+Zety allows users to create and download perfect resumes in a variety of resume formats. While creating and saving a resume in Zety's builder is free, downloading it in specific formats like PDF files or Word files requires a paid subscription. However, you can download your resume for free in plain text (.txt) format. Just complete your resume, head to the "Download" tab, and select "Plain Text."
+If you need a more polished application format, you can opt for one of the premium options.
+
+Can I Modify My Resume After Downloading It?
+Yes, you can modify and update your resume even after downloading it. Your resume remains saved in your Zety account, so you can log in anytime to make updates.
+
+What Should I Do If Zety Is Refusing My Payment?
+Payment issues can happen for a variety of reasons. If your payment isn't being processed, try using a different payment method, such as another credit card or PayPal. It's also worth checking with your bank to ensure there are no issues on their end. If problems persist, contact Zety's customer support for further assistance.
+
+Does Zety Offer Refunds?
+Yes, Zety can refund your money if you're not happy with the services you received. You can also cancel your subscription at any time.
+However, if you want to receive a refund, the cancellation must be requested by email and within the specified time, either the first 7 days of purchase, you can receive a full refund, no questions asked, or after 7 days of purchase, you may receive a refund if you haven't downloaded any files while your account was active.
+
+Why Is Zety Not Loading?
+If Zety isn't loading for you, there might be a few reasons. The most common are Internet connectivity issues and browser extensions blocking certain services.
+
+Is Zety Safe to Use?
+Yes, Zety is completely safe to use. Its website and products use secure SSL encryption to ensure user safety.
+
+Is Zety a Scam, or Is Zety Reliable?
+Zety is not a scam. It's a legitimate and reliable resume-building platform that has helped millions of job seekers craft professional application documents. ... We're branded Great by Trustpilot users with over 7 thousand reviews.
+
+How Do I Cancel My Zety Subscription?
+Canceling your subscription is quick and easy. You can do it by logging into your Zety account and navigating to the settings section. If you're unable to access the settings or need assistance, you can also contact Zety's customer support team by phone or through their website.
+Benefits of Zety Subscription: Get a great resume using our prompts with expert insights. Write a cover letter to match your resume without worrying about formatting and completeness. Target your resume and your cover letter easily to each position you're applying for. Store your documents safely in the cloud to tweak them when you need without losing any progress. Find out your resume score and get actionable improvement suggestions. Use your account to update your resume as your career progresses, or cancel anytime.
+
+How Do I Delete My Zety Account?
+Deleting your Zety account is simple, and you have two options. You can either make a direct request through your profile settings or contact Zety's support team via privacy@bold.com. Once you submit your request, your personal data, including any resumes or files you've created, will be permanently removed.
+
+Written by: Maciej Tomaszewicz, CPRW, Career Expert.
+About Zety's Editorial Process: This article has been reviewed by our editorial team to make sure it follows Zety's editorial guidelines.

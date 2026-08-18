@@ -1,0 +1,53 @@
+SOURCE: https://www.rezi.ai/legal
+ACCESSED: 2026-08-12
+METHOD: rendered browser read, full page text (get_page_text, max_chars=50000, nothing truncated - page
+ended naturally with footer CTA)
+
+Full "Terms of Use" section (6 numbered clauses) reproduced in full below because this is the ONLY
+official Rezi document addressing licensing/commercial-use/ownership, and its completeness matters for
+several coded variables.
+
+1. Terms
+By accessing the website at https://rezi.io, https://www.rezi.ai/ and all subdomains, you are agreeing to
+be bound by these terms of service... [standard website-terms boilerplate]
+
+2. Use License
+Permission is granted to temporarily use Rezi's website for personal, non-commercial transitory viewing
+only. This is the grant of a license, not a transfer of title, and under this license you may not:
+- Modify or copy the source materials;
+- Attempt to decompile or reverse engineer any software contained on Rezi's website;
+- Remove any copyright or other proprietary notations from the materials; or
+- Transfer the materials to another person or "mirror" the materials on any other server.
+This license shall automatically terminate if you violate any of these restrictions...
+
+"Rezi Pro and Lifetime subscriptions are licensed for personal, individual use only. Users may not use
+Rezi on behalf of other individuals, organizations, agencies, or businesses for commercial purposes,
+including but not limited to resume writing services, career consulting services, staffing or recruiting
+operations, or any activity intended to benefit third-party job seekers. Unauthorized commercial or
+multi-user use may result in suspension or termination of access.
+
+Organizations, agencies, and individuals seeking to use Rezi to assist other job seekers or provide
+commercial resume and career services should use Rezi Enterprise, which is designed for multi-user and
+commercial use cases."
+
+3. Disclaimer / 4. Limitations / 5. Accuracy of materials / 6. Modifications - standard warranty
+disclaimer / liability limitation / no-update-commitment / terms-may-change-without-notice boilerplate.
+None of these sections mention: auto-renewal, cancellation, refunds, billing cycle, credits, trial,
+watermark, or output/content ownership.
+
+Privacy Policy section (full text read) - covers data collection/use/sharing/GDPR rights only. One
+passing mention of billing-relevant fact: "Third Party Vendors: ... like payment providers that process
+your credit and debit card information (Stripe)" - confirms Stripe as payment processor, no other billing
+mechanics stated.
+
+CONFIRMED ABSENT (read to the end of both Terms of Use and Privacy Policy, nothing truncated):
+- No statement anywhere about auto-renewal / subscription renewal mechanics.
+- No statement anywhere about refund or cancellation policy (lives instead on the separate intercom.help
+  cancellation-policy page).
+- No statement anywhere about who owns generated resume/cover-letter/resignation-letter content (no
+  "you own your content" / no "we retain a license to your content" clause of any kind).
+- No mention of "watermark" or "branding" on outputs.
+- No mention of "credit", "token", "point", or "coin" as a metering unit.
+- No fair-use / reasonable-use / excessive-use / throttling / discretionary-limit clause of any kind -
+  the only usage restriction in the entire document is the personal/individual-use, no-commercial-resale
+  clause quoted above, which is a CONDUCT restriction (who you may serve), not a volume/intensity limit.

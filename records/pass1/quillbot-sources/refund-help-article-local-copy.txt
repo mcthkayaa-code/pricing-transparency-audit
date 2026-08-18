@@ -1,0 +1,35 @@
+URL: https://help.quillbot.com/hc/en-us/articles/6046562291223-Can-I-get-a-refund-for-Quillbot-subscription
+Accessed: 2026-08-10
+Method: rendered read via browser (document.body.innerText) — help.quillbot.com returns HTTP 403 to
+non-browser fetchers (curl, WebFetch), so this rendered read is the only capture obtained.
+Archival: web.archive.org/save/ attempted twice (HTTP 520 both times) -> archive_failed; this file is
+the local copy per protocol 6.4.
+Network note: request made from Turkey network location per study design (deviation D-003/D-007
+currency-check context); no currency symbols or non-USD figures present in this article.
+
+--- BEGIN RENDERED TEXT ---
+Skip to main content
+How can we help?
+Search
+Quillbot Help Center  Account, Subscription & Billing  Premium & Pricing
+Can I get a refund for Quillbot subscription?
+2 months ago Updated
+
+You can cancel your subscription at any time by turning off auto renewal. You will continue to have Premium access through the end of your billing period. However, refunds are issued only if required by law and in accordance with Section 5 in our Terms of Service.
+
+Note: If you purchased your subscription through the Apple App Store or Google Play Store, contact Apple or Google to request a refund.
+
+As a consumer located in the European Economic Area (EEA) and UK, you have the right to withdraw within 14 days of purchase of your Quillbot subscription. Learn more about your right of withdrawal in Section X of our Terms of Service.
+
+Was this article helpful?
+Yes No
+79 out of 352 found this helpful
+Have more questions? Submit a request
+Return to top
+Related articles
+How do I cancel my Premium subscription?
+I canceled my subscription renewal, but my account was still charged
+Will Turnitin detect Quillbot?
+Can I get a special discount or free subscription by request?
+How can I pay for a Premium subscription?
+--- END RENDERED TEXT ---

@@ -1,0 +1,40 @@
+Source: https://sapling.ai/docs/api/pricing
+Accessed: 2026-08-15
+Archive: https://web.archive.org/web/20260815125305/https://sapling.ai/docs/api/pricing/
+
+This page is a Docusaurus tabbed pricing table with one tab per API endpoint (Edits /
+Rephrase / Postprocess, Spellcheck, Autocomplete, Semantic Search, Tone, AI Detector,
+SDK). The default-visible tab is "Edits / Rephrase / Postprocess" ($0.025 / $0.020 /
+$0.015 per 1000 characters by volume tier) -- that rate belongs to Sapling's GRAMMAR
+product, a SIBLING of the AI Detector, and must not be used as this product's figure.
+Clicked the "AI Detector" tab (a documentary interaction -- revealing an already-present
+tab panel, not a purchase/account action) to read the rate that actually applies to this
+product:
+
+"The AI Detector API is currently only available for English. Given some text, the
+Detector API will determine whether or not the text is AI-generated. Please note that
+though we recommend a minimum length for the text (at least 300 characters) it's
+possible to classify the text by sampling portions without evaluating the entire text."
+
+Usage Per Month | Cost Per 1000 Characters
+0-10 million chars | $0.005
+10 million-50 million chars | $0.00375
+50 million-100 million chars | $0.0025
+Over 100 million chars | Contact us
+
+Billing (applies to all API endpoints, including AI Detector):
+"There is a one-time $5 minimum. It is charged immediately when you subscribe and
+applied to your account as a credit toward usage -- it is a minimum, not a surcharge.
+There is no recurring monthly minimum." / "Trial keys are unaffected: you can test the
+API on the free trial quota without a credit card or any charge."
+"Sapling supports both monthly usage billing and prepaid API credits... one API credit
+equals one US dollar" (a 1:1 USD-pegged prepaid balance, not an opaque conversion
+currency -- used as context for credit_system_present, not coded as a credit system).
+
+USED FOR: coder_note context on why the metered API was excluded as an entry-tier
+candidate under sampling-rules.md section 7.2 (no seat concept, no recurring per-seat
+fee to annualize -- usage cost scales from $0 with only a one-time $5 minimum) and why
+credit_system_present is coded "no" for the entry tier actually selected (Pro, which has
+no credits of any kind -- the API's prepaid option is a separate product surface).
+NOT used as this product's headline/first-charge figures, and NOT the tier coded for
+entry_tier_name.

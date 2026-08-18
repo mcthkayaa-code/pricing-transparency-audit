@@ -1,0 +1,117 @@
+Source: https://suno.com/pricing (renders at https://suno.com, SPA)
+Accessed: 2026-08-12
+Locale served: Turkish UI strings, USD currency figures (interface localized, currency not)
+DEFAULT STATE ON LOAD (before any interaction), confirmed via DOM: input[value=year].checked=true,
+aria-checked="true" on the "Annual" radio; "Monthly" radio aria-checked="false", checked=false.
+Screenshot also shows the checkmark glyph next to "Annual" and an open circle next to "Monthly" on load.
+
+=== TEXT CAPTURE, DEFAULT (ANNUAL) STATE ===
+Start making music for free
+Plans for every creator
+Monthly / Annual [SAVE 20%]  <- Annual selected by default (DOM-confirmed)
+
+Ücretsiz Plan (Free Plan) — Başlangıç planımız (our starter plan).
+$0 /ay (per month)
+Kaydol (Sign up)
+- v4.5-all erişimi (v4.5-all access)
+- Her gün yenilenen 50 kredi (50 credits, renewed daily)
+- Aylık şarkı indirme yok (9/3/26'dan itibaren) (No monthly song downloads, effective 9/3/26)
+- Ticari kullanım yok (No commercial use)
+- Yalnızca standart özellikler (Standard features only)
+- 8 dakikaya kadar ses yükleme (Audio upload up to 8 minutes)
+- Ortak üretim kuyruğu (Shared generation queue)
+- Ek kredi satın alma yok (No additional credit purchases)
+- No stem separation
+
+Pro Plan — EN POPÜLER (MOST POPULAR)
+En iyi modellerimize ve düzenleme araçlarımıza erişim.
+$8 /ay   <- annual-billed monthly-equivalent rate (confirmed default state)
+Yıllık faturalandırmayla $24 tasarruf! (Save $24 with annual billing — i.e. vs the $10/mo monthly rate: 10*12=120, 8*12=96, 120-96=24)
+Vergiler ödeme sırasında hesaplanır (Taxes calculated at checkout)
+Abone ol (Subscribe)
+- En iyi ve en kişisel v5.5 modeline erişim
+- 2.500 kredi, her ay yenilenir (2,500 credits, renews every month)
+- Ayda 20 şarkı indirme (9/3/26'dan itibaren) (20 song downloads/month, effective 9/3/26)
+- Yeni yapılan şarkılar için ticari kullanım hakları (Commercial usage rights for newly-made songs)
+- Standart + Pro özellikler (Persona'lar ve gelişmiş düzenleme)
+- 2 stem ayrıştırma türü (Otomatik; Mix'ten ayırma)
+- 30 dakikaya kadar ses yükleme
+- Mevcut şarkılara yeni vokal veya enstrümantal ekleme
+- Yeni özelliklere erken erişim
+- Ek kredi satın alma imkanı (Can purchase additional credits)
+- Öncelikli kuyruk, aynı anda 10 şarkıya kadar (Priority queue, up to 10 songs concurrently)
+- Kendi sesinle kaydet, yükle ve üret / Kendi sesinle v5.5'in özel sürümlerini ayarla (voice recording/custom features)
+
+Premier Plan — EN AVANTAJLI (BEST VALUE)
+Maksimum kredi ve tüm özelliklerin kilidi açık.
+$24 /ay  <- annual-billed monthly-equivalent rate (confirmed default state)
+Yıllık faturalandırmayla $72 tasarruf! (Save $72 with annual billing — vs $30/mo monthly: 30*12=360, 24*12=288, 360-288=72)
+Vergiler ödeme sırasında hesaplanır
+Abone ol
+- Suno Studio erişimi
+- En iyi ve en kişisel v5.5 modeline erişim
+- 10.000 kredi, her ay yenilenir (10,000 credits, renews every month)
+- Ayda 60 şarkı indirme (9/3/26'dan itibaren)
+- Yeni yapılan şarkılar için ticari kullanım hakları
+- Standart + Pro özellikler
+- 3 stem ayrıştırma türü (Otomatik; Mix'ten ayırma ve Gelişmiş ayırma)
+- 30 dakikaya kadar ses yükleme
+- (same remaining features as Pro, plus Suno Studio)
+
+Need More? section (verbatim, this text is in English on the page):
+"Credits included in subscriptions do not carry over from day to day or month to month.
+Purchased top up credits do not expire, but require an active subscription to use.
+See the terms of service for limitations on commercial use.
+Email us at billing@suno.com with any questions."
+
+=== TEXT CAPTURE, MONTHLY STATE (after clicking Monthly toggle, for comparison only —
+default state above was recorded and archived BEFORE this interaction) ===
+Free: $0/ay
+Pro Plan: $10 /ay, "Yıllık ödeyerek tasarruf et!" (Save by paying annually!)
+Premier Plan: $30 /ay, "Yıllık ödeyerek tasarruf et!"
+(Confirms $8/$24 annual figures above are correct: 8*12=96 vs 10*12=120 => $24/yr saved;
+24*12=288 vs 30*12=360 => $72/yr saved. Arithmetic is internally consistent.)
+
+=== FAQ ANSWERS (expanded on pricing page, translated) ===
+Q: "Model sürümleri arasındaki farklar nelerdir?" (What are the differences between model versions?)
+A: Newer models = better audio, richer vocals, more compelling musical ideas. v5.5 is the best
+   audio-quality model with the latest personalization features. Access to newer models is
+   reserved for higher-tier plans.
+
+Q: "Standart ve Pro özellikleri nelerdir?" (What are Standard vs Pro features?)
+A: Standard plans include basic tools: generation with our base model, remix, co-write, short
+   audio uploads. Pro unlocks advanced models, commercial rights, priority queues, deeper
+   editing features, access to new production modes, vocal personas, and stem downloads.
+
+Q: "Şarkılarım için ticari kullanım hakları alıyor muyum?" (Do I get commercial usage rights for my songs?)
+A: "Ücretsiz planlar ticari hakları içermez. Pro veya Premier kullanıyorsan şarkılarını ticari
+   olarak kullanabilirsin; yalnızca paylaştığın her platformun kurallarına uyduğundan emin ol.
+   Üçüncü taraf hizmet şartlarına saygı göstermek senin sorumluluğundadır."
+   = "Free plans do not include commercial rights. If you use Pro or Premier, you can use your
+   songs commercially; just make sure you comply with the rules of each platform you share on.
+   It is your responsibility to respect third-party terms of service."
+
+Q: "Aylık kredilerimi tüketirsem ne olur?" (What happens if I use up my monthly credits?)
+A: "Aboneysen ve aylık kredilerini tüketirsen istediğin zaman ek kredi satın alabilirsin. Ayrıca
+   faturalandırma dönemin yenilenene kadar her gün otomatik olarak 50 bonus kredi alırsın."
+   = "If you're a subscriber and use up your monthly credits, you can buy additional credits at
+   any time. You'll also automatically get 50 bonus credits every day until your billing period
+   renews."
+
+Q: "Planımı yükseltebilir veya düşürebilir miyim?" (Can I upgrade or downgrade my plan?)
+A: "Evet, hesap ayarlarından istediğin zaman plan değiştirebilirsin. Yükseltmeler hemen geçerli
+   olur; düşürmeler ise faturalandırma döneminin sonunda uygulanır."
+   = "Yes, you can change your plan anytime from account settings. Upgrades take effect
+   immediately; downgrades take effect at the end of the billing period."
+
+=== COMPARISON TABLE ("Compare Suno plans") ===
+NOTE: this table's flattened text order showed an internal misalignment (the "Ticari haklar"
+/ commercial-rights row's adjacent text was queue-capacity language that semantically belongs
+to the next row, "Eşzamanlı üretimler" / concurrent generations). Not used as a coding source
+for this reason -- coded commercial-use values instead from the unambiguous plan-card bullet
+lists and FAQ quoted above, both of which agree with each other.
+Row labels visible: Şarkı sayısı (song count: 10/day free, 500/mo Pro, 2000/mo Premier),
+Kullanılabilir modeller (available models), Ticari haklar (commercial rights - row present but
+mis-rendered values, not used), Eşzamanlı üretimler (concurrent generations), Ek krediler
+(additional credits: unavailable free / purchasable Pro+Premier), production/editing feature
+checklists, no watermark row anywhere in this table.

@@ -1,0 +1,112 @@
+product_id: aiclicks
+product_name: AIclicks
+category: AI bot checker
+product_status: active
+paid_submission: "no"
+entry_tier_name: Starter
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-14
+recheck_date: not_applicable
+primary_source_url: https://aiclicks.io/pricing
+archive_url: https://web.archive.org/web/20260814171255/https://aiclicks.io/pricing
+archive_status: archived
+default_display_state: "USD ($, no currency/country selector present anywhere in the fetched documents); billing toggle defaults to Monthly on load (DOM: the Monthly control renders with a solid blue gradient background + box-shadow, the Yearly control renders transparent with no shadow; confirmed by screenshot); no region/geo selector; request geolocated to Turkey per server response header yet USD was served regardless; no cookie-consent banner appeared."
+
+sources:
+  - { url: "https://aiclicks.io/pricing", kind: pricing, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171255/https://aiclicks.io/pricing", note: "primary source; static fetch + rendered browser read + screenshot, three representations cross-checked" }
+  - { url: "https://aiclicks.io/terms-and-conditions", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171234/https://aiclicks.io/terms-and-conditions", note: "read in full, all 13 sections plus embedded Acceptable Use Policy" }
+  - { url: "https://aiclicks.io/privacy-policy", kind: other, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171354/https://aiclicks.io/privacy-policy", note: "checked for ownership/commercial/watermark language; none found" }
+  - { url: "https://aiclicks.io", kind: other, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171408/https://aiclicks.io/", note: "homepage, nav/footer link discovery" }
+  - { url: "https://docs.aiclicks.io/help-center", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171414/https://docs.aiclicks.io/help-center", note: "help center index" }
+  - { url: "https://docs.aiclicks.io/help-center/faq/billing", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171448/https://docs.aiclicks.io/help-center/faq/billing", note: "cancellation self-serve steps" }
+  - { url: "https://docs.aiclicks.io/help-center/troubleshooting/billing", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171519/https://docs.aiclicks.io/help-center/troubleshooting/billing", note: "failed-payment troubleshooting; no refund/credit content" }
+  - { url: "https://docs.aiclicks.io/help-center/troubleshooting/data-and-product", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171545/https://docs.aiclicks.io/help-center/troubleshooting/data-and-product", note: "checked for failed-check/credit language; none found" }
+  - { url: "https://docs.aiclicks.io/metrics-overview", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171649/https://docs.aiclicks.io/metrics-overview", note: "checked for credit/unit definitions; none found" }
+  - { url: "https://docs.aiclicks.io/create-content", kind: docs, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814171736/https://docs.aiclicks.io/create-content", note: "AI-optimized-articles feature doc; checked for ownership/commercial/watermark language; none found" }
+
+variables:
+  headline_price_usd: { value: 59.00, source: "https://aiclicks.io/pricing", evidence: "Starter plan card, default Monthly toggle state: \"$59\" / \"month\". Confirmed in a second representation: the static (unrendered) HTML contains the identical literal \"$59\" once, and a screenshot of the rendered card shows the same figure." }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://aiclicks.io/pricing", evidence: "Starter card shows \"$59\" with a \"/ month\" qualifier while the Monthly toggle is the selected default (no \"billed annually\" wording anywhere on the card); no per-seat language present." }
+  first_charge_amount_usd: { value: 59.00, source: "https://aiclicks.io/pricing", evidence: "Default (Monthly) display state price for the entry tier is $59.00; Terms of Service Sec.11 confirms this is the amount actually charged (\"your subscription becomes active and your card on file is charged automatically\"), with no other fee stated." }
+  mandatory_addon_present: { value: "no", source: "https://aiclicks.io/pricing", evidence: "Reviewed every Starter-tier feature (CMS integration, Email support, tracked-prompts/websites/LLMs/countries/responses/articles limits) and the billing FAQ; no required separate charge, minimum credit purchase, platform fee, or onboarding fee is documented." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "Default display state is Monthly billing ($59/month, charged monthly); the headline figure does not depend on annual prepayment (codebook rule 1), so no annual-prepayment condition attaches to it." }
+  annual_default_toggle: { value: monthly_preselected, source: "https://aiclicks.io/pricing", evidence: "DOM/CSS: the \"Monthly\" toggle wrapper carries a solid blue gradient background plus a box-shadow (selected styling); the \"Yearly / Up to -29%\" wrapper carries background:rgba(0,0,0,0) and box-shadow:none (unselected). Screenshot confirms the Monthly pill filled/highlighted on load, before any interaction. The static server-rendered HTML also contains only a \"Monthly Pricing\" component, no \"Yearly Pricing\" component." }
+  free_plan_exists: { value: "no", source: "https://aiclicks.io/pricing", evidence: "Pricing page lists four tiers only — Starter $59/mo, Pro $189/mo, Business $499/mo, Enterprise Custom — no $0 tier of the core product. Homepage and docs reference only a paid-tier \"3-day free trial\", never a standing free plan." }
+  free_plan_cap_documented: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "No free plan exists; see free_plan_exists." }
+  free_plan_cap_value: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "No free plan exists." }
+  free_plan_watermark: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "No free plan exists." }
+  free_plan_duration: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "No free plan exists." }
+  trial_exists: { value: "yes", source: "https://aiclicks.io/pricing", evidence: "Pricing FAQ: \"Yes. Starter and Pro plans include a 3-day free trial.\" Terms of Service Sec.11: \"AIclicks offers a 3-day free trial for new subscribers.\"" }
+  trial_card_required: { value: "no", source: "https://aiclicks.io/pricing", evidence: "Pricing FAQ, verbatim: \"Yes. Starter and Pro plans include a 3-day free trial. No credit card required to start.\" Coded from the live pricing page, which ranks above the Terms of Service for trial-terms/pricing-class variables (protocol Sec.6.2). This conflicts with Terms of Service wording — see conflict_note." }
+  trial_length_days: { value: 3, source: "https://aiclicks.io/pricing", evidence: "\"3-day trial\" (pricing page CTA and FAQ) and \"3-day free trial\" (Terms of Service Sec.11) agree." }
+  trial_auto_converts: { value: "yes", source: "https://aiclicks.io/terms-and-conditions", evidence: "Terms of Service Sec.11: \"Once the trial ends, your subscription becomes active and your card on file is charged automatically.\" The pricing page does not address post-trial conversion either way." }
+  credit_system_present: { value: "no", source: "https://aiclicks.io/pricing", evidence: "Plan allowances are stated directly in output units — \"Tracked prompts: 30\", \"LLM responses / mo: 4,650\", \"AI-optimized articles per month: 5\" — not an intermediate credit/token/point currency. The docs (metrics-overview) and help center never introduce a \"credit\" unit." }
+  credit_unit_defined: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "No credit system exists; see credit_system_present." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "No credit system exists." }
+  credit_rate_location: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "No credit system exists." }
+  cost_per_output_unit: { value: other, source: "https://aiclicks.io/pricing", evidence: "Named \"tracked prompt/month\" in coder_note. Pricing FAQ: \"Pricing is based on three things: the number of prompts you track, the number of AI engines monitored, and the volume of AI answers analyzed per month.\" None of the codebook's listed units fits a prompt-tracking / AI-visibility-monitoring service." }
+  cost_per_output_computable: { value: "yes", source: "https://aiclicks.io/pricing", evidence: "Starter (entry tier), default Monthly state: $59.00/mo and \"Tracked prompts: 30\" per month are both published on the same page in the same period; 59/30 = 1.9667, no assumption about typical use required." }
+  computation_assumptions: { value: "Starter tier (entry, default Monthly display state): $59.00/mo; 30 tracked prompts/mo included per pricing page. Price and allowance already share one period (monthly), no conversion needed. 59/30=1.9667 => $1.97 per tracked-prompt-month.", source: "https://aiclicks.io/pricing", evidence: "Arithmetic derived from the Starter plan card figures, both read in the default Monthly display state." }
+  credit_rollover_policy: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "No credit system exists." }
+  failed_generation_charge_policy: { value: unknown, source: "https://aiclicks.io/terms-and-conditions", evidence: "Terms of Service, the Help Center (Billing FAQ, Billing troubleshooting, Data & Product troubleshooting) and product docs (metrics-overview, create-content) were read; none states whether a failed or errored prompt check consumes the monthly allowance." }
+  auto_renewal_default: { value: "on", source: "https://aiclicks.io/terms-and-conditions", evidence: "Terms of Service Sec.6 (Payment & Billing): \"Subscriptions renew automatically unless canceled before the renewal date.\"" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://aiclicks.io/terms-and-conditions", evidence: "Explicit \"renew automatically\" wording appears only in Terms of Service Sec.6 and Sec.11; the pricing page and the Help Center billing articles describe cancellation but never state that subscriptions renew automatically." }
+  renewal_notice_commitment: { value: unknown, source: "https://aiclicks.io/terms-and-conditions", evidence: "Terms of Service Payment & Billing and Refunds & Cancellations sections read in full; no commitment to notify before a renewal charge is stated, and none is denied either — silent." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://aiclicks.io/terms-and-conditions", evidence: "Terms of Service Sec.11: \"no refund is issued for charges processed after the trial has ended... Refund requests submitted after the trial period has expired and the billing cycle has begun will not be honored.\"" }
+  refund_window_days: { value: 0, source: "https://aiclicks.io/terms-and-conditions", evidence: "Same Sec.11 language — no refund window of any length once billing begins." }
+  refund_conditions: { value: not_applicable, source: "https://aiclicks.io/terms-and-conditions", evidence: "No refund is available for a condition to attach to; see refund_policy_exists." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://aiclicks.io/terms-and-conditions", evidence: "Terms of Service Sec.11: \"You may cancel your subscription at any time through your account settings.\" Help Center Billing FAQ gives the exact path: \"Go to Billing > Manage Billing > Cancel Subscription in your AIclicks dashboard.\"" }
+  refund_policy_location: { value: terms, source: "https://aiclicks.io/terms-and-conditions", evidence: "Refund position stated only in Terms of Service Sec.11; the Help Center billing FAQ and troubleshooting articles do not mention refunds." }
+  commercial_use_lowest_tier: { value: unknown, source: "https://aiclicks.io/terms-and-conditions", evidence: "The product generates a real content output (\"AI-optimized articles per month\" is listed on every paid tier). Terms of Service (read in full), the pricing page, and the docs \"create-content\" page never address commercial-use rights over this output." }
+  watermark_removal_tier: { value: not_applicable, source: "https://aiclicks.io/pricing", evidence: "The principal, pricing-determining output is the visibility/citation tracking analytics (\"tracked prompts\", \"LLM responses\") — an analysis-table-type deliverable rather than a media artifact a watermark could mark (codebook rule 3's own example). See coder_note for the secondary AI-article-output caveat." }
+  output_ownership_statement: { value: unknown, source: "https://aiclicks.io/terms-and-conditions", evidence: "Terms of Service \"Intellectual Property\" clause covers only AIclicks's own platform/software/branding (\"All content, software, and branding on AIclicks are the intellectual property of AIclicks or its licensors\"); it does not address ownership of the AI-optimized articles or reports generated for the customer." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://aiclicks.io/pricing", evidence: "Starter (entry tier) limits: \"Tracked prompts 30\", \"Websites you can add 1\", \"LLMs you can track 3\", \"Countries per project 1\", \"LLM responses / mo 4,650\", \"AI-optimized articles per month 5\" — every limit carries a number and dimension, with a monthly period for the rate-type ones (also confirmed by the FAQ's \"monthly prompt allowance\" wording)." }
+  unquantified_limit_clause: { value: absent, source: "https://aiclicks.io/terms-and-conditions", evidence: "Terms of Service (all 13 sections) and the embedded Acceptable Use Policy read in full. The only discretionary clause found — \"We reserve the right to suspend or terminate accounts that violate this policy\" — is conduct-based (spam, illegal activity, IP violation, reverse engineering), not a volume/intensity-of-use clause, so it does not trigger `present` under rule 3. No fair-use, reasonable-use, excessive-use, or throttling clause of any kind is present." }
+
+coder_note: |
+  FRAME CORRECTION: the task assignment specified vendor_home_url=https://aiclicks.app,
+  product_name="AIClicks", category="AI SEO". None of these resolve or match
+  frame-for-pass2.csv, which lists vendor_home_url=https://aiclicks.io, product_name="AIclicks",
+  category="AI bot checker". Verified directly: https://aiclicks.app returns a DNS resolution
+  failure ("Could not resolve host"); https://aiclicks.io resolves (HTTP 200) to a live product
+  whose own site title/logo render "AIclicks" (matching the frame exactly) and whose product_id
+  slug matches. Also note "AI SEO" is not one of this study's 15 defined categories
+  (sampling-rules.md Sec.6.1), while the vendor's own Terms of Service literally describes the
+  product as "an AI-SEO platform" -- so the original assignment's category may reflect a genuine
+  positioning read, but frame-for-pass2.csv is the authoritative administrative source per
+  codebook Sec.6 ("Copied from the frozen frame"), so product_name=AIclicks,
+  vendor_home_url=https://aiclicks.io, and category="AI bot checker" were coded throughout,
+  each independently confirmed live and consistent with the frame's product_id.
+
+  ENTRY TIER: three paid tiers were eligible (Enterprise excluded: sales-gated, "Custom"/"Book a
+  Call", no published price). Annual-equivalent cost at the default Monthly display state:
+  Starter 59x12=708.00 (winner), Pro 189x12=2268.00, Business 499x12=5988.00. Starter selected as
+  entry_tier_name.
+
+  DOMAIN E (commercial use / ownership / watermark): the product's principal, pricing-determining
+  output is visibility/citation-tracking analytics (an analysis-table-type deliverable); it also
+  generates "AI-optimized articles" as a secondary content feature on every tier. Coded
+  watermark_removal_tier=not_applicable on the principal-output test, whose own codebook example is
+  "a detection score or an analysis table" -- but coded commercial_use_lowest_tier and
+  output_ownership_statement=unknown rather than not_applicable, because their own not_applicable
+  tests require NO output at all that such a right/ownership question could attach to, and the
+  AI-generated articles are a real content output the documents never address for either rights or
+  ownership. Readers who weigh "articles" as the principal output instead would reach
+  watermark_removal_tier=unknown by the same logic as the other two.
+
+  TOGGLE: attempted to switch the pricing page's Yearly toggle (permitted under protocol Sec.6.3)
+  by direct click at its on-screen coordinates and by a JS .click() dispatch on its DOM container;
+  the control never visibly changed state across repeated attempts, so no annual-price figures
+  could be read from this page. Not needed for any coded value, since the default (and therefore
+  governing) state throughout is Monthly.
+
+  CURRENCY: no currency or country selector is present; only "$" figures appear anywhere in the
+  fetched documents. A server response header showed the request geolocated to Turkey, yet the
+  page served the same USD figures regardless, consistent with one global USD price rather than
+  localized/geo-priced pricing.
+
+  blindness: no other record, no review page, no pass-1 material was opened.
+conflict_note: "Pricing page (https://aiclicks.io/pricing) FAQ states, verbatim: \"Yes. Starter and Pro plans include a 3-day free trial. No credit card required to start.\" Terms of Service (https://aiclicks.io/terms-and-conditions, Sec.11 Refunds & Cancellations) states, verbatim: \"AIclicks offers a 3-day free trial for new subscribers. During this trial period, your card is not charged. Once the trial ends, your subscription becomes active and your card on file is charged automatically. This is clearly communicated at the time of signup, on the pricing page, and within the checkout session before completing registration.\" The Terms' \"card on file\" / \"charged automatically\" language implies a card is collected before or during the trial, which is incompatible with the pricing page's explicit \"No credit card required to start\" -- and the Terms' own claim that this mechanism 'is clearly communicated... on the pricing page' is not borne out by the pricing page's FAQ wording. Coded trial_card_required=no from the pricing page per the source hierarchy (live pricing page ranks first for trial-terms/pricing-class variables, protocol Sec.6.2) rather than resolved by inference."
+register_events: []
+status: complete

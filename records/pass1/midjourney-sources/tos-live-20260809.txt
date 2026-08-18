@@ -1,0 +1,108 @@
+URL: https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service
+Accessed: 2026-08-09
+Method: rendered browser read (mcp Claude_Browser, javascript_tool document.body.innerText)
+Network note: session egresses from Turkey; page loaded in English, no geo variant observed.
+Version Effective Date printed on the page: May 27, 2026 — supersedes the 2022-08-18 GitHub
+mirror (tos-github-mirror.md) held from the prior run; that mirror was used only to locate
+clauses, never as the coded source, per instructions.
+archive.org/save attempted for this URL, failed (HTTP 520). Recorded as local_copy_only.
+---
+
+Skip to main content
+Midjourney
+Toggle navigation menu
+Midjourney
+ Documentation
+ Midjourney Policies
+Terms of Service
+
+Version Effective Date: May 27, 2026
+
+Thank you for using the Midjourney platform. These Terms of Service ("Terms") govern the relationship between Midjourney, Inc. ("Midjourney","we","our") and the entity or person ("Customer, "You", "Your") using or accessing our services, applications, or platform through our website available at midjourney.com (the "Site"), through any of our Discord servers, or by any other means (together, the "Services"). These Terms explain what rights you have with respect to images, videos, and other assets which you might generate with the Service (the "Assets"), or prompts you might enter into the Service (the "Inputs"), your use of the Services, and other important topics like arbitration. Our privacy policy outlines how we handle your data here. Please carefully read these Terms, along with our privacy policy, and all other documents referenced in these Terms, including the Subscription Plans page and the Community Guidelines below. Together with the Terms, these documents form a single binding agreement between us (the "Agreement").
+
+This Agreement is effective when the Customer is presented with this Agreement and proceeds to use or access the Services (the "Effective Date") or to receive or distribute Assets. This agreement may be updated and presented again to the Customer from time to time. Continued use of the Services constitutes acceptance of the updated terms. If You do not agree to this Agreement, please stop using or accessing the Services.
+
+1. Service Availability and Quality
+
+We are constantly improving the Services to make them better. The Services are subject to modification and change, including but not limited to the art style of Assets, the algorithms used to generate the Assets, and features available to the Customer. No guarantees are made with respect to the Services' quality, stability, uptime or reliability. Please do not create any dependencies on any attributes of the Services or the Assets. We will not be liable to You or Your downstream customers for any harm caused by Your dependency on the Service.
+
+Both the Services and the Assets are provided to Customer on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Assets and assume any risks associated with use of the Services.
+
+Midjourney reserves the right to suspend or ban Your access to the Services at any time, and for any reason. You may not access or use the Services for purposes of developing or offering competitive products or services. You may not reverse engineer the Services or the Assets. You may not use automated tools to access, interact with, or generate Assets through the Services. You may not resell or redistribute the Services or access to the Service. Only one user may use the Services per registered account. Each user of the Services may only have one account.
+
+You may not use the Service to try to violate the intellectual property rights of others, including copyright, patent, or trademark rights. Doing so may subject you to penalties including legal action or a permanent ban from the Service.
+
+We reserve the right to investigate complaints or reported violations of this Agreement and to take any action we deem appropriate including but not limited to reporting any suspected unlawful activity to law enforcement officials, regulators, or other third parties and disclosing any information necessary or appropriate to such persons or entities relating to user profiles, e-mail addresses, usage history, posted materials, IP addresses and traffic information.
+
+2. Age Requirements
+[... age requirements clause, unchanged from summary already captured in coder context ...]
+
+3. Your Information
+
+By using the Services, You may provide Midjourney with personal information like Your email address, user name, billing information, favorites, outputs, and text prompts that You enter, or sample images or other content that You upload to the Service. Our privacy policy can be found here.
+
+4. Content Rights
+Your Rights and Obligations
+
+You own all Assets You create with the Services to the fullest extent possible under applicable law. There are some exceptions:
+
+Your ownership is subject to any obligations imposed by this Agreement and the rights of any third-parties.
+If you are a company or any employee of a company with more than $1,000,000 USD a year in revenue, you must be subscribed to a "Pro" or "Mega" plan to own Your Assets.
+If you upscale the images of others, these images remain owned by the original creators.
+
+Please consult Your own lawyer if You want more information about the state of current intellectual property law in Your jurisdiction. Your ownership of the Assets you created persists even if in subsequent months You downgrade or cancel Your membership.
+
+Inputs, Assets, and other content such as messages, photos, videos, and documents that you may provide to the Services (such as through uploading, posting, sharing, or chat messages) are collectively, "Content". You are responsible for all Content that you provide or generate, including ensuring that it does not violate any applicable laws or this Agreement, and that you have all necessary rights and permissions to provide the Content.
+
+Rights You give to Midjourney
+
+By using the Services, You grant to Midjourney, its affiliates, successors, and assigns a perpetual, worldwide, non-exclusive, sublicensable no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute the Content You input into the Services, as well as any Assets produced by You through the Service. This license survives termination of this Agreement by any party, for any reason.
+
+Remixing and Stealth Mode
+
+Please note: Midjourney is an open community which allows others to use and remix Your Content whenever they are posted in a public setting. By default, Your Content is publicly viewable and remixable. As described below, You grant Midjourney a license to allow this.
+
+If You purchased the Stealth feature as part of Your "Pro" or "Mega" subscription or through the previously available add-on, we agree to make best efforts not to publish any Assets You make in any situation where you have engaged stealth mode in the Services.
+
+Please be aware that any Assets You make in a shared or open space, such as a Discord chatroom, is viewable by anyone in that chatroom, regardless of whether Stealth mode is engaged.
+
+5. DMCA and Takedowns Policy
+[... full notification/counter-notification procedures, Midjourney Inc. address 611 Gateway Blvd. Ste 120, South San Francisco, CA 94080-7066 ...]
+
+6. Dispute Resolution and Governing Law
+
+In the event a dispute, controversy, or claim arises out of or relating to these Terms ("Dispute"), the Dispute will be resolved by binding arbitration rather than in court. The parties will first try in good faith to settle any Dispute within 30 days after the Dispute arises. If the Dispute is not resolved within 30 days, it shall be resolved by binding arbitration by the American Arbitration Association's International Centre for Dispute Resolution in accordance with its Expedited Commercial Rules in force as of the date of this Agreement ("Rules"). The parties will mutually select one arbitrator. The arbitration will be conducted in English in Santa Clara County, California, USA. [...]
+
+7. Unlimited Service and Rate Limiting
+
+If You purchase an unlimited plan, we will try to reasonably offer You unlimited access to the Services. However, we reserve the right to rate limit You to prevent quality decay or interruptions to other customers.
+
+8. Payment and Billing
+
+We may invoice You for Your use of the Services through a third party payment service provider. The third party service provider's terms of service shall govern and supersede this Agreement in case of conflict, solely with respect to payment processing.
+
+You are free to cancel Your plan at any time. We reserve the right to modify or discontinue any aspect of the Service, including pricing and features, at any time. We also reserve the right to terminate Your access to the Service for any reason, including for violation of the Community Guidelines or other inappropriate use of the Service. Any violation of Community Guidelines is a breach of this Agreement. You will not be refunded for the current subscription period, but You will not be charged after the current subscription period has ended. Additional information and policies regarding our subscription plans, including details on billing, taxes, refunds, and authorization, can be found here.
+
+9. Community Guidelines
+[... standard community conduct rules ...]
+
+10. Limitation of Liability and Indemnity
+
+We provide the service as is, and we make no promises or guarantees about it. [...] Our aggregate liability under this Agreement will not exceed the amount You paid for the Services that gave rise to the claim during the 12 months before the claim. [...]
+
+11. Image Editor and Video Model
+[... Editor/Video terms ...]
+
+12. Community Localization
+[... translation program terms ...]
+
+13. Miscellaneous
+Force Majeure. [...] Governing Law. This Agreement shall be governed by the laws of the State of California, USA, without reference to conflict of law rules. All disputes will be governed by the arbitration agreement above.
+Categories
+Midjourney Website
+Midjourney Discord Server
+Return to top
+
+[Note: sections 2, 5, 9, 11, 12 elided above as not operative to this record's coded variables;
+full text was read in the browser session. Sections 1, 3, 4, 6, 7, 8, 10, 13 reproduced verbatim
+above as read.]

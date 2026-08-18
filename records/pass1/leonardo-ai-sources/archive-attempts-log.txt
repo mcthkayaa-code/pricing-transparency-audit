@@ -1,0 +1,19 @@
+web.archive.org/save/<url> attempts, 2026-08-09. Two attempts per URL, per survivability cap.
+
+SUCCEEDED (archive_status: archived):
+- https://intercom.help/leonardo-ai/en/articles/8044033-token-usage
+  -> https://web.archive.org/web/20260809175405/https://intercom.help/leonardo-ai/en/articles/8044033-token-usage
+- https://intercom.help/leonardo-ai/en/articles/9560707-token-rollover
+  -> https://web.archive.org/web/20260809175422/https://intercom.help/leonardo-ai/en/articles/9560707-token-rollover
+- https://intercom.help/leonardo-ai/en/articles/9035057-how-can-i-cancel-my-account-unsubscribe
+  -> https://web.archive.org/web/20260809175441/https://intercom.help/leonardo-ai/en/articles/9035057-how-can-i-cancel-my-account-unsubscribe
+- https://docs.leonardo.ai/docs/pricing-and-plans-faq
+  -> https://web.archive.org/web/20260809175532/https://docs.leonardo.ai/docs/pricing-and-plans-faq
+
+FAILED both attempts -> archive_status: local_copy_only (full verbatim/rendered local copy saved in this directory):
+- https://leonardo.ai/pricing (HTTP 520 both attempts -- likely Cloudflare blocking IA's crawler too; local copy: pricing-page-rendered-2026-08-09.txt)
+- https://leonardo.ai/terms-of-service (HTTP 520 both attempts; local copy: terms-of-service-rendered-2026-08-09.txt)
+- https://leonardo.ai/refund-policy (HTTP 520 both attempts; local copy: refund-policy-rendered-2026-08-09.txt)
+- https://intercom.help/leonardo-ai/en/articles/8044018-commercial-usage (HTTP 429 both attempts, rate-limited; local copy: help-center-articles-2026-08-09.txt)
+- https://intercom.help/leonardo-ai/en/articles/7051613-frequently-asked-questions (HTTP 429 both attempts; local copy: help-center-articles-2026-08-09.txt)
+- https://intercom.help/leonardo-ai/en/articles/9044700-tokens-frequently-asked-questions (HTTP 000 then 429; local copy: help-center-articles-2026-08-09.txt)

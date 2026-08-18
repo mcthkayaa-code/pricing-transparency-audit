@@ -1,0 +1,35 @@
+URL: https://quillbot.com/upgrade/teams
+Accessed: 2026-08-10
+Archived: https://web.archive.org/web/20260810111231/https://quillbot.com/upgrade/teams
+Method: browser render, document.body.innerText, no interaction before recording.
+Purpose: Team is a candidate for entry_tier_name under sampling-rules 7.2 and is also the tier that
+determines commercial_use_lowest_tier / watermark_removal_tier upper bound. Reached via the "Explore
+Team Plan" link on the main pricing page; no account, login, checkout, or payment info was used to
+view this page -- it is a public marketing/pricing page reachable from official navigation.
+
+--- BEGIN RENDERED TEXT ---
+Rewrite the way your team works
+When your team writes better, they work better. Quillbot helps teams communicate with clarity and
+confidence so ideas get sharper, decisions come faster, and work flows smoother.
+
+Seats | Price
+2-10   | $3.75 USD/month/seat | $44.95 billed every 12 months | Save 10%
+11-50  | $3.33 USD/month/seat | $39.95 billed every 12 months | Save 20%
+51+    | $2.91 USD/month/seat | $34.95 billed every 12 months | Best Value, Save 30%
+
+Your plan includes: All Premium features / Writer-management dashboards / Centralized billing
+
+Terms and Privacy Policy Update
+Please review our updated Learneo Terms of Service, Service Terms, and Privacy Policy, effective
+August 21, 2026...
+
+Continue
+--- END RENDERED TEXT ---
+
+Eligibility read against sampling-rules.md 7.2: no "contact sales" gate is shown for any of the three
+seat bands; the page proceeds straight to a "Continue" action typical of self-serve checkout. Minimum
+purchasable block is 2 seats (no true single-seat Team option), so per the "basis breakdown" rule 3
+("Where a plan sells a minimum seat block, annualize the minimum block... since a buyer cannot buy
+less"), Team's entry cost is evaluated at its real minimum: 2 seats x $44.95/seat/year = $89.90/year,
+which is higher than Premium's $49.95/year. Team therefore loses to Premium as the entry paid tier;
+recorded in coder_note as the losing candidate.

@@ -1,0 +1,157 @@
+product_id: zety
+product_name: Zety
+category: AI resume builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: Annual Package
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://zety.com/pricing
+archive_url: https://web.archive.org/web/20260813152326/https://zety.com/pricing
+archive_status: archived
+default_display_state: "USD ($); no monthly/annual toggle -- three standing plan cards (Basic, Pro, Annual) render simultaneously; read from a Turkey-based network with no currency localization observed; non-essential cookies declined."
+
+sources:
+  - { url: "https://zety.com/pricing", kind: pricing, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813152326/https://zety.com/pricing", note: "static WebFetch and curl both failed to connect after two attempts each; coded from a rendered browser read per D-005, confirmed in a second representation (raw innerText + DOM class inspection)." }
+  - { url: "https://zety.com/terms-of-service", kind: tos, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813152322/https://zety.com/terms-of-service", note: "full ~105,000-character document read in full, including the F2 unquantified-limit-clause search." }
+  - { url: "https://zety.com/blog/zety-faq", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813152430/https://zety.com/blog/zety-faq", note: "official vendor blog FAQ; source of the 7-day refund figure and the cancellation route." }
+
+variables:
+  headline_price_usd: { value: 5.95, source: "https://zety.com/pricing", evidence: "Annual Package -- $5.95/month" }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://zety.com/pricing", evidence: "$5.95/month. Pay $71.40 at once, save 77%. Auto-renews each year." }
+  first_charge_amount_usd: { value: 71.40, source: "https://zety.com/pricing", evidence: "Pay $71.40 at once, save 77%." }
+  mandatory_addon_present: { value: "no", source: "https://zety.com/terms-of-service", evidence: "Provider may offer certain premium services such as Resume Review, Resume Writing, Premium Career Report and Cover Letter Writing, which may not be included in the cost of Provider's basic subscription services -- these are optional upsells, not required for the Annual Package as advertised." }
+  annual_condition_disclosure: { value: adjacent, source: "https://zety.com/pricing", evidence: "Pay $71.40 at once, save 77%. Auto-renews each year. Cancel anytime. -- printed directly beneath $5.95/month inside the same Annual Package price card." }
+  annual_default_toggle: { value: no_toggle, source: "https://zety.com/pricing", evidence: "Basic Package / Pro Package / Annual Package render as three simultaneous standing cards; no monthly-annual switch control is present on the page." }
+  free_plan_exists: { value: "yes", source: "https://zety.com/pricing", evidence: "Basic Package -- FREE -- Start building your resume today for free." }
+  free_plan_cap_documented: { value: none_quantified, source: "https://zety.com/pricing", evidence: "Basic Package's feature grid marks 'Unlimited Downloads, Prints and edits', 'Resume Check' and 'Instant Job Matches' check-inactive (excluded), against check-active on Pro/Annual, with no number given for any of the three restrictions." }
+  free_plan_cap_value: { value: not_applicable, source: "https://zety.com/pricing", evidence: "no quantified figure is published for any free-plan restriction; see coder_note on this judgment call." }
+  free_plan_watermark: { value: unknown, source: "https://zety.com/terms-of-service", evidence: "no statement found on watermarking of free (TXT) or paid (PDF/Word) outputs in the pricing page, terms of service, or official FAQ." }
+  free_plan_duration: { value: perpetual, source: "https://zety.com/pricing", evidence: "Basic Package is shown as a standing tier alongside Pro/Annual with no expiry stated anywhere in the documents." }
+  trial_exists: { value: "yes", source: "https://zety.com/pricing", evidence: "Pro Package -- With a 14 day trial for: $1.70" }
+  trial_card_required: { value: unknown, source: "https://zety.com/pricing", evidence: "no statement found on whether payment details are required to start the 14-day trial, in the pricing page, terms of service, or FAQ; inference from the existence of the $1.70 charge is barred by rule." }
+  trial_length_days: { value: 14, source: "https://zety.com/pricing", evidence: "With a 14 day trial for: $1.70 -- see coder_note (A-012) on why this is coded from Pro Package though Annual Package is the entry tier." }
+  trial_auto_converts: { value: "yes", source: "https://zety.com/pricing", evidence: "After 14 days, auto-renews at $23.95 billed every 4 weeks." }
+  credit_system_present: { value: "no", source: "https://zety.com/terms-of-service", evidence: "flat-rate subscription access; no credits, tokens, points or generation-metering unit described anywhere in the pricing page or terms of service." }
+  credit_unit_defined: { value: not_applicable, source: "https://zety.com/terms-of-service", evidence: "no credit system present." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://zety.com/terms-of-service", evidence: "no credit system present." }
+  credit_rate_location: { value: not_applicable, source: "https://zety.com/terms-of-service", evidence: "no credit system present." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://zety.com/pricing", evidence: "unmetered single-user subscription access to the resume/cover-letter builder; no per-output metering of any kind." }
+  cost_per_output_computable: { value: "yes", source: "https://zety.com/pricing", evidence: "Annual Package $5.95/month per default display state; unmetered single-seat access needs no unpublished figure or usage assumption to state a cost per seat-month." }
+  computation_assumptions: { value: "Annual Package (entry tier): $5.95/mo per default display state (per_month_billed_annually; $71.40/yr as directly stated, not multiplied). Unmetered single-seat access, no credit system, so cost_per_seat_month = headline price = 5.95 (already monthly, no period conversion needed). first_charge_amount_usd (71.40) was read directly from the page, not computed.", source: "https://zety.com/pricing", evidence: "Pay $71.40 at once, save 77%. Auto-renews each year." }
+  credit_rollover_policy: { value: not_applicable, source: "https://zety.com/terms-of-service", evidence: "no credit system present." }
+  failed_generation_charge_policy: { value: not_applicable, source: "https://zety.com/terms-of-service", evidence: "no metered generation step; AI-assisted suggestions are part of flat-rate access (ToS Section H, Artificial Intelligence and other Machine Learning Tools), not individually charged or credited." }
+  auto_renewal_default: { value: "on", source: "https://zety.com/terms-of-service", evidence: "Once your subscription is active, it will automatically renew as described on the offer page until you terminate the contract. -- corroborated on the pricing page: 'Auto-renews each year. Cancel anytime.'" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://zety.com/terms-of-service", evidence: "stated in Terms of Service Section 9 (Payments and Subscriptions) and on the pricing page itself ('Auto-renews each year. Cancel anytime.')." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://zety.com/terms-of-service", evidence: "the only advance-notice commitment found covers PRICE CHANGES ('In case there is a price change you will be notified in advance and provided a period of time to manage your subscription'), not routine renewal charges at an unchanged price." }
+  refund_policy_exists: { value: "yes", source: "https://zety.com/blog/zety-faq", evidence: "Yes, Zety can refund your money if you're not happy with the services you received." }
+  refund_window_days: { value: 7, source: "https://zety.com/blog/zety-faq", evidence: "the first 7 days of purchase, you can receive a full refund, no questions asked" }
+  refund_conditions: { value: unconditional, source: "https://zety.com/blog/zety-faq", evidence: "the first 7 days of purchase, you can receive a full refund, no questions asked -- see coder_note on the narrower conditional path that applies after day 7." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://zety.com/terms-of-service", evidence: "You may cancel your subscription anytime by contacting our customer service department or by going to the online cancel page under your settings page." }
+  refund_policy_location: { value: multiple, source: "https://zety.com/terms-of-service", evidence: "general refund-on-cancellation-within-the-initial-period clause in Terms of Service Section 10, with the operative 7-day figure in the official FAQ blog." }
+  commercial_use_lowest_tier: { value: not_granted, source: "https://zety.com/terms-of-service", evidence: "You may copy, access, download and display Materials and all other content displayed on the Service for non-commercial, personal or entertainment use ... may not otherwise be ... used in any way unless specifically authorized by Provider." }
+  watermark_removal_tier: { value: unknown, source: "https://zety.com/terms-of-service", evidence: "no statement found regarding watermarking at any tier, in the pricing page, terms of service, or FAQ." }
+  output_ownership_statement: { value: user_owns, source: "https://zety.com/terms-of-service", evidence: "For clarity, you retain ownership of your User Content at all times." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://zety.com/pricing", evidence: "Annual Package includes 'Unlimited Downloads, Prints and edits' (check-active in the feature grid); no qualifying fair-use or discretionary clause was found in a full read of the terms of service." }
+  unquantified_limit_clause: { value: absent, source: "https://zety.com/terms-of-service", evidence: "the full terms of use and its acceptable-use policy (Section 7, System Abuse) were read in full; the System Abuse clauses prohibit specific CONDUCT (spamming, scraping, hacking) rather than imposing a volume/intensity usage limit, and no fair-use, reasonable-use or excessive-use clause was found anywhere in the document." }
+
+coder_note: |
+  ENTRY TIER SELECTION (sampling-rules 7.2): two paid-tier candidates appear on the pricing
+  page -- Pro Package and Annual Package (Basic Package is the free tier, coded separately
+  under domain 3). Pro Package's headline is a 14-day, $1.70 intro price that auto-renews at
+  $23.95 billed every 4 weeks ("After 14 days, auto-renews at $23.95 billed every 4 weeks.").
+  Annualizing the $1.70 teaser itself would be a reading error consistent with the A-012
+  warning (the teaser is a time-limited intro price, not an ongoing rate); the RECURRING
+  post-trial rate was annualized instead for the entry-tier price comparison only:
+  $23.95 x (365/28) = approx $312.20/yr (approx $311.35/yr on a flat 13-cycle convention) --
+  decisively higher than Annual Package's stated $71.40/yr. Annual Package is therefore coded
+  as the entry tier. Losing candidate: Pro Package, annual-equivalent approx $311-312 on its
+  recurring rate; feature sets are otherwise identical between Pro and Annual per the DOM
+  check-active/check-inactive comparison.
+
+  A-012: Zety's Pro Package sells a paid (non-free), time-limited intro period ($1.70 / 14
+  days) that auto-converts to a materially higher recurring charge ($23.95/4wk). trial_exists
+  is defined as a FREE trial; this intro period is not free, so the instrument does not
+  cleanly cover it. trial_exists / trial_length_days / trial_auto_converts are coded "yes" /
+  14 / "yes" because the vendor's own pricing page explicitly labels this a "trial", and
+  trial_exists rule 3 (code "no" where documents "mention no trial") does not fit since a
+  trial plainly IS mentioned, just a paid one. trial_card_required is coded unknown per the
+  explicit rule barring inference from the existence of a charge. Separately: trial_length_days
+  is listed as an entry-tier variable (codebook 5.2), and the chosen entry tier (Annual
+  Package) itself carries no trial at all -- only Pro Package does. Coding
+  trial_length_days = not_applicable in strict entry-tier terms would create protocol 8.3.3's
+  B3 "impossible pair" against trial_exists = yes. Since the product documents exactly one
+  trial, with no tier-by-tier length variation to choose between, trial_length_days is coded
+  from Pro Package's trial (the only trial documented anywhere) rather than not_applicable, to
+  avoid an unreachable combination. Flagging for adjudication alongside other A-012 records.
+
+  Conversion-rate vs. straight-subscription comparison (per the A-012 instruction to record
+  both): the intro period converts to $23.95/4wk (approx $311-312/yr, approx $25.95/mo
+  equivalent), against the straight, no-trial Annual Package subscription at $71.40/yr
+  ($5.95/mo) -- a ratio of approximately 4.4x. Both figures sourced from
+  https://zety.com/pricing, read 2026-08-13.
+
+  MANDATORY_ADDON: Terms of Service Section 9 names optional premium upsells (Resume Review,
+  Resume Writing, Premium Career Report, Cover Letter Writing) "which may not be included in
+  the cost of Provider's basic subscription services" -- these are optional add-ons, not
+  required to use the Annual Package's advertised features, so mandatory_addon_present = no.
+
+  FREE_PLAN_CAP_VALUE: free_plan_cap_documented = none_quantified because the feature grid
+  documents that Basic (free) lacks three features relative to the paid tiers (unlimited
+  downloads/prints/edits, resume check, instant job matches) but no document gives a number
+  for any of these restrictions. With nothing quantified to record, free_plan_cap_value is
+  coded not_applicable as the closest fit -- the codebook does not name a distinct value for
+  "restrictions described, none quantified" on this specific field, so this is a judgment
+  call, flagged here per instruction rather than silently picked.
+
+  REFUND POLICY: Terms of Service Section 10 states a refund is available if cancellation
+  notice is given "before the end of the initial period, if the initial period is offered"
+  without naming a day count; the official FAQ blog gives the operative figure: "the first 7
+  days of purchase, you can receive a full refund, no questions asked". The two documents are
+  read as complementary (ToS states the general rule, the FAQ states the number), not
+  conflicting -- no incompatible figures were found between them. A second, narrower
+  conditional path exists after the 7-day window ("after 7 days of purchase, you may receive
+  a refund if you haven't downloaded any files while your account was active"), noted here but
+  not folded into refund_window_days/refund_conditions, which record the clearer, primary
+  7-day / no-questions-asked terms.
+
+  CURRENCY: the pricing page rendered in USD ($) directly from the Turkey-based collection
+  network, with no localization observed at any point. No D-003/D-007 currency-check arms
+  were needed since the page never showed a non-USD figure to check against.
+
+  FETCH METHOD: static WebFetch (two attempts) and curl (two attempts, both --http1.1 and
+  default) all failed to connect to zety.com on every path tried (pricing, terms-of-service),
+  timing out or returning a connect error; every pricing-page-sourced value here is coded from
+  a rendered browser read instead, per the D-005 rule. Price figures were confirmed in a
+  second representation beyond the tool's own text extraction: raw document.body.innerText
+  and DOM className inspection (check-active/check-inactive per feature row) via
+  javascript_tool, both matching the get_page_text extraction exactly -- no superscript-cents
+  or duplicated-row misread risk found (D-009 check).
+
+  COOKIE CONSENT: the page presented a layered cookie-consent widget; non-essential
+  categories (Analytics, Performance and Personalization, Advertising) were left unchecked and
+  "Save Preferences" was selected, plus Escape and the widget's own "Got it!" control were
+  tried -- the modal's visual dismissal was unreliable (apparent rendering glitch; background
+  content kept updating live behind it, confirming the page itself was not hung) but page
+  content was read via DOM text extraction, unaffected by the overlay. The page was read in
+  the declined-non-essential-cookies condition per protocol 6.8 rule 5.
+
+  https://zety.com/pricing serves/redirects to https://zety.com (page title reads "Zety
+  Pricing: Affordable Plans for Professional Resumes"); recorded as the pricing source per the
+  frame's vendor domain and archived under the /pricing URL.
+
+  Bold.Pro ("Premium Tools" row) shows check-active on ALL THREE tiers including the free
+  Basic Package -- noted for transparency though it does not affect any coded value here (not
+  a mandatory add-on; appears to be an always-included networking/profile feature independent
+  of subscription tier).
+
+  Parent company context (not used to code any value): the Terms of Service name "BOLD LLC" as
+  the contracting party, with "Auxiliant S.a.r.l" as a possible merchant of record; the site
+  footer copyright reads "(c) 2026 Works Limited."
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: not_applicable
+register_events: []
+status: complete

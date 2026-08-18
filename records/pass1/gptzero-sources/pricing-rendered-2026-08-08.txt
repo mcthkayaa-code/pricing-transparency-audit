@@ -1,0 +1,61 @@
+# RENDERED CAPTURE — evidence file (deviation D-005)
+# url: https://gptzero.me/pricing
+# captured: 2026-08-08 by the orchestrator, ordinary browser page load (no account,
+#   no login, no checkout — the page's own scripts render these figures for any visitor)
+# network: collection host egresses from Turkey; figures render in TRY (see D-003)
+# method: browser render, document.body.innerText
+
+GPTZero
+
+Words that matter start with the right plan
+
+Annual (Save 45%)
+Monthly
+PREMIUM
+MOST POPULAR
+TRY 549/ month, billed annually
+300.000 words per month
+Up to 300,000 words per month
+Advanced AI Scan
+Multilingual AI detection
+Download AI reports
+AI Highlights in Chrome Extension
+Choose Plan
+PROFESSIONAL
+TRY 1,049/ month, billed annually
+500.000 words per month
+All of Premium
+Up to 2 million words overage
+Scan up to 250 files at once
+Page by page scanning
+Enterprise grade security LMS Integration
+Choose Plan
+
+Trusted by over 10 million teachers and students
+Used in over 100 countries
+Official AI detector partners of the American Federation of Teachers
+
+Enterprise and Team Plans
+Purchase multiple plans at once for your organization.
+Everything you get with a Professional plan, for everyone.
+Shared team credits
+Unified billing
+Create a team
+Contact Sales
+
+Professional Plan
+Billing Cycle
+Annual
+(Save 45%)
+Seats
+TRY 2,098/mo
+billed annually
+TRY 1,049/mo x 2 members
+Save TRY 21,600/year
+Purchase Seats
+
+API for developers
+A powerful API Integration seamlessly integrates our AI detector into any platform.
+Ready-to-use code available in 17 different languages.
+View Pricing
+Contact Sales

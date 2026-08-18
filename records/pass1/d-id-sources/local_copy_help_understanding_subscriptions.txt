@@ -1,0 +1,36 @@
+LOCAL COPY (archive_status: local_copy_only)
+Source URL: https://help.d-id.com/hc/en-us/articles/31234293852433-Understanding-subscriptions-key-information-you-should-know
+Access date: 2026-08-07
+Retrieval method: rendered page text captured via browser (get_page_text), since the page returns HTTP 403 to scripted curl/WebFetch requests and web.archive.org/save returned HTTP 520 on three attempts (bot protection on Zendesk-hosted help center).
+Page title: "Understanding subscriptions: key information you should know – D-ID Help Center"
+---
+D-ID Help Center  Account & Billing
+Articles in this section
+Understanding subscriptions: key information you should know
+
+D-ID offers a range of subscription plans designed to fit different needs — from individuals to large-scale enterprises.
+
+Available plans:
+Free Trial – 14 days of unlimited use
+Lite, Pro, Advanced – Paid Studio plans with increasing features and credits
+Enterprise – Custom plan tailored for high-volume or advanced use cases
+
+You can view a full feature comparison on our Pricing page.
+
+Subscription types: Monthly vs. Annual
+
+Annual Plans
+Billed annually at a discounted monthly rate
+Credits are issued monthly on your billing date
+To get more monthly credits, upgrade to a higher-tier annual plan
+
+Monthly Plans
+Billed every month at the standard monthly rate
+Credits are issued on your monthly billing date
+You can increase your credits by upgrading to a higher monthly plan or switching to an annual plan
+
+Studio vs. API Plans
+Studio Plans - Ideal for users who prefer a visual interface to: Upload images / Type or upload scripts / Generate and manage videos easily
+API Plans - Designed for developers who want to generate videos via code, with access to more programmatic flexibility. Each API plan comes with its own pricing, credit allocation, and features.
+
+For detailed subscription plan information, visit our pricing pages here: Studio Pricing / API Pricing

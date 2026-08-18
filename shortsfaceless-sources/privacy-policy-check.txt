@@ -1,0 +1,21 @@
+SOURCE: https://www.shortsfaceless.com/privacy-policy
+ACCESSED: 2026-08-12
+METHOD: Rendered read via browser preview (Claude_Browser), JS keyword search against
+  document.body.innerText (5,878 chars, standard privacy-policy content: data collected,
+  cookies, third-party processors, contact).
+  Archive: 1 attempt, SUCCEEDED. archive_url:
+  https://web.archive.org/web/20260812142859/https://www.shortsfaceless.com/privacy-policy
+  archive_status: archived. Verified snapshot contains the intro sentence "committed to
+  protecting" post-capture.
+PURPOSE: Checked as a possible location for billing/renewal/refund terms. No coded value in
+  the record is sourced from this page; it is listed here only to document that it was opened
+  and found silent, supporting the "documents read in full, none states it" basis for several
+  `unknown`/`absent` codings.
+
+=== KEYWORD SEARCH (JS regex, whole-document innerText, case-insensitive counts) ===
+renew: 0 | cancel: 0 | subscription: 0 | recurring: 0 | refund: 0 | money back / money-back: 0
+| chargeback: 0 | dispute: 0 | terminate: 0 | billing cycle: 0 | auto-renew: 0 |
+automatically: 0 | watermark: 0 | fair use: 0 | excessive: 0 | throttl(e): 0 | commercial: 0 |
+credit: 0
+=> No billing, renewal, refund, credit, or usage-limit content of any kind. Standard privacy
+policy only (data collected, cookies/analytics tools named as PostHog and Plausible, contact).

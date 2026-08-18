@@ -1,0 +1,25 @@
+URL: https://www.jobscan.co/saas-agreement
+Accessed: 2026-08-15
+Method: WebFetch (static fetch succeeded, returned real body content -- not a JS-only shell).
+Note: this document is framed for a negotiated "Order Form" / "Customer" relationship (the B2B/"Organizations" contract referenced elsewhere on the site: "Are you an organization? Sign up here."), not the individual self-serve Premium consumer subscription. Used here only as a supplementary official source, since the general consumer Terms of Service could not be read in English (see terms-of-service-ACCESS-NOTE file). Where this document's clauses plausibly extend to the general Service (e.g. IP retention, prohibited uses), they are cited as such; the B2B-specific refund/termination clauses are NOT applied to the individual Premium entry tier and are noted as out of scope in coder_note/conflict_note.
+
+=== EXTRACTED CONTENT (WebFetch summary of fetched page; key clauses) ===
+Payment Terms: "All payments will be made in accordance with the payment terms set forth on the Order Form."
+Default Payment Deadline: "If not otherwise specified on the Order Form, payments will be due within ten (10) days of Customer's receipt of invoice."
+Late Fees: "All amounts payable by Customer that are not paid when due are subject to a finance charge of one percent (1.0%) per month."
+Taxes: "Fees under this Agreement are exclusive of all taxes, including national, state or provincial and local use, sales, value-added, property and similar taxes."
+
+Termination for Breach: "In the event of any material breach of this Agreement, the non-breaching party may terminate this Agreement prior to the end of the Subscription Term by giving thirty (30) days prior written notice."
+Cure Period: "This Agreement will not terminate if the breaching party has cured the breach prior to the expiration of such thirty-day period."
+Termination Rights (Insolvency): "Either party may terminate this Agreement, effective upon the other party's receipt of written notice, upon the institution by or against the other party of insolvency, receivership or bankruptcy proceedings."
+
+Limited Refund Provision (B2B, modification-triggered, NOT the consumer refund policy): "Customer may within thirty (30) days following Jobscan's implementation of such modification terminate this Agreement by notice to Jobscan and recover a refund of prepaid fees applicable to the period following the effective date of termination." -- applies only if Jobscan modifies Services in a way that materially diminishes functionality.
+
+Service License Scope: "Customer is hereby granted a non-exclusive, nontransferable, revocable right to access and use the Services for its internal purposes only."
+Intellectual Property Retention: "Except as expressly set forth herein, Jobscan alone (and its licensors, where applicable) will retain all intellectual property rights relating to the Service or the Software."
+Customer Content Ownership: "Customer represents and warrants that Customer is the owner of all right, title and interest, including all intellectual property rights, in and to all Customer Content." [Note: "Customer Content" plausibly means content the customer uploads/inputs, not AI-generated output the product produces from it -- ambiguous as applied to Jobscan's AI-optimized resume/cover-letter text specifically.]
+
+Prohibited Uses: "Customer will not, and will not permit or assist any third party to: reverse engineer, decompile, disassemble or otherwise attempt to discover the source code...modify, translate, or create derivative works...use the Services or Software for timesharing or service bureau purposes...access or use the Services or Software for the purpose of developing a competing product."
+Service Modifications: "The Services are subject to modification from time to time at Jobscan's sole discretion, for any purpose deemed appropriate by Jobscan."
+
+No explicit free trial terms or auto-renewal language found in this document. No explicit fair-use/reasonable-use/excessive-use throttling clause found in this document (the "no timesharing/service bureau" clause is an anti-resale restriction, not a volume/intensity-of-use throttle, per codebook unquantified_limit_clause rule 3).

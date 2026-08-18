@@ -1,0 +1,125 @@
+product_id: jobscan
+product_name: Jobscan
+category: "AI resume builder"
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Quarterly"
+coder_pass: 2
+coder_role: "second"
+collection_date: "2026-08-15"
+recheck_date: "not_applicable"
+primary_source_url: "https://app.jobscan.co/plan"
+archive_url: "local_copy_only"
+archive_status: "local_copy_only"
+default_display_state: "USD; three plans (Free / Quarterly / Monthly) shown simultaneously, no monthly-vs-annual toggle exists -- Quarterly pill pre-highlighted and its card ribboned 'Most popular'; non-essential cookies declined; read from Turkey network location, desktop viewport, consistent across two independent loads."
+
+sources:
+  - { url: "https://app.jobscan.co/plan", kind: pricing, accessed: "2026-08-15", archive: "local_copy_only", note: "SPA, static fetch returns empty shell; rendered read via browser required (D-005). Archive.org save attempt hit the service's active-session rate limit; local verbatim capture saved to jobscan-sources/pricing-page-2026-08-15.txt." }
+  - { url: "https://www.jobscan.co/cancellation-policy", kind: refund, accessed: "2026-08-15", archive: "local_copy_only", note: "Dedicated cancellation/refund policy page. Confirmed via two independent fetch methods (WebFetch + browser render) with matching content. Local capture: jobscan-sources/cancellation-policy-2026-08-15.txt." }
+  - { url: "https://www.jobscan.co/saas-agreement", kind: tos, accessed: "2026-08-15", archive: "local_copy_only", note: "Reads as a negotiated B2B/Order-Form contract for the 'Organizations' offering, not the individual Premium self-serve product; used only as supplementary evidence, flagged where applied. Local capture: jobscan-sources/saas-agreement-2026-08-15.txt." }
+  - { url: "https://www.jobscan.co/terms-of-service", kind: tos, accessed: "2026-08-15", archive: "archive_failed", note: "COULD NOT BE READ IN ENGLISH -- page consistently rendered in Turkish for this collection session across all methods tried (WebFetch, two fresh browser navigations, an existing web.archive.org capture, an archive.ph attempt). Full account in jobscan-sources/terms-of-service-ACCESS-NOTE.txt. Treated as an official source that could not be read; not used as evidence per record-hygiene rule." }
+  - { url: "https://www.jobscan.co/auto-apply", kind: docs, accessed: "2026-08-15", archive: "local_copy_only", note: "Defines the Auto Apply credit unit and credit-pack pricing. Local capture: jobscan-sources/auto-apply-2026-08-15.txt." }
+  - { url: "https://jobscansupport.frontkb.com/en/articles/11537217", kind: docs, accessed: "2026-08-15", archive: "local_copy_only", note: "Official help center, 'Why was I charged during my free trial?' -- $1 authorization hold at trial start." }
+  - { url: "https://jobscansupport.frontkb.com/en/articles/11537089", kind: docs, accessed: "2026-08-15", archive: "local_copy_only", note: "Official help center, 'I didn't pay in USD. Will this affect my refund?' -- 'All subscription charges are processed in USD.'" }
+  - { url: "https://jobscansupport.frontkb.com/en/articles/11537025", kind: docs, accessed: "2026-08-15", archive: "local_copy_only", note: "Official help center, trial cancellation confirmation, corroborates cancellation-policy page." }
+  - { url: "https://jobscansupport.frontkb.com/en/categories/2362625-🧩-other-help-topics", kind: docs, accessed: "2026-08-15", archive: "local_copy_only", note: "Surveyed all 16 titles plus the 5 'Using Jobscan' and 4 'Billing' titles for watermark/commercial-use/credit-rollover coverage; none found. Local capture: jobscan-sources/support-articles-2026-08-15.txt." }
+  - { url: "https://www.jobscan.co/resume-builder", kind: other, accessed: "2026-08-15", archive: "not_archived", note: "Checked for watermark/ownership language on the free resume builder; none found ('free from start to finish', no watermark statement either way)." }
+
+variables:
+  headline_price_usd: { value: "29.98", source: "https://app.jobscan.co/plan", evidence: "Quarterly card: \"$29.98\" \"per month\" -- largest, most prominent figure on the entry tier's card in the default display state." }
+  headline_billing_basis: { value: "unknown", source: "https://app.jobscan.co/plan", evidence: "Card reads \"$29.98 per month\" / \"Billed as $89.95 every 3 months\" -- a QUARTERLY billing cadence. None of the codebook's allowed values (per_month_billed_annually, per_month_billed_monthly, per_seat_per_month, one_time, usage_based) describe a quarterly cadence. Per the study's instrument-frozen instruction for this exact gap, coded unknown rather than inventing a 'per_month_billed_quarterly' value; see coder_note." }
+  first_charge_amount_usd: { value: "89.95", source: "https://app.jobscan.co/plan", evidence: "Pricing page: \"Billed as $89.95 every 3 months\"; FAQ: \"Once your trial ends, you will be billed for the next quarter of your subscription if you selected a quarterly plan.\" Figure is directly published, not computed by multiplying the monthly-equivalent by 3. Excludes sales tax (FAQ: \"We will apply state and local sales tax based on your billing address\") and excludes the refundable $1 pre-authorization hold (support article: \"This is not an actual charge\"), both noted per decision-rule step 5." }
+  mandatory_addon_present: { value: "no", source: "https://app.jobscan.co/plan", evidence: "Full Quarterly-tier feature list read; only optional discounted add-ons found (\"20% off Auto Apply Credits (after trial)\", \"20% off Interview Practice (after trial)\") -- optional purchases, not required to use the advertised Unlimited-scan Premium features. No mandatory fee found in SaaS Agreement or help center." }
+  annual_condition_disclosure: { value: "not_applicable", source: "https://app.jobscan.co/plan", evidence: "No annual billing option exists at all -- only Quarterly and Monthly. The headline figure depends on quarterly, not annual, prepayment, so per decision-rule step 1 this variable does not reach the product." }
+  annual_default_toggle: { value: "unknown", source: "https://app.jobscan.co/plan", evidence: "Page preselects 'Quarterly' (highlighted pill, 'Most popular' ribbon) among a three-way Free/Quarterly/Monthly display, not a monthly-vs-annual toggle. None of the variable's allowed values (annual_preselected, monthly_preselected, no_toggle, not_applicable, conflicting) describes a quarterly-preselected state among three options, so coded unknown rather than inventing a value -- same instrument-coverage gap as headline_billing_basis. See coder_note." }
+  free_plan_exists: { value: "yes", source: "https://app.jobscan.co/plan", evidence: "\"Free\" card: \"$0\" \"forever\"." }
+  free_plan_cap_documented: { value: "all_quantified", source: "https://app.jobscan.co/plan", evidence: "\"5 Free Resume Scans monthly\" (quantified rate: number+dimension+period) and \"5 ATS & Recruiter Findings\" (quantified standing figure: number+dimension). No unquantified free-plan limit (e.g. bare 'limited') found on the card." }
+  free_plan_cap_value: { value: "5 resume scans per month | 5 ATS & Recruiter Findings", source: "https://app.jobscan.co/plan", evidence: "Verbatim free-plan bullets; see coder_note on possible 1:1 linkage between the two." }
+  free_plan_watermark: { value: "unknown", source: "https://app.jobscan.co/plan", evidence: "No watermark statement found on the pricing page, the resume-builder product page, the ai-resume-builder page, or the help center for either the scanner or the free resume-builder output." }
+  free_plan_duration: { value: "perpetual", source: "https://app.jobscan.co/plan", evidence: "Free card: \"$0\" \"forever\"; presented as a standing tier alongside the paid tiers with no expiry stated." }
+  trial_exists: { value: "yes", source: "https://app.jobscan.co/plan", evidence: "Quarterly card CTA \"Try 7 Days Free\"; FAQ \"How long will my free trial last? You will have 7 days from the time you start your trial.\"" }
+  trial_card_required: { value: "yes", source: "https://jobscansupport.frontkb.com/en/articles/11537217", evidence: "\"When you begin your free trial, Jobscan places a temporary $1 authorization hold on your payment method.\" -- a direct statement that a payment method is collected and verified at trial start, not an inference from the later renewal charge. Corroborated by cancellation-policy: \"There is a pre-authorization charge upon initial sign up to ensure the credit card is valid.\"" }
+  trial_length_days: { value: "7", source: "https://app.jobscan.co/plan", evidence: "\"You will have 7 days from the time you start your trial.\"" }
+  trial_auto_converts: { value: "yes", source: "https://app.jobscan.co/plan", evidence: "\"Once your trial ends, you will be billed for the next quarter of your subscription if you selected a quarterly plan\" -- converts unless the buyer cancels first." }
+  credit_system_present: { value: "yes", source: "https://www.jobscan.co/auto-apply", evidence: "\"One credit is used for each job you choose to Auto Apply to.\" An intermediate currency (Auto Apply Credits) exists for a secondary feature, distinct from the principal (unmetered) resume-scan output." }
+  credit_unit_defined: { value: "yes", source: "https://www.jobscan.co/auto-apply", evidence: "\"One credit is used for each job you choose to Auto Apply to.\" -- ties the unit to a recognizable output (one job application), satisfying the any-output-unit test even though Auto Apply is a secondary feature." }
+  credit_to_output_rate_published: { value: "partial", source: "https://www.jobscan.co/auto-apply", evidence: "Rate is published for the secondary Auto Apply feature (1 credit = 1 application; packs at $1.40-$1.70/credit) but the principal output (resume scans/AI optimization) is not credit-metered at all on the Premium plan -- 'Unlimited' and outside the credit system entirely. Decision-rule 4: rates published for a secondary feature but not the principal output score partial." }
+  credit_rate_location: { value: "pricing_page", source: "https://www.jobscan.co/auto-apply", evidence: "Credit pack prices (\"5 credits $8.50 ($1.70/credit)\" etc.) are published on this dedicated Auto Apply feature/pricing page -- not on the main /plan pricing page, not in the help center, and not in the terms; coded pricing_page as the closest available value since the instrument's list has no 'other official page' option. Exact URL recorded here so the distinction from /plan is not lost." }
+  cost_per_output_unit: { value: "per_seat_month", source: "https://app.jobscan.co/plan", evidence: "Premium (entry tier) sells unmetered access -- \"Unlimited Resume Scans\", \"Unlimited AI Optimizations\", \"Unlimited keyword comparisons\" -- at a flat recurring price per user, matching the per_seat_month rule for unmetered software access rather than a countable artifact." }
+  cost_per_output_computable: { value: "yes", source: "https://app.jobscan.co/plan", evidence: "Unmetered per_seat_month access; cost per seat-month equals the published monthly-equivalent headline price directly, no allowance conversion required. See computation_assumptions." }
+  computation_assumptions: { value: "Quarterly (entry tier), $29.98/mo per default display state (billed $89.95/3mo). Principal output = per_seat_month, unmetered (Unlimited scans/optimizations). Cost per seat-month = headline monthly price = $29.98; no allowance to convert.", source: "https://app.jobscan.co/plan", evidence: "" }
+  credit_rollover_policy: { value: "unknown", source: "https://www.jobscan.co/auto-apply", evidence: "Auto Apply credit page states the monthly top-up (\"topped up to 2 credits each month\") but does not state whether unused credits carry forward or expire; not addressed elsewhere in accessible documents." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://www.jobscan.co/auto-apply", evidence: "No document addresses what happens to a credit when an Auto Apply attempt fails or errors." }
+  auto_renewal_default: { value: "on", source: "https://www.jobscan.co/cancellation-policy", evidence: "\"When you sign up for any of our Premium plans, you will be billed every calendar month (Monthly Plan) or quarterly (every 3 months Plan)... Until you cancel, billing will continue according to the cycle stated at the time of subscription.\"" }
+  auto_renewal_disclosure_location: { value: "multiple", source: "https://www.jobscan.co/cancellation-policy", evidence: "Stated on the dedicated Cancellation Policy page (\"billing will continue according to the cycle... until you cancel\") AND on the pricing page's own FAQ (\"If you cancel your plan before the next renewal cycle, you will retain access...\"), which uses 'renewal cycle' language on the pricing page itself." }
+  renewal_notice_commitment: { value: "unknown", source: "https://www.jobscan.co/cancellation-policy", evidence: "No document found committing to advance notice before a renewal charge." }
+  refund_policy_exists: { value: "yes", source: "https://www.jobscan.co/cancellation-policy", evidence: "\"Refunds will only be granted to Jobscan Premium members who refute their charges within 2 calendar days of the billing period start and have not used the service within the said billing period.\"" }
+  refund_window_days: { value: "2", source: "https://www.jobscan.co/cancellation-policy", evidence: "\"within 2 calendar days of the billing period start\"." }
+  refund_conditions: { value: "conditional", source: "https://www.jobscan.co/cancellation-policy", evidence: "Refund requires: request within the 2-day window AND no service use in the billing period AND a 3.5% fee is deducted from the amount refunded." }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://www.jobscan.co/cancellation-policy", evidence: "\"follow the Cancel Membership instructions within your Account page\"; corroborated by help center: \"You can cancel your account by going to your Account Details page... you'll see a Cancel Plan button.\"" }
+  refund_policy_location: { value: "dedicated_refund_page", source: "https://www.jobscan.co/cancellation-policy", evidence: "Refund terms (window, fee, conditions) appear only on this dedicated Cancellation Policy page; the pricing-page FAQ addresses cancellation access but not the refund window/fee, and the SaaS Agreement's refund clause is a different (B2B, modification-triggered) provision -- see conflict_note." }
+  commercial_use_lowest_tier: { value: "unknown", source: "https://www.jobscan.co/terms-of-service", evidence: "The general Terms of Service -- the plausible governing document for this variable -- could not be read in English (see sources list and jobscan-sources/terms-of-service-ACCESS-NOTE.txt). No other accessible official document (pricing page, cancellation policy, SaaS Agreement, help center, product pages) addresses commercial use of Jobscan-generated resume/cover-letter content." }
+  watermark_removal_tier: { value: "unknown", source: "https://www.jobscan.co/resume-builder", evidence: "No official document addresses whether any tier's resume/cover-letter export carries a watermark; checked pricing page, resume-builder page, ai-resume-builder page, and the full help center article list." }
+  output_ownership_statement: { value: "unknown", source: "https://www.jobscan.co/terms-of-service", evidence: "General ToS inaccessible in English (see sources list). SaaS Agreement (a different, B2B-contract document) states \"Customer represents and warrants that Customer is the owner of all right, title and interest... in and to all Customer Content,\" but 'Customer Content' plausibly means uploaded/input content rather than Jobscan's AI-generated output, and that document governs a negotiated Organizations contract, not the individual Premium entry tier -- not treated as conclusive evidence for this product. See coder_note and conflict_note." }
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://app.jobscan.co/plan", evidence: "Quarterly (entry) tier: \"Unlimited Resume Scans\", \"Unlimited AI Optimizations\", \"Unlimited keyword comparisons\", \"Unlimited ATS & Recruiter Findings\" -- explicit no-limit statements, which the codebook's rule 3 treats as quantified absent a qualifying clause. See coder_note for the caveat that the ToS -- a plausible location for a qualifying fair-use clause -- could not be read." }
+  unquantified_limit_clause: { value: "unknown", source: "https://www.jobscan.co/terms-of-service", evidence: "This variable requires reading the terms and acceptable-use policy IN FULL to code absent; the general ToS could not be read in English. The SaaS Agreement (read in full, a different document) contains no fair-use/reasonable-use/excessive-use clause -- only a standard anti-resale/anti-reverse-engineering restriction, which the codebook explicitly excludes from this variable -- but the SaaS Agreement is not itself 'the terms' for the individual Premium product, so this does not license coding absent." }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): candidates were Quarterly ($89.95/3mo =
+  $359.80/yr annual-equivalent, or $29.98/mo x 12 = $359.76/yr) and Monthly ($49.95/mo x 12 =
+  $599.40/yr). Both generally available, no sales contact, standing recurring plans. Quarterly
+  has the lower annual-equivalent cost and is selected as the entry tier. Monthly is the losing
+  candidate at $599.40/yr annual-equivalent. Free ($0) is not a paid tier and was not a
+  candidate. The pricing page labels the entry tier's column "Quarterly"; the Cancellation
+  Policy separately names the same tier the "Premium 3 Month Plan" -- both cited, not treated
+  as a naming conflict (same tier, two documents).
+
+  Instrument-coverage gap (billing cadence): Jobscan's paid plans bill Quarterly or Monthly,
+  never annually. headline_billing_basis and annual_default_toggle both have closed value
+  lists built around an annual/monthly framing and neither has a value matching "quarterly
+  cadence" or "quarterly preselected among three options" -- both coded unknown rather than
+  inventing a new enum value, per the study's instrument-frozen instruction. annual_condition_
+  disclosure is coded not_applicable on the more specific ground that no ANNUAL billing option
+  exists at all.
+
+  Not an A-012 case: the "For 3 months after FREE trial Save 40%" line on the Quarterly card is
+  a same-cadence-forever comparison against the Monthly plan, not a time-limited intro rate that
+  later increases. Verified arithmetic: 29.98/49.95 = 0.6002, i.e. exactly a 40% saving of the
+  quarterly monthly-equivalent versus the monthly plan's price -- both are standing prices, nothing
+  found stating the $89.95/quarter rate increases after the first billing cycle.
+
+  Access barrier -- general Terms of Service unreadable in English: see sources list and
+  jobscan-sources/terms-of-service-ACCESS-NOTE.txt for the full account (WebFetch, two browser
+  navigations, a web.archive.org capture, and an archive.ph attempt all failed to surface English
+  body text; the page renders in Turkish in this session). This is the reason commercial_use_
+  lowest_tier, watermark_removal_tier, output_ownership_statement, and unquantified_limit_clause
+  are unknown, and the reason usage_cap_quantified carries a caveat rather than an unqualified
+  all_caps_quantified.
+
+  free_plan_cap_value: "5 ATS & Recruiter Findings" is recorded as its own quantified figure
+  because it carries a number and a dimension, but it may simply describe what each of the "5
+  Free Resume Scans monthly" produces (findings are generated per scan) rather than being an
+  independently metered second allowance. The pricing page does not disambiguate; both bullets
+  are recorded verbatim rather than merged, so a reader can judge.
+
+  Currency: vendor's own currency disclosure is explicit and unambiguous -- help center article
+  "I didn't pay in USD. Will this affect my refund?": "All subscription charges are processed in
+  USD." No non_usd figure was observed anywhere in this collection. D-003 arm 1 satisfied cleanly;
+  no display_variant register event needed.
+
+  Archival: archive.org's Save Page Now returned "You have already reached the limit of active
+  Save Page Now sessions" on the first attempt and "Job failed" on a second attempt made a few
+  minutes later (shared rate limit, expected per the study's own guidance -- two attempts is the
+  cap). archive_status is local_copy_only across all sources, each with a dated verbatim local
+  capture under jobscan-sources/.
+
+  Price-arithmetic checker: tools/check_price_arithmetic.py prints a BASIS line for this record
+  ("no period defined for 'unknown'") because headline_billing_basis is coded unknown for the
+  reason given above. The two money values are in fact consistent with a quarterly cadence:
+  29.98 x 3 = 89.94, one cent from the published 89.95 (ordinary rounding), corroborating that
+  89.95 is the vendor's own quarterly figure rather than a misread.
+
+  blindness: no other record, no review page, no pass-1 material was opened.
+conflict_note: "Two Jobscan documents address refunds in incompatible-looking ways for what could be read as the same event: the SaaS Agreement grants a 30-day refund of prepaid fees, but only if Jobscan modifies the Service in a way that materially diminishes functionality, and that document is framed throughout as a negotiated Order-Form/'Customer' contract (the site's separate 'Organizations' offering). The Cancellation Policy grants a 2-day, 3.5%-fee refund for the individual self-serve Premium plan sold on the pricing page (the entry tier this record codes). Treated as two different documents governing two different products/contracts rather than a same-variable conflict between equal-authority sources, so refund_policy_exists/refund_window_days/refund_conditions are coded from the Cancellation Policy only. URLs: https://www.jobscan.co/saas-agreement and https://www.jobscan.co/cancellation-policy."
+register_events: []
+status: complete

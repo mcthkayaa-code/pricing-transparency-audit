@@ -1,0 +1,117 @@
+product_id: ideogram
+product_name: Ideogram AI
+category: AI image generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Plus
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://ideogram.ai/pricing
+archive_url: "local_copy: records/pass1/ideogram-sources/pricing-page-rendered.txt"
+archive_status: local_copy_only
+default_display_state: "USD, no currency symbol issues; billing toggle preselected 'Annually'; 'Platform' tab selected (not 'Ideogram API' usage-based tab); read from Turkey network egress, no localization/non_usd observed; non-essential cookies not accepted."
+
+sources:
+  - { url: "https://ideogram.ai/pricing", kind: pricing, accessed: "2026-08-09", archive: archive_failed, note: "web.archive.org/save returned HTTP 520 twice (2026-08-09); static WebFetch returned HTTP 403 (Cloudflare); coded from rendered read per D-005, local copy saved to ideogram-sources/pricing-page-rendered.txt" }
+  - { url: "https://ideogram.ai/legal/tos", kind: tos, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809154206/https://ideogram.ai/legal/tos" }
+  - { url: "https://ideogram.ai/legal/usage-policy", kind: tos, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809154226/https://ideogram.ai/legal/usage-policy", note: "Acceptable Use Policy, incorporated into ToS" }
+  - { url: "https://docs.ideogram.ai/plans-and-pricing/available-plans", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809154245/https://docs.ideogram.ai/plans-and-pricing/available-plans" }
+  - { url: "https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809154306/https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions" }
+  - { url: "https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/cancelling-your-subscription", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809154326/https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/cancelling-your-subscription" }
+  - { url: "https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/refunds", kind: refund, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809154345/https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/refunds" }
+  - { url: "https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/renewals-and-billing-cycles", kind: docs, accessed: "2026-08-09", archive: "https://web.archive.org/web/20260809154432/https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/renewals-and-billing-cycles" }
+
+variables:
+  headline_price_usd: { value: "15.00", source: "https://ideogram.ai/pricing", evidence: "Plus plan card: '$15' 'per month, billed annually'. Entry tier selected per sampling-rules 7.2: eligible candidates Plus ($15/mo x12=$180.00/yr single-seat), Team ($20/user/mo x12=$240.00/yr single-seat), Pro ($42/mo x12=$504.00/yr); Enterprise excluded (contact sales, fails eligibility rule 2). Plus is lowest annual-equivalent." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://ideogram.ai/pricing", evidence: "'$15' with qualifier 'per month, billed annually' printed in the same card." }
+  first_charge_amount_usd: { value: "180.00", source: "https://ideogram.ai/pricing", evidence: "Plus '$15/mo, billed annually' (default state); docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/renewals-and-billing-cycles: 'Annual plans renew once a year' establishes a single annual charge, so 15 x 12 = 180.00 (see computation_assumptions)." }
+  mandatory_addon_present: { value: "no", source: "https://ideogram.ai/pricing", evidence: "No required additional charge found for Plus; 'Top up 150 priority credits for $4' is an optional purchase, not mandatory; all listed Plus features (private generation, unlimited slow credits, character consistency, quality export) are bundled in the $15 price." }
+  annual_condition_disclosure: { value: adjacent, source: "https://ideogram.ai/pricing", evidence: "'per month, billed annually' is printed directly beneath '$15' 'Save 25%' inside the same Plus plan card." }
+  annual_default_toggle: { value: annual_preselected, source: "https://ideogram.ai/pricing", evidence: "Billing dropdown reads 'Annually' on page load before any interaction (confirmed by screenshot and accessibility-tree read of the unclicked control)." }
+  free_plan_exists: { value: "yes", source: "https://docs.ideogram.ai/plans-and-pricing/available-plans", evidence: "'Ideogram offers free and paid plan options.' Confirmed by pricing-page FAQ: 'our free tier includes 10 free credits per week' and nav CTA 'Start for free'." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://ideogram.ai/pricing", evidence: "Only free-plan limit stated is 'our free tier includes 10 free credits per week' (FAQ) — a quantified rate (number + dimension + period). No other free-plan limit (quantified or not) was found in any official document, so the one listed limit is quantified." }
+  free_plan_cap_value: { value: "10 credits per week", source: "https://ideogram.ai/pricing", evidence: "FAQ 'Do you offer discounts or free trials?': 'our free tier includes 10 free credits per week.'" }
+  free_plan_watermark: { value: unknown, source: "https://ideogram.ai/legal/tos", evidence: "ToS section 6.2(H) only prohibits users from 'remov[ing] any watermarks included on any User Output', establishing watermarks can occur but not which tier(s) carry or omit them. Pricing page, its FAQ, available-plans doc, and usage-policy are all silent on watermarking by tier." }
+  free_plan_duration: { value: perpetual, source: "https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/cancelling-your-subscription", evidence: "'When the paid period ends, your account moves to the free plan' — the free plan is a standing ongoing tier (also the default signup state), not a time-limited offer; no expiry stated anywhere." }
+  trial_exists: { value: "no", source: "https://ideogram.ai/pricing", evidence: "FAQ 'Do you offer discounts or free trials?': 'We don't offer discounts or free trials for subscription plans.'" }
+  trial_card_required: { value: not_applicable, source: "https://ideogram.ai/pricing", evidence: "No trial exists." }
+  trial_length_days: { value: not_applicable, source: "https://ideogram.ai/pricing", evidence: "No trial exists." }
+  trial_auto_converts: { value: not_applicable, source: "https://ideogram.ai/pricing", evidence: "No trial exists." }
+  credit_system_present: { value: "yes", source: "https://ideogram.ai/pricing", evidence: "Plans include '1,000 priority credits/mo.' etc., an intermediate currency converting to images at model-dependent rates (e.g. '2 credits / 1 image'), not a plan allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: "https://ideogram.ai/pricing", evidence: "'Using your credits' table defines the conversion per model/rendering, e.g. '2 credits / 1 image' (Model 4.0 (2K), Turbo) through '1 credit / 1 image' (Upscale 1.0)." }
+  credit_to_output_rate_published: { value: "yes", source: "https://ideogram.ai/pricing", evidence: "Rates are published for the principal output (images) across all six offered models and every rendering speed in the 'Using your credits' table, not merely a secondary output." }
+  credit_rate_location: { value: pricing_page, source: "https://ideogram.ai/pricing", evidence: "'Using your credits' table appears only on ideogram.ai/pricing; docs.ideogram.ai/plans-and-pricing/available-plans explicitly defers: 'For model-specific or endpoint-specific credit costs, use current product pricing' and does not itself reprint the table." }
+  cost_per_output_unit: { value: per_image, source: "https://ideogram.ai/pricing", evidence: "Product sells countable image generations; credit table is denominated in 'credits / N image(s)'." }
+  cost_per_output_computable: { value: partial, source: "https://ideogram.ai/pricing", evidence: "Plus tier $15/mo, 1,000 credits/mo (both already monthly, default annual display state, no period conversion needed). Per-image rate varies 2-6 credits/image within the flagship 4.0(2K) model alone (Turbo/Balanced/Quality) and 0.125-6 credits/image across all 6 published models -- yields a range, not one figure (rule 8)." }
+  computation_assumptions: { value: "Plus $15/mo billed annually (default state); first charge 15x12=$180.00 (renewals doc: annual plans charge once/yr). Cost/image: 1,000 credits/mo; per-image rate spans 0.125-6 credits across published model/rendering table => range not one figure (partial); range in coder_note.", source: "https://ideogram.ai/pricing", evidence: "Arithmetic per cost_per_output_computable and first_charge_amount_usd rules; see coder_note for the computed USD range." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://ideogram.ai/pricing", evidence: "FAQ: 'Unused subscription priority credits expire at the end of each billing cycle, so if you don't use them you will lose them.' (A separate top-up-credit pool rolls over instead; see coder_note.)" }
+  failed_generation_charge_policy: { value: unknown, source: "https://ideogram.ai/pricing", evidence: "No official document (pricing page/FAQ, ToS, usage-policy, or billing docs) states what happens to credits on a failed, errored, or empty generation; searched all four in full for 'fail'/'error' language with no result." }
+  auto_renewal_default: { value: "on", source: "https://ideogram.ai/legal/tos", evidence: "Section 2.5: 'your subscription will automatically renew at the subscription period frequency referenced on your subscription page (or if not designated, then monthly) and at the then-current rates, and your payment method will automatically be charged at the start of each new subscription period'." }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://ideogram.ai/legal/tos", evidence: "Stated in ToS section 2.5 (quoted above) AND in docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/renewals-and-billing-cycles: 'Ideogram subscriptions renew automatically at the billing frequency you chose when subscribing -- monthly or annual.' Two document classes in agreement." }
+  renewal_notice_commitment: { value: unknown, source: "https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/renewals-and-billing-cycles", evidence: "Docs describe only how to self-check your own renewal date/billing cycle in the billing portal; no document commits to proactively notifying the buyer before a renewal charge. ToS 'reasonable notice' clause (section 2, price/plan changes) does not cover routine renewal charges." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://ideogram.ai/legal/tos", evidence: "Section 2.6: 'payments for any subscriptions to the Services are non-refundable and there are no credits for partially used periods.'" }
+  refund_window_days: { value: "0", source: "https://ideogram.ai/legal/tos", evidence: "No refunds are given (refund_policy_exists = no_refunds_stated); codebook values '0 where no refunds are given'." }
+  refund_conditions: { value: not_applicable, source: "https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/refunds", evidence: "No refund is available to attach conditions to. The docs/refunds page's billing-error path ('you were charged twice for the same billing period -- contact support@ideogram.ai') is a duplicate-charge correction, not a discretionary refund; see coder_note." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://docs.ideogram.ai/plans-and-pricing/billing-and-subscriptions/cancelling-your-subscription", evidence: "'You can cancel your Ideogram subscription at any time from the billing management screen.' No contact with support required; confirmed also in ToS section 2.5 and pricing-page FAQ ('Can I cancel my plan? Yes...')." }
+  refund_policy_location: { value: multiple, source: "https://ideogram.ai/legal/tos", evidence: "Stated in Terms of Service section 2.6 AND in a dedicated docs.ideogram.ai 'Refunds' help page -- two document classes in agreement." }
+  commercial_use_lowest_tier: { value: free, source: "https://ideogram.ai/legal/tos", evidence: "Section 2.1: 'we do not restrict your ability to use User Output for your own purposes (including for commercial purposes)' -- unconditional, no tier gate stated anywhere. Confirmed by pricing-page FAQ: 'you're free to use them for any purpose, including commercial use.'" }
+  watermark_removal_tier: { value: unknown, source: "https://ideogram.ai/legal/tos", evidence: "ToS section 6.2(H) only prohibits removing watermarks ('remove any watermarks included on any User Output'), which establishes watermarks can occur but not which tier(s) carry or omit them; no pricing-page row or docs page states a watermark-free tier." }
+  output_ownership_statement: { value: user_owns, source: "https://ideogram.ai/legal/tos", evidence: "Section 2.1: 'We do not claim any ownership rights in your User Input or User Output... we hereby assign to you all right, title and interest in and to such User Output.' Not conditioned on tier or subscription staying active." }
+  usage_cap_quantified: { value: some_quantified, source: "https://ideogram.ai/pricing", evidence: "Plus tier: '1,000 priority credits/mo.' (quantified rate) and 'Unlimited slow credits' / 'Unlimited character consistency' (quantified per rule 3, no qualifying clause found -- see unquantified_limit_clause) vs. 'Larger generation queue' (no number given, queue size/priority is a limit dimension per section 5.1's shared test) -- at least one quantified and one not." }
+  unquantified_limit_clause: { value: absent, source: "https://ideogram.ai/legal/tos", evidence: "Full-text read of Terms of Service and Usage Policy (both complete documents, keyword-searched for fair use/reasonable/excessive/throttle/discretion/suspend/abuse/rate limit) found no fair-use, reasonable-use, excessive-use, throttling, or discretionary-suspension clause tied to usage volume or intensity. All 'discretion'/'suspend' clauses found concern content moderation, ToS breach, price/plan changes, or general service changes -- not usage volume." }
+
+coder_note: |
+  Entry-tier candidates (sampling-rules 7.2): eligible = Plus, Pro, Team (Enterprise excluded,
+  "Contact sales", fails eligibility rule 2 -- no publishable price). Annual-equivalent
+  single-seat costs in default display state: Plus $15/mo x12 = $180.00/yr (WINNER,
+  entry_tier_name); Team $20/user/mo x12 = $240.00/yr (single-seat basis, lost); Pro $42/mo
+  x12 = $504.00/yr (lost).
+
+  cost_per_output_value_usd range (cost_per_output_computable = partial, range case, per
+  derived-variable table): at Plus tier ($15/mo, 1,000 credits/mo), per-image cost spans
+  approximately $0.0019/image (Model 2a, Turbo, 0.125 credits/image) to $0.09/image (Model
+  4.0 (2K), Quality, 6 credits/image), computed as 1000/credits-per-image, then 15/images.
+  Not a single figure -> cost_per_output_value_usd stays not_computable.
+
+  credit_rollover_policy nuance: the coded value (expires_at_period_end) describes the
+  plan-included "subscription priority credits" pool, which is what backs the entry-tier
+  price and the cost-per-output figures above. A separate, optionally-purchased "top-up
+  credits" pool behaves differently and carries over unused ("will carry over to the next
+  period if unused" -- pricing-page FAQ). The instrument's value list does not have a
+  compound state for two credit pools with different policies, so the plan-included pool
+  governs the coded value.
+
+  refund_conditions nuance: docs.ideogram.ai/.../refunds names one exception path -- a
+  duplicate charge for the same billing period may be corrected via support@ideogram.ai.
+  This is coded as a billing-error correction, not a discretionary refund, so
+  refund_conditions is not_applicable (no refund available) rather than conditional; the
+  distinction is a judgment call, disclosed here for a reader who might weigh it differently.
+
+  Judgment calls on product scope: (1) ideogram.ai/pricing has a second tab, "Ideogram API",
+  a usage-based developer billing surface separate from the "Platform" (app) subscriptions
+  coded here; not used for entry-tier selection since the reviewed product is the hosted
+  image-generation app, not the developer API. (2) A distinct page, ideogram.ai/licensing/,
+  sells commercial rights to SELF-HOST Ideogram's open model weights (e.g. a $300/mo
+  "Self-Serve Commercial License", 10,000 images/mo) -- a different offering (self-hosting
+  model weights) from the SaaS subscriptions on the main pricing page, and was not used for
+  entry-tier selection, commercial-use, or ownership coding, which are drawn from the main
+  Terms of Service governing the hosted app.
+
+  usage_cap_quantified judgment call: "Larger generation queue" / "The largest generation
+  queue" (Plus/Pro respectively) carry no number. Coded as an unquantified limit dimension
+  by analogy to section 5.1's shared test and the free_plan_cap_documented rule's explicit
+  listing of "queue priority" among limit dimensions to inventory; a coder who treats queue
+  size as a pure quality descriptor rather than a "limit" would instead reach
+  all_caps_quantified for this tier (1,000 credits/mo + unlimited slow credits + unlimited
+  character consistency, all quantified per rule 3 since unquantified_limit_clause = absent).
+
+  Administrative note: product_name recorded as "Ideogram AI" per the frozen frame row
+  (frame-frozen-2026-08-04.csv), matching codebook section 6's "copied from the frozen
+  frame" instruction.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: ""
+register_events: []
+status: complete

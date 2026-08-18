@@ -1,0 +1,724 @@
+================================================================================
+ID: 5867566723986
+TITLE: Visitors and Storage Overages
+URL: https://help.10web.io/hc/en-us/articles/5867566723986-Visitors-and-Storage-Overages
+UPDATED: 2024-11-22T13:18:13Z
+Your
+plan
+includes a preset number of visitors and storage space. Since 10Web’s AI-powered platform provides elastic scalability, your website is always available to visitors, even if you go over the number of included visitors in your plan or need more storage space.
+Quick tip:
+We recommend monitoring
+resource usage
+so you’re aware of potential overages. Click the
+Usage Summary
+icon in the dashboard’s top right to see the current number of visitors, available storage, and more.
+GO TO DASHBOARD
+This process is entirely automated, so you only pay for extra visitors or storage space as needed.
+Important:
+Additional fees for overages cannot be charged via Paypal. If you’re using Paypal as your
+main payment method
+, you can
+add a credit card
+as your default payment method for additional fees.
+Visitor overages
+All plans include a specified number of website visitors for each month.
+If you go over your plan’s limit, there is a
+$2 automated charge for each additional 10,000 website visitors
+.
+How are monthly visitors counted?
+Each unique IP address that visits your website in a 24-hour period represents a visitor.
+Learn more
+about how monthly visitors are counted.
+Storage overages
+All plans include a specific amount of
+SSD storage
+space for your website’s files and database.
+Note:
+Backups
+are not using the SSD storage . They are stored separately.
+If you exceed your plan’s SSD storage space, we automatically add any additional storage space needed to ensure your website remains up and running.
+Extra storage space is
+$2 for each additional 5GB of SSD storage
+.
+When are overage charges due?
+Overages are billed at the end of each monthly billing period.
+For example, your plan payment was on May 5th, and you also went over your plan’s included resources the same month. The extra overage charge will be billed on June 5th.
+Quick tip:
+You can view and manage your invoices from your dashboard’s
+Workspace Settings
+.
+VIEW INVOICES
+
+================================================================================
+ID: 360027492652
+TITLE: How Can I Cancel My 10Web Subscription?
+URL: https://help.10web.io/hc/en-us/articles/360027492652-How-Can-I-Cancel-My-10Web-Subscription
+UPDATED: 2026-06-21T08:39:04Z
+While we would love for you to stay, we understand if you've decided that 10Web isn't the right fit for you. To cancel your subscription, please follow these steps:
+Click the workspace dropdown menu at the top left of your dashboard.
+Click
+Subscription Plans
+.
+You will be redirected to the subscription page, where you can view the details of your current plan.
+To cancel your subscription, use the button
+click here
+.
+Choose the reason for cancellation and click
+Submit & Cancel
+.
+Please, note that only the Workspace Owner has access to cancel the subscription.
+
+================================================================================
+ID: 5315648905234
+TITLE: Canceling, Downgrading, or Changing 10Web Subscriptions
+URL: https://help.10web.io/hc/en-us/articles/5315648905234-Canceling-Downgrading-or-Changing-10Web-Subscriptions
+UPDATED: 2024-11-25T13:35:52Z
+We highly value your continued business as a 10Web customer and would love for you to stay. We are committed to addressing any challenges or concerns you may encounter.
+Our dedicated customer care team is available 24/7 to assist you in resolving any issues you may face. Please don't hesitate to
+contact us
+so that we can help you maximize the benefits of our platform.
+Note:
+Only Workspace owners can request to cancel, downgrade, or change a subscription plan.
+Canceling your plan
+Upon canceling your plan, the scheduled subscription payments will cease, but you will retain access to the platform until the end of the current billing period. Once the billing period concludes, your plan will expire, and you will no longer be able to access your account. To initiate the
+cancellation of your plan
+, please visit the
+Subscription plan
+page.
+Important:
+Upon the expiration of your plan, please remember that all websites and data will be permanently deleted. Protect your data by backing it up and downloading the .zip backup file to retain a secure copy.
+Downgrading your plan
+You can downgrade your plan to a lower plan at any time. If you have already been charged for your plan, we’ll extend your plan accordingly.
+Quick tip:
+Please reach out to customer care for help with downgrading your plan.
+GET IN TOUCH
+Changing your payment schedule
+You can also switch to an
+annual or monthly
+payment schedule to take advantage of yearly savings or spread out costs over the year with monthly payments.
+Quick tip:
+Please reach out to customer care for help with changing your plan’s payment schedule.
+GET IN TOUCH
+Potential charges to be aware of
+Please consider canceling a few days
+before
+your plan’s scheduled renewal date. Automatic credit card payments are processed every day at 12:00 UTC. PayPal payments typically process between 10:00 and 14:00 UTC. Because of the potential differences between time zones, waiting until your plan’s last day to cancel may be too late to prevent an automatic renewal charge.
+Important:
+The time zone must be set correctly for cancellations or changes to your plan to reflect the account holder’s time zone accurately. Set the account’s time zone in your account settings under
+personal information
+.
+You are responsible for any overage charges or additional fees such as extra storage or support for more visitors during high-traffic periods.
+
+================================================================================
+ID: 360030873012
+TITLE: What Happens if I Fail to Upgrade My Plan Before the Free Trial Ends?
+URL: https://help.10web.io/hc/en-us/articles/360030873012-What-Happens-if-I-Fail-to-Upgrade-My-Plan-Before-the-Free-Trial-Ends
+UPDATED: 2024-12-18T08:54:38Z
+If you don't upgrade before the free trial ends, your website will be deleted after the trial expires. However, there is room for
+recovering your website
+once you upgrade.
+
+================================================================================
+ID: 360021420139
+TITLE: Get Started for Free on 10Web
+URL: https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web
+UPDATED: 2024-11-15T04:56:21Z
+Starting for free on 10Web gives you access to powerful tools like the
+AI Website Builder
+,
+Automated WordPress Hosting
+,
+Website Booster
+, and
+User Management
+. Use them to easily create, optimize, and manage websites all in one platform.
+How to get started for free
+Go to
+10Web.io
+and select
+Get started for Free
+.
+Click on
+Create a new website with AI
+.
+Create a new website with AI
+Choose whether you’d like to create an
+informational website
+or a
+website with an online store
+, then click
+Next
+.
+For an online store website
+Choose the
+business type
+that best matches your company, then click
+Next
+.
+Select the
+language
+for your store, enter your
+company name
+and a brief
+description
+.
+Indicate whether you already own a domain or would like to purchase one through
+10Web’s Domain Registrar
+. If registering a new domain, simply specify your preferred domain name, then click
+Next
+.
+The AI Generator will suggest three products and categories based on your description. Modify these as needed to match your offerings.
+The AI will also suggest your business’s
+three main services
+or
+features
+, which can be adjusted manually if needed.
+Select your website’s
+Theme and Structure
+and click
+Generate
+.
+Note:
+For some business types, you may skip theme selection and go directly to the next step.
+Create an account by entering your personal details or signing up with
+Google
+, then click
+Sign up
+to initiate the website creation process.
+Once the website generation is completed, you’ll see a success notification. Click
+Preview and edit
+to view your new website.
+Check both
+Desktop
+and
+Mobile
+views for your website’s responsiveness.
+If you’re unsatisfied with the initial design, you can
+Regenerate
+the website or make quick customizations to fonts and colors.
+To unlock full editing capabilities, start a
+7-day free trial
+of the Pro version by attaching your credit card.
+Note:
+Your card will not be charged during the trial unless you perform restricted actions (e.g., disabling site lock), which may trigger charges. You can cancel the trial anytime within the 7 days to avoid charges.
+For an informational website
+Choose a
+business type
+and click
+Next
+.
+Enter your
+company name
+and a brief
+description
+.
+Indicate whether you have an existing domain or would like to register one through
+10Web’s Domain Registrar
+.
+The AI will automatically generate a customized website structure. You can adjust this by:
+Customizing each
+page
+section-by-section.
+Adding additional sections or detailed
+prompts
+.
+Including key pages specific to your business.
+Adjust the
+style
+of your website by selecting fonts, colors, and general aesthetic options to craft your ideal look.
+Before generating the website, create an account by entering personal details or signing up with
+Google
+, then click
+Sign up
+to begin the website creation process.
+Once generation completes, a success message will appear. Click
+Preview and edit
+to view the website.
+Check both
+Desktop
+and
+Mobile
+views. You also have the option to
+Regenerate
+the website or make quick adjustments to fonts and colors.
+To make detailed edits, activate a
+7-day free trial
+of the Pro version by adding your credit card information.
+Note:
+Your card will not be charged during the trial unless you disable site lock or perform other restricted actions. You may cancel the trial within 7 days to prevent charges.
+Convert a non-WordPress site to WordPress with AI
+Create an account
+using your details or sign in with Google.
+Once signed in to
+my.10web.io
+, click on
+Proceed
+in the "Convert a non-WordPress site to WordPress with AI" section.
+Enter the URL
+of each page you want to convert. These pages will become part of your new WordPress website and will be ready for AI Builder editing.
+Migrate to WordPress site to 10Web hosting
+If you have your own WordPress website you can migrate it to 10web hosting by choosing
+the option.
+Automatic migration will make a copy of your website on 10Web hosting without affecting your live website.
+For more details:
+How to automatically migrate your website to 10Web
+.
+The 7-day free trial
+The free trial period offers access to all
+10Web Pro features
+. You can cancel anytime during the trial without incurring charges.
+Important:
+SSH and SFTP credentials are not available on free plans, and attempting to enable these may result in charges.
+AI Website Builder
+With
+10Web AI Builder
+, you can easily create or recreate websites by:
+Generating a brand-new page based on responses to a few business-related questions.
+Using the
+AI Recreation Tool
+to recreate unlimited existing web pages.
+Note:
+Free platform users are limited to generating one website, and full editing requires enabling the 7-day free trial.
+10Web Builder
+10Web Builder
+(based on Elementor) provides extensive website editing capabilities, enhanced by over 80 widgets for added functionality and customization. During the 7-day free trial, additional features include:
+AI Page Generation
+(available in
+10Web Dashboard > AI Builder > Add Page
+)
+Section Generation
+within the builder, where you can add sections by describing your design needs.
+10Web Booster
+10Web Website Booster
+enhances frontend and backend performance, applying over 35 optimization techniques. These include image compression and are powered by
+Google Cloud
+for improved speed and stability.
+Hosting on 10Web
+10Web’s
+Managed WordPress Hosting
+(powered by Google) includes automated backups, SEO tools, and robust hosting. All websites generated or recreated are hosted directly on the 10Web platform.
+User and team management
+User
+and Team Management
+allows you to collaborate by creating workspaces and assigning different access levels to team members, ensuring efficient project completion.
+
+================================================================================
+ID: 360018862340
+TITLE: Free Plan: How to Convert/Recreate a Website With AI
+URL: https://help.10web.io/hc/en-us/articles/360018862340-Free-Plan-How-to-Convert-Recreate-a-Website-With-AI
+UPDATED: 2025-01-23T11:44:37Z
+AI Builder
+is a comprehensive tool that uses generative AI to automatically convert any web page to WordPress without copying the original code. You can recreate any webpage using only its URL.
+Note:
+You can recreate as many pages as you like if you are a paid user or up to 10 pages for free users.
+Get started for free
+Go to
+10Web.io
+Click
+Get Started for Free
+In the
+What do you want to do?
+page, click
+Convert a non-WordPress site to WordPress with AI
+You can sign up with
+Google
+or fill in your information and click
+Sign Up
+Insert the URL
+of the page you want to convert with AI into the field
+Click
+Proceed
+to start a recreation
+Click
+Preview & Edit Your Website
+once recreation has been completed
+To edit your website, please click try
+10Web Pro for free for 7 days
+. Fill out the information to try the Pro version of the AI Builder for free for 7 days. If you want to convert/recreate more pages with the free plan, close the pop up to access the dashboard.
+Note:
+The steps to convert/recreate a website are different for customers with paid plans. If you have a paid plan take a look at:
+Pro Plans: How to convert/recreate a website with AI
+
+================================================================================
+ID: 22592225897490
+TITLE: AI Starter Plan
+URL: https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan
+UPDATED: 2026-06-18T10:49:55Z
+Best for
+The
+AI Starter
+plan is designed for individuals, small businesses, startups, and website owners who need one professional WordPress website with AI-powered website creation, managed hosting, speed optimization, and essential website management tools.
+This plan is a good fit if you want to create and manage a single website with 10Web’s Agentic Website Builder, use 10Web Premium Hosting, and access the main tools needed to launch, edit, optimize, and maintain your site.
+What’s included
+The AI Starter plan includes the following functionalities and features along with their limitations:
+1. High-performance WordPress hosting
+Managed WordPress hosting
+:
+Fast and reliable 10Web Premium Hosting for 1 website.
+99.99% uptime:
+Websites hosted on 10Web are built for high availability and reliable performance.
+Monthly visitors
+:
+The plan supports up to 10,000 visitors per month. For every 10K extra visitors, you’ll be charged an extra $2 at the end of the billing month. Visits are measured by the total monthly traffic, based on unique IPs, to your site.
+SSD storage
+:
+Includes 10GB scalable storage with fees for overages if you exceed the limit. You’ll be charged an extra $2 at the end of the billing month for each extra 5GB used.
+Free SSL certificate
+:
+10Web provides you with a free one-click SSL using Let’s Encrypt integration.
+Free custom domain
+:
+The AI Starter plan includes a free custom domain for 1 year, up to $30.
+Bot and DDoS protection:
+Helps protect your websites from bot traffic and DDoS attacks.
+Access to website files and database:
+Easy access to
+SSH
+,
+SFTP
+and
+MySQL
+.
+Hosting usage analytics:
+Track key hosting usage data for your website from the 10Web dashboard.
+Staging test environment
+:
+Test updates and changes in a staging environment before pushing them to your live website.
+Automated 1-click migration
+:
+Move your website to 10Web from another hosting provider with automated migration tools.
+Multisite support
+:
+Install WordPress multisite and manage all aspects of your WordPress multisite from the 10Web dashboard.
+2. Agentic Website Builder
+Agentic Website Builder
+:
+Create a production-ready WordPress website with AI agents that help generate the website structure, design, content, images, and key pages based on your business needs.
+AI credits:
+The AI Starter plan includes 100 AI credits per month. These credits are used for AI-powered website generation and editing actions available in the platform.
+Prompt-to-website generation:
+Start with a short description of your business, project, service, or online store, and generate a complete WordPress website that can be edited and launched.
+Redesign agent:
+Transform an existing outdated page into a modern, improved version while keeping the website’s purpose and structure in mind.
+Cloning agent:
+Recreate any page from a URL and turn it into an editable WordPress page.
+Figma agent:
+Convert Figma designs into production-ready, responsive WordPress pages.
+Advanced AI Editor:
+Make changes to layout, text, sections, images, and code by describing what you want in chat.
+Mobile optimized:
+Generated websites are optimized for mobile devices, helping you provide a smooth experience across screen sizes.
+Custom domain integration:
+Connect your custom domain to your 10Web-hosted website.
+Full WordPress CMS:
+Websites generated with 10Web remain connected to WordPress, giving you the flexibility to manage content, pages, plugins, and site settings.
+3. Ecommerce dashboard
+Product and order management:
+Track and manage ecommerce products and orders through the 10Web interface.
+10Web Payments
+:
+Accept payments with 10Web Payments.
+Ecommerce analytics:
+Track important store data and better understand how your online store is performing.
+Conversion-optimized checkout:
+Use checkout tools designed to help customers complete purchases smoothly.
+Automated tax setup:
+Configure tax settings more easily for your ecommerce website.
+Advanced product filter:
+Help customers find products faster with product filtering tools.
+Customer accounts:
+Allow customers to create and use accounts on your ecommerce website.
+4. Website speed optimization
+Full website optimization
+:
+Automatically optimizes both the front end and back end of your website.
+90+ PageSpeed score:
+Helps achieve a 90+ PageSpeed score for desktop and mobile through a series of technical optimizations.
+Improved Core Web Vitals:
+Helps ensure your website meets Core Web Vitals standards.
+SEO optimized website:
+Generated and hosted websites include SEO-focused foundations to support better search visibility.
+Image optimization
+:
+Applies various techniques to optimize images, reducing file sizes and improving loading times without compromising quality.
+Full page caching:
+Improves website performance by caching pages and reducing load times for visitors.
+Dynamic page caching for Ecommerce:
+Improves store performance with caching designed for dynamic ecommerce pages.
+5. 24/7 customer support
+Email assistance:
+Submit tickets with any issues you have and our team will get back to you in the shortest time.
+24/7 chat support:
+Our customer support team is at your service 24/7. Reach out to us anytime.
+6. Collaboration and automated website maintenance
+User & team management
+:
+Invite users and give them different permissions to your account and websites.
+Automated WordPress and plugin updates:
+Schedule automated updates for WordPress
+plugins
+and
+themes
+through the 10Web dashboard.
+Automated daily backups
+:
+Scheduled automatic daily backups enable you to restore a previous version of your site whenever needed.
+Activity log:
+Track important changes and actions across your website for easier website management.
+Up-to-date PHP and MySQL:
+Keep your website running on supported technologies for better performance, compatibility, and security.
+What's not included
+The AI Starter plan doesn’t include certain advanced services and functionalities. Below are the features not included in this plan:
+Cloudflare CDN
+:
+Access to Cloudflare Enterprise CDN requires an additional purchase. To purchase CDN, go to the 10Web dashboard, click the
+Manage
+button on the website thumbnail for which you want to enable CDN, then navigate to the
+Website Booster tab > Cloudflare CDN
+, and click the
+Buy Now
+button.
+White Label for WordPress
+:
+Available only with Agency plans.
+VIP priority support:
+Available only with Agency plans.
+Price and billing cycle
+For pricing details about the AI Starter plan, please visit
+this page
+. You have the option to choose between monthly, annual, and longer-term billing cycles when available.
+If you already have the AI Starter plan and wish to change your billing cycle:
+Go to the
+Subscription Plan
+page.
+If you’re currently on a monthly plan and want to switch to an annual plan, click
+Switch to Annual
+to make the change.
+Note:
+Longer billing cycles may be more cost-effective than monthly billing. Please check the pricing page or your checkout screen for the current billing options and savings.
+Upgrade options
+Adding more websites
+If you need additional websites, you can add them to your AI Starter plan from the Subscription Plan page. Additional website pricing may vary based on the selected billing cycle, so the current amount is shown during checkout.
+Log into your 10Web dashboard.
+Go to the
+Subscription Plan
+page.
+Click
+Buy Additional Website
+.
+Specify the number of websites.
+Complete the checkout.
+Upgrading to a higher plan
+Consider a higher plan if you require more websites, more AI credits, more monthly visitors, more storage, or additional features.
+Log into your 10Web dashboard.
+Go to the
+Subscription Plan
+page.
+Click the
+Upgrade
+button.
+Choose a plan and billing cycle.
+Complete the checkout.
+Upgrade limitations
+Note that there may be some limitations when upgrading your plan directly from your dashboard. You will have limitations if:
+Your current plan, including add-ons such as additional websites and CDN, has a higher monthly or annual price than the plan you want to upgrade to.
+Your current plan’s storage and visitor limits, including add-ons, are higher than the plan you want to upgrade to.
+For assistance in these cases, contact our customer support team via live chat.
+Downgrading to a lower plan
+If you wish to downgrade your plan, for instance, from annual to monthly billing or to a lower-tier subscription, please contact our Customer Care team. Downgrading is a manual process handled by our Billing Team, as it cannot be performed directly through your account. Our support agents will assist you in making the necessary adjustments to your subscription.
+
+================================================================================
+ID: 24481232927634
+TITLE: Workspace Settings: Subscription Plan Page
+URL: https://help.10web.io/hc/en-us/articles/24481232927634-Workspace-Settings-Subscription-Plan-Page
+UPDATED: 2025-02-07T13:36:03Z
+At
+10Web.io
+, we offer a variety of subscription plans designed to meet different needs. From the subscription plan section, you can check your current plan's details, upgrade to a different plan, or cancel your subscription.
+The
+Subscription plan page
+of your
+10Web Dashboard
+provides all the necessary information about your plan, including its features, limitations, and billing details. In this article, we’ll walk you through how to access and navigate this page.
+Accessing the subscription plan page
+To access the
+Subscription plan page
+Log into your
+10Web Dashboard
+.
+Click on your
+Workspace Name
+in the top-left corner of the dashboard.
+In the dropdown menu, locate and select
+Subscription plan
+under
+Workspace settings
+.
+Subscription plan menu
+At the top of the
+Subscription plan page
+, you'll see your
+current plan title
+in bold, followed by details about your services, features, and usage. These details vary depending on your subscription type.
+Platform plans (trial period)
+On the
+left side
+of the screen, you will see the
+current plan
+panel, which includes:
+The
+title
+of your subscription plan.
+Your
+billing cycle
+(monthly or annual).
+Note:
+If you are on a
+monthly trial
+, you have the option to switch to an
+annual plan
+for better pricing upon the paid plan activation.
+A list of included
+features
+.
+On the
+right side
+, the
+plan details
+section provides options to:
+View the number of
+free trial days remaining
+.
+Important:
+Adding a website will redirect you to the checkout page for confirmation. This will immediately end your trial and start a paid subscription. Proceed only if you are ready for the
+Pro
+plan.
+Upgrade to a higher-tier plan:
+You’ll be redirected to a comparison menu before upgrading.
+Cancel your trial:
+If you do not wish to continue with the plan.
+Platform plans (after trial upgrade)
+Once you upgrade from the trial to a
+paid plan
+, additional options appear below your plan title:
+Add an extra website:
+Purchase additional site slots.
+Upgrade your plan:
+Move to a higher-tier plan with more features.
+Websites:
+Displays the number of websites you can host under your plan.
+SSD Storage limit:
+Shows total storage, including add-ons.
+Monthly visitors limit:
+Displays the total visitor capacity for all hosted sites.
+Website Generations:
+Shows how many times you can
+generate a new site template using
+A
+I Builder
+monthly. The mention limit is reset each month.
+Note:
+Converting sites to WordPress
+using their existing URLs
+does not
+count towards your Website Generations limit and has
+no restrictions
+.
+Plan price:
+Displays the cost of your subscription.
+Billing cycle:
+Monthly or annual.
+Note:
+You can switch to an
+annual plan
+in the dashboard. To switch to
+monthly billing
+, contact
+Customer Care
+.
+Next billing date:
+When your next automatic payment will be processed.
+Cancel your subscription:
+Click on the cancellation prompt to provide feedback and complete the cancellation process.
+Domains
+(
+if you obtained a domain name through 10Web
+) displays:
+Your
+domain name
+.
+Renewal price
+.
+Billing cycle and next billing date
+.
+Whether
+automatic renewal
+is enabled.
+10Web Booster plugin plans
+On the
+left side
+of the
+Speed Booster plan
+page, you’ll see:
+Your
+current plan name
+.
+The number of websites connected to the optimization service.
+Optimization details
+, including:
+Full frontend optimization:
+A brief description of the optimization techniques used.
+Cloudflare Enterprise CDN:
+Displays the number of websites using the
+Cloudflare Enterprise CDN
+,
+CDN bandwidth
+included in the plan, and performance and security
+benefits
+of the
+CDN
+.
+On the
+right side
+, you’ll find your
+billing details
+:
+Plan price
+.
+Billing cycle:
+Monthly or annual.
+Note:
+You can switch to an
+annual plan
+in the dashboard. To switch to
+monthly billing
+, contact
+Customer Care
+.
+Next billing date:
+When your subscription payment will be charged automatically.
+Cancel your subscription:
+Click on the cancellation prompt to provide feedback and cancel.
+Default payment method:
+The payment method attached to your account for automatic renewals.
+Note:
+To
+manage or update
+your payment methods, click on
+"All payment methods"
+to
+acc
+ess
+the
+Payments
+Methods
+menu
+.
+This guide should help you efficiently manage your
+10Web subscription plan
+. If you have any further questions, visit our
+Help Center
+or contact our
+Customer care team
+.
+

@@ -1,0 +1,11 @@
+URL: https://support.fotor.com/hc/en-us/articles/19128854460953-What-are-the-Differences-Between-the-Fotor-Pro-Plan-and-the-Credits-Plan-Can-I-Use-Fotor-Pro-Features-with-Credits
+Captured via browser render (get_page_text) on 2026-08-07. web.archive.org/save blocked (Cloudflare/Zendesk); local evidentiary copy per protocol section 6.4.
+---
+Title: What are the Differences Between the Fotor Pro Plan and the Credits Plan? Can I Use Fotor Pro Features with Credits? – Fotor Help Center
+Nora, 3 years ago Updated
+
+With a Fotor Pro/Pro+ plan, you can get access to all the premium features in our Photo Editor, Design, Collage, Bg Remover, GoArt and AI Image Generator. At the same time, you can enjoy membership benefits such as no ads and downloading watermark-free images.
+
+However, if you purchase a Credits plan, you can only use your credits to generate AI images. Credits do not entitle you to membership benefits, so you will not be able to enjoy the Pro features in this case.
+
+For a detailed comparison, you can check our pricing page. Then, just choose the suitable plan according to your needs.

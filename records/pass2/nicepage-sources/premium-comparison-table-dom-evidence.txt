@@ -1,0 +1,65 @@
+Source: https://nicepage.com/premium ("Compare plans" table)
+Accessed: 2026-08-15
+Archive: https://web.archive.org/web/20260815121227/https://nicepage.com/premium
+Method: rendered read, DOM inspected directly (check/cross icons are <img> tags, invisible to
+plain text extraction -- innerText shows the feature label with no indication of which tier has
+it, per the D-005 "feature grids drawn with check/cross icons need DOM inspection" rule).
+
+Column order confirmed across every inspected row: [label, STARTER(free), PERSONAL, BUSINESS, PRO,
+ULTIMATE] -- 5 plan columns.
+
+--- "Remove Nicepage Badge" row (raw <tr>) ---
+<tr>
+  <td class="product-short-cell">Remove Nicepage Badge
+    <div data-toggle="tooltip" title="Remove the 'Made in Nicepage' message at the bottom of your
+site."><i></i></div>
+  </td>
+  <td class="center free-cell"></td>                                   <- STARTER: no tick (badge stays)
+  <td class="center"><img src=".../tick.png" alt="Applies to plan"></td> <- PERSONAL: tick
+  <td class="center"><img src=".../tick.png" alt="Applies to plan"></td> <- BUSINESS: tick
+  <td class="center"><img src=".../tick.png" alt="Applies to plan"></td> <- PRO: tick
+  <td class="center ultimate-cell"><img src=".../tick.png" alt="Applies to plan"></td> <- ULTIMATE: tick
+</tr>
+=> Badge/watermark present on STARTER (free) only; removed starting at PERSONAL (entry paid tier).
+   free_plan_watermark = yes. watermark_removal_tier = lowest_paid.
+
+--- Cell-by-cell extraction of other rows (cells = [label, Starter, Personal, Business, Pro, Ultimate]) ---
+Design customization:      ["Design customization", "Limited", "Limited", "", "", ""]
+  => Starter AND Personal both show unquantified "Limited" (no number/dimension given). Business/
+     Pro/Ultimate blank = Full Customization (per the summary cards' "Full Customization" label).
+Additional Licenses:       ["Additional Licenses", "", "", "", "10Need more?", "Unlimited"]
+  => blank for Starter/Personal/Business = feature not offered at those tiers (not a "limit" on an
+     existing allowance -- excluded from the limits tally on that basis).
+Daily downloads (stock images): ["Daily downloads with active premium", "", "", "30", "100", "1000"]
+  => blank for Starter/Personal = feature not offered there.
+15,000+ Templates:         ["15,000+ Templates", "Limited", "", "", "", ""]
+  => Only Starter is "Limited"; Personal+ blank = full unrestricted template access.
+Block Layouts:              ["Block Layouts", "50", "200", "500", "1000", "Unlimited"]
+Grid styles:                 ["Grid styles", "10", "25", "50", "100+", "Unlimited"]
+Modal Popups:                ["Modal Popups", "", "1", "10", "100", "Unlimited"]
+Online Projects:             ["Online Projects", "2", "5", "10", "20", "40"]
+Desktop Projects:            ["Desktop Projects", "2", "5", "50", "Unlimited", "Unlimited"]
+Published Sites (web hosting): ["Published Sites", "Limited", "1", "3", "5"] (Ultimate cell not
+  captured in this query but summary card showed "20 Connected Domains" for Ultimate elsewhere)
+  => Starter = unquantified "Limited"; Personal = 1 (quantified).
+
+Interpretation applied (see coder_note in record): qualitative feature-grade labels that describe
+capability level rather than a consumption ceiling -- "Basic/Advanced/Unlimited site search",
+"Basic/Full Customization", "Basic/Advanced E-Commerce" -- were treated as feature tiers, not as
+usage limits in the section-5.1 sense (a limit caps consumption of outputs/minutes/exports/seats/
+storage/resolution/queue priority). Only genuine consumption caps (projects/sites, storage,
+monthly visits, form submissions, calendar appointments, block layouts, grid styles, modal popups,
+published sites, template-library access) were tallied for free_plan_cap_documented /
+usage_cap_quantified.
+
+STARTER (free) limits tally: quantified = {2 Desktop/App Projects, 2 Online/HTML Sites, 250 Mb
+storage, 1,000 monthly visits, 50 Form submissions (lifetime, standing), 20 calendar appointments
+(lifetime, standing), 50 Block Layouts, 10 Grid styles}; unquantified = {"15,000+ Templates:
+Limited", "Design customization: Limited", "Published Sites: Limited"}.
+=> free_plan_cap_documented = some_quantified.
+
+PERSONAL (entry paid tier) limits tally: quantified = {5 Desktop/App Projects, 5 Online/HTML
+Sites, 1 Gb storage, 25,000 monthly visits, 250 Form submissions/month/site, 50 calendar
+appointments/month/site, 200 Block Layouts, 25 Grid styles, 1 Modal Popup, 1 Published Site with
+Connected Domain}; unquantified = {"Design customization: Limited"}.
+=> usage_cap_quantified (entry tier) = some_quantified.

@@ -1,0 +1,136 @@
+# Coded per codebook-v1.2. Documents-only. Blindness: no other product record opened.
+product_id: rezi
+product_name: Rezi
+category: AI resume builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Pro"
+coder_pass: 1
+coder_role: primary
+collection_date: "2026-08-10"
+recheck_date: not_applicable
+primary_source_url: https://www.rezi.ai/pricing
+archive_url: "https://web.archive.org/web/20260807062609/https://www.rezi.ai/pricing"
+archive_status: archived
+default_display_state: "USD; Pro shown as a single $29/month card with no monthly/annual toggle anywhere on the page (no_toggle); no cookie-consent banner encountered; no currency/region selector present; read from Turkey network location and served USD directly (no localization observed)."
+
+sources:
+  - { url: "https://www.rezi.ai/pricing", kind: pricing, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260807062609/https://www.rezi.ai/pricing", note: "vendor pricing page; rendered read (Claude Browser) plus embedded JSON-LD (FAQPage schema) as second representation; archive.org returned an existing capture dated 2026-08-07 (5 days before access) on both submission attempts rather than a fresh crawl - content visually verified identical to today's live read (same figures, same layout); local copy saved at rezi-sources/pricing-page-rendered.txt" }
+  - { url: "https://www.rezi.ai/legal", kind: tos, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260807062602/https://www.rezi.ai/legal", note: "Rezi Terms of Use + Privacy Policy, single combined page, read in full to the end; archive.org returned an existing 2026-08-07 capture on both attempts (same caveat as pricing page); local copy saved at rezi-sources/legal-terms-privacy-full-text.txt" }
+  - { url: "https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy", kind: refund, accessed: "2026-08-12", archive: archive_failed, note: "official Rezi User Guides help center (Intercom-hosted); archive.org returned HTTP 404 for this URL on both save attempts (systematic - the intercom.help SPA routing appears unarchivable by the Wayback crawler, confirmed by the same failure on a sibling intercom.help URL below); archive_status local_copy_only for this source; full text saved at rezi-sources/cancellation-policy-full-text.txt" }
+  - { url: "https://intercom.help/rezihelp/en/articles/8383549-subscription-plans", kind: docs, accessed: "2026-08-12", archive: archive_failed, note: "official Rezi User Guides help center; only page found stating a Quarterly-plan price ($19/month billed quarterly); archive.org returned HTTP 404 on save attempt, same systematic intercom.help issue as the cancellation-policy source; archive_status local_copy_only; full text saved at rezi-sources/subscription-plans-intercom-full-text.txt" }
+  - { url: "https://www.rezi.ai/rezi-docs/rezi-subscription-plans-explained", kind: docs, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812071829/https://www.rezi.ai/rezi-docs/rezi-subscription-plans-explained", note: "official Rezi first-party doc on rezi.ai's own 'User Guides' section (distinct from the Intercom help center); fresh same-day archive capture succeeded; confirms quarterly billing exists as an in-dashboard option and carries an internal $/£ inconsistency in its closing summary bullet (see coder_note); local copy saved at rezi-sources/rezi-docs-subscription-plans-explained-full-text.txt" }
+
+variables:
+  headline_price_usd: { value: "29.00", source: "https://www.rezi.ai/pricing", evidence: "Pro card: \"$29\" / \"/ month\"; confirmed in a second representation, the page's embedded JSON-LD FAQPage schema: \"The Pro plan is $29/month\". Magnitude sanity-checked (not $2,900 or $0.29) against the tier name and feature list." }
+  headline_billing_basis: { value: "per_month_billed_monthly", source: "https://www.rezi.ai/pricing", evidence: "\"$29 / month\" with no \"billed annually\" qualifier and no billing-period toggle anywhere on the page; not per-seat (no \"per user/seat\" language on Pro, unlike Enterprise's explicit \"per 200 users\")." }
+  first_charge_amount_usd: { value: "29.00", source: "https://www.rezi.ai/pricing", evidence: "Default display state is monthly (no annual option/toggle exists for Pro), so the first charge equals the published monthly headline figure; no multiplication performed (codebook first_charge_amount_usd rule 2 requires annual default before multiplying, which does not apply here)." }
+  mandatory_addon_present: { value: "no", source: "https://www.rezi.ai/pricing", evidence: "Pro's advertised feature list (unlimited resumes/interviews/downloads/templates, Rezi Score, keyword targeting, 1 free monthly expert review) carries no required extra charge; the only priced add-on found, \"Rezi Resume Review - From $8\", is explicitly an optional a-la-carte purchase (Free-tier only; Pro already includes 1/month) per the compare table and https://www.rezi.ai/legal, which is silent on any mandatory fee." }
+  annual_condition_disclosure: { value: "not_applicable", source: "https://www.rezi.ai/pricing", evidence: "Pro's headline figure does not depend on annual prepayment - no annual billing option is published for Pro at all." }
+  annual_default_toggle: { value: "no_toggle", source: "https://www.rezi.ai/pricing", evidence: "Each plan card (Free/Pro/Enterprise) and the compare-table header show exactly one price with no monthly/annual switcher UI element anywhere on the page (confirmed in the accessibility tree: no button/tab control for a billing-period toggle)." }
+  free_plan_exists: { value: "yes", source: "https://www.rezi.ai/pricing", evidence: "\"Free / $0 / Get a feel for how it works. No payment required.\" - a standing, perpetual tier alongside Pro/Lifetime/Enterprise, not a time-limited trial." }
+  free_plan_cap_documented: { value: "some_quantified", source: "https://www.rezi.ai/pricing", evidence: "Quantified standing limits: \"1 Resume\" (compare table: \"1 Resume Limit\"), \"1 AI Interview\" (\"1 interview\"), \"3 PDF Downloads\" (\"3 Downloads\"). Unquantified: \"Rezi Score - Limited\", \"AI Keyword Targeting - Limited\", \"Real Time Content Analysis - Limited\" carry no number (section 5.1: words with no number never qualify)." }
+  free_plan_cap_value: { value: "1 Resume | 1 AI Interview | 3 PDF Downloads", source: "https://www.rezi.ai/pricing", evidence: "Standing limits (no period stated - lifetime/account caps, not monthly rates), formatted per section 5.1's `quantity unit` form for standing limits." }
+  free_plan_watermark: { value: "unknown", source: "https://www.rezi.ai/pricing", evidence: "The full feature compare table (18+ rows) contains no watermark or branding row at all; https://www.rezi.ai/legal, the two help-center Subscription Plans articles, and the Cancellation Policy article were also read and none mentions a watermark in either direction. A silent pricing table is unknown per the variable's own decision rule." }
+  free_plan_duration: { value: "perpetual", source: "https://www.rezi.ai/pricing", evidence: "Free is presented as a standing tier alongside Pro/Lifetime/Enterprise with no expiry stated anywhere in any of the five official documents read." }
+  trial_exists: { value: "no", source: "https://www.rezi.ai/pricing", evidence: "Only four plans are documented anywhere (Free, Pro, Lifetime, Enterprise); none of the five official documents read (pricing page, legal/terms, both help-center Subscription Plans articles, Cancellation Policy) describes a time-limited trial of a paid tier. Marketing CTA \"Try for free\" links to signup for the perpetual $0 Free plan, not a trial (codebook rule 1: a free plan is not a trial)." }
+  trial_card_required: { value: "not_applicable", source: "https://www.rezi.ai/pricing", evidence: "No trial exists." }
+  trial_length_days: { value: "not_applicable", source: "https://www.rezi.ai/pricing", evidence: "No trial exists." }
+  trial_auto_converts: { value: "not_applicable", source: "https://www.rezi.ai/pricing", evidence: "No trial exists." }
+  credit_system_present: { value: "no", source: "https://www.rezi.ai/pricing", evidence: "Every plan allowance across all five official documents is stated directly in output units - \"1 Resume\", \"1 AI Interview\", \"3 PDF Downloads\", \"1 per month\" (resume review) - with zero use of \"credit\", \"token\", \"point\", or \"coin\" as a metering unit anywhere. The one use of the word \"credit\" found on the pricing page (\"Prorated credits will apply when switching\" plans) refers to billing proration, not a metered-generation currency." }
+  credit_unit_defined: { value: "not_applicable", source: "https://www.rezi.ai/pricing", evidence: "No credit system." }
+  credit_to_output_rate_published: { value: "not_applicable", source: "https://www.rezi.ai/pricing", evidence: "No credit system." }
+  credit_rate_location: { value: "not_applicable", source: "https://www.rezi.ai/pricing", evidence: "No credit system." }
+  cost_per_output_unit: { value: "per_seat_month", source: "https://www.rezi.ai/pricing", evidence: "Pro sells unmetered access to the software (\"Unlimited Resumes\", \"Unlimited AI Interviews\", \"Unlimited PDF Downloads\") at a flat price per individual account, matching codebook rule 2's unmetered-software case exactly (the codebook's own Vendor L example: \"an unlimited-use writing assistant at a flat monthly price per user\")." }
+  cost_per_output_computable: { value: "yes", source: "https://www.rezi.ai/pricing", evidence: "Because the principal-output unit is per_seat_month (unmetered), the cost per unit is the published plan price itself - no assumption about typical use is needed and every figure used is published." }
+  computation_assumptions: { value: "Pro tier, $29.00/mo billed monthly per default display state (pricing page shows no toggle/annual option for Pro). Pro = unlimited/unmetered resumes, AI interviews, and PDF/DOCX/Drive downloads for one flat per-account fee, so principal-output unit = per_seat_month (unmetered-software rule). Cost per seat-month = plan price = $29.00; no conversion or division required (both price and allowance are already on the same, and only, period).", source: "https://www.rezi.ai/pricing", evidence: "not_applicable - this field records the coder's own arithmetic, not a vendor statement." }
+  credit_rollover_policy: { value: "not_applicable", source: "https://www.rezi.ai/pricing", evidence: "No credit system." }
+  failed_generation_charge_policy: { value: "not_applicable", source: "https://www.rezi.ai/pricing", evidence: "Pro is a flat-rate, seat-based tier with no per-output accounting (\"Unlimited Resumes/AI Interviews/PDF Downloads\") - this is the codebook's own stated not_applicable case verbatim (\"a flat-rate seat-based tool with no per-output accounting\"). See coder_note for the judgment call on how this was applied given the Free tier does cap whole deliverables (1 resume, 1 interview, 3 downloads) without any stated per-attempt/failed-generation accounting layered on top of those caps." }
+  auto_renewal_default: { value: "on", source: "https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy", evidence: "\"When you cancel a recurring subscription: Your access will remain active until the end of your current billing period. Future charges will stop, but past payments will not be refunded\" - necessarily implies charges continue on their recurring cadence unless the buyer actively cancels. Corroborated by https://www.rezi.ai/rezi-docs/rezi-subscription-plans-explained: \"you won't be charged again unless you renew\" [sic, informal phrasing] alongside \"cancel a recurring subscription at any time\". No document uses the literal word \"automatically\", so this is a determinate reading of described mechanics rather than a verbatim match to the codebook's own example wording; recorded as on rather than unknown because the described mechanic (charges continue absent action; canceling is what stops them) is the operational definition of auto-renewal." }
+  auto_renewal_disclosure_location: { value: "help_center_only", source: "https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy", evidence: "Stated in the dedicated Cancellation Policy help article and in the rezi.ai/rezi-docs Subscription Plans guide (both official documentation/help-center class); absent from the pricing page and from https://www.rezi.ai/legal (the formal Terms of Use, read in full, never mentions renewal)." }
+  renewal_notice_commitment: { value: "unknown", source: "https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy", evidence: "No document (Cancellation Policy, either Subscription Plans guide, or the Terms of Use) commits to - or explicitly denies - notifying the buyer in advance of a renewal charge." }
+  refund_policy_exists: { value: "yes", source: "https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy", evidence: "\"Refund Eligibility - Within the First 30 Days: Monthly and Quarterly Plans: Requests made within 30 days of the subscription start date may be eligible for a refund.\" Corroborated on the pricing page FAQ/JSON-LD: \"Rezi offers a 100% money-back guarantee on all paid plans (Pro and Lifetime).\"" }
+  refund_window_days: { value: "30", source: "https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy", evidence: "\"Monthly and Quarterly Plans: Requests made within 30 days of the subscription start date may be eligible for a refund.\" (Pro is a Monthly plan.) Note: a second, narrower window also applies to charges after the first 30 days (\"Monthly Plan: Requests accepted within 7 days of your billing date\") - see coder_note; refund_window_days records the primary post-purchase window per the variable's definition (\"days after purchase\")." }
+  refund_conditions: { value: "conditional", source: "https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy", evidence: "Eligibility is bounded by the time window, \"only the most recent payment will be refunded\" if approved, a reason and account email must be submitted, and \"Submitting a request does not guarantee a refund. It can only be granted if the conditions above are met.\"" }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy", evidence: "\"1. Log in to your Rezi account. 2. ... click the arrow-down button ... 3. Select 'Account' and scroll down to the 'Cancel Subscription' section. 4. Click the 'Cancel Subscription' button. 5. Complete the flow until the subscription is completely canceled.\" - no contact/ticket/email required to cancel." }
+  refund_policy_location: { value: "multiple", source: "https://www.rezi.ai/pricing", evidence: "Stated on the pricing page (FAQ accordion + embedded JSON-LD FAQPage: \"100% money-back guarantee...within 30 days\") and on the dedicated Cancellation Policy help-center page (https://intercom.help/rezihelp/en/articles/11967126-cancellation-policy), in agreement." }
+  commercial_use_lowest_tier: { value: "enterprise_only", source: "https://www.rezi.ai/legal", evidence: "\"Rezi Pro and Lifetime subscriptions are licensed for personal, individual use only. Users may not use Rezi on behalf of other individuals, organizations, agencies, or businesses for commercial purposes... Organizations, agencies, and individuals seeking to use Rezi to assist other job seekers or provide commercial resume and career services should use Rezi Enterprise, which is designed for multi-user and commercial use cases.\" See coder_note for the construct-fit judgment call: this clause restricts commercial use of the service/output on behalf of third parties rather than licensing terms for the buyer's own resume content, which is the closest on-point statement available for this product category." }
+  watermark_removal_tier: { value: "unknown", source: "https://www.rezi.ai/legal", evidence: "The Terms of Use (read in full) never mentions a watermark; nor does any of the other four official documents (pricing page compare table, both Subscription Plans guides, Cancellation Policy)." }
+  output_ownership_statement: { value: "unknown", source: "https://www.rezi.ai/legal", evidence: "The Terms of Use's \"Use License\" section (section 2) grants a license to view Rezi's website/materials only; it never states who owns or holds rights in the resumes/cover letters/resignation letters a user generates. The Privacy Policy mentions resume content only as data collected (\"Content Information\"), not as a rights/ownership question. No other document addresses it." }
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://www.rezi.ai/pricing", evidence: "Pro's stated limits are \"Unlimited Resumes\", \"Unlimited AI Interviews\", \"Unlimited PDF Downloads\" (unlimited, and no fair-use/discretionary clause anywhere in https://www.rezi.ai/legal qualifies these claims, so they count as quantified per rule 3's carve-out) plus \"1 per month\" for Rezi Resume Review (an explicit quantified rate)." }
+  unquantified_limit_clause: { value: "absent", source: "https://www.rezi.ai/legal", evidence: "The Terms of Use was read in full to its end (all 6 numbered sections plus the Privacy Policy). The only usage restriction found is the personal/individual-use, no-commercial-resale clause quoted above, which is a conduct restriction (who may be served), not a volume/intensity throttle (codebook rule 3 excludes conduct prohibitions from this variable). No fair-use, reasonable-use, excessive-use, abuse-threshold, or discretionary-throttling clause of any kind is present." }
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2) - one eligible candidate on the live pricing page, two
+  losing candidates found elsewhere, one genuine judgment call:
+
+  - Pro, $29/month, billed monthly, no toggle -> annual-equivalent $348.00. SELECTED. Only recurring,
+    non-sales-gated, single-seat plan that actually appears on https://www.rezi.ai/pricing in any state.
+  - Lifetime, $149 one-time -> NOT a candidate per this task's explicit framing: sampling-rules 7.2's
+    annualisation mechanic (rule 2, "annualize whatever [the default display state] shows") does not
+    cover a non-recurring purchase, and the entry tier is defined as the cheapest generally-available
+    RECURRING plan. Recorded here per instruction rather than selected.
+  - Enterprise, $99/month per 200-user minimum block -> annual-equivalent $1,188.00 for the block (which
+    would itself be a candidate under rule 3's minimum-seat-block provision), but FAILS eligibility
+    criterion 2 ("purchasable without contacting sales"): its only call to action is "Book a demo" ->
+    /contact-sales. Excluded as sales-gated, not compared further.
+  - Quarterly, "$19/month (billed quarterly)" -> annual-equivalent $228.00, CHEAPER than Pro Monthly.
+    Documented in TWO independent official sources: https://intercom.help/rezihelp/en/articles/8383549-subscription-plans
+    ("Plans start at: Monthly: $29/month, Quarterly: $19/month (billed quarterly)") and
+    https://www.rezi.ai/rezi-docs/rezi-subscription-plans-explained ("choose monthly, quarterly, or
+    lifetime billing" in the account dashboard's Upgrade flow). The Cancellation Policy page also treats
+    "Quarterly Plans" as a real, currently-administered billing category with its own refund windows.
+    NOT SELECTED as entry_tier_name despite being cheaper, because it never appears on
+    https://www.rezi.ai/pricing in any display state (no toggle exists there at all) - sampling-rules
+    7.2's price-basis mechanism is explicitly anchored to "the pricing page's default display state" and
+    instructs the coder not to hunt for a cheaper figure; Quarterly's price is only ever stated in help
+    documentation, and per that same help doc, the exact price "may vary by region" and is only
+    authoritatively shown after logging into the account dashboard, which the documents-only rule
+    prohibits accessing. This is a genuine judgment call, flagged for adjudication: an argument exists
+    that Quarterly is the more literally correct "cheapest generally-available recurring plan." Flagging
+    rather than silently resolving per this study's own stated preference for surfaced judgment calls.
+    Every other entry-tier variable (usage_cap_quantified, cost_per_output_computable) would code
+    identically under either Monthly or Quarterly, since Quarterly is billing-cadence-only and the Pro
+    feature set is otherwise identical; only headline_price_usd, first_charge_amount_usd,
+    headline_billing_basis, entry_tier_name, and computation_assumptions would change if Quarterly were
+    selected instead (Quarterly figures: headline 19.00, first_charge = 19 x 3 = 57.00 per quarter per
+    the help doc's own "billed quarterly" framing, billing_basis would need a value not on the current
+    list since quarterly billing has no matching enumerated basis - itself worth flagging to adjudication).
+
+  CURRENCY CHECK (deviation D-003/D-007): collection run from Turkey network location. The live pricing
+  page served USD ($) directly with no locale/region toggle and no currency selector - satisfies arm 1 of
+  the D-003 checklist without needing the archive fallback. Separately, https://www.rezi.ai/rezi-docs/rezi-subscription-plans-explained
+  restates the same three figures (29/149/99) with a GBP symbol (£) in its closing "Summary" bullet list
+  only, while using $ throughout the rest of the same page and matching the pricing page exactly. Because
+  the numerals are identical (not a converted amount) this reads as an isolated copy/symbol error in one
+  secondary marketing-style doc rather than a genuine dual-currency offering, so it was NOT coded
+  non_usd - see conflict_note.
+
+  FAILED_GENERATION_CHARGE_POLICY judgment call: coded not_applicable because Pro (the entry tier) is
+  flat-rate/unlimited with no per-output accounting, which is the codebook's own stated not_applicable
+  case. Flagged because the Free tier's whole-deliverable caps (1 resume, 1 interview, 3 downloads)
+  are a form of metering, even though nothing in any document describes a failed-generation charge layer
+  on top of those caps; unknown would also have been defensible.
+
+  COMMERCIAL_USE_LOWEST_TIER judgment call: the only on-point clause found restricts commercial use of
+  the SERVICE on behalf of third parties (agencies/career coaches using Rezi to serve clients), not an
+  output-licensing clause of the kind common for image/video generators. Coded enterprise_only as the
+  closest available, explicitly documented answer for this product category rather than unknown; flagged
+  for adjudication.
+
+  A-012: does not apply. No cheap non-zero time-limited paid intro period was found anywhere (Quarterly
+  is a standing discounted recurring cadence, not a short intro period that converts to a higher rate).
+
+  ARCHIVAL: two rezi.ai URLs (pricing, legal) returned an existing archive.org capture dated 2026-08-07
+  (5 days before this 2026-08-12 access) on both submission attempts rather than a fresh same-day crawl;
+  content was visually verified identical between the 2026-08-07 capture and today's live read (same
+  figures, same layout, same copy). Two intercom.help URLs (cancellation-policy, subscription-plans)
+  returned HTTP 404 from archive.org's crawler on submission (confirmed systematic: same failure
+  signature on both, likely an Intercom SPA routing/User-Agent quirk on the origin server) - local text
+  copies of both were saved under rezi-sources/ as the evidence trail for those two. The rezi.ai/rezi-docs
+  page archived fresh, same-day.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Not a strict propositional conflict (the pricing page never states quarterly billing doesn't exist), but a material gap worth recording: https://www.rezi.ai/pricing shows Pro at a single $29/month price with no toggle and no mention of a Quarterly option, while https://intercom.help/rezihelp/en/articles/8383549-subscription-plans states 'Quarterly: $19/month (billed quarterly)' and https://www.rezi.ai/rezi-docs/rezi-subscription-plans-explained confirms quarterly billing is offered in the account dashboard's Upgrade flow - a cheaper recurring option is documented but not shown on the primary marketing pricing page. Separately, https://www.rezi.ai/rezi-docs/rezi-subscription-plans-explained states the same Pro/Lifetime/Enterprise figures twice within itself: '$29/month', '$149', '$99/month per 200 users' throughout its body, then '(£29/month)', '(£149 one-off payment)', '(£99/month per 200 users)' in its closing Summary bullet - identical numerals, inconsistent currency symbol within one document. The live pricing page (rank-1 authority for pricing variables, https://www.rezi.ai/pricing) is unambiguous and USD-only in both representations read (rendered DOM and embedded JSON-LD), and governs the coded values."
+register_events: []
+status: complete

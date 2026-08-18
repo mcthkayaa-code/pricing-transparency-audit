@@ -1,0 +1,105 @@
+D-007 CURRENCY RE-CHECK — phrasly — 2026-08-10
+Method: rendered reads (mcp browser tools) for Arm 1; rendered + raw HTTP checks
+for Arm 2. This record is one of the two direct triggers for D-007 (with
+gptzero) -- the original coder ran the old D-003 check exactly as instructed,
+both its arms genuinely failed, and D-003's closing clause forced non_usd
+anyway. This file applies the amended rule instead.
+
+RESULT UP FRONT: this re-check CHANGES the coded value, but NOT to a money
+figure -- to unknown, for the same structural reason as gptzero (checked earlier
+in this same sweep): Phrasly's own Terms of Service contain a general,
+unconditional currency disclosure ("All payments shall be in US dollars"), which
+is real Arm-1 evidence, but no document anywhere states a USD number for the
+Unlimited entry tier specifically. Arm 2 fails outright, re-confirmed fresh today
+with an even newer capture than the original check had access to.
+
+ARM 1 — vendor's own currency disclosure
+----------------------------------------------------------------------------
+1a. Currency/country selector on the live pricing page (rendered DOM inspection,
+    2026-08-10, https://phrasly.ai/pricing -- still TRY 524-ish/mo for Unlimited;
+    note the exact figure has drifted slightly from this record's own reading,
+    TRY 524.43 -> TRY ~524 range visible today on the "3 Day Access" card's
+    "then TRY 953.78" vs the record's "TRY 953.90" -- ordinary live-FX drift, not
+    investigated further, out of this task's scope).
+    Query: select, [class*="currency" i], [class*="country" i], [id*="currency" i],
+    [id*="country" i], [aria-label*="currency" i], [aria-label*="country" i].
+    Result: 0 matches. No selector exists.
+
+1b. Vendor-supported currency URL parameter.
+    Tried: https://phrasly.ai/pricing?currency=USD , rendered 2026-08-10.
+    Result: no effect, still TRY. Not a supported mechanism.
+
+1c. Explicit currency statement in billing/help documentation or the terms.
+    Re-read https://phrasly.ai/terms in full (60,606 chars) with a currency
+    -word search, 2026-08-10. Found, ALREADY on file in this record's own
+    conflict_note (the original coder had already located it): "Sales tax will
+    be added to the price of purchases as deemed required by us. We may change
+    prices at any time. All payments shall be in US dollars." -- a general,
+    unconditional clause (not scoped to the trial), textually close to the
+    equivalent clause found in gptzero's ToS during this same sweep. The other
+    7 hits in the same document are all the ALREADY-KNOWN, trial-specific "$2.00
+    USD" fee language (Section 6, "TRIAL") -- confirmed again to price the "3 Day
+    Access" trial offer only, not the Unlimited entry tier this record's
+    headline_price_usd/first_charge_amount_usd are about.
+    THE GAP: exactly as with gptzero, this statement names a currency but not a
+    figure for the tier in question. No document -- the pricing page, the full
+    terms, or the ai-humanizer product page already in this record -- states
+    what the Unlimited tier's price is in USD.
+
+ARM 1 CONCLUSION: a real documentary currency statement exists and argues
+against "the vendor publishes only a non-USD price," but supplies no number for
+the Unlimited tier.
+
+ARM 2 — US-crawled archive capture that actually contains price figures
+----------------------------------------------------------------------------
+This record's own D-003 log (phrasly-sources/currency-check-d003.txt) already
+established: the most recent capture as of 2026-08-10's original check
+(20260712202952) is a 34,722-byte pre-hydration JS-app shell with NEITHER plan
+names NOR price figures in any currency. Re-verified independently this pass
+(raw HTTPS fetch of the id_ suffix, 2026-08-10): identical, 34,722 bytes,
+confirmed zero matches for "TRY", "$[0-9]", or "Unlimited" anywhere in the file.
+
+Went further than the original check: queried the Wayback CDX API for every
+capture of this URL between 2026-07-01 and 2026-08-11 to check for anything
+newer. Found one: 2026-08-10 07:42:55 -- TODAY, a few hours before this
+re-check -- but its CDX record already shows statuscode 204 (No Content) and
+mimetype application/http, a strong hint it is not a real page capture. Fetched
+it directly to confirm: it is Cloudflare's "Just a moment..." bot-challenge
+interstitial (5,998 bytes), not the pricing page -- archive.org's OWN crawler
+was blocked by the same Cloudflare wall this record's original coder hit via
+curl, on the freshest attempt available. A live browser navigation to the
+Wayback "closest capture" shorthand
+(https://web.archive.org/web/2026/https://phrasly.ai/pricing) independently
+rendered the same "Just a moment..." challenge title, corroborating the CDX
+finding by a second method.
+
+ARM 2 CONCLUSION: fails, on the original capture AND on a same-day capture
+newer than anything available to the original D-003 check. No readable price of
+any kind, in any currency, has ever been archived for this URL.
+
+OUTCOME
+----------------------------------------------------------------------------
+Same structural outcome as gptzero, checked earlier in this sweep. Arm 2 returns
+nothing. Arm 1 returns a real currency statement without a number. Under the
+amended rule, non_usd requires positive evidence the vendor publishes ONLY a
+non-USD price -- and the ToS's own "All payments shall be in US dollars" argues
+against exactly that framing -- while no arm supplies a figure to code as money.
+unknown is the value for "we could not determine the figure," which is the case
+here, not non_usd.
+
+VALUE CHANGES:
+- headline_price_usd: non_usd -> unknown.
+- first_charge_amount_usd: non_usd -> unknown (same basis; no USD figure exists
+  to annualize either way, and the "billed annually, no explicit twelve-month
+  sentence" ambiguity this record already flagged is now compounded by, not
+  resolved by, this re-check).
+- cost_per_output_computable: UNCHANGED ("yes"); its computation stays
+  TRY-denominated and numerically unchanged (per_seat_month unit, cost = plan
+  price itself = TRY 524.43), since this variable's rule does not gate on
+  headline_price_usd's specific value or currency. Only the stray
+  cross-reference to the old "non_usd" value in computation_assumptions is
+  corrected.
+- No register_events change needed: this record's original D-003 log correctly
+  noted no display_variant applied under the old rule (neither state showed
+  USD), and that remains true under the amended rule too -- no USD figure was
+  ever found to log a TRY variant against.

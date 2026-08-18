@@ -1,0 +1,91 @@
+SOURCE: https://www.shortsfaceless.com/tos
+ACCESSED: 2026-08-12
+METHOD: Rendered read via browser preview (Claude_Browser), get_page_text.
+  Archive: 1 attempt, SUCCEEDED with full text content preserved (unlike the price-card pages,
+  this page is server-rendered plain text and archives cleanly).
+  archive_url: https://web.archive.org/web/20260812084637/https://www.shortsfaceless.com/tos
+  archive_status: archived. Verified post-capture that the snapshot's outerHTML contains
+  "credits per month" and "Effective Date" (the two operative phrases cited below).
+
+=== FULL PAGE TEXT (document.body / <article>, captured in full — 5,562 chars, ends naturally) ===
+Terms of Service
+Effective Date: November 4, 2024
+
+Acceptance of Terms
+By accessing and using the Shorts Faceless website located at https://shortsfaceless.com (the
+"Website"), you agree to be bound by these Terms of Service ("Terms"), the YouTube Terms of
+Service, and the Google API Services User Data Policy. If you do not agree to all of these
+Terms, do not use the Website.
+
+Services Description
+Shorts Faceless is a Software as a Service (SaaS) tool that enables users to generate
+AI-driven videos from text inputs. Upon purchasing a package, users receive a number of
+credits per month, where each credit allows for the generation of one video.
+
+AI-Powered Services
+Our services utilize various AI models for text generation, image generation, text-to-speech,
+and speech-to-text functionalities. By using our services, you acknowledge and consent to the
+processing of your inputs (such as text prompts, images, or audio) by these AI models.
+
+Ownership and Rights
+Generated videos are stored on the user's dashboard for 7 days after creation, during which
+users may download, publish, modify, and distribute the videos. After 7 days, the videos are
+deleted from our systems. You retain ownership of your input content, but grant us the
+necessary rights to process it using our AI services.
+
+User Accounts
+Users must register and maintain an active personal user account to access the services.
+Account registration requires personal information such as your name, email address, and
+payment information. Users are responsible for all activities that occur under their account.
+
+User Data and Privacy
+[privacy/YouTube API/Google API boilerplate, not billing-relevant]
+
+Cookies and Tracking Technologies
+[not billing-relevant]
+
+User Responsibilities / Prohibited Activities
+You are responsible for ensuring that your use of our services ... complies with all
+applicable laws ... You must not use our services to create, upload, or share any illegal,
+offensive, or harmful content. ... prohibited from ... attempts to reverse-engineer our AI
+models or use our services in ways not intended.
+[No numeric usage/rate-limit clause; no fair-use or "excessive use" language anywhere.]
+
+Modification of Terms
+We reserve the right to modify these Terms at any time. Continued use of the Website after any
+such changes shall constitute your consent to such changes.
+
+Governing Law
+Illinois, United States; DuPage County / Northern District of IL courts.
+
+Limitation of Liability
+[standard boilerplate, no billing terms]
+
+Termination
+We may terminate or suspend access to our Service immediately, without prior notice or
+liability, for any reason whatsoever, including, without limitation, if you breach the Terms.
+[This is the vendor's right to terminate the USER's access for breach — not a user-initiated
+cancellation route, and not a refund/renewal clause.]
+
+YouTube API Services / Google API Services and Limited Use
+[boilerplate]
+
+Contact Us
+contact@shortsfaceless.com
+
+=== KEYWORD SEARCH (JS regex, whole-document innerText, case-insensitive counts) ===
+renew: 0 | cancel: 0 | subscription: 0 | recurring: 0 | refund: 0 | money back / money-back: 0
+| chargeback: 0 | dispute: 0 | terminate: 1 (the Termination clause quoted above, vendor's own
+right, not a user cancellation route) | billing cycle: 0 | auto-renew: 0 | automatically: 0 |
+watermark: 0 | fair use: 0 | excessive: 0 | throttl(e): 0 | commercial: 0 | abuse: 0 |
+rollover / roll over: 0 | unused: 0 | expire: 0 | reset: 0 | fail / error: 0
+=> The entire Terms of Service (the rank-1 source for every contractual variable in this
+study) never addresses auto-renewal, cancellation, refunds, commercial-use rights, watermark
+policy, or any discretionary/fair-use usage clause. This silence is the finding recorded on
+auto_renewal_default, auto_renewal_disclosure_location, renewal_notice_commitment,
+cancellation_self_serve (all unknown/absent) and on unquantified_limit_clause (absent — the
+terms were read in full and no discretionary clause was found).
+=> "credit" / "package" / "per month": exactly the one Services Description sentence quoted
+above ("Upon purchasing a package, users receive a number of credits per month, where each
+credit allows for the generation of one video."). This is the sole and complete definition of
+the credit mechanism; it is not repeated or referenced anywhere else in this document.

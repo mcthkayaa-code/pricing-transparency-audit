@@ -1,0 +1,61 @@
+Source: https://nicepage.com/premium
+Accessed: 2026-08-15
+Archive: https://web.archive.org/web/20260815121227/https://nicepage.com/premium
+Method: rendered read via browser (JS executed), DOM inspected directly via document.querySelectorAll
+Purpose: D-005 second-representation check. Static/innerText extraction (both WebFetch markdown
+conversion and document.body.innerText) reads the price cards as "$675/mo", "$1275/mo", "$1875/mo",
+"$3175/mo" -- a x100 misread caused by a superscript-cents layout ("<sup>$</sup><span
+class=price-label>6<sup>75</sup></span>"). The raw DOM below is the second representation that
+resolves this. Confirmed identically present in the archive.org snapshot (crawler executed JS).
+
+Toggle state at load: #period-toggle checked=false; label "Subscription" carries class
+"span-selected" (default = Subscription tab, i.e. recurring "Billed annually" pricing, not the
+one-time "License" tab). No monthly-recurring option exists on this page -- the toggle switches
+between "Subscription" (recurring, billed annually) and "License" (one-time, lifetime), not between
+monthly and annual billing of the same product.
+
+Raw DOM (document.querySelectorAll('.price.original-price, .price.price-value')):
+
+STARTER (free-tier, price-value):
+  <div class="price price-value"><sup>$</sup>0</div>
+  => $0
+
+PERSONAL (personalOriginalPrice) -- POPULAR badge, this is the entry paid tier:
+  <div class="price original-price personalOriginalPrice">
+      <sup>$</sup><span class="price-label">6<sup>75</sup></span><span class="price-year">/mo</span>
+  </div>
+  => $6.75/mo, "Billed annually" (billing-period div in same table column, directly beneath the
+     Buy Now button)
+
+BUSINESS (businessOriginalPrice):
+  <div class="price original-price businessOriginalPrice">
+      <sup>$</sup><span class="price-label">12<sup>75</sup></span><span class="price-year">/mo</span>
+  </div>
+  => $12.75/mo, Billed annually
+
+PRO (proOriginalPrice):
+  <div class="price original-price proOriginalPrice">
+      <sup>$</sup><span class="price-label">18<sup>75</sup></span><span class="price-year">/mo</span>
+  </div>
+  => $18.75/mo, Billed annually
+
+ULTIMATE (ultimateOriginalPrice):
+  <div class="price original-price ultimateOriginalPrice">
+      <sup>$</sup><span class="price-label">31<sup>75</sup></span><span class="price-year">/mo</span>
+  </div>
+  => $31.75/mo, Billed annually
+
+Note: each tier also has a sibling "discount-price" div (e.g. class "personalDiscountPrice") with
+style="display:none" and an empty price-label -- this only populates when a promo code is applied
+via the "Enter promo code" / "Apply" field. Not the default state; not used for any coded value.
+Confirmed via #period-toggle.checked remaining false and price-label text unchanged after an
+attempted toggle click, i.e. no billing-toggle switch was actually available/triggered that would
+change these figures -- the Subscription tab prices above are what the page shows on load and were
+not altered by any interaction on this read.
+
+Archive verification (curl against the archive.org snapshot itself, not the live site):
+  price-label">6<sup>75</sup>
+  price-label">12<sup>75</sup>
+  price-label">18<sup>75</sup>
+  price-label">31<sup>75</sup>
+Confirms the public archive snapshot independently preserves the same superscript structure.

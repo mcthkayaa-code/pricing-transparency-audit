@@ -1,0 +1,40 @@
+Source: https://nicepage.com/terms ("Terms Of Use")
+Accessed: 2026-08-15
+Archive: https://web.archive.org/web/20260815122609/https://nicepage.com/terms
+Method: rendered read, full-page text extraction (document read to the end for the
+unquantified_limit_clause determination).
+
+Full page read. Operative excerpts below, verbatim.
+
+--- Content Usage ---
+"You may not remove any watermarks or copyright notices contained in the Content."
+
+--- Redistribution ---
+"You may not create or resell modified or unmodified templates available for download from any
+website. You may not redistribute or resell the templates in any form. Only the final work, i.e.
+websites, are allowed to sell to third-party customers. You may not provide direct links to the
+template download files."
+
+--- Restrictions and Termination ---
+"Nicepage.com may block, restrict, disable, suspend or terminate your access to all or part of the
+Website and Content at any time at Nicepage.com's discretion, without prior notice or liability."
+(General discretionary-termination clause; not framed around volume/intensity of use -- no number,
+no usage-rate language. Checked against unquantified_limit_clause's "fair use / reasonable use /
+excessive use / abuse thresholds / throttling" construction and judged not to match: this is an
+any-reason termination-for-convenience clause, not a usage-volume throttle.)
+
+--- Refund Policy (full section, verbatim) ---
+"We strive to offer high-quality products and support, and we understand that there are rare
+circumstances when you may request a refund. We always offer a 7-day (seven-day) Free Trial from
+the date of the purchase with full features and unlimited Free Starter Edition, during which you
+can try Nicepage's functionality and features before the purchase.
+
+You can request a refund within 14 days of the purchase date. Please be prepared to describe why
+you requested a refund via Microsoft Teams or phone and explain the actual reasons, and we will
+review your request."
+
+No statement anywhere in this document about: auto-renewal, self-serve cancellation route, or
+output ownership.
+
+No "fair use" / "reasonable use" / "excessive use" / "abuse threshold" / discretionary-throttling
+clause found anywhere in the full document (read to the end).

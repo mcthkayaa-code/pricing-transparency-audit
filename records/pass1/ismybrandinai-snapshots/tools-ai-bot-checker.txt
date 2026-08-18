@@ -1,0 +1,42 @@
+Free AI Bot Checker — Is Your Site Blocking ChatGPT, Claude & Perplexity? | Is My Brand in AI
+GuidesToolsContact
+Home › Tools › AI Bot Checker
+Is your site blocking AI crawlers?
+Enter your domain and we'll read your robots.txt and tell you whether the crawlers behind ChatGPT, Claude, Perplexity and Gemini can access your site. Many brands block them by accident and never find out. Free, no signup — the check runs in your browser.
+Check my site
+What this tool checks
+AI engines build their answers from pages their crawlers are allowed to fetch. Your robots.txt file — a plain text file at the root of your domain — decides which crawlers get in. This tool reads that file and checks it against the user-agents that the major AI companies publish, then tells you, crawler by crawler, whether you are allowed, blocked, or partly limited.
+Why blocking AI crawlers makes your brand invisible
+If a crawler cannot reach your pages, the engine behind it has nothing of yours to quote. You can have the best answer on the web and still never appear in ChatGPT or Perplexity because a single line in robots.txt shuts the door. It is one of the most common, and most invisible, reasons a brand is absent from AI answers — often added by accident, a leftover from a privacy sweep, or a default a platform shipped.
+The AI crawlers that matter in 2026
+EngineUser-agentWhat it feeds
+ChatGPT (OpenAI)GPTBot, OAI-SearchBot, ChatGPT-UserChatGPT answers & training
+Claude (Anthropic)ClaudeBotClaude answers & training
+PerplexityPerplexityBot, Perplexity-UserPerplexity answers
+GeminiGoogle-ExtendedGemini training & grounding
+Google AI OverviewsGooglebotAI Overviews (uses the normal crawler)
+A key honest caveat: Google AI Overviews are not controlled by Google-Extended. They run on the standard Googlebot, so if you block Googlebot you also drop out of AI Overviews. Google-Extended only governs Gemini training and grounding.
+How to unblock AI crawlers in robots.txt
+If the checker shows a block you did not intend, the fix is usually a few lines. To allow the main AI crawlers while keeping your normal rules, make sure no Disallow: / applies to them:User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+Save it at yoursite.com/robots.txt, then re-run the check. Changes take effect the next time each engine recrawls you, usually within days.
+Does allowing crawlers mean I'll get cited?
+No — and that is the honest part. Letting the bots in is necessary, not sufficient. It removes the blocker; it does not earn the citation. What earns a citation is being genuinely worth quoting: a clear, self-contained answer near the top of the page, plus real brand mentions across the web. Once you are crawlable, the next moves are improving your AI search visibility and becoming worth citing.
+Frequently asked questions
+Is checking robots.txt enough to appear in AI search?
+It is the floor, not the ceiling. An open robots.txt makes you reachable; citations still depend on content quality and off-page mentions. But a block guarantees you are invisible, so this is the first thing to rule out.
+Should I block any AI crawlers?
+Only if you have a clear reason — for example, you sell your content and do not want it in training sets. For most brands that want to be discovered in AI answers, allowing the major assistants' crawlers is the right call.
+Is this tool really free?
+Yes. It reads a public text file and analyzes it in your browser. No signup, no account, nothing stored.
+Is My Brand in AI — independent research on AI search visibility (GEO). Built on the open record; we cite our sources and update as the evidence changes.
+GuidesAI search visibilityGEO vs SEOGet cited by ChatGPTBest GEO toolsAll guides →
+ToolsAI bot checkerAI readiness checkerllms.txt generatorPrompt generatorAll tools →
+CompanyAboutContactMethodology
+© 2026 Is My Brand in AI. All rights reserved.Privacy·Cookies·Terms

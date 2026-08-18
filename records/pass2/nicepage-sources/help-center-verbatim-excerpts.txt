@@ -1,0 +1,92 @@
+Sources (all Nicepage Help Center / docs, rank-2 for contractual variables since ToS and the
+Agreement are silent on auto-renewal default and on trial card requirements):
+
+1) https://nicepage.com/doc/16656/faq ("Frequently Asked Questions")
+   Accessed: 2026-08-15
+   Archive: https://web.archive.org/web/20260815122651/https://nicepage.com/doc/16656/faq
+
+   "Do you give a trial period to test premium features?
+   After creating a Nicepage account, you start the 7-day Trial Period, which allows you to test
+   most Premium Features. Some features remain available only for Premium Plans."
+
+   "What is the difference between a subscription and a license?
+   Subscription: It is a one-year Premium for the Nicepage Desktop Applications, Online Builders,
+   WordPress Plugin, and Joomla Extension, including one year of updates. Auto-renewal is
+   optional; you can buy a Subscription without it. The auto-renewal price has a 40% discount for
+   the following year's purchase.
+   License: It is a lifetime Premium for the Desktop Application, WordPress Plugin, and Joomla
+   Extension. It also includes one year of updates. If you refuse to pay for the updates in the
+   next year, you can continue to use your current version or any other prior release for a
+   lifetime."
+
+   "Can I cancel my Premium Plan at any time?
+   There is no need to cancel a License or Subscription without auto-renewal, which expires
+   automatically. If you have a Subscription with auto-renewal enabled, you can withdraw it at any
+   time in your Profile or during purchase.
+   If you need a refund, please refer to the Terms to determine your eligibility, then contact our
+   support with your request."
+
+   "Can I buy the Subscription without Auto-Renewal?
+   Yes. You can do that on the Payment Page. For more information, please visit here."
+
+   No statement anywhere on this page about a credit card being required to start the trial.
+
+2) https://nicepage.com/doc/4720/trial-limitations ("Trial Period")
+   Accessed: 2026-08-15
+   Archive: https://web.archive.org/web/20260815122712/https://nicepage.com/doc/4720/trial-limitations
+
+   "To use Nicepage, you must register on the Nicepage website or in the Windows or Mac OS
+   applications. The Trial Period starts right after the registration, and you can use the
+   Applications and Online Editor with all features for seven (7) days.
+   The trial period expires in seven (7) days, and Nicepage automatically switches to the Starter
+   Edition, which is free but has limitations."
+   => Trial does NOT auto-convert to a PAID subscription; it reverts to the free Starter plan.
+      trial_auto_converts = no. Trial is triggered by registration alone; no card mentioned here
+      either -- trial_card_required stays unknown (no statement either way, and inference from the
+      registration flow is barred by the codebook).
+
+   "During the trial period, you cannot assign a custom domain and remove the Nicepage notice in
+   the Footer. You can purchase a Premium Plan to remove limitations."
+
+3) https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal ("How to Cancel Auto-Renewal")
+   Accessed: 2026-08-15
+   Archive: https://web.archive.org/web/20260815122735/https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal
+
+   "Buy Without Auto-Renewal
+   You can buy a Subscription without Auto-Renewal. Clicking the Buy button, you get to the
+   Checkout page. On the Checkout page, you click the Auto-renewal link. After clicking the link,
+   you will see the dialog on which you can click the Switch to Manual Renewal link.
+
+   Cancel Auto-Renewal At Any Time
+   You can cancel the auto-renewal of your Premium Plan at any time by following the steps.
+   Open the Licences and Subscription page from your user Profile.
+   Click the Unsubscribe link to cancel Auto-renewal."
+   => Checkout defaults to Automatic Renewal; buyer must actively "Switch to Manual Renewal" to
+      opt out. auto_renewal_default = on. Cancellation is self-serve from the Profile ("Licences
+      and Subscription" page, "Unsubscribe" link). cancellation_self_serve = self_serve_documented.
+      No advance-notice-before-charge commitment stated anywhere in this article.
+      renewal_notice_commitment = unknown.
+
+4) Pricing-page FAQ accordion (https://nicepage.com/premium, same URL/archive as the pricing
+   source) -- these accordion answers are embedded inline in the page's own DOM (not merely linked
+   out), read via JS since the accordion body is display:collapsed by default (protocol 6.3
+   explicitly permits expanding an accordion on an official page already read):
+
+   "Can I buy the Subscription without Auto-Renewal? -> Yes, you can do that on the Payment Page.
+   You can get more information here." (href target #pricing-faq-collapse-7)
+
+   "What is the difference between a subscription and a license? -> Subscription: It is a one-year
+   Premium ... Auto-renewal is optional, and you can buy a Subscription without auto-renewal or you
+   can cancel it at any time in your Profile. The auto-renewal price has a 40% discount for the
+   next year's purchase. License: ..." (same substance as the standalone FAQ doc, word-for-word
+   near-identical)
+
+   "Can I cancel my Premium Plan at any time? -> There is no need to cancel a License or
+   Subscription without auto-renewal, which expires automatically. If you have a Subscription with
+   auto-renewal enabled, you can cancel it at any time in your Profile or during purchase. If you
+   need a refund, please refer to the Terms to determine your eligibility and then contact our
+   support with a request."
+
+   Because the SAME auto-renewal-default fact is stated on both the pricing page (embedded
+   accordion, confirmed via DOM, not merely linked) and in the dedicated help-center article,
+   auto_renewal_disclosure_location = multiple.

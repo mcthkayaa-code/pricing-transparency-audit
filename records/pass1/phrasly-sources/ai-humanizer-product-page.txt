@@ -1,0 +1,33 @@
+URL: https://phrasly.ai/ai-humanizer
+Date accessed: 2026-08-10
+Method: Rendered read via headless Chromium (get_page_text on <main>).
+Kind: docs (official product page) — ranks second for pricing-class variables per codebook section 3, below the live pricing page.
+
+Purpose captured: this page is the source for free_plan_exists / free_plan_cap_documented / free_plan_cap_value / free_plan_watermark / free_plan_duration, because https://phrasly.ai/pricing itself shows only two PAID plan cards and never mentions a free tier at all (see pricing-rendered.txt). This product page explicitly markets and FAQs a $0 account tier that the pricing page omits entirely -- a genuine cross-document gap, logged in conflict_note.
+
+Key excerpts (verbatim):
+
+Hero: "The only AI humanizer with truly unlimited humanization. Start free today, or go unlimited with 5,000 words per request and no monthly caps. Built on proprietary models trained on 1M+ real human articles. With free unlimited AI detector included." CTA: "Start Humanizing Now -- for free"
+
+Feature section: "Built-In AI Detector: Free and Unlimited -- Verify your humanized content with Phrasly's integrated AI detector. Completely free, unlimited usage, no caps. One tool, one workflow."
+
+Feature section: "Free AI Detector + Humanizer -- Start free today. Unlimited AI detector included with every account. Subscribe for unlimited humanization and API access."
+
+Step 1 of how-to: "Create a free account to get started."
+
+Section "Free AI Humanizer: Start Humanizing Today": "Start with a free account to see the quality firsthand. When you need more, subscribe and the limits disappear."
+
+FAQ -- "Is Phrasly's AI humanizer free?"
+"Yes. Create a free Phrasly account to start humanizing at no cost. The free tier includes three humanization modes and full access to Phrasly's unlimited AI detector. Upgrade for truly unlimited humanization with 5,000 words per request and no monthly caps."
+-> Confirms free_plan_exists = yes: a $0 account tier is documented, with (a) all 3 humanization modes accessible and (b) unlimited free AI detector. No expiry/time-limit stated for this account tier (distinct from the separate, explicitly time-limited $2/3-day "Trial Period" in the Terms of Service).
+
+FAQ -- "How many words can I humanize for free?"
+"Create a free account to start humanizing today. Paid plans unlock 5,000 words per request with unlimited monthly usage. No credit systems, no throttling. Phrasly is the only AI humanizer offering truly unlimited humanization."
+-> NOTE: this FAQ question asks specifically for the free-tier word limit and the answer never states one -- it restates how to sign up, then pivots to describing the PAID allowance only. No numeric free-tier humanization cap is published anywhere on this page. This is a documented gap (free_plan_cap_documented finding).
+
+FAQ -- "What makes Phrasly different from other AI humanizers?"
+"Two things no competitor matches: (1) Truly unlimited humanization -- 5,000 words per request, unlimited requests, no monthly caps. Every other tool uses credits, word limits, or throttling. (2) Free unlimited AI detector included with every account."
+
+No watermark statement specific to this page (see pricing-rendered.txt FAQ "Will my texts be watermarked in the future? No." on the /pricing page, which is unscoped to a tier).
+
+No mention of "Acceptable Use Policy" as a separate linked document on this page; footer nav on this site only links Terms of Service / Privacy Policy / Cookie Policy / Ethics (checked in pricing-rendered.txt footer capture and confirmed again here -- same global footer).

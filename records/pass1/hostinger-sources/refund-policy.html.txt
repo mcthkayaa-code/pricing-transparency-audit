@@ -1,0 +1,394 @@
+Refund policy
+Pricing
+Products
+Products
+AI and automation
+Hosting
+Domains
+Create a website
+Sell online
+Email and marketing
+For agencies
+Automate and deploy
+Hostinger Agents
+New
+Ready-to-use AI team for daily business tasks.
+OpenClaw
+Personal, always-on AI assistant for everyday automation.
+Hermes Agent
+New
+Persistent, context-aware AI agent for continuous automations.
+Self-hosted n8n
+Custom, node-based AI workflows with full control.
+Hostinger Connector
+New
+Build sites and manage hosting with your AI coding assistant.
+Agentic Mail
+New
+Email infrastructure designed for AI agents.
+Create and grow
+Vibe code your site
+Free trial
+Create a business ready website by chatting with AI.
+Email marketing
+Create and send AI powered email campaigns.
+Hermes Agent
+New
+Stop doing the same tasks twice
+Describe your workflow. Hermes takes it from there and keeps going.
+Meet Hermes Agent
+Resources
+About
+Blog
+Expert tips, product updates, and customer stories.
+Product updates
+Latest releases and upcoming features.
+Our story
+Meet the people and platform behind your success.
+Contact
+How to reach us.
+Guidance
+Knowledge Base
+Help articles and guides for every Hostinger service.
+Tutorials
+Articles to help you achieve your online success story.
+Hostinger Academy
+Practical video guides to help you build and grow online.
+Learning lab
+Guided paths to build, launch, and grow online.
+Newsroom
+Official Hostinger news and press releases.
+Learning lab
+Find the right learning path for you
+Choose your goal, learn your way, and keep building with confidence.
+Go to Learning lab
+EN
+Refund policy
+Please read this agreement carefully, as it contains important information regarding your legal rights and remedies.
+Hostinger accessibility statement
+Information security policy
+Privacy policy
+Registrar information
+Terms of service
+Agreements
+Affiliate program agreement
+Change of registrant agreement
+Data processing addendum
+Domain name registration agreement
+Domain name transfer agreement
+Domain registrant agreement
+Hosting agreement
+Hostinger Horizons special terms
+Referral program agreement
+Reseller master agreement
+Policies
+Abuse handling policy
+Brand guidelines and permissions
+Cookie policy
+Customer service policy
+Domain name dispute resolution
+Expired registration recovery policy
+Hostinger responsible disclosure policy and bug reward program
+Non-public registrant data (NPRD) request policy
+Refund policy
+TLD registry policies
+Trademark/copyright
+Company’s policies
+DSA Transparency Report
+Third party code of conduct
+The English version of legal agreements and policies is considered as the only current and valid version of this document. Any translated version is provided for your convenience only, to facilitate reading and understanding of the English version. Any translated versions are not legally binding and cannot replace the English versions. In the event of disagreement or conflict, the English language legal agreements and policies shall prevail.
+Refund policy
+Hostinger accessibility statement
+Information security policy
+Privacy policy
+Registrar information
+Terms of service
+Agreements
+Affiliate program agreement
+Change of registrant agreement
+Data processing addendum
+Domain name registration agreement
+Domain name transfer agreement
+Domain registrant agreement
+Hosting agreement
+Hostinger Horizons special terms
+Referral program agreement
+Reseller master agreement
+Policies
+Abuse handling policy
+Brand guidelines and permissions
+Cookie policy
+Customer service policy
+Domain name dispute resolution
+Expired registration recovery policy
+Hostinger responsible disclosure policy and bug reward program
+Non-public registrant data (NPRD) request policy
+Refund policy
+TLD registry policies
+Trademark/copyright
+Company’s policies
+DSA Transparency Report
+Third party code of conduct
+Last revised: 2026-06-30 07:45:04
+STANDARD REFUND TERMS
+Products purchased from Hostinger may be refunded only if canceled within 30 days of the date of the transaction.
+Note: Due to their nature, cryptocurrencies, tokens and digital assets are generally irreversible and their exchange rates are highly volatile and transitory. We can not be responsible for any risk including but not limited to exchange rate risk and market risk.
+Products purchased using cryptocurrencies, tokens or digital assets will not be refunded.
+Note:
+If a client's actions are found to violate applicable laws or Hostinger's
+Terms of Services
+, any payments made to Hostinger will not be refunded.
+“Date of the transaction,”
+for the purpose of this Refund Policy, means the date of purchase of any product or service, which includes the date any renewal is processed by Hostinger in accordance with the terms and conditions of the applicable product or service agreement (
+Terms of Use
+). You may cancel a product at any time, but a refund will only be issued if cancellation is requested within the refund timeframe specified for the applicable product, if available at all. Note: Some products have different policies or requirements for a refund associated with them, including some products that are not eligible for a refund under any circumstance. Please see below for refund terms applicable to such products:
+PRODUCTS AVAILABLE FOR REFUND UNDER STANDARD TERMS
+Hosting (all plans, except first payment after Free Trial and all VPS hosting plans)
+SSL Certificates
+Daily Backups
+CloudFlare
+Hostinger Email
+Titan Email
+Priority Support
+NordVPN 6 and 12-month plans
+Minecraft (Game Panel) VPS (except upgrades)
+KVM VPS (except upgrades)
+WordPress Addons
+Dark Web Monitor
+PRODUCTS NOT AVAILABLE FOR REFUNDS
+Redemption Fees
+Domain Name Renewals
+Domain Name Transfers (if the transfer is successful)
+Privacy Protection
+SEO Toolkit
+SEO Marketing Panel
+Google Workspace Email
+VPS License
+Website Cleanup
+Upgrades for Minecraft (Game Panel) VPS
+Upgrades for KVM VPS
+Hostinger Email Storage Addon
+Paid Boost for Cloud Hosting
+Hostinger Horizons Top Up
+nexos.ai credits
+Oxylabs AI Studio credits
+All paid support services
+Hostinger Agents Top Up
+Any products or services that were suspended, canceled, or terminated due to the abusive usage of the products, services, or any other violation of the Terms and Conditions are not eligible for a refund.
+The purpose of the refund is for customers to try and understand whether the services provided by Hostinger suit their needs. In any way, Hostinger will not tolerate abusive usage of refunds (i.e., refunding the same services multiple times and (or) repetitively purchasing and asking for a refund for services purchased in bulk, etc.). Hostinger remains a right to unilaterally decline the request for a refund if any of the signs related to the abusage of the refunds occur.
+PRODUCTS WITH SPECIAL REFUND TERMS
+New registration of domain name:
+Refundable only if at the moment of initiation of the refund
+both
+the following conditions are met: (i) domain name refund is initiated within 96 hours from such domain name registration
+and
+(ii) more than 24 hours have passed from the moment of initiation of last refund of any other domain name registration.
+In case of .br (including .com.br and .net.br) domain name, its registration is refundable if the following condition is met: domain name refund is initiated within 168 hours from such domain name registration.
+The following ccTLD registries DO NOT permit refunds upon cancellation:
+.ai
+.be
+.ca
+.ch
+.cz
+.dk
+.es (including .com.es, .nom.es, and .org.es)
+.eu
+.fr
+.hu
+.it
+.ma
+.nl
+.nu
+.ru (including .com.ru, .net.ru, and .org.ru)
+.se (including .com.se)
+.cat
+.asia
+.de (including .com.de)
+.uk (including .co.uk, .org.uk, .me.uk)
+.in (including .co.in, .in.net)
+.us
+.pl (including .com.pl, .net.pl, .info.pl, .biz.pl)
+.pw
+.ag
+.xxx
+.vc
+.tf
+.re
+.pm
+.mn
+.lv
+.lt
+.lc
+.jp
+.jp.net
+.frl
+.cl
+.bz
+.at
+.am
+.yt
+.wf
+.tv
+.sc
+.pt
+.mx (including .com.mx, .net.mx)
+.lu
+.li
+.la
+.gr (including .gr.com)
+.fm
+.cx
+.com.pt
+.cn.com
+.cc
+.ar.com
+.com.au
+.au
+.ae (including .ae.org)
+.gg
+.pe
+.pk
+.fi
+.tr
+.com.tr
+Non-activated domain name
+: Refundable only if the domain name has not been activated and the cancellation is requested within the applicable 30-day refund period from the date of payment.
+Domain name transfers:
+Refundable only if
+both
+the following conditions are met: (i) the domain name transfer is unsuccessful
+and
+(ii) refund is initiated within 30 days from  payment for such transfer.
+VPS hosting plan:
+Refundable only if at the moment of initiation of the refund
+both
+the following conditions are met: (i) VPS hosting plan refund is initiated within 30 days from the date of the transaction of that specific VPS hosting plan
+and
+(ii) more than 180 days have passed from the moment of initiation of last refund for any other VPS hosting plan, if any.
+Hostinger Reach plan:
+Refundable only if at the moment of initiation of the refund
+all
+the following conditions are met: (i) User is ineligible for a refund if they previously used the free Hostinger Reach plan, except on the first renewal after a free plan,
+and
+(ii) refund is initiated within 30 days from the date of the transaction of that specific Hostinger Reach plan,
+and
+(iii) more than 180 days have passed from the moment of initiation of last refund for any other Hostinger Reach plan, if any.
+Hostinger Horizons plan:
+Refundable only if the refund is initiated within 30 days from the date of the transaction of that specific Horizons plan
+and
+if fewer than 30 messages/prompts (AI credits) have been used.
+Internal website migrations (between accounts or hosting plans at Hostinger):
+Refundable only if the migration between Hostinger accounts or Hostinger hosting plans was paid for and could not be successfully completed due to technical errors.
+REFUNDS FOR SPECIAL DEALS
+From time to time, HOSTINGER offers special deals such as a free domain when buying 12/24/48 months hosting plan.
+Such free domains provided as part of special deals are non-refundable (except for .br, .com.br and .net.br domains) and cannot be exchanged to other (different) domains and (or) products.
+Keeping in mind that there are different conditions for domain refunds (as described in this Refund Policy), Hostinger remains the right to refund you a difference between your paid amount and the domain you received for free price. In such a case, you can keep using a domain name for the remaining billing period term.
+PAYMENT METHODS WITH SPECIAL REFUND TERMS:
+Please note that all payment processors have different policies and requirements for refunds and there are some payment methods that are not eligible for a refund under any circumstance.
+Please be informed that products purchased using these payment methods can not be refunded to the original payment source:
+Multibanco (Portugal)
+GCash (Philippines)
+Fawry (Egypt)
+Only a refund to Hostinger Balance is possible for these payment methods.
+The following payment method supports full refunds only:
+VTC Pay (Vietnam)
+REFUNDS TO BALANCE
+We provide refunds to the original funding source. But if you would like to use funds to purchase another Hostinger service instantly, you can select a refund to your Hostinger Balance. Please note that once a refund to Hostinger Balance is initiated for a selected invoice, it becomes irrevocable and cannot be refunded to a different source.
+REFUNDS FROM BALANCE
+Over-funded balance can be refunded within 30 days of the payment that resulted in the over-funding. In special cases, other payments can be refunded instead of the original payment if the 30-day time-frame can be applied to those payments.
+CHARGEBACKS
+If at any time, we record a decline, chargeback, reversal, payment dispute, risk of payment fraud or other rejection of a charge of any payable fees on your Hostinger account (“
+Chargeback
+”), this will be considered as a breach of your payment obligations hereunder, therefore you agree that Hostinger may pursue all available lawful remedies in order to obtain payment, including but not limited to, immediate termination, without notice to you, of your Hostinger account and any domain names or Hostinger services registered or renewed on your behalf (“
+Services
+”). In addition, this will also result in disabling the option to checkout with a credit card for your Hostinger account to limit the risk of payment fraud.
+In the event a Chargeback is performed, your Hostinger account may be blocked without the option to re-purchase or re-use it, and any data contained in such a Hostinger account, including any certain content, features, or capacity of your Hostinger account may be subject to cancellation and loss of data.
+Your use of the Hostinger Services and the ability to checkout using credit card will not resume until you:
+verify the payment method used for the disputed transaction, either by providing:
+proof of the payment; or
+a simple censored photo of the credit card, with uncovered first 6 (six) and last 4 (four)  digits.
+pay any applicable fees in full, including any fees and expenses incurred by Hostinger and/or any third party services for each Chargeback received (including fees for Hostinger Services provided prior to the Chargeback, handling and processing charges and fees incurred by the payment processor).
+Cases related to criminal fraud chargebacks or obvious payment fraud (i.e. cases where compromised credit card details were used to make purchases) will result in permanent service termination without any option to recover.
+If you have any questions or concerns regarding a payment made to Hostinger, we encourage you to first contact our Customer Support team before filing a Chargeback or reversal of payment, in order to prevent the Hostinger Services from being canceled and your Hostinger account being blocked, and to avoid the filing of an unwarranted or erroneous Chargeback, which may result in your being liable for its applicable fees, in addition to re-payment of all the fees applicable to the Hostinger Services purchased (and charged-back) by you.
+We reserve our right to dispute any Chargeback received, including by providing the relevant credit card company or financial institution with any information and documentation proving that the User responsible for such Chargeback did in fact authorize the transaction and make use of the Services rendered thereafter.
+Hostinger
+Refund policy
+Hosting
+Web hosting
+Hosting for WordPress
+VPS hosting
+Self-hosted n8n
+Business email
+Cloud hosting
+Hosting for WooCommerce
+Hosting for agencies
+Minecraft hosting
+Hermes Agent VPS
+OpenClaw
+Paperclip VPS
+Google Workspace
+Domain
+Domain name search
+Buy a domain
+Cheap domain names
+Free domain
+WHOIS Lookup
+Free SSL certificate
+Domain transfer
+Domain extensions
+Personal domain name
+Premium domains
+Tools
+Hostinger Horizons
+Website Builder
+AI Website Builder
+Ecommerce Website Builder
+Templates
+Domain Name Generator
+Print on Demand
+Link in Bio
+Business Name Generator
+AI Newsletter Generator
+AI Logo Generator
+Migrate to Hostinger
+Hostinger API
+Information
+Pricing
+Reviews
+Affiliate program
+Educational partnership
+Referral program
+Agency directory
+Roadmap
+System status
+Trust center
+Sitemap
+Company
+About Hostinger
+Our technology
+Newsroom
+Career
+Blog
+Student discount
+Sustainability
+Principles
+Support
+Tutorials
+Knowledge Base
+Hostinger Academy
+Contact us
+Report abuse
+NPRD request policy
+Privacy policy
+Refund policy
+Terms of service
+and more
+© 2004-2026 Hostinger – Launch, grow, and succeed online, supported by AI that puts the power in your hands.
+Prices are listed without VAT
+We care about your privacy
+This website uses cookies that are needed for the site to work properly and to get data on how you interact with it, as well as for marketing purposes. By accepting, you agree to store cookies on your device for ad targeting, personalization, and analytics as described in our
+Cookie policy
+.
+Accept all
+Reject all
+Cookie settings

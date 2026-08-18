@@ -1,0 +1,130 @@
+SOURCE: https://www.shortsfaceless.com/ (pricing section at #pricing anchor; same URL/page also carries the FAQ)
+ACCESSED: 2026-08-12
+METHOD: Rendered read via browser preview (Claude_Browser), JS execution, and get_page_text.
+  Archive attempts: 2x https://web.archive.org/save/https://www.shortsfaceless.com/ — both
+  redirected to a Wayback snapshot that throws a client-side hydration exception and contains
+  NO price text in the captured DOM (verified $19/$29/Essential/Professional all absent from
+  archived outerHTML). First attempt returned a stale snapshot dated 20260607171531 (pre-existing,
+  not a fresh capture); second attempt returned the same stale snapshot. archive_status for this
+  source = local_copy_only. This local file is the operative evidence.
+NOTE: A/B or geo variance not observed across the single read performed; default_display_state
+  recorded per protocol 6.8 is this single load, not reloaded.
+
+=== RENDERED TEXT (document.body / <main>, via get_page_text) ===
+Title: ShortsFaceless - AI Faceless Video Generator for YouTube Shorts, TikTok & Reels
+URL: https://shortsfaceless.com
+
+[...intro/hero/how-it-works content omitted, not pricing-relevant...]
+
+All-in-one solution
+Let us do the heavy lifting for you.
+Script generation / Image generation / Voiceover / Subtitles / Image effects / Custom subtitles
+/ Download video in HD / Language support
+
+Simple & transparent pricing
+Scale your video production with premium plans.
+
+Essential
+Grow your faceless channel.
+$19
+/month
+Generate up to 30 videos
++40 voices
++10 languages
+No watermark
+All features
+Publish & schedule to YouTube
+Download videos
+Regenerate images as many times as you want
+Upload your own images
+Regenerate script as many times as you want
+Regenerate voice as many times as you want
+Subscribe
+
+Professional
+Most popular
+Grow your faceless channel.
+$29
+/month
+Generate up to 60 videos
++40 voices
++10 languages
+No watermark
+All features
+Publish & schedule to YouTube
+Download videos
+Regenerate images as many times as you want
+Upload your own images
+Regenerate script as many times as you want
+Regenerate voice as many times as you want
+Subscribe
+
+Frequently asked questions
+
+Can I edit the script?
+Absolutely. But wait! Not only can you edit the script, but doing so also automatically
+regenerates the AI audio voiceovers. This ensures that not only the script and subtitles are
+to your liking, but the rest of the video too.
+
+I want to change the script. How long do I wait?
+Literally just a few seconds. We use top-of-the-line AI to regenerate images, voiceovers, and
+subtitles.
+
+What does it cost to regenerate images, voiceovers, or edit the script?
+Nothing. Plain and simple. You can tweak your video until you are 100% satisfied with it.
+
+How long does it take to generate a video?
+Less than a minute! Forget about needing to close your browser and waiting for an email
+telling you that your video is ready. We do it so fast that you won't even need to leave the
+page.
+
+Can I choose the look and feel of the video?
+Yes. Before you generate any video, you can choose from a selection of several styles, such as
+"Anime", "Neon", "Watercolor", and more.
+
+Who maintains ownership of the videos I generate?
+You do. Once you generate a video, you own it. You can use it for whatever you want, including
+for commercial purposes.
+
+I'm an affiliate. What's my commission?
+We give you 30% of the revenue we make from each user you bring that subscribes to a plan.
+Note: This does not apply to pricing plans that are not subscription-based.
+
+Start a faceless shorts channel today.
+
+=== SECOND-REPRESENTATION CHECK (JS, document.querySelectorAll leaf nodes) ===
+priceLeafTexts (first matches, leaf DOM nodes containing "$\d"): ["$19", "$29"]
+  -> Confirms the price renders as a plain, whole text node "$19" / "$29" in the DOM, NOT a
+     split superscript-cents layout ($6 + 75 pattern). No misread risk.
+hasNextData (window.__NEXT_DATA__): false (app streams via RSC / __next_f.push, not classic
+  __NEXT_DATA__; the RSC payload was inspected and is marketing/analytics boilerplate, no
+  separate/conflicting price figure found in it).
+toggles found (input[type=checkbox], [role=switch], [aria-checked]): none (0). Confirms
+  annual_default_toggle = no_toggle (single billing period only, no monthly/annual switch
+  exists in the DOM).
+hasAnnualWord (/annual|yearly|billed/i against body text): false
+hasCreditWord (/credit/i against body text): false  <- "credit" is never used on this page;
+  the allowance is presented directly as "Generate up to 30 videos" / "up to 60 videos".
+  Contrast with tos-rendered.txt, where the ToS defines the underlying mechanism as credits.
+hasFreeWord (/\bfree\b/i against body text): false  <- no free plan/tier language anywhere on
+  this page.
+
+=== NAV / FOOTER LINKS (JS, all <a> hrefs) ===
+Examples #examples | How It Works #how-it-works | Pricing #pricing | Log in /signin |
+Sign up /signin?tab=signup | Affiliates https://shortsfacelessaffiliate.promotekit.com/ |
+Support mailto:contact@shortsfaceless.com | Special deal /deal | Video ideas /video-ideas |
+Channel assets /channel-assets | Terms of service /tos | Privacy policy /privacy-policy |
+Google API Disclosure /google-api-disclosure | [5 "X alternative" comparison links]
+No link to any refund policy, cancellation policy, billing FAQ, or documentation/help-center
+hub exists in primary or footer navigation.
+
+=== KEYWORD SILENCE CHECK (JS regex against document.body.innerText) ===
+"cancel": not found | "refund": not found | "money back"/"money-back": not found |
+"credit": not found | "trial": not found | "fair use": not found | "excessive": not found |
+"throttl(e)": not found | "renew": only a false positive inside the example prompt text
+  "Future of renewable energy" (not a renewal-policy statement) |
+"subscription": one hit, in the affiliate FAQ line "This does not apply to pricing plans that
+  are not subscription-based" (boilerplate commission carve-out, not a renewal/cancellation
+  disclosure) |
+"commercial": one hit, the ownership FAQ answer quoted above |
+"watermark": hits only the two pricing-card "No watermark" feature bullets quoted above.

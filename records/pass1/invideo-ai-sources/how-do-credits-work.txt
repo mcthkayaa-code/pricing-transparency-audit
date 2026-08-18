@@ -1,0 +1,54 @@
+SOURCE: https://invideo.io/help/billing/how-do-credits-work/
+ACCESSED: 2026-08-09
+METHOD: Rendered read via headless browser, document.body.innerText.
+ARCHIVE: https://web.archive.org/web/20260809164250/https://invideo.io/help/billing/how-do-credits-work/
+
+=== RENDERED TEXT (verbatim) ===
+How Do Credits Work?
+What is a credit?
+Credits work like currency on invideo. They're used for video creation, generative models, and
+premium features. Every paid plan includes a monthly credit allowance that resets each billing
+cycle.
+
+What can I spend credits on?
+Video generation — all supported video models at their original API pricing.
+Generative models — premium image, audio, and agent workflows not covered by Unlimited.
+Additional premium features — certain workflows may charge credits per use.
+
+You're not charged credits for downloading content you've already generated, for editing existing
+videos, or for image generations on plans that include Unlimited.
+
+PLAN            CREDITS/MO
+Free            Limited
+Plus            75
+Max             390
+Generative      800
+Elite           4,250
+Team Standard   160/seat
+Team Premium    1,600/seat
+Enterprise      Custom
+
+When do credits reset?
+Your credit allowance resets at the start of each billing cycle, which begins on the day you
+subscribed (not the first of the calendar month). For example, if you subscribed on the 14th, your
+credits reset on the 14th of every month.
+Unused credits don't roll over. Whatever you haven't used by the end of your billing cycle resets
+to your plan's monthly allowance.
+
+Am I charged per generation?
+Yes. Credits are charged differently for video creation, generative models, and premium features.
+The cost depends on the model, the output length, and the resolution. You can see the credit cost
+before you confirm each generation.
+
+What if I run out of credits mid-cycle?
+You have two options: upgrade your plan for a higher monthly allowance, or buy a one-time credit
+pack. Purchased credit packs are added instantly and can be used across all features.
+
+TYPE            DETAILS                                        ROLLS OVER?
+Plan credits    Allocated monthly with your subscription        No — resets each billing cycle
+Top-up credits  Purchased on-demand when you need more           No — resets each billing cycle
+
+NOTE: this page contains no statement addressing what happens to credits on a failed, errored, or
+empty-result generation. Silence on this point across every official document read (this page, the
+pricing-page FAQ, the Terms and Conditions) is the basis for failed_generation_charge_policy =
+unknown.

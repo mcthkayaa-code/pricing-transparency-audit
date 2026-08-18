@@ -1,0 +1,64 @@
+URL: https://speechify.com/usage-limits/
+Accessed: 2026-08-12 (rendered browser read + WebFetch cross-check, in agreement)
+Archive: https://web.archive.org/web/20260721182758/https://speechify.com/usage-limits/ -- STALE. Two save
+  attempts (2026-08-12) both returned this same 2026-07-21 dedup capture instead of a fresh one; archive.org's
+  save-page-now appears to be hard-deduping this URL right now. Per the 2-archive-attempt cap this is recorded
+  as archive_status: local_copy_only for this source; THIS local file is the same-day evidence of record for
+  protocol 6.4 ("no value may be coded from a page not snapshotted the same day"). Content below was read live
+  on 2026-08-12 and cross-confirmed by two independent extraction methods (browser get_page_text + WebFetch),
+  which is the substitute documentary trail where public re-archiving could not be forced.
+Method: mcp__Claude_Browser navigate + get_page_text
+---
+
+SPEECHIFY USAGE LIMITS
+Effective Jan 30, 2026
+
+TL;DR: For all of 2026, we're giving every Premium user up to 1,000,000 words per month -- guaranteed. Your word
+count resets monthly and applies to all Premium/HD/AI voices. You can track your usage in the app. If you have a
+disability or need more words for accessibility, reach out. We don't allow account sharing or using Speechify for
+commercial distribution without permission.
+
+1. Definitions
+  Premium Voices = Any voice marked Premium, HD, AI, or equivalent.
+  Monthly Period = Your monthly billing cycle.
+  Baseline Allowance = The guaranteed minimum number of Premium Voice words per month under your plan.
+  Extension = Extra Premium Voice words Speechify gives you beyond your Baseline Allowance.
+
+2. Baseline Allowance (Guaranteed Minimum)
+  "All Premium subscribers are contractually guaranteed at least: 150,000 words per month."
+  "Speechify will not reduce this baseline without providing at least 30 days' advance notice."
+
+3. Guaranteed 2026 Extension (1M Words)
+  "From January 1 through December 31, 2026, Speechify guarantees all Premium subscribers a total Premium Voice
+  usage limit of 1,000,000 words per month."
+  - Applies to all Premium subscribers, regardless of plan type or promotion.
+  - Will not be reduced for any user during 2026.
+  - "Expires automatically on January 1, 2026, unless renewed or replaced by updated terms." [NOTE: this is the
+    vendor's own exact wording; it is internally inconsistent with the stated "through December 31, 2026" active
+    window one sentence earlier (expiry date appears to be a vendor drafting error, presumably meaning Jan 1,
+    2027). Quoted verbatim, not corrected -- flagged in coder_note as an observation, not used to alter any coded
+    value.]
+
+4. Optional Extensions (After 2026)
+  "Are not guaranteed," "May vary by user, location, promotion, or system capacity," "Can be changed or revoked
+  at any time without notice."
+
+5. Fair-Use and Abuse Policy
+  "Speechify may pause or restrict access to Premium Voices if we reasonably believe that an account is:
+   - Shared by multiple individuals,
+   - Used to generate audio for resale, distribution, or broadcasting,
+   - Operated by bots, scripts, or automated tools,
+   - Violating our Acceptable Use Policy."
+  (All triggers are CONDUCT-based -- sharing/reselling/botting/policy-violation -- not an unquantified
+  volume/intensity-of-use standard. No separate "Acceptable Use Policy" document was found linked anywhere on
+  the site; footer only links Terms of Service and Privacy Policy. Conduct clauses of this kind are excluded
+  from unquantified_limit_clause by the codebook's own rule ("a prohibition on illegal or abusive content is not
+  a usage limit").)
+
+6. Accessibility Support -- complimentary word extensions for documented accessibility needs, contact
+   help@speechify.com, "Accessibility Waiver".
+
+7. Tracking Your Usage -- "real-time word usage tracking in the app or on your dashboard."
+
+No free-plan word/volume limit is stated anywhere on this page ("No specific limits are stated on this page" for
+Free was confirmed by omission -- the page's scope is explicitly "Premium Voices" throughout).

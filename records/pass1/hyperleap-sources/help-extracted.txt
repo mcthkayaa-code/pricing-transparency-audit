@@ -1,0 +1,222 @@
+Help Center - Hyperleap AI | Documentation & Guides
+Product
+Solutions
+Resources
+Pricing
+Sign In
+Start free trial
+Help Center
+How can we help you?
+Guides, tutorials, and documentation for Hyperleap AI
+Create your first Agent
+Open Studio
+Search
+Popular Guides
+Getting Started
+Getting Started with Hyperleap AI
+Bot Studio
+Create Your First Chatbot
+Bot Studio
+AI Agents Permissions
+Channels
+Connecting WhatsApp Business
+AI Studio
+Building AI Tools
+AI Studio
+AI Tools Permissions
+API Documentation
+Prompts Permissions
+Sources
+Understanding Sources & RAG
+Workspaces
+Workspace Permissions Matrix
+Browse by Category
+Getting Started
+New to Hyperleap? Start here to understand the platform and build your first AI.
+3
+guides
+Bot Studio
+Build customer-facing AI chatbots for websites and messaging platforms.
+11
+guides
+AI Studio
+Create internal AI tools and assistants for team productivity.
+7
+guides
+Sources
+Manage knowledge bases that power your AI with accurate information.
+3
+guides
+Workspaces
+Collaborate with your team on AI projects and manage access with role-based permission matrices.
+2
+guides
+API Documentation
+Technical docs for developers integrating Hyperleap APIs.
+3
+guides
+Frequently Asked Questions
+Quick answers to common questions
+How do I deploy my chatbot to my website?
+Can I use the same chatbot across multiple channels?
+What happens if I exceed my conversation limit?
+How does hierarchical RAG work for multi-location businesses?
+What's the difference between Bot Studio and AI Studio?
+How do I add my company knowledge to the AI?
+Where can I see role permissions for chatbots, tools, assistants, prompts, and personas?
+Still need help?
+Our support team is here to assist you with any questions.
+Email Support
+Schedule a Demo
+Average response time: &lt; 2 hours (business hours)
+Ready to build?
+Create your first Agent in Studio.
+Start
+Studio
+Explore Hyperleap AI
+AI customer service agents that answer FAQs, capture leads, and book appointments across Website, WhatsApp, Instagram, and Facebook Messenger.
+Solutions
+Conversational AI
+Customer Support Chatbot
+AI Receptionist
+Appointment Scheduling
+Multilingual Chatbot
+Knowledge Base Chatbot
+Instagram Chatbot
+Facebook Messenger Chatbot
+RAG Chatbot
+AI Agent vs Chatbot
+AI Agents by Industry
+For Ecommerce
+For Small Business
+Lead Generation
+No-Code Builder
+Integrations
+All Integrations
+Shopify
+WordPress
+Webflow
+Wix
+Squarespace
+Resources
+Learn
+Blog
+Comparisons
+Case Studies
+Templates
+Free Tools
+Glossary
+Help Center
+Feedback
+API Reference
+AI agents by industry
+Healthcare & wellness
+Dental
+Dentistry
+Dermatology
+Healthcare
+Chiropractic
+Physical Therapy
+Optometry
+Mental Health
+Med Spa
+Massage Therapy
+Pharmacy
+Veterinary
+Senior Living
+Home & field services
+Home Services
+HVAC
+Plumbing
+Electrical
+Roofing
+Cleaning
+Landscaping
+Pest Control
+Moving
+Professional services
+Accounting
+Legal
+Financial Advisors
+Insurance
+IT Services
+Staffing
+Property Management
+Beauty & fitness
+Beauty & Salons
+Nail Salons
+Tattoo Studios
+Fitness
+Yoga Studios
+Dance Studios
+Martial Arts
+Hospitality & events
+Hospitality
+Restaurants
+Catering
+Travel Agencies
+Wedding Venues
+Event Planning
+Photography
+Florists
+Retail, auto & local
+Automotive
+Auto Body
+Bakeries
+Real Estate
+Education
+Tutoring
+Daycare
+Pet Services
+AI agents for small businesses — answer customers, capture leads, and connect customer conversations to the modern AI workflows your team already uses.
+Subscribe to updates
+hello@hyperleap.ai
+Hyderabad, Telangana, India
+Products
+AI Agents
+MCP Server
+Why Hyperleap
+AI Suite
+AI Tools
+AI Assistants
+Prompts API
+Personas API
+Workspaces
+Pricing
+Company
+About Us
+Careers
+Contact Sales
+Request Demo
+Partners
+Roadmap
+Security
+Resources
+Help Center
+Tutorials
+Blog
+Comparisons
+Feedback
+256-bit
+AES Encryption
+99.9%
+Uptime
+2000+
+Active Users
+GDPR
+Compliant
+Meta
+Technology Provider & Business Partner
+Terms of Use
+Privacy Policy
+Payment Terms
+Refund Policy
+Cookie Policy
+DPA
+Data Transfers
+Sub-Processors
+Security
+Cookie Settings
+Hey AI, learn about us
+© 2026 Hyperleap® AI. All rights reserved.
+Hyperleap® is a registered trademark of Hyperleap Software Technologies Private Limited. All other trademarks, logos, and brand names are the property of their respective owners.

@@ -1,0 +1,127 @@
+product_id: hyperleap
+product_name: Hyperleap AI
+category: AI bot checker
+product_status: active
+paid_submission: "no"
+entry_tier_name: Plus
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://hyperleap.ai/pricing
+archive_url: https://web.archive.org/web/20260809154923/https://hyperleap.ai/pricing
+archive_status: archived
+default_display_state: "USD throughout; billing toggle defaults to Monthly (not Annual) on load — knob unshifted/left, 'Monthly' label emphasized (dark), 'Annual' label muted (grey), confirmed in both static HTML and rendered browser read; no region/geo selector shown; no cookie-consent banner appeared before content was recorded."
+
+sources:
+  - { url: https://hyperleap.ai/pricing, kind: pricing, accessed: 2026-08-09, archive: https://web.archive.org/web/20260809154923/https://hyperleap.ai/pricing, note: "primary source; static curl w/ US-locale header + rendered browser read agree; default state Monthly" }
+  - { url: https://hyperleap.ai/pricing.md, kind: pricing, accessed: 2026-08-09, archive: https://web.archive.org/web/20260809155236/https://hyperleap.ai/pricing.md, note: "vendor's own markdown mirror of the same canonical pricing page (canonical URL stated on the page itself), linked from /pricing" }
+  - { url: https://hyperleap.ai/terms, kind: tos, accessed: 2026-08-09, archive: https://web.archive.org/web/20260309213350/https://hyperleap.ai/terms, note: "archive.org dedup'd save request to its 2026-03-09 capture; page itself states Version 1.0, effective 2023-06-01, so content is unchanged" }
+  - { url: https://hyperleap.ai/refund-policy, kind: refund, accessed: 2026-08-09, archive: https://web.archive.org/web/20260809155116/https://hyperleap.ai/refund-policy, note: "Version 1.1, effective 2026-07-17" }
+  - { url: https://hyperleap.ai/payment-terms, kind: tos, accessed: 2026-08-09, archive: https://web.archive.org/web/20260410045847/https://hyperleap.ai/payment-terms, note: "archive.org dedup'd save request to its 2026-04-10 capture; page states Version 1.0, effective 2025-01-01; dedicated billing/subscription policy doc, incorporated by reference into Terms of Use" }
+  - { url: https://hyperleap.ai/help, kind: docs, accessed: 2026-08-09, archive: https://web.archive.org/web/20260809155211/https://hyperleap.ai/help, note: "FAQPage JSON-LD read for exceed-usage-limit policy; no dedicated billing/cancellation article exists in the help center's category list" }
+
+variables:
+  headline_price_usd: { value: "40.00", source: https://hyperleap.ai/pricing, evidence: "Plus card: \"$40 /mo\", read in the page's default Monthly-toggle state; matches pricing.md plan table \"Plus | $40/mo\"" }
+  headline_billing_basis: { value: per_month_billed_monthly, source: https://hyperleap.ai/pricing, evidence: "\"$40 /mo\" shown with the Monthly toggle active by default; flat plan fee, not per-seat; no annual-prepay condition in this state" }
+  first_charge_amount_usd: { value: "40.00", source: https://hyperleap.ai/pricing.md, evidence: "\"Credit card required to start the trial. No charge until the trial ends.\" First transaction is the Plus monthly charge; default state is Monthly so no annualization applies (rule 2 does not trigger)" }
+  mandatory_addon_present: { value: "no", source: https://hyperleap.ai/pricing.md, evidence: "\"Add-ons are not included in any plan. Each is billed separately\" — Suite ($99), Hierarchical RAG ($40/mo, Pro/Max only), OTP Verification, Credit Packs, and Managed Setup are all optional; none required to use Plus as advertised" }
+  annual_condition_disclosure: { value: not_applicable, source: https://hyperleap.ai/pricing, evidence: "headline figure ($40/mo) loads in the Monthly state and does not depend on annual prepayment (rule 1)" }
+  annual_default_toggle: { value: monthly_preselected, source: https://hyperleap.ai/pricing, evidence: "\"Monthly\" rendered in emphasized/dark styling with the toggle knob unshifted (left/off position); \"Annual\" rendered muted/grey; identical in static HTML classes and live rendered DOM" }
+  free_plan_exists: { value: "no", source: https://hyperleap.ai/pricing.md, evidence: "\"Three paid plans (Plus, Pro, Max), each with a 7-day free trial. No free plan.\"" }
+  free_plan_cap_documented: { value: not_applicable, source: https://hyperleap.ai/pricing.md, evidence: "no free plan (see free_plan_exists)" }
+  free_plan_cap_value: { value: not_applicable, source: https://hyperleap.ai/pricing.md, evidence: "no free plan" }
+  free_plan_watermark: { value: not_applicable, source: https://hyperleap.ai/pricing.md, evidence: "no free plan" }
+  free_plan_duration: { value: not_applicable, source: https://hyperleap.ai/pricing.md, evidence: "no free plan" }
+  trial_exists: { value: "yes", source: https://hyperleap.ai/pricing, evidence: "\"7-day free trial on all plans\"" }
+  trial_card_required: { value: "yes", source: https://hyperleap.ai/pricing.md, evidence: "\"Does the trial require a credit card? Yes. You are not charged until the trial ends; cancel anytime before then for no charge.\"" }
+  trial_length_days: { value: 7, source: https://hyperleap.ai/pricing.md, evidence: "\"Free trial: 7 days on every plan.\"" }
+  trial_auto_converts: { value: "yes", source: https://hyperleap.ai/refund-policy, evidence: "\"Cancel before the trial ends to avoid being charged\" (section 6, Free Trial); corroborated by pricing.md: \"Credit card required to start the trial. No charge until the trial ends.\"" }
+  credit_system_present: { value: "no", source: https://hyperleap.ai/pricing, evidence: "\"A response is a response. Not a credit that shrinks... On Hyperleap, one customer reply is one response.\" Plan allowance stated directly in output units (3,000 AI responses/month), not an abstracted currency (rule 1)" }
+  credit_unit_defined: { value: not_applicable, source: https://hyperleap.ai/pricing, evidence: "no credit system" }
+  credit_to_output_rate_published: { value: not_applicable, source: https://hyperleap.ai/pricing, evidence: "no credit system" }
+  credit_rate_location: { value: not_applicable, source: https://hyperleap.ai/pricing, evidence: "no credit system" }
+  cost_per_output_unit: { value: other, source: https://hyperleap.ai/pricing, evidence: "principal output is the AI response (one chatbot reply to an end-user message); none of the listed units fit, per rule 3 — see coder_note" }
+  cost_per_output_computable: { value: "yes", source: https://hyperleap.ai/pricing, evidence: "$40.00/mo (default Monthly state) and 3,000 AI responses/mo are both published for the Plus tier and already on the same period" }
+  computation_assumptions: { value: "Plus (entry) tier, $40.00/mo per default Monthly display state; 3,000 AI responses/mo included (pricing page + pricing.md); price and allowance already same period, no conversion; 40/3000=0.0133 USD/response.", source: https://hyperleap.ai/pricing, evidence: "not_applicable, per section 2.3 — this field records the coder's own arithmetic" }
+  credit_rollover_policy: { value: not_applicable, source: https://hyperleap.ai/pricing, evidence: "no credit system" }
+  failed_generation_charge_policy: { value: unknown, source: https://hyperleap.ai/help, evidence: "help center FAQPage JSON-LD addresses exceeding the monthly quota (\"We'll notify you at 80% usage. If you exceed your limit, you can upgrade your plan or purchase additional conversation credits. Your chatbot continues working.\") but no document addresses a technical failure / error / empty-result case specifically" }
+  auto_renewal_default: { value: "on", source: https://hyperleap.ai/payment-terms, evidence: "\"Monthly Billing — Charged monthly on the same calendar date each month\" / \"Annual Billing — Charged annually on the same calendar date each year\" (section 3, Billing Cycles and Payment Schedule)" }
+  auto_renewal_disclosure_location: { value: purchase_terms_doc, source: https://hyperleap.ai/payment-terms, evidence: "stated only in Payment Terms section 3; not found on the pricing page, in the Terms of Use (which contains zero instances of \"renew\"), or in the help center" }
+  renewal_notice_commitment: { value: unknown, source: https://hyperleap.ai/payment-terms, evidence: "Terms of Use and Payment Terms searched in full for \"notice\"/\"renew\"; no clause commits to notifying the buyer before a renewal charge specifically — \"notice\" language found covers only Payment Terms changes (30 days) and account termination (15 days)" }
+  refund_policy_exists: { value: "yes", source: https://hyperleap.ai/refund-policy, evidence: "\"We may provide refunds at our discretion if: Service unavailable for 48+ consecutive hours...\"; \"Billing Errors: We will correct and refund any overcharge\"; \"Fraudulent Charges: Refunds upon verification of unauthorized charges\"" }
+  refund_window_days: { value: 30, source: https://hyperleap.ai/refund-policy, evidence: "\"All refund requests must be submitted within 30 days of the original charge date.\"" }
+  refund_conditions: { value: conditional, source: https://hyperleap.ai/refund-policy, evidence: "\"All subscription fees are non-refundable once paid, except as specifically provided in this policy\" — refund requires falling into a stated exception (legal requirement / 48+hr service failure / billing error / fraud) plus a 30-day request window" }
+  cancellation_self_serve: { value: self_serve_documented, source: https://hyperleap.ai/terms, evidence: "\"You can always choose to disable Your Account by cancelling Your subscription or writing to Us at support@hyperleap.ai.\" (section 5.8) — cancelling the subscription is offered as a route distinct from contacting support" }
+  refund_policy_location: { value: dedicated_refund_page, source: https://hyperleap.ai/refund-policy, evidence: "stand-alone /refund-policy document" }
+  commercial_use_lowest_tier: { value: unknown, source: https://hyperleap.ai/terms, evidence: "no document makes an on-point statement about commercial use of chatbot outputs; TOS 10.1 (\"may not be used in connection with any commercial endeavours except those... endorsed or approved by Us\") and 11.1 (\"non-commercial right to access and use the Platform\") attach to the platform-access license / anti-resale restriction, not to outputs — see coder_note" }
+  watermark_removal_tier: { value: mid_tier, source: https://hyperleap.ai/pricing, evidence: "\"Remove Hyperleap branding (white-label)\" listed under Pro's and Max's included features, absent from Plus's; pricing.md table: Plus White-label=No, Pro/Max White-label=Yes" }
+  output_ownership_statement: { value: user_owns, source: https://hyperleap.ai/terms, evidence: "\"You shall own all intellectual property rights, title and interest in the User Content that You upload, use, create or develop on the Platform\" (section 8.2); \"User Content\" is defined broadly at 8.1 and 8.2 explicitly covers content \"that is generated\" — see coder_note on fit" }
+  usage_cap_quantified: { value: all_caps_quantified, source: https://hyperleap.ai/pricing, evidence: "Plus: \"3,000 AI responses/month\", \"1 chatbot\", \"4 channels per chatbot\", \"40MB knowledge source per chatbot\", \"10 team members\", \"5 workspaces\" — every stated limit carries a number and a dimension" }
+  unquantified_limit_clause: { value: present, source: https://hyperleap.ai/terms, evidence: "\"remove from the Platform or otherwise disable all files and content that are excessive in size or are in any way burdensome to the Company's systems without any limitation, notice, or liability and at its sole discretion\" (section 12.1(4))" }
+
+coder_note: |
+  Entry tier: Plus, $40.00/mo (default Monthly display state), annual-equivalent $480.00.
+  Losing candidates (both eligible: self-serve, generally available, standing plans, not
+  per-seat): Pro $100/mo -> annual-equivalent $1,200.00; Max $200/mo -> annual-equivalent
+  $2,400.00.
+
+  Frame correction: the assignment brief given to this coder said category "AI humanizer",
+  but this product's row in frame-frozen-2026-08-04.csv actually lists category
+  "AI bot checker" for product_id hyperleap. Coded from the frame (authoritative per
+  codebook section 6: category is "copied from the frozen frame"). vendor_home_url
+  (https://hyperleap.ai) is live and correct, not dead/moved. Hyperleap AI's core paid
+  product is a customer-service AI chatbot platform (Plus/Pro/Max, $40-200/mo); the site's
+  "AI bot checker" placement matches Hyperleap's free lead-gen tools
+  (hyperleap.ai/llm-bot-checker, hyperleap.ai/robots-txt-validator — checking whether
+  GPTBot/ClaudeBot/PerplexityBot/etc. can crawl a given site), which sit alongside
+  category-mates AIclicks/BrandCited/xSeek/Is My Brand In AI in the frame. Those free
+  tools carry no pricing page of their own, so this record codes the vendor's one and only
+  pricing page (the chatbot plans), consistent with sampling-rules 7.1 (unit = product,
+  one vendor_home_url).
+
+  Judgment calls (recorded so a second coder can independently agree or disagree):
+  (1) credit_system_present = no despite an add-on literally named "Credit Packs"
+  ($12/1,000, "top up AI responses") — 1 credit = 1 AI response at a fixed 1:1, no
+  abstracted conversion, and the vendor explicitly markets against competitors' credit
+  systems ("A response is a response. Not a credit that shrinks").
+  (2) output_ownership_statement drawn from TOS 8.2's general "User Content" ownership
+  clause (broadly defined: data/text/graphics/message/audio/video "upload, use, create or
+  develop on the Platform", explicitly including content "that is generated"); no clause
+  specific to AI-generated chatbot conversation output exists separately.
+  (3) commercial_use_lowest_tier coded unknown rather than inferred from TOS 10.1/11.1's
+  "non-commercial" platform-access license language, which reads as anti-resale/
+  anti-sublicense boilerplate (reinforced by 10.2 "solely for Your own benefit, not for
+  resale" and 10.3's list of resale/impersonation/scraping prohibitions), not an
+  outputs-commercial-use gate; no pricing-page feature-grid row addresses commercial use
+  either, unlike watermark_removal_tier which does have an on-point grid row.
+  (4) cancellation_self_serve: TOS 5.8 offers "cancelling Your subscription" as an option
+  worded distinctly from "writing to Us"; read as documenting a self-serve route even
+  though the clause does not name a specific account-settings location, and Payment Terms
+  7 separately confirms upgrade/downgrade self-serve "through Your account dashboard".
+
+  Documentation-quality finding: Terms of Use (v1.0, eff. 2023-06-01) and Payment Terms
+  (v1.0, eff. 2025-01-01) both reference plan-naming schemes ("Startup/Growth/Enterprise
+  Model" in ToS 4.4, 16.2, 19.1; "Launch/Scale/Enterprise Plan" in Payment Terms section 2)
+  that match neither each other nor the live pricing page's Plus/Pro/Max naming. Legal
+  documents appear stale relative to the actively-maintained pricing page and refund
+  policy (v1.1, eff. 2026-07-17). Billing-cycle mechanics in Payment Terms section 3 are
+  stated generically (not tied to a specific plan name) and were treated as currently
+  applicable for auto_renewal_default. archive.org's /save/ deduplicated both stale
+  documents to earlier-2026 captures rather than minting new ones (see
+  hyperleap-sources/archive-log.txt), consistent with them being unchanged since those
+  dates. This staleness did not create a same-variable conflict between two equal-authority
+  sources for any coded value, so it is recorded here rather than in conflict_note.
+
+  Currency: all reads (curl with an Accept-Language: en-US header, WebFetch, rendered
+  browser, and the vendor's own pricing.md stating "All prices in USD") showed USD
+  consistently; D-003 escalation (web.archive.org US-crawl cross-check) was not triggered
+  because no non-USD figure was ever observed (see hyperleap-sources/archive-log.txt).
+  Payment Terms section 9 notes regional/local-currency pricing MAY be shown to some
+  visitors ("Pricing is displayed in USD by default but may be shown in local currency"),
+  but no such variant was observed this session, so no register_events entry was logged.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: ""
+register_events: []
+status: complete

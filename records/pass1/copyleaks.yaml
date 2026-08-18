@@ -1,0 +1,694 @@
+# Pricing Transparency Audit — pass-1 (primary) coding record
+# Instrument: codebook-v1.md v1.2 / protocol-v1.md / sampling-rules.md
+product_id: copyleaks
+product_name: Copyleaks
+category: AI detector
+product_status: active
+paid_submission: "no"
+vendor_home_url: https://copyleaks.com
+entry_tier_name: Personal
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+recheck_date: not_applicable
+default_display_state: annual_preselected
+status: complete
+
+# --- sources + archival (checkpoint group 1) ---
+primary_source_url: https://copyleaks.com/pricing
+archive_url: "local_copy: copyleaks-sources/pricing-raw.html"
+archive_status: local_copy_only
+source_urls: "https://copyleaks.com/pricing | https://copyleaks.com/termsofuse | https://help.copyleaks.com/s/article/DomycreditsexpireifIdontusethemattheendofeachbillingcycle681cca7a123ed"
+
+sources:
+  - url: https://copyleaks.com/pricing
+    doc_class: pricing_page
+    authority_rank: "pricing-class: 1st (leads) | contractual-class: 3rd"
+    access_date: 2026-08-07
+    archive_url: "local_copy: copyleaks-sources/pricing-raw.html"
+    archive_status: local_copy_only
+    notes: >
+      Live pricing page (canonical URL https://copyleaks.com/pricing; the site is a
+      client-rendered Elementor SPA). Cookie-consent banner: "Customize" opened, all
+      non-essential (Functional/Analytics/Performance/Advertisement) toggles were
+      already off by default; saved preferences in that declined state before reading
+      (privacy rule). Three top-level tabs: Individual (default/aria-selected=true),
+      Enterprise, Education. Within Individual, a Yearly/Monthly billing toggle:
+      confirmed via DOM (document.querySelectorAll on #yearly-button/#monthly-button)
+      that yearly-button carries aria-selected="true" and monthly-button
+      aria-selected="false" on load, before any click — default display state is
+      annual/Yearly. Read Personal and Pro plan cards in that state, both tab panels
+      (Enterprise, Education — both "Talk to Sales", no published price), and expanded
+      the full on-page FAQ accordion (10 questions; full answer text extracted from
+      the DOM, which retains each answer's complete text even when visually
+      collapsed). Public archiving failed (web.archive.org/save returned HTTP 520,
+      a Cloudflare origin-error code, on 6 consecutive attempts across ~5 minutes,
+      apparently because this heavy JS SPA times out the archiver's fetch); see
+      copyleaks-sources/archive-log.txt and pricing-save-headers.txt. Fell back to a
+      local raw curl copy (copyleaks-sources/pricing-raw.html, pre-JS shell only —
+      the coded values themselves rest on the live DOM reads and DOM queries recorded
+      here, not on this fallback file) per protocol-v1.md 6.4. archive_status =
+      local_copy_only for this source only.
+  - url: https://copyleaks.com/termsofuse
+    doc_class: terms_of_service
+    authority_rank: "contractual-class: 1st (leads) | pricing-class: 3rd"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse
+    archive_status: archived
+    notes: >
+      "Terms of Use", last revised September 9, 2025. Read in full via DOM
+      innerText, all 29 numbered sections (Representations through Applicable
+      Law/Dispute Resolution), including §8 Use of the Services (credits/annual
+      vs monthly accounts), §9 Billing, §14 Term/Termination/Refunds, §7
+      Intellectual Property. No separate dedicated refund/cancellation policy
+      page exists on the site (footer legal links are only "Terms of Use" and
+      "Privacy Policy"); refund/cancellation terms live inside this document
+      (§14.5, §14.2).
+  - url: https://help.copyleaks.com/s/article/DomycreditsexpireifIdontusethemattheendofeachbillingcycle681cca7a123ed
+    doc_class: docs_help_center
+    authority_rank: "pricing-class: 2nd | contractual-class: 2nd"
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807015025/https://help.copyleaks.com/s/article/DomycreditsexpireifIdontusethemattheendofeachbillingcycle681cca7a123ed
+    archive_status: archived
+    notes: >
+      Official Help Center (help.copyleaks.com) article, category "Billing":
+      "Do my credits expire if I don't use them at the end of each billing
+      cycle?" Read in full. This Salesforce-hosted help site would only render
+      individual deep-linked articles in this session (the help-center index/
+      search pages at help.copyleaks.com/s/ returned a blank shell after
+      repeated waits); no other help-center article was successfully read, so
+      none other is cited as a source. Other candidate help-center URLs
+      surfaced by a discovery-only web search ("How do I cancel my
+      subscription?", "What is the cancellation policy for Copyleaks?") never
+      rendered content in this browser session and are NOT used as sources —
+      the corresponding coded variables (cancellation_self_serve,
+      refund_policy_exists/window/conditions) rest solely on the
+      Terms of Use, which independently and fully covers both.
+
+variables:
+
+  # --- Domain 1-2 / index A1-A3 (checkpoint group: A-domain) ---
+
+  headline_price_usd:
+    value: 13.99
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Personal plan card shows "$13.99/month" (rendered as large "$13" +
+      ".99/month") as the most prominent figure, in the page's default display
+      state: Individual tab active (aria-selected="true"), Yearly toggle
+      active (yearly-button aria-selected="true", confirmed via DOM query
+      before any click). Entry tier = Personal, selected under
+      sampling-rules.md 7.2 (lowest annual-equivalent single-seat cost among
+      eligible candidates; see coder_note for losing/ineligible candidates).
+
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      "$13.99/month" is printed directly above "Cancel anytime. $167.88
+      billed annually." in the same Personal plan card, with the Yearly
+      toggle active on load. A monthly-equivalent figure charged as one
+      annual payment. (Switching the toggle afterward, permitted for reading
+      other variables, shows the true monthly-billed price is $16.99/mo —
+      confirmed via the FAQ "What are my plan options?" answer: "Personal
+      Plan: $16.99/month or $13.99/month when billed annually" — corroborating
+      that $13.99 is specifically the annual-billing figure, not a separate
+      monthly rate.)
+
+  first_charge_amount_usd:
+    value: 167.88
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Default display state is annual (Yearly toggle active), and the
+      documents directly state the annual total in the same plan card:
+      "Cancel anytime. $167.88 billed annually." — not a computed figure (no
+      assumption needed that a monthly rate is charged x12; the annual total
+      is printed as such). Consistent check only: 13.99 x 12 = 167.88.
+      ToS §9.1 corroborates the mechanism: "fees for an Annual Account shall
+      be prepaid in full immediately upon creating an Annual Account."
+
+  mandatory_addon_present:
+    value: "no"
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      Personal plan card lists its features (image detection, 30+ language
+      AI detection, 100+ language plagiarism detection, Shared Data Hub
+      access, multi-file upload, browser extension, Google Docs add-on,
+      1,200 unified credits) as included at $13.99/mo with no further
+      required charge; "Taxes may apply" is excluded per rule 3. ToS §8.1
+      describes only an OPTIONAL "refill option" (auto-refill of credits
+      "at the same price as the primary Credits you purchased") and §8.2/8.3
+      describe changing your credit count as a voluntary account action, not
+      a mandatory add-on to use the advertised plan. Pricing-page FAQ
+      ("What happens if I exceed my monthly credit limit?") likewise frames
+      extra-credit purchase as one of two OPTIONAL paths after exhausting the
+      allowance, not a requirement to use Personal as advertised.
+
+  annual_condition_disclosure:
+    value: adjacent
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      headline_price_usd ($13.99/mo) is read in the annual/Yearly default
+      display state and does depend on annual prepayment (rule 1 does not
+      short-circuit to not_applicable here, unlike a monthly-default
+      product). The annual condition — "Cancel anytime. $167.88 billed
+      annually." — is printed inside the same Personal plan card, directly
+      beneath the price and its CTA button, i.e. the same visual price
+      block. Also reinforced by the "Yearly [Save up to 25%]" toggle label
+      immediately above both plan cards. Matches the adjacent value's own
+      definition ("directly beneath the figure").
+
+  annual_default_toggle:
+    value: annual_preselected
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Confirmed programmatically before any click:
+      document.querySelectorAll('.e-n-tab-title') returned
+      {text:"YearlySave up to 25%", id:"yearly-button", aria-selected:"true"}
+      and {text:"Monthly", id:"monthly-button", aria-selected:"false"}.
+      Visually the "Yearly" pill is highlighted and displayed prices are the
+      annual-billed figures ($13.99, $74.99) matching "billed annually"
+      sub-text, not the higher monthly-billed figures ($16.99, $99.99) shown
+      when Monthly is selected. Toggle was never clicked prior to recording.
+
+  # --- Domain 3 / index B1-B2 (checkpoint group: free-tier) ---
+
+  free_plan_exists:
+    value: "no"
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      The pricing page's Individual tab shows exactly two plans, Personal and
+      Pro, both paid (no $0 card); Enterprise and Education are both
+      "Talk to Sales" (also not free). The page's own FAQ answer to "What
+      are my plan options?" exhaustively enumerates the full menu: "Personal
+      Plan: $16.99/month or $13.99/month when billed annually. Pro Plan:
+      $99.99/month or $74.99/month when billed annually. Both plans include
+      full access... For education and enterprise solutions... contact our
+      sales team" — no free option is listed among "my plan options." See
+      coder_note re: the sitewide "Start for Free" / "Start now for free"
+      nav CTAs, which are not accompanied by any document stating terms for
+      a standing free plan and are not treated as establishing one.
+
+  free_plan_cap_documented:
+    value: not_applicable
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: "No free plan (free_plan_exists = no)."
+
+  free_plan_cap_value:
+    value: not_applicable
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: "No free plan (free_plan_exists = no)."
+
+  free_plan_watermark:
+    value: not_applicable
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      No free plan (free_plan_exists = no). Independently, Copyleaks'
+      outputs are detection/assessment reports (AI-probability and
+      plagiarism-match scores, a visual AI-presence overlay report for
+      images) rather than a media artifact that could itself carry a
+      watermark — matches the codebook's own not_applicable example
+      ("a detection score or an analysis table") on this construction too.
+
+  free_plan_duration:
+    value: not_applicable
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: "No free plan (free_plan_exists = no)."
+
+  # --- Domain 4 / index B3 (checkpoint group: trial) ---
+
+  trial_exists:
+    value: "no"
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Coded from the pricing page (ranks 1st for trial terms, a
+      pricing-class variable per protocol-v1.md 6.2). Both plan CTAs read
+      "Get Instant Access" (direct purchase, not "Start trial"); the only
+      try-before-committing mechanic described anywhere is a pay-then-refund
+      window (ToS §14.5 / ToS §8, pricing-page FAQ "Can I cancel or change my
+      plan anytime?": refund only if requested within 10 days AND no credits
+      used) — a money-back guarantee, which codebook domain 4 rule 2
+      explicitly excludes from being a trial. The FAQ's own exhaustive
+      "What are my plan options?" answer never mentions a trial. No document
+      (pricing page, ToS, or the one Help Center article read) uses the word
+      "trial." See coder_note re: the "Start for Free"/"Start now for free"
+      nav CTAs, which carry no stated terms and are not treated as
+      establishing a time-limited trial.
+  trial_card_required:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No trial exists (trial_exists = no)."
+  trial_length_days:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No trial exists (trial_exists = no)."
+  trial_auto_converts:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No trial exists (trial_exists = no)."
+
+  # --- Domain 5-8 / index C1-C5 (checkpoint group: credit) ---
+
+  credit_system_present:
+    value: "yes"
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Pricing-page FAQ ("How does Copyleaks pricing work?"): "Personal and
+      Pro plans are subscription-based and include a monthly credit
+      allowance. 1 credit covers up to 250 words or 1 image." Both plan
+      cards state their allowance as "X unified credits: Scan up to Y words
+      OR Z images" — an intermediate currency (the credit) that converts
+      into two different output types, not an allowance stated directly in
+      one output unit. Corroborated by ToS §8.1 ("your use of the Services
+      is through the redemption of credits").
+
+  credit_unit_defined:
+    value: "yes"
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Pricing-page FAQ ("How many words, pages, or images can I scan with
+      each plan?"): "One credit allows you to scan up to 250 words or 1
+      image. For example, 100 credits equals up to 25,000 words or 100
+      images... this typically equates to about 100 standard pages (at ~250
+      words per page)." A direct, numeric tie of the credit to recognized
+      output units (words, images, and an approximate page equivalent).
+      Corroborated by ToS §8.1: "Each Credit can be used for a single page
+      (containing up to 250 words)" — consistent on the word figure, though
+      the ToS clause does not separately mention images (see conflict_note;
+      does not change this value, since the higher-ranked pricing page
+      already independently satisfies rule 3's "ANY official document"
+      test).
+
+  credit_to_output_rate_published:
+    value: "yes"
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Exact rates published for both output types the plan advertises, not
+      a range: 250 words = 1 credit; 1 image = 1 credit (same FAQ answers as
+      credit_unit_defined). Since cost_per_output_unit is coded `other`
+      (the entry tier's allowance is denominated in a single fungible
+      "unified credit" convertible to either output, per rule 1's own
+      instruction to frame the principal output "as its own pricing page
+      frames it" — see that variable's evidence), both conversions the
+      product actually sells are fully and exactly published, satisfying
+      the `yes` bar rather than `partial`.
+
+  credit_rate_location:
+    value: multiple
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    second_source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      The word-based rate (250 words = 1 credit) appears on both the
+      pricing_page (FAQ, as above) and in terms (ToS §8.1: "Each Credit can
+      be used for a single page (containing up to 250 words)"). Two document
+      classes agree, so `multiple` per the repetition rule. The image-based
+      rate (1 image = 1 credit) appears only on the pricing page.
+
+  cost_per_output_unit:
+    value: other
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      coder_note: unit named as "unified credit (1 credit = 250 words
+      scanned OR 1 image scanned)". No enumerated unit fits cleanly: not
+      per_1k_words alone or per_image alone, since the entry tier's own
+      allowance line frames the two as fully interchangeable alternatives
+      under one fungible currency — "1,200 unified credits: Scan up to
+      300,000 words OR 1,200 images" — rather than privileging either output
+      as principal. Category is "AI detector" and the product's own
+      identity/nav skews text-first (AI Text Detector listed before AI Image
+      Detector; image detection flagged "NEW!"), which would support
+      per_1k_words as an alternative reading, but rule 1 directs coding the
+      principal output "as its own pricing page frames it," and the pricing
+      page's entry-tier price/allowance line — the specific thing this
+      variable and C3 price against — frames both outputs with equal weight
+      under the shared credit. Coded `other` rather than presuming a
+      priority the vendor's own pricing display does not state.
+
+  cost_per_output_computable:
+    value: "yes"
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      cost_per_output_value_usd = 0.1399 (per unified credit). Personal
+      (entry tier), annual default display state: $167.88/yr priced
+      alongside "1,200 unified credits" on the same plan card (ToS §8.2
+      confirms an Annual Account "will be loaded with the number of Credits
+      you purchased and will be valid for a 12-months period", i.e. the
+      1,200 figure is the annual-period allowance paired with the
+      annual-period charge — both already on the same period, no conversion
+      needed per rule 3). 167.88 / 1200 = 0.1399 USD/credit. No assumption
+      about typical use is needed: both the price and the credit allowance
+      are fixed published figures, and the credit-to-output rate (250
+      words/credit, 1 image/credit) is itself a fixed published conversion,
+      not usage-pattern-dependent, so the same computation also yields
+      cost per 1,000 words ($0.5596) and cost per image ($0.1399) without
+      any further assumption (see computation_assumptions).
+
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: {url: "https://help.copyleaks.com/s/article/DomycreditsexpireifIdontusethemattheendofeachbillingcycle681cca7a123ed", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015025/https://help.copyleaks.com/s/article/DomycreditsexpireifIdontusethemattheendofeachbillingcycle681cca7a123ed"}
+    evidence: >
+      Official Help Center article, unqualified general answer: "Yes,
+      credits expire at the end of each billing cycle." (illustrated with a
+      1-month/500-credit example: unused credits "will not roll over to the
+      next month"). Consistent with ToS §8.3 for Monthly Accounts, stated
+      explicitly: "without the possibility of accumulating unused Credits of
+      the previous month, and any such unused Credits shall be cancelled at
+      the end of each month. Copyleaks will not refund any unused Credits
+      that were cancelled." For the entry tier's own Annual configuration,
+      ToS §8.2 is less explicit ("Your Account will be loaded with the
+      number of Credits you purchased and will be valid for a 12-months
+      period") but uses the same no-accumulation design and a bounded
+      validity window consistent with the Help Center's general, unqualified
+      "at the end of each billing cycle" statement; no document states or
+      implies credits carry over past the end of a billing period for
+      either account type. See coder_note.
+
+  failed_generation_charge_policy:
+    value: unknown
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      Product meters generation (a scan consumes credits per the FAQ/ToS
+      §8.1), so not_applicable (no metered generation step at all) does not
+      apply. No document read (pricing page, ToS in full including §10 AI
+      Detection Products, or the one Help Center billing article available)
+      states what happens to the credit charge when a scan technically fails
+      or errors (as opposed to completing but returning a result the buyer
+      dislikes). ToS §10.2 disclaims warranty on RESULT ACCURACY ("may
+      incorrectly flag certain content") but says nothing about a credit
+      refund/non-charge for a failed job. Silent, per rule 3 ("this variable
+      is silent often — that is the finding").
+
+  # --- Domain 9-11 / index D1-D4, E1-E3 (checkpoint group: contractual) ---
+
+  auto_renewal_default:
+    value: "on"
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      ToS §14.1: "You will be charged for your subscription at the beginning
+      of each billing cycle... The term of subscription purchased through
+      the Site shall automatically renew for successive subscription terms
+      of equal length, unless either party notifies the other party in
+      writing of its intent not to renew... Upon renewal the payment method
+      you provided to us will be automatically charged."
+
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    second_source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Stated in terms (ToS §14.1, as above) and, in agreement, on the
+      pricing page's own FAQ ("Can I cancel or change my plan anytime?"):
+      "All plans renew automatically unless canceled before the next billing
+      cycle. Monthly plans are not one-time purchases; your subscription
+      will continue until you cancel it." Two document classes agree, so
+      `multiple` per the repetition rule.
+
+  renewal_notice_commitment:
+    value: unknown
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      No document commits to notifying the buyer in advance of a routine
+      same-price renewal charge. ToS §22.3 commits to advance notice only
+      for vendor-initiated CHANGES to subscription plans/pricing ("We will
+      provide you with advance notice of any such changes, and they will
+      apply to you only as of the start of your next billing cycle or
+      subscription renewal") — a different commitment from advance notice
+      of each recurring charge at the existing price, so it does not satisfy
+      advance_notice_stated. §14.1's 14-day notice period runs the other
+      way (buyer must notify Copyleaks not to renew), not a vendor
+      commitment to notify the buyer. No document states the opposite
+      (no notice will be given) either, so this is silence, not an
+      affirmative no_notice_stated.
+
+  refund_policy_exists:
+    value: "yes"
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      ToS §14.5: "Refunds will only be provided if you have submitted a
+      refund request, not scanned any pages or used any Credits from your
+      Account and only within the first 10 days of the billing cycle...
+      The refund will only cover the most recent subscription cycle."
+      A refund is available under stated terms. Corroborated, in full
+      agreement (same 10-day window, same no-credits-used condition), by
+      the pricing-page FAQ "Can I cancel or change my plan anytime?".
+      Note ToS §14.4 elsewhere states termination-for-cause/vendor-shutdown
+      payments are "completely non-refundable" — a different scenario
+      (Copyleaks-initiated termination) from a buyer-initiated refund
+      request under §14.5; not treated as a conflict with §14.5's own
+      conditional refund window.
+
+  refund_window_days:
+    value: 10
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    second_source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      ToS §14.5: "only within the first 10 days of the billing cycle."
+      Pricing-page FAQ: "within the first 10 days of your billing cycle."
+      Both sources agree; entry tier is Personal, no plan-specific variation
+      stated.
+
+  refund_conditions:
+    value: conditional
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      ToS §14.5 conditions the refund on: a submitted request, zero pages
+      scanned/credits used, and the 10-day window — a usage threshold plus a
+      procedural step. Pricing-page FAQ frames it identically and adds that
+      it is not automatic/guaranteed: "Refunds are not guaranteed upon
+      cancellation. If you believe you're eligible, you must contact support
+      to request a refund directly." Matches `conditional` ("usage
+      thresholds... an approval step").
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      ToS §14.2: "If you purchased a subscription through the Site you can
+      terminate it at any time through your account or by contacting our
+      Customer Support team. Your subscription will be terminated at the end
+      of your current subscription billing term, and you will not be
+      charged after that time." A self-serve, from-your-account route is
+      explicitly documented (an alternative contact-support route is also
+      offered, but the self-serve path being documented is what this
+      variable asks).
+
+  refund_policy_location:
+    value: multiple
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    second_source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Stated in `terms` (ToS §14.5) and, in substantive agreement (same
+      10-day window, same no-credits-used condition), on the pricing page's
+      FAQ. No separate dedicated refund-policy page exists on the site
+      (footer legal links are only Terms of Use and Privacy Policy). Two
+      classes agree, so `multiple`.
+
+  commercial_use_lowest_tier:
+    value: not_granted
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      ToS §4.1 (LICENSE TO USE THE SERVICES), the general license grant
+      governing all users: "we hereby grant you a limited, revocable,
+      worldwide, non-exclusive, non-transferable license to use and access
+      the Services and the Site for your NON-COMMERCIAL USE as assessment
+      tool for content integrity only." Named exceptions in the same clause
+      are only for (1) educational-institution/LMS-integrated use and (2)
+      API-integrated use; "any other user" (i.e. self-serve Personal/Pro
+      subscribers) is governed "only in accordance with the Order Form,
+      these Terms and Copyleaks' Privacy Policy" — and no Order Form or
+      other document was found that overrides §4.1's non-commercial-only
+      grant for Personal or Pro. §5(iii)-(iv) reinforce this: restricted
+      from "market, rent, lease, or sublicense any Service... to another
+      person or to any third-party" and from using the Service "for any
+      purpose except for the User own use." No feature-grid row on the
+      pricing page labels a "commercial use"/"commercial license" right at
+      any tier (rule 2 does not apply — there is no such row to read). No
+      tier is ever granted an explicit exception. Coded `not_granted` per
+      rule 1 (terms rank first) and rule 4 (`not_granted` is determinate).
+      See conflict_note: this sits in real tension with the pricing page's
+      own marketing framing of Pro as "designed for startups and small
+      teams," which is not itself a rights-granting statement.
+
+  watermark_removal_tier:
+    value: not_applicable
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      Same basis as free_plan_watermark: Copyleaks' principal outputs are
+      detection/assessment reports and scores (a percentage AI-likelihood
+      score, a plagiarism-match report, a visual AI-presence overlay for
+      images), not media artifacts a watermark could mark — matches the
+      codebook's own not_applicable example ("a detection score or an
+      analysis table").
+
+  output_ownership_statement:
+    value: vendor_license_retained
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      ToS §7.1: "Copyleaks reserves all rights, title and interest in and to
+      the Site, Service Content and the Services and all products of the
+      Services, INCLUDING, BUT NOT LIMITED TO, THE DETECTION REPORTS and
+      other assessments reports produced by the Services... No rights are
+      granted to you hereunder, whether by implied license, estoppel,
+      operation of law or otherwise, other than the limited license
+      expressly set forth above [§4.1's limited, revocable, non-exclusive
+      license to use/access]." Direct match to vendor_license_retained's
+      definition, naming the generated report specifically. (Distinct from
+      §7.5, "Your Intellectual Property," which covers the INPUT User
+      Content you upload/submit for scanning — "you and your End Users...
+      retain all intellectual property rights in the User Content" — a
+      separate question from ownership of the generated output/report;
+      output_ownership_statement is coded on the output, per §7.1.)
+
+  # --- Domain 12 / index F1-F2 (checkpoint group: caps) ---
+
+  usage_cap_quantified:
+    value: all_caps_quantified
+    source: {url: "https://copyleaks.com/pricing", access_date: 2026-08-07, archive_url: "local_copy: copyleaks-sources/pricing-raw.html"}
+    evidence: >
+      The only limit the documents attribute to the Personal (entry) tier is
+      the credit allowance: "1,200 unified credits: Scan up to 300,000 words
+      OR 1,200 images" — carries a number and dimension (and, per ToS §8.2,
+      a 12-month period for the annual account). Other Personal bullets
+      ("Scan multiple files in one upload", 30+/100+ language coverage,
+      Shared Data Hub access, browser extension, Google Docs add-on) are
+      capability descriptions, not stated caps with an implied but unnumbered
+      ceiling, so they are not counted as unquantified limits. No "unlimited"
+      claim is made for Personal. Single identified limit, fully quantified.
+
+  unquantified_limit_clause:
+    value: present
+    source: {url: "https://copyleaks.com/termsofuse", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807015006/https://copyleaks.com/termsofuse"}
+    evidence: >
+      ToS read in full (all 29 sections; no separate acceptable-use policy
+      exists — §5 "RESTRICTIONS" is the closest thing to one). §5(vi)
+      prohibits using the Services "in a manner that OVERBURDENS, or that
+      THREATENS THE INTEGRITY, PERFORMANCE, OR AVAILABILITY OF, our
+      Services" — a usage-intensity standard with no number attached (no
+      request rate, volume, or frequency threshold defining "overburdens").
+      §14.2(a) ("by Copyleaks, at any time and for any reason, at its sole
+      discretion") is a general at-will termination clause, not a
+      volume/intensity-of-use clause, and is not counted here (same
+      conduct-vs-volume distinction the codebook's own example draws).
+      §5's other eleven restrictions ((i)-(v), (vii)-(xii)) are conduct
+      prohibitions (reselling, reverse-engineering, illegal/abusive content,
+      IP-notice removal, etc.), not usage-volume clauses, and are likewise
+      not counted. §5(vi) alone is enough to trigger `present`.
+
+coder_note: >
+  Entry-tier selection (sampling-rules.md 7.2), Individual tab, annual
+  default display state: Personal $13.99/mo = $167.88/yr annual-equivalent
+  (WINNER, lowest, and the only fully eligible candidate). Pro $74.99/mo =
+  $899.88/yr annual-equivalent — eligible (generally available, no-sales,
+  standing plan, single price point not per-seat despite bundling 25 seats)
+  but loses on price. Enterprise and Education are NOT eligible candidates
+  at all, not merely losing on price: both are "Talk to Sales" with no
+  published price (fails eligibility rule 2, purchasable without contacting
+  sales), and Education is additionally restricted to institutions/a named
+  program (fails rule 1 too).
+
+  "Start for Free" (top nav, links to https://app.copyleaks.com/signup, a
+  generic account-creation URL with no plan/redirect parameter) and "Start
+  now for free" (homepage hero, framed "Are you a student?") appear
+  sitewide but no document — pricing page, ToS, or the one Help Center
+  article read — states any terms for what "free" means here (no stated
+  duration, allowance, or plan name). Given the pricing page's own
+  exhaustive "What are my plan options?" FAQ answer lists only Personal,
+  Pro, Education-sales and Enterprise-sales with no free tier, this was
+  read as generic signup/marketing language rather than a documented free
+  plan or trial, per free_plan_exists and trial_exists above. Not signed up
+  to check (prohibited by protocol 6.3 regardless).
+
+  credit_rollover_policy rests on a genuine asymmetry in ToS §8: §8.3
+  (Monthly Account) explicitly states unused credits are cancelled each
+  month; §8.2 (Annual Account, the entry tier's own observed
+  configuration) only says credits are "valid for a 12-months period"
+  without the same explicit forfeiture language. Coded expires_at_period_end
+  for both configurations on the strength of the Help Center article's
+  general, unqualified "credits expire at the end of each billing cycle"
+  answer (which does not carve out annual accounts), not by inferring the
+  Monthly clause's wording onto the Annual clause.
+
+  cost_per_output_unit = other: Copyleaks denominates its entry tier in one
+  fungible "unified credit" convertible at fixed rates to either words
+  (250/credit) or images (1/credit); see that variable's evidence for why
+  per_1k_words or per_image were not presumed over the other.
+
+  Two variables required coder judgment beyond a clean lookup, flagged for
+  reviewer attention (full reasoning inline on each variable):
+  commercial_use_lowest_tier = not_granted (ToS §4.1's "non-commercial use
+  ... only" license grant, read literally, with no found exception for
+  self-serve Personal/Pro subscribers); and unquantified_limit_clause =
+  present (ToS §5(vi)'s "overburdens... performance, or availability"
+  clause, the closest thing to a fair-use/throttling standard in a
+  document with no separate acceptable-use policy).
+
+  D-009 provenance check (2026-08-12): first_charge_amount_usd (167.88) is exactly 12x
+  headline_price_usd (13.99), the pattern the D-009 sweep report flagged for a provenance check
+  across five records including this one. Re-examined independently via a fresh live render of
+  https://copyleaks.com/pricing (the original local capture was a pre-JS shell with no price
+  text, per this record's own sources note, since the site is a client-rendered SPA): the
+  Personal plan card prints "$13.99/month" with "Cancel anytime. $167.88 billed annually."
+  directly beneath it — the annual total is a verbatim vendor-published figure, not a coder
+  computation; this record's own first_charge_amount_usd evidence already said as much ("not a
+  computed figure... Consistent check only: 13.99 x 12 = 167.88"). Case 1 (vendor published the
+  annual total; no computation happened). Verdict: SUPPORTED. 167.88 stands, unchanged; see
+  computation_assumptions for the added source note.
+
+conflict_note:
+  - id: commercial_use_vs_marketing
+    variables_affected: [commercial_use_lowest_tier]
+    summary: >
+      Not a two-official-source value conflict in the codebook's technical
+      sense (the pricing page never states a commercial-use RIGHT to
+      disagree with ToS), but exactly the marketing-vs-contract gap
+      protocol-v1.md 6.2 requires recording "even where the hierarchy
+      settles the coded value cleanly." ToS §4.1, the governing document for
+      this contractual variable, grants only "a limited, revocable,
+      worldwide, non-exclusive, non-transferable license to use and access
+      the Services and the Site for your NON-COMMERCIAL USE as assessment
+      tool for content integrity only," with named exceptions solely for
+      educational-institution and API-integrated use. The pricing page
+      simultaneously markets the Pro plan as "Includes 25 user seats,
+      designed for startups and small teams" — audience-targeting copy that
+      reads as inviting business use, on the same page that never states a
+      commercial-use grant. Coded not_granted from the higher-ranked ToS per
+      codebook rule 1; the gap itself is the finding.
+    urls:
+      - https://copyleaks.com/termsofuse
+      - https://copyleaks.com/pricing
+
+  - id: credit_definition_scope_gap
+    variables_affected: [credit_unit_defined, credit_rate_location]
+    summary: >
+      ToS §8.1 (rank 3 for this pricing-class variable): "Each Credit can be
+      used for a single page (containing up to 250 words)" — states only the
+      word-based conversion, with no mention of images. The pricing page
+      (rank 1) and its FAQ state both: "1 credit covers up to 250 words or 1
+      image." Not a numeric contradiction (both agree on 250 words/credit)
+      and does not change either coded value (already yes/multiple from the
+      higher-ranked pricing page alone), but recorded per protocol-v1.md 6.2
+      ("a disagreement between sources... even where the hierarchy settles
+      the coded value cleanly"). Most likely explanation: the AI Image
+      Detection feature is flagged "NEW!" on the pricing page and may
+      postdate this ToS clause (ToS last revised 2025-09-09).
+    urls:
+      - https://copyleaks.com/termsofuse
+      - https://copyleaks.com/pricing
+
+computation_assumptions: >
+  Personal (entry tier), annual default display state: $167.88/yr paired
+  with 1,200 unified credits/yr on the same plan card (ToS §8.2: annual
+  credits are loaded for, and valid for, the 12-month period — same period
+  as the charge, no conversion needed). 167.88 / 1200 = 0.1399 USD/credit.
+  Credit-to-output (pricing-page FAQ): 250 words/credit or 1 image/credit
+  (fixed published rates, no usage assumption) => 0.1399/250*1000 = 0.5596
+  USD per 1,000 words; 0.1399 USD per image (1 image = 1 credit).
+  --
+  first_charge_amount_usd (167.88): no computation performed. The annual total is printed
+  verbatim on the pricing page's Personal plan card: "Cancel anytime. $167.88 billed annually."
+  (https://copyleaks.com/pricing, re-verified live 2026-08-12). 13.99 x 12 = 167.88 is recorded
+  here only as a consistency check against the printed figure, not as the basis for the coded
+  value. See coder_note's D-009 provenance check entry.
+
+register_events: []
+blindness: "no other record, no review page, no pass-2 material was opened."

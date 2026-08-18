@@ -1,0 +1,8 @@
+SOURCE: https://undetectable.ai/ethics
+ACCESSED: 2026-08-15
+ARCHIVE: https://web.archive.org/web/20260815140320/https://undetectable.ai/ethics
+Title: Ethics & Responsible AI Use | Undetectable AI
+
+Read for context on commercial_use_lowest_tier / output_ownership_statement. Contains an "Acceptable Use" / "Unacceptable Use" table for ethical use of the humanizer, including "To create marketing content" as Acceptable Use. This is an ethical-use policy, not a legal commercial-use-rights grant or an output-ownership statement -- no license/ownership/commercial-rights language found. Does not change coding of commercial_use_lowest_tier or output_ownership_statement (both remain unknown; documents do not address the legal question the codebook variable asks, only the ethical-use question).
+
+No pricing, trial, credit, renewal, refund, or watermark statements found on this page.

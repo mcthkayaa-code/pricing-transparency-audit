@@ -1,0 +1,33 @@
+SOURCE: https://undetectable.ai/help
+ACCESSED: 2026-08-15
+ARCHIVE: https://web.archive.org/web/20260815140059/https://undetectable.ai/help
+Title: Help & FAQ | UNDETECTABLE AI
+
+Relevant excerpt:
+"What is the UNDETECTABLE guarantee? If anything we generate is detected by any AI detector, reach out to us at contact@undetectable.ai. Send us the document along with where it was detected and we will refund the cost of the generation, no questions asked."
+-- NOTE: looser framing than ToS 6.1/27 (no explicit 75%-threshold or 30-day window stated here). Lower-authority than ToS for this contractual variable per protocol 6.2; recorded as a conflict_note divergence (marketing/help framing vs. contract framing), coded value taken from ToS.
+
+No other coded-variable-relevant statements found on this page (rest is language-support list, processing-time FAQ, bulk-pricing-contact-sales note, API-availability note, industries-served note).
+
+---
+
+SOURCE: https://undetectable.ai/ai-humanizer
+ACCESSED: 2026-08-15
+ARCHIVE: https://web.archive.org/web/20260815140252/https://undetectable.ai/ai-humanizer
+Title (as rendered in browser tab): "Humanize AI Text: Free AI Humanizer (Unlimited, No Signup)"
+
+Relevant excerpts (full page read via get_page_text):
+
+Tool widget mode tabs observed in DOM: "Basic" (default-active tab, blue underline styling), "Stealth", "More" (expandable). No explicit product use was performed -- no text was submitted to the tool; only the static labels/DOM of the tool chrome were read.
+
+FAQ, verbatim:
+"Is the AI Humanizer Free? Yes. There's a free version, but it uses a basic model and may be flagged by detectors. Sign up for a free trial to bypass detectors with 99% confidence and use the Undetectable model."
+=> Establishes TWO distinct things: (1) an ongoing, no-signup "free version" / "basic model" (ordinary free plan, domain 3), and (2) a separate sign-up-gated "free trial" of the better "Undetectable model" (domain 4), matching the pricing page's "Start FREE Trial" / "Free Trial is limited to 250 words. Additional usage requires paid plan activation."
+
+Body copy, "Input Your AI-Generated Content" section:
+"Paste your AI-generated text into our humanizer; it can handle up to 10,000 characters in one go, making it ideal for essays, articles, or large-scale content humanization."
+-- General product description, not explicitly scoped to "free plan only" vs. "all plans"; not counted as a free-plan-specific quantified cap because attribution to the free tier specifically is not stated.
+
+Page <title> tag: "Humanize AI Text: Free AI Humanizer (Unlimited, No Signup)" -- the word "Unlimited" appears ONLY in the title tag; not repeated as an explicit numeric/unlimited claim in the visible body FAQ or feature copy describing the free/basic tool's actual constraints.
+
+No statement found anywhere on this page addressing: output ownership, commercial-use tier, watermarking of output, card requirement for the free trial signup, or auto-conversion mechanics beyond "Additional usage requires paid plan activation" (quoted from the pricing page).

@@ -1,0 +1,150 @@
+Adobe  Generative  AI Product  Specific  Terms 
+ 
+Effective as of April 23, 2026. 
+These Product Specific Terms and the Adobe Generative AI User Guidelines  located at www.adobe.com/go/adobe - gen-ai-user-
+guidelines  (“Guidelines ”) govern your use of generative AI features in our Services and Software and are incorporated by 
+reference into the Adobe General Terms of Use (“General Terms”) located at www.adobe.com/go/terms (these Product 
+Specific Terms, the Guidelines, and the General Terms are collectively referred  to as “Terms ”). Capitalized  terms not defined  
+here have the same meaning  as defined  in the General Terms. 
+ 
+1. Generating Content. When you use generative AI features, you may be asked to input or upload content, such as an 
+audio file, video file, document, image, or text (including any output parameters, such as aspect ratio, style, etc.) 
+(collectively, “Input”). The Input will be used by the Services and Software to generate an output, such as an image, 
+text, text effects, vector graphic file, audio file, or video file, which will be provided within the Services and Software 
+(“Output”). The Input and Output are your Content (and are not Content Files or Sample Files) and all provisions 
+governing Content in the Terms apply to the Input and Output. The generative AI features, Input, and Output must be 
+used in accordance with the Terms, which may be modified from time to time. Adobe reserves the right to throttle, 
+limit, disable, suspend, or terminate your right to use or access the generative AI features at any time in our sole 
+discretion without prior notice to you. 
+ 
+2. Input. You are solely responsible for your Input. You must not submit any Input that: (a)  includes trademarks  or other 
+materials protected by third-party Intellectual Property Rights, unless you have sufficient rights in such materials; 
+(b) is intended to generate Output that is substantially similar to a third party’s copyrighted work or is otherwise 
+protected by third-party Intellectual Property Rights, unless you have sufficient rights in such work; (c) contains 
+personal information unless you comply with all data protection and privacy laws and regulations applicable to the 
+personal information, including providing privacy notices and obtaining consent,  where required;  (d) violates  applicable 
+law; or (e) violates  the Terms. We may automatically block your  Input,  in our sole discretion, if we believe it violates 
+the rights of a third party, applicable law, or the Terms. 
+ 
+3. Output. 
+ 
+3.1. Your Responsibilities.  You are solely  responsible  for the creation  and use of the Output  and for  ensuring the Output 
+complies with the Terms; however, we may use available technologies, vendors, or processes to screen for and 
+block Output that may violate applicable law, the rights of a third party, or the Terms, before the Output may be 
+delivered to you. Adobe disclaims all warranties, express or implied, regarding the Output, including any implied 
+warranties that the Output will not violate the rights of a third party or any applicable law. In addition, you 
+must not remove or alter any watermarks or Content Authenticity Initiative metadata (e.g., Content 
+Credentials) that may be generated with the Output, or otherwise attempt to mislead others about the origin 
+of the Output. See contentauthenticity.org for more information. 
+ 
+3.2. Suitability of Output. Use of generative AI features may produce Output that is unexpected or unsuitable for 
+some users. The Output may not be unique and other users of generative AI features may generate  the same or 
+similar Output.  The Output may  not be protectable  by Intellectual  Property  Rights.  
+ 
+3.3. No AI/ML Training. You must not, and must not allow third parties to, use any content, data, output or other 
+information received or derived from any generative AI features, including any Outputs, to directly or indirectly 
+create, train, test, or otherwise improve any machine learning algorithms or artificial intelligence systems, 
+including any architectures, models, or weights. 
+ 
+4. Firefly Gallery License. If you submit Output to an Adobe-hosted gallery (such as the Firefly gallery ), you grant us a non -
+exclusive, perpetual, irrevocable, worldwide, royalty -free license to use, reproduce, distribute, modify, sublicense, create 
+derivative works based on, publicly display, publicly perform, or translate both the submitted Output and the 
+corresponding Input for marketing purposes and to allow other Adobe users to use said Input and Output to generate 
+their own Output. 
+
+ 
+5. Creative  Cloud Generative  Credit Add-on Subscription.  For Creative  Cloud customers  with a Creative  Cloud Generative 
+Credit Add -on subscription ("Gen AI Add -on Subscription") through VIP, VIP Marketplace, or VIP Custom, this section 5 
+applies. Your Software and Services may include generative AI features which may require generative credits. Generative 
+credits allow you to generate Outputs based on the Inputs you provide to certain generative AI features. The number 
+of credits required will vary based on the type of generative feature used and the type or number of Outputs that are 
+generated (learn more here). During your Gen AI Add-on Subscription, the number of generative credits reflected in the 
+subscription you have purchased expire  on a monthly cadence that aligns to your Anniversary Date. Each month, your 
+account will be reset at the same number of generative credits for the duration of your Gen AI Add-on Subscription. 
+Unused generative credits do not rollover. Any Gen AI Add-on Subscription does not count towards a Select or Volume 
+Discount Level. 
+ 
+6. AI Assistant for  Acrobat Add -on Subscription. For customers  with an AI Assistant  for Acrobat  add-on subscription, this 
+section 6 applies. Your use of Acrobat generative AI features is governed by the Acrobat Generative AI Usage Policy  
+where each user is allotted Requests. During your AI Assistant  for Acrobat  add-on subscription, the number of Requests 
+reflected in the subscription you have purchased expires on a monthly cadence that aligns to your Anniversary Date. 
+Unused Requests do not rollover. These Requests cannot be used towards or in combination with Creative Cloud 
+generative credits. 
+ 
+7. In-App Use of Non-Adobe Models. To the extent a generative AI feature involves an AI model labeled as 
+developed by a third party (“Non-Adobe Model”), your use of the Non-Adobe Model to generate Content is 
+governed by Section 3.12 of the General Terms (Third-Party Services and Software).  
+ 
+7.1. Non-Adobe Models are provided solely as a convenience and we may elect to modify or discontinue 
+support for a Non-Adobe Model at any time. For clarity, this section does not apply to plug-ins made 
+available on exchange.adobe.com (or successor link). 
+ 
+7.2. You must be 18 years of age or older to use a Non-Adobe Model. 
+ 
+8. Firefly Output Indemnification . This section 8 only applies if you: (1) are a Creative Cloud for teams or Creative Cloud 
+for enterprise customer and (2) have purchased a Creative Cloud Pro Plus plan or Creative Cloud, Edition 4 plan that 
+comes with Firefly Output indemnification (“Eligible Plan”). 
+ 
+8.1. Definitions 
+ 
+8.1.1. “Affiliate” means, for an entity, any other entity that controls, is controlled by, or is under common control 
+with, that entity. For purposes of this definition, the term “control” means the direct or indirect power 
+to direct the affairs of an entity through a least 50% of the shares, voting rights, participation, or 
+economic interest in that entity. 
+ 
+8.1.2. “Eligible  Firefly Features ” means the Firefly features  listed  in the Firefly Product  Description. 
+ 
+8.1.3. “Eligible  Firefly  Surfaces ” means the Services  and Software  listed  in the Firefly Product  Description that 
+provide access to Eligible Firefly Features, which may be updated by Adobe from  time to  time. 
+ 
+8.1.4. “Export Event” means that a user provisioned under an Eligible Plan has performed an action 
+regarding a Firefly Output within an Eligible Firefly Surface as listed in the Firefly Product 
+Description, which may be updated by Adobe from time to time. 
+ 
+8.1.5. “Firefly Product Description ” means the description located at helpx.adobe.com/legal/product - 
+descriptions/adobe -firefly.html  (or successor URL), which may be updated by Adobe from time to 
+time. 
+ 
+
+8.1.6. “Indemnified Firefly Output” means Output generated in response to an Input when using an 
+Eligible Firefly Feature on an Eligible Firefly Surface and provided to the user after an Export Event.  
+ 
+8.2. Our Duty to Indemnify. Provided that the Indemnified Firefly Output is used in accordance with the Terms, and 
+subject to section 8.3 (Conditions to Indemnification), we will defend any third-party claim, action, or legal 
+proceeding made against a person or entity during the term of the Terms that alleges that you or your Affiliate’s 
+use of the Indemnified Firefly Output directly infringes the third-party’s copyright, trademark, publicity rights, or 
+privacy rights (“Infringement Claim”). We will pay the damages, losses, costs, expenses, or liabilities directly 
+attributable to an Infringement Claim and which are either finally awarded by a court of competent jurisdiction 
+or agreed to in a written settlement agreement signed by us. 
+ 
+8.3. Conditions  to Indemnification.  We will have no liability  for any Infringement  Claim: 
+8.3.1. that arises from: (1) any modification of an Output, including with any Services and Software; (2) any 
+combination of an Output with any other materials, content or information; (3) any use of an Output in 
+violation of these Terms; (4) any use of an Output after we have instructed you to stop using it; (5) any 
+Output that is based on a non-text Input, where the Input on its own would have given rise to the 
+Infringement Claim; (6) the context in which the Output is used; or (7) anything that is not the 
+audiovisual content displayed or played by the Eligible Firefly Feature, for example any technical metadata 
+that may be produced by the Eligible Firefly Feature such as file metadata and query response 
+parameters. 
+ 
+or 
+ 
+8.3.2. if you fail to: (1) notify us in writing of the Infringement Claim promptly upon the earlier of learning or 
+receiving notice of it, to the extent we are prejudiced by this failure; (2) provide us with reasonable 
+assistance as requested for the defense or settlement of the Infringement Claim; (3) provide us with the 
+exclusive right to control, and the authority to settle, the Infringement Claim; or 
+(4) refrain from making admissions about the Infringement Claim without our prior written consent. 
+ 
+8.4. Limitation of Liability. Notwithstanding anything to the contrary contained in the Terms or in any other  agreement  
+between you and  us, our total maximum aggregate  liability with respect  to Indemnified Firefly  Outputs  will in no 
+event exceed  US$10,000  per (a) any Indemnified  Firefly  Output  or (b) Infringement  Claim  (or set of related  
+Infringement  Claims).  Notwithstanding  any otherwise  applicable statute(s)  of limitation,  any action or dispute  
+resolution  proceeding  must be commenced  within two years  of the act, event, or occurrence  giving rise to the 
+claim. 
+ 
+8.5. Sole and Exclusive  Remedy. The foregoing  states  our entire liability  and obligation, and  your sole and exclusive 
+remedy, with respect to any Outputs or Infringement Claims. 
+ 
+ 
+Adobe -Generative -AI-Product -Specific -Terms -en_US-20260423 
+

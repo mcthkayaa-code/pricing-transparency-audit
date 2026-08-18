@@ -1,0 +1,239 @@
+product_id: openai-sora
+product_name: OpenAI Sora
+category: AI video generator
+product_status: "discontinued"
+paid_submission: "no"
+entry_tier_name: "unknown"
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-17
+recheck_date: not_applicable
+primary_source_url: https://sora.com
+archive_url: "local copy: openai-sora-sources/sora-com-live-state-rendered.txt (pass1, 2026-08-10; archive.org /save/ failed HTTP 520 both attempts; nearest pre-existing snapshot http://web.archive.org/web/20260708232650/https://sora.com/). Not re-fetched by this adjudication: nothing in Question 1 or Question 2 bears on the live shutdown-notice state, which pass1 and D-009 already independently confirmed twice."
+archive_status: local_copy_only
+default_display_state: >
+  Unchanged from pass1: sora.com redirects to sora.chatgpt.com and shows only a shutdown notice
+  as of the last read (2026-08-10, re-confirmed by D-009 the same day): "Sora is no longer
+  available. You can export your data at any time." No pricing UI exists at any point during the
+  collection window (2026-08-05 to 2026-08-13); the product shut down 2026-04-26, before the
+  window opened. This adjudication additionally establishes (see coder_note, Question 2) that the
+  vendor's own pre-shutdown documents distinguish TWO product surfaces that existed at different
+  times under the same "Sora" name: "Sora 1 on Web" (gated to ChatGPT Plus/Business/Pro, being
+  actively deprecated) and "the Sora app" / "Sora 2 on web" (sora.com's own iOS/Android/web app,
+  invite-and-rollout gated, the surface matching this record's primary_source_url and matching the
+  product's state at shutdown). The vendor's own documents state the first does not describe the
+  second. Pricing/entry-tier variables below remain coded unknown because no document — of either
+  surface — ever publishes a dollar figure for Sora at any point in its recovered documentary
+  history; other variables below are coded from whichever surface's documents the vendor states
+  actually govern the coded product, per the rule in coder_note.
+
+sources:
+  - { url: "https://sora.com", kind: pricing, accessed: "2026-08-10", archive: local_copy_only, note: "Inherited from pass1, not re-fetched by this adjudication. vendor_home_url; shutdown notice only." }
+  - { url: "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation", kind: other, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260729125259/https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation", note: "Inherited from pass1. Establishes discontinuation dates and points buyers to the ChatGPT refund article." }
+  - { url: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", kind: pricing, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260201090715id_/https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", note: "Canonical title/slug is 'Sora - Billing FAQ' (10245774-sora-billing-faq); re-fetched and read in full by this adjudicator today (54,229 bytes decompressed, matches sweep 1's count). OUT OF SCOPE for the coded product: opens 'Please note that the following experience only applies to Sora 1 on Web. It does not apply to the Sora app or Sora 2 on web.' Cited below for contrast, never as the basis for a determinate value on this record. See openai-sora-sources/MANIFEST.txt." }
+  - { url: "https://help.openai.com/en/articles/9957612-generating-videos-on-sora", kind: docs, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260414100838id_/https://help.openai.com/en/articles/9957612-generating-videos-on-sora", note: "'Generating videos on Sora'. Last pre-shutdown capture (12 days before the 2026-04-26 shutdown). Carries the SAME 'does not apply to the Sora app or Sora 2 on web' scope disclaimer as the Billing FAQ. OUT OF SCOPE for the coded product; cited for contrast only. Independently fetched and read in full by this adjudicator." }
+  - { url: "https://help.openai.com/en/articles/12460853-creating-videos-with-sora", kind: docs, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260329180344id_/https://help.openai.com/en/articles/12460853-creating-videos-with-sora", note: "'Creating videos with Sora'. No Sora-1-only scope disclaimer; names 'Sora 2' and states a rule explicitly covering 'In Sora 1 and Sora 2'. IN SCOPE for the coded product. Independently fetched and read in full." }
+  - { url: "https://help.openai.com/en/articles/12456897-getting-started-with-the-sora-app", kind: docs, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260407214549id_/https://help.openai.com/en/articles/12456897-getting-started-with-the-sora-app", note: "'Getting started with the Sora app'. No Sora-1-only disclaimer; describes the Sora 2 iOS/Android/sora.com app directly. IN SCOPE. Independently fetched and read in full." }
+  - { url: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", kind: pricing, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260328012520id_/https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", note: "'Using Credits for Flexible Usage in ChatGPT (Free/Go/Plus/Pro) & Sora'. ChatGPT-collection article (not the Sora collection), which is why pass1 and sweep 1's Sora-collection enumeration never found it. No Sora-1-only disclaimer; publishes the Sora 2 / Sora 2 Pro credit rate card. IN SCOPE. Independently fetched and read in full; a second, earlier capture (20251221123946) was fetch-attempted for corroboration and not needed once 20260328012520 succeeded." }
+  - { url: "https://help.openai.com/en/articles/12593142-sora-release-notes", kind: docs, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260327070818id_/https://help.openai.com/en/articles/12593142-sora-release-notes", note: "'Sora - Release Notes'. No scope disclaimer. Its October 30, 2025 entry is the vendor's own first-party link into the credits article above, establishing that a reader following the Sora collection would reach it. Independently fetched and read in full." }
+  - { url: "https://help.openai.com/en/collections/11106745-sora", kind: docs, accessed: "2026-08-17", archive: "https://web.archive.org/web/20260331195237id_/https://help.openai.com/en/collections/11106745-sora", note: "Sora help-collection index. Used to enumerate the exact 13 article IDs (confirms sweep 1's count) rather than guessing slugs. Independently fetched." }
+  - { url: "https://chatgpt.com/pricing", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260420102953/https://chatgpt.com/pricing/", note: "Inherited from pass1 (re-confirmed by D-009 same day). Sora is not named in any plan card or feature grid." }
+  - { url: "https://openai.com/sora/", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260420042312/https://openai.com/sora/", note: "Inherited from pass1 (re-confirmed by D-009 same day). Pure capability marketing, no pricing content; 'Sora 2 — Turn your ideas into videos...' confirms this is Sora-2-era marketing." }
+  - { url: "https://openai.com/index/sora-2/", kind: other, accessed: "2026-08-10", archive: archive_failed, note: "Inherited from pass1. Cloudflare bot-challenge page; not usable." }
+  - { url: "https://openai.com/policies/terms-of-use/", kind: tos, accessed: "2026-08-10", archive: local_copy_only, note: "Inherited from pass1. Still live (not withdrawn); governs contractual variables. Sora carried no separate ToS." }
+  - { url: "https://help.openai.com/en/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription", kind: refund, accessed: "2026-08-10", archive: local_copy_only, note: "Inherited from pass1. Conflicts with the ToS non-refundable clause; see conflict_note (unchanged)." }
+  - { url: "https://developers.openai.com/api/docs/models/sora-2", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/save/https://developers.openai.com/api/docs/models/sora-2", note: "Inherited from pass1. Developer/API pricing, background only, not a coded source (out of frame per sampling-rules I2)." }
+
+variables:
+  headline_price_usd: { value: "unknown", source: "https://sora.com", evidence: "UNCHANGED from pass1, kind revised to unknown_kind=vendor_silence per the settled unknown-attribution.csv reclassification (POST-WINDOW RETRIEVAL 2026-08-17): the Sora - Billing FAQ was recovered and read in full and contains zero '$' characters; independently re-verified by this adjudicator across ALL ten now-recovered Sora/Sora-app documents (in scope and out of scope alike) plus the ChatGPT credits article, zero '$' in every one. No document, at any point in Sora's documentary history, publishes a dollar figure. Codebook §2.1 step 2/4: no determinate value stated anywhere; unknown_kind=vendor_silence because the documents were reachable and read in full, not because they could not be located. Cannot be dated to the window (no live pricing surface existed 2026-08-05 to 2026-08-13); coded under the discontinued-stratum rule (sampling-rules §6.2) from the full recovered pre-shutdown documentary record." }
+  headline_billing_basis: { value: "unknown", source: "https://sora.com", evidence: "REVISED reasoning; value unchanged. Sweep 1/2 read this as 'addresses' on the Sora-1-Web Billing FAQ's 'Subscriptions for ChatGPT plans are charged on a calendar monthly basis' line. That document is OUT OF SCOPE for the coded product (see coder_note, Question 2): it expressly states it 'does not apply to the Sora app or Sora 2 on web'. No in-scope document (Creating videos with Sora; Getting started with the Sora app; the ChatGPT credits article, which explicitly is NOT calendar-monthly -- 'valid for 12 months from purchase') states a Sora-specific billing cadence, and headline_price_usd itself is unknown (rule 3: 'if the qualifier is absent ... check the billing FAQ and terms. If neither states it, code unknown' -- applied to the in-scope document set). unknown_kind=vendor_silence: the in-scope documents were read in full and state no cadence for a figure that itself does not exist. Not datable to the window; discontinued-stratum coding from pre-shutdown archives." }
+  first_charge_amount_usd: { value: "unknown", source: "https://sora.com", evidence: "UNCHANGED. unknown_kind=vendor_silence (settled by the post-window sweeps): the recovered Billing FAQ and every other recovered Sora document state no first-charge figure of any kind; zero '$' anywhere, independently reconfirmed by this adjudicator. Not datable to the window; discontinued-stratum coding." }
+  mandatory_addon_present: { value: "no", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "RESOLVED (one of the six sweep 3 held). Codebook rule 3 ('optional add-ons are not mandatory add-ons') + rule 5 ('documentation was read and shows no such charge, code no'). The ChatGPT/Sora credits article -- IN SCOPE, no Sora-1-only disclaimer, read in full 2026-08-17 -- states: 'Credits are a pay-as-you-go add-on for Codex & Sora when you need more usage beyond plan limits' and 'What changes for my plan? Nothing about your plan changes. You still get your plan's included usage.' This states in terms that NOT buying credits leaves the (unidentified) plan's included usage untouched, i.e. the add-on is optional. The OUT-OF-SCOPE Sora-1-Web Billing FAQ independently agrees on the same conclusion ('Only ChatGPT Plus users can upgrade their plan'; no separate add-on charge stated), so this value does not turn on which surface governs. Question 1 (published-then-withdrawn): this document's content is fixed at least from 2026-03-28 ('Updated: 17 days ago') through the 2026-04-26 shutdown; per the withdrawal rule in coder_note, a dated pre-shutdown capture is valid documentary evidence for a discontinued-stratum record on the same terms as any other document (sampling-rules §6.2), so this is coded determinate rather than unknown despite predating the window by over 4 months. Cannot be dated to the collection window itself; dated to 2026-03-28, ~6 weeks pre-shutdown." }
+  annual_condition_disclosure: { value: "unknown", source: "https://sora.com", evidence: "UNCHANGED. unknown_kind=vendor_silence: no headline figure exists to attach a condition to, and the word 'annual' occurs zero times across all ten recovered documents (in scope and out of scope), independently reconfirmed. Not datable to the window; discontinued-stratum coding." }
+  annual_default_toggle: { value: "unknown", source: "https://sora.com", evidence: "SETTLED TODAY BY D-075, NOT REVISITED BY THIS ADJUDICATION per the assigning brief. unknown_kind=vendor_silence: sweep 3 read all ten recovered documents; 'annual' and 'yearly' occur zero times across the set. Carried forward unchanged." }
+  free_plan_exists: { value: "unknown", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "REVISED reasoning (Question 2), value unchanged. Sweep 2 coded this 'addresses, no free plan' from the Sora-1-Web Billing FAQ's 'Currently ChatGPT Free ... not eligible for Sora access'. That document is OUT OF SCOPE for the coded product (see coder_note). The IN-SCOPE documents (credits article; Creating videos with Sora; Getting started with the Sora app), read in full 2026-08-17, never use the words 'free plan' or 'free tier' (zero hits across all ten documents, in scope and out), never state that a ChatGPT Free account is excluded from Sora, and never state what a Free account's baseline included usage is. 'Getting started with the Sora app' gates BASE access by invite/rollout ('Access starts with invite-only iOS users ... then expands'), not by ChatGPT paid tier -- only 'Sora 2 Pro' specifically is gated to ChatGPT Pro. The credits article's 'Sora for all users' (contrasted with 'Codex for Plus/Pro subscribers') establishes only that pay-as-you-go CREDIT purchases are open regardless of ChatGPT tier, which is a different claim from a documented zero-cost ONGOING allowance (codebook rule 2: 'a plan priced at zero with an ongoing allowance'). Neither an affirmative 'yes' (a documented no-cost allowance) nor a rule-3 'no' (documents stating no free option anywhere) is supported by the in-scope record. unknown_kind=vendor_silence: the governing document classes were read in full and do not settle it -- this is a genuine finding that the documents do not determine the answer, not a retrieval gap. Not datable to the window; discontinued-stratum coding." }
+  free_plan_cap_documented: { value: "unknown", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "Cascades from free_plan_exists=unknown (one of the six sweep 3 held; stays unknown). Independently, 'free plan'/'free tier' occur zero times across all ten recovered documents -- no document quantifies a free-tier limit even setting the antecedent question aside. unknown_kind=vendor_silence. Not datable to the window; discontinued-stratum coding." }
+  free_plan_cap_value: { value: "unknown", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "Cascades from free_plan_cap_documented=unknown (one of the six sweep 3 held; stays unknown). No quantified free-plan limit is stated in any recovered document. unknown_kind=vendor_silence. Not datable to the window; discontinued-stratum coding." }
+  free_plan_watermark: { value: "yes", source: "https://help.openai.com/en/articles/12460853-creating-videos-with-sora", evidence: "RESOLVED (one of the six sweep 3 held), independent of how free_plan_exists resolves. 'Creating videos with Sora' -- IN SCOPE, read in full 2026-08-17, dated 'Updated: 8 days ago' on the 2026-03-29 capture (~2026-03-21, closest in-scope watermark statement to the 2026-04-26 shutdown) -- states: 'A watermark will appear on downloaded videos in the following situations: ... You are not subscribed to ChatGPT Pro ... In these cases, the downloaded video will include a watermark.' This condition is framed by subscription status, not by a named free/paid tier, so it determines the outcome for ANY non-Pro access to Sora, including a free-tier route if one exists: whatever the free plan turns out to be, a user on it is by construction 'not subscribed to ChatGPT Pro' and therefore watermarked under this rule. Corroborated by 'Getting started with the Sora app' (2026-04-07 capture, content dated ~Feb 2026): 'Are videos watermarked? Yes. At launch, all Sora videos include a visible moving watermark.' Codebook §7 rule ('a pricing-table row ... is a documented yes for the free plan') read per the deviations-doc caution to look at what the rule actually requires rather than only its worked illustration: a documented, unconditional trigger covering every non-Pro route is functionally the same disclosure as an explicit free-column cross. This does NOT depend on resolving free_plan_exists; flagged here as a judgment call so a reader can independently disagree. Cannot be dated to the window; dated to 2026-03-21 (primary) / ~Feb 2026 (corroborating), both well before the 2026-04-26 shutdown; discontinued-stratum coding." }
+  free_plan_duration: { value: "unknown", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "Cascades from free_plan_exists=unknown (one of the six sweep 3 held; stays unknown). Unlike free_plan_watermark, no in-scope document states a duration/expiry rule that would apply regardless of whether a free tier exists -- duration is intrinsically a question about a specific plan's own terms, so there is no rescue path here. unknown_kind=vendor_silence. Not datable to the window; discontinued-stratum coding." }
+  trial_exists: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED. unknown_kind=vendor_silence (settled by sweeps): 'trial' occurs zero times across all ten recovered documents, in scope and out of scope alike, independently reconfirmed by this adjudicator. Not datable to the window; discontinued-stratum coding." }
+  trial_card_required: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED. Cascades from trial_exists=unknown. unknown_kind=vendor_silence. Not datable to the window; discontinued-stratum coding." }
+  trial_length_days: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED. Cascades from trial_exists=unknown. unknown_kind=vendor_silence. Not datable to the window; discontinued-stratum coding." }
+  trial_auto_converts: { value: "unknown", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED. Cascades from trial_exists=unknown. unknown_kind=vendor_silence. Not datable to the window; discontinued-stratum coding." }
+  credit_system_present: { value: "yes", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "UNCHANGED value, evidence strengthened. pass1's basis (the discontinuation FAQ's 'any purchased ChatGPT/Sora credits can still be used for Codex') is now directly corroborated by the recovered credits article itself: 'How credits work. Your plan's included usage is used first. After you hit plan limits, usage draws from your credit balance.' Codebook rule 2 ('an intermediate currency that converts into outputs is a credit system'). In scope, read in full 2026-08-17. Dated ~2026-03-11 to 2026-04-26 (Oct 2025 introduction per the Release Notes); not datable to the window; discontinued-stratum coding." }
+  credit_unit_defined: { value: "yes", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "REVISED from unknown (extends Question 2's document-governance finding beyond the nominal six -- see coder_note). Sweep 1/2 concluded this stays unknown because the OUT-OF-SCOPE Billing FAQ contains zero occurrences of 'credit'. That is true but the wrong document: the IN-SCOPE credits article publishes an explicit Sora 2 rate card converting credits into a named output unit -- 'Sora 2, 10s | 1 Video Gens | 10 credits' (and five further duration/resolution rows). Codebook rule: 'credit_unit_defined is yes where ANY official document converts credits into ANY output unit' -- this is exactly that conversion, for the product's own principal output (video). Verified by this adjudicator against an independently-fetched copy of the archive capture, not trusted from a sweep's quotation. Dated 'Updated: 17 days ago' on the 2026-03-28 capture (~2026-03-11); not datable to the window; discontinued-stratum coding." }
+  credit_to_output_rate_published: { value: "partial", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "REVISED from unknown (same extension as credit_unit_defined). The credits article publishes a full, non-range rate card for the principal output (video): 10/20/30 credits for Sora 2 at 10s/15s/25s, 40-500 credits for Sora 2 Pro across five duration/resolution combinations -- these are exact figures for named configurations, not a range (codebook rule 3 distinguishes a stated range with 'no rule for which applies'; here every named configuration has its own number). Coded partial rather than yes because the same document, and no other recovered document, publishes any credit rate for Sora's OTHER advertised output type, image generation ('Creating images on Sora' is a separate help article this adjudicator did not find a credit rate in any recovered document for); codebook rule: 'yes' requires rates 'for the principal output AND for the other output types the plan advertises', which the image gap does not meet. Dated ~2026-03-11; not datable to the window; discontinued-stratum coding." }
+  credit_rate_location: { value: "docs_help_center", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "REVISED from unknown (same extension). The rate card lives in exactly one document class -- a help-center article -- not on a pricing page and not in the terms, so 'docs_help_center' rather than 'multiple'. Dated ~2026-03-11; not datable to the window; discontinued-stratum coding." }
+  cost_per_output_unit: { value: "per_video_minute", source: "https://web.archive.org/web/20260420042312/https://openai.com/sora/", evidence: "UNCHANGED from pass1. 'Sora 2 — Turn your ideas into videos with hyperreal motion and sound.' Closest fit among the fixed value list; unaffected by Question 1/2." }
+  cost_per_output_computable: { value: "no", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "REVISED from unknown to no (same extension). Codebook rule 1 fixes the price input as the entry paid tier's price; rule 6: 'if it needs a number the vendor does not publish, code no.' The price input itself is the blocking figure: zero '$' occurs in any of the ten recovered documents, including the credits article, which describes HOW to buy credits ('you'll see a banner with Add credits') but never states what a credit costs in dollars. Distinguished from headline_price_usd/first_charge_amount_usd, whose own value tables have no 'no' option distinct from unknown ('unknown' there is explicitly defined as 'could not be located') -- cost_per_output_computable's table draws that line explicitly ('no: at least one required figure is not published' vs. 'unknown: the documents needed could not be located'), and the documents have now been located and read in full. computation_assumptions is therefore not_applicable, consistent with pass1's original coding. Not datable to the window; discontinued-stratum coding." }
+  computation_assumptions: { value: "not_applicable", source: "not_applicable", evidence: "UNCHANGED. No computation performed; cost_per_output_computable is no, not yes/partial." }
+  credit_rollover_policy: { value: "partial_rollover", source: "https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro", evidence: "REVISED from unknown (same extension). The credits article states directly: 'Do credits expire or roll over? Credits are valid for 12 months from purchase. Unused credits expire and do not roll over after the expiry date.' Genuinely close call, flagged rather than hidden: the vendor's own words say credits 'do not roll over', which reads toward expires_at_period_end; but structurally credits persist for a stated 12-month window from each individual purchase (not reset by a recurring monthly billing cycle the way expires_at_period_end's own worked example -- 'credits reset monthly' -- describes), which matches partial_rollover's own test ('carry forward subject to a stated cap or expiry') more closely. Coded partial_rollover on that structural test; a reader who weighs the vendor's explicit 'do not roll over' wording more heavily could reasonably code expires_at_period_end instead. Dated ~2026-03-11; not datable to the window; discontinued-stratum coding." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://help.openai.com/en/articles/10245774-sora-billing-credits-faq", evidence: "SETTLED TODAY BY D-075, NOT REVISITED BY THIS ADJUDICATION per the assigning brief. unknown_kind=vendor_silence: the fail/error scan D-051 held this on was run on both Billing FAQ captures -- zero hits for 'fail', 'unsuccessful', 'deduct'; both 'error' hits are an unrelated account-deletion FAQ. Independently reconfirmed by this adjudicator across all seven newly-fetched documents as well (zero 'fail'/'deduct'/'unsuccessful' in every one). Carried forward unchanged." }
+  auto_renewal_default: { value: "on", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED. 'For paid subscriptions, we will automatically charge your payment method on each agreed-upon periodic renewal until you cancel.' ToS ranks first for contractual variables (codebook §3) and is still live, not withdrawn; unaffected by Question 1/2." }
+  auto_renewal_disclosure_location: { value: "terms_only", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED from pass1." }
+  renewal_notice_commitment: { value: "advance_notice_stated", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED from pass1. 'If we materially increase our subscription prices, we will give you at least 30 days' notice...' -- conditional on a price increase, not blanket; scope preserved verbatim per pass1." }
+  refund_policy_exists: { value: "no_refunds_stated", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED. 'Payments are non-refundable, except where required by law.' ToS ranks first (codebook §3), still live. Corroborated, not contradicted, by the newly-recovered credits article's own 'Are credits refundable? Credits are non-refundable, except where required by law.' -- same position stated twice, in two documents, for two different charge types. conflict_note (unchanged) still records the disagreement with the ChatGPT billing help center's practical 14-day figure." }
+  refund_window_days: { value: "0", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED from pass1; see conflict_note." }
+  refund_conditions: { value: "not_applicable", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED from pass1. No refund available under the governing ToS, so no qualifying conditions apply." }
+  cancellation_self_serve: { value: "self_serve_documented", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED from pass1." }
+  refund_policy_location: { value: "terms", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED from pass1." }
+  commercial_use_lowest_tier: { value: "unknown", source: "https://help.openai.com/en/articles/12460853-creating-videos-with-sora", evidence: "REVISED reasoning, value unchanged. Sweep 2 based 'construct absent' on the OUT-OF-SCOPE Billing FAQ's 'Understanding Unlimited Usage' / 'Reselling access' clause; that clause occurs ONLY in the two Sora-1-Web-scoped documents (Billing FAQ, Generating videos on Sora) and zero times in the three in-scope documents this adjudicator fetched (Creating videos with Sora, Getting started with the Sora app, credits article) -- verified by direct term search. Independent of scope, that clause restricts reselling of ACCESS, not commercial use of OUTPUTS, so it would not have settled this variable even if in scope. pass1's own ToS keyword search ('commercial', 'business purpose', 'monetiz', 'resell') is unaffected by Question 1/2 and remains silent. unknown_kind=vendor_silence: the governing (in-scope) document classes were read in full and do not address commercial use of outputs. Not datable to the window; discontinued-stratum coding." }
+  watermark_removal_tier: { value: "highest_tier", source: "https://help.openai.com/en/articles/12460853-creating-videos-with-sora", evidence: "REVISED from unknown (same extension as the credit-system variables). Sweep 2's 'addresses' finding rested on the OUT-OF-SCOPE Billing FAQ's tier table. The IN-SCOPE 'Creating videos with Sora' states the same substantive rule directly and explicitly bridges both product generations: 'Can I download a Sora video without a watermark? In Sora 1 and Sora 2, ChatGPT Pro users can download videos without a watermark when all of the following conditions are met: The video was generated from a text prompt / The video does not depict a public figure / The video does not use any characters.' ChatGPT Pro is the highest tier named anywhere in the recovered documents (the credits article's own title lists the full ladder as 'Free/Go/Plus/Pro'); no lower tier is ever stated to remove the watermark, so highest_tier. Dated ~2026-03-21; not datable to the window; discontinued-stratum coding." }
+  output_ownership_statement: { value: "user_owns", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED from pass1. '...you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output.'" }
+  usage_cap_quantified: { value: "some_quantified", source: "https://help.openai.com/en/articles/12460853-creating-videos-with-sora", evidence: "RESOLVED (one of the six sweep 3 held). 'Creating videos with Sora' -- IN SCOPE -- states: 'Usage limits. Video generations contribute to the daily limit as follows: 10-second videos count as one video toward the daily limit. 15-second videos count as two videos toward daily limits. 25-second videos count as four videos toward the daily limit.' Numbers (1/2/4) and a dimension (video-count-equivalents) and a period ('daily') ARE stated -- quantified, per codebook §5.1. But the absolute ceiling the vendor writes is not: 'Video creation in the Sora app uses a rolling 24-hour limit per account ... If you hit the cap, you'll see an error like \"You've already generated X videos in the last day\"' -- the vendor's own text uses the literal placeholder 'X', never a number. Some quantified (the per-duration conversion), at least one not (the absolute cap): some_quantified per codebook rule 2/§5.1, not the unknown pass1 coded on the (correct, at the time) basis that no entry tier could be identified. This mechanism is stated per-account rather than tier-specific, so it does not depend on identifying which tier is 'entry'. Dated ~2026-03-21; not datable to the window; discontinued-stratum coding." }
+  unquantified_limit_clause: { value: "present", source: "https://openai.com/policies/terms-of-use/", evidence: "UNCHANGED from pass1. 'Interfere with or disrupt our Services, including circumvent any rate limits or restrictions or bypass any protective measures or safety mitigations we put on our Services.' Unquantified rate-limit/restriction language with no figure given, read in the ToS. This adjudicator additionally notes the in-scope Sora documents corroborate the same discretionary pattern without a number ('Limits may be enforced to prevent abuse and ensure a stable and equitable experience for all users' -- Creating videos with Sora and Getting started both carry equivalent language), reinforcing rather than changing pass1's value." }
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-17. This is not a pass1-vs-pass2 reconciliation: no second coding
+  pass exists for openai-sora (single-pass record; not selected into the double-coded subsample).
+  The brief for this record was to answer two questions the third post-window-retrieval sweep
+  (orchestrator/post-window-retrieval-3.md) explicitly held rather than decided, after recovering
+  documents pass1 could not reach. Of the six values sweep 3 held: 3 are resolved here to a
+  determinate value (mandatory_addon_present=no, usage_cap_quantified=some_quantified,
+  free_plan_watermark=yes); 3 stay unknown (free_plan_cap_documented, free_plan_cap_value,
+  free_plan_duration). Question 2 additionally required checking free_plan_exists (stays unknown,
+  reasoning substantially revised). Beyond the nominal six, applying the SAME document-governance
+  finding (Question 2) surfaced that five more variables sweep 1/2 had left "vendor_silence" were
+  in fact addressed by an in-scope document neither sweep had matched to them: credit_unit_defined
+  (->yes), credit_to_output_rate_published (->partial), credit_rate_location (->docs_help_center),
+  credit_rollover_policy (->partial_rollover), cost_per_output_computable (->no), and
+  watermark_removal_tier (->highest_tier) -- six variables, beyond the nominal six the brief named.
+  Two further variables (headline_billing_basis, commercial_use_lowest_tier) stay
+  unknown with revised reasoning, because the document sweep 1/2 used for them is out of scope and
+  no in-scope document settles them either. failed_generation_charge_policy and
+  annual_default_toggle were settled today by D-075 and are carried forward untouched, per the
+  assigning brief. The remaining 20 variables are unchanged from pass1 and undisputed by any sweep.
+  No date_explained or variant_explained classification applies anywhere on this record: there is
+  no vendor_edit register entry (nothing to re-collect -- the product has had no live pricing
+  surface at all since 2026-04-26, four months before the window even opened) and no two-snapshot
+  display-variant situation (no pricing page ever loaded in two states, because it never loaded a
+  price at all). Total: 9 variables moved to a new determinate value, 6 stay unknown with revised
+  reasoning, 2 settled today and untouched, 20 unchanged.
+
+  QUESTION 1 -- THE WITHDRAWAL RULE ADOPTED. Rule: for a discontinued-stratum product, a value
+  determinable from an official, dated, PRE-SHUTDOWN archived document is coded as a determinate
+  value from that document on the same terms codebook section 1 and protocol section 6.2 direct for
+  any document, regardless of whether the document remained reachable at the moment the collection
+  window opened. I apply this to all values above resting on a pre-shutdown capture, not only the
+  six sweep 3 named.
+  Why: sampling-rules.md section 6.2 and protocol section 4 both provide for a discontinued product
+  to be "coded from archived materials where those exist" without restricting those materials to
+  ones still live at window-open -- and by construction NO discontinued product's operative
+  documents remain live at window-open (that is what "discontinued" means). This record's own
+  pass1 pass already, uncontroversially, coded determinate values this way before I ever opened it
+  (cost_per_output_unit=per_video_minute, from an archived 2026-04-20 openai.com/sora/ marketing
+  page; auto_renewal_default, refund_policy_exists and output_ownership_statement, all from the
+  still-live ToS which nonetheless describes a product that no longer exists to be sold). Codebook
+  section 4's evidence-requirements table lists "Public archive snapshot of any of the above" as a
+  QUALIFYING source with no live-at-window-open restriction. Treating "published, then withdrawn
+  before the window" as equivalent to plain vendor silence would make every discontinued-stratum
+  coded value unknown by construction and would void the entire discontinued-stratum mechanism the
+  study's own design builds for exactly this case -- that collapse is strong evidence the
+  alternative reading is not the one the instrument intends.
+  The argument I considered and reject as the GOVERNING rule, stated fairly: a window-era reader
+  genuinely could not have read these documents (they were gone by 2026-08-05), so crediting them
+  as if a window-era buyer could determine the term overstates what "before paying" meant for this
+  product during the window. This concern is real, but I hold it is already absorbed by a different,
+  existing mechanism rather than needing a second penalty here: protocol section 4 and sampling-
+  rules section 6.2 EXCLUDE discontinued products from every aggregate transparency metric and from
+  the index. The record is reported in its own separate table precisely so a reader is never misled
+  into thinking these values describe what a window-era buyer could determine about a live,
+  purchasable product. Coding the value AND excluding it from the index does the work the "code it
+  unknown too" argument wants, without erasing what the vendor is independently and verifiably shown
+  to have published. Coding a demonstrably-published, dated, quoted statement as if the vendor never
+  said it would itself assert something the record now knows to be false -- exactly the risk the
+  brief itself named on the other side of this question.
+  I recommend, in my report to the orchestrator rather than in this record's values, that the
+  attribution vocabulary gain a fifth kind for wave 2 -- something like withdrawn_pre_window -- for
+  the distinct case (which this record's DETERMINATE values are NOT examples of, since I resolved
+  Question 1 to make them codeable) where a value must stay unknown specifically because the only
+  document that would settle it was withdrawn before the window and no other document reaches it.
+  None of this record's final unknowns rest on that specific problem; they rest on genuine silence
+  even within the full recovered documentary record, which is ordinary vendor_silence.
+
+  QUESTION 2 -- WHICH DOCUMENT GOVERNS THE FREE-TIER / SORA-2 CLUSTER. The vendor's own documents
+  split into two sets. Set A -- "Sora - Billing FAQ" and "Generating videos on Sora" -- both open
+  with the identical sentence: "Please note that the following experience only applies to Sora 1 on
+  Web. It does not apply to the Sora app or Sora 2 on web." Set B -- "Creating videos with Sora",
+  "Getting started with the Sora app", and the ChatGPT-collection credits article -- carry no such
+  disclaimer, discuss "Sora 2" and "the Sora app" directly and by name, and describe sora.com's own
+  iOS/Android/web product (getting-started: 13 "Sora 2" mentions; credits article: 10). This
+  record's own primary_source_url (https://sora.com, redirecting to sora.chatgpt.com, i.e. "the
+  Sora app") and its state at shutdown are Set B's product, not Set A's -- Set A's own documents
+  additionally state that surface was "actively being deprecated" with customers told to
+  "transition away from Sora 1 web" at the same time. Protocol section 6.2's authority hierarchy
+  does not resolve a disagreement between Set A and Set B on its own, because both sets are the same
+  document class (official documentation / help center) and so rank equally under that hierarchy;
+  what resolves it is a prior, more basic test the hierarchy presupposes rather than states --
+  whether a document is competent evidence for the product being coded at all -- and the vendor's
+  own express scope disclaimer answers that test directly, in the vendor's own words, not by my
+  inference. I therefore treat Set A as inadmissible for coding the Sora-app/Sora-2 product this
+  record measures, cite it only for contrast, and code from Set B wherever Set B settles a question,
+  leaving a value unknown where even Set B does not.
+  Consequence for free_plan_exists (checked though nobody disputed it, per the brief): Set A's "no,
+  ChatGPT Free not eligible" (Billing FAQ, Feb 2026 capture) does not govern. Set B never uses the
+  words "free plan" or "free tier" and never states what a ChatGPT Free account's baseline Sora
+  access is; the credits article's "Sora for all users" establishes only that pay-as-you-go CREDIT
+  purchases are open across ChatGPT tiers, a different claim from a documented zero-cost ongoing
+  allowance. Result: unknown, not "no" and not "yes" -- the documents genuinely do not settle it.
+  I note for completeness, because it changes how much confidence to place in Set A even on its own
+  terms: within Set A itself, the Feb-2026 Billing FAQ excludes "ChatGPT Free" by name from Sora
+  access, while the April-2026 "Generating videos on Sora" (the LATER Set-A capture, 12 days before
+  shutdown) drops "Free" from that same sentence, verified independently by this adjudicator against
+  a fresh fetch of both captures. Sweep 3 read this as the premise being "contested, not merely
+  soft." Because I hold Set A inadmissible for this product regardless, this internal Set-A drift
+  does not change my coded value, but it is additional reason not to treat Set A as if it were a
+  clean, stable "no" that Set B's silence merely failed to reach.
+
+  SOURCE VERIFICATION. Every archive.org capture cited above and quoted from was independently
+  re-fetched by this adjudicator today (not copy-pasted from a sweep's prose), decompressed, and
+  searched for the quoted text; byte counts and independent scan results are recorded in
+  openai-sora-sources/MANIFEST.txt alongside the exact URLs. archive.org's replay path returned
+  intermittent HTTP 503 throughout, consistent with all three sweeps' own infrastructure notes;
+  every capture used above eventually returned HTTP 200 within 1-9 retries. Protocol section 6.4's
+  same-day-snapshot rule is satisfied by the archive.org permalink itself (an immutable, publicly
+  re-openable record) plus this adjudicator's own local copies fetched and dated 2026-08-17, which
+  is the same day these values were coded.
+
+  ENTRY TIER (carried from pass1, unaffected): no eligible entry-tier candidate could be identified
+  by either pass1 or this adjudication. No document, in scope or out of scope, publishes a Sora-
+  specific plan grid or price; access rode on ChatGPT's own subscription tiers, whose OWN pricing
+  is never stated in any Sora-scoped document, and chatgpt.com/pricing's own archived capture never
+  names Sora as a plan feature at all. No candidate is recorded as losing because none could be
+  identified as eligible in the first place (sampling-rules.md 7.2).
+
+  READING SCOPE. Read for this adjudication: protocol-v1.md, codebook-v1.md, sampling-rules.md,
+  record-template.yaml, deviations-for-adjudicators.md (in full); records/pass1/openai-sora.yaml
+  and its full openai-sora-sources/ directory; orchestrator/post-window-retrieval-3.md in full;
+  the openai-sora sections of orchestrator/post-window-retrieval.md and
+  orchestrator/post-window-retrieval-2.md; the openai-sora rows of orchestrator/unknown-
+  attribution.csv and orchestrator/unknown-attribution-overrides.csv (to establish which values
+  were already settled today and by what reasoning, per the brief's explicit direction on D-075);
+  seven vendor documents independently fetched via web.archive.org (see MANIFEST.txt) plus one
+  collection-index page. NOT opened, per the binding restrictions: any other product's record,
+  aitoolspolice.com, site/content/reviews/, orchestrator/adjudication-queue.md,
+  orchestrator/interim-signals.md, orchestrator/deviations-log.md. No pass2 record exists for this
+  product to be blind to. This adjudication is not blind by design (protocol 7.4 permits and
+  requires reading both prior material and the sources), so the pass1/pass2 "blindness" attestation
+  does not apply verbatim; the applicable discipline is the reading-scope list above, observed in
+  full.
+
+conflict_note: >
+  UNCHANGED from pass1. Refund position conflicts between two official sources of unequal rank for
+  the contractual class (Terms of Use ranks first, help center second, per protocol section 6.2).
+  Terms of Use (https://openai.com/policies/terms-of-use/): "Payments are non-refundable, except
+  where required by law." ChatGPT billing help center
+  (https://help.openai.com/en/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription),
+  which OpenAI's own Sora discontinuation FAQ explicitly points buyers to for refund questions:
+  "Accidental purchases are generally eligible for a refund if you contact us within 14 days of the
+  charge," plus stated regional rights (EU/UK/Turkey 14 days prorated; Korea 7 days full refund).
+  Coded from the higher-ranked Terms of Use per codebook section 2.1 step 3 (refund_policy_exists =
+  no_refunds_stated, refund_window_days = 0); the help-center figures are what would apply in
+  practice for most buyers and are preserved here so the disagreement is not lost. This adjudication
+  additionally found the newly-recovered ChatGPT/Sora credits article states the SAME non-refundable
+  position for credits specifically ("Are credits refundable? Credits are non-refundable, except
+  where required by law."), which corroborates rather than adds to this conflict.
+
+register_events: []
+
+status: complete

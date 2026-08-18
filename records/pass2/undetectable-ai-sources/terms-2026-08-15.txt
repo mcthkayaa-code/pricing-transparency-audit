@@ -1,0 +1,44 @@
+SOURCE: https://undetectable.ai/terms
+ACCESSED: 2026-08-15
+ARCHIVE: https://web.archive.org/web/20260815135121/https://undetectable.ai/terms
+Title: Terms | UNDETECTABLE AI. Last updated 01/01/2025.
+
+Key excerpts relevant to coded variables (verbatim, condensed to operative clauses; full page read in full via get_page_text, ~28 sections):
+
+[Section 5, PURCHASES AND PAYMENT]
+"If your order is subject to recurring charges, then you consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until such time as you cancel the applicable order." / "All payments shall be in US dollars."
+
+[Section 6, CANCELLATION -- Plain-English Summary]
+"You can cancel your subscription at any time. California and New York residents can cancel directly in their account dashboard. All other users may cancel by emailing us at contact@undetectable.ai. Cancellation stops future charges but does not refund prior billing periods unless required by law."
+
+[6.1 REFUNDS]
+"If you cancel, you will immediately lose your remaining words. A refund of credits is only available if a submission provably flags as less than 75% human on a reputable AI detector. Refunds of credit or payment requests must be made within 30 days of the incident."
+
+[6.2 SUBSCRIPTION TERM AND TERMINATION]
+"Your subscription... and any associated yearly payments are valid only for the duration of the Company's active operations... In the event that the Company ceases operations... your subscription... will be terminated immediately without any refund or compensation."
+
+[6.3 CANCELLATION BY EMAIL (NON-CALIFORNIA AND NON-NEW YORK RESIDENTS)]
+"For users who reside outside of California and New York, subscriptions may be canceled only by submitting a cancellation request via email. To cancel, you must email support@undetectable.ai from the email address associated with your account..."
+
+[6.4 CANCELLATION VIA DASHBOARD (CALIFORNIA AND NEW YORK RESIDENTS)]
+"If you reside in California or New York, you may cancel your subscription at any time through the account dashboard by following the cancellation instructions available in your account settings. Dashboard cancellation is designed to be at least as easy as signup..."
+
+[6.5 AUTOMATIC RENEWAL COMPLIANCE]
+"By subscribing, you expressly consent to recurring billing at the disclosed price and frequency until you cancel in accordance with this Cancellation Policy. We clearly and conspicuously disclose: The existence of recurring charges, The amount and billing frequency, How to cancel before being charged again, and That cancellation stops future charges but does not retroactively refund prior billing periods unless required by law."
+
+[Section 7, PROHIBITED ACTIVITIES -- no numeric "fair use" figure anywhere in this section]
+(Standard anti-scraping/anti-abuse prohibitions; no quantified usage caps stated here.)
+
+[Section 12, SERVICES MANAGEMENT, item 4]
+"...in our sole discretion and without limitation, notice, or liability, to remove from the Services or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems..."
+-- This is the only discretionary/unquantified-standard clause found in the full ToS read (fits codebook's "excessive use... at the vendor's discretion" language for unquantified_limit_clause). No other "fair use", "reasonable use", "abuse threshold", or throttling clause found anywhere else in the document.
+
+[Section 2, INTELLECTUAL PROPERTY RIGHTS] -- covers the VENDOR'S OWN site/software/content ("Content and Marks"), granting the user a limited license to USE the Services. Does NOT address ownership of the humanized TEXT OUTPUT the tool produces from user input. No "you own your generated output" or "we retain a license to your output" clause found anywhere in the document.
+
+[Sections 8-9, USER GENERATED CONTRIBUTIONS / CONTRIBUTION LICENSE] -- governs community-style Contributions (forum posts, blog comments etc.), explicitly NOT the humanizer's generated text output. "We do not assert any ownership over your Contributions." -- again, scoped to community contributions, not product output.
+
+No clause anywhere in the document addresses: commercial-use rights over humanized output, watermarking of humanized output, or credit rollover (no "credits"/"words" reset-vs-rollover language found in ToS).
+
+[Section 27, REFUNDS -- standalone, near end of document]
+"Refunds will not be provided unless required by law. Refund of credits is only available if a submission provably flags as less than 75% human on a reputable AI detector. Refund of credit or payment requests must be made within 30 days of incident."
+-- Consistent with 6.1 (same condition, same window), not a conflict between the two ToS sections.

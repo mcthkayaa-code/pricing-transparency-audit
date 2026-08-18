@@ -1,0 +1,110 @@
+Fresh browser renders, 2026-08-09, D-005 re-collection. help.gamma.app and developers.gamma.app
+are not Cloudflare-blocked; these rendered identically to a static fetch would have, and are
+included here mainly to confirm no vendor edit since the 2026-08-07 collection (compared
+word-for-word against records/pass1/gamma-sources/gamma-*-text.txt from that date; refund
+article text matches exactly except the "Beginning December 1, 2025" policy note, which was
+already in effect on 2026-08-07 too).
+
+=== https://help.gamma.app/en/articles/11048496-what-is-gamma-s-refund-policy-and-how-do-i-request-a-refund ===
+Archived fresh today: http://web.archive.org/web/20260809144705/https://help.gamma.app/en/articles/11048496-what-is-gamma-s-refund-policy-and-how-do-i-request-a-refund
+
+Introduction
+
+If you've recently subscribed to Gamma and had a change of plans, we've made it simple to
+request a refund - if you meet the eligibility criteria. This article outlines Gamma's refund
+policy and how to contact support for a refund.
+
+What is Gamma's Refund Policy?
+
+Important: Beginning December 1, 2025, Gamma will offer refunds only within the first 3 days of
+subscribing to one of our paid plans, for both monthly and annual billing options, and only upon
+contacting Customer Support. You will not automatically receive a refund if you cancel within 3
+days of subscribing. Additionally, you must not have exceeded the threshold for credit usage.
+
+Annual and Monthly Plans
+
+Eligible for a full refund within the first 3 days after subscribing, if credit usage does not
+exceed the threshold for the plan. See the table below to understand the credit usage threshold
+per plan.
+
+No refunds are issued after 3 days, except where required by applicable law.
+
+Refund eligibility conditions, including credit usage thresholds, are subject to applicable
+local consumer protection laws.
+
+Plan | Monthly Credits | Threshold | Refund available if requested within 3 days of subscribing and
+Plus | 1k | 20% | less than 200 credits used
+Pro | 4k | 15% | less than 600 credits used
+Team | 6k | 15% | less than 900 credits used
+Business | 10k | 10% | less than 1,000 credits used
+Ultra | 20k | 10% | less than 2,000 credits used
+
+Note: To receive your refund, you must request one within the 3-day window. Our team will
+review your eligibility.
+
+=== https://help.gamma.app/en/articles/8568920-how-do-i-manage-or-cancel-my-gamma-subscription ===
+Archived fresh today: http://web.archive.org/web/20260809144757/https://help.gamma.app/en/articles/8568920-how-do-i-manage-or-cancel-my-gamma-subscription
+
+Cancellation Policy & Renewal Timeline
+
+To avoid being charged for the next billing period, cancel at least 30 days before your plan's
+renewal date. If you received an auto-renewal notification, you have 30 days from the date of
+that notice to cancel. Your subscription will remain active until the current term ends.
+
+Note: Cancelling your subscription does not automatically issue a refund. If you subscribed
+within the last 3 days and haven't exceeded your plan's credit usage threshold, you may be
+eligible for a refund - let us know and we'll check for you.
+
+To cancel: Settings (gear icon) > Billing > "Cancel subscription" at the bottom of the Billing
+page. Self-serve, no ticket/email/call required. Subscription remains active until the end of
+the current billing period.
+
+=== https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription ===
+Archive: http://web.archive.org/web/20260807074731/... (fresh-save attempts today returned the
+existing 2026-08-07 capture rather than a new one; live content re-read today word-for-word
+matches that capture plus the additions quoted below, so no vendor edit occurred).
+
+Free Plan: "Generate up to 10 slides in a single prompt, with the option to add more manually";
+"50k input tokens for initial generation"; note "AI credits do not refresh in the Free Plan";
+"You can earn additional credits by referring a friend (200 credits per referral)... Free
+accounts can have up to 2,000 credits at once per user." Elsewhere, in the cancellation FAQ:
+"Your credits will reset at 400, as per our free plan allowance" -- confirms the pricing page's
+"400 credits at signup" is the same free-plan baseline this article calls "our free plan
+allowance"; the 50k-token figure is a separate, narrower per-generation technical cap, not a
+competing figure for the same construct. Not a conflict: two compatible quantified limits.
+
+Plus Plan: "1000 monthly credits"; "Generate up to 75 slides in a single prompt, with the option
+to add more manually"; "Up to 100,000 input tokens for initial generation". Matches pricing page
+exactly on credits and slides-per-prompt.
+
+Rollover: "Unused credits rollover up to double the plan size. For example, if you are on our
+monthly Plus Plan with 1,000 credits, then you can have up to 2,000 credits at any time... credits
+issued monthly (not all upfront)."
+
+Per-seat billing: "Subscriptions are per user. For example, two users on the monthly Pro Plan
+will be billed double."
+
+Annual discount: "Annual plans include the same monthly credits as monthly subscriptions but at
+a 28% discount."
+
+=== https://help.gamma.app/en/articles/11048258-what-does-per-member-billing-mean-in-gamma ===
+Archive: http://web.archive.org/web/20260807074519/https://help.gamma.app/en/articles/11048258-what-does-per-member-billing-mean-in-gamma
+(fresh save today returned this existing capture; live text re-read today matches word for word)
+
+"Per-member billing means you are charged for each active user in your workspace. This applies
+to all paid plans. For example, if you're on the $20/month plan and have 2 users, your total
+monthly bill will be $40. If you want to reduce your bill, you can remove users from your
+workspace at any time." -- describes optional additional workspace seats (Team $20/seat example),
+removable at any time; not a mandatory add-on to use the Plus entry tier as advertised.
+
+=== https://developers.gamma.app/get-started/access-and-pricing ===
+Archive: http://web.archive.org/web/20260807074703/https://developers.gamma.app/get-started/access-and-pricing
+(fresh save today returned this existing capture; page footer states "Last updated 9 days ago"
+as of today's 2026-08-09 read, i.e. stable since ~2026-07-31, unchanged across both collections)
+
+"Number of cards | numCards | 1-3 credits/card (varies by the text generation model Gamma
+selects internally)"
+"AI image model | imageOptions.model | Standard: 2-15 credits/image. Advanced: 20-33
+credits/image. Premium: 34-75 credits/image. Ultra: 30-125 credits/image."
+"* Credit consumption rates and the actions that consume credits are subject to change."
+No fixed (non-range) rate published for any output type.

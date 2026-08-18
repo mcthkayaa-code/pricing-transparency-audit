@@ -1,0 +1,42 @@
+# RENDERED CAPTURE — evidence file (deviation D-005)
+# urls read: https://www.canva.com/pricing/  -> redirected to /tr_tr/ucretlendirme/
+#            https://www.canva.com/en_us/pricing/ -> ALSO served the tr-TR page (html lang="tr-TR")
+# captured: 2026-08-08 by the orchestrator, ordinary browser page load (no account, no login,
+#   no checkout — the page's own scripts render these figures for any visitor)
+# network: collection host egresses from Turkey. NOTE: the /en_us/ path did NOT change the
+#   served locale, so Canva's locale selection is IP-based, not path-based (D-003 relevant:
+#   a US-locale figure cannot be obtained from this network by URL alone; try a US-crawled
+#   web.archive.org capture).
+# method: browser render, document.body.innerText (excerpt covering the plan cards)
+
+Planlar ve fiyatlandırma
+Bireysel ve Kurumsal Kullanım | Eğitim
+Aylık | Yıllık   (%16 tasarruf et)
+
+Bireysel Kullanım — Ücretsiz
+"Canva'nın temel araçlarıyla ihtiyacınız olan her şeyi kolayca oluşturun."
+0 ₺  — "Bir kişi için yıllık fiyat"
+[Başlayın]
+
+Bireysel Kullanım — Pro
+"Premium içerikler, daha güçlü tasarım araçları ve yapay zeka destekli özelliklere erişin."
+1.920 ₺ — "Bir kişi için yıllık fiyat"
+[Ücretsiz denemeyi başlatın]
+
+Bireysel ve Ekip Kullanımı — Business   (marked "Önerilenler")
+"Ekip olarak daha verimli çalışın..."
+3.400 ₺ — "Kişi başı yıllık fiyat"
+[Ücretsiz denemeyi başlatın] [Satış Ekibi ile iletişime geçin]
+
+Büyük Şirketler ve Kurumlar — Şirketler için Canva
+"Bize ulaşın" — sales-gated, no published price
+
+Footnotes on the same page:
+* "Canva Business ücretsiz deneme süresi boyunca Leonardo.Ai Essential planı özelliklerini
+  kullanamazsınız."
+^ "Kullanım tahminleri, farklı yapay zeka katmanlarındaki toplam yapay zeka kullanımını
+  temsil etmektedir. Ücretli planlara Standart, Premium ve Ultra yapay zeka katmanlarını
+  kapsayan ortak bir yapay zeka kullanım limiti; Ücretsiz planlara ise yalnızca Standart ve
+  Premium katmanlarını kapsayan ortak bir yapay zeka kullanım limiti dahildir. Yapay zeka
+  katmanı yükseldikçe limitinizden kullanılan miktar artar ve kullanımlar araca göre
+  değişkenlik gösterebilir."

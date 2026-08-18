@@ -1,0 +1,152 @@
+product_id: picsart
+product_name: Picsart
+category: AI design
+product_status: active
+paid_submission: "no"
+entry_tier_name: Pro
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-10
+recheck_date: not_applicable
+primary_source_url: https://picsart.com/pricing/
+archive_url: https://web.archive.org/web/20260810104607/https://picsart.com/pricing/
+archive_status: archived
+default_display_state: "Rendered read (D-005; static fetch/curl returns empty JS-shell). Currency: page rendered entirely in Turkish Lira (₺), collection network egresses from Turkey; D-007 currency check performed (both arms failed to find a USD figure) so headline_price_usd is coded unknown, not non_usd, not TRY-as-is. Billing toggle: Yearly preselected by default (active/highlighted vs plain Monthly), before any interaction. Region/country: no selector present on page. Cookies: consent banner appeared on load; decline was attempted (Manage Cookies clicked at DOM-derived coordinates, twice) but the banner's preference panel did not visibly resolve via automation; Accept-All was NOT clicked; underlying page content was already present in the DOM independent of consent state, so no coded value depends on the unresolved banner."
+
+sources:
+  - { url: "https://picsart.com/pricing/", kind: pricing, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810104607/https://picsart.com/pricing/", note: "rendered read (D-005); local copy also saved to picsart-sources/pricing-page-rendered.txt" }
+  - { url: "https://picsart.com/terms-of-use/", kind: tos, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810105505/https://picsart.com/terms-of-use/", note: "rendered read (D-005), last-updated 2023-06-30 per page; local copy picsart-sources/terms-of-use-rendered.txt" }
+  - { url: "https://picsart.com/genaitermsofuse/", kind: tos, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810105524/https://picsart.com/genaitermsofuse/", note: "Generative AI Additional Terms of Use, last-updated 2026-04-30 per page (more current/specific than general ToS for AI Output rights); local copy picsart-sources/genai-terms-rendered.txt" }
+  - { url: "https://support.picsart.com/hc/en-us/articles/360002231937-Refund-Policy", kind: refund, accessed: "2026-08-10", archive: archive_failed, note: "web.archive.org/save returned HTTP 520 x2 attempts; local_copy saved picsart-sources/refund-policy.txt" }
+  - { url: "https://support.picsart.com/hc/en-us/articles/360002231957-How-to-cancel-your-Picsart-subscription", kind: docs, accessed: "2026-08-10", archive: archive_failed, note: "web.archive.org/save returned HTTP 429 then 520; local_copy saved picsart-sources/cancellation.txt" }
+  - { url: "https://support.picsart.com/hc/en-us/articles/360002232017-What-types-of-subscriptions-does-Picsart-offer", kind: docs, accessed: "2026-08-10", archive: archive_failed, note: "web.archive.org/save returned HTTP 429 then 520; local_copy saved picsart-sources/subscription-types.txt" }
+  - { url: "https://support.picsart.com/hc/en-us/articles/35102132133149-Picsart-Subscription-Plans-Explained-Monthly-vs-Yearly-Options", kind: docs, accessed: "2026-08-10", archive: archive_failed, note: "web.archive.org/save returned HTTP 520 x2; local_copy saved picsart-sources/monthly-vs-yearly.txt" }
+  - { url: "https://support.picsart.com/hc/en-us/articles/9814385860381-Are-images-generated-through-AI-available-for-commercial-use", kind: docs, accessed: "2026-08-10", archive: archive_failed, note: "web.archive.org/save returned HTTP 429 then 520; local_copy saved picsart-sources/ai-commercial-use.txt; corroborating, primary source for commercial_use_lowest_tier is genaitermsofuse (archived)" }
+  - { url: "https://support.picsart.com/hc/en-us/articles/35097241583005-What-are-credits-and-how-do-they-work", kind: docs, accessed: "2026-08-10", archive: archive_failed, note: "web.archive.org/save returned HTTP 429 then 520; local_copy saved picsart-sources/credits-work.txt; corroborating only" }
+  - { url: "https://picsart.com/tutorials/understand-ai-credit-costs-and-model-pricing/", kind: docs, accessed: "2026-08-10", archive: not_attempted, note: "read via WebFetch summary only (not independently rendered by coder); official picsart.com domain; used for credit_unit_defined / credit_to_output_rate_published" }
+  - { url: "https://web.archive.org/web/20260802131510/https://picsart.com/pricing/", kind: other, accessed: "2026-08-10", archive: not_applicable, note: "most-recent pre-existing US-crawled Wayback capture of the pricing page, checked as D-007 currency-check arm 2; raw capture (id_ modifier) contains no $ / TRY / currency-code strings at all - pre-hydration empty shell, same failure mode D-007 describes for phrasly" }
+  - { url: "https://apps.apple.com/us/app/picsart-photo-video-editor/id587366035", kind: other, accessed: "2026-08-10", archive: not_applicable, note: "App Store listing - does NOT qualify as a coding source per codebook section 4; used only to document web-vs-app-store price/plan divergence in conflict_note per assignment instruction; local copy picsart-sources/app-store-reference-NOT-a-coding-source.txt" }
+
+variables:
+  headline_price_usd: { value: unknown, source: "https://picsart.com/pricing/", evidence: "Pro plan card and the separate feature-comparison table both show \"₺83.25/mo\" (Turkish Lira, Pro's cheapest/entry tier); no USD figure appears anywhere on the page. D-007 currency check run: (1) vendor's own currency disclosure - no currency/country selector, no currency URL parameter (tried ?currency=USD, no effect), no explicit currency statement found in ToS, GenAI Terms, or 6 support articles; (2) US-crawled archive capture - most recent Wayback snapshot (2026-08-02) is a pre-hydration empty shell with zero currency symbols/codes of any kind. Both arms failed to produce readable USD evidence, so per D-007 the value is unknown, not non_usd." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://picsart.com/pricing/", evidence: "\"₺83.25/mo\" shown with \"Billed yearly\" directly beneath it in the default (Yearly-preselected) state; corroborated by support article: \"the subscription page shows the equivalent monthly price along with the line 'billed annually' ... meaning that you'll pay for the year with one purchase.\"" }
+  first_charge_amount_usd: { value: unknown, source: "https://picsart.com/pricing/", evidence: "Billing frequency is documented (one annual payment - see headline_billing_basis), but the amount cannot be stated in USD for the same reason headline_price_usd is unknown: no USD figure was found via either D-007 currency-check arm." }
+  mandatory_addon_present: { value: "no", source: "https://picsart.com/pricing/", evidence: "Reviewed Pro plan's complete feature list and the pricing-page billing FAQ; no required additional charge beyond the plan price was found. Ultra's \"Option to buy add-on credits that never expire\" is explicitly optional (\"Option to buy\") and is listed under Ultra, not Pro (Pro is the entry tier)." }
+  annual_condition_disclosure: { value: adjacent, source: "https://picsart.com/pricing/", evidence: "\"Billed yearly\" is printed directly beneath \"₺83.25/mo\" inside the Pro plan's own price card, i.e. the same visual price block." }
+  annual_default_toggle: { value: annual_preselected, source: "https://picsart.com/pricing/", evidence: "\"Yearly\" tab is visually active/highlighted (dark filled background, badge \"SAVE UP TO 40%\") while \"Monthly\" is plain, on first page load before any interaction; confirmed via screenshot and DOM read." }
+  free_plan_exists: { value: "yes", source: "https://picsart.com/terms-of-use/", evidence: "\"Much of the Service is free of charge, which we refer to as 'Picsart Free'.\" Corroborated by the cancellation article (\"your account will continue on the free plan\") and the subscription-types article (\"...not available to free users\"). Not shown as a card on the pricing page itself - the pricing grid lists only Pro and Ultra." }
+  free_plan_cap_documented: { value: unknown, source: "https://picsart.com/terms-of-use/", evidence: "No official document (ToS, GenAI Terms, pricing page, subscription-types article, credits-work article) states any limit - quantified or unquantified - specifically for Picsart Free. Documents describe only qualitative feature GATES relative to paid plans (ad-free experience is a paid benefit, implying free has ads; \"exclusive content...not available to free users\"; credits are described as \"allocated based on your Picsart subscription plan\"), never a stated cap (no GB, no credit count, no export count) for the free tier itself." }
+  free_plan_cap_value: { value: unknown, source: "https://picsart.com/terms-of-use/", evidence: "No quantified free-plan limit located in any official document; see free_plan_cap_documented." }
+  free_plan_watermark: { value: unknown, source: "https://picsart.com/terms-of-use/", evidence: "The string \"watermark\" does not appear in the Terms of Use, the GenAI Terms, or the pricing page (full-text keyword search performed on all three); not addressed in any support article read." }
+  free_plan_duration: { value: perpetual, source: "https://picsart.com/terms-of-use/", evidence: "\"Your account will be downgraded to Picsart Free at the end of the billing period\" (ToS, on cancellation) and \"your account will continue on the free plan\" (cancellation article) - Picsart Free is framed as an ongoing standing state, not a time-limited offer." }
+  trial_exists: { value: "yes", source: "https://picsart.com/pricing/", evidence: "Pricing-page FAQ: \"Will I get a free trial before I subscribe? Most plans include a free trial, though eligibility depends on your account history and the specific plan chosen.\" Independently corroborated by ToS section \"Free Trials and Promotions\" and by the subscription-types article FAQ: \"Yes, Picsart offers free trials for subscription packages before purchasing it.\"" }
+  trial_card_required: { value: unknown, source: "https://picsart.com/terms-of-use/", evidence: "ToS states only a hedged, general clause: \"For SOME Trials, we'll require you to provide your payment details to start the Trial\" - does not commit either way for the Pro-tier trial specifically. The pricing-page FAQ never mentions a card requirement. Per codebook rule, silence/hedging is unknown; no inference drawn from the existence of the later auto-charge mechanism." }
+  trial_length_days: { value: unknown, source: "https://picsart.com/pricing/", evidence: "Three independent official statements confirm a trial exists (pricing-page FAQ, ToS \"Free Trials and Promotions\", subscription-types FAQ) and none of the three states a specific number of days; ToS calls it only \"a specified period\"." }
+  trial_auto_converts: { value: "yes", source: "https://picsart.com/terms-of-use/", evidence: "\"...you agree that we may automatically begin charging you for a Subscription on the first day following the end of the Trial on a recurring monthly basis or another interval that we disclose to you in advance. TO AVOID PAYING THIS CHARGE, YOU MUST CANCEL THE APPLICABLE SUBSCRIPTION BEFORE THE END OF THE TRIAL.\"" }
+  credit_system_present: { value: "yes", source: "https://picsart.com/pricing/", evidence: "Pro tier lists \"Fixed credits/mo\" consumed by AI generation tools; credits-work article: \"Credits are virtual tokens that allow you to use various generative AI tools... the corresponding number of credits is deducted from your balance.\"" }
+  credit_unit_defined: { value: "yes", source: "https://picsart.com/tutorials/understand-ai-credit-costs-and-model-pricing/", evidence: "\"1-2 credits per image\" (budget-tier image models), \"15-25 credits for 3-5 second clips\" (short video), \"3-10 credits\" (audio, ElevenLabs) - credits are tied to concrete output units, even though as ranges." }
+  credit_to_output_rate_published: { value: partial, source: "https://picsart.com/tutorials/understand-ai-credit-costs-and-model-pricing/", evidence: "Every published conversion is a RANGE across model quality tiers, e.g. \"1-2 credits per image\" / \"3-5 credits per image\" / \"8-12 credits per image\" depending on which of ~30 named models is used, \"15-25\" vs \"50-125\" credits per video depending on model - matches codebook's own worked range example for partial." }
+  credit_rate_location: { value: multiple, source: "https://picsart.com/pricing/", evidence: "Pricing page shows approximate aggregate conversions for the plan's credit allowance (\"~50 Nano Banana Pro generations\", \"~27 Kling 3.0 videos\"); the official tutorials pages (picsart.com/tutorials/...) separately publish explicit per-model credit-range tables. Both document classes carry a form of the rate." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://picsart.com/pricing/", evidence: "JUDGMENT CALL, documented in coder_note: Ultra explicitly bills \"per seat\" (\"Add team seats\"); the large majority of both plans' advertised feature lists are flat/unmetered access (editing tools, templates, stock library, cloud storage, brand kits, bulk-edit caps) rather than a per-generation product; the credit-metered AI-generation layer is a bounded monthly allowance inside that seat subscription, not sold as a standalone per-image/per-video product. See coder_note for the competing reading and why per_seat_month was chosen." }
+  cost_per_output_computable: { value: "yes", source: "https://picsart.com/pricing/", evidence: "A-021 resolved 2026-08-17 (orchestrator/A-021-resolution.md). WAS unknown; corrected to yes. The coder gated this variable on the CURRENCY of headline_price_usd, which the variable never asks for: protocol 8.3.10 and section 9 limitation 12, both pre-registered before this record was collected, apply the USD-centric deduction to items A1 and A3 only and never to C3, so the construct is currency-neutral by the instrument's own design. The arithmetic is complete and published at TRY 83.25 per seat-month. Two other records with the identical fact pattern were read correctly the same day by their own coders, which is what makes this a coder slip rather than an ambiguity. Counterweight recorded by the adjudicator: the dollar-comparable derived figure cost_per_output_value_usd stays not_computable for this record, so the disclosure item scores full credit while the reported figure remains limited. Direction: toward a determinate value and away from unknown. Original coder reasoning follows. -- Under unit=per_seat_month the 'output' price is the headline seat-month price itself, which is unknown in USD (see headline_price_usd) - the currency block, not a missing figure, is what prevents computation. See coder_note for the full chain." }
+  computation_assumptions: { value: not_applicable, source: "https://picsart.com/pricing/", evidence: "cost_per_output_computable is unknown (not yes/partial); no computation was performed." }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://picsart.com/pricing/", evidence: "Pricing-page FAQ: \"Monthly subscription credits expire at the end of each billing cycle and do not roll over. However, any purchased add-on credits remain in your account and will not expire until used.\" Corroborated by the tutorials page: \"Monthly credits reset each billing cycle and don't roll over.\"" }
+  failed_generation_charge_policy: { value: not_charged, source: "https://picsart.com/pricing/", evidence: "Pricing-page FAQ: \"Will I get my credits back if a generation fails? Yes, if a generation is unsuccessful, your consumed credits will be automatically rolled back to your account within 24-48 hours.\" Corroborated by the credits-work article (same statement, near-identical wording)." }
+  auto_renewal_default: { value: "on", source: "https://picsart.com/terms-of-use/", evidence: "\"Your payment to us or the third party through which you purchased the Subscription will automatically renew and continue until terminated.\"" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://picsart.com/terms-of-use/", evidence: "The explicit automatic-renewal statement was found only in the Terms of Use \"Subscription and billing\" section; the pricing page's billing FAQ discusses payment methods, cancellation and discounts but does not itself state that subscriptions renew automatically." }
+  renewal_notice_commitment: { value: unknown, source: "https://picsart.com/terms-of-use/", evidence: "ToS commits to advance notice only of \"significant changes to your plan\" (\"If you have purchased a Subscription, we will give you advance notice of significant changes to your plan\") - an adjacent construct (plan/price amendments), not a stated commitment to notify before each routine renewal charge specifically. No other official document addresses renewal notice." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://picsart.com/terms-of-use/", evidence: "\"ALL PAYMENTS ARE NONREFUNDABLE. If you cancel your Subscription, or if your account is terminated under these terms, you will not receive a refund or credit, including for partial periods of service.\" See conflict_note re: the dedicated Refund Policy help page's softer framing." }
+  refund_window_days: { value: 0, source: "https://picsart.com/terms-of-use/", evidence: "Coded 0 per codebook rule for the no-refunds-given case; ToS states all payments are nonrefundable with no window." }
+  refund_conditions: { value: not_applicable, source: "https://picsart.com/terms-of-use/", evidence: "No refund is available for website purchases per ToS, so no condition attaches (codebook: not_applicable = \"No refund available\")." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://picsart.com/terms-of-use/", evidence: "ToS: \"You can cancel your Subscription by signing in to your account and following the instructions for canceling your Subscription.\" Corroborated with concrete steps in the dedicated cancellation article: \"Visit www.picsart.com and log in... Navigate to Billing & Subscriptions and click on Cancel subscription.\"" }
+  refund_policy_location: { value: multiple, source: "https://picsart.com/terms-of-use/", evidence: "Refunds are addressed both in the Terms of Use (\"Cancellation and Refunds\" section, the determinate no-refunds statement) and in a dedicated Refund Policy help-center page (which describes a request-submission mechanism). Two document classes, in agreement once read together - see conflict_note." }
+  commercial_use_lowest_tier: { value: free, source: "https://picsart.com/genaitermsofuse/", evidence: "\"You may use the Output for any legal purpose, but you are solely responsible for your use of the Output.\" No subscription-tier qualifier is attached to this grant. Corroborated by the dedicated help article: \"When you generate images using Picsart's suite of generative AI tools, the resulting AI-generated images are made available to you for commercial purposes.\" Neither document gates the right to a specific paid plan." }
+  watermark_removal_tier: { value: unknown, source: "https://picsart.com/terms-of-use/", evidence: "\"watermark\" not found in the Terms of Use, the GenAI Terms, the pricing page, or any of the 6 support articles read; the construct plainly applies (outputs are visual media) but no document addresses it." }
+  output_ownership_statement: { value: user_owns, source: "https://picsart.com/genaitermsofuse/", evidence: "\"As between you and Picsart, you own your Input and the corresponding Output, in each case to the extent allowable by law.\" This GenAI-specific document (last updated 2026-04-30) is more current and more specific to AI-generated Output than the general Terms of Use's broader \"Content\" ownership clause (2023-06-30), and is used as the primary source." }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://picsart.com/pricing/", evidence: "Every Pro-tier limit found carries a number and dimension: \"Fixed credits/mo\" (monthly credit allowance - exact digit obscured by a CSS odometer animation in text extraction, but the figure exists and its derived conversions are visible: \"~50 Nano Banana Pro generations\", \"~27 Kling 3.0 videos\"), \"100 GB of cloud storage\", \"Support for 3+ brand kits\", \"Bulk edit up to 50 images at once\", access on \"10\" devices, and the detailed AI-tools comparison table (e.g. \"up to 1000 images\"/month for AI Image Generator). No unquantified limit was found for Pro." }
+  unquantified_limit_clause: { value: absent, source: "https://picsart.com/terms-of-use/", evidence: "Full-text keyword search of the Terms of Use (all sections, via textContent) for \"fair use\", \"reasonable use\", \"excessive\", \"throttl\", \"abuse threshold\": zero matches. \"Sole discretion\" appears three times, all unrelated to usage volume (underage-account termination, Content moderation, Space-admin decisions). Community Guidelines (a conduct-focused document ToS cross-references) was not independently fetched - see coder_note caveat." }
+
+coder_note: |
+  BLINDNESS: no other product's record was opened, no aitoolspolice.com page or
+  site/content/reviews/ file was opened, no pass-2 material was opened. This attestation is true.
+
+  ENTRY-TIER SELECTION (sampling-rules 7.2): candidates were Pro and Ultra (no student/nonprofit/
+  promo-only plans found; both are standing, generally-available, single-seat-eligible plans).
+  Pro: TRY 83.25/mo, billed annually = annual-equivalent TRY 999.00/yr. Ultra: TWO different
+  figures appear on the SAME page load for the same nominal tier - the plan card's default
+  credit-slider position shows TRY 2822/mo per seat (annual-equiv TRY 33,864/yr), while the
+  lower feature-comparison table shows TRY 1763.75/mo (annual-equiv TRY 21,165/yr), most likely
+  because Ultra's price depends on an interactive credit-volume slider (1,500/2,500/5,000/10,000/
+  10,000+ credits) that defaults differently in the two UI locations. This internal Ultra
+  inconsistency does not affect entry-tier selection: Pro's TRY 999/yr is far below Ultra under
+  EITHER Ultra figure, so Pro = entry_tier_name regardless. Only one candidate (Pro) was
+  therefore realistically eligible on price; Ultra is recorded here as the losing candidate per
+  sampling-rules 7.2's "record every eligible candidate that lost."
+
+  CURRENCY (D-007): this is exactly the scenario D-007 was written for. The pricing page renders
+  only in Turkish Lira (collection network is Turkey-egressed). Checks performed, in the D-007
+  order: (1) vendor's own currency disclosure - no currency/region selector on the pricing page,
+  no hreflang alternates, no vendor-supported currency URL parameter (?currency=USD tested, no
+  effect), no explicit currency statement located in the Terms of Use, the GenAI Terms, or the
+  6 support articles read. (2) US-crawled archive capture - the most recent Wayback capture of
+  picsart.com/pricing/ (2026-08-02, id_/raw mode) contains zero occurrences of "$", "TRY", "USD"
+  or any other currency marker; it is a pre-hydration empty shell, the exact failure mode D-005/
+  D-007 describe for JS-rendered pricing pages. Neither arm returned readable USD evidence, so
+  headline_price_usd, first_charge_amount_usd and cost_per_output_computable are coded unknown,
+  NOT non_usd (non_usd would require positive evidence the vendor publishes only a non-USD
+  price, which was not established - we simply could not verify what a US reader is shown).
+  Sanity check only, NOT used to code any value: Apple's US App Store IAP listing (non-qualifying
+  source per codebook section 4) shows "Picsart Pro Annual $83.99" (~$7.00/mo equivalent) and
+  "Picsart Pro Monthly $13.99" - a plausible USD magnitude for the web "Pro" plan, and a useful
+  check against a reading-error (per the "read a price twice" rule) even though the App Store's
+  plan structure (Plus/Gold/Pro, three tiers) differs from the web page's (Pro/Ultra, two tiers).
+  See conflict_note.
+
+  PRICE READ TWICE (binding instruction): TRY 83.25/mo for Pro was confirmed in two independent
+  representations - (a) plain-text extraction (document.body.innerText) and (b) the separate
+  feature-comparison table further down the same page, which restates "Pro TRY 83.25/mo" outside
+  the animated plan-card widget. Both agree, so this is not a text-extraction misread. The
+  PRO CREDIT COUNT specifically (the number of credits/month) is rendered by a CSS digit-roller
+  animation that both innerText and textContent report as the literal string
+  "012345678901234567890123456789" (all ten digits repeated three times, a decoy/placeholder
+  artifact of the odometer widget) rather than the true number; no data-attribute, aria-label or
+  network response carrying the real figure was found despite three inspection attempts. This is
+  a coder-tooling misread, not a display_variant. The exact digit is NOT coded anywhere in this
+  record; usage_cap_quantified relies instead on the plan's OTHER quantified limits (all present
+  and numeric) plus the fact that the credit allowance is explicitly "Fixed credits/mo" with
+  visible derived conversions (~50 generations, ~27 videos), which is sufficient to establish
+  that the limit carries a number even though the coder could not personally transcribe it.
+
+  COST_PER_OUTPUT_UNIT judgment call: Picsart is a general photo/video editing app (most of its
+  advertised feature list - editing tools, templates, stock library, storage, brand kits - is
+  flat/unmetered access) that has added a credit-metered generative-AI layer on top. The pricing
+  page's OWN current framing foregrounds AI generation heavily (page title "AI Video and Image
+  Generation", hero copy about Seedance/Veo/Nano Banana, plan subtitles keyed to AI usage
+  volume), which could support per_image or "other" (multi-modal) instead. per_seat_month was
+  chosen because (a) Ultra explicitly bills "per seat" with "Add team seats", (b) the bulk of
+  each plan's feature list is unmetered software access rather than a countable artifact, (c)
+  the published credit-to-output rates are wide, multi-tier RANGES (three quality tiers per
+  output type) that would require assuming which AI model a "typical" buyer picks to compute a
+  single cost-per-image figure, which the cost_per_output_computable rule 7 explicitly forbids.
+  A different reasonable coder could pick per_image or other; flagged here per instructions for
+  a judgment call on ambiguous vendor terminology.
+
+  APP-STORE / PLATFORM DIVERGENCE (assignment note): the web pricing page (picsart.com/pricing/)
+  sells a TWO-tier structure, Pro and Ultra. A Picsart support article states iTunes sells a
+  DIFFERENT structure ("Plus and Pro plans... every Pro option offers the same tools, just as
+  every Plus option offers the same benefits" - support.picsart.com/hc/.../35102132133149), and
+  Apple's US App Store IAP listing (apps.apple.com/us/app/picsart-photo-video-editor/id587366035,
+  a non-qualifying source, checked for this note only) shows a THREE-tier structure: Plus
+  ($11.99/mo, $64.99/yr), Gold ($4.99/wk, $12.99/mo, $57.00/yr), Pro ($13.99/mo, $83.99/yr,
+  $11.99/wk). A separate support-article title ("Picsart Gold to Pro") indicates "Gold" is a
+  legacy tier name being phased into "Pro" branding. The web page's entry tier (Pro) and the
+  app-store "Pro" tier are not verified to be the identical product/allowance - this record
+  codes ONLY from the web pricing page per the assignment instruction and sampling-rules 7.2,
+  and records this divergence here rather than silently picking one.
+
+  Full local copies of every rendered read are saved under picsart-sources/ alongside this
+  record, each with its own URL/date/method/network-note header, per operational guidance.
+
+conflict_note: "Refund policy: the Terms of Use states an unqualified, determinate policy (\"ALL PAYMENTS ARE NONREFUNDABLE... you will not receive a refund or credit\" - https://picsart.com/terms-of-use/#subscription-and-billing) while the dedicated Refund Policy help-center page describes only a request-submission MECHANISM without confirming approval or denial (\"If you subscribed via the Picsart.com website, you can submit a request here... For more information, check out our Terms of Use\" - https://support.picsart.com/hc/en-us/articles/360002231937-Refund-Policy). Read together these are not strictly incompatible (the help page describes HOW to ask; the ToS states that the answer is no) and the help page itself points back to the ToS as the governing document, so refund_policy_exists is coded no_refunds_stated from the ToS rather than conflicting, and refund_policy_location is coded multiple. Recorded here per codebook section 3's instruction that a gap between a softer-worded page and the contract is reported even where the hierarchy settles the value cleanly. || Plan pricing across platforms: the web pricing page shows a two-tier Pro/Ultra structure (https://picsart.com/pricing/, TRY 83.25/mo for Pro) while Apple's US App Store IAP listing shows a three-tier Plus/Gold/Pro structure with Pro at $13.99/mo or $83.99/yr (https://apps.apple.com/us/app/picsart-photo-video-editor/id587366035, non-qualifying source, referenced for this note only, not for any coded value). Not scored as `conflicting` on any variable because the app-store listing does not qualify as a coding source per codebook section 4; recorded here per the assignment's explicit instruction to log web-vs-app-store divergence rather than silently picking one."
+register_events: []
+status: complete

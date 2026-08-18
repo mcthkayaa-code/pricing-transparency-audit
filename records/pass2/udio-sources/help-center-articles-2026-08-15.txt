@@ -1,0 +1,62 @@
+=== https://help.udio.com/en/articles/10739134-credits-and-credit-limits ===
+Title: Credits and credit limits | Udio Help Center
+Dated on page: October 29, 2025
+Accessed: 2026-08-15
+
+Udio credits enable you to create songs on Udio.
+
+Spending credits
+Every time you click "Create", "Extend", "Remix", "Inpaint" or "Edit," two new songs are created.
+Trimming a song does not cost any credits.
+Each set of two 32-second songs costs two credits (one credit for each song)
+Each set of two 130-second songs costs four credits (two credits for each song)
+NOTE: When on a free account, you can only create three 130-second songs per day, regardless of how many credits you have.
+
+Receiving credits
+Free accounts: 10 daily credits; when exhausted, pull from an additional monthly limit of 100 credits. These are credit limits; credits do not roll over. At the start of your second month, you'll again have a 10-daily limit and 100-monthly limit.
+Accounts with subscriptions ("Paid accounts"): Standard subscription = up to 2400 credits per month. Pro subscription = up to 6000 credits per month.
+
+Important notes
+"Subscriptions come with credit limits. The credits don't rollover from month to month, and if your subscription ends (due to cancelation or failed payment), your account will revert to the free-account credit limits."
+"Our trials have two key limitations until/unless converted into a subscription: Trials do not come with increased credit limits; accounts on subscription trials still have the free-tier credit limits. Subscription trials do not include unlimited 'u-130' (~2 minute song) creations, but -- like free-tier accounts -- are capped at creating 3 u-130 songs per day."
+"You may convert a trial immediately to a paid subscription at any time at udio.com/pricing"
+"All accounts: Credits are available for purchase a la carte at udio.com/pricing. These credits never expire."
+
+=== https://help.udio.com/en/articles/13338649-the-subscription-trial ===
+Title: The subscription trial | Udio Help Center
+Dated on page: January 10, 2026
+Accessed: 2026-08-15
+
+"All creators have the one-time option to initiate a free trial of Udio's Standard subscription."
+"Trials last for up to 7 days from the moment initiated."
+"Trials are cancelable at udio.com/account."
+"If not cancelled before the end of the 7 day period, the creator will be immediately charged the full price of an annual subscription unless they previously toggled the subscription period to monthly."
+"Each creator may initiate only one subscription trial total."
+"The subscription trial is for a subset of the Standard subscription features; we do not currently offer a Pro subscription trial."
+During trial, activated: up to 6 simultaneous songs, Voice Control, music/lyrics editing, audio-upload-guided generations, use existing songs as style reference, custom cover art upload.
+During trial, NOT available: increased credit limit; more than three 2-minute songs/day.
+Example: trial initiated Feb 10 2026; upgraded Feb 14; "immediately charged the full price for an annual subscription (e.g., $96 + tax in the U.S.)"; "Their subscription will be renewed on Feb 10, 2027 and their card charged the then-listed-price for an annual subscription."
+Edge case: failed/pending payment -> account reverts to free tier after a few days / within one week if not approved.
+No statement anywhere in this article that a credit card must be provided to START the trial -- only that a card ON FILE will be CHARGED at conversion. No "no card required" statement either.
+
+=== https://help.udio.com/en/articles/10739199-changing-or-canceling-your-subscription ===
+Title: Changing or canceling your subscription | Udio Help Center
+Dated on page: May 6, 2025
+Accessed: 2026-08-15
+
+"You can change or cancel your subscription at any time in just a few clicks online."
+"To cancel your subscription: Visit udio.com/account and select 'Cancel subscription'."
+"Your cancellation will be effective at the end of your monthly or yearly cycle, depending on whether you signed up for a monthly or annual subscription. You'll have full use of your subscription until that time."
+Upgrade example confirms base monthly (non-annual-discounted) prices: Standard = $10 USD/month, Pro = $30 USD/month (matches the pricing page's struck-through comparison figures).
+No advance-renewal-notice-email commitment stated.
+
+=== https://help.udio.com/en/articles/10739216-answers-to-common-usage-questions ===
+Title: Answers to common usage questions | Udio Help Center
+Dated on page: March 26, 2025
+Accessed: 2026-08-15
+
+"Do I own the songs and artwork I generate using Udio? We don't claim any ownership over the content you generate using Udio in response to your inputs. See Udio's Terms of Service for more detailed information about ownership of the content generated using Udio."
+"Can I re-record, sample, or otherwise repurpose the content I generate using Udio? Yes, as long as the content does not contain copyrighted material that you do not own or have explicit permission to use. You own the output. It's your responsibility to review and adhere to the terms of other services that you might wish to share your songs on."
+"Do I have to provide attribution to Udio? If you made the song on a free account: YES ... If you made the song while a paid subscriber: NO. Paid subscribers of the platform are not required to provide attribution, but we appreciate it if you do."
+
+*** CONFLICT FLAGGED: this article's "We don't claim any ownership..." / "You own the output" directly contradicts Terms of Service section 6.1 ("You agree that the Company and/or its licensors own all right, title and interest in and to the Services and the Output (including any and all intellectual property rights therein)..."). Per protocol 6.2, Terms of Service ranks first for contractual variables (output ownership); coded output_ownership_statement from the ToS, with this help-center contradiction recorded in conflict_note with both URLs and quotes.

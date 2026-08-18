@@ -1,0 +1,149 @@
+product_id: hostinger
+product_name: Hostinger Horizons
+category: AI website builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: Explorer
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-07
+recheck_date: not_applicable
+primary_source_url: https://www.hostinger.com/horizons
+archive_url: https://web.archive.org/web/20260807115045/https://www.hostinger.com/horizons
+archive_status: archived
+default_display_state: >
+  USD (confirmed via curl with Accept-Language: en-US,en;q=0.9, D-003 check); no cookie banner
+  interacted with; pricing table shows single 12-month prepay purchase per tier (no monthly/annual
+  toggle exists on this page); "Summer Sale" seasonal discount active by default (Explorer/Starter
+  30% off, Hobbyist 29% off regular price); optional AIPOWER10 coupon for additional 10% off is
+  NOT auto-applied.
+
+sources:
+  - { url: "https://www.hostinger.com/horizons", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115045/https://www.hostinger.com/horizons", note: "primary pricing page; fetched via curl with US Accept-Language header (D-003 currency check)" }
+  - { url: "https://www.hostinger.com/horizons/pricing", kind: pricing, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115124/https://www.hostinger.com/horizons/pricing", note: "dedicated pricing URL; same pricing table as /horizons" }
+  - { url: "https://www.hostinger.com/support/11136677-hostinger-horizons-pricing/", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115148/https://www.hostinger.com/support/11136677-hostinger-horizons-pricing/", note: "official help-center plan-details article; credit rollover/expiry statement" }
+  - { url: "https://www.hostinger.com/support/11131062-hostinger-horizons-how-to-try-it-for-free/", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115216/https://www.hostinger.com/support/11131062-hostinger-horizons-how-to-try-it-for-free/", note: "official free-trial help article" }
+  - { url: "https://www.hostinger.com/support/11013823-hostinger-horizons-refund-policy/", kind: refund, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115447/https://www.hostinger.com/support/11013823-hostinger-horizons-refund-policy/", note: "Horizons-specific refund help article" }
+  - { url: "https://www.hostinger.com/support/10683662-hostinger-horizons-subscription-management/", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115523/https://www.hostinger.com/support/10683662-hostinger-horizons-subscription-management/", note: "renewal-price statement: same price as first charge" }
+  - { url: "https://www.hostinger.com/support/hostinger-horizons-understanding-dynamic-credits/", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115554/https://www.hostinger.com/support/hostinger-horizons-understanding-dynamic-credits/", note: "credit consumption model, no fixed unit conversion" }
+  - { url: "https://www.hostinger.com/legal/special-terms", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115624/https://www.hostinger.com/legal/special-terms", note: "Hostinger Horizons Special Terms - ownership, usage-restriction clause" }
+  - { url: "https://www.hostinger.com/legal/universal-terms-of-service-agreement", kind: tos, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115718/https://www.hostinger.com/legal/universal-terms-of-service-agreement", note: "auto-renewal (Section 16), commercial-use (Section 6), operational oversight (Section 14)" }
+  - { url: "https://www.hostinger.com/legal/refund-policy", kind: refund, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115748/https://www.hostinger.com/legal/refund-policy", note: "dedicated general refund policy; contains a Hostinger Horizons plan paragraph" }
+  - { url: "https://www.hostinger.com/support/hostinger-horizons-hosting-requirements/", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115817/https://www.hostinger.com/support/hostinger-horizons-hosting-requirements/", note: "hosting bundled only for the plan's initial term, billed separately after" }
+  - { url: "https://www.hostinger.com/support/10506149-hostinger-horizons-how-to-publish-your-app/", kind: docs, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260807115848/https://www.hostinger.com/support/10506149-hostinger-horizons-how-to-publish-your-app/", note: "free temporary Hostinger subdomain sufficient to publish; custom domain optional" }
+
+variables:
+  headline_price_usd: { value: 6.99, source: "https://www.hostinger.com/horizons", evidence: "Explorer card: struck-through $9.99, displayed $6.99 /mo, in the page's default (Summer Sale) state" }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://www.hostinger.com/horizons", evidence: "Get 12 months for $83.88 (regular price $119.88). Renews at $6.99/mo." }
+  first_charge_amount_usd: { value: 83.88, source: "https://www.hostinger.com/horizons", evidence: "Get 12 months for $83.88" }
+  mandatory_addon_present: { value: "no", source: "https://www.hostinger.com/support/10506149-hostinger-horizons-how-to-publish-your-app/", evidence: "new project is assigned a temporary domain; site can be published live on it with no additional purchase, custom domain is optional" }
+  annual_condition_disclosure: { value: adjacent, source: "https://www.hostinger.com/horizons", evidence: "\"Get 12 months for $83.88 (regular price $119.88). Renews at $6.99/mo.\" printed directly beneath the price and Choose plan button, inside the same pricing card" }
+  annual_default_toggle: { value: no_toggle, source: "https://www.hostinger.com/horizons", evidence: "server-rendered pricing table offers only a single 12-month prepay purchase per tier; no monthly-only billing figure or toggle control exists anywhere on the page" }
+  free_plan_exists: { value: "no", source: "https://www.hostinger.com/horizons", evidence: "$0 card's feature list is headed \"With your free trial:\" (not a plan-features heading); internal control id is data-qa=\"...horizons:freetrial\"; the $0 card grants a one-time \"Get 5 AI credits\" (no /mo, unlike every paid tier's recurring \"X AI credits/mo\") and states \"No free hosting\" / \"Upgrade anytime to go live\"" }
+  free_plan_cap_documented: { value: not_applicable, source: "https://www.hostinger.com/horizons", evidence: "no free plan (see free_plan_exists)" }
+  free_plan_cap_value: { value: not_applicable, source: "https://www.hostinger.com/horizons", evidence: "no free plan" }
+  free_plan_watermark: { value: not_applicable, source: "https://www.hostinger.com/horizons", evidence: "no free plan" }
+  free_plan_duration: { value: not_applicable, source: "https://www.hostinger.com/horizons", evidence: "no free plan" }
+  trial_exists: { value: "yes", source: "https://www.hostinger.com/support/11131062-hostinger-horizons-how-to-try-it-for-free/", evidence: "\"Once your account is authenticated, your free trial with 5 complimentary credits begins.\"" }
+  trial_card_required: { value: "no", source: "https://www.hostinger.com/horizons", evidence: "\"No credit card required\" printed on the $0/trial card" }
+  trial_length_days: { value: unknown, source: "https://www.hostinger.com/support/11131062-hostinger-horizons-how-to-try-it-for-free/", evidence: "article documents the trial by its 5-credit grant only and states no day-based duration; no other official document located states a day count" }
+  trial_auto_converts: { value: unknown, source: "https://www.hostinger.com/support/11131062-hostinger-horizons-how-to-try-it-for-free/", evidence: "no official document states whether/how the trial converts; article only says a paid plan is required to publish, get more credits, export code, or create more websites" }
+  credit_system_present: { value: "yes", source: "https://www.hostinger.com/horizons", evidence: "\"30 AI credits/mo\" (Explorer) and equivalent lines on every tier" }
+  credit_unit_defined: { value: "no", source: "https://www.hostinger.com/support/hostinger-horizons-understanding-dynamic-credits/", evidence: "\"Credits are charged based on the actual computing resources used per request, not a fixed per-message fee. Simple or short requests consume fewer credits (e.g., 0.12). Complex requests... consume more credits (e.g., 2.45).\" - illustrative examples of variable per-request cost, no document converts a credit into a fixed output unit" }
+  credit_to_output_rate_published: { value: "no", source: "https://www.hostinger.com/support/hostinger-horizons-understanding-dynamic-credits/", evidence: "no rate is published for any output type (website, page, feature); only variable per-request examples tied to \"computing resources used\", not to an output artifact" }
+  credit_rate_location: { value: absent, source: "https://www.hostinger.com/support/hostinger-horizons-understanding-dynamic-credits/", evidence: "no rate published (see credit_to_output_rate_published)" }
+  cost_per_output_unit: { value: other, source: "https://www.hostinger.com/horizons", evidence: "\"AI credits/mo\" is the prominent, first-listed metered resource on every pricing card; named \"AI generation credit\" in coder_note since no listed unit fits" }
+  cost_per_output_computable: { value: "no", source: "https://www.hostinger.com/support/hostinger-horizons-understanding-dynamic-credits/", evidence: "credits-per-request is explicitly \"not a fixed\" figure (varies 0.12-2.45 by complexity, no formula given); computing a cost per request/output would require an assumption about typical request complexity, which rule 7 forbids" }
+  computation_assumptions: { value: not_applicable, source: not_applicable, evidence: "cost_per_output_computable = no, so no computation was performed for domain 6. first_charge_amount_usd (83.88) also required no computation: the vendor prints the annual total directly on the pricing page ('Get 12 months for $83.88 (regular price $119.88). Renews at $6.99/mo.'), re-verified 2026-08-12 against this record's own local capture (hostinger-sources/horizons-pricing-page.html.txt). See coder_note's D-009 provenance check entry." }
+  credit_rollover_policy: { value: partial_rollover, source: "https://www.hostinger.com/support/11136677-hostinger-horizons-pricing/", evidence: "\"Unused monthly AI credits roll over as gift credits into the next month and remain valid for one additional month.\" / \"After that, any remaining unused gift credits expire.\"" }
+  failed_generation_charge_policy: { value: unknown, source: "https://www.hostinger.com/support/hostinger-horizons-understanding-dynamic-credits/", evidence: "documents describe credit cost by request complexity only; none states whether a failed, errored, or empty-result generation consumes credits" }
+  auto_renewal_default: { value: "on", source: "https://www.hostinger.com/legal/universal-terms-of-service-agreement", evidence: "Section 16: \"all Services include an auto-renewal feature, unless otherwise specified on the Site. Auto-renewal automatically renews the applicable Services at the end of each subscription period for a subsequent subscription period\"; \"auto-renewal is a default setting\"" }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://www.hostinger.com/horizons", evidence: "stated on the pricing page (\"Renews at $6.99/mo\"), in the Universal ToS Section 16 (terms), and in the help-center Subscription Management article (\"We offer renewals for the same price as the first charge, following the same period of the plan purchased.\")" }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://www.hostinger.com/legal/universal-terms-of-service-agreement", evidence: "Section 16: \"We have the right, but not an obligation, to inform you via email about the upcoming auto-renewal before the Charge Date (e.g., Customers having subscriptions for 1 (one) month period will not be informed).\"" }
+  refund_policy_exists: { value: "yes", source: "https://www.hostinger.com/legal/refund-policy", evidence: "\"Hostinger Horizons plan: Refundable only if the refund is initiated within 30 days from the date of the transaction of that specific Horizons plan and if fewer than 30 messages/prompts (AI credits) have been used.\"" }
+  refund_window_days: { value: 30, source: "https://www.hostinger.com/legal/refund-policy", evidence: "\"within 30 days from the date of the transaction\"" }
+  refund_conditions: { value: conditional, source: "https://www.hostinger.com/legal/refund-policy", evidence: "\"if fewer than 30 messages/prompts (AI credits) have been used\"; help-center article adds \"limited to one refund per customer\" and top-ups are non-refundable" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://www.hostinger.com/legal/universal-terms-of-service-agreement", evidence: "Section 16: \"You may enable or disable the auto-renewal at any time (instructions on how to disable automatic renewal are here)\"; Horizons refund article separately documents a self-serve refund via hPanel Paid Invoices > Refund button" }
+  refund_policy_location: { value: multiple, source: "https://www.hostinger.com/legal/refund-policy", evidence: "stated in agreement on the dedicated /legal/refund-policy page and in the Horizons-specific help-center refund article" }
+  commercial_use_lowest_tier: { value: free, source: "https://www.hostinger.com/legal/universal-terms-of-service-agreement", evidence: "Section 6 (General Rules of Conduct), clause 1: \"The Site and the Services are intended for your commercial or professional use. By utilizing them, you acknowledge and agree that your purpose is commercial or professional in nature.\" - no tier restriction is stated anywhere" }
+  watermark_removal_tier: { value: unknown, source: "https://www.hostinger.com/horizons", evidence: "no document located (pricing page, Special Terms, Universal ToS) mentions a watermark or vendor-branding on outputs in either direction" }
+  output_ownership_statement: { value: user_owns, source: "https://www.hostinger.com/legal/special-terms", evidence: "Section 3: \"you retain ownership rights to your Input and the Output, to the extent permitted by applicable laws\"" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.hostinger.com/horizons", evidence: "Explorer (entry tier): \"30 AI credits/mo\" (quantified rate), \"Create 1 website\" (quantified standing limit), \"1 mailbox per website\" (quantified standing limit) - every stated limit for the entry tier carries a number and dimension" }
+  unquantified_limit_clause: { value: present, source: "https://www.hostinger.com/legal/special-terms", evidence: "Section 2: \"Hostinger reserves the right to introduce reasonable usage restrictions to maintain system stability and ensure a high-quality Customer experience. Such limitations may include but are not limited to, usage quotas, processing speed adjustments, and access to specific features based on demand and Service optimization needs.\" - no figure attached, vendor's own discretion" }
+coder_note: |
+  PRODUCT-IDENTITY DISAMBIGUATION: Hostinger operates two distinct "AI website builder" surfaces.
+  (1) Hostinger Horizons (hostinger.com/horizons), a standalone AI "vibe coding" app/website
+  builder with its own dedicated pricing table (Free/Explorer/Starter/Hobbyist) - this is what was
+  coded, matching the frame's exact product_name "Hostinger Horizons". (2) the general Hostinger
+  Website Builder hosting plans (hostinger.com/website-builder: Premium/Business, $2.99-3.79/mo
+  promo vs $10.99-16.99/mo regular), which bundle unrelated AI text/image tools as features of a
+  hosting plan. These two pages were opened only to disambiguate the product before coding and no
+  coded value was taken from hostinger.com or hostinger.com/website-builder.
+
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2): three eligible paid candidates on
+  https://www.hostinger.com/horizons, all standing/generally-available/no-sales-contact/single-seat:
+  Explorer $6.99/mo = $83.88/yr (WINNER, lowest annual-equivalent), Starter $13.99/mo = $167.88/yr
+  (lost), Hobbyist $39.99/mo = $479.88/yr (lost). The $0 "Free" card was excluded as a candidate
+  because it is coded as a trial, not a paid tier (see JUDGMENT CALL below).
+
+  RENEWAL / HOSTING-BUNDLING FINDING (the promo-vs-renewal gap this study targets, and it cuts
+  differently than Hostinger's general reputation for post-promo hosting hikes): official sources
+  state the Explorer SUBSCRIPTION price itself does NOT increase on renewal - pricing page:
+  "Renews at $6.99/mo" (https://www.hostinger.com/horizons); help-center Subscription Management
+  article: "We offer renewals for the same price as the first charge, following the same period of
+  the plan purchased." (https://www.hostinger.com/support/10683662-hostinger-horizons-subscription-management/).
+  However, HOSTING is bundled free only for the plan's initial term: the pricing page labels
+  hosting "Free for 1 year" inside the Explorer/Starter/Hobbyist cards, and the official
+  hosting-requirements article confirms: "If you do not have an active hosting plan, hosting is
+  included with your Hostinger Horizons purchase for the duration of that plan. After this period,
+  hosting and Hostinger Horizons are billed separately." (https://www.hostinger.com/support/hostinger-horizons-hosting-requirements/).
+  No official document located states the dollar amount charged for hosting once it is billed
+  separately, so that renewal-year hosting add-on cost could not be coded as a value (it is
+  distinct from first_charge_amount_usd, which is what the pricing page states is charged at
+  signup and already correctly includes free-for-year-1 hosting). This is a real cost component
+  with no published renewal price - a transparency finding worth flagging to the adjudicator even
+  though no single codebook variable captures it directly.
+
+  JUDGMENT CALL (free_plan_exists vs trial_exists): the $0 card sits in the same pricing-table
+  position as the three paid tiers and is labeled "Free", which could read as a standing free plan
+  (domain 3). It was coded as a trial (domain 4) instead because: (1) its own feature-list heading
+  is the vendor's literal words "With your free trial:", not a plan-features heading; (2) its
+  data-qa control id is "...horizons:freetrial"; (3) its help-center article is titled "How to
+  start a free trial" (https://www.hostinger.com/support/11131062-hostinger-horizons-how-to-try-it-for-free/);
+  (4) its 5-credit grant is a one-time allotment, not a recurring monthly allowance like every paid
+  tier; (5) it is explicitly gated from publishing ("No free hosting", "Upgrade anytime to go
+  live"). Per codebook-v1.md Domain 3 rule 1, "A time-limited free trial is not a free plan" -
+  applied here on the vendor's own trial framing even though no explicit day-length is stated (see
+  trial_length_days = unknown). A reviewer who reads this differently should flip free_plan_exists
+  to yes and re-code B1/B2 accordingly.
+
+  NOTE on cost_per_output_unit/credit_unit_defined: Horizons' principal output is a generated
+  website/web app, but the vendor's own pricing cards foreground "AI credits/mo" (not website
+  count) as the headline metered resource, and per-plan website-count caps are a secondary bullet
+  further down each card. No codebook unit (per_video_minute/per_image/per_1k_words/
+  per_audio_minute/per_page/per_headshot/per_document/per_presentation/per_seat_month/per_api_call)
+  fits a vibe-coded website/app, so this is coded "other" / "AI generation credit". A reviewer
+  could instead treat "website" as the output unit (price-divided-by-website-cap would then be
+  technically computable, e.g. Explorer $83.88/yr / 1 website); not coded that way here because
+  the vendor's own framing and the actual metering mechanism is credits, at an admittedly variable
+  per-request rate, not website-count, and website-count computability would not reflect real
+  determinability of cost.
+
+  CURRENCY (D-003): checked via curl with Accept-Language: en-US,en;q=0.9 (US locale) directly
+  against https://www.hostinger.com/horizons; server-rendered HTML shows USD figures throughout
+  ($6.99, $13.99, $39.99, etc.), so non_usd does not apply and no display_variant was logged.
+
+  D-009 PROVENANCE CHECK (2026-08-12): first_charge_amount_usd (83.88) is exactly 12x
+  headline_price_usd (6.99), the pattern the D-009 sweep report flagged for a provenance check
+  across five records including this one. Re-examined independently against this record's own
+  local capture (hostinger-sources/horizons-pricing-page.html.txt): the Explorer card prints "Get
+  12 months for $83.88 (regular price $119.88). Renews at $6.99/mo." verbatim - the annual total
+  is a vendor-published figure printed directly on the page, not a coder computation (6.99 x 12 =
+  83.88 exactly, but no multiplication was needed to arrive at the coded value). Case 1 (vendor
+  published the annual total; no computation happened). Verdict: SUPPORTED. 83.88 stands,
+  unchanged; see computation_assumptions for the added source note.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: ""
+register_events: []
+status: complete

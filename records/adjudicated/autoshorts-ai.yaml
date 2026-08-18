@@ -1,0 +1,226 @@
+product_id: autoshorts-ai
+product_name: AutoShorts.ai
+category: Faceless video
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Starter"
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-16
+recheck_date: not_applicable
+primary_source_url: https://autoshorts.ai/#pricing
+archive_url: https://web.archive.org/web/20260814175042/https://autoshorts.ai/
+archive_status: archived
+
+default_display_state: |
+  Single-page site (Next.js SPA); pricing lives in a #pricing section on the homepage, no
+  separate pricing URL. Billing toggle defaults to MONTHLY on load, confirmed by DOM class
+  inspection on both independent reads (the "Monthly" option carries the component's own
+  "..._selected_..." class before any interaction; "Yearly", badged "2 MONTHS FREE!", does
+  not) and by this adjudicator's own fresh fetch. Plan cards in this state: FREE $0/mo,
+  STARTER $19/mo, DAILY $39/mo, HARDCORE $69/mo, all USD, no currency selector. The FREE
+  card shows a "Temporarily paused" signup notice (FAQ: paused for bot/spam abuse, to be
+  re-enabled). No cookie-consent banner was presented on any read. Confirmed unchanged as of
+  2026-08-16: this adjudicator fetched the live homepage directly and the embedded plan JSON
+  ({"price":19,"frequency":3,"maxSeries":1,"watermark":0,...} for Starter) is byte-identical
+  to both passes' captures. A Wayback "save now" request for both the homepage and /faq on
+  2026-08-16 resolved (302) to pass 2's own 2026-08-14 captures, confirming those remain the
+  current archived state and are not stale.
+
+sources:
+  - { url: "https://autoshorts.ai/#pricing", kind: pricing, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260814175042/https://autoshorts.ai/", note: "AGREED content on independent reads 2026-08-07 (pass 1, archive 20260806230946) and 2026-08-14 (pass 2, archive 20260814175042; local capture records/pass2/autoshorts-ai-sources/pricing-page-rendered-text-2026-08-14.txt). This adjudicator re-verified 2026-08-16 by direct live fetch of the raw HTML: the embedded __NEXT_DATA__-style plan JSON is present in server-delivered markup (a genuine second representation, independent of client rendering) and matches both passes' figures exactly: Free/Starter/Daily/Hardcore = $0/$19/$39/$69, frequency 0/3/7/14 posts-per-week, watermark 1/0/0/0. No vendor edit between 2026-08-07 and 2026-08-16." }
+  - { url: "https://autoshorts.ai/faq", kind: docs, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260814181621/https://autoshorts.ai/faq", note: "AGREED content on independent reads 2026-08-07 (pass 1, archive 20260806231146) and 2026-08-14 (pass 2, archive 20260814181621; full verbatim local capture records/pass2/autoshorts-ai-sources/faq-rendered-2026-08-14.txt, all 27 questions). Accordion answers are client-rendered on click; the archived HTML shows only the collapsed shell (crawler does not click), so this document's content cannot be independently re-opened via Wayback or a plain fetch -- see coder_note, VERIFICATION CEILING. This adjudicator confirmed the cited archive URL is a genuine, non-redirected capture (HTTP 200, memento-datetime exactly Fri 14 Aug 2026 18:16:21 GMT, no x-archive-redirect-reason header) and that a fresh 2026-08-16 fetch of the FAQ page's raw HTML plus every JS bundle it loads contains no occurrence of the disputed '15-20' figure anywhere in static form, consistent with it being delivered by a runtime call outside this document class." }
+  - { url: "https://autoshorts.ai/terms", kind: tos, accessed: "2026-08-14", archive: "https://web.archive.org/web/20260814182216/https://autoshorts.ai/terms", note: "AGREED. Generic/boilerplate website ToS read in full by both passes; does not mention subscriptions, billing, refunds, cancellation, credits, watermark, or generated-output ownership." }
+  - { url: "https://autoshorts.ai/privacy", kind: other, accessed: "2026-08-07", archive: "https://web.archive.org/web/20260806231404/https://autoshorts.ai/privacy", note: "AGREED. Data-handling only; read in full by both passes, no billing/refund/renewal/ownership/limit content found." }
+
+variables:
+  # --- Domain 1: Headline price vs price actually charged ---
+  headline_price_usd: { value: 19.00, source: "https://autoshorts.ai/#pricing", evidence: "AGREED. STARTER card: \"$19\"/\"month\" under the default Monthly toggle. Confirmed by pass 2's second representation (embedded plan JSON price:19) and by this adjudicator's own live fetch, 2026-08-16, byte-identical." }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://autoshorts.ai/#pricing", evidence: "AGREED. \"$19\" qualified by \"/month\" under the pre-selected Monthly toggle, no \"billed annually\" or per-seat qualifier; JSON billingInterval:\"monthly\"." }
+  first_charge_amount_usd: { value: 19.00, source: "https://autoshorts.ai/#pricing", evidence: "AGREED. Default state is Monthly, no annual-prepay condition attaches, so first charge equals the displayed monthly figure, read directly. headline x 1 = first charge, both 19.00 (tools/check_price_arithmetic.py: no flag)." }
+  mandatory_addon_present: { value: "no", source: "https://autoshorts.ai/#pricing | https://autoshorts.ai/faq", evidence: "AGREED. Starter's full feature list carries no separate required charge; FAQ's only extra-cost items are optional top-up purchases (\"purchase 'top off' credits\", \"purchase more [image credits] if you need them\"), overage-style optional purchases excluded by rule 3, not requirements to use the plan as advertised." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://autoshorts.ai/#pricing", evidence: "AGREED. The headline figure is read under the Monthly default and does not depend on annual prepayment (decision-rule step 1); a Yearly toggle exists elsewhere on the same control but is not the default/headline state." }
+  annual_default_toggle: { value: monthly_preselected, source: "https://autoshorts.ai/#pricing", evidence: "AGREED. DOM class inspection on both independent reads: \"Monthly\" carries the component's own selected class on load, before any interaction; no element with the text \"Yearly\" carries it." }
+
+  # --- Domain 3: Real usability of the free plan ---
+  free_plan_exists: { value: "yes", source: "https://autoshorts.ai/#pricing | https://autoshorts.ai/faq", evidence: "AGREED. \"FREE $0\" card listed alongside the paid tiers with its own feature list; FAQ corroborates a free tier exists. Currently signup-paused (FAQ: suspended for bot/spam abuse, to be re-enabled) but documented, not removed or disclaimed as discontinued." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://autoshorts.ai/#pricing", evidence: "AGREED. Every limit the FREE card states carries a number: \"Creates 1 Video\", \"1 Series\", \"0 Motion Credits\" -- all quantified standing limits; nothing is claimed unlimited so rule 3's carve-out is not implicated." }
+  free_plan_cap_value: { value: "1 video | 1 series | 0 motion credits", source: "https://autoshorts.ai/#pricing", evidence: "AGREED. Verbatim quantities from the FREE card." }
+  free_plan_watermark: { value: "yes", source: "https://autoshorts.ai/#pricing", evidence: "AGREED. \"No Watermark\" row is crossed/strikethrough on FREE, checked on all three paid tiers; pass 2's second representation (JSON watermark:1 for Free, watermark:0 for paid tiers) confirms." }
+  free_plan_duration: { value: perpetual, source: "https://autoshorts.ai/#pricing | https://autoshorts.ai/faq", evidence: "AGREED. Presented as a standing column, not a time-boxed offer; no expiry period stated anywhere. The current \"Temporarily paused\" state is a signup-availability condition (bot/spam abuse, per FAQ), not a duration limit on an account that already holds the plan." }
+
+  # --- Domain 4: Whether a trial requires a payment card ---
+  trial_exists: { value: "no", source: "https://autoshorts.ai/faq", evidence: "AGREED. The FAQ's \"Is there a free trial?\" answer describes the same $0 standing FREE tier shown on the pricing grid (\"create your first series for free to test a video\"), not a time-limited trial of a paid tier; decision-rule step 1 (\"a free plan is not a trial\") routes it to Domain 3. No Starter/Daily/Hardcore trial period is stated anywhere; \"TRY NOW!\" is a CTA label, not a stated trial mechanic." }
+  trial_card_required: { value: not_applicable, source: "https://autoshorts.ai/faq", evidence: "AGREED. trial_exists = no." }
+  trial_length_days: { value: not_applicable, source: "https://autoshorts.ai/faq", evidence: "AGREED. trial_exists = no." }
+  trial_auto_converts: { value: not_applicable, source: "https://autoshorts.ai/faq", evidence: "AGREED. trial_exists = no." }
+
+  # --- Domain 5: Comprehensibility of the credit system ---
+  credit_system_present: { value: "yes", source: "https://autoshorts.ai/#pricing | https://autoshorts.ai/faq", evidence: "AGREED. Two named intermediate currencies distinct from raw output counts: \"Motion Credits\" (quantified per tier: 0/27/62/124) and \"Image Credits\" (FAQ, named and functionally described though never quantified per tier); both convert into an output rather than stating a plan allowance directly in output units." }
+  credit_unit_defined: { value: "yes", source: "https://autoshorts.ai/#pricing", evidence: "AGREED under domain-5 rule 3. Motion Credits tooltip: \"1 credit adds motion to one image\" -- ties the unit to a recognizable output. Rule 3 makes this yes even though the tied unit (image) is not the principal output (video); that distinction belongs to credit_to_output_rate_published alone (rule 4)." }
+  credit_to_output_rate_published: { value: partial, source: "https://autoshorts.ai/#pricing", evidence: "AGREED under domain-5 rule 3/4. The only rate tying credits to the principal output (video) is \"a typical video may consume 15-20 credits if motion is applied to all scenes\" -- a range with no rule for which figure applies, which rule 3 makes partial." }
+  credit_rate_location: { value: pricing_page, source: "https://autoshorts.ai/#pricing", evidence: "ADJUDICATED 2026-08-16 under this variable's own decision rule (\"where the rate appears in more than one document class, code multiple ... multiple is for agreement across classes, not disagreement\"), applied to verified content. Pass 2's multiple rested on the claim that the 15-20-credits-per-video figure \"appears both in the pricing-page tooltip and in the FAQ's 'What are motion credits?' answer\" -- but pass 2's OWN saved verbatim local capture of that exact FAQ answer (records/pass2/autoshorts-ai-sources/faq-rendered-2026-08-14.txt, lines 38-45) reads in full: \"By default, our AI creates still images for each scene in your video. Motion credits can animate those images. When setting up your series (or in your series settings), you can specify how many motion credits you are okay using per video... Each plan comes with motion credits that reset each billing cycle, but you can also purchase 'top off' credits that never expire...\" -- no \"15\", \"20\", or any numeric range appears anywhere in it. Pass 1 independently reported the identical finding (\"the FAQ answer ... does not repeat the 15-20 figure\"). This adjudicator additionally verified: (a) both passes' cited archive URLs are genuine, non-redirected captures at their claimed timestamps (HTTP 200, memento-datetime matching exactly; neither carries an x-archive-redirect-reason header, ruling out a phantom/misdirected citation); (b) a fresh 2026-08-16 live fetch of the FAQ page's raw HTML plus every JS bundle it loads (page bundle + 4 shared chunks) contains zero occurrences of \"15-20\"/\"15 to 20\" anywhere in static form -- the tooltip sentence is delivered by a runtime call neither Wayback's crawler nor a plain fetch can reach, so verification here rests on the coders' own independently rendered captures, which agree with each other on the FAQ's actual content and disagree only with pass 2's coded conclusion about it. The rate is published in exactly one document class. Prior values: pass1=pricing_page, pass2=multiple." }
+  cost_per_output_unit: { value: other, source: "https://autoshorts.ai/#pricing | https://autoshorts.ai/faq", evidence: "AGREED under domain-6 rule 3. Principal output is one complete short-form video (FAQ: length chosen as \"30 to 60 seconds\" or \"60 to 90 seconds\", not metered by minute); none of the enumerated units fit a discrete whole-video count. Named unit: per_video." }
+  cost_per_output_computable: { value: "yes", source: "https://autoshorts.ai/#pricing | https://autoshorts.ai/faq", evidence: "ADJUDICATED 2026-08-16 under rule 2 (\"the included allowance is the quantity of credits OR OUTPUTS that price buys\" -- an output-denominated allowance is explicitly within the rule's contemplation, not only a credit-denominated one) read together with rule 7 (a calculation needing \"an assumption about how a typical buyer uses the product\" is coded no, since \"the reader's job is arithmetic, not estimation\"). Two candidate allowances are published for Starter: \"Posts 3 Times A Week\" (frequency, JSON field frequency:3) and \"27 Motion Credits\". The FAQ's \"How many videos can I create per day?\" answers with exactly the first: \"The number of videos created by each series can be seen on our pricing page ... you set up a Series that automatically generates videos on a schedule\" -- the vendor's own direct mapping of \"videos created\" to the pricing page's posting-frequency figure, needing no further assumption once put on a monthly basis via the codebook's own day-count convention (trial_length_days's decision rule: 7 days/week, 30 days/month). The second candidate, Motion Credits, does not meter videos at all -- \"1 credit adds motion to ONE IMAGE\" (a video has multiple scenes/images) -- and applying motion is optional and buyer-configured (\"you can specify how many motion credits you are okay using per video\"), proven optional by the Free tier itself (1 video produced on 0 Motion Credits). The only stated credit-to-video conversion -- \"typical video may consume 15-20 credits IF motion is applied to all scenes\" -- requires assuming the buyer fully animates every scene of every video, precisely the usage assumption rule 7 excludes, and is a range even under that assumption. Rule 5 (secondary-output partial) does not govern: both candidates target the same principal output (video), so this is a choice between two allowances for one output, not a principal-vs-secondary split. The frequency path satisfies rules 1-4 without needing rule 7's excluded assumption; the credit path does not qualify as an admissible basis, so its range is not \"a range the vendor publishes\" in the sense rule 8 credits toward the coded value -- it is a range reachable only through a disallowed assumption. See computation_assumptions. Prior values: pass1=yes (via frequency, matching this reasoning), pass2=partial (via Motion Credits' range)." }
+  computation_assumptions: { value: "Starter $19.00/mo, default Monthly display state, entry paid tier. FAQ ties video output directly to posting frequency (\"the number of videos created by each series can be seen on our pricing page\"); Starter's published rate is 3 posts/week (JSON frequency:3). Videos/mo = 3 x (30/7 days-per-week, per the codebook's own day-conversion convention) = 12.857. $19.00 / 12.857 = $1.48 per video. Not used as the basis: Motion Credits (27/mo; tooltip: a fully-animated video \"typically\" costs 15-20 credits \"if motion is applied to all scenes\") -- credits meter motion applied to an image, not a video, are optional (Free tier: 1 video, 0 credits), and computing from them requires assuming full-motion use on every scene of every video, which rule 7 excludes. That alternate path, if taken anyway, gives a range of $19.00/1.35=$14.07 to $19.00/1.80=$10.56 per fully-animated video (27/20=1.35 to 27/15=1.8 videos/mo) -- recorded here for transparency, not the coded basis.", source: "https://autoshorts.ai/#pricing | https://autoshorts.ai/faq", evidence: "ADJUDICATED 2026-08-16, same rule basis as cost_per_output_computable above. Both coders performed correct arithmetic on their own chosen inputs; the reconciliation is which input rules 2/7 admit, not a math error in either. Pass 1's framing and figure are preserved as the primary computation; pass 2's credit-based range is preserved as the noted alternative, consistent with how pass 1 itself already treated it." }
+
+  # --- Domain 7: Rollover of unused credits ---
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://autoshorts.ai/#pricing | https://autoshorts.ai/faq", evidence: "AGREED. Pricing-page tooltip and FAQ both state plan-included Motion Credits reset each billing cycle and plan-included Image Credits refill on a 30-day rolling basis; only separately PURCHASED \"top off\" credits (a distinct pool from the plan's included allowance) are stated not to expire. expires_at_period_end answers what happens to the plan's own included, unused credits at period end." }
+
+  # --- Domain 8: Charging for failed generations ---
+  failed_generation_charge_policy: { value: unknown, source: "https://autoshorts.ai/terms | https://autoshorts.ai/faq", evidence: "AGREED -- vendor_silence, confirmed by a completed read (see coder_note). Terms & Conditions and all 27 FAQ questions were read in full by both independent passes; neither addresses what happens to the allowance on a failed or errored generation. The closest adjacent statement (re-renders from script/series edits \"do not count against your plan\") concerns edits, not failures, and does not answer this construct." }
+
+  # --- Domain 9: Auto-renewal ---
+  auto_renewal_default: { value: unknown, source: "https://autoshorts.ai/terms | https://autoshorts.ai/faq", evidence: "AGREED -- vendor_silence, confirmed by a completed read (see coder_note). Terms & Conditions is a generic boilerplate document with no billing/subscription/renewal clause at all; FAQ's \"you can cancel any time though and your subscription ends\" describes the cancellation case, not a default-renewal statement. Per the no-inference rule, not coded \"on\" from \"membership\"/\"subscription\" wording or from the mere existence of monthly/yearly billing intervals." }
+  auto_renewal_disclosure_location: { value: absent, source: "https://autoshorts.ai/terms | https://autoshorts.ai/faq | https://autoshorts.ai/#pricing", evidence: "AGREED. All reachable document classes (pricing page, Terms, FAQ/help center; no dedicated billing-policy page exists in site navigation) were read in full by both passes; none states an auto-renewal position, so this is a documented absence, not an unreachable document." }
+  renewal_notice_commitment: { value: unknown, source: "https://autoshorts.ai/terms | https://autoshorts.ai/faq", evidence: "AGREED -- vendor_silence, confirmed by a completed read (see coder_note). No statement of advance notice, or its absence, before a renewal charge in Terms or FAQ, both read in full." }
+
+  # --- Domain 10: Refund and cancellation terms ---
+  refund_policy_exists: { value: no_refunds_stated, source: "https://autoshorts.ai/faq", evidence: "AGREED. FAQ \"Can I get a refund?\": \"we cannot offer refunds as costs incurred for creating AI videos and generating AI photos are extremely high ... During sign up you agree to withhold your right to refund for this reason.\" Terms is silent on refunds altogether (never mentions the word); FAQ is the only document addressing the topic and states a clean, determinate no-refunds position, so it governs (no conflicting position in Terms to outrank it)." }
+  refund_window_days: { value: 0, source: "https://autoshorts.ai/faq", evidence: "AGREED. No refunds given under any circumstances (refund_policy_exists=no_refunds_stated); codebook value table specifies 0 for this case." }
+  refund_conditions: { value: not_applicable, source: "https://autoshorts.ai/faq", evidence: "AGREED. No refund is available at all, so no conditions attach." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://autoshorts.ai/faq", evidence: "AGREED. FAQ: \"You can cancel at the click of a button from the dashboard's billing page.\" Direct account-settings self-service, no contact step required." }
+  refund_policy_location: { value: help_center, source: "https://autoshorts.ai/faq", evidence: "AGREED. The refund position is stated only on the /faq page; absent from the pricing page and Terms & Conditions; no dedicated refund-policy page exists in site navigation." }
+
+  # --- Domain 11: Commercial-use rights ---
+  commercial_use_lowest_tier: { value: free, source: "https://autoshorts.ai/faq", evidence: "AGREED. FAQ \"Do I own the videos?\": \"Yes, the videos are yours to do with as you please ... or even sell them to clients.\" Unqualified by tier -- no \"commercial use\" row gates this to a paid plan on the feature grid, and the FAQ answer sits in the general Series & Videos section. Extends to the lowest tier able to produce a video at all (free) on the most literal reading of an unrestricted statement; both passes flag this as a judgment call since the vendor's answer does not name which tier it was contemplating." }
+  watermark_removal_tier: { value: lowest_paid, source: "https://autoshorts.ai/#pricing", evidence: "AGREED. \"No Watermark\" row is crossed on FREE and checked from STARTER upward, the entry paid tier; pass 2's second representation (JSON watermark:0 for all three paid tiers, watermark:1 for Free) confirms." }
+  output_ownership_statement: { value: user_owns, source: "https://autoshorts.ai/faq | https://autoshorts.ai/terms | https://autoshorts.ai/#pricing", evidence: "AGREED. FAQ: \"Yes, the videos are yours to do with as you please. You can download them and use them on other platforms, or even sell them to clients.\" Terms & Conditions (rank 1) is silent on generated-video ownership -- its only copyright clause concerns images a USER UPLOADS as input, a different subject -- so it neither confirms nor contradicts the FAQ; the homepage's own \"Your videos are yours\" line corroborates without overriding." }
+
+  # --- Domain 12: Undisclosed or unverifiable limits ---
+  usage_cap_quantified: { value: some_quantified, source: "https://autoshorts.ai/#pricing | https://autoshorts.ai/faq", evidence: "ADJUDICATED 2026-08-16 under decision rule 1 (\"list every limit the documents attribute to the entry paid tier\" -- not limited to the pricing card; the FAQ is a qualifying official document under section 4's source hierarchy) and section 5.1's quantified test (a number and the dimension it counts, plus a period for a rate). The Starter tier carries four limits across the two documents, not three: \"Posts 3 Times A Week\" (quantified rate), \"1 Series\" (quantified standing), \"27 Motion Credits\" (quantified rate, resets each billing cycle per FAQ), and Image Credits, which the FAQ attributes to \"your plan\" (every paid plan, including Starter) and describes only as \"a certain number of image credits that refill on a 30 day rolling basis\" -- a period is stated but no number is, for any tier, anywhere in either document. \"A certain number\" supplies no figure and fails section 5.1's test exactly as \"generous\"/\"reasonable\" do. One of four limits unquantified makes this some_quantified, not all_caps_quantified. Pass 2's all_caps_quantified evidence cites only the pricing-page card's three limits and does not mention Image Credits -- yet pass 2's OWN coder_note, in its \"TWO CREDIT SYSTEMS\" paragraph, states the Image Credit system has \"no per-tier count published anywhere,\" directly contradicting its own all_caps_quantified value. A record contradicting itself is evidence of the error, not a second reading to weigh against pass 1's: pass 2 had already located and described the same unquantified limit pass 1 flagged, and simply left it out of this one field. Prior values: pass1=some_quantified, pass2=all_caps_quantified." }
+  unquantified_limit_clause: { value: absent, source: "https://autoshorts.ai/terms | https://autoshorts.ai/faq", evidence: "AGREED. Terms & Conditions read to the end in full by both passes (warranty disclaimer, liability limits, cookies, iframes, third-party links, content liability, link removal -- no fair-use/reasonable-use/excessive-use/discretionary-throttling clause of any kind); FAQ read in full, all 27 questions, same finding. The closest adjacent FAQ topic (\"Will I get banned?\") describes TikTok/YouTube's own third-party spam policy, not a discretion AutoShorts reserves over usage volume -- a different topic under rule 3, does not count." }
+
+coder_note: |
+  ADJUDICATION SUMMARY (2026-08-16). tools/disagreements.py autoshorts-ai finds 3 substantive
+  disagreements (credit_rate_location, cost_per_output_computable, usage_cap_quantified) plus 1
+  non-substantive prose mismatch (computation_assumptions -- differing arithmetic supporting the
+  cost_per_output_computable split). All 3 substantive disagreements resolved BY RULE; 0 became
+  unknown as a new adjudicated value; 0 date_explained; 0 variant_explained. No disagreement here
+  needed unknown -- the documents determine an answer once the correct codebook clause is applied,
+  which is not the same as every low-agreement construct in this study resolving that way, and
+  should not be read as a general claim about this variable class.
+
+  VENDOR DOMAIN CHECK. Both source records independently confirm product_id/product_name/
+  vendor_home_url/category/product_status/paid_submission against frame-for-pass2.csv row
+  "autoshorts-ai,AutoShorts.ai,https://autoshorts.ai,Faceless video,active,no" with no discrepancy.
+  This adjudicator re-confirmed the same row directly. orchestrator/deviations-log.md's only
+  autoshorts-ai-specific entry (D-015 addendum) is the pass-2 coder_role assignment-brief typo
+  ("secondary" vs the enum's "second"), already caught and correctly handled by the pass-2 coder
+  itself (coded "second", logged the mismatch) -- nothing left to fix here. autoshorts-ai sits in
+  D-014's Tier B (named in required reading by pass-1 status/process only, no coded value
+  disclosed) and is absent from records/pass2-contaminated/ -- no blinding defect affects this
+  product's pass 2.
+
+  REGISTER EVENTS. Both pass1.yaml and pass2.yaml carry register_events: []. date_explained
+  (7.4.1) requires a matching vendor_edit register entry; none exists for any of the 3
+  disagreements. variant_explained (7.4.2) requires two archive snapshots showing two DIFFERENT
+  default display states; both passes independently read the identical Monthly-default state,
+  same prices, same feature grids, 7 days apart, and this adjudicator's own 2026-08-16 fetch
+  confirms the state is still unchanged 9 days after pass 1. All 3 are ordinary disagreements
+  resolved on the documents, not date or display effects.
+
+  CREDIT_RATE_LOCATION, resolution. pricing_page (pass 1's value). Full reasoning is in the
+  variable's own evidence field above. In short: pass 2's coded "multiple" rests on a claim
+  ("the 15-20 figure appears ... in the FAQ's 'What are motion credits?' answer") that pass 2's
+  OWN saved verbatim capture of that exact answer contradicts -- the figure is not in it. This is
+  the same family of finding as another product adjudicated today (a citation that does not
+  support the value coded from it), though the mechanism differs: there the cited archive capture
+  did not exist at all (a phantom redirect); here the cited capture is entirely genuine and
+  verified, it simply does not contain what the evidence field claims. Both are reasons not to
+  resolve a disagreement in favour of a quotation that cannot be located where it is said to be.
+
+  COST_PER_OUTPUT_COMPUTABLE / COMPUTATION_ASSUMPTIONS, resolution. yes, via the posting-frequency
+  calculation (pass 1's value and arithmetic). Full reasoning is in the variables' own evidence
+  fields above. The load-bearing point: Motion Credits meter motion applied to ONE IMAGE, not a
+  video, and applying motion is an optional, buyer-configured choice (proven optional by the Free
+  tier: 1 video for 0 credits) -- so using credits to price "a video" requires assuming the buyer
+  fully animates every scene of every video, an assumption rule 7 excludes, whereas the FAQ
+  directly and explicitly names the posting-frequency figure as the answer to "how many videos,"
+  needing no assumption. This was the harder of the three disagreements and the one this
+  assignment specifically flagged for care as a historically low-agreement construct; the
+  resolution rests on rules 2 and 7 read together, not on preferring one coder's arithmetic, and a
+  human reviewer should feel free to re-open it if section 5.2/domain 6 is revised.
+
+  USAGE_CAP_QUANTIFIED, resolution. some_quantified (pass 1's value). Full reasoning is in the
+  variable's own evidence field above. The load-bearing point: pass 2's own coder_note ("TWO
+  CREDIT SYSTEMS" paragraph) independently states that Image Credits carry "no per-tier count
+  published anywhere" -- the same fact pass 1 used to code some_quantified -- while pass 2's coded
+  value for this variable (all_caps_quantified) omits Image Credits from consideration entirely.
+  The record argues against its own headline value, the pattern this role is specifically primed
+  to check for.
+
+  UNKNOWN-KIND ATTRIBUTION for agreed unknowns carried into this record (failed_generation_charge_
+  policy, auto_renewal_default, renewal_notice_commitment) -- not newly adjudicated, but named per
+  this assignment's standing rule since they publish in this record. All three are vendor_silence:
+  both passes independently read Terms & Conditions and all 27 FAQ questions to completion (pass 1
+  and pass 2's evidence fields both state this explicitly, not a partial or abandoned search), and
+  neither document addresses failed-generation charging, default renewal behaviour, or advance
+  renewal notice. Two independent completed reads, same conclusion, is a stronger finding than an
+  unknown left after one search -- this is silence about the vendor, not a gap in this instrument's
+  reach. No access_failure applies (all four document classes archived successfully on both
+  passes, archive_status=archived throughout, nothing failed to load). No instrument_gap applies
+  (these are ordinary yes/no/unknown constructs with a plain slot for "not stated," unlike the
+  free_plan_cap_value case documented in the adobe-firefly/anomaly-ai adjudicated records).
+
+  VERIFICATION CEILING -- worth flagging to the study, not specific to any one variable. AutoShorts.
+  ai's FAQ accordion and pricing-page tooltip content are not present in the server-delivered HTML
+  and not present as static strings in any of the site's JS bundles (this adjudicator fetched the
+  live homepage and FAQ raw HTML plus all 6 referenced script chunks on 2026-08-16 and grepped all
+  of them for the disputed figure -- zero hits anywhere outside the rendered DOM). The content is
+  fetched by a runtime call neither Wayback's crawler nor a plain HTTP/WebFetch tool can trigger.
+  Wayback's own capture of /faq independently confirms this: it shows the collapsed shell only. For
+  a product built this way, "open the cited capture and find the quoted words in it" (this
+  assignment's own verification instruction) is not mechanically available to an adjudicator for
+  this document class -- verification instead has to fall back to cross-checking the two coders'
+  own independently rendered captures against each other, which is what this record did, and which
+  worked here because pass 2 saved a full local capture rather than only a citation. Where a
+  pass's -sources/ directory holds only HTTP-header files, as pass 1's does for this product (see
+  sources note above), that fallback would not have been available -- this record was rescued by
+  pass 2's more complete local capture, not by anything in the study's tooling. A mechanical check
+  that greps a coder's own -sources/ captures for the figures its own evidence field quotes would
+  have caught pass 2's credit_rate_location error and would generalise beyond this one product.
+
+  ENTRY_TIER_NAME casing, administrative, not a coded disagreement. Pass 1 wrote "STARTER" (the
+  card's visually rendered, CSS-uppercased text); pass 2 wrote "Starter" and cross-verified it
+  against the embedded plan JSON's name field, name:"Starter" -- title case is the vendor's
+  underlying stored plan name, uppercase on the card is a CSS text-transform presentational
+  choice. This record uses "Starter". tools/disagreements.py does not flag this field (it is
+  administrative, not in validate_records.py's CODED list), so it is noted here rather than
+  counted among the 3 resolved disagreements.
+
+  ENTRY-TIER LOSING CANDIDATES (codebook 5.2, sampling-rules.md 7.2; AGREED identically by both
+  passes): Daily $39/mo -> annual-equivalent $468.00; Hardcore $69/mo -> annual-equivalent
+  $828.00. Both lose to Starter's $228.00 (19x12). Free ($0) is not a paid tier and was not a
+  candidate; it is covered under Domain 3.
+
+  SOURCES RE-READ FOR THIS ADJUDICATION: both records in full; pass 1's -sources/ directory (four
+  HTTP-header files only -- no local text captures were saved by that pass); pass 2's -sources/
+  directory in full (pricing-page-rendered-text-2026-08-14.txt, faq-rendered-2026-08-14.txt,
+  terms-and-conditions-rendered-2026-08-14.txt); the vendor's live homepage and FAQ page, fetched
+  directly by this adjudicator, 2026-08-16; the six JS bundles those two pages load (pages/index-*,
+  pages/faq-*, and four shared chunks), fetched and grepped directly, 2026-08-16; both passes'
+  cited Wayback archive URLs for the pricing page and FAQ, fetched directly to confirm HTTP status,
+  memento-datetime and absence of a redirect-reason header, 2026-08-16; a fresh Wayback "save now"
+  submission for both pages, 2026-08-16, which resolved to pass 2's own 2026-08-14 captures.
+
+  ALSO READ: codebook-v1.md in full (domains 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, plus sections
+  2.1-2.3, 4, 5, 5.1, 5.2, 6, 8, 9); protocol-v1.md sections 6.2, 6.4, 6.6, 6.8, 7.1-7.6;
+  sampling-rules.md section 7.2 (referenced, not re-quoted); record-template.yaml;
+  orchestrator/deviations-log.md (D-014, D-015 and its addendum, D-019, full read for autoshorts-ai
+  mentions); records/adjudicated/anomaly-ai.yaml, read as the precedent this assignment pointed to
+  for the capture-verification finding, and cited above only for that already-published,
+  cross-record methodological point (not for any product-specific value). NOT read:
+  orchestrator/interim-signals.md, any other product's pass1/pass2/-sources material, any other
+  adjudicated record beyond anomaly-ai (read for precedent only, per above), aitoolspolice.com,
+  site/content/reviews/.
+
+  blindness/scope attestation: no other product's pass1 or pass2 record was opened beyond
+  autoshorts-ai's own; records/adjudicated/anomaly-ai.yaml was opened once, solely to confirm this
+  adjudication's understanding of the already-published capture-verification precedent this
+  assignment referenced, not for any autoshorts-ai-specific fact; orchestrator/interim-signals.md
+  was not opened. No repository history command (git log/show/diff/blame) was run.
+
+conflict_note: "not_applicable -- no two official sources of equal authority state incompatible values for any variable in this record. All disagreements were between the two coding passes, not between vendor documents."
+register_events: []
+status: complete

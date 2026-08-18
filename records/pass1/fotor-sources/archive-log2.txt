@@ -1,0 +1,11 @@
+=== https://support.fotor.com/hc/en-us/articles/4404154276121-How-to-Start-and-Cancel-the-Free-Trial ===
+attempt 1: http_code=520
+attempt 2: http_code=520
+attempt 3: http_code=520
+SAVE_FAILED
+=== https://support.fotor.com/hc/en-us/articles/15793375212441-What-are-Credits ===
+attempt 1: http_code=520
+attempt 2: http_code=520
+attempt 3: http_code=curl: (28) Connection timed out after 144280 milliseconds
+000
+SAVE_FAILED

@@ -1,0 +1,90 @@
+HTTP/2 302 
+server: nginx
+date: Sun, 09 Aug 2026 15:50:03 GMT
+content-type: text/html; charset=utf-8
+content-length: 298
+location: https://web.archive.org/web/20260809154948/https://hyperleap.ai/terms
+x-app-server: wwwb-app55-dc6
+x-ts: 302
+x-tr: 18074
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=0
+set-cookie: wb-save-SERVER=wwwb-app55; path=/
+x-location: save-sync
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Superonline Iletisim Hizmetleri A.S.
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 302 
+server: nginx
+date: Sun, 09 Aug 2026 15:50:03 GMT
+content-type: text/plain; charset=utf-8
+content-length: 0
+x-archive-redirect-reason: found capture at 20260309213350
+location: https://web.archive.org/web/20260309213350/https://hyperleap.ai/terms
+server-timing: captures_list;dur=0.500902, exclusion.robots;dur=0.041527, exclusion.robots.policy;dur=0.030282, esindex;dur=0.009018, cdx.remote;dur=5.346051, LoadShardBlock;dur=71.584199, PetaboxLoader3.resolve;dur=15.160165, PetaboxLoader3.datanode;dur=51.721641
+x-app-server: wwwb-app222-dc8
+x-ts: 302
+x-tr: 95
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app222; path=/
+x-location: All
+x-as: 34984
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Superonline Iletisim Hizmetleri A.S.
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+
+HTTP/2 200 
+server: nginx
+date: Sun, 09 Aug 2026 15:50:04 GMT
+content-type: text/html; charset=utf-8
+x-archive-orig-access-control-allow-origin: *
+x-archive-orig-age: 35286
+x-archive-orig-cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+x-archive-orig-x-crawler-content-encoding: br
+x-archive-orig-content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://snap.licdn.com https://vercel.live https://*.vercel-scripts.com https://cal.com https://app.cal.com https://*.supademo.com https://cdn.jsdelivr.net https://chatjs.hyperleap.ai https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https: http:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.clarity.ms https://px.ads.linkedin.com https://*.vercel-insights.com https://vitals.vercel-insights.com https://hyperleapai.com https://*.hyperleapai.com https://cal.com https://app.cal.com https://*.supademo.com wss://*.supademo.com https://stats.g.doubleclick.net https://*.supabase.co https://www.facebook.com https://connect.facebook.net; frame-src 'self' https://www.googletagmanager.com https://cal.com https://app.cal.com https://*.supademo.com https://td.doubleclick.net https://chatjs.hyperleap.ai https://www.youtube.com; worker-src 'self' blob:; child-src 'self' blob:; media-src 'self' blob: https:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests
+x-archive-orig-date: Mon, 09 Mar 2026 21:33:50 GMT
+x-archive-orig-etag: W/"f27ebaa5f5d89aaa2e05e40dc74f6680"
+x-archive-orig-permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
+x-archive-orig-referrer-policy: strict-origin-when-cross-origin
+x-archive-orig-server: Vercel
+x-archive-orig-strict-transport-security: max-age=31536000; includeSubDomains
+x-archive-orig-vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-archive-orig-x-content-type-options: nosniff
+x-archive-orig-x-frame-options: DENY
+x-archive-orig-x-matched-path: /terms
+x-archive-orig-x-nextjs-prerender: 1
+x-archive-orig-x-nextjs-stale-time: 300
+x-archive-orig-x-vercel-cache: HIT
+x-archive-orig-x-vercel-id: iad1::kmjzk-1773092030286-50f98f26ff8e
+x-archive-orig-content-length: 153193
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+memento-datetime: Mon, 09 Mar 2026 21:33:50 GMT
+link: <https://hyperleap.ai/terms>; rel="original", <https://web.archive.org/web/timemap/link/https://hyperleap.ai/terms>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://hyperleap.ai/terms>; rel="timegate"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org athena.archive.org analytics.archive.org pragma.archivelab.org wwwb-events.archive.org
+x-archive-src: CC-MAIN-2026-12-1772687277769.5-0032/CC-MAIN-20260309202252-20260309232252-00650.warc.gz
+server-timing: captures_list;dur=0.895735, exclusion.robots;dur=0.094945, exclusion.robots.policy;dur=0.068564, esindex;dur=0.016686, cdx.remote;dur=17.582488, LoadShardBlock;dur=150.914989, PetaboxLoader3.resolve;dur=78.817188, PetaboxLoader3.datanode;dur=181.656473, load_resource;dur=148.159183
+x-app-server: wwwb-app233-dc8
+x-ts: 200
+x-tr: 386
+server-timing: TR;dur=0,Tw;dur=0,Tc;dur=1
+set-cookie: wb-p-SERVER=wwwb-app233; path=/
+x-location: All
+x-as: 34984
+x-rl: 0
+x-na: 0
+x-page-cache: MISS
+server-timing: MISS
+x-nid: Superonline Iletisim Hizmetleri A.S.
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: interest-cohort=()
+

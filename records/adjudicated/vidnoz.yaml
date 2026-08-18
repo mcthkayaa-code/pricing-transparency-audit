@@ -1,0 +1,239 @@
+product_id: vidnoz
+product_name: Vidnoz
+category: AI avatar
+product_status: active
+paid_submission: "no"
+entry_tier_name: Starter
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-16
+recheck_date: not_applicable
+primary_source_url: https://www.vidnoz.com/pricing.html
+archive_url: https://web.archive.org/web/20260816122429/https://www.vidnoz.com/pricing.html
+archive_status: archived
+
+default_display_state: |
+  USD; billing toggle preselects Yearly/annual on load (DOM class "Yearly type active", "25% Off"
+  badge; Monthly sibling carries no "active" class) -- agreed by both passes and re-confirmed by
+  this adjudicator in a fresh 2026-08-16 capture and live read. Starter credit-slider defaults to
+  450 credits/mo (DOM "m-active" on the 450 handle), Business to 900 credits/mo -- read but not
+  interacted with, per protocol 6.8. No geographic/region variant observed by either pass or this
+  adjudicator; non-essential cookies declined where a banner appeared. The Free card's full bullet
+  content is identical across pass 1's 2026-08-13 read, an independent CDX-confirmed 2026-08-13
+  14:06:12 UTC archive capture, and this adjudicator's fresh 2026-08-16 capture and live read --
+  except that two "library size" figures (AI avatar count, video-template count) differ between
+  same-day reads (1,600+/3,400+ vs 1,800+/3,200+) while every genuine limit is stable; treated as
+  marketing counters, not quantified limits (see free_plan_cap_value).
+
+sources:
+  - { url: "https://www.vidnoz.com/pricing.html", kind: pricing, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260816122429/https://www.vidnoz.com/pricing.html", note: "PRIMARY SOURCE. Pass 1 read 2026-08-13 (archive.org submission failed twice per D-012; local_copy_only, local capture vidnoz-sources/pricing-capture-2026-08-13.txt). Pass 2 read 2026-08-15 and recorded archive_status=archived citing .../web/20260815140018/... -- THAT CITATION DOES NOT EXIST AS ITS OWN CAPTURE: it 302-redirects (header x-archive-redirect-reason: 'found capture at 20260813140612') to a capture dated 2026-08-13, not 2026-08-15. CDX confirms only two captures of this URL predate this adjudication (2026-08-10, 2026-08-13T14:06:12) and none on 2026-08-15 -- the D-023 pattern (a record citing an archive capture that never existed). This adjudicator fetched the real 20260813140612 capture directly (decoded gzip body, 205,819 bytes, x-archive-src spn2-...) and confirms it independently corroborates the Free-card figures used to adjudicate free_plan_cap_value below. A fresh capture was then submitted 2026-08-16 (this archive_url; verified HTTP 200, no redirect header) and the live page independently re-read the same day; both match the 2026-08-13 captures on every figure checked -- no vendor_edit to this page in or since the window." }
+  - { url: "https://www.vidnoz.com/terms.html", kind: tos, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260815141321/https://www.vidnoz.com/terms.html", note: "General web Terms of Service ('Last Update: July 2026'). Confirmed linked from pricing.html's own footer, and from refundpolicy.html, on every capture checked (2026-08-13, 2026-08-15, 2026-08-16) -- both pages cross-link ONLY to /terms.html, never to ai-terms-of-service.html. Pass 2's cited capture verified genuine by this adjudicator (HTTP 200, x-archive-src spn2-20260815..., no redirect) and its quoted text ('at least 7 days' notice', 'non-refundable, except where required by law') confirmed verbatim present, byte-identical to pass 1's local capture of the same document." }
+  - { url: "https://www.vidnoz.com/refundpolicy.html", kind: refund, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260815141359/https://www.vidnoz.com/refundpolicy.html", note: "Dedicated Refund Policy ('Last Updated: February 24, 2025'). Pass 2's cited capture verified genuine by this adjudicator (HTTP 200, real spn2 capture, no redirect) and its quoted text ('7-day full Money Back Guarantee for 1-year subscription') confirmed verbatim present, matching pass 1's local capture word for word." }
+  - { url: "https://www.vidnoz.com/ai-terms-of-service.html", kind: tos, accessed: "2026-08-13", archive: local_copy_only, note: "Read by pass 1 (local capture vidnoz-sources/ai-terms-of-service-raw-2026-08-13.html); pass 2 read it but coded nothing from it. This adjudicator re-read that capture in full: 17 uses of 'Application' vs 3 of 'Website', copyright-dated 2024 (terms.html is dated July 2026), and its 'Refunds' section's only refund-REQUEST mechanism is Apple's iTunes/Apple-ID flow for iOS users. NOT linked from pricing.html, terms.html, or refundpolicy.html on any date checked (it links TO terms.html, not the reverse). Determined non-governing for the web/card-billed subscription this record prices -- see refund_policy_exists and conflict_note." }
+  - { url: "https://www.vidnoz.com/ethics.html", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815141431/https://www.vidnoz.com/ethics.html", note: "Read by pass 2 only, for a discretionary usage-limit clause and failed-generation credit policy; silent on both. Capture verified genuine by this adjudicator (HTTP 200, real spn2 capture)." }
+  - { url: "https://www.vidnoz.com/how-to/how-to-check-credits.html", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815141503/https://www.vidnoz.com/how-to/how-to-check-credits.html", note: "Read by pass 2 only, for failed-generation credit policy; silent. Capture verified genuine by this adjudicator (HTTP 200, real spn2 capture)." }
+
+variables:
+
+  # ---- Domain 1: headline price vs price actually charged ----
+
+  headline_price_usd: { value: 19.99, source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Starter card, default Yearly display: '$26.99' struck through, '$19.99/mo', '$0.04/credit'; Compare Plans table confirms 'Starter $19.99/mo Billed yearly'. Re-confirmed by this adjudicator in a fresh 2026-08-16 capture and live read." }
+  headline_billing_basis: { value: "per_month_billed_annually", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Figure carries a '/mo' qualifier under the default Yearly toggle state; Compare Plans table states 'Billed yearly'." }
+  first_charge_amount_usd: { value: 239.88, source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. 19.99 x 12 = 239.88, licensed by refundpolicy.html's '1-year (yearly deduction) subscription plans' (a single yearly charge) and the pricing FAQ's subscription 'continues until the same date on the following month/year'. Passes tools/check_price_arithmetic.py (19.99 x 12 = 239.88.00 exactly, gap 0)." }
+  mandatory_addon_present: { value: "no", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. 'Voice Clone' and 'Avatar Pro' are both listed as separate paid add-ons; Starter's advertised core features (avatars, video generation, templates, voices) do not require either." }
+  annual_condition_disclosure: { value: "adjacent", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED, re-checked by this adjudicator against the codebook's own value table because pass 1 flagged it as a judgment call ('a stricter reader could instead call this same_page_secondary'). The `adjacent` row explicitly includes '...or in the label of the toggle attached to it', and the Yearly/25%-Off toggle governing the Starter card's price sits directly above it -- the literal case that clause describes. No change from either pass's value." }
+  annual_default_toggle: { value: "annual_preselected", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. DOM: Yearly element classList = 'Yearly type active' before any interaction; Monthly sibling carries no active class. Re-confirmed by this adjudicator 2026-08-16." }
+
+  # ---- Domain 3: real usability of the free plan ----
+
+  free_plan_exists: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. FAQ: 'Yes, we offer a free plan for creating AI videos.' A standing tier with recurring daily/monthly allowances, not a time-limited trial." }
+  free_plan_cap_documented: { value: "all_quantified", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED, and unaffected in category by this adjudication's free_plan_cap_value change below: every item added or excluded there is, and remains, quantified or non-quantified under section 5.1 on the same basis both passes already applied." }
+  free_plan_cap_value: { value: "8 credits/day | 3 mins/video | 2 photo avatars/day | 2,000 characters/scene | 1 expressive avatar use | 720p video export", source: "https://www.vidnoz.com/pricing.html", evidence: "ADJUDICATED 2026-08-16. Both prior values are incomplete transcriptions of the SAME source list (the Free card's own 'Video Creation' / 'Highlight Features' bullets), not a disagreement about what the page says. Verified in three independent captures -- pass 1's local raw capture (2026-08-13), the real CDX-confirmed archive.org capture at 20260813140612 (decoded and read in full by this adjudicator), and this adjudicator's own fresh 2026-08-16 capture and live read -- all three show the Free card unchanged: '8 credits/day (=16 secs); Max 3 mins/video; [avatar/template/voice library counts]; 720p video export; Standard video processing' plus 'Expressive avatars (1 use); 2 photo avatars/day; 2,000 characters/scene; Text to video'. Applying the variable's own rule ('record only quantified limits, as section 5.1 defines them') to that verified list: pass 2 dropped '2,000 characters/scene' and 'Expressive avatars (1 use)' from THIS field despite both appearing, quoted, in pass 2's OWN free_plan_cap_documented evidence ('every Free-plan limit carries a number... 2,000 characters/scene... Expressive avatars (1 use)') -- the record arguing against its own omission (the same pattern as refund_policy_exists below). Restored both, matching pass 1. Additionally coded 'video export: 720p' as a sixth item, which NEITHER pass included: section 5.1's own canonical Standing-limit example is verbatim '720p maximum resolution', and free_plan_cap_documented's decision rule step 1 names 'resolution' as a dimension to check; the figure sits in the same bullet block both passes already drew every other item from, appears in all three independent captures, and is genuinely tier-differentiated (Starter's own card states '1080p video export' for the same row, ruling out a stray/generic marketing number). NOT added: the separate comparison-table row 'User Seats: 1 | 1 | 1,000 | Custom' (Free=1), also a literal match to section 5.1's other canonical example ('1 seat') -- but pass 1's own transcription of that table is explicitly headed 'SELECTED ROWS', a partial excerpt, so this adjudicator cannot certify it is the only further item that table holds and declines to add a single row from an admittedly incomplete source; flagged below for a future coding wave. 'Standard video processing' and the three avatar/template/voice library-size figures remain excluded: 'standard' is one of section 5.1's own listed non-qualifying words, and the library-size figures describe selection breadth rather than a usage/output limit and were independently observed to fluctuate between same-day reads (1,600+/3,400+ vs 1,800+/3,200+ avatars/templates) while every genuine limit was stable -- both passes independently, blindly reached the same exclusion. Prior values: pass1='8 credits/day | max 3 min per video | 2 photo avatars/day | 2000 characters per scene | 1 expressive avatar use' (5 items); pass2='8 credits/day | 3 mins/video | 2 photo avatars/day' (3 items, self-contradicted by its own free_plan_cap_documented evidence)." }
+  free_plan_watermark: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Compare table row 'Full Commercial License': Free cell reads plain text 'With Vidnoz watermark'; paid tiers carry an unlabeled checkmark instead." }
+  free_plan_duration: { value: "perpetual", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Standing card beside the paid tiers with a recurring daily allowance; no expiry stated anywhere in the documents." }
+
+  # ---- Domain 4: whether a trial requires a payment card ----
+
+  trial_exists: { value: "no", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Documents describe only the perpetual Free plan and a 7-day money-back guarantee on paid plans; the word 'trial' does not appear anywhere in the documents read." }
+  trial_card_required: { value: "not_applicable", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. No trial exists." }
+  trial_length_days: { value: "not_applicable", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. No trial exists." }
+  trial_auto_converts: { value: "not_applicable", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. No trial exists." }
+
+  # ---- Domain 5: comprehensibility of the credit system ----
+
+  credit_system_present: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. FAQ: credits 'refer to the total amount of video content you can create during the subscription period' -- an intermediate currency converting to outputs at stated per-feature rates." }
+  credit_unit_defined: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. FAQ conversion table: 'Video Generation | 0.5 credits per 1s | min cost 1 credit', plus separate rates for eight further named output types." }
+  credit_to_output_rate_published: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. The same table publishes a specific rate for the principal output (video generation) and every other advertised output type; no type is left as a vague range." }
+  credit_rate_location: { value: "pricing_page", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. The conversion table lives inside the pricing page's own FAQ accordion." }
+  cost_per_output_unit: { value: "per_video_minute", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Plans are framed around video output capped in minutes; credits convert to seconds/minutes of generated video via the FAQ's own table." }
+  cost_per_output_computable: { value: "yes", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Starter (entry tier): $19.99/mo default display, 450 credits/mo, base Video Generation rate 0.5 credits/s = 30 credits/min. 450/30=15 min/mo; 19.99/15=1.33/min. Every figure published, no typical-use assumption needed." }
+  computation_assumptions: { value: "Starter tier, $19.99/mo (default Yearly display), 450 credits/mo. FAQ: video=0.5 credits/1s=30 credits/min. 450/30=15 min/mo; 19.99/15=1.33 USD/video-min. First charge: refundpolicy.html states annual billed as one 'yearly deduction'; 19.99x12=239.88.", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED IN SUBSTANCE -- not one of disagreements.py's 4 substantive disagreements (flagged PROSE: it tracks the agreed cost_per_output_computable=yes and first_charge_amount_usd=239.88 above, not an independent dispute). Both passes perform identical arithmetic and reach the identical 1.33 USD/video-minute and 239.88 figures; wording merged here from both." }
+
+  # ---- Domain 7-8: rollover and failed generations ----
+
+  credit_rollover_policy: { value: "expires_at_period_end", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. FAQ: 'No, the unused credits do not carry over to the next billing period.'" }
+  failed_generation_charge_policy: { value: "unknown", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED -- unknown, kind: VENDOR SILENCE (not access failure, not instrument gap). Both passes fully accessed and read multiple document classes with no reported access barrier (pass 1: pricing.html/FAQ, terms.html, ai-terms-of-service.html, refundpolicy.html; pass 2 additionally: ethics.html, the credits how-to help article) and neither found any statement, either way, on whether a failed/errored generation consumes credits. The documents are readable and complete; they simply never address the question." }
+
+  # ---- Domain 9: auto-renewal ----
+
+  auto_renewal_default: { value: "on", source: "https://www.vidnoz.com/terms.html", evidence: "AGREED. 'For paid subscriptions, we will automatically charge your payment method on each agreed-upon periodic renewal until you cancel.'" }
+  auto_renewal_disclosure_location: { value: "terms_only", source: "https://www.vidnoz.com/terms.html", evidence: "AGREED. Stated in terms.html; refundpolicy.html's cadence language is consistent with but does not itself state automatic renewal; not stated on pricing.html." }
+  renewal_notice_commitment: { value: "no_notice_stated", source: "https://www.vidnoz.com/terms.html", evidence: "ADJUDICATED 2026-08-16. Both passes quote the identical, verified-verbatim clause (terms.html: 'If we increase our subscription prices, we will give you at least 7 days' notice and any price increase will take effect on your next renewal'; ai-terms-of-service.html similarly: 'You will be given notice of changes in the pricing... and an opportunity to cancel') -- there is no dispute about what the documents say, only how to classify it. The Definition asks whether the vendor 'commits to notifying the buyer before A renewal charge' -- the renewal-charge event generally, not only a price-increased one. Vidnoz's only stated notice commitment is conditional on a price INCREASE; for the ordinary case -- a renewal at the same price, the common case for most buyers most years -- neither document commits to any notice at all, so there is no general commitment to notify before a renewal charge. This reads the narrow, specific commitment the way the codebook's own worked example for the sibling variable trial_card_required treats an adjacent-but-different statement: 'trials convert automatically unless canceled... implies stored payment details, but implication is not a statement' -- a statement addressed to one specific scenario is not read across to answer a broader question the coder wants an answer to. `unknown` does not fit either: the documents are not silent, they state a determinate (if conditional) policy. FLAGGED FOR WAVE 2: this variable's value list (advance_notice_stated / no_notice_stated / unknown / not_applicable / conflicting) has no accommodation for a notice commitment conditional on a specific triggering event rather than general or absent -- the two passes' disagreement is really a gap in the instrument's own vocabulary, not a misread; both passes read the documents correctly. Prior values: pass1=advance_notice_stated (pass 1's own coder_note already flagged the price-increase-only scoping as a concern without changing its coded value); pass2=no_notice_stated." }
+
+  # ---- Domain 10: refund and cancellation terms ----
+
+  refund_policy_exists: { value: "yes", source: "https://www.vidnoz.com/refundpolicy.html", evidence: "ADJUDICATED 2026-08-16 on two independent grounds. (1) Internal coherence: pass 1 codes refund_policy_exists=conflicting -- undeterminable -- yet its OWN refund_window_days=7 and refund_conditions=conditional are both read straight and confidently off refundpolicy.html's guarantee, which only cohere if that guarantee IS the operative, determinable policy; pass 1's record argues against its own headline value on this variable (the same self-contradiction pattern as free_plan_cap_value above). (2) Document applicability, independently re-derived rather than adopted from pass 2's stance: pass 1 treated terms.html, refundpolicy.html and ai-terms-of-service.html as three co-equal rank-1 contractual sources in genuine conflict. This adjudicator checked which ToS the actually-priced transaction is bound by: pricing.html's own footer links ONLY to /terms.html; refundpolicy.html and terms.html likewise cross-link only to /terms.html (checked across the 2026-08-13 and 2026-08-15 captures); ai-terms-of-service.html is not linked from any of the three and is never reached from the web purchase flow. Its own content explains why: 17 uses of 'Application' vs 3 of 'Website', copyright-dated 2024 against terms.html's 'Last Update: July 2026', and its 'Refunds' section's only refund-REQUEST mechanism is Apple's iTunes/Apple-ID flow for iOS users. It is the mobile in-app-purchase document, not the terms governing a directly card-billed vidnoz.com subscription (payment-methods FAQ: Visa/Mastercard/Amex/Discover/JCB only, no App Store option), and is not a competing source for THIS record. That leaves terms.html and refundpolicy.html. Read in full, terms.html's 'Payments are non-refundable, except where required by law' is immediately followed, in the same clause, by an operative refund REQUEST-AND-APPROVAL mechanism ('To request a refund..., please contact us... We will issue any refund... once it's approved') -- language that would serve no purpose if refunds were truly limited to statutory minimums, and that mirrors refundpolicy.html's own approval-gated process. Read together the two state one coherent policy (a general non-refundable default, with a specific, detailed 7-day money-back guarantee for the annual billing this entry tier defaults to), not two incompatible ones -- exactly the reading refund_window_days/refund_conditions already, independently, coded on both passes. Prior values: pass1=conflicting; pass2=yes (pass 2's own conflict_note already proposed this general-rule-plus-exception reading and separately raised ai-terms-of-service.html's inapplicability in coder_note, but without the footer-link cross-check performed here)." }
+  refund_window_days: { value: 7, source: "https://www.vidnoz.com/refundpolicy.html", evidence: "AGREED. '7-day full Money Back Guarantee for 1-year subscription.' Stated only for the annual/yearly-billed plan, our default display state; monthly billing carries no window per the same document." }
+  refund_conditions: { value: "conditional", source: "https://www.vidnoz.com/refundpolicy.html", evidence: "AGREED. Refund available only 'if the refund request is submitted within the subscription's specified money-back-guarantee period' (7 days, annual only); unavailable for monthly billing." }
+  cancellation_self_serve: { value: "conflicting", source: "https://www.vidnoz.com/terms.html", evidence: "AGREED (both passes code conflicting, from different document combinations, before this adjudication). Unaffected by the refund_policy_exists finding above on ai-terms-of-service.html: even excluding that document, terms.html ('You can cancel your paid subscription at any time in your Vidnoz account' -- self-serve) genuinely conflicts with refundpolicy.html ('Customers may notify us of your intent to cancel') and the pricing-page FAQ ('by contacting our support' -- contact-required), a separate tension not resolved by excluding the mobile-app document." }
+  refund_policy_location: { value: "multiple", source: "https://www.vidnoz.com/refundpolicy.html", evidence: "ADJUDICATED 2026-08-16, follows directly from refund_policy_exists above. Once the underlying substance is read as one coherent policy and ai-terms-of-service.html is excluded as non-governing for this record, the refund position is stated in agreement across three classes: terms (terms.html), dedicated_refund_page (refundpolicy.html), and pricing_page (the pricing-page FAQ, which restates refundpolicy.html's 7-day guarantee near-verbatim). Per the variable's own rule, 'multiple is for agreement across two or more classes' -- three classes in agreement is squarely that case. ai-terms-of-service.html's contrary position is preserved in conflict_note for transparency rather than silently dropped, but does not make the location undeterminable for the purchase this record actually prices. Prior values: pass1=conflicting (built on treating ai-terms-of-service.html as a fourth co-equal, disagreeing class); pass2=multiple." }
+
+  # ---- Domain 11: commercial-use rights ----
+
+  commercial_use_lowest_tier: { value: "free", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Compare table 'Full Commercial License' row: granted on Free (watermarked) and every paid tier; neither ToS document contains a competing commercial-use clause." }
+  watermark_removal_tier: { value: "lowest_paid", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Feature grid 'Remove Vidnoz Watermark': cross under Free, check from Starter (entry paid tier) upward." }
+  output_ownership_statement: { value: "user_owns", source: "https://www.vidnoz.com/terms.html", evidence: "AGREED, and re-checked by this adjudicator per the codebook's own risk flag on this variable: 'Ownership of content... you... own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output.' Stated generally, not tier-restricted; ai-terms-of-service.html's IP clause concerns Vidnoz's own site/software content, not generated Output, so it does not compete with this statement even setting the surface-scoping question aside." }
+
+  # ---- Domain 12: undisclosed or unverifiable limits ----
+
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://www.vidnoz.com/pricing.html", evidence: "AGREED. Starter (entry tier): '450 credits/month' (rate), 'Max 60 mins/video' (standing), '100 photo avatars/day' (rate), '15,000 characters/scene' (standing), 'User Seats: 1' (standing) -- every stated limit carries a number and dimension, plus a period where it is a rate." }
+  unquantified_limit_clause: { value: "absent", source: "https://www.vidnoz.com/terms.html", evidence: "AGREED, and independently re-verified by this adjudicator per the codebook's own risk flag on this variable ('read the terms, not a keyword search'). Full-text checked terms.html for every discretionary-sounding phrase found: 'sole discretion' (governs amending the TOS itself, not usage volume), 'reserve the right...restrict you from access...if you violate this term' (conditional on a conduct/IP violation, not ordinary usage volume), 'suspend the associated account' (conditional on prohibited content), 'absolute discretion to remove...Your Content' (content moderation, not a usage-volume clause). Per the variable's own rule 3, 'a prohibition on illegal or abusive content is not a usage limit... this variable covers volume and intensity of use, not conduct' -- none of the four is a fair-use/reasonable-use/excessive-use/discretionary-throttle clause over ordinary usage volume. Confirms, does not overturn, both passes' agreed value." }
+
+coder_note: |
+  ADJUDICATION SUMMARY (2026-08-16). tools/disagreements.py vidnoz finds 4 substantive
+  disagreements (free_plan_cap_value, renewal_notice_commitment, refund_policy_exists,
+  refund_policy_location) plus 1 flagged-but-non-substantive prose field (computation_assumptions --
+  agreed in substance, different wording, not an independent dispute; confirmed by direct
+  variable-by-variable diff of both records, which found no other value differences). All 4 resolved
+  by applying the codebook's own decision rule to the evidence. 0 became `unknown`. 0 required
+  `date_explained` or `variant_explained` treatment -- see below. free_plan_cap_value's resolved
+  value is a SIXTH item beyond either pass's own value (see its evidence field); the other three
+  resolve to one of the two prior passes' values (all three land on pass 2's value, but not because
+  pass 2 was preferred -- each is independently re-derived from the rule and the primary sources,
+  and in two cases (free_plan_cap_value, refund_policy_exists) the deciding evidence is pass 1's OR
+  pass 2's OWN other fields contradicting its disputed one, a pattern flagged in my assignment brief.
+
+  DATE_EXPLAINED / VARIANT_EXPLAINED, CHECKED AND RULED OUT. Both records carry `register_events: []`
+  -- no display_variant was logged by either pass. This adjudicator independently verified, rather
+  than relying on the absence of a register entry alone, that none of the three governing documents
+  (pricing.html, terms.html, refundpolicy.html) changed between 2026-08-13 and 2026-08-15: terms.html
+  and refundpolicy.html's operative clauses are byte-identical between pass 1's local capture and
+  pass 2's (verified-genuine) 2026-08-15 archive capture; pricing.html's Free-card content is
+  identical across pass 1's 2026-08-13 read, an independent 2026-08-13 14:06:12 archive capture, and
+  this adjudicator's fresh 2026-08-16 capture and live read. No vendor_edit exists for this product.
+  All 4 disagreements are ordinary disagreements -- differing completeness or differing
+  classification of an agreed text -- not the instrument correctly recording two states of the world.
+
+  A CITED CAPTURE THAT DOES NOT EXIST (the D-023 pattern, found independently on this product). Pass
+  2's archive_url/sources entries for pricing.html cite a 2026-08-15 14:00:18 timestamp that
+  302-redirects to a capture dated 2026-08-13 14:06:12 -- CDX confirms no capture of this URL exists
+  on 2026-08-15 at all. Per my assignment brief, I did not stop at noticing the redirect: I decoded
+  and read the real 20260813140612 capture in full (it independently corroborates the free-plan
+  figures, though with several JS-templated fields -- '%d photo avatars/day', a blank credits number
+  -- rendered as unpopulated placeholders, a capture-tool artifact rather than a vendor error, since
+  pass 1's and this adjudicator's own rendered/live reads show the same fields correctly populated),
+  then submitted a fresh capture today (this record's archive_url) and independently re-read the live
+  page. Nothing pass 2 coded from pricing.html turned out to be wrong because of this -- the
+  discrepancy is in the CITATION, not in what pass 2 reported reading -- but the citation itself was
+  unsupported until this adjudication verified it another way, exactly the failure mode the brief
+  warned is not hypothetical.
+
+  ENTRY-TIER SELECTION (sampling-rules 7.2; AGREED both passes, re-confirmed): Starter ($19.99/mo x12
+  = $239.88/yr) vs. Business ($56.99/mo x12 = $683.88/yr, the only other eligible candidate) --
+  Starter is lower. Free ($0) is not a paid tier. Enterprise is sales-gated ("Book a Demo"), no
+  published price, ineligible under rule 2.
+
+  THE THIRD DOCUMENT QUESTION DROVE THREE OF THE FOUR DISAGREEMENTS. free_plan_cap_value aside, the
+  renewal_notice_commitment, refund_policy_exists and refund_policy_location disputes all trace back
+  to how much weight ai-terms-of-service.html deserves. Pass 1 treated it as a fully co-equal
+  contractual source throughout; pass 2 used it for renewal-notice corroboration but excluded it from
+  refund reasoning (coder_note only, not carried into the coded fields' own evidence). This
+  adjudicator went further than either: verified, from the document graph itself (footer links on
+  three separately-captured pages, on three different dates), that ai-terms-of-service.html is never
+  reached from the web purchase flow this record prices, and corroborated that from its own content
+  (Application/Website ratio, an iOS-only refund-request mechanism). It remains relevant to
+  `renewal_notice_commitment`'s substance because its own notice language independently confirms the
+  same price-increase-only scoping terms.html states (so the resolution there is unaffected by
+  whether the document governs), but it does not compete with terms.html/refundpolicy.html on refund
+  existence or location. This is recorded once here rather than separately in each variable's own
+  field to avoid repeating the same document-graph evidence three times.
+
+  NOT ADDED, FLAGGED FOR A FUTURE CODING WAVE: the pricing page's separate feature-comparison table
+  carries a 'User Seats: 1 | 1 | 1,000 | Custom' row (Free=1), which on its face is as strong a
+  section-5.1 standing-limit match as the '720p video export' item this adjudication DID add to
+  free_plan_cap_value. Declined because pass 1's own transcription of that table is headed 'SELECTED
+  ROWS' -- an admittedly partial excerpt -- so adding this one row without a full table read would
+  swap one incomplete list for another, differently incomplete one, rather than a verified-complete
+  correction. A future pass-1-style read that transcribes the comparison table in full would settle
+  this and should check free_plan_cap_value against it, not just usage_cap_quantified (which pass 1
+  already drew a 'User Seats: 1' figure from for the PAID entry tier, without applying the same table
+  to the FREE tier's own field).
+
+  NOT_APPLICABLE / UNKNOWN BOUNDARY: does not arise in this product's 4 disagreements. No disputed
+  value on either pass, for any of the four, used `not_applicable` or `unknown` -- the disputes are
+  between two determinate values (a fuller vs. thinner quantified list; advance_notice_stated vs.
+  no_notice_stated; conflicting vs. yes; conflicting vs. multiple), never between a determinate value
+  and an absence-of-construct claim. Noted because the assignment brief flagged this boundary as
+  under active review; this record does not touch it either way.
+
+  HIGH-RISK VARIABLES RE-CHECKED EVEN THOUGH AGREED: unquantified_limit_clause and
+  output_ownership_statement (both named in my role definition as constructs with the study's lowest
+  inter-coder agreement) were independently re-verified against the full text of terms.html rather
+  than accepted on the strength of both passes agreeing -- see their own evidence fields above. Both
+  hold.
+
+  SOURCES RE-READ FOR THIS ADJUDICATION: both records in full; pass 1's vidnoz-sources/ (all four
+  local captures, read in full, not sampled); pass 2's cited archive.org captures (all fetched,
+  decoded, and content-verified directly by this adjudicator rather than trusted from the record);
+  the live vendor pricing page, terms.html and refundpolicy.html, re-fetched 2026-08-16; one fresh
+  archive.org capture submitted (pricing.html) plus one independently-fetched pre-existing capture
+  (the real 20260813140612 snapshot neither pass cited by that timestamp). codebook-v1.md read in
+  full (sections 1-6 plus domains 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12); protocol-v1.md sections 6.1-6.8
+  and 7.1-7.6; sampling-rules.md section 7 (entry-tier rule); record-template.yaml;
+  orchestrator/deviations-log.md, searched for vidnoz (Tier C -- one of five products never named
+  anywhere a coder reads, per D-014's amendment) and read in full for D-018 (the three kinds of
+  `unknown`) and D-023 (the cited-capture-that-does-not-exist pattern this adjudication also found).
+
+  SCOPE NOTE, disclosed rather than omitted: before narrowing in on vidnoz's own sources, this
+  adjudicator briefly opened one other product's adjudicated record (records/adjudicated/
+  adobe-firefly.yaml) to confirm record shape/formatting conventions, before re-reading the role
+  definition closely enough to notice "another product's records" is listed as off-limits without
+  a carve-out for already-adjudicated ones. That file contains no vidnoz-relevant facts and the
+  substantive analysis above (all source-reading, verification, and rule application) was carried
+  out independently against vidnoz's own sources afterward -- record-template.yaml alone was used
+  for shape from that point on -- but the read itself was outside scope and is reported rather than
+  quietly absorbed. No other product's record, source directory, interim-signals.md,
+  aitoolspolice.com, or site/content/reviews/ was opened. No repository history command (log/show/
+  diff/blame) was run.
+
+  blindness/scope attestation: this adjudicator is not blind by design (protocol 7.4) and read both
+  prior passes' records and sources as instructed; the one deviation from the reading-scope rule is
+  disclosed immediately above.
+
+conflict_note: |
+  ai-terms-of-service.html vs. terms.html (domain 10, refund/cancellation; found by pass 1, resolved
+  in substance by this adjudication -- see refund_policy_exists). ai-terms-of-service.html states
+  "Generally, all charges for purchases are non-refundable, and there are no refunds or credits for
+  partially used periods," which is flatly incompatible with refundpolicy.html's 7-day money-back
+  guarantee and partial-refund-for-unused-months provisions if both governed the same purchase. This
+  adjudicator determined ai-terms-of-service.html does not govern the web, directly card-billed
+  subscription this record prices (see sources note and coder_note "THE THIRD DOCUMENT QUESTION"):
+  not linked from pricing.html, terms.html, or refundpolicy.html on any capture checked; 17 uses of
+  "Application" vs 3 of "Website"; copyright-dated 2024 against terms.html's "Last Update: July
+  2026"; its own refund-REQUEST mechanism is Apple's iTunes/Apple-ID flow for iOS users, a purchase
+  surface this product's payment-methods FAQ does not offer (Visa/Mastercard/Amex/Discover/JCB only).
+  Recorded here, per protocol 6.2, because the divergence stays in conflict_note "even where the
+  hierarchy settles the coded value cleanly."
+
+  Renewal-notice scope (domain 9; agreed substance, disputed classification -- see
+  renewal_notice_commitment). terms.html and ai-terms-of-service.html each commit to notice only
+  before a PRICE INCREASE ("at least 7 days' notice," "notice of changes in the pricing... and an
+  opportunity to cancel"); neither commits to notice before an ordinary same-price renewal charge.
+  Both documents agree with each other on this scope, so there is no source conflict here, only a
+  disagreement about how the codebook's `advance_notice_stated` / `no_notice_stated` pair should
+  classify a conditional commitment -- flagged in renewal_notice_commitment's own evidence field as a
+  possible Wave-2 instrument gap.
+
+register_events: []
+
+status: complete

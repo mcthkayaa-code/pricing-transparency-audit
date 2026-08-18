@@ -1,0 +1,545 @@
+# Pricing Transparency Audit — pass 1 (primary) record
+# product: Adobe Express | codebook v1.2 / protocol v1.2 / sampling-rules v1.2
+
+product_id: adobe-express
+product_name: Adobe Express
+category: AI design
+product_status: active
+paid_submission: "no"
+vendor_home_url: https://www.adobe.com/express/
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-06
+recheck_date: not_applicable
+entry_tier_name: Acrobat Express
+primary_source_url: https://www.adobe.com/express/pricing
+archive_url: https://web.archive.org/web/20260806111951/https://www.adobe.com/express/pricing
+archive_status: local_copy_only
+
+default_display_state: >
+  Canonical read used for coding (observed on 4 independent fresh loads of
+  https://www.adobe.com/express/pricing in this session, 2 of them screenshotted):
+  Individuals tab active by default, USD currency, no cookie-consent banner
+  rendered. Two cards: "Adobe Express Free" US$0.00, and "Acrobat Express"
+  US$10.99/mo (purple/blue "Best value" banner), described as "Includes Adobe
+  Express Premium and Acrobat AI Assistant", subtext "No annual commitment,
+  billed monthly." — no monthly/annual toggle is present for the Individual
+  tier. Outbound commerce links on this read carry co=US&lang=en&locale=en-US
+  &contentRegion=us. This page's plan-card prices are injected client-side by
+  a script fragment (main--da-express-milo--adobecom.aem.page/express/
+  fragments/pricing-table/individuals-ff-bundle); a plain web.archive.org
+  crawl captures the page shell but not the injected price fragment (protocol
+  section 9, limitation 8), so archive_status above is local_copy_only and the
+  authoritative capture is the local text copy saved alongside this record
+  plus the in-session screenshots described in register_events. See
+  register_events for two other display states observed and not used for
+  coding: a TRY/geography variant and an Adobe-Firefly-branded redirect
+  variant.
+
+sources:
+  - url: https://www.adobe.com/express/pricing
+    document_class: pricing_page
+    access_date: "2026-08-06"
+    archive_url: https://web.archive.org/web/20260806111951/https://www.adobe.com/express/pricing
+    archive_status: local_copy_only
+    local_copy: Data/seo/research/pricing-transparency/records/pass1/adobe-express-sources/pricing-page-individuals-2026-08-06.txt
+    note: >
+      Individuals tab (default) and Businesses tab read. Archive snapshot does
+      not show script-injected price fragment; local text copy is the
+      operative evidence for price/plan-composition values. Screenshots taken
+      in-session confirm the local copy verbatim.
+  - url: https://www.adobe.com/legal/subscription-terms.html
+    document_class: dedicated_refund_page
+    access_date: "2026-08-06"
+    archive_url: https://web.archive.org/web/20260806112851/https://www.adobe.com/legal/subscription-terms.html
+    archive_status: archived
+    note: >
+      "Adobe Subscription and Cancellation Terms", effective Aug 1 2026.
+      Governing section for this product/plan: "CREATIVE CLOUD, DOCUMENT
+      CLOUD, FIREFLY, ACROBAT & FRAME for United States" > "Creative Cloud for
+      Individuals" > "Month to month" (this page's own scope line names
+      Firefly and Acrobat as covered by this shared document; no separate
+      Firefly/Acrobat/Express heading exists in the accordion, and Acrobat
+      Express (Individual) is billed month-to-month with no annual
+      commitment, matching this section). Verified the archived HTML contains
+      the exact expanded text read (accordion content is present in the raw
+      DOM though CSS-collapsed, so the public archive is valid full evidence
+      here, unlike the pricing page).
+  - url: https://www.adobe.com/legal/terms.html
+    document_class: terms
+    access_date: "2026-08-06"
+    archive_url: https://web.archive.org/web/20260806120414/https://www.adobe.com/legal/terms.html
+    archive_status: archived
+    note: "Adobe General Terms of Use. Searched in full text via section headings and targeted keyword sweep (ownership, license, commercial use, watermark, fair/reasonable/excessive use, throttle, discretion, suspend, refund, indemnify)."
+  - url: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    document_class: docs_help_center
+    access_date: "2026-08-06"
+    archive_url: https://web.archive.org/web/20260806113534/https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+    archive_status: archived
+    note: "Redirects to helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html (archived under the resolved URL). Official Adobe Creative Cloud Help Center. Confirmed no occurrence of 'fail' anywhere on the page (full-text in-page search, 39,014 chars)."
+  - url: https://helpx.adobe.com/express/web/adobe-express-subscription/free.html
+    document_class: docs_help_center
+    access_date: "2026-08-06"
+    archive_url: https://web.archive.org/web/20260806120439/https://helpx.adobe.com/express/web/adobe-express-subscription/free.html
+    archive_status: archived
+    note: "Adobe Express-specific help page for the free plan; corroborates pricing-page free-tier caps (5GB storage, 10-day version history, 1 social account, no generative-credit figure given)."
+  - url: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-access-and-use.html
+    document_class: docs_help_center
+    access_date: "2026-08-06"
+    archive_url: not_applicable
+    archive_status: not_used_as_evidence
+    note: "Opened for discovery only; short page (2,528 chars), no occurrence of watermark/fail/error/commercial use/free daily. No coded value in this record cites this URL, so no archival attempt was made (protocol 6.4 requires a same-day snapshot only for pages a value is coded from). Kept in this list for the completeness of the search trail behind failed_generation_charge_policy and free_plan_watermark."
+  - url: https://helpx.adobe.com/creative-cloud/apps/generative-ai/ai-content-watermarks-faq.html
+    document_class: docs_help_center
+    access_date: "2026-08-06"
+    archive_url: not_applicable
+    archive_status: not_used_as_evidence
+    note: "Opened for discovery only; page is an accordion of question titles (visible-load text has no answers rendered) about optional user-added Content-Credentials watermarking, not about Adobe's own free-tier output watermarking. Did not settle free_plan_watermark or watermark_removal_tier. No coded value in this record cites this URL, so no archival attempt was made."
+
+variables:
+  # --- Domain 1: headline price vs. price actually charged ---
+  headline_price_usd:
+    value: 10.99
+    source: https://www.adobe.com/express/pricing
+    evidence: >
+      Entry paid tier selected per sampling-rules.md 7.2: eligible candidates
+      on the default-state pricing page were "Acrobat Express" (Individual,
+      US$10.99/mo) and "Acrobat Express for Teams" (US$11.99/mo per license,
+      single-seat). "Acrobat Express for Enterprise" is sales-gated
+      ("Contact Sales") and ineligible under eligibility rule 2. Annual
+      equivalents: Individual 10.99x12=131.88 (winner, lowest); Teams
+      11.99x12=143.88 (loses). Card reads "US$10.99/mo" most prominently, no
+      billing-toggle interaction before reading.
+  headline_billing_basis:
+    value: per_month_billed_monthly
+    source: https://www.adobe.com/express/pricing
+    evidence: "Card shows 'US$10.99/mo' with subtext 'No annual commitment, billed monthly.' No annual option/toggle exists for the Individual tier — it is monthly-billed only."
+  first_charge_amount_usd:
+    value: 10.99
+    source: https://www.adobe.com/express/pricing
+    evidence: "Default state is monthly (not annual) — 'No annual commitment, billed monthly' — so the first charge equals the published monthly figure; no annualization applies (codebook rule 2 only multiplies where the default is annual). See computation_assumptions."
+  mandatory_addon_present:
+    value: "no"
+    source: https://www.adobe.com/express/pricing
+    evidence: >
+      Pricing page lists Acrobat Express's features (generative credits,
+      premium templates, Acrobat AI Assistant, PDF Spaces, storage, etc.) as
+      included in the US$10.99/mo price ("Includes Adobe Express Premium and
+      Acrobat AI Assistant"). No separate required charge, minimum credit
+      purchase, platform fee, or onboarding fee found on the pricing page, in
+      the Subscription and Cancellation Terms, in the General Terms of Use, or
+      in the generative-credits FAQ.
+
+  # --- Domain 2: visibility of the annual-billing condition ---
+  annual_condition_disclosure:
+    value: not_applicable
+    source: https://www.adobe.com/express/pricing
+    evidence: "The entry tier's headline figure does not depend on annual prepayment — the Individual 'Acrobat Express' plan has no annual billing option at all ('No annual commitment, billed monthly')."
+  annual_default_toggle:
+    value: no_toggle
+    source: https://www.adobe.com/express/pricing
+    evidence: "The Individuals-tab pricing card offers one billing period only (monthly); no monthly/annual switch is rendered for this tier. (The separate Businesses > Teams card is a fixed 'Annual subscription, billed monthly' — a structural commitment, not a toggle — and is not the entry tier.)"
+
+  # --- Domain 3: real usability of the free plan ---
+  free_plan_exists:
+    value: "yes"
+    source: https://www.adobe.com/express/pricing
+    evidence: "'Adobe Express Free — US$0.00 — Free to use. No credit card required.' presented as a standing plan alongside the paid tier, corroborated by the dedicated helpx.adobe.com Adobe Express Free plan page."
+  free_plan_cap_documented:
+    value: some_quantified
+    source: https://www.adobe.com/express/pricing
+    evidence: >
+      Quantified: 5GB storage (standing); 10 days version history (standing);
+      1 account per social network (standing); 'Generate Presentations: 5 free
+      lifetime uses' (standing); 'Generate 5-second videos: 2 free lifetime
+      uses' (standing); 'Import PDF free; 10 PDF Quick Actions per month'
+      (rate). Not quantified: 'Generate images, text effects, templates &
+      more — Free daily generations' and 'Insert & Remove Objects — Free
+      daily generations' carry no number for the free tier (rate-type claim
+      with no figure). At least one of each => some_quantified.
+  free_plan_cap_value:
+    value: "5GB storage | 10 days version history | 1 account per social network | 5 lifetime generate-presentation uses | 2 lifetime 5-second-video generations | 10 PDF Quick Actions per month"
+    source: https://www.adobe.com/express/pricing
+    evidence: "Verbatim quantified limits transcribed from the pricing-page feature comparison table and top-features panel, Free column. Unquantified 'Free daily generations' claims (image/text-effect/template generation, object insert & remove) are excluded per section 5.1."
+  free_plan_watermark:
+    value: unknown
+    source: https://www.adobe.com/express/pricing
+    evidence: >
+      No 'watermark' row or statement found in the pricing-page feature
+      comparison table (no watermark line item for either tier), the General
+      Terms of Use, the Subscription and Cancellation Terms, the
+      generative-credits FAQ, or the Adobe Express Free plan help page. The
+      dedicated "Watermarks for Generative AI content FAQ" help page
+      (helpx.adobe.com/creative-cloud/apps/generative-ai/ai-content-watermarks-faq.html)
+      was opened but its rendered content is about optional user-applied
+      Content Credentials labeling, not Adobe's own free-tier output
+      watermarking, and did not state a position either way.
+  free_plan_duration:
+    value: perpetual
+    source: https://www.adobe.com/express/pricing
+    evidence: "Presented as a standing plan alongside the paid tier ('Free to use. No credit card required.') with no expiry or 'first month'/'to start' language anywhere in the documents reviewed."
+
+  # --- Domain 4: whether a trial requires a payment card ---
+  trial_exists:
+    value: "yes"
+    source: https://www.adobe.com/express/pricing
+    evidence: "Entry tier card's call to action reads 'Start 7-day free trial' (distinct from the separate $0 'Adobe Express Free' plan)."
+  trial_card_required:
+    value: unknown
+    source: https://www.adobe.com/express/pricing
+    evidence: >
+      Neither the pricing page nor the Subscription and Cancellation Terms
+      states whether a payment card is required to START the 7-day trial.
+      The pricing-page footnote states 'billing begins when free trial ends.
+      Cancel before free trial ends and you won't be charged. Subscription
+      automatically renews until you cancel' — this implies a payment method
+      is on file for the auto-charge at trial end, but implication is not a
+      statement (matches the codebook's own worked example for this
+      variable). No 'no credit card required' statement is attached to the
+      trial CTA (that phrase appears only on the separate $0 Free plan card).
+  trial_length_days:
+    value: 7
+    source: https://www.adobe.com/express/pricing
+    evidence: "Entry tier (Individual 'Acrobat Express') CTA: 'Start 7-day free trial'. (The non-entry Teams tier separately shows a 14-day trial; not used, per codebook rule to record the entry paid tier's trial.)"
+  trial_auto_converts:
+    value: "yes"
+    source: https://www.adobe.com/express/pricing
+    evidence: "Footnote on the pricing card: 'If you have signed up for a free trial, billing begins when free trial ends. Cancel before free trial ends and you won't be charged. Subscription automatically renews until you cancel.'"
+
+  # --- Domain 5: comprehensibility of the credit system ---
+  credit_system_present:
+    value: "yes"
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: "'Generative credits are like tokens you can use to generate high-quality image, vector, video, and audio outputs.' An intermediate currency that converts into outputs, per codebook rule 2. Entry tier includes '250 generative credits per month per user' (pricing page)."
+  credit_unit_defined:
+    value: "yes"
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: >
+      Multiple explicit conversions published, e.g. 'Most standard generative
+      AI features... use 1 credit per generation'; detailed premium-feature
+      table gives named-output rates such as 'Firefly Image 4 Ultra model:
+      20 credits per generation, 1 image per generation', 'Generate Video,
+      1080p at 24 FPS: 100 credits per second', 'Generate Sound Effects: 10
+      credits per generation'. A document converts credits into recognizable
+      output units, satisfying the rule regardless of which specific output
+      Adobe Express's own principal offering is (see credit_to_output_rate_published).
+  credit_to_output_rate_published:
+    value: partial
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: >
+      Adobe Express's principal output is unmetered per-seat software access
+      (cost_per_output_unit = per_seat_month, see domain 6) — the product is
+      sold as a general design/content/PDF tool (templates, photo/video
+      editing, brand kits, PDF tools, scheduling), with credit-metered
+      generative AI as one feature category among several, and most Express
+      tools/quick actions are not credit-metered at all. Because the
+      principal output itself is not a creditable unit, no rate is or could
+      be published "for" it; what IS published is a comprehensive rate table
+      for every secondary, credit-metered output type Express's generative
+      features touch (image, video, audio, translation, etc. — see
+      credit_unit_defined). Coded literally under codebook rule 4 ("rates
+      published for secondary features but not the principal output are
+      partial"): partial, not yes, since the principal output categorically
+      lacks a rate. Flagged in coder_note as a structural edge case (per-seat
+      product with a fully-documented secondary credit layer) for
+      adjudication.
+  credit_rate_location:
+    value: docs_help_center
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: "Per-output credit rates (credits per image/video-second/etc.) appear only on this Adobe Help Center page. The pricing page states only the total monthly allowance (250 credits/month), not conversion rates; the Subscription and Cancellation Terms states rates 'will vary' without publishing figures."
+
+  # --- Domain 6: computability of cost per output ---
+  cost_per_output_unit:
+    value: per_seat_month
+    source: https://www.adobe.com/express/pricing
+    evidence: "Adobe Express is sold as per-seat access to a general design/content-creation tool (templates, photo/video/PDF editing, brand kits, scheduling), not a single countable artifact type; per codebook rule 2, unmetered software access is per_seat_month. Matches the codebook's own Vendor L example (flat monthly price per user)."
+  cost_per_output_computable:
+    value: "yes"
+    source: https://www.adobe.com/express/pricing
+    evidence: "Unit is per_seat_month (see cost_per_output_unit), so the published entry-tier price directly is the cost per unit; no further figures or assumptions are needed. See computation_assumptions."
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      Subscription and Cancellation Terms (Creative Cloud for Individuals >
+      Month to month): "The number of generative credits reflected in the
+      subscription you have purchased expire each month. Each month, your
+      account will be reset at the same number of generative credits for the
+      duration of your subscription. Unused generative credits do not
+      rollover." Corroborated (agreement, same document class rank) by the
+      Generative Credits FAQ: "No, generative credits do not roll over to the
+      next month. Your generative credit balance will reset to your allocated
+      amount on a monthly basis."
+
+  # --- Domain 8: charging for failed generations ---
+  failed_generation_charge_policy:
+    value: unknown
+    source: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+    evidence: >
+      Not addressed in the Subscription and Cancellation Terms, the General
+      Terms of Use, or the Generative Credits FAQ. The FAQ states credits are
+      "consumed when using features powered by Firefly or our partner models
+      upon generation" but does not address failed/errored/empty-result
+      generations specifically. Confirmed via full in-page text search: no
+      occurrence of 'fail' anywhere on the Generative Credits FAQ page
+      (39,014 characters).
+
+  # --- Domain 9: auto-renewal ---
+  auto_renewal_default:
+    value: "on"
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "Subscription and Cancellation Terms (Creative Cloud for Individuals > Month to month): 'Your subscription will automatically renew each month without notice until you cancel. You authorize us to store your payment method(s) and to automatically charge your payment method(s) every month until you cancel.' Corroborated by the pricing-page footnote: 'Subscription automatically renews until you cancel.'"
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: https://www.adobe.com/express/pricing
+    evidence: "Stated on the pricing page itself (footnote to the plan card and trial CTA: 'Subscription automatically renews until you cancel') AND in the dedicated Subscription and Cancellation Terms (quoted above) — two document classes in agreement."
+  renewal_notice_commitment:
+    value: no_notice_stated
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: >
+      Subscription and Cancellation Terms: renewal at the existing rate is
+      explicitly "without notice" ("Your subscription will automatically
+      renew each month without notice until you cancel... We will
+      automatically charge you the then-current rate for your plan, plus
+      applicable taxes, every month upon renewal until you cancel"). A
+      separate, narrower commitment exists only for a RATE CHANGE ("We may
+      change your plan's rate each monthly renewal term, and we will notify
+      you of any rate change with the option to cancel") — that is notice of
+      a price increase, not advance notice of the renewal charge itself, so
+      it does not meet the advance_notice_stated bar; noted here for
+      completeness.
+
+  # --- Domain 10: refund and cancellation terms ---
+  refund_policy_exists:
+    value: "yes"
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "Subscription and Cancellation Terms: 'If you cancel within 14 days of your initial order, you'll be fully refunded. Should you cancel after 14 days, your payment is non-refundable, and your service will continue until the end of that month's billing period.'"
+  refund_window_days:
+    value: 14
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "'If you cancel within 14 days of your initial order, you'll be fully refunded.' (Creative Cloud for Individuals > Month to month section, which governs this entry tier — see sources[] note.)"
+  refund_conditions:
+    value: unconditional
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "Within the 14-day window, refund follows from cancellation alone — no usage threshold, stated reason, or approval step is attached ('If you cancel within 14 days of your initial order, you'll be fully refunded')."
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "'You can cancel your subscription anytime via your Adobe Account or by contacting Customer Support.' Self-serve via account settings is explicitly documented as available (contacting support is offered as an alternative, not the only route)."
+  refund_policy_location:
+    value: dedicated_refund_page
+    source: https://www.adobe.com/legal/subscription-terms.html
+    evidence: "The 14-day refund window and conditions appear only in the dedicated 'Adobe Subscription and Cancellation Terms' document. Confirmed absent from the General Terms of Use by full-text search ('refund' occurs once, in an unrelated Behance Talent Search clause; no occurrence of '14 day', '14-day', 'money back', or 'money-back'). Not stated on the pricing page."
+
+  # --- Domain 11: commercial-use rights ---
+  commercial_use_lowest_tier:
+    value: free
+    source: https://www.adobe.com/express/pricing
+    evidence: >
+      Pricing-page FAQ (official Adobe Express page): "Can customers make
+      commercial use of the images generated with AI tools powered by
+      Firefly? In general, you may use outputs from generative AI features
+      commercially. However, if Adobe designates in the product or elsewhere
+      that a beta version of a generative AI feature cannot be used
+      commercially, then the generated outputs from that beta feature are for
+      personal use only and cannot be used commercially." Not tier-gated (no
+      "paid plans only" language); the carve-out is for specific beta
+      features, not for the free plan generally. General Terms of Use is
+      silent on "commercial use" (searched, not found), so per codebook
+      Domain-11 authority order the pricing page is the operative source.
+  watermark_removal_tier:
+    value: unknown
+    source: https://www.adobe.com/express/pricing
+    evidence: "No document reviewed (pricing page feature grid, General Terms of Use, Subscription and Cancellation Terms, Generative Credits FAQ, Express Free-plan help page, Watermarks FAQ) states which tier(s) carry vendor watermarks or branding on outputs, or that none do. Same search as free_plan_watermark; see that variable's evidence."
+  output_ownership_statement:
+    value: user_owns
+    source: https://www.adobe.com/legal/terms.html
+    evidence: >
+      General Terms of Use, section 4.2 Ownership: "As between you and Adobe,
+      you (as a Business User or a Personal User, as applicable) retain all
+      rights and ownership of your Content. We do not claim any ownership
+      rights to your Content." Section 4.1 defines "Content" to include
+      material "you upload, import into, embed for use by, or CREATE USING
+      the Services and Software" — covering AI-generated outputs, not only
+      uploads. Section 4.3 describes only a limited operational license Adobe
+      needs back from the user (to host/display/share content), not a
+      retained ownership claim.
+
+  # --- Domain 12: undisclosed or unverifiable limits ---
+  usage_cap_quantified:
+    value: all_caps_quantified
+    source: https://www.adobe.com/express/pricing
+    evidence: >
+      Every limit the documents attribute to the entry paid tier (Acrobat
+      Express, Individual) carries a number: 250 generative credits per month
+      (rate); 100GB storage (standing); 30 days version history (standing);
+      3 accounts per social network (standing). The one "Unlimited" claim
+      found for this tier — "Unlimited Quick Actions" (vs. the free tier's
+      "10 PDF Quick Actions per month") — counts as quantified under rule 3
+      because no qualifying fair-use/discretionary clause was found anywhere
+      in the documents reviewed (see unquantified_limit_clause = absent).
+  unquantified_limit_clause:
+    value: absent
+    source: https://www.adobe.com/legal/terms.html
+    evidence: >
+      General Terms of Use and Subscription and Cancellation Terms both read
+      for this variable (full document read for the latter; comprehensive
+      keyword sweep of section headings and terms — fair use, reasonable use,
+      excessive use, throttle, abuse, rate limit, disproportionate, high
+      volume, discretion, suspend — for the former, 74,656 characters). No
+      discretionary volume/intensity-of-use clause found. The only
+      discretion/suspension language located is unrelated to usage volume:
+      termination for Terms violations (General Terms 11.2), discretionary
+      termination of free/trial/complimentary access "to prevent abuse"
+      (General Terms 3.7, about ending free access, not throttling a paid
+      plan's stated allowances), payment-failure suspension (Subscription
+      Terms), and content-moderation screening for illegal/abusive CONTENT
+      (General Terms 2.2, conduct not volume — excluded by rule 3). No
+      "acceptable use policy" distinct from these two documents was located.
+
+conflict_note: not_applicable
+
+computation_assumptions: >
+  first_charge_amount_usd: entry tier Acrobat Express (Individual), default
+  display state is monthly billing with no annual option ("No annual
+  commitment, billed monthly"), so first charge = published monthly figure =
+  $10.99; no annualization performed (codebook rule 2 applies only when the
+  default state is annual). cost_per_output_computable: cost_per_output_unit
+  = per_seat_month (unmetered per-seat software access, not a countable
+  artifact type — see credit_to_output_rate_published for why the product's
+  secondary generative-AI credit layer does not change this); the entry
+  tier's published monthly price already equals the cost per seat-month, so
+  cost_per_output_value_usd = 10.99 with no division required. Billing basis:
+  monthly (per_month_billed_monthly). Included allowance: N/A (unit is the
+  seat-month itself, not a consumable allowance).
+
+coder_note: >
+  Entry-tier selection (sampling-rules.md 7.2): eligible candidates were
+  "Acrobat Express" (Individual, US$10.99/mo, annual-equivalent $131.88) —
+  WINNER — and "Acrobat Express for Teams" (Businesses tab, US$11.99/mo per
+  license, single-seat per rule 4, "Annual subscription, billed monthly",
+  annual-equivalent $143.88) — LOSES, higher annual-equivalent. "Acrobat
+  Express for Enterprise" is excluded under eligibility rule 2
+  (sales-gated: "Contact Sales for more information"). Plans under the
+  Students and Educators tabs were not priced/read because eligibility rule 1
+  excludes them categorically (restricted to a named program) regardless of
+  price. "Adobe Express Free" ($0.00) is not a paid-tier candidate.
+
+  Product-boundary note for reproducibility: Adobe markets Express and
+  Firefly heavily intertwined. The Adobe Express pricing page's own feature
+  comparison table upsells "Adobe Firefly Pro" as a mentioned feature/perk,
+  and adobe.com/express/ site navigation ("Plans" / "Compare all plans",
+  href /express/pricing) sometimes surfaces an Adobe-Firefly-branded plans
+  comparison (Firefly Standard/Pro/Pro Plus/Premium) instead of the
+  Express-native comparison — see register_events. This record deliberately
+  scoped every coded value to the Express-branded plan cards only ("Adobe
+  Express Free" / "Acrobat Express" / "Acrobat Express for Teams" /
+  "Acrobat Express for Enterprise"), never to Firefly-branded plans, since
+  Adobe Firefly is a separate product_id already in this study's frame.
+
+  credit_to_output_rate_published is coded `partial` on a structural edge
+  case, argued in that variable's own evidence field: Express's principal
+  output is unmetered per-seat access (not any single creditable output
+  type), so under a literal reading of codebook rule 4 the principal output
+  can never carry a credit rate once cost_per_output_unit = per_seat_month,
+  even though Adobe in fact publishes a comprehensive, gap-free rate table
+  for every generative feature the credit system actually meters. Flagged
+  for adjudication in case the second coder reasons about this differently.
+
+  An "Adobe Generative AI Product Specific Terms" document is referenced by
+  Adobe's General Terms of Use (section 1.2) and located at
+  https://www.adobe.com/go/adobe-gen-ai-addl-terms — this link serves a PDF
+  file download rather than a browsable page, and per this study's hard
+  rule against downloading files it was not opened. Nothing coded in this
+  record relies on it; where it might have added detail beyond what the
+  General Terms of Use, Subscription and Cancellation Terms, and Generative
+  Credits FAQ already established (e.g. a more granular fair-use or
+  IP-indemnification clause), the affected variables are coded `unknown` or
+  `absent` on the sources actually opened, consistent with this study's rule
+  that an unreachable document yields `unknown`, not an inferred value.
+
+  No cookie-consent banner was ever rendered on any fresh load of
+  adobe.com/express/pricing in this session (5 total, across both the USD
+  and TRY states), so no cookie interaction was needed or available; all
+  reads reflect whatever Adobe's default (non-EU-gated, in this case)
+  consent state is.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 re-read 2026-08-10: attempted to re-confirm entry_tier_name, headline_price_usd,
+  headline_billing_basis and first_charge_amount_usd via 3 fresh live-browser loads (2 tabs,
+  one with the co=US&lang=en&locale=en-US&contentRegion=us params this record's own
+  default_display_state cites from outbound commerce links) plus a curl fetch of this record's
+  cited archive.org snapshot. All 3 fresh loads today rendered the TRY/three-card state ("Adobe
+  Express Free" TRY0.00, "Adobe Express Premium" TRY238.80/mo, "Adobe Firefly Pro" TRY478.80/mo)
+  -- NOT the coded USD/"Acrobat Express" state. This is NOT a newly-discovered final-day change:
+  it is the exact state this record's own register_events[0] already documents observing once
+  in five loads on 2026-08-06 (same names, same TRY figures) and deliberately excluded from
+  coding as a geography/currency variant. This re-read's 3-for-3 TRY result is consistent with
+  session/request-dependent variance in which state Adobe serves, matching what the original
+  coder already found (1-of-5 TRY, 4-of-5 USD), not evidence of a vendor-side change since
+  collection. The archive.org snapshot cited in this record remains exactly as limited as
+  already disclosed (shell markup only, "Adobe Express Premium" placeholder text, no
+  "Acrobat Express" or "10.99" -- confirmed by a fresh curl fetch). Verdict: NOT corrected;
+  this re-read could not reproduce the coded USD state fresh to serve as an independent third
+  representation of it, but the original record's own four-independent-loads/two-screenshots/
+  saved-local-text-copy evidence for that state stands undisturbed, and reproducing the
+  already-logged alternate state corroborates rather than undermines the original coder's
+  account. Provenance check (per coordinator's D-009 addendum): first_charge_amount_usd=10.99
+  is NOT a computed 12x figure -- this plan is per_month_billed_monthly with no annual option
+  ("No annual commitment, billed monthly" stated on the card itself), so first_charge equals
+  the directly-read monthly headline with zero arithmetic performed; computation_assumptions
+  already states this plainly. No provenance issue. Evidence saved to
+  adobe-express-sources/d009-reread-2026-08-10.md. Blindness maintained: no other product's
+  record was opened during this re-read.
+
+register_events:
+  - type: display_variant
+    variable_class: pricing
+    url: https://www.adobe.com/express/pricing
+    description: >
+      Geography/currency variant. The very first load of this URL in this
+      session (via the browser tool's initial navigation, prior to any other
+      timestamped action in this record) rendered in Turkish Lira with
+      "incl. KDV" (Turkish VAT) and Turkey-flavored plan naming: "Adobe
+      Express Free ₺0,00", "Adobe Express Premium ₺238,80/mo", and a third,
+      separately-priced card "Adobe Firefly Pro ₺478,80/mo". Screenshotted
+      but not archived to web.archive.org in that state (the archival
+      attempts made in this session post-date that specific load and, per
+      the pricing-page source note, a plain web.archive.org crawl does not
+      capture the script-injected price fragment in any state, so no public
+      snapshot of the TRY state exists; a screenshot is the only record).
+      Every subsequent load in this session (4 independent fresh loads,
+      screenshotted and/or text-captured) rendered in USD with plan names
+      "Adobe Express Free" / "Acrobat Express", carrying co=US&lang=en&
+      locale=en-US&contentRegion=us on outbound commerce links. The USD
+      state was used for all coded values (see default_display_state); the
+      TRY state was not used and is logged here per protocol 6.8 rule 3. In
+      both states the cheaper-of-two-paid-tiers ordering was the same
+      (Premium/Acrobat Express below Firefly Pro), so the entry-tier
+      selection itself would not have changed had the TRY state been coded
+      instead — only the currency and the tier's display name differ.
+    states_observed: 2
+    used_for_coding: "USD / Acrobat Express state"
+  - type: display_variant
+    variable_class: pricing
+    url: https://www.adobe.com/express/pricing
+    description: >
+      Product-framing variant. On one direct navigation to this URL, and
+      separately when following the Adobe Express home page's own "Plans >
+      Compare all plans" link (href /express/pricing), the browser instead
+      rendered an Adobe-Firefly-branded page ("Compare plans that include
+      generative AI | Adobe Firefly", breadcrumb Home/Adobe Creative
+      Cloud/Adobe Firefly) showing Firefly Standard/Pro/Pro Plus/Premium
+      plans rather than the Express-native "Adobe Express Free"/"Acrobat
+      Express" cards. On one occasion the same tab transitioned from the
+      Express-branded render to this Firefly-branded render several seconds
+      after initial load with no user interaction, consistent with a
+      client-side personalization/redirect script rather than a coder
+      action. Not used for coding — see coder_note's product-boundary note;
+      Adobe Firefly is a separate product_id in this study's frame and its
+      plans were not read as candidates for this record.
+    states_observed: 2
+    used_for_coding: "Express-branded state only; Firefly-branded state excluded as out of product scope"
+
+status: complete

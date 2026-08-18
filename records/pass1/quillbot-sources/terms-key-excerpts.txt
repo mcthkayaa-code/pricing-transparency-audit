@@ -1,0 +1,82 @@
+Two documents, both official, incorporated into one another. Both read via browser render
+(document.body.innerText); quillbot.com/terms is itself a client-rendered page like /premium.
+
+=== A. https://quillbot.com/terms ("Quillbot Terms of Service", supplements Learneo's terms) ===
+Accessed: 2026-08-10. Archived: https://web.archive.org/web/20260810111110/https://quillbot.com/terms
+
+Section 1 (License to the Quillbot Service):
+"Free Accounts. If you register for or use a free account, you may use the Quillbot Service only
+for your personal, non-commercial purposes.
+Premium Paid Service. If you subscribe to a Premium Paid Service, you may use the Quillbot Service
+only for your personal use or your internal business purposes."
+
+Section 3 (Quillbot's Paid Service):
+"IF YOU PURCHASE AN AUTOMATICALLY RENEWING SUBSCRIPTION (WHETHER ON A MONTH TO MONTH, QUARTERLY
+(4 MONTH), ANNUAL (12 MONTH), TWO YEAR, OR ANOTHER SUBSCRIPTION TERM OFFERED BY QUILLBOT) AND DO NOT
+CANCEL IT AS SPECIFIED BELOW, YOUR SUBSCRIPTION WILL AUTOMATICALLY RENEW FOR A TERM EQUAL IN LENGTH TO
+THE PREVIOUS SUBSCRIPTION PERIOD... AND YOU AUTHORIZE US TO AUTOMATICALLY CHARGE YOUR PAYMENT METHOD
+FOR THE APPLICABLE FEES UPON EACH RENEWAL."
+"You may be able to cancel, pause, or take other actions related to your subscription to a Paid
+Service at any time through the account settings page of your User Account... Please see here for
+additional information and guidance on how to cancel, pause, or manage your subscription."
+"These Terms do not override any mandatory local laws regarding your cancellation or refund rights.
+Please see here for additional information about refunds."
+NOTE: this document's own numbered sections run 1 License, 2 Your User Content, 3 Paid Service,
+4 Term and Termination, 5 Take-Down Requests, 6 Additional Terms and Policies, 7 Contacting Quillbot,
+8 Miscellaneous -- i.e. THIS document's own "Section 5" is Take-Down Requests, not refunds, even
+though the refund help-center article cites "Section 5" for the refund position and "Section X" for
+EEA/UK withdrawal. Recorded as a minor conflict/inconsistency in conflict_note; does not block coding
+since the operative refund text was read directly from the help-center article and from Learneo's
+general terms.
+
+Annexure 1 - Team Plan Terms:
+"Team Plan users may use the Quillbot Service for their personal or commercial purposes, including
+both internal and external business use."
+
+Annexure 3 - Region Specific Addendum, Mexico, clause 4:
+"Quillbot will notify you prior to the expiration of the applicable subscription term, so that you
+may expressly indicate whether you wish to renew." [Mexico-resident users only; no equivalent general/
+global commitment found elsewhere in either document.]
+
+Quebec, Canada, clause 1: fee-change notice (30 days), not a renewal-notice commitment.
+
+No general refund window, no output-ownership clause, and no watermark language appear in this
+document (it defers those to the Learneo Terms of Service and to the help center).
+
+=== B. https://www.learneo.com/legal/terms-of-service ("Learneo Terms of Service", incorporated by
+reference into A above; A states "Any capitalized terms... have the meaning given in the Learneo
+Terms of Service" and "Input and Output are part of User Content as defined in Section IV of the
+Learneo Terms of Service") ===
+Accessed: 2026-08-10. Archived: https://web.archive.org/web/20260810111129/https://www.learneo.com/legal/terms-of-service
+
+Section IV (Your Content):
+"You retain all ownership rights over your User Content. By uploading or submitting User Content to
+a Learneo Service, you hereby grant Learneo... a worldwide, non-exclusive, perpetual, royalty-free,
+irrevocable, sublicensable and transferable license to use, modify, aggregate, reproduce, distribute,
+prepare derivative works of, and otherwise fully exploit the User Content in connection with any
+Learneo Services..."
+
+Paid Services (general commerce section):
+"subscription fees for paid services are charged upfront and nonrefundable" [general rule; QuillBot's
+own EEA/UK 14-day right and law-required exception, read from the help center, sit on top of this].
+"SUBSCRIPTIONS TO PAID LEARNEO SERVICES MAY AUTOMATICALLY RENEW AT THE END OF EACH SUBSCRIPTION PERIOD
+FOR AN ADDITIONAL PERIOD OF THE SAME DURATION AT THE THEN-CURRENT RATE, UNLESS YOU CANCEL BEFORE THE
+RENEWAL DATE. YOU AUTHORIZE US TO AUTOMATICALLY CHARGE..." [corroborates auto-renewal-on, same as
+document A].
+
+Account deletion clause: "We do not offer refunds for any unused portion of a subscription after a
+User Account has been deleted."
+
+Usage-limits / fair-use clause (no section number visible in rendered text, located after the
+account-termination/dispute paragraph, before Section VIII Disclaimer):
+"Additionally, we may establish, modify, increase, or decrease reasonable usage limits and
+restrictions (such as throttling, queuing, or other similar measures) in order to maintain the
+stability, performance, security, and fair availability of the Learneo Services. Please review the
+Help Center for the applicable Learneo Services for additional details regarding any usage limits,
+restrictions, or other conditions that may apply to your use of the applicable Learneo Service."
+-- This is the discretionary, no-number-attached clause coded as unquantified_limit_clause = present,
+and it is also why Premium's several "Unlimited" feature claims are coded not-quantified under
+usage_cap_quantified rule 3 (an unlimited claim qualified elsewhere by a fair-use/throttling clause is
+not treated as quantified) -- directly analogous to the codebook's own Vendor U worked example.
+
+No "watermark" string appears anywhere in this document (checked programmatically).

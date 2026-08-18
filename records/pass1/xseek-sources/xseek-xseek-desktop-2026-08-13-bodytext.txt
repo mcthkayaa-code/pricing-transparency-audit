@@ -1,0 +1,155 @@
+How it works
+Pricing
+About
+Contact
+Blog
+FR
+Sign in
+Try for free
+→
+xSeek Desktop · macOS · Windows
+AI content generation,
+on your desktop.
+xSeek Desktop connects Claude Code to your visibility data. Research, write, optimize, and publish without switching tools.
+Download for macOS
+Apple Silicon · M1/M2/M3/M4
+↓
+macOS (Intel)
+Windows
+v
+0.5.4
+·
+Latest build
+Signed & notarized
+Free with any xSeek plan
+xSeek Desktop · ~/projects/acme
+Workspace
+Overview
+Content Studio
+Visibility
+Prompts
+Brand voice
+Drafts
+PM tools compare
+Linear vs Jira
+Why we built…
+›
+/generate "best PM tool for 15-person team"
+xseek › content-studio › brief accepted
+✓
+Loaded brand voice
+acme.voice
+✓
+Fetched visibility gaps
+3 prompts
+✓
+Retrieved competitor posts
+7 sources
+✓
+Drafting structure
+· 5 sections
+Draft ready.
+1,240 words. Fact-check passed.
+Preview in Studio →
+What you get
+Six reasons this isn't
+just another CLI.
+Claude Code built-in
+Claude Code runs inside the app with your xSeek data already connected — no tokens to juggle, no environment to configure.
+Content Studio sync
+Generate articles in the desktop and push them directly to your Content Studio. Draft, review, publish — same place.
+Brand voice
+aware.
+Uses your brand voice, audiences, and knowledge base automatically. No prompt engineering for tone — it's already there.
+Real visibility data
+Articles built from actual AI visibility gaps — not guesswork. Every brief is grounded in prompts you're losing.
+Fact-check built-in
+Verify claims against official sources before publishing. Every number and citation is checked against its origin.
+Review & comment
+Leave comments, request changes, and approve content in one place. Inline threads attach to paragraphs, not emails.
+How it works
+Install, connect,
+start shipping.
+Five minutes from download to your first fact-checked draft. Your existing xSeek account unlocks everything automatically.
+0
+1
+Download & install
+One click. Available for macOS (Apple Silicon & Intel) and Windows. Signed and notarized so it opens without gatekeeper friction.
+0
+2
+Connect your account
+Log in with your xSeek API key or SSO. Brand voice, audiences, tracked prompts, and visibility history load automatically.
+0
+3
+Start generating
+Use slash commands —
+/generate
+,
+/research
+,
+/optimize
+,
+/publish
+— to find opportunities, draft articles, and push to Studio.
+Prerequisites
+What you'll need before
+you start.
+Git installed on your machine
+Used for version control on generated articles. Any version ≥ 2.30.
+Required
+An xSeek account with an active plan
+Starter, Growth, or Scale. Desktop is free with any tier.
+Required
+Claude Code
+Bundled with the app. Nothing to install separately — runs on Anthropic's hosted endpoint with your xSeek key.
+Included
+Download
+Start generating AI-optimized content
+from your desktop.
+Works with your existing xSeek account. Free with any plan.
+Download for macOS
+Apple Silicon · M1/M2/M3/M4
+↓
+macOS (Intel)
+Windows
+Book a call
+→
+Product
+AI Visibility Tracking
+Generative Engine Optimization
+Answer Engine Optimization
+ChatGPT SEO
+AI Search Optimization
+AI Content Optimization
+AI Backlinks
+For Agencies
+How it works
+Pricing
+Free Tools
+Agent-Ready Scan
+AI Robots.txt Checker
+AI LLMs.txt Generator
+xSeek Desktop
+All Tools
+Resources
+AI Search Visibility Strategies
+SEO vs AEO Guide
+LLMs.txt Explained
+AI Source Radar
+All Articles
+Company
+About
+Blog
+Documentation
+Contact
+Privacy Policy
+Terms of Service
+© 2026 xseek. All rights reserved.
+xSeek Reviews
+xSeek Reviews
+xSeek Reviews
+Featured on
+tool
+chase
+🇨🇦
+Proudly Canadian

@@ -1,0 +1,25 @@
+URL: https://www.aragon.ai/free-headshot-generator
+Accessed: 2026-08-14
+Method: rendered browser read (get_page_text)
+
+=== Key content ===
+Headline: "Free AI Headshot Generator: Studio Quality from Selfies — Generate FREE* professional headshots for LinkedIn, resumes, and team profiles in about 30 minutes. Free with every Aragon account."
+
+Section "Free and Hassle-Free":
+"Skip the struggle of having to schedule professional photoshoots that cost a fortune. Get your headshots completely free with no sign-ups or credit cards required."
+
+FAQ - What is the difference between the free and paid AI headshot generator?
+"The free version delivers a real, usable headshot generated from your selfies in about 30 minutes. The paid version delivers higher resolution, more outfits and backgrounds (20+ vs limited free options), up to 100 photos per generation, and priority processing. Both produce professional results, so pick the one that fits your needs."
+[free tier's own resolution/outfit/background counts are NOT given as numbers here — only paid's "20+" is quantified; free is described only as "limited" — unquantified]
+
+FAQ - Do I have to enter my credit card information to use this free headshot generator?
+"No. Free generation is included with every Aragon account. You can use the free tier without ever entering payment information."
+
+FAQ - Who owns my AI photos?
+"Your AI-generated photos are yours to use however you'd like... For full details on usage rights, see our Terms and Conditions."
+
+FAQ - Is the free AI headshot generator really free?
+"Yes. Free credits come with every Aragon account. Free generations are limited per day and may go on a waitlist during high demand. For instant results in higher resolution, paid plans are available."
+
+No mention anywhere on this page of watermarks on free-tier output (searched full extracted text, term does not appear).
+No stated expiry/end date for the free tier itself (framed as a standing feature of "every Aragon account", not a time-limited promotion).

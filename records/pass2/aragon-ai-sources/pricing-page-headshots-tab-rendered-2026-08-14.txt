@@ -1,0 +1,60 @@
+URL: https://www.aragon.ai/pricing
+Accessed: 2026-08-14
+Method: rendered browser read (Claude_Browser), cookies declined (Reject All), default load state, "Headshots" tab + "Individual Pricing" sub-tab confirmed active by DOM/screenshot (white bg = selected) before any interaction, on two separate fresh loads.
+Second-representation check: DOM text-node inspection (javascript_tool) confirmed each price is a single unsplit text node: <span>$18</span>, <span>$35</span> (struck-through), <span>$25</span>, <span>$45</span>, <span>$40</span>, <span>$75</span> — no superscript-cents structure.
+
+=== Visible text, main content, Headshots > Individual Pricing (default) ===
+Headshots
+Subscription
+20% off all packages
+limited time only!
+Professional-grade photoshoots for a fraction of the cost
+
+Individual Pricing
+Teams Pricing
+Basic
+$18  (struck through: $35)
+40 headshots
+45 mins generation time
+Choice of 1 attire
+Choice of 1 background
+Standard resolution
+Select
+
+Standard
+83% pick this
+$25  (struck through: $45)
+60 headshots
+30 mins generation time
+Choice of 2 attires
+Choice of 2 backgrounds
+Standard resolution
+Select
+
+Executive
+Best Value
+$40  (struck through: $75)
+100 headshots
+15 mins generation time
+All attires included
+All backgrounds included
+Enhanced image resolution
+Select
+
+--- FAQ (same page, applies to both tabs) ---
+What resolution are your pictures?
+"Our Basic / Standard package photos are 896 x 1088 pixels, which meet or exceed the needs of most applications. For instance, LinkedIn recommends a 400 x 400 pixel image. For our Executive package, the resolution is upgraded to 1792 x 2176 pixels, perfect for high-quality prints."
+
+What is your refund policy?
+"If you're unhappy with your photos for any reason, we're more than happy to offer a full refund, given that you haven't downloaded or aren't planning on downloading your photos. If you have, please reach out to customer support and we can assist on a case-by-case basis. You can view the full refund policy here."
+
+Who owns my AI photos?
+"Your AI-generated photos are yours to use however you'd like, including social media, professional profiles, print, and personal use. For full details on usage rights, see our Terms and Conditions."
+
+I love your product! How can I spread the word?
+"...as well as an affiliate program where you can earn a 30% commission on each sale..."
+
+No mention anywhere on this tab of: mandatory add-on fee, watermark (for Headshots one-time packages specifically), free trial of a paid tier.
+
+--- Currency selector check ---
+Globe icon top-right opens a LANGUAGE picker only (English/Deutsch/Français/Português), not a currency picker. No currency selector found. ToS confirms "all fees are in U.S. Dollars" (see terms source file).

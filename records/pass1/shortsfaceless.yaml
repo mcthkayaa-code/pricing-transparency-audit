@@ -1,0 +1,156 @@
+product_id: shortsfaceless
+product_name: ShortsFaceless
+category: Faceless video
+product_status: active
+paid_submission: "no"
+entry_tier_name: Essential
+coder_pass: 1
+coder_role: primary
+collection_date: "2026-08-12"
+recheck_date: not_applicable
+primary_source_url: https://www.shortsfaceless.com/
+archive_url: "local_copy_only — see shortsfaceless-sources/homepage-pricing-rendered.txt; web.archive.org/save attempted 2x, both resolved to a pre-existing snapshot (20260607171531) whose captured DOM contains no price text (client-side hydration exception)"
+archive_status: local_copy_only
+default_display_state: "USD, plain '$' prices ($19/mo Essential, $29/mo Professional); no monthly/annual toggle in DOM (single billing period only); no currency selector or country picker; no consent banner encountered on this read; read from Turkey network location."
+
+sources:
+  - { url: "https://www.shortsfaceless.com/", kind: pricing, accessed: "2026-08-12", archive: local_copy_only, note: "Homepage carries both the #pricing plan grid and the FAQ (ownership, commercial use, regen-cost). 2 archive.org save attempts both returned the same stale non-rendering snapshot https://web.archive.org/web/20260607171531/https://www.shortsfaceless.com/ (no price text in captured DOM). Local copy: shortsfaceless-sources/homepage-pricing-rendered.txt." }
+  - { url: "https://www.shortsfaceless.com/deal", kind: pricing, accessed: "2026-08-12", archive: local_copy_only, note: "Separate promotional landing page ('Special deal' footer link), not the standing pricing page. $9-for-first-month offer against Essential's $19; only place any refund statement appears. 2 archive.org save attempts produced fresh snapshots (20260812085129, 20260812142246) that both throw a client-side exception with no offer text captured. Local copy: shortsfaceless-sources/deal-page-rendered.txt." }
+  - { url: "https://www.shortsfaceless.com/tos", kind: tos, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812084637/https://www.shortsfaceless.com/tos", note: "Full terms captured cleanly (static text page). Sole source for the credit definition; silent on renewal/cancellation/refund/watermark/fair-use per full-text keyword check. Local copy: shortsfaceless-sources/tos-rendered.txt." }
+  - { url: "https://www.shortsfaceless.com/privacy-policy", kind: other, accessed: "2026-08-12", archive: "https://web.archive.org/web/20260812142859/https://www.shortsfaceless.com/privacy-policy", note: "Checked as a possible location for billing terms; standard privacy content only, no billing/renewal/refund/credit language. No coded value is sourced from this page. Local copy: shortsfaceless-sources/privacy-policy-check.txt." }
+
+variables:
+  headline_price_usd: { value: "19.00", source: "https://www.shortsfaceless.com/", evidence: "Essential plan card: '$19 /month' (leaf DOM text node confirmed '$19', not a split superscript layout; second representation check passed)" }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://www.shortsfaceless.com/", evidence: "'$19 /month' with no annual toggle in the DOM; ToS separately confirms a monthly cycle ('credits per month')" }
+  first_charge_amount_usd: { value: "19.00", source: "https://www.shortsfaceless.com/", evidence: "Default display state is monthly-only (no annual toggle, no annual option); first charge read directly as the headline figure, no multiplication performed" }
+  mandatory_addon_present: { value: "no", source: "https://www.shortsfaceless.com/", evidence: "FAQ: 'What does it cost to regenerate images, voiceovers, or edit the script? Nothing. Plain and simple.'" }
+  annual_condition_disclosure: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "No annual billing option exists on this page; headline figure does not depend on annual prepayment" }
+  annual_default_toggle: { value: no_toggle, source: "https://www.shortsfaceless.com/", evidence: "JS DOM scan found zero checkbox/role=switch/aria-checked elements on the page; single billing period only" }
+  free_plan_exists: { value: "no", source: "https://www.shortsfaceless.com/", evidence: "Pricing section ('Simple & transparent pricing') shows exactly two cards, Essential and Professional, both paid; no free card; page-wide regex for /\\bfree\\b/i returns no match" }
+  free_plan_cap_documented: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "No free plan (see free_plan_exists)" }
+  free_plan_cap_value: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "No free plan" }
+  free_plan_watermark: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "No free plan" }
+  free_plan_duration: { value: not_applicable, source: "https://www.shortsfaceless.com/", evidence: "No free plan" }
+  trial_exists: { value: "no", source: "https://www.shortsfaceless.com/tos", evidence: "Word 'trial' returns zero matches across homepage, /deal, ToS, and Privacy Policy; both plan cards go straight to 'Subscribe'" }
+  trial_card_required: { value: not_applicable, source: "https://www.shortsfaceless.com/tos", evidence: "No trial exists" }
+  trial_length_days: { value: not_applicable, source: "https://www.shortsfaceless.com/tos", evidence: "No trial exists" }
+  trial_auto_converts: { value: not_applicable, source: "https://www.shortsfaceless.com/tos", evidence: "No trial exists" }
+  credit_system_present: { value: "yes", source: "https://www.shortsfaceless.com/tos", evidence: "'Upon purchasing a package, users receive a number of credits per month, where each credit allows for the generation of one video.' — see coder_note for the rule-1-vs-rule-2 judgment call" }
+  credit_unit_defined: { value: "yes", source: "https://www.shortsfaceless.com/tos", evidence: "'each credit allows for the generation of one video'" }
+  credit_to_output_rate_published: { value: "yes", source: "https://www.shortsfaceless.com/tos", evidence: "Rate for the principal output (video) is published and unambiguous: 1 credit = 1 video" }
+  credit_rate_location: { value: terms, source: "https://www.shortsfaceless.com/tos", evidence: "The word 'credit' appears only in the ToS Services Description; zero occurrences on the homepage/pricing page or /deal" }
+  cost_per_output_unit: { value: other, source: "https://www.shortsfaceless.com/", evidence: "Principal output is a discrete generated video, not billed by duration; no listed unit (per_video_minute etc.) fits — see coder_note" }
+  cost_per_output_computable: { value: "yes", source: "https://www.shortsfaceless.com/", evidence: "Entry tier price and monthly video allowance are both published on the default pricing page; conversion rate (1 credit=1 video) published in ToS; see computation_assumptions" }
+  computation_assumptions: { value: "Essential entry tier: $19/mo, pricing page default state (monthly-only, no toggle). Allowance 30 videos/mo (=30 credits/mo per ToS, 1 credit=1 video). Same period both sides, no conversion needed. 19/30=0.633, approx $0.63/video (unit coded 'other').", source: "https://www.shortsfaceless.com/", evidence: "Computed from headline_price_usd and the pricing card's '30 videos' allowance, per codebook 7 rule 3" }
+  credit_rollover_policy: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "Full-text ToS keyword check: 'rollover'/'roll over'/'unused'/'expire'/'reset' all zero matches" }
+  failed_generation_charge_policy: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "Full-text ToS keyword check: 'fail'/'error' zero matches" }
+  auto_renewal_default: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "Full-text ToS keyword check: 'renew'/'recurring'/'automatically'/'subscription' all zero matches (the only 'subscription' hit anywhere is an unrelated affiliate-commission carve-out on the homepage)" }
+  auto_renewal_disclosure_location: { value: absent, source: "https://www.shortsfaceless.com/tos", evidence: "All document classes read (pricing page, ToS, privacy policy, deal page); none states a renewal position" }
+  renewal_notice_commitment: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "No advance-notice statement found in any document read" }
+  refund_policy_exists: { value: "yes", source: "https://www.shortsfaceless.com/deal", evidence: "'100% money-back guarantee.' — the only refund-adjacent statement in any official document; ToS and homepage are both silent (see coder_note on scope)" }
+  refund_window_days: { value: unknown, source: "https://www.shortsfaceless.com/deal", evidence: "'100% money-back guarantee' carries no stated day-count window anywhere" }
+  refund_conditions: { value: unconditional, source: "https://www.shortsfaceless.com/deal", evidence: "'100% money-back guarantee.' — no usage threshold, stated reason, or approval step is mentioned; see coder_note on evidentiary thinness" }
+  cancellation_self_serve: { value: unknown, source: "https://www.shortsfaceless.com/tos", evidence: "No document (ToS, pricing page, deal page, privacy policy) describes a cancellation route of any kind" }
+  refund_policy_location: { value: pricing_page, source: "https://www.shortsfaceless.com/deal", evidence: "Guarantee appears on the /deal purchase landing page, not in ToS, a dedicated refund page, or a help center (none exists); see coder_note on why 'pricing_page' is the closest available value" }
+  commercial_use_lowest_tier: { value: lowest_paid, source: "https://www.shortsfaceless.com/", evidence: "FAQ: 'Who maintains ownership of the videos I generate? You do. ... You can use it for whatever you want, including for commercial purposes.' No free tier exists; both paid tiers list identical 'All features'" }
+  watermark_removal_tier: { value: no_watermark, source: "https://www.shortsfaceless.com/", evidence: "'No watermark' is listed as an included feature on both published tiers (Essential and Professional), the entirety of the offering" }
+  output_ownership_statement: { value: user_owns, source: "https://www.shortsfaceless.com/", evidence: "FAQ: 'You do. Once you generate a video, you own it. You can use it for whatever you want, including for commercial purposes.' ToS addresses only input-content ownership + processing license and is silent on output specifically — not a contradiction, see coder_note" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://www.shortsfaceless.com/", evidence: "'Generate up to 30 videos' (number+dimension+period, monthly rate); ToS: outputs 'deleted from our systems' after '7 days' (number+dimension standing limit)" }
+  unquantified_limit_clause: { value: absent, source: "https://www.shortsfaceless.com/tos", evidence: "ToS read in full end to end; zero matches for 'fair use'/'excessive'/'throttl'/'abuse'/reasonable-use language of any kind" }
+
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2): Two standing, generally-available,
+  no-sales-contact, single-seat candidates found on the default pricing page.
+  - Essential: $19/mo x 12 = $228.00 annual-equivalent -> SELECTED (lowest).
+  - Professional: $29/mo x 12 = $348.00 annual-equivalent, 60 videos/mo vs 30, otherwise
+    identical feature list -> LOST (higher annual-equivalent).
+  - $9-for-first-month offer at /deal: EXCLUDED from candidacy under 7.2 eligibility rule 3
+    ("a standing plan rather than a limited-time promotional plan") -- the page itself calls
+    it "special deal" / "50% OFF FIRST MONTH" / "Get this special deal for the first month."
+    Not used for headline_price_usd or first_charge_amount_usd.
+
+  A-012: shortsfaceless sells a paid, non-zero, time-limited intro price ($9 for the first
+  month against a standard $19/mo) at shortsfaceless.com/deal. No document anywhere states
+  what happens after the first month (no stated auto-conversion to $19/mo, no stated
+  one-time/non-recurring framing). Flagged per the open adjudication question; trial_exists
+  coded "no" per the frozen codebook's free-trial-only definition (this offer is paid, not
+  free), consistent with the rule that trial_card_required's absence-is-unknown clause bars
+  inferring anything from the existence of a charge.
+
+  CREDIT_SYSTEM_PRESENT JUDGMENT CALL: the pricing page states the entry-tier allowance
+  directly in output units ("Generate up to 30 videos", never using the word "credit"
+  anywhere on that page), which reads like codebook rule 1 ("not a credit system"). But the
+  ToS's Services Description independently and explicitly defines the underlying mechanism
+  as credits ("users receive a number of credits per month, where each credit allows for the
+  generation of one video") -- codebook rule 2's intermediate-currency case, and textually
+  identical in structure to the credit_unit_defined worked example (Vendor J). Coded
+  credit_system_present=yes / credit_unit_defined=yes / credit_to_output_rate_published=yes
+  from the ToS, all at a 1:1 conversion ratio. This is not a conflict between the two pages
+  (the pricing page never denies a credit system, it simply doesn't use the term) so no
+  conflicting value or conflict_note entry was coded; treated as the higher-detail ToS
+  elaborating on what the pricing page presents in simplified form.
+
+  COST_PER_OUTPUT_UNIT: none of the codebook's enumerated units (per_video_minute, per_image,
+  per_1k_words, per_audio_minute, per_page, per_headshot, per_document, per_presentation,
+  per_seat_month, per_api_call) fits a discrete short-form video billed by count rather than
+  duration. Coded "other"; unit is "per video" (one discrete AI-generated short video, no
+  stated duration/resolution basis for the credit charge).
+
+  OUTPUT_OWNERSHIP_STATEMENT nuance: ToS "Ownership and Rights" clause covers INPUT content
+  ownership plus the processing license granted to Shorts Faceless; it does not separately
+  address ownership of the generated OUTPUT video. Only the homepage FAQ speaks to output
+  ownership directly ("Once you generate a video, you own it"). Read as silence-on-one-side
+  rather than a genuine two-source disagreement, so coded user_owns from the FAQ rather than
+  conflicting; conflict_note left empty since the ToS does not state an incompatible position,
+  it simply does not reach the question.
+
+  REFUND evidence is thin and single-sourced: the only refund statement in any official
+  document is the four-word "100% money-back guarantee." on the /deal promotional landing
+  page, directly under that page's own Buy Now button. ToS, homepage, and Privacy Policy are
+  completely silent on refunds (zero keyword hits, full-text checked). Coded
+  refund_policy_exists=yes and refund_conditions=unconditional from that line since it is a
+  determinate (if terse) statement with no attached condition, but its scope -- whether it
+  covers the standard $19/$29 subscriptions or only the discounted first-month purchase -- is
+  not stated. refund_policy_location coded pricing_page as the closest available value in the
+  codebook's list; the true location is the /deal offer page specifically, not the standing
+  #pricing section on the homepage. An adjudicator may reasonably prefer unknown on
+  refund_conditions and/or a different refund_policy_location reading given how thin this
+  evidence is; flagged here for that review.
+
+  WATERMARK_REMOVAL_TIER: "No watermark" is listed as an included feature on both Essential
+  and Professional, i.e. on 100% of the published paid offering, with no free tier to compare
+  against. Coded no_watermark (no tier, among those that exist, ever applies a watermark)
+  rather than lowest_paid.
+
+  SECOND-REPRESENTATION / MAGNITUDE CHECK (binding rule): $19 and $29 were confirmed as plain
+  leaf-node text via JS DOM query (document.querySelectorAll leaf elements matching /\$\s*\d/),
+  ruling out a superscript-cents split misread. Magnitude sanity check: entry tier $19/mo is
+  in-range for the category, first charge ($19.00) equals headline with basis ratio 1x (no
+  annual-multiplication error possible since no annual option exists). $9 first-month figure
+  on /deal cross-checked against the struck-through "$19" shown on the same page, confirming
+  both prices refer to the same Essential tier.
+
+  CURRENCY CHECK (D-003): prices render as plain "$" figures; the /deal page explicitly labels
+  the amount "$9 / USD" (separate text node). This is the vendor's own currency disclosure
+  (protocol currency-check arm 1) confirming USD is what a reader in Turkey was served, not a
+  localization artifact requiring non_usd or unknown. No currency selector or country picker
+  exists on the site.
+
+  ARCHIVAL: web.archive.org/save succeeded for /tos and /privacy-policy (static text pages)
+  but both attempts on the homepage and both attempts on /deal returned Wayback snapshots that
+  throw a client-side hydration exception and contain no price/offer text in the captured DOM
+  (verified programmatically, not just visually) -- consistent with deviation D-005's warning
+  that JS-rendered pricing pages commonly archive empty. Local copies with headers (URL, date,
+  method) saved under shortsfaceless-sources/ for both per protocol 6.4; archive_status coded
+  local_copy_only for those two sources.
+
+  No other product's record was opened at any point, before or during this coding pass, for
+  any reason (values, formatting, or example). No file under site/content/reviews/ and no
+  aitoolspolice.com URL was opened. Only the files listed as permitted in the agent
+  instructions were read: this agent definition, protocol-v1.md, codebook-v1.md,
+  sampling-rules.md, record-template.yaml, the frame CSV, and this product's own sources.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: ""
+register_events: []
+status: complete

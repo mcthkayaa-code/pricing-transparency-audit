@@ -1,0 +1,29 @@
+URL: https://www.jobscan.co/auto-apply
+Accessed: 2026-08-09
+Method: RENDERED READ (mcp__Claude_Browser javascript_tool, document.body.innerText after script
+execution), corroborated by an earlier WebFetch pass on the same URL (consistent content).
+Network note: Turkey-egress network; page rendered in English with USD figures, no localization.
+Archive attempt: https://web.archive.org/save/https://www.jobscan.co/auto-apply -- attempt 1 HTTP
+520, attempt 2 HTTP 302 (redirect to a created snapshot). Availability-API confirmation query was
+itself rate-limited (HTTP 429) after other archive.org calls this session, so the resulting
+snapshot's content was not re-verified; given this domain's Cloudflare protection produced an
+empty/shell-only capture for the pricing page under the same conditions, this file is kept as the
+evidentiary local copy of record regardless (archive_status = local_copy_only).
+
+--- RELEVANT EXCERPT (full page innerText was captured in-session; credit-system section below) ---
+
+How much does Auto Apply cost?
+Auto Apply uses a simple credit-based system. Premium users get 2 free Auto Apply credits, and
+their balance is topped up to 2 credits each month.
+
+Need more applications? Additional credits can be purchased at any time:
+5 credits $8.50 ($1.70/credit)
+10 credits $15.00 ($1.50/credit)
+25 credits $35.00 ($1.40/credit)
+One credit is used for each job you choose to Auto Apply to. You decide which jobs to start Auto
+Apply on, giving you full control over how your credits are used.
+
+Footer tagline: "Credit-based, no subscription" / "You approve every application" / "Pay only for
+what you submit"
+
+No sentence anywhere on the page addresses rollover or expiry of unused credits.

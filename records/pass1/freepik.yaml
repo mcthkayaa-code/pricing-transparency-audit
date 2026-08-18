@@ -1,0 +1,554 @@
+product_id: freepik
+product_name: Freepik
+category: AI image generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Premium
+coder_pass: 1
+coder_role: primary
+collection_date: "2026-08-07"
+recheck_date: not_applicable
+default_display_state: >
+  Individual plan type selected (default radio, vs Teams); Annual billing preselected
+  (control labelled "Switch to monthly billing", meaning Annual is the active state);
+  currency rendered TRY (Turkish lira) with no currency/region selector found anywhere
+  in the DOM or footer; non-essential cookies declined ("Tumunu Reddet") before reading.
+  Verified on two separate fresh loads of https://www.magnific.com/pricing that plan
+  prices (450/1,125/7,275 TRY) and the Annual default were identical both times.
+primary_source_url: https://www.magnific.com/pricing
+archive_url: https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing
+archive_status: archived
+source_urls: https://www.magnific.com/pricing | https://www.freepik.com/pricing | https://www.freepik.com | https://www.magnific.com/legal/terms-of-use | https://www.magnific.com/legal/acceptable-use-policy | https://www.magnific.com/ai/docs/subscriptions-and-refunds | https://www.magnific.com/ai/docs/plans-and-pricing | https://www.magnific.com/ai/image-generator
+
+sources:
+  - url: https://www.magnific.com/pricing
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing
+    archive_status: archived
+    document_class: pricing_page
+    note: >
+      Primary pricing page. Also reached by following https://www.freepik.com/pricing,
+      which 301-redirects here.
+  - url: https://www.freepik.com/pricing
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807074039/https://www.magnific.com/pricing
+    archive_status: archived
+    document_class: pricing_page
+    note: >
+      Frame's vendor_home_url + /pricing. 301-redirects to magnific.com/pricing;
+      archive.org captured the post-redirect page (identical content). Evidences the
+      rebrand documented in coder_note.
+  - url: https://www.freepik.com
+    access_date: "2026-08-07"
+    archive_url: not_applicable
+    archive_status: archive_failed
+    document_class: other_official
+    note: >
+      Frame's vendor_home_url (root). Also 301-redirects to magnific.com, banner reads
+      "Freepik is now Magnific". Archival to web.archive.org failed twice (HTTP 520);
+      not resubmitted a third time because the /pricing redirect above (same rebrand,
+      archived successfully) already evidences this finding. No coded value taken from
+      this page beyond the redirect observation itself.
+  - url: https://www.magnific.com/legal/terms-of-use
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807072126/https://www.magnific.com/legal/terms-of-use
+    archive_status: archived
+    document_class: terms
+    note: >
+      Combined legal hub at one URL (anchored sections): general Terms of Use, Magnific
+      Online Editors terms, API Services terms, "AI Products Terms and Conditions"
+      (governs AI generation: Output ownership sec.7, prohibited uses, credit mechanics),
+      and Business Subscription terms. Read in full.
+  - url: https://www.magnific.com/legal/acceptable-use-policy
+    access_date: "2026-08-07"
+    archive_url: "local_copy:records/pass1/freepik-sources/acceptable-use-policy-2026-08-07.txt"
+    archive_status: local_copy_only
+    document_class: terms
+    note: >
+      web.archive.org/save returned HTTP 520 on three separate attempts. Local copy
+      saved at records/pass1/freepik-sources/acceptable-use-policy-2026-08-07.txt
+      (full page text). Read in full per the unquantified_limit_clause rule.
+  - url: https://www.magnific.com/ai/docs/subscriptions-and-refunds
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807073928/https://www.magnific.com/ai/docs/subscriptions-and-refunds
+    archive_status: archived
+    document_class: docs_help_center
+    note: "Dedicated refund/cancellation/renewal documentation page."
+  - url: https://www.magnific.com/ai/docs/plans-and-pricing
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807073948/https://www.magnific.com/ai/docs/plans-and-pricing
+    archive_status: archived
+    document_class: docs_help_center
+    note: "Free plan and credits documentation page."
+  - url: https://www.magnific.com/ai/image-generator
+    access_date: "2026-08-07"
+    archive_url: https://web.archive.org/web/20260807074008/https://www.magnific.com/ai/image-generator
+    archive_status: archived
+    document_class: other_official
+    note: >
+      AI Image Generator product/marketing page. Source of the commercial-use
+      conflict logged in conflict_note.
+  - url: https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing
+    access_date: "2026-08-10"
+    archive_url: https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing
+    archive_status: archived
+    document_class: pricing_page
+    note: >
+      D-007 re-check ONLY (Arm 2). This is the SAME URL already listed above as
+      this record's archive_url for the live magnific.com/pricing read -- it was
+      archived successfully by the original coder but never opened/read by them.
+      Opened and read in full 2026-08-10 (raw HTTP fetch after the browser tool
+      hung twice on this URL): a genuine, content-rich capture (808,514 bytes raw,
+      9,047 chars of stripped text) showing Premium=$20/$14.50/mo, Premium+=
+      $45/$33.75/mo, Pro=$280/$210/mo, all "Billed annually" -- now the coded
+      source for headline_price_usd and first_charge_amount_usd. See
+      freepik-sources/d007-currency-recheck-2026-08-10.txt and
+      freepik-sources/archive-20260807070007-raw-2026-08-10.html.
+
+variables:
+  headline_price_usd:
+    value: 14.50
+    source: https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing
+    evidence: >
+      CHANGED under D-007 re-check (2026-08-10) -- see coder_note and
+      freepik-sources/d007-currency-recheck-2026-08-10.txt for the full
+      arm-by-arm log. Live re-read 2026-08-10 confirms the Premium card still
+      shows "TRY 675" struck through / "TRY 450 /month" bold on this network,
+      and Arm 1 of the amended currency rule again found no selector, no
+      working currency URL parameter, and no explicit currency-offering
+      statement in the terms of use or the subscriptions-and-refunds docs
+      (only indirect EUR-denominated liability figures). Arm 2 -- this
+      record's OWN previously-cited archive_url,
+      https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing
+      (a Save-Page-Now capture, fetched from archive.org's own US-based
+      infrastructure independent of the submitter's network; archived
+      successfully but never actually opened by the original coder) -- was
+      read in full for this re-check (808,514-byte raw fetch after the
+      browser tool hung twice on this URL; 9,047 characters of real page
+      text once tags/scripts are stripped, not a pre-hydration shell) and
+      shows: "Premium For individuals exploring AI tools and stock content
+      $20 $14.50 /month Billed annually Includes 240K credits/year..." --
+      the identical tier name, description, "Billed annually" state, and
+      240K-credits/year allowance already coded here, with the same
+      struck-through/active price pattern (TRY 675/450) now in USD
+      ($20/$14.50). Confirmed in a second representation: raw HTML shows
+      "$14" and ".50" as two adjacent but unambiguous spans (the cents span
+      already carries the decimal point, unlike the dangerous
+      superscript-split pattern). Cross-tier check: Premium+ ($45/$33.75,
+      600K credits/yr) and Pro ($280/$210) both also appear, corroborating
+      across three tiers. Per the amended rule, a USD figure a US-crawled
+      reader is served is coded as the published price; TRY is logged as
+      the locally-served display_variant (see register_events, new entry).
+      Verbatim USD figure: $14.50/month (Premium, billed annually).
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: https://www.magnific.com/pricing
+    evidence: "Premium card: 'TRY 450 /month' with 'billed annually' printed directly beneath."
+  first_charge_amount_usd:
+    value: 174.00
+    source: https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing
+    evidence: >
+      CHANGED under D-007 re-check (2026-08-10) -- same basis as
+      headline_price_usd (see that field and freepik-sources/d007-currency
+      -recheck-2026-08-10.txt). Default state is annual ("Billed annually").
+      No explicit "charged once for twelve months" sentence located, but
+      this is the standard meaning of "billed annually" as the vendor uses
+      it throughout (unchanged reasoning, currency-independent). With the
+      amended rule now coding the USD figure Arm 2 confirmed ($14.50/mo,
+      see headline_price_usd): $14.50 x 12 = $174.00/yr computed first
+      charge. Arithmetic in computation_assumptions.
+  mandatory_addon_present:
+    value: "no"
+    source: https://www.magnific.com/pricing | https://www.magnific.com/legal/terms-of-use | https://www.magnific.com/ai/docs/plans-and-pricing
+    evidence: >
+      Premium's advertised feature set (models, Spaces, editing tools, upscalers,
+      credits, stock library) carries no separate required charge in the pricing page,
+      the AI Products Terms, or the plans-and-pricing docs. Extra Credits (ToS 9.3.3)
+      are an optional top-up, not mandatory to use Premium as advertised.
+  annual_condition_disclosure:
+    value: adjacent
+    source: https://www.magnific.com/pricing
+    evidence: >
+      "billed annually" is printed directly beneath the "TRY 450 /month" figure, inside
+      the same Premium plan card (same visual price block).
+  annual_default_toggle:
+    value: annual_preselected
+    source: https://www.magnific.com/pricing
+    evidence: >
+      Billing switch's accessible name reads "Switch to monthly billing" on page load
+      (i.e. clicking it would switch TO monthly, so Annual is the currently active
+      state); card copy shows "billed annually" with "Save 25% with annual" un-clicked.
+      Confirmed identical on two independent fresh loads of the page.
+
+  free_plan_exists:
+    value: "yes"
+    source: https://www.magnific.com/ai/docs/plans-and-pricing
+    evidence: >
+      Docs page names a "Free plan": "Up to 20 AI image generations per day with the
+      in-house model" and "10 [downloads] per day" - a standing, no-cost plan.
+  free_plan_cap_documented:
+    value: some_quantified
+    source: https://www.magnific.com/ai/docs/plans-and-pricing
+    evidence: >
+      Quantified: "Up to 20 AI image generations per day" (rate) and "10 per day"
+      downloads (rate). Unquantified: "Limited access to basic AI tools" / restricted
+      to "the in-house model" only - no number given for that restriction.
+  free_plan_cap_value:
+    value: "20 images per day | 10 downloads per day"
+    source: https://www.magnific.com/ai/docs/plans-and-pricing
+    evidence: >
+      Only the two quantified rates recorded per codebook section 5.1; the unquantified
+      model-access restriction is excluded from this field.
+  free_plan_watermark:
+    value: unknown
+    source: https://www.magnific.com/ai/docs/plans-and-pricing | https://www.magnific.com/ai/image-generator | https://www.magnific.com/legal/terms-of-use
+    evidence: >
+      No document read states whether free-tier or paid-tier AI-generated images carry
+      a visible watermark or vendor branding. Free plan docs state "Attribution
+      required on all content" - a credit/attribution requirement, a distinct construct
+      from a pixel watermark on the output; not treated as equivalent. A watermark-free
+      claim found in search discovery applies only to the separate Mockup Generator
+      tool, out of scope for this product, so not used to code this variable.
+  free_plan_duration:
+    value: perpetual
+    source: https://www.magnific.com/ai/docs/plans-and-pricing
+    evidence: >
+      "Free plan" is documented as a standing account type, not "free for N days"; no
+      expiry or time limit stated anywhere in the documents read.
+
+  trial_exists:
+    value: "no"
+    source: https://www.magnific.com/pricing | https://www.magnific.com/ai/docs/plans-and-pricing | https://www.magnific.com/legal/terms-of-use
+    evidence: >
+      No trial construct found: pricing page CTAs read "Get Premium/Premium+/Pro" (not
+      a trial offer); plans-and-pricing docs state no trial period is mentioned; AI
+      Products Terms and the AI Image Generator product page are likewise silent.
+      Distinct from the ongoing, non-time-limited Free plan coded under domain 3.
+  trial_card_required:
+    value: not_applicable
+    source: https://www.magnific.com/pricing
+    evidence: "No trial exists (trial_exists = no)."
+  trial_length_days:
+    value: not_applicable
+    source: https://www.magnific.com/pricing
+    evidence: "No trial exists (trial_exists = no)."
+  trial_auto_converts:
+    value: not_applicable
+    source: https://www.magnific.com/pricing
+    evidence: "No trial exists (trial_exists = no)."
+
+  credit_system_present:
+    value: "yes"
+    source: https://www.magnific.com/pricing
+    evidence: >
+      Credits are an intermediate currency converting into outputs (e.g. "75
+      credits/image", "240K credits/year" allowance) rather than a direct output-unit
+      allowance.
+  credit_unit_defined:
+    value: "yes"
+    source: https://www.magnific.com/pricing
+    evidence: >
+      Pricing page's "Compare plans" table converts credits into specific output units
+      for many models, e.g. "Google Nano Banana 2 1K ... 75 credits/image", "Google
+      Lyria 3 ... 160 credits/song" - satisfies "any official document converts
+      credits into any output unit."
+  credit_to_output_rate_published:
+    value: "yes"
+    source: https://www.magnific.com/pricing
+    evidence: >
+      Exact numeric rates published for the principal output (image: 44-400
+      credits/image across 13 named models) and for the other advertised output types
+      (video: credits/second per model; audio: credits/song, credits/30s). None stated
+      only as an unresolved range.
+  credit_rate_location:
+    value: pricing_page
+    source: https://www.magnific.com/pricing | https://www.magnific.com/ai/docs/plans-and-pricing
+    evidence: >
+      Per-model credit rates appear only in the pricing page's "Compare plans" tool;
+      the plans-and-pricing docs page shows plan-level credit allocations
+      (240K/600K/4M per year) but does not restate per-output conversion rates.
+  cost_per_output_unit:
+    value: per_image
+    source: https://www.magnific.com/ai/image-generator
+    evidence: "Product audited is the AI Image Generator; principal output is a generated image."
+  cost_per_output_computable:
+    value: partial
+    source: https://www.magnific.com/pricing
+    evidence: >
+      Entry tier Premium's price (now $14.50/mo per the D-007 re-check, 240,000
+      credits/yr = 20,000/mo) is published, and exact credit-per-image rates are
+      published for 13 distinct image models (44 to 400 credits/image - e.g.
+      Ideogram 2K High=44, Nano Banana 2 Lite 1K=60, Nano Banana 2 1K/2K=75,
+      Seedream 5.0 Pro 2K=100, GPT Image 2.0 Mid 2K=400), but no single model is
+      designated as "the" default/principal rate, so the arithmetic yields a
+      range (~$0.03-0.29/image, CHANGED from ~TRY0.99-9.00/image -- see
+      computation_assumptions) rather than one figure. Falls under the "only
+      across a published range that yields a range" branch of partial. Value
+      itself (partial) is unaffected by the D-007 currency re-check; only the
+      computed range's denomination changed.
+  computation_assumptions:
+    value: >-
+      Premium (entry tier), $14.50/mo billed annually (default state; D-007
+      re-check 2026-08-10 changed this from TRY450/mo/non-USD -- see
+      headline_price_usd), 240,000 credits/yr=20,000/mo (currency-independent,
+      unchanged). Per-image rates published per model, 44-400 credits/image
+      (unchanged), no default model named => price per credit =
+      14.50/20,000=0.000725; cost/image ranges 44x0.000725=$0.03 to
+      400x0.000725=$0.29, not one figure (was TRY0.99-9.00).
+    source: https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing
+    evidence: "Coder's own arithmetic from the two figures above; see cost_per_output_computable and freepik-sources/d007-currency-recheck-2026-08-10.txt for the currency re-check that changed the denomination."
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: https://www.magnific.com/pricing | https://www.magnific.com/legal/terms-of-use
+    evidence: >
+      Pricing page (per-plan bullet): "Credits valid for 1 year, no monthly resets."
+      ToS section 9.1: "Unused usage credits within the billing period in which they
+      were assigned will not be transferred to the next billing period" and "usage
+      credits...will automatically reset at the start of each billing period." For
+      these annual plans the billing period is 1 year, so the base allowance is lost
+      unused at year-end. Distinct from purchased "Extra Credits" (ToS 9.3.3), which
+      DO roll over subject to a 3-year expiry; this variable is coded on the plan's
+      base/included allowance, which is what a buyer compares across tiers.
+  failed_generation_charge_policy:
+    value: unknown
+    source: https://www.magnific.com/legal/terms-of-use | https://www.magnific.com/legal/acceptable-use-policy | https://www.magnific.com/ai/docs/plans-and-pricing
+    evidence: >
+      No document read (ToS, AI Products Terms, AUP, plans-and-pricing docs,
+      subscriptions-and-refunds docs) states whether a failed, errored, or empty
+      generation consumes a credit. AI Products Terms describe credits being deducted
+      for actions performed but do not address the failure/outcome case.
+
+  auto_renewal_default:
+    value: "on"
+    source: https://www.magnific.com/legal/terms-of-use | https://www.magnific.com/ai/docs/subscriptions-and-refunds
+    evidence: >
+      ToS 9.1: "Unless otherwise indicated, Subscriptions will be automatically
+      renewed, successively at the end of their term using the same payment method,
+      unless the User cancels the Subscription renewal before its expiration."
+      Corroborated by docs: "All paid Magnific subscriptions renew automatically at
+      the end of each billing period."
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: https://www.magnific.com/legal/terms-of-use | https://www.magnific.com/ai/docs/subscriptions-and-refunds
+    evidence: >
+      Stated in the Terms of Service (9.1) AND the dedicated subscriptions-and-refunds
+      docs page (both quoted under auto_renewal_default) - two document classes agree.
+      Pricing page also lists "Is my subscription automatically renewed?" as an FAQ
+      title (not expanded), a possible third touchpoint not needed for this value.
+  renewal_notice_commitment:
+    value: advance_notice_stated
+    source: https://www.magnific.com/legal/terms-of-use
+    evidence: >
+      ToS 9.1: "In case of a price modification applicable to any renewal, the Company
+      will inform the User at least one month before the application date by email."
+      Scope caveat: commitment is specific to renewals where the price changes; no
+      general "notice before every renewal" statement was found - the
+      subscriptions-and-refunds docs page confirms no general advance-notice statement
+      exists.
+  refund_policy_exists:
+    value: "yes"
+    source: https://www.magnific.com/ai/docs/subscriptions-and-refunds | https://www.magnific.com/pricing | https://www.magnific.com/legal/terms-of-use
+    evidence: >
+      Docs: "Refunds are only available if you have not used the service: no
+      downloads..., and no AI credits consumed" (30-day window). Pricing page: "30-day
+      refund guarantee." ToS states "no right of withdrawal applies...unless the
+      Company indicates otherwise" - and it does, via the above two documents.
+  refund_window_days:
+    value: 30
+    source: https://www.magnific.com/ai/docs/subscriptions-and-refunds
+    evidence: >
+      "Window: 30 days from payment date"; corroborated by pricing page's "30-day
+      refund guarantee."
+  refund_conditions:
+    value: conditional
+    source: https://www.magnific.com/ai/docs/subscriptions-and-refunds
+    evidence: >
+      "Refunds are only available if you have not used the service: no downloads from
+      Magnific.com or Flaticon.com, and no AI credits consumed. If you have downloaded
+      any content or used any AI credits during the billing period, you are not
+      eligible for a refund."
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://www.magnific.com/legal/terms-of-use | https://www.magnific.com/ai/docs/subscriptions-and-refunds
+    evidence: >
+      ToS 9.3.2: "The User may cancel the renewal of their Subscription at any time
+      through their profile." Docs: "Click your profile picture and select 'Plan &
+      billing'" then "'Danger zone -- Cancel a subscription'...'Cancel subscription'."
+  refund_policy_location:
+    value: multiple
+    source: https://www.magnific.com/pricing | https://www.magnific.com/ai/docs/subscriptions-and-refunds
+    evidence: >
+      Pricing page states "30-day refund guarantee" (with a "More info" link to the
+      docs page); the dedicated docs page states the full conditional policy. Two
+      classes agree (pricing_page + dedicated_refund_page).
+  commercial_use_lowest_tier:
+    value: lowest_paid
+    source: https://www.magnific.com/legal/terms-of-use | https://www.magnific.com/pricing
+    evidence: >
+      Pricing page lists "Commercial AI license" as a checked feature starting at the
+      Premium card (entry paid tier). AI Products Terms sec.7: only "Users who have
+      purchased a Subscription" (Subscribers) are assigned ownership/full rights in
+      Output "in perpetuity"; "Free User[s]" get only a revocable license "exclusively
+      for personal and non-commercial purposes." See conflict_note re: a marketing
+      page's broader, tier-unqualified claim.
+  watermark_removal_tier:
+    value: unknown
+    source: https://www.magnific.com/pricing | https://www.magnific.com/legal/terms-of-use | https://www.magnific.com/ai/image-generator
+    evidence: >
+      No document read (pricing page, ToS, AI Products Terms, AUP, docs, AI Image
+      Generator product page) states which tier(s) apply or remove a watermark on
+      AI-generated image outputs. Same gap noted under free_plan_watermark, including
+      the attribution-vs-watermark distinction.
+  output_ownership_statement:
+    value: conditional
+    source: https://www.magnific.com/legal/terms-of-use
+    evidence: >
+      AI Products Terms sec.7: "Between Magnific and the Users who have purchased a
+      Subscription...(the 'Subscribers'), Magnific hereby assigns to them all rights,
+      title, and interest...The Subscriber will be the exclusive owner...in
+      perpetuity...provided that their Subscription remains active at the time of
+      generation." Free Users instead get only "a personal, non-exclusive,
+      non-transferable, and revocable license...exclusively for personal and
+      non-commercial purposes." Rights explicitly depend on tier (Subscriber vs Free).
+
+  usage_cap_quantified:
+    value: some_quantified
+    source: https://www.magnific.com/pricing | https://www.magnific.com/legal/terms-of-use
+    evidence: >
+      Premium's credit allowance is quantified: "240,000/year" (number+dimension+
+      period). Downloads are marketed as not specifically limited, but ToS 9.4.2
+      (Premium Subscription benefits): "Not being subject to specific download limits
+      of Magnific Content that apply at any given time, without prejudice to certain
+      quantitative limitations to prevent fraudulent or abusive use of the Website" -
+      an unlimited-style claim qualified by a discretionary, unquantified clause, so it
+      does not count as quantified per section 5.1 rule 3. At least one quantified
+      (credits) + at least one not (downloads) => some_quantified.
+  unquantified_limit_clause:
+    value: present
+    source: https://www.magnific.com/legal/acceptable-use-policy | https://www.magnific.com/legal/terms-of-use
+    evidence: >
+      AUP "Fair Use" section (read in full): "Magnific reserves the right to monitor
+      usage patterns to ensure compliance with this Fair Use Policy, and may
+      temporarily restrict, suspend, or disable access to certain features or accounts
+      where abnormal, excessive, or automated activity is detected." No number given
+      for "excessive." Corroborated by ToS 9.4.2's "quantitative limitations to
+      prevent fraudulent or abusive use" carve-out on Premium's download benefit.
+
+conflict_note: >
+  Commercial-use rights: https://www.magnific.com/ai/image-generator FAQ states
+  outputs may be used "for both personal and commercial use" with no tier qualifier.
+  AI Products Terms (https://www.magnific.com/legal/terms-of-use, sec.7) restrict Free
+  Users to a revocable license for "personal and non-commercial purposes" only; only
+  paid Subscribers get full (and thus commercial) rights. Coded
+  commercial_use_lowest_tier and output_ownership_statement from the Terms (ToS ranks
+  first for contractual variables per protocol-v1.md 6.2); both URLs recorded here.
+coder_note: >
+  PRODUCT SCOPE: audited product is the AI image generator (principal output = an
+  AI-generated image). Freepik/Magnific also sells a stock-asset subscription on the
+  same account/plans; out of scope except where it affects entry-tier eligibility (no
+  eligible AI-inclusive plan is stock-only, so this does not change the selection).
+
+  REBRAND: the frame's vendor_home_url (https://www.freepik.com) 301-redirects in full
+  (root and /pricing) to https://www.magnific.com; banner reads "Freepik is now
+  Magnific", page title "Magnific (formerly Freepik) | The AI Creative Platform"; ToS
+  confirms the same legal entity, Freepik Company, S.L. Per sampling-rules.md 10.4
+  (rebrand keeps product_id, both names recorded) and this task's instruction to
+  locate the official domain when the frame URL is dead/wrong: all coded values are
+  sourced from magnific.com. See register_events.
+
+  ENTRY TIER (sampling-rules.md 7.2): Individual plan type, Annual default display
+  state. Eligible candidates by annual-equivalent cost: Premium TRY450/mo x12=
+  TRY5,400/yr (SELECTED - cheapest); Premium+ TRY1,125/mo x12=TRY13,500/yr; Pro
+  TRY7,275/mo x12=TRY87,300/yr; Business (Teams tab) TRY2,400/seat/mo, 2-seat minimum
+  block, x12x2=TRY57,600/yr for the minimum a buyer can purchase. Enterprise excluded
+  as ineligible: sales-gated, no published price ("Let's talk"/"Talk to the team").
+  ToS section 9.4.1 also names an "Essential Subscription" tier (with its own
+  benefits list) that does not appear on the live /pricing page in any state checked
+  (Individual or Teams, Monthly or Annual); not treated as a candidate since it is not
+  offered on the page itself, which is what sampling-rules.md 7.2 anchors the
+  selection to.
+
+  CURRENCY: the pricing page rendered TRY (Turkish lira) on every load in this
+  session (2 independent fresh loads); no currency/region selector was found anywhere
+  in the DOM (checked via script). Coded non_usd throughout per protocol-v1.md 6.5;
+  state recorded as observed per 6.8, not reconstructed or hunted for a USD variant.
+
+  D-007 re-check 2026-08-10: this record was one of six flagged for
+  re-verification under the amended currency rule (deviations-log.md D-007).
+  Unlike the other five, this record never ran even the superseded D-003
+  Accept-Language check originally -- it coded non_usd solely from "no selector
+  found" on the live TRY page. Arms attempted under the amended rule, in order:
+  (1) vendor's own currency disclosure -- re-scanned the live pricing page
+  (still TRY 450/mo for Premium today) for a currency/country selector (0
+  matches), tried a ?currency=USD URL parameter (no effect), and searched both
+  the subscriptions-and-refunds docs (0 hits) and the full terms of use
+  (147,502 chars; 13 hits on currency/USD/dollar/EUR, none an explicit
+  USD-pricing statement -- only EUR-denominated liability caps and
+  "the corresponding currency" language) -- returned nothing readable. (2) A
+  US-crawled archive capture that actually contains price figures -- this
+  record's OWN archive_url, already cited but never opened:
+  https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing,
+  a Save-Page-Now capture fetched from archive.org's US-based infrastructure.
+  Read in full this pass (browser tool hung twice on this specific URL; fell
+  back to a direct HTTPS fetch, 808,514 bytes, 9,047 chars of real stripped
+  text): shows the identical Premium/Premium+/Pro plan grid, same tier
+  descriptions and credit allowances already coded here, now priced in USD
+  ($20 struck/$14.50 active for Premium, matching the TRY 675/450
+  struck/active pattern exactly). Confirmed in a second representation (raw
+  HTML: "$14" and ".50" are two spans, but the second already carries the
+  decimal point, so text extraction is unambiguous -- not the dangerous
+  superscript-cents pattern). Full log:
+  freepik-sources/d007-currency-recheck-2026-08-10.txt.
+  OUTCOME: value CHANGED. headline_price_usd moves from non_usd to 14.50
+  (Premium, $/mo, billed annually) and first_charge_amount_usd from non_usd to
+  174.00 (14.50x12, same "billed annually, no explicit twelve-month sentence"
+  basis already on file). Dependent variable updated: cost_per_output_computable
+  stays "partial" but its computed range changes from TRY0.99-9.00/image to
+  $0.03-0.29/image (price per credit = 14.50/20,000 = 0.000725; range
+  44-400 credits/image unchanged, currency-independent). entry_tier_name
+  (Premium) is not re-derived in this currency-scoped sweep but is very
+  unlikely to change: Premium remains dramatically cheaper than every other
+  candidate in the newly-found USD figures too. A new register_events entry
+  (display_variant) logs the TRY state as the locally-served variant, since
+  none existed before -- the original coder never recognized the archive
+  capture as a second currency state, having never opened it.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+register_events:
+  - date: "2026-08-07"
+    type: rebrand
+    description: >
+      Frame's vendor_home_url (freepik.com) fully redirects to magnific.com; vendor
+      banner/title confirm "Freepik is now Magnific". Both names recorded per
+      sampling-rules.md section 10, item 4. Full detail in coder_note.
+  - date: "2026-08-07"
+    type: display_variant
+    description: >
+      Pricing page's "Compare plans" tool: an early load showed only one pre-filled
+      comparison column (Premium+ figures, e.g. "Google Nano Banana 2 1K" = 8,000
+      images); a later fresh load of the same URL showed all three plan columns
+      simultaneously (e.g. same model = 3,200 / 8,000 / unlimited for Premium /
+      Premium+ / Pro). This is a secondary comparison widget, not one of the
+      protocol-v1.md 6.8 anchored variables (headline price, annual toggle, entry-tier
+      price basis), which were read identically on both loads. All Premium
+      (entry-tier) figures used for coding were taken from the later, fully-populated
+      3-column view.
+  - date: "2026-08-10"
+    type: display_variant
+    description: >
+      D-007 re-check. The live pricing page (https://www.magnific.com/pricing),
+      read from this study's Turkey-egressing network on both 2026-08-07 and
+      again 2026-08-10, renders TRY (Premium: TRY 675 struck / TRY 450 active,
+      per month billed annually). This record's own web.archive.org capture of
+      the same URL (a Save-Page-Now submission fetched from archive.org's
+      US-based infrastructure, independent of the submitting network) shows the
+      same plan grid in USD (Premium: $20 struck / $14.50 active, per month
+      billed annually), read in full for the first time during this re-check.
+      Per the amended currency rule (deviations-log.md D-007), the USD figure a
+      US-crawled reader is served is now coded as the published price
+      (headline_price_usd, first_charge_amount_usd); the TRY state this study's
+      own network observes is logged here as the locally-served display variant.
+      Not a vendor edit -- the same document, served in two states depending on
+      reader geography, protocol-v1.md 6.8.
+    urls: ["https://www.magnific.com/pricing", "https://web.archive.org/web/20260807070007/https://www.magnific.com/pricing"]
+status: complete

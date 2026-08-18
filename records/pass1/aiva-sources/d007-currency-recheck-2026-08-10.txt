@@ -1,0 +1,71 @@
+D-007 CURRENCY RE-CHECK — aiva — 2026-08-10
+Method: rendered reads (mcp browser tools), per D-005/D-007 documentary-read rule.
+Purpose: apply the amended currency-check rule (deviations-log.md D-007) in place of
+the superseded D-003 check. AIVA was independently verified EUR-only under D-003 and
+is expected to stand; this file is the arm-by-arm re-verification under the new rule.
+
+ARM 1 — vendor's own currency disclosure (up to 2 attempts each sub-method)
+----------------------------------------------------------------------------
+1a. Currency/country selector on the pricing page (rendered DOM inspection).
+    URL: https://www.aiva.ai/ , rendered 2026-08-10.
+    Query executed in-page: document.querySelectorAll('select, [class*="currency" i],
+    [class*="country" i], [id*="currency" i], [id*="country" i],
+    [aria-label*="currency" i], [aria-label*="country" i]')
+    Result: 0 matches. Full body.innerText also contains no "$"/"USD"/"dollar" anywhere
+    (regex /USD|\$|dollar/i over the full rendered text = no match). Pricing snippet
+    confirmed unchanged from the original pass: "Standard Annually / €11 / month+ VAT
+    / Billed Annually / 26% OFF!" ... "Pro Annually / €33 / month+ VAT ... 33% OFF".
+    No selector exists. (1 attempt; conclusive, no retry needed.)
+
+1b. Vendor-supported currency URL parameter.
+    Tried: https://www.aiva.ai/?currency=USD , rendered 2026-08-10.
+    Result: page renders identically to the bare URL — still "€11 / month+ VAT" for
+    Standard Annually. The parameter is not a supported mechanism; no state change.
+    (1 attempt against the one plausible parameter name; the page has no visible
+    region/currency control to suggest a different parameter name to try, so a second
+    attempt was not run.)
+
+1c. Explicit currency statement in billing/help documentation or the terms.
+    - Terms (EULA), https://www.aiva.ai/legal/1, rendered 2026-08-10: full
+      document.body.innerText searched with regex /(USD|US\$|dollar|currency)/ig.
+      Result: 0 hits. (Matches the original pass's finding that EULA section 8
+      mentions only VAT/local tax, never a currency name.)
+    - Help center billing article, https://aiva.crisp.help/en/article/what-am-i-
+      charged-for-when-i-upgrade-from-one-subscription-to-another-1dxazun/, rendered
+      2026-08-10: same regex plus /€|EUR/ig. Result: 0 hits on either pattern.
+    Two documents checked (terms + the one help article most directly about billing/
+    charges); both silent. No further help articles attempted (effort cap).
+
+ARM 1 CONCLUSION: no currency selector, no working currency URL parameter, and no
+document (terms or help center) states a currency at all, let alone USD. Arm 1
+returns no readable evidence of a USD offering.
+
+ARM 2 — US-crawled archive capture that actually contains price figures
+----------------------------------------------------------------------------
+Capture checked: https://web.archive.org/web/20260806132059/https://www.aiva.ai/
+(this is the same snapshot already cited as this record's archive_url — re-opened and
+re-read fresh for this check, 2026-08-10). web.archive.org's Save-Page-Now / crawl
+infrastructure is US-based, satisfying the "US-crawled" condition.
+
+Result: NOT pre-hydration/empty. document.body.innerText on the archived capture is
+2,333 characters and DOES contain the actual plan cards, e.g.:
+  "Standard Annually / €11 / month+ VAT / Billed Annually / 26% OFF! / ... /
+   15 downloads per month / Track durations up to 5 minutes"
+body.innerText.includes('€') = true. body.innerText.includes('$') = false.
+This capture is a genuine Arm-2 read under the amended rule (D-007): it is
+US-crawled AND it actually contains readable price figures, and every figure in it
+is EUR, with zero occurrences of "$" anywhere in the captured text.
+
+OUTCOME
+----------------------------------------------------------------------------
+Arm 1 returns nothing (no selector, no parameter, no documentary currency statement
+of any kind). Arm 2 returns a readable, content-bearing, US-crawled capture, and its
+content is positive evidence that the vendor serves EUR only, with no USD figure
+anywhere in that same capture. Under the amended rule this is exactly the case where
+non_usd is warranted by positive evidence ("only where an arm above returns readable
+evidence may you code non_usd, and only when that evidence shows the vendor publishes
+a non-USD price") — unlike the pre-D-007 rule, this does not rest on an
+Accept-Language header or on mere absence. non_usd stands for both
+headline_price_usd and first_charge_amount_usd. No value changed; the evidentiary
+basis is now Arm 2 (a content-bearing US archive capture) rather than an
+un-headered same-network read.

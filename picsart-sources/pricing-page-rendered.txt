@@ -1,0 +1,107 @@
+URL: https://picsart.com/pricing/
+Accessed: 2026-08-10
+Method: RENDERED read required (static WebFetch/curl returns a client-rendered React SPA shell with no price content - D-005 applies). Rendered via Claude_Browser preview tab (tab reused: tab-5), document.body.innerText captured after page load + cookie-consent banner appeared (decline attempted via Manage Cookies at DOM-derived coordinates; banner UI did not visibly resolve via automation; Accept-All was NOT clicked; page content below the banner was already present in the DOM regardless of consent state).
+Network note: collection environment egresses from Turkey. Page rendered entirely in Turkish Lira (₺). D-007 currency check performed (see coder_note in record) - both arms (vendor currency disclosure, US-crawled archive) failed to produce a USD figure. headline_price_usd coded unknown, not non_usd, per D-007.
+Default display state observed: Yearly billing toggle preselected (visually highlighted/active; "Monthly" plain-styled) on page load, before any interaction. Two plan cards: Pro ("Most popular") and Ultra ("Most powerful"). No Free-tier card in this grid.
+Public archive: web.archive.org/save/ succeeded -> https://web.archive.org/web/20260810104607/https://picsart.com/pricing/
+---
+
+[Hero/nav omitted - see full transcript]
+
+Choose the plan that fits how you create
+Monthly | SAVE UP TO 40% | Yearly  [Yearly tab active/dark-highlighted = default state]
+
+Pro
+Most popular
+AI tools for everyday creative work.
+[credit counter - exact digit obscured by CSS odometer animation in text extraction]
+credits/month
+~ 50 Nano Banana Pro generations
+~ 27 Kling 3.0 videos
+Fixed credits/mo
+₺83.25/mo
+Billed yearly
+Continue with this plan
+You save ₺789 with yearly
+Continue with this plan
+Access to all photo & video editing features
+Advanced background & object removal
+Parallel video generations with the world's most powerful AI video models
+Unlimited image generations with Flex.2 Klein
+1-tap image enhancer
+Millions of stock photos & Getty video clips
+Selection of trendy fonts, text styles & stickers
+Thousands of premium templates
+Support for 3+ brand kits
+Bulk edit up to 50 images at once
+100 GB of cloud storage
+New features: 15+ creative AI agents...; Picsart CLI; MCP support
+
+Ultra
+Most powerful
+Heavy AI usage for creators & teams.
+[credit counter obscured]
+credits/month
+~ 500 Nano Banana Pro generations
+~ 277 Kling 3.0 videos
+[credit-tier slider: 1,500 / 2,500 / 5,000 / 10,000 / 10,000+]
+₺2822/mo
+Billed yearly, per seat
+Continue with this plan
+You save ₺6828 with yearly
+10x more usage than Pro; 140+ AI models; Option to buy add-on credits that never expire;
+Up to 6.5 million Getty stock videos; Bulk edit up to 100 images; Support for 10+ brand kits;
+Add team seats; 300 GB cloud storage per seat
+
+Compare features table (further down page):
+Pro ₺83.25/mo  Subscribe now
+Ultra ₺1763.75/mo  Subscribe now   <- NOTE: differs from the Ultra plan-card figure above (₺2822/mo); both appear on this same page load, likely because Ultra's price depends on an interactive credit-volume slider that defaults differently in the card vs. the comparison table. Pro's figure is identical (₺83.25/mo) in both places. Does not affect entry-tier selection since Pro < Ultra under either Ultra figure.
+
+Included with every plan (baseline features, both cards): Standard photo/video editing tools, custom dimensions, community images, design templates, fonts/stickers/shapes.
+Storage: 100 GB (Pro) / 300 GB (Ultra). Devices: 10 / 10.
+AI tools section (credit-metered, "up to X" = MONTHLY CAP per plan):
+  AI Image Generator: up to 1000 images (Pro) / up to 5000 images (Ultra)
+  AI Background: up to 500 results / up to 2500 results
+  AI Avatar: up to 200 avatars / up to 1000 avatars
+  AI Sticker Generator: up to 500 stickers / up to 2500 stickers
+  AI Asset Maker: up to 1250 results / up to 6250 results
+  AI Logo Generator: up to 500 logos / up to 2500 logos
+  AI Ad Generator: up to 500 results / up to 2500 results
+  AI Video Generator: up to 25 videos / up to 125 videos
+  AI Text Styles: up to 250 results / up to 1250 results
+  AI Replace: up to 500 results / up to 2500 results
+(preface: "By using credits, we make the valuable technology behind generative AI tools accessible to everyone. Some advanced AI models unlock after trial with a paid plan. Enjoy limited free trial credits. Full credit balance unlocks after trial.")
+
+FAQs (on pricing page, full text):
+Q: What are the benefits of a subscription and which plan should I choose?
+A: Subscribing unlocks advanced editing tools, an exclusive content library, increased cloud storage, and an ad-free experience on the mobile app. Choose Pro for standard photo and video editing, or Ultra if you require heavy AI generation, premium AI models, and team collaboration features.
+
+Q: Will I get a free trial before I subscribe?
+A: Most plans include a free trial, though eligibility depends on your account history and the specific plan chosen. You will receive instant confirmation of your eligibility during the checkout process.
+
+Q: Can I upgrade or downgrade my plan later?
+A: You can upgrade from Pro to Ultra at any time if purchased directly through Picsart.com. If you downgrade a plan, the new billing cycle will start after your current one expires.
+
+Q: How can I pay for a subscription, and are there discounts available?
+A: We accept credit/debit cards, PayPal, and Apple/Google Pay, and we do not offer installment plans. You can save up to 60% by choosing an annual subscription over a monthly one [NB: page's own toggle badge says "SAVE UP TO 40%" - minor same-page inconsistency, not scored by any codebook variable].
+
+Q: How do I cancel my subscription or request a refund?
+A: You can cancel your subscription by following the instructions here. Refunds for mobile app subscriptions are subject to Apple or Google Play Store policies, while website purchases can be requested via this link. If you're not sure where you originally purchased your subscription, you can refer to this article.
+
+Q: What are credits and how can I get more?
+A: Credits are virtual tokens used for generative AI tools. If you need more, you can upgrade to the Ultra plan or purchase "add-on" credits through your profile settings.
+
+Q: Do unused credits roll over?
+A: Monthly subscription credits expire at the end of each billing cycle and do not roll over. However, any purchased add-on credits remain in your account and will not expire until used.
+
+Q: Will I get my credits back if a generation fails?
+A: Yes, if a generation is unsuccessful, your consumed credits will be automatically rolled back to your account within 24-48 hours.
+
+Q: Can I use my benefits across multiple devices and platforms?
+A: Yes... iOS, Android, web, and the Microsoft Store...
+
+Q: Will I still have access to my benefits if I cancel?
+A: Yes, you will continue to have full access to all subscription benefits until the current billing period expires.
+
+Footer: Get The Free App | ... | Terms of Use | Privacy Policy | Do Not Sell | Interest-Based Advertising | Community Guidelines | DMCA | Security Policy | Accessibility | English | (C) 2026 PicsArt, Inc.
+[No currency/country/region selector found anywhere on this page.]

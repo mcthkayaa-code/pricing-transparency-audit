@@ -1,0 +1,12 @@
+URL: https://sora.com (redirects to https://sora.chatgpt.com)
+Accessed: 2026-08-10
+Method: rendered read via browser tool (mcp__Claude_Browser__preview_start + navigate; static WebFetch and curl both returned HTTP 403 for this domain)
+Network note: collection network egresses from Turkey; page rendered in English, no currency/locale switch observed on this page (it carries no price content)
+
+--- document.body / main innerText, full page (page is a minimal single-screen notice) ---
+Sora is no longer available. You can export your data at any time.
+
+Export
+--- end ---
+
+Coder note: this is the vendor's own current live page at the frame's recorded vendor_home_url (sora.com). It redirects to sora.chatgpt.com and shows a shutdown notice with no pricing content. Confirms the finding in help.openai.com's discontinuation article (see sibling file help-openai-sora-discontinuation-rendered.txt).

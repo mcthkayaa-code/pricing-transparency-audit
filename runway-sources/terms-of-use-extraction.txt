@@ -1,0 +1,74 @@
+SOURCE: https://runway.com/terms-of-use (vendor URL runwayml.com/terms-of-use 308-redirects here)
+DATE: 2026-08-12
+METHOD: WebFetch (targeted verbatim-quote prompt) cross-checked against the raw HTML of the
+Wayback capture saved the same session
+(https://web.archive.org/web/20260812075319/https://runway.com/terms-of-use, local copy
+terms-archive-raw.html in this directory, 412416 bytes). Every quote below was independently
+re-located inside the archived HTML via python full-text search (tags stripped, whitespace
+collapsed) before being coded. This is the second-representation check: WebFetch's paraphrase
+of the ownership clause on the first pass ("Users retain no ownership") was WRONG and was
+caught by this cross-check; the archived raw text reads the opposite. Only the raw-text-
+verified quotes below were used to code values.
+
+=== 4.4 Ownership / license / commercial use (verified verbatim in archived HTML) ===
+"The Company does not claim ownership of any of your Inputs or Outputs. Subject to your
+compliance with the Agreement, the Company does not restrict your commercial use of your
+Outputs. You acknowledge that Inputs and Outputs may be used by the Company to train and
+improve its AI models, algorithms and related technology, products and services (including
+for labeling, classification, content moderation and model training purposes). As such, you
+hereby grant to the Company a non-exclusive, irrevocable, perpetual, worldwide, royalty-free,
+fully paid, transferable, sublicensable right and license to use any Inputs and Outputs Made
+Available by you or otherwise generated in connection with your use of the Services at any
+point, in connection with the purposes described above."
+-> No tier restriction stated anywhere in this clause; applies to the Agreement generally
+   (i.e. to every tier including Free).
+
+=== 8.1 Price changes ===
+"Company reserves the right at any time to change its prices and billing methods" (WebFetch
+paraphrase location; general Section 8 fee-change language).
+
+=== 8.4 Renewal / cancellation (verified verbatim in archived HTML) ===
+"If you purchase a subscription to the Services, Company will automatically charge your
+payment method each renewal period for the then-current subscription fee until you cancel or
+when terminated in accordance with the Agreement. After your initial subscription period, and
+again after any subsequent subscription period, your subscription will automatically commence
+on the first day following the end of such period and continue for an additional equivalent
+period, at Company's then-current price for such subscription."
+"If you do not wish to continue subscribing with the new fees or features, you may cancel your
+subscription. If you accept the new subscription, its terms and conditions will apply for that
+renewal and all renewals going forward."
+"You may cancel or change your subscription by logging into your Account and going to the
+'Plans & Billing' page. If you cancel your subscription, you may use your subscription until
+the end of your then-current subscription term; your subscription will not be renewed after
+your then-current term expires."
+"[...] we may offer trial, discounted, or other promotional subscription fees. Such trial or
+promotional memberships are subject to the terms of this Section 8.4 [...] Only one trial or
+promotional membership is available per user [...]"
+-> Boilerplate covering a POSSIBLE future trial/promo mechanism, not a statement that a
+   current trial exists. No trial CTA or length is shown anywhere on the live pricing page
+   (plan cards read "Start Free" / "Upgrade to X" / "Contact Sales", never "Start trial").
+   Coded trial_exists = no on this basis.
+"[...] upon completion of the promotional period, your subscription will continue to
+automatically renew at the then-current subscription fee. To cancel and avoid being charged
+the full rate, you must notify us before the discount or promotional period ends. Please note
+that we do not provide price protection or refunds in the event of a price drop or promotional
+offering."
+
+=== 8.5 Refunds (verified verbatim in archived HTML) ===
+"8.5 Refunds. Except as stated in these Terms of Use or as required by applicable law, all
+fees for the Services are non-refundable, and if you cancel your subscription, you are not
+entitled to receive any refund or credits for the time remaining in your subscription period.
+In our discretion, we may provide a refund upon request."
+
+=== Full-text search (python, tags stripped) — clauses NOT found ===
+"fair use" / "reasonable use" / "excessive" / "abuse" / "Acceptable Use" / "Rate Limit" /
+"non-refundable... [second occurrence]" — all absent. The only "throttl*" hit governs
+"Non-Runway Services" (third-party integrations a user connects), not the product's own usage:
+"Company may throttle, suspend, or terminate Non-Runway Services access at its sole
+discretion." This does not describe a discretionary cap on Runway's own metered usage, so it
+does not trigger unquantified_limit_clause.
+No sentence found anywhere stating a payment/billing currency ("US Dollars" appears once, in
+the arbitration-claim-amount clause only, unrelated to subscription billing currency).
+No sentence found about credits expiring/not expiring, or about failed/errored generations and
+credits (that fact came only from an unarchived help-center page — see
+help-center-blocked-leads.txt in this directory; NOT used to code any value here).

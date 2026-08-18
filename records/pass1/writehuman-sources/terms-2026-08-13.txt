@@ -1,0 +1,43 @@
+SOURCE: https://writehuman.ai/terms
+ACCESSED: 2026-08-13
+METHOD: rendered browser read (Claude Browser pane), get_page_text (full document, ~14000 words) + javascript_tool keyword search on document.body.innerText
+Last updated per document: April 26, 2024
+
+KEY CLAUSES (verbatim excerpts relevant to coded variables):
+
+[Section 3, Use of the Site]
+"We grant you a non-exclusive, non-transferable, revocable license to access and use the Site (including all Services and Content) for your personal, non-commercial use only."
+
+[Section 4, Prohibited Activities - relevant bullets]
+"Copy, modify, reproduce, aggregate, republish, upload, post, publicly display, encode, translate, transmit, distribute, sell, license, or otherwise exploit the Site or any portion thereof for any commercial purpose whatsoever without our express prior written permission."
+"Access or use for any commercial purposes any part of the Site or its offerings or any services or materials available through the Site."
+"Use the Site as or in any effort to compete with us or otherwise use the Site and/or the Content for any revenue-generating endeavor or commercial enterprise."
+
+[Section 5, User Generated Content - defines the term and distinguishes "output" from it]
+"...to understand the (a) rights you give us to and in any User Generated Content (consisting of User Submissions, User Contributions, and User Input as defined below)..."
+"User Input: User Input includes any prompts, text, or other input that you provide to the Site in order to use the Services to generate an output, which is the final edited product produced by your User Input and our Services."
+NOTE: "User Generated Content" is explicitly defined as exactly three things (User Submissions, User Contributions, User Input). "Output" (the humanized text returned to the user) is defined in the same paragraph as a DISTINCT concept and is never listed as a component of "User Generated Content."
+
+[Section 8, License - the ownership grant]
+"Subject to the license granted to us here, we do not assert any ownership over your User Generated Content. You retain full ownership of all of your User Generated Content and any intellectual property rights or other proprietary rights associated with it as set forth in these Terms."
+NOTE: this ownership statement is scoped to "User Generated Content" (defined above as Submissions/Contributions/Input) — it never uses the word "output". No other clause anywhere in the document assigns ownership of the humanized OUTPUT specifically.
+
+[Section 11, Purchases and Payment - refund, cancellation]
+"Any part of our Services requiring a purchase, whether subscription or other, will require a credit card payment through a third-party credit card processor, Stripe.com... All purchases are non-refundable however, you can cancel your subscription at any time by logging into your User Account (My Account Page). Your cancellation will take effect at the end of the current paid term."
+
+[Section 15, Disclaimer; Limitation of Liability]
+Standard AS-IS / liability cap at lesser of (amount paid in prior 6 months) or $500 USD. No refund-relevant content beyond section 11.
+
+=== KEYWORD SEARCH ACROSS FULL DOCUMENT (document.body.innerText) ===
+"renew" -> NOT FOUND anywhere in the Terms of Service. No auto-renewal language of any kind appears in this document.
+"auto-renew" -> NOT FOUND
+"recurring" -> NOT FOUND
+"fair use" -> NOT FOUND
+"reasonable use" -> NOT FOUND
+"throttl" -> NOT FOUND
+"discretion to limit" -> NOT FOUND
+"excessive use" -> found once, refers to "excessive use of capital letters and spamming" (a content-formatting prohibition), NOT a usage-volume/fair-use throttling clause.
+"watermark" -> found only in the site-wide banner link text (unrelated blog post about Claude adding watermarks to AI text), not in the Terms body itself, and not about WriteHuman's own output.
+"commercial use" / "commercial purpose" -> as quoted in Section 3/4 above.
+
+CONCLUSION FOR unquantified_limit_clause: terms read in full end-to-end (Sections 1-20 plus DMCA/contact); no discretionary fair-use/reasonable-use/throttling clause governing USAGE VOLUME exists anywhere in the document. No separate "Acceptable Use Policy" is linked anywhere on the site (footer legal links are only: Privacy Policy, Terms of Service, Cookie Policy, Do-Not-Sell). Section 4 "Prohibited Activities" (read in full) is the closest thing to an AUP and contains no volume-based discretionary clause either.

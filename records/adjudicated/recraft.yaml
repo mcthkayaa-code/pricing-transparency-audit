@@ -1,0 +1,560 @@
+product_id: recraft
+product_name: Recraft AI
+category: AI image generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Basic
+
+coder_pass: 3
+coder_role: adjudicated
+collection_date: "2026-08-16"
+recheck_date: not_applicable
+primary_source_url: https://www.recraft.ai/pricing
+archive_url: https://web.archive.org/web/20260815124643/https://www.recraft.ai/pricing
+archive_status: archived
+
+default_display_state: >-
+  USD ($) rendered directly, no currency selector; billing toggle default = annual ("Pay annually
+  (save 20%)" preselected, confirmed both by DOM aria-checked/data-state on pass 1's 2026-08-10 read
+  and by toggle-thumb-position screenshot on pass 2's 2026-08-15 read); non-essential cookies
+  declined (Reject All) before recording state in both passes; session from Turkey network in both
+  passes, no localized-currency redirect observed on either date. Both passes agree on every element
+  of this state; carried forward from pass 2 (later read) with pass 1 cited as independent
+  confirmation.
+
+sources:
+  - { url: "https://www.recraft.ai/pricing", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815124643/https://www.recraft.ai/pricing", note: "Read independently by pass 1 (2026-08-10, archived https://web.archive.org/web/20260810111536/https://www.recraft.ai/pricing, local capture records/pass1/recraft-sources/pricing-rendered-2026-08-10.txt) and pass 2 (2026-08-15, local capture records/pass2/recraft-sources/pricing-page-rendered-2026-08-15.txt). Pass 2's local capture additionally records the page's embedded __NEXT_DATA__ i18n payload, including subscriptions.features.creditsTooltip = \"Generation or modification of an image is usually worth 1-2 credits\" -- read directly by this adjudicator in pass 2's saved file, not merely trusted from pass 2's quotation of it." }
+  - { url: "https://www.recraft.ai/legal/terms", kind: tos, accessed: "2026-08-16", archive: "https://web.archive.org/web/20260815125547/https://www.recraft.ai/legal/terms", note: "Canonical ToS URL; recraft.ai/terms (pass 1's entry URL) redirects here. Read independently by pass 1 (2026-08-10, archived https://web.archive.org/web/20260810112947/https://www.recraft.ai/legal/terms) and pass 2 (2026-08-15, archived above). Re-fetched live by this adjudicator on 2026-08-16 (three targeted fetches: full Section 1, full Section 5 incl. 5.1-5.6, full Section 14) specifically to verify contested quotations -- see coder_note for what was confirmed." }
+  - { url: "https://www.recraft.ai/docs/plans-and-billing/billing", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125608/https://www.recraft.ai/docs/plans-and-billing/billing", note: "Billing/cancellation/refund help article. Read by both passes (pass 1: 2026-08-10, archived https://web.archive.org/web/20260810113008/https://www.recraft.ai/docs/plans-and-billing/billing)." }
+  - { url: "https://www.recraft.ai/docs/plans-and-billing/credits", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810113033/https://www.recraft.ai/docs/plans-and-billing/credits", note: "Pass 1 only (local capture records/pass1/recraft-sources/credits-docs-rendered-2026-08-10.txt); pass 2 did not open this URL. Operation-to-credit table: \"Generate image from prompt | 1* equals the model price (see Recraft Studio)\", footnote \"* Multiplies by the selected model price\" -- the multiplier is not resolved on this page or any page either pass opened; it points to a \"Recraft Studio\" page neither pass located. Central to the computation_assumptions adjudication below." }
+  - { url: "https://www.recraft.ai/docs/recraft-models/external-models", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125629/https://www.recraft.ai/docs/recraft-models/external-models", note: "Read by both passes (pass 1: 2026-08-10, archived https://web.archive.org/web/20260810113120/https://www.recraft.ai/docs/recraft-models/external-models). Per-provider credit ranges. NOTE: the two passes' captured figures differ on several providers (e.g. OpenAI \"2-30 credits\" per pass 1's 08-10 capture vs \"2-24 credits\" per pass 2's 08-15 capture; similarly Alibaba and ByteDance). This looks like it could be a vendor_edit, but NEITHER record's register_events carries an entry for it, and protocol 7.4.1 requires an existing register entry before any date_explained classification -- an adjudicator does not create that evidence retroactively. Not classified; recorded here only as a transparency note. It does not change any coded value: both passes already independently coded credit_to_output_rate_published and cost_per_output_computable as partial, on either set of figures, because both sets are ranges either way." }
+  - { url: "https://www.recraft.ai/docs/api-reference/pricing", kind: docs, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810113141/https://www.recraft.ai/docs/api-reference/pricing", note: "Pass 1 only. Separate API Unit metering system (USD, prepaid), distinct from Studio subscription credits; not used to code any Studio-credit value, cited only as corroborating context." }
+  - { url: "https://www.recraft.ai/docs/plans-and-billing/free-plan", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125711/https://www.recraft.ai/docs/plans-and-billing/free-plan", note: "Read by both passes (pass 1: 2026-08-10, archived https://web.archive.org/web/20260810113202/https://www.recraft.ai/docs/plans-and-billing/free-plan). No watermark statement; free-plan credits described only as \"limited\", no figure, corroborating the free_plan_cap_documented adjudication below." }
+  - { url: "https://www.recraft.ai/blog/ownership-and-commercial-use-faq", kind: other, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125650/https://www.recraft.ai/blog/ownership-and-commercial-use-faq", note: "Pass 2 only. Official vendor blog stating commercial-use policy; qualifies as an official source per codebook section 4. Corroborates commercial_use_lowest_tier (agreed, unchanged)." }
+  - { url: "https://www.recraft.ai/docs/trust-and-security/legal-and-policy-documents", kind: other, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815125821/https://www.recraft.ai/docs/trust-and-security/legal-and-policy-documents", note: "Read by both passes (pass 1: 2026-08-10, archive_failed locally). Confirms recraft.ai/legal/terms is the sole dedicated legal/policy document; no separate refund-policy page exists. Not itself a positive source for any coded value." }
+  - { url: "https://www.recraft.ai/blog/pricing-update", kind: other, accessed: "2026-08-10", archive: "https://web.archive.org/web/20260810113405/https://www.recraft.ai/blog/pricing-update", note: "Pass 1 only. Dated 2024-09-09, describes a superseded plan lineup with a different credit split than the current docs. NOT used to code any value; kept for conflict-note context only (see records/pass1/recraft-sources/recraft-blog-pricing-update-2024-STALE.txt)." }
+
+variables:
+  headline_price_usd:
+    value: 10.00
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      Basic (entry tier) card: "$10 / per month" under the annual-preselected default state. Both
+      passes agree.
+
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      "$10 per month" with "billed annually $120" printed beneath it, under the default annual
+      toggle state. Both passes agree.
+
+  first_charge_amount_usd:
+    value: 120.00
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      "billed annually $120" is printed directly on the Basic card as the vendor's own annual
+      total -- read directly, not computed (10 x 12 = 120 happens to match). Both passes confirmed
+      this in a second representation (screenshot / DOM text-node query) independently. Both passes
+      agree.
+
+  mandatory_addon_present:
+    value: "no"
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      Basic's advertised feature list carries no required further charge; "Credit top-ups" are
+      documented elsewhere (docs/plans-and-billing/credits) as an optional, separately-purchased
+      add-on, not a requirement to use the plan as advertised. VAT-exclusivity note is a tax, not an
+      add-on (rule 3). Both passes agree.
+
+  annual_condition_disclosure:
+    value: adjacent
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      "billed annually $120" sits inside the same plan-card price block as the "$10 per month"
+      headline figure. Both passes agree.
+
+  annual_default_toggle:
+    value: annual_preselected
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      Toggle loads with "Pay annually (save 20%)" active (DOM aria-checked/data-state per pass 1;
+      toggle-thumb position and bold/purple label per pass 2's screenshot) before any interaction, on
+      both dates. Both passes agree.
+
+  free_plan_exists:
+    value: "yes"
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      Standing "Free" card at "$0", "Limited free credits", alongside the paid tiers, no expiry
+      stated. Both passes agree.
+
+  free_plan_cap_documented:
+    value: some_quantified
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      ADJUDICATED. Pass 1: all_quantified. Pass 2: some_quantified. Both passes captured
+      byte-identical free-plan text (verified directly by this adjudicator against both passes' raw
+      captures), so this is a rule-application disagreement, not a factual one. Resolved by codebook
+      section 5.1 plus the free_plan_cap_documented decision rule's own worked example: "Vendor G's
+      free plan states '10 images per month', '1 seat', and 'limited resolution' ... some_quantified"
+      -- Recraft's Free card is the same pattern. The card shows "$0 / Limited free credits" as its
+      own headline allowance line -- structurally the SAME position the paid tiers use for their
+      quantified "1,000 credits per month" line (both are the plan's stated credit allowance) -- and
+      "Limited free credits" carries no number. Section 5.1 is explicit that "limited" is one of the
+      words that "never qualify, whatever the limit type." This is a DISTINCT, unquantified limit
+      statement, additional to and not subsumed by the three specific bulleted caps ("3 generations
+      per style per day", "3 image uploads daily", "Up to 2 images per generation"), which ARE
+      quantified. At least one quantified + at least one not quantified = some_quantified. Pass 1's
+      all_quantified did not tally the credits headline as a limit in its own right; both passes DO
+      treat the parallel "N credits per month" line as its own tallied item on the sibling variable
+      usage_cap_quantified for the paid tier, which is the consistent treatment applied here.
+
+  free_plan_cap_value:
+    value: 3 generations per style per day | 3 image uploads per day | 2 images per generation
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      Verbatim bullet list under the Free plan card; identical in both passes' captures. Records
+      only the quantified limits per this variable's own rule -- "Limited free credits" is correctly
+      excluded here even though it is tallied as an unquantified item in free_plan_cap_documented
+      above; the two variables measure different things. Both passes agree on this value.
+
+  free_plan_watermark:
+    value: unknown
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      No watermark/branding statement for free-tier outputs specifically in the pricing page, free-
+      plan docs, or terms, in either pass's reading. Both passes agree.
+
+  free_plan_duration:
+    value: perpetual
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      "Free Tier" is an ongoing membership status alongside paid subscriptions; no expiry stated in
+      any document either pass read. Both passes agree.
+
+  trial_exists:
+    value: "no"
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      No trial mentioned in the pricing page, terms, or billing/credits docs; pass 2 additionally
+      confirms the ToS's only use of "trial" is in the arbitration clause ("a trial attorney..."),
+      unrelated to product trials. Both passes agree.
+
+  trial_card_required:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No trial exists (trial_exists = \"no\"). Both passes agree."
+
+  trial_length_days:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No trial exists (trial_exists = \"no\"). Both passes agree."
+
+  trial_auto_converts:
+    value: not_applicable
+    source: not_applicable
+    evidence: "No trial exists (trial_exists = \"no\"). Both passes agree."
+
+  credit_system_present:
+    value: "yes"
+    source: https://www.recraft.ai/docs/plans-and-billing/credits
+    evidence: >-
+      Plans are denominated in an intermediate "credits" unit that converts into generations at a
+      per-model rate, rather than the allowance being stated directly in output units. Both passes
+      agree.
+
+  credit_unit_defined:
+    value: "yes"
+    source: https://www.recraft.ai/docs/plans-and-billing/credits
+    evidence: >-
+      The docs operation table ties credits to named outputs (e.g. "Remove background | 1",
+      "Vectorization | 1", "Generate a mockup | 2"), and the pricing page's own embedded tooltip
+      separately ties the unit to image generation generically ("usually worth 1-2 credits"). Either
+      source alone satisfies this variable's "yes where ANY official document converts credits into
+      ANY output unit" rule. Both passes agree on the coded value.
+
+  credit_to_output_rate_published:
+    value: partial
+    source: https://www.recraft.ai/docs/recraft-models/external-models
+    evidence: >-
+      Not disputed (both passes coded partial) but flagged for adjudicator attention per this
+      product's credit-metering-in-ranges profile; independently re-verified against codebook rule 3
+      ("a rate published as a range ... with no rule for which applies, is partial") and confirmed
+      correct. The principal output (image) has a published rate on the live pricing page itself
+      (creditsTooltip: "usually worth 1-2 credits") and on the docs external-models table
+      (per-provider ranges, e.g. "2-24 credits", "1-18 credits"), in both cases a range with no
+      stated rule for resolving within it beyond "shown in the interface when you select it" --
+      structurally identical to the codebook's own worked example ("3 to 12 credits depending on
+      complexity ... partial"). Both passes agree on the value; this adjudicator confirms it is the
+      rule-correct value, not merely the agreed one.
+
+  credit_rate_location:
+    value: multiple
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      ADJUDICATED. Pass 1: docs_help_center. Pass 2: multiple. Pass 1 did not open the pricing page's
+      embedded __NEXT_DATA__ payload and coded from the docs table alone. Pass 2 found and this
+      adjudicator independently re-read (in pass 2's own dated local capture,
+      records/pass2/recraft-sources/pricing-page-rendered-2026-08-15.txt, line 144) the pricing
+      page's own shipped tooltip string, "subscriptions.features.creditsTooltip = 'Generation or
+      modification of an image is usually worth 1-2 credits'". Checking a page's embedded JSON
+      payload as well as its rendered text is affirmatively directed by deviations-for-coders.md
+      ("Check the page's embedded JSON payload as well as its rendered text. Prices and plan data
+      routinely live in a payload that never becomes visible text."), so this is in-bounds
+      documentary evidence, not fabrication. With a rate published on the live pricing page itself
+      AND on the docs pages (credits table + external-models table), the rate "appears in more than
+      one document class" -- this variable's own rule for `multiple`. Pass 1's docs_help_center
+      reflects an incomplete search, not a different but defensible reading of the same evidence.
+
+  cost_per_output_unit:
+    value: per_image
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      Category is AI image generator; the entry tier (Basic) offers image generation/editing only
+      (video generation is a Pro/Teams addition). Both passes agree.
+
+  cost_per_output_computable:
+    value: partial
+    source: https://www.recraft.ai/docs/recraft-models/external-models
+    evidence: >-
+      Not disputed (both passes coded partial) but flagged for adjudicator attention alongside
+      credit_to_output_rate_published, for the same reason. Re-verified against codebook rule 8 ("if
+      it yields a range because the vendor publishes a range, code partial") and confirmed correct:
+      price ($10/mo) and allowance (1,000 credits/mo) are published for the entry tier, but the
+      credit-to-image rate is published only as a range (native "usually 1-2 credits" per the
+      pricing-page tooltip; wider ranges for external models), so the calculation yields a range
+      ($0.01-$0.02/image for native models) rather than one figure. See computation_assumptions for
+      which of the two possible partial-justifying readings (rule 5, secondary-output-only, vs rule
+      8, range) governs -- both passes agree on the value "partial" but their computation_assumptions
+      prose rests on different readings, which is adjudicated below as the prose disagreement.
+
+  computation_assumptions:
+    value: >-
+      Basic (entry), annual display: $10/mo = $120/yr, 1,000 credits/mo, same period (no conversion
+      needed). Pricing-page tooltip: native image gen "usually 1-2 credits" -> $10/1000=$0.01/credit
+      -> $0.01-$0.02/image. Range, not a single figure; external-model rates range wider still.
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      ADJUDICATED (prose, protocol 7.4 / tools/disagreements.py PROSE set -- "the arithmetic itself
+      may still need reconciling"). cost_per_output_computable=partial is undisputed, but the two
+      prose accounts rest on different, non-equivalent readings of which codebook clause makes it
+      partial. Pass 1's reading applies rule 5 (secondary-output-only): the docs credits table gives
+      "Generate image from prompt | 1* equals the model price (see Recraft Studio)" with the
+      multiplier unresolved on that page, so pass 1 treated the principal output as wholly
+      uncomputed and fell back to a SECONDARY output (mockup, 2 credits flat, $0.02/mockup) as the
+      only computable figure. Pass 2's reading applies rule 8 (range): the pricing page's own
+      embedded tooltip (creditsTooltip, confirmed above under credit_rate_location) states a range
+      for the PRINCIPAL output itself, "usually worth 1-2 credits", yielding $0.01-$0.02/image.
+      Both passes accurately read their own source; the disagreement is which official document
+      governs. credit_to_output_rate_published and credit_rate_location are pricing variables, and
+      protocol 6.2 ranks the live pricing page first, documentation second, for that class -- the
+      tooltip (on the pricing page) outranks the docs table's unresolved cross-reference. The range
+      reading therefore governs, per codebook section 8's derived-variable rule: "in the range case
+      the range goes in coder_note; in the secondary-output case there is no range to record ... A
+      range is recorded only in the range case, since a secondary-output figure is a single number
+      for the wrong output rather than a spread for the right one, and publishing it as this
+      product's cost per output would misstate what was computed." The adjudicated value states the
+      range, not the mockup figure. Pass 1's mockup finding is genuine and is preserved in coder_note
+      as corroborating evidence of the docs table's own unresolved "(see Recraft Studio)" reference,
+      not discarded -- it is simply not what cost_per_output_value_usd should be built from once the
+      range on the higher-ranked source is accounted for. Neither pass fabricated or misread its own
+      source; this is a source-hierarchy application, not a correction of an error.
+
+  credit_rollover_policy:
+    value: expires_at_period_end
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      "Subscription credits are included in your plan and reset at the start of each billing cycle
+      -- unused credits don't roll over." (Separately, purchased top-up credits never expire -- a
+      different pool from the one this variable measures.) Both passes agree.
+
+  failed_generation_charge_policy:
+    value: charged
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      ADJUDICATED. Pass 1: unknown (read the credits docs page and pricing FAQ in full, found neither
+      addressed failure; did not check the ToS for this specific question). Pass 2: charged, citing
+      ToS Section 5.2. This adjudicator independently re-fetched Section 5.2 live on 2026-08-16 and
+      confirmed the quotation verbatim: "Credits are deducted at the then-current rate for each
+      chargeable operation performed, including each generation of an Asset..." and "Credits already
+      consumed are not returned, including where the request does not complete or the output does
+      not meet your expectations." This directly and unambiguously states that a failed/non-completing
+      generation still consumes credits. Pass 1's unknown reflects a document search that did not
+      reach the ToS on this question, not genuine vendor silence -- the documents are not silent.
+
+  auto_renewal_default:
+    value: "on"
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      Section 5: "You can sign up for a monthly subscription ... that will automatically renew on a
+      monthly basis, or for a yearly subscription ... that will automatically renew on a yearly
+      basis." Both passes agree; verbatim confirmed live 2026-08-16.
+
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      Stated in the terms (Section 5, "will automatically renew") and in the billing docs help
+      article ("your plan will renew on a monthly basis" after a cycle-switch walkthrough), in
+      agreement. The pricing-page FAQ never uses the word "renew". Both passes agree.
+
+  renewal_notice_commitment:
+    value: advance_notice_stated
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      ADJUDICATED. Pass 1: no_notice_stated (found only the price-change notice clause). Pass 2:
+      advance_notice_stated, citing an additional sentence in Section 5. This adjudicator
+      independently re-fetched the full text of Section 5 live on 2026-08-16 and confirmed the
+      sentence verbatim, immediately following the price-change clause: "Recraft will comply with
+      minimum annual subscription notice requirements where applicable, providing notice to the
+      email address associated with your account before the given automatic renewal date." This is a
+      stated commitment to notice before an automatic renewal, distinct from the price-change notice
+      clause both passes found. Pass 1's no_notice_stated reflects an incomplete read of Section 5,
+      not a different defensible reading of the same sentence -- pass 1's own record does not quote
+      or reference this sentence at all.
+
+  refund_policy_exists:
+    value: "yes"
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      ADJUDICATED, the closest call in this record. Pass 1: no_refunds_stated (Section 5's general
+      cancellation clause, "you will not receive a refund or credit for any amounts that have already
+      been billed or paid", ranks first for contractual variables and states no exception). Pass 2:
+      yes, citing Section 5.4-5.6's EU/EEA/UK 14-day withdrawal right plus a discretionary policy in
+      the pricing FAQ/billing docs. This adjudicator independently re-fetched Sections 5, 5.4, 5.5,
+      5.6 and 14 live on 2026-08-16 and confirmed every quotation verbatim, including the general
+      non-refundable statements in Section 5 ("you will not receive a refund...") and Section 14
+      ("Any Fees paid hereunder are non-refundable") that pass 1 relied on. Both a general
+      non-refundable default AND a concrete statutory carve-out are genuinely, simultaneously stated
+      in the SAME document. Decided by rule 3: "A statutory right mentioned for one jurisdiction
+      only ... is coded yes with the restriction recorded in coder_note" -- distinguished from this
+      variable's own contrasting worked example (Vendor Q, "non-refundable except where required by
+      law" -> no_refunds_stated) by concreteness. Vendor Q's clause is a bare legal hedge with no
+      elaboration anywhere in the example: it tells a buyer nothing determinate. Recraft's Section
+      5.4-5.6 is the opposite -- three dedicated subsections naming the jurisdictions (EU/EEA/UK), a
+      specific window (14 calendar days), and the exact conditions under which the right lapses
+      (express consent to instant credit allocation) or reduces (proportional refund for unused
+      credits). An EU/EEA/UK buyer can determine her refund position from this document before
+      paying, which is precisely what this variable measures and precisely what distinguishes rule 3
+      from the Vendor Q example. A general default coexisting with the carve-out does not defeat rule
+      3 -- if it did, rule 3 would have virtually no application, since an EU-law-driven withdrawal
+      right coexisting with a general non-refundable default is the standard, not the exception, for
+      vendors selling into the EU. `conflicting` does not apply: this is one document's own
+      general-rule-plus-specific-exception structure, not two sources of equal authority disagreeing.
+      Restriction recorded in coder_note per rule 3.
+
+  refund_window_days:
+    value: 14
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      Follows from refund_policy_exists = yes. Section 5.4: "You have the right to withdraw from a
+      new paid subscription contract without giving any reason within fourteen (14) calendar days of
+      the date of your purchase" -- confirmed verbatim live 2026-08-16. The only concrete day-count
+      figure stated anywhere in the documents; applies to EU/EEA/UK new-subscription purchases only
+      (Section 5.4: "This right applies only to new subscription contracts and not to subsequent
+      automatic renewals"). The general-population discretionary policy (pricing FAQ/billing docs)
+      states no fixed window, only a 30-day-since-payment eligibility test -- recorded in coder_note,
+      not coded here as a second window.
+
+  refund_conditions:
+    value: conditional
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      Follows from refund_policy_exists = yes. Section 5.5 (confirmed verbatim live 2026-08-16): the
+      EU withdrawal right lapses entirely on express checkout consent to instant credit allocation,
+      and reduces to "a proportional refund in respect of any unused credits" where some but not all
+      credits were used without that consent. Separately, the general discretionary policy requires
+      payment within the past 30 days AND fewer than 30 lifetime credits used, and is granted "at our
+      discretion". Both are usage-threshold / approval-step conditions under this variable's
+      definition.
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      "Click your profile in the upper right and select 'Manage subscription' -- Click 'Cancel plan'
+      and confirm." Both passes agree.
+
+  refund_policy_location:
+    value: multiple
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      Follows from refund_policy_exists = yes. The refund position is stated in three document
+      classes -- the terms (Section 5 general position, 5.4-5.6 EU carve-out, 14 non-refundable
+      restatement), the pricing-page FAQ ("Can I get a refund?"), and the billing docs help-center
+      page -- and, on the adjudicated reading above, all three are addressing one coherent overall
+      policy (default non-refundable, with a statutory and a discretionary exception) rather than
+      contradicting each other, which is this variable's own test for `multiple` ("agreement across
+      two or more classes") rather than `conflicting`.
+
+  commercial_use_lowest_tier:
+    value: lowest_paid
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      Basic tier feature list: "Commercial rights and private generations"; Free tier: "No commercial
+      use". Corroborated by the ownership-and-commercial-use-faq blog post pass 2 read. Both passes
+      agree.
+
+  watermark_removal_tier:
+    value: unknown
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      No document either pass read (pricing page, free-plan docs, terms, commercial-use FAQ) states a
+      tier-differentiated watermark position; ToS Section 8.2 describes a general capability to embed
+      watermarks/metadata, not a per-tier rule. Both passes agree.
+
+  output_ownership_statement:
+    value: conditional
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      Section 7.1 (Free Tier): Recraft owns free-tier assets. Section 7.2 (Paid Subscription): "You
+      own all Assets you create with the Services..." Rights depend on which tier generated the
+      asset. Both passes agree.
+
+  usage_cap_quantified:
+    value: some_quantified
+    source: https://www.recraft.ai/pricing
+    evidence: >-
+      ADJUDICATED, follows directly from unquantified_limit_clause below. Pass 1: some_quantified.
+      Pass 2: all_caps_quantified, premised on unquantified_limit_clause = absent. Basic tier limits:
+      "1,000 credits per month" (quantified rate), "Up to 4 images per generation" and "Up to 5
+      parallel generations" (quantified standing limits) -- both passes agree these three are
+      quantified. "Unlimited image uploads" and "Unlimited styles usage" turn on rule 3: unlimited
+      counts as quantified ONLY where no clause elsewhere qualifies it. Since this adjudicator
+      confirms below that a qualifying discretionary-limits clause IS present in the ToS (contrary to
+      pass 2's search), the two "Unlimited" claims are NOT quantified. At least one quantified (three
+      items) + at least one not quantified (two items) = some_quantified. Pass 1's value is correct;
+      pass 2's all_caps_quantified inherits the same search gap as its unquantified_limit_clause=absent.
+
+  unquantified_limit_clause:
+    value: present
+    source: https://www.recraft.ai/legal/terms
+    evidence: >-
+      ADJUDICATED. Pass 1: present, quoting ToS Section 1: "We may also impose limits on certain
+      features and services or restrict your access to parts or all of the Services without notice or
+      liability." Pass 2: absent, stating a full-text search for the keywords "fair use", "reasonable
+      use", "throttle"/"throttling", "discretion", "abuse", "excessive", "unlimited", and "rate limit"
+      found no discretionary usage-limiting clause. This adjudicator independently re-fetched the live
+      ToS on 2026-08-16 and confirmed pass 1's quotation verbatim, in Section 1, word for word,
+      including the capitalization the source renders it in. The clause is a genuine, present,
+      unquantified, vendor-discretion usage-limiting clause squarely matching this variable's
+      `present` definition. Pass 2's search methodology, by its own stated word list, could not have
+      found this clause: it contains none of the eight searched terms ("impose limits" and "restrict
+      ... access" were not among them). This is a search-completeness gap in pass 2, not a genuine
+      rule-application disagreement and not a vendor edit -- neither record's register_events carries
+      a vendor_edit entry for this document, so date_explained is not reachable regardless (protocol
+      7.4.1), and there is in any case no reason to think the clause was added between the two
+      collection dates: it reads identically on pass 1's 2026-08-10 capture and this adjudicator's
+      2026-08-16 live re-check, five and eleven days apart respectively from pass 2's 2026-08-15 read
+      that missed it.
+
+coder_note: |
+  ADJUDICATION SUMMARY, 2026-08-16 (protocol §7.4). tools/disagreements.py recraft found 10
+  substantive disagreements plus 1 prose disagreement (computation_assumptions) across the 37 coded
+  variables. All 11 were resolved by applying the codebook decision rule to the evidence, re-verified
+  in every case where a quoted phrase was load-bearing. ZERO were coded unknown: this product's
+  disagreements were fully rule-resolvable, so step 5's "documents do not determine the answer"
+  finding does not apply here, unlike some other products in this study.
+
+  REGISTER CHECK, done before classifying anything, per instruction. records/pass1/recraft.yaml and
+  records/pass2/recraft.yaml both carry `register_events: []` -- empty in both. Per §7.4.1,
+  date_explained requires an existing vendor_edit entry in the register; per §7.4.2, variant_explained
+  requires two archive snapshots of the same URL showing two display states, with no vendor_edit
+  explaining it. Neither classification is reachable for ANY of the 11 disagreements below, because
+  neither record supplies the register evidence either classification depends on -- checked first,
+  and not reached for on any item even where it might have been tempting (see the external-models
+  credit-range note in sources[] above: the raw numbers differ between the two passes' captures of
+  the same URL, which looks like it could be a vendor edit, but no register entry documents it, so it
+  is disclosed as a transparency note and left unclassified rather than adjudicated into
+  date_explained on this adjudicator's own say-so). All 11 disagreements below are ordinary
+  disagreements, resolved on the merits.
+
+  DISPOSITION. Two clusters plus one isolated item plus the prose field:
+  - REFUND CLUSTER (4 items: refund_policy_exists, refund_window_days, refund_conditions,
+    refund_policy_location) -- all cascade from one decision, refund_policy_exists. Adjudicated
+    "yes" under codebook rule 3 (jurisdiction-limited statutory right), distinguished from this
+    variable's own Vendor Q contrast example by the concreteness of ToS §5.4-5.6 (named
+    jurisdictions, a 14-day window, explicit lapse/reduction conditions) against Vendor Q's bare
+    "except where required by law". This is the closest call in the record and is written up in full
+    in refund_policy_exists's own evidence field, including why `conflicting` does not apply (one
+    document's general-rule-plus-exception structure, not two equal-authority sources disagreeing).
+  - USAGE-LIMIT CLUSTER (2 items: usage_cap_quantified, unquantified_limit_clause) -- cascade from
+    one decision, unquantified_limit_clause, decided the OPPOSITE direction from the refund cluster:
+    pass 1's "present" is correct and pass 2's "absent" rested on a keyword search that did not
+    include the actual words the ToS uses ("impose limits", "restrict ... access"). Verified by three
+    independent live re-fetches of the ToS on 2026-08-16, confirming pass 1's quotation verbatim.
+    This is the one place in this record where a prior coder's value is simply wrong against the
+    primary source, not a case of two defensible readings.
+  - THREE INDEPENDENT ITEMS, each verified by live re-fetch of ToS §5.2 / §5 respectively on
+    2026-08-16: failed_generation_charge_policy (pass 2's "charged" confirmed verbatim, pass 1's
+    "unknown" reflects a search that did not reach the ToS on this question) and
+    renewal_notice_commitment (pass 2's "advance_notice_stated" confirmed verbatim, pass 1's
+    "no_notice_stated" reflects the same kind of gap). free_plan_cap_documented is independent of the
+    ToS entirely -- resolved from the pricing page's own text plus codebook section 5.1's own worked
+    example (Vendor G), pass 2's "some_quantified" correct.
+  - CREDIT-RATE PAIR (credit_rate_location, disputed; credit_to_output_rate_published and
+    cost_per_output_computable, NOT disputed but flagged in this adjudication's brief because this
+    vendor meters in credits and publishes rates as ranges). All three were checked against the
+    codebook's specific range rules (credit_to_output_rate_published rule 3; cost_per_output_computable
+    rule 8) rather than against what "seems reasonable": a rate published only as a range (Recraft's
+    actual pattern -- pricing-page tooltip "usually 1-2 credits"; external-model provider ranges) is
+    explicitly `partial`, not `no` and not `unknown`, on the codebook's own worked example ("3 to 12
+    credits depending on complexity ... partial"). Both passes already had the categorical values
+    right (partial / partial); credit_rate_location=multiple is adjudicated because pass 1 never
+    found the pricing page's own embedded tooltip data (deviations-for-coders.md directs checking a
+    page's embedded JSON payload, and pass 2's dated local capture of that payload was independently
+    re-read by this adjudicator, not merely trusted from pass 2's quotation of it).
+  - PROSE (computation_assumptions) -- reconciled, not adjudicated as a value dispute, since the
+    categorical value (partial) is agreed. The two accounts reflect two different, both internally
+    accurate, readings of which official document governs the principal-output rate (docs table's
+    unresolved cross-reference vs. pricing-page tooltip's published range); protocol 6.2's
+    pricing-variable hierarchy (live pricing page first) resolves which one the adjudicated record
+    states, and codebook section 8's derived-variable rule dictates that the range, not the
+    secondary-output figure, is what belongs in the record once that source is credited. Full
+    reasoning in the field's own evidence.
+
+  ENTRY-TIER SELECTION (sampling-rules 7.2, unchanged from both passes, not disputed): Basic selected
+  on lowest annual-equivalent single-seat cost in the default annual-preselected state -- Basic
+  $10/mo = $120.00/yr (winner). Losing candidates: Pro $16/mo = $192.00/yr; Teams $18/mo/seat =
+  $211.00/seat/yr, but ToS §7.4 sets a 3-seat workspace minimum, so the real minimum purchasable
+  block is 3 x $211 = $633.00/yr (still losing; recorded per sampling-rules 7.2 rule 3, minimum block
+  annualized). Free ($0) excluded as not a paid candidate. Both passes independently reached the same
+  selection and the same losing-candidate figures; this adjudicator re-verified the arithmetic and it
+  is exact.
+
+  CROSS-CHECKS RUN: python3 tools/validate_records.py records/adjudicated/recraft.yaml and python3
+  tools/check_price_arithmetic.py records/adjudicated/recraft.yaml, both after every edit group.
+
+  SCOPE OF THIS PASS: adjudicator per protocol §7.4, not blind by design. Read
+  records/pass1/recraft.yaml, records/pass2/recraft.yaml, both recraft-sources/ directories in full
+  (including pass 1's credits-docs-rendered-2026-08-10.txt and pricing-rendered-2026-08-10.txt, pass
+  2's pricing-page-rendered-2026-08-15.txt, and pass 1's STALE 2024 blog capture, opened only to
+  confirm it was correctly excluded from coding), protocol-v1.md section 7.4 / 7.4.1 / 7.4.2 in full
+  plus surrounding sections 6.2/6.4/6.6/6.8 for source-hierarchy and register context, the complete
+  codebook-v1.md (all 37 variable definitions, sections 2, 5, 5.1, 5.2, 8), sampling-rules.md section
+  7.2, record-template.yaml, tools/disagreements.py, tools/validate_records.py,
+  tools/check_price_arithmetic.py, orchestrator/deviations-log.md in full (through D-021; confirmed
+  the recraft-specific cross-product-commit incident recorded there under D-017's third instance
+  matches pass 2's own disclosure) and deviations-for-coders.md, plus the two existing adjudicated
+  records (aiva.yaml, google-veo.yaml) for shape precedent only, not content. Re-fetched
+  www.recraft.ai/legal/terms live three times on 2026-08-16 (Section 1; full Section 5 incl.
+  5.1-5.6; Section 5.2 and 14 in detail) to verify every load-bearing quotation in this record
+  directly against the primary source rather than trusting either pass's transcription. Attempted to
+  fetch both passes' web.archive.org ToS snapshots directly for the same purpose; archive.org fetches
+  are blocked in this environment, so verification rests on the live 2026-08-16 page plus both
+  passes' own dated local captures, which is disclosed rather than papered over. Did not read
+  orchestrator/interim-signals.md, aitoolspolice.com, site/content/reviews/, or any other product's
+  records, per this agent's scope.
+conflict_note: >-
+  Refund framing: the pricing-page FAQ and billing docs present refunds in a discretionary-but-
+  available frame ("We may offer a refund at our discretion where..."), while the Terms of Service
+  states a general non-refundable default (§5: no refund on ordinary cancellation; §14: "Any Fees
+  paid hereunder are non-refundable"). Adjudicated as complementary rather than contradictory: the
+  ToS's own §5.4-5.6 EU/EEA/UK statutory carve-out and the FAQ/billing-docs discretionary policy are
+  both stated exceptions to one coherent general-default-plus-exceptions policy, not two sources
+  disagreeing about one fact -- see refund_policy_exists's evidence field for the full reasoning.
+  Both URLs: https://www.recraft.ai/legal/terms ; https://www.recraft.ai/pricing (FAQ) ;
+  https://www.recraft.ai/docs/plans-and-billing/billing.
+register_events: []
+status: complete

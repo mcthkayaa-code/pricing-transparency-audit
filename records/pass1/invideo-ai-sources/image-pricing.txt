@@ -1,0 +1,38 @@
+SOURCE: https://invideo.io/help/billing/image-pricing/
+ACCESSED: 2026-08-09
+METHOD: Rendered read via headless browser, document.body.innerText. Secondary-output (image) rate
+  table — used only to establish credit_unit_defined = yes (a definition exists for AN output unit,
+  even though image is not the principal output) and to corroborate credit_to_output_rate_published
+  = partial.
+ARCHIVE: https://web.archive.org/web/20260809164429/https://invideo.io/help/billing/image-pricing/
+
+=== RENDERED TEXT (verbatim, representative rows of ~55-row table) ===
+AI Image Generation Credits & Usage
+Credits per image
+MODEL                  RESOLUTION      CREDITS / IMAGE
+GPT Image 2             2k-standard     0.02-1.50
+Nano Banana Pro          1k-4k           0.25-0.40
+Reve 2.1                 -               1.20
+Seedream 5.0 Pro         1k-2k           0.22-0.43
+Nano Banana 2            1k-4k           0.12-0.36
+Kling 3.0 Image          1k-2k           0.11
+... (approximately 45 further models)
+
+Model & agent prices are subject to change. We update pricing as underlying models change; the
+exact credit cost for your selected model is shown in the app before you confirm the generation.
+
+How the range works
+Models with multiple tiers (resolution, quality, or aspect ratio) show a credits/image range. The
+minimum is the cheapest tier (e.g. 1K resolution, low quality); the maximum is the most expensive
+tier (e.g. 4K resolution, high quality). You'll see the exact cost for your chosen configuration
+before you confirm.
+
+What counts as one image?
+One image = one generation from one prompt. Multi-image outputs (e.g. 4-up grids) are billed per
+image. Reference image inputs don't add to the cost.
+
+=== CODING NOTE ===
+Ties to the pricing page's own illustrative example ("75 credits is enough for: 300 Nano banana pro
+... generations" -> 75/300 = 0.25 credits/image, matching this table's Nano Banana Pro low-tier rate
+of 0.25). Confirms the pricing-page illustrative figures and this docs table are consistent, not
+conflicting.

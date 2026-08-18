@@ -1,0 +1,147 @@
+URL: https://phrasly.ai/pricing
+Date accessed: 2026-08-10
+Method: Rendered read via headless Chromium (mcp Claude_Browser preview + javascript_tool document.body.innerText). Static curl/WebFetch returned HTTP 403 Cloudflare "Just a moment..." interstitial (no price content); rendering the page in a real browser resolved the challenge automatically (no interactive click/CAPTCHA solve performed) and the page loaded normally.
+Network note: our egress is Turkey-based. Page rendered with prices in TRY (Turkish Lira). D-003 currency check performed (see currency-check-d003.txt): neither an Accept-Language:en-US curl of the live URL nor the most recent web.archive.org capture showed a USD figure, so non_usd stands for money variables on this page.
+Default display state at load (before any interaction): Annual/Monthly toggle switch aria-checked="true" (Annual side active); both plan cards show "per month, billed annually" as the recurring qualifier. Country/flag selector in header shows alt="United States" icon while currency displayed is TRY (noted, not interacted with — no toggle was clicked to hunt for a different display state, per protocol 6.8 rule 4).
+
+=== document.body.innerText (first ~6000 chars, default state, no interaction) ===
+Phrasly.AI
+EN
+Open main menu
+PRICING
+Select a plan that works for you
+
+Gain access to all of our tools and features for a low monthly or annual price. No hidden fees. Cancel anytime.
+
+20%
+Monthly
+Use setting
+Annual
+45%
+3 Day Access
+
+The flexible option for individuals who want to try our AI tools.
+
+TRY 95.44
+
+then TRY 953.90 per month, billed annually
+
+Start Trial
+Unlimited AI Humanizations*
+Unlimited AI humanization words, up to 50 uses per day, no limit after trial
+Up to 6,000 Content Generator words
+800 words per process
+Advanced AI Detection Bypass
+Watermark and future proof
+Upgrade early any time during trial
+Unlimited
+
+The ultimate plan for powerhouses who want to take their writing to the next level.
+
+TRY 1,192.49TRY 524.43
+/ month
+
+per month, billed annually
+
+Upgrade Plan
+Unlimited AI Humanizations
+20,000 Plagiarism Check words / month
+Up to 30,000 Content Generator words / month
+5,000 words per process
+Advanced AI Detection Bypass
+Watermark and future proof
+Beta access to new AI tools
+SUPPORT
+Frequently Asked Questions
+
+Find answers to the most common questions about Phrasly.
+
+Are humanizations really unlimited?
+
+Absolutely. Unlike other tools that advertise 'unlimited' words but implement hidden caps, Phrasly delivers true unlimited processing. Our users regularly process millions of words monthly at a single flat rate - no tricks, no hidden limits.
+
+Will my texts be watermarked in the future?
+
+No. Here's why: Phrasly has built its own AI models, trained on over a million pages of real human writing. Other tools just use GPT-3 or GPT-4, which means when OpenAI adds watermarks, their texts will become detectable. Since we control our own technology, this isn't a risk with Phrasly. Our testing across 100,000+ documents shows an average human score of 99.7%.
+
+What are content generation credits?
+
+You get 15 monthly credits to generate papers, blog posts, or other content that you specify. Our system searches Google and Bing in real-time for citations. We limit this to 15 generations because scanning the web and verifying sources takes a lot of computing power, as Phrasly's crawlers scan the web in real-time.
+
+How is Phrasly different from other tools?
+
+[...company differentiation text omitted...]
+
+Business Solutions
+Need More? Integrate Our API
+
+For businesses looking to integrate AI humanization and detection into their products, or teams needing custom enterprise plans, explore our API platform and contact our sales team.
+
+Explore API
+Contact Sales
+Try Phrasly for free today
+
+Join 3,000,000+ students and writers who use Phrasly's AI content tools to write faster and more efficiently.
+
+Get Started
+- for free
+Footer
+[nav links omitted, see footer link list below]
+
+Legal: Terms of Service (/terms), Privacy Policy (/terms/privacy), Cookie Policy (/terms/cookie-policy), Ethics (/ethics)
+Copyright (c) 2026 Phrasly, LLC. All rights reserved.
+
+=== Second-representation confirmation (raw DOM HTML around each price, via javascript_tool) ===
+
+"3 Day Access" card raw HTML:
+<h3>3 Day Access</h3>
+<p>The flexible option for individuals who want to try our AI tools.</p>
+<p class="... text-3xl ..."><span>TRY&nbsp;95.44</span></p>
+<p class="text-sm ... text-gray-500 ...">then TRY&nbsp;953.90 per month, billed annually</p>
+<button>Start Trial</button>
+-> Confirms: 95.44 and 953.90 are the true magnitudes (no superscript/cents-split markup); matches innerText exactly.
+
+"Unlimited" card raw HTML:
+<h3>Unlimited</h3>
+<p>The ultimate plan for powerhouses who want to take their writing to the next level.</p>
+<p class="... text-2xl ...">
+  <span class="line-through ... text-gray-400 ... text-xl">TRY&nbsp;1,192.49</span>
+  <span>TRY&nbsp;524.43</span>
+</p>
+<span>/ month</span>
+<p class="text-sm ...">per month, billed annually</p>
+<button>Upgrade Plan</button>
+-> Confirms: TRY 1,192.49 carries class="line-through" (struck-through reference/pre-discount price); TRY 524.43 is the active, non-struck displayed price. Matches innerText exactly.
+
+Toggle switch raw HTML:
+<button role="switch" aria-checked="true" data-checked>...</button>
+positioned between "Monthly" (preceded by a faded "SAVE 20%" badge) and "Annual" (followed by a "SAVE 45%" badge).
+-> aria-checked="true" confirms Annual is the active/default side on load -> annual_default_toggle = annual_preselected.
+
+=== Accessibility tree (read_page) plan-card excerpt ===
+heading "3 Day Access"
+generic "TRY 95.44"
+generic "then TRY 953.90 per month, billed annually"
+button "Start Trial"
+listitem "Unlimited AI Humanizations" > "Unlimited AI humanization words, up to 50 uses per day, no limit after trial"
+listitem "Up to 6,000 Content Generator words"
+listitem "800 words per process"
+listitem "Advanced AI Detection Bypass"
+listitem "Watermark and future proof"
+listitem "Upgrade early any time during trial"
+
+heading "Unlimited"
+generic "TRY 1,192.49"
+generic "TRY 524.43"
+generic "/ month"
+generic "per month, billed annually"
+button "Upgrade Plan"
+listitem "Unlimited AI Humanizations"
+listitem "20,000 Plagiarism Check words / month"
+listitem "Up to 30,000 Content Generator words / month"
+listitem "5,000 words per process"
+listitem "Advanced AI Detection Bypass"
+listitem "Watermark and future proof"
+listitem "Beta access to new AI tools"
+
+No free-plan tier is shown on this pricing page (only two paid cards). Footer CTA "Get Started - for free" and hero copy "Try Phrasly for free today" link to /register (account creation - not opened, per documents-only rule); no separate zero-cost plan card with an ongoing allowance is displayed on the pricing page itself.

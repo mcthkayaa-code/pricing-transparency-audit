@@ -1,0 +1,94 @@
+SOURCE: https://www.tealhq.com/terms  (Terms & Conditions, Last Updated January 21, 2026)
+ACCESSED: 2026-08-12 (rendered browser read; static WebFetch returned HTTP 403)
+Full body innerText length confirmed 34,663 chars (complete page captured, not truncated).
+Searched full text for: commercial/Commercial (only unrelated "Commercial Dispute Resolution
+Procedures" AAA-arbitration hit), watermark/Watermark (NOT FOUND), fair use/fair-use/excessive/
+throttl (NOT FOUND), trial/Trial/free trial (NOT FOUND), rollover/reset/expire (NOT FOUND).
+
+Key clauses (verbatim excerpts):
+- "5. Payment Terms and Subscriptions ... Subscription Plans. Access to premium features of the
+  Service ("Teal+") requires payment of subscription fees. Teal+ is offered in the following
+  billing periods: weekly, monthly, quarterly, and annual. Current pricing is available at
+  tealhq.com/pricing."
+  >> NOTE: pricing page and the "Teal vs Teal+" help article both show ONLY weekly/monthly/
+     quarterly with no annual price published anywhere reachable without an account. Recorded
+     as a conflict (ToS names 4 periods; the two pricing-class sources show 3, no annual price).
+- "Automatic Renewal. IMPORTANT: PAID SUBSCRIPTIONS AUTOMATICALLY RENEW AT THE END OF EACH
+  BILLING PERIOD AT THE THEN-CURRENT SUBSCRIPTION RATE UNLESS YOU CANCEL BEFORE THE RENEWAL
+  DATE. ... The renewal charge will occur within 24 hours of the end of your current billing
+  period."
+- "How to Cancel. You may cancel your subscription at any time through your account settings at
+  app.tealhq.com/my-account/subscription. When you cancel: cancellation takes effect at the end
+  of your current billing period; you retain access ... no further charges will be made..."
+- "Refund Policy. ... Refund eligibility is based on when you submit your request relative to
+  your billing period start date: for weekly plans, within 2 calendar days...; for monthly
+  plans, within 7 calendar days...; for quarterly plans, within 14 calendar days...; for annual
+  plans, within 14 calendar days... Refund requests submitted outside these windows are not
+  eligible. Submitting a request does not guarantee approval; refunds are reviewed on a
+  case-by-case basis."
+- "Price Changes. Teal may change subscription prices at any time. We will provide advance
+  notice of any price increase via email to the address associated with your account before
+  your next renewal date. If you do not agree to the new price, you may cancel your subscription
+  before your renewal date."
+  >> notice commitment is scoped to PRICE INCREASES only, not to ordinary same-price renewal
+     charges.
+- "Your Content. You retain ownership of all content you create or upload to the Service ("Your
+  Content"), including resumes, cover letters, job descriptions, notes, and other materials. By
+  using the Service, you grant Teal a limited license to use Your Content solely as necessary to
+  provide, maintain, and improve the Service for you."
+- "License. ... Teal hereby grants you a non-exclusive, revocable, non-transferable license to
+  access and use the Service for your personal purposes. Unless otherwise specified in writing,
+  the Service is solely for your personal use and not for resale."
+  >> about SERVICE access/resale, not explicit about commercial use of resume OUTPUTS. No other
+     clause anywhere in the ToS uses the word "commercial" in relation to outputs.
+- No credits/AI-metering system mentioned anywhere in ToS. No watermark clause. No fair-use /
+  discretionary throttling clause anywhere in the document (read in full for this purpose).
+
+---
+SOURCE: https://help.tealhq.com/en/articles/9530153-teal-vs-teal ("Teal vs. Teal+")
+ACCESSED: 2026-08-12 (rendered browser read; static WebFetch on the FAQ article returned 403,
+this one reached via direct navigation)
+"Note: All pricing is in USD. We accept all major credit cards and Google Pay."
+Feature table (Free "Teal" vs paid "Teal+"):
+  Resume Creation: Unlimited / Unlimited
+  Job Tracking: Unlimited / Unlimited
+  Resume Templates: 10 free templates / Full template library access
+  Job Description Keyword Matching: Top 5 keywords / Full surfaced keywords list & custom keywords
+  Resume Analysis: Basic analysis & recommendations / Basic + Advanced analysis & recommendations
+  Bullet Analysis: 2 credits / Unlimited
+  Email Templates: 1 per job stage / Unlimited
+  Resume Designer: Basic settings / Basic + Advanced settings
+  Resume Bullet Generation: 5 credits / Unlimited      <-- CONFLICTS with pricing page's "10 Credits"
+  Professional Summary Generation: 2 credits / Unlimited
+  Cover Letter Generation: 2 credits / Unlimited
+  AI Interview Practice: 2 practice sessions / Unlimited
+  AI Interview Scenarios: 2 practice scenarios / Unlimited
+"Interested in purchasing a Teal+ subscription? We offer weekly ($13), monthly ($29), and
+quarterly ($79) plans!" -- confirms only 3 purchasable plans, no annual price, consistent with
+pricing page, inconsistent with ToS's 4-period list.
+
+---
+SOURCE: https://help.tealhq.com/en/articles/9535168-is-there-a-teal-free-trial
+ACCESSED: 2026-08-12 (rendered browser read)
+"NOTE: We do not offer a standard free trial that requires payment information, such as your
+credit card. Once you enter your credit card information, you are signing up for a subscription
+(recurring or non-recurring)."
+"While Teal+ offers unlimited AI generation, the free version of Teal includes a select number
+of non-renewable AI Generation credits to use on generating Bullets, Professional Summaries, or
+Cover Letters. This setup enables you to test these features..."
+"Bullet Generation: As a free user, you have 10 credits to use for AI Bullet Generation."  <-- matches pricing page (10), conflicts with "Teal vs Teal+" article (5)
+"Professional Summary Generation: As a free user, you have 2 credits..."
+"Cover Letter Generation: As a free user, you have 2 credits..."
+
+---
+SOURCE: https://help.tealhq.com/en/articles/9451252-what-is-the-cancellation-policy
+ACCESSED: 2026-08-12 (rendered browser read; static WebFetch returned 403)
+"Weekly Plan: Refund requests must be made within 2 calendar days of the billing period start
+date. Monthly Plan: ...within 7 calendar days... Quarterly Plan: ...within 14 calendar days...
+Annual Plan: ...within 14 calendar days..."
+"Submitting a refund request does not guarantee that a refund will be issued. Our team will only
+issue a refund based on the following conditions: Eligibility Timeframe..."
+"When you cancel your recurring subscription, the cancellation takes effect at the end of your
+current billing period." "head to your account settings and look for the red banner..."
+-- Matches ToS refund windows exactly (multiple/agreeing document classes). Also references an
+   "Annual Plan" refund window with no price ever published for it, same gap as the ToS.

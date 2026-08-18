@@ -1,0 +1,160 @@
+product_id: wix
+product_name: Wix
+category: AI website builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: Light
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://www.wix.com/plans
+archive_url: https://web.archive.org/web/20260813111451/https://www.wix.com/plans
+archive_status: archived
+default_display_state: >
+  USD ($) figures shown directly (no currency picker used); annual billing shown with NO
+  monthly/annual toggle present anywhere on the page (confirmed via read_page interactive-element
+  scan and a DOM search for "toggle/monthly/annual" controls, zero matches) -- the page presents
+  one billing state only, disclosed by footnote as "yearly subscriptions, paid in full at the
+  time of purchase"; read after declining/without accepting non-essential cookies; from a
+  Turkey-based network location (a separate load of the ToS page auto-redirected to the
+  tr.wix.com locale, confirming geo-detection is active, yet /plans itself still served English
+  USD figures both to the rendered browser and to a plain curl fetch with no Accept-Language
+  header). Cards shown left-to-right: Business Elite $159/mo, Business $39/mo (marked
+  "RECOMMENDED"), Core $29/mo, Light $17/mo, Free $0.
+
+sources:
+  - { url: "https://www.wix.com/plans", kind: pricing, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813111451/https://www.wix.com/plans", note: "primary pricing page; rendered read (browser) + raw HTML fetch cross-checked" }
+  - { url: "https://support.wix.com/en/article/wix-premium-plan-pricing", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813111923/https://support.wix.com/en/article/wix-premium-plan-pricing", note: "official help center: no-trial statement, geo price-variance disclosure" }
+  - { url: "https://support.wix.com/en/article/canceling-a-wix-premium-plan", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813111940/https://support.wix.com/en/article/canceling-a-wix-premium-plan", note: "self-serve cancellation steps, refund window, Wix-ads-on-revert statement" }
+  - { url: "https://support.wix.com/en/article/turning-off-the-auto-renewal-for-a-wix-premium-plan", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112004/https://support.wix.com/en/article/turning-off-the-auto-renewal-for-a-wix-premium-plan", note: "auto-renewal default statement, 30-day reminder-email commitment" }
+  - { url: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", kind: refund, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112013/https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", note: "dedicated refund policy page; also states free-site 500MB storage/500MB bandwidth" }
+  - { url: "https://www.wix.com/about/terms-of-use", kind: tos, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112526/https://www.wix.com/about/terms-of-use", note: "COULD NOT BE FULLY READ -- see coder_note; only Section 1 (Introduction) and an Israel-residents payment addendum render, both via raw fetch and full browser JS render (confirmed by enumerating every h1-h4 heading in the live DOM); sections 2-19 (incl. IP/ownership, fees, commercial terms) are absent from the document as served on the access date" }
+  - { url: "https://support.wix.com/en/article/about-storage-and-bandwidth", kind: docs, accessed: "2026-08-13", archive: "archive_failed", note: "premium-plan storage/bandwidth table; free-plan bandwidth figure CONFLICTS with the refund-policy page (1GB vs 500MB) -- see conflict_note" }
+  - { url: "https://www.wix.com/blog/is-wix-free", kind: other, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112559/https://www.wix.com/blog/is-wix-free", note: "official Wix blog post (vendor-authored, bylined); states monthly (non-default) prices, free-plan feature/limitation list, no-trial FAQ, cannot-sell-on-free-plan FAQ" }
+  - { url: "https://support.wix.com/en/article/about-ai-credits", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112631/https://support.wix.com/en/article/about-ai-credits", note: "AI credit system covering Smart Chat / AI Custom Agent / AI Marketing Agent / Wixel" }
+  - { url: "https://support.wix.com/en/article/wix-vibe-about-your-daily-chat-request-limit", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112641/https://support.wix.com/en/article/wix-vibe-about-your-daily-chat-request-limit", note: "separate daily-credit system gating the AI site-building chat itself" }
+  - { url: "https://support.wix.com/en/article/wix-account-and-site-ownership-disputes", kind: docs, accessed: "2026-08-13", archive: "https://web.archive.org/web/20260813112703/https://support.wix.com/en/article/wix-account-and-site-ownership-disputes", note: "checked for output/IP ownership language; covers ACCOUNT access-control ownership only, not content/IP rights -- insufficient, does not resolve output_ownership_statement" }
+
+variables:
+  headline_price_usd: { value: 17.00, source: "https://www.wix.com/plans", evidence: "Light plan card: \"$17/mo\" (rich-text price node reads \"17\", confirmed identical in raw HTML and rendered DOM -- not a superscript-cents layout)" }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://www.wix.com/plans", evidence: "\"Displayed prices are for yearly subscriptions, paid in full at the time of purchase.\"" }
+  first_charge_amount_usd: { value: 204.00, source: "https://www.wix.com/plans", evidence: "\"Displayed prices are for yearly subscriptions, paid in full at the time of purchase.\" -- yearly plan paid in full at purchase = charged once for 12 months; 17.00 x 12 = 204.00" }
+  mandatory_addon_present: { value: "no", source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "Light-tier feature set (custom domain, ads removal, 2GB storage, basic marketing) carries no separately-billed required module; connecting an already-owned domain is free (\"You can either purchase a domain from Wix or connect a domain you already own\"); payment-processing fees only apply to eCommerce, which Light does not include" }
+  annual_condition_disclosure: { value: same_page_secondary, source: "https://www.wix.com/plans", evidence: "footnote below the plan grid, outside any individual price card: \"Displayed prices are for yearly subscriptions, paid in full at the time of purchase.\"" }
+  annual_default_toggle: { value: no_toggle, source: "https://www.wix.com/plans", evidence: "no monthly/annual toggle control exists on the page (interactive-element scan and text search for \"toggle/monthly/annual\" both returned zero matches); every card shows one figure only, with the annual condition disclosed only in the page footnote" }
+  free_plan_exists: { value: "yes", source: "https://www.wix.com/plans", evidence: "\"Free / No credit card required / $0\" card shown alongside the four paid tiers" }
+  free_plan_cap_documented: { value: all_quantified, source: "https://support.wix.com/en/article/about-storage-and-bandwidth", evidence: "\"Free Wix sites come with up to 500MB of storage and up to 1GB bandwidth\" (storage+bandwidth both number+dimension); AI credits doc adds \"up to 30 credits per day, up to a maximum of 120 credits per month\" (number+dimension+period)" }
+  free_plan_cap_value: { value: conflicting, source: "https://support.wix.com/en/article/about-storage-and-bandwidth", evidence: "bandwidth figure conflicts across two official docs of equal authority -- see conflict_note for both quotes and URLs" }
+  free_plan_watermark: { value: "yes", source: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", evidence: "\"The free site version includes up to 500MB of storage, up to 500MB bandwidth and displays Wix ads.\"" }
+  free_plan_duration: { value: perpetual, source: "https://www.wix.com/blog/is-wix-free", evidence: "\"Is Wix free forever or is there a time limit? There's no time limit. You can keep your free website for as long as you need it.\"" }
+  trial_exists: { value: "no", source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "\"Is there a free trial for Premium plans? We do not offer a free trial for Premium plans, but there is a 14-day money-back guarantee if you are not satisfied with the plan you choose.\"" }
+  trial_card_required: { value: not_applicable, source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "no trial exists" }
+  trial_length_days: { value: not_applicable, source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "no trial exists" }
+  trial_auto_converts: { value: not_applicable, source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "no trial exists" }
+  credit_system_present: { value: "yes", source: "https://support.wix.com/en/article/about-ai-credits", evidence: "\"All new Wix Premium plans include AI credits. Credits can be used in products like Smart Chat, AI Custom Agent, AI Marketing Agent, and Wixel...\"; a separate daily-credit pool also gates the Wix Vibe AI site-building chat (support.wix.com/en/article/wix-vibe-about-your-daily-chat-request-limit)" }
+  credit_unit_defined: { value: "no", source: "https://support.wix.com/en/article/about-ai-credits", evidence: "\"The exact number of actions you can take and how many credits each action uses is not guaranteed. The cost of an AI prompt or action depends on the length and complexity of your request...\" -- documents read in full, no fixed 1-credit-equals-X statement found for either credit system" }
+  credit_to_output_rate_published: { value: "no", source: "https://support.wix.com/en/article/about-ai-credits", evidence: "only plan-level, explicitly non-binding action estimates are published (\"based on standard models and the average complexity of a request, and are provided as examples only\"); no per-unit credit rate for any output is stated; actual per-plan credit allocations sit behind account login (\"go to the Upgrade page to view plan options for your site\"), not in a public document" }
+  credit_rate_location: { value: absent, source: "https://support.wix.com/en/article/about-ai-credits", evidence: "no rate is published; see credit_to_output_rate_published" }
+  cost_per_output_unit: { value: per_seat_month, source: "https://www.wix.com/plans", evidence: "flat monthly price per site (unmetered access to hosting/building software, not a countable per-generation artifact); pricing page frames plans by storage/domain/marketing/eCommerce features, not by a generation count" }
+  cost_per_output_computable: { value: "yes", source: "https://www.wix.com/plans", evidence: "Light tier $17.00/mo in the default display state is itself the per-seat-month price; no separate allowance/credit figure gates core site access, so no conversion is needed" }
+  computation_assumptions: { value: "Light tier, $17/mo default display (billed annually, paid in full = 12mo, per pricing-page footnote): first charge 17x12=204.00. Same $17/mo is the per-seat-month output cost directly (unmetered plan, no allowance to convert).", source: "https://www.wix.com/plans", evidence: "combined arithmetic for first_charge_amount_usd and cost_per_output_computable, both keyed to the same default-state figure" }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://support.wix.com/en/article/about-ai-credits", evidence: "\"Unused AI credits do not roll over to the next credit cycle.\" (matched by the Wix Vibe doc: \"Unused daily credits do not roll over to the next day.\")" }
+  failed_generation_charge_policy: { value: unknown, source: "https://support.wix.com/en/article/about-ai-credits", evidence: "the only related statement addresses dissatisfaction, not technical failure: \"Can I get my AI credits back if I'm not satisfied with the result? Once AI credits are used for a request, they cannot be returned, even if the result does not match your expectations.\" -- codebook rule 1 excludes buyer-dislikes-the-output from \"failure\"; no statement addresses a technical failure or empty result specifically" }
+  auto_renewal_default: { value: "on", source: "https://support.wix.com/en/article/turning-off-the-auto-renewal-for-a-wix-premium-plan", evidence: "\"To ensure that your site remains live at all times, Wix plans are set to renew automatically at the end of the subscription period.\"" }
+  auto_renewal_disclosure_location: { value: help_center_only, source: "https://support.wix.com/en/article/turning-off-the-auto-renewal-for-a-wix-premium-plan", evidence: "stated in this dedicated Account & Billing help article and repeated in the Canceling article (\"your site plan may renew up to 3 weeks before the expiration date\"); both are the same document class (help center); not stated on the pricing page itself and the Terms of Use body could not be read (see coder_note), so \"terms\" cannot be confirmed" }
+  renewal_notice_commitment: { value: advance_notice_stated, source: "https://support.wix.com/en/article/turning-off-the-auto-renewal-for-a-wix-premium-plan", evidence: "\"Wix sends reminder emails starting 30 days before your payment is due.\"" }
+  refund_policy_exists: { value: "yes", source: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", evidence: "\"Wix offers a 14-day, money-back guarantee for new Premium or Studio site plans.\"" }
+  refund_window_days: { value: 14, source: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", evidence: "\"Does the 14-day money back period apply for monthly plan subscriptions? Our Premium and Studio plans are offered on a yearly or monthly basis. Both types of plans offer a 14-day money back period.\"" }
+  refund_conditions: { value: conditional, source: "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan", evidence: "\"The 14-day refund policy only applies to new Premium or Studio plans. The refund policy does not apply if: You are requesting a refund for a plan renewal. You are requesting a refund for the upgrade of an existing plan.\"" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://support.wix.com/en/article/canceling-a-wix-premium-plan", evidence: "\"To cancel your site plan: Go to Premium Subscriptions in your Wix account. Click the More Actions icon next to the relevant plan. Click Cancel Plan. Click Cancel Now to confirm.\"" }
+  refund_policy_location: { value: multiple, source: "https://www.wix.com/plans", evidence: "\"14-day money-back guarantee\" banner on the pricing page itself, PLUS a dedicated refund help-center page (support.wix.com/en/article/requesting-a-refund-for-a-premium-plan) -- two distinct document classes in agreement" }
+  commercial_use_lowest_tier: { value: unknown, source: "https://www.wix.com/about/terms-of-use", evidence: "no accessible official document states a commercial-use rights grant or restriction; the Terms of Use body (where such a clause would normally live) did not render beyond its Section 1 introduction despite repeated attempts -- see coder_note. The free-plan restriction found (About AI Credits / is-wix-free FAQ) is a FEATURE gate on payment processing (\"Can I sell online with a Wix free plan? No, for this you'll need a higher paid plan\"), not a stated rights restriction on commercial use of the site itself, so it does not answer this variable" }
+  watermark_removal_tier: { value: lowest_paid, source: "https://support.wix.com/en/article/wix-premium-plan-pricing", evidence: "\"Wix Premium plans offer enhanced benefits for your website, including removal of Wix ads...\"; the blog's Light-tier line item reads \"Connect a custom domain, remove Wix ads, get 2 GB of storage...\" -- Light is the entry paid tier and is the lowest tier at which ad/branding removal is granted" }
+  output_ownership_statement: { value: unknown, source: "https://www.wix.com/about/terms-of-use", evidence: "no accessible official document states who holds rights in a user's site content/design; the one on-topic-sounding help article found (wix-account-and-site-ownership-disputes) governs ACCOUNT access-control ownership (which login controls the account) per its own Terms of Use section 1.5 cross-reference, not IP/content ownership; the Terms of Use body that would normally carry this clause did not render -- see coder_note" }
+  usage_cap_quantified: { value: some_quantified, source: "https://support.wix.com/en/article/about-storage-and-bandwidth", evidence: "Light: \"2 GB\" storage (quantified standing limit) and \"Unlimited\" bandwidth (quantified via the unlimited carve-out, no qualifying clause located); AI-credit allowance for Light is published ONLY as a hedged estimate (\"Up to 150\" actions, \"not guaranteed... provided as examples only\") with the actual enforced credit quantity behind account login, not in a public document -- at least one limit (storage) is cleanly quantified and at least one (the AI-credit allowance actually governing Light) is not reliably so" }
+  unquantified_limit_clause: { value: unknown, source: "https://www.wix.com/about/terms-of-use", evidence: "this variable requires reading the terms of service and acceptable-use policy IN FULL; the Terms of Use body did not render beyond Section 1 (see coder_note) so it could not be read to the end, and no separate acceptable-use-policy document was located -- coding absent would misrepresent a document that was not actually readable" }
+
+coder_note: |
+  Domain 1 (A1/A3) coded. Entry tier = Light ($17/mo default display, $204.00/yr annual-
+  equivalent). Losing eligible candidates (all generally available, no sales gate, standing
+  plans): Core $29/mo = $348.00/yr; Business $39/mo = $468.00/yr; Business Elite $159/mo =
+  $1908.00/yr. Free ($0) is not a paid tier and is excluded from entry-tier selection per
+  sampling-rules 7.2/7.3; it is scored separately under free_plan_exists.
+  Domains 2-3 coded. free_plan_cap_value conflict: support.wix.com/en/article/about-storage-
+  and-bandwidth ("up to 1GB bandwidth") vs support.wix.com/en/article/requesting-a-refund-for-
+  a-premium-plan ("up to 500MB bandwidth"); storage (500MB) and Wix's official blog (wix.com/
+  blog/is-wix-free, "up to 500 MB of storage and up to 1 GB bandwidth") both agree with the
+  1GB-bandwidth reading, but the blog is a lower-authority class (vendor blog, not docs/help
+  center) so it does not resolve a conflict between two equal-authority help-center pages;
+  full figures preserved in conflict_note per free_plan_cap_value's decision rule.
+  Domain 4 coded. No paid time-limited intro period exists (standard upfront billing plus a
+  14-day money-back guarantee, not a discounted trial period) -- A-012 does not apply here.
+  Domains 5-8 coded. Wix runs TWO parallel AI credit systems, both discovered mid-collection
+  and both read in full: (1) "AI credits" for Smart Chat / AI Custom Agent / AI Marketing Agent
+  / Wixel, tier-scaled, monthly renewal (free plan: 30/day up to 120/month); (2) Wix Vibe daily
+  chat-request credits gating the core AI site-building chat itself, flat 6/day free vs 50/day
+  on any Premium plan (not tier-scaled), also non-rolling. Neither system publishes a fixed
+  credit-to-output conversion; both explicitly disclaim their action-count estimates as
+  non-binding. cost_per_output_unit/computable are scored on the flat per-site plan price
+  (per_seat_month), not on either credit system, because the pricing page frames the product
+  as unmetered site hosting/building and the core site-generation chat (Aria) is stated
+  elsewhere to be free and credit-free ("Chatting with Aria (Wix's AI agent) is free and does
+  not use AI credits" -- About AI Credits doc), leaving the flat plan price as the only
+  principal-output cost basis with a published figure.
+  Domains 9-11 coded. TERMS OF USE ACCESS FAILURE (affects auto_renewal_disclosure_location,
+  commercial_use_lowest_tier, output_ownership_statement, and unquantified_limit_clause below):
+  https://www.wix.com/about/terms-of-use was fetched twice (raw HTTP fetch, and a full browser
+  JS render with a manual language-selector switch back to English after the page's own
+  geo-redirect sent it to tr.wix.com) and inspected via DOM heading enumeration
+  (document.querySelectorAll('h1,h2,h3,h4')). Both attempts show only "1. Introduction" /
+  "1.1. Our Purpose" / "1.2. Legal Agreement" followed immediately by an Israel-residents
+  payment addendum -- Sections 2 through 19 (the numbered sections that section 1's own banner
+  text references, including whatever governs IP/content ownership, commercial terms, and
+  usage/fair-use conditions) are absent from the document as served, not merely hidden by CSS
+  (outerHTML was 772KB with only those two headings present; no iframe or lazy-load endpoint
+  carried the missing body). Per this study's own rule, an official source that could not be
+  read is not evidence; it is logged here and in conflict_note rather than guessed from a
+  third-party paraphrase (one WebSearch summary offered a "Section 2.1" ownership quote that
+  could not be verified against the live DOM and was DISCARDED, not coded, per the fabrication
+  warning). support.wix.com/en/article/wix-account-and-site-ownership-disputes was checked as
+  a possible substitute and found to cover a different construct (account login/access
+  control, not content/IP ownership).
+  Domain 12 coded.
+
+  Two-representation price check (binding rule): headline/tier figures (159, 39, 29, 17, 0)
+  were confirmed in TWO representations -- the rendered page's accessible text (get_page_text:
+  "$159/mo", "$39/mo", "$29/mo", "$17/mo", "$0") and the raw server-rendered HTML's rich-text
+  spans (grep on wix_plans_raw.html: standalone "159", "39", "29", "17", "0" nodes, no
+  superscript-cents split). Magnitudes sanity-checked against tier names and annual-equivalent
+  math; no reading error found.
+
+  Currency: USD figures ($) were served directly on every read (rendered browser AND plain
+  curl with no Accept-Language header), despite collection running from a Turkey-based network
+  location that DID geo-redirect a different page (the Terms of Use) to a Turkish-language
+  subdomain. Since a USD figure was served directly, headline_price_usd is coded from it per
+  codebook rule 3 -- the multi-arm non_usd check was not needed.
+
+  Frame check: no correction needed to the frame row (product_id/name/category/status/
+  paid_submission all matched what the live site and docs state).
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: >
+  free_plan_cap_value / bandwidth: support.wix.com/en/article/about-storage-and-bandwidth
+  states "Free Wix sites come with up to 500MB of storage and up to 1GB bandwidth."
+  support.wix.com/en/article/requesting-a-refund-for-a-premium-plan states "The free site
+  version includes up to 500MB of storage, up to 500MB bandwidth and displays Wix ads." Both
+  are official Wix help-center articles (equal authority); storage (500MB) agrees across both,
+  bandwidth does not (1GB vs 500MB). Not resolved by the source hierarchy -- coded conflicting
+  per codebook decision tree 2.1 step 3.
+  Unreadable official source: https://www.wix.com/about/terms-of-use is the vendor's Terms of
+  Use and is first-rank authority for contractual variables (commercial use, output ownership,
+  auto-renewal, unquantified-limit clauses), but its substantive body (Sections 2-19) did not
+  render on access (2026-08-13) despite a raw fetch and a full browser JS render -- see
+  coder_note for the verification steps. Per this study's rule, a source that could not be read
+  is not evidence: commercial_use_lowest_tier, output_ownership_statement, and
+  unquantified_limit_clause are coded unknown rather than inferred from it, and
+  auto_renewal_disclosure_location is coded from the next-ranked accessible source (help
+  center) instead of confirming or ruling out "terms".
+register_events: []
+status: complete

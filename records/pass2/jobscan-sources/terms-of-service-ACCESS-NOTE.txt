@@ -1,0 +1,16 @@
+URL: https://www.jobscan.co/terms-of-service
+Accessed (attempted): 2026-08-15
+
+ACCESS BARRIER -- read in full, documented here per "an official source you could not read is not evidence; log it and code from what you could read."
+
+The page consistently rendered in Turkish ("HİZMET ŞARTLARI") when loaded in the rendering browser across two independent fresh navigations on 2026-08-15, despite the rest of the marketing site (homepage, product pages) rendering in English in the same browser session. This appears to be server-side locale selection scoped to this specific legal-document route (cause not confirmed -- possibly geo-IP-based; collection network location is Turkey per the study's standing D-003 note).
+
+Methods attempted to obtain the English original, all unsuccessful:
+1. WebFetch on the live URL: returned only nav/footer chrome (no ToS body text in either attempt); a follow-up WebFetch explicitly asked "what language is this page in" and replied "English," but could not produce two verbatim opening sentences, meaning that conclusion rests on the shell/lang-attribute, not on actually-read body prose -- this does not constitute a documentary read of the body.
+2. Browser render of https://www.jobscan.co/terms-of-service and of https://jobscan.co/terms-of-service (both fresh navigations): consistently Turkish body text.
+3. Tried a guessed English-locale path https://www.jobscan.co/en/terms-of-service: 404 / not found.
+4. web.archive.org: queried the availability API, found a capture at https://web.archive.org/web/20260716233820/https://www.jobscan.co/terms-of-service (2026-07-16), navigated to it directly -- the capture contains only the pre-hydration nav/footer shell, no ToS body text (the underlying page is a JS-rendered SPA and archived empty, matching the known D-005 pattern for scripted pages).
+5. archive.ph / archive.today: navigation to https://archive.ph/newest/https://www.jobscan.co/terms-of-service was denied/failed at the tool level.
+6. WebSearch for specific likely ToS phrases (commercial use, ownership, fair use / reasonable use / excessive use): returned no verbatim Jobscan ToS text, only third-party pages and generic legal-clause libraries (not usable as coded-value evidence per protocol -- third-party sources are discovery aids only).
+
+Consequence for this record: variables whose ONLY plausible official source is the general Terms of Service (and which are not otherwise addressed by the Cancellation Policy, the SaaS Agreement, the pricing page/FAQ, the official product pages, or the Jobscan Support Center) are coded `unknown`, with this access barrier cited as the reason, per codebook section 2.1 step 4 ("otherwise, code unknown") and the record-hygiene rule that an unread official source is not evidence.

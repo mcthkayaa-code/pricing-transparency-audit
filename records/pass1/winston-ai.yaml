@@ -1,0 +1,137 @@
+product_id: winston-ai
+product_name: Winston AI
+category: AI detector
+product_status: active
+paid_submission: "no"
+entry_tier_name: Essential
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://gowinston.ai/pricing/
+archive_url: "local_copy_only: winston-ai-sources/pricing-page-rendered-2026-08-13.txt"
+archive_status: local_copy_only
+default_display_state: "Annual (yearly) billing preselected on load, confirmed via raw DOM (button[data-current='yearly']; 'Annual' label carries class billing-label--active, 'Monthly' does not). Prices shown in USD ($ symbol). Read from a Turkey-based network after declining non-essential cookies via 'Reject All'. No currency/region selector observed on the page."
+
+sources:
+  - { url: "https://gowinston.ai/pricing/", kind: pricing, accessed: "2026-08-13", archive: local_copy_only, note: "primary pricing page; rendered read via browser, default state confirmed via DOM" }
+  - { url: "https://gowinston.ai/terms-conditions/", kind: tos, accessed: "2026-08-13", archive: local_copy_only, note: "terms and conditions: refunds, auto-renewal, cancellation, prohibited-use clause, API fair-use clause, currency" }
+  - { url: "https://help.gowinston.ai/article/how-do-i-cancel-my-subscription", kind: docs, accessed: "2026-08-13", archive: local_copy_only, note: "help center cancellation steps" }
+  - { url: "https://help.gowinston.ai/account-management/do-my-unused-credits-carry-over", kind: docs, accessed: "2026-08-13", archive: local_copy_only, note: "credit rollover policy" }
+  - { url: "https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis", kind: docs, accessed: "2026-08-13", archive: local_copy_only, note: "credit-per-word rates for text features; fetched twice" }
+  - { url: "https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-image-analysis", kind: docs, accessed: "2026-08-13", archive: local_copy_only, note: "credit cost for image/deepfake scans" }
+  - { url: "https://help.gowinston.ai/pricing/how-much-does-it-cost", kind: docs, accessed: "2026-08-13", archive: local_copy_only, note: "Elite-plan credit top-up statement, conflicts with pricing page" }
+  - { url: "https://gowinston.ai", kind: other, accessed: "2026-08-13", archive: local_copy_only, note: "homepage CTA / no-card-required wording" }
+
+variables:
+  headline_price_usd: { value: "10.00", source: "https://gowinston.ai/pricing/", evidence: "Essential card, default annual state: '$10 /month' shown beside '$120 /year'" }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://gowinston.ai/pricing/", evidence: "monthly figure ($10) paired with an annual total ($120/year) under the DOM-confirmed 'yearly' toggle state; no per-seat wording present" }
+  first_charge_amount_usd: { value: "120.00", source: "https://gowinston.ai/pricing/", evidence: "'$120 /year' published directly in the Essential card alongside '$10 /month' — a stated annual total, not a coder computation" }
+  mandatory_addon_present: { value: "no", source: "https://gowinston.ai/pricing/", evidence: "Essential feature list and full comparison grid read; no required charge beyond the plan price found (credit top-ups are optional, not required to use the plan as advertised)" }
+  annual_condition_disclosure: { value: adjacent, source: "https://gowinston.ai/pricing/", evidence: "'$120 /year' printed directly beneath '$10 /month' inside the same Essential price block, with the active 'Annual' toggle label attached to the same block" }
+  annual_default_toggle: { value: annual_preselected, source: "https://gowinston.ai/pricing/", evidence: "raw DOM: button.billing-toggle[data-current='yearly']; label span 'Annual' carries class 'billing-label--active', 'Monthly' span does not" }
+  free_plan_exists: { value: "no", source: "https://gowinston.ai/pricing/", evidence: "A-015(a) resolved 2026-08-17 (orchestrator/A-004-A-006-A-015-resolution.md). WAS yes. The Free tier is a 14-day trial, not a perpetual free plan. Decided on window-era pricing-page text plus this record's OWN self-contradiction: it already reads the identical phrase 14 day trial, four lines below on the same card, as a 14-day limit in order to code trial_exists yes and trial_length_days 14. A-012's rule reaches this because zero cost is that rule's paradigm case rather than a condition of it, which corrects a passing aside in the A-012 resolution. The trial variables all hold unchanged. Original coder reasoning follows. -- 'Free' card, '$0 /month $0 /year', a standing column parallel to Essential/Advanced/Elite, not framed as a promotional banner" }
+  free_plan_cap_documented: { value: not_applicable, source: "https://gowinston.ai/pricing/", evidence: "A-015(a) resolved 2026-08-17 (orchestrator/A-004-A-006-A-015-resolution.md). WAS all_quantified. Consequent on free_plan_exists: with no perpetual free plan the free-plan cap variables do not apply. Original coder reasoning follows. -- '2,000 credits / 14 day trial' on the card and '2,000/14 days' in the comparison table's Credits row — the only limit textually attributed to Free carries a number, a dimension, and a period" }
+  free_plan_cap_value: { value: not_applicable, source: "https://gowinston.ai/pricing/", evidence: "A-015(a) resolved 2026-08-17 (orchestrator/A-004-A-006-A-015-resolution.md). WAS a quantified figure. Consequent on free_plan_exists. The figure itself was never in doubt; what changed is which construct it belongs to, and it survives on the trial variables. Original coder reasoning follows. -- comparison table, Credits row, Free column: '2,000/14 days'" }
+  free_plan_watermark: { value: not_applicable, source: "https://gowinston.ai/terms-conditions/", evidence: "watermarks not addressed anywhere in the terms or pricing page; principal output is a detection score/PDF report, not a media artifact a watermark could mark (same reasoning as watermark_removal_tier)" }
+  free_plan_duration: { value: not_applicable, source: "https://gowinston.ai/pricing/", evidence: "A-015(a) resolved 2026-08-17 (orchestrator/A-004-A-006-A-015-resolution.md). WAS unknown, coded on the internal tension between a 14-day trial phrasing and a recurring notation for the same tier. The resolution settles that tension in favour of the trial reading, so the variable does not apply rather than being indeterminate. The adjudicator recorded that it took the LESS vendor-favourable of the two available ways to give the 14-day reading effect. Original coder reasoning follows. -- internal tension: '2,000 credits / 14 day trial' (trial-style tag) vs. the comparison table's '2,000/14 days' using the same recurring-rate notation as paid tiers' '/month'; no FAQ, help article, or homepage text resolves which reading governs" }
+  trial_exists: { value: "yes", source: "https://gowinston.ai/pricing/", evidence: "Free-plan feature 'HUMN-1 website certification / 14 day trial' — HUMN-1(+) certification is otherwise exclusive to Advanced/Elite paid tiers, so this is a documented time-limited trial of paid-tier functionality" }
+  trial_card_required: { value: "no", source: "https://gowinston.ai", evidence: "homepage CTA: 'Get started free' paired with 'No credit card required'; no separate signup path exists for the trial elements bundled into the Free plan" }
+  trial_length_days: { value: 14, source: "https://gowinston.ai/pricing/", evidence: "'14 day trial' stated twice on the Free card" }
+  trial_auto_converts: { value: unknown, source: "https://gowinston.ai/pricing/", evidence: "no document states that the trial converts, continues, or renews into a paid subscription without further action" }
+  credit_system_present: { value: "yes", source: "https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis", evidence: "'AI detector (1 credit/word)', 'Plagiarism (2 credits/word)' — an intermediate unit ('credits') converts into outputs at stated rates" }
+  credit_unit_defined: { value: "yes", source: "https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis", evidence: "'AI detector (1 credit/word) — detects AI-generated content and gives a Human Score'" }
+  credit_to_output_rate_published: { value: "yes", source: "https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis", evidence: "principal output (text/AI-detection) rate published as '1 credit/word'; other advertised output types also published: plagiarism '2 credits/word', image Basic Scan '200 credits', Advanced Scan '500 credits'" }
+  credit_rate_location: { value: docs_help_center, source: "https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis", evidence: "per-word/per-scan conversion rates appear only in help center getting-started articles; the pricing page states allowances (e.g. '100,000 credits/month') but never a word-to-credit conversion" }
+  cost_per_output_unit: { value: per_1k_words, source: "https://gowinston.ai/pricing/", evidence: "product category is AI text-content detection ('AI Content detection' listed first on every tier; FAQ: 'Why should I pay for an AI content detector?'); credits are metered per word" }
+  cost_per_output_computable: { value: "yes", source: "https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis", evidence: "entry tier price ($10/mo), included allowance (100,000 credits/mo) and principal-output rate (1 credit/word) are all published; see computation_assumptions" }
+  computation_assumptions: { value: "Essential tier, $10/mo billed annually per default state ($120/yr total), 100,000 credits/mo included; AI-detector (principal output) rate = 1 credit/word per help center. 100000 credits / 1 = 100000 words/mo = 100 x 1k-word units; $10 / 100 = $0.10 per 1,000 words.", source: "https://gowinston.ai/pricing/ ; https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis", evidence: "" }
+  credit_rollover_policy: { value: expires_at_period_end, source: "https://help.gowinston.ai/account-management/do-my-unused-credits-carry-over", evidence: "'Word scan credits are refreshed at the beginning of each billing cycle... any unused credits from the previous month do not carry over to the next month'" }
+  failed_generation_charge_policy: { value: unknown, source: "https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis", evidence: "two independent direct fetches of the text-analysis article and one of the pricing FAQ article found no statement on failed-scan credit handling; a third-party-derived web search summary claimed credits are not deducted on failure but this could not be confirmed against any official document and is not used as a source" }
+  auto_renewal_default: { value: "on", source: "https://gowinston.ai/terms-conditions/", evidence: "'you consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until you notify us of your cancellation'" }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://gowinston.ai/terms-conditions/", evidence: "the explicit recurring-charge consent statement appears only in the Terms & Conditions; the pricing-page FAQ and the help-center cancellation article describe how/when cancellation takes effect but do not themselves state that billing recurs automatically" }
+  renewal_notice_commitment: { value: unknown, source: "https://gowinston.ai/terms-conditions/", evidence: "no document found commits to notifying the buyer in advance of a renewal charge" }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://gowinston.ai/terms-conditions/", evidence: "'All purchases are non-refundable, subject to any mandatory rights you may have under applicable consumer protection laws in your jurisdiction, including the Consumer Protection Act (Quebec) for Quebec residents'" }
+  refund_window_days: { value: 0, source: "https://gowinston.ai/terms-conditions/", evidence: "general policy is non-refundable; no vendor-offered window stated" }
+  refund_conditions: { value: not_applicable, source: "https://gowinston.ai/terms-conditions/", evidence: "no refund is generally available (non-refundable policy), so no conditions attach" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://help.gowinston.ai/article/how-do-i-cancel-my-subscription", evidence: "'Log in to your Winston AI account... Billing section... Manage subscription... Cancel Subscription button... Review the details, then confirm the cancellation' — no support contact step" }
+  refund_policy_location: { value: terms, source: "https://gowinston.ai/terms-conditions/", evidence: "the non-refundable statement appears in the Terms & Conditions; no dedicated refund page, pricing-page clause, or help-center article on refunds was found" }
+  commercial_use_lowest_tier: { value: not_applicable, source: "https://gowinston.ai/terms-conditions/", evidence: "the only 'revenue-generating'/'compete with us' clause is a general prohibited-use restriction on scraping/reverse-engineering the Site itself, not a grant or restriction on commercial use of scan outputs; the product's output (a detection score/report) is not an artifact this construct attaches to" }
+  watermark_removal_tier: { value: not_applicable, source: "https://gowinston.ai/terms-conditions/", evidence: "watermarks never addressed; principal output is a detection score/analysis report, the codebook's own worked not_applicable example for this variable" }
+  output_ownership_statement: { value: not_applicable, source: "https://gowinston.ai/terms-conditions/", evidence: "terms address ownership of user-SUBMITTED content only ('You retain full ownership of all content you submit...'); no statement addresses ownership of the generated score/PDF report; coded on the same no-commercial-use-attachable-output basis as commercial_use_lowest_tier per the codebook's own cross-reference (see coder_note for the PDF-report caveat considered)" }
+  usage_cap_quantified: { value: some_quantified, source: "https://gowinston.ai/pricing/", evidence: "Essential: '100,000 credits/month' (quantified rate) and 'up to 200,000' characters per scan (quantified standing limit) are clean; 'Scans Per Hour: unlimited' is qualified by the terms' unquantified API fair-use/rate-limit clause (see unquantified_limit_clause), so not cleanly quantified" }
+  unquantified_limit_clause: { value: present, source: "https://gowinston.ai/terms-conditions/", evidence: "Section 18, API Users: 'Rate limits and fair use policies apply and may be updated from time to time; continued use of the API following any update constitutes acceptance of the revised limits' — no figure given" }
+
+coder_note: |
+  BUNDLE: the entry tier (Essential) is a bundle in the vendor's own wording. One
+  subscription/credit pool covers "AI Content detection", "Advanced plagiarism detection",
+  "AI Image & deepfake detection", OCR document scanning, and PDF report generation
+  together; the pricing page never sells AI detection alone.
+
+  ENTRY TIER: eligible candidates were Essential ($120.00/yr annual-equivalent, winner),
+  Advanced ($192.00/yr), Elite ($312.00/yr); all generally available, no seats/sales gate.
+  Free ($0) is not a paid-tier candidate. Enterprise/Custom is sales-gated and excluded
+  under sampling-rules 7.2 eligibility rule 2.
+
+  CREDIT POOL: AI-detection and plagiarism scans draw from the SAME shared monthly credit
+  pool, at different per-word rates (AI detector 1 credit/word, plagiarism 2 credits/word,
+  fact-checker/writing-feedback/essay-grader 1 credit/word each; image Basic Scan 200
+  credits, Advanced Scan 500 credits) -- not separate allowances. Source: help center
+  text-analysis and image-analysis articles, "credit estimator updates immediately as you
+  toggle features on and off".
+
+  CHARACTER CAP: "up to 200,000" characters per scan is the SAME figure for Essential,
+  Advanced and Elite in the comparison table (one shared cap across paid tiers, not a
+  per-tier split). Free plan's per-scan character cap is not stated in extractable text
+  (table cell renders blank, likely an icon); not asserted either way.
+
+  E1/E2/E3 (commercial use, watermark, output ownership): coded not_applicable on all
+  three, following the codebook's own worked example for a detection-score output
+  (watermark_removal_tier's "detection score or analysis table" case). Checked rather than
+  assumed: the ToS "revenue-generating"/"compete with us" clause was read in full and is a
+  general anti-scraping/anti-competition prohibited-use clause about the Site, not a
+  commercial-use-of-output grant. One caveat considered and rejected: Winston does generate
+  a distinct PDF report artifact ("Generate shareable PDF reports"), so an argument exists
+  for output_ownership_statement = unknown instead of not_applicable (a report is closer to
+  "an artifact" than a bare score). Coded not_applicable for consistency with E1's test,
+  which the codebook states output_ownership_statement shares; flagging for adjudication.
+
+  FREE-PLAN DURATION: genuine unresolved ambiguity, not a cross-source conflict (both
+  readings come from the same single pricing-page document) -- see free_plan_duration
+  evidence. trial_exists coded yes on the HUMN-1-certification trial specifically (a
+  paid-tier-exclusive feature given free for 14 days), which is a narrower and more
+  literal reading than treating the whole Free plan as a trial.
+
+  USAGE_CAP_QUANTIFIED judgment call: the ToS fair-use/rate-limit clause is headed
+  "API Users" and its operative sentence says "continued use of the API", narrower than
+  the codebook's worked example (a fair-use clause stated to apply to "all plans"). Coded
+  some_quantified (buyer-protective: API access is bundled into the Essential tier, and
+  the "unlimited" scans-per-hour claim is not demonstrably clean of this clause) rather
+  than all_quantified; flagging the scope question for adjudication.
+
+  CONFLICT (not tied to a single coded variable): the pricing page lists "Top-up Credits"
+  as a feature bullet under all four tier cards equally, but two help-center pages
+  (text-analysis article and how-much-does-it-cost) both state credit top-ups are an
+  Elite-only capability. No coded variable in this instrument covers top-up availability
+  directly, so no value was changed, but the divergence is recorded per protocol 6.2.
+  Both URLs: https://gowinston.ai/pricing/ and
+  https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis and
+  https://help.gowinston.ai/pricing/how-much-does-it-cost.
+
+  NOT USED: https://getwinstonai.com/terms.html (different domain than the frame's
+  vendor_home_url; could not confirm same-company official status, so not opened).
+
+  REPRESENTATIONS CONFIRMED: money/credit figures on the pricing page were confirmed in
+  two independent extractions (browser get_page_text raw rendered text, DOM-level
+  javascript_tool read of the billing toggle, and a separately-run WebFetch extraction of
+  the same URL) that agreed on every figure; no superscript-cents or digit-concatenation
+  pattern present (all prices are whole dollars). Archive.org saves failed for every
+  source with "Claude Code is unable to fetch from web.archive.org" (tool-level failure
+  matching deviation D-012's pattern); two attempts made on the primary pricing page URL,
+  then treated as systemic and not retried per source; all sources are local_copy_only,
+  dated verbatim captures saved under winston-ai-sources/.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Pricing page (https://gowinston.ai/pricing/) lists 'Top-up Credits' under all four tier cards; help center (https://help.gowinston.ai/getting-started/how-to-use-winston-ai-for-text-analysis and https://help.gowinston.ai/pricing/how-much-does-it-cost) states credit top-ups are Elite-plan-only. Does not map to a specific coded variable (top-up availability is not itself a coded construct); recorded per protocol 6.2 rather than left unreported."
+register_events: []
+status: complete

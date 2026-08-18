@@ -1,0 +1,246 @@
+product_id: aragon-ai
+product_name: Aragon AI
+category: AI headshot
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Basic"
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-16
+recheck_date: not_applicable
+primary_source_url: https://www.aragon.ai/pricing
+archive_url: https://web.archive.org/web/20260814173055/https://www.aragon.ai/pricing
+archive_status: archived
+
+default_display_state: |
+  Pricing page (https://www.aragon.ai/pricing) loads on the "Headshots" top-level tab with
+  "Individual Pricing" sub-tab active, before any interaction: three one-time package cards (Basic
+  $18, list $35 struck through; Standard $25, list $45; Executive $40, list $75) under a "20% off all
+  packages, limited time only!" banner. No monthly/annual toggle appears in this default view. A
+  second top-level tab, "Subscription" (recurring credit plans: Lite $15/mo, Pro $29/mo, Ultimate
+  $49/mo, Creator $249/mo, with its own Monthly/Annual toggle defaulting to Monthly), is one click
+  away and is NOT part of the default display state (sampling-rules.md 7.2 rule 1: do not switch to
+  find a different figure; protocol 6.8). Confirmed independently on three reads: pass 1
+  (2026-08-06), pass 2 (2026-08-14, DOM/screenshot on two fresh loads), and this adjudicator
+  (2026-08-16, live, cookie banner declined via "Reject All", both tabs read after recording the
+  default). Pass 1's session could not render the Subscription tab at all ("Minified React error
+  #418" in console, tab clicks inert) and used only the page's own embedded schema.org JSON-LD for
+  Subscription-tier corroboration; pass 2 and this adjudicator both rendered it normally with a plain
+  click, matching each other verbatim. This is a session-side tooling failure on pass 1's part
+  (deviations-for-coders.md: "A coder-tooling misread is never a display_variant. The vendor served
+  one state and our reader mangled it."), not a vendor A/B state or geography state — see coder_note
+  for how this drove six of the nine disagreements. Currency: plain "$" figures, no currency/country
+  selector (globe icon opens a language picker only: English/Deutsch/Français/Português); ToS states
+  "all fees are in U.S. Dollars." Pass 1 additionally flagged a geography banner on the vendor's HOME
+  page ("Local pricing is live... priced for your region"); not observed on the pricing page itself
+  by any of the three reads and not present on any archived pricing-page snapshot, so it is noted but
+  not treated as affecting the entry-tier price read here.
+
+sources:
+  - { url: "https://www.aragon.ai/pricing", kind: pricing, accessed: 2026-08-14, archive: "https://web.archive.org/web/20260814173055/https://www.aragon.ai/pricing", note: "PRIMARY SOURCE. Both tabs. Pass 1 (2026-08-06) archived the same URL but could only render the Headshots/Individual tab; pass 2 (2026-08-14) rendered both tabs on two fresh loads; this adjudicator re-read both tabs live 2026-08-16 (cookie banner declined) and confirmed the 2026-08-14 archive's content, including the Subscription-tab FAQ, is still current." }
+  - { url: "https://www.aragon.ai/terms", kind: tos, accessed: 2026-08-14, archive: "https://web.archive.org/web/20260814173113/https://www.aragon.ai/terms", note: "Terms of Service, 'Last Updated: 03/17/2026'. Read in full by both passes (~90,000 characters cleaned text); this adjudicator re-grepped pass 1's full local capture for 'refund' and 'credit' to confirm both passes' quotations." }
+  - { url: "https://www.aragon.ai/refund-policy", kind: refund, accessed: 2026-08-14, archive: "https://web.archive.org/web/20260814173132/https://www.aragon.ai/refund-policy", note: "Dedicated refund/cancellation policy page, tied rank 1 with Terms of Service for contractual variables (protocol 6.2). Both passes' verbatim transcriptions match." }
+  - { url: "https://www.aragon.ai/free-headshot-generator", kind: docs, accessed: 2026-08-14, archive: "https://web.archive.org/web/20260814173201/https://www.aragon.ai/free-headshot-generator", note: "Dedicated free-tier marketing/FAQ page." }
+  - { url: "https://www.aragon.ai/", kind: other, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806074250/https://www.aragon.ai/", note: "Home page, read by pass 1 only. Carries the geography/local-pricing banner noted in default_display_state; not a coding source for any coded value." }
+  - { url: "https://www.aragon.ai/support", kind: other, accessed: 2026-08-14, archive: "not_archived_not_a_coding_source", note: "Contact/support hub only, no self-serve articles. Read by both passes, contributed no coded facts." }
+  - { url: "https://www.aragon.ai/headshots-for-teams", kind: docs, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806074223/https://www.aragon.ai/headshots-for-teams", note: "Read by pass 1 for E1/E2 corroboration. No watermark or commercial-use text found; contributed no coded facts." }
+
+variables:
+  # --- Domain 1 ---
+  headline_price_usd: { value: 18.00, source: "https://www.aragon.ai/pricing", evidence: "AGREED. Basic card, default display state: '$18' (struck through '$35'). Confirmed as a single unsplit DOM text node (pass 2) and re-confirmed live 2026-08-16." }
+  headline_billing_basis: { value: "one_time", source: "https://www.aragon.ai/pricing", evidence: "AGREED. Basic/Standard/Executive are flat one-time package purchases ('40 headshots' etc., a 'Select' purchase button), no recurrence language on this tab." }
+  first_charge_amount_usd: { value: 18.00, source: "https://www.aragon.ai/pricing", evidence: "AGREED. One-time purchase; first charge equals the displayed $18. No mandatory add-on, no annualization applies." }
+  mandatory_addon_present: { value: "no", source: "https://www.aragon.ai/pricing", evidence: "AGREED. Pricing page, ToS, refund policy and support page read; no required additional charge, minimum credit purchase, platform fee, or onboarding fee documented for the Basic package." }
+  annual_condition_disclosure: { value: "not_applicable", source: "https://www.aragon.ai/pricing", evidence: "AGREED. Entry tier is one_time; the headline figure does not depend on annual prepayment (rule 1)." }
+  annual_default_toggle: { value: "not_applicable", source: "https://www.aragon.ai/pricing", evidence: "AGREED. Default-loaded view (Headshots > Individual Pricing) shows no monthly/annual toggle at all; billing does not recur for the tier shown by default. (A separate toggle exists inside the one-click-away Subscription tab, defaulting to Monthly — not part of the default display state.)" }
+
+  # --- Domain 3 ---
+  free_plan_exists: { value: "yes", source: "https://www.aragon.ai/pricing", evidence: "AGREED. Subscription-tab FAQ: 'Can I use Aragon for free? Yes. Free users receive 16 credits per active day.' Corroborated by ToS ('Free Tier Credits') and the free-headshot-generator page ('Free credits come with every Aragon account', 'no sign-ups or credit cards required'). Ongoing per-day allowance, not a time-limited trial." }
+  free_plan_cap_documented: { value: "some_quantified", source: "https://www.aragon.ai/pricing", evidence: "ADJUDICATED 2026-08-16 under codebook 5.1's quantified-limit test and rule 4. 'Free users receive 16 credits per active day' (Subscription-tab FAQ) is a quantified rate — number + dimension + period. The free-headshot-generator page's comparison FAQ ('more outfits and backgrounds (20+ vs limited free options)') states the free side without a number. One quantified + one unquantified = some_quantified. Re-verified live 2026-08-16, identical wording to pass 2's local capture. Pass 1's none_quantified followed from a session-side rendering failure on the Subscription tab (see default_display_state), not from the document being silent — pass 1's own saved 'clean' text extraction of the pricing page is nav/footer only and contains none of the page's actual pricing or FAQ content. Prior values: pass1=none_quantified, pass2=some_quantified." }
+  free_plan_cap_value: { value: "16 credits per active day", source: "https://www.aragon.ai/pricing", evidence: "ADJUDICATED 2026-08-16, follows from free_plan_cap_documented above. Verbatim, Subscription-tab FAQ: 'Free users receive 16 credits per active day.' Re-confirmed live 2026-08-16, identical wording. Prior values: pass1=unknown (no quantified figure was available in that session), pass2='16 credits per active day'." }
+  free_plan_watermark: { value: "unknown", source: "https://www.aragon.ai/free-headshot-generator", evidence: "AGREED. 'Watermark' does not appear anywhere in connection with the FREE tier's output, on either pass's full-text read (including this adjudicator's independent read of the now-accessible Subscription tab, which addresses paid tiers only). Distinct from watermark_removal_tier below, which is about paid tiers." }
+  free_plan_duration: { value: "perpetual", source: "https://www.aragon.ai/free-headshot-generator", evidence: "AGREED. 'Free with every Aragon account' / 16 credits per ACTIVE DAY presented as a standing, ongoing feature; no expiry date or countdown stated anywhere." }
+
+  # --- Domain 4 ---
+  trial_exists: { value: "no", source: "https://www.aragon.ai/terms", evidence: "AGREED. No time-limited trial of a paid tier is mentioned anywhere across all documents read by either pass. The try-before-you-buy mechanism is the ongoing free tier (domain 3), not a domain-4 trial." }
+  trial_card_required: { value: "not_applicable", source: "https://www.aragon.ai/terms", evidence: "AGREED. No trial exists." }
+  trial_length_days: { value: "not_applicable", source: "https://www.aragon.ai/terms", evidence: "AGREED. No trial exists." }
+  trial_auto_converts: { value: "not_applicable", source: "https://www.aragon.ai/terms", evidence: "AGREED. No trial exists." }
+
+  # --- Domain 5 ---
+  credit_system_present: { value: "yes", source: "https://www.aragon.ai/pricing", evidence: "AGREED. Subscription plans meter use via 'credits' ('300 monthly credits' etc.); ToS has dedicated 'Credits' and 'Promotional Credits' sections. Product-level finding — the entry tier itself (Basic, one-time) is denominated directly in headshots, not credits, but the product as a whole plainly meters through credits. Not an entry-tier-pinned variable (codebook 5.2)." }
+  credit_unit_defined: { value: "yes", source: "https://www.aragon.ai/pricing", evidence: "ADJUDICATED 2026-08-16 under rule 3 ('yes where ANY official document converts credits into ANY output unit') vs rule 5 ('stating how many credits a plan includes is not a definition... without a conversion'). Each of the 4 Subscription-tab cards pairs its credit total with the exact resulting output-unit counts on the SAME card: 'Aragon Lite... 300 monthly credits — 300 images · 75 edits', and correspondingly 1,200/1,200/300 (Pro), 2,400/2,400/600 (Ultimate), 12,000/12,000/3,000 (Creator) — a consistent 1-credit=1-image, 4-credits=1-edit ratio stated on every card. That is a conversion in substance (paired output-unit figures on the same line), distinguishing it from rule 5's negative example of a bare 'X credits per month' with no output figure at all. Re-verified live 2026-08-16, matches pass 2's capture verbatim. Pass 1's no rested on the Subscription tab being inaccessible in that session, not on reading it and finding no conversion. Prior values: pass1=no, pass2=yes (pass2 flagged this as a judgment call in coder_note; resolved here by the rule 3/rule 5 text itself, not by preference)." }
+  credit_to_output_rate_published: { value: "partial", source: "https://www.aragon.ai/pricing", evidence: "ADJUDICATED 2026-08-16 under rule 4 ('rates published for secondary features but not the principal output are partial'). Principal output = headshots (cost_per_output_unit=per_headshot, agreed by both passes). The published rate covers generic 'images' and 'edits' only (see credit_unit_defined); no document states a credits-per-headshot rate — 'Premium headshot photo packs' is listed as an included Subscription-card feature with no credit cost of its own. Rate published for secondary/generic outputs, not the principal one, per rule 4. Prior values: pass1=no (same Subscription-tab access gap as credit_unit_defined), pass2=partial." }
+  credit_rate_location: { value: "pricing_page", source: "https://www.aragon.ai/pricing", evidence: "ADJUDICATED 2026-08-16, follows from credit_to_output_rate_published=partial (a rate is published, so absent cannot stand). The credit/image/edit figures appear only on the Subscription tab of the pricing page; confirmed absent from ToS's Credits section (conceptual only — redemption, expiry, 'Aragon may change... the value of services obtainable with Credits', no number given — grepped in full by this adjudicator) and from the free-headshot-generator page. One document class = pricing_page, not multiple. Prior values: pass1=absent, pass2=pricing_page." }
+
+  # --- Domain 6 ---
+  cost_per_output_unit: { value: "per_headshot", source: "https://www.aragon.ai/pricing", evidence: "AGREED. Product sold to produce headshots ('40/60/100 headshots' per package; sitewide framing 'The Leading AI Headshot Generator', page titled 'Aragon AI Pricing: Headshots, Subscription Plans, and Team Plans')." }
+  cost_per_output_computable: { value: "yes", source: "https://www.aragon.ai/pricing", evidence: "AGREED. Entry tier (Basic) price $18.00 and its allowance (40 headshots) are both published on the same card in the default display state; no assumption about typical use needed, no credits involved for this tier." }
+  computation_assumptions: { value: "Entry tier Basic (Headshots tab, Individual Pricing sub-tab; pricing page default display state per sampling-rules 7.2), billing basis one_time, $18.00 for 40 headshots included; already on one period, no conversion needed. 18.00 / 40 = 0.45 per headshot.", source: "https://www.aragon.ai/pricing", evidence: "RECONCILED 2026-08-16. Both passes computed the identical arithmetic (Basic, one-time, $18.00, 40 headshots, 18/40=0.45) in different wording — not a substantive disagreement, merged into one string per codebook domain 6 rule (plan, billing basis, allowance, conversion stated). Basic card verified live 2026-08-16: '$18', '40 headshots'." }
+
+  # --- Domain 7-9 ---
+  credit_rollover_policy: { value: "expires_at_period_end", source: "https://www.aragon.ai/terms", evidence: "AGREED. ToS: 'Any unused Credits or allowances expire at the end of the applicable Subscription Period and will not carry over.' Corroborated by pricing-page FAQ (both tabs' language agrees); the separately-purchased top-up-credit exception (rolls over while subscribed) does not change the plan's own included-credit pool, which is what this variable and both coders describe." }
+  failed_generation_charge_policy: { value: "unknown", source: "https://www.aragon.ai/terms", evidence: "AGREED. Full-text search of all documents (both tabs included, this adjudication's re-read) for failure/error language found only output-quality disclaimers and a dissatisfaction-driven 'Free Redo' offer — not a statement about technical failures consuming or not consuming allowance." }
+  auto_renewal_default: { value: "on", source: "https://www.aragon.ai/terms", evidence: "AGREED. ToS banner: 'AUTOMATIC RENEWAL NOTICE. IF YOU SUBSCRIBE TO THE SERVICE, YOUR SUBSCRIPTION WILL AUTOMATICALLY RENEW...UNLESS YOU CANCEL BEFORE THE RENEWAL DATE.' Confirmed by the refund-policy page. Product-level finding; the entry tier itself does not recur." }
+  auto_renewal_disclosure_location: { value: "multiple", source: "https://www.aragon.ai/terms", evidence: "AGREED. Stated in the Terms of Service (banner + Subscription Service clause) AND the dedicated Refund Policy page ('All subscription plans renew automatically unless canceled before the renewal date') — two of four document classes, in agreement. Not found stated explicitly on the pricing page itself." }
+  renewal_notice_commitment: { value: "no_notice_stated", source: "https://www.aragon.ai/terms", evidence: "AGREED. No advance-notice-before-charge commitment found; ToS commits only to notifying on FAILED payment attempts. Support page's 'Invoices are automatically sent after each payment' is a post-charge receipt, which the codebook rule excludes." }
+
+  # --- Domain 10 ---
+  refund_policy_exists: { value: "conflicting", source: "https://www.aragon.ai/terms", evidence: "AGREED (both passes independently reached conflicting; not a disagreement between them). Tied rank-1 contractual sources (protocol 6.2) state incompatible positions: ToS General Payment Terms — 'all fees are...non-refundable, except as required by law' (confirmed by this adjudicator's grep: a general fees clause, not subscription-limited, and none of the ToS's refund mentions cross-reference the dedicated Refund Policy). Refund Policy page — 'we are more than willing to offer a complimentary redo or a 100% refund' under stated conditions. See conflict_note." }
+  refund_window_days: { value: "conflicting", source: "https://www.aragon.ai/refund-policy", evidence: "ADJUDICATED 2026-08-16 under the variable's own rule ('where two official sources of equal authority state incompatible windows, code conflicting') and protocol 6.2 (ToS and the dedicated refund-policy page are TIED at rank 1 for contractual variables — confirmed no source outranks the other). Refund Policy's Headshot Refund Policy section (the entry tier's own section): 'Refund requests must be submitted within 14 calendar days of purchase.' ToS: 'all fees are...non-refundable, except as required by law' — a general clause covering Basic's $18 fee, not subscription-limited. This variable's own value list carries a dedicated `0` for 'no refunds are given' as a determinate stated position, not silence, so the ToS's non-refundable clause IS a stated window (0) that competes with the Refund Policy's 14 — two tied-rank sources, incompatible windows, per the variable's own rule. Prior values: pass1=14 (treated the ToS's absence of a day-COUNT as not a competing claim, which the variable's own 0-value convention does not support), pass2=conflicting." }
+  refund_conditions: { value: "conflicting", source: "https://www.aragon.ai/refund-policy", evidence: "ADJUDICATED 2026-08-16, same two tied-rank documents as refund_window_days and the agreed refund_policy_exists. Refund Policy page states specific conditions (didn't download, followed upload instructions, within 14 days). ToS states no buyer-initiated refund right exists at all for ordinary dissatisfaction — an incompatible answer to 'what conditions attach' from an equal-authority source on the same purchase, not silence. Prior values: pass1=conditional (read only the Refund Policy's stated conditions, without weighing the ToS's competing non-refundable position on the same purchase into this variable), pass2=conflicting." }
+  cancellation_self_serve: { value: "conflicting", source: "https://www.aragon.ai/terms", evidence: "AGREED (both passes independently reached conflicting; not a disagreement between them). Internal split within the ToS itself (renewal 'stops unless you cancel...from within your Account' vs. the operative mechanism in the same paragraph, 'contacting us at support@aragon.ai... before the renewal date'), corroborated on the self-serve side by the pricing-page Subscription FAQ ('pause or cancel anytime from your billing page'). See conflict_note." }
+  refund_policy_location: { value: "conflicting", source: "https://www.aragon.ai/terms", evidence: "ADJUDICATED 2026-08-16 under the variable's own explicit rule: 'multiple is for agreement across two or more classes... conflicting is for disagreement between two of equal authority, which leaves the governing class undeterminable.' The dedicated_refund_page and terms classes both state a refund position, but they disagree in substance (refund_policy_exists=conflicting, agreed by both passes) — disagreement, not agreement, between two equal-authority classes, so the rule's own text calls for conflicting. Prior values: pass1=multiple (counted classes that mention a refund position without applying the rule's stated agreement/disagreement distinction), pass2=conflicting." }
+
+  # --- Domain 11 ---
+  commercial_use_lowest_tier: { value: "free", source: "https://www.aragon.ai/terms", evidence: "AGREED. ToS Output clause, stated generally, not tier-gated: 'Aragon hereby assigns to you all of its rights, title, and interest (if any) in and to the Output...You may use such Outputs for your own personal or commercial purposes.' No tier restriction found anywhere; the free tier also produces Output, so the grant applies from the free tier up." }
+  watermark_removal_tier: { value: "unknown", source: "https://www.aragon.ai/pricing", evidence: "ADJUDICATED 2026-08-16 under codebook 2.1's decision tree, applied after the entry-tier finding above. Verified live 2026-08-16: 'No watermarks' is listed as an included feature on all 4 Subscription-tab tiers (Lite $15/mo up). But the entry paid tier is Basic (one-time, $18, Headshots > Individual Pricing — the default display state; sampling-rules 7.2), and no document states the watermark status of Basic, Standard, Executive, or the free tier. This variable's lowest_paid/mid_tier/highest_tier values are tier-ladder constructs anchored to the entry paid tier (parallel to commercial_use_lowest_tier's explicit 'lowest_paid = granted from the entry paid tier'); Aragon runs two parallel, non-cross-referencing ladders (one-time packages vs. subscriptions), and only the non-entry ladder carries a statement. Coding lowest_paid would assert Basic is watermark-free, which no document states; mid_tier or highest_tier would equally presume a single ladder the documents do not describe. No document states a determinate answer to 'the lowest tier' across the product as sold (2.1 step 2 fails); this is not two sources naming different tiers for the same construct (step 3 does not apply either); step 4 applies: unknown. Prior values: pass1=unknown (reached because the word 'watermark' did not appear anywhere in that session's evidence — a tooling-access gap: the word does appear, on the Subscription tab, which that session could not render), pass2=lowest_paid (reached by reading Lite, the Subscription ladder's own bottom rung, as if it were the entry tier; Lite is not the entry tier — Basic is, per both passes' own entry-tier selection — pass2's own coder_note flags this exact reading as a judgment call). Net: same value as pass1, reached by different and more complete reasoning; pass2's Subscription-ladder evidence is preserved above rather than discarded." }
+  output_ownership_statement: { value: "user_owns", source: "https://www.aragon.ai/terms", evidence: "AGREED. ToS: 'Aragon hereby assigns to you all of its rights, title, and interest (if any) in and to the Output...' Reinforced under Ownership: 'Materials excludes Outputs...which...are owned by you.' No tier- or subscription-status-dependent qualifier found." }
+
+  # --- Domain 12 ---
+  usage_cap_quantified: { value: "all_caps_quantified", source: "https://www.aragon.ai/pricing", evidence: "AGREED. Every limit the documents attribute to the entry tier (Basic) carries a number: '40 headshots', 'Choice of 1 attire', 'Choice of 1 background', '896 x 1088 pixels' resolution (FAQ). '45 mins generation time' is a turnaround-speed figure, not a usage limit, and is not counted either way." }
+  unquantified_limit_clause: { value: "present", source: "https://www.aragon.ai/terms", evidence: "AGREED. ToS Prohibited Conduct clause bars 'an unreasonable or disproportionate load...through automated scripts, bots, or other tools that send requests at a volume no human user could generate' — a discretionary, unquantified standard. The free-tools clause separately reserves the right to 'impose usage limits, queue times, or indefinite wait periods' at Aragon's sole discretion, no figures given." }
+
+coder_note: |
+  ADJUDICATION SUMMARY (2026-08-16). tools/disagreements.py aragon-ai and an independent field-by-
+  field diff of all 37 CODED variables both find 9 substantive disagreements (free_plan_cap_documented,
+  free_plan_cap_value, credit_unit_defined, credit_to_output_rate_published, credit_rate_location,
+  refund_window_days, refund_conditions, refund_policy_location, watermark_removal_tier) plus 1
+  non-substantive prose mismatch (computation_assumptions — same arithmetic, different wording). My
+  assignment brief stated eleven substantive disagreements; I can account for nine. Likely
+  explanation, stated for the record rather than silently adjudicating a count I could not reproduce:
+  refund_policy_exists and cancellation_self_serve are ALSO `conflicting` in the published value, but
+  pass 1 and pass 2 independently AGREE on both — they are not disagreements between the two records.
+  9 real disagreements + those 2 agreed-but-conflicting variables = 11, which fits exactly, so I
+  suspect the brief counted every conflicting-valued variable rather than every variable where the
+  two passes actually differed.
+
+  REGISTER EVENTS. Both pass1.yaml and pass2.yaml carry `register_events: []`. No vendor_edit entry
+  exists for this product, so no disagreement qualifies for `date_explained` (protocol 7.4.1)
+  regardless of the 8-day gap between collection dates (2026-08-06 / 2026-08-14): no vendor edit
+  occurred in that window — pass1's own archived pricing-page snapshot (2026-08-06) already contains
+  the Subscription-tier names and prices in its embedded schema.org JSON-LD, and the Subscription-tab
+  FAQ text, credit/image/edit figures, and "No watermarks" bullets are verbatim identical between
+  pass 2's 2026-08-14 local capture and this adjudicator's live re-read on 2026-08-16. No disagreement
+  qualifies for `variant_explained` (7.4.2) either: both passes agree on the DEFAULT display state
+  itself (Headshots tab / Individual Pricing sub-tab), confirmed on three independent reads now
+  including this one — there are not two archive snapshots of two different DEFAULT states to compare,
+  only one pass's inability to render a secondary (one-click-away) tab. All 9 disagreements resolved
+  by rule; 0 by date_explained; 0 by variant_explained.
+
+  THE STRUCTURAL QUESTION, RESOLVED FIRST. Aragon's pricing page carries two purchase models behind
+  one in-page control: a one-time headshot-package ladder (Basic/Standard/Executive) on the tab that
+  loads by default, and a recurring credit-subscription ladder (Lite/Pro/Ultimate/Creator) one click
+  away on the "Subscription" tab. sampling-rules 7.2 rule 1 and protocol 6.8 anchor the entry paid
+  tier to the DEFAULT display state only ("do not switch...to find a different figure");
+  headline_price_usd's own rule 1 repeats the same anchor. Both passes independently read the default
+  state as Headshots > Individual Pricing and both picked Basic ($18 one-time, 40 headshots) as
+  entry_tier_name — this was NOT itself in dispute, and I verified it independently rather than
+  deferring to their agreement (agreement between two records is not evidence of correctness, 7.4
+  step 3): confirmed live 2026-08-16 (cookie banner declined via "Reject All") that the page still
+  loads on Headshots > Individual Pricing by default, Basic still $18/Standard $25/Executive $40.
+  Losing candidates in the default state: Standard $25.00 one-time, Executive $40.00 one-time. The
+  Subscription tab's tiers were never eligible candidates because they are not part of the default
+  display state — Lite's $180.00 annual-equivalent would not have won regardless (both source
+  records independently note this), so the entry-tier PRICE pick was never close.
+
+  HOW THE STRUCTURAL FACT DROVE THE NINE DISAGREEMENTS — two different mechanisms, not one:
+  (a) SIX of nine (free_plan_cap_documented, free_plan_cap_value, credit_unit_defined,
+  credit_to_output_rate_published, credit_rate_location, watermark_removal_tier) split because pass
+  1's session could not render the Subscription tab at all ("Minified React error #418" per pass 1's
+  own note) and so never saw the credit/image/edit figures or the "16 credits per active day" /
+  "No watermarks" FAQ text living there. Confirmed independently: pass 1's own saved pricing-clean.txt
+  (1,479 bytes) is nav/footer only and contains none of the page's actual pricing or FAQ content; its
+  pricing-raw.html (a non-JS backup fetch, by pass 1's own description) has no "$18", "40 headshots",
+  "16 credits", or "No watermarks" either. Per deviations-for-coders.md: "A coder-tooling misread is
+  never a display_variant. The vendor served one state and our reader mangled it." That governs here.
+  I loaded the live Subscription tab myself 2026-08-16 (explicit click, cookie banner declined) and it
+  renders normally, matching pass 2's 2026-08-14 local capture verbatim, including "16 credits per
+  active day" and all four tiers' credit/image/edit triples. Five of these six resolve to pass 2's
+  fuller-access value once the rule is applied to the now-confirmed evidence
+  (free_plan_cap_documented=some_quantified, free_plan_cap_value="16 credits per active day",
+  credit_unit_defined=yes, credit_to_output_rate_published=partial, credit_rate_location=pricing_page)
+  — full per-variable rule citations are in each variable's evidence field above.
+  (b) watermark_removal_tier is the exception, and this is where "resolve the structural fact first"
+  changes the answer pass2 gave rather than confirming it. "No watermarks" is stated only for the
+  Subscription ladder (Lite and up) — NOT the entry tier, which is Basic, established in the paragraph
+  above — and no document states Basic's, Standard's, Executive's, or the free tier's watermark
+  status. lowest_paid/mid_tier/highest_tier all presume one tier ladder anchored at the entry paid
+  tier; Aragon runs two non-cross-referencing ladders and only the non-entry one carries a statement.
+  Coding lowest_paid, as pass2 did, asserts the entry tier (Basic) is watermark-free — no document
+  says that. Codebook 2.1's decision tree finds no determinate value once Basic's own silence is
+  weighed in, and this is not two sources naming different tiers for the same construct, so it lands
+  on unknown — the same value pass1 held, but for a different and complete reason (pass1 did not know
+  the Subscription evidence existed; this record weighs that evidence against the entry-tier finding
+  and finds it does not transfer to the entry tier). The Subscription-ladder evidence itself is not
+  discarded — it is recorded in the variable's evidence field above.
+
+  REFUND CLUSTER (refund_window_days, refund_conditions, refund_policy_location) — three, not driven
+  by the entry-tier tab question, but by the same "apply each variable's own rule text, not a
+  parent's value" discipline. Both passes read the identical two documents and both already AGREE
+  refund_policy_exists=conflicting and cancellation_self_serve=conflicting between the same pair
+  (Refund Policy's Headshot Refund Policy section — the entry tier's own section — promises a
+  conditional 100% refund within 14 calendar days of purchase; ToS's General Payment Terms clause,
+  "all fees are...non-refundable, except as required by law," is general, not subscription-limited,
+  and is not cross-referenced to the Refund Policy anywhere in ToS — confirmed by this adjudicator's
+  own grep of pass 1's full terms-clean.txt, ~90,000 characters, 4 "refund" hits total, none pointing
+  to the dedicated page). Protocol 6.2 ties ToS and the dedicated refund page at rank 1 for
+  contractual variables — neither outranks the other, so codebook 2.1 step 3 requires `conflicting`,
+  not a pick between them, on ANY variable where the two give incompatible answers for the same tier.
+  Applied each variable's OWN rule text rather than propagating a parent value: refund_window_days's
+  value list carries a dedicated `0` for "no refunds are given," so the ToS's blanket clause is itself
+  a stated window (0) competing with the Refund Policy's 14 — "two sources...incompatible windows" per
+  the variable's own rule. refund_policy_location's rule states outright, "multiple is for agreement
+  across two or more classes...conflicting is for disagreement between two of equal authority" — these
+  two classes disagree in substance, so the rule's own text calls for conflicting, not multiple (pass
+  1's multiple counted classes that mention a position without checking whether they agreed).
+  refund_conditions follows the same logic: the ToS denies any refund right exists for ordinary
+  dissatisfaction, an incompatible answer to "what conditions attach" from an equal-authority source,
+  not silence. All three: pass 1 read the Refund Policy's number/conditions/location correctly but did
+  not weigh the ToS's competing position on the SAME entry-tier purchase into these three variables;
+  pass 2's `conflicting` values are confirmed correct, though pass 2's own stated reasoning ("for
+  consistency with the underlying conflict") is not quite the rule-text basis given here.
+
+  ENTRY-TIER LOSING CANDIDATES (codebook 5, entry_tier_name evidence): Standard $25.00 one-time,
+  Executive $40.00 one-time. Subscription-tab tiers (Lite $15/mo = $180.00 annual-equivalent, Pro
+  $29/mo, Ultimate $49/mo, Creator $249/mo) were not eligible candidates — not part of the default
+  display state (sampling-rules 7.2 rule 1) — and would not have won on price even if they had been.
+
+  SOURCES RE-READ FOR THIS ADJUDICATION: both records in full; both -sources/ directories, including
+  pass 1's raw HTML/clean-text local captures and pass 2's rendered-tab local captures; the live
+  vendor pricing page (both tabs) on 2026-08-16, cookie banner declined via "Reject All"; pass 1's
+  archived pricing-page snapshot (2026-08-06) and pass 2's (2026-08-14) fetched directly to check for
+  a mid-window vendor edit (none found — see REGISTER EVENTS above). Existing archives are used as the
+  evidentiary record; no new archive.org snapshot was submitted since the 2026-08-14 archive is
+  confirmed still representative.
+
+  ALSO READ: codebook-v1.md in full (domains 1, 3, 5, 6, 9, 10, 11, 12, plus sections 1-5); protocol-
+  v1.md sections 6.2, 6.6, 6.8, 7.4, 7.4.1, 7.4.2; sampling-rules.md section 7.2; deviations-for-
+  coders.md; record-template.yaml. NOT read: orchestrator/interim-signals.md, any other product's
+  record or -sources/, aitoolspolice.com, site/content/reviews/.
+
+  blindness/scope attestation: no other product's record was opened, and no repository history
+  command (git log/show/diff/blame) was run.
+conflict_note: |
+  Refund cluster (refund_policy_exists, refund_window_days, refund_conditions, refund_policy_location)
+  — https://www.aragon.ai/terms vs https://www.aragon.ai/refund-policy, tied rank 1 for contractual
+  variables (protocol 6.2). ToS General Payment Terms: "all fees are in U.S. Dollars and are
+  non-refundable, except as required by law" — a general fees clause, not subscription-limited; its
+  only other refund text is a pro-rata refund solely for Aragon-initiated no-cause termination, not a
+  buyer right, and none of the ToS's refund mentions cross-reference the dedicated page. Refund Policy
+  page, Headshot Refund Policy section (the entry tier's own section): "we are more than willing to
+  offer a complimentary redo or a 100% refund," conditional on not having downloaded photos, following
+  upload instructions, and requesting within "14 calendar days of purchase." Incompatible positions on
+  the same tier from tied-rank sources: coded conflicting on all four variables, each per its own rule
+  text (see coder_note for the per-variable citations).
+
+  cancellation_self_serve — https://www.aragon.ai/terms (internally split) vs
+  https://www.aragon.ai/pricing. ToS Subscription Service clause first reads as self-serve ("unless
+  you cancel the Subscription Service from within your Account") then gives the operative mechanism
+  in the same paragraph: "You may cancel the Subscription Service by contacting us at
+  support@aragon.ai...YOUR CANCELLATION MUST BE RECEIVED BEFORE THE RENEWAL DATE" (contact-required,
+  verified-email process). Pricing page Subscription-tab FAQ: "Yes, you can pause or cancel anytime
+  from your billing page" (self-serve). The highest-ranked document does not speak with one voice;
+  both passes independently agreed conflicting, carried through unchanged.
+register_events: []
+status: complete

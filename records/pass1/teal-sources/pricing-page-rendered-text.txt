@@ -1,0 +1,68 @@
+SOURCE: https://www.tealhq.com/pricing
+ACCESSED: 2026-08-12 (rendered browser read; static WebFetch returned HTTP 403)
+METHOD: mcp__Claude_Browser get_page_text + raw outerHTML grep for price nodes (second representation confirmed)
+
+=== RENDERED TEXT (get_page_text) ===
+Pricing Plans
+Need to level up your career even faster?
+Upgrade to unlock Teal's premium features and turbocharge your job search.
+Tools | Free Forever | Teal+
+Unlimited Resumes (both tiers)
+Unlimited Job Tracking (both tiers)
+Resume Templates: Free=10 | Teal+=Unlimited Templates
+Job Description Keyword Matching: Free=Top 5 | Teal+=Unlimited
+Analysis Mode: Free=Basic | Teal+=Unlimited
+Email Templates per Job Stage: Free=1 | Teal+=Unlimited
+Design Mode: Free=Basic Settings | Teal+=Advanced Settings
+AI Credits > Resume Bullets: Free=10 Credits | Teal+=Unlimited
+AI Credits > Professional Summary: Free=2 Credits | Teal+=Unlimited
+AI Credits > Cover Letter: Free=2 Credits | Teal+=Unlimited
+
+Get Started with Teal+
+$13 / Every 7 Days / ($1.85 a day)
+$29 / Every 30 days / ($0.96 a day)
+$79 / Every 90 days / ($0.87 a day)
+No credit card required to start.
+Upgrade or downgrade your plan or cancel at any time.
+
+FAQ (embedded on pricing page):
+Q: Is there a return or refund policy?
+A: If you are not satisfied with your purchase, you may request a refund by contacting our
+   team at membersupport@tealhq.com with: Reason for cancellation; Email associated with the
+   account where the payment was made. Refund requests will only be considered if they are
+   submitted within your plan's eligibility timeframe. Outside of these periods, your purchase
+   would be ineligible for a refund. Review our full cancellation and refund policy to see what
+   applies to your plan.
+
+Q: Are there any hidden fees or charges?
+A: Teal offers clear, transparent pricing with no hidden fees or unexpected charges. While most
+   of Teal's tools are available for free, we offer Teal+ for job seekers who want to take their
+   job search to the next level and unlock the full functionality of our Resume Builder.
+
+Q: What are the benefits in upgrading to Teal+?
+A: [feature summary, not price-relevant]
+
+Q: How can I cancel my subscription once I've landed a job?
+A: To cancel your subscription, head to your account settings and click on Teal+ Subscription...
+   you'll be able to view your current plan and cancel your paid subscription. Once you cancel
+   your recurring subscription, you won't be charged for future subscriptions. You can submit
+   your cancellation at any time, however the cancellation will take affect at the end of your
+   current billing period. Teal cannot be held responsible for recurring subscriptions if a
+   member fails to cancel their account.
+
+=== RAW HTML CONFIRMATION (second representation, via document.documentElement.outerHTML) ===
+<div class="cost-block-3"><div class="text-size-huge pricing">$13</div>...Every 7 Days<br>($1.85 a day)
+<div class="cost-block-3"><div class="text-size-huge pricing">$29</div>...Every 30 days<br>($0.96 a day)
+<div class="cost-block-3"><div class="text-size-huge pricing">$79</div>...Every 90 days<br>($0.87 a day)
+-- plain text nodes, no superscript-cents markup, confirms $13/$29/$79 are the full figures not
+   truncated/misread values.
+-- searched full outerHTML (141744 chars) for "annual"/"Annual"/"toggle"/"is-active"/"radio"/
+   "w-tab-link": none found except an unrelated hamburger-menu JS toggle. No monthly/annual
+   toggle UI exists on this page. All three price cards (weekly/monthly/quarterly) render
+   simultaneously, statically, with no default-state switch.
+-- searched for "watermark"/"fair use"/"fair-use": NOT FOUND on this page.
+-- magnitude sanity check: $1.85/day x 7 = $12.95 ~= $13; $0.96/day x 30 = $28.80 ~= $29;
+   $0.87/day x 90 = $78.30 ~= $79. Confirms each headline figure IS the full per-period charge,
+   not a monthly-equivalent figure requiring further multiplication.
+
+Archive attempt: see archive-log.txt

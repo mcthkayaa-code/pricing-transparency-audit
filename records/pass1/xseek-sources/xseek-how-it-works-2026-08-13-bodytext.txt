@@ -1,0 +1,274 @@
+How it works
+Pricing
+About
+Contact
+Blog
+FR
+Sign in
+Try for free
+→
+How xSeek works
+We show you how AI sees you, tell you exactly what to create, and help you get cited in the answers that matter.
+01
+See how AI sees you
+Hundreds of questions,
+across every model.
+xSeek runs hundreds of questions across every major AI model — the same questions your customers are asking. You see exactly where your brand shows up, where it doesn't, and who's getting recommended instead.
+Share of Voice
+—
+your visibility score vs competitors across all AI engines.
+Brand Radar
+—
+side-by-side of how AI recommends you vs the competition.
+Mention Tracking
+—
+every AI mention, captured and measured.
+6 engines
+—
+ChatGPT, AI Overview, Claude, Perplexity, Gemini, Grok.
+AI Bot Tracking
+—
+see which crawlers visit and what they read.
+See how AI sees you
+→
+Live · Share of Voice
+You
+47
+%
+▲ 12.4 pts · 30d
+You
+47
+%
+Comp A
+34
+%
+Comp B
+12
+%
+Others
+7
+%
+GPT
+Claude
+PPX
+Gemini
+DS
+xAI
+02
+Know what to do
+A prioritized list,
+not a feeling.
+xSeek identifies the exact content gaps where competitors get cited and you don't. You get a prioritized list — what to create, what to optimize, and where to focus.
+Content Gaps
+—
+queries your competitors win, ranked by impact.
+Action Plan
+—
+concrete next steps, not theory.
+Keyword Research
+—
+Google search volume & difficulty baked in.
+AEO Audit
+—
+page-level analysis of what models need to cite you.
+Know what to do
+→
+Live · Content gaps
+Where competitors get cited — you don't
+12 gaps · prioritized
+"best
+AEO platform for B2B SaaS
+"
+High
+CA
+CB
+2
+cited
+"how does
+AI visibility tracking work
+"
+High
+CA
+CB
+CC
+3
+cited
+"
+share of voice vs LLM
+"
+Med
+CA
+1
+cited
+"top tools
+for generative SEO
+"
+Med
+CB
+CC
+2
+cited
+"llms.txt
+best practices
+"
+Low
+CB
+1
+cited
+03
+Take action
+Content that earns
+the citation.
+xSeek generates optimized content based on real data — what AI models read, cite, and recommend. You review, you publish. No guessing.
+AI content generation
+—
+articles from real visibility data + your brand voice.
+Content Studio
+—
+write, review, comment, publish from one dashboard.
+Performance tracking
+—
+watch your Share of Voice climb as you ship.
+Google + AI combined
+—
+GSC data side-by-side with AI visibility.
+Take action
+→
+Live · Content Studio
+Draft: "What is Generative Engine Optimization?"
+v3 · auto
+Write for
+B2B SaaS marketers
+· cite 3 primary sources · brand voice: confident, plain
+A practical intro to GEO.
+cited
+92
+/100
+AEO score
+3
+src
+Citations
+1 240
+w
+Length
+Review
+Publish
+Your AI command center
+The Dashboard.
+All engines. One view.
+See how your brand shows up across every AI engine. Track mentions, compare with competitors, monitor AI bot visits, and watch your Share of Voice grow — updated every day.
+What you get
+Data that answers
+the only question that matters:
+am I getting cited?
+Share of Voice across every AI engine
+Brand mention monitoring in real-time
+Competitor comparison & ranking
+AI bot visit tracking (what Google Analytics misses)
+Google Search Console integration
+Content performance correlation
+xSeek · Overview
+Share of voice
+47
+%
+▲ 12.4 pts
+· last 30 days
+Mentions
+128
+▲ 31
+Prompts
+50
+tracking
+Sources
+34
+▲ 6
+Share of voice · 30 days
+You
+Top competitor
+GPT
+52%
+Claude
+48%
+PPX
+44%
+Gemini
+46%
+DS
+39%
+xAI
+51%
+xseek ~/acme-marketing
+Claude Code
+$ xseek brief --gap "best AEO platform for B2B SaaS"
+✓
+Loaded brand voice
+(acme.yaml)
+✓
+Pulled 3 competitor citations from xSeek
+✓
+Fetched top-cited sources the AIs read
+# Claude is drafting…
+→ Angle: "The 4 signals AI actually reads (and how Acme nails them)"
+✓
+1 240 words ·
+AEO score 92/100
+✓
+3 primary citations · 2 data visualizations
+✓
+Fact-check passed ·
+ready to review
+$ xseek publish --review
+The Desktop App
+Claude Code,
+with your xSeek data built in.
+xSeek Desktop connects Claude Code to your xSeek data. It reads your brand voice, your audiences, your visibility gaps — then generates content AI models will cite. Research, write, optimize, publish. Without leaving the app.
+Claude Code with xSeek data built-in
+Articles from real AI visibility insights
+Uses your brand voice and audience profiles
+Fact-check, review comments, one-click publish
+macOS and Windows
+Ready to stop
+guessing?
+Pick a plan or book a call. Either way, you leave with clarity.
+See pricing
+→
+Book a call
+Product
+AI Visibility Tracking
+Generative Engine Optimization
+Answer Engine Optimization
+ChatGPT SEO
+AI Search Optimization
+AI Content Optimization
+AI Backlinks
+For Agencies
+How it works
+Pricing
+Free Tools
+Agent-Ready Scan
+AI Robots.txt Checker
+AI LLMs.txt Generator
+xSeek Desktop
+All Tools
+Resources
+AI Search Visibility Strategies
+SEO vs AEO Guide
+LLMs.txt Explained
+AI Source Radar
+All Articles
+Company
+About
+Blog
+Documentation
+Contact
+Privacy Policy
+Terms of Service
+© 2026 xseek. All rights reserved.
+xSeek Reviews
+xSeek Reviews
+xSeek Reviews
+Featured on
+tool
+chase
+🇨🇦
+Proudly Canadian

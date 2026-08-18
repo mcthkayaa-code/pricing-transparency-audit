@@ -1,0 +1,185 @@
+SOURCE EVIDENCE FILE (Krea documentation site index)
+URL: https://www.krea.ai/docs/llms.txt
+Accessed: 2026-08-09
+Method: curl static fetch (this is a plain-text index Mintlify auto-publishes listing every doc page's URL + one-line description; used per protocol as a documentary index to locate official pages and to perform an exhaustive title/description keyword search).
+Archive: not separately archived (a machine-generated index of already-archived pages, listed here for the coder's search-method transparency, not cited as the source of any coded value).
+
+Full-text keyword search performed against this index (case-insensitive grep, ~170 entries covering every consumer-guide, help-center, and API-reference page Krea's docs site publishes):
+  'watermark' -> 0 matches (informs free_plan_watermark / watermark_removal_tier = unknown)
+  'trial' -> 0 matches (supports trial_exists = no, together with zero matches on the pricing page and only generic boilerplate in the Terms of Use)
+  'fail' / 'error' -> 2 matches: 'Job Lifecycle' (developers/job-lifecycle.md, fetched separately, states failed/cancelled jobs are not billed) and 'Refunds and Billing' description mentioning 'failed payments' (billing-declined-card troubleshooting, not generation failures).
+
+--- full index content ---
+# Krea
+
+## Docs
+
+- [3D](https://www.krea.ai/docs/3-d.md): Generate textured 3D meshes from a photo or text prompt in Krea, then preview, refine, and export models for game, product, and ideation workflows.
+- [Hunyuan3D-2.1](https://www.krea.ai/docs/api-reference/3d/hunyuan3d-21.md): High quality 3D model generator
+- [Hunyuan3D 3.1 Pro](https://www.krea.ai/docs/api-reference/3d/hunyuan3d-31-pro.md): High‑fidelity text or image‑to‑3D with optional PBR materials, multi‑view inputs, and adjustable face count for cleaner meshes.
+- [TRELLIS](https://www.krea.ai/docs/api-reference/3d/trellis.md): High quality 3D model generator
+- [TRELLIS 2](https://www.krea.ai/docs/api-reference/3d/trellis-2.md): Native 3D generative model for high-quality 3D asset creation
+- [Tripo](https://www.krea.ai/docs/api-reference/3d/tripo.md): High quality 3D model generator
+- [Delete an asset](https://www.krea.ai/docs/api-reference/assets/delete-an-asset.md): Delete an asset.
+- [Get an asset](https://www.krea.ai/docs/api-reference/assets/get-an-asset.md): Get a single asset by ID
+- [List assets](https://www.krea.ai/docs/api-reference/assets/list-assets.md): List assets with pagination.
+- [Upload an asset](https://www.krea.ai/docs/api-reference/assets/upload-an-asset.md): Upload a new asset (image, video, audio, or 3D model). Accepts multipart/form-data with a file and optional description. Maximum file size: 75MB.
+- [Delete a job by ID](https://www.krea.ai/docs/api-reference/general/delete-a-job-by-id.md)
+- [Get a job by ID](https://www.krea.ai/docs/api-reference/general/get-a-job-by-id.md)
+- [List jobs](https://www.krea.ai/docs/api-reference/general/list-jobs.md): List jobs with pagination and filtering. Returns jobs belonging to the authenticated user.
+- [Krea Enhance](https://www.krea.ai/docs/api-reference/image-enhance/krea-enhance.md): Cheap creative enhancer for adding new details. Max 8K.
+- [Krea Legacy](https://www.krea.ai/docs/api-reference/image-enhance/krea-legacy.md): Krea's generative legacy enhancer. Max 4K.
+- [Topaz](https://www.krea.ai/docs/api-reference/image-enhance/topaz.md): Powerful faithful upscaler. Up to 22K resolution. Best for photos.
+- [Topaz Bloom](https://www.krea.ai/docs/api-reference/image-enhance/topaz-bloom.md): Creative upscaler that adds new details. Max 10K.
+- [Topaz Generative](https://www.krea.ai/docs/api-reference/image-enhance/topaz-generative.md): Most powerful creative enhancer. Max 16K.
+- [ChatGPT 2](https://www.krea.ai/docs/api-reference/image/chatgpt-2.md): Smart powerful model for editing.
+- [ChatGPT Image](https://www.krea.ai/docs/api-reference/image/chatgpt-image.md): Original ChatGPT image model.
+- [Flux](https://www.krea.ai/docs/api-reference/image/flux.md): Fast model. Best for LoRAs.
+- [Flux 1.1 Pro](https://www.krea.ai/docs/api-reference/image/flux-11-pro.md): Advanced yet efficent model from BFL.
+- [Flux 1.1 Pro Ultra](https://www.krea.ai/docs/api-reference/image/flux-11-pro-ultra.md): BFL's highest quality text to image model.
+- [Flux Kontext](https://www.krea.ai/docs/api-reference/image/flux-kontext.md): Frontier model designed for image editing, optimized for Krea
+- [Ideogram 2.0A Turbo](https://www.krea.ai/docs/api-reference/image/ideogram-20a-turbo.md): Distilled version of Ideogram 2.0
+- [Ideogram 3.0](https://www.krea.ai/docs/api-reference/image/ideogram-30.md): Highly aesthetic, general-purpose model.
+- [Imagen 3](https://www.krea.ai/docs/api-reference/image/imagen-3.md): Google's previous generation image model.
+- [Imagen 4](https://www.krea.ai/docs/api-reference/image/imagen-4.md): Google's current generation image model
+- [Imagen 4 Fast](https://www.krea.ai/docs/api-reference/image/imagen-4-fast.md): Google's fastest image model
+- [Imagen 4 Ultra](https://www.krea.ai/docs/api-reference/image/imagen-4-ultra.md): Google's best image model
+- [Luma UNI-1](https://www.krea.ai/docs/api-reference/image/luma-uni-1.md): Reasoning image model for prompt-faithful text to image.
+- [Nano Banana](https://www.krea.ai/docs/api-reference/image/nano-banana.md): Most versatile intelligent model.
+- [Nano Banana 2](https://www.krea.ai/docs/api-reference/image/nano-banana-2.md): Cheaper quality version of Nano Banana.
+- [Nano Banana 2 Lite](https://www.krea.ai/docs/api-reference/image/nano-banana-2-lite.md): Fast Google image model.
+- [Nano Banana Pro](https://www.krea.ai/docs/api-reference/image/nano-banana-pro.md): World's most intelligent model.
+- [Qwen 2512](https://www.krea.ai/docs/api-reference/image/qwen-2512.md): Affordable medium quality model.
+- [Runway Gen-4](https://www.krea.ai/docs/api-reference/image/runway-gen-4.md): Cinematic image model with references.
+- [SeedEdit](https://www.krea.ai/docs/api-reference/image/seededit.md): New frontier model designed for image editing
+- [Seedream 4](https://www.krea.ai/docs/api-reference/image/seedream-4.md): New high quality model for photorealism and text rendering
+- [Seedream 5 Lite](https://www.krea.ai/docs/api-reference/image/seedream-5-lite.md): Medium quality model with reasoning and web search.
+- [Seedream 5 Pro](https://www.krea.ai/docs/api-reference/image/seedream-5-pro.md): Highest quality model with precise editing control.
+- [Z Image](https://www.krea.ai/docs/api-reference/image/z-image.md): Fastest model. Realistic, low diversity.
+- [API Reference](https://www.krea.ai/docs/api-reference/introduction.md): Browse every Krea API model and endpoint with request formats, parameters, authentication details, and response examples for faster integration.
+- [Krea 2 Large](https://www.krea.ai/docs/api-reference/krea/krea-2-large.md): Best for expressive photorealism.
+- [Krea 2 Medium](https://www.krea.ai/docs/api-reference/krea/krea-2-medium.md): Best for expressive illustrations.
+- [Krea 2 Medium Turbo](https://www.krea.ai/docs/api-reference/krea/krea-2-medium-turbo.md): Fastest medium quality Krea 2 model.
+- [Execute a node app](https://www.krea.ai/docs/api-reference/node-apps/execute-a-node-app.md): Execute a node app by version ID. The request body should contain the input data as a JSON object matching the node app's input schema. Returns a job that can be tracked using /jobs/{id}.
+- [Get a node app by version ID](https://www.krea.ai/docs/api-reference/node-apps/get-a-node-app-by-version-id.md): Get a single node app by version ID. Returns the node app details including input/output schemas.
+- [List runnable node app versions](https://www.krea.ai/docs/api-reference/node-apps/list-runnable-node-app-versions.md): List versions of a node app visible to the authenticated user that can be executed through the public API.
+- [List runnable node apps](https://www.krea.ai/docs/api-reference/node-apps/list-runnable-node-apps.md): List node apps visible to the authenticated user that can be executed through the public API.
+- [Import the Krea API into Postman](https://www.krea.ai/docs/api-reference/postman.md): Import the Krea OpenAPI spec into Postman to test API endpoints, configure bearer token authentication, and explore request schemas without writing code.
+- [Get a shareable link for a style](https://www.krea.ai/docs/api-reference/styles/get-a-shareable-link-for-a-style.md): Generate or retrieve a shareable link for a style you own. The link allows others to access the style.
+- [Get a single style by ID](https://www.krea.ai/docs/api-reference/styles/get-a-single-style-by-id.md): Get a single style by ID. Returns public styles or your own private styles.
+- [Remove a style from your workspace](https://www.krea.ai/docs/api-reference/styles/remove-a-style-from-your-workspace.md): Remove a style you own from your API workspace. Workspace members will no longer have access to the style.
+- [Search styles](https://www.krea.ai/docs/api-reference/styles/search-styles.md): List styles with pagination and filtering. Returns public styles, user-created styles, or shared styles based on the filter parameter.
+- [Share a style with your workspace](https://www.krea.ai/docs/api-reference/styles/share-a-style-with-your-workspace.md): Share a style you own with your API workspace. All members of the workspace will be able to use the style.
+- [Train a custom style (LoRA)](https://www.krea.ai/docs/api-reference/styles/train-a-custom-style-lora.md): Train a custom style (LoRA) with simplified parameters. Uses intelligent defaults based on the training type (Default/Style/Object/Character).
+- [Update a style](https://www.krea.ai/docs/api-reference/styles/update-a-style.md): Update style properties. Currently supports updating the public visibility of a style you own.
+- [Export a 3D model](https://www.krea.ai/docs/api-reference/utilities/export-a-3d-model.md): Export a completed 3D generation job's model to OBJ, FBX, STL, or PLY. Pass the job id and target format. The exported model is returned as a ZIP file.
+- [Astra](https://www.krea.ai/docs/api-reference/video-enhance/astra.md): Creative video enhancer for upscaling AI-generated videos up to 4K resolution.
+- [Astra 2](https://www.krea.ai/docs/api-reference/video-enhance/astra-2.md): Creative diffusion-based video upscaler with prompt guidance, creativity, and sharpness controls. Max 4K.
+- [SeedVR2](https://www.krea.ai/docs/api-reference/video-enhance/seedvr2.md): Fast video upscaler. Max 4K.
+- [Starlight](https://www.krea.ai/docs/api-reference/video-enhance/starlight.md): A diffusion-based AI upscaler from Topaz that transforms low-resolution and degraded video into HD quality. Max 4K.
+- [Starlight 2.5](https://www.krea.ai/docs/api-reference/video-enhance/starlight-25.md): The latest diffusion-based AI upscaler from Topaz. Sharper results with fewer artifacts than the original Starlight. Max 4K.
+- [Topaz Video](https://www.krea.ai/docs/api-reference/video-enhance/topaz-video.md): Topaz's powerful AI upscaler. Add frames and grain, fix focus, and more. Max 8K.
+- [Gemini Omni Flash](https://www.krea.ai/docs/api-reference/video/gemini-omni-flash.md): Multimodal video with native audio.
+- [Grok Imagine](https://www.krea.ai/docs/api-reference/video/grok-imagine.md): Fast, high-quality video generation by xAI.
+- [Grok Imagine 1.5](https://www.krea.ai/docs/api-reference/video/grok-imagine-15.md): Text and image-to-video with native audio by xAI.
+- [Hailuo](https://www.krea.ai/docs/api-reference/video/hailuo.md): High-quality model with camera control.
+- [Hailuo 02](https://www.krea.ai/docs/api-reference/video/hailuo-02.md): Frontier model with dynamic motion.
+- [Hailuo 2.3](https://www.krea.ai/docs/api-reference/video/hailuo-23.md): Frontier model with dynamic motion.
+- [Hailuo 2.3 Fast](https://www.krea.ai/docs/api-reference/video/hailuo-23-fast.md): Cheapest medium-quality model.
+- [Kling 1.0](https://www.krea.ai/docs/api-reference/video/kling-10.md): High-control model with 10s duration.
+- [Kling 1.5](https://www.krea.ai/docs/api-reference/video/kling-15.md): Slow, quality model for complex scenes.
+- [Kling 1.6](https://www.krea.ai/docs/api-reference/video/kling-16.md): Previous gen model for complex scenes.
+- [Kling 2.0](https://www.krea.ai/docs/api-reference/video/kling-20.md): High-quality model with great aesthetics.
+- [Kling 2.1](https://www.krea.ai/docs/api-reference/video/kling-21.md): Frontier model with 1080p resolution.
+- [Kling 2.5](https://www.krea.ai/docs/api-reference/video/kling-25.md): Improved dynamics and style adaptation.
+- [Kling 2.6](https://www.krea.ai/docs/api-reference/video/kling-26.md): Frontier model with native audio.
+- [Kling 3.0](https://www.krea.ai/docs/api-reference/video/kling-30.md): Frontier model with audio and up to 15s.
+- [Kling o1](https://www.krea.ai/docs/api-reference/video/kling-o1.md): Intelligent model that thinks before generating.
+- [LTX-2.3 22B](https://www.krea.ai/docs/api-reference/video/ltx-23-22b.md): High-quality audio-video model from Lightricks.
+- [Ray 2](https://www.krea.ai/docs/api-reference/video/ray-2.md): Older model with natural motion.
+- [Runway Aleph](https://www.krea.ai/docs/api-reference/video/runway-aleph.md): Runway's Gen-4 Aleph model for advanced video-to-video transformation
+- [Runway Gen-3](https://www.krea.ai/docs/api-reference/video/runway-gen-3.md): Old cinematic model, higher consistency.
+- [Runway Gen-4](https://www.krea.ai/docs/api-reference/video/runway-gen-4.md): Cinematic visuals, weaker structure.
+- [Runway Gen-4.5](https://www.krea.ai/docs/api-reference/video/runway-gen-45.md): Frontier model with native text-to-video.
+- [Seedance 2.0*](https://www.krea.ai/docs/api-reference/video/seedance-20*.md): Flagship video model with native audio, references, and frame animation.
+- [Seedance 2.0 Fast*](https://www.krea.ai/docs/api-reference/video/seedance-20-fast*.md): Faster Seedance 2 with native audio, references, and frame animation.
+- [Seedance 2.0 Mini](https://www.krea.ai/docs/api-reference/video/seedance-20-mini.md): Cost-efficient Seedance 2 model for scalable video production.
+- [Seedance Pro](https://www.krea.ai/docs/api-reference/video/seedance-pro.md): Fast, high-quality model from ByteDance.
+- [Seedance Pro Fast](https://www.krea.ai/docs/api-reference/video/seedance-pro-fast.md): Fast and cheap model. Up to 12 seconds.
+- [Veo 2](https://www.krea.ai/docs/api-reference/video/veo-2.md): Expensive high-quality model from Google.
+- [Veo 3](https://www.krea.ai/docs/api-reference/video/veo-3.md): Older version of Veo 3.1.
+- [Veo 3 Fast](https://www.krea.ai/docs/api-reference/video/veo-3-fast.md): Faster, affordable Veo 3 with audio.
+- [Veo 3.1](https://www.krea.ai/docs/api-reference/video/veo-31.md): Best video model. Highest quality with audio.
+- [Veo 3.1 Fast](https://www.krea.ai/docs/api-reference/video/veo-31-fast.md): Faster, affordable Veo 3.1 with audio.
+- [Veo 3.1 Lite](https://www.krea.ai/docs/api-reference/video/veo-31-lite.md): Faster, affordable Veo 3.1.
+- [Vidu Q3](https://www.krea.ai/docs/api-reference/video/vidu-q3.md): New model excelling at anime.
+- [Wan 2.1](https://www.krea.ai/docs/api-reference/video/wan-21.md): Fastest low-quality model with LoRA.
+- [Wan 2.2](https://www.krea.ai/docs/api-reference/video/wan-22.md): Fast, lower-quality model from Alibaba.
+- [Wan 2.5](https://www.krea.ai/docs/api-reference/video/wan-25.md): Latest medium quality model from Alibaba.
+- [Krea changelog](https://www.krea.ai/docs/changelog.md): Track weekly updates to Krea's image and video models, API, and product experience, including new features, improvements, and bug fixes.
+- [API keys and billing](https://www.krea.ai/docs/developers/api-keys-and-billing.md): Create and manage Krea API keys, top up your workspace API balance, and review per-model pricing to plan integration costs across image and video models.
+- [Deprecations](https://www.krea.ai/docs/developers/deprecations.md): Track Krea API models and endpoints that are deprecated or scheduled for sunset, with replacement recommendations and migration guidance for each one.
+- [Image to image](https://www.krea.ai/docs/developers/examples/image-to-image.md): Compare image-to-image models on Krea for upscaling, style transfer, enhancement, and variation, with support for URLs and base64 data URI inputs.
+- [Image to video](https://www.krea.ai/docs/developers/examples/image-to-video.md): Animate still images into video clips with Krea's image-to-video models, accepting hosted image URLs or base64 data URI inputs for each generation.
+- [Text to Image](https://www.krea.ai/docs/developers/examples/text-to-image.md): Compare Krea API text-to-image models — Krea 2, Flux, Nano Banana Pro, and more — with pricing, capabilities, and code samples to pick the right one.
+- [Text to Video](https://www.krea.ai/docs/developers/examples/text-to-video.md): Generate videos from text prompts via the Krea API with Veo 3.1, Kling 2.5, Hailuo, and other models for cinematic clips, animation, and storytelling.
+- [Interactive Playground](https://www.krea.ai/docs/developers/interactiveexample.md): Try the Krea API live in the interactive playground — send authenticated requests, inspect responses, and copy ready-to-use code without leaving your browser.
+- [Krea API introduction](https://www.krea.ai/docs/developers/introduction.md): Get started with the Krea API — create an API token, explore image and video models, and make your first request to generate, edit, or animate content.
+- [Job Lifecycle](https://www.krea.ai/docs/developers/job-lifecycle.md): Understand each Krea job state from creation to completion, including polling patterns, retries, and practical error-handling strategies.
+- [Generative sliders](https://www.krea.ai/docs/developers/krea-2/generative-sliders.md): Use the Krea 2 API intensity, complexity, and movement sliders to steer style, composition density, and motion without rewriting your prompt.
+- [Moodboards](https://www.krea.ai/docs/developers/krea-2/moodboards.md): Steer a Krea 2 generation with a moodboard of reference images to lock in palette, texture, lighting, mood, and composition across every API request.
+- [Krea 2 API overview](https://www.krea.ai/docs/developers/krea-2/overview.md): Krea 2 API reference covering models, parameters, pricing, and generative sliders for our first foundation image model built for creative control.
+- [Style transfer](https://www.krea.ai/docs/developers/krea-2/style-transfer.md): Use one or more reference images via URL or base64 data URI to drive the style of a Krea 2 generation, with tunable strength per reference.
+- [Model Context Protocol (MCP) server](https://www.krea.ai/docs/developers/mcp.md): Connect MCP-compatible agents to Krea with OAuth or an API key to discover models, inspect schemas, and generate images and videos.
+- [Rate Limits](https://www.krea.ai/docs/developers/rate-limits.md): Learn Krea API rate limits, concurrency behavior, and backoff patterns so your application stays reliable under real production traffic.
+- [Train a Custom Style](https://www.krea.ai/docs/developers/tutorials/train-image-style.md): Train custom image styles from your own datasets and generate consistent outputs with guidance on curation, tagging, and iteration best practices.
+- [Webhooks](https://www.krea.ai/docs/developers/webhooks.md): Set up webhooks to receive real-time job completion events, reduce polling, and build reliable asynchronous workflows in your application.
+- [Zero Data Retention](https://www.krea.ai/docs/developers/zdr.md): Enable Zero Data Retention on the Krea API so prompts, reference images, and generated outputs are not stored after a request completes — for compliance.
+- [Image generation](https://www.krea.ai/docs/image-generation.md): Use Krea Image generation to turn text prompts into photos, illustrations, and concept art across Krea, Flux, Imagen, Nano Banana, and other AI models.
+- [Krea docs: AI image and video tools plus developer API](https://www.krea.ai/docs/index.md): AI-powered creative tools for everyone. Generate stunning images and videos with cutting-edge AI models, or integrate our API into your applications.
+- [Realtime](https://www.krea.ai/docs/realtime.md): Generate images and video instantly as you draw, type, or move elements around the Krea Realtime canvas for live creative feedback and fast iteration.
+- [3D Utilities](https://www.krea.ai/docs/user-guide/features/3d.md): Create textured 3D meshes from text prompts or images, then refine geometry and materials for faster ideation and production workflows.
+- [Audio generation](https://www.krea.ai/docs/user-guide/features/audio.md): Generate music, voiceovers, sound effects, and dialogue inside Krea node workflows using ElevenLabs, Qwen TTS, ThinkSound, and MMAudio integrations.
+- [ChatGPT 1.5](https://www.krea.ai/docs/user-guide/features/chat-gpt-1-5.md): OpenAI's most precise image model, built for complex prompts, accurate text rendering, and targeted edits that leave the rest of the frame untouched.
+- [Edit](https://www.krea.ai/docs/user-guide/features/edit.md): Use Krea Edit to transform, retouch, and expand images with precise regional controls, object removal, and seamless AI-powered compositing.
+- [Enhancer](https://www.krea.ai/docs/user-guide/features/enhancer.md): Upscale and refine images with Krea Enhancer to improve detail, clarity, and texture while preserving composition for high-resolution delivery.
+- [Flux](https://www.krea.ai/docs/user-guide/features/flux.md): Generate fast, high-quality images with Flux using powerful prompt controls, LoRA styling, and iterative workflows for production-ready results.
+- [Ideogram](https://www.krea.ai/docs/user-guide/features/ideogram.md): Create polished, design-forward visuals with Ideogram models optimized for stylized composition, typography, and rapid creative exploration.
+- [Imagen 4](https://www.krea.ai/docs/user-guide/features/imagen4.md): Generate photorealistic images in Krea with Google's Imagen 4, featuring crisp typography, detailed textures, and flexible aspect ratios for design work.
+- [Krea 2](https://www.krea.ai/docs/user-guide/features/krea-2.md): Krea 2 is our first foundation image model, built from scratch for full creative control over style, composition, aesthetics, and reference-driven results.
+- [Krea 2 Turbo](https://www.krea.ai/docs/user-guide/features/krea-2-turbo.md): Krea 2 Turbo is the fastest Krea 2 model, built for low-cost iteration on expressive illustrations, style-driven concepts, and rapid visual exploration.
+- [Image generation](https://www.krea.ai/docs/user-guide/features/krea-image.md): Create images in Krea from a single text prompt with model picker, aspect ratio controls, style references, and post-generation editing all in one tool.
+- [Model Overview](https://www.krea.ai/docs/user-guide/features/model-overview.md): Compare every Krea image and video model by speed, quality tier, credit cost, and best use case so you can pick the right one for each creative job.
+- [Nano Banana](https://www.krea.ai/docs/user-guide/features/nano-banana.md): Use Nano Banana for fast, efficient image generation with strong prompt adherence, making it ideal for quick iterations and high-throughput workflows.
+- [Nano Banana 2](https://www.krea.ai/docs/user-guide/features/nano-banana-2.md): Google's most capable image model — Nano Banana 2 combines fast generation with 4K resolution, real-time web search, and up to 14 reference images.
+- [Nano Banana Pro](https://www.krea.ai/docs/user-guide/features/nano-banana-pro.md): DeepMind's premium image model, built for professional-grade output with 4K resolution, precise editing, and superior text rendering.
+- [Nodes workflows](https://www.krea.ai/docs/user-guide/features/nodes.md): Build custom node-based workflows in Krea by connecting inputs, parameters, and outputs to chain image, video, and audio models on an infinite canvas.
+- [ChatGPT Image](https://www.krea.ai/docs/user-guide/features/openai.md): Use ChatGPT Image in Krea for advanced reasoning-driven generation, nuanced style control, and complex multi-reference creative workflows.
+- [Qwen 2512](https://www.krea.ai/docs/user-guide/features/qwen2512.md): Generate realistic portraits and scenes with Qwen 2512, featuring improved human detail, cleaner text rendering, and reliable stylistic control.
+- [Realtime](https://www.krea.ai/docs/user-guide/features/realtime.md): Create images and videos live as you draw, type, and move elements in Realtime, enabling instant feedback and rapid creative iteration.
+- [Runway Gen-4](https://www.krea.ai/docs/user-guide/features/runway.md): Runway Gen-4 delivers cinematic image generation with strong character consistency and reference controls for storyboards, concepts, and scenes.
+- [Seedream 5 Lite](https://www.krea.ai/docs/user-guide/features/seedream-5-lite.md): Seedream 5 Lite provides a lightweight entry point for quick image generation with balanced quality, speed, and straightforward setup guidance.
+- [Teams](https://www.krea.ai/docs/user-guide/features/teams.md): Collaborate in Krea Teams with shared workspaces, member access controls, and centralized billing to streamline creative production across your group.
+- [Training](https://www.krea.ai/docs/user-guide/features/training.md): Train custom Krea models on your own datasets to preserve style consistency across campaigns, characters, products, and long-running creative work.
+- [Veo 3](https://www.krea.ai/docs/user-guide/features/veo3.md): Generate high-quality videos with synchronized native audio using Veo 3, ideal for dialogue, sound effects, and production-ready storytelling.
+- [Video generation](https://www.krea.ai/docs/user-guide/features/video.md): Explore Krea video models to create animations, ads, and narrative clips with model-specific strengths for motion quality, control, and speed.
+- [Z Image](https://www.krea.ai/docs/user-guide/features/z-image.md): Z Image is Krea's budget-friendly model for quick photorealistic drafts, helping you validate ideas rapidly before higher-fidelity passes.
+- [What is Krea?](https://www.krea.ai/docs/user-guide/get-started/what-is-krea.md): Krea is an AI creative suite for generating, editing, enhancing, and animating images and videos with professional controls and fast iteration.
+- [Compute Units and Usage Guide](https://www.krea.ai/docs/user-guide/help-and-support/compute-units.md): Learn how Krea compute units work, how to track monthly usage across image and video generation, and tips to optimize your subscription spend.
+- [Domain Verification & Capture](https://www.krea.ai/docs/user-guide/help-and-support/domain-verification.md): Verify ownership of your email domain in Krea to enable Domain Capture, auto-enroll team members, and unlock SAML SSO for your enterprise workspace.
+- [Manage Subscriptions](https://www.krea.ai/docs/user-guide/help-and-support/manage-subscriptions.md): Learn how to upgrade, downgrade, cancel, or renew your Krea plan, including billing cycles, seat management, and account change tips.
+- [Model Access Controls](https://www.krea.ai/docs/user-guide/help-and-support/model-access-controls.md): Restrict which AI models your Krea workspace members can use with allowlist and blocklist modes for compliance, governance, and security policies.
+- [Managing Your Organization](https://www.krea.ai/docs/user-guide/help-and-support/organization-management.md): Manage your Krea organization: create workspaces, control access, invite members, assign roles, and verify domains from the Organization dashboard.
+- [Organizations](https://www.krea.ai/docs/user-guide/help-and-support/organizations.md): Learn how Krea Organizations group your workspaces, members, and domains under one enterprise account with Owner, Admin, and Member roles.
+- [Refunds and Billing](https://www.krea.ai/docs/user-guide/help-and-support/refunds-and-billing.md): Find clear answers about refunds, invoices, failed payments, and billing timelines so you can resolve Krea subscription issues quickly.
+- [SAML SSO Setup](https://www.krea.ai/docs/user-guide/help-and-support/saml-sso-setup.md): Configure SAML Single Sign-On for your Krea Enterprise workspace with your identity provider to enable secure, centralized team authentication.
+- [Krea user guide overview](https://www.krea.ai/docs/user-guide/index.md): Start using Krea's AI creative suite — generate images and videos, edit and enhance assets, train custom styles, and pick the right model for every project.
+
+## OpenAPI Specs
+
+- [openapi](https://www.krea.ai/docs/api-reference/openapi.json)
+
+## Optional
+
+- [Community](https://krea.ai/discord)
+- [GitHub](https://github.com/krea-ai)

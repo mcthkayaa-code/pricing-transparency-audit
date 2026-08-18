@@ -1,0 +1,152 @@
+SOURCE: https://gowinston.ai/pricing/
+ACCESSED: 2026-08-13
+METHOD: Claude Browser rendered read (get_page_text on the live page after declining
+non-essential cookies via "Reject All"). This is the page's own script-rendered output,
+i.e. what a visitor sees, per protocol D-005 (rendered reads are documentary).
+Archival: web.archive.org/save/<url> attempted twice via WebFetch; both attempts returned
+"Claude Code is unable to fetch from web.archive.org" (tool-level failure, not per-page
+rate-limit — matches deviation D-012's pattern of archive.org unavailability during this
+collection window). archive_status = local_copy_only for this and every other source below.
+
+DOM CONFIRMATION (via javascript_tool, same tab, same load):
+  billing toggle button outerHTML: <button type="button" class="billing-toggle"
+    data-current="yearly" aria-label="Toggle billing cycle"><span class="billing-switch"
+    aria-hidden="true"></span></button>
+  label spans: {"text":"Annual","className":"billing-label billing-label--active"},
+               {"text":"Monthly","className":"billing-label"}
+  => default display state on load = ANNUAL (yearly), confirmed from raw DOM attributes,
+     not just rendered text.
+
+RENDERED PAGE TEXT (verbatim, via get_page_text, article element):
+---
+Flexible pricing for your needs
+Save 45%
+Annual
+Monthly
+Free
+$
+0
+/month
+$
+0
+/year
+2,000 credits / 14 day trial
+AI Content detection (ChatGPT, Gemini, Claude and much more)
+AI Image & deepfake detection (Midjourney, DALL-E, Stable Diffusion and more)
+Email and Chat support
+Scan documents
+HUMN-1 website certification / 14 day trial
+Scan pictures and handwriting (OCR)
+Generate shareable PDF reports
+Advanced plagiarism detection
+Invite team members
+Top-up Credits
+Get started free
+Essential
+$
+10
+/month
+$
+120
+/year
+100,000 credits / month
+AI Content detection (ChatGPT, Gemini, Claude and much more)
+AI Image & deepfake detection (Midjourney, DALL-E, Stable Diffusion and more)
+Writing Feedback
+Email and chat support
+Scan documents
+Scan pictures and handwriting (OCR)
+Generate shareable PDF reports
+Advanced plagiarism detection
+Invite team members
+Top-up Credits
+Get started free
+Advanced
+$
+16
+/month
+$
+192
+/year
+200,000 credits / month
+AI content detection (ChatGPT, Gemini, Claude and much more)
+Advanced plagiarism detection
+AI Image & deepfake detection (Midjourney, DALL-E, Stable Diffusion and more)
+Writing Feedback
+Email and chat support
+Scan documents
+Scan pictures and handwriting (OCR)
+Generate shareable PDF reports
+HUMN-1+ website certification
+Up to 5 team members
+Top-up Credits
+Get started free
+Elite
+$
+26
+/month
+$
+312
+/year
+500,000 credits / month
+AI content detection (ChatGPT, Gemini, Claude and much more)
+Advanced plagiarism detection
+AI Image & deepfake detection (Midjourney, DALL-E, Stable Diffusion and more)
+Writing Feedback
+Email and Chat support
+Scan documents
+Scan pictures and handwriting (OCR)
+Generate shareable PDF reports
+HUMN-1+ website certification
+Unlimited team members
+Top-up Credits
+Get started free
+
+Looking for a custom plan for your business or institution? Contact us
+Enterprise and Custom Plans
+[...]
+Compare our plans
+Free | Essential | Advanced | Elite
+Credits
+2,000/14 days | 100,000/month | 200,000/month | 500,000/month
+Characters Per Scan
+[blank] | up to 200,000 | up to 200,000 | up to 200,000
+Scans Per Hour
+[blank] | unlimited | unlimited | unlimited
+[feature-grid rows below are checkmark/cross icons, not extractable as text]
+...
+Frequently asked questions
+Why should I pay for an AI content detector?
+Simply because free AI content detectors are obsolete and do not work with the latest
+LLM's available. Open AI (ChatGPT), Google Gemini, Anthropic and many more AI companies
+are releasing extremely powerful generative AI tools that bypass most AI detectors, but
+not Winston AI.
+Do I need a long term contract?
+You do not need a long-term contract to use Winston AI. Our subscription plans are
+flexible, allowing you to choose between monthly and annual billing options. You can
+cancel your subscription at any time, and the cancellation will take effect at the end
+of the current paid term. Our annual plans come with savings, but you will not be able
+to cancel during the term of your plan.
+Can I cancel my subscription?
+Yes, you can cancel your subscription at any time. Log in to your account and go to the
+"billing" section to cancel. The cancellation will take effect at the end of the current
+paid term.
+Is my payment information secure?
+Yes, all payment data is securely processed by Stripe, adhering to strict privacy and
+security standards. We do not store sensitive payment information on our servers.
+Do you offer custom plans for larger organizations?
+Yes, we offer custom plans for larger organizations. Please contact us at
+support@gowinston.ai with your specific requirements for more details.
+---
+
+NOTE ON [blank] CELLS: the "Characters Per Scan" and "Scans Per Hour" table cells under
+the Free column render as empty in text extraction. This is consistent with either (a) an
+icon (check/cross) that does not extract as text, or (b) no value shown for Free. Coder
+could not resolve which from text alone; not asserted as a coded fact either way.
+
+CROSS-CHECK: an independent WebFetch (AI-summarized) extraction of the same URL on the
+same date reported the identical figures for the annual column (Essential $10/mo=$120/yr,
+Advanced $16/mo=$192/yr, Elite $26/mo=$312/yr) and additionally reported the MONTHLY
+(non-default) toggle figures as Essential $18/mo, Advanced $29/mo, Elite $49/mo. The
+monthly-toggle figures were not independently re-verified against raw DOM since the
+codebook prices from the default (annual) state only; recorded here for completeness.

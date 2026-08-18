@@ -1,0 +1,496 @@
+product_id: colossyan
+product_name: Colossyan
+vendor_home_url: https://www.colossyan.com
+category: AI avatar
+product_status: active
+paid_submission: "no"
+coder_pass: 1
+collection_date: 2026-08-07
+recheck_date: not_applicable
+
+sources:
+  - url: https://www.colossyan.com/pricing/
+    document_class: pricing_page
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807013934/https://www.colossyan.com/pricing/
+    archive_status: archived
+  - url: https://www.colossyan.com/terms/
+    document_class: terms_of_service_standard
+    note: "Same URL also serves the Enterprise & Organization Plan Terms as a hidden tab panel (id=enterprise-pane, anchor #enterprise); read via DOM in full, covered by the same archive snapshot."
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807013957/https://www.colossyan.com/terms/
+    archive_status: archived
+  - url: https://www.colossyan.com/acceptable-use/
+    document_class: acceptable_use_policy
+    access_date: 2026-08-07
+    archive_url: https://web.archive.org/web/20260807014017/https://www.colossyan.com/acceptable-use/
+    archive_status: archived
+  - url: https://colossyan.zendesk.com/hc/en-us/articles/31601559867921-Free-Trial
+    document_class: help_center
+    access_date: 2026-08-07
+    archive_url: archive_failed (web.archive.org/save returned HTTP 520, then 429 on retry)
+    archive_status: local_copy_only
+    local_copy: colossyan-sources/zendesk-free-trial-2026-08-07.txt
+  - url: https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ
+    document_class: help_center
+    access_date: 2026-08-07
+    archive_url: archive_failed (web.archive.org/save returned HTTP 520 on colossyan.zendesk.com domain)
+    archive_status: local_copy_only
+    local_copy: colossyan-sources/zendesk-pricing-packaging-faq-2026-08-07.txt
+  - url: https://colossyan.zendesk.com/hc/en-us/articles/31601551901841-Video-rights
+    document_class: help_center
+    access_date: 2026-08-07
+    archive_url: archive_failed (web.archive.org/save returned HTTP 520 on colossyan.zendesk.com domain)
+    archive_status: local_copy_only
+    local_copy: colossyan-sources/zendesk-video-rights-2026-08-07.txt
+  - url: https://colossyan.zendesk.com/hc/en-us/articles/31601591090065-Managing-your-account
+    document_class: help_center
+    access_date: 2026-08-07
+    archive_url: archive_failed (web.archive.org/save returned HTTP 520 on colossyan.zendesk.com domain)
+    archive_status: local_copy_only
+    local_copy: colossyan-sources/zendesk-managing-your-account-2026-08-07.txt
+  - url: https://colossyan.zendesk.com/hc/en-us/articles/49110667231761-Cora-usage-limitations
+    document_class: help_center
+    access_date: 2026-08-07
+    archive_url: archive_failed (web.archive.org/save returned HTTP 520 on colossyan.zendesk.com domain)
+    archive_status: local_copy_only
+    local_copy: colossyan-sources/zendesk-cora-usage-limitations-2026-08-07.txt
+  - url: https://colossyan.zendesk.com/hc/en-us/articles/31601542272401-Video-generation-minutes
+    document_class: help_center
+    access_date: 2026-08-07
+    archive_url: archive_failed (web.archive.org/save returned HTTP 520 on colossyan.zendesk.com domain)
+    archive_status: local_copy_only
+    local_copy: colossyan-sources/zendesk-video-generation-minutes-2026-08-07.txt
+
+primary_source_url: https://www.colossyan.com/pricing/
+archive_url: https://web.archive.org/web/20260807013934/https://www.colossyan.com/pricing/
+archive_status: archived
+source_urls: "https://www.colossyan.com/pricing/ | https://www.colossyan.com/terms/ | https://www.colossyan.com/acceptable-use/ | https://colossyan.zendesk.com/hc/en-us/articles/31601559867921-Free-Trial | https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ | https://colossyan.zendesk.com/hc/en-us/articles/31601551901841-Video-rights | https://colossyan.zendesk.com/hc/en-us/articles/31601591090065-Managing-your-account | https://colossyan.zendesk.com/hc/en-us/articles/49110667231761-Cora-usage-limitations | https://colossyan.zendesk.com/hc/en-us/articles/31601542272401-Video-generation-minutes"
+
+default_display_state: >
+  Pricing page (https://www.colossyan.com/pricing/) loaded with the billing toggle on the
+  Professional card in the "Yearly -34%" (annual) position before any interaction; Professional
+  card default seat selection = "1 editor" (single-seat). Cookie banner handled by selecting the
+  privacy-preserving "Allow selection" option (Necessary-only) before reading; this did not touch
+  the billing/seat toggles. This state was archived (see sources). Only one load of this URL was
+  performed this pass, so no display-variant (protocol-v1.md section 6.8) was observed.
+
+entry_tier_name: Professional
+
+coder_role: primary
+
+variables:
+  headline_price_usd:
+    value: "59.00"
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Professional plan card, default display state (Yearly toggle preselected), shows "$59 /mo"
+      at the default "1 editor" seat selection, the entry paid tier's most prominent price figure.
+      Accessed 2026-08-07.
+  headline_billing_basis:
+    value: per_seat_per_month
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Same Professional card states both a per-month figure ("$59 /mo") and an explicit per-seat
+      figure ("$30/mo per additional member"), plus a 1/2/3-editor seat selector, matching
+      codebook-v1.md rule 2 (per-seat figure + per-month figure both stated -> per_seat_per_month).
+      Accessed 2026-08-07.
+  first_charge_amount_usd:
+    value: "708.00"
+    source: https://www.colossyan.com/pricing/ ; https://www.colossyan.com/terms/
+    evidence: >
+      Default state is annual ($59/mo billed annually, 1 editor). Pricing page FAQ: "Annual plans
+      ... since they are paid upfront for the year, your subscription stays active..."; ToS
+      Section 3.3: "this payment is for the upcoming billing period (e.g. you pay in advance for
+      each month or year of the Service depending on what Service Plan you selected)". Both
+      confirm the plan is charged once for twelve months, so 59 x 12 = 708.00. See
+      computation_assumptions. Accessed 2026-08-07.
+  mandatory_addon_present:
+    value: "no"
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Professional's advertised feature list (Unlimited MP4 downloads, Watermark removal, 5 SCORM
+      exports/mo, AI image generation, 20 avatars + 5 voices, 20 translations/mo, 15 interactive
+      videos/mo, up to 3 editor seats) carries no separate required charge. The two extra charges
+      the pricing-page FAQ documents (Studio Custom Avatars $1,000/yr; 600 extra NEO2 minutes for
+      $1,500/yr) are both explicitly optional add-ons/overage purchases, not required to use the
+      plan as advertised (codebook-v1.md rule 3). Accessed 2026-08-07.
+  annual_condition_disclosure:
+    value: adjacent
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      The Professional price card itself carries the billing-period toggle labeled "Yearly -34%"
+      directly above the "$59 /mo" figure, inside the same visual price block (codebook-v1.md
+      section 7 rule 2: label of the toggle attached to the price = adjacent). Accessed 2026-08-07.
+  annual_default_toggle:
+    value: annual_preselected
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Page loaded (after declining non-essential cookies, before any toggle interaction) with the
+      Professional card's billing switch in the "Yearly -34%" (right/filled) position; screenshot
+      and accessibility-tree read both confirm this pre-interaction state. Confirmed by pricing FAQ:
+      "Professional is $59/month on an annual plan". Accessed 2026-08-07.
+  free_plan_exists:
+    value: "yes"
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      "Starter" column shows "Free" (with "$27/mo" struck through) and "No credit card required",
+      standing alongside the paid Professional/Enterprise columns with no expiry stated; pricing
+      FAQ: "Our free plan gives you $27/month worth of value". Accessed 2026-08-07.
+  free_plan_cap_documented:
+    value: some_quantified
+    source: https://www.colossyan.com/pricing/ ; https://www.colossyan.com/terms/ ; https://www.colossyan.com/acceptable-use/
+    evidence: >
+      Starter carries multiple numbered limits (20 min/mo NEO, 0.5 min/mo NEO2, 20 min video
+      length, 40 scenes, 15 avatars, 3 cloned voices, 10 interactive videos/mo, 15 translations/mo,
+      1 seat, 0 SCORM exports/mo, up to 1080p) = quantified. It also carries "Unlimited course
+      creation" and "Unlimited viewers", but ToS Section 2.2's closing sentence ("Colossyan
+      reserves the right to shut down accounts or introduce account restrictions if usage patterns
+      significantly exceed typical user behaviour...", no figure) and AUP Section 4(f) ("excessively
+      or disproportionately use the Services...", no figure) qualify these unlimited claims without
+      a number, so per codebook-v1.md usage_cap_quantified rule 3 (Vendor U pattern) they are NOT
+      quantified. Mix of quantified and not-quantified = some_quantified. Accessed 2026-08-07.
+  free_plan_cap_value:
+    value: "20 min/mo NEO | 0.5 min/mo NEO2 | 1 Cora storyboard/mo | 20 min video length | 40 scenes | 15 avatars | 3 cloned voices | 10 interactive videos/mo | 15 translations/mo | 1 seat | 0 SCORM exports/mo | up to 1080p"
+    source: https://www.colossyan.com/pricing/ ; https://colossyan.zendesk.com/hc/en-us/articles/49110667231761-Cora-usage-limitations
+    evidence: >
+      Pricing-page comparison table (Starter column) for all items except the Cora storyboard cap,
+      which comes from the "Cora usage limitations" help article's per-plan table ("Free: 1 per
+      month"), the most recently updated source found ("13 days ago"). "Unlimited" items excluded
+      per section 5.1/rule 3 (see free_plan_cap_documented). Accessed 2026-08-07.
+  free_plan_watermark:
+    value: "yes"
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Comparison-table row "Watermark removal" shows a dash/cross for Starter and a checkmark for
+      Professional and Enterprise (confirmed via DOM inspection of the SVG check-path vs. plain
+      "–" text per cell), matching codebook-v1.md's own worked example (watermark removal absent on
+      free = free outputs are watermarked). Accessed 2026-08-07.
+  free_plan_duration:
+    value: perpetual
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Starter is presented as a standing column alongside the paid tiers with no expiry language
+      ("No credit card required", not "free for your first month"); no time limit stated anywhere
+      in the documents reviewed. Accessed 2026-08-07.
+  trial_exists:
+    value: "yes"
+    source: https://www.colossyan.com/pricing/ ; https://colossyan.zendesk.com/hc/en-us/articles/31601559867921-Free-Trial
+    evidence: >
+      Pricing FAQ: "Colossyan has a generous free trial and a free plan..."; Help Center "Free
+      Trial" article: "We're currently offering a 14-day trial to all subscribers who sign up".
+      Distinct from the standing free plan. Accessed 2026-08-07.
+  trial_card_required:
+    value: "no"
+    source: https://colossyan.zendesk.com/hc/en-us/articles/31601559867921-Free-Trial
+    evidence: >
+      Article Q&A: "Do I have to enter my credit card information? No." Accessed 2026-08-07.
+      (local_copy_only, archive.org save failed twice for this domain).
+  trial_length_days:
+    value: 14
+    source: https://colossyan.zendesk.com/hc/en-us/articles/31601559867921-Free-Trial ; https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ
+    evidence: >
+      "How long is the free trial period? 14 days."; corroborated by Pricing & Packaging FAQ:
+      "What happens to my account after the 14-day free trial?". One trial program is documented
+      (not tier-specific); it previews Enterprise-level capabilities regardless of eventual plan
+      chosen, per the same article ("showcase full Enterprise capabilities and features"). Accessed
+      2026-08-07 (both local_copy_only).
+  trial_auto_converts:
+    value: "no"
+    source: https://colossyan.zendesk.com/hc/en-us/articles/31601559867921-Free-Trial ; https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ
+    evidence: >
+      "What happens when the trial ends? You will be on our Free plan... you won't be able to
+      generate videos unless you upgrade to a paid plan" (no card was collected at trial start, so
+      no automatic charge is possible). Coded from the Help Center, which outranks the ToS for
+      trial-terms/pricing-class variables (codebook-v1.md section 3). See conflict_note for the
+      ToS's contrary general renewal clause. Accessed 2026-08-07.
+  credit_system_present:
+    value: "no"
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Plan allowances are stated directly in output units ("20 min/mo with NEO", "10 min/mo with
+      NEO2", "1 Cora storyboard/mo"), not an intermediate abstract currency; no mention of
+      "credits", "tokens", "points" or "coins" anywhere in the pricing page, ToS, or AUP.
+      codebook-v1.md rule 1: plan allowance stated directly in output units = no. Accessed
+      2026-08-07.
+  credit_unit_defined:
+    value: not_applicable
+    source: https://www.colossyan.com/pricing/
+    evidence: "No credit system (credit_system_present = no). Accessed 2026-08-07."
+  credit_to_output_rate_published:
+    value: not_applicable
+    source: https://www.colossyan.com/pricing/
+    evidence: "No credit system (credit_system_present = no). Accessed 2026-08-07."
+  credit_rate_location:
+    value: not_applicable
+    source: https://www.colossyan.com/pricing/
+    evidence: "No credit system (credit_system_present = no). Accessed 2026-08-07."
+  cost_per_output_unit:
+    value: per_video_minute
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Product is sold to produce AI-generated training video ("Videos and Courses, all-in-one");
+      every plan's core allowance is denominated in video-generation minutes. Accessed 2026-08-07.
+  cost_per_output_computable:
+    value: "no"
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Professional's video-minute allowance for $59/mo (default annual state, 1 editor) is split
+      into two separate, non-fungible pools with no published conversion or price split between
+      them: "30 min/mo with NEO" and "10 min/mo with NEO2" (pricing page; FAQ: "giving you 30
+      minutes a month with NEO and 10 minutes a month with NEO2 generation"). Computing a single
+      $/video-minute figure requires deciding how to allocate the one price across the two pools or
+      which pool to treat as "the" allowance -- an unpublished, unstated split, so the calculation
+      needs an assumption about usage the documents do not support (codebook-v1.md rule 7). See
+      computation_assumptions. Accessed 2026-08-07.
+  credit_rollover_policy:
+    value: not_applicable
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      No credit system (credit_system_present = no). Substantively, unused MINUTES (the actual
+      metered unit) are documented as not rolling over either way: pricing-page FAQ "Will my unused
+      minutes roll over to the next month? No."; Help Center "Video generation minutes" article:
+      "Unused minutes do not roll over as video generation minutes reset on the renewal date."
+      Accessed 2026-08-07.
+  failed_generation_charge_policy:
+    value: unknown
+    source: https://www.colossyan.com/pricing/ ; https://www.colossyan.com/terms/ ; https://www.colossyan.com/acceptable-use/ ; https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ ; https://colossyan.zendesk.com/hc/en-us/articles/31601542272401-Video-generation-minutes
+    evidence: >
+      Checked pricing page, ToS, AUP, and three Help Center billing/usage articles (Pricing &
+      Packaging FAQ, Video generation minutes, Managing your account); all describe minutes being
+      deducted "whenever you click Generate" but none addresses a technical failure or empty-result
+      case specifically -- silence, matching codebook-v1.md's note that this variable "is silent
+      often." Accessed 2026-08-07.
+  auto_renewal_default:
+    value: "on"
+    source: https://www.colossyan.com/terms/
+    evidence: >
+      ToS Section 3.4: "Fees will automatically be charged monthly or annually. Customer agrees
+      that its subscription is automatically renewed for the same period at the end of each billing
+      period..."; Section 14.3 restates this. ToS ranks first for this contractual variable.
+      Accessed 2026-08-07.
+  auto_renewal_disclosure_location:
+    value: multiple
+    source: https://www.colossyan.com/terms/ ; https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ ; https://colossyan.zendesk.com/hc/en-us/articles/31601591090065-Managing-your-account
+    evidence: >
+      Stated in the Terms (Section 3.4/14.3, quoted above) AND in two Help Center articles in
+      agreement: "Your cancellation will take effect and will stop the automatic renewal at the end
+      of the current paid term" (Pricing & Packaging FAQ; Managing your account). Two or more
+      document classes in agreement = multiple. Accessed 2026-08-07.
+  renewal_notice_commitment:
+    value: unknown
+    source: https://www.colossyan.com/terms/ ; https://colossyan.zendesk.com/hc/en-us/articles/31601584844177-Pricing-Packaging-FAQ ; https://colossyan.zendesk.com/hc/en-us/articles/31601591090065-Managing-your-account
+    evidence: >
+      ToS 3.4/14.3 and the two Help Center billing articles all state that renewal happens
+      automatically unless the customer cancels first, but none commits to notifying the customer
+      in advance of a renewal charge. Accessed 2026-08-07.
+  refund_policy_exists:
+    value: "yes"
+    source: https://www.colossyan.com/terms/
+    evidence: >
+      Dedicated "Refund Policy" section within the Terms page: "you can claim a full refund if
+      [conditions]..."; EU/UK consumers get a separate unconditional 14-day withdrawal right. See
+      refund_conditions and coder_note. Accessed 2026-08-07.
+  refund_window_days:
+    value: 14
+    source: https://www.colossyan.com/terms/
+    evidence: >
+      "Your refund claim is sent to us within 14 days from your purchase" (general/Standard terms,
+      applies to the Professional entry tier as a non-Enterprise plan). EU/UK consumers separately
+      get 14 days "after the day we confirm we have accepted your order" (coder_note). Accessed
+      2026-08-07.
+  refund_conditions:
+    value: conditional
+    source: https://www.colossyan.com/terms/
+    evidence: >
+      Full refund requires ALL of: "(a) claim sent within 14 days... (b) generated less than 10
+      minutes of Customer Created Videos, and (c) not subscribed to an Enterprise Plan." A usage
+      threshold beyond the mere request, matching codebook-v1.md's Vendor R pattern (conditional).
+      Coded on the general/Standard rule; EU/UK consumers get an unconditional variant (coder_note).
+      Accessed 2026-08-07.
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: https://www.colossyan.com/terms/ ; https://colossyan.zendesk.com/hc/en-us/articles/31601591090065-Managing-your-account
+    evidence: >
+      ToS 14.4: "Customer may elect to terminate this Agreement... by logging into Customer's
+      account." Help Center "Managing your account" gives the exact self-serve steps ("Click on
+      your plan in the left menu... Select Cancel subscription..."). Accessed 2026-08-07.
+  refund_policy_location:
+    value: terms
+    source: https://www.colossyan.com/terms/
+    evidence: >
+      The "Refund Policy" is a distinctly headed section embedded within the same Terms &
+      Conditions page (colossyan.com/terms/), not a separate dedicated URL. Accessed 2026-08-07.
+  commercial_use_lowest_tier:
+    value: lowest_paid
+    source: https://colossyan.zendesk.com/hc/en-us/articles/31601551901841-Video-rights
+    evidence: >
+      "Colossyan provides a full-commercial license for all user-generated content with all paid
+      plans (Starter, Pro and Enterprise)." No commercial-use statement exists in the Standard or
+      Enterprise ToS or the AUP (both silent on "commercial use" specifically; Enterprise ToS 2.1
+      only says "solely for Customer's business purposes"), so the Help Center article is the only
+      document addressing this and is used per codebook-v1.md section 2.1 step 2. Article's tier
+      names are stale relative to the current pricing page (see coder_note); "all paid plans"
+      excludes the free plan. Accessed 2026-08-07.
+  watermark_removal_tier:
+    value: lowest_paid
+    source: https://www.colossyan.com/pricing/
+    evidence: >
+      Comparison-table row "Watermark removal": dash for Starter (free), checkmark from
+      Professional (entry paid tier) upward. Accessed 2026-08-07.
+  output_ownership_statement:
+    value: conditional
+    source: https://www.colossyan.com/terms/
+    evidence: >
+      Standard ToS (governs Starter/Professional) Section 5.5: Colossyan grants only a "perpetual,
+      limited, REVOCABLE, non-exclusive... license to use Colossyan Material in that generated
+      video", revocable on breach -- no ownership statement for the surrounding output. Enterprise
+      Terms (same URL, #enterprise tab) Section 8.3: "Customer owns all right, title, and interest
+      in and to Customer Materials and Customer Created Content, but excluding any Colossyan
+      Materials..." -- explicit ownership. Rights genuinely depend on tier (Standard=license-only,
+      revocable; Enterprise=ownership), matching codebook-v1.md's conditional definition and Vendor
+      T pattern on two counts (tier-dependent AND revocable/compliance-conditioned). See
+      conflict_note for a Help Center article claiming unconditional "sole owner" status. Accessed
+      2026-08-07.
+  usage_cap_quantified:
+    value: some_quantified
+    source: https://www.colossyan.com/pricing/ ; https://www.colossyan.com/terms/ ; https://www.colossyan.com/acceptable-use/ ; https://colossyan.zendesk.com/hc/en-us/articles/49110667231761-Cora-usage-limitations
+    evidence: >
+      Professional (entry tier) carries many numbered limits (30 min/mo NEO, 10 min/mo NEO2, 50 min
+      video length, 40 scenes, 20 avatars, 5 cloned voices, 15 interactive videos/mo, 20
+      translations/mo, 5 SCORM exports/mo x2, up to 1080p, max 3 editor seats, 10 Cora
+      storyboards/mo) = quantified. It also carries "Unlimited MP4 video downloads", "Unlimited
+      course creation" and "Unlimited viewers", which are qualified without a number by ToS Section
+      2.2's closing sentence and AUP Section 4(f) (same clauses as free_plan_cap_documented), so per
+      rule 3 those specific items are NOT quantified. Mix = some_quantified. Accessed 2026-08-07.
+  unquantified_limit_clause:
+    value: present
+    source: https://www.colossyan.com/terms/ ; https://www.colossyan.com/acceptable-use/ ; https://colossyan.zendesk.com/hc/en-us/articles/49110667231761-Cora-usage-limitations
+    evidence: >
+      ToS Section 2.2: "Colossyan reserves the right to shut down accounts or introduce account
+      restrictions if usage patterns significantly exceed typical user behaviour, including but not
+      limited to unusually high-volume requests within short time periods, automated bulk
+      generation, or usage that impacts system performance for other users." (no figure). AUP
+      Section 4(f) restricts use that is "excessively or disproportionately" high-volume (no
+      figure). Cora usage limitations article (updated 13 days ago, most current source found)
+      separately imposes an unquantified "fair use limit" on Cora editing turns: "if you use a
+      large number of turns... this can affect how many storyboards you're able to create" (no
+      threshold stated). Terms and AUP read in full for this variable. Accessed 2026-08-07.
+
+coder_note: >
+  Entry-tier selection (sampling-rules.md 7.2): two candidates on the pricing page, Professional
+  and Enterprise. Enterprise is ineligible (requires contacting sales: "Let's talk"/"Contact
+  sales" CTAs, fails eligibility rule 2), so Professional is the only eligible candidate;
+  coder_note per rule states so. Starter is not a paid-tier candidate at all (it is the $0 free
+  plan). Professional is priced per seat (1/2/3-editor selector); the single-seat ("1 editor")
+  variant is the default and the one priced, per sampling-rules 7.2.4.
+  --
+  Assignment vs. frame-frozen data: this record's vendor_home_url (https://www.colossyan.com) was
+  given directly in the assignment. frame-frozen-2026-08-04.csv row 16 lists vendor_home_url as
+  "https://schema.org/SoftwareApplication", which is a data error in that file (not used for
+  coding); the live pricing page was independently located and confirmed at
+  https://www.colossyan.com/pricing/.
+  --
+  NEO vs NEO2: Colossyan's core metered resource ("video generation minutes") is split into two
+  parallel, non-fungible pools by rendering engine -- NEO (the larger/older allocation) and NEO2
+  (a newer, smaller allocation; per third-party discovery-only sources, NEO2 is a rebuilt
+  full-body/gesture engine) -- with no published rate to convert one into the other and no
+  published split of a plan's price between them. This is the basis for cost_per_output_computable
+  = no (domain 6) and is unrelated to credit_system_present (there is no credit currency at all;
+  both NEO and NEO2 allowances are stated directly in minutes).
+  --
+  Cora ("AI Video Generator", a storyboard-drafting assistant) is a separate, currently
+  research-preview feature available on every tier with its own monthly storyboard cap (Free: 1,
+  Trial: 2, Professional: 10, Enterprise: 40) plus a separate, unquantified "fair use" turn limit.
+  Source: Help Center article updated 13 days before access (the most current help-center source
+  found), materially more current than the five other Help Center articles used, which are dated
+  "1 year ago" (Free Trial; Pricing & Packaging FAQ; Video rights; Managing your account) or "8
+  months ago" (Video generation minutes) at access time.
+  --
+  Refund policy has a jurisdiction split not captured by the single coded refund_conditions value:
+  outside the EU/UK, the full refund is conditional on both the 14-day window AND generating fewer
+  than 10 minutes of video (coded value, as the general/default case); EU/UK consumers separately
+  get an unconditional 14-day statutory withdrawal right with no minutes-used gate. Refund
+  eligibility (either branch) also requires not being on an Enterprise plan; Enterprise fees are
+  separately stated as non-cancellable/non-refundable except as the Enterprise Agreement provides.
+  --
+  Optional (non-mandatory) add-ons documented on the entry tier: Studio Custom Avatars, $1,000/year
+  (pricing-page FAQ); additional NEO2 minute packs, 600 min/$1,500/year, "Reach out to sales to add
+  a pack" (pricing-page FAQ) -- both excluded from mandatory_addon_present per rule 3.
+  --
+  Blindness: no other record, no review page, no pass-2 material was opened.
+  --
+  D-009 provenance check (2026-08-12): first_charge_amount_usd (708.00) is exactly 12x
+  headline_price_usd (59.00), the pattern the D-009 sweep report flagged for a provenance check
+  across five records including this one. Re-examined independently: this record's own
+  computation_assumptions paragraph already states the arithmetic (59 x 12 = 708.00) and cites
+  two vendor documents for the once-for-twelve-months condition codebook-v1.md rule 2 requires.
+  Both re-verified live today: pricing page (https://www.colossyan.com/pricing/) FAQ reads
+  "annual plans can also be canceled, but since they are paid upfront for the year, your
+  subscription stays active and fully accessible until the end of your current billing period";
+  Terms (https://www.colossyan.com/terms/) Section 3.3 reads "We take payment when your order is
+  accepted and this payment is for the upcoming billing period (e.g. you pay in advance for each
+  month or year of the Service depending on what Service Plan you selected)." Also confirmed live
+  that the pricing page itself prints no explicit annual-total dollar figure anywhere (only
+  "$59 /mo" with the "Yearly -34%" toggle label), so 708.00 is a coder computation, not a
+  vendor-published total. Case 2 (coder computed; vendor documents state the plan is charged once
+  for twelve months). Verdict: SUPPORTED. 708.00 stands, unchanged.
+
+computation_assumptions: >
+  first_charge_amount_usd: Professional tier, default display state = Yearly toggle preselected,
+  $59/mo shown, 1 editor (single seat). ToS Section 3.3 ("this payment is for the upcoming billing
+  period (e.g. you pay in advance for each month or year...)") and the pricing-page FAQ ("since
+  they are paid upfront for the year...") both state the annual plan is charged once for the full
+  year. 59 x 12 = 708.00.
+  --
+  cost_per_output_computable = no: Professional's $59/mo (default state, 1 editor) buys two
+  separate allowances concurrently -- 30 min/mo with the NEO engine and 10 min/mo with the NEO2
+  engine (pricing page; FAQ) -- with no published price split or conversion rate between them. A
+  single $/video-minute figure cannot be produced from published numbers alone: treating the full
+  $59 as buying only the NEO pool (59/30 = 1.97) ignores that the same $59 also buys NEO2 minutes,
+  and vice versa for NEO2 alone (59/10 = 5.90); resolving this needs an unstated assumption about
+  which engine's minutes, or what mix of the two, the buyer will use, which rule 7 (arithmetic
+  only, no usage estimation) forbids. No cost_per_output_value_usd is entered (that field is
+  derived and is set to not_computable downstream, per codebook-v1.md section 8).
+
+conflict_note: >
+  (1) output_ownership_statement: Help Center "Video rights" article
+  (colossyan.zendesk.com/.../31601551901841-Video-rights, "1 year ago Updated") states "Colossyan
+  provides a full-commercial license for all user-generated content with all paid plans... users
+  are the sole owners of the video content they create" / "belongs entirely to the creator" -- an
+  unconditional, unqualified ownership claim. This conflicts with the current Standard Terms of
+  Service (colossyan.com/terms/, Section 5.5, last updated 19 December 2024), which for
+  non-Enterprise plans (Starter, Professional) grants only a "perpetual, limited, REVOCABLE,
+  non-exclusive... license to use Colossyan Material" within the generated output, revocable on
+  breach, with no ownership statement for the output itself. Coded from the ToS, which ranks first
+  for contractual/output-ownership variables (codebook-v1.md section 3); the Help Center's
+  contrary "sole owner" claim is the overridden lower-ranked source.
+  --
+  (2) trial_auto_converts: Standard ToS Section 3.4 (colossyan.com/terms/) states "Colossyan may
+  charge automatically at the end of the trial... unless you notify us in advance that you want to
+  cancel," implying the trial converts into a charged subscription. This conflicts with the Help
+  Center "Free Trial" article and "Pricing & Packaging FAQ" article (colossyan.zendesk.com), both
+  stating that after the 14-day trial (which explicitly requires no card up front) the account
+  reverts to the Free plan and generation is blocked "unless you upgrade to a paid plan" -- i.e.,
+  no automatic charge occurs. Coded from the Help Center, which ranks above the ToS for
+  trial-terms/pricing-class variables (codebook-v1.md section 3); the ToS's more generic renewal
+  clause is the overridden lower-ranked source for this specific trial.
+  --
+  (3) Additional-minutes purchase option (not a coded variable, recorded per the blanket
+  disagreement-disclosure rule in protocol-v1.md section 6.2): the current pricing-page FAQ states
+  add-on NEO2 minute packs are purchasable ("600 extra NEO2 minutes for $1,500/year"), while the
+  Help Center "Pricing & Packaging FAQ" article (1 year old) states "there is no way to purchase
+  additional minutes." Pricing page (current, ranks first for pricing-class content) treated as
+  authoritative; does not change mandatory_addon_present (both describe an optional purchase).
+  --
+  (4) General staleness: the Help Center "Pricing & Packaging FAQ" article names plans "Starter and
+  Business" and gives "12*40=480 minutes" for "an annual Pro subscription" (i.e., 40 min/mo); the
+  current live pricing page shows Starter (free) / Professional (30 min/mo NEO + 10 min/mo NEO2) /
+  Enterprise. All quantified figures coded in this record are taken from the current, higher-ranked
+  pricing page; the stale help-center figures are not used for any coded value.
+
+register_events: []
+
+blindness: "no other record, no review page, no pass-2 material was opened."
+
+status: complete

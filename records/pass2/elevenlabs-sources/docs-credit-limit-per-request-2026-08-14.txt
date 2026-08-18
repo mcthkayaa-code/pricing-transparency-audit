@@ -1,0 +1,33 @@
+URL: https://elevenlabs.io/docs/help-center/account/general/is-there-a-limit-to-how-many-credits-i-can-use-at-once
+Accessed: 2026-08-14 (rendered browser read, article element extracted via JS to bypass sidebar nav noise)
+Archive: https://web.archive.org/web/20260814162150/https://elevenlabs.io/docs/help-center/account/general/is-there-a-limit-to-how-many-credits-i-can-use-at-once
+Title: Is there a limit to how many credits I can use at once? | ElevenLabs Documentation
+
+Verbatim article text:
+---
+Account
+General
+Is there a limit to how many credits I can use at once?
+
+Yes, to prevent abuse there is a limit on the number of credits that can be used at once. This limit is twice the usual monthly quota for your subscription plan.
+
+---
+Related, also fetched (https://elevenlabs.io/docs/help-center/account/general/what-are-credits), same session:
+
+What are credits?
+
+Credits were previously referred to as "characters." We updated this terminology to streamline pricing and make it easier to understand, though the value remains unchanged.
+
+Credits can be used across our platform. The number of credits used depends on your plan, whether you're generating via the website or API, the product you're using, and the model. For full details, see our Pricing page.
+
+Credit Allocation and Rollover
+
+For self-serve monthly and annual plans, and Enterprise monthly plans: you will receive a set amount of credits each month, which reset monthly. Up to two months' worth of unused credits can roll over to the next month.
+
+For enterprise annual plans, you will receive a yearly credit allocation upfront. These credits reset each year, with up to two months' worth of unused credits rolling over to the next year.
+
+If you downgrade or cancel your subscription, this does not take effect until the end of your current billing cycle, and unused credits are not rolled over.
+
+Pay As You Go
+
+Pay As You Go (PAYG) allows you to prepay for credits without committing to a monthly subscription, or buy additional credits if you run out of your subscription credits. For full details, see our Pay As You Go documentation.

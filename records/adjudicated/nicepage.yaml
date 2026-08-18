@@ -1,0 +1,236 @@
+product_id: nicepage
+product_name: Nicepage
+category: AI website builder
+product_status: active
+paid_submission: "yes"
+entry_tier_name: "Personal"
+coder_pass: 3
+coder_role: adjudicated
+collection_date: 2026-08-16
+recheck_date: not_applicable
+primary_source_url: https://nicepage.com/premium
+archive_url: https://web.archive.org/web/20260815121227/https://nicepage.com/premium
+archive_status: archived
+
+default_display_state: |
+  https://nicepage.com/premium loads on the "Subscription" toggle by default (not "License", i.e.
+  recurring not one-time) -- all four paid tiers billed annually only, no monthly-recurring
+  alternative offered anywhere on the page; USD $ prices with no currency/locale selector or
+  variation (checked by both passes under D-003; pass 2 additionally read from a Turkey-based
+  network location and still got plain USD). Business tier badged "Popular". Cookie banner offers
+  "Accept" only, no visible decline control (both passes accepted it, after capturing pre-consent
+  values). Confirmed unchanged on an independent raw-HTML re-fetch 2026-08-16 (not a summarizer):
+  embedded baseSubscriptionPrices JSON reads personal=6.75/business=12.75/pro=18.75/ultimate=31.75,
+  identical to both prior reads. Agreed independently by both passes and by this adjudicator -- not
+  itself a disputed variable, and no basis for a variant_explained classification (protocol 7.4.2
+  needs two archive snapshots of two DIFFERENT default states; all three reads recorded the same
+  one state).
+
+sources:
+  - { url: "https://nicepage.com/premium", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815121227/https://nicepage.com/premium", note: "PRIMARY SOURCE. Read by both passes (pass 1 also archived 2026-08-10: https://web.archive.org/web/20260810063002/https://nicepage.com/premium). This adjudicator re-fetched the live raw HTML 2026-08-16 (not a summarizer) and confirmed the embedded baseSubscriptionPrices JSON, and that the page genuinely uses BOTH 'App Projects'/'HTML Sites' (pricing-card bullets, with tooltips) AND 'Desktop Projects'/'Online Projects' (comparison-table row labels) for the identical two Starter-tier caps -- see free_plan_cap_value." }
+  - { url: "https://nicepage.com/terms", kind: tos, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122609/https://nicepage.com/terms", note: "Terms of Use, 'Refund Policy' section. Read by both passes (pass 1 also archived 2026-08-10: https://web.archive.org/web/20260810063021/https://nicepage.com/terms). This adjudicator re-fetched the raw page text 2026-08-16 and additionally read the page's own header, which neither pass's evidence file excerpts: 'Please also read the License Agreement for Web Templates.' -- see conflict_note." }
+  - { url: "https://nicepage.com/agreement", kind: tos, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122631/https://nicepage.com/agreement", note: "End-User License Agreement, read in full by both passes (pass 1 also archived 2026-08-10: https://web.archive.org/web/20260810063041/https://nicepage.com/agreement). This adjudicator re-fetched the full raw page text 2026-08-16 -- see conflict_note for the title/scope finding neither pass captured." }
+  - { url: "https://nicepage.com/doc/4720/trial-limitations", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122712/https://nicepage.com/doc/4720/trial-limitations", note: "Trial Period doc. In pass 2's sources only -- absent from pass 1's sources list entirely, which is the coverage gap trial_auto_converts turns on. This adjudicator independently re-fetched it live 2026-08-16 and confirms the operative sentence unchanged." }
+  - { url: "https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122735/https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal", note: "Read by both passes (pass 1 also archived 2026-08-10). Source for auto_renewal_default and cancellation_self_serve, agreed by both passes." }
+  - { url: "https://nicepage.com/doc/16656/faq", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122651/https://nicepage.com/doc/16656/faq", note: "Standalone FAQ doc, read by pass 2 only; substance duplicates the pricing page's own embedded FAQ accordion, which pass 1 read at the pricing-page URL." }
+  - { url: "https://nicepage.com/abuse", kind: other, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122808/https://nicepage.com/abuse", note: "Checked by pass 2 as an unquantified_limit_clause candidate; not substantively used." }
+
+variables:
+  # --- Domain 1 ---
+  headline_price_usd: { value: 6.75, source: "https://nicepage.com/premium", evidence: "AGREED. Personal-tier card DOM: dollars-big/cents-superscript markup '<sup>$</sup>6<sup>75</sup></span><span class=price-year>/mo</span>' = $6.75/mo, confirmed by the embedded baseSubscriptionPrices JSON (personal:6.75) and a screenshot; a plain-text/innerText read of the same markup flattens it to '$675/mo' (a 100x misread, D-009/D-005), which both passes independently caught and neither used. Re-confirmed via raw-HTML re-fetch 2026-08-16, unchanged." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://nicepage.com/premium", evidence: "AGREED. '$6.75/mo' with 'Billed annually' printed in the same card/column, directly beneath the price." }
+  first_charge_amount_usd: { value: 81.00, source: "https://nicepage.com/premium", evidence: "AGREED. Pricing-page FAQ: Subscription is a one-year charge ('including one year of updates'); 6.75 x 12 = 81.00. check_price_arithmetic.py's relation holds exactly (basis=per_month_billed_annually, 6.75x12=81.00=first charge, gap 0)." }
+  mandatory_addon_present: { value: "no", source: "https://nicepage.com/premium", evidence: "AGREED. No required add-on charge stated for Personal-tier features anywhere in the pricing page, feature grid, terms, or agreement." }
+  annual_condition_disclosure: { value: adjacent, source: "https://nicepage.com/premium", evidence: "AGREED. 'Billed annually' sits directly beneath the $6.75 figure inside the same plan card/column." }
+  annual_default_toggle: { value: no_toggle, source: "https://nicepage.com/premium", evidence: "AGREED. The page's only toggle (#period-toggle) switches 'Subscription' (recurring, billed annually, default) vs 'License' (one-time, lifetime) -- a product-type toggle, not a monthly/annual billing-period toggle. No monthly-recurring option exists at all." }
+
+  # --- Domain 3 ---
+  free_plan_exists: { value: "yes", source: "https://nicepage.com/premium", evidence: "AGREED. 'STARTER ... $0 ... Free' shown as a standing column alongside the paid tiers." }
+  free_plan_cap_documented: { value: some_quantified, source: "https://nicepage.com/premium", evidence: "AGREED. Quantified: 2 projects/sites, 250 Mb storage, 1,000 monthly visits, 50 form submissions (lifetime), 20 calendar appointments (lifetime), 50 block layouts, 10 grid styles. Unquantified: '15,000+ Templates: Limited', 'Design customization: Limited', 'Published Sites: Limited' (section 5.1's non-qualifying-word list)." }
+  free_plan_cap_value: { value: "2 desktop projects | 2 online projects | 50 block layouts | 10 grid styles | 250 Mb storage per site | 1,000 monthly visits per site | 50 form submissions (lifetime) | 20 calendar appointments (lifetime)", source: "https://nicepage.com/premium", evidence: "ADJUDICATED 2026-08-16. Both passes' NUMBERS agree completely (2, 2, 50, 10, 250 Mb, 1,000, 50, 20); only the first two items' unit LABELS differ. Raw-HTML re-fetch 2026-08-16 confirms BOTH label sets are genuine, simultaneous vendor text: the per-tier pricing-card bullets read 'App Projects' (tooltip: '2 projects in the Windows and Mac OS applications') / 'HTML Sites' (tooltip: 'Publish 2 HTML sites on your own hosting'); the detailed 'Compare plans' table's own row labels for the identical two caps read 'Desktop Projects' / 'Online Projects'. Same numbers either way -- not the 'incompatible caps' this variable's `conflicting` value is for, a labeling duplicate instead. Resolved to the comparison-table wording: (a) it is the one source both passes otherwise drew the remaining six of eight items from, keeping this string single-sourced rather than a silent splice of two page regions; (b) pass 2's OWN saved capture (premium-comparison-table-dom-evidence.txt lines 40-41) already extracted these exact table labels ('Online Projects': 2, 'Desktop Projects': 2) -- pass 2's coded YAML field diverged from its own more rigorous DOM-verified evidence. Prior values: pass1='2 desktop projects | 2 online projects | 50 block layouts | 10 grid styles | 250 Mb storage per site | 1,000 monthly visits per site | 50 form submissions (lifetime) | 20 calendar appointments (lifetime)' (adopted verbatim), pass2='2 App Projects | 2 HTML Sites | 250 Mb storage per site | 1,000 monthly visits per site | 50 Form submissions (lifetime) | 20 calendar appointments (lifetime) | 50 Block Layouts | 10 Grid styles' (identical six of eight items, first two labels only differ)." }
+  free_plan_watermark: { value: "yes", source: "https://nicepage.com/premium", evidence: "AGREED. 'Remove Nicepage Badge' row: tick.png present in Personal/Business/Pro/Ultimate cells, absent in the Starter cell (DOM-verified by both passes)." }
+  free_plan_duration: { value: perpetual, source: "https://nicepage.com/premium | https://nicepage.com/doc/4720/trial-limitations", evidence: "AGREED. Starter is a standing tier with no stated expiry; the trial doc confirms lapsed Subscriptions revert to 'the Free Starter Plan/Edition' with no further time limit stated on remaining there." }
+
+  # --- Domain 4 ---
+  trial_exists: { value: "yes", source: "https://nicepage.com/premium", evidence: "AGREED. FAQ: 'After creating a Nicepage account, you start the 7-day Trial Period, which allows you to test most Premium Features.' Corroborated by /terms and by the trial-limitations doc." }
+  trial_card_required: { value: unknown, source: "https://nicepage.com/doc/4720/trial-limitations", evidence: "AGREED. No document states whether payment details are required to start the account-creation-triggered trial; the trial doc states only that the trial 'starts right after the registration'. Not inferred, per codebook rule." }
+  trial_length_days: { value: 7, source: "https://nicepage.com/premium", evidence: "AGREED. FAQ: '7-day Trial Period'; /terms: '7-day (seven-day) Free Trial'; trial doc: 'seven (7) days'." }
+  trial_auto_converts: { value: "no", source: "https://nicepage.com/doc/4720/trial-limitations", evidence: "ADJUDICATED 2026-08-16 under codebook 2.1 step 2, applied to a document pass 1's own `sources:` list never includes (it is not among pass 1's four cited URLs). https://nicepage.com/doc/4720/trial-limitations, re-fetched live 2026-08-16 and unchanged: 'The trial period expires in seven (7) days, and Nicepage automatically switches to the Starter Edition, which is free but has limitations.' An affirmative statement of what happens -- reversion to the free plan, not a charge without further action -- settles trial_auto_converts's own definition as `no`. Prior values: pass1=unknown (this URL is absent from that session's sources -- a coverage gap, not a misread), pass2=no (found and cited the document)." }
+
+  # --- Domain 5 ---
+  credit_system_present: { value: "no", source: "https://nicepage.com/premium", evidence: "AGREED. Every allowance is stated directly in a real-world output unit (projects/sites, Mb storage, monthly visits, form submissions, calendar appointments, block layouts, grid styles); no credits/tokens/points terminology anywhere in the pricing page, /terms, or /agreement." }
+  credit_unit_defined: { value: not_applicable, source: "https://nicepage.com/premium", evidence: "AGREED. Gated by credit_system_present=no." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://nicepage.com/premium", evidence: "AGREED. Gated by credit_system_present=no." }
+  credit_rate_location: { value: not_applicable, source: "https://nicepage.com/premium", evidence: "AGREED. Gated by credit_system_present=no." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://nicepage.com/agreement", evidence: "AGREED. Unmetered tiered software access sold per single seat: 'You may use your Subscription on ONE COMPUTER at any one time' (License Agreement, Miscellaneous item 3, re-confirmed verbatim in this adjudicator's own 2026-08-16 raw-text re-fetch)." }
+  cost_per_output_computable: { value: "yes", source: "https://nicepage.com/premium", evidence: "AGREED. Entry tier Personal $6.75/mo billed annually, unit per_seat_month, no metered allowance to convert -- price and allowance already share one period. See computation_assumptions." }
+  computation_assumptions: { value: "Personal tier (entry, Subscription toggle, annual default display state), $6.75/mo billed annually = one annual charge; 6.75x12=81.00. Unit per_seat_month, unmetered single-seat access; price and allowance already share one period, 6.75/1=6.75 per seat-month, no conversion needed.", source: "https://nicepage.com/premium", evidence: "RECONCILED 2026-08-16. Not a substantive disagreement -- both passes computed the identical arithmetic (81.00 first charge; 6.75 cost per seat-month) in different prose (this field's own value list has no `unknown`/`conflicting`, since it records the coder's own arithmetic, per codebook 2.3). Merged into one string per codebook domain 6 rule 2 (plan, billing basis, allowance, conversion stated)." }
+
+  # --- Domain 7-9 ---
+  credit_rollover_policy: { value: not_applicable, source: "https://nicepage.com/premium", evidence: "AGREED. Gated by credit_system_present=no." }
+  failed_generation_charge_policy: { value: not_applicable, source: "https://nicepage.com/premium", evidence: "AGREED. Flat-rate seat-based tool; quotas are by project/storage/visit counts, not by generation attempt, despite the FAQ mentioning included, unmetered 'AI Services to generate sites, pages, and blocks'." }
+  auto_renewal_default: { value: "on", source: "https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal", evidence: "AGREED. 'On the Checkout page, you click the Auto-renewal link... you can click the Switch to Manual Renewal link' -- opt-out requires an affirmative extra step, so the checkout default is auto-renewal on." }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal | https://nicepage.com/premium | https://nicepage.com/doc/16656/faq", evidence: "AGREED. Disclosed in the dedicated help-center article AND the pricing page's own embedded FAQ accordion (and the standalone FAQ doc pass 2 also read); /terms and /agreement are silent on renewal behavior (grepped, zero hits in both, confirmed by this adjudicator's own re-fetch)." }
+  renewal_notice_commitment: { value: unknown, source: "https://nicepage.com/premium", evidence: "AGREED. No document commits to notifying the buyer before a renewal charge." }
+
+  # --- Domain 10 ---
+  refund_policy_exists: { value: "conflicting", source: "https://nicepage.com/terms | https://nicepage.com/agreement", evidence: "ADJUDICATED 2026-08-16 under protocol 6.2 (contractual variables: 'terms of service or the dedicated policy page' is ONE combined rank-1 class -- nothing ranks a Terms-of-Use page above or below a License Agreement page) and codebook 2.1 step 3 ('if they rank equally, code conflicting'). /terms Refund Policy: 'You can request a refund within 14 days of the purchase date... we will review your request' -- a stated, bounded process. /agreement Miscellaneous item 1: 'under no obligation to refund your subscription fee under any circumstances' -- no window, no described buyer process, a unilateral 'Nicepage.com determines' discretion. Equal rank, incompatible positions on the same purchase: `conflicting`, not a single harmonizable policy -- deciding the tension resolves would mean picking which document's language is the real rule, which is the move 6.2's equal-authority test exists to avoid rather than perform. See conflict_note for new evidence (found by neither pass) that deepens rather than settles the tension. Prior values: pass1=conflicting, pass2=yes (read the two clauses as one coherent discretionary policy)." }
+  refund_window_days: { value: "conflicting", source: "https://nicepage.com/terms | https://nicepage.com/agreement", evidence: "ADJUDICATED 2026-08-16, same tied-rank documents as refund_policy_exists (protocol 6.2) and this variable's own rule ('where two official sources of equal authority state incompatible windows, code conflicting'). /terms states 14 ('within 14 days of the purchase date'). /agreement states no refund is owed 'under any circumstances', which this variable's own value list treats as a determinate stated position (`0`, 'no refunds are given'), not silence -- 0 and 14 are incompatible windows from tied-rank sources. Prior values: pass1=conflicting, pass2=14 (treated /agreement's absence of a day-COUNT as not a competing claim, which the variable's own 0-value convention does not support)." }
+  refund_conditions: { value: "conflicting", source: "https://nicepage.com/terms | https://nicepage.com/agreement", evidence: "ADJUDICATED 2026-08-16, same tied-rank documents and propagation logic as refund_policy_exists. /terms states specific conditions (a stated reason, a review step) within its 14-day window. /agreement states no buyer-facing condition can produce an entitlement at all -- a refund occurs only if 'Nicepage.com determines' so, outside any process /terms describes. An incompatible answer to 'what conditions attach' from an equal-authority source on the same purchase is the disagreement this variable's `conflicting` value covers, not silence. Prior values: pass1=conflicting, pass2=conditional (same harmonizing reading as refund_policy_exists)." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal", evidence: "AGREED. 'Open the Licences and Subscription page from your user Profile. Click the Unsubscribe link to cancel Auto-renewal' -- no contact/ticket/email required; corroborated by the pricing-page FAQ." }
+  refund_policy_location: { value: terms, source: "https://nicepage.com/terms | https://nicepage.com/agreement", evidence: "AGREED. Both disagreeing refund statements live in documents that occupy the SAME protocol-6.2 class ('terms of service or the dedicated policy page' is one combined rank, not two) -- unlike a case where a ToS and a separately-classed dedicated refund page disagree, the governing CLASS here is undisputed even though the two documents' substance conflicts (refund_policy_exists=conflicting). `conflicting` is reserved by this variable's own rule for a disagreement that 'leaves the governing class undeterminable'; that does not apply here, so `terms` stands." }
+
+  # --- Domain 11 ---
+  commercial_use_lowest_tier: { value: "free", source: "https://nicepage.com/terms", evidence: "AGREED. Redistribution section: 'Only the final work, i.e. websites, are allowed to sell to third-party customers' -- no tier gate stated, so the right applies from the free Starter plan upward." }
+  watermark_removal_tier: { value: lowest_paid, source: "https://nicepage.com/premium", evidence: "AGREED. 'Remove Nicepage Badge' row: tick starts at Personal (the entry paid tier), absent on Starter." }
+  output_ownership_statement: { value: unknown, source: "https://nicepage.com/terms | https://nicepage.com/agreement", evidence: "AGREED. Both documents, read in full by both passes and re-read by this adjudicator, address ownership/use of NICEPAGE's own Content/Work (templates, site materials, images); neither states who owns a buyer's generated/published website." }
+  usage_cap_quantified: { value: some_quantified, source: "https://nicepage.com/premium", evidence: "AGREED. Personal (entry tier) quantified: 5 projects/sites, 1 Gb storage, 25,000 monthly visits, 250 form submissions/month, 50 calendar appointments/month, 200 block layouts, 25 grid styles, 1 modal popup, 1 published site w/ connected domain; unquantified: 'Design customization: Limited' (section 5.1's non-qualifying-word list)." }
+  unquantified_limit_clause: { value: absent, source: "https://nicepage.com/terms | https://nicepage.com/agreement", evidence: "AGREED. Both documents read in full to the end by both passes; the only discretionary clause found ('Nicepage.com may block, restrict, disable, suspend or terminate your access... at Nicepage.com's discretion, without prior notice') is a general access-termination clause, not a volume/intensity-of-use standard -- no fair-use, reasonable-use, excessive-use, or abuse-threshold wording anywhere in either document." }
+
+coder_note: |
+  ADJUDICATION SUMMARY (2026-08-16). tools/disagreements.py nicepage finds 5 substantive
+  disagreements (free_plan_cap_value, trial_auto_converts, refund_policy_exists, refund_window_days,
+  refund_conditions) plus 1 non-substantive prose mismatch (computation_assumptions -- same
+  arithmetic, different wording). All 5 resolved by rule; 0 coded unknown. 1 resolves to pass 2's
+  value (trial_auto_converts, a coverage gap: pass 1's own `sources:` list never includes the
+  trial-limitations doc pass 2 found). 3 resolve to pass 1's value (the refund cluster, under
+  protocol 6.2's equal-authority hierarchy, reinforced here with evidence neither pass captured --
+  see below and conflict_note). 1 (free_plan_cap_value) lands on a string that happens to equal
+  pass 1's verbatim, but not because pass 1 was deferred to: it is what pass 2's OWN saved DOM
+  capture already recorded before pass 2's final coded field drifted from it -- see that variable's
+  evidence for the full chain. No variable in this record required inventing a value neither pass
+  supported; the closest case (free_plan_cap_value) is a labeling duplicate resolved by reading the
+  page, not a numeric dispute.
+
+  REGISTER EVENTS. Both pass1.yaml and pass2.yaml carry `register_events: []`. No vendor_edit entry
+  exists for this product, so no disagreement qualifies for `date_explained` (protocol 7.4.1)
+  regardless of the 5-day gap between collection dates (2026-08-10 / 2026-08-15): re-fetched
+  https://nicepage.com/premium, /terms, /agreement, and /doc/4720/trial-limitations live 2026-08-16
+  (raw HTML/text, not a summarizer) and confirmed the embedded pricing JSON, both refund clauses,
+  and the trial-reversion sentence are all unchanged in substance from both passes' captures --
+  nothing moved in this window. No disagreement qualifies for `variant_explained` (7.4.2) either:
+  all three reads (pass 1, pass 2, this adjudicator) independently recorded the SAME default display
+  state (Subscription tab, annual-only, no monthly toggle, plain USD, no locale variance) -- there
+  are not two archive snapshots of two different default states to compare. All 5 disagreements
+  resolved by rule; 0 by date_explained; 0 by variant_explained.
+
+  THE PRICE-READING CHECK (task-specific caution, applied). Nicepage's pricing cards draw the cents
+  as a superscript ('<sup>75</sup>'), so a plain-text/innerText extraction of '$6.75/mo' reads
+  '$675/mo' -- a 100x misread. Both passes independently hit this and both independently caught it
+  (pass 1 via embedded JSON + raw markup + screenshot; pass 2 via raw DOM + an archive.org crawler
+  re-render), so headline_price_usd/first_charge_amount_usd were never in dispute and are carried
+  through unchanged. This adjudicator introduced no new price figure from extracted text at any
+  point -- the one live re-fetch of /premium used for this record was raw HTML grepped for the
+  embedded JSON and the literal '<sup>' markup, never a summarizer, and every quantity pulled from
+  WebFetch summaries (project/site counts, the trial doc's sentence) was a small count or a policy
+  sentence, not a price, so the superscript failure mode does not apply to it.
+
+  FREE_PLAN_CAP_VALUE -- full chain. Re-fetched https://nicepage.com/premium raw HTML 2026-08-16:
+  BOTH label pairs are genuine, simultaneous vendor text in two different page regions. The per-tier
+  pricing-card bullets (5 occurrences each, one per tier column) read "App Projects" (tooltip: "2
+  projects in the Windows and Mac OS applications") and "HTML Sites" (tooltip: "Publish 2 HTML sites
+  on your own hosting"). The detailed "Compare plans" table (1 occurrence each, as its own row
+  label) reads "Desktop Projects" and "Online Projects" for the identical two caps -- the tooltips
+  confirm these name the same two features. Pass 2's own premium-comparison-table-dom-evidence.txt
+  (lines 40-41) independently extracted "Online Projects": 2 and "Desktop Projects": 2 from that
+  same table -- matching pass 1 exactly -- yet pass 2's coded `free_plan_cap_value` field used the
+  pricing-card wording instead, with no note explaining the switch. Adopted the comparison-table
+  wording (= pass 1's string) because it is the single source both passes otherwise drew the other
+  six of eight items from, and because it is what pass 2's own more rigorous capture already said.
+
+  REFUND CLUSTER -- why it stands as conflicting rather than resolving. Both passes read the
+  identical two documents and quoted the identical two clauses; they diverged only on whether the
+  tension between them resolves into one policy or stands as a genuine conflict. Protocol 6.2's
+  table gives contractual variables ONE combined rank-1 class -- "terms of service or the dedicated
+  policy page" -- so nothing in the hierarchy ranks a Terms-of-Use page over a License Agreement
+  page or the reverse; codebook 2.1 step 3 is explicit that equal rank plus incompatible values
+  means `conflicting`, not a pick. Harmonizing the two into "one coherent discretionary policy" (as
+  pass 2 did) requires deciding that /agreement's "under no obligation... under any circumstances"
+  is reservation-of-rights language that does not really mean what it says, which is an act of legal
+  interpretation the documents-only rule does not ask a coder to perform -- the task brief for this
+  adjudication names this directly: apply 6.2's hierarchy, not which document sounds more binding.
+  Re-reading the raw page text 2026-08-16 turned up two things neither pass's evidence file quotes,
+  and both cut toward more indeterminacy, not less: (1) /terms's own header instructs "Please also
+  read the License Agreement for Web Templates" -- /terms's own characterization of /agreement's
+  scope is narrower than the software subscription. (2) /agreement's own title reads "End-User
+  License Agreement For Nicepage (\"Software\")" -- broader than templates -- and its opening
+  paragraph names an undefined "Standard License subscription" and "Extended License service", terms
+  used nowhere else in the document and matching none of /premium's own tier or toggle names. The
+  vendor's own materials do not agree with each other about what /agreement even covers. This does
+  not tip the substantive refund conflict toward either document -- if anything it adds a second,
+  independent axis of the same finding: a buyer reading both official pages cannot determine, from
+  their face, either which refund position governs or which document governs at all. Full quotes in
+  conflict_note.
+
+  ENTRY-TIER CANDIDATES (unchanged from both passes, re-verified 2026-08-16): Personal $6.75/mo x 12
+  = $81.00/yr (SELECTED, lowest). Losing: Business $12.75/mo x12=$153.00; Pro $18.75/mo x12=$225.00;
+  Ultimate $31.75/mo x12=$381.00. All four generally available, purchasable without contacting
+  sales, standing, single-seat -- Business's "Popular" ribbon is irrelevant since the tiebreak rule
+  only applies to equal annual-equivalent costs. The one-time "License" toggle option (Personal $89
+  / Business $169 / Pro $269 / Ultimate $439) is not part of the default display state and was
+  correctly excluded by both passes under sampling-rules 7.2 rule 1 / protocol 6.8.
+
+  BLINDNESS-EXPOSURE CHECK (D-014). Confirmed nicepage's pass-2 record is NOT in
+  `records/pass2-contaminated/` (that directory holds only 10web, adobe-express, copyleaks,
+  elevenlabs, krea-ai). `orchestrator/deviations-log.md` lists nicepage in D-014's "Tier A" exposure
+  set (a coded value/relationship was named in the log, which was on an EARLIER version of the
+  pass-2 reading list), but nicepage's own pass-2 collection_date (2026-08-15) postdates D-014's fix
+  (2026-08-14, which replaced the reading list with `deviations-for-coders.md` and removed the full
+  log from it) -- so this record was at risk under the pre-fix process but not actually coded under
+  it. Noted for the record rather than silently assumed clean.
+
+  DISCLOSURE. A directory-wide grep for "nicepage" across `orchestrator/*.md` (run to check for
+  product-specific orchestrator notes, which this role is permitted to read) incidentally matched
+  one line of `orchestrator/interim-signals.md`, a file this role is instructed not to read: a
+  fragment naming nicepage as an example of an "Equal-authority contradiction" pattern. Not opened
+  further. This adjudicator's `conflicting` determination on the refund cluster was already fully
+  reasoned from protocol 6.2 and the primary documents before that grep was run, and rests on the
+  evidence cited above and in conflict_note, not on the pattern file.
+
+  SOURCES RE-READ FOR THIS ADJUDICATION: both records in full; both `-sources/` directories in full,
+  including pass 1's raw-markup/JSON capture and pass 2's DOM-evidence and verbatim-excerpt files;
+  the live vendor pages (/premium, /terms, /agreement, /doc/4720/trial-limitations) re-fetched
+  2026-08-16 by raw HTTP request, not solely through a summarizing fetch. ALSO READ: codebook-v1.md
+  in full; protocol-v1.md sections 6.2, 6.6, 6.8, 7.4, 7.4.1, 7.4.2, 7.6; record-template.yaml;
+  orchestrator/deviations-log.md (permitted, entries D-009/D-011/D-014 concern this product or its
+  batch). NOT read: interim-signals.md beyond the incidental grep line disclosed above; any other
+  product's record or `-sources/`; aitoolspolice.com; site/content/reviews/.
+
+  blindness/scope attestation: no other product's record was opened, and no repository history
+  command (git log/show/diff/blame) was run.
+conflict_note: |
+  REFUND (refund_policy_exists, refund_window_days, refund_conditions) -- https://nicepage.com/terms
+  vs https://nicepage.com/agreement, tied rank 1 for contractual variables (protocol 6.2: "terms of
+  service or the dedicated policy page" is one combined class; nothing ranks a Terms-of-Use page
+  above or below a License Agreement page). /terms, Refund Policy section: "You can request a refund
+  within 14 days of the purchase date. Please be prepared to describe why you requested a refund via
+  Microsoft Teams or phone and explain the actual reasons, and we will review your request."
+  /agreement, Miscellaneous item 1: "The Nicepage.com website is under no obligation to refund your
+  subscription fee under any circumstances. In case Nicepage.com determines that you are entitled to
+  a refund of all or part of your subscription fee, such refund shall only be made to the credit card
+  account originally used by you to purchase your Subscription. If your Subscription was paid by
+  check, your refund would be made by check." Both passes independently quoted these same two
+  clauses and both flagged the tension; they diverged only on whether it resolves (pass 2, reading
+  one coherent discretionary policy) or stands (pass 1). Adjudicated as standing: protocol 6.2
+  supplies no rank between the two documents, so codebook 2.1 step 3 governs, and a stated 14-day
+  request-and-review process is an incompatible position against "no obligation... under any
+  circumstances" with no window and no described buyer process -- reconciling them into one policy
+  requires deciding which document's language is figurative, which the documents-only rule does not
+  authorize a coder to do.
+
+  NEW, captured by neither pass. Re-read the raw page text 2026-08-16 (both pages otherwise
+  unchanged since collection -- see coder_note register-events check). /terms's own header, above
+  its "Overview" section: "Please also read the License Agreement for Web Templates." -- /terms's
+  own characterization names /agreement with a narrower scope (templates) than the software
+  subscription /terms itself governs ("This Agreement governs your use of the Nicepage.com website
+  and any services offered through the Nicepage.io website"). /agreement's own title: "End-User
+  License Agreement For Nicepage (\"Software\")" -- a broader scope than templates. /agreement's
+  opening paragraph additionally names a "Standard License subscription" and an "Extended License
+  service," terms used nowhere else in either document and matching neither /premium's own
+  Personal/Business/Pro/Ultimate tier names nor its own Subscription/License toggle. The vendor's
+  own documents do not agree with each other about what /agreement covers. This does not resolve the
+  refund tension toward either side -- it adds a second, independent layer of the same finding: a
+  buyer reading both official documents cannot determine, from their face, either which refund
+  position governs or which document governs at all.
+register_events: []
+status: complete

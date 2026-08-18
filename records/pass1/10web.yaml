@@ -1,0 +1,262 @@
+product_id: 10web
+coder_pass: 1
+collection_date: 2026-08-06
+
+# Administrative fields canonicalised to top level (D-019). This record stored
+# them inside variables{} in {value: ...} wrapper form, so a build reading the
+# documented top-level location found nothing. The nested maps are left in
+# place untouched — product_status and entry_tier_name carry source/evidence
+# prose there — so nothing is deleted and the values below are lifted copies.
+product_name: 10Web
+category: AI website builder
+product_status: active
+paid_submission: "no"
+entry_tier_name: AI Starter
+coder_role: primary
+recheck_date: not_applicable
+primary_source_url: https://10web.io/pricing-platform/
+archive_url: https://web.archive.org/web/20260806082017/https://10web.io/pricing-platform/
+archive_status: archived
+
+default_display_state: |
+  Pricing page (canonical URL https://10web.io/pricing-platform/; https://10web.io/pricing/
+  301-redirects to it, confirmed via curl -I and via the archive.org save response's
+  Link: rel="original" header) loads with the "Business" top-level tab active (DOM class
+  "tab business active" on that tab, "tab agency " with no active class on "Agency + White
+  Label") and the "12 months" billing-period tab active (DOM class "tab 12 active" /
+  "period-item 12 selected", carrying a "50% off" badge; "Monthly" tab carries class
+  "tab 1 " with no active/selected marker). This is the ANNUAL period, not Monthly - i.e.
+  the page defaults to the annual/discounted display, not the plain monthly price. Verified
+  two independent ways: (1) a plain, no-JS curl fetch of the page (Mozilla UA, no cookies,
+  no JS execution) already contains class="tab business active" and class="tab 12 active"
+  baked into the server-rendered HTML - i.e. this is 10Web's own WordPress/PHP server-side
+  default, not something a client-side script or A/B test injects after load; (2)
+  independently re-confirmed via a live JS-rendered browser session (viewport 1440x1000)
+  reading the same classes off the live DOM. No cookie-consent banner interfered with
+  either read. No geography-based pricing banner or region selector was observed anywhere
+  on the site (contrast: a prior product's pass-1 record on this study flagged such a
+  banner; none exists here), so this default is treated as a single, non-geo-gated,
+  non-cookie-gated state rather than a display-variant candidate under protocol-v1.md 6.8.
+  In this default state, each entry-tier-candidate plan card (AI Starter/Premium/Ultimate)
+  shows one prominent price (e.g. Starter: plan_price_el "$10" + month_sign "/mo") which is
+  the ANNUAL-billed monthly-equivalent rate, with a same-card line reading "Get 12 months
+  for $120 (regular price $240)." beneath the CTA buttons. This is the state read for all
+  entry-tier and default-state-anchored variables below. The "Agency + White Label" tab
+  (containing Agency Core $112/mo and Agency Pro, custom/contact-sales) was NOT part of the
+  default display state and required a click to view; per the sampling-rules.md 7.2 rule 1
+  principle ("do not switch... to find a cheaper figure") and the precedent set by this
+  study's aragon-ai pass-1 record (excluding a non-default top-level tab from entry-tier
+  eligibility), Agency-tab plans are excluded from entry-tier comparison, though recorded
+  in coder_note for transparency since they are not outcome-determinative regardless.
+  Read at desktop viewport 1440x1000, non-essential cookies declined (no banner appeared
+  to decline in this session; page has no visible consent prompt).
+sources:
+  - { url: "https://10web.io/pricing-platform/", kind: pricing, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806082017/https://10web.io/pricing-platform/", note: "PRIMARY SOURCE. Live pricing page; primary_source_url. Canonical URL (https://10web.io/pricing/ 301-redirects here). Archived successfully via web.archive.org/save on first attempt." }
+  - { url: "https://10web.io/", kind: other, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806083850/https://10web.io/", note: "Home page. Read for nav/document discovery and general product framing ('Start free. Scale with every site.')." }
+  - { url: "https://10web.io/legal/terms-of-service/", kind: tos, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806083719/https://10web.io/legal/terms-of-service/", note: "Terms of Service, 'Date last updated: 30/03/2026'. Top-ranked contractual source. Read in full end to end (346-line cleaned extract) for REFUND, SUBSCRIPTION, Content/Output ownership, PUBLICITY, and all other sections." }
+  - { url: "https://10web.io/legal/prohibited-use-policy-pup/", kind: tos, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806083744/https://10web.io/legal/prohibited-use-policy-pup/", note: "Prohibited Use Policy, 'Date last updated: 16/05/2025'. Explicitly incorporated into the ToS by reference. Read in full for unquantified_limit_clause (F2) - entirely content/conduct-based, no usage-volume discretionary clause found." }
+  - { url: "https://10web.io/coupons/", kind: other, accessed: 2026-08-06, archive: "https://web.archive.org/web/20260806083806/https://10web.io/coupons/", note: "Official 10web.io marketing/FAQ page ('10Web Coupon Codes: The Official Answer'), linked directly from the pricing page's own FAQ. Independently restates a '30-day money-back guarantee... request a refund within 30 days' - a second official source corroborating the pricing page's refund claim and standing in conflict with the ToS/dedicated Refund Policy. Also corroborates free_plan_exists ('You can generate a website before paying')." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360027773851-10Web-s-Refund-Policy", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "10Web's dedicated Refund Policy article (Zendesk help center). Top-ranked contractual source (tied with ToS). help.10web.io throws a Cloudflare challenge on direct fetch (known obstacle per task briefing); read via the official Zendesk Help Center public API (help.10web.io/api/v2/help_center/en-us/articles/360027773851.json), which returns the same official article body and bypasses the challenge - legitimate per task briefing. Local copy: 10web-sources/article-refund-policy.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360027492652-How-Can-I-Cancel-My-10Web-Subscription", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Step-by-step self-serve cancellation procedure. Read via Zendesk API. Local copy: 10web-sources/article-360027492652.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/5315648905234-Canceling-Downgrading-or-Changing-10Web-Subscriptions", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Cancellation/downgrade mechanics, renewal-timing warning. Read via Zendesk API. Local copy: 10web-sources/article-5315648905234.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360030873012-What-Happens-if-I-Fail-to-Upgrade-My-Plan-Before-the-Free-Trial-Ends", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "States trial non-action leads to website deletion. Conflicts with two other official articles stating auto-charge (see conflict_note, trial_auto_converts). Read via Zendesk API. Local copy: 10web-sources/article-360030873012.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360021395600-How-to-Upgrade-to-10Web-Pro-Plans", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "States 'If you do not cancel when the 7 day free trial expires, you will be charged for the chosen platform plan.' Part of the trial_auto_converts conflict. Read via Zendesk API. Local copy: 10web-sources/article-upgrade-pro.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/6136064762770-Why-Have-I-Been-Charged", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "States 'The 7-day free trial automatically upgrades to a paid subscription unless cancelled...'. Part of the trial_auto_converts conflict. Also source for renewal-charge mechanics. Read via Zendesk API. Local copy: 10web-sources/article-why-charged.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Primary source distinguishing the free plan (1 website, ongoing) from the separate 7-day trial of Pro features (card required). Read via Zendesk API. Local copy: 10web-sources/article-360021420139.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/360018862340-Free-Plan-How-to-Convert-Recreate-a-Website-With-AI", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "States free users get 'up to 10 pages'. Read via Zendesk API. Local copy: 10web-sources/article-360018862340.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/7952757255186-AI-Website-Builder-Fully-Automated-WordPress-Website-Creation-in-a-Few-Minutes", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Older article (dated 2024-11-01) stating free plan is 'limited to 5 pages only' - conflicts with the newer (2025-01-23) article's '10 pages' figure; both same-rank docs/help-center sources, both cited in free_plan_cap_value/conflict_note. Read via Zendesk API. Local copy: 10web-sources/article-aiwebsitebuilder.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Dedicated entry-tier plan doc. Full itemized feature/limit list for AI Starter (websites, AI credits, storage, visitors, overages, what's-not-included). Read via Zendesk API. Local copy: 10web-sources/article-22592225897490.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Source for the only credit-to-output conversion rate found: 'Each AI request costs 1 credit.' Read via Zendesk API. Local copy: 10web-sources/article-aieditor.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/5867566723986-Visitors-and-Storage-Overages", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Overage mechanics/rates for visitors and storage (quantified, automated). Read via Zendesk API. Local copy: 10web-sources/article-5867566723986.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/36515422635922-How-to-Generate-a-Website-with-10Web-s-Agentic-Website-Builder", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Confirms 'You can create one website using the free version...To generate additional websites, you will need to upgrade.' Read via Zendesk API. Local copy: 10web-sources/article-agentic-builder.json." }
+  - { url: "https://help.10web.io/hc/en-us/articles/24481232927634-Workspace-Settings-Subscription-Plan-Page", kind: docs, accessed: 2026-08-06, archive: local_copy_only, note: "Dashboard-mechanics doc; corroborates trial/cancellation/auto-renewal UI flow. Read via Zendesk API. Local copy: 10web-sources/article-24481232927634.json." }
+variables:
+  # --- administrative (codebook section 6) ---
+  product_name: { value: "10Web" }
+  category: { value: "AI website builder" }
+  product_status: { value: active, source: "https://10web.io/pricing-platform/", evidence: "Site live, pricing page fully functional for purchase display, home page live; status re-checked 2026-08-06." }
+  paid_submission: { value: "no" }
+  entry_tier_name: { value: "AI Starter", source: "https://10web.io/pricing-platform/", evidence: "Default display state = Business tab / 12-months(annual) period. Eligible candidates in that state: AI Starter $10/mo, AI Premium $15/mo, AI Ultimate $23/mo (all standing, generally-available, no-sales-contact plans). Annual-equivalent costs read directly from each card's own stated 12-month total: Starter $120.00/yr (lowest), Premium $180.00/yr, Ultimate $270.00/yr (card states total as $270 despite headline $23/mo x 12 = $276, a rounding artifact - see coder_note). AI Starter wins on lowest annual-equivalent cost." }
+  coder_role: { value: primary }
+  recheck_date: { value: not_applicable }
+  primary_source_url: { value: "https://10web.io/pricing-platform/" }
+  archive_url: { value: "https://web.archive.org/web/20260806082017/https://10web.io/pricing-platform/" }
+  archive_status: { value: archived }
+  source_urls: { value: "https://10web.io/pricing-platform/ | https://10web.io/ | https://10web.io/legal/terms-of-service/ | https://10web.io/legal/prohibited-use-policy-pup/ | https://10web.io/coupons/ | https://help.10web.io/hc/en-us/articles/360027773851-10Web-s-Refund-Policy | https://help.10web.io/hc/en-us/articles/360027492652-How-Can-I-Cancel-My-10Web-Subscription | https://help.10web.io/hc/en-us/articles/5315648905234-Canceling-Downgrading-or-Changing-10Web-Subscriptions | https://help.10web.io/hc/en-us/articles/360030873012-What-Happens-if-I-Fail-to-Upgrade-My-Plan-Before-the-Free-Trial-Ends | https://help.10web.io/hc/en-us/articles/360021395600-How-to-Upgrade-to-10Web-Pro-Plans | https://help.10web.io/hc/en-us/articles/6136064762770-Why-Have-I-Been-Charged | https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web | https://help.10web.io/hc/en-us/articles/360018862340-Free-Plan-How-to-Convert-Recreate-a-Website-With-AI | https://help.10web.io/hc/en-us/articles/7952757255186-AI-Website-Builder-Fully-Automated-WordPress-Website-Creation-in-a-Few-Minutes | https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan | https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor | https://help.10web.io/hc/en-us/articles/5867566723986-Visitors-and-Storage-Overages | https://help.10web.io/hc/en-us/articles/36515422635922-How-to-Generate-a-Website-with-10Web-s-Agentic-Website-Builder | https://help.10web.io/hc/en-us/articles/24481232927634-Workspace-Settings-Subscription-Plan-Page" }
+  # --- coded variables (codebook section 10 column order) ---
+  headline_price_usd: { value: 10.00, source: "https://10web.io/pricing-platform/", evidence: "AI Starter card, default display state (Business tab, 12-months/annual period tab active): <span class=\"plan_price_el\">$10</span><span class=\"month_sign\">/mo</span>. The 'price delete' (strikethrough) element beside it is empty in this view - no competing struck price shown inline. Most prominent figure for the entry tier in the default display state, per rule 2." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://10web.io/pricing-platform/", evidence: "Default state's billing-period tab is '12 months' (class 'tab 12 active'/'period-item 12 selected', '50% off' badge), not 'Monthly' (class 'tab 1 ', no active marker). $10/mo is therefore the monthly-equivalent figure under a 12-month prepaid commitment, confirmed by the same card's own line 'Get 12 months for $120 (regular price $240).' Matches 'A monthly figure charged as one annual payment.'" }
+  first_charge_amount_usd: { value: 120.00, source: "https://10web.io/pricing-platform/", evidence: "Read directly, not computed: DOM element <div class=\"price-month-info\">Get 12 months for $120 (regular price $240).</div>, inside the same plan_header/pricing_buttons_parent card as the $10/mo headline, directly beneath the 'or buy now' checkout link. No mandatory add-on to add (see mandatory_addon_present). Taxes and usage overages excluded per rule 5 (overages are billed separately per Visitors and Storage Overages doc, not part of the first charge)." }
+  mandatory_addon_present: { value: "no", source: "https://10web.io/pricing-platform/", evidence: "Pricing page, AI Starter Plan doc, Visitors and Storage Overages doc, and ToS (read in full) show no required additional charge, minimum credit purchase, platform fee, or compulsory onboarding fee for the AI Starter plan as advertised (1 website, 100 AI credits/mo, 10GB storage, 10K visitors/mo, free domain up to $30/yr all included in the $10/mo|$120/yr price). Additional websites ($10/site), CDN, a costlier-than-$30 domain, and usage overages ($2/10K extra visitors, $2/5GB extra storage) are all optional/usage-conditional upsells, not mandatory per rule 3." }
+  annual_condition_disclosure: { value: adjacent, source: "https://10web.io/pricing-platform/", evidence: "The annual-prepayment condition is disclosed twice inside the SAME visual price card as the $10/mo headline: (1) the governing billing-period toggle's own label reads '12 months' + '50% off' directly attached to the price; (2) the card's own price-month-info line, 'Get 12 months for $120 (regular price $240).', sits directly beneath the CTA buttons inside the same plan_header block, not in a separate footnote/accordion elsewhere on the page. Matches 'the same card... or in the label of the toggle attached to it.'" }
+  annual_default_toggle: { value: annual_preselected, source: "https://10web.io/pricing-platform/", evidence: "DOM classes 'tab 12 active' and 'period-item 12 selected' on the '12 months' billing-period control; 'Monthly' control carries no active/selected class. Confirmed present in the server-rendered HTML from a plain no-JS curl fetch (not merely client-injected), and independently re-confirmed via live browser DOM inspection. No A/B-test or geography signal observed (see default_display_state); single state read and archived, so no register_event logged for this pass." }
+  free_plan_exists: { value: "yes", source: "https://help.10web.io/hc/en-us/articles/36515422635922-How-to-Generate-a-Website-with-10Web-s-Agentic-Website-Builder", evidence: "'You can create one website using the free version of the Agentic Website Builder. To generate additional websites, you will need to upgrade to a paid plan.' Corroborated by 'Get Started for Free on 10Web': 'Free platform users are limited to generating one website, and full editing requires enabling the 7-day free trial'; and by https://10web.io/coupons/: 'You can generate a website before paying.' This base access (account + 1 website) is distinct from, and not itself time-limited by, the separate 7-day card-required trial of 'Pro' features (domain 4) - see free_plan_duration." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://help.10web.io/hc/en-us/articles/360018862340-Free-Plan-How-to-Convert-Recreate-a-Website-With-AI", evidence: "Free-plan limits found: '1 website' (generation cap, quantified standing limit, per the Agentic Website Builder doc) and a page-count cap stated as 'up to 10 pages for free users' (this doc, updated 2025-01-23) - both carry numbers. NOTE: an older doc ('AI Website Builder: Fully Automated...', updated 2024-11-01) states 'The free plan is limited to 5 pages only' instead of 10 - a same-rank (docs/help-center) source conflict on the exact figure; both numbers are nonetheless quantified, so all_quantified holds regardless of which governs. Full conflict in conflict_note. No unquantified free-plan limit (e.g. a bare 'limited' with no number) was found anywhere." }
+  free_plan_cap_value: { value: "1 website | 10 pages", source: "https://help.10web.io/hc/en-us/articles/360018862340-Free-Plan-How-to-Convert-Recreate-a-Website-With-AI", evidence: "'1 website' per the Agentic Website Builder generation-limit doc; 'up to 10 pages for free users' per this (more recent, 2025-01-23) dedicated Free Plan doc. An older (2024-11-01) doc states 5 pages instead of 10 for the same construct - see conflict_note; the 10-page figure is recorded here as the value read from the more specific, more recently-updated dedicated article, without treating the whole field as conflicting since only the page-count sub-figure (not the website-count figure) is in dispute." }
+  free_plan_watermark: { value: unknown, source: "https://10web.io/legal/terms-of-service/", evidence: "'watermark' does not appear anywhere in the ToS, PUP, pricing page, AI Starter Plan doc, or Get Started for Free doc in the sense of vendor branding on outputs (full-text search across all sources). The only 'watermark' hits anywhere in the 836-article help-center corpus concern a Photo Gallery image-watermarking FEATURE for the site owner's own photos - an unrelated construct. Principal output is a full website, a media artifact that plainly could carry a footer badge/branding, so not_applicable does not fit; documented silence codes unknown." }
+  free_plan_duration: { value: perpetual, source: "https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web", evidence: "The base free tier (account + 1 website generation, up to 10 pages, no SSH/SFTP) is framed as an ongoing access level with no expiry date or countdown stated anywhere; only 'full editing capabilities' require separately starting the time-limited (7-day) trial of Pro features. 'Free platform users are limited to generating one website' is a feature/quantity restriction, not a time restriction." }
+  trial_exists: { value: "yes", source: "https://10web.io/legal/terms-of-service/", evidence: "ToS, REFUND section: '1. Free 7-Day Trial: We provide a 7-day free trial* to help you evaluate our services without any charges.' Repeated consistently across the Refund Policy article, Get Started for Free doc, Why Have I Been Charged doc, and How to Upgrade to Pro Plans doc: a time-limited (7-day) trial of paid/'Pro' tier features, distinct from the ongoing free plan in domain 3." }
+  trial_card_required: { value: "yes", source: "https://help.10web.io/hc/en-us/articles/360021420139-Get-Started-for-Free-on-10Web", evidence: "'To unlock full editing capabilities, start a 7-day free trial of the Pro version by attaching your credit card.' / (informational-website flow) 'activate a 7-day free trial of the Pro version by adding your credit card information.' Consistent across both flows in this doc." }
+  trial_length_days: { value: 7, source: "https://10web.io/legal/terms-of-service/", evidence: "'We provide a 7-day free trial' - stated identically across ToS, Refund Policy article, Get Started for Free doc, Why Have I Been Charged doc, and How to Upgrade to Pro Plans doc. No variation by tier found; used for the entry paid tier per rule." }
+  trial_auto_converts: { value: conflicting, source: "https://help.10web.io/hc/en-us/articles/6136064762770-Why-Have-I-Been-Charged", evidence: "CONFLICT between three same-rank (docs/help-center) official sources on what happens if the buyer takes no action by day 7. 'Why Have I Been Charged?': 'The 7-day free trial automatically upgrades to a paid subscription unless cancelled within the trial period.' 'How to Upgrade to 10Web Pro Plans': 'If you do not cancel when the 7 day free trial expires, you will be charged for the chosen platform plan.' Both state auto-charge/convert. Against this, 'What Happens if I Fail to Upgrade My Plan Before the Free Trial Ends?': 'If you don't upgrade before the free trial ends, your website will be deleted after the trial expires' - stating deletion, not a charge. All three are help-center articles (equal rank); the hierarchy does not resolve which governs. Coded conflicting per codebook section 2.1 step 3. Full quotes and all three URLs in conflict_note." }
+  credit_system_present: { value: "yes", source: "https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan", evidence: "'AI credits: The AI Starter plan includes 100 AI credits per month. These credits are used for AI-powered website generation and editing actions available in the platform.' Also shown as a plan line item ('AI Credits: 100/mo') on the pricing page itself. An intermediate currency (credits) that meters AI actions, not an allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", evidence: "'AI credit usage: The AI credit usage section shows how many AI credits have been used from your subscription plan. Each AI request costs 1 credit.' This ties the credit unit to a recognizable action (1 AI request = 1 credit), satisfying rule 3 - the AI Starter Plan doc's '100 AI credits per month...used for AI-powered website generation and editing actions' alone would not suffice (states a quantity and purpose, not a conversion; rule 5), but this AI Editor doc supplies the actual conversion." }
+  credit_to_output_rate_published: { value: partial, source: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", evidence: "The 'Each AI request costs 1 credit' rate is stated specifically in the context of 'AI editing requests sent through the AI chat' inside the AI Editor (post-generation editing workspace). No document explicitly confirms this same 1-credit rate governs the INITIAL website-GENERATION action (the principal output-producing step, which occurs before/upon first entering the editor) - the same doc's 'Regenerate website' action ('rebuild the entire website with AI') is described with no stated credit cost at all. Principal output is a generated website; the confirmed rate covers a secondary/ongoing action (chat-based edits) rather than clearly covering generation itself, matching the codebook's partial case (rate published for a secondary output/action, not clearly for the principal one)." }
+  credit_rate_location: { value: docs_help_center, source: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", evidence: "The '1 credit = 1 AI request' rate appears only in the 10Web AI Editor help-center article; not found on the pricing page, in the ToS, or in the AI Starter Plan doc (which states the credit quantity and general purpose but not the per-action rate)." }
+  cost_per_output_unit: { value: other, source: "https://10web.io/pricing-platform/", evidence: "10Web's own pricing page frames each plan primarily by number of WEBSITES included (Starter 1, Premium 2, Ultimate 4, Agency Core 20), with 'Additional Website' as the plan's own literal upsell unit ($10/site for Starter). AI Credits (100/mo) is a secondary, bundled resource metering one in-product feature (AI generation/editing actions), not the dimension the product is sold by. No listed enumerated unit (per_video_minute, per_image, per_1k_words, per_audio_minute, per_page, per_headshot, per_document, per_presentation, per_seat_month, per_api_call) fits 'per website'; coded other, named 'per_website' (equivalently 'per_website_month' given the subscription's monthly/annual billing) per rule 3." }
+  cost_per_output_computable: { value: "yes", source: "https://10web.io/pricing-platform/", evidence: "Entry tier (AI Starter) price ($10.00/mo, default annual-billed display state) and its website allowance (1 website, stated directly on the pricing page and in the AI Starter Plan doc - a direct plan allowance, not credit-mediated) are both published; the calculation needs no assumption about typical use. See computation_assumptions. (This is independent of the credit_to_output_rate_published ambiguity above, since 'websites included' is a directly stated plan quantity, not something requiring the AI-credit conversion.)" }
+  computation_assumptions: { value: "AI Starter tier (entry tier), $10.00/mo billed annually per default display state (12-months toggle active; card states $120 total/yr). Includes 1 website (pricing page + AI Starter Plan doc, direct allowance, not credit-mediated). Both price and allowance already on a monthly basis (10.00/mo per 1 website), so rule 3's period-matching needs no conversion. 10.00 / 1 = 10.00 per website per month; equivalently 120.00/yr per website on the annual figure. AI Credits (100/mo) are a separate, secondary in-product resource - not the unit this computation uses." }
+  credit_rollover_policy: { value: unknown, source: "https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan", evidence: "No document (pricing page, ToS, AI Starter Plan doc, AI Editor doc, PUP) states whether unused AI Credits roll over to the next billing period, are capped-carry-forward, or expire at period end. Full-text search for 'roll over'/'rollover'/'carry over'/'expire' near 'credit' across the entire 836-article help-center corpus found no such statement (the 'expire' hits found are all about domains, trials, backups, or website hosting - none about AI Credits specifically). Silence." }
+  failed_generation_charge_policy: { value: unknown, source: "https://help.10web.io/hc/en-us/articles/36411956830738-10Web-AI-Editor", evidence: "No document states what happens to a consumed AI credit if the AI request/generation fails, errors, or produces nothing usable. The AI Editor doc states only that 'Each AI request costs 1 credit' (covers submission/request, not outcome). Full-text search for 'fail'/'error' near 'credit' across the corpus found no statement addressing this. Silence - matches the codebook's expectation that this variable is silent often." }
+  auto_renewal_default: { value: "on", source: "https://10web.io/legal/terms-of-service/", evidence: "ToS, SUBSCRIPTION section: 'Subscription fees are charged/automatically renewed at the beginning of each billing cycle without notifications to you.' Corroborated by 'Why Have I Been Charged?': '10Web charges subscription plan fees automatically upon renewal' (with monthly and annual sub-cases both described as auto-charging), and by 'Canceling, Downgrading, or Changing 10Web Subscriptions': warns about 'an automatic renewal charge' if cancellation is left too late." }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://10web.io/legal/terms-of-service/", evidence: "Stated in the terms_only-class document (ToS, SUBSCRIPTION section) AND in the docs_help_center class (at least three Zendesk articles: 'Why Have I Been Charged?', 'Canceling, Downgrading, or Changing 10Web Subscriptions', 'Workspace Settings: Subscription Plan Page'). NOT found on the pricing page itself (full-text search of pricing-clean.txt for 'renew'/'auto' found no auto-renewal disclosure there - only unrelated 'automated backups/migrations/updates' feature-list hits). Two of the four document classes state it in agreement, satisfying 'multiple'." }
+  renewal_notice_commitment: { value: no_notice_stated, source: "https://10web.io/legal/terms-of-service/", evidence: "ToS, SUBSCRIPTION section states plainly: 'Subscription fees are charged/automatically renewed at the beginning of each billing cycle without notifications to you.' This explicit 'without notifications' clause governs ONGOING renewal charges (2nd cycle onward), which is what this variable asks about. Distinct, narrower fact not conflicting with the above: a 24-hour advance-notice commitment IS made, but only for the FIRST charge / trial-to-paid conversion specifically ('we send an email 24 hours prior to first charge' - Refund Policy article and ToS REFUND section; 'We will send you an email 24 hours prior to the expiration of your trial period' - How to Upgrade to Pro Plans doc). That trial-conversion notice does not extend to subsequent renewals, which the SUBSCRIPTION section explicitly excludes from notice." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://10web.io/legal/terms-of-service/", evidence: "CONFLICT, resolved by source hierarchy. Rank-1 contractual sources (ToS + the dedicated Refund Policy help-center article, tied at rank 1 per protocol-v1.md 6.2) agree with each other: ToS REFUND section: 'At 10Web we do not offer refunds for Platform subscriptions. All payments are final.' Dedicated Refund Policy article: '10Web does not offer refunds' (explaining the 7-day trial and pre-charge notice as the substitute mechanism). Against this, TWO lower-ranked but still-official sources say the opposite: the pricing page itself ('30-day money back guarantee', 'Cancel anytime', and per-card 'The 30-day money-back guarantee applies until you claim your free domain.') and the official https://10web.io/coupons/ page ('every plan carries a 30-day money-back guarantee...request a refund within 30 days'). Per codebook section 2.1 step 3, the rank-1 sources govern: no_refunds_stated. Full four-URL conflict in conflict_note." }
+  refund_window_days: { value: 0, source: "https://10web.io/legal/terms-of-service/", evidence: "Governed by the same rank-1 sources as refund_policy_exists (no refunds = a 0-day window), per the 'or 0 where no refunds are given' value option. Cross-referenced to the same conflict: the pricing page and coupons page both publish a specific '30-day' figure, which is not used here because the higher-ranked contractual sources (ToS + dedicated Refund Policy) state no refunds are given at all. See conflict_note." }
+  refund_conditions: { value: not_applicable, source: "https://10web.io/legal/terms-of-service/", evidence: "'No refund available' per the governing rank-1 sources (refund_policy_exists = no_refunds_stated), so no qualifying conditions construct applies." }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://help.10web.io/hc/en-us/articles/360027492652-How-Can-I-Cancel-My-10Web-Subscription", evidence: "Complete, unambiguous self-serve procedure entirely within the dashboard: 'Click the workspace dropdown menu...Click Subscription Plans...To cancel your subscription, use the button click here. Choose the reason for cancellation and click Submit & Cancel.' No email/contact required. Corroborated by ToS: 'You can cancel your subscription at any time before the next billing cycle from your account's settings section in Dashboard console' (this general statement carries an unspecified carve-out, 'In some cases, depending on your subscription plan, we may ask You to contact us to cancel', but no document identifies AI Starter/any named plan as falling under that carve-out, and the concrete, currently-documented procedure available today is self-serve)." }
+  refund_policy_location: { value: multiple, source: "https://10web.io/legal/terms-of-service/", evidence: "A refund position is stated in at least three document classes: terms (ToS REFUND section), dedicated_refund_page (the Zendesk 'Refund Policy' article, a page solely about refunds), and pricing_page (money-back-guarantee badges and per-card text), plus a fourth 'other official page' (coupons page). The classes disagree in substance (see refund_policy_exists/conflict_note) but multiple classes do carry a refund position, which is what this variable measures location-wise." }
+  commercial_use_lowest_tier: { value: free, source: "https://10web.io/legal/terms-of-service/", evidence: "ToS, 10WEB AI Builder Service section, stated generally (no tier gate): 'Subject to Your compliance with these Terms...if you choose to use, publish or display an Output in any manner, it shall be considered Your Content. 10Web does not claim any ownership in the Output, so long as the Output does not contain 10Web intellectual property.' No separate 'commercial use' restriction or tier-gated commercial-license clause was found anywhere (pricing page, ToS, PUP, AI Starter Plan doc); full-text search for 'commercial' across the help-center corpus returned no tier-gating result. The free tier also produces Output (a generated website), so the ungated rights statement applies from the free tier up." }
+  watermark_removal_tier: { value: unknown, source: "https://10web.io/legal/terms-of-service/", evidence: "Same search/finding as free_plan_watermark: no document anywhere states that any tier's generated websites carry, or are free of, 10Web branding/watermarking. Principal output (a full website) plainly could carry such branding (e.g. a footer badge), so not_applicable does not fit; documented silence codes unknown." }
+  output_ownership_statement: { value: user_owns, source: "https://10web.io/legal/terms-of-service/", evidence: "ToS, 10WEB AI Builder Service section: '10Web does not claim any ownership in the Output, so long as the Output does not contain 10Web intellectual property.' A disclaimer-of-ownership-claim over AI-generated Output, the best fit among available values (not vendor_license_retained, since ownership is explicitly disclaimed; the 'so long as...' clause is a standard carve-out excluding 10Web's own proprietary platform elements from the grant, not a tier/use/subscription-active condition of the kind conditional is defined for). Separately, general uploaded 'Your Content' is addressed by the Content section: 'You retain all the rights to Your Content or intellectual property.'" }
+  usage_cap_quantified: { value: all_caps_quantified, source: "https://help.10web.io/hc/en-us/articles/22592225897490-AI-Starter-Plan", evidence: "Every limit documented for the entry tier (AI Starter) carries a number: 'Websites...1' (standing), 'Monthly visitors: The plan supports up to 10,000 visitors per month. For every 10K extra visitors, you'll be charged an extra $2' (quantified rate + quantified automated overage), 'SSD storage: Includes 10GB scalable storage...extra $2 at the end of the billing month for each extra 5GB' (quantified standing + quantified overage), 'AI credits: 100 AI credits per month' (quantified rate), 'Free custom domain...for 1 year, up to $30' (quantified). No unlimited or bare-word ('generous', 'limited') claim was found for this tier." }
+  unquantified_limit_clause: { value: absent, source: "https://10web.io/legal/terms-of-service/", evidence: "ToS (346-line cleaned extract) and the Prohibited Use Policy (224-line cleaned extract, explicitly incorporated into the ToS by reference) were both read in full end to end. No fair-use/reasonable-use/excessive-use discretionary clause conditioning ordinary product usage volume was found. ToS's suspension/limitation language is conduct/violation-based ('if we...believe that You have violated the terms...or otherwise objectionable conduct'), not usage-volume-based. PUP is entirely content/conduct-prohibition-based (illegal content, abuse categories, security); its one infrastructure-adjacent clause - 'Spams or floods 10Web's infrastructure, including excessive API requests, brute-force attacks...that degrade service performance' - is framed as a prohibited ATTACK/abuse activity (anti-abuse/security), not a discretionary throttle on a buyer's normal, legitimate usage, so it does not trigger present per rule 3's conduct-vs-volume distinction." }
+computation_assumptions: "AI Starter tier (entry tier), $10.00/mo billed annually per default display state (12-months toggle active; card states $120 total/yr). Includes 1 website (pricing page + AI Starter Plan doc, direct allowance, not credit-mediated). Both price and allowance already on a monthly basis (10.00/mo per 1 website), so rule 3's period-matching needs no conversion. 10.00 / 1 = 10.00 per website per month; equivalently 120.00/yr per website on the annual figure. AI Credits (100/mo) are a separate, secondary in-product resource - not the unit this computation uses."
+conflict_note: |
+  THREE conflicts found, each between same-rank or hierarchy-resolvable official sources.
+
+  (1) refund_policy_exists / refund_window_days / refund_conditions - RESOLVED BY HIERARCHY.
+  Rank-1 contractual sources agree with each other: ToS REFUND section
+  (https://10web.io/legal/terms-of-service/) - "At 10Web we do not offer refunds for
+  Platform subscriptions. All payments are final." Dedicated Refund Policy article
+  (https://help.10web.io/hc/en-us/articles/360027773851-10Web-s-Refund-Policy) - "10Web
+  does not offer refunds." Against this, TWO lower-ranked official sources state the
+  opposite: pricing page (https://10web.io/pricing-platform/) - "30-day money back
+  guarantee", "Cancel anytime", and per-card "The 30-day money-back guarantee applies
+  until you claim your free domain."; and the official coupons page
+  (https://10web.io/coupons/) - "every plan carries a 30-day money-back guarantee...request
+  a refund within 30 days. That is the real risk-remover, not a code." Per protocol-v1.md
+  6.2 and codebook-v1.md 2.1 step 3, the rank-1 sources govern the coded values
+  (no_refunds_stated / 0 / not_applicable), and this disagreement is recorded here per the
+  rule that a marketing-vs-contract gap is reported "even where the hierarchy settles the
+  coded value cleanly." This is a stark, repeated (2 marketing-side pages, both explicit
+  and specific) gap between what a buyer sees on the page she buys from and what the
+  contract she is bound by actually says.
+
+  (2) trial_auto_converts - UNRESOLVED, coded conflicting (three same-rank sources).
+  "Why Have I Been Charged?"
+  (https://help.10web.io/hc/en-us/articles/6136064762770-Why-Have-I-Been-Charged) - "The
+  7-day free trial automatically upgrades to a paid subscription unless cancelled within
+  the trial period." "How to Upgrade to 10Web Pro Plans"
+  (https://help.10web.io/hc/en-us/articles/360021395600-How-to-Upgrade-to-10Web-Pro-Plans)
+  - "If you do not cancel when the 7 day free trial expires, you will be charged for the
+  chosen platform plan." Both state auto-charge/convert on inaction. Against this, "What
+  Happens if I Fail to Upgrade My Plan Before the Free Trial Ends?"
+  (https://help.10web.io/hc/en-us/articles/360030873012-What-Happens-if-I-Fail-to-Upgrade-My-Plan-Before-the-Free-Trial-Ends)
+  - "If you don't upgrade before the free trial ends, your website will be deleted after
+  the trial expires" - stating deletion instead of a charge, with no mention of billing.
+  All three are docs/help-center class (equal rank); the source hierarchy does not resolve
+  which governs, so coded conflicting per codebook 2.1 step 3.
+
+  (3) free_plan_cap_value (page-count figure only) - same-rank docs disagree on a number.
+  "Free Plan: How to Convert/Recreate a Website With AI" (updated 2025-01-23,
+  https://help.10web.io/hc/en-us/articles/360018862340-Free-Plan-How-to-Convert-Recreate-a-Website-With-AI)
+  - "up to 10 pages for free users." "AI Website Builder: Fully Automated WordPress
+  Website Creation in a Few Minutes" (updated 2024-11-01,
+  https://help.10web.io/hc/en-us/articles/7952757255186-AI-Website-Builder-Fully-Automated-WordPress-Website-Creation-in-a-Few-Minutes)
+  - "The free plan is limited to 5 pages only." Both docs/help-center class (equal rank).
+  Minor relative to (1) and (2): both figures are quantified, so free_plan_cap_documented
+  (all_quantified) is unaffected either way; only the specific descriptive figure in
+  free_plan_cap_value is uncertain. Recorded the more recent/specific article's figure (10
+  pages) in the value field per pragmatic reproducibility, with this note carrying the
+  full disagreement rather than silently discarding the older figure.
+coder_note: |
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2): Default display state = Business tab / 12
+  months (annual) period (see default_display_state for the two-way verification that this
+  is a genuine server-rendered default, not a client-side/geo/cookie variant). Eligible
+  candidates in that state: AI Starter $10.00/mo -> stated annual total $120.00 (winner),
+  AI Premium $15.00/mo -> stated annual total $180.00, AI Ultimate $23.00/mo -> stated
+  annual total $270.00 (note: 23 x 12 = 276, not 270; the card's own displayed "$23/mo"
+  headline is a rounded-up display of the exact $22.50/mo = $270/12 rate - a rounding
+  artifact in the vendor's own display, not a two-source conflict, and not
+  outcome-determinative either way since both figures exceed Starter's $120). All three are
+  standing, generally-available, no-sales-contact plans (single "seat"-equivalent = 1
+  website for Starter; plans are not literally seat-scaled but the sampling-rules.md 7.2
+  "single-seat variant" principle is satisfied since each card is already the base/smallest
+  purchase unit for that tier, with "Additional Website" priced as a separate, explicit
+  per-unit upsell).
+  EXCLUDED FROM COMPARISON (not part of default display state, recorded for transparency
+  per Aragon-record precedent): the "Agency + White Label" top-level tab was not active by
+  default and required a click. Its plans, read after that click: Agency Core $112.00/mo ->
+  stated annual total $1,344.00 (far above Starter's $120.00; not outcome-determinative even
+  if included) and Agency Pro (price "Custom", "Talk to sales" - not eligible under rule 2,
+  purchasable-without-contacting-sales, regardless of tab).
+  COST_PER_OUTPUT_UNIT REASONING: coded "other" / "per_website" rather than "per_seat_month"
+  because the product is not sold as unmetered flat-rate software access - the pricing
+  page's own primary framing counts and prices by number of WEBSITES (1/2/4/20 across
+  tiers, with "Additional Website" as the plan's own named upsell unit), which is a
+  countable-artifact-like dimension closer to the "countable artifact" pole of the
+  per_seat_month test than to "unmetered access."
+  CREDIT_TO_OUTPUT_RATE_PUBLISHED = partial REASONING: "Each AI request costs 1 credit" (AI
+  Editor doc) is stated in the specific context of AI-chat editing requests inside the
+  post-generation editor. No document states the credit cost of the INITIAL
+  website-generation action itself (the principal output), and the doc's own "Regenerate
+  website" action (explicitly "rebuild the entire website with AI") is described with no
+  credit cost at all - suggesting the confirmed 1-credit rate may not uniformly cover
+  generation-scale actions. Flagged for adjudicator attention in case a broader reading
+  (crediting the "1 credit = 1 AI request" statement as covering generation too, i.e. "yes"
+  instead of "partial") is preferred; this coder chose the more conservative reading given
+  the textual scoping and the unpriced Regenerate counterexample.
+  ARCHIVAL: 6 of 19 sources (all 10web.io-domain pages: pricing-platform, home, ToS, PUP,
+  coupons) archived successfully to web.archive.org on first attempt. The remaining 13
+  sources (all help.10web.io Zendesk articles) could not be archived: help.10web.io throws
+  a Cloudflare challenge on direct fetch (known obstacle per task briefing, confirmed:
+  direct curl fetch of a help.10web.io HTML page returns a Cloudflare challenge page rather
+  than the article), AND web.archive.org's own save crawler independently failed on the
+  same representative URL twice in a row (HTTP 520 both attempts, i.e. Cloudflare/origin
+  error, tested on the Refund Policy article and treated as representative of the whole
+  help.10web.io domain rather than separately burning two failed attempts per URL) - so
+  archive_status is local_copy_only for all 13, per protocol-v1.md 6.4's fallback (which
+  permits coding to continue, unlike archive_failed). All 13 were instead read via the
+  official Zendesk Help Center public API (help.10web.io/api/v2/help_center/en-us/articles/<id>.json),
+  which returns the same official article body as JSON and bypasses the challenge - the
+  task briefing pre-authorized this as legitimate. Local copies of the full official JSON
+  response for every cited article, plus the complete 836-article corpus (all 9 listing
+  pages) used for full-text search, are retained under 10web-sources/ (article-<id>.json
+  per cited article; zendesk-articles-p1.json..p9.json for the full corpus;
+  zendesk-titles.txt as a title/URL index; terms-clean.txt, pup-clean.txt,
+  pricing-clean.txt, all-articles-clean.txt as human-readable extracts).
+  INSTRUMENT/PROCESS NOTES: (a) free_plan_cap_value's format (a single formatted-caps
+  string, or the whole field unknown/not_applicable/conflicting) does not cleanly
+  accommodate a conflict on only ONE of several compound sub-figures (1 website
+  undisputed; page-count disputed 5 vs 10) - resolved pragmatically per the note on that
+  variable and in conflict_note (3), without marking the whole field conflicting since
+  quantified-ness itself is not in dispute. (b) No account was created, no sign-up flow was
+  entered, no trial was started, and no checkout was opened at any point; all findings rest
+  on public pricing/legal/help-center pages only.
+
+  D-009 re-read 2026-08-10: re-confirmed entry_tier_name, headline_price_usd,
+  headline_billing_basis and first_charge_amount_usd via a fresh live browser session,
+  independent of the 2026-08-06 collection. Two representations: (1) a live DOM query of
+  `.tab`/`.period-item` classes reproduced the same default-state markers (Business tab
+  active, 12-months/Annually period active/selected) and `.plan_price_el`/
+  `.price-month-info` returned "$10" and "Get 12 months for $120 (regular price $240)."
+  for the first (AI Starter) card, read as raw textContent; (2) a screenshot of the
+  rendered plan grid (desktop viewport) shows the same figures as rendered pixels -- AI
+  Starter card reads "$10 /mo" / "$10 per website" / "Get 12 months for $120 (regular
+  price $240)." -- with no digit-animation widget in play (unlike krea-ai), so DOM text
+  and rendered pixels cannot diverge the way they did there. Plan-grid row mapping
+  confirmed: three cards (AI Starter, AI Premium, AI Ultimate), no free-tier card
+  interleaved, AI Starter unambiguously leftmost/cheapest -- no duplicated-row risk.
+  Verdict: CONFIRMED, no correction on any of the four variables. Side observation (NOT
+  one of the four scope variables, NOT corrected): this re-read's DOM query and screenshot
+  both show AI Ultimate's own on-screen price as "$22.5/mo" directly, not the "$23/mo"
+  this coder_note's entry-tier-selection paragraph above describes; that aside concerns a
+  losing candidate's figure only and does not change entry_tier_name (AI Starter still
+  wins by a wide margin under either reading) or any of the four D-009 variables, so it is
+  left as originally written per this sweep's bounded scope -- see
+  10web-sources/d009-reread-2026-08-10.md for the full figures. Evidence saved to
+  10web-sources/d009-reread-2026-08-10.md. Blindness maintained: no other product's record
+  was opened during this re-read.
+register_events: []
+status: complete

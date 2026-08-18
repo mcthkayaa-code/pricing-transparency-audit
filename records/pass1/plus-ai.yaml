@@ -1,0 +1,138 @@
+# Pricing Transparency Audit — pass 1 record
+# product_id: plus-ai
+
+product_id: plus-ai
+product_name: Plus AI
+category: AI presentation
+product_status: active
+paid_submission: "no"
+entry_tier_name: Basic
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-10
+recheck_date: not_applicable
+primary_source_url: https://plusai.com/pricing
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "USD; no currency selector present; annual per-month-equivalent price is the headline figure in every tier card with no interactive monthly/annual toggle in the DOM (monthly-billed figure is secondary text in the same price block); no cookie-consent banner encountered on load."
+
+sources:
+  - { url: https://plusai.com/pricing, kind: pricing, accessed: 2026-08-10, archive: local_copy_only, note: "web.archive.org /save/ attempted twice, both returned an existing 2026-06-07 pre-hydration capture (no price text) instead of a fresh same-day one; local copy = plus-ai-sources/pricing-rendered.txt (rendered read) + plus-ai-sources/faq-full-text.json (accordion Q&A). Price figures cross-checked in two representations: static WebFetch text-extraction and live-rendered document.body.innerText matched exactly." }
+  - { url: https://plusai.com/terms, kind: tos, accessed: 2026-08-10, archive: local_copy_only, note: "web.archive.org /save/ attempted twice, both returned an existing 2026-08-02 capture (8 days stale, not same-day); local copy = plus-ai-sources/terms-raw.html + plus-ai-sources/terms-full-by-section.txt (organized extract, full text)." }
+  - { url: https://guide.plusai.com/plus-ai/plans-and-billing, kind: docs, accessed: 2026-08-10, archive: local_copy_only, note: "web.archive.org /save/ returned a same-day timestamp (20260810111019) on first attempt, but the captured payload is a React Server Component streaming fragment with no policy text (verified by fetching it), so it does not show the state per protocol 6.8 rule 2; local copy = plus-ai-sources/plans-and-billing.md (fetched via the vendor's own .md export of this same published page) + plus-ai-sources/plans-and-billing-NOTE.txt." }
+  - { url: https://guide.plusai.com/other/live-snapshots/free-and-paid-plans, kind: other, accessed: 2026-08-10, archive: not_attempted, note: "Context only, not cited as the source of any coded value: confirms 'Live Snapshots' is a distinct adjacent product with its own free/paid plan structure (5 vs 25 snapshots/org), separate from the Basic/Pro/Team/Max AI-presentation-generation plans coded in this record. Local copy = plus-ai-sources/live-snapshots-free-plans.md." }
+
+variables:
+  headline_price_usd: { value: "10.00", source: https://plusai.com/pricing, evidence: "Basic tier: \"$10\" / \"per user/month, billed annually. $15/user billed monthly.\"" }
+  headline_billing_basis: { value: per_seat_per_month, source: https://plusai.com/pricing, evidence: "\"per user/month, billed annually\" — a per-seat figure and a per-month figure both stated (rule 2)." }
+  first_charge_amount_usd: { value: unknown, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "Default state is annual and the headline is a monthly-equivalent figure ($10/user/mo, billed annually), so rule 2 requires a document stating the plan is charged once for twelve months before ×12 may be applied. No document found says this: pricing page states only \"billed annually\" next to the monthly figure (no explicit annual total); ToS Subscriptions section says only \"a monthly or annual subscription\" and \"recurring, non-refundable payments\"; plans-and-billing.md says only \"billed either monthly or annually\" and describes proration on mid-cycle billing-frequency switches, none of which is the explicit lump-sum-for-12-months statement the rule requires. Coded unknown rather than assuming twelve months." }
+  mandatory_addon_present: { value: "no", source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "Full feature list per tier (pricing page) and billing doc reviewed; no required charge beyond the per-seat plan price (no platform fee, minimum credit purchase, or compulsory onboarding fee found)." }
+  annual_condition_disclosure: { value: adjacent, source: https://plusai.com/pricing, evidence: "\"per user/month, billed annually\" prints directly beneath the \"$10\" figure inside the same tier card (.tier__billing paragraph)." }
+  annual_default_toggle: { value: annual_preselected, source: https://plusai.com/pricing, evidence: "DOM query for toggle/switch/tab controls found no interactive billing-period control (only the mobile-nav hamburger carries a 'toggle' class); every tier card shows the annual per-month figure as the headline number on load, with the monthly-billed figure stated only as secondary text in the same line." }
+  free_plan_exists: { value: "no", source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "\"You need a paid plan to use Plus AI.\"" }
+  free_plan_cap_documented: { value: not_applicable, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "No free plan (see free_plan_exists)." }
+  free_plan_cap_value: { value: not_applicable, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "No free plan." }
+  free_plan_watermark: { value: not_applicable, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "No free plan." }
+  free_plan_duration: { value: not_applicable, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "No free plan." }
+  trial_exists: { value: "yes", source: https://plusai.com/pricing, evidence: "\"Start for free with a 7-day trial ... All plans start with a 7-day free trial with 1,000 AI credits.\"" }
+  trial_card_required: { value: "yes", source: https://plusai.com/pricing, evidence: "\"A credit card is required to start the trial.\" (pricing-page FAQ \"How does the 7 day free trial work?\"), corroborated by plans-and-billing.md: \"Starting a trial requires a credit card, which will be automatically charged at the end of the trial.\"" }
+  trial_length_days: { value: "7", source: https://plusai.com/pricing, evidence: "\"Start for free with a 7-day trial\"" }
+  trial_auto_converts: { value: "yes", source: https://plusai.com/pricing, evidence: "\"When your trial ends, your card will be charged automatically and you'll receive your plan's full monthly credits.\"" }
+  credit_system_present: { value: "yes", source: https://plusai.com/pricing, evidence: "\"1,000 AI credits\" (trial), \"1,500 AI credits per month\" (Basic) — an intermediate metering currency, not output units stated directly." }
+  credit_unit_defined: { value: "yes", source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "\"Using the AI agent consumes credits. The number of credits used depends a lot on complexity, but a typical task usually requires 40-170 credits.\" — converts credits into an output-adjacent unit (an agent task); rule 3 does not require the principal output specifically." }
+  credit_to_output_rate_published: { value: partial, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "\"a typical task usually requires 40-170 credits\" — published as a range with no stated rule for which figure applies to a given task (rule 3)." }
+  credit_rate_location: { value: docs_help_center, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "Only location the 40-170 credit range appears; not on the pricing page or in the terms." }
+  cost_per_output_unit: { value: per_presentation, source: https://plusai.com/pricing, evidence: "Product sold and framed throughout the site as an 'AI presentation maker'; no unit in the enumerated list matches the documented metering granularity ('task') more closely. See coder_note on the task-vs-presentation granularity gap." }
+  cost_per_output_computable: { value: partial, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "Vendor publishes a range (40-170 credits/task) rather than a single figure, so the calculation yields a range, not a figure (rule 8)." }
+  computation_assumptions: { value: "Entry tier Basic, $10/user/mo billed annually per default display state (already a monthly figure; no period conversion needed under rule 3). Included allowance: 1,500 AI credits/mo (also monthly, same period). Docs state a typical task costs 40-170 credits with no rule for which figure applies -> range, not a single figure -> cost_per_output_computable = partial per rule 8; cost_per_output_value_usd is not_computable. The implied per-task range is recorded in coder_note.", source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "not_applicable — this field records the coder's own arithmetic, per codebook section 2.3." }
+  credit_rollover_policy: { value: expires_at_period_end, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "\"Credit limits reset each month on your billing date.\" (regular subscription credits). Trial credits separately and explicitly do not roll over: \"Unused trial credits don't roll over.\"" }
+  failed_generation_charge_policy: { value: unknown, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "Reviewed plans-and-billing.md, terms-raw.html, and the pricing page in full; no statement anywhere about credits being charged, not charged, or refunded on a failed/errored generation." }
+  auto_renewal_default: { value: "on", source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "\"Our paid plans are subscriptions that will automatically renew every month or every year unless you cancel.\" Corroborated by ToS: \"you authorize Plus to initiate recurring, non-refundable payments.\"" }
+  auto_renewal_disclosure_location: { value: multiple, source: https://plusai.com/terms, evidence: "Stated in the ToS Subscriptions section (\"recurring, non-refundable payments\") and in the plans-and-billing help article (\"will automatically renew every month or every year unless you cancel\") — two document classes in agreement." }
+  renewal_notice_commitment: { value: unknown, source: https://plusai.com/terms, evidence: "ToS and plans-and-billing.md reviewed in full; neither commits to advance notice before a renewal charge nor explicitly states none is given." }
+  refund_policy_exists: { value: no_refunds_stated, source: https://plusai.com/terms, evidence: "\"Your payment is final and non-refundable or cancellable. If you cancel your Subscription, you will not receive a refund for any portion of the remaining time in your billing period.\" Corroborated by plans-and-billing.md FAQ: \"We don't offer refunds on paid subscriptions.\"" }
+  refund_window_days: { value: "0", source: https://plusai.com/terms, evidence: "No refunds given (see refund_policy_exists)." }
+  refund_conditions: { value: not_applicable, source: https://plusai.com/terms, evidence: "No refund available." }
+  cancellation_self_serve: { value: self_serve_documented, source: https://guide.plusai.com/plus-ai/plans-and-billing, evidence: "\"Go to https://app.plusdocs.com/billing-portal. Click on Manage plan to open your subscription in Stripe (our payment processor). Then click on Cancel subscription.\" Also documented from inside the PowerPoint sidebar and the Google Slides new-presentation window. ToS does not describe a mechanism, only that either party may terminate; the help center is the source that actually states the self-serve route." }
+  refund_policy_location: { value: multiple, source: https://plusai.com/terms, evidence: "Stated in the ToS Subscriptions section and in the plans-and-billing FAQ (\"Can I have a refund?\"), which itself points back to the terms of service." }
+  commercial_use_lowest_tier: { value: unknown, source: https://plusai.com/terms, evidence: "Terms grant a license to use the Service \"solely for your own internal business purposes\" and prohibit reselling/redistributing the Service itself — this restricts use of the SOFTWARE, not stated as a right to (or restriction on) commercial use of generated presentation OUTPUTS. No pricing-page feature-grid row addresses commercial use of outputs by tier. Documents do not address the construct this variable measures." }
+  watermark_removal_tier: { value: unknown, source: https://plusai.com/terms, evidence: "Terms of service reviewed in full; pricing-page feature grid reviewed for all four paid tiers; no row or clause addresses watermarking or branding of generated presentations at any tier." }
+  output_ownership_statement: { value: user_owns, source: https://plusai.com/terms, evidence: "\"When you use Plus AI, your Inputs and Results are your Customer Data. You are solely responsible for the development, operation, maintenance, and use of your Customer Data.\" No competing clause anywhere in the terms retains Plus ownership of or a license over Results." }
+  usage_cap_quantified: { value: all_caps_quantified, source: https://plusai.com/pricing, evidence: "Basic tier's only stated limit is \"1,500 AI credits per month\" — number + dimension + period, fully quantified; no other limit is attributed to the tier." }
+  unquantified_limit_clause: { value: present, source: https://plusai.com/terms, evidence: "Acceptable Use section: \"take any action that imposes or may impose an unreasonable or disproportionately large load on Plus's (or its third party providers') infrastructure\" — a discretionary, unquantified usage standard, distinct from the quantified per-tier credit limit." }
+
+coder_note: |
+  ENTRY TIER SELECTION (sampling-rules.md 7.2): four standing, generally-available,
+  self-serve, single-seat candidates on the pricing page — Basic $10/user/mo, Pro $20,
+  Team $30, Max $200, all "billed annually" in the default display state. Annual-equivalent
+  single-seat cost: Basic 10x12=120.00 (winner), Pro 20x12=240.00, Team 30x12=360.00,
+  Max 200x12=2400.00 (all lost). "Plus AI for Enterprise" is excluded as a candidate under
+  sampling-rules.md 7.2 eligibility rule 2 (contact-sales only, no published price).
+
+  PRODUCT SCOPE / BUNDLING: Plus AI is sold as an add-in inside Google Slides and
+  PowerPoint, not a standalone web app (per assignment). The Basic/Pro/Team/Max plans
+  coded here grant AI presentation generation in both host apps under one subscription
+  ("your Plus AI subscription includes access to the Plus AI extension in both Google
+  Slides and PowerPoint" — pricing-page FAQ). The vendor's site also nav-links an
+  adjacent "AI for Google Docs" product and a separate "Live Snapshots" product; the
+  pricing page's own plan cards do not mention Google Docs at all, so no bundling claim
+  is made either way for it. Live Snapshots is confirmed a DISTINCT product with its own
+  separate free/paid plan (5 vs 25 snapshots/org, guide.plusai.com/other/live-snapshots/
+  free-and-paid-plans) entirely outside the Basic/Pro/Team/Max structure coded here —
+  not used as evidence for any variable on this record.
+
+  FREE-PLAN JUDGMENT CALL: pricing-page FAQ ("What limitations are there for the free
+  trial?") contains a backward-looking clause — "If you previously signed up for the Plus
+  free plan or upgraded to a paid plan, you will not be able to start a new free trial" —
+  that references "the Plus free plan" without affirmatively claiming one currently
+  exists. Read against guide.plusai.com/plus-ai/plans-and-billing's current, present-tense
+  "You need a paid plan to use Plus AI" (and no Free card on the current pricing page),
+  coded free_plan_exists = no rather than conflicting; see conflict_note.
+
+  COST-PER-OUTPUT RANGE (secondary to the coded partial/not_computable): using Basic's
+  $10/user/mo (annual default) and 1,500 credits/mo against the published 40-170
+  credits/task range: 1500/170 = 8.8 tasks/mo (floor) to 1500/40 = 37.5 tasks/mo
+  (ceiling) => $10/37.5 = $0.27 to $10/8.8 = $1.14 per task. This is a range across an
+  undefined "task" unit, not confirmed to equal one full presentation, so it is NOT
+  published as cost_per_output_value_usd (stays not_computable per the derived-variable
+  rule for the range case).
+
+  CURRENCY CHECK (deviation D-007): pricing page rendered in USD on both the static
+  WebFetch pass and the live browser render from this session's Turkey network path; no
+  currency selector, country picker, or non-USD figure was observed anywhere on the
+  page. Arm 1 (vendor's own served currency) returned readable USD prices directly, so
+  the check stopped there per the binding rule; non_usd was not applicable. (No
+  Accept-Language reasoning was used or needed.)
+
+  A-012: not applicable to this product. The trial is a genuinely free 7-day trial
+  (1,000 AI credits at no charge, card on file for auto-conversion afterward), not a
+  paid time-limited intro period.
+
+  READ TWICE (binding rule): headline figures for all four tiers were confirmed in two
+  representations — static WebFetch HTML->text extraction and live-rendered
+  document.body.innerText via headless browser — both returned identical figures
+  ($10/$15, $20/$25, $30/$40, $200/$240). No superscript-cents artefact; magnitudes are
+  monotonic and consistent with tier ordering and naming.
+
+  ARCHIVAL: all three primary sources hit the two-attempt cap without producing a
+  same-day, content-showing public archive capture (pricing and terms both returned
+  stale existing captures on both attempts; the plans-and-billing capture got a same-day
+  timestamp but its payload is a non-readable RSC streaming fragment). All three are
+  coded archive_status = local_copy_only with dated local copies retained in
+  plus-ai-sources/ (see sources[].note for specifics per URL).
+
+  GITBOOK "ASK" QUERIES: guide.plusai.com's docs platform (GitBook) exposes an
+  AI-query feature via a documented `?ask=` URL parameter, and its response text
+  includes a boilerplate block addressed to "AI agents" inviting further such queries.
+  This was recognized as vendor-published platform documentation, not an instruction
+  from this study's operator, and was not treated as one. It was used twice, narrowly,
+  to locate real published pages (confirming no separate free plan existed beyond
+  Live Snapshots, and probing for an explicit annual lump-sum billing statement); its
+  own generated answer text was never cited as the source of a coded value — only the
+  underlying documents it pointed to (plans-and-billing.md, free-and-paid-plans.md,
+  both already opened and cited directly) were used as evidence.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "Not scored as a hierarchy-resolved conflict, recorded for transparency: the pricing-page trial-limitations FAQ references \"the Plus free plan\" (https://plusai.com/pricing) in a backward-looking eligibility clause that does not affirmatively state a free plan currently exists, while guide.plusai.com/plus-ai/plans-and-billing (https://guide.plusai.com/plus-ai/plans-and-billing) currently and explicitly states \"You need a paid plan to use Plus AI.\" Coded free_plan_exists = no from the latter; see coder_note."
+register_events: []
+status: complete

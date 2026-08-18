@@ -1,0 +1,28 @@
+HTTP/2 307 
+date: Thu, 06 Aug 2026 09:46:25 GMT
+server: cloudflare
+set-cookie: __Host-next-auth.csrf-token=8c0aae046466035f902aed317ae39e658b823670128db98fbc7fad743f9784bc%7Cadf0d991744d64bc8e7fe988c770f4f9434ec608526bd900c52299c0668b0c5e; Path=/; HttpOnly; Secure; SameSite=Lax
+set-cookie: __Secure-next-auth.callback-url=https%3A%2F%2Ffaceless.so; Path=/; HttpOnly; Secure; SameSite=Lax
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+location: /login
+cf-cache-status: DYNAMIC
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1ua1Fr6NKTaE6OXQJS%2B1OWMR5b9OdxBy8s3xUGBxsIaJfONVMCoIxDP0Ur%2FBPPukPQ1prR0IZa6B2U%2BuOXdN1MyrCI%2FyCVya8D8i5Lo%2F1w21dL88rs3aimGgbeAm9A%3D%3D"}]}
+cf-ray: a26d1d43d99528a1-AMS
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Thu, 06 Aug 2026 09:46:25 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+set-cookie: __Host-next-auth.csrf-token=2c579f2cab78c23c46413b8fac5b46d287ad12b3e2bd1d93c18ef7882e1c7569%7Ca29f8b0462385e4b7f5a6fb4c931e9af1e50916821cf217422704cf05564770b; Path=/; HttpOnly; Secure; SameSite=Lax
+set-cookie: __Secure-next-auth.callback-url=https%3A%2F%2Ffaceless.so; Path=/; HttpOnly; Secure; SameSite=Lax
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+x-powered-by: Next.js
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+vary: Accept-Encoding
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=DhAKnR7PQmJQvw7x1RmyJt7evpL8NYRnWzgkXNJXLmwvRA1IPftxYXIAY7hWKG7F9QS5LlUXhOri8ZC4ja7P%2FBmgoottS6jTZb5BUuYMTZOlV%2F6fU4jXTMbVgtOARg%3D%3D"}]}
+cf-cache-status: DYNAMIC
+cf-ray: a26d1d463bee28a1-AMS
+alt-svc: h3=":443"; ma=86400
+

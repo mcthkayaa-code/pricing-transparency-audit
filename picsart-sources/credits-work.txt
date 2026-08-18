@@ -1,0 +1,17 @@
+URL: https://support.picsart.com/hc/en-us/articles/35097241583005-What-are-credits-and-how-do-they-work
+Accessed: 2026-08-10
+Method: rendered read via browser (document.body.innerText)
+Public archive attempt: web.archive.org/save/ returned HTTP 429 then HTTP 520 on 2 attempts (2026-08-10) - archive_failed for public archive; this file is the local copy per protocol 6.4.
+Note: failed_generation_charge_policy is primarily coded from picsart.com/pricing/ FAQ (successfully publicly archived); this article is corroborating.
+---
+
+Credits are virtual tokens that allow you to use various generative AI tools. Each generation with these tools requires a set number of credits. Every time you use a generative tool, the corresponding number of credits is deducted from your balance.
+
+How are credits allocated?
+Credits are allocated based on your Picsart subscription plan. You can check the allocated credits count on our pricing page at picsart.com/pricing.
+
+Can I purchase additional credits?
+Yes, additional credits can be purchased if you need more than your plan provides. These add-on credits do not expire and can be rolled over to subsequent months if unused.
+
+What happens if a generation does not complete successfully?
+If a generation does not complete successfully, the credits you spent will automatically be returned to your account, ensuring your credit balance is not deducted for unsuccessful attempts.

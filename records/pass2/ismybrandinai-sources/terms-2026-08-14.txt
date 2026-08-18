@@ -1,0 +1,33 @@
+SOURCE: https://ismybrandinai.com/terms
+ACCESSED: 2026-08-14 (browser rendered read, tab-18)
+CAPTURE METHOD: mcp__Claude_Browser__get_page_text (rendered DOM text)
+
+Title: Terms of Use | Is My Brand in AI
+Home · Terms
+
+Terms of Use
+Last updated 5 June 2026.
+
+By using Is My Brand in AI (ismybrandinai.com) you agree to the terms below. This is the plain-English version.
+
+Informational, not professional advice
+Our guides and tools are general information about AI search visibility (GEO) — not legal, financial, or professional marketing advice. AI engines change fast; we update as the evidence changes, but we can't guarantee any specific result, ranking, or citation.
+
+Free tools — provided "as is"
+Tools like the llms.txt generator are free and provided "as is," without warranty. You're responsible for reviewing anything you generate before you publish or rely on it.
+
+Recommendations & disclosure
+We recommend third-party tools on the merits, based on public information and hands-on testing. Some outbound links may, in future, be affiliate links — meaning we could earn a commission at no extra cost to you. That never changes our assessments, and we'll disclose affiliate links clearly on the page.
+
+Intellectual property
+The content on this site is ours unless stated otherwise. You're welcome to quote and link to it with attribution.
+
+Contact
+Questions about these terms? Contact us.
+
+--- FULL DOCUMENT. Read to the end for unquantified_limit_clause (F2). ---
+No fair-use / reasonable-use / excessive-use / abuse-threshold / discretionary-throttling clause
+anywhere in this document. No mention of: refunds, cancellation, auto-renewal, subscription,
+billing, credits, commercial use of outputs, watermark, or ownership of generated output.
+This is the entire terms document; there is no separate acceptable-use policy page on the site
+(confirmed against sitemap.xml).

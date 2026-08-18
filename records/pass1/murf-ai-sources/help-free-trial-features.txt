@@ -1,0 +1,97 @@
+SOURCE: https://help.murf.ai/is-murf-free-to-use (200 OK; page renders as 'Free Trial Features' -- slug/title mismatch noted)
+DATE ACCESSED: 2026-08-09
+METHOD: curl static fetch (server-rendered help/legal page, not a JS app-shell)
+ARCHIVE: https://web.archive.org/web/20260809194201/https://help.murf.ai/is-murf-free-to-use
+PAGE TITLE: Free Trial Features
+NETWORK NOTE: collection environment egresses from Turkey; this page's substantive text
+  (ToS/help-center prose) is not price-bearing in a way current-affected -- D-003 currency
+  check applies to the pricing page specifically (see pricing-rendered.txt).
+=== EXTRACTED TEXT (nav/boilerplate stripped where noted) ===
+Free Trial Features
+Skip to content
+English
+Show submenu for translations
+Open main navigation
+Close main navigation
+English
+Show submenu for translations
+Open Studio
+Open Studio
+How can we help you today?
+There are no suggestions because the search field is empty.
+Help Center
+New to Murf
+Free Trial
+Free Trial Features
+Murf Free Trial lets you explore and test out all voices and premium features of the Studio. All first-time users/signups are automatically assigned a Free Trial.
+Features of the free trial:
+Access all  300+ voices across 33 languages
+No downloads included
+10 minutes of voice generation time
+10 minutes of transcription
+Share project preview
+Create Embed link
+No credit card required
+Click here to begin your free trial!
+The free trial does not support downloads.
+New to Murf
+Intro to Murf AI
+Setup and Onboarding
+Managing Your Account
+Free Trial
+Getting Started
+Script Import and Structuring
+Finding the Right Voice & Settings
+Adding Media Files
+Frequently Asked Questions
+New to Murf
+Working with the Studio
+Payment and Billing
+Workspaces and Account Management
+Voice Cloning
+Commercial Rights
+Working with the Studio
+Studio Elements
+Voices and Languages
+Voice Settings
+Working with Imports
+Timeline and Project Settings
+Exports
+Collaboration
+Gen2 Voice Model
+HTML Embed
+Audio to Text
+AI Dubbing
+Introduction
+Murf Dub Project
+Dubbing Credits
+Pricing and Plans
+Editing Dub
+Workspaces
+Introduction
+Types of User Roles
+Invite Team Members
+Managing Projects and Folders
+Permissions and Privacy
+Voice Generation Time (VGT)
+Tracking VGT Consumption
+Payments and Billing
+Managing Payments and Billing
+Frequently Asked Questions/ Troubleshooting
+Taxes
+YouTube Codes
+Adding YouTube Codes
+Introduction to YouTube Codes
+Content ID Claims
+API
+Introduction
+Generating Speech
+API Pricing and Plans
+Integrations & Add Ons
+PowerPoint Plugin
+Windows Voices Installer
+Canva
+Voice Cloning
+Introduction
+Help Center
+Copyright © 2026, Murf Inc.

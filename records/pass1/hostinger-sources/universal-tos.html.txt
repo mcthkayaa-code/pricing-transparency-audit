@@ -1,0 +1,624 @@
+Terms of service
+Pricing
+Products
+Products
+AI and automation
+Hosting
+Domains
+Create a website
+Sell online
+Email and marketing
+For agencies
+Automate and deploy
+Hostinger Agents
+New
+Ready-to-use AI team for daily business tasks.
+OpenClaw
+Personal, always-on AI assistant for everyday automation.
+Hermes Agent
+New
+Persistent, context-aware AI agent for continuous automations.
+Self-hosted n8n
+Custom, node-based AI workflows with full control.
+Hostinger Connector
+New
+Build sites and manage hosting with your AI coding assistant.
+Agentic Mail
+New
+Email infrastructure designed for AI agents.
+Create and grow
+Vibe code your site
+Free trial
+Create a business ready website by chatting with AI.
+Email marketing
+Create and send AI powered email campaigns.
+Hermes Agent
+New
+Stop doing the same tasks twice
+Describe your workflow. Hermes takes it from there and keeps going.
+Meet Hermes Agent
+Resources
+About
+Blog
+Expert tips, product updates, and customer stories.
+Product updates
+Latest releases and upcoming features.
+Our story
+Meet the people and platform behind your success.
+Contact
+How to reach us.
+Guidance
+Knowledge Base
+Help articles and guides for every Hostinger service.
+Tutorials
+Articles to help you achieve your online success story.
+Hostinger Academy
+Practical video guides to help you build and grow online.
+Learning lab
+Guided paths to build, launch, and grow online.
+Newsroom
+Official Hostinger news and press releases.
+Learning lab
+Find the right learning path for you
+Choose your goal, learn your way, and keep building with confidence.
+Go to Learning lab
+EN
+Terms of service
+Please read this agreement carefully, as it contains important information regarding your legal rights and remedies.
+Hostinger accessibility statement
+Information security policy
+Privacy policy
+Registrar information
+Terms of service
+Agreements
+Affiliate program agreement
+Change of registrant agreement
+Data processing addendum
+Domain name registration agreement
+Domain name transfer agreement
+Domain registrant agreement
+Hosting agreement
+Hostinger Horizons special terms
+Referral program agreement
+Reseller master agreement
+Policies
+Abuse handling policy
+Brand guidelines and permissions
+Cookie policy
+Customer service policy
+Domain name dispute resolution
+Expired registration recovery policy
+Hostinger responsible disclosure policy and bug reward program
+Non-public registrant data (NPRD) request policy
+Refund policy
+TLD registry policies
+Trademark/copyright
+Company’s policies
+DSA Transparency Report
+Third party code of conduct
+The English version of legal agreements and policies is considered as the only current and valid version of this document. Any translated version is provided for your convenience only, to facilitate reading and understanding of the English version. Any translated versions are not legally binding and cannot replace the English versions. In the event of disagreement or conflict, the English language legal agreements and policies shall prevail.
+Terms of service
+Hostinger accessibility statement
+Information security policy
+Privacy policy
+Registrar information
+Terms of service
+Agreements
+Affiliate program agreement
+Change of registrant agreement
+Data processing addendum
+Domain name registration agreement
+Domain name transfer agreement
+Domain registrant agreement
+Hosting agreement
+Hostinger Horizons special terms
+Referral program agreement
+Reseller master agreement
+Policies
+Abuse handling policy
+Brand guidelines and permissions
+Cookie policy
+Customer service policy
+Domain name dispute resolution
+Expired registration recovery policy
+Hostinger responsible disclosure policy and bug reward program
+Non-public registrant data (NPRD) request policy
+Refund policy
+TLD registry policies
+Trademark/copyright
+Company’s policies
+DSA Transparency Report
+Third party code of conduct
+Last revised: 2026-07-15 04:33:08
+1. OVERVIEW
+These Terms of Service (“
+Terms of Service
+”) set forth the general terms and conditions of your use of this website (“
+Site
+”) and the products and services purchased or accessed through this Site (individually and collectively, the “
+Services
+”).
+Terms of Service and the documents to which they refer, form an agreement (“
+Agreement
+”) between the relevant Hostinger group entity indicated below (“
+Hostinger
+”) and you. The Agreement is made effective as of the date of your use of the Site or the date of electronic acceptance thereof, whichever occurs earlier. The terms “we”, “us” or “our” shall refer to Hostinger. The terms “you”, “your”, “User” or “Customer” shall refer to any individual or entity who accepts the Agreement, has access to Customer account at Hostinger (“
+Account
+”) or uses the Services.
+2. HOSTINGER CONTRACTING ENTITY AND APPLICABLE TERMS AND POLICIES
+Unless otherwise indicated in the specific documents of the Agreement, the Hostinger entity you are contracting with will be determined under the below rules. If your country of residence is:
+United Kingdom (UK), then contracting entity will be Hostinger UK Limited, UK private limited company, registered address 6 Lloyds Avenue Suite 4CL London, England EC3N 3AX;
+Indonesia, then contracting entity will be PT WEB MEDIA TECHNOLOGY INDONESIA, Indonesia private limited company, address Jl. Palagan Tentara Pelajar No. 81 Jongkang, Sariharjo, Ngaglik, Sleman, Daerah Istimewa Yogyakarta, 55581;
+Group No. 1 countries as per list indicated
+here
+, then contracting entity will be HOSTINGER PTE LTD, Singapore private limited company, registered address 16 Raffles Quay, #33-03, Hong Leong Building, Singapore, 048581;
+Group No. 2 countries as per list indicated
+here
+, then contracting entity will be HOSTINGER Global S.à r.l, Luxembourg private limited company, registered address 6 Avenue Pasteur, L-2310 Luxembourg, the Grand Duchy of Luxembourg, business permit No 10191883/0;
+Any other country not listed above (including EU countries), then the contracting entity will be HOSTINGER INTERNATIONAL LIMITED, Cyprus private limited company, registered address 61 Lordou Vironos str., 6023 Larnaca, Cyprus.
+Your use of this Site or Services is also governed by the applicable agreements and policies, which are incorporated into these Terms of Service by reference. Such agreements and policies include:
+Hosting Agreement
+Domain Registration Agreement
+Domain Name Registrant Agreement
+Referral Program Agreement
+Expired Registration Recovery Policy
+Refund Policy
+other agreements and policies made available to you on the Site.
+When your use of the Site or the Services requires us to process any personal data or personal information, we will do so in accordance with our Privacy Policy and also, if applicable, Data Processing Addendum ("
+DPA
+"), which is also incorporated into the Terms of Service by reference.
+Your electronic acceptance of these Terms of Service signifies that you have read and understood these Terms of Service, along with the applicable policies and agreements, and agree to be bound by the Agreement.
+Hostinger may, in its sole and absolute discretion, change or modify these Terms of Service, and any policies or agreements incorporated herein, at any time, and such changes shall be effective immediately upon posting to this Site. In addition, Hostinger will notify you by email within a reasonable period of time prior to the effective date of any material changes to the Agreement. In the event of a material change detriment to you, you have a right to terminate the Agreement by providing written notice within 30 calendar days from the day of notification on such change. Such right does not apply if the changes (i) have an effect exclusively to your benefit and (or) (ii) neither reduces your rights nor increases your responsibilities. Your use of this Site or the Services after such changes or modifications shall constitute your acceptance of the Agreement as last revised.
+3. ELIGIBILITY AND AUTHORISATIONS, SANCTIONS COMPLIANCE
+This Site and the Services are available only to persons, who can form legally binding contracts under applicable law.
+By using this Site or the Services, you represent and warrant that you:
+(i) are at least eighteen (18) years old;
+(ii) have the legal capacity to enter into an agreement with us;
+(iii) are not a person barred from purchasing or receiving the Services under the laws applicable to these Terms of Service or other applicable jurisdiction; and
+(iv) meet the conditions for purchase and (or) use of the Services, if any, as specified in the Agreement, including sanctions compliance clauses.
+If you are entering into this Agreement on behalf of a corporate entity, you represent and warrant that you have the legal authority to bind such corporate entity to this Agreement and to act on behalf of such entity with respect to any actions you take in connection with the Site or Services (in such cases, the terms “you”, “your”, “User” or “Customer” shall refer to such corporate entity). If it is later determined that you do not have such authority, you will be personally responsible for all the obligations under this Agreement, including payment obligations. Hostinger shall not be liable for any loss or damage resulting from reliance on any instruction or communication reasonably believed to be from an authorized representative of your corporate entity. You further agree to be bound by this Agreement for transactions entered into by you, anyone acting as your agent and anyone who uses your account or the Services, whether or not authorized by you.
+Sanctions compliance
+. You represent and warrant that you comply with the following conditions:
+Residence and use of Services
+. You are not an ordinary resident of, and will not use or distribute the Services in, any country or region subject to US comprehensive sanctions (Cuba, Iran, North Korea, Russia, the following regions of Ukraine: Crimea, Donetsk, Luhansk, Zaporizhzhia and Kherson), or other areas sanctioned by the US or EU / UN, as well as Belarus and Venezuela in line with Hostinger’s declared approach.
+Sanction lists
+. You are not included on any sanctions list, including, without limitation: the UN Security Council Consolidated List, the US Specially Designated Nationals and Blocked Persons List maintained by the US, Consolidated list of persons, groups and entities subject to EU financial sanctions maintained by EU, the UK Sanctions List or any other applicable sanctions lists maintained by other countries.
+Ownership and control
+. You are not owned or controlled, directly or indirectly, by any sanctioned individual or entity (“
+Sanctioned Party
+”) and are not otherwise acting on behalf of, at the direction of, or for the benefit of such Sanctioned Party.
+Indirect access and anti-circumvention
+. You agree not to indirectly make the Services available to any person, entity or organization, which would not meet sanction compliance requirements established in these Terms of Service. You also agree not to knowingly participate in activities intended to circumvent the sanctions prohibitions outlined in these Terms of Service.
+You acknowledge that the list of sanctioned countries, regions and persons are subject to change in accordance with the latest regulations, and you agree to comply with any such changes immediately as they occur. Also, if your status changes such that you are included on any sanctions list or become owned or controlled by the Sanctioned Party, you must promptly notify us. You agree to actively participate in sanctions screening and investigation processes, including to provide all necessary information as requested for sanction compliance purposes.
+In the event that Hostinger becomes aware of, or reasonably suspects, that you are breaching sanction compliance clauses outlined in these Terms of Service, Hostinger reserves the right to terminate your use of the Services immediately and without any notice. Also, you agree to indemnify and hold Hostinger harmless against any losses, including, but not limited to, monetary penalties and legal fees, that may arise due to your non-compliance with the aforementioned sanctions compliance confirmations.
+4. ACCOUNT AND ITS MANAGEMENT
+Account and information.
+In order to access certain features of this Site or use the Services, you will have to create an Account. You represent and warrant to Hostinger that all information you provide when creating your Account is accurate, current and complete. You agree to maintain and promptly update Account information and any other information you provide to Hostinger, to keep it accurate, current and complete. Hostinger assumes no liability or responsibility for any issues or adverse outcomes that may occur due to inaccurate information provided by you. If Hostinger has reason to believe that your Account information or any other information you provide to Hostinger is inaccurate, outdated, incomplete or unjustified, Hostinger reserves the right, in its sole and absolute discretion, to request you to validate the information (including to provide required supporting documents, which might include government-issued business identification or government-issued photo identification), to suspend or terminate your Account.
+For the avoidance of doubt, the individual or entity whose data is listed in the ‘Account information’ section of Account is considered to be the owner of the Account and the data and Services contained therein (excluding the domain names, if any). Domain names are owned as set out in applicable ICANN and other rules, and we will assist domain registrants to the extent permitted by the applicable rules and regulations. If your Account contains domain names registered with us in the name of a third party, and that third party (domain name registrant) requests access to the management of those domain names, we may comply with the domain name registrant’s instructions and provide them with access to those domain names.
+It is your obligation to ensure that you correctly indicate ownership of your Account. If there is a dispute about ownership, the access to the Account may be blocked until the parties to the dispute agree on a resolution, or until the matter is finally resolved by the competent authority. We are not liable for any damages of any nature and type suffered by the Customer or any third party that may result from an ownership dispute or from the blocking of the Account.
+Account security
+. You are solely responsible for all the activity on your Account. You agree to:
+(i) keep your Account secure and follow our security recommendations, including, but not limited to, using strong passwords that adhere to industry-standard security criteria, keeping different login credentials for different Accounts and service providers, changing your password regularly for each Account, enabling two-factor authentication for an added layer of security;
+(ii) maintain the confidentiality of your password and other information related to the security of your Account. In the event of loss or disclosure of any means of authentication, you must immediately take available steps to secure your Account and Services (for example, change the means of authentication concerned);
+(iii) diligently verify the authenticity of communication claiming to come from Hostinger (if in doubt, contact us directly through official support channels). Hostinger will never request your password, one-time codes or other authentication details via email or other unsolicited communication;
+(iv) be solely responsible for ensuring the security and compliance of any third-party applications or tools you connect to your Hostinger account, in accordance with applicable standards and regulations;
+(v) notify Hostinger immediately of any breach of security or unauthorized use of your Account.
+Hostinger will not be liable for any loss you incur due to any unauthorized use of your Account. You, however, may be liable for any loss Hostinger or others incur caused by your Account, whether caused by you, or by any other authorized or unauthorized person.
+Account sharing.
+The Services allow you to grant access (depending on permissions granted) to your Account to another Hostinger customer. You may revoke any person’s ability to access your Account at any time.
+By authorizing any person to access your Account, you acknowledge and agree that:
+(i) you have an established and trusted business or personal relationship with such a person;
+(ii) you voluntarily authorize such person to access and (or) make changes to your Account;
+(iii) depending on permissions granted, such person may be able to view personal information that you have provided in your Account, including billing information (but excluding full payment method information);
+(iv) such person will be able to access your Account as it is on the day of granting access and also access any future changes thereof (e.g. in case access to certain hosting is granted, such person will be able to access any future add-on domains of such hosting);
+(v) in case you separately agree (allow) that such a person would contact Customer Service on your behalf, such person will be able to contact our Customer Service, receive information and (or) manage Services on your behalf using our Customer Service and access your chat history (including any personal and other information contained therein). Note that such a person in any case will not be allowed to perform certain actions, such as view or change your account credentials (like your password), delete your account or invite others to access your account;
+(vi) you are assuming full legal and financial responsibility (and undertake to fully release Hostinger from any related liability) with respect to your decision to grant access to your Account to any person or with respect to any actions such person may take or fail to take with respect to your Account.
+By requesting access to the Account of another Hostinger customer, you undertake to use such access solely in the best interest of and as authorized by the customer granting access.
+Please note that Hostinger is not involved in the actual contract between a Hostinger customer granting access and the one requesting / receiving access to an Account. Should there be a dispute between the parties, you must address such dispute directly with the individual you are in contract with.
+5. AVAILABILITY OF SITE AND SERVICES, BETA SERVICES
+The service uptime guarantee applicable to specific Services, if any, is defined in other documents (e.g., specific Service agreement) that form part of the Agreement. You acknowledge and agree that from time to time this Site may be inaccessible or inoperable for any reason including, but not limited to, maintenance, repairs or upgrades, or factors beyond our reasonable control (including, but not limited to, equipment failure, network issues,  other failures or unforeseeable disruptions). You acknowledge and agree that we assume no liability to you or any other party with regard thereto.
+Beta Services.
+From time to time, Hostinger may offer pre-release versions of new or existing Services (including new features to existing Services) (“
+Beta Services
+”). By using any Beta Services, you agree to the following terms and conditions: (i) you acknowledge and agree that the Beta Services are provided “as is”, “as available”, and “with all faults”, they are pre-release experimental versions and may not function properly or be free of bugs; (ii) you assume all risks and liabilities arising from and (or) relating to your use of and reliance upon those Beta Services, and we make no representation or warranty with respect thereto; (iii) we reserve the right to modify, change, or discontinue any aspect of the Beta Services at any time; (iv) commercially released versions of the Beta Services may change substantially; (v) Customer Service team time dedicated to support of the Beta Services may be limited; (vi) you agree to provide prompt feedback regarding your experience with the Beta Services in a form reasonably requested by us, which may be used for any purpose, including product development and marketing purposes; (vii) you and agree that all information regarding your use of the Beta Services, including your feedback and opinions, is confidential, and must not be shared with third parties; (viii) to the fullest extent permitted by law, Hostinger disclaims any and all warranties, express or implied, with respect to the Beta Services, including, but not limited to, warranties of merchantability, fitness for a particular purpose and non-infringement; (ix) to the fullest extent permitted by law, Hostinger shall not be liable for any damages arising from your use of Beta Services.
+Services language
+. The Services do not support all local languages. If a local language is not supported, then the Service will default to English only. Use of the Services in local language (other than English) or in a certain country may limit certain features or functionalities, including those provided by third parties (e. g. payment methods).
+6. GENERAL RULES OF CONDUCT
+1. The Site and the Services are intended for your commercial or professional use. By utilizing them, you acknowledge and agree that your purpose is commercial or professional in nature.
+2. You agree to use this Site and the Services in full compliance with the Agreement.
+3. You shall not collect or harvest (or permit anyone else to collect or harvest) any Customer Content (as defined below) or any non-public or personally identifiable information about another Customer or any other person or entity without their prior written consent.
+4. You are prohibited from using this Site or the Services in a manner (as determined by Hostinger in its sole and absolute discretion) that:
+is illegal, promotes or encourages illegal content, activity, products or services (regardless of their form);
+promotes, encourages or engages in child pornography or the exploitation of children;
+promotes, encourages or engages in terrorism, war, violence or hatred against people,  property or animals, or self harm;
+promotes, encourages, or engages in fraud and deception, including fake accounts, identity or account theft, data theft, or pyramid schemes;
+engages in online harassment, bullying, stalking, or other forms of abusive or intimidating behavior targeting any person or entity;
+promotes, encourages or engages in any computer or network hacking or cracking;
+promotes, encourages or engages in the (i) sale or distribution of prescription medication without a valid prescription and (or) license; (ii) illegal wildlife trade;
+infringes on the intellectual property rights or other proprietary rights of another Customer or any other person or entity, or links to content hosted on third-party sites or servers that infringe such rights;
+violates the privacy or publicity rights of another Customer or any other person or entity, or breaches any duty of confidentiality that you owe to another Customer or any other person or entity;
+is not allowed in a specific jurisdiction, such as:
+(1) Indonesia: (i) Ponzi, pyramid scheme and other forms of fraud; (ii) phishing, auto likes, auto bots and the like; (iii) pornography, SARA, insults and violations of general decency;
+(2) India: threatens the unity, integrity, defense, security or sovereignty of India, friendly relations with foreign States, or public order, or causes incitement to the commission of any cognisable offense or prevents investigation of any offense or is insulting other nations;
+engages in or instigates actions that cause harm to Hostinger or any other person. Such actions include, but are not limited to, actions resulting in blacklisting any of Hostinger IPs by any online spam database or actions resulting in DDOS attacks to any servers;
+contains or installs any viruses, worms, bugs, Trojan horses, Cryptocurrency Miners or other code, files or programs designed to, or capable of, using many resources, disrupting, damaging or limiting the functionality of any software or hardware;
+interferes with the operation of this Site or the Services found at this Site;
+contains false or deceptive language, misinformation, disinformation or unsubstantiated or comparative claims (including regarding Hostinger or Services).
+5. You agree to back-up all of your Customer Content, including email content, so that you can access and use it when needed. You are solely responsible for backing up your data in all circumstances. Hostinger does not warrant that it backs-up any Account or Customer Content and you accept the risk of loss of any and all of your Customer Content.
+6. You shall not re-sell or otherwise exploit for commercial purposes any of the Services (or portion thereof), including any of Hostinger’s related technologies, without Hostinger's express prior written consent.
+7. If you use Hostinger's APIs or automation tools, you are responsible for: (i) keeping your API keys or tokens confidential; (ii) rotating API keys periodically or as required by Hostinger; (iii) ensuring that scripts or tools interacting with Hostinger services follow our security recommendations and are used only for authorized purposes.
+8. You are solely responsible for any third-party services, applications, software, code, scripts, plugins, APIs, tools or similar technologies that you install, connect, access or otherwise use in connection with the Services. You must ensure that such third-party technologies are secure and used in compliance with applicable laws and this Agreement.
+7. COMPLIANCE WITH LAWS
+Hostinger makes no representation or warranty that the content or Services available on this Site are appropriate or permitted in every country or jurisdiction. Your use of this Site or the Services from countries or jurisdictions where its content is illegal is prohibited.
+By accessing this Site or using the Services, you agree to be solely responsible for complying with all applicable local, state, national and (or) international laws, rules and regulations.
+8. CUSTOMER CONTENT AND CUSTOMER FEEDBACK
+Some of the features of this Site or the Services may allow Customer to view, post, publish, share, store, or manage (a) ideas, opinions, recommendations, or advice (“
+Customer
+Feedback
+”), b) materials created, developed, provided, uploaded, linked or displayed by the Customer in connection with the Services, regardless whether such materials were created by the Customer or third parties. This includes any designs, images, photos, animations, videos, audio files, fonts, logos, illustrations, compositions, artworks, code, algorithms, SPIs, APIs, databases, interfaces, text, literary works (“
+Customer Content
+”).
+You are solely responsible for any and all Customer Content and Customer Feedback and any transactions or other activities related thereof conducted on or through the Account. By posting or publishing Customer Content or Customer Feedback to this Site or to the Services, you represent and warrant to Hostinger that (i) you have all necessary rights, licenses, consents, and (or) permissions to distribute Customer Content or Customer Feedback in such manner, either as the author or with appropriate written authorization from the rights holder, and (ii) the Customer Content or Customer Feedback does not violate the rights of any third party. Customers shall be solely responsible for any and all consequences (including any damages) and requirements for using Customer Content or  Customer Feedback.
+Customer Content.
+As between Hostinger and you, you shall own all intellectual property rights pertaining to your Customer Content. By posting or publishing Customer Content to this Site or through the Services, you grant Hostinger a limited license to use the intellectual property and other proprietary rights in and to your Customer Content as necessary to operate, improve and promote the Services, consistent with the purpose of this Site and Agreement. This includes a worldwide, non-exclusive, royalty-free, sublicensable (through multiple tiers), and transferable license to use, reproduce, distribute, prepare derivative works of, combine with other works, display, and perform your Customer Content in connection with this Site, the Services and Hostinger’s (and Hostinger’s affiliates’) business(es), including for promoting and redistributing all or part of this Site or Services in various media formats and through any media channels without any additional obligations, consents or prior notices to you or any third party.
+The above licenses granted by you in your Customer Content terminate within a commercially reasonable time after you remove or delete your Customer Content from this Site. The above licenses granted by you in your Customer Content are perpetual and irrevocable. You also understand and agree that Hostinger may retain and use any Customer Content that has been incorporated into any derivative works as allowed pursuant to this Agreement. Notwithstanding anything to the contrary contained herein, Hostinger shall not use any Customer Content that has been designated “private” or “password protected” by you for the purpose of promoting this Site or Hostinger’s (or Hostinger’s affiliates’) business(es).
+Customer Feedback.
+You acknowledge and agree that: 1) your Customer Feedback is entirely voluntary; 2) your Customer Feedback is not confidential or obligate Hostinger to treat it as confidential or secret; 3) Hostinger has no obligation, either express or implied, to develop or use your Customer Feedback, and no compensation is due to you or to anyone else for any intentional or unintentional use of your Customer Feedback; 4) Hostinger may already be working on similar ideas, may have received similar feedback from others, may develop similar ideas on its own, or may take other actions related to similar content. Hostinger shall own exclusive rights (including all intellectual property and other proprietary rights) to any Customer Feedback and shall be entitled to the unrestricted use and dissemination of any Customer Feedback for any purpose, commercial or otherwise, without acknowledgment or compensation to you or to anyone else.
+9. HOSTINGER CONTENT
+Hostinger Content ownership
+. Except for Customer Content, the content on this Site and the Services, including the data, text, software, scripts, source code, APIs, computer code (including HTML), applications, graphics, photos, sounds, music, videos, interactive features, artwork, website templates, themes and widgets, literary works, designs, animations, interfaces, derivatives, versions, methods, products, algorithms, advertising and acquisition tools and methods, inventions, trade secrets, logos, domains, customized URLs, trademarks, service marks, trade names, and other proprietary identifiers, whether or not registered and (or) capable of registration, as well as any other copyrightable materials contained on this Site and within the Services (“
+Hostinger Content
+”), are owned by or licensed to Hostinger. Hostinger Content is protected by copyright laws.
+Hostinger Content usage
+. Hostinger Content is provided to you “
+as is
+”, “
+as available
+” and “
+with all faults
+” for your information and personal, non-commercial use only and can not be downloaded, copied, reproduced, distributed, transmitted, broadcast, displayed, sold, licensed, or otherwise exploited for any purpose without the express prior written consent of Hostinger. No right or license under any copyright, trademark, patent, or other proprietary rights is granted under this Agreement. Hostinger reserves all rights not expressly granted in the Hostinger Content, this Site and the Services, and this Agreement does not transfer ownership of any of these rights. However, Hostinger hereby grants to the Customer a non-exclusive, non-transferable, non-sublicensable, fully revocable, limited license to use the Hostinger Content solely to generate and display websites through Services provided by Hostinger, solely as expressly permitted under this Agreement, and solely within the relevant Services. For the avoidance of doubt, if certain Hostinger Content is provided (bundled) with certain Services’ plan, the Customer is allowed to use such Hostinger Content only within that plan.
+Security restrictions
+. You agree not to bypass or interfere with any security-related features of this Site or the Services. This includes any features that protect or limit the use or copying of any content on the Site, whether it’s Customer Content or Hostinger Content.
+10. MONITORING OF CUSTOMER CONTENT AND CONSEQUENCES OF INAPPROPRIATE CONTENT
+By using this Site and (or) any Service, you agree not to make available or accessible any illegal content or content that is incompatible with or violates the Agreement. Hostinger generally does not pre-screen Customer Content (whether posted to a website hosted by Hostinger or posted to this Site). However, Hostinger reserves the right (but undertakes no duty) to do so and decide whether any item of Customer Content is appropriate and (or) complies with this Agreement.
+In cases where (as determined by Hostinger in its sole and absolute discretion) (i) you make available or accessible any material in violation of this Agreement or (ii) you otherwise violate this Agreement, or (iii) Hostinger has a reason to believe that you are a repeat offender, Hostinger may apply certain restrictions at any time and without prior notice.
+Hostinger may apply the following restrictions:
+(i) to remove any item of Customer Content, and (or)
+(ii) to suspend or terminate Customer’s access to this Site, Account, Services, and (or)
+(iii) to suspend or terminate the Account or Services (all or any part thereof).
+If Hostinger applies the abovementioned restrictions, Hostinger may, in its sole and absolute discretion, remove and destroy any data and files (including back-up copies) stored by you on its servers, and has no obligation to provide you with such data and files.
+You also acknowledge that such violations might be reported by Hostinger to relevant authorities (including to law enforcement) as determined by Hostinger in its sole discretion.
+11. EUROPEAN UNION DIGITAL SERVICES ACT (“DSA”) SUPPLEMENTAL TERMS
+This section sets out provisions, processes and disclosures that supplement the rest of the Agreement, as required under the DSA. DSA regulates the provision of certain digital intermediary services provided in the European Union (“
+EU
+”).
+These provisions only apply to you if you are in the EU and (or) if you are using the Site or Services falling within the scope of the DSA. For the avoidance of doubt, other provisions of the Agreement are applicable to you in full extent. In the event of any conflict between the provisions set out in this section and the other provisions of the Agreement, the terms of this section shall prevail.
+Rules of conduct
+. Customers are prohibited from hosting, providing, publishing or transmitting the Customer Content or otherwise engaging in any activity, which are incompatible with or violates this Agreement or any applicable laws in the EU or in any EU country, ("
+Illegal Content
+").
+Content moderation
+overview
+. Hostinger, in its sole discretion, reserves the right to determine whether the Services are being used in relation to Illegal Content.
+Hostinger may voluntarily take action against any Illegal Content. Hostinger may also receive notices through the Notice and Action Mechanism (described below) and (or) orders from EU authorities reporting the presence of alleged Illegal Content. Hostinger will process such orders and notices, and take necessary actions and (or) restrictions based on the available and received information and requirements of the DSA.
+Upon becoming aware of the Illegal Content, Hostinger may enforce the restrictions mentioned in this section below or implement any other required restrictions and (or) actions. Hostinger shall be considered to have awareness of the Illegal Content where a submitted notice allows identification of the Illegal Content without the need of a detailed legal examination.
+Notice and Action Mechanism and unfounded notices
+. Any person may report to Hostinger the presence, on this Site or on any Service, of content that it considers to be illegal in the EU or any EU country through the mechanism accessible
+here
+(“
+Notice and Action Mechanism
+”). Depending on the nature of the Service concerned by the notice, the way Hostinger processes and addresses such notice may differ.
+If any person frequently provides manifestly unfounded notices through the Notice and Action Mechanism, Hostinger may suspend the processing of such notices. While evaluating such situations, Hostinger considers relevant facts and circumstances, which may include the volume of manifestly unfounded notices submitted within a certain period, the seriousness and (or) the impact of such behavior, etc. A notice may for instance be considered as manifestly unfounded if it is evident that it does not relate to Illegal Content and instead refers solely to personal and (or) subjective considerations.
+EU Authorities orders.
+If you are an EU or EU country authority, please submit the orders by sending them to the email
+abuse@hostinger.com
+.
+Measures and tools for review.
+Notices and orders, as well as actions taken in response thereto, if any, are generally subject to human review. However, Hostinger may also use some automated tools that help to process certain notices and orders, as well as to apply restrictions (e.g. suspension of Services). For notices from trusted flaggers indicating Illegal Content within the Services, automated systems will initiate immediate Services suspension. While direct human review is generally not required for these specific automated responses, all such actions remain subject to internal oversight.
+Hostinger may also take preemptive action against the Account and (or) the Services (all or any part thereof), where we have determined, in our sole discretion, that they are being registered and (or) used for the purpose of abuse or fraud. We may use automated tools to identify high-risk Accounts and (or) Services and automate decisions such as suspension or cancellation thereof. We regularly review any and all automated / partially automated decisions of anti-abuse and anti-fraud tools to ensure they are applied in an objective, consistent and accurate manner.
+Internal complaint-handling system.
+If you disagree with any content moderation decision by Hostinger, you may lodge a complaint electronically through email at
+compliance@hostinger.com
+. Hostinger handles all complaints in a timely, non-discriminatory, diligent, and non-arbitrary manner, with decisions supervised by qualified staff.
+Point of contact.
+If you have any questions or queries about this section or any other DSA-related matters, you can contact us by email at
+compliance@hostinger.com
+.
+12. NO SPAM POLICY
+We prohibit the transmission of spam through our Services and monitor all traffic to and from our servers for signs of spamming. Spam includes unsolicited commercial or bulk messages sent via email, SMS, instant messaging or other channels without recipient’s prior consent to receive such communications (regardless of the personal identity and context of the recipient being relevant for the message or not). In order to use our Services, you must abide by all applicable laws and regulations, including the laws implementing ePrivacy Directive (Directive 2002/58/EC) or CAN-SPAM Act of 2003. This includes, as applicable, requirements that (i) commercial advertising and (or) bulk communication may only be sent to recipients who have “opted-in” to receive such messages; (ii) messages include a legitimate return address and reply-to address, the sender's physical address, and (iii) an opt-out method is provided in the message. Upon request by us, conclusive proof on compliance with applicable requirements may be required.
+When evaluating your compliance with our no spam policy chapter and the Agreement, we are entitled to examine various factors, including recipients' reactions to the messages received (e.g. number of messages marked as spam), sender profile verification and authentication, behavioral indicators and sending patterns, domain and IP reputation checks. Also, for this purpose, we reserve the right to view and otherwise use the content and metadata associated with the messages.
+If we determine, in our sole and absolute discretion, that the Customer has violated no spam policy chapter and (or) provisions of the Agreement, we have a right to suspend any related Services. In very limited cases, the Services may be restored subject to our decision (e.g. in cases where the violation was isolated) and the Customer shall be deemed to undertake to cease any spam activities.
+In the event we determine, in our sole and absolute discretion, that the violation is manifestly abusive or has not stopped or repeated after Services have been restored the first time, we may, in our sole and absolute discretion, terminate the Services related to spam activities and (or) immediately terminate any Account, which is connected with any spam activities.
+We encourage all recipients of messages generated from Services to report suspected spam. Suspected abuse can be reported by email
+abuse@hostinger.com
+.
+13. ARTIFICIAL INTELLIGENCE (AI) SERVICES
+Hostinger may provide you with access to artificial intelligence and machine learning tools and products to assist in building and managing your website, generating content, enhancing other aspects of your online presence or performing any other actions instructed by you (“
+AI Services
+”). This section applies only to the extent that AI Services are used by you as part of the Hostinger Services.
+Input and Output.
+The AI Services enable you to input, provide, or submit prompts, instructions, URLs, or other materials (in the form of text, image, or otherwise) (“
+Input
+”) into the AI Services for processing, and thus direct the AI Services to generate the content, designs, other assets, or perform certain actions in response to your Input (“
+Output
+”). The Input submitted by you and the Output generated through the AI Service are considered Customer Content. Hostinger does not claim any ownership rights in the Output to the extent that the Output does not contain any preexisting intellectual property owned by Hostinger.
+Output accuracy
+. You are solely responsible for reviewing the Output for accuracy, bias or intellectual property rights clearance. You should not rely on Output from our Services as a sole source of truth or factual information, or as a substitute for professional advice. Hostinger does not guarantee that Output will be unique, original, or free from third-party intellectual property claims.
+By using the AI Services,
+you acknowledge and agree that
+:
+(i) you are solely responsible for ensuring that any Input and Output complies with all applicable laws, including any intellectual property and privacy laws, and does not infringe any third party rights;
+(ii) you are fully responsible for the Inputs you provide to the AI Services, the Outputs generated by it, and any actions taken based on those Outputs;
+(iii) you understand the nature and limitations of Outputs and assume all risks associated with using the AI Services;
+(iv) Hostinger makes no representations or warranties regarding the legality, originality, accuracy, or non-infringement of any Output. You should conduct an independent review and due diligence before using, distributing, or commercializing any Output;
+(v) you authorize Hostinger to store and use Input and Output for the purposes of providing you with the Services, to develop and improve the Services, including as part of the design, training and development process for machine learning models.
+(vi) AI Services may perform certain actions (operations or tasks) based on your instructions provided in the Input. Depending on the capabilities of the AI Services, such actions may include interacting with the Services, your Account, Customer Content, or third-party systems, tools, integrations, or services connected to your Account or the Services, as well as accessing, modifying, organizing or otherwise managing content, data, settings, configurations, or performing other interactions;
+(vii) AI Services may interpret your Input and determine how to perform the requested action. You are solely responsible for reviewing and managing any actions performed through the AI Services affecting your Services, Account, Customer Content, or connected integrations.
+14. ADDITIONAL RESERVATION OF RIGHTS
+Hostinger expressly reserves the right to deny, cancel, terminate, suspend, lock, or modify (including access to or control of) any Account and (or) Services (including the right to cancel or transfer any domain name registration) for any reason (as determined by Hostinger in its sole and absolute discretion), including the following:
+(i) to correct mistakes made by Hostinger in offering or delivering any Services;
+(ii) to protect the integrity and stability of, and correct mistakes made by, any domain name registry or registrar;
+(iii) to support our fraud and abuse detection and prevention efforts, as well as to prevent activities that threaten the stability of our network and (or) servers;
+(iv) to comply with: (a) courts’ or authorities’ orders against you and (or) the Services used by you, and (or) any other requests, including subpoena request; (b) any dispute resolution process (including defence of any legal action or threatened legal action, regardless of whether such action is ultimately determined to have merit); (c) applicable local, state, national and international laws, rules and regulations;
+(v) to avoid any civil or criminal liability on the part of Hostinger, its officers, directors, employees and agents, as well as Hostinger’s affiliates;
+(vi) to mitigate risk of damage to Hostinger’s business, operations and reputation.
+Harassment policy
+. Hostinger expressly reserves the right to terminate and (or) suspend (including access to or control of), without notice to you, Account and (or) any and all Services, if, in Hostinger's sole discretion, you are harassing or threatening Hostinger and (or) any of Hostinger's employees.
+Customer Success team rights
+. Hostinger expressly reserves the right to access, edit and (or) in any other way modify your Account and (or) Services (or any part thereof), including Customer Content, in order to assist you when you reach out to the Customer Service via live chat, email or ticketing system or any other way described and (or) available on the Site.
+Operational Oversight
+. Hostinger also reserves the right, but undertakes no duty, to review use of the Services and (or) Account activity for any activity that may pose a risk to Hostinger and (or) Hostinger’s systems. Hostinger also may review, adjust the configurations of, and (or) change the settings of any Services and (or) Account, including the settings of any hosted environment, that Hostinger believes, in its sole and absolute discretion, may pose a risk to Hostinger, Hostinger’s systems, or any of its environments.
+15. LINKS TO THIRD-PARTY WEBSITES
+This Site and the Services may include (through hyperlinks, banner advertising or otherwise) links to third-party websites that are not owned or controlled by Hostinger (“
+Linked Sites
+”). Hostinger assumes no responsibility for the content, terms and conditions, privacy policies, or practices of any Linked Sites and does not monitor or modify their content. By using this Site or the Services, you expressly release Hostinger from all liability arising from your use of any Linked Sites. We encourage you to review the terms and privacy policies of any Linked Sites you visit. Unless otherwise described on the Site, the existence of any links to Linked Sites does not constitute endorsement of such websites, their content, or their services and (or) products.
+16. FEES, PAYMENTS, REFUNDS AND AUTO-RENEWAL
+General terms.
+You agree that your Payment Method (as defined below) will be charged by one of Hostinger group companies (HOSTINGER BRASIL HOSPEDAGEM DE SITES LTDA (Brazilian entity); HOSTINGER PTE LTD (Singapore entity); HOSTINGER INTERNATIONAL LIMITED (Cyprus entity); PT WEB MEDIA TECHNOLOGY INDONESIA (Indonesia entity); HOSTINGER UK LIMITED (United Kingdom entity); HOSTINGER US INC. (USA entity) and (or) any other Hostinger group entity, which is not listed herein) in the course of purchasing Services.
+All our paid Services are provided on a subscription basis, unless indicated otherwise. You choose the period of Services and the Payment Method yourself when you purchase the Services. After your chosen first subscription period ends, the provision of Services will be auto-renewed for an additional (subsequent) subscription period (as described below in these Terms of Service). By purchasing Services on a subscription basis (e.g., monthly, annually, or otherwise) and submitting your payment-related information to make a purchase of the Services, you explicitly agree and consent that (i) Services will be auto-renewed until you disable auto-renewal feature, and (ii) you are authorizing recurring payments.
+By purchasing our Services, you agree to provide accurate, complete and up-to-date all requested information and (or) documents (including personal and payment-related information, as well as information required for tax exemptions (such as VAT/GST number, etc.)), as well as you confirm that you are the rightful owner of such provided information and (or) documents or have the necessary rights and permissions to provide it. You also agree to maintain accuracy and completeness of this information throughout your use of Services. Please note that once an invoice is issued based on details then available in your Account, it is considered as final and cannot be changed.
+As a general rule, requests and (or) claims related to payments made for the Services (including refunds) will be handled only if they are provided not later than within 30 (thirty) calendar days of the date of purchase of the Service, unless applicable laws provide otherwise.
+Fees and payment of fees
+. You agree to pay any and all fees due for Services at the time you order the Services. The total amount of fees for a specific (selected by you) Services period shall be charged and paid by you upfront, unless otherwise specified on this Site (e.g., description of Services, etc.).
+All fees (posted at this Site) for Services are exclusive of applicable taxes. Nevertheless, you agree that we may calculate, add and charge taxes (including value added tax and goods and services tax), duties and (or) other fees under laws applicable to you and (or) based on your bank and (or) the country indicated in your Account at the time of purchase (including renewal) of Services. You are responsible for all taxes, duties and fees levied on Services.
+Prior to the purchasing and (or) renewing Services, we may initiate a pre-authorization transaction on your payment card provided as Payment Method. A nominal amount may be temporarily charged to validate the status of your payment card. Upon successful verification, this amount will be promptly reversed and will not reflect as a permanent transaction on your bank account. This practice helps ensure uninterrupted access to our Services and confirms the ongoing validity of your payment card (as Payment Method) for future billing cycles.
+If for any reason Hostinger is unable to charge Payment Method linked to your Account for the full amount owed for the Services, or if Hostinger receives notification of a chargeback, reversal, payment dispute, or is charged a penalty for any fee it previously charged to your Payment Method, you agree that Hostinger may pursue all available lawful remedies in order to obtain payment, including immediate cancellation, termination or suspension, without notice to you, of any Services in your Account. In such a case, suspension, termination or cancellation of the Services could result in a loss of access to and use of your Services and (or) Account.
+Hostinger also reserves the right to charge you reasonable “administrative fees” or “processing fees” for (i) tasks Hostinger may perform outside the normal scope of its Services, and (or) (ii) additional time and (or) costs Hostinger may incur in providing its Services, and (or) (iii) your non-compliance with Agreement (as determined by Hostinger in its sole and absolute discretion). Typical “administrative fees” or “processing fees”  include, but are not limited to (i) Customer Service issues that require additional personal time or attention; (ii) UDRP action(s) in connection with your domain name(s) and (or) disputes that require accounting or legal services, whether performed by Hostinger staff or by third parties retained by Hostinger, and (or) (iii) recouping any and all costs and fees, including the fees for Services, incurred by Hostinger as the result of chargebacks or other payment disputes brought by you, your bank or payment service provider. These “administrative fees” or “processing fees” will be charged to the Payment Method linked to your Account.
+Hostinger may offer Service-level pricing in various currencies. However, payment processing is supported by currencies displayed on this Site ("
+Supported Currency
+"). If the currency selected is a Supported Currency, then the payment will be processed in the Supported Currency and the fees displayed during the checkout process will be the actual amount processed and submitted to your bank for payment. If the currency selected is not a Supported Currency, then the payment will be processed in USD or EUR and the fees displayed during the checkout process will be an estimated conversion price at the time of purchase. In either case (whether the currency selected is a Supported Currency or not), if the payment is processed in a currency that differs from the currency of your bank account, you may be charged exchange rate conversion fees by your bank.
+In addition, due to time differences between (i) the time you complete the checkout process, and (ii) the time the payment is processed, and (iii) the time the payment posts to your bank statement, the conversion rates may fluctuate and Hostinger makes no representations or warranties that (i) the amount submitted to your bank for payment will be the same as the amount posted to your bank statement (in the case of Supported Currency) or (ii) the estimated conversion price will be the same as either the amount processed or the amount posted to your bank statement (in the case of non-Supported Currency), and you agree to waive any and all claims based upon such discrepancies (including any and all claims for a refund based on the foregoing).
+Change of fees
+. Hostinger expressly reserves the right to change or modify its fees (including Services’ renewal fees displayed at this Site at the time of your first purchase) for Services at any time, and such changes or modifications shall be posted online at this Site or otherwise communicated to you and shall be effective once the Services in question come up for renewal as further described below, without need for further notice to you. You accept the new fees by continuing to use the Services after the changes or modifications take effect.
+Payment methods
+. Except as prohibited in any applicable (Service-specific) agreement, you shall pay for Services by utilizing any of the valid and eligible payment methods specified
+here
+or via credits in Hostinger Balance, if applicable (each individually “
+Payment Method
+” and collectively “
+Payment Methods
+”).
+Your Payment Method linked to your Account must be kept valid at all times if you have any active Services in your Account. By adding Payment Method to your Account, you (i) represent that Payment Method you use is yours or that you are specifically authorized by its owner to use it for the purchase of Services and that any payment-related information you provide to Hostinger is true and accurate, and (ii) authorize Hostinger to charge the Payment Method(s) linked to your Account, and (iii) authorize Hostinger to charge you for any paid Services you chose when making a purchase.
+Once you click the “Complete Payment” button in respect of the Payment Methods linked to your Account that offer the “Complete Payment” option, you will automatically place the order for chosen Services and such Payment Method linked to your Account will be charged. Confirmation of that order will be sent to the email address indicated in your Account.
+Auto-renewal
+. In order to ensure that you do not experience an interruption or loss of Services, all Services include an auto-renewal feature, unless otherwise specified on the Site. Auto-renewal automatically renews the applicable Services at the end of each subscription period for a subsequent subscription period, the length of which is equal to the most recent subscription period before renewal or
+the initial subscription period (when the Services were purchased at the first time), or any shorter subscription period of the applicable Services, which at that time is available for purchase on this Site.
+While the settings (Charge Date, etc.) for auto-renewal depend on the type of Services and length of subscription period, auto-renewal is a default setting. Therefore, unless you disable the auto-renewal before the renewal payment is charged (“
+Charge Date
+”), Hostinger will automatically renew the applicable Services when it comes up for renewal and will charge the Payment Method linked to your Account at then-current fees for relevant Services. You acknowledge and agree that such fees may be higher or lower than the fees for the initial subscription period and (or) most recent subscription period before renewal.
+Charge Date depends on the type of Services and length of subscription period. In any case, Hostinger charges the Payment Method linked to your Account before (e. g., from 30 (thirty) to 0 (zero) calendar days before) the end of the current subscription period. If we cannot charge the renewal payment at the scheduled Charge Date, we may make additional attempts to charge your Payment Method(s) linked to your Account until the current subscription period ends.
+We have the right, but not an obligation, to inform you via email about the upcoming auto-renewal before the Charge Date (e.g., Customers having subscriptions for 1 (one) month period will not be informed).
+For auto-renewal, you always need to have one Payment Method added to your Account that is designated as default. You can also add an additional Payment Method(s) to your Account that, you consent, can be charged by Hostinger automatically if your default Payment Method does not work for some reason in order to ensure that your Services keep running.
+In order to check the auto-renewal settings applicable to you and your Services, simply log into your Account. You may enable or disable the auto-renewal at any time (instructions on how to disable automatic renewal are
+here
+).
+However, should you disable the auto-renewal and fail to manually renew your Services before the end of the then-current subscription period, your Services will terminate upon expiration of the then-current subscription period. You acknowledge and agree that it is your sole responsibility to modify and maintain your Account settings, including (i) setting your renewal options, and (ii) ensuring your Payment Method(s) are current and valid, and agree that your failure to do so may result in the interruption or loss of Services, and Hostinger shall not be liable to you or any third party regarding this.
+In addition, Hostinger may participate in “account updater services or programs” supported by your payment card provider (and ultimately dependent on your issuing bank’s participation). If you are enrolled in an auto-renewal and we are unable to successfully charge your payment card (as Payment Method), your payment card provider (or your bank) may notify us of updates to your payment card details. In accordance with “account updater services or programs” requirements, in the event that we are notified of the updates to your payment card details, we reserve the right (but have no obligation) to update your payment card (as Payment Method) in your Account automatically on your behalf. Hostinger makes no guarantees that it will request or receive updated payment card details.
+Refunds
+. All fees for Services are non-refundable (even if your Services are suspended, terminated or restricted in any other manner, or transferred prior to the end of the Services’ subscription period), unless otherwise expressly specified in the Refund Policy.
+All requests for refunds will be handled only if they are provided in accordance with terms and conditions of Refund Policy, which includes Services available for refund.
+You acknowledge and agree that in a case where refunds are issued to your Payment Method, Hostinger's issuance of a refund invoice is the only confirmation that Hostinger has submitted your refund to the Payment Method charged at the time of the purchase and that Hostinger has absolutely no control over when the refund will be applied towards your Payment Method. You further acknowledge and agree that the Payment Method and (or) payment service provider and (or) bank associated with your Payment Method establishes and regulates the time frames for posting your refund.
+In the event a refund is issued to your Payment Method and the Payment Method and (or) payment service provider and (or) bank associated with your Payment Method imposes any limitations on refunds (including limitations as to the timing of the refund or the number of refunds allowed), then Hostinger, in its sole and absolute discretion, reserves the right to issue the refund in the form of credits in Hostinger Balance.
+Hostinger also has the right, but not the obligation, to offer the credits in Hostinger Balance for Customers seeking refunds even if there are no above-described limitations on refunds. For the avoidance of doubt, any and all refunds processed via the issuance of credits in Hostinger Balance are made at sole Hostinger’s discretion and are not mandatory upon the Customer’s request.
+Alternative Payment Methods
+. Hostinger offers a variety of alternative payment methods through a variety of international payment service providers (“
+IPSP
+”). In the event you select an IPSP, you represent that you have already agreed to any and all of the IPSP’s applicable agreements prior to completing your purchase of Services.
+You also agree to allow the IPSP to debit the full amount of your purchase of Services from the selected bank account, e-wallet account (including payment card(s), bank account(s) or other allowed payment method(s) linked to your e-wallet account) or any other type of account associated with the selected IPSP (including, but not limited to prepaid cards and mobile payments) (collectively “
+Funding Sources
+”).
+In addition, you agree to allow the selected IPSP to debit, if applicable, an exchange rate conversion fee, as well as any other fees or charges applicable in accordance with your agreements with IPSP (collectively “
+IPSP Fees
+”) from your Funding Sources. You understand and agree that IPSP Fees are subject to change at any time by the IPSP without notice to you by Hostinger.
+It is your responsibility to keep your Funding Sources current and funded. You acknowledge and agree that the IPSP reserves the right to decline a payment for any reason (including payments that fail to go through as a result of your Funding Sources no longer existing or not holding available and (or) sufficient funds) and, in such event, neither IPSP nor Hostinger shall be liable to you or any third party regarding the same.
+You acknowledge that Hostinger will not provide the Services purchased by you until Hostinger receives confirmation of full payment for Services from the IPSP through its associated payment service provider. You acknowledge and agree that there may be a gap of time between the time you place an order and the time the IPSP confirms payment through its associated payment service provider. If Hostinger does not receive confirmation of payment from the IPSP through its associated payment service provider within 14 (fourteen) calendar days from the order placement date, your order may be cancelled, at which time you will need to commence the purchase of Services process again.
+In the event that you would like to cancel payment for a pending order, you may cancel the order through your Account. Payments received for such cancelled orders will be automatically issued as credits in Hostinger Balance.
+If at the time Hostinger receives confirmation of payment from IPSP (through its associated payment service provider) either (i) the Services (including domain names) are no longer available for purchase, or (ii) a pending order has been cancelled in our systems, or (iii) the amount indicated in the confirmation of payment does not match the amount of the pending order, and as a result of any of the above circumstances your purchase is either over-funded or under-funded, Hostinger may automatically issue a partial refund for an overpaid amount (in the case of over-funding) or a full refund (in the case of under-funding) as credits in Hostinger Balance.
+You acknowledge and agree that the IPSP reserves the right not to refund IPSP Fees associated with a refunded transaction. Accordingly, any refunds issued by Hostinger will be net of the IPSP Fees.
+Hostinger Balance
+. You can verify your available credits in Hostinger Balance at any time by logging into your Account. In the event that your Account contains credits in Hostinger Balance, you may apply any available credits in Hostinger Balance to any future purchase in your Account. Credits in Hostinger Balance will be applied based on the currency selected at the time of purchase or renewal of Services.
+You acknowledge and agree that credits in Hostinger Balance available in your Account (i) are non-transferrable and they may only be used in the Account, in which they were acquired, and (ii) will be held by Hostinger and they will not accrue and Hostinger will not pay any interest for your benefit, and (iii) may expire. Credits in Hostinger Balance will expire after 2 (two) years from their issuance. In the event that your Account is terminated, you acknowledge and agree that any remaining available credits in Hostinger Balance will be forfeited.
+In the event that your Account contains credits in Hostinger Balance, you hereby authorize Hostinger to utilize any available credits in Hostinger Balance to any outstanding fees (including for the purpose of charging auto-renewal payment for Services) related to your Account and (or) Services.
+Regardless of the amount of credits in Hostinger Balance available in your Account, Hostinger is not responsible for the loss of Services resulting from an inability to collect fees for Services from your Payment Method(s) and (or) credits in Hostinger Balance.
+17. PRODUCT SPECIFIC TERMS AND THIRD-PARTY PRODUCTS
+Dark Web Monitor service.
+By using Dark Web Monitor service you acknowledge that this Service scans publicly available information and that there is no guarantee that (1) the information we find will always be correct and (or) up-to-date; (2) we will be able to detect all and any instances where your personal information may have been compromised. The results of the Service are information only and you are solely responsible for actions taken or not taken in response to detected information and (or) alerts.
+Third-party services and (or) products.
+By ordering or using third-party services and (or) products through us, you acknowledge and agree to comply with the terms of service and other documentation of the respective third-party service providers listed below:
+Titan Email -
+https://support.titan.email/hc/en-us/categories/360002617913-Legal
+nexos.ai credits -
+nexos.ai Terms of Use
+and
+nexos.ai Privacy Policy
+. You acknowledge and agree that nexos.ai services are operated and provided by spectra tech, UAB. Hostinger acts solely as a reseller of nexos.ai credits, facilitating their purchase, activation and (or) use with Hostinger services, and is not responsible for the operation of the nexos.ai service. The consumption of credits is determined following principles provided
+here
+. nexos.ai credits may have limitations, including expiration or usage restrictions, as communicated to you. Any unused expired credits, if any, are not converted into monetary value.
+Oxylabs AI Studio credits -
+Oxylabs AI Studio Terms of Service
+and
+Oxylabs Privacy Policy
+. You acknowledge and agree that AI Studio services are operated and provided by Oxylabs, UAB. Hostinger acts solely as a reseller of Oxylabs AI Studio credits, facilitating their purchase, activation and (or) use with Hostinger services, and is not responsible for the operation of the AI Studio service. The consumption of credits is determined following  principles provided
+here
+. Oxylabs AI Studio credits may have limitations, including expiration or usage restrictions, as communicated to you. Unused expired credits, if any, are not converted into monetary value.
+18. SERVICE CHANGES AND DISCONTINUATION
+Hostinger reserves the right to change, cease offering or providing any Service (or any part thereof) at any time, with or without prior notice. While Hostinger strives to maximize the lifespan of its Services, some Services may be discontinued or reach their End-of-Life ("
+EOL
+"), after which they will no longer be provided and (or) supported.
+If a Service reaches or will reach EOL, we will attempt to notify you at least 30 (thirty) days in advance of the EOL date. You are fully responsible for migrating to a new Service or ceasing reliance on the discontinued Service before the EOL date. At our sole discretion, we may offer a comparable Service to migrate to for the remainder of your Service term or provide a prorated in-store credit, or issue a prorated refund.
+Hostinger may, with or without notice, migrate you to the most up-to-date version of the Service, if available. You assume full responsibility for (i) ensuring compatibility and (ii) any loss or damage arising from such migration.
+19. DISCLAIMER OF REPRESENTATIONS AND WARRANTIES
+You specifically acknowledge and agree that your use of this Site, the Services and the services provided on Linked Sites shall be at your own risk and that they are provided “AS IS”, “as available” and “with all faults”.
+Hostinger, its affiliates, all third-party service providers and each of their officers, directors, successors, employees and agents disclaim all statutory, express or implied warranties (including any warranties of title, availability, quality, merchantability, fitness for a particular purpose and non-infringement; also, those warranties that could be needed or perceived as needed to provide the Services in a manner allowing the Customer to comply with any legal acts or orders applicable to the Customer) and make no representations or warranties (and assume no liability or responsibility) for any of the following:
+(i) the accuracy, completeness, reliability or content of this Site, Services and (or) any Linked Sites;
+(ii) Customer’s ability to use the Site, Services and (or) the Linked Sites at times or location of their choosing;
+(iii) that the Services are compatible with any third-party service and (or) software (even if such third-party claims, represents or warrants that such service and (or) software is compatible with the Services).
+In addition, you specifically acknowledge and agree that no oral or written information or advice provided by Hostinger, its affiliates, all third-party service providers and each of their officers, directors, successors, employees and agents (including call center, chatbot or Customer Service) will (i) constitute legal, business or financial advice, or (ii) create a warranty of any kind with respect to this Site or the Services, and Customer and (or) any other person should not rely on any such information or advice.
+No person (including any affiliate, third- party service provider, officer, employee, agent), which is not the authorized representative of Hostinger, is authorized to make any warranty on Hostinger’s behalf, and any such warranty shall not be binding to Hostinger.
+Abovementioned disclaimer of representations and warranties shall apply to the fullest extent permitted by law and shall survive any termination or expiration of this Agreement or your use of this Site and (or) the Services.
+20. LIABILITY. LIMITATIONS AND EXCLUSIONS
+Liability
+. Hostinger (including its affiliates, all third-party service providers and each of their officers, directors, shareholders, beneficial owners, successors, employees and agents) can only be held liable for direct damages and is not liable to you or any other person for any indirect, incidental, special, punitive, or consequential damages whatsoever (regardless of whether they have been apprised of the possibility or likelihood of such damages occurring). This liability is also subject to further limitations and exclusions outlined below.
+Exclusions
+. In no event shall Hostinger be liable to you or any other person for any damages whatsoever that may result from any of the following:
+(i) the accuracy, completeness, reliability or content of this Site and (or) any Linked Sites;
+(ii) the Services and (or) any services provided on Linked Sites, as well as use of this Site and (or) the Services, and (or) any services provided on Linked Sites;
+(iii) any loss of business, revenue, profits, opportunities or any other business related losses;
+(iv) personal injury or property damage of any nature whatsoever;
+(v) third-party conduct of any nature whatsoever;
+(vi) any unauthorized access to or use of our servers and (or) any and all content, information (including personal, financial information) and data stored therein;
+(vii) any loss of data, whether due to hardware and (or) software issues, unauthorized access or any other unforeseen circumstances;
+(viii) any interruption, delay, malfunction and (or) suspension or termination of the Services and (or) any services provided on Linked Sites due to events beyond our reasonable control (e. g. force majeure, third-party acts, faults and malfunctions of the machines, software and other equipment);
+(ix) any review, scanning, access to Services (including any hosted environment);
+(x) any restrictions implied to and (or) cessation, changes of Services and (or) any services provided on Linked Sites;
+(xi) any viruses, worms, bugs, trojan horses, or the like (including any removal or attempted removal thereof), which may be transmitted to, from, or through this Site and (or) Services and (or) any services provided on Linked Sites;
+(xii) any Customer Content and your use of Services;
+(xiii) any Output.
+Limitations
+. Notwithstanding anything to the contrary contained herein, you specifically acknowledge and agree that:
+(i)  any cause of action arising out of or related to this Site or the Services must be commenced within 12 (twelve) months after the cause of action accrues, otherwise such cause of action shall be permanently barred; and
+(ii) in no event shall Hostinger’s total aggregate liability exceed the actual amount of fees paid by you for the Services in 12 (twelve) months preceding the cause of action giving rise to liability or EUR 10,000 (ten thousand euros), whichever is less; and
+(iii) no waiver of any provision of the Agreement shall be effective, unless it is in writing and signed by an authorized representative of Hostinger.
+This section (including limitations and exclusions of liability) shall apply to any and all claims, including those arising from negligence, and to the fullest extent permitted by law and shall survive any termination or expiration of the Agreement or your use of this Site and (or) the Services.
+21. INDEMNITY
+You agree to protect, defend, indemnify and hold harmless Hostinger, its affiliates, any third-party service providers and each of their officers, directors, shareholders, beneficial owners, successors, employees and agents (each individually “
+Indemnified Party
+” and collectively “
+Indemnified Parties
+”) from and against any and all (of every kind and nature) claims, demands, costs, expenses (including reasonable attorneys’ fees), losses, liabilities, damages, suits, actions, proceedings threatened, asserted or filed by a third party against any of the Indemnified Parties and (or) imposed upon or incurred by any of the Indemnified Parties directly or indirectly (collectively “
+Claims
+”).
+The abovementioned indemnification obligations apply to Claims arising from or relating to any of the following:
+(i) your use of the Site, Account or Services;
+(ii) your relationships with third parties (e.g. users of your services and (or) products) that directly or indirectly involves the Services;
+(iii) your violation of any provision of the Agreement;
+(iv) your violation of any third-party right (including any intellectual property or other proprietary right).
+The indemnification obligations under this section shall survive any termination or expiration of the Agreement and (or) your use of this Site, and (or) the Services.
+22. GOVERNING LAW AND DISPUTE RESOLUTION
+Governing Law.
+This Agreement shall be governed by and construed in accordance with the laws of Luxembourg, unless the application of Luxembourg laws contradicts mandatory provisions of your local laws. Disputes governed by the Uniform Domain Name Dispute Resolution Policy (UDRP) available
+here
+are excluded and the United Nations Convention on the International Sale of Goods (CISG) does not apply to this Agreement.
+Dispute Resolution.
+In the event of a dispute, controversy, or claim arising out of or related to the Agreement, you and Hostinger agree to make reasonable efforts to resolve it amicably. The parties shall consult and negotiate in good faith to reach a mutually satisfactory solution before pursuing formal legal action or other dispute resolution processes. You hereby agree that the judicial proceeding to resolve claims relating to the Agreement will be brought in the courts of Luxembourg, unless this contradicts mandatory provisions of your local laws.
+23. GENERAL PROVISIONS
+Successors and Assigns
+. Hostinger may assign or transfer its rights and obligations under the Agreement, including engaging subcontractors or agents to perform its duties and exercise its rights hereunder, without your consent. This Agreement shall be binding upon and inure to the benefit of the parties hereto and their respective heirs, successors and assigns.
+Force Majeure.
+Hostinger is not liable for any failure or delay in fulfilling its obligations under the Agreement, if such failure or delay is caused by events beyond Hostinger’s reasonable control, including acts of God, natural disasters, war, terrorism, sabotage, civil unrest, accidents, epidemics, governmental actions or restrictions, telecommunications failures, failures of third party service providers or infrastructure essential to the performance of obligations hereunder. In the event of a Force Majeure, Hostinger will use reasonable efforts to mitigate the effects and resume performance as soon as reasonably practicable.
+No Third-Party Beneficiaries.
+The Agreement is intended solely for the benefit of the parties hereto and their respective successors and assigns. Nothing in this Agreement shall be deemed to create or confer any third-party rights or benefits. You acknowledge and agree that no third-party has any rights to enforce or benefit from the provisions of the Agreement, and Hostinger has no obligations or liabilities of any kind toward any third-party under this Agreement.
+Interpretation, Independent Covenants and Severability.
+The headings of this Agreement are for convenience only and shall not be utilized in any way to interpret the Agreement as otherwise set forth herein. “Including”, “includes” and similar terms are to be construed without limitation. Each covenant in this Agreement shall be construed for all purposes to be a separate and independent covenant. If any provision of this Agreement is found to be illegal, invalid, or otherwise unenforceable, the remaining provisions shall remain in full force and effect to the maximum extent permitted by law.
+Language of the Agreement.
+The
+Agreement is written in English. Any translation is provided for your convenience only. If there is any difference between the English version and a translation, the English version will apply and shall prevail.
+24. CONTACT INFORMATION
+If you have any questions or complaints regarding this Agreement, please contact us by email or regular mail at the following address:
+Attention to
+: HOSTINGER INTERNATIONAL LIMITED
+Address
+: 61 Lordou Vironos str., 6023 Larnaca, Cyprus
+Email:
+compliance@hostinger.com
+Hostinger
+Terms of service
+Hosting
+Web hosting
+Hosting for WordPress
+VPS hosting
+Self-hosted n8n
+Business email
+Cloud hosting
+Hosting for WooCommerce
+Hosting for agencies
+Minecraft hosting
+Hermes Agent VPS
+OpenClaw
+Paperclip VPS
+Google Workspace
+Domain
+Domain name search
+Buy a domain
+Cheap domain names
+Free domain
+WHOIS Lookup
+Free SSL certificate
+Domain transfer
+Domain extensions
+Personal domain name
+Premium domains
+Tools
+Hostinger Horizons
+Website Builder
+AI Website Builder
+Ecommerce Website Builder
+Templates
+Domain Name Generator
+Print on Demand
+Link in Bio
+Business Name Generator
+AI Newsletter Generator
+AI Logo Generator
+Migrate to Hostinger
+Hostinger API
+Information
+Pricing
+Reviews
+Affiliate program
+Educational partnership
+Referral program
+Agency directory
+Roadmap
+System status
+Trust center
+Sitemap
+Company
+About Hostinger
+Our technology
+Newsroom
+Career
+Blog
+Student discount
+Sustainability
+Principles
+Support
+Tutorials
+Knowledge Base
+Hostinger Academy
+Contact us
+Report abuse
+NPRD request policy
+Privacy policy
+Refund policy
+Terms of service
+and more
+© 2004-2026 Hostinger – Launch, grow, and succeed online, supported by AI that puts the power in your hands.
+Prices are listed without VAT
+We care about your privacy
+This website uses cookies that are needed for the site to work properly and to get data on how you interact with it, as well as for marketing purposes. By accepting, you agree to store cookies on your device for ad targeting, personalization, and analytics as described in our
+Cookie policy
+.
+Accept all
+Reject all
+Cookie settings

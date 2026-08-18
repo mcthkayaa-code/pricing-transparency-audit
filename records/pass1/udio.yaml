@@ -1,0 +1,122 @@
+product_id: udio
+product_name: Udio
+category: AI music generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Standard
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://www.udio.com/pricing
+archive_url: https://web.archive.org/web/20260813085541/https://www.udio.com/pricing
+archive_status: archived
+default_display_state: "Rendered read (D-005): Annually preselected, USD preselected via on-page currency selector (USD/GBP/EUR), before any interaction; read after declining non-essential cookies. Network egress is Turkey, but page served USD by default regardless (D-003/D-007 arm 1 satisfied: vendor's own currency selector, USD offered/default)."
+
+sources:
+  - { url: https://www.udio.com/pricing, kind: pricing, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813085541/https://www.udio.com/pricing, note: "rendered read; static fetch returned title only (D-005)" }
+  - { url: https://www.udio.com/terms-of-service, kind: tos, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813085647/https://www.udio.com/terms-of-service, note: "current ToS, Last Revised November 12, 2025; rendered read, static fetch returned title only" }
+  - { url: https://help.udio.com/en/articles/13338649-the-subscription-trial, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813085630/https://help.udio.com/en/articles/13338649-the-subscription-trial, note: "trial terms" }
+  - { url: https://help.udio.com/en/articles/10739134-credits-and-credit-limits, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813085657/https://help.udio.com/en/articles/10739134-credits-and-credit-limits, note: "credit definition and per-song-length rates" }
+  - { url: https://help.udio.com/en/articles/10739180-do-credits-roll-over, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813085713/https://help.udio.com/en/articles/10739180-do-credits-roll-over, note: "rollover policy; carries STALE pre-UMG-partnership credit figures, see conflict_note" }
+  - { url: https://help.udio.com/en/articles/10739199-changing-or-canceling-your-subscription, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813085734/https://help.udio.com/en/articles/10739199-changing-or-canceling-your-subscription, note: "cancellation and upgrade/downgrade billing" }
+  - { url: https://help.udio.com/en/articles/10739216-answers-to-common-usage-questions, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813090236/https://help.udio.com/en/articles/10739216-answers-to-common-usage-questions, note: "output ownership FAQ; dated March 26 2025, PRE-DATES current ToS, see conflict_note" }
+  - { url: https://help.udio.com/en/articles/12683565-changes-associated-with-the-universal-music-group-umg-partnership, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813090446/https://help.udio.com/en/articles/12683565-changes-associated-with-the-universal-music-group-umg-partnership, note: "dated changelog confirming current 2400/6000 credit limits, resolves the rollover-article conflict" }
+  - { url: https://help.udio.com/en/articles/10756213-understanding-reporting-bugs, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813090433/https://help.udio.com/en/articles/10756213-understanding-reporting-bugs, note: "bug/error handling; silent on credit consumption for failed generations" }
+
+variables:
+  headline_price_usd: { value: "8.00", source: https://www.udio.com/pricing, evidence: "Standard card, default annually-preselected state: struck-through '$10' (reference), bold '$8/month' (most prominent figure), '$96 billed annually' beneath. Confirmed in accessibility tree, raw DOM text, and screenshot (three representations)." }
+  headline_billing_basis: { value: per_month_billed_annually, source: https://www.udio.com/pricing, evidence: "'$8/month' shown together with '$96 billed annually' in the default annual-preselected state." }
+  first_charge_amount_usd: { value: "96.00", source: https://www.udio.com/pricing, evidence: "'$96 billed annually' is the vendor-published annual total directly beneath the headline figure, not a coder computation. Corroborated by ToS §3.5 worked example: 'charged the full price for an annual subscription (e.g., $96 + tax in the U.S.)'." }
+  mandatory_addon_present: { value: "no", source: https://www.udio.com/pricing, evidence: "Pricing page and help center (credits-and-credit-limits, changing-or-canceling-your-subscription) read in full; no required additional charge, minimum credit purchase, platform fee, or onboarding fee found for using Standard as advertised. Credit top-ups ('Out of generations? Purchase 100 credits - $3.00') are optional, not mandatory." }
+  annual_condition_disclosure: { value: adjacent, source: https://www.udio.com/pricing, evidence: "'$96 billed annually' is printed directly beneath the '$8/month' figure, inside the same Standard plan card (confirmed by screenshot)." }
+  annual_default_toggle: { value: annual_preselected, source: https://www.udio.com/pricing, evidence: "Payment-frequency toggle: 'Annually' pill is filled/highlighted on load, before any interaction (screenshot); 'Monthly' is unselected." }
+  free_plan_exists: { value: "yes", source: https://www.udio.com/pricing, evidence: "'Free... Make your music with a limited daily quota and basic features for free, no credit card required.' $0/month, $0 billed annually, standing tier alongside paid tiers." }
+  free_plan_cap_documented: { value: all_quantified, source: https://www.udio.com/pricing, evidence: "'10 credits per day and 100 credits per month (no rollovers)'; 'Generate up to 4 songs at the same time'; 'Limit of 3 full length (2:10s) song generations per day' — all carry a number, a dimension, and a period where rate-type." }
+  free_plan_cap_value: { value: "10 credits per day | 100 credits per month | 4 songs simultaneous generation | 3 130-second (2:10) songs per day", source: https://www.udio.com/pricing, evidence: "" }
+  free_plan_watermark: { value: unknown, source: https://www.udio.com/pricing, evidence: "No document (pricing page, ToS, help center) states that free-plan AUDIO OUTPUT itself carries an embedded watermark or vendor mark. Distinct finding: ToS §6.4 requires non-subscribers to self-attribute ('Created with Udio' in track title/credits) when publicly sharing, waived for paid subscribers — a contractual crediting DUTY on the user, not a mark applied to the output file, so not coded as watermark evidence. See coder_note." }
+  free_plan_duration: { value: perpetual, source: https://www.udio.com/pricing, evidence: "Free is presented as a standing plan alongside Standard/Pro with no expiry stated anywhere in the documents read." }
+  trial_exists: { value: "yes", source: https://help.udio.com/en/articles/13338649-the-subscription-trial, evidence: "'All creators have the one-time option to initiate a free trial of Udio's Standard subscription.' Also 'Start a Free Trial' CTA on the pricing page header." }
+  trial_card_required: { value: unknown, source: https://www.udio.com/terms-of-service, evidence: "No document states a card IS or IS NOT required to START the trial. ToS §3.5 states that if not cancelled, the account is charged ('you authorize us to charge your credit card') — this is evidence of a charge occurring, not a statement about signup requirements; inference from the existence of a charge to a card-required-at-signup conclusion is barred by the frozen rule. The Free PLAN's distinct 'no credit card required' line does not describe the trial." }
+  trial_length_days: { value: "7", source: https://help.udio.com/en/articles/13338649-the-subscription-trial, evidence: "'Trials last for up to 7 days from the moment initiated.' Corroborated by ToS §3.5: 'lasts for the duration indicated on your free trial confirmation email (or if not specified, then 7 days).'" }
+  trial_auto_converts: { value: "yes", source: https://www.udio.com/terms-of-service, evidence: "ToS §3.5: 'If you do not cancel your trial Account at the end of your free trial period, and we have notified you...you authorize us to charge your credit card or other designated billing method for continued use of the paid Services.' Corroborated by help center: 'the creator will be immediately charged the full price of an annual subscription' if not cancelled." }
+  credit_system_present: { value: "yes", source: https://help.udio.com/en/articles/10739134-credits-and-credit-limits, evidence: "'Udio credits enable you to create songs on Udio.' An intermediate currency converting into song outputs, not an allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: https://www.udio.com/pricing, evidence: "Pricing-page FAQ: '1 credit corresponds to 1 ~30 second audio track. Each generation generates 2 tracks, so each generation costs 2 credits.' Refined in help center: 'Each set of two 32-second songs costs two credits (one credit for each song).'" }
+  credit_to_output_rate_published: { value: "yes", source: https://help.udio.com/en/articles/10739134-credits-and-credit-limits, evidence: "Help center states BOTH rates precisely: 'Each set of two 32-second songs costs two credits (one credit for each song)' AND 'Each set of two 130-second songs costs four credits (two credits for each song)'. 130-second ('u-130', 'full length 2:10s') is the principal/flagship output (headline feature on every tier); its rate (2 credits/song) is published in docs even though the pricing-page FAQ alone only says 'correspondingly higher' with no figure. Docs rank second for this pricing-class variable and supply the number the pricing page omits — not a conflict, just differing precision." }
+  credit_rate_location: { value: multiple, source: https://help.udio.com/en/articles/10739134-credits-and-credit-limits, evidence: "32-second rate + qualitative note on 130-second appear on the pricing page (pricing_page); exact numeric rates for both song lengths appear in the help center (docs_help_center)." }
+  cost_per_output_unit: { value: per_audio_minute, source: https://help.udio.com/en/articles/10739134-credits-and-credit-limits, evidence: "Product's native unit is a discrete song of fixed length (~32 sec or 130 sec/'u-130'), not a continuously-purchased minute; per_audio_minute is the closest codebook unit and is used here via normalization from the published per-song rate (see computation_assumptions)." }
+  cost_per_output_computable: { value: "yes", source: https://www.udio.com/pricing, evidence: "Entry tier (Standard) price, monthly credit allowance, and principal-output (130-sec song) credit rate are all published; no assumption about typical use is required. See computation_assumptions." }
+  computation_assumptions: { value: "Standard: $8/mo default-annual display, 2400 credits/mo (pricing page; conflicts w/ stale 1200 in one help article, see conflict_note). Principal=130-sec song=2 credits (help center). 2400/2=1200 songs/mo; 130s=2.1667min; 1200x2.1667=2600 min/mo. $8/2600=$0.003/min.", source: https://www.udio.com/pricing, evidence: "" }
+  credit_rollover_policy: { value: expires_at_period_end, source: https://help.udio.com/en/articles/10739180-do-credits-roll-over, evidence: "'Free accounts and subscriptions come with credit limits; these credits don't rollover' / 'The credits don't rollover from month to month.' Distinct sub-policy noted in coder_note: a la carte PURCHASED top-up credits 'never expire' and do carry forward, unlike the plan's included monthly allowance." }
+  failed_generation_charge_policy: { value: unknown, source: https://help.udio.com/en/articles/10756213-understanding-reporting-bugs, evidence: "Bug-report article names 'Backend error' / 'Generation error' as a recognized (usually transient) failure mode but never states whether such a failure consumes credits. Credits-and-credit-limits and do-credits-roll-over articles describe spending/receiving/rollover but are silent on failures. No document addresses this either way." }
+  auto_renewal_default: { value: "on", source: https://www.udio.com/terms-of-service, evidence: "ToS §3.3: 'your subscription will automatically renew at the subscription period frequency referenced on your subscription page...and your payment method will automatically be charged at the start of each new subscription period for the fees and taxes applicable to that period.'" }
+  auto_renewal_disclosure_location: { value: terms_only, source: https://www.udio.com/terms-of-service, evidence: "Only ToS §3.3 makes the explicit 'automatically renew' / 'automatically be charged' statement. The pricing page does not mention renewal. The cancellation help article references 'Your...subscription renews every 1st of the month' as incidental context for proration examples, without asserting the renewal is automatic/without further action, so it is not counted as an independent disclosure of the construct." }
+  renewal_notice_commitment: { value: unknown, source: https://www.udio.com/terms-of-service, evidence: "No document commits to notifying the buyer in advance of an ORDINARY recurring renewal charge. ToS §3.2 promises 'reasonable notice' only for PRICE/PLAN CHANGES, not each renewal. ToS §3.5's notice language is scoped to the one-time trial-to-paid conversion (domain 4), not ongoing renewals." }
+  refund_policy_exists: { value: no_refunds_stated, source: https://www.udio.com/terms-of-service, evidence: "ToS §3.4: 'Except as expressly set forth in these Terms, payments for any subscriptions to the Services are nonrefundable and there are no credits for partially used periods.' Full ToS read end to end; no refund exception found elsewhere in the document." }
+  refund_window_days: { value: "0", source: https://www.udio.com/terms-of-service, evidence: "No refunds given per §3.4." }
+  refund_conditions: { value: not_applicable, source: https://www.udio.com/terms-of-service, evidence: "No refund program exists ($3.4, no_refunds_stated) for a condition to attach to." }
+  cancellation_self_serve: { value: self_serve_documented, source: https://help.udio.com/en/articles/10739199-changing-or-canceling-your-subscription, evidence: "'To cancel your subscription: Visit udio.com/account and select \"Cancel subscription\"' — no contact required. Corroborated by ToS §3.3 (account-settings option alongside an email option)." }
+  refund_policy_location: { value: terms, source: https://www.udio.com/terms-of-service, evidence: "Found only in ToS §3.4. The 'Subscriptions, credits, and billing' help-center collection was checked in full; no dedicated refund article exists there." }
+  commercial_use_lowest_tier: { value: not_granted, source: https://www.udio.com/terms-of-service, evidence: "ToS §5.2 lists 'exploit the Services, any Output...for any commercial purpose' among prohibited uses; §6.3: 'you may use Output solely for your personal and non-commercial purposes.' Neither clause carries a tier-based exception. §6.4 exempts PAID subscribers only from the ATTRIBUTION/crediting requirement, not from the commercial-use restriction — a narrower, textually distinct carve-out. No official document (pricing page, help center) states that any published tier grants commercial-use rights." }
+  watermark_removal_tier: { value: unknown, source: https://www.udio.com/terms-of-service, evidence: "Same construct question as free_plan_watermark: no document states that any tier's audio output carries or lacks an embedded watermark/vendor mark. ToS §6.4's paid-subscriber attribution exemption is a crediting-duty waiver, not a statement about a mark on the output file. See coder_note for the interpretive call." }
+  output_ownership_statement: { value: vendor_license_retained, source: https://www.udio.com/terms-of-service, evidence: "ToS §6.1: 'the Company and/or its licensors own all right, title and interest in and to the Services and the Output (including any and all intellectual property rights therein)...Notwithstanding the foregoing, to the extent ownership in any Output vests with you, you hereby assign and agree to assign all right, title and interest in and to such Output...to the Company.' §6.3 grants the user back a license limited to 'personal and non-commercial purposes.' CONFLICTS with a stale help-center article; see conflict_note — coded from the ToS per source hierarchy (contractual variable, terms rank first) and because the ToS is the current, later-dated document." }
+  usage_cap_quantified: { value: all_caps_quantified, source: https://www.udio.com/pricing, evidence: "Standard (entry tier) limits: '2400 credits per month (monthly credit limit, no rollovers)' (rate, quantified) and 'Generate up to 6 songs at the same time' (standing, quantified). No daily cap applies to paid tiers ('The paid plans do not include the 10 daily credit limits or the 100 monthly credit limits' — an absence, not an unquantified limit). The 2400 figure conflicts with a stale help article's 1200; see conflict_note — coded from the pricing page (ranks first for this pricing-class variable) and independently corroborated." }
+  unquantified_limit_clause: { value: absent, source: https://www.udio.com/terms-of-service, evidence: "Full Terms of Service read end to end (all ten numbered sections). No fair-use, reasonable-use, excessive-use, abuse-threshold, or discretionary-throttling clause tied to USAGE VOLUME was found. §5.2's prohibited-use list and the DMCA/Beta sections govern CONTENT/conduct (illegal content, impersonation, scraping, etc.), which the codebook rule excludes from this variable. No separate acceptable-use policy document was found or linked." }
+
+coder_note: |
+  ENTRY TIER: Standard selected (annual-equivalent $96.00/yr) vs losing candidate Pro
+  ($288.00/yr = $24/mo x 12). Free excluded (not a paid tier). Both Standard and Pro are
+  generally available, no sales gate, standing plans, single-seat (no seat-scaling found on
+  this product).
+
+  FIRST CHARGE PROVENANCE: $96.00 is the vendor's own published annual total ("$96 billed
+  annually" printed in the price card), read directly, not a coder multiplication of $8 x 12
+  (that identity holds only because the vendor's own numbers agree; recorded so a reviewer
+  does not mistake this for a computed figure needing the x12-only-if-documented rule).
+
+  CURRENCY CHECK (D-003/D-007): pricing page carries its own currency selector (USD/GBP/EUR)
+  defaulting to USD; this satisfies arm 1 (vendor's own currency disclosure) directly, even
+  though this collection ran from Turkey network egress (confirmed via archive.org response
+  header x-nid: Turk Telekom on the save requests). No non_usd concern; all money values coded
+  in USD as displayed.
+
+  TWO-REPRESENTATION PRICE CHECK: $8/month, $96/year (Standard) and $24/month, $288/year (Pro)
+  confirmed in THREE representations of the rendered pricing page: accessibility tree
+  (read_page), raw DOM text (get_page_text), and a visual screenshot showing "$10" struck
+  through / "$8" bold / "$96 billed annually" beneath for Standard, and equivalently "$30"
+  struck / "$24" / "$288 billed annually" for Pro. No superscript-cents or toggle-state misread.
+
+  A-012: no paid time-limited intro period found. Udio's trial (7 days) is a genuine FREE
+  trial per ToS §3.5 and the help center; A-012 does not apply to this record.
+
+  WATERMARK (free_plan_watermark, watermark_removal_tier -> both coded unknown): ToS §6.4
+  requires non-subscribers (incl. free-plan users) to self-attribute Udio in track metadata
+  when publicly sharing output, waived for paid subscribers. This is a contractual duty on the
+  USER's future conduct, not a mark the vendor applies to the output file itself, so it was
+  NOT treated as satisfying "watermark or branding" (the codebook's own worked example frames
+  a watermark as a mark ON the output, e.g. a feature-grid row "Watermark-free exports").
+  Flagging this as a judgment call for review; the underlying attribution fact is fully
+  evidenced above regardless of which variable it best fits.
+
+  COMMERCIAL USE (commercial_use_lowest_tier -> not_granted): a genuinely surprising,
+  well-evidenced finding that contradicts general market assumption and several non-official
+  (disregarded) third-party pages claiming paid tiers unlock commercial use. The CURRENT ToS
+  (Last Revised November 12, 2025) restricts Output to personal/non-commercial use at §6.3 and
+  separately prohibits commercial exploitation at §5.2, with no tier carve-out anywhere in the
+  document for either clause. Only the ATTRIBUTION duty (§6.4) differs by tier. A WebSearch
+  result summarizing help.udio.com claimed an official article states "you can use Udio content
+  for commercial purposes" -- opened that exact article (answers-to-common-usage-questions)
+  directly and read its raw DOM: the word "commercial" does not appear in it at all. Treated as
+  a search-summary fabrication, not evidence, per the fabrication-avoidance instruction; verify
+  structured/quoted claims against raw DOM before coding from them.
+
+  TRIAL CARD REQUIREMENT: deliberately coded unknown despite ToS §3.5's auto-charge language,
+  per the frozen rule barring inference from the existence of a charge.
+
+  ARCHIVAL: all 9 sources archived successfully on first or second attempt (D-012 rate-limiting
+  did not materialize this run); no local_copy_only fallback was needed.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "(1) OUTPUT OWNERSHIP: help.udio.com/en/articles/10739216-answers-to-common-usage-questions (dated 2025-03-26) states 'We don't claim any ownership over the content you generate' and 'You own the output' -- directly incompatible with udio.com/terms-of-service (Last Revised 2025-11-12) §6.1: 'the Company and/or its licensors own all right, title and interest in...the Output.' The help article pre-dates the ToS's current revision and appears stale/unupdated. Coded from the ToS: contractual variable, terms of service ranks first per protocol §6.2, and it is also the later document. (2) STANDARD/PRO MONTHLY CREDIT LIMITS: help.udio.com/en/articles/10739180-do-credits-roll-over (dated 2026-02-20) states 'Standard accounts come with a 1200 credit limit' and 'Pro accounts come with a 4800 credit limit' -- incompatible with udio.com/pricing (live: 2400/6000) and help.udio.com/en/articles/10739134-credits-and-credit-limits (2400/6000). Resolved, not merely hierarchy-ranked: help.udio.com/en/articles/12683565 (UMG partnership changelog, dated 2026-02-18) states 'The Standard subscription monthly credit limit has been increased from 1200 to 2400...Pro...from 4800 to 6000' -- the rollover article is simply stale by two days and was never updated. Coded 2400/6000 (pricing page ranks first for this pricing-class variable; independently corroborated and dated-explained by the changelog)."
+register_events: []
+status: complete

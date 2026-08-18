@@ -1,0 +1,572 @@
+# ElevenLabs Documentation
+
+> ElevenLabs provides APIs and SDKs for text to speech, voice cloning, speech to text, sound effects, voice isolator, voice changer, and conversational AI agents. Build voice-enabled applications with lifelike audio generation.
+
+## Instructions for AI Agents
+
+- For clean Markdown of any page, append `.md` to the page URL
+- For section-specific indexes, append `/llms.txt` to any section URL
+- For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://elevenlabs.io/docs/_mcp/server
+
+## Docs
+
+- [ElevenLabs Documentation](https://elevenlabs.io/docs/overview/intro.md): Explore our docs and guides to integrate ElevenLabs
+- [Models](https://elevenlabs.io/docs/overview/models.md): Learn about the models that power the ElevenLabs API.
+- [Text to Speech](https://elevenlabs.io/docs/overview/capabilities/text-to-speech.md): Learn how to turn text into lifelike spoken audio with ElevenLabs.
+- [Best practices](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices.md): Learn how to control delivery, pronunciation, emotion, and optimize text for speech.
+- [Transcription](https://elevenlabs.io/docs/overview/capabilities/speech-to-text.md): Learn how to turn spoken audio into text with ElevenLabs.
+- [Eleven Music](https://elevenlabs.io/docs/overview/capabilities/music.md): Learn how to create studio-grade music with natural language prompts in any style with ElevenLabs.
+- [Music Marketplace](https://elevenlabs.io/docs/overview/capabilities/music/marketplace.md): License AI-generated music from ElevenLabs creators for your projects.
+- [Best practices](https://elevenlabs.io/docs/overview/capabilities/music/best-practices.md): Master prompting for Eleven Music to achieve maximum musicality and control.
+- [Text to Dialogue](https://elevenlabs.io/docs/overview/capabilities/text-to-dialogue.md): Learn how to create immersive, natural-sounding dialogue with ElevenLabs.
+- [Image & Video](https://elevenlabs.io/docs/overview/capabilities/image-video.md): Generate and edit stunning images and videos from text prompts and visual references.
+- [Avatars](https://elevenlabs.io/docs/overview/capabilities/image-video/avatars.md): Create persistent visual identities with synchronized lip movement for talking-head videos.
+- [Ads Engine](https://elevenlabs.io/docs/overview/capabilities/ads-engine.md): Connect your ad accounts and localize ads across languages and markets in one workflow.
+- [Voice changer](https://elevenlabs.io/docs/overview/capabilities/voice-changer.md): Learn how to transform audio between voices while preserving emotion and delivery.
+- [Voice isolator](https://elevenlabs.io/docs/overview/capabilities/voice-isolator.md): Learn how to isolate speech from background noise, music, and ambient sounds from any audio.
+- [Dubbing](https://elevenlabs.io/docs/overview/capabilities/dubbing.md): Learn how to translate audio and video while preserving the emotion, timing & tone of speakers.
+- [Sound effects](https://elevenlabs.io/docs/overview/capabilities/sound-effects.md): Learn how to create high-quality sound effects from text with ElevenLabs.
+- [Voices](https://elevenlabs.io/docs/overview/capabilities/voices.md): Learn how to create, customize, and manage voices with ElevenLabs.
+- [Voice remixing](https://elevenlabs.io/docs/overview/capabilities/voice-remixing.md): Learn how to transform and enhance existing voices by modifying their attributes including gender, accent, style, pacing, audio quality, and more.
+- [Forced Alignment](https://elevenlabs.io/docs/overview/capabilities/forced-alignment.md): Learn how to turn spoken audio and text into a time-aligned transcript with ElevenLabs.
+- [Speech Engine](https://elevenlabs.io/docs/overview/capabilities/speech-engine.md): Add voice to your own chat agent or LLM with ElevenLabs.
+- [Account](https://elevenlabs.io/docs/overview/administration/account.md): Create and manage your ElevenLabs account to start generating AI audio
+- [Billing](https://elevenlabs.io/docs/overview/administration/billing.md): Manage your subscription, view pricing plans, and understand how credit rollover works
+- [Pay As You Go](https://elevenlabs.io/docs/overview/administration/pay-as-you-go.md): Prepay for usage without committing to a monthly subscription.
+- [Consolidated billing](https://elevenlabs.io/docs/overview/administration/consolidated-billing.md): Manage multiple workspaces with unified billing and shared credit pools.
+- [Data residency](https://elevenlabs.io/docs/overview/administration/data-residency.md): Store your data in specific jurisdictions with ElevenLabs' isolated environments.
+- [Usage analytics](https://elevenlabs.io/docs/overview/administration/usage-analytics.md): Track your API usage, monitor credit consumption, and analyze account activity
+- [Assets](https://elevenlabs.io/docs/overview/administration/assets.md): Manage, organize, and share your creative assets on the ElevenCreative platform
+- [Workspaces](https://elevenlabs.io/docs/overview/administration/workspaces/overview.md): An overview on how teams can collaborate in a shared workspace.
+- [Members](https://elevenlabs.io/docs/overview/administration/workspaces/members.md): Manage workspace members and seat types.
+- [Billing groups](https://elevenlabs.io/docs/overview/administration/workspaces/billing-groups.md): Set limits for specific groups within your workspace.
+- [Service Accounts](https://elevenlabs.io/docs/overview/administration/workspaces/service-accounts.md): An overview on how to configure Service Accounts for your workspace
+- [API Keys](https://elevenlabs.io/docs/overview/administration/workspaces/api-keys.md): Create, rotate, scope, and secure the API keys for your workspace.
+- [Single Sign-On (SSO)](https://elevenlabs.io/docs/overview/administration/workspaces/sso.md): An overview on how to set up SSO for your Workspace.
+- [Microsoft Entra SAML SSO](https://elevenlabs.io/docs/overview/administration/workspaces/sso/microsoft-entra-saml.md): Configure Microsoft Entra ID as a SAML identity provider for ElevenLabs SSO.
+- [Okta SAML SSO](https://elevenlabs.io/docs/overview/administration/workspaces/sso/okta-saml.md): Configure Okta as a SAML identity provider for ElevenLabs SSO.
+- [SCIM](https://elevenlabs.io/docs/overview/administration/workspaces/sso/scim.md): SCIM (System for Cross-domain Identity Management) lets your Identity Provider (IdP) manage users and groups in your ElevenLabs workspace.
+- [Sharing resources](https://elevenlabs.io/docs/overview/administration/workspaces/sharing-resources.md): An overview on how to share resources within a Workspace.
+- [User groups](https://elevenlabs.io/docs/overview/administration/workspaces/user-groups.md): An overview on how to create and manage user groups.
+- [Model approvals](https://elevenlabs.io/docs/overview/administration/workspaces/model-approvals.md): Control which image and video generation models are available to workspace members.
+- [Audit logs](https://elevenlabs.io/docs/overview/administration/workspaces/audit-logs.md): Retrieve a structured record of administrative actions within your workspace.
+- [ElevenCreative](https://elevenlabs.io/docs/eleven-creative/overview.md): Create studio-quality AI audio for any use case
+- [ElevenCreative quickstart](https://elevenlabs.io/docs/eleven-creative/quickstart.md): Start creating studio-quality AI audio in minutes
+- [Text to Speech](https://elevenlabs.io/docs/eleven-creative/playground/text-to-speech.md): A guide on how to turn text to speech with ElevenLabs
+- [Voice changer](https://elevenlabs.io/docs/eleven-creative/playground/voice-changer.md): A guide on how to transform audio between voices while preserving emotion and delivery.
+- [Sound effects](https://elevenlabs.io/docs/eleven-creative/playground/sound-effects.md): How to create high-quality sound effects from text with ElevenLabs.
+- [Speech to Text](https://elevenlabs.io/docs/eleven-creative/playground/speech-to-text.md): A guide on how to transcribe audio with ElevenLabs
+- [Image & Video](https://elevenlabs.io/docs/eleven-creative/playground/image-video.md): Complete guide to creating and editing images and videos in ElevenLabs.
+- [ElevenCreative Studio](https://elevenlabs.io/docs/eleven-creative/products/studio.md): Create professional video and audio content with our end-to-end production workflow
+- [Audiobooks](https://elevenlabs.io/docs/eleven-creative/products/audiobooks.md): Turn written content into studio-quality audio with an end-to-end workflow
+- [ElevenCreative Flows](https://elevenlabs.io/docs/eleven-creative/products/flows.md): Design and automate complex multi-modal AI pipelines on an infinite visual canvas
+- [Templates](https://elevenlabs.io/docs/eleven-creative/products/templates.md): Ready-made creative workflows powered by ElevenCreative Flows
+- [Music](https://elevenlabs.io/docs/eleven-creative/products/music.md): Generate and edit custom songs in any style using AI-powered music creation tools
+- [Music Finetunes](https://elevenlabs.io/docs/eleven-creative/products/music/finetunes.md): Finetune the ElevenLabs Music model on your sound
+- [Dubbing](https://elevenlabs.io/docs/eleven-creative/products/dubbing.md): Translate audio and video files with ElevenLabs dubbing.
+- [Dubbing Studio](https://elevenlabs.io/docs/eleven-creative/products/dubbing/dubbing-studio.md): Fine-grained control over your dubs.
+- [Transcripts](https://elevenlabs.io/docs/eleven-creative/products/transcripts.md): Using the ElevenLabs Transcript Editor
+- [Subtitles](https://elevenlabs.io/docs/eleven-creative/products/subtitles.md): Using the ElevenLabs Subtitle Editor
+- [Voice Library](https://elevenlabs.io/docs/eleven-creative/voices/voice-library.md): A guide on how to use voices from the Voice Library.
+- [Voice Cloning](https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning.md): Learn how to clone your voice to using our best-in-class models.
+- [Instant Voice Cloning](https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/instant-voice-cloning.md): Learn how to clone your voice instantly using our best-in-class models.
+- [Professional Voice Cloning](https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/professional-voice-cloning.md): Learn how to clone your voice professionally using our best-in-class models.
+- [Voice Design](https://elevenlabs.io/docs/eleven-creative/voices/voice-design.md): A guide on how to craft voices from a text prompt.
+- [Payouts](https://elevenlabs.io/docs/eleven-creative/voices/payouts.md): Earn rewards by sharing your voice in the Voice Library.
+- [Audio Native](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-native.md): Easily embed ElevenLabs on any web page.
+- [Audio Native with React](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-native/react.md): Integrate Audio Native into your React apps.
+- [Audio Native with Ghost](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-native/ghost.md): Integrate Audio Native into your Ghost blog.
+- [Audio Native with Squarespace](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-native/squarespace.md): Integrate Audio Native into your Squarespace sites.
+- [Audio Native with Framer](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-native/framer.md): Integrate Audio Native into your Framer websites.
+- [Audio Native with Webflow](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-native/webflow.md): Integrate Audio Native into your Webflow sites.
+- [Audio Native with WordPress](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-native/word-press.md): Integrate Audio Native into your WordPress sites.
+- [Audio Native with Wix](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-native/wix.md): Integrate Audio Native into your Wix sites.
+- [Voiceover studio](https://elevenlabs.io/docs/eleven-creative/audio-tools/voiceover-studio.md): A guide on how to create long-form content with ElevenLabs Voiceover Studio
+- [Voice isolator](https://elevenlabs.io/docs/eleven-creative/audio-tools/voice-isolator.md): A guide on how to remove background noise from audio recordings.
+- [Audio detector](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-detector.md): Detect AI-generated audio with SynthID watermarking technology
+- [Productions](https://elevenlabs.io/docs/eleven-creative/services/productions/overview.md): Human-edited transcripts, subtitles, dubs and audiobooks at scale.
+- [Transcripts](https://elevenlabs.io/docs/eleven-creative/services/productions/transcripts.md): Human-edited transcripts from ElevenLabs Productions
+- [Subtitles](https://elevenlabs.io/docs/eleven-creative/services/productions/subtitles.md): Human-edited captions and subtitles from ElevenLabs Productions
+- [Dubbing](https://elevenlabs.io/docs/eleven-creative/services/productions/dubbing.md): Human-edited dubbing services from ElevenLabs Productions
+- [Troubleshooting](https://elevenlabs.io/docs/eleven-creative/troubleshooting.md): Explore common issues and solutions.
+- [ElevenAgents](https://elevenlabs.io/docs/eleven-agents/overview.md): Learn how to build, launch, and scale agents with ElevenLabs.
+- [Quickstart](https://elevenlabs.io/docs/eleven-agents/quickstart.md): Build your first conversational agent in as little as 5 minutes.
+- [Build](https://elevenlabs.io/docs/eleven-agents/build/overview.md): Design and configure conversational AI agents with powerful customization options.
+- [Prompting guide](https://elevenlabs.io/docs/eleven-agents/best-practices/prompting-guide.md): System design principles for production-grade conversational AI
+- [Models](https://elevenlabs.io/docs/eleven-agents/customization/llm.md): Learn how to choose the right model for your use-case
+- [Workflows](https://elevenlabs.io/docs/eleven-agents/customization/agent-workflows.md): Build sophisticated conversation flows with visual graph-based workflows
+- [Procedures](https://elevenlabs.io/docs/eleven-agents/customization/procedures.md): Task-specific instructions your agent loads when relevant
+- [Free-form procedures](https://elevenlabs.io/docs/eleven-agents/customization/procedures/free-form-procedures.md): Task-specific instructions written in natural language
+- [Structured procedures](https://elevenlabs.io/docs/eleven-agents/customization/procedures/structured-procedures.md): A fixed sequence of typed steps your agent runs the same way every time
+- [Conversation flow](https://elevenlabs.io/docs/eleven-agents/customization/conversation-flow.md): Configure how your assistant handles timeouts, interruptions, and turn-taking during conversations.
+- [Channel behavior](https://elevenlabs.io/docs/eleven-agents/customization/channel-behavior.md): Tailor reply style and turn limits for each text channel.
+- [Guardrails](https://elevenlabs.io/docs/eleven-agents/best-practices/guardrails.md): Control how agents behave in production with protections to keep responses safe, compliant, and reliable.
+- [Voice customization](https://elevenlabs.io/docs/eleven-agents/customization/voice.md): Learn how to customize your AI agent's voice and speech patterns.
+- [Multi-voice support](https://elevenlabs.io/docs/eleven-agents/customization/voice/multi-voice-support.md): Enable your AI agent to switch between different voices for multi-character conversations and enhanced storytelling.
+- [Pronunciation dictionaries](https://elevenlabs.io/docs/eleven-agents/customization/voice/pronunciation-dictionary.md): Learn how to control how your AI agent pronounces specific words and phrases.
+- [Speed control](https://elevenlabs.io/docs/eleven-agents/customization/voice/speed-control.md): Learn how to adjust the speaking speed of your ElevenLabs agent.
+- [Expressive mode](https://elevenlabs.io/docs/eleven-agents/customization/voice/expressive-mode.md): Build voice agents that adapt tone, timing, and emotional delivery based on conversational context.
+- [Conversational voice design](https://elevenlabs.io/docs/eleven-agents/customization/voice/best-practices/conversational-voice-design.md): Learn how to design lifelike, engaging voices for ElevenLabs Agents
+- [Language](https://elevenlabs.io/docs/eleven-agents/customization/voice/customization/language.md): Learn how to configure your agent to speak multiple languages.
+- [Knowledge base](https://elevenlabs.io/docs/eleven-agents/customization/knowledge-base.md): Equip your agent with custom knowledge to deliver accurate, context-aware answers.
+- [Manage documents](https://elevenlabs.io/docs/eleven-agents/customization/knowledge-base/manage-documents.md): Create, edit, organize, and keep your knowledge base documents up to date.
+- [Retrieval-Augmented Generation](https://elevenlabs.io/docs/eleven-agents/customization/knowledge-base/rag.md): Enhance your agent with large knowledge bases using RAG.
+- [Tools](https://elevenlabs.io/docs/eleven-agents/customization/tools.md): Enhance ElevenLabs agents with custom functionalities and external integrations.
+- [Client tools](https://elevenlabs.io/docs/eleven-agents/customization/tools/client-tools.md): Empower your assistant to trigger client-side operations.
+- [Webhook tools](https://elevenlabs.io/docs/eleven-agents/customization/tools/webhook-tools.md): Connect your assistant to external data & systems.
+- [Model Context Protocol](https://elevenlabs.io/docs/eleven-agents/customization/tools/mcp.md): Connect your ElevenLabs conversational agents to external tools and data sources using the Model Context Protocol.
+- [MCP integration security](https://elevenlabs.io/docs/eleven-agents/customization/tools/mcp/security.md): Tips for securely integrating third-party Model Context Protocol servers with your ElevenLabs conversational agents.
+- [System tools](https://elevenlabs.io/docs/eleven-agents/customization/tools/system-tools.md): Update the internal state of conversations without external requests.
+- [End call](https://elevenlabs.io/docs/eleven-agents/customization/tools/system-tools/end-call.md): Let your agent automatically hang up on the user.
+- [Language detection](https://elevenlabs.io/docs/eleven-agents/customization/tools/system-tools/language-detection.md): Let your agent automatically switch to the language
+- [Agent transfer](https://elevenlabs.io/docs/eleven-agents/customization/tools/system-tools/agent-transfer.md): Seamlessly transfer the user between ElevenLabs agents based on defined conditions.
+- [Transfer to number](https://elevenlabs.io/docs/eleven-agents/customization/tools/system-tools/transfer-to-number.md): Transfer calls to external phone numbers or SIP URIs based on defined conditions.
+- [Skip turn](https://elevenlabs.io/docs/eleven-agents/customization/tools/system-tools/skip-turn.md): Allow your agent to pause and wait for the user to speak next.
+- [Play keypad touch tone](https://elevenlabs.io/docs/eleven-agents/customization/tools/system-tools/play-keypad-touch-tone.md): Enable agents to play DTMF tones to interact with automated phone systems and navigate menus.
+- [Voicemail detection](https://elevenlabs.io/docs/eleven-agents/customization/tools/system-tools/voicemail-detection.md): Enable agents to automatically detect voicemail systems and optionally leave messages.
+- [Tool Call Sounds](https://elevenlabs.io/docs/eleven-agents/customization/tools/tool-configuration/tool-call-sounds.md): Add ambient audio during tool execution to enhance user experience.
+- [Personalization](https://elevenlabs.io/docs/eleven-agents/customization/personalization.md): Learn how to personalize your agent's behavior using dynamic variables and overrides.
+- [Dynamic variables](https://elevenlabs.io/docs/eleven-agents/customization/personalization/dynamic-variables.md): Pass runtime values to personalize your agent's behavior.
+- [Overrides](https://elevenlabs.io/docs/eleven-agents/customization/personalization/overrides.md): Tailor each conversation with personalized context for each user.
+- [Twilio personalization](https://elevenlabs.io/docs/eleven-agents/customization/personalization/twilio-personalization.md): Configure personalization for incoming Twilio calls using webhooks.
+- [Agent authentication](https://elevenlabs.io/docs/eleven-agents/customization/authentication.md): Learn how to secure access to your conversational agents
+- [Cal.com](https://elevenlabs.io/docs/eleven-agents/customization/integrations/calcom.md): Connect your ElevenLabs agents with Cal.com scheduling.
+- [Calendly](https://elevenlabs.io/docs/eleven-agents/customization/integrations/calendly.md): Connect your ElevenLabs agents with Calendly scheduling
+- [Cursor](https://elevenlabs.io/docs/eleven-agents/customization/integrations/cursor.md): Launch and manage AI coding agents from your ElevenLabs agents
+- [Exa](https://elevenlabs.io/docs/eleven-agents/customization/integrations/exa.md): Give your ElevenLabs agents real-time web search
+- [Freshdesk](https://elevenlabs.io/docs/eleven-agents/customization/integrations/freshdesk.md): Connect your ElevenLabs agents with Freshdesk
+- [Genesys](https://elevenlabs.io/docs/eleven-agents/customization/integrations/genesys.md): Connect your ElevenLabs agents with Genesys Cloud
+- [Google Calendar](https://elevenlabs.io/docs/eleven-agents/customization/integrations/google_calendar.md): Connect your ElevenLabs agents with Google Calendar scheduling
+- [Google Drive](https://elevenlabs.io/docs/eleven-agents/customization/integrations/google_drive.md): Sync Google Drive files to your knowledge base
+- [HubSpot](https://elevenlabs.io/docs/eleven-agents/customization/integrations/hubspot.md): Connect your ElevenLabs agents with HubSpot CRM
+- [Intercom](https://elevenlabs.io/docs/eleven-agents/customization/integrations/intercom.md): Connect your ElevenLabs agents with Intercom
+- [Jira](https://elevenlabs.io/docs/eleven-agents/customization/integrations/jira.md): Connect your ElevenLabs agents with Jira Cloud
+- [Parallel](https://elevenlabs.io/docs/eleven-agents/customization/integrations/parallel.md): Connect your ElevenLabs agents with Parallel web search
+- [Salesforce](https://elevenlabs.io/docs/eleven-agents/customization/integrations/salesforce.md): Connect your ElevenLabs agents with Salesforce CRM
+- [ServiceNow](https://elevenlabs.io/docs/eleven-agents/customization/integrations/servicenow.md): Connect your ElevenLabs agents with ServiceNow ITSM
+- [Slack](https://elevenlabs.io/docs/eleven-agents/customization/integrations/slack.md): Connect a Slack workspace to ElevenLabs Agents to chat with an agent in channels and threads
+- [Tavily](https://elevenlabs.io/docs/eleven-agents/customization/integrations/tavily.md): Give your ElevenLabs agents real-time web search
+- [Telegram](https://elevenlabs.io/docs/eleven-agents/customization/integrations/telegram.md): Connect your ElevenLabs agents with Telegram
+- [Twilio API](https://elevenlabs.io/docs/eleven-agents/customization/integrations/twilio.md): Connect your ElevenLabs agents with Twilio Voice and SMS
+- [Zendesk](https://elevenlabs.io/docs/eleven-agents/customization/integrations/zendesk.md): Connect your ElevenLabs agents with Zendesk Support
+- [Integrate](https://elevenlabs.io/docs/eleven-agents/integrate/overview.md): Deploy your agents across web, mobile, and telephony platforms.
+- [Environment variables](https://elevenlabs.io/docs/eleven-agents/integrate/environment-variables.md): Deploy the same agent across dev, staging, and production without duplicating resources.
+- [Widget customization](https://elevenlabs.io/docs/eleven-agents/customization/widget.md): Learn how to customize the widget appearance to match your brand, and personalize the agent's behavior from html.
+- [SIP trunking](https://elevenlabs.io/docs/eleven-agents/phone-numbers/sip-trunking.md): Connect your existing phone system with ElevenLabs Agents using SIP trunking
+- [SIP reference](https://elevenlabs.io/docs/eleven-agents/phone-numbers/sip-reference.md): A glossary of the SIP, networking, and audio terms used when configuring SIP trunking with ElevenLabs Agents.
+- [Twilio native integration](https://elevenlabs.io/docs/eleven-agents/phone-numbers/twilio-integration/native-integration.md): Learn how to configure inbound calls for your agent with Twilio.
+- [Custom LLM integration](https://elevenlabs.io/docs/eleven-agents/phone-numbers/twilio-integration/custom-llm-integration.md): Power a Twilio phone agent with your own LLM using the Speech Engine SDK.
+- [SMS conversations](https://elevenlabs.io/docs/eleven-agents/phone-numbers/twilio-integration/sms-conversations.md): Let users text your ElevenLabs agent through a Twilio phone number.
+- [Twilio regional routing](https://elevenlabs.io/docs/eleven-agents/phone-numbers/twilio-integration/regional-routing.md): Configure regional routing for Twilio phone numbers to ensure data residency compliance.
+- [Register Twilio calls](https://elevenlabs.io/docs/eleven-agents/phone-numbers/twilio-integration/register-call.md): Use your own Twilio infrastructure to connect calls to ElevenLabs agents.
+- [SMS OTP verification](https://elevenlabs.io/docs/eleven-agents/phone-numbers/twilio-integration/sms-otp-verification.md): Send and verify one-time passcodes over SMS during an agent conversation using Twilio Verify.
+- [Vonage integration](https://elevenlabs.io/docs/eleven-agents/phone-numbers/telephony/vonage.md): Integrate ElevenAgents with Vonage voice calls using a WebSocket connector.
+- [Telnyx SIP trunking](https://elevenlabs.io/docs/eleven-agents/phone-numbers/telephony/telnyx.md): Connect Telnyx SIP trunks with ElevenLabs Agents.
+- [Plivo](https://elevenlabs.io/docs/eleven-agents/phone-numbers/telephony/plivo.md): Integrate ElevenLabs Agents with your Plivo SIP trunks
+- [Exotel integration](https://elevenlabs.io/docs/eleven-agents/phone-numbers/telephony/exotel.md): Connect Exotel phone numbers to ElevenAgents for inbound and outbound calls.
+- [Bandwidth SIP trunking](https://elevenlabs.io/docs/eleven-agents/phone-numbers/telephony/bandwidth.md): Connect Bandwidth SIP trunks with ElevenLabs Agents.
+- [Genesys](https://elevenlabs.io/docs/eleven-agents/phone-numbers/c-caa-s-integrations/genesys.md): Integrate ElevenLabs Agents with Genesys using native Audio Connector integration.
+- [Five9](https://elevenlabs.io/docs/eleven-agents/phone-numbers/c-caa-s-integrations/five9.md): Transfer calls from Five9 VCC to ElevenAgents using Five9 AI Agent Connect.
+- [Microsoft Teams](https://elevenlabs.io/docs/eleven-agents/phone-numbers/microsoft-teams/overview.md): Put an ElevenLabs agent inside Microsoft Teams.
+- [Widget tab](https://elevenlabs.io/docs/eleven-agents/phone-numbers/microsoft-teams/widget-tab.md): Embed the ElevenLabs agent widget in a Microsoft Teams tab for click-to-talk.
+- [Azure Communication Services](https://elevenlabs.io/docs/eleven-agents/phone-numbers/microsoft-teams/azure-communication-services.md): Let users dial a phone number that your ElevenLabs agent answers, via ACS Call Automation.
+- [Graph calling bot](https://elevenlabs.io/docs/eleven-agents/phone-numbers/microsoft-teams/graph-media-bot.md): Call or chat with your ElevenLabs agent by name inside Microsoft Teams, like a colleague.
+- [WhatsApp](https://elevenlabs.io/docs/eleven-agents/whatsapp.md): Connect your WhatsApp business account with ElevenLabs Agents
+- [WhatsApp tools](https://elevenlabs.io/docs/eleven-agents/whatsapp/tools.md): Let your agent send messages on WhatsApp with tools
+- [Batch calling](https://elevenlabs.io/docs/eleven-agents/phone-numbers/batch-calls.md): Initiate multiple outbound calls simultaneously with your ElevenLabs agents.
+- [Operate](https://elevenlabs.io/docs/eleven-agents/operate/overview.md): Monitor, test, and optimize your agents at scale.
+- [Users](https://elevenlabs.io/docs/eleven-agents/operate/users.md): Browse end users who have talked to your agents and view their conversations.
+- [Agent Testing](https://elevenlabs.io/docs/eleven-agents/customization/agent-testing.md): Build confidence in your agent's behavior with automated testing
+- [Experiments](https://elevenlabs.io/docs/eleven-agents/operate/experiments.md): Run controlled A/B tests on production traffic to optimize agent performance with data, not intuition
+- [Agent versioning](https://elevenlabs.io/docs/eleven-agents/operate/versioning.md): Safely experiment with agent configurations using branches, versions, and traffic deployment
+- [Conversation analysis](https://elevenlabs.io/docs/eleven-agents/customization/agent-analysis.md): Analyze conversation quality and extract structured data from customer interactions.
+- [Success evaluation](https://elevenlabs.io/docs/eleven-agents/customization/agent-analysis/success-evaluation.md): Define custom criteria to assess conversation quality, goal achievement, and customer satisfaction.
+- [Data collection](https://elevenlabs.io/docs/eleven-agents/customization/agent-analysis/data-collection.md): Extract structured information from conversations such as contact details and business data.
+- [Sentiment analysis](https://elevenlabs.io/docs/eleven-agents/customization/agent-analysis/sentiment-analysis.md): Understand user sentiment across agent conversations.
+- [Coaching](https://elevenlabs.io/docs/eleven-agents/customization/agent-analysis/coaching.md): Talk to an internal coach agent to improve your agent's system prompt, memories, and procedures.
+- [Searching conversations](https://elevenlabs.io/docs/eleven-agents/customization/agent-analysis/smart-search.md): Find messages across your conversation history using keyword or semantic search.
+- [Analytics](https://elevenlabs.io/docs/eleven-agents/dashboard.md): Track agent performance, compare experiments, and identify optimization opportunities across your workspace
+- [Spotlight](https://elevenlabs.io/docs/eleven-agents/dashboard/spotlight.md): Understand what is happening across your agent conversations.
+- [Real-time insights](https://elevenlabs.io/docs/eleven-agents/dashboard/spotlight/real-time-insights.md): Monitor live activity, trends, and suggested actions for your agents.
+- [Topic discovery](https://elevenlabs.io/docs/eleven-agents/dashboard/spotlight/topic-discovery.md): Understand recurring conversation topics, sentiment, and success trends.
+- [Real-time monitoring](https://elevenlabs.io/docs/eleven-agents/guides/realtime-monitoring.md): Observe live conversations and send control commands during active calls
+- [OpenTelemetry traces](https://elevenlabs.io/docs/eleven-agents/customization/opentelemetry-traces.md): Export OpenTelemetry traces to your observability stack as OTLP JSON.
+- [Privacy](https://elevenlabs.io/docs/eleven-agents/customization/privacy.md): Manage how your agent handles data storage and privacy.
+- [Retention](https://elevenlabs.io/docs/eleven-agents/customization/privacy/retention.md): Control how long your agent retains conversation history and recordings.
+- [Audio saving](https://elevenlabs.io/docs/eleven-agents/customization/privacy/audio-saving.md): Control whether call audio recordings are retained.
+- [Conversation history redaction](https://elevenlabs.io/docs/eleven-agents/customization/privacy/conversation-history-redaction.md): Automatically redact sensitive entities from stored conversation history.
+- [Zero Retention Mode (per-agent)](https://elevenlabs.io/docs/eleven-agents/customization/privacy/zrm.md): Learn how to enable Zero Retention Mode for individual agents to enhance data privacy.
+- [Optimizing LLM costs](https://elevenlabs.io/docs/eleven-agents/customization/llm/optimizing-costs.md): Practical strategies to reduce LLM inference expenses on the ElevenLabs platform.
+- [ElevenLabs CLI](https://elevenlabs.io/docs/eleven-agents/operate/cli.md): Manage your voice agents as code from your command line.
+- [Hosted MCP server](https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp.md): Create and manage your agents from Claude and other MCP clients.
+- [Events](https://elevenlabs.io/docs/eleven-agents/customization/events.md): Understand real-time communication events exchanged between client and server in ElevenLabs Agents
+- [Client events](https://elevenlabs.io/docs/eleven-agents/customization/events/client-events.md): Understand and handle real-time events received by the client during conversational applications.
+- [Client to server events](https://elevenlabs.io/docs/eleven-agents/customization/events/client-to-server-events.md): Send contextual information from the client to enhance conversational applications in real-time.
+- [Integrate your own model](https://elevenlabs.io/docs/eleven-agents/customization/llm/custom-llm.md): Connect an agent to your own LLM or host your own server.
+- [Cloudflare Workers AI](https://elevenlabs.io/docs/eleven-agents/customization/llm/custom-llm/cloudflare.md): Connect an agent to a custom LLM on Cloudflare Workers AI.
+- [Groq Cloud](https://elevenlabs.io/docs/eleven-agents/customization/llm/custom-llm/groq-cloud.md): Connect an agent to a custom LLM on Groq Cloud.
+- [SambaNova Cloud](https://elevenlabs.io/docs/eleven-agents/customization/llm/custom-llm/samba-nova-cloud.md): Connect an agent to a custom LLM on SambaNova Cloud.
+- [Together AI](https://elevenlabs.io/docs/eleven-agents/customization/llm/custom-llm/together-ai.md): Connect an agent to a custom LLM on Together AI.
+- [LLM Cascading](https://elevenlabs.io/docs/eleven-agents/customization/llm/llm-cascading.md): Learn how Agents Platform ensures reliable LLM responses using a cascading fallback mechanism.
+- [Post-call webhooks](https://elevenlabs.io/docs/eleven-agents/workflows/post-call-webhooks.md): Get notified when calls end and analysis is complete through webhooks.
+- [Python SDK](https://elevenlabs.io/docs/eleven-agents/libraries/python.md): ElevenAgents SDK: deploy customized, interactive voice agents in minutes.
+- [React SDK](https://elevenlabs.io/docs/eleven-agents/libraries/react.md): ElevenAgents SDK: deploy customized, interactive voice agents in minutes.
+- [React Native SDK](https://elevenlabs.io/docs/eleven-agents/libraries/react-native.md): ElevenAgents SDK: deploy customized, interactive voice agents in minutes for React Native apps.
+- [JavaScript SDK](https://elevenlabs.io/docs/eleven-agents/libraries/java-script.md): ElevenAgents SDK: deploy customized, interactive voice agents in minutes.
+- [Kotlin SDK](https://elevenlabs.io/docs/eleven-agents/libraries/kotlin.md): ElevenAgents SDK: deploy customized, interactive voice agents in minutes for Android apps.
+- [Swift SDK](https://elevenlabs.io/docs/eleven-agents/libraries/swift.md): ElevenAgents SDK: deploy customized, interactive voice agents in your Swift applications.
+- [WebSocket](https://elevenlabs.io/docs/eleven-agents/libraries/web-sockets.md): Create real-time, interactive voice conversations with AI agents
+- [Next.JS](https://elevenlabs.io/docs/eleven-agents/guides/quickstarts/next-js.md): Learn how to create a web application that enables voice conversations with ElevenLabs AI agents
+- [Vite (Javascript)](https://elevenlabs.io/docs/eleven-agents/guides/quickstarts/java-script.md): Learn how to create a web application that enables voice conversations with ElevenLabs AI agents
+- [Chat Mode](https://elevenlabs.io/docs/eleven-agents/guides/chat-mode.md): Configure your agent for text-only conversations with chat mode
+- [Burst pricing](https://elevenlabs.io/docs/eleven-agents/guides/burst-pricing.md): Optimize call capacity with burst concurrency to handle traffic spikes.
+- [Building the ElevenLabs documentation agent](https://elevenlabs.io/docs/eleven-agents/guides/elevenlabs-docs-agent.md): Learn how we built our documentation assistant using ElevenLabs Agents
+- [Building the ElevenLabs customer interview agent](https://elevenlabs.io/docs/eleven-agents/guides/user-interviews-agent.md): Learn how we conducted 230 user interviews in 24 hours using ElevenLabs Agents
+- [Simulate Conversations](https://elevenlabs.io/docs/eleven-agents/guides/simulate-conversation.md): Learn how to test and evaluate your ElevenLabs agent with simulated conversations
+- [ElevenAgents in Ghost](https://elevenlabs.io/docs/eleven-agents/guides/no-code/ghost.md): Learn how to deploy a ElevenLabs agent to Ghost
+- [ElevenAgents in Framer](https://elevenlabs.io/docs/eleven-agents/guides/no-code/framer.md): Learn how to deploy a ElevenLabs agent to Framer
+- [ElevenAgents in Squarespace](https://elevenlabs.io/docs/eleven-agents/guides/no-code/squarespace.md): Learn how to deploy a ElevenLabs agent to Squarespace
+- [ElevenAgents in Webflow](https://elevenlabs.io/docs/eleven-agents/guides/no-code/webflow.md): Learn how to deploy a ElevenLabs agent to Webflow
+- [ElevenAgents in Wix](https://elevenlabs.io/docs/eleven-agents/guides/no-code/wix.md): Learn how to deploy a ElevenLabs agent to Wix
+- [ElevenAgents in WordPress](https://elevenlabs.io/docs/eleven-agents/guides/no-code/word-press.md): Learn how to deploy a ElevenLabs agent to WordPress
+- [Cross-platform Voice Agents with Expo React Native](https://elevenlabs.io/docs/eleven-agents/guides/integrations/expo-react-native.md): Build ElevenLabs agents that work across iOS and Android using Expo and the ElevenLabs React Native SDK with WebRTC support.
+- [LiveAvatar](https://elevenlabs.io/docs/eleven-agents/guides/integrations/live-avatar.md): Learn how to integrate ElevenAgents with HeyGen's LiveAvatar for real-time avatar streaming
+- [Build a Voice Assistant with Agents Platform on a Raspberry Pi](https://elevenlabs.io/docs/eleven-agents/guides/integrations/raspberry-pi-voice-assistant.md): Build a voice assistant with Agents Platform on a Raspberry Pi.
+- [Data Collection and Analysis with Agents Platform in Next.js](https://elevenlabs.io/docs/eleven-agents/guides/integrations/upstash-redis.md): Collect and analyse data in post-call webhooks using Agents Platform and Next.js.
+- [HIPAA](https://elevenlabs.io/docs/eleven-agents/legal/hipaa.md): Learn how ElevenLabs Agents, coupled with Zero Retention Mode, is designed to promote HIPAA compliance for healthcare applications. Please refer to our [compliance page](https://compliance.elevenlabs.io/) for the latest information.
+- [TCPA Compliance](https://elevenlabs.io/docs/eleven-agents/legal/tcpa.md): Understand key TCPA requirements for using AI agents in outbound calling
+- [Disclosure requirements](https://elevenlabs.io/docs/eleven-agents/legal/disclosure-requirement.md): Informing end users about your use of ElevenAgents
+- [Agent tools deprecation](https://elevenlabs.io/docs/eleven-agents/customization/tools/agent-tools-deprecation.md): Migrate from legacy `prompt.tools` to the new `prompt.tool_ids` field.
+- [ElevenAPI quickstart](https://elevenlabs.io/docs/eleven-api/quickstart.md): Learn how to make your first ElevenLabs API request.
+- [How to choose the right model](https://elevenlabs.io/docs/eleven-api/choosing-the-right-model.md): This guide shows you how to choose the right ElevenLabs model for your use case.
+- [Speech to Text quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/speech-to-text.md): Learn how to convert spoken audio into text.
+- [Speech Engine quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/speech-engine.md): Add voice to your chat agent using the ElevenLabs SDK.
+- [Music quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/music.md): Learn how to generate music with Eleven Music.
+- [Text to Dialogue quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/text-to-dialogue.md): Learn how to generate immersive dialogue from text.
+- [Voice Changer quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/voice-changer.md): Learn how to transform the voice of an audio file using the Voice Changer API.
+- [Voice Isolator quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/voice-isolator.md): Learn how to remove background noise from an audio file using the Voice Isolator API.
+- [Dubbing quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/dubbing.md): Learn how to dub audio and video files across languages using the Dubbing API.
+- [Sound Effects quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/sound-effects.md): Learn how to generate sound effects using the Sound Effects API.
+- [Forced Alignment quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/forced-alignment.md): Learn how to use the Forced Alignment API to align text to audio.
+- [Understanding audio streaming](https://elevenlabs.io/docs/eleven-api/concepts/audio-streaming.md): Why streaming audio generation is different from streaming files, and what that means for your application.
+- [Understanding latency](https://elevenlabs.io/docs/eleven-api/concepts/latency.md): What latency means in audio generation, what contributes to it, and how to reason about tradeoffs.
+- [Voice cloning: how it works](https://elevenlabs.io/docs/eleven-api/concepts/voice-cloning.md): The technical differences between Instant and Professional Voice Cloning, and what they mean for quality.
+- [Streaming text to speech](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/streaming.md): This guide shows you how to stream text to speech and optionally upload audio to AWS S3.
+- [Stitching multiple requests](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching.md): This guide shows you how to maintain voice prosody across multiple text chunks/generations.
+- [Using pronunciation dictionaries](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/pronunciation-dictionaries.md): This guide shows you how to manage pronunciation dictionaries programmatically.
+- [Streaming and Caching with Supabase](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/streaming-and-caching-with-supabase.md): Generate and stream speech through Supabase Edge Functions. Store speech in Supabase Storage and cache responses via built-in CDN.
+- [Sending generated audio through Twilio](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/twilio.md): Learn how to integrate generated speech into phone calls with Twilio.
+- [Multichannel speech-to-text](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/batch/multichannel-transcription.md): This guide shows you how to use multichannel transcription mode with the Speech to Text API.
+- [Asynchronous Speech to Text](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/batch/webhooks.md): This guide shows you how to use webhooks to receive asynchronous notifications when transcription tasks complete.
+- [Keyterm prompting](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/batch/keyterm-prompting.md): This guide shows you how to use keyterm prompting with the Speech to Text API.
+- [Entity detection](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/batch/entity-detection.md): This guide shows you how to use entity detection with the Speech to Text API.
+- [Transcription Telegram Bot](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/batch/telegram-bot.md): Build a Telegram bot that transcribes audio and video messages in 90+languages using TypeScript with Deno in Supabase Edge Functions.
+- [Vercel AI SDK](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/batch/vercel-ai-sdk.md): Use the ElevenLabs Provider in the Vercel AI SDK to transcribe speech from audio and video files.
+- [Client-side streaming](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/realtime/client-side-streaming.md): This guide shows you how to transcribe audio in real time on the client side using ElevenLabs.
+- [Server-side streaming](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/realtime/server-side-streaming.md): This guide shows you how to transcribe audio in real time on the server side using ElevenLabs.
+- [Transcripts and commit strategies](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/realtime/transcripts-and-commit-strategies.md): This guide shows you how to handle transcripts and commit strategies with the ElevenLabs Realtime Speech to Text API.
+- [Realtime event reference](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-to-text/realtime/event-reference.md): Reference of the events received from the Realtime Speech to Text API
+- [Music streaming](https://elevenlabs.io/docs/eleven-api/guides/how-to/music/streaming.md): This guide shows you how to stream music with Eleven Music.
+- [Composition plans](https://elevenlabs.io/docs/eleven-api/guides/how-to/music/composition-plans.md): Precise control over music generation with structured JSON
+- [Music inpainting](https://elevenlabs.io/docs/eleven-api/guides/how-to/music/inpainting.md): Edit and combine sections of existing songs
+- [Instant Voice Cloning quickstart](https://elevenlabs.io/docs/eleven-api/guides/how-to/voices/instant-voice-cloning.md): This guide shows you how to clone a voice using the Clone Voice API.
+- [Professional Voice Cloning quickstart](https://elevenlabs.io/docs/eleven-api/guides/how-to/voices/professional-voice-cloning.md): This guide shows you how to create a Professional Voice Clone using the PVC API.
+- [Voice Design quickstart](https://elevenlabs.io/docs/eleven-api/guides/how-to/voices/voice-design.md): This guide shows you how to design a voice via a text prompt using the Voice Design API.
+- [Voice Remixing quickstart](https://elevenlabs.io/docs/eleven-api/guides/how-to/voices/remix-a-voice.md): This guide shows you how to remix an existing voice to create a new one.
+- [Generate audio in real-time](https://elevenlabs.io/docs/eleven-api/guides/how-to/websockets/realtime-tts.md): This guide shows you how to generate audio in real-time via a WebSocket connection.
+- [Multi-Context Websocket](https://elevenlabs.io/docs/eleven-api/guides/how-to/websockets/multi-context-web-socket.md): This guide shows you how to build real-time voice agents using the multi-context WebSocket API.
+- [LiveKit integration](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-engine/livekit-integration.md): Bridge a LiveKit room into Speech Engine using a LiveKit Agents worker.
+- [Pipecat integration](https://elevenlabs.io/docs/eleven-api/guides/how-to/speech-engine/pipecat-integration.md): Use a Pipecat pipeline as the LLM brain behind Speech Engine.
+- [Latency optimization](https://elevenlabs.io/docs/eleven-api/guides/how-to/best-practices/latency-optimization.md): This guide shows you how to reduce text-to-speech latency in your application.
+- [Secure by design](https://elevenlabs.io/docs/eleven-api/guides/how-to/best-practices/security.md): Learn how to safely integrate ElevenLabs APIs.
+- [Libraries & SDKs](https://elevenlabs.io/docs/eleven-api/resources/libraries.md): Explore language-specific libraries for using the ElevenLabs API.
+- [JavaScript SDK](https://elevenlabs.io/docs/eleven-api/resources/libraries/scribe-stt/javascript-scribe.md): Scribe: real-time speech-to-text transcription in JavaScript
+- [React SDK](https://elevenlabs.io/docs/eleven-api/resources/libraries/scribe-stt/react-scribe.md): useScribe: real-time speech-to-text transcription in React
+- [JavaScript SDK reference](https://elevenlabs.io/docs/eleven-api/resources/libraries/speech-engine/javascript-sdk-reference.md): Classes, methods, and events for the Speech Engine JavaScript SDK.
+- [Python SDK reference](https://elevenlabs.io/docs/eleven-api/resources/libraries/speech-engine/python-sdk-reference.md): Classes, methods, and events for the Speech Engine Python SDK.
+- [Errors](https://elevenlabs.io/docs/eleven-api/resources/errors.md): Explore error messages and solutions.
+- [Agent Tooling](https://elevenlabs.io/docs/eleven-api/resources/agent-tooling.md): Tools for agents to build with ElevenLabs.
+- [Webhooks](https://elevenlabs.io/docs/eleven-api/resources/webhooks.md): Enable external integrations by receiving webhook events.
+- [IP allowlisting](https://elevenlabs.io/docs/eleven-api/resources/ip-allowlisting.md): Static egress IP addresses for ElevenLabs services.
+- [Zero Retention Mode (Enterprise)](https://elevenlabs.io/docs/eleven-api/resources/zero-retention-mode.md): Learn how to use Zero Retention Mode to protect sensitive data.
+- [Breaking changes policy](https://elevenlabs.io/docs/eleven-api/resources/breaking-changes-policy.md): Learn how ElevenLabs defines breaking changes in the APIs.
+- [Private deployment](https://elevenlabs.io/docs/eleven-api/private-deployment/overview.md): Deploy ElevenLabs Text to Speech, Speech to Text models or Agents Platform in your private cloud infrastructure for maximum security and control.
+- [Reception.ai](https://elevenlabs.io/docs/reception-ai/overview.md): An AI phone receptionist that answers calls, books appointments, and manages operations around the clock.
+- [Quickstart](https://elevenlabs.io/docs/reception-ai/quickstart.md): Set up your AI receptionist and start receiving calls in under 5 minutes.
+- [Your receptionist](https://elevenlabs.io/docs/reception-ai/receptionist/overview.md): How the AI receptionist works and what it can do.
+- [Voice and language](https://elevenlabs.io/docs/reception-ai/receptionist/voice-and-language.md): Configure your receptionist's voice, greeting, and language settings.
+- [Rules](https://elevenlabs.io/docs/reception-ai/receptionist/rules.md): Define how your receptionist behaves in specific situations.
+- [Call settings](https://elevenlabs.io/docs/reception-ai/receptionist/call-settings.md): Configure answering mode, call transfers, and blocked numbers.
+- [Testing your receptionist](https://elevenlabs.io/docs/reception-ai/receptionist/testing.md): How to verify your receptionist handles calls correctly.
+- [Scheduling](https://elevenlabs.io/docs/reception-ai/scheduling/overview.md): How appointments, services, and availability work in Reception.ai.
+- [Services](https://elevenlabs.io/docs/reception-ai/scheduling/services.md): How service types, pricing, and booking rules shape what customers can schedule.
+- [Business hours](https://elevenlabs.io/docs/reception-ai/scheduling/business-hours.md): How operating hours, time-off exceptions, and per-staff schedules control availability.
+- [Staff](https://elevenlabs.io/docs/reception-ai/scheduling/staff.md): How staff members, schedules, and assignments affect when appointments can be booked.
+- [Booking page](https://elevenlabs.io/docs/reception-ai/features/booking-page.md): Let customers schedule appointments directly from your website.
+- [Inbox](https://elevenlabs.io/docs/reception-ai/features/inbox.md): Review calls, messages, and knowledge gaps in one place.
+- [Business assistant](https://elevenlabs.io/docs/reception-ai/features/assistant.md): Manage your business through natural language conversation.
+- [Analytics](https://elevenlabs.io/docs/reception-ai/features/analytics.md): Track business performance, call volume, and booking metrics.
+- [Phone numbers](https://elevenlabs.io/docs/reception-ai/features/phone-numbers.md): How phone numbers work in Reception.ai.
+- [Knowledge base](https://elevenlabs.io/docs/reception-ai/knowledge-base/overview.md): Teach your receptionist about your business so it can answer questions accurately.
+- [Website scraping](https://elevenlabs.io/docs/reception-ai/knowledge-base/website-scraping.md): Import information from your website into your receptionist's knowledge base.
+- [File uploads](https://elevenlabs.io/docs/reception-ai/knowledge-base/file-uploads.md): Upload documents to expand your receptionist's knowledge.
+- [Integrations](https://elevenlabs.io/docs/reception-ai/integrations/overview.md): Connect Reception.ai to your existing tools and workflows.
+- [Google Calendar](https://elevenlabs.io/docs/reception-ai/integrations/google-calendar.md): Sync staff calendars so your receptionist knows real-time availability.
+- [Zapier](https://elevenlabs.io/docs/reception-ai/integrations/zapier.md): Connect Reception.ai to thousands of apps through Zapier's MCP server.
+- [Webhooks](https://elevenlabs.io/docs/reception-ai/integrations/webhooks.md): Give your receptionist custom tools that call your HTTP endpoints.
+- [MCP server](https://elevenlabs.io/docs/reception-ai/integrations/mcp-server.md): Connect custom tool servers using the Model Context Protocol.
+- [Plans and pricing](https://elevenlabs.io/docs/reception-ai/billing/plans-and-pricing.md): Choose the right plan for your business.
+- [Usage and limits](https://elevenlabs.io/docs/reception-ai/billing/usage-and-limits.md): How credits, minutes, and resource limits work.
+- [Introduction](https://elevenlabs.io/docs/api-reference/introduction.md): Explore the ElevenLabs API reference with comprehensive guides, code examples, and endpoint documentation
+- [API Authentication](https://elevenlabs.io/docs/api-reference/authentication.md): Learn how to authenticate your ElevenLabs API requests
+- [Streaming](https://elevenlabs.io/docs/api-reference/streaming.md): Learn how to stream real-time audio from the ElevenLabs API using chunked transfer encoding
+- [ElevenCreative Studio API](https://elevenlabs.io/docs/api-reference/studio-api-information.md): Access the ElevenCreative Studio API for programmatic control of your video and audio content creation workflow
+- [Help Center Directory](https://elevenlabs.io/docs/help-center/help-center-directory.md): Here you can find troubleshooting guides and answers to common questions.
+- [Account](https://elevenlabs.io/docs/help-center/account.md): Find answers to questions about accounts, billing, and subscriptions
+- [General Account FAQ](https://elevenlabs.io/docs/help-center/account/general.md): Find answers to common Account questions
+- [Can I be notified when I’m running low on credits?](https://elevenlabs.io/docs/help-center/account/general/can-i-be-notified-when-im-running-low-on-credits.md)
+- [Can I change my account from Apple Sign-in to email and password?](https://elevenlabs.io/docs/help-center/account/general/can-i-change-my-account-from-apple-sign-in-to-email-and-password.md)
+- [Can I change my account from Google Sign-in to email and password?](https://elevenlabs.io/docs/help-center/account/general/can-i-change-my-account-from-google-sign-in-to-email-and-password.md)
+- [Can I export usage data for my account?](https://elevenlabs.io/docs/help-center/account/general/can-i-export-usage-data-for-my-account.md)
+- [Can I still log in using GitHub or Facebook?](https://elevenlabs.io/docs/help-center/account/general/can-i-still-log-in-using-github-or-facebook.md)
+- [Can users have more than one account?](https://elevenlabs.io/docs/help-center/account/general/can-users-have-more-than-one-account.md)
+- [Do I use quota on every generation?](https://elevenlabs.io/docs/help-center/account/general/do-i-use-quota-on-every-generation.md)
+- [Have characters changed?](https://elevenlabs.io/docs/help-center/account/general/have-characters-changed.md)
+- [How can I access usage analytics for my account?](https://elevenlabs.io/docs/help-center/account/general/how-can-i-access-usage-analytics-for-my-account.md)
+- [How can I delete my account or request to have my data deleted?](https://elevenlabs.io/docs/help-center/account/general/how-can-i-delete-my-account-or-request-to-have-my-data-deleted.md)
+- [How can I delete my account?](https://elevenlabs.io/docs/help-center/account/general/how-can-i-delete-my-account.md)
+- [How can I see information about credit usage for my account?](https://elevenlabs.io/docs/help-center/account/general/how-can-i-see-information-about-credit-usage-for-my-account.md)
+- [How can I use ElevenLabs with third-party services?](https://elevenlabs.io/docs/help-center/account/general/how-can-i-use-eleven-labs-with-third-party-services.md)
+- [How do I add two-factor authentication (2FA) to my account?](https://elevenlabs.io/docs/help-center/account/general/how-do-i-add-two-factor-authentication-2-fa-to-my-account.md)
+- [How do I change my email?](https://elevenlabs.io/docs/help-center/account/general/how-do-i-change-my-email.md)
+- [How do I change the usage based billing threshold for my account?](https://elevenlabs.io/docs/help-center/account/general/how-do-i-change-the-usage-based-billing-threshold-for-my-account.md)
+- [How do I enable usage based billing for my account?](https://elevenlabs.io/docs/help-center/account/general/how-do-i-enable-usage-based-billing-for-my-account.md)
+- [How do I get access to alpha features?](https://elevenlabs.io/docs/help-center/account/general/how-do-i-get-access-to-alpha-features.md)
+- [How does credit rollover work?](https://elevenlabs.io/docs/help-center/account/general/how-does-credit-rollover-work.md)
+- [How many voice slots do I get per tier and how can I increase it?](https://elevenlabs.io/docs/help-center/account/general/how-many-voice-slots-do-i-get-per-tier-and-how-can-i-increase-it.md)
+- [Is there a limit on how many times I can edit / add voices?](https://elevenlabs.io/docs/help-center/account/general/is-there-a-limit-on-how-many-times-i-can-edit-add-voices.md)
+- [Is there a limit to how many credits I can use at once?](https://elevenlabs.io/docs/help-center/account/general/is-there-a-limit-to-how-many-credits-i-can-use-at-once.md)
+- [What are credits?](https://elevenlabs.io/docs/help-center/account/general/what-are-credits.md)
+- [What does "Unusual activity detected. Free Tier usage disabled. If you are using proxy/VPN you might need to purchase a paid plan to not trigger our abuse detectors" mean?](https://elevenlabs.io/docs/help-center/account/general/what-does-unusual-activity-detected-free-tier-usage-disabled-if-you-are-using-proxy-vpn-you-might-need-to-purchase-a-paid-plan-to-not-trigger-our-abuse-detectors-mean.md)
+- [What happens to my cloned voices when I downgrade the tier?](https://elevenlabs.io/docs/help-center/account/general/what-happens-to-my-cloned-voices-when-i-downgrade-the-tier.md)
+- [What happens to my content after my subscription ends?](https://elevenlabs.io/docs/help-center/account/general/what-happens-to-my-content-after-my-subscription-ends.md)
+- [What happens to my credits when I upgrade or downgrade my subscription?](https://elevenlabs.io/docs/help-center/account/general/what-happens-to-my-credits-when-i-upgrade-or-downgrade-my-subscription.md)
+- [What happens to my PAYG credits if I change subscription plans?](https://elevenlabs.io/docs/help-center/account/general/what-happens-to-my-payg-credits-if-i-change-subscription-plans.md)
+- [What happens to my subscription and quota at the end of the month?](https://elevenlabs.io/docs/help-center/account/general/what-happens-to-my-subscription-and-quota-at-the-end-of-the-month.md)
+- [What happens when I run out of credits?](https://elevenlabs.io/docs/help-center/account/general/what-happens-when-i-run-out-of-credits.md)
+- [What is a subscription?](https://elevenlabs.io/docs/help-center/account/general/what-is-a-subscription.md)
+- [What is the price for usage based billing?](https://elevenlabs.io/docs/help-center/account/general/what-is-the-price-for-usage-based-billing.md)
+- [What is two-factor authentication (2FA)?](https://elevenlabs.io/docs/help-center/account/general/what-is-two-factor-authentication-2-fa.md)
+- [What is usage based billing?](https://elevenlabs.io/docs/help-center/account/general/what-is-usage-based-billing.md)
+- [When do my credits reset?](https://elevenlabs.io/docs/help-center/account/general/when-do-my-credits-reset.md)
+- [Where can I find out more about the pricing plans?](https://elevenlabs.io/docs/help-center/account/general/where-can-i-find-out-more-about-the-pricing-plans.md)
+- [Where can I provide feedback on my generated audio?](https://elevenlabs.io/docs/help-center/account/general/where-can-i-provide-feedback-on-my-generated-audio.md)
+- [Who can I contact about business inquiries or the Enterprise plan?](https://elevenlabs.io/docs/help-center/account/general/who-can-i-contact-about-business-inquiries-or-the-enterprise-plan.md)
+- [Why am I not receiving a verification email?](https://elevenlabs.io/docs/help-center/account/general/why-am-i-not-receiving-a-verification-email.md)
+- [Why can't I find my content in my account?](https://elevenlabs.io/docs/help-center/account/general/why-cant-i-find-my-content-in-my-account.md)
+- [Cancellation & Refunds FAQ](https://elevenlabs.io/docs/help-center/account/cancellation-refunds.md): Find answers to common questions related to cancellation & refunds
+- [How can I downgrade my subscription?](https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-can-i-downgrade-my-subscription.md)
+- [How can I request a refund?](https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-can-i-request-a-refund.md)
+- [How do I cancel my subscription?](https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-do-i-cancel-my-subscription.md)
+- [What is your refund policy?](https://elevenlabs.io/docs/help-center/account/cancellation-refunds/what-is-your-refund-policy.md)
+- [Why am I getting a payment attempt after cancelling my subscription?](https://elevenlabs.io/docs/help-center/account/cancellation-refunds/why-am-i-getting-a-payment-attempt-after-cancelling-my-subscription.md)
+- [Payment & Billing FAQ](https://elevenlabs.io/docs/help-center/account/payment-billing.md): Find answers to common questions related to payment & billing
+- [Can I pause my subscription?](https://elevenlabs.io/docs/help-center/account/payment-billing/can-i-pause-my-subscription.md)
+- [Can I pay for my ElevenLabs subscription in INR?](https://elevenlabs.io/docs/help-center/account/payment-billing/can-i-pay-for-my-eleven-labs-subscription-in-inr.md)
+- [Can I upgrade my annual subscription?](https://elevenlabs.io/docs/help-center/account/payment-billing/can-i-upgrade-my-annual-subscription.md)
+- [Do you offer annual or quarterly plans?](https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans.md)
+- [How can I use Apple Pay?](https://elevenlabs.io/docs/help-center/account/payment-billing/how-can-i-use-apple-pay.md)
+- [How can I use Google Pay?](https://elevenlabs.io/docs/help-center/account/payment-billing/how-can-i-use-google-pay.md)
+- [How do I change my billing information?](https://elevenlabs.io/docs/help-center/account/payment-billing/how-do-i-change-my-billing-information.md)
+- [How do I remove my card from my profile?](https://elevenlabs.io/docs/help-center/account/payment-billing/how-do-i-remove-my-card-from-my-profile.md)
+- [How do I use my coupon link?](https://elevenlabs.io/docs/help-center/account/payment-billing/how-do-i-use-my-coupon-link.md)
+- [What is the extra verification step upon checking out from the payment page?](https://elevenlabs.io/docs/help-center/account/payment-billing/what-is-the-extra-verification-step-upon-checking-out-from-the-payment-page.md)
+- [What kind of payment is accepted?](https://elevenlabs.io/docs/help-center/account/payment-billing/what-kind-of-payment-is-accepted.md)
+- [Where can I find my invoices?](https://elevenlabs.io/docs/help-center/account/payment-billing/where-can-i-find-my-invoices.md)
+- [Why did I not receive a discount on my first month?](https://elevenlabs.io/docs/help-center/account/payment-billing/why-did-i-not-get-the-first-month-off-coupon.md)
+- [Why is my payment failing?](https://elevenlabs.io/docs/help-center/account/payment-billing/why-is-my-payment-failing.md)
+- [Product](https://elevenlabs.io/docs/help-center/product.md): Find answers to questions about ElevenLabs products and features
+- [Content Production](https://elevenlabs.io/docs/help-center/product/content-production.md): Tools for creating and editing audio, video, and written content
+- [Studio FAQ](https://elevenlabs.io/docs/help-center/product/content-production/studio.md): Find answers to common questions related to studio
+- [Are there any limitations to the size of a project in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/are-there-any-limitations-to-the-size-of-a-project-in-studio.md)
+- [Can I assign more than one voice to a paragraph in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/can-i-assign-more-than-one-voice-to-a-paragraph-in-studio.md)
+- [Can I regenerate individual words in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/can-i-regenerate-individual-words-in-studio.md)
+- [Does it cost credits to regenerate in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/does-it-cost-credits-to-regenerate-in-studio.md)
+- [How can I change the voice and settings across multiple paragraphs in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/how-can-i-change-the-voice-and-settings-across-multiple-paragraphs-in-studio.md)
+- [How can I create a voiceover for my video using Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/how-can-i-create-a-voiceover-for-my-video-using-studio.md)
+- [How do I add chapters to a Studio project?](https://elevenlabs.io/docs/help-center/product/content-production/studio/how-do-i-add-chapters-to-a-studio-project.md)
+- [How do I export a Studio project to InAudio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/how-do-i-export-a-studio-project-to-in-audio.md)
+- [How do I export a Studio project to Spotify?](https://elevenlabs.io/docs/help-center/product/content-production/studio/how-do-i-export-a-studio-project-to-spotify.md)
+- [How do I use the Pronunciations Editor in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/how-do-i-use-the-pronunciations-editor-in-studio.md)
+- [On what plans can I use Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/on-what-plans-can-i-use-studio.md)
+- [What does the grey line mean in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/what-does-the-grey-line-mean-in-studio.md)
+- [What does the lock icon mean in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/what-does-the-lock-icon-mean-in-studio.md)
+- [What happens to my Studio projects if I downgrade my subscription?](https://elevenlabs.io/docs/help-center/product/content-production/studio/what-happens-to-my-studio-projects-if-i-downgrade-my-subscription.md)
+- [What is Auto-Regenerate?](https://elevenlabs.io/docs/help-center/product/content-production/studio/what-is-auto-regenerate.md)
+- [What is Generation History in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/what-is-generation-history-in-studio.md)
+- [What is Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/what-is-studio.md)
+- [What is the timeline in Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/what-is-the-timeline-in-studio.md)
+- [Which file formats can I import with Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/which-file-formats-can-i-import-with-studio.md)
+- [Why aren't my changes reflected in my download from Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/why-arent-my-changes-reflected-in-my-download-from-studio.md)
+- [Why can't I download from Studio?](https://elevenlabs.io/docs/help-center/product/content-production/studio/why-cant-i-download-from-studio.md)
+- [Voiceover Studio FAQ](https://elevenlabs.io/docs/help-center/product/content-production/voiceover-studio.md): Find answers to common questions related to voiceover studio
+- [How much does Voiceover Studio cost?](https://elevenlabs.io/docs/help-center/product/content-production/voiceover-studio/how-much-does-voiceover-studio-cost.md)
+- [What is Voiceover Studio?](https://elevenlabs.io/docs/help-center/product/content-production/voiceover-studio/what-is-voiceover-studio.md)
+- [Music FAQ](https://elevenlabs.io/docs/help-center/product/content-production/music.md): Find answers to common questions related to Eleven Music
+- [Are there any best practices for prompting Eleven Music?](https://elevenlabs.io/docs/help-center/product/content-production/music/are-there-any-best-practices-for-prompting-eleven-music.md)
+- [Can Audio Reference remix a song or change its genre?](https://elevenlabs.io/docs/help-center/product/content-production/music/can-audio-reference-remix-a-song-or-change-its-genre.md)
+- [How can I edit my track, add or remove sections, or change the style of a specific part in Eleven Music?](https://elevenlabs.io/docs/help-center/product/content-production/music/how-can-i-edit-my-track-add-or-remove-sections-or-change-the-style-of-a-specific-part-in-eleven-music.md)
+- [How much does Eleven Music cost?](https://elevenlabs.io/docs/help-center/product/content-production/music/how-much-does-eleven-music-cost.md)
+- [What can I generate with Eleven Music?](https://elevenlabs.io/docs/help-center/product/content-production/music/what-can-i-generate-with-eleven-music.md)
+- [What is Audio Reference?](https://elevenlabs.io/docs/help-center/product/content-production/music/what-is-audio-reference.md)
+- [What is Eleven Music?](https://elevenlabs.io/docs/help-center/product/content-production/music/what-is-eleven-music.md)
+- [Sound Effects FAQ](https://elevenlabs.io/docs/help-center/product/content-production/sound-effects.md): Find answers to common questions related to sound effects
+- [How do I prompt for sound effects?](https://elevenlabs.io/docs/help-center/product/content-production/sound-effects/how-do-i-prompt-for-sound-effects.md)
+- [How much does it cost to generate sound effects?](https://elevenlabs.io/docs/help-center/product/content-production/sound-effects/how-much-does-it-cost-to-generate-sound-effects.md)
+- [What is Sound Effects?](https://elevenlabs.io/docs/help-center/product/content-production/sound-effects/what-is-sound-effects.md)
+- [Dubbing FAQ](https://elevenlabs.io/docs/help-center/product/content-production/dubbing.md): Find answers to common questions related to dubbing
+- [Do you offer lip sync in Dubbing?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/do-you-offer-lip-sync-in-dubbing.md)
+- [How do I access Dubbing Studio?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/how-do-i-access-dubbing-studio.md)
+- [How much does Dubbing cost?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/how-much-does-dubbing-cost.md)
+- [On which plans can I use Dubbing?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/on-which-plans-can-i-use-dubbing.md)
+- [What happens to my dubs if I downgrade my subscription?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/what-happens-to-my-dubs-if-i-downgrade-my-subscription.md)
+- [What is Dubbing?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/what-is-dubbing.md)
+- [What is the difference between a track clone and a clip clone in the Dubbing Studio?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/what-is-the-difference-between-a-track-clone-and-a-clip-clone-in-the-dubbing-studio.md)
+- [Which file formats are supported by Dubbing?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/which-file-formats-are-supported-by-dubbing.md)
+- [Which languages are supported in Dubbing v2?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/which-languages-are-supported-in-dubbing-v-2.md)
+- [Why can't I download my dubs?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/why-cant-i-download-my-dubs.md)
+- [Why can't I see the edit button next to my dub?](https://elevenlabs.io/docs/help-center/product/content-production/dubbing/why-cant-i-see-the-edit-button-next-to-my-dub.md)
+- [Image & Video FAQ](https://elevenlabs.io/docs/help-center/product/content-production/image-video.md): Find answers to common questions related to image & video
+- [How much does Image & Video cost?](https://elevenlabs.io/docs/help-center/product/content-production/image-video/how-much-does-image-video-cost.md)
+- [What is Image & Video?](https://elevenlabs.io/docs/help-center/product/content-production/image-video/what-is-image-video.md)
+- [ElevenMusic FAQ](https://elevenlabs.io/docs/help-center/product/content-production/eleven-music.md): Find answers to common questions related to ElevenMusic
+- [Do I need to pay to use ElevenMusic?](https://elevenlabs.io/docs/help-center/product/content-production/eleven-music/do-i-need-to-pay-to-use-eleven-music.md)
+- [What is ElevenMusic?](https://elevenlabs.io/docs/help-center/product/content-production/eleven-music/what-is-elevenmusic.md)
+- [Voice Customization](https://elevenlabs.io/docs/help-center/product/voice-customization.md): Voice creation, customization, and management tools
+- [My Voices FAQ](https://elevenlabs.io/docs/help-center/product/voice-customization/my-voices.md): Find answers to common questions related to my voices
+- [How do I access ElevenLabs Default voices?](https://elevenlabs.io/docs/help-center/product/voice-customization/my-voices/how-do-i-access-eleven-labs-default-voices.md)
+- [How do I delete voices from My Voices?](https://elevenlabs.io/docs/help-center/product/voice-customization/my-voices/how-do-i-delete-voices-from-my-voices.md)
+- [How do I share a voice?](https://elevenlabs.io/docs/help-center/product/voice-customization/my-voices/how-do-i-share-a-voice.md)
+- [What are Default voices?](https://elevenlabs.io/docs/help-center/product/voice-customization/my-voices/what-are-default-voices.md)
+- [What are Legacy voices?](https://elevenlabs.io/docs/help-center/product/voice-customization/my-voices/what-are-legacy-voices.md)
+- [What is My Voices?](https://elevenlabs.io/docs/help-center/product/voice-customization/my-voices/what-is-my-voices.md)
+- [Who has access to my voices?](https://elevenlabs.io/docs/help-center/product/voice-customization/my-voices/who-has-access-to-my-voices.md)
+- [Why can't I access my voices via third-party services?](https://elevenlabs.io/docs/help-center/product/voice-customization/my-voices/why-cant-i-access-my-voices-via-third-party-services.md)
+- [Voice Changer FAQ](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-changer.md): Find answers to common questions related to voice changer
+- [How do I download generated files from Voice Changer?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-changer/how-do-i-download-generated-files-from-voice-changer.md)
+- [How much does Voice Changer cost?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-changer/how-much-does-voice-changer-cost.md)
+- [What is Voice Changer?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-changer/what-is-voice-changer.md)
+- [What is the max input length when using Voice Changer?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-changer/what-is-the-max-input-length-when-using-voice-changer.md)
+- [Which formats can be used as the input audio for Voice Changer?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-changer/which-formats-can-be-used-as-the-input-audio-for-voice-changer.md)
+- [Voice Cloning FAQ](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning.md): Find answers to common questions related to voice cloning
+- [Are there any restrictions on what voices I can upload for voice cloning?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/are-there-any-restrictions-on-what-voices-i-can-upload-for-voice-cloning.md)
+- [Are there any tips to get good-quality cloned voices?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/are-there-any-tips-to-get-good-quality-cloned-voices.md)
+- [Can I clone my voice in a language other than English?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/can-i-clone-my-voice-in-a-language-other-than-english.md)
+- [Can I create a Professional Voice Clone of someone else's voice?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/can-i-create-a-professional-voice-clone-of-someone-elses-voice.md)
+- [Can I export my voice clones?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/can-i-export-my-voice-clones.md)
+- [How can I delete my unverified Professional Voice Clone (PVC)?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/how-can-i-delete-my-unverified-professional-voice-clone-pvc.md)
+- [How do I add or upgrade the models used to train my Professional Voice Clone?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/how-do-i-add-or-upgrade-the-models-used-to-train-my-professional-voice-clone.md)
+- [How many Professional Voice Clones (PVCs) can I have?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/how-many-professional-voice-clones-pv-cs-can-i-have.md)
+- [How many voice samples should I upload for Instant Voice Cloning?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/how-many-voice-samples-should-i-upload-for-instant-voice-cloning.md)
+- [My professional voice clone failed or is delayed, what can I do?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/my-professional-voice-clone-failed-or-is-delayed-what-can-i-do.md)
+- [What can I do if I failed to verify my Professional Voice Clone (PVC)?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/what-can-i-do-if-i-failed-to-verify-my-professional-voice-clone-pvc.md)
+- [What does the error 'No model found for this voice. Please select another voice' mean?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/what-does-the-error-no-model-found-for-this-voice-please-select-another-voice-mean.md)
+- [What does the status of my Professional Voice Clone mean?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/what-does-the-status-of-my-professional-voice-clone-mean.md)
+- [What files do you accept for voice cloning?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/what-files-do-you-accept-for-voice-cloning.md)
+- [What is the difference between Instant Voice Cloning (IVC) and Professional Voice Cloning (PVC)?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/what-is-the-difference-between-instant-voice-cloning-ivc-and-professional-voice-cloning-pvc.md)
+- [What languages are supported with Professional Voice Cloning (PVC)?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/what-languages-are-supported-with-professional-voice-cloning-pvc.md)
+- [When will my professional voice clone (PVC) be ready?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/when-will-my-professional-voice-clone-pvc-be-ready.md)
+- [Why does my voice or accent not sound correct after cloning?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-cloning/why-does-my-voice-or-accent-not-sound-correct-after-cloning.md)
+- [Voice Design FAQ](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-design.md): Find answers to common questions related to voice design
+- [How much does Voice Design cost?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-design/how-much-does-voice-design-cost.md)
+- [What is Voice Design?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-design/what-is-voice-design.md)
+- [What kind of voices can I create using Voice Design?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-design/what-kind-of-voices-can-i-create-using-voice-design.md)
+- [Voice Isolator FAQ](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-isolator.md): Find answers to common questions related to voice isolator
+- [How much does Voice Isolator cost?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-isolator/how-much-does-voice-isolator-cost.md)
+- [What is Voice Isolator?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-isolator/what-is-voice-isolator.md)
+- [What is the maximum size of file I can upload for Voice Isolator?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-isolator/what-is-the-maximum-size-of-file-i-can-upload-for-voice-isolator.md)
+- [Voice Library FAQ](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library.md): Find answers to common questions related to voice library
+- [Can Children’s or Child-Like Voices Be Added to the Voice Library?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/can-childrens-or-child-like-voices-be-added-to-the-voice-library.md)
+- [Can I share an AI-generated voice in the Voice Library?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/can-i-share-an-ai-generated-voice-in-the-voice-library.md)
+- [How can I find out what voice is used in a video or audio clip?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/how-can-i-find-out-what-voice-is-used-in-a-video-or-audio-clip.md)
+- [How can I identify the voice used to generate audio?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/how-can-i-identify-the-voice-used-to-generate-audio.md)
+- [How do I add a custom preview for my shared voice?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/how-do-i-add-a-custom-preview-for-my-shared-voice.md)
+- [How do I delete a voice I've shared with the Voice Library?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/how-do-i-delete-a-voice-ive-shared-with-the-voice-library.md)
+- [What are custom rates and credit multipliers?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/what-are-custom-rates-and-credit-multipliers.md)
+- [What is Live Moderation?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/what-is-live-moderation.md)
+- [What is a notice period?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/what-is-a-notice-period.md)
+- [What is the Voice Library?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/what-is-the-voice-library.md)
+- [What voices are popular on TikTok, YouTube, and social media?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/what-voices-are-popular-on-tik-tok-you-tube-and-social-media.md)
+- [Why can't I use some voices from the Voice Library?](https://elevenlabs.io/docs/help-center/product/voice-customization/voice-library/why-cant-i-use-some-voices-from-the-voice-library.md)
+- [Speech Synthesis](https://elevenlabs.io/docs/help-center/product/speech-synthesis.md): Converting text to speech and speech to text
+- [Speech to Text FAQ](https://elevenlabs.io/docs/help-center/product/speech-synthesis/speech-to-text.md): Find answers to common questions related to speech to text
+- [How many Speech to Text requests can I make and can I increase it?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/speech-to-text/how-many-speech-to-text-requests-can-i-make-and-can-i-increase-it.md)
+- [What is Speech to Text?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/speech-to-text/what-is-speech-to-text.md)
+- [Which languages does Speech to Text support?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/speech-to-text/which-languages-does-speech-to-text-support.md)
+- [Text to Speech FAQ](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech.md): Find answers to common questions related to text to speech
+- [Can I change the pace of the voice?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/can-i-change-the-pace-of-the-voice.md)
+- [Can I use the same cloned/designed voice across languages?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/can-i-use-the-same-cloned-designed-voice-across-languages.md)
+- [Can you make voices produce the sound of breathing?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/can-you-make-voices-produce-the-sound-of-breathing.md)
+- [Do you offer an AI model for conversational purposes or for chatbots?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/do-you-offer-an-ai-model-for-conversational-purposes-or-for-chatbots.md)
+- [How can I add pauses?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/how-can-i-add-pauses.md)
+- [How can I force a certain pronunciation of a word or name?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/how-can-i-force-a-certain-pronunciation-of-a-word-or-name.md)
+- [How do I download WAV, M4A and FLAC files?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/how-do-i-download-wav-m4a-and-flac-files.md)
+- [How do I download generated files from Text to Speech?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/how-do-i-download-generated-files-from-text-to-speech.md)
+- [How do I select the language and accent?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/how-do-i-select-the-language-and-accent.md)
+- [How do audio tags work with Eleven v3?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/how-do-audio-tags-work-with-eleven-v3-alpha.md)
+- [How much does it cost to generate using Eleven v3?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/how-much-does-it-cost-to-generate-using-eleven-v3-alpha.md)
+- [How to make the voice laugh?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/how-to-make-the-voice-laugh.md)
+- [How to produce emotions?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/how-to-produce-emotions.md)
+- [Is there a way to preview audio without losing quota before downloading?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/is-there-a-way-to-preview-audio-without-losing-quota-before-downloading.md)
+- [What is Dialogue mode?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/what-is-dialogue-mode.md)
+- [What is Eleven v3?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/what-is-eleven-v3-alpha.md)
+- [What languages can the AI speak?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/what-languages-can-the-ai-speak.md)
+- [What's the maximum amount of characters and text I can generate?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/whats-the-maximum-amount-of-characters-and-text-i-can-generate.md)
+- [Which voices in the voice library are native to a specific language?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/which-voices-in-the-voice-library-are-native-to-a-specific-language.md)
+- [Why are numbers, dates, symbols and acronyms not properly pronounced or spoken in the correct language?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/why-are-numbers-dates-symbols-and-acronyms-not-properly-pronounced-or-spoken-in-the-correct-language.md)
+- [Why is my voice mispronouncing certain words?](https://elevenlabs.io/docs/help-center/product/speech-synthesis/text-to-speech/why-is-my-voice-mispronouncing-certain-words.md)
+- [Conversational Agents](https://elevenlabs.io/docs/help-center/product/conversational-agents.md): AI agents and conversational capabilities
+- [ElevenLabs Agents (formerly Conversational AI) FAQ](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai.md): Find answers to common questions related to elevenlabs agents (formerly conversational ai)
+- [Can I connect a non-Twilio phone to ElevenAgents?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/can-i-connect-a-non-twilio-phone-to-eleven-agents.md)
+- [Can I connect Twilio to ElevenAgents?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/can-i-connect-twilio-to-eleven-agents.md)
+- [How do I share an agent with a Basic Seat member of my workspace?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/how-do-i-share-an-agent-with-a-basic-seat-member-of-my-workspace.md)
+- [How many ElevenAgents requests can I make and can I increase it?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/how-many-eleven-agents-requests-can-i-make-and-can-i-increase-it.md)
+- [How much does ElevenAgents cost?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/how-much-does-eleven-agents-cost.md)
+- [How do I use tools with ElevenAgents?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/how-do-i-use-tools-with-eleven-agents.md)
+- [What can I create with ElevenAgents?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/what-can-i-create-with-eleven-agents.md)
+- [What is ElevenAgents?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/what-is-eleven-agents.md)
+- [Where can I locate the reason for my call failing?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/where-can-i-locate-the-reason-for-my-call-failing.md)
+- [Which languages can I use with ElevenAgents?](https://elevenlabs.io/docs/help-center/product/conversational-agents/eleven-labs-agents-formerly-conversational-ai/which-languages-can-i-use-with-eleven-agents.md)
+- [Distribution & Publishing](https://elevenlabs.io/docs/help-center/product/distribution-publishing.md): Publishing, embedding, and distributing content
+- [Audio Native FAQ](https://elevenlabs.io/docs/help-center/product/distribution-publishing/audio-native.md): Find answers to common questions related to audio native
+- [How to Update an Audio Native Player](https://elevenlabs.io/docs/help-center/product/distribution-publishing/audio-native/how-to-update-an-audio-native-player.md)
+- [On what plans is Audio Native available?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/audio-native/on-what-plans-is-audio-native-available.md)
+- [What is Audio Native?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/audio-native/what-is-audio-native.md)
+- [ElevenReader FAQ](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader.md): Find answers to common questions related to elevenreader
+- [Are there any limits on the types of content I can listen to in ElevenReader?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/are-there-any-limits-on-the-types-of-content-i-can-listen-to-in-eleven-reader.md)
+- [Can I download audio from ElevenReader?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/can-i-download-audio-from-eleven-reader.md)
+- [Can I share my ElevenReader account with others?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/can-i-share-my-eleven-reader-account-with-others.md)
+- [Can I use content generated in ElevenReader for commercial use?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/can-i-use-content-generated-in-eleven-reader-for-commercial-use.md)
+- [Do you offer student, teacher, or nonprofit discounts on ElevenReader subscriptions?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/do-you-offer-student-teacher-or-nonprofit-discounts-on-eleven-reader-subscriptions.md)
+- [Google Play Store says my phone is incompatible with ElevenReader](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/google-play-store-says-my-phone-is-incompatible-with-eleven-reader.md)
+- [How can I create my own voices in ElevenReader?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-can-i-create-my-own-voices-in-eleven-reader.md)
+- [How do ElevenReader hours work?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-do-eleven-reader-hours-work.md)
+- [How do I add content to ElevenReader?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-do-i-add-content-to-eleven-reader.md)
+- [How do I cancel my ElevenReader subscription?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-do-i-cancel-my-eleven-reader-subscription.md)
+- [How do I redeem an ElevenReader discount code if I’m already subscribed to Ultra?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-do-i-redeem-an-eleven-reader-discount-code-if-im-already-subscribed-to-ultra.md)
+- [How do I request a refund for my ElevenReader purchase?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-do-i-request-a-refund-for-my-eleven-reader-purchase.md)
+- [How do I troubleshoot my ElevenReader Ultra promotion activation or redemption?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-do-i-troubleshoot-my-eleven-reader-ultra-promotion-activation-or-redemption.md)
+- [How do offline downloads work?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-do-offline-downloads-work.md)
+- [How does the ElevenReader Chrome extension work?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-does-the-eleven-reader-chrome-extension-work.md)
+- [How does the Ultra plan work?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-does-the-ultra-plan-work.md)
+- [How does Voice Chat in ElevenReader work?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/how-does-voice-chat-in-eleven-reader-work.md)
+- [I subscribed, but the ElevenReader app still says I’m on the free version](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/i-subscribed-but-the-eleven-reader-app-still-says-im-on-the-free-version.md)
+- [If I subscribe at a discounted price, will it renew at the same price?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/if-i-subscribe-at-a-discounted-price-will-it-renew-at-the-same-price.md)
+- [If I uninstall the ElevenReader app, will I still be charged?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/if-i-uninstall-the-eleven-reader-app-will-i-still-be-charged.md)
+- [Is content between ElevenReader and the website shared?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/is-content-between-eleven-reader-and-the-website-shared.md)
+- [Is ElevenReader available for Desktop or Web?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/is-eleven-reader-available-for-desktop-or-web.md)
+- [What is ElevenReader?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/what-is-eleven-reader.md)
+- [What is the maximum file length supported in ElevenReader?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/what-is-the-maximum-file-length-supported-in-eleven-reader.md)
+- [Which devices is ElevenReader available on?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/which-devices-is-eleven-reader-available-on.md)
+- [Which voices can I use in ElevenReader?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/which-voices-can-i-use-in-eleven-reader.md)
+- [Will I be charged automatically after my trial ElevenReader subscription?](https://elevenlabs.io/docs/help-center/product/distribution-publishing/eleven-reader/will-i-be-charged-automatically-after-my-trial-eleven-reader-subscription.md)

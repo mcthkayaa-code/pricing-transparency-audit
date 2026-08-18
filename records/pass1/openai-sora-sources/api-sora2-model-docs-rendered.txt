@@ -1,0 +1,34 @@
+URL: https://platform.openai.com/docs/models/sora-2 (redirects to https://developers.openai.com/api/docs/models/sora-2)
+Accessed: 2026-08-10
+Method: rendered read via browser tool
+Archival: web.archive.org/save/ attempted once, returned HTTP 200 (curl then hit a client-side timeout on an unrelated follow-up step; the 200 was captured before that). Not used further because this page is NOT used as the source of any coded variable value — see coding note below.
+
+--- document.body.innerText, relevant excerpt ---
+Sora 2
+Legacy / Default
+Flagship video generation with synced audio
+Price
+$0.1
+Pricing
+Pricing is based on the number of tokens used, or other metrics based on the model type. For tool-specific models, like search and computer use, there's a fee per tool call. See details in the pricing page.
+Video generation
+Per second
+Portrait: 720x1280 Landscape: 1280x720
+$0.10
+Quick comparison
+Portrait: 720x1280 Landscape: 1280x720
+Sora 2 Pro    $0.30
+Sora 2        $0.10
+Rate limits
+TIER    RPM
+Free    Not supported
+Tier 1  25
+Tier 2  50
+Tier 3  125
+Tier 4  200
+Tier 5  375
+--- end ---
+
+CODING NOTE (per assignment instruction): this is the OpenAI developer/API platform's per-second usage rate for the Sora 2 model ($0.10/sec at the listed base resolutions; Sora 2 Pro $0.30/sec), a distinct product surface from the sora.com consumer app that this record's product_id (openai-sora, vendor_home_url https://sora.com) tracks. It is recorded here as background only, per the assignment's explicit instruction that "API-only per-token or per-second rates are not a consumer subscription tier" and should not be used as headline_price_usd unless the API is the only generally-available purchase path for the product. It is NOT used as the source for any coded variable in this record: the consumer app (sora.com) had its own separate access/credit mechanism throughout its operational life (see help-openai-sora-discontinuation-rendered.txt: "purchased ChatGPT/Sora credits"), distinct from and parallel to this developer API, so the API was not the only path even before the 2026-04-26 consumer shutdown -- it was, and remains until its own 2026-09-24 sunset, a separate developer/B2B offering outside this study's "individual or small-team buyer" consumer-product frame (sampling-rules.md section 4, I2).
+
+Also notable: "Free: Not supported" under Rate limits confirms the API itself has no free usage tier -- a paid API account is required at any usage level.

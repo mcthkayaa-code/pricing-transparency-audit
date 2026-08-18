@@ -1,0 +1,67 @@
+LOCAL CAPTURE (archive.org save failed twice, systemic "Job failed" — rate-limited; local_copy_only per deviations-for-coders.md)
+URL: https://copyleaks.com/pricing
+Accessed: 2026-08-14
+Method: rendered browser read (Claude_Browser), non-essential cookies declined via "Save My Preferences"
+Default display state confirmed via DOM: Individual tab aria-selected=true; Yearly toggle aria-selected=true; Monthly aria-selected=false.
+
+=== VISIBLE TEXT, INDIVIDUAL TAB, DEFAULT (YEARLY) STATE ===
+Pricing
+Individual | Enterprise | Education
+Yearly (Save up to 25%) | Monthly   [Yearly is the visually-highlighted/aria-selected option]
+
+Personal
+$13.99/month
+Get Instant Access
+Cancel anytime. $167.88 billed annually.
+NEW! AI Image Detection
+Scan for AI and plagiarism in a single report with AI Logic
+AI detection in 30+ languages, Plagiarism detection in 100+ languages
+Access to the Shared Data Hub for enhanced detection accuracy
+Scan multiple files in one upload
+Browser extension with saved scans
+Google Docs Add-on access
+1,200 unified credits: Scan up to 300,000 words OR 1,200 images
+
+Pro
+$74.99/month
+Get Instant Access
+Cancel anytime. $899.88 billed annually.
+Everything in Personal, plus:
+Includes 25 user seats, designed for startups and small teams
+Advanced detection filters
+Scan entire websites
+Cross-language translation detection
+Access to the analytics dashboard
+12,000 unified credits: Scan up to 3,000,000 words OR 12,000 images
+You can purchase extra credits anytime on the platform.
+Taxes may apply.
+
+Enterprise tab: "Flexible, fully customizable solutions that scale with your enterprise." / "Talk to Sales" — no published price, custom/contact-sales only.
+
+=== FAQ ACCORDION (full text, extracted via DOM query on .elementor-accordion-item) ===
+
+Q: How does Copyleaks pricing work?
+A: Copyleaks offers flexible pricing based on your usage and needs. Personal and Pro plans are subscription-based and include a monthly credit allowance. 1 credit covers up to 250 words or 1 image. Choose the plan that fits your workflow, and upgrade anytime as your needs grow. Enterprise and Education plans are custom-tailored based on your organization's size, integration needs, and usage volume. These plans are designed for large teams, institutions, or districts and include advanced features, analytical resources, and support. You'll work directly with our team to build a solution that scales with your needs and goals.
+
+Q: What happens if I exceed my monthly credit limit?
+A: If you reach your monthly credit allowance on a Personal or Pro plan, you have two options: You can upgrade your plan to access more monthly credits, or purchase additional one-time credits to continue scanning without interruption. Your allowance resets at the start of each new billing cycle, and you'll receive notifications as you approach your limit. For Enterprise and Education users, scan volume is customized in advance. Our customer success team will assist in adjusting your plan accordingly.
+
+Q: Can I cancel or change my plan anytime?
+A: Yes, you can cancel or change your plan at any time, but there are a few important things to keep in mind: All plans renew automatically unless canceled before the next billing cycle. Monthly plans are not one-time purchases; your subscription will continue until you cancel it. Canceling a plan stops future renewals but does not immediately end your current access. You'll retain access until the end of your billing period. Upgrading or downgrading is possible, but Copyleaks plans don't stack. Switching plans will override your current plan, including any remaining credits. For example, changing from an annual AI-only plan to a monthly AI + Plagiarism plan will forfeit the unused annual credits. Refunds are not guaranteed upon cancellation. If you believe you're eligible, you must contact support to request a refund directly. We will only issue a refund if you submitted your request within the first 10 days of your billing cycle and did not scan any pages or use any credits from your account. We recommend reviewing your plan details and cancellation settings from your account dashboard to avoid unexpected charges. For more information about cancellation, refunds, and other common questions, please see our Terms of Use.
+
+Q: What are my plan options?
+A: Pricing Overview: Personal Plan: $16.99/month or $13.99/month when billed annually. Pro Plan: $99.99/month or $74.99/month when billed annually. Both plans include full access to our AI detection and plagiarism detection features for text scanning and AI detection for image scanning. For education and enterprise solutions, including API access and LMS integration, please contact our sales team for a custom pricing plan.
+
+Q: How many words, pages, or images can I scan with each plan?
+A: For Personal and Pro plans, your monthly scan limit is based on credits. One credit allows you to scan up to 250 words or 1 image. For example, 100 credits equals up to 25,000 words or 100 images. While formatting can vary for text detection, this typically equates to about 100 standard pages (at ~250 words per page). For Enterprise and Education, scan volume is tailored to your organization's needs...
+
+Q: What forms of payment do you accept?
+A: We accept all major debit and credit cards, including Visa, Mastercard, American Express, and Discover. For added convenience, you can also use Google Pay or Apple Pay.
+
+=== KEYWORD SWEEP ON FULL PAGE (document.body.innerText, control/declined-cookies state) ===
+"free trial": NOT FOUND | "trial": NOT FOUND | "watermark": NOT FOUND | "free plan": NOT FOUND
+"Free ": NOT FOUND | "no credit card": NOT FOUND | "commercial use": NOT FOUND | "commercial license": NOT FOUND | "ownership": NOT FOUND
+
+=== A/B TEST FINDING (pricing-ab.js, fetched from https://copyleaks.com/clientfiles/pricing-ab.js) ===
+The /pricing first-fold is cookie/consent-gated A/B tested (control vs treatment). Users who explicitly decline analytics cookies (cookieyes-consent cookie: action:yes + analytics:no) deterministically receive CONTROL — confirmed this is our state after declining non-essential cookies via "Save My Preferences". Users with analytics consent granted may see "treatment" (Mixpanel-flag-gated).
+Direct fetch of the treatment fragment (/clientfiles/pricing-first-fold-variant.html?v=3, same-origin fetch from within the loaded page) confirms: SAME prices in both arms — Personal $13.99/mo billed annually (strikethrough "$16.99", "Save 18%... $36 a year"), Pro $74.99/mo billed annually (strikethrough "$99.99", "Save 25%... $300 a year"). Same Yearly-preselected toggle, same Individual-tab default, same 1,200/12,000 credit figures. The treatment fragment additionally shows an explicit "1 seat" meta-label for Personal that is not spelled out in words on the control variant (which only names credits/words/images for Personal, seats only for Pro's "25 user seats"). The A/B test appears to affect first-fold marketing layout/anchor-pricing framing only, not the headline price, billing basis, or credit allowances.

@@ -1,0 +1,31 @@
+URL: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans
+Date: 2026-08-10
+Method: D-009 re-read. Live rendered browser session (mcp__Claude_Browser). Second
+representation obtained via a raw structural DOM query of the page's <table> element
+(row-by-row <th>/<td> cell text), independent of the original 2026-08-09 innerText transcript.
+
+What it shows:
+Raw table cells, first four rows, all four plan columns:
+  [""            , "Basic Plan"          , "Standard Plan"        , "Pro Plan"             , "Mega Plan"]
+  ["Monthly Price", "$10"                , "$30"                  , "$60"                  , "$120"]
+  ["Annual Price" , "$96($8 / month)"    , "$288($24 / month)"    , "$576($48 / month)"    , "$1,152($96 / month)"]
+  ["Fast GPU Time", "3.3 hr/month(200 minutes)", "15 hr/month"    , "30 hr/month"          , "60 hr/month"]
+
+Confirms:
+- entry_tier_name "Basic Plan" is the exact column header text (table's own header cell reads
+  "Basic Plan", not "Basic").
+- headline_price_usd = $10 is the exact Monthly Price cell for the Basic Plan column, correctly
+  mapped (not shifted to Standard's $30 or any other column).
+- first_charge_amount_usd = $10 is consistent: default state reads the Monthly Price row per the
+  original coder's documented judgment call (no toggle exists; both Monthly and Annual rows
+  render simultaneously at identical CSS weight -- confirmed again on this re-read, no visual or
+  structural preselection distinguishes one row from the other). This re-read does not
+  relitigate that judgment call (flagged by the original coder for adjudication, not a misread);
+  it confirms only that $10 is the value genuinely printed in the Monthly Price / Basic Plan
+  cell, which it is.
+- Superscript/subscript check: 0 <sup>/<sub> elements found anywhere on the page -- ruling out a
+  nicepage-class misread. All figures in the table are plain text within <td> cells.
+
+Conclusion: all four scoped values (entry_tier_name="Basic Plan", headline_price_usd=10.00,
+headline_billing_basis=per_month_billed_monthly, first_charge_amount_usd=10.00) confirmed in a
+second representation (raw table DOM vs. the original innerText transcript). No correction.

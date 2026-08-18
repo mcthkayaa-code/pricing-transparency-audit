@@ -1,0 +1,296 @@
+Terms of Service | 10Web
+Launch AI Websites under your brand
+with  10Web White Label Solutions
+Welcome Back! Generate your website with AI – % OFF & Free Domain!
+AI Builder
+AI Website Builder
+Ecommerce AI Builder
+WordPress AI Builder
+AI Builder for Agencies
+Managed WordPress hosting
+Free custom domain
+AI Tools
+Logo maker
+Business name generator
+Slogan generator
+Mission statement generator
+Vision statement generator
+White Label / API
+White Label Website Builder
+Website Builder API
+White Label Reseller dashboard
+SaaS platformsGenerate websites from user data right from your platform.
+Hosting providersAdd full WordPress sites to every hosting package.
+MSPs & agenciesAdd AI-powered websites to your service offering.
+Pricing
+Talk to sales
+Login
+Login
+Talk to sales
+Privacy
+Terms of Service
+SLA
+DNS Agreement
+Accessibility commitment
+Security statement
+Prohibited Use Policy (PUP)
+API TOS
+Terms of Service
+Date last updated: 30/03/2026
+Overview
+Welcome to the TenWeb Platform (hereinafter “The Platform”, “Us”, “We”, “Our”, “Company”, “10Web”, “Services”, “Products” depending on context). These terms of service (hereinafter “ToS”) represent a legal agreement (“Agreement”) between you, either an individual or a legal entity (“You” , “you” , “Your”, “User” or “Customer” depending on context), and TenWeb, Inc., which operates the TenWeb Platform (individually referred to as “Party” and collectively the “Parties”). These ToS apply when You view or use the Platform and its Services. Please review these ToS carefully. By accessing or using the Platform, you confirm your or in case of legal entity, your authority to consent to be bound by the terms stipulated in these ToS. If you do not agree to these Terms of Service, you may not access or use the Platform.
+About the Platform
+10Web offers first all-in-one platform for building and hosting WordPress websites.We provide premier solutions for managing and optimizing your entire WordPress website creation process, including a full suite of tools to easily design, develop and launch websites, as well as effortlessly manage, optimize and maintain existing ones.
+The Platform is made to increase the productivity, extend the functionality of Our Customers’ websites and make their work more pleasant and effective.
+Our Platform and Services include, but are not limited to TenWeb Website, AI Website Builder, Managed WordPress Hosting, Dashboard, Plugins, Themes, Optimization tools and 10Web Services in general.
+APPLICATION OF TERMS
+These ToS apply to all Services provided by TenWeb to you for the duration of Your use of the Platform . The ToS consist of: these Terms of Service, Privacy Policy, Data Processing Agreement and Referral Program Terms and Conditions  and Affiliate Program Terms and Conditions  in cases you join aforementioned Programs. Collectively these documents are referred to herein as the “ToS.”
+REGISTRATION
+In order to use the Platform, you will be required to register an account
+By using the Platform, You are deemed to validly consented with these ToS
+You are allowed to use the Platform and Services in accordance with the terms described in these ToS and are subject to restrictions described herein.
+You have to be of legal age of majority in the jurisdiction where you reside, or in case of legal entity, be lawfully and duly organized under the requirements of respective laws in that jurisdiction. In case of minors (ages between 13 and the legal age of majority), have the permission of parents or legal guardians.
+ACCOUNT
+Account registration includes a unique login ID (which is your email) , a password to access the Service and a payment method, such as Credit Card or PayPal information. Please note that we do not store credit card information. Credit card information is provided to Stripe to process your payments. You understand and agree that to prevent interruptions to your subscription or services, our third-party payment processor ( Stripe) may receive updated payment information, such as new expiration dates or card numbers, from your card issuer. You authorize us to charge your updated payment method. This process is managed by our payment processor and is subject to their terms of service, which you agree to when providing your payment information. Please also note that the primary payment method can’t be removed from your account. To remove the primary payment method, please send us an email to [email protected]. Along with this you will/may be optionally required to provide other information. This optional information may include your phone number, profile picture, company name, address, website and such.
+You have to provide valid, accurate and complete information about you, your company and it is your responsibility to keep the information up to date. You are responsible for keeping your password in a safe place and not share with others. The registered account belongs to and is for exclusive use by the account holder. You are not allowed to transfer your account and respective rights to any third party. We retain the right to treat all activities conducted using your password as activities conducted by you. You agree to notify us immediately of any unauthorized use of your password and/or account. We will not be responsible for any liabilities, losses, or damages arising out of the unauthorized use of your password and/or account. You may close your account and terminate your use of Platform at any time, by sending us an email to [email protected]. Please note, that your right to use the Platform will expire as of the time of account closure. However, in case of account closure, we may retain certain account settings and information for a period of time necessary to fulfill the applicable law and regulatory obligations and in the event of account re-activation. The period of time we maintain account information shall be in our sole discretion.
+In some cases, to provide you with certain services and/or to demonstrate the functionality/capabilities of The Platform, upon your consent, which you provide by clicking a respective action button or similar, we will automatically create an account for You.
+Further, to make your experience with The Platform as seamless as possible we may automatically undertake such other actions, which will enable Us to accomplish the purpose of action for which you opted for. In such cases we will inform you on the main automated actions to be undertaken.
+For the purpose of an example: to demonstrate you how 10Web can optimize your website and increase your website’s Google PageSpeed Score, upon your consent by clicking “Copy & Optimize My Website” button, 10Web will;
+·        get Your WP admin email or such other email You provide to Us instead, and
+·        get Your admin URL, and
+automatically create an 10Web account for you. Next;
+·        We install 10Web Manager Plugin and connect Your website to 10Web Dashboard, and
+·        create a copy of your website on 10Web Hosting, so Your Live website is not affected
+·        optimize the website copy and get 95+ Google PageSpeed score
+Please note, that if you do not take further action, the copy of Your website will be automatically deleted from our servers in 14 days, or you can manually delete it.
+All your data is safe with 10Web and is subject to 10Web Privacy Policy and these ToS.
+We retain the right to reject registration of your account, suspend or terminate Your account at any time without prior notice, if we believe that You have violated the terms described in these ToS and/or is deemed by Us, under reasonable criterion (e.g. account holder is involved in illegal business and/or has otherwise objectionable conduct, that may harm our reputation, etc.), to be inappropriate to use the Platform.
+PRIVACY POLICY
+We respect your privacy. Please refer to our Privacy Policy which explains how we collect, use, and disclose information that pertains to your privacy. When you access or use the Platform, you confirm your consent to the terms of our Privacy Policy.
+PLATFORM USE AND YOUR CONDUCT
+TenWeb Platform products and services are provided on subscription basis (please refer to “Subscription” section of these ToS).
+To be able to use the Platform and its Services you have to have an active subscription, Dashboard and “Plugin Manager” installed on your website.
+You also grant us the right and further agree to relieve us from any liability, to;
+Completely remove or suspend any third party software (e.g. plugin) on your website if we, at our sole discretion, deem said software be malicious, imposing disproportionately large load on our servers or network infrastructure and/or in any way threatening the security and performance of 10Web Services
+From time to time, run security scan of your website and take any cleanup/fixing actions, as we at our sole discretion, deem necessary to ensure the integrity and performance of 10Web Services without prior notification to you. Whenever practicable, we will take reasonable efforts to notify you prior to taking the aforementioned actions.
+“Dashboard” is a unified console, which allows you to manage all your websites from one place and access the Platform and Services.
+TenWeb plugins, themes are licensed under the GPL 2.0 license. You can use these products, in the manner permitted by GPL 2.0 license and these ToS. To use the Platform, you should use your own device, software and data connection under your own responsibility and at your own expense. At any time at our discretion and without a prior notice we have the right to suspend, terminate, and limit access to the Platform in whole or in part if we, in good faith, believe that you are violating these ToS regulations, the rights of third parties and/or Your actions or inactions are negatively affecting Our or Our customers’ business. We have the right to provide you with our and third party advertisements.
+By using the Platform, you agree to comply with the 10Web Prohibited Use Policy (“PUP”), which is incorporated into and forms an integral part of these Terms of Service by reference. The PUP defines content and activities prohibited on the platform to maintain a secure, respectful, and lawful environment for all users.
+Violation of the PUP may result in suspension, termination, or restriction of your account and access to our services. Please review the full 10Web Prohibited Use Policy.
+SUBSCRIPTION
+We have designed plans with different prices, payment gateways and level of service, to better meet your business needs. All TenWeb Products/Services are subscription based (recurring). It is your responsibility to explore the plans, payment gateways and other relevant information before actual purchase.
+You can subscribe to monthly, semi-annual or annual subscription plans. When you subscribe to a particular subscription plan, you agree to pay subscription fees applicable for that plan.
+By subscribing you agree to any applicable restrictions stipulated by that plan (e.g. number of websites allowed for management).
+Subscription fees are charged/automatically renewed at the beginning of each billing cycle without notifications to you. Nevertheless, you can always check your billing history and current subscription plan from “Dashboard”.
+You can cancel your subscription at any time before the next billing cycle from your account’s settings section in “Dashboard” console. In some cases, depending on your subscription plan, we may ask You to contact us to cancel Your subscription. Please note, that if you have cancelled your subscription, You still can use your 10Web services until the end of your then current subscription end date.
+Your subscription may be deactivated due to some technical issues, e.g. credit card expired, not enough funds on credit card or PayPal etc. We will notify you to take appropriate measures. Please note that we have the right to reject, suspend or cancel your subscription at our discretion, without prior notification and/or explanation to You.
+We have the right to change the fees for subscription plans. In this case we will notify You through Your account email at least 72 hours prior to your next billing cycle.
+We use industry leading financial transaction gateway- Stripe and PayPal for purchases. They have their own Privacy Policy and Terms of Services, so please read them.
+Our prices are in USD. For international transactions different currency exchange rates, as well as transaction fees may be imposed by transactions intermediaries and it is User’s responsibility to get acquainted with them.
+Content
+The Platform allows you to input, store, process, access and make publicly available content that you upload, connect, import to or build on the Platform, including without limitation, your website, data, text, software, music, sound, functionality, images, photographs, graphics, or other content (hereinafter referred to as “Your Content”). For avoidance of doubt, text inputs for generating an AI website is considered “Your Content. By using the Platform, You confirm and warrant that you own or have the rights to upload, share, make available or import Your Content to the Platform. You retain all the rights to Your Content or intellectual property, but you agree to grant us limited rights (described below), which are necessary to run the Platform Services.
+License to Your Content
+By using the Platform and for as long as You have Your Content on the Platform, you grant us, a worldwide, royalty-free, perpetual, non-exclusive license to host, process, copy, transmit, display, and use Your Content in connection with the Platform and its Services and You confirm that You have all the rights necessary to grant Us this license. We may use third party services, platforms and infrastructures, including, but not limited to hosting partners, generative AI service providers and other service providers to run the Platform and provide services to You, and you grant us the right to sublicense the same rights to such third parties to provide the Services.
+Our Rights on Your Content
+We don’t and are not obliged to pre-screen Your Content and You are solely responsible for Your Content and your use of the Services. We (including our designees, such as third-party vendors and hosting partners) have the right (but not the obligation), subject to these Terms of Service, Privacy Policy and other Terms that we may introduce from time to time and You agree to, in our sole discretion to access, review, and monitor Your Content or any information on or made available through the Platform, and if we determine in good faith and in our sole discretion, that Your Content violates any of our Policies, Terms and Conditions You have agreed to, we reserve the right to refuse, remove or delete Your Content. We are not responsible for the accuracy, completeness, appropriateness, or legality of Your Content and any other information you may be able to access and/or make accessible through the Platform.
+10WEB AI Builder Service
+We utilize artificial intelligence technology, including machine learning algorithms, in our website development service called 10Web AI Builder. Our platform enables the creation of WordPress-based websites, which leverages AI capabilities to streamline the website development process. Please note that certain aspects of the website creation, such as design suggestions, content organization, and optimization, are generated using AI algorithms.
+In certain cases, to enhance the functionality and visual appeal of websites created through our platform, we may employ third-party generative AI services. These services utilize AI algorithms to generate images, texts, or other content based on limited input data provided by you, such as your business description, type of services you offer or name of your business. The generated output (“Output”) is intended to serve as a starting point or suggestion for customization and You are responsible for reviewing, modifying, using or publishing such Output. Given it is difficult to fully control and predict outputs of generative AI technology, we do not represent or warrant that the Output generated by the AI technology will meet Your or your end users’ needs or expectations, and we disclaim all responsibility and liability for the accuracy, non-infringement, legality, quality, non-bias, uniqueness or other aspects of Output. Other users may generate Output that may be similar to Output generated by You. You are responsible for reviewing all Outputs of AI Tools before you use, publish, transmit or display an Output in any manner, and for ensuring that you are legally permitted to use such Outputs. For additional information on how 10Web protects your information, please refer to our Privacy Policy.
+Subject to Your compliance with these Terms, applicable regulations and third party terms and if you choose to use, publish or display an Output in any manner, it shall be considered Your Content. 10Web does not claim any ownership in the Output, so long as the Output does not contain 10Web intellectual property.
+You also have an option to import a URL of any website and automatically recreate said website.
+PLEASE NOTE, THAT WEBSITE RECREATION FUNCTIONALITY IS MADE AVAILABLE TO YOU TO AUTOMATE YOUR WEBSITE CREATION PROCESS AND/OR FOR INSPIRATIONAL PURPOSES ONLY.
+We respect others’ intellectual property and ask you to do so. All content not owned by You or not licensed to You by other parties (“Third Party Content”) is protected by intellectual property rights of others and is likely to have accompanying terms and conditions. You are not allowed to use AI Builder functionality, unless you have the right over the Content to be recreated with the use of AI Builder.
+By using this functionality, you acknowledge that the Websites/Content you recreate may be protected by copyright and/or other intellectual property laws. You warrant that you either (i) You own the Website/Content and have the full power, title and authority in and to the it, or (ii) are not prohibited from recreating the Website/Content by any license, applicable terms of use and similar, or (iii) You have the licenses and consents of the owner of the IP, or have otherwise legitimately procured all right in and to any Website/Content you recreate.
+In an effort to limit the possibilities of third party intellectual property infringement, we have designed AI Builder the way, so that no single line of code is copied when You recreate the website.
+You acknowledge and agree that you are solely responsible and liable with respect to Your any use of AI Builder.
+Without limiting the generality of the foregoing, please note that the AI-generated output, including any content generated by third-party AI services, is provided for convenience and general informational purposes. We cannot guarantee the accuracy, suitability, or completeness of the AI-generated content, and we disclaim any responsibility or liability arising from the use or reliance on such content. It is your responsibility to review, validate, and ensure the accuracy, legality, and compliance of the generated content with applicable laws, regulations, and industry standards. We encourage customers to exercise their judgement, seek professional advice when needed, and make any necessary modifications to the AI-generated output to meet their specific requirements.
+10WEB PAYMENTS SERVICE
+10Web payments services is extended to you as part of its online shop, shopping cart, shop management and related E-Commerce services.
+10Web acts as an authorized agent of a third party payment processor. (“Processor”) to avail payment services (“10Web Payments”) to You. The Processor is a technical services provider and may offer the services as an agent of one or more financial institutions in the United States and other jurisdictions (“Payment Processors”).
+Within the context of 10Web payments services You are the Merchant.
+To use the service, you must be a business located jurisdiction supported by 10Web Payments. The Processor has the right to reject your Merchant application to open a Merchant account and/or suspend your Merchant account at their sole discretion.
+The processing and settlement of transactions is carried out by the Processor and any of the Payment Processors under a separate Merchant Agreement. 10Web is not a party to the Merchant Agreement and hence not liable to you. The Merchant Agreement is between You and the Processor.
+Subject to the terms of Merchant Agreement and your compliance to it and 10Web Terms of Service, the Processor’s role is to accept and process credit card, debit card and other types of payments supported by the Processor with respect to sales of your products and services through internet-based transactions (“Transactions”).
+It is your responsibility to obtain your customers’ consent to be billed for each Transaction or, as the case may be, on a recurring basis, in compliance with applicable legal requirements in your and your customers’ jurisdictions.
+You are solely responsible for determining any taxes that may apply to the sales of your products and services, or to the payments you receive through the use of 10Web Payments. It is your exclusive obligation to assess, collect, report, and remit the correct taxes to the appropriate tax authority in your customers’ jurisdictions, your own jurisdiction, or elsewhere. We are not responsible for determining if taxes apply, nor will we calculate, collect, report, or remit any taxes to any tax authority related to any Transaction.
+You bear sole responsibility for securing the data on your website or in your possession. You must adhere to all applicable laws and regulations regarding the collection, security, and distribution of any personal, financial, card, or transaction data (collectively referred to as “Data,” and specifically concerning your customers, as “Cardholder Data”). You are required to remain in compliance with the Payment Card Industry Data Security Standards (PCI-DSS) and, where applicable, the Payment Application Data Security Standards (PA-DSS) at all times. Upon request, you must promptly supply 10Web with documentation proving your compliance with PCI-DSS and/or PA-DSS. You must also ensure that only service providers who adhere to PCI-DSS and PA-DSS are used for the storage or transmission of card information, including cardholder’s account number, expiration date, and CVV2. You are prohibited from storing CVV2 data at any time. For more information on PCI-DSS, please visit the PCI Council’s website. It is your duty to meet these standards and all applicable Payment Network Rules. We reserve the right to require additional security measures at any time and to modify these requirements at our discretion.
+The Processor may extend PCI Compliance services to you if you use 10Web Payments.
+We reserve the right to change the Processor.
+To the maximum extent allowed by law, you are responsible for your use of 10Web Payments. You will defend and indemnify 10Web and its affiliates,its owners, its and their officers, employees, directors and agents against any claims made by a third party, as well as any associated liability, damage, loss, and expense, including reasonable attorneys’ fees and costs. This indemnification covers issues arising from your use of 10Web Payments, including, but not limited to, any costs related to chargebacks, fines, or fees that 10Web becomes liable for or incurs.
+10Web is not a bank, payment institution, or money services business.
+10WEB AI Assisted Customer Care
+We utilize AI technology, including chatbots, to provide customer support and improve the overall customer experience. Please be aware that certain responses you receive may be generated by our AI system. While we strive to provide accurate and helpful information, there may be instances where the responses may not be entirely accurate or complete. We recommend using your judgment and seeking additional clarification from our Customer care agents, whenever you feel a need to.
+Please note that the information provided through our AI-powered chatbot is for general informational purposes only and should not be considered as professional advice or a substitute for personalized assistance. We do not guarantee the accuracy, reliability, or completeness of the responses generated by the AI system. Therefore, we disclaim any responsibility or liability arising from your reliance on the information provided by the chatbot. You acknowledge that your use of the chatbot is at your own risk, and you should consult appropriate professionals or our human customer support team for specific guidance or critical matters.
+Copyright Complaints
+(a) Termination of Repeat Infringer Accounts. The Company respects the intellectual property rights of others and requests that You do the same. Pursuant to 17 U.S.C. 512(i) of the United States Copyright Act, the Company has adopted a procedure that provides for the termination in appropriate circumstances of user accounts of the Platform who are repeat infringers. We may terminate Platform access for users who are found to infringe repeatedly third party Copyright and/or remove the Content subject to DMCA take down notice.
+(b) DMCA Take-Down Notices. If you are a copyright owner or an agent thereof and believe, in good faith, that any Content available on and through the Platform infringe upon your copyrights, you may submit a notification pursuant to the Digital Millennium Copyright Act (see 17 U.S.C 512) (“DMCA”) by sending the following information in writing to TenWeb, Inc. at [email protected]:
+The date of your notification;
+A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;
+A description of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at the platform are covered by a single notification, a representative list of such works;
+A description of the content that is claimed to be infringing or to be the subject of infringing activity and information sufficient to enable Us to locate such work;
+Information reasonably sufficient to permit the alleged infringing party to contact you, such as an address, telephone number, and/or email address;
+A statement that you have a good faith belief that use of the content in the manner complained of is not authorized by the copyright owner, its agent, or the law;
+A statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+(c) Counter-Notices. If you believe that Your Content that has been removed from the Platform is not infringing, or that you have the authorization from the copyright owner, the copyright owner’s agent, or pursuant to the law, to legally use the Content, you may send a counter-notice containing the following information to us using the contact information set forth above:
+Your physical or electronic signature;
+A description of the content that has been removed;
+A statement that you have a good faith belief that the content was removed as a result of mistake or a misidentification of the content;
+Your name, address, telephone number, and email address, a statement that you consent to the jurisdiction of the federal court in Delaware and a statement that you will accept service of process from the person who provided notification of the alleged infringement.
+If a counter-notice is received by Us, we may send a copy of the counter-notice to the original complaining party informing such party that it may reinstate the removed content in 10 business days. Unless the copyright owner files an action seeking a court order against the content provider, the removed content may (in the our discretion) be reinstated on the Platform in 10 to 14 business days or more after receipt of the counter-notice.
+REFUND
+Platform Subscription Refund
+At 10Web, your satisfaction is our priority. We strive to provide you with exceptional digital services, and a fair and transparent policy for managing your subscriptions.
+At 10Web we do not offer refunds for Platform subscriptions. All payments are final and here is why:
+1. Free 7-Day Trial: We provide a 7-day free trial* to help you evaluate our services without any charges. You can freely cancel your subscription during this trial period from your subscription plan page.
+Please note that if you enable/disable and/or opt for purchasing any paid plan features/inclusions during your free trial (e.g. disabling “Site Lock” and/or purchasing a domains, Websites, CDN, etc,), your trial will end immediately and you will be upgraded to the paid plan. Your payment method will be charged accordingly.
+2. Pre-Charge Notifications: To maintain transparency, we send an email 24 hours prior to first charge, giving you the opportunity to review your subscription status and decide whether to continue or not.
+Plugin Subscription Refund
+All payments for plugins are final and we do not provide refund, except
+in the case of billing errors on TenWeb, Inc. side
+you’ve found a bug, contacted 10Web Customer Care, and we were unable to solve the issue within a reasonable timeframe
+our billing system automatically charged you on your recurring subscription, while you haven’t installed the product yet
+We provide you with a full featured 7-day trial to test our products and services, before making a purchase. You are responsible for carefully reviewing the subscription plans and specific conditions related to particular plan before subscribing. Please refer to “Subscription” section of these ToS for more detail.
+To request a refund, please contact [email protected]
+10Web Booster Subscription Refund
+All payments for 10Web Booster subscription plans are final and we do not provide refunds.
+We provide you with a full featured freemium version of the product to test before you upgrade to a paid subscription. You are responsible for carefully reviewing the subscription plans and specific conditions related to it before subscribing. Please refer to the “Subscription” section of these ToS for more detail.
+Refunds, where applicable, are provided in accordance with this section and constitute your sole and exclusive remedy with respect to the Service. To the maximum extent permitted by applicable law, the Company shall have no further liability or obligation arising from or related to your use of or inability to use the Service. If you are dissatisfied with the Service, your only recourse is to discontinue use of the Service.
+Updates
+Our team does its best to ensure high level of functionality and customer satisfaction from the Platform/Services. For this purpose we regularly release updates to ensure compatibility with different browsers, WordPress different versions, third party plugins, themes, bug fixes, etc. Since 10Web provides multiple products/services within a single subscription plan, the frequency and quantity of the updates for particular standalone product/service may depend on number of factors, such as user demand, felt need, available resources at 10Web and such. We reserve the right to decide on number, type and frequency of updates, as well as whether to provide an update or not. You will see available updates and further can install updates from your dashboard or “Plugin Manager”.
+Please note that installing updates may result in technical issues, including but not limited to data loss, inoperability of websites and such, due to technical reasons that may or may not be under our control and it is your responsibility to undertake adequate measures, prior to installing any update, to avoid such cases. Generally, it is a good practice to backup your website, prior to installing updates. For this purpose you may use the “Backup” service available within 10Web Platform, or any other third party tool of your choice. Please read through the “Compatibility” and “Limitation of Damages;Release” sections of these ToS.
+Compatibility
+We are committed to make sure that our products/services are compatible with latest versions of WordPress and widely used browsers. There might be cases out of our control when the browser does not support certain standards, which in turn may result in partial functionality of our products. Similarly some other incompatibility issues may arise with third party plugins, themes, hosting server software, etc. In most cases our support team will try to provide workarounds within a reasonable timeframe, however, we retain the right to deem any request requiring complex or custom work beyond our scope, as determined by our support staff.
+Online Content Disclaimer
+Information or content made available through the Service, but not directly by Us, are those of their respective authors. Such authors are solely responsible for such content. We do not guarantee the accuracy, completeness, or usefulness of any information/content on the Service and neither do we adopt nor endorse, nor are we responsible for, the accuracy or reliability of any information/content made by parties other than Us. 10Web takes no responsibility and assumes no liability for any Information/Content that you or any other third party makes available through the Platform/Service. The Company and its designees (including our third-party vendors and hosting partners) reserves the right, but has no obligation, to monitor the content posted in the public areas of the Service or to limit or deny Your access to the Service or take other appropriate action if You violate these Terms of Service or engage in any activity that violates the rights of any person or entity or which we deem unlawful, offensive, abusive, harmful or malicious. We shall have the right to limit Your use of the Platform/Services, in our sole opinion, if Your use the Platform/Services violates or is alleged to violate, the law or this agreement or which might be offensive, or that might violate the rights, harm, or threaten the safety of others. Unauthorized use may result in criminal and/or civil prosecution under Federal, State and local law. If you become aware of misuse of our Service, please contact us [email protected].
+Links To Other Online Sites And/Or Services
+As part of the Service, the Company may provide you with convenient links to third party website(s) (“Third Party Sites”) as well as products, services or items belonging to or originating from third parties (the “Third Party Applications, Software or Content”). These links are provided as a courtesy to Service subscribers. The Company has no control over Third Party Sites and Third Party Applications, Software or Content or the promotions, materials, information, goods or services available on these Third Party Sites or Third Party Applications, Software or Content. Such Third Party Sites and Third Party Applications, Software or Content are not investigated, monitored or checked for accuracy, appropriateness, or completeness by the Company, and the Company is not responsible for any Third Party Sites accessed through the Site or any Third Party Applications, Software or Content posted on, available through or installed from the Service, including the content, accuracy, offensiveness, opinions, reliability, privacy practices or other policies of or contained in the Third Party Sites or the Third Party Applications, Software or Content. Inclusion of, linking to or permitting the use or installation of any Third Party Site or any Third Party Applications, Software or Content does not imply approval or endorsement thereof by the Company. If you decide to leave the Site and access the Third Party Sites or to use or install any Third Party Applications, Software or Content, you do so at your own risk and you should be aware that our terms and policies no longer govern.
+Ownership/ Intellectual Property
+You acknowledge and agree that we and our licensors retain ownership of all intellectual property rights of any kind related to the Platform/Service, including applicable copyrights, trademarks and other proprietary rights. Other product and company names that are mentioned on the Platform/Service may be trademarks of their respective owners. We reserve all rights that are not expressly granted to you under this Agreement.
+TenWeb products are licensed under the GPL 3.0 license. You can use the Platform, in the manner permitted by GPL 3.0 license and these ToS.
+PUBLICITY
+Use of Brand Names and Marks: You are prohibited from using our brand names, logos, trademarks, service marks, or any other identifying indicia (collectively, “Brand Marks”) without our express prior written consent. This prohibition includes, but is not limited to, using our Brand Marks in connection with any website, product, service, or marketing material not provided or authorized by us.
+Revocability: Any permission granted by us to use our Brand Marks is revocable at any time at our sole discretion. Upon revocation, users must immediately cease all use of our Brand Marks. You must immediately cease all use of our Brand Marks upon termination of your contractual relationship with us.
+Compliance with Terms of Use: Any permitted use of our Brand Marks must be in compliance with these Terms of Service and any other guidelines (e.g. Brand Guidelines) or policies we may issue. We reserve the right to determine, in our sole discretion, whether any use of our Brand Marks is acceptable.
+Email May Not Be Used to Provide Notice
+Communications made through the Service’s e-mail and messaging system, will not constitute legal notice to the Company or any of its officers, employees, agents or representatives in any situation where written notice to us is required by contract or any law or regulation.
+We grant you a limited, revocable, non-transferable and non-exclusive license to use AI Builder for as long as You have active subscription with 10Web.
+Consent To Receive Communications In Electronic Form.
+You (a) consent to receive communications from the Company in an electronic form via the email address you have submitted or the Platform messaging/notification tools; and (b) agree that all Terms of Service, agreements, notices, disclosures, and other communications that the Company provides to you electronically satisfy any legal requirement that such communications would satisfy if it were in writing. The foregoing does not affect your non-waivable rights. We may also use your email address, to send you other messages, including information about the Company and special offers. You may opt out of such email by changing your account settings or sending an email to [email protected]. Opting out may prevent you from receiving messages regarding the Company or special offers.
+INDEMNIFICATION
+You agree to defend, indemnify, and hold harmless 10Web, including our owners, officers, directors, employees, agents, contractors, licencors, and affiliates (collectively “10Web Indemnitees”), from all losses, costs, expenses, damages, injuries, and liabilities, including attorney’s fees, that any 10Web Indemnitee may face due to claims, suits, proceedings, or investigations initiated by third parties. These may arise from or be related to (i) your use of our Services; (ii) Your Content; (iii) your breach or alleged breach of the Agreement; or (iv) your violation of any law or third-party rights. We reserve the right to take over the control of any legal proceedings, including the choice of counsel, and to decide on any settlements, requiring your cooperation in asserting any defences.
+Warranty Disclaimer
+THE PLATFORM AND ITS SERVICES, ARE PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND. WITHOUT LIMITING THE FOREGOING, THE COMPANY EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, REGARDING THE SERVICE INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, SECURITY, ACCURACY AND NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, THE COMPANY MAKES NO WARRANTY OR REPRESENTATION THAT ACCESS TO OR OPERATION OF THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE. THE COMPANY DOES NOT WARRANT THAT THE SERVICE WILL MEET YOUR REQUIREMENTS OR EXPECTATIONS, OR THAT ANY RESULTS OR OUTPUT GENERATED THROUGH THE SERVICE WILL BE ACCURATE, RELIABLE, OR SUITABLE FOR YOUR PURPOSES. YOU ASSUME FULL RESPONSIBILITY AND RISK OF LOSS RESULTING FROM YOUR DOWNLOADING AND/OR USE OF FILES, INFORMATION, CONTENT OR OTHER MATERIAL OBTAINED FROM THE SERVICE. SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF WARRANTY, SO THIS PROVISION MAY NOT APPLY TO YOU.
+Limitation Of Damages; Release
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY, ITS AFFILIATES, DIRECTORS, OR EMPLOYEES, OR ITS LICENCORS OR PARTNERS, BE LIABLE TO YOU FOR ANY LOSS OF PROFITS, USE, OR DATA, OR FOR ANY INCIDENTAL, INDIRECT, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, HOWEVER ARISING, THAT RESULT FROM (A) YOUR USE OR INABILITY TO USE THE PLATFORM/SERVICE; (B) THE SERVICE GENERALLY OR THE SOFTWARE OR SYSTEMS THAT MAKE THE SERVICE AVAILABLE; OR (C) ANY OTHER ANY INTERACTIONS, TRANSACTIONS, OR RELATIONSHIPS WITH THE COMPANY OR OTHER USERS ARISING FROM OR RELATED TO THE SERVICE, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE) OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT THE COMPANY HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, AND EVEN IF A REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. WITHOUT LIMITING THE FOREGOING, THE COMPANY SHALL NOT BE LIABLE FOR ANY LOSS OF BUSINESS, REVENUE, PROFITS, GOODWILL, OR ANTICIPATED SAVINGS.TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE TOTAL AGGREGATE LIABILITY OF THE COMPANY AND ITS AFFILIATES, DIRECTORS, EMPLOYEES, LICENSORS, AND PARTNERS, FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THE SERVICE OR THESE TERMS, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, SHALL NOT EXCEED THE TOTAL AMOUNT PAID BY YOU TO THE COMPANY FOR THE SERVICE DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM. SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF LIABILITY, SO THIS PROVISION MAY NOT APPLY TO YOU. If you have a dispute with one or more users that you interact with using the Service, you release us (and our officers, directors, agents, subsidiaries, joint ventures and employees) from claims, demands and damages (actual and consequential) of every kind and nature, known and unknown, arising out of or in any way connected with such disputes. If you are a California resident, you waive California Civil Code §1542, which says: “A general release does not extend to claims which the creditor does not know or suspect to exist in his favor at the time of executing the release, which if known by him must have materially affected his settlement with the debtor.”
+Modification Of Terms Of Service
+We can amend these Terms of Service at any time and will update these Terms of Service in the event of any such amendments. It is your sole responsibility to check the Platform/Service from time to time to view any such changes in the Agreement. If you continue to use the Platform/Service, you signify your agreement to our revisions to these Terms of Service. However, we will notify you of material changes to the terms by posting a notice on our homepage and/or sending an email to the email address you provided to us upon registration. For this additional reason, you should keep your contact and profile information current. Any changes to these Terms (other than as set forth in this paragraph) or waiver of the Company’s rights hereunder shall not be valid or effective except in a written agreement bearing the physical signature of an officer of the Company. No purported waiver or modification of this Agreement by the Company via telephonic or email communications shall be valid.
+General Terms
+If any part of this Agreement is held invalid or unenforceable, that portion of the Agreement will be construed consistent with applicable law. The remaining portions will remain in full force and effect. Any failure on the part of the Company to enforce any provision of this Agreement will not be considered a waiver of our right to enforce such provision. Our rights under this Agreement will survive any termination of this Agreement. You agree that any cause of action related to or arising out of your relationship with the Company must commence within ONE year after the cause of action accrues. Otherwise, such cause of action is permanently barred. These Terms of Service and your use of the Platform/Service are governed by the federal laws of the United States of America and the laws of the State of Delaware, without regard to conflict of law provisions. The Company may assign or delegate these Terms of Service and/or the Company’s Privacy Policy, in whole or in part, to any person or entity at any time with or without your consent. You may not assign or delegate any rights or obligations under the Terms of Service or Privacy Policy without the Company’s prior written consent, and any unauthorized assignment and delegation by you is void. YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF SERVICE, UNDERSTAND THE TERMS OF SERVICE, AND WILL BE BOUND BY THESE TERMS AND CONDITIONS. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS OF SERVICE TOGETHER WITH THE PRIVACY POLICY REPRESENT THE COMPLETE AND EXCLUSIVE STATEMENT OF THE AGREEMENT BETWEEN US AND THAT IT SUPERSEDES ANY PROPOSAL OR PRIOR AGREEMENT ORAL OR WRITTEN, AND ANY OTHER COMMUNICATIONS BETWEEN US RELATING TO THE SUBJECT MATTER OF THIS AGREEMENT.
+Contacting TenWeb
+If you have questions regarding these Terms of Service, please contact us at [email protected]
+AI Builder
+AI Website Builder
+Ecommerce AI Builder
+WordPress AI Builder
+BUILDER FEATURES
+Managed WordPress hosting
+Free custom domain
+Vibe coding website
+Wordpress Tools
+PageSpeed Booster
+WordPress plugins
+AI Tools
+Logo Maker
+Business Name Generator
+Slogan Generator
+Mission Statement Generator
+Vision Statement Generator
+Industry Explorer
+BUILD WITH US
+White Label Website Builder
+Website Builder API
+White Label Reseller dashboard
+Self-hosted solution for WP hosts
+API documentation
+Solutions
+SaaS platforms
+Hosting & Domain providers
+MSPs & agencies
+Resources
+Blog
+Website templates
+Case studies
+Glossaries
+Website Builder comparisons
+AI Tools repository
+AI simplified newsletter
+Press kit
+Public roadmap
+Help center
+Submit your idea
+Company
+About us
+Affiliates
+Careers
+Contact us
+Pricing
+Report abuse
+System status
+Legal
+Trust center
+Privacy policy
+Copyright © 2026 TenWeb. All rights reserved.
+Address: 40 E Main St, Suite 721, Newark, DE 19711, United States
+Welcome to 10Web Live Chat!
+To provide you with the best support experience, please let us know if you
+have an account with us.
+Log In
+I Don’t Have an Account
+Connect with your
+account manager!
+Discover how 10Web’s White-Label/API solutions fit your business needs.
+Receive a custom offer to launch white-labeled, AI-powered websites.
+Get hands-on guidance and support for a smooth integration.
+Trustpilot
+* For technical questions and customer support inquiries please contact our 24/7 support team via live chat.
+Select the solution you want to explore
+Agentic Website Builder for Agencies
+Agentic Website Builder API
+Self-Hosted Agentic Website Builder
+Continue
+Trustpilot
+* For technical questions and customer support inquiries please contact our 24/7 support team
+via live chat.
+Back
+Processing your request. This will only take
+a few seconds.
+Your request is received.
+Thank you for contacting us. Your account manager
+will reach out shortly.
+Done
+2M+ websites generated with 10Web
+Create your free account to
+generate
+and customize
+your website.
+Continue with Google
+Sign up with Email
+Sign up with Email
+Your password must have:
+8 or more characters
+Upper and lowercase letters
+At least one number
+Strength:
+After going through all these points, your password will be stronger and hard to guess.
+Sign Up
+By signing up, you agree to 10Web’s
+Terms of Service &
+Privacy Policy.
+Setting up your project…
+Configuring hosting…
+Installing WordPress backend…
+Preparing builder environment…
+Authenticate with Figma
+Pair with your Figma account
+Pair with Figma
+Cancel

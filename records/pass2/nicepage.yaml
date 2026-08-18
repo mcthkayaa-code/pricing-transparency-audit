@@ -1,0 +1,116 @@
+product_id: nicepage
+product_name: Nicepage
+category: AI website builder
+product_status: active
+paid_submission: "yes"
+entry_tier_name: Personal
+coder_pass: 2
+coder_role: second
+collection_date: 2026-08-15
+recheck_date: not_applicable
+primary_source_url: https://nicepage.com/premium
+archive_url: https://web.archive.org/web/20260815121227/https://nicepage.com/premium
+archive_status: archived
+default_display_state: "Subscription tab selected on load (not License; the page offers no monthly-recurring option -- only annual-recurring Subscription vs one-time non-recurring License); all paid-tier prices shown as USD $ with no currency selector present; cookie-consent banner offered only an 'Accept' control (no decline option) which was accepted to proceed with reading; read from a Turkey-based network location and still served plain USD figures."
+
+sources:
+  - { url: "https://nicepage.com/premium", kind: pricing, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815121227/https://nicepage.com/premium" }
+  - { url: "https://nicepage.com/terms", kind: tos, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122609/https://nicepage.com/terms", note: "Terms of Use; has a dedicated 'Refund Policy' section" }
+  - { url: "https://nicepage.com/agreement", kind: tos, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122631/https://nicepage.com/agreement", note: "End-User License Agreement; read in full for refund/commercial-use/ownership/unquantified-limit-clause" }
+  - { url: "https://nicepage.com/doc/16656/faq", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122651/https://nicepage.com/doc/16656/faq" }
+  - { url: "https://nicepage.com/doc/4720/trial-limitations", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122712/https://nicepage.com/doc/4720/trial-limitations" }
+  - { url: "https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal", kind: docs, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122735/https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal" }
+  - { url: "https://nicepage.com/abuse", kind: other, accessed: "2026-08-15", archive: "https://web.archive.org/web/20260815122808/https://nicepage.com/abuse", note: "checked as candidate acceptable-use policy for unquantified_limit_clause; not substantively used" }
+
+variables:
+  headline_price_usd: { value: 6.75, source: "https://nicepage.com/premium", evidence: "PERSONAL tier DOM: <sup>$</sup><span class=price-label>6<sup>75</sup></span><span class=price-year>/mo</span> = $6.75/mo. NOTE: both static WebFetch and document.body.innerText misread this as '$675/mo' (superscript-cents layout, D-005); corrected via raw DOM inspection, confirmed identically in the archive.org snapshot -- see premium-price-dom-evidence.txt." }
+  headline_billing_basis: { value: per_month_billed_annually, source: "https://nicepage.com/premium", evidence: "monthly figure ($6.75/mo) with 'Billed annually' printed in the same pricing-table column" }
+  first_charge_amount_usd: { value: 81.00, source: "https://nicepage.com/premium", evidence: "computed: 'Billed annually' states the plan is charged once for the year; 6.75 x 12 = 81.00 (see computation_assumptions)" }
+  mandatory_addon_present: { value: "no", source: "https://nicepage.com/premium", evidence: "features listed for Personal (Builder, Hosting, Services rows) carry no separate required charge; no mandatory add-on fee found in pricing page or docs" }
+  annual_condition_disclosure: { value: adjacent, source: "https://nicepage.com/premium", evidence: "'Billed annually' div sits in the same table cell/column as the Buy Now button, directly beneath the $6.75/mo price, within the same visual card" }
+  annual_default_toggle: { value: no_toggle, source: "https://nicepage.com/premium", evidence: "the page's only toggle (#period-toggle) switches 'Subscription' (recurring, billed annually, selected by default, class span-selected) vs 'License' (one-time, non-recurring, lifetime) -- not monthly vs annual. No monthly-recurring option exists, so only one recurring billing period is offered." }
+  free_plan_exists: { value: "yes", source: "https://nicepage.com/premium", evidence: "STARTER tier: $0, labelled 'Free'" }
+  free_plan_cap_documented: { value: some_quantified, source: "https://nicepage.com/premium", evidence: "quantified: 2 App/Desktop Projects, 2 HTML/Online Sites, 250 Mb storage, 1,000 monthly visits, 50 form submissions (lifetime), 20 calendar appointments (lifetime), 50 Block Layouts, 10 Grid styles; unquantified: '15,000+ Templates: Limited', 'Design customization: Limited', 'Published Sites: Limited' -- see premium-comparison-table-dom-evidence.txt" }
+  free_plan_cap_value: { value: "2 App Projects | 2 HTML Sites | 250 Mb storage per site | 1,000 monthly visits per site | 50 Form submissions (lifetime) | 20 calendar appointments (lifetime) | 50 Block Layouts | 10 Grid styles", source: "https://nicepage.com/premium", evidence: "quantified limits only, per section 5.1" }
+  free_plan_watermark: { value: "yes", source: "https://nicepage.com/premium", evidence: "'Remove Nicepage Badge' comparison-table row: STARTER(free) cell has no tick image; Personal/Business/Pro/Ultimate cells all carry tick.png ('Applies to plan'). Tooltip: \"Remove the 'Made in Nicepage' message at the bottom of your site.\"" }
+  free_plan_duration: { value: perpetual, source: "https://nicepage.com/premium | https://nicepage.com/doc/4720/trial-limitations", evidence: "Starter shown as a standing tier alongside paid tiers with no expiry stated; trial doc confirms that after the 7-day trial 'Nicepage automatically switches to the Starter Edition, which is free' with no further time limit stated on remaining there" }
+  trial_exists: { value: "yes", source: "https://nicepage.com/terms", evidence: "'We always offer a 7-day (seven-day) Free Trial from the date of the purchase with full features and unlimited Free Starter Edition'" }
+  trial_card_required: { value: unknown, source: "n/a", evidence: "no official document states whether payment details are required to start the trial; the trial doc states only that registration starts it ('The Trial Period starts right after the registration'). Not inferred per codebook rule." }
+  trial_length_days: { value: 7, source: "https://nicepage.com/terms", evidence: "'7-day (seven-day) Free Trial'; corroborated by FAQ ('7-day Trial Period') and trial doc ('seven (7) days')" }
+  trial_auto_converts: { value: "no", source: "https://nicepage.com/doc/4720/trial-limitations", evidence: "'The trial period expires in seven (7) days, and Nicepage automatically switches to the Starter Edition, which is free but has limitations.' -- reverts to the free plan, does not charge/convert to paid automatically" }
+  credit_system_present: { value: "no", source: "https://nicepage.com/premium", evidence: "every allowance is stated directly in output units (App/HTML Projects, form submissions, calendar appointments, storage, monthly visits) with no intermediate credit/token/point currency mentioned anywhere" }
+  credit_unit_defined: { value: not_applicable, source: "n/a", evidence: "no credit system" }
+  credit_to_output_rate_published: { value: not_applicable, source: "n/a", evidence: "no credit system" }
+  credit_rate_location: { value: not_applicable, source: "n/a", evidence: "no credit system" }
+  cost_per_output_unit: { value: per_seat_month, source: "https://nicepage.com/premium", evidence: "flat recurring price for unmetered access to the website-builder software itself; no per-artifact metering of a countable output" }
+  cost_per_output_computable: { value: "yes", source: "https://nicepage.com/premium", evidence: "price and allowance already share one period; see computation_assumptions" }
+  computation_assumptions: { value: "Personal tier (entry), $6.75/mo billed annually, default display state. First charge: 'Billed annually' states one annual charge; 6.75x12=81.00. Cost/output: per_seat_month unit, price already monthly; 6.75/1=6.75 per seat-month.", source: "https://nicepage.com/premium", evidence: "arithmetic per codebook 7 (first_charge_amount_usd rule 2) and domain 6 (cost_per_output_computable rule 3)" }
+  credit_rollover_policy: { value: not_applicable, source: "n/a", evidence: "no credit system" }
+  failed_generation_charge_policy: { value: not_applicable, source: "n/a", evidence: "no metered generation step documented; AI page-builder features ('AI Services to generate sites, pages, and blocks', per FAQ) are described as included without per-generation metering, caps, or failure/charge language anywhere in the docs" }
+  auto_renewal_default: { value: "on", source: "https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal", evidence: "'You can buy a Subscription without Auto-Renewal. Clicking the Buy button, you get to the Checkout page. On the Checkout page, you click the Auto-renewal link. After clicking the link, you will see the dialog on which you can click the Switch to Manual Renewal link.' -- checkout defaults to Automatic Renewal; opt-out requires an explicit action." }
+  auto_renewal_disclosure_location: { value: multiple, source: "https://nicepage.com/premium | https://nicepage.com/doc/16656/faq | https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal", evidence: "the same auto-renewal-optional fact is stated in the pricing page's own FAQ accordion (embedded in the page DOM, not merely linked out) and in two dedicated help-center articles" }
+  renewal_notice_commitment: { value: unknown, source: "n/a", evidence: "no document found that commits to (or disclaims) advance notice before a renewal charge" }
+  refund_policy_exists: { value: "yes", source: "https://nicepage.com/terms", evidence: "'You can request a refund within 14 days of the purchase date. Please be prepared to describe why you requested a refund via Microsoft Teams or phone and explain the actual reasons, and we will review your request.' See conflict_note for tension with the License Agreement's discretion language." }
+  refund_window_days: { value: 14, source: "https://nicepage.com/terms", evidence: "'within 14 days of the purchase date'" }
+  refund_conditions: { value: conditional, source: "https://nicepage.com/terms", evidence: "requires describing the reason for the request and passing Nicepage's review ('we will review your request'); the License Agreement additionally frames any refund as discretionary ('under no obligation ... under any circumstances')" }
+  cancellation_self_serve: { value: self_serve_documented, source: "https://nicepage.com/doc/548073/how-to-cancel-the-auto-renewal", evidence: "'Open the Licences and Subscription page from your user Profile. Click the Unsubscribe link to cancel Auto-renewal.'" }
+  refund_policy_location: { value: terms, source: "https://nicepage.com/terms | https://nicepage.com/agreement", evidence: "stated in the Terms of Use's dedicated 'Refund Policy' section and referenced in the License Agreement's Miscellaneous clause 1; both are terms-class documents under protocol 6.2" }
+  commercial_use_lowest_tier: { value: "free", source: "https://nicepage.com/agreement | https://nicepage.com/terms", evidence: "'the Work you produce with the Work must be used for yourself, your direct employer, client, or customer, who must be the end-user of your Work' (agreement); 'Only the final work, i.e. websites, are allowed to sell to third-party customers' (terms) -- neither statement restricts this to a paid tier" }
+  watermark_removal_tier: { value: lowest_paid, source: "https://nicepage.com/premium", evidence: "'Remove Nicepage Badge' row: no tick for STARTER(free); tick from PERSONAL (entry paid tier) upward" }
+  output_ownership_statement: { value: unknown, source: "n/a", evidence: "terms and the license agreement (read in full) address restrictions on USE and redistribution of Nicepage's own downloadable template assets, but neither states who owns or holds rights in the website/output the buyer builds and publishes" }
+  usage_cap_quantified: { value: some_quantified, source: "https://nicepage.com/premium", evidence: "Personal column: quantified = 5 Projects, 5 Sites, 1 Gb storage, 25,000 monthly visits, 250 form submissions/month, 50 calendar appointments/month, 200 Block Layouts, 25 Grid styles, 1 Modal Popup, 1 Published Site w/ Connected Domain; unquantified = 'Design customization: Limited'" }
+  unquantified_limit_clause: { value: absent, source: "https://nicepage.com/terms | https://nicepage.com/agreement", evidence: "both documents read in full; no fair-use / reasonable-use / excessive-use / abuse-threshold / discretionary-throttling clause tied to usage volume or intensity found. The only broad-discretion clause ('Nicepage.com may block, restrict, disable, suspend or terminate your access ... at any time at Nicepage.com's discretion, without prior notice') is a general termination-for-any-reason clause, not a usage-volume throttle, and is not coded as triggering 'present'." }
+
+coder_note: |
+  Entry-tier candidates (Subscription tab, default display state, lowest annual-equivalent
+  single-seat cost per sampling-rules 7.2): PERSONAL $6.75/mo x 12 = $81.00/yr -- WINNER, lowest.
+  Losing candidates: BUSINESS $12.75/mo x 12 = $153.00/yr; PRO $18.75/mo x 12 = $225.00/yr;
+  ULTIMATE $31.75/mo x 12 = $381.00/yr. STARTER ($0) excluded as the free tier, not a paid
+  candidate.
+
+  D-005 catch: a static WebFetch markdown conversion AND a live document.body.innerText
+  extraction both independently misread the superscript-cents price layout as "$675/mo",
+  "$1275/mo", "$1875/mo", "$3175/mo" (a x100 error). Raw DOM inspection
+  (<span class="price-label">6<sup>75</sup></span> etc.) gives the correct $6.75/$12.75/$18.75/
+  $31.75 reading, independently confirmed inside the archive.org save-page-now snapshot (its
+  crawler executed the page's JS). Full detail in nicepage-sources/premium-price-dom-evidence.txt.
+
+  Toggle judgment: the page's only toggle is "Subscription" (recurring, billed annually, default)
+  vs "License" (one-time, lifetime, non-recurring) -- a product-type toggle, not a monthly/annual
+  billing-period toggle. No monthly-recurring option exists at all, so annual_default_toggle is
+  coded no_toggle rather than annual_preselected.
+
+  Feature-tier vs usage-limit judgment: qualitative capability labels ("Basic/Advanced/Unlimited
+  site search", "Basic/Full Customization", "Basic/Advanced E-Commerce") were treated as feature
+  grades rather than usage limits under codebook section 5.1 (which defines a limit as a cap on
+  consumption of outputs/minutes/exports/seats/storage/resolution/queue priority), and excluded
+  from the free_plan_cap_documented / usage_cap_quantified tallies. Full per-tier cell dump in
+  nicepage-sources/premium-comparison-table-dom-evidence.txt.
+
+  Refund tension: see conflict_note for the full quotes. Coded refund_policy_exists = yes,
+  refund_conditions = conditional, refund_window_days = 14 on the reading that terms.md's
+  described 14-day review process and agreement.md's discretion language ("no obligation ...
+  under any circumstances", followed immediately by how an approved refund is paid out) describe
+  one coherent discretionary policy rather than two incompatible positions. Disclosed for
+  independent review rather than resolved quietly.
+
+  output_ownership_statement = unknown: the governing documents address use-restrictions and
+  redistribution of Nicepage's own template assets, never who owns the buyer's finished website.
+
+  Cookie-consent banner on https://nicepage.com/premium offered only an "Accept" control, no
+  decline option (protocol 6.8 rule 5); accepted in order to read the page, noted here as the
+  privacy rule requires.
+
+  Frame row cross-checked against the live site: product_name "Nicepage", vendor_home_url,
+  category "AI website builder", and product_status "active" all confirmed correct as given; no
+  correction needed.
+
+  A-012 does not apply to this product: the trial is free (not a paid time-limited intro period)
+  and does not auto-convert to a paid charge -- it reverts to the free Starter plan after 7 days
+  per https://nicepage.com/doc/4720/trial-limitations.
+
+  blindness: no other record, no review page, no pass-1 material was opened. Did not read
+  repository history (no git log, git show, git diff, or git blame was run).
+conflict_note: "refund_policy_exists / refund_conditions: https://nicepage.com/terms operates a described refund-request process -- \"You can request a refund within 14 days of the purchase date. Please be prepared to describe why you requested a refund via Microsoft Teams or phone and explain the actual reasons, and we will review your request.\" -- while https://nicepage.com/agreement states \"The Nicepage.com website is under no obligation to refund your subscription fee under any circumstances,\" immediately followed by instructions for how an approved refund would be paid out. Both are terms-class documents (Terms of Use / License Agreement), so protocol 6.2's two-class hierarchy does not rank one above the other. Coded as yes / conditional / 14 days on the reading that the two describe one coherent discretionary-refund policy rather than two incompatible positions; logged here per protocol regardless of the resolution reached, so an adjudicator can weigh it independently."
+register_events: []
+status: complete

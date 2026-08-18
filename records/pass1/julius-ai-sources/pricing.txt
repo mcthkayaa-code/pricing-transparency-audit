@@ -1,0 +1,139 @@
+SOURCE: https://julius.ai/pricing
+ACCESS DATE: 2026-08-09
+METHOD: Rendered read via browser automation (Claude_Browser preview tool). Static fetch
+  (WebFetch and curl with US-locale Accept-Language header) both returned HTTP 403
+  (Cloudflare bot block) with no body content. Per D-005, a rendered load of a public
+  page is a documentary read, not a prohibited action. This file is the rendered
+  document text, saved locally because two automated web.archive.org/save/ submission
+  attempts both returned HTTP 520 (archive.org-side gateway error) — protocol 6.4
+  archive_status = local_copy_only.
+NETWORK NOTE: Egress observed via response headers on a related archive.org request as
+  Turkish ISP "Superonline Iletisim Hizmetleri A.S." (D-003 network-location context).
+  No currency localization was observed: prices rendered in USD ($) with no locale
+  switcher or non-USD figures anywhere on the page, so no non_usd coding arises and no
+  further D-003 cross-check was required.
+DEFAULT DISPLAY STATE: Page loads with the "Yearly" billing radio checked by default
+  (verified via DOM: input#pricing-yearly checked=true, input#pricing-monthly
+  checked=false; container .yearly-price computed display:block / .monthly-price
+  computed display:none). No cookie-consent banner was presented. English interface.
+
+=== RENDERED TEXT (main content, plain-text extraction) ===
+AI-powered Data Agents
+Start for free.
+Upgrade to access frontier models, collaborative workspaces, enhanced security controls, live data connections & more.
+Yearly  SAVE -20%  Monthly   [Yearly selected by default; see DOM verification above]
+
+Free
+For individuals to complete small projects and basic analysis
+$0 / month
+Get started with Free
+Key features:
+Access to Notebooks
+File storage formats
+Google Drive data connector
+2 GB of RAM
+
+Plus
+More access to advanced data analysis
+Monthly-cadence price (hidden by default): $20 / month
+Yearly-cadence price (shown by default): $16 / month
+Get started with Plus
+Everything in Free, plus:
+24,000 credits per year
+Daily refresh credits
+1 seat included
+Access to frontier AI models like GPT-5.5 and Claude Opus 4.8
+Export slides, HTML artifacts, charts, and images
+Unlimited file storage formats
+Unlimited charts
+Email / community support
+
+Pro
+For individuals with data needs that need advanced AI capabilities
+Monthly-cadence price (hidden by default): $45 / month
+Yearly-cadence price (shown by default): $37 / month
+Get started with Pro
+Everything in Plus, plus:
+60,000 credits per year
+Daily refresh credits
+1 seat included
+Access to frontier AI models like GPT-5.5 and Claude Opus 4.8
+Export slides, HTML artifacts, charts, and images
+Unlimited file storage formats
+Unlimited charts
+Expanded context window
+32 GB of RAM
+Priority email support
+
+Max
+For AI power users who need the latest and most powerful models, and maximum context
+Monthly-cadence price (hidden by default): $200 / month
+Yearly-cadence price (shown by default): $166 / month
+Get started with Max
+Everything in Pro, plus:
+300,000 credits per year
+Daily refresh credits
+Export slides, HTML artifacts, charts, and images
+Larger context window
+Early access to advanced and unreleased features
+Max members-only Slack channel with members from the Julius team
+Priority access at high traffic times
+
+Ultra
+For the heaviest individual usage on Julius
+Monthly-cadence price (hidden by default): $500 / month
+Yearly-cadence price (shown by default): $416 / month
+Get started with Ultra
+Everything in Max, plus:
+840,000 credits per year
+Daily refresh credits
+Access to the most powerful AI models
+Export slides, HTML artifacts, charts, and images
+Early access to advanced and unreleased features
+Priority access at high traffic times
+Permanent file storage
+
+RECOMMENDED
+Business
+For teams with data needs
+Monthly-cadence price (hidden by default): $450 / month
+Yearly-cadence price (shown by default): $375 / month
+Get started with Business
+Everything in Ultra, plus:
+720,000 credits per year
+Daily refresh credits
+Access to frontier AI models like GPT-5.5 and Claude Opus 4.8
+Export slides, HTML artifacts, charts, and images
+Add up to 50 team members
+Postgres, BigQuery, Snowflake + more data connectors
+No table limit in data connections
+Unlimited Custom Agents
+Unlimited Slack Agent use in public Slack channels
+Unlimited scheduled report runs
+Have more than 50 people? Contact us
+
+Trusted by leading professionals worldwide
+Frequently asked questions
+How does Julius handle security and compliance?
+Which data sources and warehouses does Julius integrate with?
+How does authentication work with our existing SSO/SAML provider?
+How can we manage our Julius subscription?
+How can my organization select between Business and Enterprise?
+How does Julius query across my database if I have thousands of tables?
+Can I give Julius my business context?
+I have a purchase order. How can I get an invoice?
+What other services can Julius integrate with in my workspace?
+
+=== DOM VERIFICATION (JS-extracted price matrix, monthly vs yearly-equivalent per tier) ===
+Free:     monthly "$0 / month"   | yearly "$0 / month"
+Plus:     monthly "$20 / month"  | yearly "$16 / month"
+Pro:      monthly "$45 / month"  | yearly "$37 / month"
+Max:      monthly "$200 / month" | yearly "$166 / month"
+Ultra:    monthly "$500 / month" | yearly "$416 / month"
+Business: monthly "$450 / month" | yearly "$375 / month"
+
+No occurrence anywhere on the page of: "billed", "annually", "commitment", "upfront",
+"charged", "commercial", "watermark" (checked via in-page string search).
+
+No "trial" language anywhere on this page (no free-trial call to action distinct from
+the permanent $0 Free plan).

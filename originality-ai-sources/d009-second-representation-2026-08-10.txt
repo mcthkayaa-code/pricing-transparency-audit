@@ -1,0 +1,39 @@
+URL: https://originality.ai/pricing
+Date: 2026-08-10
+Method: D-009 re-read (independent live re-verification; the original 2026-08-10 coding already
+performed its own two-representation check per coder_note, but this record was still in the
+assigned slice, so it was re-opened fresh rather than taken on trust). Second representation
+obtained via (a) a fresh live fetch of the page's embedded JSON-LD script and (b) structural DOM
+query of the plan-card and toggle-tooltip elements, independent of the innerText transcript.
+
+What it shows:
+1. Fresh JSON-LD re-extraction (script[type="application/ld+json"], fetched live today, not
+   reused from the original record): {"@type":"Offer","name":"Pro Plan (Monthly)","price":
+   "14.95","priceCurrency":"USD",...}, {"@type":"Offer","name":"Pro Plan (Annual)","price":
+   "155.40","priceCurrency":"USD",...}. Matches headline_price_usd's monthly-equivalent
+   relationship and first_charge_amount_usd exactly.
+
+2. Plan-card structural mapping: <div class="grid-div is-header"><p class="header-text-1">Pro
+   </p>...<p class="header-text-3">$12.95 /month <span ...>(Save $24)</span></p>...<p>$14.95
+   /month</p>... -- confirms entry_tier_name=Pro pairs directly with headline_price_usd=$12.95 in
+   the same header block, not a shifted row.
+
+3. Toggle tooltip, a DOM element distinct from both the card price and the JSON-LD (a third
+   representation): <p class="feature_tooltip-text">You will be billed yearly for an amount of:
+   $155.4 ($12.95 x 12 months) instead of <span class="text-strikethrough">$179.4 ($14.95 x 12
+   months).</span><br>You save $24 on yearly plans.</p> -- this is vendor-authored prose that
+   directly states the $155.4 annual total; it is not a coder computation.
+
+4. first_charge_amount_usd PROVENANCE (coordinator addendum): confirmed DIRECT -- the vendor's
+   own tooltip states "You will be billed yearly for an amount of: $155.4", an explicit
+   once-a-year lump-sum billing statement carrying the total dollar figure. This independently
+   and fully satisfies codebook rule 2's once-for-twelve-months requirement even though the
+   record's evidence field already correctly labels it a direct read rather than a coder
+   computation.
+
+5. Superscript/subscript check: 0 <sup>/<sub> elements found anywhere on the page.
+
+Conclusion: all four scoped values (entry_tier_name=Pro, headline_price_usd=12.95,
+headline_billing_basis=per_month_billed_annually, first_charge_amount_usd=155.40) re-confirmed
+live today in three independent representations (JSON-LD, card DOM, tooltip DOM), consistent
+with the original coder's own same-day two-representation check. No correction.

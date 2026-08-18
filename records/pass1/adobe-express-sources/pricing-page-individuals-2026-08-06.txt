@@ -1,0 +1,69 @@
+LOCAL COPY — coder-captured render, saved because the page's plan-card prices are injected by a client-side script fragment (https://main--da-express-milo--adobecom.aem.page/express/fragments/pricing-table/individuals-ff-bundle) that a plain web.archive.org/save crawl does not execute, so the public archive snapshot of this URL shows the page shell without the price figures. Protocol section 9, limitation 8, anticipates this ("Pricing tables rendered by script resist public archiving"). This local copy is the evidence for headline_price_usd, headline_billing_basis, first_charge_amount_usd, entry_tier_name, annual_default_toggle, annual_condition_disclosure, free_plan_exists/cap, trial_exists/length.
+
+URL read: https://www.adobe.com/express/pricing
+Access date: 2026-08-06
+Tab/session: Claude Browser tool, fresh navigation, Individuals tab (default tab on load), no interaction before capture.
+Cookie/consent state: no cookie-consent banner was rendered on any of the four independent loads of this URL; no cookie interaction was available or needed.
+Currency/region signals observed in this session's outbound commerce links: co=US, lang=en, locale=en-US, contentRegion=us (see coder_note in the record for the earlier TRY/geo-variant read logged as a register event).
+
+This exact state (US$0.00 Free / US$10.99 mo "Acrobat Express", "Best value" banner, "Includes Adobe Express Premium and Acrobat AI Assistant") was independently observed on FOUR separate fresh page loads in this coding session: two via direct URL navigation in new tabs, one via clicking the "Compare all plans" link from https://www.adobe.com/express/ (Plans > Compare all plans, href /express/pricing), and one more direct reload. Screenshots of two of these loads were captured and visually confirm the figures transcribed below character-for-character.
+
+=== VERBATIM CAPTURED TEXT (Individuals tab, as rendered) ===
+
+Stand out with Adobe Express. Pick your plan.
+Individuals | Businesses | Students | Educators
+
+Adobe Express Free
+US$0.00
+For individuals who want basic content creation tools, limited generative AI credits and assets.
+Free to use. No credit card required.
+[button] Get free plan
+
+Acrobat Express  [banner: "Best value"]
+US$10.99/mo
+For individuals who want to create standout content with premium templates, more generative credits, and AI-powered document workflows. Includes Adobe Express Premium and Acrobat AI Assistant.
+No annual commitment, billed monthly.[1]
+[button] Start 7-day free trial
+
+Footnote 1: If you have signed up for a free trial, billing begins when free trial ends. Cancel before free trial ends and you won't be charged. Subscription automatically renews until you cancel.
+Footnote 2: Adobe Express membership required. The Adobe Stock photo collection does not include Premium or editorial content. Limited Adobe Stock functionality available in webpage and video features.
+
+--- Feature comparison table excerpts (Adobe Express Free | Acrobat Express) ---
+Templates: 268,000+ | 519,000+  (top-features restated elsewhere as 100,000+ free / all premium)
+Adobe Stock photos: 500,000+ | 350M+
+Adobe Fonts: 4,000+ fonts | 30,000+ fonts
+Generative credits: [row present; paid-column value] 250 per month
+Generate 5-second videos: 2 free lifetime uses [free column]
+Generate Presentations: 5 free lifetime uses [free column]
+Cloud storage: 5GB | 100GB (Businesses-tab detail page separately states Free = 5GB, Paid Individual = 100GB; the two-tab "Top features" panel read directly under Individuals stated Free storage = 5GB, Acrobat Express storage = 100GB)
+Version history: 10 days | 30 days
+Content Scheduler accounts: 1 account per social network | 3 accounts per social network
+PDF Quick Actions: "Import PDF free; 10 PDF Quick Actions per month" [free] | "Unlimited Quick Actions" [paid]
+No explicit "watermark" row was found anywhere in this comparison table.
+
+--- "Top features" panel under Acrobat Express (Individuals tab) ---
+Includes all free plan features, and more.
+Generative AI: 250 generative credits per month per user with generative AI features designed to be commercially safe.
+Templates: Access to all premium static and video templates
+Assets: 200M+ royalty-free Adobe Stock photos, videos, music tracks, and design elements
+Fonts: complete Adobe Fonts collection with over 30,000+ fonts
+Editing tools: Additional tools like Remove Video Background, advanced animation, and more
+Content scheduling: Plan and schedule posts to 3 accounts per social network
+Version history: 30 days
+Storage: 100GB
+Acrobat Reader: View, comment, print, plus fill and sign PDF forms
+Acrobat AI Assistant: Summarize documents and get answers with citations
+Generate podcast, PDF Spaces, Generate presentations (all listed as included, no further quantification)
+
+--- Businesses tab ---
+Acrobat Express for Teams — US$11.99/mo per license — "Annual subscription, billed monthly.[1]" — "Start 14-day free trial" — generally purchasable online (no sales contact required), single-seat price stated.
+Acrobat Express for Enterprise — "Contact Sales for more information" — not purchasable without contacting sales; ineligible as an entry-tier candidate under sampling-rules.md 7.2.
+
+--- Pricing-page FAQ accordion (relevant items) ---
+Q: Can customers make commercial use of the images generated with AI tools powered by Firefly?
+A: In general, you may use outputs from generative AI features commercially. However, if Adobe designates in the product or elsewhere that a beta version of a generative AI feature cannot be used commercially, then the generated outputs from that beta feature are for personal use only and cannot be used commercially.
+
+Q: What does "designed to be commercially safe" mean for Adobe Firefly in Adobe Express?
+A: It means that Adobe is taking a thoughtful approach to how the Firefly family of models is being developed, including the sources of content used for training in accordance with Adobe's AI Ethics Principles.
+
+Footer note on page: "Feature comparisons based on publicly available information as of May 2026. Features are subject to change; please visit adobe.com/express for the most up to date information on Adobe Express."

@@ -1,0 +1,133 @@
+SOURCE: https://nicepage.com/premium
+DATE ACCESSED: 2026-08-10
+METHODS USED:
+  (1) WebFetch (AI-summarized) - DISCARDED, produced a hallucinated/incorrect price read
+      ($675/mo, $1275/mo, $1875/mo shown) - NOT used as evidence, kept here only to
+      document why it was rejected.
+  (2) Rendered browser read (mcp__Claude_Browser__preview_start + javascript_tool,
+      document.body.innerText) - shows the SAME flattened digits as (1): "$675/mo",
+      "$1275/mo", "$1875/mo", "$3175/mo". This is a text-extraction artifact, not the
+      real price - see NETWORK/RENDERING NOTE below.
+  (3) Static curl fetch with Accept-Language: en-US,en;q=0.9 (D-003 US-locale check) -
+      retrieved the raw server-rendered HTML, which is authoritative.
+  (4) Visual screenshot (desktop viewport, 1400x1000) after accepting the cookie banner,
+      confirming the true visual price by eye.
+
+NETWORK / RENDERING NOTE (important - resolves an apparent price discrepancy):
+The page's own JS embeds the true base prices as plain JSON:
+  baseLicensePrices      = {"personal":"89","business":"169","pro":"269","ultimate":"439"}
+  baseSubscriptionPrices = {"personal":"6.75","business":"12.75","pro":"18.75","ultimate":"31.75"}
+The server-rendered HTML for each plan card uses a "dollars-big, cents-superscript, no
+decimal point" style, e.g. for Personal:
+  <div class="price original-price personalOriginalPrice">
+    <sup>$</sup><span class="price-label">6<sup>75</sup></span><span class="price-year">/mo</span>
+  </div>
+When a plain-text serializer (WebFetch's summarizer, or DOM .innerText) flattens the
+<sup>75</sup> onto the "6" with no separator, "$6.75/mo" is misread as "$675/mo". This
+is confirmed NOT a currency/geo artifact: grepped the full page JS for
+currency/country/TRY/multiplier/exchangeRate/convert logic and found none — the only
+"country"-related code is Amplitude/analytics event tagging (getCountryCode()), it does
+not branch pricing. The static curl fetch (US Accept-Language header) returned the
+identical "6<sup>75</sup>" markup, and the visual screenshot confirms a human reader sees
+"$6.75/mo", not "$675/mo". CODING USES $6.75 / $12.75 / $18.75 / $31.75 per month
+(billed annually) as the true, vendor-published figures. No non_usd finding applies (all
+figures are USD $, no locale-based price switching detected) - D-003 check satisfied.
+
+VISUAL LAYOUT CONFIRMED (screenshot, desktop viewport):
+- Toggle at top of page: "Subscription [ACTIVE/default] | License" - Subscription is the
+  default-loaded state (bold/selected), License is not selected on load.
+  Subtitle: "Save up to 20% with subscription"
+- 5 plan cards left to right: STARTER, PERSONAL, BUSINESS (badged "POPULAR"), PRO,
+  ULTIMATE. (Business carries the "Popular" ribbon, not Personal - corrects the
+  WebFetch-summarized mis-attribution.)
+- Prices (Subscription / default state): STARTER $0 (Free) | PERSONAL $6.75/mo | BUSINESS
+  $12.75/mo | PRO $18.75/mo | ULTIMATE $31.75/mo. All four paid cards show "Billed
+  annually" directly beneath the price figure, inside the same card (= adjacent
+  disclosure), and a green "BUY NOW" button.
+- License (one-time) mode, from baseLicensePrices JSON (not the default-loaded state;
+  read from the embedded JSON + FAQ3 text, not by switching the toggle to "find a
+  cheaper figure"): PERSONAL $89 | BUSINESS $169 | PRO $269 | ULTIMATE $439, one-time,
+  "lifetime application license" + "one year of updates" + one year of the online
+  Subscription services (hosting, forms, domains).
+- No coupon was applied (field showed empty placeholder "Enter promo code"); the page's
+  JS contains a dormant "Last Sale Day!" discount template and hidden ".discount-price"
+  divs (style="display:none" by default) but neither was active/visible on this read, so
+  the recorded figures are the vendor's undiscounted default list prices, not a
+  promotional price.
+
+RAW DETAILED COMPARISON TABLE (DOM-verified via querySelector, column order confirmed as
+Starter | Personal | Business | Pro | Ultimate for every row, so cell-to-plan alignment
+below is exact, not inferred from flattened text):
+  Desktop Projects:            2 | 5 | 50 | Unlimited | Unlimited
+  Online Projects:             2 | 5 | 10 | 20 | 40
+  15,000+ Templates:           Limited | (full) | (full) | (full) | (full)
+  Block Layouts:                50 | 200 | 500 | 1000 | Unlimited
+  Grid styles:                  10 | 25 | 50 | 100+ | Unlimited
+  Modal Popups:                 (none) | 1 | 10 | 100 | Unlimited
+  Design customization:         Limited | Limited | (full) | (full) | (full)
+  Published Sites:              Limited | 1 | 3 | 5 | 20
+  Storage per site:             250 Mb | 1 Gb | 3 Gb | 5 Gb | 10 Gb
+  Monthly visits per site:      1,000 | 25,000 | 100,000 | 500,000 | 1,000,000
+  Form submissions per site:    50/lifetime | 250/month | 1000/month | 5000/month | 25,000/month
+  Calendar Appointments:        20/lifetime | 50/month | 250/month | 1000/month | 5000/month
+  Site search:                  (none) | Basic | Advanced | Unlimited | Unlimited
+  User Roles (Designer/Editor/Viewer/DataManager): (none) | (none) | 3 | 10 | 100
+  Number of Products (e-comm):  (none) | (none) | 10 | 50 | Unlimited
+  Additional Licenses:          (none) | (none) | (none) | 10 | Unlimited
+  Daily stock-image downloads:  (none) | (none) | 30 | 100 | 1000
+  White Label:                  (none) | (none) | (none) | (none) | Available (Ultimate only)
+  Large-size stock photos:      (none) | (none) | (none) | (none) | Available (Ultimate only)
+
+ICON-BASED ROW VERIFIED BY DOM INSPECTION (row.outerHTML, tick = img
+src=".../tick.png" alt="Applies to plan"; not readable from .textContent, which is blank
+for these cells):
+  "Remove Nicepage Badge" (tooltip: "Remove the 'Made in Nicepage' message at the bottom
+  of your site."): Starter cell = EMPTY (no tick = badge stays on free-plan sites) |
+  Personal = tick | Business = tick | Pro = tick | Ultimate = tick.
+  => free plan output is watermarked; watermark is removed starting at the lowest paid
+     tier (Personal).
+
+FAQ (embedded server-side in the same page, inside collapsed accordion panels - not
+gated by any interaction, full text present in the static HTML):
+Q: "Do you give a trial period to test premium features?"
+A: "After creating a Nicepage account, you start the 7-day Trial Period, which allows you
+    to test most Premium Features. Some features remain available only for Premium Plans."
+Q: "What is the difference between a subscription and a license?"
+A: "Subscription: It is a one-year Premium for the Nicepage Desktop Applications, Online
+    Builders, WordPress Plugin, and Joomla Extension, including one year of updates.
+    Auto-renewal is optional, and you can buy a Subscription without auto-renewal or you
+    can cancel it at any time in your Profile. The auto-renewal price has a 40% discount
+    for the next year's purchase.
+    License: It is a lifetime Premium for the Desktop Application, WordPress Plugin, and
+    Joomla Extension. It also includes one year of updates. If you refuse to pay for the
+    updates in the next year, you can continue to use your current version or any other
+    prior release for a lifetime. You can also use the subscription services, including
+    the Online Builder, HTML Hosting, Contact Form Submissions, and Custom Domains
+    support for one year."
+Q: "What happens after the update period expires?"
+A: "After the Subscription expires, Nicepage automatically switches to the Free Starter
+    Plan. You can update or renew anytime. The Free Starter Plan is limited to 2 projects
+    on the Dashboard. It does not allow exporting the Nicepage Project or themes and
+    content for WordPress and Joomla.
+    After the License expires, you can continue using the Desktop Application, WordPress
+    Plugin, and Joomla Extension for a lifetime.
+    For both Subscriptions and Licenses, after expiration, all online services switch to
+    the Free Starter Plan, your domain will be disconnected, and published sites will
+    remain active for 12 months."
+Q: "Can I cancel my Premium Plan at any time?"
+A: "There is no need to cancel a License or Subscription without auto-renewal, which
+    expires automatically. If you have a Subscription with auto-renewal enabled, you can
+    cancel it at any time in your Profile [/User/Orders/Subscriptions] or during purchase
+    [/doc/548073/how-to-cancel-the-auto-renewal]. If you need a refund, please refer to
+    the Terms [/terms] to determine your eligibility and then contact our support with a
+    request."
+Q: "Can I buy the Subscription without Auto-Renewal?"
+A: "Yes, you can do that on the Payment Page. You can get more information here
+    [/doc/548073/how-to-cancel-the-auto-renewal]."
+Q: "Do you use AI to generate sites?"
+A: "We use and constantly improve machine learning technologies, and you can use AI
+    Services to generate sites, pages, and blocks."
+
+ARCHIVE: https://web.archive.org/web/20260810063002/https://nicepage.com/premium
+(submitted https://web.archive.org/save/https://nicepage.com/premium, 1 attempt,
+succeeded, verified HTTP 200)

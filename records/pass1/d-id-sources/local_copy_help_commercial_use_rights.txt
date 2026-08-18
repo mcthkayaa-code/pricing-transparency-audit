@@ -1,0 +1,20 @@
+LOCAL COPY (archive_status: local_copy_only)
+Source URL: https://help.d-id.com/hc/en-us/articles/31350883819537-What-are-the-copyright-and-commercial-use-rights-for-my-videos
+Access date: 2026-08-07
+Retrieval method: rendered page text captured via browser (get_page_text), since the page returns HTTP 403 to scripted curl/WebFetch requests and web.archive.org/save returned HTTP 520 on three attempts (bot protection on Zendesk-hosted help center).
+Page title: "What are the copyright and commercial use rights for my videos? – D-ID Help Center"
+---
+D-ID Help Center  Account & Billing
+What are the copyright and commercial use rights for my videos?
+
+Your rights depend on the plan you're subscribed to, and each plan includes its own license and moderation settings — you can view the full details on our Pricing page.
+
+Assuming you own the rights to the image, audio, and text you upload:
+
+Trial, Lite, Build – For personal use only
+You can share your videos on social media, but they can't be used commercially.
+
+Pro, Advanced, Enterprise, Launch, Scale – For commercial use
+You're free to use your videos in ads, marketing, business content, and more.
+
+For full terms and conditions read our Terms & Conditions

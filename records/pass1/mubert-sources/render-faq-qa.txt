@@ -1,0 +1,153 @@
+Q: What is Mubert?
+A: Mubert is one of the pioneers of AI-powered music creation, generating tracks from a database of sounds created by human producers. Our approach enhances the music quality while supporting artists and democratizing the commercial music creation and licensing process.
+
+Q: Why are we different from competitors?
+A: At Mubert, our main mission is to empower content creators with easy-to-license tool, powered by musicians. Human creativity is an inevitable part of music creation process.
+
+Q: What is DSP?
+A: A Digital Service Provider (DSP) is an online store (iTunes, Amazon Music) or streaming service (Spotify, Apple Music, Tidal, YouTube Music) and etc.
+
+Q: How do I change my password?
+A: You can now easily change your password right in 'My Profile' section. Don't forget to save the changes.
+
+Q: Can I change the login method? (Email/Google/Facebook)
+A: You can now change the login method right in 'My Profile' section.
+
+Q: I want to completely delete my account. How can I do this?
+A: In order to delete your account, please tap the 'Delete Account' button in 'My Profile' section.
+
+Q: How to remove the watermark?
+A: Mubert watermark is added to prevent fraudulent activity. The watermark will be deleted once you download the track to your device.
+
+Q: What is the difference between the generation modes? (track/jingle/loop/mix)
+A: – Track mode is the most native and is perfect for music of classic length– Jingle mode is best for music content up to 40 seconds long – these are short completed tracks with fixed and logical structure– Loop mode creates music pieces that are best looped – are best to use for NFTs or Instagram posts– Mix mode is perfect for any long-lasting content, mimicking the DJ's work tracks follow one after another, blending harmoniously – best for YT Channels or Podcasts
+
+Q: May I mix the genres?
+A: Unfortunately, it is not possible to mix different categories at the moment. Please try generating with a text prompt to enhance the results.
+
+Q: May I generate tracks of 25 minutes + duration?
+A: Mubert Render does not currently support generating individual tracks longer than 25 minutes. For longer continuous music, use Mix mode or contact us to learn more about Mubert API.
+
+Q: How does the 'Search by reference' feature work?
+A: Paste a link to a reference track and Mubert will analyze its musical characteristics to generate music inspired by a similar style, mood and energy — without copying the original composition.
+
+Q: How is Quick Remix different from generating a new track?
+A: Generating a new track creates a completely new composition based on your prompt. Quick Remix starts from an existing track and lets you regenerate or remove selected stems while preserving the overall character of the original track.
+
+Q: How many tracks can I generate?
+A: There are different monthly generation limits on different plans. The free Ambassador one allows to generate 25 tracks, while Creator & Pro up to 500 tracks, Business up to 1000.
+
+Q: How do I know how many generations are left?
+A: You can now find your limits in My Profile section, including the daily limit.
+
+Q: Can I generate sound effects (SFX)?
+A: Mubert Render is designed for AI music generation and doesn't currently generate standalone sound effects. If you're creating short-form videos, try Mubert Fuse to generate AI sound effects for Shorts and social media. For podcasts and spoken-word content, Mubert Cast can generate intros, outros and audio branding. Learn more at Mubert Fuse and Mubert Cast.
+
+Q: How can I download tracks in .wav?
+A: In order to download tracks in lossless quality, a Paid Plan is required. Please find more information on available Plans here.
+
+Q: What is Quick Remix?
+A: Quick Remix lets you customize an existing track by regenerating or removing individual stems while keeping the rest of the track unchanged. It's the fastest way to create new variations without starting from scratch.
+
+Q: Which stems can I edit?
+A: Quick Remix currently supports four stem groups: Drums, Bass, Lead and FX. You can regenerate or remove any combination of these stems.
+
+Q: Can I regenerate and remove multiple stems at the same time?
+A: Yes. You can select any combination of supported stems to regenerate or remove in a single remix.
+
+Q: Can I preview my changes before generating a remix?
+A: No. Selecting a stem for removal or regeneration does not change the current track immediately. Click Remix to generate a new version, and you will be able to preview it once generation is complete.
+
+Q: Why don't I hear the changes immediately after removing or regenerating a stem?
+A: Quick Remix does not edit the currently playing track in real time. Your selections are applied when you click Remix, which generates a new track version. Once generation is complete, you can preview, download, or remix the result again.
+
+Q: Does Quick Remix change my original track?
+A: No. Your original track always remains unchanged. Every remix is generated as a separate version.
+
+Q: Can I remix Staff Picks tracks?
+A: Yes. Quick Remix works with both your generated tracks and tracks from the Staff Picks library.
+
+Q: Can I change the track duration in Quick Remix?
+A: Yes. Changing track duration in Quick Remix is available on paid plans. Free users can remix a track using its original duration.
+
+Q: Can I download separate stems or MIDI files?
+A: Not yet. While Quick Remix lets you edit supported stems, exporting individual stems or MIDI files is not currently available.
+
+Q: Can I remix a remix?
+A: Yes. You can use Quick Remix on any remixed track and create as many consecutive versions as you need.
+
+Q: Does Quick Remix use one generation from my monthly limit?
+A: Yes. Each Quick Remix creates a new track version and uses one generation from your monthly limit.
+
+Q: Can I undo a remix?
+A: AnswerA remix cannot be undone, but your original track always remains unchanged. Every remix is saved as a separate version, so you can return to the original track at any time.
+
+Q: Why does my remixed track sound different than expected?
+A: Quick Remix generates a new version of the track rather than editing the original audio directly. Because music generation includes some variation, the regenerated stems may sound different from what you expected and can slightly affect the overall feel of the track. You can remix the result again to explore another variation.
+
+Q: May I release music on music streaming services or music stocks? (e.g. Spotify, Apple Music, Epidemic Sound, Audiojungle, etc.)
+A: Unfortunately, we do not provide such licensing options at the moment. It is strictly prohibited to register our music under Content ID systems. However, you can use tracks as background music for YouTube music videos.
+
+Q: May I use Mubert tracks as background music for YouTube functional music channel? (e.g. LoFi girl) Which plan do I need?
+A: Yes, our licensing scope includes such a use case. If you’d love to promote/boost these videos, a Creator Plan is best; if you plan on monetizing the channel, at least a Pro Plan is required.
+
+Q: May I use music in commercial projects on the Ambassador Plan?
+A: No, unfortunately, Ambassador Plan can be used only for personal projects.
+
+Q: May I use Mubert music for my indie game? Which Plan do I need?
+A: You can use music generated via Mubert in your indie game on a Pro Plan. For larger developers a Business Plan is required.
+
+Q: May I use Mubert music for my app?
+A: In order to use our tracks as background music in the app, a Business Plan or API subscription is required. If you sublicense music to content creators, you’ll need to request the API access.
+
+Q: I want to use your music for free. What are the limitations?
+A: You can use Mubert music on the Ambassador Plan for free in your personal projects without ad spend or monetization. However, it is obligatory to credit copyright to Mubert, wherever music is used – please add the link to Mubert Render and a #mubert hashtag. In order to use music in promoted/boosted posts, a Creator Plan is required. If you’d love to monetize the posts, a Pro or Business Plan will fit.
+
+Q: I’m trying to choose between Creator and Pro Plans. Which one do I need?
+A: Creator Plan is best for personal content, including promoted/boosted posts. However, in order to use Mubert music for commercial content and/or monetize posts – a Pro Plan is required.
+
+Q: What do I get with a Paid Plan?
+A: Paid plans allow licensing music for different use cases and provide extended generation limits. You can find more information on the terms here.
+
+Q: Do I own the rights to music created with Mubert?
+A: All the copyright is owned by Mubert Inc. We license tracks for different use cases. You can find more information here.
+
+Q: What happens if I cancel the Subscription?
+A: When you cancel Mubert Subscription, you are no longer allowed to use tracks in new projects. However, you can keep the old ones posted and continue monetization.
+
+Q: May I release music on music streaming services or music stocks? (e.g. Spotify, Apple Music, Epidemic Sound, Audiojungle, etc.)
+A: Unfortunately, we do not provide such licensing options at the moment. It is strictly prohibited to register our music under Content ID systems. However, you can use tracks as background music for YouTube music videos.
+
+Q: How do I cancel my subscription?
+A: You can cancel your subscription in My Profile section.
+
+Q: Which payment options are available?
+A: You can pay using a credit card (Visa, MasterCard or American Express). Payments via PayPal are not supported at the moment. You can choose to pay in either monthly or annual installments. Please check our Pricing Page for more information.
+
+Q: How many track generations are left this month?
+A: You can now find your limits in My Profile section, including the daily limit.
+
+Q: My track is not downloading. What should I do?
+A: Please check whether the pop-up window is not being blocked by your browser or any ad blocker installed.
+
+Q: It takes too long to generate the track. Am I doing something wrong?
+A: Track generation time depends on the duration and server load. If you experience long generation time, please reach out to us directly.
+
+Q: I accidentally chose the wrong plan. How can I upgrade?
+A: Please reach us our directly, so we could refund the previous payment in case you want to upgrade the plan. However, please note, that in all other cases we have a zero-refund policy.
+
+Q: I got a copyright claim. Is it normal? What should I do?
+A: All of the music generated via Mubert is royalty-free, but sometimes there can be false positive claims. In order to prove you have the rights to use the track, please upload the License Agreement obtained when downloading the track.
+
+Q: I used Google Collab previously. However, now it states I need a subscription to get the token. What plan should I take?
+A: In order to generate tracks via the Google Collab interface, you’ll need a Pro or Business Plan to be active.
+
+Q: Why is my remix taking longer than expected?
+A: Quick Remix generates a brand-new version of your track. Generation time depends on the track duration and current server load.
+
+Q: How do I join the Mubert Affiliate Program?
+A: Our Affiliate Program grants 30% of all payments proceeded by customers referenced by you. You can join here.
+
+Q: How do I get API access?
+A: In order to get the Trial access keys, please purchase the Trial Plan here. In case you'd love to purchase a higher tier plan or request custom integration feel free to reach us out via email. Visit the Mubert API page to explore available plans and documentation.
+

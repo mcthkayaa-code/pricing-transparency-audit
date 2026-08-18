@@ -1,0 +1,13 @@
+SOURCE: https://ismybrandinai.com/tools/ai-readiness-check
+ACCESSED: 2026-08-14 (WebFetch, static)
+CAPTURE METHOD: WebFetch
+NOTE: Secondary/context source only (this record codes the AI Bot Checker tool per the frame
+category "AI bot checker"; this file documents that the site's OTHER tools follow the identical
+free/no-signup/report-output pattern, corroborating the general absence of any paid tier).
+
+Confirmed statements: "Free, no signup. Every check is a real read of your page, not a guess."
+FAQ: "Yes — no signup, no account, nothing stored."
+No pricing tiers, usage limits, or account requirements mentioned.
+Output: a composite 0-100 score plus a checklist of seven pass/fail signals (crawler access,
+freshness, structured data, author byline, extractable answer, question-shaped headings, title/
+meta quality) -- a scored report, not a media artifact.

@@ -1,0 +1,67 @@
+SOURCE: https://www.shortsfaceless.com/deal
+ACCESSED: 2026-08-12
+METHOD: Rendered read via browser preview (Claude_Browser), get_page_text + JS innerText dump.
+  Archive attempts: 2x https://web.archive.org/save/https://www.shortsfaceless.com/deal — both
+  produced a fresh Wayback snapshot (timestamps 20260812085129 and 20260812142246) but both
+  throw a client-side hydration exception and contain NO price/offer text in the captured DOM
+  (verified "$9" and "money-back" both absent from archived outerHTML on the second attempt).
+  archive_status for this source = local_copy_only. This local file is the operative evidence.
+CLASSIFICATION: This is NOT the standing/default pricing page (that is the homepage #pricing
+  section, see homepage-pricing-rendered.txt). This is a separate promotional landing page
+  reached via the footer "Special deal" link. Per sampling-rules.md 7.2 eligibility rule 3
+  ("A standing plan rather than a limited-time promotional plan"), the offer below is EXCLUDED
+  as an entry-tier candidate. Recorded here because it is a paid, non-zero, time-limited intro
+  price — the A-012 open-question pattern named in the agent instructions.
+
+=== FULL PAGE TEXT (document.body.innerText, page is short, captured in full — 967 chars) ===
+Toggle Menu
+Toggle theme
+Log in
+Sign up
+Starting a faceless channel has never been easier
+KICKSTART YOUR VIDEO CHANNEL
+Generate 30 videos for just $19 [struck through] $9
+
+Get this special deal for the first month. Upload one video daily to see results.
+
+What's included
+30 AI-generated Videos
+Optimized for YouTube, TikTok & Instagram
+40+ High Quality Voices
+Native YouTube integration
+Unlimited Image Re-Generations
+No watermark
+
+50% OFF FIRST MONTH
+
+$9
+USD
+
+BUY NOW
+
+100% money-back guarantee.
+Secure payment via Stripe.
+
+5 out of 5 stars
+From 0 to 10k views in a week! The best way to start a YouTube channel.
+Jamar Anderson | YouTube Content Creator
+
+Effortless AI shorts on demand.
+Copyright (c) 2026 - All rights reserved
+Build: 484f630
+Support | Generate video | Special deal | Video ideas | Channel assets | Terms of service |
+Privacy policy | Google API Disclosure | AutoShorts alternative | ShortX alternative |
+ShortMake alternative | FacelessVideo alternative | ShortAI alternative
+
+=== NOTES ===
+- "$9" and "USD" appear as adjacent plain text nodes (checked visually via screenshot and in
+  the text dump); no superscript-cents split observed. The struck-through "$19" confirms this
+  deal references the same Essential-tier headline price as the standing pricing page.
+- Nothing on this page states what happens after the first month (no "renews at $19/mo",
+  no "one-time purchase", no auto-conversion statement of any kind). Silent on renewal.
+- "100% money-back guarantee" is the ONLY refund-adjacent statement found anywhere in this
+  product's official documents (pricing page, FAQ, ToS, and Privacy Policy are all silent on
+  refunds — see tos-rendered.txt keyword check). No refund window (day count) or conditions
+  are stated alongside it. Scope is ambiguous: it sits directly under the $9 promotional
+  offer's Buy Now button, not under the standing Essential/Professional plans on the homepage.
+- "Secure payment via Stripe" is a payment-processor mention, not a mandatory add-on charge.

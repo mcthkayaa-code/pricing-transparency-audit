@@ -1,0 +1,43 @@
+URL: https://mubert.com/render/pricing ; https://mubert.com/render/faq
+Date: 2026-08-10
+Method: D-009 re-read. (1) Pricing page: live rendered browser session (mcp__Claude_Browser),
+second representation via structural DOM query on [class*="pricing-card__inner-content"]
+containers (card.textContent per card), independent of the original 2026-08-09 innerText
+transcript. (2) FAQ page: independent tool (Bash curl, static fetch of the raw HTML/embedded
+JSON payload), not the browser render the pricing page used -- a genuinely different fetch path
+and representation from either the original coding or the pricing-page re-check above.
+
+What it shows:
+1. Toggle default state, read from DOM classes before any interaction: "Annual" option carries
+   class "...react-switch-selector-option-selected"; "Monthly" carries "...option-unselected".
+   Matches the original coding's annual_preselected state.
+
+2. Full card-by-card text dump (.pricing-card__inner-content, DOM order; page renders the same
+   4-card set twice, once per responsive breakpoint -- both copies agree):
+     Ambassador : free, "Billed annually", 25 generations/month, 5 MP3 downloads/month
+     Creator    : $14 struck through, $11.69/mo, "Billed annually"      <- entry tier
+     Pro        : $39 struck through, $32.49/mo, "Billed annually" (Most popular badge)
+     Business   : $199 struck through, $149.29/mo, "Billed annually"
+   Confirms entry_tier_name=Creator pairs correctly with headline_price_usd=$11.69 (not shifted
+   to Pro's $32.49 or any other card), and confirms every losing-candidate figure in the
+   original coder_note (Pro annual-equiv 389.88, Business annual-equiv 1791.48).
+
+3. Superscript/subscript check: 0 <sup>/<sub> elements found anywhere on the pricing page --
+   ruling out a nicepage-class misread.
+
+4. first_charge_amount_usd re-check (originally coded `unknown` because no document states the
+   annual plan is charged as a single lump sum for twelve months): re-fetched
+   https://mubert.com/render/faq via a static curl (raw HTML with the FAQ's embedded JSON
+   payload, a representation independent of both the original coding and today's browser
+   render). The "Which payment options are available?" answer is UNCHANGED: "You can pay using a
+   credit card (Visa, MasterCard or American Express). Payments via PayPal are not supported at
+   the moment. You can choose to pay in either monthly or annual installments. Please check our
+   Pricing Page for more information." A full-text search of the entire FAQ JSON payload for
+   "once for", "upfront", "lump sum", "charged once", "billed once" returned zero matches.
+   confirms no document states the annual plan is charged as a single upfront sum for the year;
+   the original unknown coding stands on its own stated basis.
+
+Conclusion: entry_tier_name=Creator, headline_price_usd=11.69, and headline_billing_basis=
+per_month_billed_annually all confirmed in a second representation. first_charge_amount_usd=
+unknown re-confirmed as the correct reading (no qualifying document found in either
+representation). No correction.

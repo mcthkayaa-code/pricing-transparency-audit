@@ -1,0 +1,164 @@
+# Midjourney — pass 1 primary coding. In progress; see coder_note for live status.
+
+product_id: midjourney
+product_name: Midjourney
+category: AI image generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: "Basic Plan"
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "USD; no billing-period toggle on the primary source (static table shows a Monthly Price row and an Annual Price row simultaneously, identical CSS weight, no preselection); read from a Turkey-egressing network, D-003 check found no geo/currency variant (see coder_note)."
+
+sources:
+  - { url: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, kind: pricing, accessed: 2026-08-09, archive: local_copy_only, note: "Functions as the de facto pricing page — midjourney.com/pricing and /plans both 404 as of 2026-08-09; this Zendesk help-center article is the only official page publishing plan prices. Static fetch/curl blocked 403; coded from a rendered browser read. archive.org/save attempted twice, both HTTP 520; local copy at midjourney-sources/plans-page-rendered-20260809.txt." }
+  - { url: https://www.midjourney.com/pricing, kind: pricing, accessed: 2026-08-09, archive: not_applicable, note: "404 — no longer exists. Recorded as a register event, not used as a source." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service, kind: tos, accessed: 2026-08-09, archive: local_copy_only, note: "Live ToS, Version Effective Date May 27, 2026. Supersedes the local GitHub mirror (dated Aug 18, 2022) held in midjourney-sources/tos-github-mirror.md, which is a third-party (GitHub) copy used only to locate clauses, not as the coded source. archive.org/save attempted, HTTP 520; local copy at midjourney-sources/tos-live-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/27870399340173-Free-Trials, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "archive.org/save rate-limited/erroring at collection time (see coder_note); local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/25384024738573-Canceling-Your-Subscription, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund, kind: refund, accessed: 2026-08-09, archive: local_copy_only, note: "local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/27868888211213-Turning-Off-Automatic-Renewals, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/27870433501837-Finding-Your-Renewal-Time, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/27870375276557-Using-Images-Videos-Commercially, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/27870521824653-Subscription-Fast-Time-Expiration, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/33570952624141-Purchasing-Extra-Fast-Time, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/28014645615373-Keeping-Your-Creations-Private, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+  - { url: https://docs.midjourney.com/hc/en-us/articles/27868831424525-Payment-Currency, kind: docs, accessed: 2026-08-09, archive: local_copy_only, note: "D-003 currency check support. local copy in midjourney-sources/billing-support-docs-rendered-20260809.txt." }
+
+variables:
+  headline_price_usd: { value: "10.00", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "Basic Plan column, row 'Monthly Price': $10. USD confirmed vendor-wide by Payment Currency docs: 'Midjourney accepts payments exclusively in US Dollars (USD).'" }
+  headline_billing_basis: { value: "per_month_billed_monthly", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "Table shows 'Monthly Price: $10' as a distinct row from 'Annual Price: $96 ($8/month)'; no toggle exists (verified: both rows render at identical 15px/400-weight CSS, no visual preselection). Headline read as the unconditioned monthly-billed figure; see coder_note for the alternate annual reading." }
+  first_charge_amount_usd: { value: "10.00", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "Monthly-billed headline used consistently (no annual toggle/default on this page); first transaction = one month at the stated $10. No mandatory add-on to add (see mandatory_addon_present)." }
+  mandatory_addon_present: { value: "no", source: https://docs.midjourney.com/hc/en-us/articles/33570952624141-Purchasing-Extra-Fast-Time, evidence: "'If you run out of Fast time before your subscription renews, you can easily purchase more to continue creating without delays' — framed as an optional top-up. Plans page lists 'Purchase Extra GPU Time $4/hr' as an add-on row, not a charge required to use Basic as advertised." }
+  annual_condition_disclosure: { value: "adjacent", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "'You can get a 20% discount on your subscription by committing to an annual plan, where the full year fee is paid upfront.' — the paragraph immediately preceding, and only preceding, the page's single price table (no cards/toggle on this page; see coder_note)." }
+  annual_default_toggle: { value: "no_toggle", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "Static comparison table renders a 'Monthly Price' row and an 'Annual Price' row simultaneously (both, computed style: 15px/font-weight 400, identical) with no interactive toggle on the page." }
+  free_plan_exists: { value: "no", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "'Midjourney offers four subscription tiers: Basic, Standard, Pro, and Mega' — no free tier listed. Corroborated by Free Trials docs: 'No free trial is currently available in Discord or the midjourney.com website.'" }
+  free_plan_cap_documented: { value: "not_applicable", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "No free plan (see free_plan_exists)." }
+  free_plan_cap_value: { value: "not_applicable", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "No free plan." }
+  free_plan_watermark: { value: "not_applicable", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "No free plan." }
+  free_plan_duration: { value: "not_applicable", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "No free plan." }
+  trial_exists: { value: "no", source: https://docs.midjourney.com/hc/en-us/articles/27870399340173-Free-Trials, evidence: "'No free trial is currently available in Discord or the midjourney.com website.' (A limited trial exists only on the separate niji-journey mobile app, a different product from the one coded here.)" }
+  trial_card_required: { value: "not_applicable", source: https://docs.midjourney.com/hc/en-us/articles/27870399340173-Free-Trials, evidence: "No trial for this product." }
+  trial_length_days: { value: "not_applicable", source: https://docs.midjourney.com/hc/en-us/articles/27870399340173-Free-Trials, evidence: "No trial for this product." }
+  trial_auto_converts: { value: "not_applicable", source: https://docs.midjourney.com/hc/en-us/articles/27870399340173-Free-Trials, evidence: "No trial for this product." }
+  credit_system_present: { value: "yes", source: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo, evidence: "'When you subscribe to Midjourney, you're actually buying time to use these GPUs. Think of GPU time like the data you get with a cell phone plan.' GPU-minute ('Fast time') is an intermediate currency that converts into outputs at published per-output rates, not an allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo, evidence: "Cost table: 'SD Prompt (set of 4 images) 0.8 minutes ... Batch of 4 HD Videos 26 minutes' — the GPU-minute unit is defined against specific, recognizable outputs." }
+  credit_to_output_rate_published: { value: "yes", source: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo, evidence: "Same table publishes exact minutes-per-output for the principal output (images: 0.8 min/4 SD, 1.3 min/4 HD) and for video (8 min/4 SD, 26 min/4 HD) as single figures, not ranges." }
+  credit_rate_location: { value: "docs_help_center", source: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo, evidence: "The minutes-per-output conversion table lives only in this help-center article. The pricing/plans page states the monthly GPU-time allowance (e.g. '200 minutes') but not the per-output conversion rate." }
+  cost_per_output_unit: { value: "per_image", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "Product sold to produce images (category: AI image generator); Midjourney also produces video but images are the principal, namesake output." }
+  cost_per_output_computable: { value: "yes", source: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo, evidence: "Basic Plan $10/mo (headline) with 200 min Fast GPU/mo (plans page) and 0.8 min per 4-image SD batch (this docs page) — every figure published, no assumption about typical use required." }
+  computation_assumptions: { value: "Basic Plan, $10/mo headline (monthly-billed, default state), 200 min Fast GPU/mo (plans page); SD image=0.8min/4 images (GPU-Speed docs); $10/200min=$0.05/min; 0.8x$0.05=$0.04 per 4-img batch; /4=$0.01/image (SD rate used; HD costs more per image, not used).", source: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo, evidence: "Coder's own arithmetic supporting cost_per_output_computable=yes; not a vendor statement, per codebook section 2.3." }
+  credit_rollover_policy: { value: "expires_at_period_end", source: https://docs.midjourney.com/hc/en-us/articles/27870521824653-Subscription-Fast-Time-Expiration, evidence: "'Any unused Fast time from your subscription will not carry over to the next month. Whether you're on a monthly or yearly plan, unused Fast time vanishes at the end of each month.'" }
+  failed_generation_charge_policy: { value: "unknown", source: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo, evidence: "Read the GPU-Speed cost docs, the Requesting a Refund article, and the ToS in full; none states what happens to Fast-time consumption when a generation fails or errors." }
+  auto_renewal_default: { value: "on", source: https://docs.midjourney.com/hc/en-us/articles/27868888211213-Turning-Off-Automatic-Renewals, evidence: "'All Midjourney subscriptions are set to renew automatically. ... disabling automatic renewals entirely isn't an option.' Corroborated by the plans page: 'All Midjourney plans are subscriptions - meaning they automatically renew ... unless you set your plan to cancel.'" }
+  auto_renewal_disclosure_location: { value: "help_center_only", source: https://docs.midjourney.com/hc/en-us/articles/27868888211213-Turning-Off-Automatic-Renewals, evidence: "Stated explicitly in three docs.midjourney.com help-center articles (Comparing Midjourney Plans, Turning Off Automatic Renewals, Finding Your Renewal Time). ToS section 8 (Payment and Billing) describes the billing consequence of cancelling but never uses the word 'renew'." }
+  renewal_notice_commitment: { value: "no_notice_stated", source: https://docs.midjourney.com/hc/en-us/articles/27870433501837-Finding-Your-Renewal-Time, evidence: "ToS section 8 and the renewal-related help articles describe self-serve renewal-date lookup (Discord info command, Manage Subscription page) but none commits to notifying the buyer in advance of a renewal charge." }
+  refund_policy_exists: { value: "yes", source: https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund, evidence: "'You're eligible for a refund only if you've used less than 20 GPU minutes throughout the lifetime of your account ... If you qualify for a refund, you'll automatically see the option to request one when you cancel your subscription.'" }
+  refund_window_days: { value: "unknown", source: https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund, evidence: "Eligibility is gated by lifetime USAGE ('less than 20 GPU minutes throughout the lifetime of your account'), not by a stated day-count window; no document states a number of days for this variable." }
+  refund_conditions: { value: "conditional", source: https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund, evidence: "'eligible for a refund only if you've used less than 20 GPU minutes throughout the lifetime of your account ... Refund eligibility does not apply if your account is suspended or terminated due to a violation of our Terms of Service or Community Guidelines.'" }
+  cancellation_self_serve: { value: "self_serve_documented", source: https://docs.midjourney.com/hc/en-us/articles/25384024738573-Canceling-Your-Subscription, evidence: "'You can cancel your Midjourney subscription at any time by going to your Manage Subscription Page and clicking the Cancel Plan button.'" }
+  refund_policy_location: { value: "dedicated_refund_page", source: https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund, evidence: "'Requesting a Refund' is a standalone help-center article devoted entirely to refund eligibility and process, filed under 'Cancellations & Refunds'." }
+  commercial_use_lowest_tier: { value: "lowest_paid", source: https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service, evidence: "Plans page: 'Usage Rights: General Commercial Terms**' listed for Basic Plan (lowest paid tier) through Mega. Footnote/ToS carve-out governs a narrower case: 'You must purchase the Pro or Mega plan if you are a company making more than $1,000,000 USD in gross revenue per year.'" }
+  watermark_removal_tier: { value: "unknown", source: https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service, evidence: "No document (ToS, plans page, or any help-center article read) mentions a visible watermark or vendor branding stamped on outputs at any tier." }
+  output_ownership_statement: { value: "conditional", source: https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service, evidence: "'You own all Assets You create with the Services to the fullest extent possible under applicable law. ... If you are a company or any employee of a company with more than $1,000,000 USD a year in revenue, you must be subscribed to a \"Pro\" or \"Mega\" plan to own Your Assets.' Ownership does not depend on staying subscribed ('persists even if in subsequent months You downgrade or cancel Your membership') but IS tier-gated for the revenue-threshold class — see coder_note for the related public-gallery-default clause." }
+  usage_cap_quantified: { value: "all_caps_quantified", source: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans, evidence: "Basic Plan row values: Fast GPU Time '3.3 hr/month (200 minutes)'; Video Resolution 'SD'; Maximum Concurrent Prompts (images) '3 Fast'; (videos) '1 Fast'; Maximum Repeat/Permutation Size '4 jobs'; Maximum Queued Jobs '10 jobs' — every limit stated for this tier carries a number; Basic makes no 'unlimited' claim." }
+  unquantified_limit_clause: { value: "present", source: https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service, evidence: "ToS section 7, 'Unlimited Service and Rate Limiting': 'If You purchase an unlimited plan, we will try to reasonably offer You unlimited access to the Services. However, we reserve the right to rate limit You to prevent quality decay or interruptions to other customers.' No figure defines the threshold." }
+
+coder_note: |
+  SOURCE LANDSCAPE. midjourney.com/pricing and /plans both 404 as of 2026-08-09 — Midjourney's
+  marketing site was redesigned around a "research lab" homepage with no standalone pricing
+  page. The only official price disclosure is the Zendesk help-center article "Comparing
+  Midjourney Plans" at docs.midjourney.com; this record treats it as the pricing-class source
+  (highest-ranking source that exists), and treats it as "help center" (not "pricing_page") for
+  the document-class variables that distinguish the two, since it is hosted under docs.
+  midjourney.com's /hc/ path. Reused prior run's local sources: pricing-archive-20260403.html (a
+  web.archive.org capture of the OLD /pricing page shell — client-rendered React app, static
+  HTML carries no price figures, kept only as evidence the old URL once existed, not used as a
+  coded source) and tos-github-mirror.md (third-party GitHub mirror of a 2022-08-18 ToS version,
+  used only to locate clauses per instructions — every clause taken from it was re-verified
+  against the live docs.midjourney.com ToS, Version Effective Date 2026-05-27, which differs
+  materially from the 2022 mirror: the 2022 version gated full ownership on paid-member status
+  via a CC BY-NC license for non-paid users; the 2026 version grants "You own all Assets ... to
+  the fullest extent possible" to everyone, with a narrower revenue-based carve-out instead).
+
+  ENTRY TIER (sampling-rules 7.2). All four published tiers (Basic, Standard, Pro, Mega) are
+  eligible: generally available, self-serve (no sales contact), standing plans, single-seat
+  (ToS: "Only one user may use the Services per registered account"). Basic wins on the vendor's
+  own directly-stated annual price (rule 2, "an annual figure is taken as it stands"): Basic
+  $96/yr, Standard $288/yr, Pro $576/yr, Mega $1,152/yr — Basic lowest on every candidate.
+  entry_tier_name = "Basic Plan".
+
+  JUDGMENT CALLS (page has no toggle, no marketing "cards" — a plain two-row static table with
+  Monthly Price and Annual Price shown simultaneously; computed CSS confirms both rows render at
+  identical 15px/font-weight 400, no visual emphasis on either):
+  1. headline_price_usd/headline_billing_basis/first_charge_amount_usd read the Monthly Price row
+     ($10, billed monthly, no annual commitment) rather than the Annual Price row ($96/yr, "$8/
+     month" equivalent) because it is listed first and requires no prepayment commitment. The
+     annual figure is the alternate reading; a second coder choosing it would get headline=8.00,
+     basis=per_month_billed_annually, first_charge=96.00 instead. Flagging for adjudication if
+     contested.
+  2. annual_default_toggle = no_toggle is a best-fit, not a clean match: the value's own text
+     ("offers one billing period only") does not describe this page, which offers both
+     simultaneously without a toggle mechanism; no_toggle is the closest available value.
+  3. annual_condition_disclosure = adjacent: even though the chosen monthly headline doesn't
+     itself require annual prepayment, the annual option is real, documented, and its condition
+     ("20% discount ... committing to an annual plan, where the full year fee is paid upfront")
+     sits in the paragraph immediately preceding the page's one and only price table — the
+     closest this non-card layout gets to "inside the same visual price block." Coded on the
+     value table's own not_applicable test ("no annual billing option exists") rather than
+     rule 1's shorthand, since an annual option clearly does exist here.
+  4. refund_window_days = unknown, not not_applicable or 0: Requesting a Refund states eligibility
+     turns on lifetime USAGE ("less than 20 GPU minutes throughout the lifetime of your account"),
+     never on a day-count. No document states a number of days either way.
+
+  OWNERSHIP PROVISIONS (per assignment note). Two distinct tier-linked clauses govern outputs:
+  (a) revenue threshold — ToS section 4: general rule is unconditional ownership ("You own all
+  Assets ... to the fullest extent possible under applicable law"), EXCEPT a company or employee
+  of a company grossing more than $1,000,000 USD/year must hold a Pro or Mega subscription to own
+  its Assets; this is the clause output_ownership_statement=conditional keys on. Ownership itself
+  does NOT lapse if the account is later downgraded or cancelled ("persists even if in subsequent
+  months You downgrade or cancel"). (b) public-gallery default — ToS section 4 and the Keeping
+  Your Creations Private article: outputs are public/remixable by default for every tier
+  ("Midjourney thrives as an open-by-default community... every image and video ... can
+  potentially be found on the Explore page"); Stealth (private) mode that overrides this default
+  is available only on Pro and Mega. Basic/Standard subscribers own their images per (a) but
+  cannot make them private on midjourney.com. commercial_use_lowest_tier is coded lowest_paid
+  (Basic) for the general population per the docs/plans "General Commercial Terms**" grant to all
+  four tiers; the same revenue-threshold clause (a) is the exception, quoted in that variable's
+  evidence.
+
+  ARCHIVAL. archive.org/save was attempted for the primary pricing page (2 attempts, both HTTP
+  520) and the ToS (1 attempt, HTTP 520); a control save of https://example.com also failed
+  (HTTP 429). This indicates the save endpoint was rate-limited/degraded network-wide at
+  collection time (consistent with heavy same-day use across this study's other pass-1 records),
+  not a problem specific to any one URL, so per-URL retries were not repeated for the remaining
+  11 sources. All 13 sources actually coded from carry local copies instead (protocol 6.4):
+  midjourney-sources/plans-page-rendered-20260809.txt, tos-live-20260809.txt, and
+  billing-support-docs-rendered-20260809.txt (the other 11 articles, combined). archive_status =
+  local_copy_only throughout; no value in this record is coded from an unsaved page.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 re-read 2026-08-10: re-opened the Comparing Midjourney Plans help-center article live
+  and confirmed entry_tier_name ("Basic Plan"), headline_price_usd ($10), headline_billing_basis
+  (per_month_billed_monthly) and first_charge_amount_usd ($10) in a SECOND representation
+  independent of the original innerText transcript: a raw structural DOM query of the page's
+  <table> element (row/column cell text read directly, not linearized text). Confirmed the
+  Monthly Price row for the Basic Plan column reads exactly "$10", correctly mapped to that
+  column and not shifted. This re-read does NOT relitigate the original coder's flagged judgment
+  call (reading the Monthly Price row rather than the Annual Price row, since the table has no
+  toggle and shows both simultaneously at identical weight, re-confirmed on this read) -- it
+  only confirms $10 is genuinely the figure printed in that cell. Confirmed 0 <sup>/<sub>
+  elements exist anywhere on the page. Evidence saved to
+  midjourney-sources/d009-second-representation-2026-08-10.txt. No correction; all four scoped
+  values confirmed as coded.
+conflict_note: ""
+register_events:
+  - { type: vendor_edit, detail: "midjourney.com/pricing (the URL captured in the prior run's local archive, dated 2026-04-03) now 404s; www.midjourney.com/plans also 404s. Prices are published only via docs.midjourney.com's help-center article as of 2026-08-09.", urls: ["https://www.midjourney.com/pricing", "https://www.midjourney.com/plans"] }
+status: complete

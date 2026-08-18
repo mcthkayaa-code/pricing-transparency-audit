@@ -1,0 +1,881 @@
+# Pricing Transparency Audit — pass-1 (primary) coding record
+# Instrument: codebook-v1.md v1.2 / protocol-v1.md / sampling-rules.md
+# D-005 RE-COLLECTION (2026-08-09). Supersedes the 2026-08-07 version of this file in
+# full — see coder_note for what changed and why. Do not reconstruct the old version;
+# git history holds it if it is ever needed.
+product_id: gptzero
+product_name: GPTZero
+category: AI detector
+product_status: active
+paid_submission: "no"
+vendor_home_url: https://gptzero.me
+entry_tier_name: Premium
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://gptzero.me/pricing
+archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"
+archive_status: local_copy_only
+default_display_state: >
+  /pricing, read via an orchestrator-captured ordinary-browser RENDERED read dated
+  2026-08-08 (deviation D-005; see coder_note — this coder did not fetch the pricing
+  page directly). The rendered state shows a Billing Cycle control reading "Annual
+  (Save 45%)" ahead of "Monthly", then a two-card plan grid: PREMIUM (tagged "MOST
+  POPULAR"), "TRY 549/ month, billed annually", "Up to 300,000 words per month"; and
+  PROFESSIONAL, "TRY 1,049/ month, billed annually", "500,000 words per month" (with
+  "All of Premium" plus overage/file/LMS features). Further down, a separate
+  "Enterprise and Team Plans" block (self-serve "Create a team" or "Contact Sales",
+  copy reading "Everything you get with a Professional plan, for everyone") and a
+  distinct "Professional Plan" purchase widget (Billing Cycle + Seats, defaulting to
+  2 seats: "TRY 2,098/mo billed annually" = "TRY 1,049/mo x 2 members", "Save TRY
+  21,600/year"). An "API for developers" section follows, with its own "View
+  Pricing"/"Contact Sales", read as a separate product line, not a plan tier. No
+  distinct Free-plan card appears anywhere on this page. Network egresses from
+  Turkey; every price and the "300.000"/"500.000" word-count badges render in TRY
+  and Turkish thousands-separator notation, not USD — see the D-003 currency check
+  and the display_variant register event in coder_note.
+
+source_urls: "https://gptzero.me/pricing | https://gptzero.me/terms-of-use.html | https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans | https://support.gptzero.me/articles/7371584464-what-is-the-rate-limit | https://support.gptzero.me/articles/7102773231-what-happens-if-i-go-over-the-number-of-words-limit-of-my-plan | https://support.gptzero.me/articles/6100283350-how-do-i-cancel-my-plan | https://support.gptzero.me/articles/9627530992-do-i-retain-ownership-of-the-work-after-passing-it-through-gptzero | https://support.gptzero.me/articles/9783812961-do-you-have-an-annual-billing-option | https://support.gptzero.me/articles/4707666531-how-can-i-create-a-team-subscription"
+
+sources:
+  - url: https://gptzero.me/pricing
+    kind: pricing
+    accessed: 2026-08-08
+    archive: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"
+    note: >
+      DEVIATION D-005. Not fetched by this coder. This is the orchestrator's ordinary
+      -browser rendered read of the live page (no account/login/checkout — the page's
+      own scripts render these figures for any visitor), saved as evidence text per
+      the protocol-v1.md 6.4 local-copy fallback. Superseded record's two attempts to
+      read this page (a same-day live curl and the pre-existing 2026-07-18 Wayback
+      capture) both showed only a pre-hydration "$0" placeholder; JS-source inspection
+      that pass performed (chunk 3sm69kou41dgv.js) confirmed the price is fetched at
+      runtime rather than server-embedded, which is why a non-executing fetch could
+      never resolve it and why a rendered read is the correct fix under the codebook's
+      D-005 rule ("rendered reads are documentary").
+  - url: https://gptzero.me/terms-of-use.html
+    kind: tos
+    accessed: 2026-08-07
+    archive: https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html
+    note: >
+      Reused saved capture (gptzero-sources/terms-of-use-visible-text.txt), per this
+      agent's resume-mode rule: the source is attributed (URL + date already in the
+      superseded record) and the document is static/stable, so it is coded from the
+      saved copy rather than re-fetched. This coder independently re-read the full
+      saved text today (2026-08-09) end to end rather than trusting the superseded
+      record's quotes; content matches. Confirmed distinct from
+      gptzero.getrewardful.com/terms (the affiliate-program's terms, not the
+      product's — different age minimum, 13+ vs this document's 18+).
+  - url: https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans
+    kind: docs
+    accessed: 2026-08-09
+    archive: https://web.archive.org/web/20260809141320/https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans
+    note: Re-fetched fresh today (raw HTTP, not the superseded record's copy) and freshly archived.
+  - url: https://support.gptzero.me/articles/7371584464-what-is-the-rate-limit
+    kind: docs
+    accessed: 2026-08-09
+    archive: https://web.archive.org/web/20260809141302/https://support.gptzero.me/articles/7371584464-what-is-the-rate-limit
+    note: Re-fetched fresh today and freshly archived. Its own "Related Articles" list is what surfaced the overage article below, which the superseded record never found.
+  - url: https://support.gptzero.me/articles/7102773231-what-happens-if-i-go-over-the-number-of-words-limit-of-my-plan
+    kind: docs
+    accessed: 2026-08-09
+    archive: https://web.archive.org/web/20260809141538/https://support.gptzero.me/articles/7102773231-what-happens-if-i-go-over-the-number-of-words-limit-of-my-plan
+    note: >
+      NEW source, not in the superseded record. Found via the rate-limit article's
+      "Related Articles" list — only worth following up because the rendered capture
+      first showed that GPTZero plans carry a real monthly word allowance, which the
+      superseded record's coder had no reason to go looking for.
+  - url: https://support.gptzero.me/articles/6100283350-how-do-i-cancel-my-plan
+    kind: docs
+    accessed: 2026-08-09
+    archive: https://web.archive.org/web/20260809141358/https://support.gptzero.me/articles/6100283350-how-do-i-cancel-my-plan
+    note: Re-fetched fresh today and freshly archived. Content matches the superseded record's quotes.
+  - url: https://support.gptzero.me/articles/9627530992-do-i-retain-ownership-of-the-work-after-passing-it-through-gptzero
+    kind: docs
+    accessed: 2026-08-09
+    archive: https://web.archive.org/web/20260809141439/https://support.gptzero.me/articles/9627530992-do-i-retain-ownership-of-the-work-after-passing-it-through-gptzero
+    note: >
+      Re-fetched fresh today (raw HTTP, full text) and freshly archived. The full
+      article is two sentences; the superseded record quoted only the first and,
+      on that partial quote, concluded the article "does not address ownership...
+      of the input". The second sentence does address it directly ("you retain
+      ownership of the submission"). See output_ownership_statement evidence and
+      coder_note for the correction this produces.
+  - url: https://support.gptzero.me/articles/9783812961-do-you-have-an-annual-billing-option
+    kind: docs
+    accessed: 2026-08-09
+    archive: https://web.archive.org/web/20260809141454/https://support.gptzero.me/articles/9783812961-do-you-have-an-annual-billing-option
+    note: Re-fetched fresh today and freshly archived. Still reads "Not yet... within a few weeks to come" (article's own "Last updated 11 months ago" stamp) despite the live page already selling annual billing — see conflict_note.
+  - url: https://support.gptzero.me/articles/4707666531-how-can-i-create-a-team-subscription
+    kind: docs
+    accessed: 2026-08-09
+    archive: https://web.archive.org/web/20260809141339/https://support.gptzero.me/articles/4707666531-how-can-i-create-a-team-subscription
+    note: Re-fetched fresh today and freshly archived. Confirms "Annual or Monthly Professional plan" as the team upgrade options; states no price and no plan named "Premium".
+  - url: https://web.archive.org/web/20260807100537/https://gptzero.me/pricing
+    kind: other
+    accessed: 2026-08-10
+    archive: https://web.archive.org/web/20260807100537/https://gptzero.me/pricing
+    note: >
+      D-007 re-check ONLY (Arm 2, re-tested). Same snapshot already checked under
+      D-003 on 2026-08-09; re-opened 2026-08-10 under the amended rule. Confirms
+      the same finding: 1,745-char body, every price a "$0" pre-hydration
+      placeholder (Professional Plan widget: "$0/mo billed annually", "$0/mo x 2
+      members"), not a real figure. Also attempted a Wayback CDX API query for a
+      newer snapshot (2 attempts, both timed out reaching that endpoint); the
+      Wayback UI's own "closest available" redirect still resolves to this same
+      snapshot, so no newer capture is known to exist. See
+      gptzero-sources/d007-currency-recheck-2026-08-10.txt.
+
+variables:
+
+  # --- Domain 1-2 / index A1-A3 (checkpoint group: A-domain) — coded from the D-005 rendered capture ---
+
+  headline_price_usd:
+    value: unknown
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      CHANGED under D-007 re-check (2026-08-10) -- see coder_note and
+      gptzero-sources/d007-currency-recheck-2026-08-10.txt for the full
+      arm-by-arm log. From the D-005 rendered capture (orchestrator's rendered
+      read, 2026-08-08): entry tier is Premium, whose card shows "TRY 549/
+      month, billed annually" as the most prominent figure — a real, resolved
+      figure, unlike the superseded record's unresolved pre-hydration
+      placeholder. No USD figure is published anywhere for it on the live
+      page (re-confirmed live 2026-08-10; still TRY 549) -- and TIGHTENED 2026-08-17 under D-056: this absence is of RENDERED content. The vendor's own page payload does carry one USD figure for this tier, the string GPTZero premium for life valued at $288 per year, shipped with the pricing page as educator-program copy and rendered on no page checked. It does not change this value, because A-019 makes a figure present only in unrendered markup non-disclosure -- but the original wording claimed a broader absence than the evidence supports, and Arm 1 of the
+      amended currency rule found no selector and no working currency URL
+      parameter. Arm 1 DID find a genuine documentary currency statement,
+      already on file: ToS Section 5, "All payments shall be in U.S.
+      dollars" -- but this names a currency, not a figure; no document
+      states what the USD amount is. Arm 2 (the most recent web.archive.org
+      capture of this exact URL, re-checked 2026-08-10) again shows only a
+      pre-hydration "$0/mo billed annually" placeholder (not a real price;
+      GPTZero's price is fetched client-side at runtime) plus Next.js
+      internal reference tokens and one unrelated "$288/year" educator
+      -program reward figure — no readable USD figure for any plan tier.
+      Per the amended rule, non_usd requires positive evidence the vendor
+      publishes ONLY a non-USD price, and the ToS statement argues against
+      that framing rather than for it, while no arm supplies an actual
+      number to code as money. unknown is the value for "we could not
+      determine the figure," which is the case here — a genuine
+      documentary contradiction (TRY displayed, USD contractually promised,
+      no number anywhere) rather than a plain non-USD publication. See
+      conflict_note "tos_usd_vs_pricing_page_try" for the related finding,
+      now resolved to unknown rather than non_usd. Losing candidate
+      Professional: "TRY 1,049/ month, billed annually" (same unknown
+      status, same basis) — see coder_note.
+
+  headline_billing_basis:
+    value: per_month_billed_annually
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      Rule 1: the qualifier printed with Premium's headline figure is "/ month, billed
+      annually" — a per-month figure billed on an annual cycle, with no per-seat
+      qualifier stated on that card. Rule 2 (per_seat_per_month) requires that a
+      per-seat figure and a per-month figure are BOTH stated for the figure being
+      coded; only the per-month/annual-billing qualifier is textually present on
+      Premium's own card in this capture. The page's separate "Professional Plan"
+      purchase widget does confirm a per-seat structure for Professional ("TRY
+      1,049/mo x 2 members", a Seats field) — but Professional is not the entry tier
+      this pass (see coder_note), and no equivalent seat-labelled widget for Premium
+      was captured, so that per-seat confirmation is not cross-applied to Premium
+      without a document that states it. Coded from what is actually printed against
+      the entry tier's own figure, per rule 1, rather than inferred by analogy to a
+      different plan's widget.
+
+  first_charge_amount_usd:
+    value: unknown
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      Default display state is annual, so rule 2 applies: "billed annually" is stated
+      for Premium, but no document (this rendered capture, the ToS, or any of the 7
+      official support articles read) states that the annual plan is charged as a
+      single payment covering twelve months, as opposed to a recurring charge under a
+      12-month commitment — the specific confirmation rule 2 requires before a monthly
+      figure may be multiplied by 12 ("multiply by 12 only where the documents state
+      that the plan is charged once for twelve months"). Per rule 3, where the
+      documents do not state this, the value is unknown rather than assumed. (The
+      Professional-widget's "Save TRY 21,600/year" is consistent with either billing
+      mechanic and does not resolve the ambiguity.) Also non-computable in USD in any
+      case, since headline_price_usd = unknown (CHANGED from non_usd under the D-007
+      re-check, 2026-08-10 -- see that field; no USD figure exists to annualize
+      either way) and no document states one. Value UNCHANGED by the D-007 re-check
+      (was already unknown, for this independent billing-frequency reason); only
+      this cross-reference is corrected. See gptzero-sources/d007-currency-recheck-2026-08-10.txt.
+
+  mandatory_addon_present:
+    value: "no"
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      Premium's own card lists its features (word allowance, Advanced AI Scan,
+      Multilingual AI detection, Download AI reports, AI Highlights in Chrome
+      Extension) with no further required charge to use it as advertised. The
+      adjacent "API for developers" section is a separate, optional product line
+      ("View Pricing"/"Contact Sales" of its own), not a required add-on (rule 3).
+      The newly-found official overage article states GPTZero "charge[s] overages at
+      $0.00046 per word" beyond the plan's monthly word allowance — this is squarely
+      an overage charge for use beyond the plan, which rule 3 explicitly excludes from
+      this variable ("Overage charges for use beyond the plan are not add-ons"). ToS
+      and all 7 official support articles read contain no mention of any other
+      required platform fee, minimum purchase, or compulsory onboarding charge.
+      Documentation was read and shows no mandatory add-on, so `no` rather than
+      `unknown` (rule 5).
+
+  annual_condition_disclosure:
+    value: adjacent
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      "TRY 549/ month, billed annually" — the annual-prepayment qualifier is printed
+      directly with the figure, on the same line of the same plan card, satisfying
+      `adjacent` directly (definition: "the same card, the same line, directly
+      beneath the figure"). Cleaner evidence than the superseded record could offer,
+      since a real resolved figure is now visible for the condition to sit next to.
+
+  annual_default_toggle:
+    value: annual_preselected
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      The rendered capture's Billing Cycle control reads "Annual (Save 45%)" ahead of
+      "Monthly", and the separate Professional Plan widget repeats "Billing Cycle /
+      Annual / (Save 45%)" — the "(Save 45%)" discount badge is conventionally
+      attached to the active/selected option, and every price shown throughout the
+      capture (both plan cards and the widget) is already the annual-discounted
+      figure, not a higher monthly figure. This is a plain-text (innerText) capture
+      without DOM/CSS state markers, so this coder cannot independently re-confirm the
+      superseded record's DOM/JS-source finding (chunk 3sm69kou41dgv.js,
+      `useState("annual")`) from this file alone; that prior finding concerned page
+      mechanics unrelated to the D-005 price problem and is treated as unchanged
+      supporting context, not re-verified fresh by this pass. Toggle was not
+      interacted with; this is the state as it loaded, per protocol-v1.md 6.8.
+
+  # --- Domain 3 / index B1-B2 (checkpoint group: free-tier) — unaffected by the entry-tier change; re-verified fresh ---
+
+  free_plan_exists:
+    value: "yes"
+    source: {url: "https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans", access_date: 2026-08-09, archive_url: "https://web.archive.org/web/20260809141320/https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans"}
+    evidence: >
+      Article title itself, "What is the difference between the free and paid for
+      plans?", and its body ("There are no major differences for general use between
+      the free and the paid plans") establish an ongoing, standing free PLAN distinct
+      from the 7-day trial (ToS Section 6) and from the anonymous no-account scan on
+      the homepage. Re-fetched fresh today; text unchanged from the superseded
+      record's reading. Not shown as a card on /pricing itself (confirmed again in
+      the D-005 rendered capture, which shows only Premium/Professional/
+      Enterprise-Team/API — no Free card), but documented elsewhere officially, which
+      the codebook does not require to be on the pricing page itself.
+
+  free_plan_cap_documented:
+    value: none_quantified
+    source: {url: "https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans", access_date: 2026-08-09, archive_url: "https://web.archive.org/web/20260809141320/https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans"}
+    evidence: >
+      Same article names the dimensions the free plan is limited on ("the number of
+      characters you can include in a single request and the number of documents you
+      can include in the single batch upload") but gives no numbers for either
+      dimension on the free plan. Limits are described without numbers — matches
+      `none_quantified`. (This is a different, article-level statement than the
+      quantified monthly word allowance the D-005 capture shows for the PAID
+      Premium/Professional cards; nothing analogous with a number is stated for the
+      free plan anywhere.)
+
+  free_plan_cap_value:
+    value: not_applicable
+    source: {url: "https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans", access_date: 2026-08-09, archive_url: "https://web.archive.org/web/20260809141320/https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans"}
+    evidence: >
+      Format rule: "Record only quantified limits." free_plan_cap_documented =
+      none_quantified — zero of the free plan's limits carry a number, so there is no
+      quantified-limit string this field could hold. not_applicable rather than
+      unknown because the absence of a number is itself the documented, determinate
+      finding, not a gap in what was read.
+
+  free_plan_watermark:
+    value: not_applicable
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      GPTZero's outputs are AI-probability scores and highlighted-text analysis, not
+      a media artifact a watermark could mark — now directly confirmed by the D-005
+      rendered capture's own Premium/Professional feature bullets ("Advanced AI
+      Scan", "Multilingual AI detection", "Download AI reports", "AI Highlights in
+      Chrome Extension", "Page by page scanning"), all analysis/detection features
+      with no export- or media-type feature among them. The word "watermark" appears
+      in none of: the rendered capture, the ToS, or the 7 official support articles
+      read. Matches the codebook's own not_applicable construction for this variable
+      ("a detection score or an analysis table").
+
+  free_plan_duration:
+    value: perpetual
+    source: {url: "https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans", access_date: 2026-08-09, archive_url: "https://web.archive.org/web/20260809141320/https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans"}
+    evidence: >
+      The free-vs-paid article frames "the free" and "the paid" as two standing,
+      parallel plan options, not as a free plan that expires into a paid one — that
+      time-limited mechanic is the separate, explicitly-named 7-day trial (ToS
+      Section 6). No document states the free plan itself ends after a period.
+
+  # --- Domain 4 / index B3 (checkpoint group: trial) — ToS-governed, tier-agnostic, unaffected by the entry-tier change ---
+
+  trial_exists:
+    value: "yes"
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      ToS Section 6, "FREE TRIAL": "We offer an optional 7-day free trial to new users
+      who register with the Site." A blanket policy stated once for the product, not
+      scoped to a specific paid tier — unaffected by this pass's entry-tier change
+      from Professional to Premium. Independently re-read in full from the saved ToS
+      text today; identical wording.
+
+  trial_card_required:
+    value: unknown
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      ToS Section 6 continues: "If the user initiates a free trial, the account will
+      be charged according to the user's chosen subscription... at the end of the
+      free trial." This implies payment details are collected up front, but
+      implication is not a statement — no document (ToS, D-005 rendered capture, 7
+      support articles) contains an explicit "card required"/"no card required"
+      sentence. Matches the codebook's own worked example (Vendor I): automatic
+      conversion implies stored payment details, but the implication alone codes
+      `unknown`.
+
+  trial_length_days:
+    value: 7
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: 'ToS Section 6: "an optional 7-day free trial." Stated directly in days, no conversion needed. Not tier-specific.'
+
+  trial_auto_converts:
+    value: "yes"
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      ToS Section 6: "the account will be charged according to the user's chosen
+      subscription [...] at the end of the free trial" — the charge happens
+      automatically at trial end with no further buyer action described
+      (cancellation, Section 7, is the only documented way to avoid it). Matches
+      "converts... unless canceled."
+
+  # --- Domain 5-8 / index C1-C5 (checkpoint group: credit) — cost_per_output_unit and cost_per_output_computable change; rest re-verified ---
+
+  credit_system_present:
+    value: "yes"
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      Sharper basis than the superseded record had. The D-005 capture now shows
+      Premium's and Professional's OWN allowances stated directly in output units —
+      "Up to 300,000 words per month" / "500,000 words per month" — which is exactly
+      rule 1's own example of what is NOT a credit system ("100 images per month...
+      code no"). The word "credits" appears nowhere in either plan's own feature list.
+      It appears exactly once on the whole page, in the separate "Enterprise and Team
+      Plans" block: "Shared team credits" — a bulk/multi-seat feature, undefined, and
+      not confirmed to apply to a single-seat Premium purchase (Enterprise/Team is
+      not itself an eligible entry-tier candidate; see coder_note). Because this
+      undefined "credits" term is still present somewhere in the product's own
+      official materials, rule 3 governs ("Where the documents mention a unit but
+      never explain whether it meters output, code yes and let credit_unit_defined
+      carry the opacity"). Flagged for reviewer attention: this `yes` now rests on a
+      single, narrower, Team-context-only mention, against an entry tier whose own
+      allowance is cleanly word-denominated — a closer call toward `no` than the
+      superseded record's basis was, not a further one.
+
+  credit_unit_defined:
+    value: "no"
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      No document (D-005 rendered capture, ToS, 7 official support articles) ties
+      "credit" to any recognized output unit. "Shared team credits" names the unit
+      without defining it. (The word-allowance and per-word overage figures now known
+      — 300,000 words/month, $0.00046/word — are a direct price-to-output rate, not a
+      credit-to-output conversion; they inform cost_per_output_unit/computable below,
+      not this variable.)
+
+  credit_to_output_rate_published:
+    value: "no"
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: "Relevant documents were read in full; no conversion rate from credits (the undefined unit named on the Team/Enterprise block) to any output type is published anywhere."
+
+  credit_rate_location:
+    value: absent
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: "No credit rate is published in any document class, per credit_to_output_rate_published = no."
+
+  cost_per_output_unit:
+    value: per_1k_words
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      CHANGED from the superseded record's per_seat_month. That coding was reached
+      because no allowance was visible at all and the purchase mechanism (Seats
+      field) is per-seat; the D-005 capture now shows the pricing page's own
+      framing is not "unmetered access" (the codebook's per_seat_month test, e.g.
+      Vendor L's "unlimited-use writing assistant") but a hard monthly word
+      allowance stated as each plan's headline feature — "Up to 300,000 words per
+      month" for Premium, "500,000 words per month" for Professional — with an
+      official support article (newly found via the rate-limit article's own
+      "Related Articles" list) stating an exact overage rate once that allowance is
+      exceeded: "we charge overages at $0.00046 per word. You can go over your plan
+      by up to 1 million words before you are asked to upgrade." Rule 1 codes the
+      principal output "as its own pricing page frames it"; here that framing is
+      words scanned, metered monthly, with a published per-word rate for going over
+      — not an unlimited seat license. per_1k_words is the closest listed unit
+      ($0.00046/word x 1,000 = $0.46/1,000 words is a clean, sensible published
+      rate). The purchase mechanism is still per-seat (Professional's widget
+      confirms this), but that is the billing structure, not the output-metering
+      unit this variable asks for.
+
+  cost_per_output_computable:
+    value: "yes"
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      CHANGED from the superseded record's `no` (which followed necessarily from
+      headline_price_usd = unknown at that time). Rule 1 fixes the price input as the
+      entry tier's price in the default display state: Premium, "TRY 549/ month,
+      billed annually", now a real published figure. The same card states the
+      included allowance directly beneath it: "Up to 300,000 words per month". Price
+      and allowance already share a monthly period, so rule 3 requires no conversion.
+      549 / 300,000 = TRY 0.00183 per word = TRY 1.83 per 1,000 words. Every figure
+      needed is published and the calculation needs no assumption about typical use,
+      matching `yes`. This variable's value list has no `non_usd` option and nothing
+      in its decision rule gates on currency, so headline_price_usd = non_usd does
+      not block this — see computation_assumptions for the full arithmetic, in TRY
+      (protocol-v1.md 6.5 forbids inventing an exchange rate to restate it in USD).
+
+  computation_assumptions:
+    value: "Premium: TRY 549/mo billed annually (default state); 300,000 words/mo included, same card. Same period, no conversion needed. 549/300000=0.00183 TRY/word = TRY 1.83/1,000 words. Figure in TRY; no USD figure is published anywhere for GPTZero (headline_price_usd=unknown as of the D-007 re-check, 2026-08-10; was non_usd); no rate invented (protocol 6.5)."
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: "Required because cost_per_output_computable = yes (300 char cap on this field; full reasoning is in that variable's own evidence). D-007 re-check (2026-08-10): this variable's decision rule does not gate on headline_price_usd's specific value/currency, so the TRY-denominated computation is unaffected in figures; only the cross-reference to headline_price_usd's value was stale and is corrected. See gptzero-sources/d007-currency-recheck-2026-08-10.txt."
+
+  credit_rollover_policy:
+    value: unknown
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      No document (ToS, D-005 rendered capture, 7 official support articles,
+      including the newly-found overage article) states what happens to an UNUSED
+      portion of the monthly word allowance at period end. The overage article
+      addresses only going OVER the allowance ("charge overages at $0.00046 per
+      word... up to 1 million words before you are asked to upgrade"), which is a
+      different question from rollover of what is left UNUSED. Silence on rollover
+      specifically, so unknown stands.
+
+  failed_generation_charge_policy:
+    value: unknown
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      The product plainly meters generation: a quantified monthly word allowance
+      (300,000 words/month for the entry tier) and a quantified 30,000-requests
+      /hour rate limit are both documented, so this is not not_applicable. No
+      document (ToS in full, D-005 rendered capture, 7 official support articles
+      including the newly-found overage and rate-limit articles) states what happens
+      to the metered allowance when a scan technically fails or errors, as distinct
+      from completing but returning a result the buyer dislikes, or from exceeding
+      the allowance (which the overage article does cover, but that is volume, not
+      failure). Silent, per rule 3 ("this variable is silent often — that is the
+      finding").
+
+  # --- Domain 9-11 / index D1-D4, E1-E3 (checkpoint group: contractual) — ToS-governed, tier-agnostic; output_ownership_statement evidence corrected ---
+
+  auto_renewal_default:
+    value: "on"
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      ToS Section 5: "If your purchase is subject to recurring charges, then you
+      consent to our charging your payment method on a recurring basis without
+      requiring your prior approval for each recurring charge, until you notify us of
+      your cancellation." Independently re-read in full today; identical wording. Not
+      tier-specific, unaffected by the entry-tier change.
+
+  auto_renewal_disclosure_location:
+    value: terms_only
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      The recurring-charge consent clause above is the only place auto-renewal is
+      stated. The D-005 rendered capture's Professional Plan widget shows only
+      "billed annually" period labels with no renewal statement, and none of the 7
+      official support articles read (including the newly-found overage article and
+      the re-verified cancellation/team-subscription articles) restates it.
+
+  renewal_notice_commitment:
+    value: unknown
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      The recurring-billing clause states charges happen "without requiring your
+      prior approval for each recurring charge" — about not needing pre-charge
+      authorization, a narrower claim than a commitment to advance NOTICE. No
+      document affirmatively commits to advance notice, and none affirmatively states
+      no notice will be sent either. Silence on the notice question specifically, so
+      `unknown` rather than reading `no_notice_stated` into the approval clause.
+
+  refund_policy_exists:
+    value: no_refunds_stated
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      ToS Section 7, "CANCELLATION": "All purchases are non-refundable." A
+      determinate, unconditional position, independently re-read in full today and
+      unchanged. (The same section separately offers a support-contact channel for
+      dissatisfied customers — a complaint channel, not a refund entitlement — which
+      does not soften the preceding sentence.)
+
+  refund_window_days:
+    value: 0
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: "Per codebook format: 0 where no refunds are given (refund_policy_exists = no_refunds_stated, ToS Section 7). Blanket policy, not entry-tier-specific."
+
+  refund_conditions:
+    value: not_applicable
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: "No refund available (refund_policy_exists = no_refunds_stated), matching this variable's not_applicable row (\"No refund available\")."
+
+  cancellation_self_serve:
+    value: self_serve_documented
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      ToS Section 7: "You can cancel your subscription at any time by logging into
+      your account. Your cancellation will take effect at the end of the current
+      paid term." Corroborated by the cancellation support article, re-fetched fresh
+      today: "Please go to Settings > Cancel Plan found on the left sidebar to cancel
+      your plan" (also offers pausing the membership for up to 3 months as an
+      alternative — not a refund mechanic).
+
+  refund_policy_location:
+    value: terms
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      "All purchases are non-refundable" appears only in the ToS (Section 7). No
+      dedicated refund page exists, and no help-center article restates a refund
+      position — now checked across 7 official support articles (one more than the
+      superseded record: the newly-found overage article also contains no refund
+      language) plus the D-005 rendered capture, none of which mention refunds.
+
+  commercial_use_lowest_tier:
+    value: not_granted
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      ToS Section 8, "PROHIBITED ACTIVITIES": "You may not access or use the Site for
+      any purpose other than that for which we make the Site available. The Site may
+      not be used in connection with any commercial endeavors except those that are
+      specifically endorsed or approved by us." Independently re-read in full today;
+      identical wording. No tier-specific carve-out exists anywhere: the D-005
+      capture's Premium and Professional feature bullets (word allowance, scan
+      features, file/LMS features) address none of them to commercial use rights, and
+      there is still no feature-comparison row on this page addressing it. Applying
+      rule 1 (terms rank first) and rule 4 (`not_granted` is determinate), this
+      defaults all use, on every tier including the newly-selected entry tier
+      Premium, to non-commercial unless individually pre-approved. See conflict_note.
+
+  watermark_removal_tier:
+    value: not_applicable
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    evidence: >
+      Same basis as free_plan_watermark: GPTZero's principal outputs are
+      AI-probability scores and highlighted-text analysis reports, not a media
+      artifact a watermark could mark, now directly confirmed by the D-005 capture's
+      own Premium/Professional feature bullets (see free_plan_watermark evidence).
+
+  output_ownership_statement:
+    value: unknown
+    source: {url: "https://support.gptzero.me/articles/9627530992-do-i-retain-ownership-of-the-work-after-passing-it-through-gptzero", access_date: 2026-08-09, archive_url: "https://web.archive.org/web/20260809141439/https://support.gptzero.me/articles/9627530992-do-i-retain-ownership-of-the-work-after-passing-it-through-gptzero"}
+    evidence: >
+      CORRECTED EVIDENCE, same value as the superseded record. Re-fetched this
+      article in full via raw HTTP today (not just an AI-summarized read) because two
+      independent reads of it during this pass produced different quotes, which
+      needed settling with the primary text. The full article is two sentences:
+      "While we retain a copy of submitted text, we do not reproduce the text or
+      disclose it to third parties. This means while a copy of your submission is
+      stored, it is never shown to a third party and you retain ownership of the
+      submission." The superseded record quoted only the first sentence and
+      concluded the article "does not address ownership... of the input" — that
+      conclusion is wrong; the second sentence explicitly states input ownership
+      ("you retain ownership of the submission"). But "the work" this article
+      answers about is the user's own SUBMITTED text (what gets passed through
+      GPTZero), not GPTZero's GENERATED detection report/score — the actual construct
+      this codebook variable measures ("who holds rights in generated outputs").
+      ToS Section 9 ("USER GENERATED CONTRIBUTIONS", "you retain full ownership of
+      all of your Contributions") is self-disclaimed as inapplicable: "The Site does
+      not offer users to submit or post content," and "Contributions" as defined
+      there is public posts/comments viewable by other users, not scanned text.
+      Section 12 "Submissions" is likewise about feedback about the Site, not scanned
+      content. No document anywhere states who holds rights in GPTZero's own
+      generated report/score. `unknown` stands, now for the textually correct reason.
+
+  # --- Domain 12 / index F1-F2 (checkpoint group: caps) — usage_cap_quantified evidence substantially strengthened, entry-tier re-scoped to Premium ---
+
+  usage_cap_quantified:
+    value: some_quantified
+    source: {url: "https://gptzero.me/pricing", access_date: 2026-08-08, archive_url: "local_copy: gptzero-sources/pricing-rendered-2026-08-08.txt"}
+    second_source: {url: "https://support.gptzero.me/articles/7371584464-what-is-the-rate-limit", access_date: 2026-08-09, archive_url: "https://web.archive.org/web/20260809141302/https://support.gptzero.me/articles/7371584464-what-is-the-rate-limit"}
+    evidence: >
+      Same value as the superseded record, on materially stronger and differently
+      -sourced evidence now that Premium (not Professional) is the entry tier.
+      Quantified limits attributable to Premium: (1) "Up to 300,000 words per month"
+      — the D-005 capture's own card, a number + dimension (words) + period (month),
+      satisfying section 5.1's rate test directly. (2) "The rate limit for all
+      subscription plans is 30,000 requests an hour" — the rate-limit article,
+      re-fetched fresh, a number + dimension (requests) + period (hour), and
+      explicitly "for all subscription plans" so it reaches Premium. The newly-found
+      overage article further quantifies what happens at the (1) boundary ("$0.00046
+      per word... up to 1 million words before you are asked to upgrade"),
+      reinforcing that this limit is fully worked out with numbers, not treated as a
+      separate third limit. Not quantified: the free-vs-paid article, re-fetched
+      fresh, still states the paid-vs-free differentiator is "the number of
+      characters you can include in a single request and the number of documents you
+      can include in the single batch upload" with no figure given for either
+      dimension, for either plan. At least one quantified and at least one not ->
+      some_quantified.
+
+  unquantified_limit_clause:
+    value: present
+    source: {url: "https://gptzero.me/terms-of-use.html", access_date: 2026-08-07, archive_url: "https://web.archive.org/web/20260807100908/https://gptzero.me/terms-of-use.html"}
+    evidence: >
+      ToS read in full for this variable, independently re-read today. Section 14,
+      "SITE MANAGEMENT", clause (4): the vendor reserves the right "in our sole
+      discretion and without limitation, notice, or liability, to remove from the
+      Site or otherwise disable all files and content that are excessive in size or
+      are in any way burdensome to our systems." "Excessive in size" and "burdensome
+      to our systems" is an unquantified, discretionary usage-intensity standard with
+      no figure attached — matches `present` directly. Distinguished from Section
+      14's separate general at-will access-denial clause (a conduct/access clause,
+      not a volume-of-use clause, so not counted here). Not tier-specific; unaffected
+      by the entry-tier change.
+
+coder_note: >
+  D-005 RE-COLLECTION. This record replaces the 2026-08-07 pass-1 record in full.
+  The prior record's two attempts to read gptzero.me/pricing statically both showed
+  only a pre-hydration "$0" placeholder (confirmed by that pass's own JS-source
+  inspection: the price is fetched at runtime, not server-embedded, so a
+  non-executing fetch could never resolve it) and coded headline_price_usd, and
+  everything price-dependent, unknown/no. Per the codebook's D-005 rule ("rendered
+  reads are documentary"), this coder was given an orchestrator-captured ordinary
+  -browser RENDERED read of the same URL, dated 2026-08-08
+  (gptzero-sources/pricing-rendered-2026-08-08.txt), and did not fetch the pricing
+  page directly. All six A-domain variables (headline_price_usd,
+  headline_billing_basis, first_charge_amount_usd, mandatory_addon_present,
+  annual_condition_disclosure, annual_default_toggle) are coded from that capture.
+
+  WHAT CHANGED VERSUS THE SUPERSEDED RECORD, AND WHY. The rendered capture revealed
+  something the superseded record could not see at all: a real, resolved price grid
+  with TWO self-serve paid plans, PREMIUM (TRY 549/mo billed annually, "MOST
+  POPULAR" tag, up to 300,000 words/month) and PROFESSIONAL (TRY 1,049/mo billed
+  annually, 500,000 words/month) — not one plan as the superseded record concluded.
+  Re-applying sampling-rules.md 7.2 mechanically (lowest annual-equivalent
+  single-seat cost among eligible candidates) now returns PREMIUM, not Professional:
+  Premium 549x12=6,588 TRY/yr beats Professional 1,049x12=12,588 TRY/yr. Both are
+  self-serve ("Choose Plan", no sales contact), standing (not promotional) plans, so
+  both are eligible; Professional is recorded here as the losing candidate at its
+  12,588 TRY/yr annual-equivalent. "Enterprise and Team Plans" is not a separate
+  candidate: its own copy reads "Everything you get with a Professional plan, for
+  everyone" and its purchase paths are self-serve team creation (not a distinct
+  priced tier) or "Contact Sales" (fails eligibility rule 2). "API for developers"
+  is a distinct product line with its own "View Pricing"/"Contact Sales", not a plan
+  tier. entry_tier_name therefore changes from "Professional Plan" to "Premium".
+  This is a mechanical consequence of the codebook's own price-basis rule applied to
+  newly-visible evidence, not a judgment call.
+  Values that changed as a direct or cascading result: headline_price_usd
+  (unknown -> non_usd, TRY 549/mo); first_charge_amount_usd (unknown, same value,
+  now for a currency/billing-mechanic reason rather than a fully-unresolved price);
+  headline_billing_basis (per_seat_per_month -> per_month_billed_annually, since no
+  seat qualifier is textually stated against Premium's own card); entry_tier_name
+  (Professional Plan -> Premium); cost_per_output_unit (per_seat_month ->
+  per_1k_words) and cost_per_output_computable (no -> yes), once an official support
+  article (found via the rate-limit article's own "Related Articles" list — a
+  document the superseded record never had reason to look for) supplied a published
+  per-word overage rate ($0.00046/word) confirming GPTZero's principal output is
+  metered in words, not sold as unmetered per-seat software; usage_cap_quantified
+  keeps its value (some_quantified) but on a materially different and stronger
+  evidentiary basis (Premium's own quantified 300,000-words/month allowance instead
+  of the prior pass's thin "Shared team credits" mention); output_ownership_statement
+  keeps its value (unknown) but its evidence is corrected — the superseded record
+  quoted only half of a two-sentence support article and, on that partial quote,
+  wrongly concluded the article was silent on input ownership (it is not; it says
+  "you retain ownership of the submission" — it is simply silent on the different
+  question this variable measures, ownership of GPTZero's generated output). All
+  other variables (free-tier group, trial group, most of the credit and contractual
+  groups, both caps variables' underlying document set) are unaffected by the
+  entry-tier change and are re-verified against freshly re-fetched official sources
+  in this pass rather than carried over unread.
+
+  CURRENCY / D-003. The rendered capture's every price is in TRY (network egresses
+  from Turkey). Per deviation D-003, made ONE checked attempt (two curl calls: a
+  bare fetch that only returned a 302, then the same request with -L to follow it)
+  at `https://web.archive.org/web/2026/https://gptzero.me/pricing`; it redirected to
+  the same 2026-08-07 snapshot the superseded record itself had already submitted
+  for archiving (web.archive.org/web/20260807100537/...), which shows the identical
+  pre-hydration state — a "$0" placeholder, Next.js React-Server-Component internal
+  reference tokens ("$1", "$7", confirmed by surrounding context to be serialization
+  IDs, not prices), and one unrelated dollar figure, "$288/year", which in full
+  context ("GPTZero premium for life (valued at $288/year)") is the imputed value of
+  a reward in an educator-ambassador program description bundled into the page's
+  data payload — not a plan price. No USD figure for any plan tier was found by
+  either state. headline_price_usd and first_charge_amount_usd are coded non_usd
+  /unknown accordingly, and the TRY display state is logged as a display_variant
+  register event below, per this agent's D-003 rule. Separately worth recording:
+  ToS Section 5 ("FEES AND PAYMENT") states "All payments shall be in U.S. dollars"
+  — a contractual (not pricing-class) statement that a USD charge amount likely
+  exists on GPTZero's backend behind the TRY display, which this documents-only,
+  Turkey-network study still cannot see or verify. See conflict_note.
+
+  ENTRY-TIER SELECTION (sampling-rules.md 7.2): Premium is the winning candidate;
+  Professional is the sole losing candidate, at 1,049x12=12,588 TRY/year against
+  Premium's 6,588 TRY/year (both single-seat, per-card figures). Team/Enterprise and
+  the API line are not eligible candidates (see above). The Seats field on the
+  (non-entry-tier) Professional purchase widget defaults to 2 with no visible
+  min/max in this plain-text capture; whether a single seat is purchasable, and
+  whether Premium carries an equivalent seat mechanic at all, remains unconfirmed in
+  this capture (the superseded record flagged the same open question for
+  Professional). This does not change any coded value, since Premium's own card
+  states its price and word allowance as flat per-card figures independent of a
+  seat count.
+
+  DOMAIN-CONFUSION CHECK: not re-performed this pass; gptzero.me was already
+  confirmed as the correct official domain in the superseded record (matches the
+  frame's vendor_home_url, distinct from gptzero.getrewardful.com's affiliate
+  -program terms, gptzero.app, and gptzero.cc), and nothing in this re-collection
+  gives reason to revisit it.
+
+  ARCHIVAL DISCIPLINE (self-disclosed): the 7 official support articles cited fresh
+  in this pass were each read (via WebFetch, then a raw HTTP re-fetch for exact
+  quotes) before being submitted to web.archive.org/save; submissions were batched
+  after reading rather than one-by-one interleaved with each read, similarly to a
+  deviation the superseded record self-disclosed for its own discovery phase. Every
+  source actually cited below was successfully archived the same day it was
+  accessed (2026-08-09 for the 7 support articles; the ToS reuses its still-valid
+  2026-08-07 capture per this agent's resume-mode rule; the pricing page is the
+  D-005 local-copy capture dated 2026-08-08), satisfying protocol-v1.md 6.4's
+  same-day requirement in the end. No page was coded from without a same-day
+  snapshot or an already-validly-attributed reused one.
+
+  CONTINUITY NOTE ON THE SUPERSEDED RECORD'S BLINDNESS DEVIATION: the 2026-08-07
+  version of this record carried a self-disclosed blindness deviation (that pass's
+  coder opened records/pass1/copyleaks.yaml for schema reference before coding,
+  matching the already-adjudicated D-001 precedent) and an explicit non-standard
+  blindness attestation. That fact is part of this product's coding history and is
+  preserved here for the adjudicator's continuity, but it describes the SUPERSEDED
+  record's process, not this one. For the avoidance of doubt: it is not reproduced
+  by copying any value or judgment from copyleaks.yaml into this record — this pass
+  did not open that file or any other product's file.
+
+  THIS PASS'S OWN BLINDNESS: no aitoolspolice.com page, no review page, and no
+  pass-2 material was opened. No other product's record was opened. Only
+  gptzero.me/pricing (via the orchestrator's rendered-capture file, not fetched by
+  this coder), the previously-superseded records/pass1/gptzero.yaml (this coder's
+  own product, read per this coder's explicit instructions), gptzero.me's own ToS
+  and 7 official support articles, and one web.archive.org lookup for the D-003
+  currency check were consulted. blindness: no other record, no review page, no
+  pass-2 material was opened.
+
+  D-007 re-check 2026-08-10: this record was one of six flagged for
+  re-verification under the amended currency rule (deviations-log.md D-007) --
+  and, together with phrasly, one of the two records whose D-003 outcome is what
+  originally exposed D-003 as unsound (both arms of that check had genuinely
+  failed here, and its closing clause forced non_usd anyway). Arms attempted
+  under the amended rule, in order: (1) vendor's own currency disclosure --
+  re-scanned the live pricing page (still TRY 549/mo for Premium today) for a
+  currency/country selector (0 matches) and tried a ?currency=USD URL parameter
+  (no effect) -- both negative. DID re-confirm a real documentary currency
+  statement already on file: ToS Section 5, "All payments shall be in U.S.
+  dollars" -- genuine Arm-1 evidence, but it names a currency, not a figure; no
+  document anywhere states the actual USD amount. (2) A US-crawled archive
+  capture that actually contains price figures -- re-tested the same snapshot
+  checked under the original D-003 pass, https://web.archive.org/web/20260807100537/https://gptzero.me/pricing:
+  identical result, every figure a "$0" pre-hydration placeholder, not a real
+  price. A Wayback CDX query for a newer snapshot timed out twice (effort cap);
+  the Wayback UI's own current redirect confirms no newer capture exists. Full
+  log: gptzero-sources/d007-currency-recheck-2026-08-10.txt.
+  OUTCOME: value CHANGED, but not to a money figure. headline_price_usd moves
+  from non_usd to unknown: the amended rule requires POSITIVE evidence the
+  vendor publishes only a non-USD price before non_usd can stand, and here the
+  vendor's own ToS argues the opposite (it claims USD billing), while no arm
+  supplies an actual number to code as money -- the honest value for "vendor
+  disputes non-USD but no figure exists anywhere" is unknown, not non_usd.
+  first_charge_amount_usd stays unknown (unchanged in value -- it was already
+  unknown for the independent, still-valid billing-frequency reason); only its
+  and computation_assumptions's stray cross-references to the old
+  headline_price_usd=non_usd value are corrected. cost_per_output_computable is
+  unaffected in value or in its TRY-denominated arithmetic, since that
+  variable's rule never gated on headline_price_usd's specific value. The
+  existing register_events display_variant entry's stale "non_usd stands"
+  conclusion is corrected in place; its original observation fields (the TRY
+  read, the original D-003 archive finding) are preserved unedited.
+
+conflict_note:
+  - id: annual_billing_help_article_stale
+    variables_affected: [annual_default_toggle, headline_billing_basis, annual_condition_disclosure]
+    summary: >
+      The official support article "Do you have an annual billing option?"
+      (re-fetched fresh 2026-08-09; unchanged) still states "Not yet, but we are
+      currently working on it, and hope to release the feature within a few weeks
+      to come" ("Last updated 11 months ago" per its own stamp) — directly
+      contradicted by the D-005 rendered capture, which shows an annual Billing
+      Cycle control already live and preselected, labelled "(Save 45%)", on both
+      the Premium/Professional cards and the Professional Plan widget, and by the
+      "How can I create a team subscription?" article's "choose whether to sign up
+      for the Annual or Monthly Professional plan." Per protocol-v1.md 6.2 the
+      pricing page ranks 1st for pricing-class variables, so all three variables
+      are coded from the pricing page's rendered state and the help article is read
+      as stale rather than as evidence annual billing is unavailable. Recorded per
+      protocol-v1.md 6.2's instruction that a marketing/documentation gap is
+      reported "even where the hierarchy settles the coded value cleanly."
+    urls:
+      - https://gptzero.me/pricing
+      - https://support.gptzero.me/articles/9783812961-do-you-have-an-annual-billing-option
+
+  - id: commercial_use_vs_marketing
+    variables_affected: [commercial_use_lowest_tier]
+    summary: >
+      Not a two-official-source value conflict in the codebook's technical sense
+      (the pricing page never states a commercial-use RIGHT to disagree with the
+      ToS), but a marketing-vs-contract gap protocol-v1.md 6.2 requires recording
+      regardless. ToS Section 8, the governing document for this contractual
+      variable, restricts all Site use, by default, to non-commercial purposes
+      "except those that are specifically endorsed or approved by us." The D-005
+      capture shows the pricing page simultaneously marketing an "Enterprise and
+      Team Plans" path explicitly "for your organization", trust badges ("Trusted
+      by over 10 million teachers and students", "Used in over 100 countries",
+      "Official AI detector partners of the American Federation of Teachers"), and
+      an "API for developers" section aimed at platform integration — audience-and
+      -scale positioning that reads as inviting institutional/business use, on
+      pages that never state a commercial-use grant. Coded not_granted from the
+      higher-ranked ToS per codebook rule 1; the gap itself is the finding.
+    urls:
+      - https://gptzero.me/terms-of-use.html
+      - https://gptzero.me/pricing
+
+  - id: tos_usd_vs_pricing_page_try
+    variables_affected: [headline_price_usd, first_charge_amount_usd]
+    summary: >
+      Not a two-source disagreement the codebook's `conflicting` value applies to
+      (headline_price_usd/first_charge_amount_usd are pricing-class variables and
+      the pricing page's own displayed currency governs them under protocol-v1.md
+      6.2, so non_usd/unknown stand as coded), but a genuine documentary tension
+      worth recording on its own terms. ToS Section 5, "FEES AND PAYMENT": "All
+      payments shall be in U.S. dollars." The D-005 rendered capture shows every
+      price on the pricing page in TRY, with no USD figure anywhere, and the D-003
+      web.archive.org check (coder_note) found none either. Read together, this
+      suggests a USD charge amount likely exists on GPTZero's backend behind a
+      geo-localized TRY display (the "300.000"-style Turkish thousands-separator
+      formatting on the same page supports a locale-driven display, not a
+      TRY-denominated product), but no official document available to this
+      documents-only, Turkey-network study states what that USD figure is. This is
+      exactly the kind of buyer-position finding the study measures: undeterminable
+      for this reader from public materials, not merely undisclosed by the vendor.
+    urls:
+      - https://gptzero.me/terms-of-use.html
+      - https://gptzero.me/pricing
+
+register_events:
+  - type: display_variant
+    detail: >
+      Pricing page rendered entirely in TRY (Turkish lira) for this network
+      location's 2026-08-08 read (Premium TRY 549/mo billed annually; Professional
+      TRY 1,049/mo billed annually), including Turkish-locale thousands-separator
+      formatting on the word-allowance badges ("300.000"/"500.000"). D-003 check via
+      the most recent (2026-08-07) web.archive.org capture of the same URL found no
+      USD figure — only the same pre-hydration placeholder, Next.js internal
+      reference tokens, and one unrelated $288/year educator-program reward figure.
+      ORIGINAL FINDING (2026-08-09, under D-003): non_usd stood per protocol-v1.md
+      6.5; a USD figure could not be verified from this network. SUPERSEDED by the
+      D-007 re-check (2026-08-10; this line corrected in place, rest of this entry
+      preserved as the original observation): re-tested Arm 2 on the same capture,
+      same pre-hydration-placeholder result, plus a fresh Arm 1 check finding the
+      vendor's own ToS states "All payments shall be in U.S. dollars" -- evidence
+      AGAINST a clean non-USD-only publication, but with no figure attached. Under
+      the amended rule this combination codes unknown, not non_usd. See
+      gptzero-sources/d007-currency-recheck-2026-08-10.txt. See conflict_note
+      "tos_usd_vs_pricing_page_try" for the related ToS finding that payments are
+      contractually stated to be in USD regardless.
+    urls: ["https://gptzero.me/pricing", "https://web.archive.org/web/20260807100537/https://gptzero.me/pricing"]
+
+status: complete

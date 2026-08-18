@@ -1,0 +1,237 @@
+URL: https://leonardo.ai/pricing
+Access date: 2026-08-09
+Method: rendered read via Claude Browser tool (mcp__Claude_Browser__preview_start + javascript_tool document.body.innerText), full page load, no interaction before capture
+Network note: static curl fetch (with Accept-Language: en-US,en;q=0.9) returned HTTP 403 Cloudflare "Just a moment..." challenge page (bot-detection interstitial, not a login/paywall). Rendered browser read succeeded and shows the live page content. No geo-redirect observed (URL stayed https://leonardo.ai/pricing, no country subdomain or locale path). Prices displayed in USD ($) with "ex. tax." suffix.
+Default toggle state confirmed via DOM inspection: "Pay Monthly" button class = "bg-white text-black" (active/selected style); "Pay Yearly" button class = "bg-transparent text-white/70" (inactive style). Default display state = Pay Monthly (monthly billing), NOT annual.
+Screenshot taken confirming visual toggle state (Pay Monthly highlighted white, matches SOLO tab active-purple pattern).
+
+--- RENDERED TEXT (document.body.innerText, first ~6000 chars) ---
+Create
+Industry
+Business
+Learn
+Pricing
+Contact
+Log in
+Tutorial
+SOLO
+TEAM
+API
+CREATE ACROSS IMAGE, VIDEO, DESIGN, AND MOTION
+
+One subscription, all platforms
+
+Pay Yearly
+Up to 20% off
+Pay Monthly
+FREE
+$0 /month
+ex. tax.
+Subscribe
+
+Perfect for casual creators who want to explore AI art
+
+Fast Tokens
+150 / day
+Token Bank
+150
+Creations access
+Public
+Presets
+✓
+Quality settings
+Basic
+Personal collections
+1
+ESSENTIAL
+$12 /month
+ex. tax.
+Subscribe
+
+Best for daily hobbyists and enthusiasts Included with Canva Business
+
+Fast Tokens
+8,500 / month
+Token Bank
+25,500
+Creations access
+Private️
+Presets
+✓
+Quality settings
+Enhanced
+Personal collections
+Unlimited️
+Personal AI models
+10
+Max Simultaneous Generations
+2
+Top-up Tokens
+✓
+PREMIUM
+$30 /month
+ex. tax.
+Subscribe
+
+Best for semi-professionals and active creators who need more output
+
+Fast Tokens
+25,000 / month
+Token Bank
+75,000
+Creations access
+Private
+Presets
+✓
+Quality settings
+Enhanced
+Personal collections
+Unlimited️
+Personal AI models
+20
+Max Simultaneous Generations
+3
+Max generations queue
+10
+Top-up Tokens
+✓
+Image Generation for select models at a relaxed pace*
+Unlimited
+ULTIMATE
+$60 /month
+ex. tax.
+Subscribe
+
+Perfect for professional creators, small businesses, and content producers
+
+Fast Tokens
+60,000 / month
+Token Bank
+180,000
+Creations access
+Private
+Presets
+✓
+Quality settings
+Enhanced
+Personal collections
+Unlimited️
+Personal AI models
+50
+Max Simultaneous Generations
+6
+Max generations queue
+20
+Top-up Tokens
+✓
+Image Generation for select models at a relaxed pace*
+Unlimited️
+Video Generation for select models at a relaxed pace*
+Unlimited️
+Number of seats
+−
++
+STARTER
+$72 / month
+$24 / seat
+ex. tax.
+Subscribe
+75,000 Shared Tokens
+225,000 Bank Capacity
+Fast Tokens Per Seat
+25,000
+Resets on your Billing Date
+✓
+Relaxed Image Generation for selected models*
+Unlimited
+Relaxed Video Generation for selected models*
+Unlimited
+Private Team Generations
+✓
+Train AI models using team tokens
+Collections
+Unlimited
+Realtime Canvas actions
+Unlimited
+Realtime Generation actions
+Unlimited
+Max simultaneous generations run
+6
+Max generations queue at once
+20
+Enhanced Quality
+✓
+GROWTH
+$144 / month
+$48 / seat
+ex. tax.
+Subscribe
+180,000 Shared Tokens
+540,000 Bank Capacity
+Fast Tokens Per Seat
+60,000
+Resets on your Billing Date
+✓
+Relaxed Image Generation for selected models*
+Unlimited
+Relaxed Video Generation for selected models*
+Unlimited
+Private Team Generations
+✓
+Train AI models using team tokens
+✓
+Collections
+Unlimited
+Realtime Canvas actions
+Unlimited
+Realtime Generation actions
+Unlimited
+Max simultaneous generations run
+6
+Max generations queue at once
+20
+Enhanced Quality
+✓
+NEED
+A CUSTOM
+PLAN?
+Contact us
+
+Our sales team will help craft a plan tailored to your unique workflows.
+
+Fast Tokens Per Seat
+Custom
+Resets on your Billing Date
+✓
+All Starter and Growth plan features included
+✓
+Tailored to your business needs
+✓
+PAY AS YOU GO
+Start now
+
+Ideal if you're moving quickly from early experiments to production
+
+Start with $5 API credit to get started
+No commitments – pay only for what you use
+Automatic top ups to keep production running smoothly
+Access to the latest models from day one
+Up to 10 concurrent generations
+API credit doesn't expire
+API CUSTOM
+Contact us
+
+Built for running higher-volume workloads or planning long-term scale.
+
+Custom concurrent generation limits
+Model-based discounts
+Dedicated support for production deployments
+
+* Unlimited relaxed generations applies only to image generation and video generation using selected models. Depending on the plan you are on; It currently includes Lucid Origin, Lucid Realism, Phoenix 1.0, Phoenix 0.9, Motion 1.0, Motion 2.0, Motion 2.0 Fast, Hailuo 2.3, Hailuo 2.3 Fast and Wan 2.6. Concurrency and queuing of unlimited generations may be slowed from time to time based on demand to ensure fair and equitable access and stability for other users.
+
+NEED HELP CHOOSING?
+
+If you're unsure which tier fits your creative needs, we're here to help. Contact support or explore our help resources for more detail.
+
+Contact us
+--- END RENDERED TEXT ---

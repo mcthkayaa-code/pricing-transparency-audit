@@ -1,0 +1,154 @@
+URL: https://app.jobscan.co/plan
+Accessed: 2026-08-09
+Method: RENDERED READ (D-005). Static fetch (curl, Accept-Language: en-US) returned HTTP 403 with a
+Cloudflare "Just a moment..." interstitial (0 price figures; see plan-static-raw.html in this dir).
+The most recent web.archive.org capture (20260625005728) is the SPA's pre-render shell only, also 0
+price figures (see plan-wayback-20260625.html). Rendered the live page in a real browser
+(mcp__Claude_Browser, Chromium) and read document.body.innerText after script execution, per the
+documents-only rule: loading a public page and letting the page's own scripts render is reading a
+document, not operating the product. No account created, no login, no checkout, no trial activated
+by the coder (the page's own "Try 7 Days Free" / "Select" buttons were never clicked).
+Network note: collection network egresses from Turkey. Page rendered with USD ($) figures directly,
+no currency localization observed (D-003 satisfied trivially; no non_usd value was ever in play).
+Cookie banner: present, declined non-essential (Preferences shown, Accept not clicked; page content
+below is what renders regardless of the essential-cookie-only state, per protocol 6.8 rule 5).
+Archive attempt: https://web.archive.org/save/https://app.jobscan.co/plan submitted twice.
+  Attempt 1: HTTP 000 (timeout). Attempt 2: HTTP 302 -> capture created at
+  http://web.archive.org/web/20260809165206/https://app.jobscan.co/plan but the wayback
+  availability API reports that capture's status as "204" (empty body) -- archive.org's own
+  crawler hit the same Cloudflare/SPA-shell problem as our static fetch. The public archive URL
+  is recorded for completeness but does NOT itself display the rendered prices.
+  archive_status = local_copy_only; THIS FILE (verbatim rendered innerText below, plus the layout
+  note transcribed from an in-session screenshot) is the evidentiary local copy of the rendered
+  state. The browser tool does not expose a way to persist the screenshot binary to disk; its
+  content is transcribed in the LAYOUT NOTE below immediately after capture.
+
+--- RENDERED document.body.innerText (verbatim, captured via javascript_tool) ---
+
+We use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience, personalize content, and analyze website traffic. For these reasons, we may share your site usage data with our social media and analytics partners. By clicking "Accept," you agree to our website's cookie use as described in our Cookie Policy. You can change your cookie settings at any time by clicking "Preferences."
+Preferences
+Accept
+Choose your plan
+Boost your interview chances. Cancel any time.
+Free
+$0
+forever
+
+Select
+5 Free Resume Scans monthly
+5 ATS & Recruiter Findings
+Job Tracker
+Post Interview Thank You Notes
+Resume Builder
+Resume Manager
+Chrome Extension
+Jobscan Learning Center
+Quarterly
+$29.98
+per month
+
+Billed as $89.95 every 3 months
+
+For 3 months after FREE trial Save 40%
+
+Try 7 Days Free
+Unlimited Resume Scans
+Unlimited AI Optimizations
+AI Cover Letter Generator
+AI Bullet Point Generator
+Linkedin Optimizer (after trial)
+Unlimited keyword comparisons
+Unlimited ATS & Recruiter Findings
+AI Job Match
+20% off Auto Apply Credits (after trial)
+20% off Interview Practice (after trial)
+AI Keyword Synonym Detector
+Job Tracker
+Post Interview Thank You Notes
+AI Resume Builder
+Resume Manager
+Chrome Extension
+ATS Revealed eBook
+ATS Friendly Resume Templates
+Premium Cover Letter Template
+Jobscan Learning Center
+Monthly
+$49.95
+per month
+
+Billed as $49.95 every month
+
+Select
+Unlimited Resume Scans
+Unlimited AI Optimizations
+AI Cover Letter Generator
+AI Bullet Point Generator
+Linkedin Optimizer
+Unlimited keyword comparisons
+Unlimited ATS & Recruiter Findings
+AI Job Match
+20% off Auto Apply Credits
+20% off Interview Practice
+AI Keyword Synonym Detector
+Job Tracker
+Post Interview Thank You Notes
+AI Resume Builder
+Resume Manager
+Chrome Extension
+ATS Revealed eBook
+ATS Friendly Resume Templates
+Premium Cover Letter Template
+Jobscan Learning Center
+
+Are you an organization?
+Sign up here.
+
+1,000,000+ job seekers rely on Jobscan to get hired by
+Frequently asked questions
+How long will my free trial last?
+
+You will have 7 days from the time you start your trial.
+
+When will I be billed after my free trial?
+
+Once your trial ends, you will be billed for the next quarter of your subscription if you selected a quarterly plan.
+
+Can I cancel my free trial?
+
+You may cancel your trial at any time before the end of your trial period. If you cancel on or before your trial expiration date, your account will not be charged for the cost of the plan you selected when you signed up for your trial. There is no trial period if you opted out to gain full access to LinkedIn Optimization or selected a monthly plan. You can cancel your plan directly in Jobscan or contact our support team to help.
+
+Can I cancel any time?
+
+You may cancel at any time directly in Jobscan or contact our support team to help.
+
+What forms of payment do you accept?
+
+You can purchase Jobscan with any major credit card.
+
+Will I be charged sales tax?
+
+Yes. We will apply state and local sales tax based on your billing address.
+
+What is your cancellation policy?
+
+If you cancel your plan before the next renewal cycle, you will retain access to paid features until the end of your subscription period. When your subscription expires, you will lose access to paid features and all data associated with those features.
+
+Is my data safe and secure?
+
+We use industry-standard encryption to protect your information. We do not store your credit card information. We regularly back up your data to prevent data loss and aid in recovery to better protect your information.
+
+Have more questions?
+
+Ask us anything
+Not sure which plan is right for you?
+
+Start with a free Premium trial for 7 days
+
+Start free trial
+
+--- LAYOUT NOTE (from screenshot) ---
+Three plan cards displayed simultaneously, side by side: Free | Quarterly ("Most popular" banner,
+CTA "Try 7 Days Free") | Monthly (CTA "Select"). No annual plan offered. No monthly/annual toggle
+control exists anywhere on the page -- all three cards render at once, permanently, with no
+interactive switch that changes which price is shown. This is the page's only display state; there
+is nothing to toggle before or after reading.

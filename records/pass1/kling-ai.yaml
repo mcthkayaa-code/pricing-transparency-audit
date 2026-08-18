@@ -1,0 +1,135 @@
+product_id: kling-ai
+product_name: Kling AI
+category: AI video generator
+product_status: active
+paid_submission: "no"
+entry_tier_name: Standard
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-09
+recheck_date: not_applicable
+primary_source_url: https://app.klingai.com/global/membership/membership-plan
+archive_url: https://web.archive.org/web/20260809172915/https://kling.ai/app/membership/membership-plan
+archive_status: archived
+default_display_state: "English global site (klingai.com/global/, reached manually after klingai.com root geo-redirected to /cn/); Individual tab active (not Business); Monthly billing tab active (DOM class tab-active, not Yearly); USD currency; cookie-consent banner did not appear during this read."
+
+sources:
+  - { url: https://app.klingai.com/global/membership/membership-plan, kind: pricing, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809172915/https://kling.ai/app/membership/membership-plan", note: "Consumer membership/subscription pricing page. Client-rendered (Vue SPA); static fetch shows no plan prices, rendered read required per D-005. Local rendered-text evidence: kling-ai-sources/01-pricing-membership-plan-rendered.txt" }
+  - { url: https://klingai.com/global/docs/payment-policy, kind: tos, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809173018/https://kling.ai/docs/payment-policy", note: "Kling AI Terms of Paid Service (incl. Automatic Renewal Service Rules appendix). Server-rendered, fully readable via static fetch. Local evidence: kling-ai-sources/02-payment-policy-terms-of-paid-service.txt" }
+  - { url: https://klingai.com/global/docs/user-policy, kind: tos, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809173040/https://kling.ai/docs/user-policy", note: "Kling AI Terms of Service (general). Server-rendered, fully readable via static fetch. Local evidence: kling-ai-sources/03-user-policy-terms-of-service.txt" }
+  - { url: https://klingai.com/global/docs/point-policy, kind: docs, accessed: 2026-08-09, archive: "https://web.archive.org/web/20260809173058/https://kling.ai/docs/point-policy", note: "Credits Policy (labeled 'Credits Policy' in nav; URL slug is /point-policy). Client-rendered; reached by clicking the 'Credits Policy' tab from the payment-policy page. Local rendered-text evidence: kling-ai-sources/04-credits-policy-point-policy-rendered.txt" }
+
+variables:
+  headline_price_usd: { value: 6.99, source: https://app.klingai.com/global/membership/membership-plan, evidence: "Standard plan card, most prominent figure: \"$6.99 / Month\" with \"$10\" shown struck through beside it. Entry tier = Standard: eligible paid candidates' monthly headline figures x12 (annual-equivalent, per sampling-rules 7.2) are Standard 6.99x12=83.88, Pro 25.99x12=311.88, Premier 64.99x12=779.88, Ultra 127.99x12=1535.88 -- Standard lowest." }
+  headline_billing_basis: { value: per_month_billed_monthly, source: https://app.klingai.com/global/membership/membership-plan, evidence: "Qualifier printed with the headline figure is \"/ Month\"; Monthly billing tab is the active/default tab (not Yearly); renewal described as \"Next monthly renewal: $8.8\" i.e. charged monthly, not an annual lump sum. No seat concept (Individual/Business are account types, not per-seat pricing)." }
+  first_charge_amount_usd: { value: 6.99, source: https://app.klingai.com/global/membership/membership-plan, evidence: "\"$6.99 / Month\" is the button-adjacent \"Subscribe Special Offer\" price explicitly scoped to \"Discount only for the first subscription\"; the card separately states \"Next monthly renewal: $8.8 (12% off)\" for the charge AFTER the first, confirming $6.99 is what is charged on the first transaction. Default state is Monthly (not annual), so no annual multiplication applies." }
+  mandatory_addon_present: { value: "no", source: https://app.klingai.com/global/membership/membership-plan, evidence: "All features listed on the Standard card (660 Credits/mo, Element Creation Quantity 50, queue/fast-track/1080p/upscaling/watermark-removal/video extension/commercial use) are marked included with no separate charge; Credits Policy point 6 lists only that certain premium features are membership-exclusive (not a further charge on top of membership), and no compulsory onboarding/platform fee is stated in payment-policy or user-policy." }
+  annual_condition_disclosure: { value: not_applicable, source: https://app.klingai.com/global/membership/membership-plan, evidence: "Default display state's headline figure ($6.99/Month for Standard) does not depend on annual prepayment -- the Monthly billing tab, not Yearly, is preselected/active on load (DOM class tab-active on the Monthly tab)." }
+  annual_default_toggle: { value: monthly_preselected, source: https://app.klingai.com/global/membership/membership-plan, evidence: "DOM: <span class=\"tab vertical-center\">Yearly</span> (inactive) vs <span class=\"tab tab-active vertical-center\">Monthly</span> (active) on page load, before any interaction." }
+  free_plan_exists: { value: "yes", source: https://app.klingai.com/global/membership/membership-plan, evidence: "Basic column: \"$0\" / \"Free forever\", shown alongside the paid tiers as a standing plan." }
+  free_plan_cap_documented: { value: some_quantified, source: https://app.klingai.com/global/membership/membership-plan, evidence: "Basic card lists \"Element Creation Quantity: 30\" (quantified standing limit) alongside \"No monthly Credits\" and \"Login to receive monthly credits\" (no number given for free-tier credits on this page or in Credits Policy's \"Login Credits\" row, which states amounts are \"subject to platform announcement\")." }
+  free_plan_cap_value: { value: "30 element creations", source: https://app.klingai.com/global/membership/membership-plan, evidence: "\"Element Creation Quantity: 30\" -- the only quantified free-plan limit; credit allowance is not quantified on any official page read." }
+  free_plan_watermark: { value: "yes", source: https://klingai.com/global/docs/payment-policy, evidence: "\"each member holds exclusive rights and interests of removing brand watermarks from their generated images, videos and other content. If you are a user who is a non-member, unless you obtain our written permission to do otherwise, you shall label all content generated on the Website/APP with the brand and logo involved...\" (section 7.2); consistent with the pricing page listing \"Brand watermark removal\" only under paid tiers, not Basic." }
+  free_plan_duration: { value: perpetual, source: https://app.klingai.com/global/membership/membership-plan, evidence: "Basic plan description reads \"Free forever\", presented as a standing tier alongside the paid tiers with no expiry stated." }
+  trial_exists: { value: "yes", source: https://klingai.com/global/docs/point-policy, evidence: "Credits Policy section 2, credit category table row: \"7-Day Trial Membership Credits: Credits are granted immediately upon activation of the Membership subscription\" / \"Valid for 7 days from the date of distributed\". Not surfaced as a distinct button/tier on the membership-plan pricing page itself (only Basic/Standard/Pro/Premier/Ultra shown there); see coder_note." }
+  trial_card_required: { value: unknown, source: https://klingai.com/global/docs/point-policy, evidence: "Neither Credits Policy, payment-policy, nor the pricing page states whether payment card details are required to start the 7-Day Trial Membership." }
+  trial_length_days: { value: 7, source: https://klingai.com/global/docs/point-policy, evidence: "\"7-Day Trial Membership Credits ... Valid for 7 days from the date of distributed\"." }
+  trial_auto_converts: { value: unknown, source: https://klingai.com/global/docs/point-policy, evidence: "No document states whether the 7-Day Trial Membership converts to a paid subscription automatically; payment-policy's Automatic Renewal Service Rules describe \"Monthly Subscription\"/\"Yearly Subscription\" conversion but do not name the trial construct." }
+  credit_system_present: { value: "yes", source: https://klingai.com/global/docs/point-policy, evidence: "\"'Credit' refers to the virtual tools that we provide to you to redeem and obtain certain services on Kling AI... does not have a monetary value or prepaid value\" -- an intermediate currency, not an allowance stated directly in output units." }
+  credit_unit_defined: { value: "yes", source: https://app.klingai.com/global/membership/membership-plan, evidence: "Standard card: \"660 Credits per month ... 660 images / 33 720p videos\" -- ties the credit allowance to concrete output units (images and videos), i.e. defines what a credit buys." }
+  credit_to_output_rate_published: { value: "yes", source: https://app.klingai.com/global/membership/membership-plan, evidence: "Same conversion (660 credits = 660 images = 33 720p videos, i.e. 1 credit/image and 20 credits/video) holds identically across Standard/Pro/Premier/Ultra cards (e.g. Pro: 3000 credits = 3000 images = 150 videos), so a rate is published for both the principal output (video) and the secondary output (image), not merely a range." }
+  credit_rate_location: { value: pricing_page, source: https://app.klingai.com/global/membership/membership-plan, evidence: "The credits-to-output ratio (images/videos per credits) appears only on the membership pricing page's plan cards; not repeated in payment-policy, user-policy, or the Credits Policy FAQ, which describe credit validity/rules but not this specific conversion rate." }
+  cost_per_output_unit: { value: other, source: https://app.klingai.com/global/membership/membership-plan, evidence: "Product's own pricing page frames principal output as a discrete count, \"33 720p videos\", not a duration -- no official document states the length (seconds/minutes) of one generated video, so per_video_minute cannot be applied. Unit named in coder_note per codebook rule 3." }
+  cost_per_output_computable: { value: "yes", source: https://app.klingai.com/global/membership/membership-plan, evidence: "Entry tier (Standard) default-state price $6.99/mo and included allowance 660 credits/mo = 33 720p videos/mo are both published on the same plan card; both already on a monthly basis so no period conversion needed; 6.99/33=0.21 USD/video, no assumption about typical use required." }
+  computation_assumptions: { value: "Standard tier, $6.99/mo (default Monthly display state, first-subscription price); 660 credits/mo = 33 720p videos/mo per pricing page; both monthly already, no conversion; 6.99/33=0.2118 -> $0.21/video (720p, duration unstated).", source: https://app.klingai.com/global/membership/membership-plan, evidence: "" }
+  credit_rollover_policy: { value: expires_at_period_end, source: https://klingai.com/global/docs/payment-policy, evidence: "\"Once the subscription to membership benefits takes effect, the Membership's Subscription Credits will be distributed monthly... the validity period of such Credit is 1 month from the date of distribution of the Credit to your account.\" (4.2.2). Confirmed again in Credits Policy point 9: \"Membership's subscription credits are valid for 1 month from the date of distribution.\"" }
+  failed_generation_charge_policy: { value: not_charged, source: https://klingai.com/global/docs/point-policy, evidence: "\"Credits Consumed for Generation ... 1. The corresponding Credits will be deducted immediately upon generation. 2. If the generation fails, the corresponding Credits will be refunded.\"" }
+  auto_renewal_default: { value: "on", source: https://klingai.com/global/docs/payment-policy, evidence: "Appendix, Automatic Renewal Service Rules, item 6: \"...you shall cancel the subscription prior to the expiration date of the Automatic Renewal billing cycle you select... If you fail to cancel the subscription in a timely manner, the payment channel will continue to deduct the service fee for the next and the subsequent billing cycle...\" -- renewal is the default state, buyer must act to stop it. Corroborated on the pricing page itself: Standard card states \"Next monthly renewal: $8.8 (12% off)\" as a matter-of-fact continuation." }
+  auto_renewal_disclosure_location: { value: multiple, source: https://klingai.com/global/docs/payment-policy, evidence: "Disclosed on the pricing page (\"Next monthly renewal: $8.8\") AND in the dedicated Terms of Paid Service document (Article 3.1.3 plus the full Automatic Renewal Service Rules appendix) -- two document classes in agreement." }
+  renewal_notice_commitment: { value: advance_notice_stated, source: https://klingai.com/global/docs/payment-policy, evidence: "Appendix item 4: \"In order for you to know the situation of Automatic Renewal, we and the payment channels will send to you an Automatic Renewal Notice or other methods prior to the expiration date of the Automatic Renewal Service you have selected...\"" }
+  refund_policy_exists: { value: no_refunds_stated, source: https://klingai.com/global/docs/payment-policy, evidence: "6.2.4 Rules for Unsubscribing: \"...Once the Paid Service (including any Membership Service and Credit service) is activated, the fee paid for the Paid Service is non-refundable.\" Reaffirmed at 8.4.2: \"Fees collected are non-refundable unless specifically agreed upon in these Terms.\"" }
+  refund_window_days: { value: 0, source: https://klingai.com/global/docs/payment-policy, evidence: "No refund window exists; fees are stated non-refundable once the Paid Service is activated (see refund_policy_exists evidence)." }
+  refund_conditions: { value: not_applicable, source: https://klingai.com/global/docs/payment-policy, evidence: "No refund is available (no_refunds_stated), so there is no refund for conditions to attach to." }
+  cancellation_self_serve: { value: self_serve_documented, source: https://klingai.com/global/docs/payment-policy, evidence: "Appendix item 7, \"Unsubscription\": \"For Stripe subscription payments [Manage my subscription - Cancel subscription - Go to Stripe to manage]\"; also documents self-serve iOS Settings and Google Play Store cancellation paths, none requiring contact with the vendor." }
+  refund_policy_location: { value: terms, source: https://klingai.com/global/docs/payment-policy, evidence: "Refund position is stated within the Terms of Paid Service (a general terms/contract document covering membership, credits, fees and unsubscribing together), not a page dedicated solely to refunds." }
+  commercial_use_lowest_tier: { value: lowest_paid, source: https://klingai.com/global/docs/payment-policy, evidence: "3.1.2 membership benefits: \"KLING AI members' use of the Output for commercial purposes is not restricted...\" -- granted to any Membership grade, i.e. from Standard (entry paid tier) upward. Pricing page confirms per-tier: Basic = \"Generated content is not for commercial use\"; Standard/Pro/Premier/Ultra = \"Generated content is for commercial use\"." }
+  watermark_removal_tier: { value: lowest_paid, source: https://klingai.com/global/docs/payment-policy, evidence: "7.2: \"each member holds exclusive rights and interests of removing brand watermarks... If you are a user who is a non-member... you shall label all content... with the brand and logo...\" -- watermark removal is a Membership-wide benefit starting at the entry paid tier (Standard), confirmed by \"Brand watermark removal\" listed on the Standard card and absent from Basic." }
+  output_ownership_statement: { value: user_owns, source: https://klingai.com/global/docs/user-policy, evidence: "4.4: \"You own all intellectual property rights and other proprietary interests in and to the Content under applicable law... We do not claim ownership of the Content.\" (Content = Input + Output, per 4.2). This is unconditional on tier; the separate commercial-use-license restriction in 4.6 governs USE rights, not ownership, and is captured by commercial_use_lowest_tier instead." }
+  usage_cap_quantified: { value: some_quantified, source: https://app.klingai.com/global/membership/membership-plan, evidence: "Standard tier's stated limits: \"660 Credits per month\" (quantified rate), \"Element Creation Quantity: 50\" (quantified standing limit), \"Daily 3 Free Uses\" for VIDEO O1 Multi-Shot (quantified rate) are all quantified; \"Queue unlimited tasks\" is an unlimited claim that, per codebook rule 3, is qualified by the discretionary excessive-usage clause recorded under unquantified_limit_clause, so it is not counted as quantified. Mix of quantified and not-quantified -> some_quantified." }
+  unquantified_limit_clause: { value: present, source: https://klingai.com/global/docs/payment-policy, evidence: "2.6: \"...If you exceed the above limits, the Company will notify you in an appropriate manner. The Company has the right to take measures such as restricting login, restricting use, suspending or terminating your use of the Services based on your excessive usage.\" No figure defines \"excessive usage\"; this is a discretionary, unquantified standard on use of the Services, read in full alongside the rest of payment-policy and user-policy, in which no other such clause was found." }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): eligible paid candidates on the membership-plan
+  page (default Monthly display state) were Standard, Pro, Premier, Ultra (Basic is $0, not a
+  paid candidate). Annual-equivalent = monthly headline figure x12: Standard 6.99x12=83.88
+  (WINNER, lowest); Pro 25.99x12=311.88 (lost); Premier 64.99x12=779.88 (lost); Ultra
+  127.99x12=1535.88 (lost). No seat-block or student/nonprofit-restricted plans present.
+
+  cost_per_output_unit = other: unit named is "per 720p video" (a discrete generation, not a
+  duration) -- the pricing page states allowances as "N images / M 720p videos" with no stated
+  clip length in seconds or minutes in any official document read (pricing page, payment-policy,
+  user-policy, point-policy), so per_video_minute could not be applied without an unsourced
+  assumption.
+
+  trial_exists / trial_length_days judgment call: the only official documentation of a
+  time-limited trial is the Credits Policy (point-policy) row "7-Day Trial Membership Credits:
+  Credits are granted immediately upon activation of the Membership subscription ... Valid for
+  7 days". This construct is NOT surfaced as a distinct option on the rendered membership-plan
+  pricing page (which shows only Basic/Standard/Pro/Premier/Ultra with no "trial" button or
+  tier), and no document states which tier it attaches to, whether a card is required, or
+  whether/how it converts. Coded trial_exists=yes and trial_length_days=7 because an official
+  document affirmatively names and dates the construct (a determinate documented fact per
+  codebook section 2.1 step 2); trial_card_required and trial_auto_converts coded unknown
+  because no document settles them. A later adjudicator may wish to weigh whether this
+  officially-documented-but-not-surfaced-on-the-pricing-page construct should instead be treated
+  as unknown; flagging for visibility rather than silently picking one reading.
+
+  unquantified_limit_clause / usage_cap_quantified judgment call: payment-policy 2.6 authorizes
+  "restricting login, restricting use, suspending or terminating your use of the Services based
+  on your excessive usage" with no number given, introduced in the context of a device-login-count
+  limit. Read as a general discretionary usage clause (matching the codebook's "excessive use"
+  example verbatim) and applied under usage_cap_quantified rule 3 to mark the Standard tier's
+  "Queue unlimited tasks" claim as not fully quantified, consistent with the codebook's own
+  Vendor U worked example (a general fair-use clause marks down an unrelated "unlimited"
+  feature claim). Flagging the device-login framing for a later reader/adjudicator to review.
+
+  Site selection: klingai.com (frame's vendor_home_url, bare root) auto-redirected on load to
+  https://klingai.com/cn/ (Chinese-language regional site) for this Turkey-egress session --
+  an inferred-geography default-display-state variant per protocol-v1.md section 6.8. Per the
+  assignment instruction, coded from the English global site instead, reached by manually
+  navigating to https://klingai.com/global/ (confirmed identical in structure to /cn/ aside
+  from language/region). Logged as a register_event below.
+
+  D-003 currency check (mechanical, run before concluding no currency issue applies): plain
+  curl with `-H "Accept-Language: en-US,en;q=0.9"` against klingai.com/pricing and
+  kling.ai/pricing returned no non-USD figures; the rendered read of the actual English global
+  membership-plan page also showed all prices natively in USD with no locale toggle. non_usd
+  was never triggered, so no currency variable needed it; recorded here per instruction to log
+  the check itself.
+
+  Other context, not used for coding: klingai.com/global/dev/pricing is a separate "API
+  Platform" product (developer credit packages sold as "Units", e.g. $700/5000 units for
+  video) with its own distinct pricing, unrelated to the consumer membership Credits priced
+  here ($1 USD = 66 Credits per point-policy). Opened for orientation only; no coded value
+  is sourced from it.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+
+  D-009 re-read 2026-08-10: re-opened https://app.klingai.com/global/membership/membership-plan
+  live and confirmed entry_tier_name (Standard), headline_price_usd ($6.99),
+  headline_billing_basis (per_month_billed_monthly) and first_charge_amount_usd ($6.99) in a
+  SECOND representation independent of the original innerText transcript: a structural DOM query
+  pairing each .membership-plan-sgp card with its own .price div and feature line (Standard's
+  card carries "660 Credits per month", matching the original record), plus a screenshot as a
+  third, visual representation. Confirmed the Monthly tab carries the "tab-active" class (Yearly
+  does not) before any interaction. Confirmed 0 <sup>/<sub> elements exist anywhere on the page.
+  Confirmed the $6.99 first-subscription price and the $8.80 ongoing renewal rate are two
+  structurally distinct DOM nodes (a "Discount only for the first subscription" span versus a
+  separate "Next monthly renewal: $8.8" div), so first_charge_amount_usd=6.99 is not a misread of
+  the renewal figure. Evidence saved to
+  kling-ai-sources/d009-second-representation-2026-08-10.txt. No correction; all four scoped
+  values confirmed as coded.
+conflict_note: ""
+register_events:
+  - { type: display_variant, detail: "klingai.com bare root geo-redirects Turkey-origin traffic to the /cn/ (Chinese) regional site by default; coder navigated manually to /global/ (English) per assignment instruction to code from the global site when both exist.", urls: ["https://klingai.com", "https://klingai.com/cn/", "https://klingai.com/global/"] }
+status: complete

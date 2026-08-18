@@ -1,0 +1,20 @@
+SOURCE: https://help.tealhq.com/en/articles/9457672-updating-cancelling-your-teal-subscription
+TITLE: "Updating & Cancelling Your Teal+ Subscription | Teal Knowledge Base"
+ACCESSED: 2026-08-15 (pass-2 collection)
+METHOD: Browser render (static WebFetch returned HTTP 403 Forbidden on this domain)
+ARCHIVE.ORG: not separately attempted after three consecutive failed/stalled saves this session on the same domain family (tealhq.com/terms x2, trial-faq x2, cancellation-policy x1); recorded archive_failed by the same observed pattern. This file is the dated local verbatim capture.
+Page says "Updated over 2 weeks ago"
+
+=== VERBATIM PAGE TEXT (key passages) ===
+
+"Click the hyperlink above to be redirected to your Account Settings... click the 'Teal+ Subscription' tab at the top of the page to manage your existing subscription."
+
+"If you purchased a recurring subscription, you will see a 'Cancel Subscription' button. When you click to cancel your subscription, the cancellation will not take effect until the end of your current billing period."
+
+"You'll know you have successfully cancelled your recurring subscription when the 'Cancel Subscription' is no longer visible, and you see the expiration date of your subscription instead."
+
+"If you have a non-recurring subscription, you will not see the 'Cancel Subscription' button. Instead, you will see the date that your subscription is set to end on. No action is required on your end to cancel a non-recurring subscription. It will automatically expire at the end of the billing cycle, and you will not incur further charges."
+
+"From your Teal+ Subscription page, you can also adjust your payment method and subscription type... To switch your subscription plan, click 'Update' next to your current plan details."
+
+NOTE: confirms cancellation is entirely self-serve via account settings (button click), consistent with tealhq.com/terms "How to Cancel" clause. Also reveals the existence of a "non-recurring subscription" purchase state distinct from the recurring plans shown by default on the main pricing page — noted in coder_note; does not change coding of the entry tier as sold on the live pricing page (which presents recurring plans only).

@@ -1,0 +1,68 @@
+URL: https://help.quillbot.com/hc/en-us/articles/360058341753-What-s-the-difference-between-a-free-and-a-Premium-account
+Accessed: 2026-08-10
+Method: rendered read via browser (document.body.innerText) — help.quillbot.com returns HTTP 403 to
+non-browser fetchers (curl, WebFetch), so this rendered read is the only capture obtained.
+Archival: web.archive.org/save/ attempted twice (HTTP 520 both times) -> archive_failed; this file is
+the local copy per protocol 6.4.
+NOTE: this article's free-plan limits table is MORE DETAILED/QUANTIFIED than the marketing pricing
+page (quillbot.com/premium) for several items, and its "Humanize text (Advanced mode): 3 uses" row
+appears to disagree with the pricing page's "Humanize up to 125 words, 6 uses/day" — see conflict_note
+in the record.
+
+--- BEGIN RENDERED TEXT ---
+Skip to main content
+How can we help?
+Search
+Quillbot Help Center  Account, Subscription & Billing  Premium & Pricing
+What's the difference between a free and a Premium account?
+2 months ago Updated
+
+A free Quillbot account includes basic access to our tools, while a Premium account unlocks expanded options and advanced features. Here's a quick comparison.
+
+Free account
+
+Free accounts include:
+Standard and Fluency modes
+3 Synonyms settings
+Paraphrasing up to 125 words
+Summarizing up to 1,200 words
+Access to extensions
+20 AI Chat queries/day
+3 image generations/day
+3 AI presentation generations/day
+
+Premium account
+Premium accounts include everything in Free, plus higher limits and exclusive features:
+
+Feature comparison
+Feature | Free | Premium
+Paraphraser | Up to 125 words | Unlimited
+Paraphraser modes | Standard & Fluency | 9 unique modes
+Compare Modes | No | Yes
+Paraphraser History | No | Yes
+Advanced writing suggestions | No | Yes
+Tone insights | No | Yes
+Humanize text (Advanced mode) | 3 uses | Unlimited
+Translator | Up to 5,000 characters | Unlimited
+Summarizer | Up to 1,200 words | Up to 6,000 words
+Custom summaries | No | Yes
+Plagiarism Checker | No | Yes
+Plagiarism word limit | No | 25,000 words/month
+AI Detector | Up to 1,200 words | Unlimited
+AI Detector | 10 scans/day | Unlimited
+QuillBot Flow storage | 10 MB | 100 MB
+Faster processing speed | No | Yes
+Priority assistance | No | Yes
+AI Chat | 20 queries/day | Unlimited
+Image generation | 3/day | 300/month
+AI Presentation Generator | 3/day | 30/month
+Text to Speech | 4,000 characters per scan | 4,000 characters per scan
+AI Website Builder | 5 (create or edit) | 20 (create or edit)
+
+How to upgrade
+You can upgrade to Premium anytime by visiting the Premium page on the Quillbot website.
+
+Was this article helpful?
+Yes No
+8 out of 11 found this helpful
+--- END RENDERED TEXT ---

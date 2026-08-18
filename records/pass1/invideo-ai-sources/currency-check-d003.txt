@@ -1,0 +1,23 @@
+D-003 MECHANICAL CURRENCY CHECK
+SOURCE: https://invideo.io/pricing/
+ACCESSED: 2026-08-09
+METHOD: curl -s -H "Accept-Language: en-US,en;q=0.9" -A "Mozilla/5.0 ... Chrome/124.0 Safari/537.36"
+  https://invideo.io/pricing/  (static fetch, US-locale header, independent of the render used to
+  read the actual figures)
+
+RESULT: HTTP 200, 132262 bytes returned. Grepped for currency symbols/codes ($, USD, TRY, EUR, GBP):
+  the only "$" occurrences in the raw HTML are React Server Component / Next.js flight-protocol
+  reference tokens (e.g. "G":["$18",[]] , "error":"$36") — confirmed by context inspection, NOT price
+  figures. No price figures of any kind appear in the static HTML even under an explicit US-locale
+  request, matching the un-headered static fetch. This is consistent with prices being injected
+  entirely client-side (same finding as the initial static WebFetch attempt).
+
+CONCLUSION: The static US-locale check cannot itself confirm a currency because it shows no prices
+  at all (a rendering limitation, not a vendor localization difference). The RENDERED read (browser,
+  see pricing-rendered.txt), performed from this same Turkey-egressing collection environment,
+  displayed all four Individual-tab plan prices in USD with a "$" symbol and no currency selector or
+  locale-switch UI was observed anywhere on the page. No non-USD figure was shown at any point.
+  Per protocol D-003: since the vendor's page (as rendered, the only state that shows figures at all)
+  already displays a published USD figure, headline_price_usd and first_charge_amount_usd are coded
+  in USD directly. There is no locally-observed non-USD currency to log as a display_variant register
+  event — the page never showed anything but USD to this collector. non_usd does not apply.

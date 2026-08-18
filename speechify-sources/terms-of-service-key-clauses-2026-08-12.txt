@@ -1,0 +1,107 @@
+URL: https://speechify.com/terms/
+Accessed: 2026-08-12 (rendered browser read, full document -- 79,309 characters read in full via main.innerText,
+  confirmed complete by reading start-to-end in three overlapping slices: 0-30000, 29000-62000, 62000-end)
+Archive: https://web.archive.org/web/20260812083313/https://speechify.com/terms/ (fresh same-day capture, 1st
+  attempt)
+Method: mcp__Claude_Browser navigate + get_page_text + javascript_tool (main.innerText slicing)
+Document date: "Updated July 1, 2025" (as printed on the page)
+---
+Full document read start-to-finish for the unquantified_limit_clause full-read requirement. Operative clauses
+relied on for this record, quoted verbatim, by section number as printed on the page:
+
+1.1 SERVICES definition: "the content, products and/or services available via the www.speechify.com website...,
+through applications... for use on mobile devices..., or via other delivery methods... (collectively... the
+'Service' or 'Services')"
+
+2.3(a)(i) FREE TIER: "'Free Tier' means a limited version of the Services free of charge. This version may
+include feature limitations, usage caps, and platform restrictions. Access to the Free Tier is provided at our
+sole discretion, is not guaranteed, and may be modified or terminated at any time without notice."
+
+2.3(a)(ii) PAID SUBSCRIPTION: "...those fees may recur each month or year thereafter, at the then-current rate...
+Please note that if you purchase a subscription through the Apple App Store or our iPhone application, the sale
+is final, and we will not provide a refund... subject to Apple's applicable payment policy... If you purchase a
+subscription through the Google Play store, the sale is final and we will not provide a refund... subject to
+Google's applicable payment policy..."
+
+2.3(a)(iii) FREE TRIAL: "'Free Trial' means a promotional, time-limited, no-charge subscription offer (currently
+three (3) days unless a different period is stated at sign-up) that gives you access to additional features
+including and beyond the 'Free Tier.'... Unless you cancel before the trial ends, the Free Trial automatically
+converts to a paid Subscription Plan at the then-current price and renews on the same billing cycle until
+cancelled. We will charge the payment method you provided at sign-up when the Free Trial converts."
+
+2.3(c): "Our subscriptions are paid for by an upfront one-off payment with automatic monthly or annual renewal
+(depending on the option you choose when you first subscribed). You acknowledge and agree that Speechify is
+authorized to charge your payment method for (i) the initial subscription fee at the rate disclosed at the time
+of purchase, and (ii) any applicable renewal subscription fee(s) at the then-current rate..."
+
+2.3(d) AUTO-RENEWAL (all-caps in original): "IMPORTANT NOTICE-AUTOMATIC RENEWAL: SUBSCRIPTION TERMS WILL
+AUTOMATICALLY RENEW FOR ADDITIONAL PERIODS EQUAL TO THE EXPIRING SUBSCRIPTION TERM UNLESS YOU CANCEL IN
+ACCORDANCE WITH THE CANCELLATION TERMS BELOW..."
+
+2.3(f) CANCELLING AS A CONSUMER (all-caps in original): "YOU MAY CANCEL YOUR SUBSCRIPTION AT ANY TIME BY
+INITIATING A CANCELLATION THROUGH YOUR SPEECHIFY ACCOUNT SETTINGS, APPLE ACCOUNT SETTINGS, OR GOOGLE ACCOUNT
+SETTINGS... PLEASE NOTE THAT SUBSCRIPTION FEES UNTIL THE EXPIRATION OF YOUR THEN-CURRENT SUBSCRIPTION TERM WILL
+NOT BE REFUNDED... YOU WILL NOT BE ELIGIBLE FOR A PRO-RATED REFUND..." Plus: "if you purchased your subscription
+directly from Speechify... you may cancel at any time through your user account settings. To do so, click the
+'Cancel Subscription' button, which is clearly and prominently displayed under the 'Subscription' heading in
+your account settings, accessible at https://app.speechify.com/settings?tab=subscription."
+
+2.3(g) California notice-timing disclosures: "Annual Subscriptions: ...a reminder notice to your email address on
+file no less than 15 days and no more than 45 days before your subscription renews." / "Promotional and Trial
+Offers: If you signed up for a free trial or promotional offer lasting more than 31 days, we will send a reminder
+notice... no less than 3 days and no more than 21 days before the end of the promotional period." [No equivalent
+stated reminder-notice commitment found anywhere in the document for an ordinary monthly recurring renewal that
+is neither annual nor a >31-day promo/trial.]
+
+4.1 LICENSE (not ownership of the Services/software): "Speechify grants you... a limited, non-exclusive,
+nontransferable, revocable license to stream, download and make personal non-commercial use of the Services...
+You do not acquire any ownership interest in the Services under these Terms..."
+
+4.4 COMMERCIAL USE (key finding): "The Services, with the exception of Speechify Voice Over Studio, are not
+intended for your commercial use... You must not use any part of the materials used in or on the Services for
+commercial purposes without obtaining a written license to do so from us... Subject to your compliance with
+these Terms and any applicable additional terms, you may use Speechify Voice Over Studio AI voice overs for
+commercial purposes. You can also distribute or otherwise make available AI voice overs created with Speechify
+Voice Over Studio to third parties who intend to use the voice overs for commercial purposes."
+  => This record's entry tier (Premium, the TTS/reading subscription on speechify.com/pricing/) is part of "the
+     Services" and is NOT the carved-out "Speechify Voice Over Studio" product, so commercial use is explicitly
+     NOT granted at any tier of the product coded here (Free or Premium). Only the separate Studio product line
+     (own pricing page, own credit system -- see speechify-studio-context file) carries a commercial-use grant.
+
+5.1 COPYRIGHT: "the Services, Apps and all materials... are owned by Speechify or our affiliates and/or third
+party licensors." -- about Speechify's OWN platform/content IP, not about ownership of a given user's generated
+TTS audio output.
+
+6.3 Fair-Use Limits for Premium Voices: "To maintain service quality we apply usage limits ('Usage Limits') to
+Premium Voices. The current Usage Limits are set out in the Usage Limits Schedule
+(https://speechify.com/usage-limits). If you exceed a Usage Limit, Speechify may (i) offer to extend additional
+words at its then-current rates, (ii) restrict access to certain Premium Voices for the remainder of the billing
+period, or (iii) downgrade you to our Standard Voices... We will provide notice before any change that materially
+reduces the guaranteed word limit for paid plans. This does not apply to free or promotional accounts with custom
+limits."
+
+6.5 Fair-Use & Abuse: "Speechify may throttle, suspend, or downgrade service if we reasonably believe an account
+violates the Usage-Limits Schedule or our Acceptable Use Policy. Sharing subscriptions, generating audio for
+resale or public distribution without the proper commercial license of Speechify Studio, or other activities
+prohibited in our Acceptable Use Policy may result in immediate suspension." [No standalone "Acceptable Use
+Policy" document/URL was found anywhere on the site (footer only links Terms of Service + Privacy Policy); the
+conduct list in ToS section 4.2(a)-(k) appears to be the operative AUP content, and it is entirely conduct-based
+(scraping, impersonation, spam, deceptive voice clones, hate speech, DRM circumvention, etc.), not a numberless
+usage-VOLUME standard. No "fair use," "reasonable use," or "excessive use" volume clause without a number was
+found anywhere in the full document.]
+
+7.1-7.8 USER MATERIAL: covers content the USER SUBMITS/UPLOADS as input ("you hereby grant Speechify an
+irrevocable, perpetual, non-exclusive, royalty free, worldwide license to use... the User Material you post"),
+i.e. an inbound license FROM the user TO Speechify over submitted input -- not a statement about who owns the
+AI-GENERATED AUDIO OUTPUT produced from that input. No clause anywhere in the document (searched full text for
+"generated content", "AI-generated", "synthesized", "output ownership", "Generated Audio/Voice" -- zero hits)
+addresses ownership of the generated speech/podcast output specifically for the TTS/Premium product.
+
+11.1 FEES: "fees are quoted and payable in United States dollars... fees are based on Services purchased,
+regardless of actual usage... payment obligations are non-cancelable and fees paid are non-refundable." (general
+fees clause; refund specifics governed by the dedicated Refund Policy per 2.3(f)'s cross-reference)
+
+Definitions in 13.12.2 confirm three distinct commercial product lines exist under one company: "any individual
+who registers under a Speechify Business, Enterprise, Studio, Voice-Over, or API plan... is a 'Business User'"
+-- consistent with Premium/Free (this record) vs. Studio/Voice-Over/API/Business/Enterprise being separate,
+out-of-scope plan families.

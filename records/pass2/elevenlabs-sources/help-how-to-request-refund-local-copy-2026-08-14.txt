@@ -1,0 +1,16 @@
+URL: https://help.elevenlabs.io/hc/en-us/articles/13540796654993-How-can-I-request-a-refund
+Accessed: 2026-08-14 (rendered browser read; web.archive.org/save returned HTTP 520 on both attempts, recorded local_copy_only per binding rule)
+Title: How can I request a refund? – ElevenLabs
+
+Verbatim visible text (main content):
+---
+ElevenLabs
+ Account
+ Cancelation & Refunds
+How can I request a refund?
+
+You are eligible for a refund if a request is filed within 14 days of payment and no credit quota was used in the period for which you are seeking the refund.
+
+If you want to apply for a refund for your purchase, please contact Support by emailing team@elevenlabs.io and someone from the team will get back to you shortly.
+
+Please email directly from your ElevenLabs account email address, and state the reasons for your refund.

@@ -1,0 +1,131 @@
+URL: https://mubert.com/render/pricing
+Accessed: 2026-08-09
+Method: rendered read (Claude Browser preview pane, JS executed, document.body.innerText). Static curl fetch of the same URL returned 0 price figures (React SPA shell only) -- rendered read required per D-005.
+Network note: collection network egresses from Turkey. Page rendered with Accept-Language not directly controllable in browser pane; all prices observed in USD ($), no non-USD figures appeared -- see D-003 currency check note in record for the independent curl cross-check.
+Default display state observed: "Subscription" tab active (vs "Perpetual License" tab, not interacted with); billing toggle = Annual (DOM class react-switch-selector-option-selected on the "Annual" option, react-switch-selector-option-unselected on "Monthly"); cookie-consent banner present on load, dismissed via its close (X) control before reading (no "accept"/"decline" choice was offered, only OK/X).
+---- document.body.innerText ----
+Home
+/
+Pricing
+DISCLAIMER!
+Purchases are non-refundable due to instant digital access.
+Each download includes a license certificate for your plan.
+On all plans, tracks are not licensed for Content ID, standalone release on streaming platforms, or stock music sites.
+Pricing
+Subscription
+Perpetual License
+Monthly
+Annual
+Save up to 25%
+Ambassador
+free
+Try it free — MP3 with obligatory attribution
+25 generations / month
+5 MP3 downloads / month
+Fixed track duration
+Non-commercial use with attribution
+Get Plan
+Creator
+$14$11.69/mo
+Billed annually
+For personal projects &
+non-monetized videos
+500 track generations / month
+Unlimited downloads / month
+No daily limit
+Non-commercial only
+
+Custom track duration (change length)
+WAV (lossless) + MP3 exports
+Priority downloads
+Multiple simultaneous downloads
+No audible watermark
+Monetization
+Client work / agency use
+Apps & games (in-app / in-game)
+Get Plan
+Pro
+Most popular
+$39$32.49/mo
+Billed annually
+For monetized channels & long-form
+content (YouTube, podcasts, social)
+500 track generations / month
+Unlimited downloads / month
+No daily limit
+Limited commercial use
+
+Custom track duration (change length)
+WAV (lossless) + MP3 exports
+Priority downloads
+Multiple simultaneous downloads
+No audible watermark
+Monetization
+Client work / agency use
+Apps & games (in-app / in-game)
+Get Plan
+Business
+$199$149.29/mo
+Billed annually
+For client work, agencies,
+apps & games
+1000 track generations / month
+Unlimited downloads / month
+No daily limit
+Commercial use
+
+Custom track duration (change length)
+WAV (lossless) + MP3 exports
+Priority downloads
+Multiple simultaneous downloads
+No audible watermark
+Monetization
+Client work / agency use
+Apps & games (in-app / in-game)
+Get Plan
+API access
+Building a product with generative music or need custom terms and limits? Book a call with our team.
+Royalty-free music catalog
+[... category browse lists: Genres/Moods/BPM/Playlists/Themes/Instruments/Artists, navigation and footer omitted, immaterial to coding ...]
+Mubert Render
+Render
+Pricing
+License
+Use Cases
+How it works
+Mubert API
+API
+Pricing
+Documentation
+Use Cases
+Tools
+Mubert Fuse
+Youtube Copyright Checker
+DMCA Twitch Checker
+Instagram Reels Checker
+TikTok Sound Checker
+Other Products
+Mubert for Streamers
+Mubert for Business
+About
+Blog
+FAQ
+About
+Contacts
+
+Mubert Inc
+8 The Green Dover
+Delaware US 19901
+business@mubert.com
+
+© 2016 – 2026, Mubert Inc. All music broadcasted on *.mubert.com domains is generated (created, composed, recorded) by Artificial Intelligence (algorithm, software, program) owned by Mubert® Inc and licensed by Mubert® Inc only for personal use. All rights are reserved. Public reproduction, recording, distribution of this music is prohibited.
+
+Terms of Use
+Privacy Policy
+DMCA Policy
+
+---- DOM check: billing toggle active-state class ----
+"Monthly" option div.className = "react-switch-selector-option react-switch-selector-option-unselected"
+"Annual" option div.className = "react-switch-selector-option react-switch-selector-option-selected"
+"Subscription" tab div.className = "app-tabs-tab app-tabs-tab-active"
+"Perpetual License" tab div.className = "app-tabs-tab" (not active)

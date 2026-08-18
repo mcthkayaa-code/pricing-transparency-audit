@@ -1,0 +1,42 @@
+URL: https://app.klingai.com/global/membership/membership-plan
+Date: 2026-08-10
+Method: D-009 re-read. Live rendered browser session (mcp__Claude_Browser), navigated directly
+to the /global/ path as the original record did. A promotional modal covering the page was
+closed via its X control before reading. Second representation obtained via structural DOM
+query (.price / .membership-plan-sgp card containers, .description renewal divs), independent
+of the original 2026-08-09 innerText transcript. A screenshot of the rendered Standard card was
+also taken as a third, purely visual representation.
+
+What it shows:
+1. Billing-period tab state, read from DOM classes before any interaction: "Monthly-12%" tab
+   carries class "tab tab-active vertical-center"; "Yearly-34%" tab carries only "tab
+   vertical-center" (no active class). Confirms monthly_preselected as coded.
+
+2. Full card-to-name-to-price structural mapping (.membership-plan-sgp containers, each paired
+   with its own .price div and a distinctive feature line):
+     Basic    : $0 (free forever)
+     Standard : $6.99 / Month, struck $10, "660 Credits per month"   <- entry tier
+     Pro      : $25.99 / Month, struck $37, "3000 Credits per month"
+     Premier  : $64.99 / Month, struck $92, "8000 Credits per month"
+     Ultra    : $127.99 / Month, struck $180, "26000 Credits per month" (carries a
+                "membership-active" CSS class, which is a UI highlight/recommended-badge
+                class, not related to the billing-period toggle)
+   Confirms entry_tier_name=Standard pairs correctly with headline_price_usd=$6.99 and with the
+   "660 Credits per month" feature line the original record cites, not a shifted row.
+
+3. Superscript/subscript check: 0 <sup>/<sub> elements found anywhere on the page (same query
+   used across this sweep). The $6.99 figure is a single plain-text div.price node:
+   <div class="price">$6.99</div> -- ruling out a nicepage-class misread.
+
+4. first_charge_amount_usd (6.99, the first-subscription-only price, distinct from the ongoing
+   renewal rate): confirmed structurally. The "Discount only for the first subscription, cancel
+   Anytime" qualifier is a real DOM span: <span>Discount only for the first subscription, cancel
+   Anytime</span>. The ongoing rate is a SEPARATE div: <div class="description">Next monthly
+   renewal: <i>$8.8</i> (12% off)</div> -- structurally distinct from the $6.99 first-charge
+   price, confirming the two are not the same figure read twice. Also confirmed visually via
+   screenshot: "..99 / Month" with "$10" struck through and "...monthly renewal: $8.8 (12% off)"
+   beneath it, matching the DOM read exactly.
+
+Conclusion: all four scoped values (entry_tier_name=Standard, headline_price_usd=6.99,
+headline_billing_basis=per_month_billed_monthly, first_charge_amount_usd=6.99) confirmed in a
+second (and, via screenshot, third) representation. No correction.

@@ -1,0 +1,133 @@
+product_id: writehuman
+product_name: WriteHuman
+category: AI humanizer
+product_status: active
+paid_submission: "no"
+entry_tier_name: Basic
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-13
+recheck_date: not_applicable
+primary_source_url: https://writehuman.ai/pricing
+archive_url: https://web.archive.org/web/20260813123929/https://writehuman.ai/pricing
+archive_status: archived
+default_display_state: "Yearly (annual) billing toggle preselected on load; prices shown as annual-equivalent monthly figures with the annual total printed in the same card (e.g. '$12/mo' + '$144 billed yearly'); USD ($) figures served directly to a Turkey-egress session, no currency selector or locale conversion observed; no cookie-consent banner shown."
+
+sources:
+  - { url: https://writehuman.ai/pricing, kind: pricing, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813123929/https://writehuman.ai/pricing, note: "rendered browser read; embedded RSC/script JSON cross-checked against DOM (two representations, consistent)" }
+  - { url: https://writehuman.ai/terms, kind: tos, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813124140/https://writehuman.ai/terms, note: "full document read end to end; last-updated April 26, 2024 per document" }
+  - { url: https://writehuman.ai/faqs, kind: docs, accessed: 2026-08-13, archive: https://web.archive.org/web/20260813124325/https://writehuman.ai/faqs, note: "separate 'Help Center' page, distinct from the pricing-page FAQ accordion; no billing/refund/renewal category present" }
+  - { url: https://writehuman.ai, kind: other, accessed: 2026-08-13, archive: archive_failed, note: "homepage, discovery only (nav/footer link inventory)" }
+
+variables:
+  headline_price_usd: { value: "12.00", source: https://writehuman.ai/pricing, evidence: "Basic card, default (Yearly) state: '$12' '/mo' shown as the largest/most prominent figure; entry tier per sampling-rules 7.2 (lowest annual-equivalent single-seat cost)" }
+  headline_billing_basis: { value: "per_month_billed_annually", source: https://writehuman.ai/pricing, evidence: "'$12/mo' with '$144 billed yearly' printed directly beneath it in the same card" }
+  first_charge_amount_usd: { value: "144.00", source: https://writehuman.ai/pricing, evidence: "'$144 billed yearly' printed directly in the Basic price card; not a coder computation — the annual total is stated verbatim by the vendor. Independently consistent with the pricing-FAQ statement 'you pay once per year at a discounted rate' and with $12 x 12 = $144." }
+  mandatory_addon_present: { value: "no", source: https://writehuman.ai/pricing, evidence: "Comparison table and FAQ ('What happens when I hit my monthly limit?': wait until next month or upgrade) show no required additional charge, minimum credit purchase, platform fee, or onboarding fee for Basic" }
+  annual_condition_disclosure: { value: "adjacent", source: https://writehuman.ai/pricing, evidence: "'$144 billed yearly' and 'Save $72/yr' sit inside the same price card as '$12/mo', directly beneath the headline figure" }
+  annual_default_toggle: { value: "annual_preselected", source: https://writehuman.ai/pricing, evidence: "'Yearly' toggle rendered filled/active with a '3 months free' badge on load; the numeric prices shown ($12/$18/$36) are the annual-equivalent figures, confirming the state is functionally active, not merely styled" }
+  free_plan_exists: { value: "yes", source: https://writehuman.ai/pricing, evidence: "Comparison table 'Free' column with quantified allowances; FAQ 'Is there a free plan?': 'You can use the humanizer tool on the homepage for free with limited monthly requests.'" }
+  free_plan_cap_documented: { value: "all_quantified", source: https://writehuman.ai/pricing, evidence: "Free column: '3' humanizer requests/mo, '250' max words per request, '1' output variation, '10' detection checks/mo, '10' image scans/mo — every listed limit carries a number and dimension" }
+  free_plan_cap_value: { value: "3 humanizer requests per month | 250 words per request | 1 output variation | 10 detection checks per month | 10 image scans per month", source: https://writehuman.ai/pricing, evidence: "Compare-plans table, Free column" }
+  free_plan_watermark: { value: "unknown", source: https://writehuman.ai/pricing, evidence: "No document (pricing page, terms, or the separate /faqs help center) states whether free-plan humanized text output carries any WriteHuman branding/watermark; not coded not_applicable because text watermarking is a live, applicable concept for this exact product category (the site's own top-of-page banner discusses 'Claude to begin adding invisible watermarks to AI-generated text')" }
+  free_plan_duration: { value: "perpetual", source: https://writehuman.ai/pricing, evidence: "Free is presented as a standing column in the plan comparison table alongside paid tiers with no expiry stated anywhere in pricing, terms, or FAQ/help center" }
+  trial_exists: { value: "no", source: https://writehuman.ai/pricing, evidence: "No time-limited trial of a paid tier is mentioned anywhere in the pricing page, its FAQ, the terms of service, or the separate /faqs help center; the only no-cost offering is the standing Free plan (domain 3, not a trial), and CTAs read 'Try the humanizer for free' / 'Try Free First', pointing at the Free plan rather than a trial of Basic/Pro/Ultra" }
+  trial_card_required: { value: "not_applicable", source: https://writehuman.ai/pricing, evidence: "No trial exists" }
+  trial_length_days: { value: "not_applicable", source: https://writehuman.ai/pricing, evidence: "No trial exists" }
+  trial_auto_converts: { value: "not_applicable", source: https://writehuman.ai/pricing, evidence: "No trial exists" }
+  credit_system_present: { value: "no", source: https://writehuman.ai/pricing, evidence: "Plan allowances are stated directly in output units ('80 requests / month', '160 detection checks / mo', '80 image scans / mo') with no intermediate credit/token/point/coin currency mentioned anywhere in pricing, terms, or FAQ/help center" }
+  credit_unit_defined: { value: "not_applicable", source: https://writehuman.ai/pricing, evidence: "No credit system" }
+  credit_to_output_rate_published: { value: "not_applicable", source: https://writehuman.ai/pricing, evidence: "No credit system" }
+  credit_rate_location: { value: "not_applicable", source: https://writehuman.ai/pricing, evidence: "No credit system" }
+  cost_per_output_unit: { value: "other", source: https://writehuman.ai/pricing, evidence: "Product sells metered 'humanizer requests / month' (each request capped at a tier-specific max word count), which does not match any listed unit; named unit: 'humanizer request'" }
+  cost_per_output_computable: { value: "yes", source: https://writehuman.ai/pricing, evidence: "Entry tier Basic: $12/mo (default annual display state) and 80 humanizer requests/mo included (comparison table and embedded plan JSON 'humanizer_max_req':80 agree); price and allowance already share a monthly basis; 12/80=0.15 per request, no assumption about typical use required" }
+  computation_assumptions: { value: "Basic (entry), $12/mo billed annually per default state ($144/yr stated directly, not multiplied). 80 humanizer requests/mo included (compare table + embedded JSON humanizer_max_req:80). Same period both sides, no conversion needed. 12/80=0.15 USD/request.", source: https://writehuman.ai/pricing, evidence: "coder arithmetic; supports cost_per_output_computable=yes, see coder_note for unit-choice reasoning" }
+  credit_rollover_policy: { value: "not_applicable", source: https://writehuman.ai/pricing, evidence: "No credit system" }
+  failed_generation_charge_policy: { value: "unknown", source: https://writehuman.ai/pricing, evidence: "Product meters generation via monthly request caps (not a flat-rate unmetered tool), but no document (pricing FAQ, terms, or /faqs help center) states whether a technically failed or errored generation consumes a request; the only related FAQ answer ('What happens when I hit my monthly limit?') addresses exhausting the quota, not generation failure" }
+  auto_renewal_default: { value: "on", source: https://writehuman.ai/pricing, evidence: "Pricing-page FAQ 'How does annual billing work?': 'Your plan auto-renews annually unless you cancel.' Terms of service (higher-ranked source for this variable class) contains no renewal language at all -- full-document keyword search for 'renew'/'auto-renew'/'recurring' returned zero matches -- so this is silence at the higher rank, not a disagreement; the value is coded from the document that does state it." }
+  auto_renewal_disclosure_location: { value: "pricing_page", source: https://writehuman.ai/pricing, evidence: "Stated only in the /pricing page's own FAQ accordion; absent from the terms of service (checked in full) and from the separate /faqs help center (checked -- no billing/renewal category exists there at all)" }
+  renewal_notice_commitment: { value: "unknown", source: https://writehuman.ai/pricing, evidence: "No document commits to (or explicitly disclaims) advance notice before a renewal charge; the annual-billing FAQ states auto-renewal occurs but says nothing about notice timing" }
+  refund_policy_exists: { value: "no_refunds_stated", source: https://writehuman.ai/terms, evidence: "Terms sec. 11: 'All purchases are non-refundable'. Consistent with pricing-page FAQ: 'We do not offer refunds as all users have the opportunity to try our service for free before committing to a paid plan.'" }
+  refund_window_days: { value: "0", source: https://writehuman.ai/terms, evidence: "No refunds are given (terms sec. 11 and pricing FAQ both state this)" }
+  refund_conditions: { value: "not_applicable", source: https://writehuman.ai/terms, evidence: "No refund is available" }
+  cancellation_self_serve: { value: "self_serve_documented", source: https://writehuman.ai/terms, evidence: "Terms sec. 11: 'you can cancel your subscription at any time by logging into your User Account (My Account Page)'. Pricing FAQ agrees: 'cancel your subscription at any time from the My Account page.'" }
+  refund_policy_location: { value: "multiple", source: https://writehuman.ai/terms, evidence: "Stated in agreement in both the terms of service (sec. 11) and the pricing-page FAQ; absent from the separate /faqs help center, which has no billing category" }
+  commercial_use_lowest_tier: { value: "not_granted", source: https://writehuman.ai/terms, evidence: "Terms sec. 3: 'a non-exclusive, non-transferable, revocable license to access and use the Site (including all Services and Content) for your personal, non-commercial use only.' Sec. 4 separately prohibits exploiting the Site/Services 'for any commercial purpose whatsoever' and 'for any revenue-generating endeavor or commercial enterprise'. No pricing-page feature row and no other clause grants a commercial-use carve-out on any paid tier." }
+  watermark_removal_tier: { value: "unknown", source: https://writehuman.ai/pricing, evidence: "No document states whether any tier's text output carries or is free of a WriteHuman watermark/branding; not coded not_applicable because textual AI-content watermarking is a live, applicable concept for this exact product (see free_plan_watermark evidence)" }
+  output_ownership_statement: { value: "unknown", source: https://writehuman.ai/terms, evidence: "Terms sec. 5 defines 'User Generated Content' as exactly three things (User Submissions, User Contributions, User Input) and separately defines 'output' as 'the final edited product produced by your User Input and our Services' -- a distinct term. Sec. 8's ownership grant ('You retain full ownership of all of your User Generated Content') is scoped to that three-part definition and never uses the word 'output'; no other clause assigns ownership of the humanized output specifically." }
+  usage_cap_quantified: { value: "all_caps_quantified", source: https://writehuman.ai/pricing, evidence: "Entry tier Basic's every stated limit carries a number: '80 requests / month', '2 output variations', 'AI detection checks' -> '160' /mo, 'Up to 600 words per request', '80' image scans/mo (compare table)" }
+  unquantified_limit_clause: { value: "absent", source: https://writehuman.ai/terms, evidence: "Terms of service read in full end to end (all 20 numbered sections plus DMCA/contact); keyword search of the full document for 'fair use', 'reasonable use', 'throttl', and 'discretion to limit' returned zero matches. No separate acceptable-use policy exists (footer legal links are only Privacy/Terms/Cookies/Do-Not-Sell); sec. 4 'Prohibited Activities' serves that role and contains no discretionary usage-volume clause." }
+
+coder_note: |
+  Entry-tier selection (sampling-rules 7.2): three eligible paid candidates (Basic, Pro,
+  Ultra; Free is $0 and not a paid candidate; none are seat-priced, none are sales-gated,
+  none are time-limited promos). Annual-equivalent single-seat cost in default (Yearly)
+  display state: Basic 144.00 (WINNER), Pro 216.00 (losing candidate), Ultra 432.00 (losing
+  candidate). entry_tier_name = Basic.
+
+  No paid time-limited intro period (A-012) exists for this product -- all tiers are
+  standard ongoing monthly/annual subscriptions -- so A-012 does not apply here.
+
+  cost_per_output_unit coded "other" rather than a listed unit (e.g. per_1k_words) because
+  the metered/sold dimension is a discrete capped "humanizer request" (each request bounded
+  by a tier-specific max-words figure), not a continuous word pool. Computing a $/word figure
+  would require assuming a typical buyer fills every request to its word cap, which codebook
+  C3 rule 7 forbids; computing $/request needs no such assumption, which is why
+  cost_per_output_computable = yes on the request unit rather than partial/no on a word unit.
+
+  free_plan_watermark and watermark_removal_tier both coded "unknown" rather than
+  not_applicable: text/AI-content watermarking is squarely applicable to this exact product
+  category (WriteHuman's own site banner discusses "Claude ... adding invisible watermarks to
+  AI-generated text"), so the output type can plausibly carry a watermark/branding; no
+  document (pricing, terms, or /faqs help center) states WriteHuman's own practice either way.
+
+  output_ownership_statement coded "unknown": the terms carefully define "User Generated
+  Content" as exactly User Submissions + User Contributions + User Input, and define "output"
+  (the humanized text returned to the user) as a separate concept in the same paragraph. The
+  ownership grant in sec. 8 is scoped only to "User Generated Content" and never says "output".
+  This reads as a genuine drafting gap (who owns the input is stated; who owns the output is
+  not), not a case where a reasonable stretch of "content" would resolve it either way.
+
+  commercial_use_lowest_tier coded "not_granted" from terms sec. 3's "personal, non-commercial
+  use only" license and sec. 4's repeated commercial-exploitation prohibitions, with no tier
+  carve-out anywhere and no "commercial use" row in the pricing feature grid. Noted for a human
+  reader: this sits in tension with the vendor's own marketing, which links to dedicated pages
+  for "AI Humanizer API for Content Marketing / SEO Agencies / SaaS / Enterprise" -- but per the
+  codebook's own rule, marketing tone does not override terms language, so the terms govern.
+  not_granted and a hypothetical granted value score identically on E1 (determinability, not
+  favorability), so this reading carries no scoring asymmetry.
+
+  Refund-policy divergence check (explicitly required by this study's brief for humanizers):
+  checked terms of service (sec. 11), the pricing-page FAQ accordion, and the separate /faqs
+  help center. Terms and pricing FAQ AGREE (no refunds, self-serve cancellation, access
+  continues to term end); /faqs help center is silent (no billing/refund category exists there
+  at all -- its five categories are AI Humanizer, AI Detector, Image Detector, Word Counter,
+  General). No divergence found across the three pages for this product.
+
+  Auto-renewal sourcing: stated only on the pricing-page FAQ ("Your plan auto-renews annually
+  unless you cancel"). The terms of service, which ranks first for this variable class, was
+  searched end-to-end for "renew"/"auto-renew"/"recurring" with zero matches -- silence at the
+  higher-ranked source, not a disagreement, so the value is coded from the source that states it.
+
+  Currency: pricing page rendered plain $ (USD) figures directly to this Turkey-egress session
+  with no currency selector, locale toggle, or non-USD figure observed anywhere; no non_usd
+  concern arose for this product (unlike several sibling records per D-003/D-007/D-012).
+
+  Price read twice in two representations: rendered DOM/accessibility-tree text and a
+  screenshot, cross-checked against the page's embedded Next.js RSC script payload, which
+  carries a structured initialTiers array with explicit monthly_price/yearly_price fields
+  (18/144, 27/216, 48/432) matching the DOM exactly. No misread risk found.
+
+  "Unlimited" claim check: Ultra's tier advertises "Unlimited requests", "Unlimited detection
+  checks", and "Unlimited image scans" with no on-page asterisk. Terms of service read in full
+  (see unquantified_limit_clause) contain no fair-use/reasonable-use/discretionary-throttling
+  clause anywhere that would qualify an unlimited claim, so per codebook 5.1/usage_cap_quantified
+  rule 3 these would count as quantified if Ultra were the tier being scored; Ultra is not the
+  entry tier here (Basic is; all of Basic's own limits are numeric, not "unlimited"), so this
+  does not directly feed usage_cap_quantified on this record, but it is the fact pattern behind
+  unquantified_limit_clause = absent applying uniformly across the whole pricing page.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "not_applicable"
+register_events: []
+status: complete

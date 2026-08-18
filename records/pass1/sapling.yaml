@@ -1,0 +1,124 @@
+product_id: sapling
+product_name: Sapling AI Detector
+category: AI detector
+product_status: active
+paid_submission: "no"          # from the frozen frame row
+entry_tier_name: Pro
+coder_pass: 1
+coder_role: primary
+collection_date: 2026-08-12
+recheck_date: not_applicable
+primary_source_url: https://sapling.ai/pricing
+archive_url: local_copy_only
+archive_status: local_copy_only
+default_display_state: "USD ($) throughout; no currency selector or country picker anywhere on the pricing page. Pro card headlines '$25 / month' (monthly billing) as the large, prominent default figure; 'Annual ($12 / mon)' is a separate, smaller secondary CTA button (href=javascript:void(0)), not an interactive toggle -- no checked/aria-selected state exists in the DOM, these are two independent Subscribe links rather than a two-state switch. No cookie-consent banner was shown at read time (nothing to decline)."
+
+sources:
+  - { url: "https://sapling.ai/pricing", kind: pricing, accessed: 2026-08-12, archive: local_copy_only, note: "vendor's general suite pricing page (Free/Pro/Enterprise/API); product bundles AI detector + grammar/autocomplete assistant + business/API offering. Rendered read (browser); archive.org save attempted twice, both returned a stale 2026-07-16 capture instead of a new snapshot; local copy saved to sapling-sources/pricing-page.md (screenshot + accessibility-tree text + payment-dialog text)." }
+  - { url: "https://sapling.ai/ai-content-detector", kind: pricing, accessed: 2026-08-12, archive: local_copy_only, note: "official AI detector product page; states free-tier and subscriber character-per-query limits verbatim. Rendered read + document.body.innerText keyword search (JS). archive.org save attempted twice, both returned a stale 2026-07-20 capture; local copy saved to sapling-sources/ai-content-detector-page.md. NOTE: an initial WebFetch pass on this URL fabricated a false 'Pro=50,000/Enterprise=100,000' split -- corrected against verbatim DOM text, see file." }
+  - { url: "https://sapling.ai/tos", kind: tos, accessed: 2026-08-12, archive: "https://web.archive.org/web/20260812082927/https://sapling.ai/tos", note: "terms of service; WebFetch pass plus document.body.innerText keyword-context search (JS), cross-checked and in agreement. Local copy saved to sapling-sources/tos.md." }
+  - { url: "https://sapling.ai/billing_faq", kind: docs, accessed: 2026-08-12, archive: "https://web.archive.org/web/20260812083938/https://sapling.ai/billing_faq", note: "official billing help-center FAQ (linked from the pricing page's own FAQ as 'billing-specific FAQ page'); covers trial conversion and cancellation route. Local copy saved to sapling-sources/billing-faq.md." }
+
+variables:
+  headline_price_usd: { value: 25.00, source: "https://sapling.ai/pricing", evidence: "Pro card heading '$25 / month', confirmed a second representation via the Subscribe payment dialog: \"You are subscribing to Sapling Pro ($25/month).\" Currency check arm 1 (vendor's own disclosure): ToS 3.1 states \"All fees are in U.S. Dollars\" -- USD confirmed, not non_usd." }
+  headline_billing_basis: { value: per_month_billed_monthly, source: "https://sapling.ai/pricing", evidence: "Payment dialog opened by the default 'Subscribe' CTA reads: \"You are subscribing to Sapling Pro ($25/month).\" -- monthly billing, not an annual commitment presented as a monthly-equivalent figure." }
+  first_charge_amount_usd: { value: 25.00, source: "https://sapling.ai/pricing", evidence: "Default state is monthly billing (see headline_billing_basis); payment dialog states the $25/month charge directly. ToS 3.3 defines the 'Subscription Billing Date' as \"the date when you purchase your first subscription to the Service\", i.e. the first charge is one month at the headline rate. No multiplication performed (basis is not annual), so computation_assumptions is not_applicable for this variable." }
+  mandatory_addon_present: { value: "no", source: "https://sapling.ai/pricing", evidence: "Pricing page, AI detector product page, billing FAQ, and ToS fees section (3.1) were all read; none states or shows a required charge beyond the $25/month Pro price to use the plan's advertised features, including the AI detector's 100,000-character-per-query allowance." }
+  annual_condition_disclosure: { value: not_applicable, source: "https://sapling.ai/pricing", evidence: "Per codebook rule 1: the headline figure ($25/month) does not depend on annual prepayment -- it is the plain monthly-billed price. 'Annual ($12 / mon)' exists as a separate, non-default purchase link on the same card, but it is not a condition attached to the headline figure being read." }
+  annual_default_toggle: { value: monthly_preselected, source: "https://sapling.ai/pricing", evidence: "Accessibility-tree read on load, before any interaction: heading '$25 / month' is the large, prominent figure. 'Annual ($12 / mon)' renders as a smaller secondary link (href=javascript:void(0);) beside 'Subscribe' and 'Try it free' -- not a toggle/switch control (no checked or aria-selected state exists in the DOM for either option; they are two independent CTAs, not two states of one control). See coder_note for the UI-mechanism detail." }
+
+  free_plan_exists: { value: "yes", source: "https://sapling.ai/ai-content-detector", evidence: "Public AI-detector checker is usable at no cost with no time limit. document.body.innerText keyword search across the full page (9,427 chars) found zero occurrences of 'account' or 'sign in', consistent with the free checker requiring no registration at all -- a standing free plan distinct from the suite's $0/mo 'Free' plan (which does not list detector access in its own feature column)." }
+  free_plan_cap_documented: { value: all_quantified, source: "https://sapling.ai/ai-content-detector", evidence: "\"The free version is currently truncated to 2000 characters (roughly 400 to 500 tokens).\" This is the only limit the documents attribute to free-tier detector use (a quantified standing per-query cap, codebook 5.1); no other free-tier limit (e.g. checks per day/month) is stated anywhere, positively or as 'unlimited'." }
+  free_plan_cap_value: { value: "2000 characters per query", source: "https://sapling.ai/ai-content-detector", evidence: "\"The free version is currently truncated to 2000 characters (roughly 400 to 500 tokens).\"" }
+  free_plan_watermark: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "Detector output is a percentage score (e.g. \"Fake: 73.6%\") plus a shareable certificate, not a media artifact -- matches codebook's own not_applicable example under watermark_removal_tier ('a detection score or an analysis table'). Keyword search found zero mentions of 'watermark' on the detector page or anywhere in the 31,827-character ToS." }
+  free_plan_duration: { value: perpetual, source: "https://sapling.ai/ai-content-detector", evidence: "The free 2000-character checker is presented as a standing feature of the page, not a time-boxed trial; no expiry is stated. Distinct from the separate 1-month free trial of Sapling Pro covered under domain 4." }
+
+  trial_exists: { value: "yes", source: "https://sapling.ai/pricing", evidence: "\"Haven't yet registered? Just sign up (no credit card required) to start a free 1-month trial of Sapling Pro.\"" }
+  trial_card_required: { value: "no", source: "https://sapling.ai/billing_faq", evidence: "Pricing page CTA: \"(no credit card required)\". Billing FAQ, direct confirmation: \"While you may have been started on a free trial, you were not subscribed. You are only subscribed when you provide payment information... The free trial automatically cancels if no payment method is added.\"" }
+  trial_length_days: { value: 30, source: "https://sapling.ai/pricing", evidence: "\"...a free 1-month trial of Sapling Pro.\" Converted at 30 days/month per codebook rule." }
+  trial_auto_converts: { value: "no", source: "https://sapling.ai/billing_faq", evidence: "\"The free trial automatically cancels if no payment method is added.\" -- explicit statement that the trial does NOT convert to a paid subscription on its own; it lapses instead unless the buyer proactively adds a payment method." }
+
+  credit_system_present: { value: "no", source: "https://sapling.ai/ai-content-detector", evidence: "Detector allowance is stated directly in output units ('2000 characters per query' free, '100,000 characters per query' Pro/Enterprise) -- not an intermediate currency. No mention of credits, tokens, points, coins, or generations as a metering unit anywhere in the pricing page, detector page, ToS, or billing FAQ for the consumer Free/Pro/Enterprise plans. (The separate 'Metered' API plan is usage-based, but it is not the entry paid tier and was not inspected beyond the pricing-page summary; see coder_note.)" }
+  credit_unit_defined: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "No credit system (credit_system_present = no)." }
+  credit_to_output_rate_published: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "No credit system (credit_system_present = no)." }
+  credit_rate_location: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "No credit system (credit_system_present = no)." }
+  cost_per_output_unit: { value: per_seat_month, source: "https://sapling.ai/pricing", evidence: "Pro is a flat-rate, unmetered monthly subscription per individual user ($25/month) that unlocks larger per-query detector checks (up to 100,000 characters); it is not sold as a pay-per-check or pay-per-scan product. Matches the per_seat_month worked example (Vendor L: 'unlimited-use writing assistant at a flat monthly price per user')." }
+  cost_per_output_computable: { value: "yes", source: "https://sapling.ai/pricing", evidence: "Unit is per_seat_month, so the cost per output unit is the entry-tier price itself, read directly in the default display state ($25.00/month) -- no allowance figure or period conversion is needed because the 'output' unit and the billing unit are the same seat-month." }
+  computation_assumptions: { value: "Pro tier, $25/month billed monthly (default display state). Unit = per_seat_month: flat unmetered subscription (detector capped at 100,000 chars/query, not credit-metered). Cost per output = price itself = $25.00/seat-month; no period or allowance conversion needed.", source: "https://sapling.ai/pricing", evidence: "Arithmetic per codebook 7 cost_per_output_computable rules 2-3; see cost_per_output_unit/cost_per_output_computable above." }
+  credit_rollover_policy: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "No credit system (credit_system_present = no)." }
+  failed_generation_charge_policy: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "Pro is a flat-rate seat-based plan with no per-check accounting or credit deduction (character-per-query cap only, not a consumed allowance) -- matches codebook's not_applicable case, 'a flat-rate seat-based tool with no per-output accounting'. No document describes a failure/error policy for detector checks." }
+
+  auto_renewal_default: { value: "on", source: "https://sapling.ai/tos", evidence: "Section 3.3: \"Your account will be charged automatically on the Subscription Billing Date all applicable fees for the next subscription period.\" / \"you authorize Sapling to periodically charge, on a going-forward basis and until cancellation of either the recurring payments or your account\"." }
+  auto_renewal_disclosure_location: { value: terms_only, source: "https://sapling.ai/tos", evidence: "Auto-renewal language located only in ToS Section 3.3. The pricing page and the billing FAQ (which covers cancellation and invoices) were both read and neither states that subscriptions renew automatically." }
+  renewal_notice_commitment: { value: unknown, source: "https://sapling.ai/tos", evidence: "ToS states only a conditional FEE-CHANGE notice (\"Sapling may change the fees for any feature of the Service... if Sapling gives you advance notice of changes before they apply\"), which is a different commitment from advance notice of each renewal charge. No document states a commitment to notify before a renewal charge specifically." }
+  refund_policy_exists: { value: no_refunds_stated, source: "https://sapling.ai/tos", evidence: "Section 3.1: \"All fees are in U.S. Dollars and are non-refundable, and Sapling will not prorate any fees paid for a subscription that is terminated before the end of its term.\"" }
+  refund_window_days: { value: 0, source: "https://sapling.ai/tos", evidence: "\"All fees are... non-refundable\" -- no refund window exists." }
+  refund_conditions: { value: not_applicable, source: "https://sapling.ai/tos", evidence: "No refund is available (refund_policy_exists = no_refunds_stated)." }
+  cancellation_self_serve: { value: contact_required, source: "https://sapling.ai/tos", evidence: "Section 3.3 (ToS, highest authority for contractual variables): \"You may cancel the Subscription Service by contacting us at: support@sapling.ai\". See conflict_note: the billing FAQ (help center, second-ranked source) describes a self-serve dashboard route instead; ToS governs per protocol 6.2." }
+  refund_policy_location: { value: terms, source: "https://sapling.ai/tos", evidence: "Refund position (non-refundable) stated only in ToS Section 3.1. The billing FAQ was read in full and contains no mention of 'refund' anywhere on the page." }
+
+  commercial_use_lowest_tier: { value: not_applicable, source: "https://sapling.ai/tos", evidence: "Principal output of the AI detector is a probability score (e.g. 'Fake: 73.6%') plus a shareable certificate -- not an artifact a commercial-use right would attach to. ToS contains no defined term for detection 'Output' and no clause addressing commercial use of detection results (only a restriction on commercially exploiting the Service/platform itself, ToS Access-to-Service clause)." }
+  watermark_removal_tier: { value: not_applicable, source: "https://sapling.ai/ai-content-detector", evidence: "Matches the codebook's own not_applicable example under this variable verbatim: 'the principal output is not a media artifact a watermark could mark, for example a detection score or an analysis table.' Zero mentions of 'watermark' anywhere in the detector page or the 31,827-character ToS." }
+  output_ownership_statement: { value: not_applicable, source: "https://sapling.ai/tos", evidence: "Matches the not_applicable case on commercial_use_lowest_tier (product generates no output ownership could attach to). ToS 'Ownership' clause covers IP in the Service/platform (Sapling-owned) and a license the USER grants Sapling over submitted User Content (input); no clause anywhere addresses ownership of generated detection results. Keyword search for the defined term 'Output' returned zero matches in the full ToS." }
+
+  usage_cap_quantified: { value: some_quantified, source: "https://sapling.ai/ai-content-detector", evidence: "Pro tier detector cap is a specific quantified standing limit: \"Pro and Enterprise Sapling subscribers can paste texts of up to 100,000 characters (roughly 20,000 to 25,000 tokens)\" per query. But the SAME tier's comparison-table 'Unlimited' snippets and 'Unlimited use on premium domains' are qualified by the ToS Acceptable Use Policy's unquantified discretionary clause (see unquantified_limit_clause) and so do not count as quantified per codebook 5.1 rule 3. At least one quantified limit and at least one not -> some_quantified." }
+  unquantified_limit_clause: { value: present, source: "https://sapling.ai/tos", evidence: "Acceptable Use Policy: \"you agree not to: (i) submit or generate more than a reasonable number of searches, requests, or queries, determined in Sapling's sole discretion, and in no event more than the number allowed under your subscribed level of Service\" -- an unquantified fair/reasonable-use standard at the vendor's sole discretion, with no figure given." }
+
+coder_note: |
+  ENTRY TIER: Pro ($25/month billed monthly, default display state; $12/mo shown only via a
+  separate "Annual" link, not a toggle). Losing/excluded candidates -- Free: $0/mo, not a paid
+  tier, not a candidate. Enterprise: sales-gated ("Contact Us" / "Get started"->/teams,
+  "Contact Us"->/contact?enterpriseplan=True; no direct Subscribe button) AND "Starts at 10
+  seats" so no single-seat variant exists -- excluded on both eligibility grounds
+  (sampling-rules 7.2 criteria 2 and 4); published rate $15/seat/month x 10-seat minimum was
+  not usable as an entry-tier figure for either reason. API: "Metered"/usage-based, no flat
+  seat price on the pricing page to annualize; sampling-rules 7.2 item 5 reserves usage-based
+  comparison for when it is the ONLY paid option, which it is not here since Pro is a standing
+  eligible seat plan -- excluded, not separately priced out.
+
+  SCOPING JUDGMENT (product is "Sapling AI Detector" per the frame, category AI detector):
+  free_plan_exists / free_plan_cap_* are coded from the detector's own free public checker
+  (2000 chars/query, no account or sign-in required per a full-page keyword search finding
+  zero occurrences of "account" or "sign in"), NOT the suite's separate $0/mo "Free" plan
+  (whose feature column does not list detector access at all -- only Pro+ show "AI detector
+  (longer queries)"). cost_per_output_unit / credit_system_present are scoped to the consumer
+  Free/Pro/Enterprise plans; the separate "Metered" API plan (docs/api/pricing) was not
+  independently fetched since it is not the entry tier and does not change the entry-tier
+  determination.
+
+  E1/E2/E3 (commercial_use_lowest_tier, watermark_removal_tier, output_ownership_statement)
+  coded not_applicable: the detector's principal output is a probability score (e.g. "Fake:
+  73.6%") plus a shareable certificate, not a media/creative artifact. watermark_removal_tier's
+  own codebook definition names "a detection score" as its not_applicable example verbatim, and
+  the ToS has no defined "Output" term or clause addressing detection results (only Service-IP
+  ownership and a license over the user's INPUT content, which is a different question).
+
+  usage_cap_quantified = some_quantified: Pro's detector cap (100,000 characters/query) is a
+  specific quantified number; Pro's "Unlimited" snippets and "Unlimited use on premium domains"
+  (pricing-page comparison table) are qualified by the ToS Acceptable Use Policy's discretionary
+  clause (quoted under unquantified_limit_clause), which per codebook 5.1/rule 3 means an
+  "unlimited" claim does not count as quantified.
+
+  TOOLING-MISREAD CAUGHT (our reader error, not a vendor display_variant): an initial WebFetch
+  pass on /ai-content-detector fabricated a "Pro=50,000 / Enterprise=100,000" character-limit
+  split. Corrected against verbatim document.body.innerText: "Pro and Enterprise Sapling
+  subscribers can paste texts of up to 100,000 characters" -- both tiers share the SAME 100,000
+  figure; no 50,000 figure exists anywhere in the source. Every money/cap value in this record
+  was confirmed in a second representation: accessibility-tree heading text + full-page
+  screenshot for the $25/$12 prices, the Subscribe payment-dialog text for the $25/month first
+  charge, and document.body.innerText keyword-context search for the detector caps and the ToS
+  clauses.
+
+  ARCHIVAL: web.archive.org/save returned a stale capture (not today's date) on both attempts
+  for /pricing (redirected to a 2026-07-16 capture) and /ai-content-detector (redirected to a
+  2026-07-20 capture); local copies saved to sapling-sources/ instead (archive_status =
+  local_copy_only for both). /tos and /billing_faq archived successfully today (2026-08-12);
+  see sources list for both snapshot URLs.
+
+  Frame row spot-checked against https://sapling.ai at collection: category "AI detector" and
+  product_status "active" both still accurate; no correction needed.
+
+  blindness: no other record, no review page, no pass-2 material was opened.
+conflict_note: "cancellation_self_serve: ToS Section 3.3 (https://sapling.ai/tos) states \"You may cancel the Subscription Service by contacting us at: support@sapling.ai\" (contact_required). The billing FAQ (https://sapling.ai/billing_faq, help center -- second-ranked source for contractual variables) states \"Please sign in and visit https://sapling.ai/dashboard-billing and click Manage billing. There you can manage your billing information and subscription\" -- describing a self-serve dashboard/Stripe-portal route with no mention of contacting support. Coded contact_required from the ToS per protocol 6.2's hierarchy (terms of service ranks above the help center for contractual variables); both URLs and quotes recorded here per codebook section 3."
+register_events: []
+status: complete

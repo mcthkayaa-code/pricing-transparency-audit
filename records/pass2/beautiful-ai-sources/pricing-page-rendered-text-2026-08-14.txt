@@ -1,0 +1,54 @@
+SOURCE: Rendered live read via browser (JS executed), tabId capture, 2026-08-14
+URL: https://www.beautiful.ai/pricing (redirects to https://beautiful.ai)
+Method: mcp Claude_Browser navigate + get_page_text, after declining non-essential cookies ("Reject all cookies")
+---
+Try free for 14 days
+Create professional presentations in minutes, not hours.
+Pro
+INDIVIDUAL
+$14.50
+/MO
+Billed annually
+For individuals who want powerful presentation tools
+Try it free
+[...]
+Teams
+2-20 SEATS
+$40 
+/MO/USER
+Billed monthly
+Billed annually
+For collaborators who need to seamlessly work across teams
+[...]
+Enterprise
+Custom
+Contact sales for pricing
+[...]
+Need to create a single presentation?
+Our monthly option makes one-time projects a breeze. Cancel anytime.
+Everything in Pro plan (billed monthly)
+$45
+For ad hoc projects
+Get started
+[...]
+FAQs
+How much does Beautiful.ai cost?
+Beautiful.ai offers flexible pricing with three main tiers: Pro for individual users at $12/month (billed annually), Team plans for up to 20 users at $40 per user/month (billed annually) or $50 per user/month, and custom Enterprise plans for larger organizations (20+ users). For quick projects, you can also purchase a one-off single presentation for $45.
+Does Beautiful.ai offer a free trial?
+You can try out Pro or Team plan features with a 14-day free trial, which gives you unrestricted access to everything in the plan. A free trial requires a credit card to get started, which will be charged in full if you don't cancel your trial before the trial period ends.
+How does the free 14-day trial work?
+A credit card is required for the 14-day Pro trial. After your trial expires, your credit card on file will be charged automatically unless you cancel your Pro subscription before the 14 days are up. Your billing cycle will begin at the end of your trial.
+How do I cancel my subscription?
+You may cancel your Beautiful.ai subscription on the Billing section of your Profile. When you cancel your subscription, you can use Beautiful.ai Pro until the end of your billing cycle.
+What is your refund policy?
+Annual subscriptions may be eligible for a partial refund if a request is submitted within 24 hours of the initial purchase or renewal. Cancellations made after payment has been processed will be charged the full monthly rate for that billing period. Monthly subscriptions are non-refundable. Please note that all refunds are subject to a processing fee. For more details or to request a refund, contact us at support@beautiful.ai
+Does Beautiful.ai offer discounts for education or non-profits?
+We offer a year free for students with valid .edu emails.
+---
+NOTE ON DISPLAY VARIANT: raw static HTML (curl, no JS) of the SAME URL shows the Pro
+price element with data-pricing-exp-false="$12", data-pricing-exp="true",
+data-pricing-exp-true="$14.50" (Optibase experiment script, app.optibase.io/script.js).
+This live rendered read (JS executed) displayed $14.50. The page's own FAQ prose
+(same rendered page) still reads "$12/month (billed annually)" -- not updated by the
+experiment script. Screenshot taken confirming "$14.50 /MO Billed annually" rendered
+in the Pro price card. See pricing-raw-2026-08-14.html for the static/SSR representation.

@@ -1,0 +1,47 @@
+SOURCE: https://www.rezi.ai/rezi-docs/rezi-subscription-plans-explained
+ACCESSED: 2026-08-12
+METHOD: rendered browser read, full page text (get_page_text)
+DOC CLASS: official product documentation (Rezi's own "User Guides" section on rezi.ai, distinct from
+the Intercom-hosted help center but still vendor-first-party)
+Byline: Written by Lauren Bedford, Published August 3, 2026, Updated August 3, 2026 (very recent)
+
+Body copy (plan breakdown section) uses $ throughout:
+"Free Plan - $0/month" / "Pro Plan - $29/month" / "Lifetime - $149" / "Enterprise - $99/month per 200
+users"
+
+Free plan breakdown matches other sources exactly: Rezi Resume Builder (1 resume limit), Rezi Score
+(limited), AI Keyword Targeting (limited), Real-time Content Analysis (limited), AI Resume Agent
+(limited), full AI Writing Tools included, AI Interview (1 interview limit), Rezi Resume Review (from
+$8), PDF File (3 downloads), Rezi Standard Format only.
+
+Pro plan breakdown: everything unlimited/full, all 5 templates, all AI writer tools, Rezi Resume Review
+included (no "from $8" - that a-la-carte price is Free-tier only).
+
+"How to Upgrade Your Subscription?
+...From there, you get an overview of the extra features and the different payment plans: monthly,
+quarterly, or lifetime... you can compare plans, choose monthly, quarterly, or lifetime billing, and
+complete your purchase through various payment options [Stripe checkout: Apple Pay, Link, Card Payment,
+Cash App Pay]."
+[Confirms - independently of the intercom Subscription Plans article - that a quarterly billing option is
+real and current, again only inside the logged-in dashboard's Upgrade flow, not on the public pricing
+page.]
+
+Cancellation / renewal language:
+"You don't have to commit to a paid plan straight away. You can start on the Free plan, upgrade whenever
+you want, and cancel a recurring subscription at any time."
+FAQ: "Can you cancel your Rezi subscription at any time? Yes, if you're on a recurring subscription, you
+can cancel it whenever you no longer need it. Your subscription will remain active until the end of your
+current billing period, and you won't be charged again unless you renew."
+
+CURRENCY ANOMALY (flagged, not coded as non_usd - see coder_note in record for reasoning): the page's
+"Summary" bullet-list section, near the bottom, restates the SAME three figures with a GBP symbol instead
+of USD: "Rezi offers four subscription options: Free, Pro (£29/month), Lifetime (£149 one-off payment),
+and Enterprise (£99/month per 200 users)." The numbers (29/149/99) are IDENTICAL to the $ figures used
+throughout the rest of this same page and matching the live pricing page - only the currency symbol
+changed, in one isolated bullet, which reads as an editorial/copy-paste symbol error in this single
+secondary marketing-style doc rather than a genuine GBP price (a true regional GBP price would not share
+the exact same numerals as the USD price). The authoritative pricing page (rank 1 for pricing variables)
+is unambiguous and consistent ($ throughout, confirmed in two representations - see
+pricing-page-rendered.txt) and is what governs the coded value.
+
+Payment processor confirmed: Stripe (Apple Pay, Link, Card Payment, Cash App Pay).
