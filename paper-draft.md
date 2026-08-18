@@ -299,7 +299,7 @@ index result is reported twice**, once over the full frame and once with `paid_s
 removed. Rule D8 keeps discontinued products out of every aggregate; rule D1 shows `unknown`,
 `not_applicable` and `conflicting` as their own rows rather than dropping them.
 
-### 3.9 Seventy-eight deviations, dated, by class
+### 3.9 Seventy-nine deviations, dated, by class
 
 `orchestrator/deviations-log.md` carries **78 numbered entries**, each dated and each stating what it
 changed and in which direction. They are summarised by class with the log cited, rather than reproduced.
@@ -350,7 +350,7 @@ a published erratum and not an edit.
 
 | Figure | Value A | Value B | Reading |
 |---|---|---|---|
-| Deviations logged | **78** — a direct count of the log (D-001 to D-079, D-024 vacated) | 77, then 76 — the freeze stamp's table and its own prose, disagreeing with each other; the register §10 heading said 76 | **This row moved while the paper was being drafted, for exactly the reason the paper gives.** The audit that produced this table was itself logged, as D-079, which took the count to 78. The freeze stamp now interpolates the figure instead of carrying it as prose, and the register's heading dropped the number altogether. This paper prints 78 and re-derives it immediately before publication |
+| Deviations logged | **79** — a direct count of the log (D-001 to D-080, D-024 vacated) | 77, then 76 — the freeze stamp's table and its own prose, disagreeing with each other; the register §10 heading said 76 | **This row moved while the paper was being drafted, for exactly the reason the paper gives.** The audit that produced this table was itself logged, as D-079, which took the count to 78. The freeze stamp now interpolates the figure instead of carrying it as prose, and the register's heading dropped the number altogether. **It moved a third time on publication day:** checking the freeze stamp's own hashes against disk for the first time found one of them already stale, which became D-080 and took the count to 79. This paper prints 79 and re-derives it immediately before publication |
 | `instrument_gap` unknowns on publishing rows | **48** — freeze stamp, register §4 table, D-078, and a direct count of the frozen long table | 46 — register §4 prose, `analysis-first-findings.md` §3a | 48 is what the frozen data holds; "46" appears only inside prose about one product |
 | Products flagged `paid_submission = yes` | **1 of 76** — frozen dataset and the scoring tool's report | four — `analysis-first-findings.md` §1 | This paper reports the D10 result as a raw count under rule D3 |
 | Primary interquartile range | 69.9 to 86.5, width 16.6 — exclusive quartiles, width from the rounded bounds | 70.0 to 86.4, width 16.4 — scoring tool, inclusive type-7 quartiles, width from unrounded values | A convention difference of about 0.2 of a point on a 100-point instrument. Both are printed below; no conclusion turns on which is used |
@@ -792,7 +792,7 @@ never-exposed products scoring highest — evidence, not proof, on five products
 adjudicator's resolution on a single variable is recorded as **not excludable** rather than cleared: three
 of its four resolutions ran opposite to what it had seen, and the fourth cannot be excluded.
 
-**10. Seventy-eight deviations, including retracted claims.** Every one dated, with what it changed and in
+**10. Seventy-nine deviations, including retracted claims.** Every one dated, with what it changed and in
 which direction. Three withdrew a claim the study had already made, including one headline finding that
 turned out to be a float-formatting artifact, kept struck through rather than deleted. The coordinating
 instance's own errors are a large share: six confidently wrong numbers produced by reading one storage
@@ -959,7 +959,7 @@ values the local capture is the only surviving evidence. Published under CC BY 4
 publication. No vendor page content is republished.
 
 **Freeze semantics.** After the freeze stamp, a correction to the dataset is a published erratum and not an
-edit. This is not a claim that the dataset is free of error — 78 deviations say otherwise — but that error
+edit. This is not a claim that the dataset is free of error — 79 deviations say otherwise — but that error
 found after that point is disclosed rather than absorbed.
 
 ## Conflicts of interest, funding, and paid submissions

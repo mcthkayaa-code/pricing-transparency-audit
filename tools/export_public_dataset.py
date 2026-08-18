@@ -15,11 +15,24 @@ file class it takes and refuses to run if it finds something it has no rule for.
 """
 
 import os
+import re
 import shutil
 import sys
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEST = os.path.abspath(os.path.join(HERE, "..", "pricing-transparency-public"))
+
+def _failure_mode_count():
+    """Read the count instead of carrying it.
+
+    This one string went stale twice: it said 33 with 34 in the file, then 34 with 35 — inside
+    the very tool that publishes the register whose entire subject is figures that quietly stop
+    being true. Nothing would have caught it; the manifest prints and nobody re-counts.
+    """
+    path = os.path.join(HERE, "methods-tooling-failure-modes.md")
+    with open(path, encoding="utf-8") as handle:
+        return len(re.findall(r"^\*\*\d+\.", handle.read(), re.M))
+
 
 # --- what ships, and why ------------------------------------------------------------------
 
@@ -31,7 +44,8 @@ INCLUDE_FILES = {
     # what a reader must read before using a number
     "limitations-register.md": "every limitation, with the figure and the deviation that established it",
     "methods-who-coded.md": "who coded and what the reliability figure does and does not establish",
-    "methods-tooling-failure-modes.md": "33 failure modes, reusable by anyone coding web documents",
+    "methods-tooling-failure-modes.md":
+        f"{_failure_mode_count()} failure modes, reusable by anyone coding web documents",
     # the binding corrections each role worked under
     "deviations-for-coders.md": "corrections a coder was bound by, with no product named",
     "deviations-for-adjudicators.md": "corrections an adjudicator was bound by, with no product named",

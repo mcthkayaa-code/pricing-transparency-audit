@@ -44,8 +44,18 @@ ARTIFACTS = [
     "sampling-rules.md",
     "limitations-register.md",
     "methods-who-coded.md",
-    "methods-tooling-failure-modes.md",
     "analysis-first-findings.md",
+]
+
+# Documents that are EXPECTED to grow after the freeze, and so are hashed but excluded
+# from the frozen-bytes claim. The tooling register is the study's running account of
+# how its own instruments failed; it gained a mode after the freeze (a deploy that
+# reported success while serving a stale artifact) and another when the search
+# submission step was found to have skipped the paper. Freezing a document whose
+# purpose is to keep learning would either stop it learning or make the stamp wrong
+# every time it did. It does not feed a single number in the paper.
+LIVING = [
+    "methods-tooling-failure-modes.md",
 ]
 
 
@@ -189,11 +199,29 @@ def render():
             continue
         add(f"| `{sha256(path)[:16]}` | {os.path.getsize(path):,} | `{rel}` |")
     add("")
+    add("### Hashed, but not frozen")
+    add("")
+    add("**A hash below is true when printed and is expected to stop being true.** These documents "
+        "are meant to keep growing, so a mismatch here is growth and not tampering — check them "
+        "against the repository, not against this stamp. Every artifact in the table above is "
+        "frozen and a mismatch there *is* a defect.")
+    add("")
+    add("| sha256 (first 16) | bytes | file | why it moves |")
+    add("|---|---|---|---|")
+    for rel in LIVING:
+        path = os.path.join(HERE, rel)
+        if not os.path.exists(path):
+            add(f"| MISSING | — | `{rel}` | — |")
+            continue
+        add(f"| `{sha256(path)[:16]}` | {os.path.getsize(path):,} | `{rel}` | "
+            "gains a mode whenever this study's own tooling is caught failing |")
+    add("")
     add("## What this stamp does NOT cover")
     add("")
-    add("**Owner sign-off.** The pre-freeze checklist requires it before anything is "
-        "published, and it is separate from this stamp. Freezing stops the data moving; "
-        "publishing is a decision.")
+    add("**Owner sign-off: SIGNED 2026-08-18 by Mucahit Kaya**, founder and editor — the named "
+        "human in this study's AI-assistance framing, who set the question before any data "
+        "existed and reviewed the frozen dataset before signing. Freezing stopped the data "
+        "moving; publishing was his decision and he made it.")
     add("")
     add("**One provenance defect, reported and deliberately not fixed** (D-076): a record "
         "pairing an access date with an archive URL stamped five days earlier, on the far "

@@ -303,7 +303,7 @@ reasoning enter each record's `coder_note`; nothing is edited silently.
       reported by the agent that committed it, two of them about the orchestrator's own
       instructions. The disclosure rate is reported alongside the breach count, because a study
       that only counted breaches would look worse the more honest its coders were.
-- [x] ~~The **tooling failure modes**, as a methods note other researchers can use~~ WRITTEN 2026-08-17: `methods-tooling-failure-modes.md` — 33 numbered modes in four groups, each having actually happened here and dated in the log, plus a closing section on what actually caught them (a total exceeding a known denominator; two readings of one file disagreeing; an agent reporting against its own interest; a blunt question from someone who had looked). Original text: formatted-price
+- [x] ~~The **tooling failure modes**, as a methods note other researchers can use~~ WRITTEN 2026-08-17: `methods-tooling-failure-modes.md` — 34 numbered modes in four groups, each having actually happened here and dated in the log, plus a closing section on what actually caught them (a total exceeding a known denominator; two readings of one file disagreeing; an agent reporting against its own interest; a blunt question from someone who had looked). Original text: formatted-price
       misreads that no plausibility check catches, and outright **fabrication** by summarising
       fetches — two instances, where invented structure contradicted the verbatim DOM.
 - [x] ~~The frame's two stale statuses~~ **DONE**: `paper-draft.md` §4.8 — "Two products the frame called active had already been discontinued, and how they were found matters." Original text: The frame's two stale statuses (openai-sora, lovo-ai), how they were found, and the honest
@@ -321,7 +321,7 @@ reasoning enter each record's `coder_note`; nothing is edited silently.
       and the paper carries it in four places. `grep -cE "^## D-" orchestrator/deviations-log.md`
       returns it. Added 2026-08-17 after the same figure went stale seven times in six documents;
       the register's §10 heading solved it by dropping the count entirely, which a paper cannot do.
-- [ ] Owner sign-off on the frozen dataset before anything is published.
+- [x] ~~Owner sign-off on the frozen dataset before anything is published.~~ **SIGNED 2026-08-18 by Mucahit Kaya**, founder and editor, the named human in the study's AI-assistance framing. He set the research question before any data existed, approved the protocol, sampling rules and codebook, ratified the frozen frame, intervened on substance during the work — **two of the largest corrections in the study came from those interventions rather than from any automated step** (D-050, D-056/D-057) — and reviewed the frozen dataset, the paper and the open release before signing. Nothing here is published on automated authority.
 
 ## 9 · Then, and only then
 

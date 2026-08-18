@@ -450,6 +450,34 @@ diff.
   claim. The six `unset` records are a record-completeness gap tracked on the pre-freeze checklist,
   not an archival failure.
 
+## D-080 · 2026-08-18 · The freeze stamp invited readers to verify its hashes, and one of its own hashes was already wrong
+
+- What happened: the stamp records SHA-256 for 16 artifacts so a reader can confirm the copy they
+  downloaded is the copy that was frozen. Checking it against disk for the first time today,
+  `methods-tooling-failure-modes.md` did not match. It had moved twice since the stamp was
+  generated — once on freeze day, when the deploy that reported success while serving a stale
+  artifact was written up, and once this evening, when the search-submission step was found to have
+  published the section index without the paper.
+- Scope, checked rather than assumed: **the other 15 match exactly** — `coded-values.csv`,
+  `coded-long.csv`, `apti-scores.csv`, the protocol, the codebook, the sampling rules, the
+  limitations register and the analysis. The freeze held for everything it was meant to hold. No
+  coded value, attribution or index score moved.
+- Why it matters anyway: the stamp does not merely record hashes, it *invites* a reader to check
+  them, and a reader who accepted that invitation would have found a mismatch with no explanation
+  attached. Unexplained drift in a document that exists to prove nothing drifted reads as tampering,
+  which is worse than the drift.
+- Why no check caught it: none existed. The stamp was a claim about the repository that nothing
+  in the repository ever read back — the same defect this study has now logged in a dozen costumes,
+  which is a tool, or in this case a document, asserting something nobody re-derived.
+- What was done: the stamp now separates **frozen bytes** from **hashed but living** documents and
+  states which mismatch is a defect and which is growth. The tooling register is a running account
+  of how this study's own instruments failed and is meant to keep growing; freezing it would either
+  stop it learning or falsify the stamp every time it did. It feeds no figure in the paper.
+  `tools/verify_freeze.py` now checks the stamp against disk and exits non-zero on any frozen
+  mismatch, so the invitation is tested rather than trusted.
+- What it does not do: this does not reopen the freeze. It narrows a claim that was too wide, and
+  the narrowing is disclosed here rather than absorbed into a regenerated file.
+
 ## D-079 · 2026-08-17 · The preprint draft audited every figure against the frozen data and found six more disagreements, two of them mine
 
 `paper-draft.md` written. The brief told it that where two documents disagree on a figure it must

@@ -269,7 +269,23 @@ present in the coders' brief and **absent from the adjudicators' brief entirely*
 whose function is resolving disputes lacked the text governing the dispute in front of it. Role-scoped
 briefs drift apart silently, because each one reads complete on its own.
 
-**33. Scope a task from the diff, not from the report.** Two adjudications here were briefed from what
+**33. A deploy that reports success can ship a stale artifact.** The site's deploy runs
+`rsync --delete` from a freshly built directory, logged "Deploy OK", and the workflow's own
+post-deploy check confirmed the site returned HTTP 200. The page it served was **9.6 KB shorter than
+the build that had just been uploaded** — an entire component missing, from the correct commit, on a
+run whose every step passed.
+
+Nothing in the pipeline was wrong-looking. The source was on the remote, the build succeeded, the
+sync succeeded, the liveness check succeeded. **Re-running the identical workflow fixed it**, so the
+fault was transient and invisible — which is the point. A live check that asks "is the site up"
+answers a different question from "is the site the thing I built".
+
+**Compare a byte count, not a status code.** The local build and the served page are the same
+artifact or they are not, and `wc -c` on both settles it in one line. This corpus had already learned
+that a 200 with an empty body is a failure (mode 16); a 200 with a *previous version* behind it is the
+same defect wearing a better disguise, because the page looks entirely fine.
+
+**34. Scope a task from the diff, not from the report.** Two adjudications here were briefed from what
 each earlier coder had described as notable in its own write-up. Diffing the two records afterwards
 showed **9 disagreements where 5 had been briefed, and 6 where 3 had been briefed** — a third to a half
 of the real work missing from both briefs, on the same day, from the same habit.
@@ -282,6 +298,21 @@ The cost was smaller than it should have been, and only because the agent overro
 all 37 variables itself, found the four nobody had assigned it, resolved them, and **labelled each one
 as outside its remit** instead of presenting them as adjudicated. **An under-scoped brief is caught by
 an agent that checks its own scope, which is not something you can rely on.** Give it the diff.
+
+**35. A submission list that contains something is not a submission list that contains everything.**
+The search-submission step maps changed files to the URLs they publish. It had a rule for one content
+type and none for the paper, which renders through a dynamic route whose own source file does not change
+when a paper is added. Publishing this study therefore submitted the section index and **not the paper**,
+and printed a tidy one-line list saying so. The step exited 0. Nothing anywhere said a URL was missing,
+because nothing knew one was owed.
+
+This is mode 1 again in its most expensive dress: **a tool that reads less than it claims to.** The
+earlier instances at least examined zero things, and zero is conspicuous. A partial list is worse,
+because a non-empty result reads as a working tool.
+
+**Check the output against what you published, never against whether the tool errored.** The question is
+not "did it submit?" but "did it submit the thing I just shipped?" — and answering it takes one look at
+the list, which nobody took for three deploys.
 
 ---
 
