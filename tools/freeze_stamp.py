@@ -223,11 +223,18 @@ def render():
         "existed and reviewed the frozen dataset before signing. Freezing stopped the data "
         "moving; publishing was his decision and he made it.")
     add("")
-    add("**One provenance defect, reported and deliberately not fixed** (D-076): a record "
+    add("**One provenance defect, reported and left unfixed by decision** (D-076): a record "
         "pairing an access date with an archive URL stamped five days earlier, on the far "
         "side of a demonstrated edit to that page. Coded values survive in both captures. "
         "No record was edited by the orchestrator on freeze day and that invariant was kept "
-        "in preference to the correction; it is an owner decision.")
+        "in preference to the correction. **The owner reviewed the three options on 2026-08-18 "
+        "and chose to leave it as a disclosed defect**, so this is a decision on the record "
+        "rather than an open question.")
+    add("")
+    add("**No DOI, by decision** (D-081). The paper had carried a sentence from the protocol "
+        "claiming one was minted at publication; none was. The claim is retracted, the release "
+        "is identified by this repository and the checksums above, and the owner has deferred "
+        "minting an identifier.")
     add("")
     add("**Wave-2 items are not blockers and are listed as such** in "
         "`orchestrator/pre-freeze-checklist.md`: a fourth attribution kind for "

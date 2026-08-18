@@ -450,6 +450,28 @@ diff.
   claim. The six `unset` records are a record-completeness gap tracked on the pre-freeze checklist,
   not an archival failure.
 
+## D-081 · 2026-08-18 · The paper claimed a DOI it does not have, and the owner has decided it does not need one
+
+- What happened: the data-availability section read "Published under CC BY 4.0 with a DOI minted at
+  publication." **No DOI was minted.** The sentence had been carried forward from the protocol, where
+  it was a plan stated before collection began, into the paper, where it reads as a fact about a
+  finished release. It went live and stayed live.
+- Why it is the worst kind of error for this study specifically: it is an unverifiable claim about
+  provenance in a paper whose entire subject is unverifiable claims. A reader who went looking for
+  the identifier would have found nothing, in the one document that tells them to go and check.
+- Why nothing caught it: every check built today compares a **number** in prose against the data.
+  This was a claim with no number in it. `check_published_figures.py` is blind to it by construction,
+  and so was every earlier sweep.
+- What was done: the sentence now says no DOI has been minted, names what does identify the release
+  (the repository and the freeze stamp's per-file checksums), and commits to naming one if that
+  changes. The protocol and dossier are left as written — they stated an intention at the time and
+  are frozen; the paper is where the claim had to be true.
+- Owner decision, same day: **no DOI for now** ("gerekirse sonra"). Recorded here so the absence is
+  a decision rather than an oversight.
+- The class of defect, for wave 2: a promise made in a pre-registration is not automatically true in
+  the report. Anything the protocol says the study *will* do needs checking against what it *did*
+  before that sentence is repeated as fact.
+
 ## D-080 · 2026-08-18 · The freeze stamp invited readers to verify its hashes, and one of its own hashes was already wrong
 
 - What happened: the stamp records SHA-256 for 16 artifacts so a reader can confirm the copy they
